@@ -1,4 +1,4 @@
-name: Migrar y verificar CP10 sin cambiar el corpus
+name: Comprobar entorno y clon remoto de CP10
 
 on:
   push:
@@ -33,8 +33,8 @@ jobs:
       - name: Obtener sólo las herramientas de la rama auxiliar
         shell: bash
         run: |
-          git -c credential.helper= -c credential.helper='!gh auth git-credential' clone --branch migration/cp10 --single-branch --depth=20 https://github.com/diegolezaval/Proyecto_Runas.git tooling
+          git -c credential.helper= -c credential.helper='!gh auth git-credential' clone --branch migration/cp10 --single-branch https://github.com/diegolezaval/Proyecto_Runas.git tooling
           test "$(git -C tooling rev-parse HEAD)" = "$GITHUB_SHA"
       - name: Importar, clonar desde GitHub, comprobar CP10 y publicar su ZIP original
         shell: bash
-        run: python tooling/migration/ejecutar_migracion_GitHub_CP10.py
+        run: python tooling/migration/preparar_clon_referencia_CP10.py
