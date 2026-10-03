@@ -1,0 +1,275 @@
+{
+  "default_host": {
+    "python": "3.12.14",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "cpu_features": {
+      "MMX": true,
+      "SSE": true,
+      "SSE2": true,
+      "SSE3": true,
+      "SSSE3": true,
+      "SSE41": true,
+      "POPCNT": true,
+      "SSE42": true,
+      "AVX": true,
+      "F16C": true,
+      "XOP": false,
+      "FMA4": false,
+      "FMA3": true,
+      "AVX2": true,
+      "AVX512F": false,
+      "AVX512CD": false,
+      "AVX512ER": false,
+      "AVX512PF": false,
+      "AVX5124FMAPS": false,
+      "AVX5124VNNIW": false,
+      "AVX512VPOPCNTDQ": false,
+      "AVX512VL": false,
+      "AVX512BW": false,
+      "AVX512DQ": false,
+      "AVX512VNNI": false,
+      "AVX512IFMA": false,
+      "AVX512VBMI": false,
+      "AVX512VBMI2": false,
+      "AVX512BITALG": false,
+      "AVX512FP16": false,
+      "AVX512_KNL": false,
+      "AVX512_KNM": false,
+      "AVX512_SKX": false,
+      "AVX512_CLX": false,
+      "AVX512_CNL": false,
+      "AVX512_ICL": false,
+      "AVX512_SPR": false,
+      "VSX": false,
+      "VSX2": false,
+      "VSX3": false,
+      "VSX4": false,
+      "VX": false,
+      "VXE": false,
+      "VXE2": false,
+      "NEON": false,
+      "NEON_FP16": false,
+      "NEON_VFPV4": false,
+      "ASIMD": false,
+      "FPHP": false,
+      "ASIMDHP": false,
+      "ASIMDDP": false,
+      "ASIMDFHM": false,
+      "SVE": false,
+      "RVV": false,
+      "LSX": false
+    },
+    "NPY_DISABLE_CPU_FEATURES": null,
+    "OPENBLAS_CORETYPE": null,
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "rows": [
+      {
+        "case": "temporal_h0125",
+        "field": "initial_q",
+        "exact_equal": false,
+        "different_values": 11049,
+        "different_columns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "max_abs_error": 1.3877787807814457e-17,
+        "expected_array_sha256": "4df51158db054b1da65a8eff4b895305882d498a0164a7c040ba5587e8ca8b36",
+        "actual_array_sha256": "ce1d4420144ccc3fcc60b5c4b7ab789e5ad32d60b2a844275a63c49faaadefac",
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "expected_hex": "0x1.c47bc991dfbc5p-23",
+            "actual_hex": "0x1.c47bc991dfbc3p-23"
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "expected_hex": "0x1.0f7d78f11fd76p-24",
+            "actual_hex": "0x1.0f7d78f11fd75p-24"
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "expected_hex": "-0x1.69fca1417fc9ep-25",
+            "actual_hex": "-0x1.69fca1417fc9cp-25"
+          }
+        ]
+      },
+      {
+        "case": "temporal_h0125",
+        "field": "initial_v",
+        "exact_equal": false,
+        "different_values": 11051,
+        "different_columns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "max_abs_error": 1.3877787807814457e-17,
+        "expected_array_sha256": "f282e64737e55be8924418b898ee506d8fcd6a25b05bf5dbd604ed6070670d60",
+        "actual_array_sha256": "14d6985d0eeee4375f0dbb991b2890f7c7188ac91fffb446e5dc795276a1652b",
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "expected_hex": "0x1.d748bda828976p-22",
+            "actual_hex": "0x1.d748bda828974p-22"
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "expected_hex": "0x1.1ac53e98185adp-23",
+            "actual_hex": "0x1.1ac53e98185acp-23"
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "expected_hex": "-0x1.7906fe2020792p-24",
+            "actual_hex": "-0x1.7906fe2020790p-24"
+          }
+        ]
+      },
+      {
+        "case": "espacial_h00625",
+        "field": "initial_q",
+        "exact_equal": false,
+        "different_values": 22249,
+        "different_columns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "max_abs_error": 1.3877787807814457e-17,
+        "expected_array_sha256": "173b2299135baf204c678087115082b3d44e6992710ca305d88f0eca81915aa9",
+        "actual_array_sha256": "50ae4f345efa1f86e778e243d517487465907c68c99fd92cfa3ed60fd6ef02f6",
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "expected_hex": "0x1.c4a44929bb078p-25",
+            "actual_hex": "0x1.c4a44929bb076p-25"
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "expected_hex": "0x1.0f95c57f7037bp-26",
+            "actual_hex": "0x1.0f95c57f7037ap-26"
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "expected_hex": "-0x1.6a1d0754959fap-27",
+            "actual_hex": "-0x1.6a1d0754959f9p-27"
+          }
+        ]
+      },
+      {
+        "case": "espacial_h00625",
+        "field": "initial_v",
+        "exact_equal": false,
+        "different_values": 22361,
+        "different_columns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "max_abs_error": 1.3877787807814457e-17,
+        "expected_array_sha256": "4a0ad2778da33d85086a01d79445fbd1b59f24e0c8a6c3b8601fcfc4a072680b",
+        "actual_array_sha256": "fb2f21a258a6915afaad0d2ccf73fd492df9a16ce3a9c857385866d0c707f9fa",
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "expected_hex": "0x1.d781d7a860fffp-24",
+            "actual_hex": "0x1.d781d7a860ffdp-24"
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "expected_hex": "0x1.1ae7816506fffp-25",
+            "actual_hex": "0x1.1ae7816506ffep-25"
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "expected_hex": "-0x1.7934ac86b3fffp-26",
+            "actual_hex": "-0x1.7934ac86b3ffep-26"
+          }
+        ]
+      }
+    ],
+    "integration_steps": 0,
+    "science_modified": false
+  },
+  "reference_profile": "NumPy 2.3.5 / SciPy 1.17.0 / OpenBLAS 0.3.30 SkylakeX, AVX-512, un hilo",
+  "criteria_modified": false,
+  "initial_arrays_modified": false,
+  "integration_steps": 0,
+  "reference_profile_available_on_host": false
+}
