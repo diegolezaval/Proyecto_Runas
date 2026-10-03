@@ -1,4 +1,4 @@
-name: Transportar clon auténtico de CP10 para verificación
+name: Publicar CP10 con clon científico ya verificado
 
 on:
   push:
@@ -6,96 +6,32 @@ on:
     paths: [.github/workflows/migrar-cp10.yml]
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: migracion-cp10
   cancel-in-progress: false
 
 jobs:
-  transportar-clon:
+  publicar-checkpoint-verificado:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 15
     env:
       GH_TOKEN: ${{ github.token }}
       GIT_TERMINAL_PROMPT: '0'
       PYTHONDONTWRITEBYTECODE: '1'
     steps:
-      - name: Obtener las herramientas autorizadas de la rama auxiliar
+      - name: Obtener la evidencia y las herramientas de la rama auxiliar
         shell: bash
         run: |
           git -c credential.helper= -c credential.helper='!gh auth git-credential' clone --branch migration/cp10 --single-branch https://github.com/diegolezaval/Proyecto_Runas.git tooling
           test "$(git -C tooling rev-parse HEAD)" = "$GITHUB_SHA"
-      - name: Crear un nuevo clon limpio de GitHub y registrar su origen
-        run: python tooling/migration/exportar_clon_por_artefactos_CP10.py
-      - name: Conservar parte 00 sin compresión adicional
+      - name: Validar recibos, publicar CP10 y verificar descargas reales de su ZIP
+        run: python tooling/migration/publicar_CP10_verificado.py
+      - name: Conservar también el acta final como artefacto privado
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: CP10-clon-parte-00
-          path: transporte_clon_CP10/part00/*.bin
-          compression-level: 0
-          if-no-files-found: error
-          retention-days: 90
-      - name: Conservar parte 01 sin compresión adicional
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: CP10-clon-parte-01
-          path: transporte_clon_CP10/part01/*.bin
-          compression-level: 0
-          if-no-files-found: error
-          retention-days: 90
-      - name: Conservar parte 02 sin compresión adicional
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: CP10-clon-parte-02
-          path: transporte_clon_CP10/part02/*.bin
-          compression-level: 0
-          if-no-files-found: error
-          retention-days: 90
-      - name: Conservar parte 03 sin compresión adicional
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: CP10-clon-parte-03
-          path: transporte_clon_CP10/part03/*.bin
-          compression-level: 0
-          if-no-files-found: error
-          retention-days: 90
-      - name: Conservar parte 04 sin compresión adicional
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: CP10-clon-parte-04
-          path: transporte_clon_CP10/part04/*.bin
-          compression-level: 0
-          if-no-files-found: error
-          retention-days: 90
-      - name: Conservar parte 05 sin compresión adicional
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: CP10-clon-parte-05
-          path: transporte_clon_CP10/part05/*.bin
-          compression-level: 0
-          if-no-files-found: error
-          retention-days: 90
-      - name: Conservar parte 06 sin compresión adicional
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: CP10-clon-parte-06
-          path: transporte_clon_CP10/part06/*.bin
-          compression-level: 0
-          if-no-files-found: error
-          retention-days: 90
-      - name: Conservar parte 07 sin compresión adicional
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: CP10-clon-parte-07
-          path: transporte_clon_CP10/part07/*.bin
-          compression-level: 0
-          if-no-files-found: error
-          retention-days: 90
-      - name: Conservar recibo de origen y sumas de las ocho partes
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: CP10-clon-recibo
-          path: transporte_clon_CP10/recibo/*.json
+          name: CP10-acta-final
+          path: acta_final_CP10/*.json
           if-no-files-found: error
           retention-days: 90
