@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-03T18:44:09.737032+00:00",
+  "passed": true,
+  "checks": [
+    "instalación idempotente y sin cambios de archivos registrados",
+    "commit real en main rechazado",
+    "commit real en rama de trabajo permitido",
+    "push a main desde otra rama rechazado sin alterar el remoto",
+    "force push a main rechazado",
+    "borrado remoto de main rechazado",
+    "sustitución del tag CP10 rechazada",
+    "borrado del tag CP10 rechazado",
+    "push de rama de trabajo permitido",
+    "commit en HEAD separado rechazado",
+    "hook ajeno conservado; conflicto detectado"
+  ],
+  "check_count": 11,
+  "actual_local_git_operations_tested": true,
+  "GitHub_writes_executed": false,
+  "scientific_campaigns_executed": false,
+  "CP11_started": false
+}
