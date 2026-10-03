@@ -1,0 +1,237 @@
+﻿2026-10-03T17:49:31.9752880Z Current runner version: '2.337.0'
+2026-10-03T17:49:31.9789135Z ##[group]Runner Image Provisioner
+2026-10-03T17:49:31.9790588Z Hosted Compute Agent
+2026-10-03T17:49:31.9791569Z Version: 20260901.588
+2026-10-03T17:49:31.9792535Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+2026-10-03T17:49:31.9793862Z Build Date: 2026-09-01T19:56:44Z
+2026-10-03T17:49:31.9794964Z Worker ID: {2c5b285d-ab08-4cc8-a55d-8650cefc9f4c}
+2026-10-03T17:49:31.9796290Z Azure Region: westcentralus
+2026-10-03T17:49:31.9797528Z ##[endgroup]
+2026-10-03T17:49:31.9799629Z ##[group]Operating System
+2026-10-03T17:49:31.9800773Z Ubuntu
+2026-10-03T17:49:31.9801586Z 24.04.5
+2026-10-03T17:49:31.9802453Z LTS
+2026-10-03T17:49:31.9803315Z ##[endgroup]
+2026-10-03T17:49:31.9804186Z ##[group]Runner Image
+2026-10-03T17:49:31.9805240Z Image: ubuntu-24.04
+2026-10-03T17:49:31.9806247Z Version: 20260927.320.1
+2026-10-03T17:49:31.9808711Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-03T17:49:31.9811278Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+2026-10-03T17:49:31.9812956Z ##[endgroup]
+2026-10-03T17:49:31.9814767Z ##[group]GITHUB_TOKEN Permissions
+2026-10-03T17:49:31.9818443Z Contents: write
+2026-10-03T17:49:31.9819376Z Metadata: read
+2026-10-03T17:49:31.9820380Z ##[endgroup]
+2026-10-03T17:49:31.9823744Z Secret source: Actions
+2026-10-03T17:49:31.9825188Z Cache mode: write
+2026-10-03T17:49:31.9826750Z Prepare workflow directory
+2026-10-03T17:49:32.0779151Z Prepare all required actions
+2026-10-03T17:49:32.0846510Z Getting action download info
+2026-10-03T17:49:32.3485735Z Download action repository 'actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1' (SHA:ece7cb06caefa5fff74198d8649806c4678c61a1)
+2026-10-03T17:49:32.5457048Z Complete job name: importar-y-verificar
+2026-10-03T17:49:32.6265845Z ##[group]Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+2026-10-03T17:49:32.6266981Z with:
+2026-10-03T17:49:32.6267894Z   python-version: 3.12.14
+2026-10-03T17:49:32.6268417Z   check-latest: false
+2026-10-03T17:49:32.6272135Z   token: ***
+2026-10-03T17:49:32.6272623Z   update-environment: true
+2026-10-03T17:49:32.6273188Z   allow-prereleases: false
+2026-10-03T17:49:32.6273705Z   freethreaded: false
+2026-10-03T17:49:32.6274447Z env:
+2026-10-03T17:49:32.6278195Z   GH_TOKEN: ***
+2026-10-03T17:49:32.6278790Z   CP10_BOOTSTRAP_COMMIT: 436fb01ac4656171da31603a306587d6cba559f9
+2026-10-03T17:49:32.6279492Z   GIT_TERMINAL_PROMPT: 0
+2026-10-03T17:49:32.6279987Z   OPENBLAS_NUM_THREADS: 1
+2026-10-03T17:49:32.6280477Z   OMP_NUM_THREADS: 1
+2026-10-03T17:49:32.6280941Z   MKL_NUM_THREADS: 1
+2026-10-03T17:49:32.6281448Z   PYTHONDONTWRITEBYTECODE: 1
+2026-10-03T17:49:32.6281971Z   MPLBACKEND: Agg
+2026-10-03T17:49:32.6282421Z ##[endgroup]
+2026-10-03T17:49:32.7802669Z ##[group]Installed versions
+2026-10-03T17:49:32.7863062Z Successfully set up CPython (3.12.14)
+2026-10-03T17:49:32.7866555Z ##[endgroup]
+2026-10-03T17:49:32.8162419Z ##[group]Run git -c credential.helper= -c credential.helper='!gh auth git-credential' clone --branch migration/cp10 --single-branch --depth=20 https://github.com/diegolezaval/Proyecto_Runas.git tooling
+2026-10-03T17:49:32.8166402Z [36;1mgit -c credential.helper= -c credential.helper='!gh auth git-credential' clone --branch migration/cp10 --single-branch --depth=20 https://github.com/diegolezaval/Proyecto_Runas.git tooling[0m
+2026-10-03T17:49:32.8169402Z [36;1mtest "$(git -C tooling rev-parse HEAD)" = "$GITHUB_SHA"[0m
+2026-10-03T17:49:32.8484721Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-03T17:49:32.8485455Z env:
+2026-10-03T17:49:32.8489440Z   GH_TOKEN: ***
+2026-10-03T17:49:32.8490062Z   CP10_BOOTSTRAP_COMMIT: 436fb01ac4656171da31603a306587d6cba559f9
+2026-10-03T17:49:32.8490769Z   GIT_TERMINAL_PROMPT: 0
+2026-10-03T17:49:32.8491266Z   OPENBLAS_NUM_THREADS: 1
+2026-10-03T17:49:32.8491755Z   OMP_NUM_THREADS: 1
+2026-10-03T17:49:32.8492260Z   MKL_NUM_THREADS: 1
+2026-10-03T17:49:32.8492735Z   PYTHONDONTWRITEBYTECODE: 1
+2026-10-03T17:49:32.8493527Z   MPLBACKEND: Agg
+2026-10-03T17:49:32.8494081Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-03T17:49:32.8494897Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-10-03T17:49:32.8495701Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-03T17:49:32.8496476Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-03T17:49:32.8497352Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-03T17:49:32.8498118Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-10-03T17:49:32.8498781Z ##[endgroup]
+2026-10-03T17:49:32.8702350Z Cloning into 'tooling'...
+2026-10-03T17:49:33.6337845Z ##[group]Run python tooling/migration/ejecutar_migracion_GitHub_CP10.py
+2026-10-03T17:49:33.6338928Z [36;1mpython tooling/migration/ejecutar_migracion_GitHub_CP10.py[0m
+2026-10-03T17:49:33.6411335Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-03T17:49:33.6412080Z env:
+2026-10-03T17:49:33.6416091Z   GH_TOKEN: ***
+2026-10-03T17:49:33.6416772Z   CP10_BOOTSTRAP_COMMIT: 436fb01ac4656171da31603a306587d6cba559f9
+2026-10-03T17:49:33.6417782Z   GIT_TERMINAL_PROMPT: 0
+2026-10-03T17:49:33.6418315Z   OPENBLAS_NUM_THREADS: 1
+2026-10-03T17:49:33.6418838Z   OMP_NUM_THREADS: 1
+2026-10-03T17:49:33.6419329Z   MKL_NUM_THREADS: 1
+2026-10-03T17:49:33.6419840Z   PYTHONDONTWRITEBYTECODE: 1
+2026-10-03T17:49:33.6420391Z   MPLBACKEND: Agg
+2026-10-03T17:49:33.6420998Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-03T17:49:33.6421888Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-10-03T17:49:33.6422844Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-03T17:49:33.6423698Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-03T17:49:33.6424529Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-03T17:49:33.6425352Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-10-03T17:49:33.6426071Z ##[endgroup]
+2026-10-03T17:49:40.6921887Z Cloning into '/tmp/cp10_migracion_remota_lrws144t/importacion'...
+2026-10-03T17:49:42.0662355Z The bundle contains these 3 refs:
+2026-10-03T17:49:42.0663584Z /tmp/cp10_migracion_remota_lrws144t/entrada/Proyecto_Runas_CP10_Git.bundle is okay
+2026-10-03T17:49:42.0664215Z 47b5e56cf3fd9f90b865ad2ddcaa313c2b43fa81 refs/heads/main
+2026-10-03T17:49:42.0664692Z b361fae70ba0c90a4d7a73e6f9049881bc702982 refs/tags/CP10
+2026-10-03T17:49:42.0665129Z 47b5e56cf3fd9f90b865ad2ddcaa313c2b43fa81 HEAD
+2026-10-03T17:49:42.0665534Z The bundle records a complete history.
+2026-10-03T17:49:42.0665899Z The bundle uses this hash algorithm: sha1
+2026-10-03T17:49:44.4456260Z Collecting numpy==2.3.5 (from -r /tmp/cp10_migracion_remota_lrws144t/importacion/requirements.txt (line 1))
+2026-10-03T17:49:44.5453739Z   Downloading numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-10-03T17:49:44.7079754Z Collecting scipy==1.17.0 (from -r /tmp/cp10_migracion_remota_lrws144t/importacion/requirements.txt (line 2))
+2026-10-03T17:49:44.7282464Z   Downloading scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-10-03T17:49:44.8799565Z Collecting matplotlib==3.10.8 (from -r /tmp/cp10_migracion_remota_lrws144t/importacion/requirements.txt (line 3))
+2026-10-03T17:49:44.9001746Z   Downloading matplotlib-3.10.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
+2026-10-03T17:49:44.9414740Z Collecting threadpoolctl==3.6.0 (from -r /tmp/cp10_migracion_remota_lrws144t/importacion/requirements.txt (line 4))
+2026-10-03T17:49:44.9637061Z   Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+2026-10-03T17:49:45.0364000Z Collecting contourpy>=1.0.1 (from matplotlib==3.10.8->-r /tmp/cp10_migracion_remota_lrws144t/importacion/requirements.txt (line 3))
+2026-10-03T17:49:45.0560885Z   Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+2026-10-03T17:49:45.0841171Z Collecting cycler>=0.10 (from matplotlib==3.10.8->-r /tmp/cp10_migracion_remota_lrws144t/importacion/requirements.txt (line 3))
+2026-10-03T17:49:45.1035265Z   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2026-10-03T17:49:45.2555185Z Collecting fonttools>=4.22.0 (from matplotlib==3.10.8->-r /tmp/cp10_migracion_remota_lrws144t/importacion/requirements.txt (line 3))
+2026-10-03T17:49:45.2758030Z   Downloading fonttools-4.66.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (130 kB)
+2026-10-03T17:49:45.3820121Z Collecting kiwisolver>=1.3.1 (from matplotlib==3.10.8->-r /tmp/cp10_migracion_remota_lrws144t/importacion/requirements.txt (line 3))
+2026-10-03T17:49:45.4020204Z   Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+2026-10-03T17:49:45.4350930Z Collecting packaging>=20.0 (from matplotlib==3.10.8->-r /tmp/cp10_migracion_remota_lrws144t/importacion/requirements.txt (line 3))
+2026-10-03T17:49:45.4547059Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+2026-10-03T17:49:45.6383242Z Collecting pillow>=8 (from matplotlib==3.10.8->-r /tmp/cp10_migracion_remota_lrws144t/importacion/requirements.txt (line 3))
+2026-10-03T17:49:45.6581527Z   Downloading pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2026-10-03T17:49:45.6993472Z Collecting pyparsing>=3 (from matplotlib==3.10.8->-r /tmp/cp10_migracion_remota_lrws144t/importacion/requirements.txt (line 3))
+2026-10-03T17:49:45.7191886Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+2026-10-03T17:49:45.7505377Z Collecting python-dateutil>=2.7 (from matplotlib==3.10.8->-r /tmp/cp10_migracion_remota_lrws144t/importacion/requirements.txt (line 3))
+2026-10-03T17:49:45.7703291Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2026-10-03T17:49:45.8037463Z Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib==3.10.8->-r /tmp/cp10_migracion_remota_lrws144t/importacion/requirements.txt (line 3))
+2026-10-03T17:49:45.8233096Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2026-10-03T17:49:45.8477861Z Downloading numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+2026-10-03T17:49:46.0560725Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 92.0 MB/s  0:00:00
+2026-10-03T17:49:46.0673383Z Downloading scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.0 MB)
+2026-10-03T17:49:46.2201256Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.0/35.0 MB 232.7 MB/s  0:00:00
+2026-10-03T17:49:46.2405054Z Downloading matplotlib-3.10.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+2026-10-03T17:49:46.2795555Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 235.6 MB/s  0:00:00
+2026-10-03T17:49:46.2996365Z Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+2026-10-03T17:49:46.3221246Z Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (383 kB)
+2026-10-03T17:49:46.3451631Z Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2026-10-03T17:49:46.3669355Z Downloading fonttools-4.66.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+2026-10-03T17:49:46.3867471Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 316.8 MB/s  0:00:00
+2026-10-03T17:49:46.4069144Z Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+2026-10-03T17:49:46.4160716Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 250.8 MB/s  0:00:00
+2026-10-03T17:49:46.4359192Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+2026-10-03T17:49:46.4580412Z Downloading pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+2026-10-03T17:49:46.4804438Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 338.7 MB/s  0:00:00
+2026-10-03T17:49:46.5005092Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+2026-10-03T17:49:46.5225283Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2026-10-03T17:49:46.5443622Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2026-10-03T17:49:46.7870805Z Installing collected packages: threadpoolctl, six, pyparsing, pillow, packaging, numpy, kiwisolver, fonttools, cycler, scipy, python-dateutil, contourpy, matplotlib
+2026-10-03T17:49:56.7257891Z 
+2026-10-03T17:49:56.7270878Z Successfully installed contourpy-1.4.0 cycler-0.12.1 fonttools-4.66.1 kiwisolver-1.5.1 matplotlib-3.10.8 numpy-2.3.5 packaging-26.3 pillow-12.3.0 pyparsing-3.3.3 python-dateutil-2.9.0.post0 scipy-1.17.0 six-1.17.0 threadpoolctl-3.6.0
+2026-10-03T17:50:00.7091174Z To https://github.com/diegolezaval/Proyecto_Runas.git
+2026-10-03T17:50:00.7119386Z  + 436fb01...47b5e56 main -> main (forced update)
+2026-10-03T17:50:00.7120460Z  * [new tag]         CP10 -> CP10
+2026-10-03T17:50:00.7496107Z Cloning into '/tmp/cp10_migracion_remota_lrws144t/clon_GitHub'...
+2026-10-03T17:50:06.2194082Z {"check": "checkpoint.py", "passed": true}
+2026-10-03T17:50:06.3056871Z {"check": "verificar_entorno.py", "passed": true}
+2026-10-03T17:50:07.0684298Z {"check": "generar_continuidad.py", "passed": true}
+2026-10-03T17:50:07.1109373Z {"check": "generar_resumen_CP10.py", "passed": true}
+2026-10-03T17:50:07.6307757Z {"check": "verificar_continuidad.py", "passed": true}
+2026-10-03T17:50:09.2816956Z {"check": "auditar_arquitectura.py", "passed": true}
+2026-10-03T17:50:09.4031461Z {"check": "ejecutar_con_procedencia.py", "passed": true}
+2026-10-03T17:50:10.5548431Z Traceback (most recent call last):
+2026-10-03T17:50:10.5554327Z   File "/home/runner/work/Proyecto_Runas/Proyecto_Runas/tooling/migration/verificar_clon_CP10.py", line 87, in <module>
+2026-10-03T17:50:10.5555794Z     report=verify(a.clon.resolve(),a.zip.resolve(),a.origen);a.salida.parent.mkdir(parents=True,exist_ok=True);a.salida.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps({k:v for k,v in report.items() if k!='CP10_checks'},ensure_ascii=False,indent=2))
+2026-10-03T17:50:10.5557006Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-10-03T17:50:10.5558098Z   File "/home/runner/work/Proyecto_Runas/Proyecto_Runas/tooling/migration/verificar_clon_CP10.py", line 45, in verify
+2026-10-03T17:50:10.5559660Z     for args in [['checkpoint.py','--verificar'],['verificar_entorno.py','--cp10'],['generar_continuidad.py','--comprobar'],['generar_resumen_CP10.py','--comprobar'],['verificar_continuidad.py','--solo-lectura'],['auditar_arquitectura.py'],['ejecutar_con_procedencia.py','--verificar'],['verificar_CP10.py'],['probar_procedencia_futura.py'],['regresion_estructural.py']]:run(args)
+2026-10-03T17:50:10.5561322Z                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^
+2026-10-03T17:50:10.5562271Z   File "/home/runner/work/Proyecto_Runas/Proyecto_Runas/tooling/migration/verificar_clon_CP10.py", line 43, in run
+2026-10-03T17:50:10.5562808Z     assert r.returncode==0,r.stdout+r.stderr
+2026-10-03T17:50:10.5563096Z            ^^^^^^^^^^^^^^^
+2026-10-03T17:50:10.5563326Z AssertionError: {
+2026-10-03T17:50:10.5563549Z   "passed": false,
+2026-10-03T17:50:10.5563758Z   "tests": {
+2026-10-03T17:50:10.5564017Z     "all_protocol_thresholds_match_original": true,
+2026-10-03T17:50:10.5564337Z     "four_closed_receipts_valid": true,
+2026-10-03T17:50:10.5564666Z     "final_comparison_observed_single_thread_pools": true,
+2026-10-03T17:50:10.5565110Z     "diagnostic_thread_observation_unknown_and_original_preserved": true,
+2026-10-03T17:50:10.5565623Z     "all_original_numerical_results_failures_figures_and_roadmap_unchanged": true,
+2026-10-03T17:50:10.5566041Z     "all_833_CP09_files_recoverable": true,
+2026-10-03T17:50:10.5566350Z     "unchanged:herramientas/modelo_m2.py": true,
+2026-10-03T17:50:10.5567060Z     "unchanged:herramientas/continuar_no_radial_m2.py": true,
+2026-10-03T17:50:10.5568636Z     "unchanged:herramientas/continuar_no_radial_adaptativo.py": true,
+2026-10-03T17:50:10.5569270Z     "unchanged:herramientas/fuerza_potencial_m2.c": true,
+2026-10-03T17:50:10.5569849Z     "unchanged:herramientas/acelerar_fuerza_m2.py": true,
+2026-10-03T17:50:10.5570537Z     "unchanged:datos/theta_comun.json": true,
+2026-10-03T17:50:10.5571071Z     "unchanged:datos/ensayo_no_radial_CP06.json": true,
+2026-10-03T17:50:10.5571606Z     "all_33_stage_identities_preserved": true,
+2026-10-03T17:50:10.5572097Z     "other_29_stage_records_identical": true,
+2026-10-03T17:50:10.5572837Z     "E00_E01_C0_closed_records_identical": true,
+2026-10-03T17:50:10.5573514Z     "all_original_stage_gates_and_dependencies_identical": true,
+2026-10-03T17:50:10.5574140Z     "general_research_stages_remain_partial": true,
+2026-10-03T17:50:10.5574637Z     "no_active_runs_in_delivery": true,
+2026-10-03T17:50:10.5575146Z {"check": "verificar_CP10.py", "passed": false}
+2026-10-03T17:50:10.5575803Z     "no_complete_primordials_declared": true,
+2026-10-03T17:50:10.5588368Z     "temporal_h0125:initial_Cauchy_fields_exactly_from_saved_CP04": false,
+2026-10-03T17:50:10.5589203Z     "temporal_h0125:source_hash": true,
+2026-10-03T17:50:10.5590003Z     "temporal_h0125:all_arrays_finite": true,
+2026-10-03T17:50:10.5590916Z     "temporal_h0125:completed_window": true,
+2026-10-03T17:50:10.5591689Z     "temporal_h0125:real_restart_from_valid_pilot": true,
+2026-10-03T17:50:10.5592504Z     "temporal_h0125:interrupted_segments_preserved_and_recovered": true,
+2026-10-03T17:50:10.5593528Z     "temporal_h0125:no_unclosed_receipt_segment": true,
+2026-10-03T17:50:10.5594325Z     "temporal_h0125:C_Numpy_force_equivalence": true,
+2026-10-03T17:50:10.5595271Z     "espacial_h00625:initial_Cauchy_fields_exactly_from_saved_CP04": false,
+2026-10-03T17:50:10.5596882Z     "espacial_h00625:source_hash": true,
+2026-10-03T17:50:10.5597789Z     "espacial_h00625:all_arrays_finite": true,
+2026-10-03T17:50:10.5598661Z     "espacial_h00625:completed_window": true,
+2026-10-03T17:50:10.5599451Z     "espacial_h00625:real_restart_from_valid_pilot": true,
+2026-10-03T17:50:10.5600321Z     "espacial_h00625:interrupted_segments_preserved_and_recovered": true,
+2026-10-03T17:50:10.5601196Z     "espacial_h00625:no_unclosed_receipt_segment": true,
+2026-10-03T17:50:10.5601949Z     "espacial_h00625:C_Numpy_force_equivalence": true,
+2026-10-03T17:50:10.5602974Z     "temporal_control_keeps_initial_data_exact": true,
+2026-10-03T17:50:10.5603734Z     "temporal_fino_h0125:saved_metrics_recovered": true,
+2026-10-03T17:50:10.5604625Z     "temporal_fino_h0125:unchanged_gate_correctly_applied": true,
+2026-10-03T17:50:10.5605749Z     "radial_fino_h0125_h00625:saved_metrics_recovered": true,
+2026-10-03T17:50:10.5606632Z     "radial_fino_h0125_h00625:unchanged_gate_correctly_applied": true,
+2026-10-03T17:50:10.5608075Z     "negative_or_positive_decision_matches_data": true,
+2026-10-03T17:50:10.5608824Z     "no_chi_phase_fitting_or_continuum_claim": true
+2026-10-03T17:50:10.5609446Z   },
+2026-10-03T17:50:10.5609948Z   "decision": "REFINAMIENTO_PENDIENTE",
+2026-10-03T17:50:10.5610741Z   "receipt_count": 4,
+2026-10-03T17:50:10.5611469Z   "scientific_campaigns_repeated": false,
+2026-10-03T17:50:10.5612122Z   "new_integration_steps_executed": false,
+2026-10-03T17:50:10.5614066Z   "scope": "Recibos, estados, construcción inicial, conservación histórica y recuperación de comparaciones. No certificado del continuo ni dispositivo."
+2026-10-03T17:50:10.5615308Z }
+2026-10-03T17:50:10.5615668Z 
+2026-10-03T17:50:10.7655846Z Traceback (most recent call last):
+2026-10-03T17:50:10.7660730Z   File "/home/runner/work/Proyecto_Runas/Proyecto_Runas/tooling/migration/ejecutar_migracion_GitHub_CP10.py", line 187, in <module>
+2026-10-03T17:50:10.7661372Z     main()
+2026-10-03T17:50:10.7662310Z   File "/home/runner/work/Proyecto_Runas/Proyecto_Runas/tooling/migration/ejecutar_migracion_GitHub_CP10.py", line 121, in main
+2026-10-03T17:50:10.7663621Z     run([sys.executable, str(TOOLS / 'verificar_clon_CP10.py'), '--clon', str(clone),
+2026-10-03T17:50:10.7664650Z   File "/home/runner/work/Proyecto_Runas/Proyecto_Runas/tooling/migration/ejecutar_migracion_GitHub_CP10.py", line 38, in run
+2026-10-03T17:50:10.7665561Z     result = subprocess.run(command, cwd=cwd, text=True, capture_output=capture,
+2026-10-03T17:50:10.7666153Z              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-10-03T17:50:10.7666983Z   File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/subprocess.py", line 571, in run
+2026-10-03T17:50:10.7734251Z     raise CalledProcessError(retcode, process.args,
+2026-10-03T17:50:10.7738057Z subprocess.CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.12.14/x64/bin/python', '/home/runner/work/Proyecto_Runas/Proyecto_Runas/tooling/migration/verificar_clon_CP10.py', '--clon', '/tmp/cp10_migracion_remota_lrws144t/clon_GitHub', '--zip', '/tmp/cp10_migracion_remota_lrws144t/entrada/Proyecto_Runas_M2_4_2_CP10_MEDIADOR_ESPACIOTEMPORAL.zip', '--salida', '/tmp/cp10_migracion_remota_lrws144t/Comprobacion_clon_GitHub_CP10.json', '--origen', 'github']' returned non-zero exit status 1.
+2026-10-03T17:50:10.7846654Z ##[error]Process completed with exit code 1.
+2026-10-03T17:50:10.7951323Z Cleaning up orphan processes
