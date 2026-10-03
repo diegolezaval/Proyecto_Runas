@@ -1,0 +1,123 @@
+{
+  "schema_version": "4.1.0",
+  "mode": "completa",
+  "passed": true,
+  "python": "3.12.14",
+  "runs": [
+    {
+      "script": "ensayo_microscopico.py",
+      "returncode": 0,
+      "elapsed_seconds": 1.0596164210001007,
+      "log": "validacion/reproduccion/completa/01_ensayo_microscopico.log"
+    },
+    {
+      "script": "correspondencia_micro.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.9486530379999749,
+      "log": "validacion/reproduccion/completa/02_correspondencia_micro.log"
+    },
+    {
+      "script": "complecion_escalar.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.8467512639999768,
+      "log": "validacion/reproduccion/completa/03_complecion_escalar.log"
+    },
+    {
+      "script": "preparacion_y_motor.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.7741183089999595,
+      "log": "validacion/reproduccion/completa/04_preparacion_y_motor.log"
+    },
+    {
+      "script": "graficos_micro.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.8164061729999048,
+      "log": "validacion/reproduccion/completa/05_graficos_micro.log"
+    },
+    {
+      "script": "resultados_micro.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.021572220000052766,
+      "log": "validacion/reproduccion/completa/06_resultados_micro.log"
+    },
+    {
+      "script": "cierre_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 2.2930073229999834,
+      "log": "validacion/reproduccion/completa/07_cierre_m2.log"
+    },
+    {
+      "script": "dinamica_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 3.0034218939999846,
+      "log": "validacion/reproduccion/completa/08_dinamica_m2.log"
+    },
+    {
+      "script": "contrastes_r1.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.7551491839999471,
+      "log": "validacion/reproduccion/completa/09_contrastes_r1.log"
+    },
+    {
+      "script": "guia_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 3.0298900669999966,
+      "log": "validacion/reproduccion/completa/10_guia_m2.log"
+    },
+    {
+      "script": "capilaridad_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 5.195509497000103,
+      "log": "validacion/reproduccion/completa/11_capilaridad_m2.log"
+    },
+    {
+      "script": "catalogo_aceptacion_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.02476328900002045,
+      "log": "validacion/reproduccion/completa/12_catalogo_aceptacion_m2.log"
+    },
+    {
+      "script": "figuras_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 1.326099376000002,
+      "log": "validacion/reproduccion/completa/13_figuras_m2.log"
+    },
+    {
+      "script": "figuras_capilaridad.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.9548434900000302,
+      "log": "validacion/reproduccion/completa/14_figuras_capilaridad.log"
+    },
+    {
+      "script": "generar.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.1323774750001121,
+      "log": "validacion/reproduccion/completa/15_generar.log"
+    },
+    {
+      "script": "verificar.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.1874868569998398,
+      "log": "validacion/reproduccion/completa/16_verificar.log"
+    },
+    {
+      "script": "verificar_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.1576590929998929,
+      "log": "validacion/reproduccion/completa/17_verificar_m2.log"
+    },
+    {
+      "script": "verificar_capilaridad.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.979697017000035,
+      "log": "validacion/reproduccion/completa/18_verificar_capilaridad.log"
+    },
+    {
+      "script": "generar.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.14466059699998368,
+      "log": "validacion/reproduccion/completa/19_generar.log"
+    }
+  ],
+  "meaning": "Ejecucion y verificacion interna. No implica dispositivo aceptado. El manifiesto de entrega no se regenera automaticamente."
+}

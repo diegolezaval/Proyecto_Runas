@@ -1,0 +1,96 @@
+{
+  "schema_version": "4.0.0",
+  "primary_scalar_model": "M2",
+  "scope": "M2 completa el potencial escalar clásico; los portales y la realización conjunta de R1 siguen sin cerrar.",
+  "M2": {
+    "fields": [
+      "Phi complejo con U(1)",
+      "chi real neutro"
+    ],
+    "potential": "m_r^2 s + lambda0 s^2 + M_chi^2 chi^2/2 + g_chi chi s + h_chi chi^2 s/2",
+    "lambda0_over_lambda": 99,
+    "M_over_m": 100,
+    "omega_over_m": 0.9,
+    "g_definition": "M_chi*sqrt(2*(1+lambda0/lambda)*lambda)",
+    "h_definition": "lambda*M_chi^2/((1+lambda0/lambda)*m_r^2)",
+    "additional_scalar_couplings": "Cero en el ensayo clásico; no se afirma estabilidad de esa elección bajo renormalización.",
+    "portals": "A(s), B(s) del tratado; identificación conjunta no establecida.",
+    "legacy_mirror": "Razones conservadas para scripts previos; verificar igualdad con theta_comun.json."
+  },
+  "SI_density_example": {
+    "mass_energy_eV": 1,
+    "cutoff_eV": 1000000.0,
+    "target_density_J_m3": 1000000000.0,
+    "scope": "Ajuste de una densidad de M1; no calibración completa de M2/R1."
+  },
+  "graph": {
+    "wave_numbers_per_graphic_unit": [
+      0.713,
+      1.137,
+      1.829
+    ],
+    "junction": "Continuidad y suma de derivadas salientes cero; impedancias iguales",
+    "scope": "Grafo métrico con confinamiento supuesto; no solución tridimensional de la acción."
+  },
+  "kerr": {
+    "Delta_over_kappa": 2,
+    "K_normalized": 1,
+    "kappa_normalized": 1,
+    "drive_squared": 0.9,
+    "write_drive": 1.6,
+    "erase_drive": 0,
+    "time_intervals": [
+      0,
+      20,
+      30,
+      60,
+      70,
+      110
+    ],
+    "scope": "Envolvente clásica alimentada; no tasa de error térmico."
+  },
+  "converter": {
+    "kappa_external": 0.95,
+    "kappa_intrinsic": 0.05,
+    "gamma_external": 0.85,
+    "gamma_intrinsic": 0.15,
+    "cooperativity": 1,
+    "scope": "Respuesta monocromática; energía transferida distinta de rendimiento solar de trabajo."
+  },
+  "pump": {
+    "omega0": 1,
+    "gamma": 0.02,
+    "modulations": [
+      0.04,
+      0.12
+    ],
+    "scope": "Modulación prescrita, no demostración del gesto de preparación."
+  },
+  "engine": {
+    "hot_temperature_K": 5778,
+    "cold_temperature_K": 300,
+    "hot_transition_eV": 2,
+    "cold_transition_eV": 0.4,
+    "gamma_hot": 1,
+    "gamma_cold": 1,
+    "stimulated_rate": 1,
+    "scope": "Ciclo de tres niveles; tasas en unidad temporal adoptada y niveles aún no derivados de M2."
+  },
+  "chemical_case": {
+    "kBT_eV": 0.025851999786,
+    "state_A_eV": 0,
+    "state_B_eV": 0.05,
+    "transition_eV": 0.4,
+    "attempt_s_inv": 1000000000000.0,
+    "scope": "Ejemplo abstracto de balance detallado; no una especie química identificada."
+  },
+  "force_case": {
+    "a": 1e-10,
+    "sA": 1,
+    "gaussian_length_m": 0.02,
+    "mass_kg": 0.001,
+    "evaluation_x_m": 0.01,
+    "scope": "Gradiente de energía para perfil impuesto; no capacidad de un dispositivo."
+  },
+  "fundamental_parameter_authority": "datos/theta_comun.json"
+}

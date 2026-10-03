@@ -1,0 +1,2122 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "C0",
+  "contract": {
+    "scope": "New candidate research contract; historical R1 unchanged",
+    "allowed_resources": "Only autonomous Phi,chi; source/receiver and preparation must be specified; other resources define a separate candidate",
+    "type": "Stable guided transfer of a specified linear excitation",
+    "length_ell0": 100,
+    "mission_t0": 500,
+    "relative_frequency_band": [
+      0.01,
+      0.08
+    ],
+    "max_relative_field_signal": 0.01,
+    "min_received_energy_fraction": 0.8,
+    "max_balance_residual": 0.0001,
+    "max_distortion_fraction": 0.05,
+    "caveat": "Targets to test, not measured capabilities. Stability cannot be waived by fitting a lifetime."
+  },
+  "requirements_source": "hoja_ruta_original/Plan_investigacion.json:requisitos_P04",
+  "candidates": [
+    {
+      "branch": "C1",
+      "id": "tubo_positivo",
+      "hypothesis_changed": "Sin cambio respecto del tubo libre; frecuencia/perfil distinto no evitan la prueba.",
+      "status": "DESCARTADA_DENTRO_DEL_MODELO",
+      "information_value": "alto: excluye familia completa",
+      "cost": "analitico",
+      "advance_condition": "Cambiar nodos, simetria o recursos.",
+      "closure_condition": "Crecimiento por teorema condicionado.",
+      "evidence": "24.2; 18.4",
+      "requirements": [
+        {
+          "numero": 1,
+          "requisito": "Derivación desde la acción",
+          "prueba_y_observable": "Ecuaciones del fondo, perturbaciones y fronteras; fuente de cada fuerza",
+          "puerta": "Rechazar paredes, tensiones o amortiguamiento añadidos sin origen",
+          "resultado": "DERIVADA_BAJO_HIPOTESIS",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 2,
+          "requisito": "Existencia",
+          "prueba_y_observable": "Rama no trivial, regularidad, asintóticos, carga y energía total o por celda/longitud",
+          "puerta": "Newton fallido deja pregunta abierta; una obstrucción analítica sí excluye su clase",
+          "resultado": "EXISTENCIA_NO_AFIRMADA_PARA_TODA_LA_CLASE; EXCLUSION_CONDICIONAL",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 3,
+          "requisito": "Convergencia",
+          "prueba_y_observable": "Fondo, espectro, cuadraturas, caja y tiempo refinados de forma independiente",
+          "puerta": "Observable debe converger con margen respecto de la decisión",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 4,
+          "requisito": "Estabilidad radial",
+          "prueba_y_observable": "Segunda variación restringida y generador con ambos campos",
+          "puerta": "Un modo radial creciente convergente rechaza el estado",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 5,
+          "requisito": "Estabilidad longitudinal",
+          "prueba_y_observable": "Todo k relevante, incluidos k→0, subarmónicos y dispositivo finito",
+          "puerta": "No basta estabilizar el k elegido para transportar",
+          "resultado": "REFUTADA_DENTRO_DE_LA_CLASE",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 6,
+          "requisito": "Estabilidad azimutal",
+          "prueba_y_observable": "Todos los índices relevantes, acoplamientos de bandas y cota para índices altos",
+          "puerta": "Incluir flexión, división, desplazamiento y ruptura no axisimétrica",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 7,
+          "requisito": "Espectro de perturbaciones",
+          "prueba_y_observable": "Puntual, esencial, modos de simetría, resonancias y posibles bloques de Jordan",
+          "puerta": "No confundir estabilidad del Hessiano restringido, espectral, orbital y asintótica",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 8,
+          "requisito": "Conservación",
+          "prueba_y_observable": "E,Q,P,J y cargas adicionales si existen; flujos y fuentes",
+          "puerta": "El conjunto completo cierra balances dentro del error",
+          "resultado": "IDENTIDADES_DE_CONSERVACION; NO_CICLO_DE_DISPOSITIVO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 9,
+          "requisito": "Rango de estado",
+          "prueba_y_observable": "Región en Q, frecuencia, corriente, J, longitud, radio, entorno y tolerancias",
+          "puerta": "No aceptar un único punto; excluir vecindades de bifurcación no controladas",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 10,
+          "requisito": "Modos guiados",
+          "prueba_y_observable": "Perfil transversal, fracción de energía localizada y separación del continuo",
+          "puerta": "Distinguir modo ligado, resonancia con fuga y dispersión de vacío",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 11,
+          "requisito": "Dispersión",
+          "prueba_y_observable": "Ωₙ(k) de la acción linealizada; acoplamiento modal en estructuras no uniformes",
+          "puerta": "La dispersión de un grafo supuesto no realiza su guía",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 12,
+          "requisito": "Velocidad de grupo",
+          "prueba_y_observable": "dΩ/dk o fórmula biortogonal; contrastar propagación de paquetes",
+          "puerta": "Separar velocidad de grupo, energía y frente causal",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 13,
+          "requisito": "Flujo de energía",
+          "prueba_y_observable": "Integral de T⁰ᶻ, normalización modal, signo energético y flujo de carga",
+          "puerta": "Calcular energía transportada además de amplitud; auditar mezcla de bandas laterales",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 14,
+          "requisito": "Reflexión/transmisión",
+          "prueba_y_observable": "Matriz S con canales normalizados por flujo y fuentes incluidas",
+          "puerta": "Un balance unitario sólo vale con sus hipótesis; toda ganancia requiere fuente o descarga del fondo",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 15,
+          "requisito": "Pérdidas/radiación",
+          "prueba_y_observable": "Escape a continuo, conversión, defectos, curvatura y contacto; correlaciones de ruido",
+          "puerta": "Separar pérdida numérica de física; ni γ ni ruido se ajustan a R1",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 16,
+          "requisito": "Respuesta no lineal",
+          "prueba_y_observable": "Dependencia de dispersión y S con amplitud, armónicos, intermodulación y deformación del fondo",
+          "puerta": "Identificar saturación, choque, colapso o fragmentación si aparecen",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 17,
+          "requisito": "Amplitud/potencia",
+          "prueba_y_observable": "Mapa de amplitud, potencia pico/media, ciclo de trabajo y duración",
+          "puerta": "Límite operativo anterior al fallo, con margen y error conocidos",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 18,
+          "requisito": "Terminación física",
+          "prueba_y_observable": "Fondo axial completo, fuente/receptor, exterior saliente y reacción",
+          "puerta": "Una condición Neumann o absorbente de cálculo no constituye un terminal",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 19,
+          "requisito": "Empalmes",
+          "prueba_y_observable": "Cambio de sección, curva, unión, contacto y proximidad de otros enlaces",
+          "puerta": "Resolver modos atrapados, reflexión, diafonía e inestabilidades de unión",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 20,
+          "requisito": "Preparación/apagado",
+          "prueba_y_observable": "Transitorio desde fuente identificada, asentamiento, vaciado y destino de carga",
+          "puerta": "No inicializar el estado final ni borrar campos al terminar",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 21,
+          "requisito": "Balance energético completo",
+          "prueba_y_observable": "Construcción, mantenimiento, bombeo, señal, retorno, radiación, carga y retirada",
+          "puerta": "Publicar eficiencia neta y recursos del entorno; no doble contabilidad",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        },
+        {
+          "numero": 22,
+          "requisito": "Función P-04/R1",
+          "prueba_y_observable": "Predicción o medida con incertidumbre frente a contrato previamente declarado",
+          "puerta": "Admitir, revisar prestación/geometría o rechazar; conservar la comparación original",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 18.4"
+        }
+      ],
+      "reopen_condition": "Error en prueba o cambio de una hipotesis explicitada; fallo de Newton nunca es inexistencia."
+    },
+    {
+      "branch": "C1",
+      "id": "radial_con_nodos",
+      "hypothesis_changed": "f cambia de signo; falla la transformacion positiva de fase.",
+      "status": "ABIERTA",
+      "information_value": "medio: discrimina excitaciones",
+      "cost": "continuacion y espectro",
+      "advance_condition": "Region espectral sin crecimiento demostrada.",
+      "closure_condition": "Modo creciente convergente o prueba general.",
+      "evidence": null,
+      "requirements": [
+        {
+          "numero": 1,
+          "requisito": "Derivación desde la acción",
+          "prueba_y_observable": "Ecuaciones del fondo, perturbaciones y fronteras; fuente de cada fuerza",
+          "puerta": "Rechazar paredes, tensiones o amortiguamiento añadidos sin origen",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 2,
+          "requisito": "Existencia",
+          "prueba_y_observable": "Rama no trivial, regularidad, asintóticos, carga y energía total o por celda/longitud",
+          "puerta": "Newton fallido deja pregunta abierta; una obstrucción analítica sí excluye su clase",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 3,
+          "requisito": "Convergencia",
+          "prueba_y_observable": "Fondo, espectro, cuadraturas, caja y tiempo refinados de forma independiente",
+          "puerta": "Observable debe converger con margen respecto de la decisión",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 4,
+          "requisito": "Estabilidad radial",
+          "prueba_y_observable": "Segunda variación restringida y generador con ambos campos",
+          "puerta": "Un modo radial creciente convergente rechaza el estado",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 5,
+          "requisito": "Estabilidad longitudinal",
+          "prueba_y_observable": "Todo k relevante, incluidos k→0, subarmónicos y dispositivo finito",
+          "puerta": "No basta estabilizar el k elegido para transportar",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 6,
+          "requisito": "Estabilidad azimutal",
+          "prueba_y_observable": "Todos los índices relevantes, acoplamientos de bandas y cota para índices altos",
+          "puerta": "Incluir flexión, división, desplazamiento y ruptura no axisimétrica",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 7,
+          "requisito": "Espectro de perturbaciones",
+          "prueba_y_observable": "Puntual, esencial, modos de simetría, resonancias y posibles bloques de Jordan",
+          "puerta": "No confundir estabilidad del Hessiano restringido, espectral, orbital y asintótica",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 8,
+          "requisito": "Conservación",
+          "prueba_y_observable": "E,Q,P,J y cargas adicionales si existen; flujos y fuentes",
+          "puerta": "El conjunto completo cierra balances dentro del error",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 9,
+          "requisito": "Rango de estado",
+          "prueba_y_observable": "Región en Q, frecuencia, corriente, J, longitud, radio, entorno y tolerancias",
+          "puerta": "No aceptar un único punto; excluir vecindades de bifurcación no controladas",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 10,
+          "requisito": "Modos guiados",
+          "prueba_y_observable": "Perfil transversal, fracción de energía localizada y separación del continuo",
+          "puerta": "Distinguir modo ligado, resonancia con fuga y dispersión de vacío",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 11,
+          "requisito": "Dispersión",
+          "prueba_y_observable": "Ωₙ(k) de la acción linealizada; acoplamiento modal en estructuras no uniformes",
+          "puerta": "La dispersión de un grafo supuesto no realiza su guía",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 12,
+          "requisito": "Velocidad de grupo",
+          "prueba_y_observable": "dΩ/dk o fórmula biortogonal; contrastar propagación de paquetes",
+          "puerta": "Separar velocidad de grupo, energía y frente causal",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 13,
+          "requisito": "Flujo de energía",
+          "prueba_y_observable": "Integral de T⁰ᶻ, normalización modal, signo energético y flujo de carga",
+          "puerta": "Calcular energía transportada además de amplitud; auditar mezcla de bandas laterales",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 14,
+          "requisito": "Reflexión/transmisión",
+          "prueba_y_observable": "Matriz S con canales normalizados por flujo y fuentes incluidas",
+          "puerta": "Un balance unitario sólo vale con sus hipótesis; toda ganancia requiere fuente o descarga del fondo",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 15,
+          "requisito": "Pérdidas/radiación",
+          "prueba_y_observable": "Escape a continuo, conversión, defectos, curvatura y contacto; correlaciones de ruido",
+          "puerta": "Separar pérdida numérica de física; ni γ ni ruido se ajustan a R1",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 16,
+          "requisito": "Respuesta no lineal",
+          "prueba_y_observable": "Dependencia de dispersión y S con amplitud, armónicos, intermodulación y deformación del fondo",
+          "puerta": "Identificar saturación, choque, colapso o fragmentación si aparecen",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 17,
+          "requisito": "Amplitud/potencia",
+          "prueba_y_observable": "Mapa de amplitud, potencia pico/media, ciclo de trabajo y duración",
+          "puerta": "Límite operativo anterior al fallo, con margen y error conocidos",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 18,
+          "requisito": "Terminación física",
+          "prueba_y_observable": "Fondo axial completo, fuente/receptor, exterior saliente y reacción",
+          "puerta": "Una condición Neumann o absorbente de cálculo no constituye un terminal",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 19,
+          "requisito": "Empalmes",
+          "prueba_y_observable": "Cambio de sección, curva, unión, contacto y proximidad de otros enlaces",
+          "puerta": "Resolver modos atrapados, reflexión, diafonía e inestabilidades de unión",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 20,
+          "requisito": "Preparación/apagado",
+          "prueba_y_observable": "Transitorio desde fuente identificada, asentamiento, vaciado y destino de carga",
+          "puerta": "No inicializar el estado final ni borrar campos al terminar",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 21,
+          "requisito": "Balance energético completo",
+          "prueba_y_observable": "Construcción, mantenimiento, bombeo, señal, retorno, radiación, carga y retirada",
+          "puerta": "Publicar eficiencia neta y recursos del entorno; no doble contabilidad",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 22,
+          "requisito": "Función P-04/R1",
+          "prueba_y_observable": "Predicción o medida con incertidumbre frente a contrato previamente declarado",
+          "puerta": "Admitir, revisar prestación/geometría o rechazar; conservar la comparación original",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        }
+      ],
+      "reopen_condition": "Error en prueba o cambio de una hipotesis explicitada; fallo de Newton nunca es inexistencia."
+    },
+    {
+      "branch": "C2",
+      "id": "corriente_uniforme",
+      "hypothesis_changed": "Boost axial; no apoyo independiente.",
+      "status": "PARCIAL",
+      "information_value": "alto",
+      "cost": "analitico",
+      "advance_condition": "Contrato finito y ganancia acotada con terminales.",
+      "closure_condition": "Para cL²<0 persiste crecimiento temporal.",
+      "evidence": "21.1; 24.4",
+      "requirements": [
+        {
+          "numero": 1,
+          "requisito": "Derivación desde la acción",
+          "prueba_y_observable": "Ecuaciones del fondo, perturbaciones y fronteras; fuente de cada fuerza",
+          "puerta": "Rechazar paredes, tensiones o amortiguamiento añadidos sin origen",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 2,
+          "requisito": "Existencia",
+          "prueba_y_observable": "Rama no trivial, regularidad, asintóticos, carga y energía total o por celda/longitud",
+          "puerta": "Newton fallido deja pregunta abierta; una obstrucción analítica sí excluye su clase",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 3,
+          "requisito": "Convergencia",
+          "prueba_y_observable": "Fondo, espectro, cuadraturas, caja y tiempo refinados de forma independiente",
+          "puerta": "Observable debe converger con margen respecto de la decisión",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 4,
+          "requisito": "Estabilidad radial",
+          "prueba_y_observable": "Segunda variación restringida y generador con ambos campos",
+          "puerta": "Un modo radial creciente convergente rechaza el estado",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 5,
+          "requisito": "Estabilidad longitudinal",
+          "prueba_y_observable": "Todo k relevante, incluidos k→0, subarmónicos y dispositivo finito",
+          "puerta": "No basta estabilizar el k elegido para transportar",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 6,
+          "requisito": "Estabilidad azimutal",
+          "prueba_y_observable": "Todos los índices relevantes, acoplamientos de bandas y cota para índices altos",
+          "puerta": "Incluir flexión, división, desplazamiento y ruptura no axisimétrica",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 7,
+          "requisito": "Espectro de perturbaciones",
+          "prueba_y_observable": "Puntual, esencial, modos de simetría, resonancias y posibles bloques de Jordan",
+          "puerta": "No confundir estabilidad del Hessiano restringido, espectral, orbital y asintótica",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 8,
+          "requisito": "Conservación",
+          "prueba_y_observable": "E,Q,P,J y cargas adicionales si existen; flujos y fuentes",
+          "puerta": "El conjunto completo cierra balances dentro del error",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 9,
+          "requisito": "Rango de estado",
+          "prueba_y_observable": "Región en Q, frecuencia, corriente, J, longitud, radio, entorno y tolerancias",
+          "puerta": "No aceptar un único punto; excluir vecindades de bifurcación no controladas",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 10,
+          "requisito": "Modos guiados",
+          "prueba_y_observable": "Perfil transversal, fracción de energía localizada y separación del continuo",
+          "puerta": "Distinguir modo ligado, resonancia con fuga y dispersión de vacío",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 11,
+          "requisito": "Dispersión",
+          "prueba_y_observable": "Ωₙ(k) de la acción linealizada; acoplamiento modal en estructuras no uniformes",
+          "puerta": "La dispersión de un grafo supuesto no realiza su guía",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 12,
+          "requisito": "Velocidad de grupo",
+          "prueba_y_observable": "dΩ/dk o fórmula biortogonal; contrastar propagación de paquetes",
+          "puerta": "Separar velocidad de grupo, energía y frente causal",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 13,
+          "requisito": "Flujo de energía",
+          "prueba_y_observable": "Integral de T⁰ᶻ, normalización modal, signo energético y flujo de carga",
+          "puerta": "Calcular energía transportada además de amplitud; auditar mezcla de bandas laterales",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 14,
+          "requisito": "Reflexión/transmisión",
+          "prueba_y_observable": "Matriz S con canales normalizados por flujo y fuentes incluidas",
+          "puerta": "Un balance unitario sólo vale con sus hipótesis; toda ganancia requiere fuente o descarga del fondo",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 15,
+          "requisito": "Pérdidas/radiación",
+          "prueba_y_observable": "Escape a continuo, conversión, defectos, curvatura y contacto; correlaciones de ruido",
+          "puerta": "Separar pérdida numérica de física; ni γ ni ruido se ajustan a R1",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 16,
+          "requisito": "Respuesta no lineal",
+          "prueba_y_observable": "Dependencia de dispersión y S con amplitud, armónicos, intermodulación y deformación del fondo",
+          "puerta": "Identificar saturación, choque, colapso o fragmentación si aparecen",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 17,
+          "requisito": "Amplitud/potencia",
+          "prueba_y_observable": "Mapa de amplitud, potencia pico/media, ciclo de trabajo y duración",
+          "puerta": "Límite operativo anterior al fallo, con margen y error conocidos",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 18,
+          "requisito": "Terminación física",
+          "prueba_y_observable": "Fondo axial completo, fuente/receptor, exterior saliente y reacción",
+          "puerta": "Una condición Neumann o absorbente de cálculo no constituye un terminal",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 19,
+          "requisito": "Empalmes",
+          "prueba_y_observable": "Cambio de sección, curva, unión, contacto y proximidad de otros enlaces",
+          "puerta": "Resolver modos atrapados, reflexión, diafonía e inestabilidades de unión",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 20,
+          "requisito": "Preparación/apagado",
+          "prueba_y_observable": "Transitorio desde fuente identificada, asentamiento, vaciado y destino de carga",
+          "puerta": "No inicializar el estado final ni borrar campos al terminar",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 21,
+          "requisito": "Balance energético completo",
+          "prueba_y_observable": "Construcción, mantenimiento, bombeo, señal, retorno, radiación, carga y retirada",
+          "puerta": "Publicar eficiencia neta y recursos del entorno; no doble contabilidad",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 22,
+          "requisito": "Función P-04/R1",
+          "prueba_y_observable": "Predicción o medida con incertidumbre frente a contrato previamente declarado",
+          "puerta": "Admitir, revisar prestación/geometría o rechazar; conservar la comparación original",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        }
+      ],
+      "reopen_condition": "Error en prueba o cambio de una hipotesis explicitada; fallo de Newton nunca es inexistencia."
+    },
+    {
+      "branch": "C3",
+      "id": "arrollamiento_rigido_positivo",
+      "hypothesis_changed": "n distinto de cero; energia angular, mismo potencial y fase axial uniforme.",
+      "status": "DESCARTADA_DENTRO_DEL_MODELO",
+      "information_value": "alto: todo n finito",
+      "cost": "analitico",
+      "advance_condition": "Cambiar realmente a dinamica/no rigidez u otra hipotesis.",
+      "closure_condition": "Dilatacion/Schur conserva raiz creciente.",
+      "evidence": "24.2",
+      "requirements": [
+        {
+          "numero": 1,
+          "requisito": "Derivación desde la acción",
+          "prueba_y_observable": "Ecuaciones del fondo, perturbaciones y fronteras; fuente de cada fuerza",
+          "puerta": "Rechazar paredes, tensiones o amortiguamiento añadidos sin origen",
+          "resultado": "DERIVADA_BAJO_HIPOTESIS",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 2,
+          "requisito": "Existencia",
+          "prueba_y_observable": "Rama no trivial, regularidad, asintóticos, carga y energía total o por celda/longitud",
+          "puerta": "Newton fallido deja pregunta abierta; una obstrucción analítica sí excluye su clase",
+          "resultado": "EXISTENCIA_NO_AFIRMADA_PARA_TODA_LA_CLASE; EXCLUSION_CONDICIONAL",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 3,
+          "requisito": "Convergencia",
+          "prueba_y_observable": "Fondo, espectro, cuadraturas, caja y tiempo refinados de forma independiente",
+          "puerta": "Observable debe converger con margen respecto de la decisión",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 4,
+          "requisito": "Estabilidad radial",
+          "prueba_y_observable": "Segunda variación restringida y generador con ambos campos",
+          "puerta": "Un modo radial creciente convergente rechaza el estado",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 5,
+          "requisito": "Estabilidad longitudinal",
+          "prueba_y_observable": "Todo k relevante, incluidos k→0, subarmónicos y dispositivo finito",
+          "puerta": "No basta estabilizar el k elegido para transportar",
+          "resultado": "REFUTADA_DENTRO_DE_LA_CLASE",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 6,
+          "requisito": "Estabilidad azimutal",
+          "prueba_y_observable": "Todos los índices relevantes, acoplamientos de bandas y cota para índices altos",
+          "puerta": "Incluir flexión, división, desplazamiento y ruptura no axisimétrica",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 7,
+          "requisito": "Espectro de perturbaciones",
+          "prueba_y_observable": "Puntual, esencial, modos de simetría, resonancias y posibles bloques de Jordan",
+          "puerta": "No confundir estabilidad del Hessiano restringido, espectral, orbital y asintótica",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 8,
+          "requisito": "Conservación",
+          "prueba_y_observable": "E,Q,P,J y cargas adicionales si existen; flujos y fuentes",
+          "puerta": "El conjunto completo cierra balances dentro del error",
+          "resultado": "IDENTIDADES_DE_CONSERVACION; NO_CICLO_DE_DISPOSITIVO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 9,
+          "requisito": "Rango de estado",
+          "prueba_y_observable": "Región en Q, frecuencia, corriente, J, longitud, radio, entorno y tolerancias",
+          "puerta": "No aceptar un único punto; excluir vecindades de bifurcación no controladas",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 10,
+          "requisito": "Modos guiados",
+          "prueba_y_observable": "Perfil transversal, fracción de energía localizada y separación del continuo",
+          "puerta": "Distinguir modo ligado, resonancia con fuga y dispersión de vacío",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 11,
+          "requisito": "Dispersión",
+          "prueba_y_observable": "Ωₙ(k) de la acción linealizada; acoplamiento modal en estructuras no uniformes",
+          "puerta": "La dispersión de un grafo supuesto no realiza su guía",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 12,
+          "requisito": "Velocidad de grupo",
+          "prueba_y_observable": "dΩ/dk o fórmula biortogonal; contrastar propagación de paquetes",
+          "puerta": "Separar velocidad de grupo, energía y frente causal",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 13,
+          "requisito": "Flujo de energía",
+          "prueba_y_observable": "Integral de T⁰ᶻ, normalización modal, signo energético y flujo de carga",
+          "puerta": "Calcular energía transportada además de amplitud; auditar mezcla de bandas laterales",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 14,
+          "requisito": "Reflexión/transmisión",
+          "prueba_y_observable": "Matriz S con canales normalizados por flujo y fuentes incluidas",
+          "puerta": "Un balance unitario sólo vale con sus hipótesis; toda ganancia requiere fuente o descarga del fondo",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 15,
+          "requisito": "Pérdidas/radiación",
+          "prueba_y_observable": "Escape a continuo, conversión, defectos, curvatura y contacto; correlaciones de ruido",
+          "puerta": "Separar pérdida numérica de física; ni γ ni ruido se ajustan a R1",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 16,
+          "requisito": "Respuesta no lineal",
+          "prueba_y_observable": "Dependencia de dispersión y S con amplitud, armónicos, intermodulación y deformación del fondo",
+          "puerta": "Identificar saturación, choque, colapso o fragmentación si aparecen",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 17,
+          "requisito": "Amplitud/potencia",
+          "prueba_y_observable": "Mapa de amplitud, potencia pico/media, ciclo de trabajo y duración",
+          "puerta": "Límite operativo anterior al fallo, con margen y error conocidos",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 18,
+          "requisito": "Terminación física",
+          "prueba_y_observable": "Fondo axial completo, fuente/receptor, exterior saliente y reacción",
+          "puerta": "Una condición Neumann o absorbente de cálculo no constituye un terminal",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 19,
+          "requisito": "Empalmes",
+          "prueba_y_observable": "Cambio de sección, curva, unión, contacto y proximidad de otros enlaces",
+          "puerta": "Resolver modos atrapados, reflexión, diafonía e inestabilidades de unión",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 20,
+          "requisito": "Preparación/apagado",
+          "prueba_y_observable": "Transitorio desde fuente identificada, asentamiento, vaciado y destino de carga",
+          "puerta": "No inicializar el estado final ni borrar campos al terminar",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 21,
+          "requisito": "Balance energético completo",
+          "prueba_y_observable": "Construcción, mantenimiento, bombeo, señal, retorno, radiación, carga y retirada",
+          "puerta": "Publicar eficiencia neta y recursos del entorno; no doble contabilidad",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        },
+        {
+          "numero": 22,
+          "requisito": "Función P-04/R1",
+          "prueba_y_observable": "Predicción o medida con incertidumbre frente a contrato previamente declarado",
+          "puerta": "Admitir, revisar prestación/geometría o rechazar; conservar la comparación original",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2"
+        }
+      ],
+      "reopen_condition": "Error en prueba o cambio de una hipotesis explicitada; fallo de Newton nunca es inexistencia."
+    },
+    {
+      "branch": "C4",
+      "id": "capas_estaticas_positivas",
+      "hypothesis_changed": "Amplitud hueca/multicapa sin nodos; mediador dinamicamente consistente.",
+      "status": "DESCARTADA_DENTRO_DEL_MODELO",
+      "information_value": "alto",
+      "cost": "analitico",
+      "advance_condition": "Cambiar nodos/dinamica/recursos.",
+      "closure_condition": "Mismo teorema; chi no aporta pared independiente.",
+      "evidence": "24.2; 24.4",
+      "requirements": [
+        {
+          "numero": 1,
+          "requisito": "Derivación desde la acción",
+          "prueba_y_observable": "Ecuaciones del fondo, perturbaciones y fronteras; fuente de cada fuerza",
+          "puerta": "Rechazar paredes, tensiones o amortiguamiento añadidos sin origen",
+          "resultado": "DERIVADA_BAJO_HIPOTESIS",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 2,
+          "requisito": "Existencia",
+          "prueba_y_observable": "Rama no trivial, regularidad, asintóticos, carga y energía total o por celda/longitud",
+          "puerta": "Newton fallido deja pregunta abierta; una obstrucción analítica sí excluye su clase",
+          "resultado": "EXISTENCIA_NO_AFIRMADA_PARA_TODA_LA_CLASE; EXCLUSION_CONDICIONAL",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 3,
+          "requisito": "Convergencia",
+          "prueba_y_observable": "Fondo, espectro, cuadraturas, caja y tiempo refinados de forma independiente",
+          "puerta": "Observable debe converger con margen respecto de la decisión",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 4,
+          "requisito": "Estabilidad radial",
+          "prueba_y_observable": "Segunda variación restringida y generador con ambos campos",
+          "puerta": "Un modo radial creciente convergente rechaza el estado",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 5,
+          "requisito": "Estabilidad longitudinal",
+          "prueba_y_observable": "Todo k relevante, incluidos k→0, subarmónicos y dispositivo finito",
+          "puerta": "No basta estabilizar el k elegido para transportar",
+          "resultado": "REFUTADA_DENTRO_DE_LA_CLASE",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 6,
+          "requisito": "Estabilidad azimutal",
+          "prueba_y_observable": "Todos los índices relevantes, acoplamientos de bandas y cota para índices altos",
+          "puerta": "Incluir flexión, división, desplazamiento y ruptura no axisimétrica",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 7,
+          "requisito": "Espectro de perturbaciones",
+          "prueba_y_observable": "Puntual, esencial, modos de simetría, resonancias y posibles bloques de Jordan",
+          "puerta": "No confundir estabilidad del Hessiano restringido, espectral, orbital y asintótica",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 8,
+          "requisito": "Conservación",
+          "prueba_y_observable": "E,Q,P,J y cargas adicionales si existen; flujos y fuentes",
+          "puerta": "El conjunto completo cierra balances dentro del error",
+          "resultado": "IDENTIDADES_DE_CONSERVACION; NO_CICLO_DE_DISPOSITIVO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 9,
+          "requisito": "Rango de estado",
+          "prueba_y_observable": "Región en Q, frecuencia, corriente, J, longitud, radio, entorno y tolerancias",
+          "puerta": "No aceptar un único punto; excluir vecindades de bifurcación no controladas",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 10,
+          "requisito": "Modos guiados",
+          "prueba_y_observable": "Perfil transversal, fracción de energía localizada y separación del continuo",
+          "puerta": "Distinguir modo ligado, resonancia con fuga y dispersión de vacío",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 11,
+          "requisito": "Dispersión",
+          "prueba_y_observable": "Ωₙ(k) de la acción linealizada; acoplamiento modal en estructuras no uniformes",
+          "puerta": "La dispersión de un grafo supuesto no realiza su guía",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 12,
+          "requisito": "Velocidad de grupo",
+          "prueba_y_observable": "dΩ/dk o fórmula biortogonal; contrastar propagación de paquetes",
+          "puerta": "Separar velocidad de grupo, energía y frente causal",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 13,
+          "requisito": "Flujo de energía",
+          "prueba_y_observable": "Integral de T⁰ᶻ, normalización modal, signo energético y flujo de carga",
+          "puerta": "Calcular energía transportada además de amplitud; auditar mezcla de bandas laterales",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 14,
+          "requisito": "Reflexión/transmisión",
+          "prueba_y_observable": "Matriz S con canales normalizados por flujo y fuentes incluidas",
+          "puerta": "Un balance unitario sólo vale con sus hipótesis; toda ganancia requiere fuente o descarga del fondo",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 15,
+          "requisito": "Pérdidas/radiación",
+          "prueba_y_observable": "Escape a continuo, conversión, defectos, curvatura y contacto; correlaciones de ruido",
+          "puerta": "Separar pérdida numérica de física; ni γ ni ruido se ajustan a R1",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 16,
+          "requisito": "Respuesta no lineal",
+          "prueba_y_observable": "Dependencia de dispersión y S con amplitud, armónicos, intermodulación y deformación del fondo",
+          "puerta": "Identificar saturación, choque, colapso o fragmentación si aparecen",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 17,
+          "requisito": "Amplitud/potencia",
+          "prueba_y_observable": "Mapa de amplitud, potencia pico/media, ciclo de trabajo y duración",
+          "puerta": "Límite operativo anterior al fallo, con margen y error conocidos",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 18,
+          "requisito": "Terminación física",
+          "prueba_y_observable": "Fondo axial completo, fuente/receptor, exterior saliente y reacción",
+          "puerta": "Una condición Neumann o absorbente de cálculo no constituye un terminal",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 19,
+          "requisito": "Empalmes",
+          "prueba_y_observable": "Cambio de sección, curva, unión, contacto y proximidad de otros enlaces",
+          "puerta": "Resolver modos atrapados, reflexión, diafonía e inestabilidades de unión",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 20,
+          "requisito": "Preparación/apagado",
+          "prueba_y_observable": "Transitorio desde fuente identificada, asentamiento, vaciado y destino de carga",
+          "puerta": "No inicializar el estado final ni borrar campos al terminar",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 21,
+          "requisito": "Balance energético completo",
+          "prueba_y_observable": "Construcción, mantenimiento, bombeo, señal, retorno, radiación, carga y retirada",
+          "puerta": "Publicar eficiencia neta y recursos del entorno; no doble contabilidad",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        },
+        {
+          "numero": 22,
+          "requisito": "Función P-04/R1",
+          "prueba_y_observable": "Predicción o medida con incertidumbre frente a contrato previamente declarado",
+          "puerta": "Admitir, revisar prestación/geometría o rechazar; conservar la comparación original",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.2; 24.4"
+        }
+      ],
+      "reopen_condition": "Error en prueba o cambio de una hipotesis explicitada; fallo de Newton nunca es inexistencia."
+    },
+    {
+      "branch": "C5",
+      "id": "periodico_positivo",
+      "hypothesis_changed": "Amplitudes dependen periodicamente del eje; fase axial uniforme.",
+      "status": "DESCARTADA_DENTRO_DEL_MODELO",
+      "information_value": "alto: evita explorar celdas falsamente estables",
+      "cost": "analitico",
+      "advance_condition": "Cambiar fase axial, nodos, dinamica o contrato finito.",
+      "closure_condition": "Modo Bloch creciente en supercelda suficientemente larga.",
+      "evidence": "24.3",
+      "requirements": [
+        {
+          "numero": 1,
+          "requisito": "Derivación desde la acción",
+          "prueba_y_observable": "Ecuaciones del fondo, perturbaciones y fronteras; fuente de cada fuerza",
+          "puerta": "Rechazar paredes, tensiones o amortiguamiento añadidos sin origen",
+          "resultado": "DERIVADA_BAJO_HIPOTESIS",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 2,
+          "requisito": "Existencia",
+          "prueba_y_observable": "Rama no trivial, regularidad, asintóticos, carga y energía total o por celda/longitud",
+          "puerta": "Newton fallido deja pregunta abierta; una obstrucción analítica sí excluye su clase",
+          "resultado": "EXISTENCIA_NO_AFIRMADA_PARA_TODA_LA_CLASE; EXCLUSION_CONDICIONAL",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 3,
+          "requisito": "Convergencia",
+          "prueba_y_observable": "Fondo, espectro, cuadraturas, caja y tiempo refinados de forma independiente",
+          "puerta": "Observable debe converger con margen respecto de la decisión",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 4,
+          "requisito": "Estabilidad radial",
+          "prueba_y_observable": "Segunda variación restringida y generador con ambos campos",
+          "puerta": "Un modo radial creciente convergente rechaza el estado",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 5,
+          "requisito": "Estabilidad longitudinal",
+          "prueba_y_observable": "Todo k relevante, incluidos k→0, subarmónicos y dispositivo finito",
+          "puerta": "No basta estabilizar el k elegido para transportar",
+          "resultado": "REFUTADA_DENTRO_DE_LA_CLASE",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 6,
+          "requisito": "Estabilidad azimutal",
+          "prueba_y_observable": "Todos los índices relevantes, acoplamientos de bandas y cota para índices altos",
+          "puerta": "Incluir flexión, división, desplazamiento y ruptura no axisimétrica",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 7,
+          "requisito": "Espectro de perturbaciones",
+          "prueba_y_observable": "Puntual, esencial, modos de simetría, resonancias y posibles bloques de Jordan",
+          "puerta": "No confundir estabilidad del Hessiano restringido, espectral, orbital y asintótica",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 8,
+          "requisito": "Conservación",
+          "prueba_y_observable": "E,Q,P,J y cargas adicionales si existen; flujos y fuentes",
+          "puerta": "El conjunto completo cierra balances dentro del error",
+          "resultado": "IDENTIDADES_DE_CONSERVACION; NO_CICLO_DE_DISPOSITIVO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 9,
+          "requisito": "Rango de estado",
+          "prueba_y_observable": "Región en Q, frecuencia, corriente, J, longitud, radio, entorno y tolerancias",
+          "puerta": "No aceptar un único punto; excluir vecindades de bifurcación no controladas",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 10,
+          "requisito": "Modos guiados",
+          "prueba_y_observable": "Perfil transversal, fracción de energía localizada y separación del continuo",
+          "puerta": "Distinguir modo ligado, resonancia con fuga y dispersión de vacío",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 11,
+          "requisito": "Dispersión",
+          "prueba_y_observable": "Ωₙ(k) de la acción linealizada; acoplamiento modal en estructuras no uniformes",
+          "puerta": "La dispersión de un grafo supuesto no realiza su guía",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 12,
+          "requisito": "Velocidad de grupo",
+          "prueba_y_observable": "dΩ/dk o fórmula biortogonal; contrastar propagación de paquetes",
+          "puerta": "Separar velocidad de grupo, energía y frente causal",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 13,
+          "requisito": "Flujo de energía",
+          "prueba_y_observable": "Integral de T⁰ᶻ, normalización modal, signo energético y flujo de carga",
+          "puerta": "Calcular energía transportada además de amplitud; auditar mezcla de bandas laterales",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 14,
+          "requisito": "Reflexión/transmisión",
+          "prueba_y_observable": "Matriz S con canales normalizados por flujo y fuentes incluidas",
+          "puerta": "Un balance unitario sólo vale con sus hipótesis; toda ganancia requiere fuente o descarga del fondo",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 15,
+          "requisito": "Pérdidas/radiación",
+          "prueba_y_observable": "Escape a continuo, conversión, defectos, curvatura y contacto; correlaciones de ruido",
+          "puerta": "Separar pérdida numérica de física; ni γ ni ruido se ajustan a R1",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 16,
+          "requisito": "Respuesta no lineal",
+          "prueba_y_observable": "Dependencia de dispersión y S con amplitud, armónicos, intermodulación y deformación del fondo",
+          "puerta": "Identificar saturación, choque, colapso o fragmentación si aparecen",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 17,
+          "requisito": "Amplitud/potencia",
+          "prueba_y_observable": "Mapa de amplitud, potencia pico/media, ciclo de trabajo y duración",
+          "puerta": "Límite operativo anterior al fallo, con margen y error conocidos",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 18,
+          "requisito": "Terminación física",
+          "prueba_y_observable": "Fondo axial completo, fuente/receptor, exterior saliente y reacción",
+          "puerta": "Una condición Neumann o absorbente de cálculo no constituye un terminal",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 19,
+          "requisito": "Empalmes",
+          "prueba_y_observable": "Cambio de sección, curva, unión, contacto y proximidad de otros enlaces",
+          "puerta": "Resolver modos atrapados, reflexión, diafonía e inestabilidades de unión",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 20,
+          "requisito": "Preparación/apagado",
+          "prueba_y_observable": "Transitorio desde fuente identificada, asentamiento, vaciado y destino de carga",
+          "puerta": "No inicializar el estado final ni borrar campos al terminar",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 21,
+          "requisito": "Balance energético completo",
+          "prueba_y_observable": "Construcción, mantenimiento, bombeo, señal, retorno, radiación, carga y retirada",
+          "puerta": "Publicar eficiencia neta y recursos del entorno; no doble contabilidad",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 22,
+          "requisito": "Función P-04/R1",
+          "prueba_y_observable": "Predicción o medida con incertidumbre frente a contrato previamente declarado",
+          "puerta": "Admitir, revisar prestación/geometría o rechazar; conservar la comparación original",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        }
+      ],
+      "reopen_condition": "Error en prueba o cambio de una hipotesis explicitada; fallo de Newton nunca es inexistencia."
+    },
+    {
+      "branch": "C5",
+      "id": "periodico_con_fase_o_nodos",
+      "hypothesis_changed": "Cambia positividad o introduce flujo espacial real.",
+      "status": "ABIERTA",
+      "information_value": "alto",
+      "cost": "BVP2D y Bloch",
+      "advance_condition": "Fondo y banda util estables.",
+      "closure_condition": "Inestabilidad o ausencia demostrada bajo hipotesis.",
+      "evidence": null,
+      "requirements": [
+        {
+          "numero": 1,
+          "requisito": "Derivación desde la acción",
+          "prueba_y_observable": "Ecuaciones del fondo, perturbaciones y fronteras; fuente de cada fuerza",
+          "puerta": "Rechazar paredes, tensiones o amortiguamiento añadidos sin origen",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 2,
+          "requisito": "Existencia",
+          "prueba_y_observable": "Rama no trivial, regularidad, asintóticos, carga y energía total o por celda/longitud",
+          "puerta": "Newton fallido deja pregunta abierta; una obstrucción analítica sí excluye su clase",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 3,
+          "requisito": "Convergencia",
+          "prueba_y_observable": "Fondo, espectro, cuadraturas, caja y tiempo refinados de forma independiente",
+          "puerta": "Observable debe converger con margen respecto de la decisión",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 4,
+          "requisito": "Estabilidad radial",
+          "prueba_y_observable": "Segunda variación restringida y generador con ambos campos",
+          "puerta": "Un modo radial creciente convergente rechaza el estado",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 5,
+          "requisito": "Estabilidad longitudinal",
+          "prueba_y_observable": "Todo k relevante, incluidos k→0, subarmónicos y dispositivo finito",
+          "puerta": "No basta estabilizar el k elegido para transportar",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 6,
+          "requisito": "Estabilidad azimutal",
+          "prueba_y_observable": "Todos los índices relevantes, acoplamientos de bandas y cota para índices altos",
+          "puerta": "Incluir flexión, división, desplazamiento y ruptura no axisimétrica",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 7,
+          "requisito": "Espectro de perturbaciones",
+          "prueba_y_observable": "Puntual, esencial, modos de simetría, resonancias y posibles bloques de Jordan",
+          "puerta": "No confundir estabilidad del Hessiano restringido, espectral, orbital y asintótica",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 8,
+          "requisito": "Conservación",
+          "prueba_y_observable": "E,Q,P,J y cargas adicionales si existen; flujos y fuentes",
+          "puerta": "El conjunto completo cierra balances dentro del error",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 9,
+          "requisito": "Rango de estado",
+          "prueba_y_observable": "Región en Q, frecuencia, corriente, J, longitud, radio, entorno y tolerancias",
+          "puerta": "No aceptar un único punto; excluir vecindades de bifurcación no controladas",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 10,
+          "requisito": "Modos guiados",
+          "prueba_y_observable": "Perfil transversal, fracción de energía localizada y separación del continuo",
+          "puerta": "Distinguir modo ligado, resonancia con fuga y dispersión de vacío",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 11,
+          "requisito": "Dispersión",
+          "prueba_y_observable": "Ωₙ(k) de la acción linealizada; acoplamiento modal en estructuras no uniformes",
+          "puerta": "La dispersión de un grafo supuesto no realiza su guía",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 12,
+          "requisito": "Velocidad de grupo",
+          "prueba_y_observable": "dΩ/dk o fórmula biortogonal; contrastar propagación de paquetes",
+          "puerta": "Separar velocidad de grupo, energía y frente causal",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 13,
+          "requisito": "Flujo de energía",
+          "prueba_y_observable": "Integral de T⁰ᶻ, normalización modal, signo energético y flujo de carga",
+          "puerta": "Calcular energía transportada además de amplitud; auditar mezcla de bandas laterales",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 14,
+          "requisito": "Reflexión/transmisión",
+          "prueba_y_observable": "Matriz S con canales normalizados por flujo y fuentes incluidas",
+          "puerta": "Un balance unitario sólo vale con sus hipótesis; toda ganancia requiere fuente o descarga del fondo",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 15,
+          "requisito": "Pérdidas/radiación",
+          "prueba_y_observable": "Escape a continuo, conversión, defectos, curvatura y contacto; correlaciones de ruido",
+          "puerta": "Separar pérdida numérica de física; ni γ ni ruido se ajustan a R1",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 16,
+          "requisito": "Respuesta no lineal",
+          "prueba_y_observable": "Dependencia de dispersión y S con amplitud, armónicos, intermodulación y deformación del fondo",
+          "puerta": "Identificar saturación, choque, colapso o fragmentación si aparecen",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 17,
+          "requisito": "Amplitud/potencia",
+          "prueba_y_observable": "Mapa de amplitud, potencia pico/media, ciclo de trabajo y duración",
+          "puerta": "Límite operativo anterior al fallo, con margen y error conocidos",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 18,
+          "requisito": "Terminación física",
+          "prueba_y_observable": "Fondo axial completo, fuente/receptor, exterior saliente y reacción",
+          "puerta": "Una condición Neumann o absorbente de cálculo no constituye un terminal",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 19,
+          "requisito": "Empalmes",
+          "prueba_y_observable": "Cambio de sección, curva, unión, contacto y proximidad de otros enlaces",
+          "puerta": "Resolver modos atrapados, reflexión, diafonía e inestabilidades de unión",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 20,
+          "requisito": "Preparación/apagado",
+          "prueba_y_observable": "Transitorio desde fuente identificada, asentamiento, vaciado y destino de carga",
+          "puerta": "No inicializar el estado final ni borrar campos al terminar",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 21,
+          "requisito": "Balance energético completo",
+          "prueba_y_observable": "Construcción, mantenimiento, bombeo, señal, retorno, radiación, carga y retirada",
+          "puerta": "Publicar eficiencia neta y recursos del entorno; no doble contabilidad",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 22,
+          "requisito": "Función P-04/R1",
+          "prueba_y_observable": "Predicción o medida con incertidumbre frente a contrato previamente declarado",
+          "puerta": "Admitir, revisar prestación/geometría o rechazar; conservar la comparación original",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        }
+      ],
+      "reopen_condition": "Error en prueba o cambio de una hipotesis explicitada; fallo de Newton nunca es inexistencia."
+    },
+    {
+      "branch": "C6",
+      "id": "objeto_finito_superficie_lazo",
+      "hypothesis_changed": "Longitud finita o curvatura; sin simetria axial extendida.",
+      "status": "ABIERTA",
+      "information_value": "alto: cambia hipotesis decisiva",
+      "cost": "2D/3D, extremos incluidos",
+      "advance_condition": "Transporte entre dos regiones, estabilidad y recepcion.",
+      "closure_condition": "Contraccion, ruptura o inutilidad demostradas.",
+      "evidence": null,
+      "requirements": [
+        {
+          "numero": 1,
+          "requisito": "Derivación desde la acción",
+          "prueba_y_observable": "Ecuaciones del fondo, perturbaciones y fronteras; fuente de cada fuerza",
+          "puerta": "Rechazar paredes, tensiones o amortiguamiento añadidos sin origen",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 2,
+          "requisito": "Existencia",
+          "prueba_y_observable": "Rama no trivial, regularidad, asintóticos, carga y energía total o por celda/longitud",
+          "puerta": "Newton fallido deja pregunta abierta; una obstrucción analítica sí excluye su clase",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 3,
+          "requisito": "Convergencia",
+          "prueba_y_observable": "Fondo, espectro, cuadraturas, caja y tiempo refinados de forma independiente",
+          "puerta": "Observable debe converger con margen respecto de la decisión",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 4,
+          "requisito": "Estabilidad radial",
+          "prueba_y_observable": "Segunda variación restringida y generador con ambos campos",
+          "puerta": "Un modo radial creciente convergente rechaza el estado",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 5,
+          "requisito": "Estabilidad longitudinal",
+          "prueba_y_observable": "Todo k relevante, incluidos k→0, subarmónicos y dispositivo finito",
+          "puerta": "No basta estabilizar el k elegido para transportar",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 6,
+          "requisito": "Estabilidad azimutal",
+          "prueba_y_observable": "Todos los índices relevantes, acoplamientos de bandas y cota para índices altos",
+          "puerta": "Incluir flexión, división, desplazamiento y ruptura no axisimétrica",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 7,
+          "requisito": "Espectro de perturbaciones",
+          "prueba_y_observable": "Puntual, esencial, modos de simetría, resonancias y posibles bloques de Jordan",
+          "puerta": "No confundir estabilidad del Hessiano restringido, espectral, orbital y asintótica",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 8,
+          "requisito": "Conservación",
+          "prueba_y_observable": "E,Q,P,J y cargas adicionales si existen; flujos y fuentes",
+          "puerta": "El conjunto completo cierra balances dentro del error",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 9,
+          "requisito": "Rango de estado",
+          "prueba_y_observable": "Región en Q, frecuencia, corriente, J, longitud, radio, entorno y tolerancias",
+          "puerta": "No aceptar un único punto; excluir vecindades de bifurcación no controladas",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 10,
+          "requisito": "Modos guiados",
+          "prueba_y_observable": "Perfil transversal, fracción de energía localizada y separación del continuo",
+          "puerta": "Distinguir modo ligado, resonancia con fuga y dispersión de vacío",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 11,
+          "requisito": "Dispersión",
+          "prueba_y_observable": "Ωₙ(k) de la acción linealizada; acoplamiento modal en estructuras no uniformes",
+          "puerta": "La dispersión de un grafo supuesto no realiza su guía",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 12,
+          "requisito": "Velocidad de grupo",
+          "prueba_y_observable": "dΩ/dk o fórmula biortogonal; contrastar propagación de paquetes",
+          "puerta": "Separar velocidad de grupo, energía y frente causal",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 13,
+          "requisito": "Flujo de energía",
+          "prueba_y_observable": "Integral de T⁰ᶻ, normalización modal, signo energético y flujo de carga",
+          "puerta": "Calcular energía transportada además de amplitud; auditar mezcla de bandas laterales",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 14,
+          "requisito": "Reflexión/transmisión",
+          "prueba_y_observable": "Matriz S con canales normalizados por flujo y fuentes incluidas",
+          "puerta": "Un balance unitario sólo vale con sus hipótesis; toda ganancia requiere fuente o descarga del fondo",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 15,
+          "requisito": "Pérdidas/radiación",
+          "prueba_y_observable": "Escape a continuo, conversión, defectos, curvatura y contacto; correlaciones de ruido",
+          "puerta": "Separar pérdida numérica de física; ni γ ni ruido se ajustan a R1",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 16,
+          "requisito": "Respuesta no lineal",
+          "prueba_y_observable": "Dependencia de dispersión y S con amplitud, armónicos, intermodulación y deformación del fondo",
+          "puerta": "Identificar saturación, choque, colapso o fragmentación si aparecen",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 17,
+          "requisito": "Amplitud/potencia",
+          "prueba_y_observable": "Mapa de amplitud, potencia pico/media, ciclo de trabajo y duración",
+          "puerta": "Límite operativo anterior al fallo, con margen y error conocidos",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 18,
+          "requisito": "Terminación física",
+          "prueba_y_observable": "Fondo axial completo, fuente/receptor, exterior saliente y reacción",
+          "puerta": "Una condición Neumann o absorbente de cálculo no constituye un terminal",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 19,
+          "requisito": "Empalmes",
+          "prueba_y_observable": "Cambio de sección, curva, unión, contacto y proximidad de otros enlaces",
+          "puerta": "Resolver modos atrapados, reflexión, diafonía e inestabilidades de unión",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 20,
+          "requisito": "Preparación/apagado",
+          "prueba_y_observable": "Transitorio desde fuente identificada, asentamiento, vaciado y destino de carga",
+          "puerta": "No inicializar el estado final ni borrar campos al terminar",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 21,
+          "requisito": "Balance energético completo",
+          "prueba_y_observable": "Construcción, mantenimiento, bombeo, señal, retorno, radiación, carga y retirada",
+          "puerta": "Publicar eficiencia neta y recursos del entorno; no doble contabilidad",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 22,
+          "requisito": "Función P-04/R1",
+          "prueba_y_observable": "Predicción o medida con incertidumbre frente a contrato previamente declarado",
+          "puerta": "Admitir, revisar prestación/geometría o rechazar; conservar la comparación original",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        }
+      ],
+      "reopen_condition": "Error en prueba o cambio de una hipotesis explicitada; fallo de Newton nunca es inexistencia."
+    },
+    {
+      "branch": "C7",
+      "id": "cadena_periodica_en_fase",
+      "hypothesis_changed": "Objetos localizados conectados por colas; misma fase y frecuencia.",
+      "status": "DESCARTADA_DENTRO_DEL_MODELO",
+      "information_value": "alto",
+      "cost": "analitico",
+      "advance_condition": "Cambiar a finito, fase alternada o recursos derivados.",
+      "closure_condition": "Inestabilidad Bloch en el limite largo.",
+      "evidence": "24.3",
+      "requirements": [
+        {
+          "numero": 1,
+          "requisito": "Derivación desde la acción",
+          "prueba_y_observable": "Ecuaciones del fondo, perturbaciones y fronteras; fuente de cada fuerza",
+          "puerta": "Rechazar paredes, tensiones o amortiguamiento añadidos sin origen",
+          "resultado": "DERIVADA_BAJO_HIPOTESIS",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 2,
+          "requisito": "Existencia",
+          "prueba_y_observable": "Rama no trivial, regularidad, asintóticos, carga y energía total o por celda/longitud",
+          "puerta": "Newton fallido deja pregunta abierta; una obstrucción analítica sí excluye su clase",
+          "resultado": "EXISTENCIA_NO_AFIRMADA_PARA_TODA_LA_CLASE; EXCLUSION_CONDICIONAL",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 3,
+          "requisito": "Convergencia",
+          "prueba_y_observable": "Fondo, espectro, cuadraturas, caja y tiempo refinados de forma independiente",
+          "puerta": "Observable debe converger con margen respecto de la decisión",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 4,
+          "requisito": "Estabilidad radial",
+          "prueba_y_observable": "Segunda variación restringida y generador con ambos campos",
+          "puerta": "Un modo radial creciente convergente rechaza el estado",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 5,
+          "requisito": "Estabilidad longitudinal",
+          "prueba_y_observable": "Todo k relevante, incluidos k→0, subarmónicos y dispositivo finito",
+          "puerta": "No basta estabilizar el k elegido para transportar",
+          "resultado": "REFUTADA_DENTRO_DE_LA_CLASE",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 6,
+          "requisito": "Estabilidad azimutal",
+          "prueba_y_observable": "Todos los índices relevantes, acoplamientos de bandas y cota para índices altos",
+          "puerta": "Incluir flexión, división, desplazamiento y ruptura no axisimétrica",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 7,
+          "requisito": "Espectro de perturbaciones",
+          "prueba_y_observable": "Puntual, esencial, modos de simetría, resonancias y posibles bloques de Jordan",
+          "puerta": "No confundir estabilidad del Hessiano restringido, espectral, orbital y asintótica",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 8,
+          "requisito": "Conservación",
+          "prueba_y_observable": "E,Q,P,J y cargas adicionales si existen; flujos y fuentes",
+          "puerta": "El conjunto completo cierra balances dentro del error",
+          "resultado": "IDENTIDADES_DE_CONSERVACION; NO_CICLO_DE_DISPOSITIVO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 9,
+          "requisito": "Rango de estado",
+          "prueba_y_observable": "Región en Q, frecuencia, corriente, J, longitud, radio, entorno y tolerancias",
+          "puerta": "No aceptar un único punto; excluir vecindades de bifurcación no controladas",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 10,
+          "requisito": "Modos guiados",
+          "prueba_y_observable": "Perfil transversal, fracción de energía localizada y separación del continuo",
+          "puerta": "Distinguir modo ligado, resonancia con fuga y dispersión de vacío",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 11,
+          "requisito": "Dispersión",
+          "prueba_y_observable": "Ωₙ(k) de la acción linealizada; acoplamiento modal en estructuras no uniformes",
+          "puerta": "La dispersión de un grafo supuesto no realiza su guía",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 12,
+          "requisito": "Velocidad de grupo",
+          "prueba_y_observable": "dΩ/dk o fórmula biortogonal; contrastar propagación de paquetes",
+          "puerta": "Separar velocidad de grupo, energía y frente causal",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 13,
+          "requisito": "Flujo de energía",
+          "prueba_y_observable": "Integral de T⁰ᶻ, normalización modal, signo energético y flujo de carga",
+          "puerta": "Calcular energía transportada además de amplitud; auditar mezcla de bandas laterales",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 14,
+          "requisito": "Reflexión/transmisión",
+          "prueba_y_observable": "Matriz S con canales normalizados por flujo y fuentes incluidas",
+          "puerta": "Un balance unitario sólo vale con sus hipótesis; toda ganancia requiere fuente o descarga del fondo",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 15,
+          "requisito": "Pérdidas/radiación",
+          "prueba_y_observable": "Escape a continuo, conversión, defectos, curvatura y contacto; correlaciones de ruido",
+          "puerta": "Separar pérdida numérica de física; ni γ ni ruido se ajustan a R1",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 16,
+          "requisito": "Respuesta no lineal",
+          "prueba_y_observable": "Dependencia de dispersión y S con amplitud, armónicos, intermodulación y deformación del fondo",
+          "puerta": "Identificar saturación, choque, colapso o fragmentación si aparecen",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 17,
+          "requisito": "Amplitud/potencia",
+          "prueba_y_observable": "Mapa de amplitud, potencia pico/media, ciclo de trabajo y duración",
+          "puerta": "Límite operativo anterior al fallo, con margen y error conocidos",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 18,
+          "requisito": "Terminación física",
+          "prueba_y_observable": "Fondo axial completo, fuente/receptor, exterior saliente y reacción",
+          "puerta": "Una condición Neumann o absorbente de cálculo no constituye un terminal",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 19,
+          "requisito": "Empalmes",
+          "prueba_y_observable": "Cambio de sección, curva, unión, contacto y proximidad de otros enlaces",
+          "puerta": "Resolver modos atrapados, reflexión, diafonía e inestabilidades de unión",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 20,
+          "requisito": "Preparación/apagado",
+          "prueba_y_observable": "Transitorio desde fuente identificada, asentamiento, vaciado y destino de carga",
+          "puerta": "No inicializar el estado final ni borrar campos al terminar",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 21,
+          "requisito": "Balance energético completo",
+          "prueba_y_observable": "Construcción, mantenimiento, bombeo, señal, retorno, radiación, carga y retirada",
+          "puerta": "Publicar eficiencia neta y recursos del entorno; no doble contabilidad",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        },
+        {
+          "numero": 22,
+          "requisito": "Función P-04/R1",
+          "prueba_y_observable": "Predicción o medida con incertidumbre frente a contrato previamente declarado",
+          "puerta": "Admitir, revisar prestación/geometría o rechazar; conservar la comparación original",
+          "resultado": "NO_ESTUDIADA_POR_RECHAZO_PREVIO",
+          "evidencia": "24.3"
+        }
+      ],
+      "reopen_condition": "Error en prueba o cambio de una hipotesis explicitada; fallo de Newton nunca es inexistencia."
+    },
+    {
+      "branch": "C7",
+      "id": "contacto_finito_y_fase_alternada",
+      "hypothesis_changed": "Configuracion finita o fase no positiva; objetos pueden moverse.",
+      "status": "ABIERTA",
+      "information_value": "alto: sirve a Reserva",
+      "cost": "2D/3D conservativo",
+      "advance_condition": "Transferencia medible repetible con reaccion.",
+      "closure_condition": "Fusion o coste inutil; no basta colision unica.",
+      "evidence": null,
+      "requirements": [
+        {
+          "numero": 1,
+          "requisito": "Derivación desde la acción",
+          "prueba_y_observable": "Ecuaciones del fondo, perturbaciones y fronteras; fuente de cada fuerza",
+          "puerta": "Rechazar paredes, tensiones o amortiguamiento añadidos sin origen",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 2,
+          "requisito": "Existencia",
+          "prueba_y_observable": "Rama no trivial, regularidad, asintóticos, carga y energía total o por celda/longitud",
+          "puerta": "Newton fallido deja pregunta abierta; una obstrucción analítica sí excluye su clase",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 3,
+          "requisito": "Convergencia",
+          "prueba_y_observable": "Fondo, espectro, cuadraturas, caja y tiempo refinados de forma independiente",
+          "puerta": "Observable debe converger con margen respecto de la decisión",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 4,
+          "requisito": "Estabilidad radial",
+          "prueba_y_observable": "Segunda variación restringida y generador con ambos campos",
+          "puerta": "Un modo radial creciente convergente rechaza el estado",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 5,
+          "requisito": "Estabilidad longitudinal",
+          "prueba_y_observable": "Todo k relevante, incluidos k→0, subarmónicos y dispositivo finito",
+          "puerta": "No basta estabilizar el k elegido para transportar",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 6,
+          "requisito": "Estabilidad azimutal",
+          "prueba_y_observable": "Todos los índices relevantes, acoplamientos de bandas y cota para índices altos",
+          "puerta": "Incluir flexión, división, desplazamiento y ruptura no axisimétrica",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 7,
+          "requisito": "Espectro de perturbaciones",
+          "prueba_y_observable": "Puntual, esencial, modos de simetría, resonancias y posibles bloques de Jordan",
+          "puerta": "No confundir estabilidad del Hessiano restringido, espectral, orbital y asintótica",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 8,
+          "requisito": "Conservación",
+          "prueba_y_observable": "E,Q,P,J y cargas adicionales si existen; flujos y fuentes",
+          "puerta": "El conjunto completo cierra balances dentro del error",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 9,
+          "requisito": "Rango de estado",
+          "prueba_y_observable": "Región en Q, frecuencia, corriente, J, longitud, radio, entorno y tolerancias",
+          "puerta": "No aceptar un único punto; excluir vecindades de bifurcación no controladas",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 10,
+          "requisito": "Modos guiados",
+          "prueba_y_observable": "Perfil transversal, fracción de energía localizada y separación del continuo",
+          "puerta": "Distinguir modo ligado, resonancia con fuga y dispersión de vacío",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 11,
+          "requisito": "Dispersión",
+          "prueba_y_observable": "Ωₙ(k) de la acción linealizada; acoplamiento modal en estructuras no uniformes",
+          "puerta": "La dispersión de un grafo supuesto no realiza su guía",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 12,
+          "requisito": "Velocidad de grupo",
+          "prueba_y_observable": "dΩ/dk o fórmula biortogonal; contrastar propagación de paquetes",
+          "puerta": "Separar velocidad de grupo, energía y frente causal",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 13,
+          "requisito": "Flujo de energía",
+          "prueba_y_observable": "Integral de T⁰ᶻ, normalización modal, signo energético y flujo de carga",
+          "puerta": "Calcular energía transportada además de amplitud; auditar mezcla de bandas laterales",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 14,
+          "requisito": "Reflexión/transmisión",
+          "prueba_y_observable": "Matriz S con canales normalizados por flujo y fuentes incluidas",
+          "puerta": "Un balance unitario sólo vale con sus hipótesis; toda ganancia requiere fuente o descarga del fondo",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 15,
+          "requisito": "Pérdidas/radiación",
+          "prueba_y_observable": "Escape a continuo, conversión, defectos, curvatura y contacto; correlaciones de ruido",
+          "puerta": "Separar pérdida numérica de física; ni γ ni ruido se ajustan a R1",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 16,
+          "requisito": "Respuesta no lineal",
+          "prueba_y_observable": "Dependencia de dispersión y S con amplitud, armónicos, intermodulación y deformación del fondo",
+          "puerta": "Identificar saturación, choque, colapso o fragmentación si aparecen",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 17,
+          "requisito": "Amplitud/potencia",
+          "prueba_y_observable": "Mapa de amplitud, potencia pico/media, ciclo de trabajo y duración",
+          "puerta": "Límite operativo anterior al fallo, con margen y error conocidos",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 18,
+          "requisito": "Terminación física",
+          "prueba_y_observable": "Fondo axial completo, fuente/receptor, exterior saliente y reacción",
+          "puerta": "Una condición Neumann o absorbente de cálculo no constituye un terminal",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 19,
+          "requisito": "Empalmes",
+          "prueba_y_observable": "Cambio de sección, curva, unión, contacto y proximidad de otros enlaces",
+          "puerta": "Resolver modos atrapados, reflexión, diafonía e inestabilidades de unión",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 20,
+          "requisito": "Preparación/apagado",
+          "prueba_y_observable": "Transitorio desde fuente identificada, asentamiento, vaciado y destino de carga",
+          "puerta": "No inicializar el estado final ni borrar campos al terminar",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 21,
+          "requisito": "Balance energético completo",
+          "prueba_y_observable": "Construcción, mantenimiento, bombeo, señal, retorno, radiación, carga y retirada",
+          "puerta": "Publicar eficiencia neta y recursos del entorno; no doble contabilidad",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 22,
+          "requisito": "Función P-04/R1",
+          "prueba_y_observable": "Predicción o medida con incertidumbre frente a contrato previamente declarado",
+          "puerta": "Admitir, revisar prestación/geometría o rechazar; conservar la comparación original",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        }
+      ],
+      "reopen_condition": "Error en prueba o cambio de una hipotesis explicitada; fallo de Newton nunca es inexistencia."
+    },
+    {
+      "branch": "C8",
+      "id": "estado_dinamico_controlado",
+      "hypothesis_changed": "Tiempo, fuente y retroaccion explicitos.",
+      "status": "ABIERTA",
+      "information_value": "medio: depende de contactos",
+      "cost": "orbita/Floquet y fuente finita",
+      "advance_condition": "Estabilidad del conjunto y coste/apagado.",
+      "closure_condition": "Fuente ideal, inestabilidad o recurso oculto.",
+      "evidence": null,
+      "requirements": [
+        {
+          "numero": 1,
+          "requisito": "Derivación desde la acción",
+          "prueba_y_observable": "Ecuaciones del fondo, perturbaciones y fronteras; fuente de cada fuerza",
+          "puerta": "Rechazar paredes, tensiones o amortiguamiento añadidos sin origen",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 2,
+          "requisito": "Existencia",
+          "prueba_y_observable": "Rama no trivial, regularidad, asintóticos, carga y energía total o por celda/longitud",
+          "puerta": "Newton fallido deja pregunta abierta; una obstrucción analítica sí excluye su clase",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 3,
+          "requisito": "Convergencia",
+          "prueba_y_observable": "Fondo, espectro, cuadraturas, caja y tiempo refinados de forma independiente",
+          "puerta": "Observable debe converger con margen respecto de la decisión",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 4,
+          "requisito": "Estabilidad radial",
+          "prueba_y_observable": "Segunda variación restringida y generador con ambos campos",
+          "puerta": "Un modo radial creciente convergente rechaza el estado",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 5,
+          "requisito": "Estabilidad longitudinal",
+          "prueba_y_observable": "Todo k relevante, incluidos k→0, subarmónicos y dispositivo finito",
+          "puerta": "No basta estabilizar el k elegido para transportar",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 6,
+          "requisito": "Estabilidad azimutal",
+          "prueba_y_observable": "Todos los índices relevantes, acoplamientos de bandas y cota para índices altos",
+          "puerta": "Incluir flexión, división, desplazamiento y ruptura no axisimétrica",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 7,
+          "requisito": "Espectro de perturbaciones",
+          "prueba_y_observable": "Puntual, esencial, modos de simetría, resonancias y posibles bloques de Jordan",
+          "puerta": "No confundir estabilidad del Hessiano restringido, espectral, orbital y asintótica",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 8,
+          "requisito": "Conservación",
+          "prueba_y_observable": "E,Q,P,J y cargas adicionales si existen; flujos y fuentes",
+          "puerta": "El conjunto completo cierra balances dentro del error",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 9,
+          "requisito": "Rango de estado",
+          "prueba_y_observable": "Región en Q, frecuencia, corriente, J, longitud, radio, entorno y tolerancias",
+          "puerta": "No aceptar un único punto; excluir vecindades de bifurcación no controladas",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 10,
+          "requisito": "Modos guiados",
+          "prueba_y_observable": "Perfil transversal, fracción de energía localizada y separación del continuo",
+          "puerta": "Distinguir modo ligado, resonancia con fuga y dispersión de vacío",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 11,
+          "requisito": "Dispersión",
+          "prueba_y_observable": "Ωₙ(k) de la acción linealizada; acoplamiento modal en estructuras no uniformes",
+          "puerta": "La dispersión de un grafo supuesto no realiza su guía",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 12,
+          "requisito": "Velocidad de grupo",
+          "prueba_y_observable": "dΩ/dk o fórmula biortogonal; contrastar propagación de paquetes",
+          "puerta": "Separar velocidad de grupo, energía y frente causal",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 13,
+          "requisito": "Flujo de energía",
+          "prueba_y_observable": "Integral de T⁰ᶻ, normalización modal, signo energético y flujo de carga",
+          "puerta": "Calcular energía transportada además de amplitud; auditar mezcla de bandas laterales",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 14,
+          "requisito": "Reflexión/transmisión",
+          "prueba_y_observable": "Matriz S con canales normalizados por flujo y fuentes incluidas",
+          "puerta": "Un balance unitario sólo vale con sus hipótesis; toda ganancia requiere fuente o descarga del fondo",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 15,
+          "requisito": "Pérdidas/radiación",
+          "prueba_y_observable": "Escape a continuo, conversión, defectos, curvatura y contacto; correlaciones de ruido",
+          "puerta": "Separar pérdida numérica de física; ni γ ni ruido se ajustan a R1",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 16,
+          "requisito": "Respuesta no lineal",
+          "prueba_y_observable": "Dependencia de dispersión y S con amplitud, armónicos, intermodulación y deformación del fondo",
+          "puerta": "Identificar saturación, choque, colapso o fragmentación si aparecen",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 17,
+          "requisito": "Amplitud/potencia",
+          "prueba_y_observable": "Mapa de amplitud, potencia pico/media, ciclo de trabajo y duración",
+          "puerta": "Límite operativo anterior al fallo, con margen y error conocidos",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 18,
+          "requisito": "Terminación física",
+          "prueba_y_observable": "Fondo axial completo, fuente/receptor, exterior saliente y reacción",
+          "puerta": "Una condición Neumann o absorbente de cálculo no constituye un terminal",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 19,
+          "requisito": "Empalmes",
+          "prueba_y_observable": "Cambio de sección, curva, unión, contacto y proximidad de otros enlaces",
+          "puerta": "Resolver modos atrapados, reflexión, diafonía e inestabilidades de unión",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 20,
+          "requisito": "Preparación/apagado",
+          "prueba_y_observable": "Transitorio desde fuente identificada, asentamiento, vaciado y destino de carga",
+          "puerta": "No inicializar el estado final ni borrar campos al terminar",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 21,
+          "requisito": "Balance energético completo",
+          "prueba_y_observable": "Construcción, mantenimiento, bombeo, señal, retorno, radiación, carga y retirada",
+          "puerta": "Publicar eficiencia neta y recursos del entorno; no doble contabilidad",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        },
+        {
+          "numero": 22,
+          "requisito": "Función P-04/R1",
+          "prueba_y_observable": "Predicción o medida con incertidumbre frente a contrato previamente declarado",
+          "puerta": "Admitir, revisar prestación/geometría o rechazar; conservar la comparación original",
+          "resultado": "NO_ESTUDIADA",
+          "evidencia": null
+        }
+      ],
+      "reopen_condition": "Error en prueba o cambio de una hipotesis explicitada; fallo de Newton nunca es inexistencia."
+    }
+  ],
+  "complete_P04": false,
+  "M2_exhausted": false,
+  "M3_authorized_by_scientific_gate": false,
+  "next_priorities": [
+    "C6: objeto finito y superficies",
+    "C7: contacto finito de dos objetos",
+    "C2/C5: fases o flujos no uniformes"
+  ],
+  "validation": "validacion/P04/exclusiones/resultados.json"
+}

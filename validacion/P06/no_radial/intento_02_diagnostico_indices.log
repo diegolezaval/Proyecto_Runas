@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/7c7d37442bf3/work/Proyecto_Runas/herramientas/verificar_no_radial_m2.py", line 67, in <module>
+    x.update(final_field_compare(args[1],args[2]));comparisons.append(x)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/7c7d37442bf3/work/Proyecto_Runas/herramientas/verificar_no_radial_m2.py", line 58, in final_field_compare
+    final_mediator_nonradial_error_over_initial_norm=float(np.sqrt(np.sum(w[:,None]*(ac[:,1:]-af[:,1:])[2]**2)/np.sum(w[:,None]*if_[2,use,1:]**2))),
+                                                                          ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+ValueError: operands could not be broadcast together with shapes (80,1) (79,25) 

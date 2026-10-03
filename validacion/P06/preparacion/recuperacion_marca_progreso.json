@@ -1,0 +1,6 @@
+{
+  "issue": "Marca de progreso antigua: diagnóstico pendiente aunque resultado, NPZ final y diagnóstico exacto ya estaban completos.",
+  "repair": "Se verificaron campos finitos, paso final t=1200, configuración y balance guardado; sólo se sincroniza la marca de progreso. No se repite la evolución.",
+  "cause": "La marca no llegó al último estado; no se infiere una causa física.",
+  "state_sha256": "bd3b79b3e5041ca79863735c7f47fdca798b55908845d81d498ae3ae3ff90e9f"
+}

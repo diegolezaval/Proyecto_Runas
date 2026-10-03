@@ -1,0 +1,3835 @@
+[
+  {
+    "root": "review/project/Proyecto_Runas",
+    "entries": [
+      {
+        "path": "DIRECTRICES_DESARROLLO.md",
+        "bytes": 3968,
+        "sha256": "5436fd736ea34e002cf2387220b388954d77f9759fc38025b2dbcd5595d82352",
+        "utf8": true,
+        "headings": [
+          "# Directrices permanentes de investigación y desarrollo"
+        ]
+      },
+      {
+        "path": "GUIA_MICROSCOPICA.md",
+        "bytes": 1149,
+        "sha256": "02a6989395b8188128094db6cdf369edfc618d36cf98fde3cbd1335bf8ebe3ba",
+        "utf8": true,
+        "headings": [
+          "# Guía microscópica · 4.1.0"
+        ]
+      },
+      {
+        "path": "LEEME.md",
+        "bytes": 7442,
+        "sha256": "ee8b838697cc66ac54582074a9f63163d5ac0fb9a90ad0f18bd68f2a4dc166fe",
+        "utf8": true,
+        "headings": [
+          "# Rúnica · Proyecto técnico 4.1.0",
+          "## Contenido y autoridad",
+          "## Estado técnico",
+          "## Reproducción"
+        ]
+      },
+      {
+        "path": "M2_RESULTADO.md",
+        "bytes": 8477,
+        "sha256": "8c9c0ab00ecc58ab7c9f96042b4e5cc9a8a3b75ccf661ba845070d51dee4033b",
+        "utf8": true,
+        "headings": [
+          "# M2 4.1 · Resultados, evidencia y límites",
+          "## Avance de esta iteración",
+          "## Resultado negativo preservado",
+          "## Qué quedó establecido en el sector común",
+          "## Las otras pruebas",
+          "## Lectura y reproducción"
+        ]
+      },
+      {
+        "path": "MANIFIESTO_SHA256.json",
+        "bytes": 23658,
+        "sha256": "3daf844731c68ec1acd03397b2594e54a07008e349fa83f12ba720e2699b7225",
+        "utf8": true,
+        "json_keys": [
+          "algorithm",
+          "edition",
+          "excluded",
+          "files"
+        ]
+      },
+      {
+        "path": "Runica_Tratado_integrado.md",
+        "bytes": 449808,
+        "sha256": "1c725d01326540029b9bb54de6f2eebc1c6136d4edc32e55dc413bd99219d122",
+        "utf8": true,
+        "headings": [
+          "# Rúnica · Documento integrado",
+          "# Rúnica — Tratado técnico y especificación operacional",
+          "## Lectura del tratado",
+          "## 1. Qué es una runa",
+          "## 2. Leyes universales",
+          "## 3. Propiedades constitutivas adoptadas",
+          "## 4. Modelo microscópico efectivo M1 y extensión M2",
+          "## 5. Régimen inactivo, iniciación y dominio de validez",
+          "## 6. Capa física de componentes y redes",
+          "## 7. Memoria, lógica y control desde la misma estructura",
+          "## 8. Escritura y facilidad de uso",
+          "## 9. Energía solar, despliegue y potencia",
+          "## 10. Reservas y energía aprovechable",
+          "## 11. Fuerza, apoyo, vuelo y movimiento",
+          "## 12. Calor, frío y transporte de entropía",
+          "## 13. Electromagnetismo, luz, sonido y percepción",
+          "## 14. Medición, comunicaciones e información",
+          "## 15. Materia ambiental, separación y química",
+          "## 16. Ensamblaje, materiales y permanencia",
+          "## 17. Procesos nucleares",
+          "## 18. Reparación biológica y continuidad funcional",
+          "## 19. Contrato común de las primordiales",
+          "## 20. Construcción y uso de una operación",
+          "## 21. Ejemplos de dimensionamiento bajo hipótesis",
+          "## 22. Potencia, eficiencia y escalamiento",
+          "## 23. Gravedad y regímenes extremos",
+          "## 24. Metrología, validación y aceptación",
+          "## 25. Fallos y cierre",
+          "## 26. Enseñanza, conocimiento y evolución de la disciplina",
+          "## 27. Alcance del cierre técnico",
+          "## Anexo A. Notación y magnitudes",
+          "## Anexo B. Trazabilidad de la revisión",
+          "## Anexo C. Fuentes científicas y uso",
+          "# Modelo microscópico M1: ecuaciones, estabilidad y correspondencia",
+          "## M.1. Convenciones y alcance",
+          "## M.2. Variación y balances locales",
+          "## M.3. Acoplamientos y efectos simultáneos",
+          "## M.4. Vacío, carga y estructuras neutras",
+          "## M.5. Ensayo radial reproducible",
+          "## M.6. Teoría efectiva y control del truncamiento",
+          "## M.7. Correspondencia microscópica y macroscópica",
+          "## M.8. Estado de cierre",
+          "# Especificación operacional R1",
+          "## O.1. Arquitectura y uso",
+          "## O.2. Geometría, tamaño y cruces",
+          "## O.3. Interfaces y composición",
+          "## O.4. Fuente, reserva y red",
+          "## O.5. Despliegue, alcance y crecimiento",
+          "## O.6. Soporte y actuación",
+          "## O.7. Calor y potencia sostenida",
+          "## O.8. Medida, óptica y electromagnetismo",
+          "## O.9. Computación y control distribuido",
+          "## O.10. Fallos, autoridad y aceptación",
+          "# Procedimientos y casos de dimensionamiento",
+          "## C.1. De la preparación a la luz",
+          "## C.2. Crecimiento de una instalación",
+          "## C.3. Reserva, elevación y recuperación",
+          "## C.4. Calefacción, enfriamiento y congelación",
+          "## C.5. Materia ambiental y ruta química",
+          "## C.6. Ensamblaje y permanencia",
+          "## C.7. Procesos biológicos y nucleares",
+          "## C.8. Uso ordinario y aceptación de recetas",
+          "# Parámetros de referencia",
+          "## constants",
+          "## seed",
+          "## solar",
+          "## power_channel",
+          "## reserve",
+          "## mechanical",
+          "## thermal",
+          "## logic",
+          "## optical",
+          "## acceptance",
+          "## layout",
+          "## lamp_case",
+          "## control_case",
+          "## vibration_case",
+          "## chemistry_case",
+          "# Revisión de los 50 hallazgos",
+          "# Resultados de verificación",
+          "## Ensayo microscópico",
+          "## lamp",
+          "## heater",
+          "## freezing",
+          "## reserve",
+          "## lifting",
+          "## support",
+          "## controller",
+          "## solar_growth",
+          "## radiator",
+          "## channel",
+          "## logic",
+          "## photon_support_power_W",
+          "## carbon",
+          "## Comprobaciones",
+          "# Correspondencia microscópica y macroscópica",
+          "## MM.1. Qué constituye un cierre físico",
+          "## MM.2. Problema microscópico bien definido",
+          "## MM.3. Del potencial a un fluido de campo",
+          "## MM.4. Escalas físicas: qué se puede ajustar y qué no",
+          "## MM.5. Fluctuaciones: amplitud, fase y estabilidad",
+          "## MM.6. Proyección modal y coeficientes calculables",
+          "## MM.7. Del campo a Tránsito, Repliegue y Nexo",
+          "## MM.8. Fuerza sobre materia y reacción",
+          "## MM.9. Electromagnetismo, radiación y conversión",
+          "## MM.10. Disipación y temperatura desde grados microscópicos",
+          "## MM.11. Medición, lógica y memoria",
+          "## MM.12. Química y ensamblaje",
+          "## MM.13. Preparación, autonomía y control",
+          "## MM.14. Cambios operacionales que se desprenden",
+          "# Extensión microscópica M2: mediador, preparación y motor",
+          "## M2.1. Cambio de teoría y alcance",
+          "## M2.2. Acción y potencial comunes",
+          "## M2.3. Eliminación exacta del mediador estático",
+          "## M2.4. Solución radial de ambos campos",
+          "### Operador de perturbaciones de M2",
+          "## M2.5. Preparación paramétrica: umbral comprobable",
+          "## M2.6. Motor microscópico para convertir calor radiativo en trabajo",
+          "## M2.7. Lo establecido y lo que permanece abierto",
+          "# Correspondencia de las 24 primordiales",
+          "## Regla común de reducción",
+          "## Composición y uso sencillo",
+          "# Resultados de la correspondencia microscópica",
+          "## Dos campos y potencial efectivo",
+          "## Modos del condensado",
+          "## Dispersión en las 24 geometrías",
+          "## Memoria modal alimentada",
+          "## Preparación y motor",
+          "## Comprobaciones adicionales",
+          "## Datos completos",
+          "# Fuentes de la extensión y límites de las inferencias",
+          "## Límites de los cálculos incluidos",
+          "## Fuentes para la edición 4",
+          "# M2 común: definición matemática y alcance demostrado",
+          "## 13.1. Resultado y regla de aceptación",
+          "## 13.2. Un solo conjunto fundamental",
+          "## 13.3. Ecuaciones, conservación y unidades",
+          "## 13.4. Vacío: demostración clásica global",
+          "## 13.5. Existencia global del problema de Cauchy escalar",
+          "## 13.6. Causalidad e hiperbolicidad",
+          "## 13.7. Obstrucción estática y alcance de la geometría",
+          "## 13.8. Preparación y simetría de carga",
+          "# Solución, espectro y dinámica del mismo M2",
+          "## 14.1. Qué se ha resuelto",
+          "## 14.2. Operador lineal completo de dos campos",
+          "## 14.3. Energía a carga fija: por qué un autovalor negativo no basta",
+          "## 14.4. Todos los sectores angulares: reducción analítica",
+          "## 14.5. Frecuencias, continuo y ceros de simetría",
+          "## 14.6. Evolución no lineal de ambos campos",
+          "## 14.7. Estado exacto de la evidencia espectral",
+          "# Regímenes de validez y derivación de coeficientes",
+          "## 15.1. Cuatro afirmaciones que no son equivalentes",
+          "## 15.2. Amplitud y reducción del mediador",
+          "## 15.3. Modos homogéneos, estabilidad y velocidad",
+          "## 15.4. Linealización y amplitudes de señal",
+          "## 15.5. Tiempo, energía, ruido y corte físico",
+          "## 15.6. Cómo deben salir los coeficientes de un dispositivo",
+          "# Canal, Memoria, Intercambio térmico y Semilla: resultado de aceptación",
+          "## 16.1. P-04 Canal: geometría y respuesta que sí se pueden calcular",
+          "### Respuesta exacta del grafo condicionado",
+          "### Resultado completo de P-04",
+          "## 16.2. P-11 Memoria: derivación permitida y exclusión de una codificación",
+          "### El coeficiente de Kerr debe salir del campo",
+          "### Dos fases globales no proporcionan la barrera R1",
+          "## 16.3. P-18 Intercambio térmico: transporte y trabajo",
+          "### Conductancia derivable de una transmisión",
+          "### Pérdidas, ruido y umbrales",
+          "## 16.4. P-01 Semilla: de datos iniciales a operación",
+          "## 16.5. Qué decisión se sigue del criterio solicitado",
+          "# Aplicación del criterio al catálogo",
+          "## 17.1. Decisión de extensión",
+          "## 17.2. Familias y resultado por primordial",
+          "### transporte",
+          "### informacion / control",
+          "### mecanica",
+          "### energia / termica",
+          "### materia / quimica",
+          "## 17.3. Precisiones transversales",
+          "## 17.4. P-22, P-23 y P-24",
+          "## 17.5. Resultado final de esta evaluación",
+          "# Prueba directa de la guía autosostenida y del terminal",
+          "## 18.1. Resultado de la prueba",
+          "## 18.2. Geometría mínima y ecuaciones transversales",
+          "## 18.3. Perturbaciones que el modelo de grafo no contenía",
+          "## 18.4. Demostración de la inestabilidad de tubos de esta clase",
+          "## 18.5. Umbral y tiempo de crecimiento",
+          "## 18.6. El exterior del terminal desde las ecuaciones",
+          "## 18.7. Decisión física",
+          "## 18.8. Relación con resultados publicados",
+          "# 19 · Resultados y verificaciones de la base M2 4.0",
+          "# 20 · De los campos a la interfaz y al régimen capilar",
+          "## 20.1. Alcance y clasificación",
+          "## 20.2. Variables y coexistencia",
+          "## 20.3. Ecuación de estado e inercia derivadas",
+          "## 20.4. Pared plana de ambos campos",
+          "## 20.5. Equilibrio curvo sin presión impuesta",
+          "## 20.6. Modos capilares",
+          "## 20.7. Contraste con el espectro microscópico",
+          "## 20.8. Reproducción, unidades y límites",
+          "## 20.9. Referencias y procedencia de las fórmulas",
+          "# 21 · Corriente, clasificación física y condiciones de avance",
+          "## 21.1. Una corriente axial uniforme no estabiliza este tubo libre",
+          "## 21.2. Qué puede reutilizarse entre funciones",
+          "## 21.3. Revisión de Separación, Reacción y Ensamblaje",
+          "## 21.4. Ciencia, ingeniería e interfaz",
+          "## 21.5. Programa siguiente con condiciones de parada",
+          "# 22 · Estado de evidencia y metodología de continuidad",
+          "## 22.1. Auditoría de entrada",
+          "## 22.2. Taxonomía",
+          "## 22.3. Qué estaba establecido y qué cambia",
+          "## 22.4. Cobertura de la cadena física",
+          "## 22.5. Reproducibilidad y criterios de detención",
+          "## 22.6. Regla de autoridad y cambios",
+          "# Repertorio de primordiales",
+          "# P-01 · Semilla",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Modelo operacional y balance de recursos",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-02 · Anclaje",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-03 · Recinto",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-04 · Canal",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-05 · Captador solar",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-06 · Reserva",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-07 · Compuerta",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-08 · Distribuidor",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-09 · Sensor",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-10 · Selector",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-11 · Memoria",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-12 · Comparador",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-13 · Retardo",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-14 · Reloj",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-15 · Secuenciador",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-16 · Puente",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-17 · Luz",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-18 · Intercambio térmico",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-19 · Impulso",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-20 · Polarización",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-21 · Vibración",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-22 · Separación",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-23 · Reacción",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación",
+          "# P-24 · Ensamblaje",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "datos/aceptacion_m2.json",
+        "bytes": 26054,
+        "sha256": "3a10d2bde65d685ec847f011d702a43aa0cde451e44d07a5c1d4bccf7ed0cd25",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "criterion",
+          "accepted_count",
+          "evaluated_catalog_count",
+          "explicitly_deferred_count",
+          "complete_chain_boolean_semantics",
+          "R1_requirement",
+          "end_to_end_realization_demonstrated",
+          "runes"
+        ]
+      },
+      {
+        "path": "datos/correspondencia.json",
+        "bytes": 15960,
+        "sha256": "a2b5bc8cbdc23754afd6f369c503f87405facb284eda522310d6e86ecc793d39",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "scope",
+          "runes",
+          "acceptance_authority",
+          "authority_note"
+        ]
+      },
+      {
+        "path": "datos/ensayo_capilaridad.json",
+        "bytes": 1351,
+        "sha256": "e06dcb317a716965c32dc1cfdce7d57cad28386a9dc3efe612f7a4a861c7a1d0",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "scope",
+          "wall_runs",
+          "norm_radii",
+          "dimensions",
+          "background",
+          "spectrum_radii",
+          "spectrum_dx",
+          "tube_kR",
+          "sphere_ell",
+          "domain_check",
+          "thresholds",
+          "threshold_status"
+        ]
+      },
+      {
+        "path": "datos/estado_evidencia.json",
+        "bytes": 8959,
+        "sha256": "6c6edb18656861be797851f133ca0ecce6b5b4714722c650b46f717df2207da8",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "validation",
+          "claims",
+          "provisional",
+          "open_problems",
+          "shared_resources_not_new_laws",
+          "classification_decision"
+        ]
+      },
+      {
+        "path": "datos/geometria.json",
+        "bytes": 48809,
+        "sha256": "fb6559033b3005c45d4c058d0913bf682d4c5661002c17190dbd6d16a091b7f2",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "coordinate_units",
+          "coordinate_system",
+          "source_pieces",
+          "runes"
+        ]
+      },
+      {
+        "path": "datos/interfaces.json",
+        "bytes": 1511,
+        "sha256": "b5e2ad5b07b7e229ec362ae047667ae0de8222f36b4459970db8e9793029f235",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "required_port_fields",
+          "directions",
+          "domains",
+          "connection_rule",
+          "scope"
+        ]
+      },
+      {
+        "path": "datos/microscopia.json",
+        "bytes": 3030,
+        "sha256": "0e90a1b628e620df84af417cb34a913cca5c498ad83b94eba3c4fc31569a8d4b",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "primary_scalar_model",
+          "scope",
+          "M2",
+          "SI_density_example",
+          "graph",
+          "kerr",
+          "converter",
+          "pump",
+          "engine",
+          "chemical_case",
+          "force_case",
+          "fundamental_parameter_authority"
+        ]
+      },
+      {
+        "path": "datos/modelos.json",
+        "bytes": 41246,
+        "sha256": "3ee430ff56778469fa35808914f67bd14e1b6763f30aa6da360cce2aeb41a812",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "scope",
+          "models",
+          "authority_note"
+        ]
+      },
+      {
+        "path": "datos/modulos.json",
+        "bytes": 70423,
+        "sha256": "bd0b3ceccc04b40d331b51a5770b54e1d405a824d6d82952600cdf6b365091d7",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "modules",
+          "authority_note"
+        ]
+      },
+      {
+        "path": "datos/parametros.json",
+        "bytes": 18053,
+        "sha256": "718b39d2f3fefdd1c772bd80b13ab392b25b449a4d980bb9549e0bd7c8b2268e",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "profile",
+          "scope",
+          "constants",
+          "seed",
+          "solar",
+          "power_channel",
+          "reserve",
+          "mechanical",
+          "thermal",
+          "logic",
+          "optical",
+          "acceptance",
+          "microscopic_benchmark",
+          "layout",
+          "lamp_case",
+          "control_case",
+          "vibration_case",
+          "chemistry_case"
+        ]
+      },
+      {
+        "path": "datos/procedencia.json",
+        "bytes": 2368,
+        "sha256": "e059ef0a1e4d39faa21cb4170f0d3f43fe10de924bcb1cbd2eb97e4350f7f004",
+        "utf8": true,
+        "json_keys": [
+          "source_filename",
+          "source_sha256",
+          "edition",
+          "changes",
+          "scope",
+          "edition_4",
+          "prior_source_metadata",
+          "edition_4_1"
+        ]
+      },
+      {
+        "path": "datos/recetas.json",
+        "bytes": 12858,
+        "sha256": "8fa04e08c763b79366bf6616cb542509731a0081cc4dc14ce37289a4c01dcf84",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "recipes",
+          "authority_note"
+        ]
+      },
+      {
+        "path": "datos/revision.json",
+        "bytes": 12503,
+        "sha256": "e5b71d4aafdd073c270daeb71e9803999c11ff72838e438ccb4b1a56915354fb",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "criteria",
+          "findings"
+        ]
+      },
+      {
+        "path": "datos/theta_comun.json",
+        "bytes": 1798,
+        "sha256": "6ce6ecbe8f4f887ab285c3db184bc50ec7f5e842031c4981e2f5db2806545324",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "model",
+          "authority",
+          "scalar_benchmark",
+          "SI_illustration",
+          "portal_benchmark",
+          "gravity_benchmark",
+          "total_interacting_theory",
+          "allowed_device_configuration",
+          "must_be_derived",
+          "forbidden_inference"
+        ]
+      },
+      {
+        "path": "fichas/P-01.md",
+        "bytes": 7672,
+        "sha256": "04bb2f8e953ec4fd295e2dded16879e9c72fd16b223262e1f3b0fa69a0f2a513",
+        "utf8": true,
+        "headings": [
+          "# P-01 · Semilla",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Modelo operacional y balance de recursos",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-02.md",
+        "bytes": 6076,
+        "sha256": "8e088af3fdb991243042beb14e48f377138f017cbd99551630f29f0dd6c3308d",
+        "utf8": true,
+        "headings": [
+          "# P-02 · Anclaje",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-03.md",
+        "bytes": 5731,
+        "sha256": "63812ea00ca79573dad4d95aa8959b016f87c8d598ebf3e5424894a71a75ef53",
+        "utf8": true,
+        "headings": [
+          "# P-03 · Recinto",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-04.md",
+        "bytes": 5628,
+        "sha256": "495b510320492ce8cd5b4b36b5fcb8ba13c65fb9878997de77662cecd0462a67",
+        "utf8": true,
+        "headings": [
+          "# P-04 · Canal",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-05.md",
+        "bytes": 5806,
+        "sha256": "d1319c1af94b61ef2a403a0d9a5ee9e23616e81c4df865dbca93cb198d56daaa",
+        "utf8": true,
+        "headings": [
+          "# P-05 · Captador solar",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-06.md",
+        "bytes": 5805,
+        "sha256": "f5e3551230c8c118acbebb6e3e94549d4b99217bc1812418054df895e5a32a0e",
+        "utf8": true,
+        "headings": [
+          "# P-06 · Reserva",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-07.md",
+        "bytes": 5344,
+        "sha256": "40df202944e76b11a22f42172739631c49a2ab3828048296d7ef86c875a2d61d",
+        "utf8": true,
+        "headings": [
+          "# P-07 · Compuerta",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-08.md",
+        "bytes": 5203,
+        "sha256": "6face33cd79ecc9f46f1f5e190699b6be01eb79d39b649d42f9c5cdede420df8",
+        "utf8": true,
+        "headings": [
+          "# P-08 · Distribuidor",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-09.md",
+        "bytes": 5664,
+        "sha256": "d20d69ea4fb683042779309c778f1688f2abdf21ab5e95e158bd00054270985e",
+        "utf8": true,
+        "headings": [
+          "# P-09 · Sensor",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-10.md",
+        "bytes": 5976,
+        "sha256": "d80becaad34a0b843128b4d13ad7f8c853bbbdbc281ffde3546d6a9938a93496",
+        "utf8": true,
+        "headings": [
+          "# P-10 · Selector",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-11.md",
+        "bytes": 5761,
+        "sha256": "863eefd5ca73914c347ad0d7c319d0b44a50b4dbae988d20ffc5efa562e97049",
+        "utf8": true,
+        "headings": [
+          "# P-11 · Memoria",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-12.md",
+        "bytes": 5291,
+        "sha256": "f51e8b5ca878f648837686d731e6f458cfe853de4e2f182678773f26efab03e0",
+        "utf8": true,
+        "headings": [
+          "# P-12 · Comparador",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-13.md",
+        "bytes": 5251,
+        "sha256": "80a3f68c373f8246fb20e7f94d16399371ac837061b541eb25dcb0af3f3fcfb2",
+        "utf8": true,
+        "headings": [
+          "# P-13 · Retardo",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-14.md",
+        "bytes": 5155,
+        "sha256": "5d5762918f14e3c50e54f7b93772d4c58ee62f50e51c473d391ff03ce1d94b78",
+        "utf8": true,
+        "headings": [
+          "# P-14 · Reloj",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-15.md",
+        "bytes": 5479,
+        "sha256": "a216c6c2914d98b3e210b6ed38d330b5b8a4a21c21c79b701ba84cc6e95a0ce0",
+        "utf8": true,
+        "headings": [
+          "# P-15 · Secuenciador",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-16.md",
+        "bytes": 5897,
+        "sha256": "2e624a007843de248b6e8c65291ca5f77fd6a93f73a5edf405b8ea411191db7d",
+        "utf8": true,
+        "headings": [
+          "# P-16 · Puente",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-17.md",
+        "bytes": 5905,
+        "sha256": "e48a2c1f3ff019d9ae3c22a8fd5a6c1a9a043bccdf2a3d56531e5feb44e643bf",
+        "utf8": true,
+        "headings": [
+          "# P-17 · Luz",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-18.md",
+        "bytes": 5864,
+        "sha256": "7f20784be11bc08b6d2ed33939a46d2bc8ac6ab686fde43b74c02eaed7c75b0d",
+        "utf8": true,
+        "headings": [
+          "# P-18 · Intercambio térmico",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-19.md",
+        "bytes": 5273,
+        "sha256": "3fdcba811293bc14725c9ef2a0f77417c1651b4891b9785d9d0aa16fdcf60a02",
+        "utf8": true,
+        "headings": [
+          "# P-19 · Impulso",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-20.md",
+        "bytes": 6313,
+        "sha256": "756ec6a998c28e5cf280421051c424e014cbb4a897af1a27017eb7cbf8d752c9",
+        "utf8": true,
+        "headings": [
+          "# P-20 · Polarización",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-21.md",
+        "bytes": 5560,
+        "sha256": "089af0ccb1a58d6cd279444bbae7170d18b2039298e08e5ce157219a7036f6ae",
+        "utf8": true,
+        "headings": [
+          "# P-21 · Vibración",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-22.md",
+        "bytes": 5805,
+        "sha256": "97be210f5008c236c39d315ca49c81f0b68be61f0774951a07a1b8e02e398beb",
+        "utf8": true,
+        "headings": [
+          "# P-22 · Separación",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-23.md",
+        "bytes": 6195,
+        "sha256": "7363fdcb78be0e574e9242c8c4fd7d3dd728ccb2ff86f92f89dcb12e49affc35",
+        "utf8": true,
+        "headings": [
+          "# P-23 · Reacción",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "fichas/P-24.md",
+        "bytes": 6354,
+        "sha256": "d26139bba0ec8dbfbda24601725a736ea5480fddff38f2e2f6c97bc63185a670",
+        "utf8": true,
+        "headings": [
+          "# P-24 · Ensamblaje",
+          "## Registro geométrico",
+          "## Puertos y terminales",
+          "## Contrato dinámico de referencia",
+          "## Activación y funcionamiento",
+          "## Modelo operacional y balance de recursos",
+          "## Posición y persistencia",
+          "## Comprobación y diagnóstico",
+          "## Ejemplo de uso",
+          "## Correspondencia microscópica",
+          "## Aceptación"
+        ]
+      },
+      {
+        "path": "graficos/M2_capilaridad.svg",
+        "bytes": 68584,
+        "sha256": "de0065b6730e11830055c2f8b71dbb733867e5b09747fd210f8b4f3398a036da",
+        "utf8": true,
+        "svg_elements": 797,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/M2_evidencia_numerica.svg",
+        "bytes": 67739,
+        "sha256": "a8f19fe2a510bf12854cb9bb4254993e52a5cb0b13923bbf47e22e4249f311f1",
+        "utf8": true,
+        "svg_elements": 659,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/M2_guia_inestable.svg",
+        "bytes": 44930,
+        "sha256": "80843cd3a9281908121dbbb8deb4fa2b533ebd5814970c1e1c76babed3b0d940",
+        "utf8": true,
+        "svg_elements": 467,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/M2_terminal_y_canal.svg",
+        "bytes": 36248,
+        "sha256": "4954dd1a2bd635e8afa14354a47b195ecba72e51a74bed5d33d622a210d95f13",
+        "utf8": true,
+        "svg_elements": 379,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/atlas.svg",
+        "bytes": 59092,
+        "sha256": "01bcc0d8f3df0ed623a764fe87e5476b4aa369afdd008da0607b82491dbad8fd",
+        "utf8": true,
+        "svg_elements": 531,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/elementales/N.svg",
+        "bytes": 920,
+        "sha256": "87d2ea1c66a703a8027e318850b4410c13f94d61b5f6d08b191665520032d372",
+        "utf8": true,
+        "svg_elements": 9,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/elementales/R.svg",
+        "bytes": 786,
+        "sha256": "a45a08cae40316a1ac4329f383d1008a9b0636a8d7ca39b92c39a4033a82a2d2",
+        "utf8": true,
+        "svg_elements": 8,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/elementales/T.svg",
+        "bytes": 894,
+        "sha256": "a60b8489e5378ef5746c5eacb65f2870ad3c08695f47c2ff8bb1487a43d40004",
+        "utf8": true,
+        "svg_elements": 8,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/microscopia/dispersion.svg",
+        "bytes": 15329,
+        "sha256": "f43ffa38376862a6fdfd3fd9842fd8300a559031c8097bf4e2a24ffac0725164",
+        "utf8": true,
+        "svg_elements": 152,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/microscopia/dispersion_grafos.svg",
+        "bytes": 45078,
+        "sha256": "7ff810968db03f92371e0b126bb7491a49d581e93d39f10e8915467b32fbfa0c",
+        "utf8": true,
+        "svg_elements": 346,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/microscopia/memoria_alimentada.svg",
+        "bytes": 16368,
+        "sha256": "81827e9b1bec6ec5b64770b4c42f8c6f009623a03752daa2479c0281ac4f50bc",
+        "utf8": true,
+        "svg_elements": 118,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/microscopia/perfiles_M1_M2.svg",
+        "bytes": 27187,
+        "sha256": "419df102a0a06699db5cd1e83de3a0d49043b5a0198fc7b06ed8def3d5bbfd82",
+        "utf8": true,
+        "svg_elements": 245,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-01.svg",
+        "bytes": 1947,
+        "sha256": "05dfd37675a4334b61ae7d389252735ca1c068203f156516a070c0dfbf915b0e",
+        "utf8": true,
+        "svg_elements": 19,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-02.svg",
+        "bytes": 2367,
+        "sha256": "5e42eb84b2abaccd514cefdec8e3e7590e085fa343eea7821e43d22d4651b947",
+        "utf8": true,
+        "svg_elements": 22,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-03.svg",
+        "bytes": 2009,
+        "sha256": "35bcecbc330599b5e57ae620c60e26bb9b644d553a78aa8f5f6fe21f4887e329",
+        "utf8": true,
+        "svg_elements": 19,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-04.svg",
+        "bytes": 1886,
+        "sha256": "146a26cc7e95ca296a6477bbf7bb33ca6287375f0ad1683f47582f19b6fd495a",
+        "utf8": true,
+        "svg_elements": 18,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-05.svg",
+        "bytes": 3269,
+        "sha256": "05d6c21adea3de44469635fdde52229754db52b95af4fa1233a1d230e8fae517",
+        "utf8": true,
+        "svg_elements": 31,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-06.svg",
+        "bytes": 3125,
+        "sha256": "f8d824f3bd518f5794d57546fd05f7383ccdb70c4c20d2271d3ef4626fede2d2",
+        "utf8": true,
+        "svg_elements": 30,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-07.svg",
+        "bytes": 1905,
+        "sha256": "10329d32449993b20ffb871fe618907382194e241f03faddf12ce681211ad29f",
+        "utf8": true,
+        "svg_elements": 18,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-08.svg",
+        "bytes": 2623,
+        "sha256": "3f10c9514d7666f98b93e62d2d390ea13d7069631e1f10e200225cbe0d6776d0",
+        "utf8": true,
+        "svg_elements": 22,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-09.svg",
+        "bytes": 1995,
+        "sha256": "2dedbad221c766fa7adf402a40997c37b82887fb83795719096a0b0ee32043ab",
+        "utf8": true,
+        "svg_elements": 19,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-10.svg",
+        "bytes": 2306,
+        "sha256": "f4c27ce52ee0cf1d3232c81867f864bd52721e20bc8f613f86b0425fee2d4b9e",
+        "utf8": true,
+        "svg_elements": 22,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-11.svg",
+        "bytes": 2473,
+        "sha256": "cd663f477a975ac3b353077f0a38e8d4ed310aa84385dd3c70df1225c8d5e2b8",
+        "utf8": true,
+        "svg_elements": 23,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-12.svg",
+        "bytes": 2311,
+        "sha256": "767a546e1f4f4e47b795409585fb3dc1cd713174f773c8432fcda599ec9f4a99",
+        "utf8": true,
+        "svg_elements": 22,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-13.svg",
+        "bytes": 2972,
+        "sha256": "55111190b7ef5630b35d8c1afa8d2c57c3fe295d059a65285e358b18d5a57d37",
+        "utf8": true,
+        "svg_elements": 26,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-14.svg",
+        "bytes": 2724,
+        "sha256": "f2840dd9b2d69b19a7526313253e3c87a6a0966f2aa0fa1e9c8e19962518c403",
+        "utf8": true,
+        "svg_elements": 23,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-15.svg",
+        "bytes": 2361,
+        "sha256": "3825d43a0e0c9a3257819acaadabe5397b1a4650a7fa5745be1ce7a7f799f97e",
+        "utf8": true,
+        "svg_elements": 22,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-16.svg",
+        "bytes": 1862,
+        "sha256": "faca1b6feb23ef79269481fba8336b07ea9794bbbf311ef602ed7fa37ba7fbeb",
+        "utf8": true,
+        "svg_elements": 17,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-17.svg",
+        "bytes": 2507,
+        "sha256": "40bce0eb3e19f63d0c7097a650f6b789a67005041e13c901766d455c8ff7cb42",
+        "utf8": true,
+        "svg_elements": 22,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-18.svg",
+        "bytes": 3083,
+        "sha256": "5e1ce0aed28a5eea82ec0c96e89715ba7367b6662cdd06a6328eb45e595bb45c",
+        "utf8": true,
+        "svg_elements": 27,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-19.svg",
+        "bytes": 1928,
+        "sha256": "507d157b600801533006331ed6545bb68ba196ed77e0f6c6c5dd22125c57f2fa",
+        "utf8": true,
+        "svg_elements": 18,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-20.svg",
+        "bytes": 2917,
+        "sha256": "b7ea1b8ff1d09318c45726332b7306b3216947c89d6d6aae6f1258c46cf16ec2",
+        "utf8": true,
+        "svg_elements": 28,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-21.svg",
+        "bytes": 3035,
+        "sha256": "b688d0ff9950e274eb289201fca5a8f49acda191f09659da0bd4d54b99432b64",
+        "utf8": true,
+        "svg_elements": 26,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-22.svg",
+        "bytes": 2771,
+        "sha256": "c84892d5c6d9b1b41f2b29459304fbb14102af18d72ad69deee8d6d472c4a09f",
+        "utf8": true,
+        "svg_elements": 26,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-23.svg",
+        "bytes": 2455,
+        "sha256": "1000bfe654f5b34ce15019b21ac8206a3bd3c783f94049f2d0edae4bc25930b6",
+        "utf8": true,
+        "svg_elements": 23,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/runas/P-24.svg",
+        "bytes": 2878,
+        "sha256": "89cb40ab9f38546a6568240f4481b0a0d053fa92cd75934f257d1de4773a95f9",
+        "utf8": true,
+        "svg_elements": 27,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-01.svg",
+        "bytes": 2395,
+        "sha256": "a3e601134d57623e6657fbf5026d0760621950500c97a22ee846dabd59c4bdf0",
+        "utf8": true,
+        "svg_elements": 24,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-02.svg",
+        "bytes": 3167,
+        "sha256": "085a67861e99e688feb7853427e2b2c22dd56e629a09d512be58ae4f81d95e46",
+        "utf8": true,
+        "svg_elements": 31,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-03.svg",
+        "bytes": 2445,
+        "sha256": "b70cb1b557d70a838d8dc76742e487eb6504711db21e208812403524c0cb09f6",
+        "utf8": true,
+        "svg_elements": 24,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-04.svg",
+        "bytes": 2613,
+        "sha256": "cae5c840f1de59c79297bf667e527fa342ee4dd27deb221d7cab3a5ad4fbfce0",
+        "utf8": true,
+        "svg_elements": 26,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-05.svg",
+        "bytes": 3966,
+        "sha256": "3ff66df3c3ac182f9176b92db4e0be1e1cb8a2f994d2daedabcdbbd1db8a9aba",
+        "utf8": true,
+        "svg_elements": 39,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-06.svg",
+        "bytes": 4104,
+        "sha256": "f0518b803d03376d44611f996b533d9d71f1cca36849a27ac41b38eed6d97be0",
+        "utf8": true,
+        "svg_elements": 41,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-07.svg",
+        "bytes": 2605,
+        "sha256": "bf64fd5cab654ce4ba499f1bafcb47904fe2c681ba92ceeb0fe00c02d5a6503c",
+        "utf8": true,
+        "svg_elements": 26,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-08.svg",
+        "bytes": 3424,
+        "sha256": "7c0f3cf23ad44c83f40c3fe566e2b65d51a50cea6ec9c681cea4b9aabe823c93",
+        "utf8": true,
+        "svg_elements": 31,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-09.svg",
+        "bytes": 2445,
+        "sha256": "ec793b997e6dae3d0584621fb6b0d9d506214b98a633205af0581942c99bc36e",
+        "utf8": true,
+        "svg_elements": 24,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-10.svg",
+        "bytes": 3138,
+        "sha256": "b10554936e3cdf9635353e99440f2186a53ef03135de1d4df8f195ca786ebda8",
+        "utf8": true,
+        "svg_elements": 31,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-11.svg",
+        "bytes": 2999,
+        "sha256": "992cb92f25b77ff40343f08b2f1651f75a67bb9c4bab4f7bae5cb175e2c4d44e",
+        "utf8": true,
+        "svg_elements": 29,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-12.svg",
+        "bytes": 3115,
+        "sha256": "e1b18cc1de65ab15ae27c49da41c7cbea431c91d4d4ea93da3857397e4b10a27",
+        "utf8": true,
+        "svg_elements": 31,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-13.svg",
+        "bytes": 3858,
+        "sha256": "786798d321ee260230fe0b47b5a7e001a3834516476e71ae4f98e377ee507c76",
+        "utf8": true,
+        "svg_elements": 36,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-14.svg",
+        "bytes": 3247,
+        "sha256": "6398621ee48fe09925f763f30d95d5be7fb91c9af60465cd1473df5ceb423d26",
+        "utf8": true,
+        "svg_elements": 29,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-15.svg",
+        "bytes": 3320,
+        "sha256": "27c611c7650d6c1b7d9547cec8f51698342cb77257c9859cc1e46e0b6de0d406",
+        "utf8": true,
+        "svg_elements": 33,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-16.svg",
+        "bytes": 2880,
+        "sha256": "a216feb243e694b1ec579c159dadb789a4197ace7dd6c74defed78441a730471",
+        "utf8": true,
+        "svg_elements": 28,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-17.svg",
+        "bytes": 3321,
+        "sha256": "6b56c5be900fe0eef7670972d81d019a02a346d05917ea4b8382bdb22346d02b",
+        "utf8": true,
+        "svg_elements": 31,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-18.svg",
+        "bytes": 3693,
+        "sha256": "a408f372a95ec80f643a9a86932d06cc220f7ca2b6a42b6bac739236149d0a15",
+        "utf8": true,
+        "svg_elements": 34,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-19.svg",
+        "bytes": 2657,
+        "sha256": "5d969ef79d7e4a240362c6b31ddd94c776fb57a9fcb7c87ffb3332b64b14cfba",
+        "utf8": true,
+        "svg_elements": 26,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-20.svg",
+        "bytes": 3438,
+        "sha256": "821fa8dc54ac26aadfdd37313238365032a6767601744cfae53f0ec747a63385",
+        "utf8": true,
+        "svg_elements": 34,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-21.svg",
+        "bytes": 3924,
+        "sha256": "916558eca0ab9309590185d6237c9092810a08c61e285c09f483df2386946d46",
+        "utf8": true,
+        "svg_elements": 36,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-22.svg",
+        "bytes": 3846,
+        "sha256": "d401052212c62993c341c39ffe49239e6d6ae5b137358f62f3d96db3b15b0cdf",
+        "utf8": true,
+        "svg_elements": 38,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-23.svg",
+        "bytes": 3153,
+        "sha256": "e2c5a87267d29a20c70dbe769f7028c084a87cf71d13228a0e591494cedf20ad",
+        "utf8": true,
+        "svg_elements": 31,
+        "unsafe_elements": []
+      },
+      {
+        "path": "graficos/tecnicos/P-24.svg",
+        "bytes": 3681,
+        "sha256": "73dcef5a5ccb11e7fd96da99ea067153a944fe0079f85bc31aac83da90ed34ef",
+        "utf8": true,
+        "svg_elements": 36,
+        "unsafe_elements": []
+      },
+      {
+        "path": "herramientas/capilaridad_m2.py",
+        "bytes": 14041,
+        "sha256": "b982d3a3c4878396d729a396d8a3008cb3fcd90e71d9771beba60a1360e21dd3",
+        "utf8": true,
+        "functions": [
+          "dump",
+          "wall",
+          "wall_bounds",
+          "radial_state",
+          "FourFields",
+          "operators",
+          "spectrum",
+          "extrapolate",
+          "run",
+          "fun",
+          "fun",
+          "jac",
+          "__init__",
+          "sol",
+          "extrap"
+        ],
+        "imports": [
+          "from pathlib import Path",
+          "import json, platform, hashlib",
+          "import numpy as np",
+          "import scipy",
+          "from scipy.integrate import solve_bvp, simpson, quad, cumulative_trapezoid",
+          "from scipy.optimize import brentq",
+          "from scipy.sparse import diags, bmat, eye, csc_matrix",
+          "from scipy.sparse.linalg import eigsh, eigs",
+          "from scipy.special import iv",
+          "from m2_comun import ROOT, RATIO, M, G, H, potential, ueff, up, upp",
+          "from guia_m2 import operators as tube_operators"
+        ]
+      },
+      {
+        "path": "herramientas/catalogo_aceptacion_m2.py",
+        "bytes": 9573,
+        "sha256": "fc17373ee4c80eab269d544615a30da01df342c4d9e85677c68cd69a19b0dd9b",
+        "utf8": true,
+        "functions": [],
+        "imports": [
+          "import json",
+          "from pathlib import Path"
+        ]
+      },
+      {
+        "path": "herramientas/cierre_m2.py",
+        "bytes": 8759,
+        "sha256": "fa36c80f4437ff6d86a54693f84e46e87bbd535e3b3b3afaa9270c2ab0aed973",
+        "utf8": true,
+        "functions": [
+          "low",
+          "spectrum",
+          "homogeneous",
+          "geometry_lengths",
+          "main",
+          "entry",
+          "matvec",
+          "matmat",
+          "invvec"
+        ],
+        "imports": [
+          "import json, sys, platform",
+          "import numpy as np",
+          "import scipy",
+          "from scipy.sparse import diags, bmat, eye, csc_matrix",
+          "from scipy.sparse.linalg import eigsh, eigs, splu, LinearOperator",
+          "from scipy.linalg import eigh_tridiagonal",
+          "from scipy.optimize import brentq",
+          "from scipy.integrate import quad",
+          "from m2_comun import ROOT, RATIO, M, G, H, solve, measures, ueff, up, upp",
+          "from geometria import segments"
+        ]
+      },
+      {
+        "path": "herramientas/complecion_escalar.py",
+        "bytes": 3481,
+        "sha256": "c779313fca030de780c615ef223d2e2b2dc6c18770ee68910cde8fa7f20129da",
+        "utf8": true,
+        "functions": [
+          "V",
+          "ueff",
+          "ueffp",
+          "solve_full",
+          "fun"
+        ],
+        "imports": [
+          "from pathlib import Path",
+          "import json",
+          "import numpy as np",
+          "from scipy.integrate import solve_bvp, simpson"
+        ]
+      },
+      {
+        "path": "herramientas/contrastes_r1.py",
+        "bytes": 5773,
+        "sha256": "1ed1fa2badcf80176da590eec1cb3c7df37d3399c2ee2f080e42979198b8a762",
+        "utf8": true,
+        "functions": [
+          "main",
+          "force",
+          "err"
+        ],
+        "imports": [
+          "import json",
+          "import numpy as np",
+          "from scipy.integrate import quad",
+          "from scipy.optimize import brentq",
+          "from m2_comun import ROOT, RATIO, M, G, H, THETA, up, upp"
+        ]
+      },
+      {
+        "path": "herramientas/correspondencia_micro.py",
+        "bytes": 14243,
+        "sha256": "d2a0da03084e5abcb848838d7eceb90f305a4a69188d700f672586fc2f844515",
+        "utf8": true,
+        "functions": [
+          "check",
+          "U",
+          "Up",
+          "Upp",
+          "radial",
+          "graph",
+          "scattering",
+          "drv",
+          "ode",
+          "Sx",
+          "Afield",
+          "pot",
+          "get",
+          "find",
+          "unite",
+          "f",
+          "sp"
+        ],
+        "imports": [
+          "from pathlib import Path",
+          "import json, math",
+          "import numpy as np",
+          "from scipy.integrate import solve_bvp, simpson, quad, solve_ivp",
+          "from scipy.linalg import eigh_tridiagonal, eigh",
+          "from scipy.optimize import brentq",
+          "from geometria import transform, ends"
+        ]
+      },
+      {
+        "path": "herramientas/dinamica_m2.py",
+        "bytes": 3113,
+        "sha256": "00a01ac97846c66c028e65c7a07414880310104901e19fe44f4e1cc98c301779",
+        "utf8": true,
+        "functions": [
+          "evolve",
+          "lap",
+          "acceleration",
+          "gradient",
+          "sample"
+        ],
+        "imports": [
+          "import json",
+          "import numpy as np",
+          "from scipy.interpolate import CubicSpline",
+          "from m2_comun import ROOT, RATIO, M, G, H, potential"
+        ]
+      },
+      {
+        "path": "herramientas/empaquetar.py",
+        "bytes": 3913,
+        "sha256": "234cf92ef562a35c9512ea2dda25181f736c706e0c514133d0dbe5800613690d",
+        "utf8": true,
+        "functions": [
+          "sha",
+          "files",
+          "write",
+          "verify"
+        ],
+        "imports": [
+          "from pathlib import Path",
+          "import argparse, hashlib, json, zipfile"
+        ]
+      },
+      {
+        "path": "herramientas/ensayo_microscopico.py",
+        "bytes": 2892,
+        "sha256": "ddd47c2f1c8b1985cb75763006c55ac5e7bbbb546aec432e8288db5378e91886",
+        "utf8": true,
+        "functions": [
+          "initial_branch",
+          "solve",
+          "rhs",
+          "rhs",
+          "bc"
+        ],
+        "imports": [
+          "from pathlib import Path",
+          "import json",
+          "import numpy as np",
+          "from scipy.integrate import solve_bvp, simpson"
+        ]
+      },
+      {
+        "path": "herramientas/figuras_capilaridad.py",
+        "bytes": 2265,
+        "sha256": "d9358f1e3353569b267ea439681a040751e8cd6dedc2c73887440b54436b84e0",
+        "utf8": true,
+        "functions": [],
+        "imports": [
+          "from pathlib import Path",
+          "import json",
+          "import numpy as np",
+          "import matplotlib",
+          "import matplotlib.pyplot as plt"
+        ]
+      },
+      {
+        "path": "herramientas/figuras_m2.py",
+        "bytes": 5188,
+        "sha256": "de6751c3b57a900f65eb143f3c5dea119a6c80ed071322b047124f31e98f6a78",
+        "utf8": true,
+        "functions": [],
+        "imports": [
+          "from pathlib import Path",
+          "import json",
+          "import numpy as np",
+          "import matplotlib",
+          "import matplotlib.pyplot as plt"
+        ]
+      },
+      {
+        "path": "herramientas/generar.py",
+        "bytes": 10841,
+        "sha256": "9f6e7719441eb32c8a159f6eae4ef1632ba7d3acb7295cf1de5c5ca20e8ec504",
+        "utf8": true,
+        "functions": [
+          "load",
+          "paths",
+          "svg"
+        ],
+        "imports": [
+          "from pathlib import Path",
+          "import json, html, math, re",
+          "from geometria import bounds, ends, topology",
+          "from fractions import Fraction"
+        ]
+      },
+      {
+        "path": "herramientas/geometria.py",
+        "bytes": 2295,
+        "sha256": "4ef3e0e80adeb46916aacfa27eddc04eeb86052c146145264fc1a073fecb294c",
+        "utf8": true,
+        "functions": [
+          "transform",
+          "ends",
+          "segments",
+          "curveval",
+          "bounds",
+          "topology",
+          "straight_overlaps",
+          "find",
+          "union",
+          "cross",
+          "sub"
+        ],
+        "imports": [
+          "from fractions import Fraction as F",
+          "import math"
+        ]
+      },
+      {
+        "path": "herramientas/graficos_micro.py",
+        "bytes": 3198,
+        "sha256": "392725a0f055778c6541bc81256d67fc14390aeb9a957eeb4d95c8b97d40f018",
+        "utf8": true,
+        "functions": [],
+        "imports": [
+          "from pathlib import Path",
+          "import json",
+          "import numpy as np",
+          "import matplotlib",
+          "import matplotlib.pyplot as plt"
+        ]
+      },
+      {
+        "path": "herramientas/guia_m2.py",
+        "bytes": 7452,
+        "sha256": "80144b59011d2751841ae178c0a56bf4f14588d78dd0abeafd8435ec74191782",
+        "utf8": true,
+        "functions": [
+          "tube",
+          "tube_measures",
+          "operators",
+          "growth",
+          "main",
+          "fun",
+          "jac"
+        ],
+        "imports": [
+          "import json",
+          "import numpy as np",
+          "from scipy.integrate import solve_bvp, simpson",
+          "from scipy.sparse import diags, bmat, eye, csc_matrix",
+          "from scipy.sparse.linalg import eigsh, eigs",
+          "from m2_comun import ROOT, RATIO, M, G, H, potential, up"
+        ]
+      },
+      {
+        "path": "herramientas/m2_comun.py",
+        "bytes": 2898,
+        "sha256": "ed2714994797fc34aec2c6f740e3b5167c50d802da897f7fedf610b13262e919",
+        "utf8": true,
+        "functions": [
+          "potential",
+          "ueff",
+          "up",
+          "upp",
+          "solve",
+          "measures",
+          "fun",
+          "jac"
+        ],
+        "imports": [
+          "from pathlib import Path",
+          "import json",
+          "import numpy as np",
+          "from scipy.integrate import solve_bvp, simpson"
+        ]
+      },
+      {
+        "path": "herramientas/preparacion_y_motor.py",
+        "bytes": 4092,
+        "sha256": "a23d34b26afd0f0a15c024a3d572e235645122ddb3aebbb5c32f1d520e4e15d5",
+        "utf8": true,
+        "functions": [
+          "rate",
+          "f"
+        ],
+        "imports": [
+          "from pathlib import Path",
+          "import json, math",
+          "import numpy as np",
+          "from scipy.integrate import solve_ivp"
+        ]
+      },
+      {
+        "path": "herramientas/reproducir.py",
+        "bytes": 2259,
+        "sha256": "a0c9fa19edd5a360dbfad4290f742d020088e85bdf73c9d849c65687a587f04e",
+        "utf8": true,
+        "functions": [],
+        "imports": [
+          "from pathlib import Path",
+          "import argparse, json, os, subprocess, sys, time, platform"
+        ]
+      },
+      {
+        "path": "herramientas/resultados_micro.py",
+        "bytes": 4875,
+        "sha256": "78ed9c578e9c91c5e28af385b6e1d7fefad7868e7126dda871a044239a7dfb63",
+        "utf8": true,
+        "functions": [
+          "read"
+        ],
+        "imports": [
+          "from pathlib import Path",
+          "import json"
+        ]
+      },
+      {
+        "path": "herramientas/verificar.py",
+        "bytes": 13501,
+        "sha256": "0620a1f9f1074cc402235d307ab2eb1d35876801c35472a01fdf3d59c229836d",
+        "utf8": true,
+        "functions": [
+          "load",
+          "val",
+          "check",
+          "close",
+          "controller",
+          "f"
+        ],
+        "imports": [
+          "from pathlib import Path",
+          "import json, math, sys, platform, re, xml.etree.ElementTree as ET",
+          "from geometria import ends, bounds, topology, straight_overlaps",
+          "import numpy, scipy"
+        ]
+      },
+      {
+        "path": "herramientas/verificar_capilaridad.py",
+        "bytes": 8459,
+        "sha256": "1358a1549674eaa22eb4f9991eaca381f720c3e810761c9c087038407e097abd",
+        "utf8": true,
+        "functions": [
+          "check",
+          "bounded"
+        ],
+        "imports": [
+          "from pathlib import Path",
+          "import json, hashlib",
+          "import numpy as np",
+          "from scipy.integrate import simpson",
+          "from m2_comun import ROOT, potential, ueff, up, upp"
+        ]
+      },
+      {
+        "path": "herramientas/verificar_m2.py",
+        "bytes": 6912,
+        "sha256": "499c423f766f584ab78ca0f84fe6c6c0059d05c45bc4500d306f391f659535b0",
+        "utf8": true,
+        "functions": [
+          "load",
+          "check"
+        ],
+        "imports": [
+          "from pathlib import Path",
+          "import json, math, ast, re",
+          "import xml.etree.ElementTree as ET",
+          "import numpy as np"
+        ]
+      },
+      {
+        "path": "requirements.txt",
+        "bytes": 46,
+        "sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197",
+        "utf8": true
+      },
+      {
+        "path": "tratado/01_tratado.md",
+        "bytes": 79256,
+        "sha256": "dddab5101c4a93beaea57acc1f55c6aa46cc8ae812c7894b4c55363e4cf1a356",
+        "utf8": true,
+        "headings": [
+          "# Rúnica — Tratado técnico y especificación operacional",
+          "## Lectura del tratado",
+          "## 1. Qué es una runa",
+          "## 2. Leyes universales",
+          "## 3. Propiedades constitutivas adoptadas",
+          "## 4. Modelo microscópico efectivo M1 y extensión M2",
+          "## 5. Régimen inactivo, iniciación y dominio de validez",
+          "## 6. Capa física de componentes y redes",
+          "## 7. Memoria, lógica y control desde la misma estructura",
+          "## 8. Escritura y facilidad de uso",
+          "## 9. Energía solar, despliegue y potencia",
+          "## 10. Reservas y energía aprovechable",
+          "## 11. Fuerza, apoyo, vuelo y movimiento",
+          "## 12. Calor, frío y transporte de entropía",
+          "## 13. Electromagnetismo, luz, sonido y percepción",
+          "## 14. Medición, comunicaciones e información",
+          "## 15. Materia ambiental, separación y química",
+          "## 16. Ensamblaje, materiales y permanencia",
+          "## 17. Procesos nucleares",
+          "## 18. Reparación biológica y continuidad funcional",
+          "## 19. Contrato común de las primordiales",
+          "## 20. Construcción y uso de una operación",
+          "## 21. Ejemplos de dimensionamiento bajo hipótesis",
+          "## 22. Potencia, eficiencia y escalamiento",
+          "## 23. Gravedad y regímenes extremos",
+          "## 24. Metrología, validación y aceptación",
+          "## 25. Fallos y cierre",
+          "## 26. Enseñanza, conocimiento y evolución de la disciplina",
+          "## 27. Alcance del cierre técnico",
+          "## Anexo A. Notación y magnitudes",
+          "## Anexo B. Trazabilidad de la revisión",
+          "## Anexo C. Fuentes científicas y uso"
+        ]
+      },
+      {
+        "path": "tratado/02_micro_derivaciones.md",
+        "bytes": 10208,
+        "sha256": "6bdeb759cfdce01acb352957c6cc4ffe2b8b2adc2de8f132cb0c065b3fdef548",
+        "utf8": true,
+        "headings": [
+          "# Modelo microscópico M1: ecuaciones, estabilidad y correspondencia",
+          "## M.1. Convenciones y alcance",
+          "## M.2. Variación y balances locales",
+          "## M.3. Acoplamientos y efectos simultáneos",
+          "## M.4. Vacío, carga y estructuras neutras",
+          "## M.5. Ensayo radial reproducible",
+          "## M.6. Teoría efectiva y control del truncamiento",
+          "## M.7. Correspondencia microscópica y macroscópica",
+          "## M.8. Estado de cierre"
+        ]
+      },
+      {
+        "path": "tratado/03_especificacion_operacional.md",
+        "bytes": 16557,
+        "sha256": "ab3f4d3395e2c2f6d4cf5cb64eca2be6e6db120e10cbf24022d1b37e6c863651",
+        "utf8": true,
+        "headings": [
+          "# Especificación operacional R1",
+          "## O.1. Arquitectura y uso",
+          "## O.2. Geometría, tamaño y cruces",
+          "## O.3. Interfaces y composición",
+          "## O.4. Fuente, reserva y red",
+          "## O.5. Despliegue, alcance y crecimiento",
+          "## O.6. Soporte y actuación",
+          "## O.7. Calor y potencia sostenida",
+          "## O.8. Medida, óptica y electromagnetismo",
+          "## O.9. Computación y control distribuido",
+          "## O.10. Fallos, autoridad y aceptación"
+        ]
+      },
+      {
+        "path": "tratado/04_procedimientos_y_casos.md",
+        "bytes": 12690,
+        "sha256": "2579d9a048aa3fd327b8127048ff83b51e0362455d0fb5a25eac1e1a04613898",
+        "utf8": true,
+        "headings": [
+          "# Procedimientos y casos de dimensionamiento",
+          "## C.1. De la preparación a la luz",
+          "## C.2. Crecimiento de una instalación",
+          "## C.3. Reserva, elevación y recuperación",
+          "## C.4. Calefacción, enfriamiento y congelación",
+          "## C.5. Materia ambiental y ruta química",
+          "## C.6. Ensamblaje y permanencia",
+          "## C.7. Procesos biológicos y nucleares",
+          "## C.8. Uso ordinario y aceptación de recetas"
+        ]
+      },
+      {
+        "path": "tratado/05_parametros.md",
+        "bytes": 10954,
+        "sha256": "ddd4aa24f44c0fe058bed1f1ebc37c172c8599c3698749e22337ab2a2c58b139",
+        "utf8": true,
+        "headings": [
+          "# Parámetros de referencia",
+          "## constants",
+          "## seed",
+          "## solar",
+          "## power_channel",
+          "## reserve",
+          "## mechanical",
+          "## thermal",
+          "## logic",
+          "## optical",
+          "## acceptance",
+          "## layout",
+          "## lamp_case",
+          "## control_case",
+          "## vibration_case",
+          "## chemistry_case"
+        ]
+      },
+      {
+        "path": "tratado/06_revision.md",
+        "bytes": 7920,
+        "sha256": "74bdd81387a5151e121730c387527c4e85266d8634df423882e7ffd208bc0325",
+        "utf8": true,
+        "headings": [
+          "# Revisión de los 50 hallazgos"
+        ]
+      },
+      {
+        "path": "tratado/07_resultados.md",
+        "bytes": 11738,
+        "sha256": "09f9477614d730edb9bcd4c31a87d45f16acbf9d5ffb58d0b492afb3ab70b3c5",
+        "utf8": true,
+        "headings": [
+          "# Resultados de verificación",
+          "## Ensayo microscópico",
+          "## lamp",
+          "## heater",
+          "## freezing",
+          "## reserve",
+          "## lifting",
+          "## support",
+          "## controller",
+          "## solar_growth",
+          "## radiator",
+          "## channel",
+          "## logic",
+          "## photon_support_power_W",
+          "## carbon",
+          "## Comprobaciones"
+        ]
+      },
+      {
+        "path": "tratado/08_puente_microscopico.md",
+        "bytes": 26630,
+        "sha256": "a90f24ab2b0395703833da97cdae22486d5193283f783b3eb7be9a0bb0e6dcf7",
+        "utf8": true,
+        "headings": [
+          "# Correspondencia microscópica y macroscópica",
+          "## MM.1. Qué constituye un cierre físico",
+          "## MM.2. Problema microscópico bien definido",
+          "## MM.3. Del potencial a un fluido de campo",
+          "## MM.4. Escalas físicas: qué se puede ajustar y qué no",
+          "## MM.5. Fluctuaciones: amplitud, fase y estabilidad",
+          "## MM.6. Proyección modal y coeficientes calculables",
+          "## MM.7. Del campo a Tránsito, Repliegue y Nexo",
+          "## MM.8. Fuerza sobre materia y reacción",
+          "## MM.9. Electromagnetismo, radiación y conversión",
+          "## MM.10. Disipación y temperatura desde grados microscópicos",
+          "## MM.11. Medición, lógica y memoria",
+          "## MM.12. Química y ensamblaje",
+          "## MM.13. Preparación, autonomía y control",
+          "## MM.14. Cambios operacionales que se desprenden"
+        ]
+      },
+      {
+        "path": "tratado/09_complecion_escalar_y_preparacion.md",
+        "bytes": 11835,
+        "sha256": "94fc8145f9882db94dd89c9f37f278737957a03227e9aefeb9f187298c854a14",
+        "utf8": true,
+        "headings": [
+          "# Extensión microscópica M2: mediador, preparación y motor",
+          "## M2.1. Cambio de teoría y alcance",
+          "## M2.2. Acción y potencial comunes",
+          "## M2.3. Eliminación exacta del mediador estático",
+          "## M2.4. Solución radial de ambos campos",
+          "### Operador de perturbaciones de M2",
+          "## M2.5. Preparación paramétrica: umbral comprobable",
+          "## M2.6. Motor microscópico para convertir calor radiativo en trabajo",
+          "## M2.7. Lo establecido y lo que permanece abierto"
+        ]
+      },
+      {
+        "path": "tratado/10_correspondencia_24.md",
+        "bytes": 5500,
+        "sha256": "21a46be4593219de325e15a3607b48f81c203b348c8243e2202f320c3a6b0d3a",
+        "utf8": true,
+        "headings": [
+          "# Correspondencia de las 24 primordiales",
+          "## Regla común de reducción",
+          "## Composición y uso sencillo"
+        ]
+      },
+      {
+        "path": "tratado/11_resultados_micro.md",
+        "bytes": 9312,
+        "sha256": "d850cc5f479d47bfecc41007cdd9d04ebb7a63609147b5107ac84d402852689f",
+        "utf8": true,
+        "headings": [
+          "# Resultados de la correspondencia microscópica",
+          "## Dos campos y potencial efectivo",
+          "## Modos del condensado",
+          "## Dispersión en las 24 geometrías",
+          "## Memoria modal alimentada",
+          "## Preparación y motor",
+          "## Comprobaciones adicionales",
+          "## Datos completos"
+        ]
+      },
+      {
+        "path": "tratado/12_fuentes_y_limites.md",
+        "bytes": 5483,
+        "sha256": "e2e39eccf96cf92974834a4e127a7bd5d3706f587f95ffa47025cd166e10ed35",
+        "utf8": true,
+        "headings": [
+          "# Fuentes de la extensión y límites de las inferencias",
+          "## Límites de los cálculos incluidos",
+          "## Fuentes para la edición 4"
+        ]
+      },
+      {
+        "path": "tratado/13_M2_comun_y_teoremas.md",
+        "bytes": 12493,
+        "sha256": "5ca7e6aac9bb46e3f6e6e7f82bcabf3da2e844e89cb79fc63457040303b54349",
+        "utf8": true,
+        "headings": [
+          "# M2 común: definición matemática y alcance demostrado",
+          "## 13.1. Resultado y regla de aceptación",
+          "## 13.2. Un solo conjunto fundamental",
+          "## 13.3. Ecuaciones, conservación y unidades",
+          "## 13.4. Vacío: demostración clásica global",
+          "## 13.5. Existencia global del problema de Cauchy escalar",
+          "## 13.6. Causalidad e hiperbolicidad",
+          "## 13.7. Obstrucción estática y alcance de la geometría",
+          "## 13.8. Preparación y simetría de carga"
+        ]
+      },
+      {
+        "path": "tratado/14_espectro_y_dinamica_M2.md",
+        "bytes": 10703,
+        "sha256": "54afb160e163b0aed1d26afe386969321d934670749bda5737d37f026345ca40",
+        "utf8": true,
+        "headings": [
+          "# Solución, espectro y dinámica del mismo M2",
+          "## 14.1. Qué se ha resuelto",
+          "## 14.2. Operador lineal completo de dos campos",
+          "## 14.3. Energía a carga fija: por qué un autovalor negativo no basta",
+          "## 14.4. Todos los sectores angulares: reducción analítica",
+          "## 14.5. Frecuencias, continuo y ceros de simetría",
+          "## 14.6. Evolución no lineal de ambos campos",
+          "## 14.7. Estado exacto de la evidencia espectral"
+        ]
+      },
+      {
+        "path": "tratado/15_regimenes_y_coeficientes.md",
+        "bytes": 10757,
+        "sha256": "66a3f5bc520e4f4cde5211339e47d884c85350d6b76ae5226fbfb55420ca6190",
+        "utf8": true,
+        "headings": [
+          "# Regímenes de validez y derivación de coeficientes",
+          "## 15.1. Cuatro afirmaciones que no son equivalentes",
+          "## 15.2. Amplitud y reducción del mediador",
+          "## 15.3. Modos homogéneos, estabilidad y velocidad",
+          "## 15.4. Linealización y amplitudes de señal",
+          "## 15.5. Tiempo, energía, ruido y corte físico",
+          "## 15.6. Cómo deben salir los coeficientes de un dispositivo"
+        ]
+      },
+      {
+        "path": "tratado/16_pruebas_de_dispositivo.md",
+        "bytes": 14302,
+        "sha256": "68d257a6605d0becda89416852b745c6f617bea8d281be7cb829e90f569a4b3e",
+        "utf8": true,
+        "headings": [
+          "# Canal, Memoria, Intercambio térmico y Semilla: resultado de aceptación",
+          "## 16.1. P-04 Canal: geometría y respuesta que sí se pueden calcular",
+          "### Respuesta exacta del grafo condicionado",
+          "### Resultado completo de P-04",
+          "## 16.2. P-11 Memoria: derivación permitida y exclusión de una codificación",
+          "### El coeficiente de Kerr debe salir del campo",
+          "### Dos fases globales no proporcionan la barrera R1",
+          "## 16.3. P-18 Intercambio térmico: transporte y trabajo",
+          "### Conductancia derivable de una transmisión",
+          "### Pérdidas, ruido y umbrales",
+          "## 16.4. P-01 Semilla: de datos iniciales a operación",
+          "## 16.5. Qué decisión se sigue del criterio solicitado"
+        ]
+      },
+      {
+        "path": "tratado/17_aceptacion_catalogo.md",
+        "bytes": 8000,
+        "sha256": "f8835d835b08e00bd1229e79b7a2ac28b1d809ed5bd6ebdc4ee2eff5da957c6b",
+        "utf8": true,
+        "headings": [
+          "# Aplicación del criterio al catálogo",
+          "## 17.1. Decisión de extensión",
+          "## 17.2. Familias y resultado por primordial",
+          "### transporte",
+          "### informacion / control",
+          "### mecanica",
+          "### energia / termica",
+          "### materia / quimica",
+          "## 17.3. Precisiones transversales",
+          "## 17.4. P-22, P-23 y P-24",
+          "## 17.5. Resultado final de esta evaluación"
+        ]
+      },
+      {
+        "path": "tratado/18_guia_y_terminal_desde_M2.md",
+        "bytes": 12892,
+        "sha256": "d1ccf6bd6d3b668b5b88a3c83e47d4bc7132a5a1e24c3f89c8aa4974121a0a71",
+        "utf8": true,
+        "headings": [
+          "# Prueba directa de la guía autosostenida y del terminal",
+          "## 18.1. Resultado de la prueba",
+          "## 18.2. Geometría mínima y ecuaciones transversales",
+          "## 18.3. Perturbaciones que el modelo de grafo no contenía",
+          "## 18.4. Demostración de la inestabilidad de tubos de esta clase",
+          "## 18.5. Umbral y tiempo de crecimiento",
+          "## 18.6. El exterior del terminal desde las ecuaciones",
+          "## 18.7. Decisión física",
+          "## 18.8. Relación con resultados publicados"
+        ]
+      },
+      {
+        "path": "tratado/19_resultados_edicion4.md",
+        "bytes": 1945,
+        "sha256": "4eaed0e4ea2d17f75f1242886fae979f3cafe1f7dd09128a7e2d3edb69015be8",
+        "utf8": true,
+        "headings": [
+          "# 19 · Resultados y verificaciones de la base M2 4.0"
+        ]
+      },
+      {
+        "path": "tratado/20_interfaz_y_limite_capilar.md",
+        "bytes": 13493,
+        "sha256": "6b823f00e4e77292c38a08261a3bae18c685671716c23dc925d36e982527bfa3",
+        "utf8": true,
+        "headings": [
+          "# 20 · De los campos a la interfaz y al régimen capilar",
+          "## 20.1. Alcance y clasificación",
+          "## 20.2. Variables y coexistencia",
+          "## 20.3. Ecuación de estado e inercia derivadas",
+          "## 20.4. Pared plana de ambos campos",
+          "## 20.5. Equilibrio curvo sin presión impuesta",
+          "## 20.6. Modos capilares",
+          "## 20.7. Contraste con el espectro microscópico",
+          "## 20.8. Reproducción, unidades y límites",
+          "## 20.9. Referencias y procedencia de las fórmulas"
+        ]
+      },
+      {
+        "path": "tratado/21_corriente_clasificacion_y_cierre.md",
+        "bytes": 9269,
+        "sha256": "b399a1ddc221088249f62bae867c2102d213db244566182535e67ba26884ed15",
+        "utf8": true,
+        "headings": [
+          "# 21 · Corriente, clasificación física y condiciones de avance",
+          "## 21.1. Una corriente axial uniforme no estabiliza este tubo libre",
+          "## 21.2. Qué puede reutilizarse entre funciones",
+          "## 21.3. Revisión de Separación, Reacción y Ensamblaje",
+          "## 21.4. Ciencia, ingeniería e interfaz",
+          "## 21.5. Programa siguiente con condiciones de parada"
+        ]
+      },
+      {
+        "path": "tratado/22_evidencia_y_metodologia.md",
+        "bytes": 8049,
+        "sha256": "c9b122c7211347e34a27513750fd2f03bd3ce12e842292c91a7462ea08abb2e8",
+        "utf8": true,
+        "headings": [
+          "# 22 · Estado de evidencia y metodología de continuidad",
+          "## 22.1. Auditoría de entrada",
+          "## 22.2. Taxonomía",
+          "## 22.3. Qué estaba establecido y qué cambia",
+          "## 22.4. Cobertura de la cadena física",
+          "## 22.5. Reproducibilidad y criterios de detención",
+          "## 22.6. Regla de autoridad y cambios"
+        ]
+      },
+      {
+        "path": "trazabilidad/CAMBIOS_M2_4_1.md",
+        "bytes": 2605,
+        "sha256": "9872282ad65d2bea1badcaaeed572cc24de2b44c50dc314e405f38c93c0b71c1",
+        "utf8": true,
+        "headings": [
+          "# Cambios de M2 4.0 a 4.1"
+        ]
+      },
+      {
+        "path": "trazabilidad/auditoria_entrada.json",
+        "bytes": 28375,
+        "sha256": "8cf78e1a4af6742361a91bbd009f2ce50c96ad427be3b66b3128c7746547d0e1",
+        "utf8": true,
+        "json_keys": [
+          "source_filename",
+          "source_sha256",
+          "source_file_count",
+          "files",
+          "csv_reproduction",
+          "reproduction_runs",
+          "audit_scope",
+          "authority"
+        ]
+      },
+      {
+        "path": "trazabilidad/cambios_archivos.json",
+        "bytes": 55819,
+        "sha256": "b4dfad36d3debf235a286258394692c1b33550af0c7454843301cbc54a01e3e3",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "source_zip_sha256",
+          "excluded_to_avoid_circular_hashes",
+          "counts",
+          "files"
+        ]
+      },
+      {
+        "path": "trazabilidad/fuente_M2_4_0.zip",
+        "bytes": 1170983,
+        "sha256": "bccd7e57abe7d82c06d20959891776ae831874ea84ab8307ef91518d915fbb3a",
+        "archive_count": 156,
+        "crc_failure": null,
+        "nested_hashes": {
+          "Proyecto_Runas/GUIA_MICROSCOPICA.md": "ad167d2f66cc29cc48d70a777439a4267d3436cf4329b9041fedb8041d1bac41",
+          "Proyecto_Runas/LEEME.md": "756f2cbbdb9f936d75ca834519f67a9559ae546347c04650ec3702652890562e",
+          "Proyecto_Runas/M2_RESULTADO.md": "4d7f6962f5c747a80577a8dede27cda7dc057c16877f3bc4bea11cf63c332ebf",
+          "Proyecto_Runas/MANIFIESTO_SHA256.json": "5dd04036295001fbcd375be081d2413887facb56f40da7f9922485ba1f2919ea",
+          "Proyecto_Runas/Runica_Tratado_integrado.md": "fd5bd73d3ae4f29e285803b2ea3aae3ce2bd08483ce54aa3db7c3f81e4289815",
+          "Proyecto_Runas/datos/aceptacion_m2.json": "e69f63f743f6ae629036c1bcb713624ae8cbb5393b6ce8002285f2355dc94275",
+          "Proyecto_Runas/datos/correspondencia.json": "52649dd9802629e58af951e66e1a04de554d48fc30350cb0e1033522c2054b22",
+          "Proyecto_Runas/datos/geometria.json": "fb6559033b3005c45d4c058d0913bf682d4c5661002c17190dbd6d16a091b7f2",
+          "Proyecto_Runas/datos/interfaces.json": "b5e2ad5b07b7e229ec362ae047667ae0de8222f36b4459970db8e9793029f235",
+          "Proyecto_Runas/datos/microscopia.json": "0e90a1b628e620df84af417cb34a913cca5c498ad83b94eba3c4fc31569a8d4b",
+          "Proyecto_Runas/datos/modelos.json": "7a33fa2c31bb966d76544bfd0dcb7bf2e2641a0e01b36d9d5032c3f7a362a668",
+          "Proyecto_Runas/datos/modulos.json": "1fdb9b3465536febb35ad580db9595b875938a530ee22ab3d4f9ef511c43b9a6",
+          "Proyecto_Runas/datos/parametros.json": "718b39d2f3fefdd1c772bd80b13ab392b25b449a4d980bb9549e0bd7c8b2268e",
+          "Proyecto_Runas/datos/procedencia.json": "c04d7bb0c9698520c145bc66b4b243ad5e88c18a075582c81bd0690415594613",
+          "Proyecto_Runas/datos/recetas.json": "a6e10e2520e800946b8d8b52f04690da14e79f9680cc369a32305d76efaf9fe2",
+          "Proyecto_Runas/datos/revision.json": "e5b71d4aafdd073c270daeb71e9803999c11ff72838e438ccb4b1a56915354fb",
+          "Proyecto_Runas/datos/theta_comun.json": "6ce6ecbe8f4f887ab285c3db184bc50ec7f5e842031c4981e2f5db2806545324",
+          "Proyecto_Runas/fichas/P-01.md": "020f99f01611fbba62d5c843cf5a9184f2e33018a39186e69b51625c1fc2adee",
+          "Proyecto_Runas/fichas/P-02.md": "ac34c6a4b6ce34cf51675a84701cf0022dcf00ab38f7405001c53fcb688462cd",
+          "Proyecto_Runas/fichas/P-03.md": "844818d3bf225af654759efe3e8d521a94209ceee607aa50e0248831ddc054d4",
+          "Proyecto_Runas/fichas/P-04.md": "7259b639ebe746d85a264c216fbd6d31d42106d6a4bcd3f3cb2fa8e43343672e",
+          "Proyecto_Runas/fichas/P-05.md": "5e531a53e622cc291e552eff040b447d2534361c56f559f096a3b3c47382fb5f",
+          "Proyecto_Runas/fichas/P-06.md": "64f85e39ed91455cca1f43c48b12569a757977e006ce477b7223aa4b8c0e19c3",
+          "Proyecto_Runas/fichas/P-07.md": "f4cfa66247f9a90a28cdaeebbeff310cf217e2a07e52ff09df1919d6ed7f018b",
+          "Proyecto_Runas/fichas/P-08.md": "8b5cb6df2631a4f085ecd502908e9e7f17fc6477573c814968bb681694c6fca3",
+          "Proyecto_Runas/fichas/P-09.md": "11a35fbfb559e2fed38e32a92a3e5e6ead20c8aeb7475225cf394165bab2a0ce",
+          "Proyecto_Runas/fichas/P-10.md": "c138069133db2e43d43926372f3df062773b304427339bc123cd68842c61e358",
+          "Proyecto_Runas/fichas/P-11.md": "750715767b363da4d57d5f294896456ad902809f485c23c2c6d0df0d5d6d8000",
+          "Proyecto_Runas/fichas/P-12.md": "c34d8f53c40a77d2bcec6418f26881a5dee29cb530e0e602f6f4d8ea2b652bc7",
+          "Proyecto_Runas/fichas/P-13.md": "a1e17b595bc65a51fb661f7f85d245dc6085fe08076514804f19f7fef8f0694c",
+          "Proyecto_Runas/fichas/P-14.md": "8cb1b8a43e005ce97dde36d3b1e37a2011e3bb5325f63e25a8a92469151c226e",
+          "Proyecto_Runas/fichas/P-15.md": "14e153554f3efb891ea85530df00f80c8ac32be5164915e8c8f1b456698aa7eb",
+          "Proyecto_Runas/fichas/P-16.md": "60ea7f0ee876d1646d915104b89f07ae810804589e5b9d80ea723bb7436fd518",
+          "Proyecto_Runas/fichas/P-17.md": "b00ed6ac2cf26c085487487590ed167abb9b6f8747e0ba2b907029072f6885f7",
+          "Proyecto_Runas/fichas/P-18.md": "11e6837f7339937f14607609f64d8da0bfb55eadd8b744baeb70e098c0bc9541",
+          "Proyecto_Runas/fichas/P-19.md": "200035e949303d5b8298ea00bfce144fa7c2764c35cb51ec3b883f02579759a2",
+          "Proyecto_Runas/fichas/P-20.md": "e93a5e8b145c7e65b0f8e5b3dc305423a34cdcd235ffe95ebbc3ba063417e495",
+          "Proyecto_Runas/fichas/P-21.md": "5b7c5c49ac6711a2d43f96723cfe30a5b1cd64351e21c9abeec172a9e236cfa4",
+          "Proyecto_Runas/fichas/P-22.md": "fda8644e855865f9d6f1fafaf27bf57748faa38f6ac4a64b6ee85e9e47b72587",
+          "Proyecto_Runas/fichas/P-23.md": "6ac70b62f5272274e8296f82e223e117838468d1777a0c90633251ee21d74856",
+          "Proyecto_Runas/fichas/P-24.md": "14e800fa173436b2bf42a88f1999523472d7b249c9d74e1529c1c275a3ded965",
+          "Proyecto_Runas/graficos/M2_evidencia_numerica.svg": "adc8ac9f3693dab77964645ccc5e82e620d3753bc78ae52711b98af4da3f3ffb",
+          "Proyecto_Runas/graficos/M2_guia_inestable.svg": "9afbe72d4ff3bb6ae82633899a237a2c9fbf385f4addcb7542a2455c871cc23d",
+          "Proyecto_Runas/graficos/M2_terminal_y_canal.svg": "ed3dc82cf6afb4b78c47fb8a80c04d8605e56e73fe648611ca41d9b93615ff31",
+          "Proyecto_Runas/graficos/atlas.svg": "666868862d4f8f74ee52b23628799797cff4c4e381d2445b4436fb8930a1c851",
+          "Proyecto_Runas/graficos/elementales/N.svg": "87d2ea1c66a703a8027e318850b4410c13f94d61b5f6d08b191665520032d372",
+          "Proyecto_Runas/graficos/elementales/R.svg": "a45a08cae40316a1ac4329f383d1008a9b0636a8d7ca39b92c39a4033a82a2d2",
+          "Proyecto_Runas/graficos/elementales/T.svg": "a60b8489e5378ef5746c5eacb65f2870ad3c08695f47c2ff8bb1487a43d40004",
+          "Proyecto_Runas/graficos/microscopia/dispersion.svg": "b359f80ef875fd70c4017bf338845922313a07f6cfc2397c2cc61a811aba20ad",
+          "Proyecto_Runas/graficos/microscopia/dispersion_grafos.svg": "68d6db2409355ff4b30b43287242fc16db3cfce7c9d922919891756ef6bb3c37",
+          "Proyecto_Runas/graficos/microscopia/memoria_alimentada.svg": "546015c9cb5ef8bf72d48075cc6b6ad74e0e3728ec11a2e6633fa35720e1cbf2",
+          "Proyecto_Runas/graficos/microscopia/perfiles_M1_M2.svg": "d89c4574e2ffb76ee92283e62dfdcf7b6ce3216706cfbc4d91f4809dfd404f92",
+          "Proyecto_Runas/graficos/runas/P-01.svg": "05dfd37675a4334b61ae7d389252735ca1c068203f156516a070c0dfbf915b0e",
+          "Proyecto_Runas/graficos/runas/P-02.svg": "5e42eb84b2abaccd514cefdec8e3e7590e085fa343eea7821e43d22d4651b947",
+          "Proyecto_Runas/graficos/runas/P-03.svg": "35bcecbc330599b5e57ae620c60e26bb9b644d553a78aa8f5f6fe21f4887e329",
+          "Proyecto_Runas/graficos/runas/P-04.svg": "146a26cc7e95ca296a6477bbf7bb33ca6287375f0ad1683f47582f19b6fd495a",
+          "Proyecto_Runas/graficos/runas/P-05.svg": "05d6c21adea3de44469635fdde52229754db52b95af4fa1233a1d230e8fae517",
+          "Proyecto_Runas/graficos/runas/P-06.svg": "f8d824f3bd518f5794d57546fd05f7383ccdb70c4c20d2271d3ef4626fede2d2",
+          "Proyecto_Runas/graficos/runas/P-07.svg": "10329d32449993b20ffb871fe618907382194e241f03faddf12ce681211ad29f",
+          "Proyecto_Runas/graficos/runas/P-08.svg": "3f10c9514d7666f98b93e62d2d390ea13d7069631e1f10e200225cbe0d6776d0",
+          "Proyecto_Runas/graficos/runas/P-09.svg": "2dedbad221c766fa7adf402a40997c37b82887fb83795719096a0b0ee32043ab",
+          "Proyecto_Runas/graficos/runas/P-10.svg": "f4c27ce52ee0cf1d3232c81867f864bd52721e20bc8f613f86b0425fee2d4b9e",
+          "Proyecto_Runas/graficos/runas/P-11.svg": "cd663f477a975ac3b353077f0a38e8d4ed310aa84385dd3c70df1225c8d5e2b8",
+          "Proyecto_Runas/graficos/runas/P-12.svg": "767a546e1f4f4e47b795409585fb3dc1cd713174f773c8432fcda599ec9f4a99",
+          "Proyecto_Runas/graficos/runas/P-13.svg": "55111190b7ef5630b35d8c1afa8d2c57c3fe295d059a65285e358b18d5a57d37",
+          "Proyecto_Runas/graficos/runas/P-14.svg": "f2840dd9b2d69b19a7526313253e3c87a6a0966f2aa0fa1e9c8e19962518c403",
+          "Proyecto_Runas/graficos/runas/P-15.svg": "3825d43a0e0c9a3257819acaadabe5397b1a4650a7fa5745be1ce7a7f799f97e",
+          "Proyecto_Runas/graficos/runas/P-16.svg": "faca1b6feb23ef79269481fba8336b07ea9794bbbf311ef602ed7fa37ba7fbeb",
+          "Proyecto_Runas/graficos/runas/P-17.svg": "40bce0eb3e19f63d0c7097a650f6b789a67005041e13c901766d455c8ff7cb42",
+          "Proyecto_Runas/graficos/runas/P-18.svg": "5e1ce0aed28a5eea82ec0c96e89715ba7367b6662cdd06a6328eb45e595bb45c",
+          "Proyecto_Runas/graficos/runas/P-19.svg": "507d157b600801533006331ed6545bb68ba196ed77e0f6c6c5dd22125c57f2fa",
+          "Proyecto_Runas/graficos/runas/P-20.svg": "b7ea1b8ff1d09318c45726332b7306b3216947c89d6d6aae6f1258c46cf16ec2",
+          "Proyecto_Runas/graficos/runas/P-21.svg": "b688d0ff9950e274eb289201fca5a8f49acda191f09659da0bd4d54b99432b64",
+          "Proyecto_Runas/graficos/runas/P-22.svg": "c84892d5c6d9b1b41f2b29459304fbb14102af18d72ad69deee8d6d472c4a09f",
+          "Proyecto_Runas/graficos/runas/P-23.svg": "1000bfe654f5b34ce15019b21ac8206a3bd3c783f94049f2d0edae4bc25930b6",
+          "Proyecto_Runas/graficos/runas/P-24.svg": "89cb40ab9f38546a6568240f4481b0a0d053fa92cd75934f257d1de4773a95f9",
+          "Proyecto_Runas/graficos/tecnicos/P-01.svg": "a3e601134d57623e6657fbf5026d0760621950500c97a22ee846dabd59c4bdf0",
+          "Proyecto_Runas/graficos/tecnicos/P-02.svg": "085a67861e99e688feb7853427e2b2c22dd56e629a09d512be58ae4f81d95e46",
+          "Proyecto_Runas/graficos/tecnicos/P-03.svg": "b70cb1b557d70a838d8dc76742e487eb6504711db21e208812403524c0cb09f6",
+          "Proyecto_Runas/graficos/tecnicos/P-04.svg": "cae5c840f1de59c79297bf667e527fa342ee4dd27deb221d7cab3a5ad4fbfce0",
+          "Proyecto_Runas/graficos/tecnicos/P-05.svg": "3ff66df3c3ac182f9176b92db4e0be1e1cb8a2f994d2daedabcdbbd1db8a9aba",
+          "Proyecto_Runas/graficos/tecnicos/P-06.svg": "f0518b803d03376d44611f996b533d9d71f1cca36849a27ac41b38eed6d97be0",
+          "Proyecto_Runas/graficos/tecnicos/P-07.svg": "bf64fd5cab654ce4ba499f1bafcb47904fe2c681ba92ceeb0fe00c02d5a6503c",
+          "Proyecto_Runas/graficos/tecnicos/P-08.svg": "7c0f3cf23ad44c83f40c3fe566e2b65d51a50cea6ec9c681cea4b9aabe823c93",
+          "Proyecto_Runas/graficos/tecnicos/P-09.svg": "ec793b997e6dae3d0584621fb6b0d9d506214b98a633205af0581942c99bc36e",
+          "Proyecto_Runas/graficos/tecnicos/P-10.svg": "b10554936e3cdf9635353e99440f2186a53ef03135de1d4df8f195ca786ebda8",
+          "Proyecto_Runas/graficos/tecnicos/P-11.svg": "992cb92f25b77ff40343f08b2f1651f75a67bb9c4bab4f7bae5cb175e2c4d44e",
+          "Proyecto_Runas/graficos/tecnicos/P-12.svg": "e1b18cc1de65ab15ae27c49da41c7cbea431c91d4d4ea93da3857397e4b10a27",
+          "Proyecto_Runas/graficos/tecnicos/P-13.svg": "786798d321ee260230fe0b47b5a7e001a3834516476e71ae4f98e377ee507c76",
+          "Proyecto_Runas/graficos/tecnicos/P-14.svg": "6398621ee48fe09925f763f30d95d5be7fb91c9af60465cd1473df5ceb423d26",
+          "Proyecto_Runas/graficos/tecnicos/P-15.svg": "27c611c7650d6c1b7d9547cec8f51698342cb77257c9859cc1e46e0b6de0d406",
+          "Proyecto_Runas/graficos/tecnicos/P-16.svg": "a216feb243e694b1ec579c159dadb789a4197ace7dd6c74defed78441a730471",
+          "Proyecto_Runas/graficos/tecnicos/P-17.svg": "6b56c5be900fe0eef7670972d81d019a02a346d05917ea4b8382bdb22346d02b",
+          "Proyecto_Runas/graficos/tecnicos/P-18.svg": "a408f372a95ec80f643a9a86932d06cc220f7ca2b6a42b6bac739236149d0a15",
+          "Proyecto_Runas/graficos/tecnicos/P-19.svg": "5d969ef79d7e4a240362c6b31ddd94c776fb57a9fcb7c87ffb3332b64b14cfba",
+          "Proyecto_Runas/graficos/tecnicos/P-20.svg": "821fa8dc54ac26aadfdd37313238365032a6767601744cfae53f0ec747a63385",
+          "Proyecto_Runas/graficos/tecnicos/P-21.svg": "916558eca0ab9309590185d6237c9092810a08c61e285c09f483df2386946d46",
+          "Proyecto_Runas/graficos/tecnicos/P-22.svg": "d401052212c62993c341c39ffe49239e6d6ae5b137358f62f3d96db3b15b0cdf",
+          "Proyecto_Runas/graficos/tecnicos/P-23.svg": "e2c5a87267d29a20c70dbe769f7028c084a87cf71d13228a0e591494cedf20ad",
+          "Proyecto_Runas/graficos/tecnicos/P-24.svg": "73dcef5a5ccb11e7fd96da99ea067153a944fe0079f85bc31aac83da90ed34ef",
+          "Proyecto_Runas/herramientas/catalogo_aceptacion_m2.py": "c99a835b076cfca2153ebfd1994a900e87457c833ce6c445503e35ef9780cc30",
+          "Proyecto_Runas/herramientas/cierre_m2.py": "fa36c80f4437ff6d86a54693f84e46e87bbd535e3b3b3afaa9270c2ab0aed973",
+          "Proyecto_Runas/herramientas/complecion_escalar.py": "c779313fca030de780c615ef223d2e2b2dc6c18770ee68910cde8fa7f20129da",
+          "Proyecto_Runas/herramientas/contrastes_r1.py": "1ed1fa2badcf80176da590eec1cb3c7df37d3399c2ee2f080e42979198b8a762",
+          "Proyecto_Runas/herramientas/correspondencia_micro.py": "d2a0da03084e5abcb848838d7eceb90f305a4a69188d700f672586fc2f844515",
+          "Proyecto_Runas/herramientas/dinamica_m2.py": "00a01ac97846c66c028e65c7a07414880310104901e19fe44f4e1cc98c301779",
+          "Proyecto_Runas/herramientas/ensayo_microscopico.py": "ddd47c2f1c8b1985cb75763006c55ac5e7bbbb546aec432e8288db5378e91886",
+          "Proyecto_Runas/herramientas/figuras_m2.py": "de6751c3b57a900f65eb143f3c5dea119a6c80ed071322b047124f31e98f6a78",
+          "Proyecto_Runas/herramientas/generar.py": "886e029eb6943e05cb16e0d52b3fb7875a18679467d04d9addc91d3a5494194e",
+          "Proyecto_Runas/herramientas/geometria.py": "4ef3e0e80adeb46916aacfa27eddc04eeb86052c146145264fc1a073fecb294c",
+          "Proyecto_Runas/herramientas/graficos_micro.py": "392725a0f055778c6541bc81256d67fc14390aeb9a957eeb4d95c8b97d40f018",
+          "Proyecto_Runas/herramientas/guia_m2.py": "80144b59011d2751841ae178c0a56bf4f14588d78dd0abeafd8435ec74191782",
+          "Proyecto_Runas/herramientas/m2_comun.py": "ed2714994797fc34aec2c6f740e3b5167c50d802da897f7fedf610b13262e919",
+          "Proyecto_Runas/herramientas/preparacion_y_motor.py": "a23d34b26afd0f0a15c024a3d572e235645122ddb3aebbb5c32f1d520e4e15d5",
+          "Proyecto_Runas/herramientas/resultados_micro.py": "78ed9c578e9c91c5e28af385b6e1d7fefad7868e7126dda871a044239a7dfb63",
+          "Proyecto_Runas/herramientas/verificar.py": "b76e0117bfa6ebcc6b9e3c30e415be75ea5f67f38777b40ee4e3ca69fa40c9da",
+          "Proyecto_Runas/herramientas/verificar_m2.py": "98a75bd1c47dd23917d53176bb603f6bf50cd1606a36fca26ee743a0852e8b4d",
+          "Proyecto_Runas/requirements.txt": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197",
+          "Proyecto_Runas/tratado/01_tratado.md": "9319123776cc35c233ebcfebe06bfe304a4cf4a05a9ee72966a1898d5f1d0cc2",
+          "Proyecto_Runas/tratado/02_micro_derivaciones.md": "6bdeb759cfdce01acb352957c6cc4ffe2b8b2adc2de8f132cb0c065b3fdef548",
+          "Proyecto_Runas/tratado/03_especificacion_operacional.md": "ab3f4d3395e2c2f6d4cf5cb64eca2be6e6db120e10cbf24022d1b37e6c863651",
+          "Proyecto_Runas/tratado/04_procedimientos_y_casos.md": "2579d9a048aa3fd327b8127048ff83b51e0362455d0fb5a25eac1e1a04613898",
+          "Proyecto_Runas/tratado/05_parametros.md": "ddd4aa24f44c0fe058bed1f1ebc37c172c8599c3698749e22337ab2a2c58b139",
+          "Proyecto_Runas/tratado/06_revision.md": "74bdd81387a5151e121730c387527c4e85266d8634df423882e7ffd208bc0325",
+          "Proyecto_Runas/tratado/07_resultados.md": "09f9477614d730edb9bcd4c31a87d45f16acbf9d5ffb58d0b492afb3ab70b3c5",
+          "Proyecto_Runas/tratado/08_puente_microscopico.md": "a90f24ab2b0395703833da97cdae22486d5193283f783b3eb7be9a0bb0e6dcf7",
+          "Proyecto_Runas/tratado/09_complecion_escalar_y_preparacion.md": "94fc8145f9882db94dd89c9f37f278737957a03227e9aefeb9f187298c854a14",
+          "Proyecto_Runas/tratado/10_correspondencia_24.md": "21a46be4593219de325e15a3607b48f81c203b348c8243e2202f320c3a6b0d3a",
+          "Proyecto_Runas/tratado/11_resultados_micro.md": "d850cc5f479d47bfecc41007cdd9d04ebb7a63609147b5107ac84d402852689f",
+          "Proyecto_Runas/tratado/12_fuentes_y_limites.md": "e2e39eccf96cf92974834a4e127a7bd5d3706f587f95ffa47025cd166e10ed35",
+          "Proyecto_Runas/tratado/13_M2_comun_y_teoremas.md": "5ca7e6aac9bb46e3f6e6e7f82bcabf3da2e844e89cb79fc63457040303b54349",
+          "Proyecto_Runas/tratado/14_espectro_y_dinamica_M2.md": "54afb160e163b0aed1d26afe386969321d934670749bda5737d37f026345ca40",
+          "Proyecto_Runas/tratado/15_regimenes_y_coeficientes.md": "66a3f5bc520e4f4cde5211339e47d884c85350d6b76ae5226fbfb55420ca6190",
+          "Proyecto_Runas/tratado/16_pruebas_de_dispositivo.md": "68d257a6605d0becda89416852b745c6f617bea8d281be7cb829e90f569a4b3e",
+          "Proyecto_Runas/tratado/17_aceptacion_catalogo.md": "1b3a9a1daed5dd97b4b0dc84c07a21a4e7b4827bd67275eb71ac0a4814c04927",
+          "Proyecto_Runas/tratado/18_guia_y_terminal_desde_M2.md": "d1ccf6bd6d3b668b5b88a3c83e47d4bc7132a5a1e24c3f89c8aa4974121a0a71",
+          "Proyecto_Runas/tratado/19_resultados_edicion4.md": "279858e5e2e0574baffd076ef39db70a07cbb3f2f8be18765669c04d8a6e0e8c",
+          "Proyecto_Runas/validacion/cierre_m2.json": "9a5f95e87d4d32c38886768e1ceb7cbb01151479ac79edc10dc123c5c45d5251",
+          "Proyecto_Runas/validacion/complecion_escalar.json": "afea4a8f181ee71f60362e49a402fd94068d1d7f69555d4658c8771fa4c8e151",
+          "Proyecto_Runas/validacion/contrastes_r1.json": "27534997303d9defee527301407a6cd19cb2ce499a044229c5f5de3208617cc7",
+          "Proyecto_Runas/validacion/correspondencia_micro.json": "ae4814177979abd938b0db3f211b89e1e8ba7213d2574d01426c8da9b7b8afbc",
+          "Proyecto_Runas/validacion/dinamica_m2.json": "2ae158a287875c9c74c0d488876c58a01d1406ea880633cc9fc4c87bb0c5441a",
+          "Proyecto_Runas/validacion/guia_m2.json": "a76fe144b3f27a68c52052ed792cbdc66321b30516e8b2c9fe1fc3d8b9f9729a",
+          "Proyecto_Runas/validacion/informe.json": "b246ceb507761c0b95991c747389dea1cb815d0bc2e1514f3e16e8559513c424",
+          "Proyecto_Runas/validacion/informe.md": "09f9477614d730edb9bcd4c31a87d45f16acbf9d5ffb58d0b492afb3ab70b3c5",
+          "Proyecto_Runas/validacion/m2_dinamica_1600.csv": "3d302d3c8a195dc5ccdbccc5186b638e805ebe6c917b1b67266fe9d86a9acf3e",
+          "Proyecto_Runas/validacion/m2_dinamica_800.csv": "51c0bab13d717fe3719f38530600e26f05fbb78230340362bd5a820841f11c23",
+          "Proyecto_Runas/validacion/m2_guia_perfil.csv": "4d14d9d8ebb87d69af6ad8b2ed3a2a4de4e2decd907660fb9f24a993508ec996",
+          "Proyecto_Runas/validacion/m2_perfil_convergente.csv": "a33a8af404135f2127e9281a773117e4a7a995dde498efe31c74f97f4d14f15a",
+          "Proyecto_Runas/validacion/memoria_kerr.csv": "ada44e42c640217ca056e7466b20ae11e30eb495230a203488a1d1fb306d53a7",
+          "Proyecto_Runas/validacion/microscopia.json": "b13ab14172bc7b6d3d32b0e0e63d2c2ef667c0fe272c916a7159043c4c0e2422",
+          "Proyecto_Runas/validacion/perfil_dos_campos.csv": "2ec6b26cacbd351d17575318602e87de8969ef8d9f50d048de2cb85750512232",
+          "Proyecto_Runas/validacion/perfil_radial.csv": "d1933f884399828d91ed4e5963e47360a3d83c72f8640279985b9642f567f3f7",
+          "Proyecto_Runas/validacion/preparacion_motor.json": "7e9dff3f44e4cc6c34030889ca96199011d5790db2a30486136a7d77b230e04b",
+          "Proyecto_Runas/validacion/verificacion_m2.json": "52cc165105872f4ed67817b29e3f1e06c62988658711c235df831e3a0907dcf5",
+          "Proyecto_Runas/validacion/verificacion_m2.md": "a1d66a8bcdd4b8ca5a4eb2d454f0d20a0a6954b95c5b397664b865edb1e363b9"
+        }
+      },
+      {
+        "path": "trazabilidad/reproduccion_entrada/cierre_m2.log",
+        "bytes": 2881,
+        "sha256": "21b6bc657f1ea1e144ae85ea083b23e6767683dedb520cff413df198aca53e42",
+        "utf8": true
+      },
+      {
+        "path": "trazabilidad/reproduccion_entrada/complecion_escalar.log",
+        "bytes": 1516,
+        "sha256": "afea4a8f181ee71f60362e49a402fd94068d1d7f69555d4658c8771fa4c8e151",
+        "utf8": true
+      },
+      {
+        "path": "trazabilidad/reproduccion_entrada/contrastes_r1.log",
+        "bytes": 3418,
+        "sha256": "27534997303d9defee527301407a6cd19cb2ce499a044229c5f5de3208617cc7",
+        "utf8": true
+      },
+      {
+        "path": "trazabilidad/reproduccion_entrada/correspondencia_micro.log",
+        "bytes": 3994,
+        "sha256": "75deccdd88af3676927a879fac79e3cc8fa798a44d015ef42e0c9fb3f6f7ae43",
+        "utf8": true
+      },
+      {
+        "path": "trazabilidad/reproduccion_entrada/dinamica_m2.log",
+        "bytes": 1084,
+        "sha256": "2ae158a287875c9c74c0d488876c58a01d1406ea880633cc9fc4c87bb0c5441a",
+        "utf8": true
+      },
+      {
+        "path": "trazabilidad/reproduccion_entrada/ensayo_microscopico.log",
+        "bytes": 1612,
+        "sha256": "b13ab14172bc7b6d3d32b0e0e63d2c2ef667c0fe272c916a7159043c4c0e2422",
+        "utf8": true
+      },
+      {
+        "path": "trazabilidad/reproduccion_entrada/generar.log",
+        "bytes": 72,
+        "sha256": "26487266bb71537d3a24fb2cb96d60bf30fb9f390c3aaee37bb9bd1e99631c8c",
+        "utf8": true
+      },
+      {
+        "path": "trazabilidad/reproduccion_entrada/guia_m2.log",
+        "bytes": 2169,
+        "sha256": "8e1b6383e70debfdd202d2bdb6a6feff0e52e74171276e90f200d9d7e2c789f0",
+        "utf8": true
+      },
+      {
+        "path": "trazabilidad/reproduccion_entrada/preparacion_y_motor.log",
+        "bytes": 2930,
+        "sha256": "7e9dff3f44e4cc6c34030889ca96199011d5790db2a30486136a7d77b230e04b",
+        "utf8": true
+      },
+      {
+        "path": "trazabilidad/reproduccion_entrada/verificar.log",
+        "bytes": 2638,
+        "sha256": "5f42a03fbb221a83636e5bfa8e64fbbfa17062752d2eded7fa838af9ffc55848",
+        "utf8": true
+      },
+      {
+        "path": "trazabilidad/reproduccion_entrada/verificar_m2.log",
+        "bytes": 52,
+        "sha256": "837721b48a7ba1aa4214f0e4331a42c92cb32e03b4173ad315f0ae26ee3d6d44",
+        "utf8": true
+      },
+      {
+        "path": "validacion/capilaridad/pared.csv",
+        "bytes": 918146,
+        "sha256": "1fe9a6125c5a3c5a3f001c58b4d4058753fbc16cbb290ceec2a853bb1855131c",
+        "utf8": true,
+        "shape": [
+          7201,
+          5
+        ],
+        "finite": true,
+        "headers": "x,f,df_dx,z,dz_dx",
+        "column_min": [
+          -36.0,
+          2.3869353270177375e-26,
+          -0.1363721498387976,
+          -0.07088834426066185,
+          -1.8181658723545396e-15
+        ],
+        "column_max": [
+          36.0,
+          0.7097756870457086,
+          4.9705537281914776e-15,
+          -3.76158192263132e-37,
+          0.01765600681107381
+        ]
+      },
+      {
+        "path": "validacion/capilaridad/perfil_d2_RN128.csv",
+        "bytes": 2006747,
+        "sha256": "9a07c6bf74cb69d535573f4b4cf5629922ee78757ce82bc586750442b88bb74d",
+        "utf8": true,
+        "shape": [
+          15801,
+          5
+        ],
+        "finite": true,
+        "headers": "r,f,df_dr,z,dz_dr",
+        "column_min": [
+          0.0,
+          -1.972631890482904e-24,
+          -0.13714790924731088,
+          -0.0711636538551131,
+          -5.069072019664507e-15
+        ],
+        "column_max": [
+          158.0,
+          0.7111595891041051,
+          4.95471879874084e-15,
+          -6.162975822039155e-33,
+          0.0177906969640132
+        ]
+      },
+      {
+        "path": "validacion/capilaridad/perfil_d2_RN16.csv",
+        "bytes": 584344,
+        "sha256": "fc53525c3760cb3f0f82b9acdc7e315a1e9ca191b5069616736404f6e1b34224",
+        "utf8": true,
+        "shape": [
+          4601,
+          5
+        ],
+        "finite": true,
+        "headers": "r,f,df_dr,z,dz_dr",
+        "column_min": [
+          0.0,
+          -7.726545467841513e-25,
+          -0.1415724961745499,
+          -0.07301767190223857,
+          0.0
+        ],
+        "column_max": [
+          46.0,
+          0.7204113651130433,
+          0.0,
+          7.703719777548943e-34,
+          0.018604292050160225
+        ]
+      },
+      {
+        "path": "validacion/capilaridad/perfil_d2_RN32.csv",
+        "bytes": 787545,
+        "sha256": "30450c70fe9456bce892c71e62fd96a9cbdb4e8ff400d5a1669a3a7a538678ca",
+        "utf8": true,
+        "shape": [
+          6201,
+          5
+        ],
+        "finite": true,
+        "headers": "r,f,df_dr,z,dz_dr",
+        "column_min": [
+          0.0,
+          2.253744051780222e-25,
+          -0.1392510173796473,
+          -0.07197233211400365,
+          -3.706247449114068e-15
+        ],
+        "column_max": [
+          62.0,
+          0.7152094083400415,
+          1.785919813473281e-15,
+          3.0814879110195774e-33,
+          0.018166547475751686
+        ]
+      },
+      {
+        "path": "validacion/capilaridad/perfil_d2_RN64.csv",
+        "bytes": 1194187,
+        "sha256": "67cd722deb2b73b397ab3925e9826f7f6f87a35a629d91543fdf01ef0188e69c",
+        "utf8": true,
+        "shape": [
+          9401,
+          5
+        ],
+        "finite": true,
+        "headers": "r,f,df_dr,z,dz_dr",
+        "column_min": [
+          0.0,
+          -3.505824080547012e-25,
+          -0.13788559907202455,
+          -0.07143594378950004,
+          -5.569432531362404e-15
+        ],
+        "column_max": [
+          94.0,
+          0.7125257214977831,
+          3.4396801093692378e-15,
+          1.0785207688568521e-32,
+          0.01792063989988047
+        ]
+      },
+      {
+        "path": "validacion/capilaridad/perfil_d2_RN8.csv",
+        "bytes": 482744,
+        "sha256": "6564194b164bb76d7ac70526b98828933b7549bd3b6838c8a0f0831377e92f33",
+        "utf8": true,
+        "shape": [
+          3801,
+          5
+        ],
+        "finite": true,
+        "headers": "r,f,df_dr,z,dz_dr",
+        "column_min": [
+          0.0,
+          -1.2157293182542057e-24,
+          -0.14468198416162678,
+          -0.07490985349550558,
+          0.0
+        ],
+        "column_max": [
+          38.0,
+          0.7297351896675942,
+          0.0,
+          1.5407439555097887e-33,
+          0.0192627359910815
+        ]
+      },
+      {
+        "path": "validacion/capilaridad/perfil_d3_RN128.csv",
+        "bytes": 2006653,
+        "sha256": "9d7562b72d12040a8046a37b706320152da8cae566cf5b0d2bc39445224acd56",
+        "utf8": true,
+        "shape": [
+          15801,
+          5
+        ],
+        "finite": true,
+        "headers": "r,f,df_dr,z,dz_dr",
+        "column_min": [
+          0.0,
+          1.5323843964971616e-24,
+          -0.13792582679526946,
+          -0.0714393007358061,
+          -1.4777206813296373e-14
+        ],
+        "column_max": [
+          158.0,
+          0.7125425479454306,
+          9.593330880261686e-14,
+          -1.5407439555097887e-33,
+          0.01792611501328261
+        ]
+      },
+      {
+        "path": "validacion/capilaridad/perfil_d3_RN16.csv",
+        "bytes": 584345,
+        "sha256": "87a5f29c856ea7c074c92f9040db835da10b40d78e43b876004afc03cddba945",
+        "utf8": true,
+        "shape": [
+          4601,
+          5
+        ],
+        "finite": true,
+        "headers": "r,f,df_dr,z,dz_dr",
+        "column_min": [
+          0.0,
+          -4.083396480913628e-25,
+          -0.14685754656683955,
+          -0.07516215325163536,
+          0.0
+        ],
+        "column_max": [
+          46.0,
+          0.7309695273736205,
+          0.0,
+          -5.3926038442842604e-33,
+          0.019583403242352745
+        ]
+      },
+      {
+        "path": "validacion/capilaridad/perfil_d3_RN32.csv",
+        "bytes": 787535,
+        "sha256": "b7d166f9513dd973127163d2d5da966666ae4a567dd0e20b0c7c0900ffafa1ea",
+        "utf8": true,
+        "shape": [
+          6201,
+          5
+        ],
+        "finite": true,
+        "headers": "r,f,df_dr,z,dz_dr",
+        "column_min": [
+          0.0,
+          9.645055189339014e-25,
+          -0.1421613978288496,
+          -0.07306102595237995,
+          -1.6158078031327e-14
+        ],
+        "column_max": [
+          62.0,
+          0.7206263148288382,
+          1.0912374456208074e-13,
+          1.0014835710813626e-32,
+          0.018686572379975955
+        ]
+      },
+      {
+        "path": "validacion/capilaridad/perfil_d3_RN64.csv",
+        "bytes": 1193981,
+        "sha256": "3172802551a1f3e5779065d7f25074dad858fe532e8eb66f2e20199c1b5a689f",
+        "utf8": true,
+        "shape": [
+          9401,
+          5
+        ],
+        "finite": true,
+        "headers": "r,f,df_dr,z,dz_dr",
+        "column_min": [
+          0.0,
+          -6.817777705026908e-25,
+          -0.13940798772228777,
+          -0.07198483506842548,
+          -1.4436772565376008e-14
+        ],
+        "column_max": [
+          94.0,
+          0.7152718461390487,
+          9.821370704138095e-14,
+          1.5407439555097887e-33,
+          0.018187836651119033
+        ]
+      },
+      {
+        "path": "validacion/capilaridad/perfil_d3_RN8.csv",
+        "bytes": 482743,
+        "sha256": "d763ca095e4e54f383187e0a32afb9aef117b61c86f190a6128e3c7982389270",
+        "utf8": true,
+        "shape": [
+          3801,
+          5
+        ],
+        "finite": true,
+        "headers": "r,f,df_dr,z,dz_dr",
+        "column_min": [
+          0.0,
+          6.220010465486634e-25,
+          -0.1529232118866555,
+          -0.0790180583988848,
+          0.0
+        ],
+        "column_max": [
+          38.0,
+          0.7495877031414551,
+          0.0,
+          4.622231866529366e-33,
+          0.02092132261070711
+        ]
+      },
+      {
+        "path": "validacion/capilaridad/resultados.json",
+        "bytes": 68122,
+        "sha256": "f0fb8ddfc4c0a413292a9c2dddfaf6fe5ea29b2c197354296ec891b5d78ea17a",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "environment",
+          "theta_sha256",
+          "configuration",
+          "coexistence",
+          "wall_convergence",
+          "variational_bounds",
+          "tension",
+          "radial_family",
+          "spectra",
+          "domain_check",
+          "first_laws",
+          "new_fundamental_parameters",
+          "fitted_macroscopic_parameters",
+          "capillary_limit_numerically_supported",
+          "continuum_error_certified",
+          "full_nonlinear_shape_stability_proved",
+          "preparation_demonstrated",
+          "complete_device_derived",
+          "scope"
+        ]
+      },
+      {
+        "path": "validacion/capilaridad/verificacion.json",
+        "bytes": 6554,
+        "sha256": "8a17fc5f136a304b2aa8ecc233bd4718c9332ee7ec022dc06d0c8c5b3353db9b",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "count",
+          "passed",
+          "scope",
+          "checks"
+        ]
+      },
+      {
+        "path": "validacion/capilaridad/verificacion.md",
+        "bytes": 3783,
+        "sha256": "f495efbca5a4050fbb06221ce963e8cae13199896c2c0bcbefb2f23c2d83bf2c",
+        "utf8": true,
+        "headings": [
+          "# Verificación del puente capilar"
+        ]
+      },
+      {
+        "path": "validacion/cierre_m2.json",
+        "bytes": 83171,
+        "sha256": "9a5f95e87d4d32c38886768e1ceb7cbb01151479ac79edc10dc123c5c45d5251",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "environment",
+          "sector",
+          "fundamental_dimensionless",
+          "new_device_specific_fundamental_parameters",
+          "certified_continuum_spectral_proof",
+          "complete_device_derived",
+          "field_convergence",
+          "branch_derivatives",
+          "spectra",
+          "homogeneous",
+          "geometry",
+          "numerical_checks_passed"
+        ]
+      },
+      {
+        "path": "validacion/complecion_escalar.json",
+        "bytes": 1516,
+        "sha256": "afea4a8f181ee71f60362e49a402fd94068d1d7f69555d4658c8771fa4c8e151",
+        "utf8": true,
+        "json_keys": [
+          "model",
+          "parameters_dimensionless",
+          "exact_effective_potential",
+          "minimum_U_over_s",
+          "s_at_minimum",
+          "coarse",
+          "fine",
+          "relative_energy_refinement",
+          "adiabatic_no_gradient",
+          "scope",
+          "passed"
+        ]
+      },
+      {
+        "path": "validacion/contrastes_r1.json",
+        "bytes": 3418,
+        "sha256": "27534997303d9defee527301407a6cd19cb2ce499a044229c5f5de3208617cc7",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "complete_device_derived",
+          "P04",
+          "P11",
+          "P18",
+          "P01",
+          "validity",
+          "scalar_SI_example",
+          "passed"
+        ]
+      },
+      {
+        "path": "validacion/correspondencia_micro.json",
+        "bytes": 75115,
+        "sha256": "ae4814177979abd938b0db3f211b89e1e8ba7213d2574d01426c8da9b7b8afbc",
+        "utf8": true,
+        "json_keys": [
+          "homogeneous",
+          "radial_extended",
+          "nexo_ideal",
+          "graphs",
+          "converter",
+          "memory_kerr",
+          "chemical_example",
+          "portal_force_example",
+          "checks",
+          "passed",
+          "scope"
+        ]
+      },
+      {
+        "path": "validacion/dinamica_m2.json",
+        "bytes": 1084,
+        "sha256": "2ae158a287875c9c74c0d488876c58a01d1406ea880633cc9fc4c87bb0c5441a",
+        "utf8": true,
+        "json_keys": [
+          "model",
+          "runs",
+          "preparation_demonstrated",
+          "scope",
+          "passed"
+        ]
+      },
+      {
+        "path": "validacion/guia_m2.json",
+        "bytes": 63408,
+        "sha256": "08fe7855c1bd6470ec1168e664694ecc5fe7283d2dfcacb387d4a1aad3b9c880",
+        "utf8": true,
+        "json_keys": [
+          "model",
+          "same_fundamental_parameters_as_Qball",
+          "background_convergence",
+          "charge_derivative",
+          "spectral_convergence",
+          "growth_band",
+          "largest_sampled_growth",
+          "exterior_vacuum",
+          "stable_free_guide_demonstrated",
+          "exact_Neumann_terminal_demonstrated",
+          "complete_P04_derived",
+          "conclusion",
+          "scope",
+          "passed"
+        ]
+      },
+      {
+        "path": "validacion/informe.json",
+        "bytes": 28725,
+        "sha256": "dac6ecc43830dd6ab88e7f6cd2c9ddf8a6dc59dc7eee359ec28a5564f8faafbc",
+        "utf8": true,
+        "json_keys": [
+          "edition",
+          "legacy_suite_origin",
+          "environment",
+          "scope",
+          "passed",
+          "checks",
+          "geometry",
+          "calculations"
+        ]
+      },
+      {
+        "path": "validacion/informe.md",
+        "bytes": 11738,
+        "sha256": "09f9477614d730edb9bcd4c31a87d45f16acbf9d5ffb58d0b492afb3ab70b3c5",
+        "utf8": true,
+        "headings": [
+          "# Resultados de verificación",
+          "## Ensayo microscópico",
+          "## lamp",
+          "## heater",
+          "## freezing",
+          "## reserve",
+          "## lifting",
+          "## support",
+          "## controller",
+          "## solar_growth",
+          "## radiator",
+          "## channel",
+          "## logic",
+          "## photon_support_power_W",
+          "## carbon",
+          "## Comprobaciones"
+        ]
+      },
+      {
+        "path": "validacion/m2_dinamica_1600.csv",
+        "bytes": 24143,
+        "sha256": "3d302d3c8a195dc5ccdbccc5186b638e805ebe6c917b1b67266fe9d86a9acf3e",
+        "utf8": true,
+        "shape": [
+          241,
+          4
+        ],
+        "finite": true,
+        "headers": "tau,Ehat,Qhat,relative_amplitude_deviation",
+        "column_min": [
+          0.0,
+          2525.6913879167155,
+          2745.779387501245,
+          4.716235204898954e-05
+        ],
+        "column_max": [
+          24.0,
+          2525.6914592508983,
+          2745.779387501255,
+          0.00033267072801460614
+        ]
+      },
+      {
+        "path": "validacion/m2_dinamica_800.csv",
+        "bytes": 24143,
+        "sha256": "51c0bab13d717fe3719f38530600e26f05fbb78230340362bd5a820841f11c23",
+        "utf8": true,
+        "shape": [
+          241,
+          4
+        ],
+        "finite": true,
+        "headers": "tau,Ehat,Qhat,relative_amplitude_deviation",
+        "column_min": [
+          0.0,
+          2525.7039669419846,
+          2745.7957880020795,
+          5.4086291526513206e-05
+        ],
+        "column_max": [
+          24.0,
+          2525.7042493230974,
+          2745.795788002086,
+          0.0003238036086667943
+        ]
+      },
+      {
+        "path": "validacion/m2_guia_perfil.csv",
+        "bytes": 635151,
+        "sha256": "4d14d9d8ebb87d69af6ad8b2ed3a2a4de4e2decd907660fb9f24a993508ec996",
+        "utf8": true,
+        "shape": [
+          5001,
+          5
+        ],
+        "finite": true,
+        "headers": "rho,f,df_drho,z,dz_drho",
+        "column_min": [
+          0.0,
+          -5.113790818095209e-28,
+          -0.14470036114961396,
+          -0.07356896012632025,
+          0.0
+        ],
+        "column_max": [
+          50.0,
+          0.7231428981845748,
+          0.0,
+          -7.346839692639297e-40,
+          0.019489511336597203
+        ]
+      },
+      {
+        "path": "validacion/m2_perfil_convergente.csv",
+        "bytes": 762143,
+        "sha256": "a33a8af404135f2127e9281a773117e4a7a995dde498efe31c74f97f4d14f15a",
+        "utf8": true,
+        "shape": [
+          6001,
+          5
+        ],
+        "finite": true,
+        "headers": "x,f,df_dx,z,dz_dx",
+        "column_min": [
+          0.0,
+          3.7307574138714023e-29,
+          -0.15201023498723576,
+          -0.07827167223528914,
+          0.0
+        ],
+        "column_max": [
+          60.0,
+          0.7460192053463047,
+          0.0,
+          8.609577764811676e-42,
+          0.020690102902577258
+        ]
+      },
+      {
+        "path": "validacion/memoria_kerr.csv",
+        "bytes": 41084,
+        "sha256": "ada44e42c640217ca056e7466b20ae11e30eb495230a203488a1d1fb306d53a7",
+        "utf8": true,
+        "shape": [
+          2005,
+          2
+        ],
+        "finite": true,
+        "headers": "tiempo_kappa,ocupacion_normalizada",
+        "column_min": [
+          0.0,
+          0.0
+        ],
+        "column_max": [
+          110.0,
+          4.2485966611
+        ]
+      },
+      {
+        "path": "validacion/microscopia.json",
+        "bytes": 1612,
+        "sha256": "b13ab14172bc7b6d3d32b0e0e63d2c2ef667c0fe272c916a7159043c4c0e2422",
+        "utf8": true,
+        "json_keys": [
+          "model",
+          "coarse",
+          "fine",
+          "relative_change_E",
+          "relative_change_Q",
+          "scope",
+          "passed"
+        ]
+      },
+      {
+        "path": "validacion/perfil_dos_campos.csv",
+        "bytes": 48318,
+        "sha256": "2ec6b26cacbd351d17575318602e87de8969ef8d9f50d048de2cb85750512232",
+        "utf8": true,
+        "shape": [
+          1201,
+          3
+        ],
+        "finite": true,
+        "headers": "radio,phi_amplitud,chi_reescalado",
+        "column_min": [
+          0.0,
+          1.70972535689e-05,
+          -0.0782716722348
+        ],
+        "column_max": [
+          30.0,
+          0.746019205344,
+          -4.13431279253e-11
+        ]
+      },
+      {
+        "path": "validacion/perfil_radial.csv",
+        "bytes": 40243,
+        "sha256": "d1933f884399828d91ed4e5963e47360a3d83c72f8640279985b9642f567f3f7",
+        "utf8": true,
+        "shape": [
+          1001,
+          3
+        ],
+        "finite": true,
+        "headers": "radio_adimensional,amplitud,derivada",
+        "column_min": [
+          0.0,
+          1.749385361e-07,
+          -0.151709711458
+        ],
+        "column_max": [
+          40.0,
+          0.74261594621,
+          0.0
+        ]
+      },
+      {
+        "path": "validacion/preparacion_motor.json",
+        "bytes": 2930,
+        "sha256": "7e9dff3f44e4cc6c34030889ca96199011d5790db2a30486136a7d77b230e04b",
+        "utf8": true,
+        "json_keys": [
+          "parametric_pump",
+          "three_level_engine",
+          "passed"
+        ]
+      },
+      {
+        "path": "validacion/reproduccion/completa/01_ensayo_microscopico.log",
+        "bytes": 1612,
+        "sha256": "b13ab14172bc7b6d3d32b0e0e63d2c2ef667c0fe272c916a7159043c4c0e2422",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/02_correspondencia_micro.log",
+        "bytes": 3994,
+        "sha256": "75deccdd88af3676927a879fac79e3cc8fa798a44d015ef42e0c9fb3f6f7ae43",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/03_complecion_escalar.log",
+        "bytes": 1516,
+        "sha256": "afea4a8f181ee71f60362e49a402fd94068d1d7f69555d4658c8771fa4c8e151",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/04_preparacion_y_motor.log",
+        "bytes": 2930,
+        "sha256": "7e9dff3f44e4cc6c34030889ca96199011d5790db2a30486136a7d77b230e04b",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/05_graficos_micro.log",
+        "bytes": 35,
+        "sha256": "cd169236f8f66a154ead5e3ae0a8f0c1e9cd7ca111d7aaa520a31c506f03e970",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/06_resultados_micro.log",
+        "bytes": 32,
+        "sha256": "fd220028cd9bae3dbcd4e10153a0ac7dd37ff72283d697afe8da76e0a2b78d76",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/07_cierre_m2.log",
+        "bytes": 2730,
+        "sha256": "a62d580b854cba24650577fd4e2c7d4f4e97a73faa1433aefaf94b6de133638d",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/08_dinamica_m2.log",
+        "bytes": 1084,
+        "sha256": "2ae158a287875c9c74c0d488876c58a01d1406ea880633cc9fc4c87bb0c5441a",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/09_contrastes_r1.log",
+        "bytes": 3418,
+        "sha256": "27534997303d9defee527301407a6cd19cb2ce499a044229c5f5de3208617cc7",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/10_guia_m2.log",
+        "bytes": 2169,
+        "sha256": "8e1b6383e70debfdd202d2bdb6a6feff0e52e74171276e90f200d9d7e2c789f0",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/11_capilaridad_m2.log",
+        "bytes": 10316,
+        "sha256": "c090ea7a46d0c503b38074024a7a48b8e3828c17d5d9821d57d72d3fec74fd69",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/12_catalogo_aceptacion_m2.log",
+        "bytes": 82,
+        "sha256": "52fa31b8c589123964cf2cfe864f7e7dbc9ea7214ee85cb720bc317b85cafd88",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/13_figuras_m2.log",
+        "bytes": 62,
+        "sha256": "a48b7ba09a05477124306b763396d2d35292d2d17f9c6f57fdb3ea76d7f7f166",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/14_figuras_capilaridad.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/15_generar.log",
+        "bytes": 72,
+        "sha256": "26487266bb71537d3a24fb2cb96d60bf30fb9f390c3aaee37bb9bd1e99631c8c",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/16_verificar.log",
+        "bytes": 2638,
+        "sha256": "5f42a03fbb221a83636e5bfa8e64fbbfa17062752d2eded7fa838af9ffc55848",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/17_verificar_m2.log",
+        "bytes": 52,
+        "sha256": "837721b48a7ba1aa4214f0e4331a42c92cb32e03b4173ad315f0ae26ee3d6d44",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/18_verificar_capilaridad.log",
+        "bytes": 52,
+        "sha256": "b88af702c89cfa99bd84ecb7a1bae35cec4b81454c3dfc9612e893f7cd844866",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/completa/19_generar.log",
+        "bytes": 72,
+        "sha256": "26487266bb71537d3a24fb2cb96d60bf30fb9f390c3aaee37bb9bd1e99631c8c",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/verificacion/01_verificar.log",
+        "bytes": 2638,
+        "sha256": "5f42a03fbb221a83636e5bfa8e64fbbfa17062752d2eded7fa838af9ffc55848",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/verificacion/02_verificar_m2.log",
+        "bytes": 52,
+        "sha256": "837721b48a7ba1aa4214f0e4331a42c92cb32e03b4173ad315f0ae26ee3d6d44",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion/verificacion/03_verificar_capilaridad.log",
+        "bytes": 52,
+        "sha256": "b88af702c89cfa99bd84ecb7a1bae35cec4b81454c3dfc9612e893f7cd844866",
+        "utf8": true
+      },
+      {
+        "path": "validacion/reproduccion_completa.json",
+        "bytes": 3829,
+        "sha256": "2d3356c37dda18c2b5b84e10fd579f19c3dcbfe70c20e7a88c31d9708662aaf0",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "mode",
+          "passed",
+          "python",
+          "runs",
+          "meaning"
+        ]
+      },
+      {
+        "path": "validacion/reproduccion_verificacion.json",
+        "bytes": 834,
+        "sha256": "5539765f6d75edd1fb51358cf91c0e1d0da03e3b3ee66419db0d53978b1374df",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "mode",
+          "passed",
+          "python",
+          "runs",
+          "meaning"
+        ]
+      },
+      {
+        "path": "validacion/verificacion_m2.json",
+        "bytes": 4548,
+        "sha256": "2ff0235a59bbb7d083b97bcec90550c2103a78060795e15fc281e0ea7151348a",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "count",
+          "passed",
+          "scope",
+          "complete_device_derived",
+          "checks"
+        ]
+      },
+      {
+        "path": "validacion/verificacion_m2.md",
+        "bytes": 2372,
+        "sha256": "6be7cd078c55eab5b4012100dec61a5ead9c03a7df35a08552f21125d97ba989",
+        "utf8": true,
+        "headings": [
+          "# Verificación de la edición M2 4.1"
+        ]
+      }
+    ]
+  },
+  {
+    "root": "review/roadmap/Hoja_de_ruta_M2_4_1",
+    "entries": [
+      {
+        "path": "Comprobacion_entrega.json",
+        "bytes": 901,
+        "sha256": "a6223ff56fcda1942d204d8beffb9024c116f0baa99a1d02dd717d9e8cb3153d",
+        "utf8": true,
+        "json_keys": [
+          "tipo",
+          "guia_palabras_aproximadas",
+          "expedientes",
+          "campos_por_expediente",
+          "requisitos_Canal",
+          "investigaciones_priorizadas",
+          "identificadores_P01_P24_presentes",
+          "delimitadores_matematicos_equilibrados",
+          "bloques_de_codigo_equilibrados",
+          "JSON_interpretables",
+          "SVG_XML_correctos",
+          "fuente_221_archivos_sin_modificaciones",
+          "nuevas_simulaciones_fisicas",
+          "nota"
+        ]
+      },
+      {
+        "path": "Guia_tecnica.md",
+        "bytes": 125161,
+        "sha256": "1deb112f12a0a37fc48f653aeafb81ab3b3626c585ef5b34666554df327fbaab",
+        "utf8": true,
+        "headings": [
+          "# Hoja de ruta científica e ingenieril de la Rúnica",
+          "## Cómo utilizar la guía",
+          "## Estado de partida y alcance de la revisión",
+          "### Precisiones que deben atenderse primero",
+          "## Reglas comunes de investigación",
+          "### Estados de evidencia",
+          "### Un mismo Θ, estados distintos y coeficientes derivados",
+          "### Puerta general de aceptación",
+          "## A. Mapa general de etapas",
+          "### E00 — Congelar la fuente y establecer una reproducción independiente",
+          "### E01 — Fijar la formulación matemática y el espacio fundamental",
+          "### E02 — Determinar dominios de validez, incertidumbre y escalas",
+          "### E03 — Consolidar soluciones, espectro completo y dinámica",
+          "### E04 — Preparación común, Semilla y apagado",
+          "### E05 — Contactos, materia, energía y entorno comunes",
+          "### E06 — Resolver la decisión física de Canal",
+          "### E07 — Convertir la Q-ball en Reserva",
+          "### E08 — Primera demostración de dispositivo de extremo a extremo",
+          "### E09 — Ampliar el repertorio mediante recursos físicos compartidos",
+          "### E10 — Integración, redes y control",
+          "### E11 — Identificación, metrología y contraste experimental",
+          "### E12 — Fabricación, tolerancias y mantenimiento",
+          "### E13 — Operación, interfaz y seguridad",
+          "### E14 — Consolidar teoría, ingeniería y formación",
+          "## B. Ruta detallada para P-04 Canal",
+          "### B.1. Qué se busca y qué ya está descartado",
+          "### B.2. Los 22 requisitos obligatorios de cada candidato",
+          "### B.3. Cómo utilizar la capilaridad sin convertirla en un supuesto",
+          "### C0 — Delimitar el problema antes de gastar simulación",
+          "### C1 — Otras ramas tubulares y perfiles radiales",
+          "### C2 — Carga temporal, corriente y gradiente axial",
+          "### C3 — Vorticidad, arrollamiento y momento angular",
+          "### C4 — Tubos huecos, capas y soporte del mediador existente",
+          "### C5 — Tubos no uniformes y configuraciones periódicas",
+          "### C6 — Geometrías finitas, curvas, anillos y superficies",
+          "### C7 — Estructuras compuestas y confinamiento emergente",
+          "### C8 — Estados dinámicos y control con recursos reales",
+          "### C9 — Terminación, fuente, receptor y empalmes físicos",
+          "### C10 — Preparación, potencia, robustez y decisión final",
+          "### B.4. Robustez y búsqueda con recursos finitos",
+          "### B.5. Puerta de agotamiento de M2 para Canal",
+          "## D. P-06 Reserva como primera primordial completamente derivada",
+          "### RES0 — Rama estable y energía accesible",
+          "### RES1 — Preparar el depósito sin circularidad",
+          "### RES2 — Derivar carga y acceso al estado",
+          "### RES3 — Aislamiento, retención, pérdidas y ruido",
+          "### RES4 — Descargar, recuperar y medir el rendimiento neto",
+          "### RES5 — Ciclos repetidos y límites de operación",
+          "## E. Progresión de las demás primordiales",
+          "## F. Cuándo y cómo evaluar una extensión M3",
+          "### F.1. Separar completar M2 de cambiar la teoría",
+          "### F.2. Comparación de extensiones, sin elegir todavía una",
+          "### F.3. Expediente obligatorio de cualquier extensión",
+          "## G. Criterios cuantitativos transversales y operación madura",
+          "### G.1. Carta de operación por realización",
+          "### G.2. Balances, ruido y control",
+          "### G.3. De componentes a normas e interfaz",
+          "## H. Momento de consolidar los seis cuerpos documentales",
+          "### H.1. Congelación por niveles",
+          "### H.2. Orden y contenido editorial",
+          "## Referencias y uso de fuentes externas",
+          "## C. Las próximas diez investigaciones concretas, por prioridad",
+          "### 1. Reproducir el núcleo de M2 4.1 y auditar sus convenciones",
+          "### 2. Auditar y ampliar, cuando sea posible, los teoremas de exclusión tubular",
+          "### 3. Delimitar una rama robusta de Q-balls para Reserva",
+          "### 4. Construir la carta de validez capilar y su sensibilidad fundamental",
+          "### 5. Resolver el primer candidato tubular con arrollamiento que sobreviva al análisis",
+          "### 6. Continuar una rama axialmente modulada y someterla a perturbaciones Bloch",
+          "### 7. Calcular la interacción y transferencia entre dos Q-balls y una cadena mínima",
+          "### 8. Demostrar preparación por captura y cerrar su contabilidad de origen",
+          "### 9. Ejecutar un ciclo mínimo de carga–retención–descarga de Reserva",
+          "### 10. Identificar un contacto común con materia/EM y dos predicciones contrastables"
+        ]
+      },
+      {
+        "path": "LEEME.md",
+        "bytes": 1289,
+        "sha256": "958bf9769db1ed1897eb2fa8e7f503c17478fb727600c7df1e1155fa617cf5fc",
+        "utf8": true,
+        "headings": [
+          "# Hoja de ruta desde M2 4.1"
+        ]
+      },
+      {
+        "path": "MANIFIESTO_SHA256.json",
+        "bytes": 699,
+        "sha256": "5c770a06893cf80fb54f7901ec751a58df23f6c601d4cd13e65983662e39b8b7",
+        "utf8": true,
+        "json_keys": [
+          "algorithm",
+          "files"
+        ]
+      },
+      {
+        "path": "Mapa_general.svg",
+        "bytes": 10874,
+        "sha256": "f7232cedfcea28998f8942bc8a249009d1d23c8e419131578621abddbc1dc400",
+        "utf8": true,
+        "svg_elements": 108,
+        "unsafe_elements": []
+      },
+      {
+        "path": "Plan_investigacion.json",
+        "bytes": 92299,
+        "sha256": "af9f87bfacf60431d6e74bfdb11cbb259bc1d2a8f56c5984f02206b3b281f742",
+        "utf8": true,
+        "json_keys": [
+          "schema_version",
+          "naturaleza",
+          "fecha",
+          "fuente",
+          "autoridad",
+          "regla",
+          "nota_dependencias",
+          "taxonomia",
+          "etapas",
+          "requisitos_P04",
+          "proximas_10",
+          "regla_M3",
+          "regla_reordenacion"
+        ]
+      },
+      {
+        "path": "Revision_del_ZIP.json",
+        "bytes": 47798,
+        "sha256": "ed50630110ccf2e9c31207b49c4948dffb7d7f87d4b379c6c127cb8da2f16b2a",
+        "utf8": true,
+        "json_keys": [
+          "fecha",
+          "zip_fuente_sha256",
+          "archivos",
+          "hashes_del_manifiesto",
+          "discrepancias_hash",
+          "archivos_originales_modificados",
+          "metodo",
+          "limite",
+          "antecedente_4_0",
+          "comprobaciones_reportadas_en_fuente",
+          "tipos",
+          "hallazgos_de_planificacion",
+          "inventario",
+          "datos_csv"
+        ]
+      },
+      {
+        "path": "Ruta_Canal.svg",
+        "bytes": 10894,
+        "sha256": "b9a500460aa2563fb5b1cfdbc853a62423c3cc68a3cd818ea1e246cbaec7d324",
+        "utf8": true,
+        "svg_elements": 101,
+        "unsafe_elements": []
+      }
+    ]
+  }
+]

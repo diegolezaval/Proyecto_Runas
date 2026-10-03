@@ -1,0 +1,45 @@
+{
+  "source_filename": "Proyecto_Runas_M2_4_0(1).zip",
+  "source_sha256": "bccd7e57abe7d82c06d20959891776ae831874ea84ab8307ef91518d915fbb3a",
+  "edition": "4.1.0",
+  "changes": [
+    "P-20: R2 girado 180 grados y trasladado; intercambio de sus extremos en J5 y J6; elimina tramo superpuesto.",
+    "Transformaciones de T reconstruidas como fracciones exactas a partir de extremos publicados; se adopta esta version como registro canonico.",
+    "M2: mediador escalar real común y potencial reducido racional; soluciones de dos campos.",
+    "Derivaciones de respuesta, guía, fuerza, ruido, memoria, conversión y química; mapeo de 24 primordiales.",
+    "R1 sigue siendo objetivo de diseño; no se afirma una identificación microscópica conjunta."
+  ],
+  "scope": "Modelo operacional de referencia y modelo microscopico propuesto; niveles de evidencia separados.",
+  "edition_4": {
+    "date": "2026-09-27",
+    "source_version": "Proyecto_Runas_3_0.zip",
+    "changes": [
+      "Cauchy, vacio e hiperbolicidad del M2 escalar",
+      "Espectro y dinamica de la Q-ball con el mismo mediador",
+      "Guia tubular autosostenida: perfil convergente e inestabilidad longitudinal",
+      "Condicion del exterior del terminal y diferencia con Neumann",
+      "Theta comun, limites y registro de aceptacion de dispositivos",
+      "Analisis directo de Q-tubo: inestabilidad demostrada en la clase sin nodos, reposo y sin soporte externo"
+    ],
+    "complete_device_derived": false
+  },
+  "prior_source_metadata": {
+    "source_filename": "Sistema_runico_tecnico_refinado(2).md",
+    "source_sha256": "ec84b6d372148ce9f2d79b37f5e6d65a8a30864b625ff423d314010d0e544268"
+  },
+  "edition_4_1": {
+    "date": "2026-09-27",
+    "source_archive": "trazabilidad/fuente_M2_4_0.zip",
+    "audit": "trazabilidad/auditoria_entrada.json",
+    "changes": [
+      "Interfaz plana de ambos campos, tension y cotas variacionales",
+      "Familias de gotas y tubos, conservacion de tensiones y primera ley",
+      "Limite capilar de equilibrio, energia y modos, contrastado sin ajustes",
+      "Corriente axial uniforme: no elimina la banda inestable de onda larga",
+      "24 funciones evaluadas y metas R1 sometidas a la teoria",
+      "Taxonomia, directrices permanentes y cadena de reproduccion"
+    ],
+    "new_fundamental_parameters": [],
+    "complete_device_derived": false
+  }
+}

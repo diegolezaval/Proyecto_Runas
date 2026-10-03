@@ -1,0 +1,16 @@
+{
+  "status": "EVOLUCION_TERMINADA_DIAGNOSTICO_PENDIENTE",
+  "step": 300000,
+  "total_steps": 300000,
+  "time": 1200.0,
+  "restart_file": "w7.20_h0.200_dt0.0040_R1300_T1200_estado.npz",
+  "configuration": {
+    "width": 7.2,
+    "dx": 0.2,
+    "dt": 0.004,
+    "radius": 1300.0,
+    "tmax": 1200.0,
+    "n": 6500,
+    "core_radius": 40
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "0cc9af79f3804e54e2f65309e9fad57934b04c55536c5dd07519c2bacc87ea47",
+  "case": "diagnostico_guardado",
+  "identity": {
+    "case": {
+      "entrypoint": "herramientas/diagnosticar_mediador_CP10.py",
+      "operation": "diagnostico_de_datos_guardados",
+      "configuration": {
+        "core_radius": 40,
+        "time": 160,
+        "chi_phase_rotation_used_for_acceptance": false
+      },
+      "inputs": [
+        "datos/ensayo_no_radial_CP06.json",
+        "validacion/P06/no_radial/resultados.json",
+        "validacion/P06/no_radial/dop853e9_L4_h0.500_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz"
+      ]
+    },
+    "protocol": "datos/ensayo_mediador_CP10.json",
+    "model": "M2",
+    "input_hashes": {
+      "datos/ensayo_mediador_CP10.json": "3c6a9aeace4091dd39598c52e357996f5bbef7bae9d92a532fce3540ddf0f209",
+      "datos/ensayo_no_radial_CP06.json": "3b620c0dd039e4fe1e54b50fa324a900717e7400e44707b58d2d2b0882dccb55",
+      "datos/theta_comun.json": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+      "validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz": "2985ca268585e978bea8b4fc26b8cf015b2441f40c3ac0bb57544eed0569296b",
+      "validacion/P06/no_radial/dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160_estado.npz": "7a2911b0ffa3512ac50857ff85628115518d9952cfe5702614a0fc50c9d7ed13",
+      "validacion/P06/no_radial/dop853e9_L4_h0.500_dt0.0200_R220_eps0.020_T160_estado.npz": "b904f416ac7857bb90e0e66b308e4297d3f74ff8c0d90c1ab4bc0cf500603a72",
+      "validacion/P06/no_radial/resultados.json": "167d316ed69e383960ef1ff807c8b3932f18227fc560d2cd43b7e595dba331d1",
+      "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89"
+    },
+    "code_hashes": {
+      "herramientas/diagnosticar_mediador_CP10.py": "41f0b56b797f9caca7601577d8db7f846d1d452e77a80940de6092be6a8fea64",
+      "herramientas/ejecutar_con_procedencia.py": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
+      "herramientas/modelo_m2.py": "87562e977135cc5092ef3567b5980f58e726187e4df5c418de4660291702374f"
+    },
+    "environment": {
+      "python": "3.12.14",
+      "system": "Linux",
+      "architecture": "x86_64",
+      "packages": {
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "matplotlib": "3.10.8",
+        "threadpoolctl": "3.6.0"
+      },
+      "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+      "BLAS_threads": 1,
+      "compiler_flags": [
+        "-O3",
+        "-fPIC",
+        "-shared",
+        "-fno-fast-math"
+      ]
+    }
+  },
+  "created_at": "2026-10-02T22:37:04.062056+00:00",
+  "status": "COMPLETADA",
+  "configuration_sha256": "cdd34db68d79146ddaa0cb58f5fc6d22dece1480211d461d4d7ca45bc25ebacc",
+  "source_snapshots": {
+    "datos/ensayo_mediador_CP10.json": "fuentes/datos/ensayo_mediador_CP10.json",
+    "datos/theta_comun.json": "fuentes/datos/theta_comun.json",
+    "herramientas/diagnosticar_mediador_CP10.py": "fuentes/herramientas/diagnosticar_mediador_CP10.py",
+    "herramientas/ejecutar_con_procedencia.py": "fuentes/herramientas/ejecutar_con_procedencia.py",
+    "herramientas/modelo_m2.py": "fuentes/herramientas/modelo_m2.py"
+  },
+  "segments": [
+    {
+      "started_at": "2026-10-02T22:37:04.062320+00:00",
+      "command": [
+        "python",
+        "herramientas/diagnosticar_mediador_CP10.py",
+        "--config",
+        "configuration.json",
+        "--output-dir",
+        "."
+      ],
+      "resumed_from_hashes": {},
+      "status": "COMPLETADA",
+      "ended_at": "2026-10-02T22:37:04.930264+00:00",
+      "returncode": 0,
+      "final_time": null
+    }
+  ],
+  "output_hashes": {
+    "configuration.json": "cdd34db68d79146ddaa0cb58f5fc6d22dece1480211d461d4d7ca45bc25ebacc",
+    "diagnostico.json": "a66f3f6d766cbe9c45e5dc7151b7f54c3bcc1e1f7d17d3e9152767a6503692dd",
+    "ejecucion.log": "a66f3f6d766cbe9c45e5dc7151b7f54c3bcc1e1f7d17d3e9152767a6503692dd",
+    "fuentes/datos/ensayo_mediador_CP10.json": "3c6a9aeace4091dd39598c52e357996f5bbef7bae9d92a532fce3540ddf0f209",
+    "fuentes/datos/theta_comun.json": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+    "fuentes/herramientas/diagnosticar_mediador_CP10.py": "41f0b56b797f9caca7601577d8db7f846d1d452e77a80940de6092be6a8fea64",
+    "fuentes/herramientas/ejecutar_con_procedencia.py": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
+    "fuentes/herramientas/modelo_m2.py": "87562e977135cc5092ef3567b5980f58e726187e4df5c418de4660291702374f",
+    "recibo_antes_aclaracion_blas.json": "96a93e69558b6eece39cd48f9b32fef091d72efcde03d3505e17beacb60fa7ba"
+  },
+  "comparisons_and_decision": "La puerta se registra en el resultado y el informe CP10; completar una ejecución no cierra una etapa.",
+  "provenance_clarifications": [
+    {
+      "recorded_at": "2026-10-03T02:56:09.248538+00:00",
+      "field": "identity.environment.BLAS_threads",
+      "interpretation": "Política prevista de un hilo; la observación del límite en este análisis histórico no fue capturada.",
+      "observed_threads_at_execution": null,
+      "reason": "El diagnóstico guardado no envuelve explícitamente sus operaciones en threadpool_limits y el recibo no registra las variables de hilos heredadas del lanzador. No se infiere retroactivamente un número observado.",
+      "scope": "Sólo diagnostico_guardado. Ambas evoluciones CP10 limitan explícitamente a un hilo con threadpool_limits en el trabajador.",
+      "scientific_output_changed": false,
+      "original_receipt": "recibo_antes_aclaracion_blas.json"
+    }
+  ]
+}

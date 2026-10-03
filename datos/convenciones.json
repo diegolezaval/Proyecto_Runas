@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "signature": "-+++",
+  "units": "c=hbar=1",
+  "phase": "Phi=f exp(+i omega t)",
+  "charge_current": "j^mu=i(Phi* partial^mu Phi - Phi partial^mu Phi*)=-2 Im(Phi* partial^mu Phi)",
+  "charge_density": "j^0=2 Im(Phi* dot(Phi))",
+  "phase_invariant": "X=-partial_mu(theta) partial^mu(theta)",
+  "stress_tensor": "T^{mu nu}=2 Re(partial^mu Phi* partial^nu Phi)+partial^mu chi partial^nu chi+eta^{mu nu} L",
+  "effective_stress": "2 s partial^mu theta partial^nu theta + eta^{mu nu} P",
+  "energy_flux": "T^{0i}=-2 Re(dot(Phi*) partial_i Phi)-dot(chi) partial_i chi",
+  "axial_winding_ansatz": "Phi=f(rho) exp[i(omega t-K z+n phi)]",
+  "momenta": "P_z=K Q; J_z=-n Q in the declared phase convention",
+  "boundaries": "Regular origin; localized profiles decay; outgoing waves require flux accounting; periodic cells conserve total E,Q,P,J with no imposed external supports.",
+  "fundamental_coordinates": [
+    "m",
+    "M",
+    "lambda0",
+    "g",
+    "h"
+  ],
+  "derived_not_independent": [
+    "lambda=g^2/(2 M^2)-lambda0"
+  ],
+  "state_not_fundamental": [
+    "omega",
+    "Q",
+    "P",
+    "J",
+    "radius",
+    "temperature",
+    "initial_data"
+  ],
+  "normalization_not_physics": [
+    "mass_reference",
+    "lambda_reference"
+  ]
+}

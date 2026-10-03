@@ -1,0 +1,88 @@
+{
+  "base_checkpoint": "CP06_NO_RADIAL_PARCIAL",
+  "registered_before_execution": true,
+  "question": "Does exact M2 linear scattering convert an incoming negative-charge mode to a higher-frequency positive-charge mode?",
+  "omega": 0.9,
+  "source": "validacion/P06/rama/perfil_w0.90000.csv",
+  "frequencies": [
+    1.92,
+    1.95,
+    2.0,
+    2.1,
+    2.3,
+    2.6,
+    3.0,
+    4.0,
+    5.0
+  ],
+  "radial_steps": [
+    0.1,
+    0.05,
+    0.025,
+    0.0125,
+    0.00625
+  ],
+  "radius": 60.0,
+  "box_controls": [
+    1.92,
+    2.1,
+    3.0
+  ],
+  "vacuum_controls": [
+    2.0,
+    3.0
+  ],
+  "one_open_channel_controls": [
+    0.2,
+    0.5,
+    1.5
+  ],
+  "gates": {
+    "unitarity_max": 1e-08,
+    "solver_residual_max": 1e-09,
+    "energy_charge_error_max": 1e-07,
+    "conversion_relative_grid_error_max": 0.02,
+    "gain_absolute_grid_error_max": 0.0001,
+    "box_gain_error_max": 1e-07
+  },
+  "sources": [
+    {
+      "url": "https://doi.org/10.1103/PhysRevLett.131.111602",
+      "role": "Flux-based amplification method; different model"
+    },
+    {
+      "url": "https://doi.org/10.1103/PhysRevD.111.103027",
+      "role": "Two-field scattering precedent; different potential and normalization"
+    }
+  ],
+  "scope": "Exploratory subquestion of RES0/RES2 while full E03 remains partial; no functional gate bypass",
+  "action_modified": false,
+  "refinement_history": [
+    {
+      "reason": "Some relative conversion differences exceed 2%; retain all h>=0.025 solutions",
+      "new_dx": 0.0125,
+      "registered_before_execution": true
+    },
+    {
+      "reason": "Conversion relative grid gate remains above 2% near weak-conversion frequencies",
+      "new_dx": 0.00625,
+      "registered_before_execution": true
+    },
+    {
+      "reason": "Only Omega=1.95 still fails 2% conversion gate; independent collocation also checks three cases",
+      "Omega": 1.95,
+      "new_dx": 0.003125,
+      "registered_before_execution": true
+    }
+  ],
+  "per_frequency_refinements": {
+    "1.95": [
+      0.003125
+    ]
+  },
+  "independent_collocation_controls": [
+    1.95,
+    2.3,
+    5.0
+  ]
+}

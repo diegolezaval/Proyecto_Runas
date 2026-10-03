@@ -1,0 +1,56 @@
+WALL {'L': 12, 'initial_n': 500, 'tolerance': 1e-06, 'nodes': 500, 'tension': 0.12657729082187757, 'tension_from_stress': 0.12661375881245127, 'first_integral_max': 3.0375098893476066e-06, 'mu_squared_shift': 6.029409727048574e-06, 'phase_condition_residual': 9.6089569143161e-25, 'collocation_residual': 1.835569156195347e-07}
+WALL {'L': 20, 'initial_n': 800, 'tolerance': 1e-08, 'nodes': 1462, 'tension': 0.12657426151203283, 'tension_from_stress': 0.12657428148358013, 'first_integral_max': 9.98671731984639e-10, 'mu_squared_shift': 1.9822687935544536e-09, 'phase_condition_residual': 5.471852009635906e-28, 'collocation_residual': 9.829796791346634e-09}
+WALL {'L': 28, 'initial_n': 1100, 'tolerance': 1e-09, 'nodes': 1748, 'tension': 0.12657426051364734, 'tension_from_stress': 0.12657426052235107, 'first_integral_max': 8.179117105822087e-13, 'mu_squared_shift': 6.24167384444263e-13, 'phase_condition_residual': 4.909180381915374e-31, 'collocation_residual': 9.980993036507801e-10}
+WALL {'L': 28, 'initial_n': 2200, 'tolerance': 2e-10, 'nodes': 3126, 'tension': 0.12657426051357493, 'tension_from_stress': 0.12657426052277226, 'first_integral_max': 3.651749042044017e-13, 'mu_squared_shift': 6.442624211899783e-13, 'phase_condition_residual': 4.576071613965796e-31, 'collocation_residual': 1.9981453218046233e-10}
+WALL {'L': 36, 'initial_n': 2800, 'tolerance': 2e-10, 'nodes': 3726, 'tension': 0.12657426051320766, 'tension_from_stress': 0.12657426051325132, 'first_integral_max': 1.07032438467769e-13, 'mu_squared_shift': -6.772360450213455e-15, 'phase_condition_residual': 2.414437845940131e-35, 'collocation_residual': 1.997513126873744e-10}
+STATE {'dimension': 2, 'norm_radius': 8, 'domain': 38, 'initial_dx': 0.1, 'tolerance': 1e-08, 'nodes': 930, 'omega': 0.883592879183563, 'bulk_s': 0.5334170605927855, 'bulk_pressure': 0.01660493962364723, 'equimolar_radius': 7.774592853947228, 'charge_radius': 8.084125046563992, 'I': 101.29128581411818, 'Q': 179.00051773740375, 'E': 161.85980284295312, 'virial_relative': 5.546155849641786e-12, 'norm_relative': 1.7130741269966165e-12, 'stress_balance_relative': 9.720197638368523e-12, 'center_pressure': 0.016604464045853695, 'boundary_stress': 4.336334601193189e-14, 'laplace_ratio': 1.0199280992422788, 'energy_excess_ratio': 1.0842461886289596, 'collocation_residual': 9.991983561172985e-09}
+STATE {'dimension': 2, 'norm_radius': 16, 'domain': 46, 'initial_dx': 0.1, 'tolerance': 1e-08, 'nodes': 950, 'omega': 0.8743680306484246, 'bulk_s': 0.5189929147972435, 'bulk_pressure': 0.008070044447845981, 'equimolar_radius': 15.763780788613722, 'charge_radius': 16.083629113483944, 'I': 405.1651432574153, 'Q': 708.5268967947461, 'E': 626.479708293798, 'virial_relative': 6.238914731195377e-13, 'norm_relative': 6.132871988029365e-13, 'stress_balance_relative': 5.847963532512177e-11, 'center_pressure': 0.008070044447767488, 'boundary_stress': 2.835892488727113e-14, 'laplace_ratio': 1.0050575141771327, 'energy_excess_ratio': 1.0469890854611936, 'collocation_residual': 9.950948658113618e-09}
+SPECTRUM 2 16 0.1 0.002107317790205757
+SPECTRUM 2 16 0.05 0.002088721510216898
+SPECTRUM 2 16 0.025 0.002084044178558266
+SPECTRUM 2 16 0.0125 0.002082873059439547
+SPECTRUM 2 16 0.00625 0.002082580165830703
+STATE {'dimension': 2, 'norm_radius': 32, 'domain': 62, 'initial_dx': 0.1, 'tolerance': 1e-08, 'nodes': 999, 'omega': 0.8698294075953843, 'bulk_s': 0.5115244977781933, 'bulk_pressure': 0.003990921245495771, 'equimolar_radius': 31.756883677149254, 'charge_radius': 32.08366355984822, 'I': 1620.6605730281915, 'Q': 2819.3964523006157, 'E': 2465.7678157072105, 'virial_relative': 2.780379814470901e-12, 'norm_relative': 2.935429677108914e-13, 'stress_balance_relative': 1.7605682599146905e-10, 'center_pressure': 0.003990921245488888, 'boundary_stress': 2.7171224405976965e-14, 'laplace_ratio': 1.0013032763849168, 'energy_excess_ratio': 1.0247475235958468, 'collocation_residual': 9.86852759373232e-09}
+SPECTRUM 2 32 0.1 0.0007744110477800576
+SPECTRUM 2 32 0.05 0.0007499780090506652
+SPECTRUM 2 32 0.025 0.0007437351211785854
+SPECTRUM 2 32 0.0125 0.0007421656569717782
+SPECTRUM 2 32 0.00625 0.0007417727336624885
+STATE {'dimension': 2, 'norm_radius': 64, 'domain': 94, 'initial_dx': 0.1, 'tolerance': 1e-08, 'nodes': 1313, 'omega': 0.8675650447181739, 'bulk_s': 0.5076929037959127, 'bulk_pressure': 0.001986046427020438, 'equimolar_radius': 63.752988278691156, 'charge_radius': 64.08375165279625, 'I': 6482.64229211122, 'Q': 11248.22770009479, 'E': 9784.690894015152, 'virial_relative': 2.52082529527515e-12, 'norm_relative': 5.32018873400375e-13, 'stress_balance_relative': 3.9493493813712415e-10, 'center_pressure': 0.0019860464270152756, 'boundary_stress': 2.897557650961264e-14, 'laplace_ratio': 1.0003328802348277, 'energy_excess_ratio': 1.0126959688731558, 'collocation_residual': 9.715236163926234e-09}
+SPECTRUM 2 64 0.1 0.0003060862959331312
+SPECTRUM 2 64 0.05 0.00027497862628419534
+SPECTRUM 2 64 0.025 0.0002666072620085579
+SPECTRUM 2 64 0.0125 0.00026447149525646004
+SPECTRUM 2 64 0.00625 0.00026393471838818684
+STATE {'dimension': 2, 'norm_radius': 128, 'domain': 158, 'initial_dx': 0.1, 'tolerance': 1e-08, 'nodes': 1953, 'omega': 0.8664324348553183, 'bulk_s': 0.5057479611748947, 'bulk_pressure': 0.00099087295424366, 'equimolar_radius': 127.7509146101366, 'charge_radius': 128.08381437175396, 'I': 25930.56916844943, 'Q': 44934.17236360777, 'E': 38984.00721782226, 'virial_relative': 2.170991260474876e-12, 'norm_relative': 3.5649261320713777e-13, 'stress_balance_relative': 7.576352036775397e-10, 'center_pressure': 0.0009908729542428274, 'boundary_stress': 3.105497909111899e-14, 'laplace_ratio': 1.0000842640030028, 'energy_excess_ratio': 1.006429990463608, 'collocation_residual': 9.689167379267193e-09}
+SPECTRUM 2 128 0.1 0.00014350073033707168
+SPECTRUM 2 128 0.05 0.00010831460984728558
+SPECTRUM 2 128 0.025 9.747676892955973e-05
+SPECTRUM 2 128 0.0125 9.456840126060677e-05
+SPECTRUM 2 128 0.00625 9.382692139587964e-05
+STATE {'dimension': 3, 'norm_radius': 8, 'domain': 38, 'initial_dx': 0.1, 'tolerance': 1e-08, 'nodes': 959, 'omega': 0.9045536233688919, 'bulk_s': 0.5632971258059657, 'bulk_pressure': 0.037170896928719, 'equimolar_radius': 7.707701510118484, 'charge_radius': 8.119190179560977, 'I': 1080.4403820172552, 'Q': 1954.6325247755558, 'E': 1811.9721568507453, 'virial_relative': 1.9149585676152564e-11, 'norm_relative': 1.7180701306074297e-12, 'stress_balance_relative': 4.960519084031293e-12, 'center_pressure': 0.037169555381446395, 'boundary_stress': 7.297856972069586e-14, 'laplace_ratio': 1.1317552922225063, 'energy_excess_ratio': 1.1504762981021832, 'collocation_residual': 9.947864287591208e-09}
+STATE {'dimension': 3, 'norm_radius': 16, 'domain': 46, 'initial_dx': 0.1, 'tolerance': 1e-08, 'nodes': 955, 'omega': 0.884188208827106, 'bulk_s': 0.5343170948699422, 'bulk_pressure': 0.01716678835843055, 'equimolar_radius': 15.68920865256361, 'charge_radius': 16.115588780101746, 'I': 8643.523056188349, 'Q': 15285.00233801394, 'E': 13674.90096820944, 'virial_relative': 1.1985464508117757e-12, 'norm_relative': 4.1022740759899534e-12, 'stress_balance_relative': 2.5509348932282158e-11, 'center_pressure': 0.017166788358185192, 'boundary_stress': 2.2962478314027385e-14, 'laplace_ratio': 1.0639340232278611, 'energy_excess_ratio': 1.0864525937896146, 'collocation_residual': 9.727101250897557e-09}
+SPECTRUM 3 16 0.1 0.018367123585120253
+SPECTRUM 3 16 0.05 0.018394665729155085
+SPECTRUM 3 16 0.025 0.018401559297369526
+SPECTRUM 3 16 0.0125 0.018403284284436706
+SPECTRUM 3 16 0.00625 0.01840371576772787
+STATE {'dimension': 3, 'norm_radius': 32, 'domain': 62, 'initial_dx': 0.1, 'tolerance': 1e-08, 'nodes': 1000, 'omega': 0.8745595728265694, 'bulk_s': 0.5193022856239385, 'bulk_pressure': 0.008243955483386689, 'equimolar_radius': 31.677967784123688, 'charge_radius': 32.11375321512275, 'I': 69148.18444929774, 'Q': 120948.41330742132, 'E': 106372.22119377051, 'virial_relative': 4.70037216809629e-12, 'norm_relative': 1.0789147353307271e-12, 'stress_balance_relative': 7.821953316979597e-11, 'center_pressure': 0.008243955483398402, 'boundary_stress': 1.9829044204721226e-14, 'laplace_ratio': 1.0316147815425036, 'energy_excess_ratio': 1.0459307652439434, 'collocation_residual': 9.914816354483069e-09}
+SPECTRUM 3 32 0.1 0.00641043682391226
+SPECTRUM 3 32 0.05 0.006446350170663636
+SPECTRUM 3 32 0.025 0.006455310566642008
+SPECTRUM 3 32 0.0125 0.006457550582792734
+SPECTRUM 3 32 0.00625 0.006458110727108903
+STATE {'dimension': 3, 'norm_radius': 64, 'domain': 94, 'initial_dx': 0.1, 'tolerance': 1e-08, 'nodes': 1318, 'omega': 0.8698827122710234, 'bulk_s': 0.5116138138791487, 'bulk_pressure': 0.004038361504209165, 'equimolar_radius': 63.671727413894516, 'charge_radius': 64.11281245638018, 'I': 553185.4755936011, 'Q': 962412.9637965956, 'E': 839467.3837979344, 'virial_relative': 3.836785567476169e-12, 'norm_relative': 3.325117958752344e-13, 'stress_balance_relative': 1.7337713517350866e-10, 'center_pressure': 0.004038361504208443, 'boundary_stress': 2.23187197392982e-14, 'laplace_ratio': 1.0157256769749812, 'energy_excess_ratio': 1.0236364053534173, 'collocation_residual': 9.977076516253477e-09}
+SPECTRUM 3 64 0.1 0.002208455061820412
+SPECTRUM 3 64 0.05 0.0022572543482109893
+SPECTRUM 3 64 0.025 0.0022693007865195436
+SPECTRUM 3 64 0.0125 0.0022723038272849903
+SPECTRUM 3 64 0.00625 0.0022730542179251853
+STATE {'dimension': 3, 'norm_radius': 128, 'domain': 158, 'initial_dx': 0.1, 'tolerance': 1e-08, 'nodes': 1953, 'omega': 0.8675790792210035, 'bulk_s': 0.5077168826325241, 'bulk_pressure': 0.001998409998254569, 'equimolar_radius': 127.66842888015374, 'charge_radius': 128.11233534140626, 'I': 4425483.804748472, 'Q': 7678914.328862285, 'E': 6670974.59059182, 'virial_relative': 3.6004511537043352e-12, 'norm_relative': 4.086730953645201e-13, 'stress_balance_relative': 3.9104324805836906e-10, 'center_pressure': 0.001998409998257844, 'boundary_stress': 2.5613546076887252e-14, 'laplace_ratio': 1.007842604416911, 'energy_excess_ratio': 1.011985793301401, 'collocation_residual': 9.740996336178964e-09}
+SPECTRUM 3 128 0.1 0.0007086978562195345
+SPECTRUM 3 128 0.05 0.0007796356095465603
+SPECTRUM 3 128 0.025 0.0007963915015063662
+SPECTRUM 3 128 0.0125 0.0008005270851916908
+SPECTRUM 3 128 0.00625 0.0008015577417591813
+CAPILLARITY_DONE 0.12657426051320766

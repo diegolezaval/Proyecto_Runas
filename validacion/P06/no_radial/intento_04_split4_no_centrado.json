@@ -1,0 +1,22 @@
+{
+  "reason": "Coarse uncentered mass-splitting pilot fails energy gate; large constant mediator force is split into opposing pieces.",
+  "criterion": 0.0002,
+  "pilots": [
+    {
+      "run": "split4_L4_h0.500_dt0.0040_R220_eps0.020_T160",
+      "time": 8.0,
+      "energy_drift": 0.004677961321196467,
+      "charge_drift": 8.593126210598712e-14,
+      "state_preserved": true
+    },
+    {
+      "run": "split4_L4_h0.500_dt0.0020_R220_eps0.020_T160",
+      "time": 8.0,
+      "energy_drift": 1.4228894732237762e-05,
+      "charge_drift": 9.11160036309866e-13,
+      "state_preserved": true
+    }
+  ],
+  "action": "Preserve both t=8 states; use numerical centred splitting with cancelling reference terms, no change to the M2 action",
+  "physical_instability_inferred": false
+}

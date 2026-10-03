@@ -1,0 +1,18 @@
+{
+  "Omega": 5.0,
+  "success": false,
+  "message": "The maximum number of mesh nodes is exceeded.",
+  "nodes": 21601,
+  "max_rms_residual": 0.002942731225687126,
+  "boundary_residual": 0.18099734523727196,
+  "probabilities": [
+    0.0003081283447488943,
+    0.9503558273215886
+  ],
+  "unitarity_error": 0.049336044333662454,
+  "energy_flux_gain": 0.9507992315250078,
+  "relative_conversion_difference_vs_fd": 0.025514457652568562,
+  "gain_difference_vs_fd": 0.04933949582383046,
+  "fd_dx": 0.00625,
+  "passed": false
+}

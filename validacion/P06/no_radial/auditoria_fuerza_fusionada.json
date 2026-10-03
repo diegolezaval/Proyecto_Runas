@@ -1,0 +1,19 @@
+{
+  "method": "numpy_projection_fused_C_potential",
+  "source_sha256": "74dd2159ac951e701b3acce7f8365847874521769479c08dd8e4634c7e2e9de9",
+  "fast_math": false,
+  "action_changed": false,
+  "comparison_relative_errors": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "numpy_force_seconds": 0.012482418791667746,
+  "fused_force_seconds": 0.00961187895832912,
+  "speedup": 1.2986450251593291,
+  "read_only_restart_time": 16.0,
+  "passed": true,
+  "scope": "Implementation equivalence only; no evolution repeated and no new physical approximation"
+}

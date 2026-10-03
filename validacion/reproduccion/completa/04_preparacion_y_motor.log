@@ -1,0 +1,109 @@
+{
+  "parametric_pump": {
+    "equation": "q_ddot+2 gamma q_dot+[1+h cos(2t)]q=0",
+    "cases": [
+      {
+        "h": 0.04,
+        "gamma": 0.02,
+        "growth_per_time_unit": -0.010000968888540025,
+        "resonant_small_h_estimate": -0.01,
+        "multipliers": [
+          [
+            -0.9100600107606546,
+            0.0
+          ],
+          [
+            -0.9690694765951721,
+            0.0
+          ]
+        ]
+      },
+      {
+        "h": 0.12,
+        "gamma": 0.02,
+        "growth_per_time_unit": 0.00999118571822419,
+        "resonant_small_h_estimate": 0.009999999999999998,
+        "multipliers": [
+          [
+            -0.8546596651060978,
+            0.0
+          ],
+          [
+            -1.031886041081088,
+            0.0
+          ]
+        ]
+      }
+    ],
+    "scope": "Coeficiente de modulación prescrito. No demuestra su obtención manual desde el portal."
+  },
+  "three_level_engine": {
+    "hot_temperature_K": 5778,
+    "cold_temperature_K": 300,
+    "hot_transition_eV": 2,
+    "cold_transition_eV": 0.4,
+    "work_transition_eV": 1.6,
+    "occupation_hot": 0.018340944567930804,
+    "occupation_cold": 1.9067591349526991e-07,
+    "stationary_populations": [
+      0.9822028943562138,
+      0.005932430598349549,
+      0.0118646750454366
+    ],
+    "cycle_fluxes": [
+      0.005932244447087048,
+      0.005932244447087054,
+      0.005932244447087051
+    ],
+    "heat_hot_eV_per_time_unit": 0.011864488894174095,
+    "heat_cold_eV_per_time_unit": 0.002372897778834822,
+    "work_eV_per_time_unit": 0.009491591115339282,
+    "cycle_efficiency": 0.8000000000000005,
+    "entropy_production_eV_K_per_time_unit": 5.856269007647037e-06,
+    "energy_residual": -8.673617379884035e-18,
+    "scope": "Niveles y tasas adoptados; transición de trabajo inducida coherentemente, aproximación de eliminación de coherencias. No deriva esos niveles de M2 ni incorpora toda banda, geometría solar o pérdidas de instalación.",
+    "quantum_stationary_check": {
+      "coherence_decay_rate": 1.009170567621922,
+      "coherent_coupling_Omega": 0.7103416669539814,
+      "density_matrix_real": [
+        [
+          0.9822028943562139,
+          0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.005932430598349547,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          0.011864675045436602
+        ]
+      ],
+      "density_matrix_imag": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.004175627534651834
+        ],
+        [
+          0.0,
+          0.004175627534651834,
+          0.0
+        ]
+      ],
+      "population_difference_from_rate_model": 1.1102230246251565e-16,
+      "stationary_residual": 4.336808689942018e-18,
+      "minimum_density_eigenvalue": 0.003776663878042246,
+      "coherent_work_output_eV_per_time_unit": 0.009491591115339289
+    }
+  },
+  "passed": true
+}

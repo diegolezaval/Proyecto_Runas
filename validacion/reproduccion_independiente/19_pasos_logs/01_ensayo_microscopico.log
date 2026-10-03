@@ -1,0 +1,47 @@
+{
+  "model": {
+    "potential": "Uhat(f)=f^2-f^4+f^6",
+    "omega": 0.9,
+    "units": "adimensionales; x=m_r r, f=sqrt(lambda) Phi/m_r, c=hbar=1",
+    "g6": 1,
+    "m_over_cutoff": 0.001,
+    "lambda": 0.001,
+    "kappa": 1,
+    "a": 0,
+    "b": 0,
+    "xi": 0,
+    "purpose": "Ensayo del sector escalar aislado. No realiza captacion, preparacion manual ni las 24 primordiales."
+  },
+  "coarse": {
+    "radius_domain": 60,
+    "nodes": 600,
+    "success": true,
+    "message": "The algorithm converged to the desired accuracy.",
+    "f0": 0.7426159459578426,
+    "Qhat": 2845.746540550526,
+    "Ehat": 2616.443165036103,
+    "E_over_Q": 0.9194224178973919,
+    "virial_relative": 8.05661845966508e-09,
+    "solver_max_rms_residual": 6.297274221061246e-07,
+    "nonnegative_profile": true,
+    "tail_absolute": 9.860761315262648e-29
+  },
+  "fine": {
+    "radius_domain": 80,
+    "nodes": 1237,
+    "success": true,
+    "message": "The algorithm converged to the desired accuracy.",
+    "f0": 0.7426159462100491,
+    "Qhat": 2845.7469226992275,
+    "Ehat": 2616.443507478983,
+    "E_over_Q": 0.9194224147652781,
+    "virial_relative": 3.671531932975765e-11,
+    "solver_max_rms_residual": 9.902075833287362e-09,
+    "nonnegative_profile": true,
+    "tail_absolute": 9.804187123146273e-33
+  },
+  "relative_change_E": 1.3088105250650915e-07,
+  "relative_change_Q": 1.3428766226484516e-07,
+  "scope": "Solucion radial estacionaria hasta rotacion de fase. E/Q<1 compara con cuantos libres del sector aislado. No prueba estabilidad completa, otras geometrias, bombeo ni compatibilidad operacional.",
+  "passed": true
+}

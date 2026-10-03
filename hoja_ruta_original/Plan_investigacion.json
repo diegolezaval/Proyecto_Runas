@@ -1,0 +1,974 @@
+{
+  "schema_version": "1.0.0",
+  "naturaleza": "hoja_de_ruta_no_resultados_fisicos_nuevos",
+  "fecha": "2026-09-27",
+  "fuente": {
+    "archivo": "Proyecto_Runas_M2_4_1.zip",
+    "sha256": "f4ebb3095dddb79cf36b8b9be13e93b7553abf01a1905ccdbda93e02bd155595",
+    "edicion": "4.1.0"
+  },
+  "autoridad": "Guia_tecnica.md; este JSON es una proyeccion de sus expedientes, no una segunda fuente cientifica.",
+  "regla": "Ninguna etapa planificada figura como investigacion ejecutada. R1 es revisable.",
+  "nota_dependencias": "Identificadores y puertas; algunos trabajos se coordinan en paralelo. No representan un calendario ni un DAG estricto.",
+  "taxonomia": [
+    "demostrado",
+    "derivado",
+    "simulado",
+    "aproximado",
+    "plausible",
+    "provisional",
+    "no_estudiado",
+    "refutado_dentro_de_un_modelo",
+    "problema_abierto"
+  ],
+  "etapas": [
+    {
+      "id": "E00",
+      "titulo": "Congelar la fuente y establecer una reproducción independiente",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "ZIP4.1"
+      ],
+      "objetivo_y_pregunta_fisica": "Determinar qué resultados se reproducen y qué afirmación respalda realmente cada archivo. La revisión de integridad presente es el punto de partida, no sustituye esta investigación.",
+      "ecuaciones_teoria_y_derivaciones": "Grafo de procedencia: acción → parámetros → script → datos → observable → afirmación. Identificar fuentes únicas y vistas generadas; separar M1, M2, contratos R1 y ejemplos auxiliares.",
+      "simulaciones_necesarias": "Reproducir en copia aislada los 19 pasos registrados, con dependencias fijadas. Recalcular con implementación independiente al menos energía/carga, tensión y un autovalor estable e inestable. No contar dos programas que importan el mismo operador como dos derivaciones independientes.",
+      "observables": "Diferencias de datos, balances, tiempos, error de discretización y discrepancias entre ecuaciones y código; cobertura de cada verificador.",
+      "criterios_de_aceptacion_y_avance": "Si coinciden dentro de errores justificados y cada afirmación tiene respaldo identificable, avanzar a E01/E03. La comparación no exige igualdad binaria entre entornos.",
+      "resultados_negativos_y_cambio_de_direccion": "Ante discrepancia, localizar si es convención, algoritmo, transcripción o física. Suspender sólo las afirmaciones dependientes; no borrar resultados negativos ni cambiar tolerancias para aprobar.",
+      "archivos_futuros_graficos_y_datos": "Actualizar en el futuro `datos/estado_evidencia.json`, `tratado/22_evidencia_y_metodologia.md`, `requirements.txt`, `herramientas/reproducir.py`. Producir **nueva propuesta** `validacion/reproduccion_independiente/`: tablas de diferencias, versiones, registros y gráfica de convergencia.",
+      "dificultad_y_dependencias": "Media; depende de la entrega 4.1. Debe preceder a afirmaciones nuevas de cierre.",
+      "archivos_citados": [
+        "datos/estado_evidencia.json",
+        "tratado/22_evidencia_y_metodologia.md",
+        "requirements.txt",
+        "herramientas/reproducir.py",
+        "validacion/reproduccion_independiente/"
+      ]
+    },
+    {
+      "id": "E01",
+      "titulo": "Fijar la formulación matemática y el espacio fundamental",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E00"
+      ],
+      "objetivo_y_pregunta_fisica": "Establecer exactamente qué teoría se está investigando y qué variaciones preservan esa teoría.",
+      "ecuaciones_teoria_y_derivaciones": "Auditar acción, dimensiones, signo métrico, corriente de Noether, tensor de tensiones, condiciones de contorno y ensembles de Q, momento y momento angular. Resolver la convención de X señalada arriba. Expresar las cinco coordenadas independientes y las restricciones del benchmark por separado. Auditar las pruebas de coercividad, Cauchy y cono característico; especificar regularidad y fronteras admisibles.",
+      "simulaciones_necesarias": "Comprobar equivalencia de formulaciones dimensional/adimensional y de los Jacobianos con derivadas independientes. En una futura refactorización, reproducir exactamente el benchmark antes de permitir g y h independientes.",
+      "observables": "Residuos de Euler–Lagrange/Noether, dimensiones, invariantes y sensibilidad a cada coordenada independiente de Θ.",
+      "criterios_de_aceptacion_y_avance": "Una única definición alimenta todos los cálculos; las hipótesis de cada teorema están explícitas. Avanzar a barridos globales y soluciones nuevas.",
+      "resultados_negativos_y_cambio_de_direccion": "Si un teorema pierde sus hipótesis fuera del benchmark, limitar la región admitida o demostrar una versión nueva. No promover una identidad del benchmark a ley de todo Θ.",
+      "archivos_futuros_graficos_y_datos": "`datos/theta_comun.json`, `herramientas/m2_comun.py`, capítulos 13, 15 y 20; **nueva propuesta** `datos/convenciones.json` y `validacion/identidades/`. Producir tabla dimensional, mapa de parámetros independientes y resultados de equivalencia.",
+      "dificultad_y_dependencias": "Alta; E00. La generalización del código es un trabajo propuesto, no realizado en esta guía.",
+      "archivos_citados": [
+        "datos/theta_comun.json",
+        "herramientas/m2_comun.py",
+        "datos/convenciones.json",
+        "validacion/identidades/"
+      ]
+    },
+    {
+      "id": "E02",
+      "titulo": "Determinar dominios de validez, incertidumbre y escalas",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E01"
+      ],
+      "objetivo_y_pregunta_fisica": "Precisar para qué amplitudes, frecuencias, tamaños, energías, tiempos y entornos cada descripción tiene error controlado.",
+      "ecuaciones_teoria_y_derivaciones": "Separar teoría clásica exacta, mediador eliminado, expansión séxtica, hidrodinámica, capilaridad, reducción modal y EFT cuántica. Identificar modos pesados, parámetros de expansión, operadores permitidos por simetría y contraterminos. El potencial clásico no queda automáticamente cerrado bajo renormalización: examinar, entre otros, términos del mediador permitidos por las simetrías. Determinar el significado físico de un corte y las ocupaciones que justifican el régimen clásico.",
+      "simulaciones_necesarias": "Barrer parámetros independientes en una región registrada antes de evaluar R1; contrastar reducciones con ambos campos, curvaturas, amplitudes y frecuencias. Propagar incertidumbre y error acumulado de fase. Preparar predicciones de laboratorio con E11 sin declarar detectabilidad todavía.",
+      "observables": "Error por observable, separación de escalas, rango de Θ compatible con vacío y localización, energía por volumen, parámetros de lazo, tiempo hasta exceder el error admisible.",
+      "criterios_de_aceptacion_y_avance": "Publicar una carta de validez con límites y zonas indeterminadas; habilitar únicamente los cálculos dentro de ella. Un dominio clásico condicionado puede avanzar aunque la validación empírica siga abierta.",
+      "resultados_negativos_y_cambio_de_direccion": "Si la aproximación falla, volver a M2 completo. Si falla el sector clásico o la EFT controlada no existe en la región útil, reducir prestaciones o activar revisión teórica con el alcance correspondiente; no introducir un corte arbitrario.",
+      "archivos_futuros_graficos_y_datos": "Capítulo 15, `datos/theta_comun.json`, `datos/ensayo_capilaridad.json`; **nueva propuesta** `datos/dominios_validez.json`, `validacion/validez/`. Mapas de error, diagramas de fase, covarianzas y límites temporales.",
+      "dificultad_y_dependencias": "Muy alta; E01 y herramientas E03. La identificación cuántica/empírica puede requerir un programa independiente de larga duración.",
+      "archivos_citados": [
+        "datos/theta_comun.json",
+        "datos/ensayo_capilaridad.json",
+        "datos/dominios_validez.json",
+        "validacion/validez/"
+      ]
+    },
+    {
+      "id": "E03",
+      "titulo": "Consolidar soluciones, espectro completo y dinámica",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E01"
+      ],
+      "objetivo_y_pregunta_fisica": "Separar soluciones existentes de artefactos y estabilidad física de estabilidad del algoritmo.",
+      "ecuaciones_teoria_y_derivaciones": "Usar continuación por norma/carga y pseudoarco para pliegues; derivar cada Hessiano y generador desde la misma acción. Analizar restricciones, modos de simetría, índice de Morse, espectro esencial, umbrales y posibles cadenas de Jordan. Emplear coercividad/estabilidad orbital donde sus hipótesis puedan demostrarse, no sólo la pendiente dQ/dω.",
+      "simulaciones_necesarias": "Refinar independientemente fondo, malla espectral, dominio y tiempo. Comparar al menos dos discretizaciones relevantes. Explorar perturbaciones radiales, no radiales, asimétricas y finitas en 3D. Contar raíces inestables mediante métodos de contorno/Evans o cotas equivalentes cuando resulten viables; controlar sectores de alta frecuencia y alto índice con estimaciones analíticas. Para estados periódicos usar Bloch/Floquet.",
+      "observables": "Ramas E(Q), autovalores y firmas energéticas, espectro continuo, normas orbitales, radiación y flujos E,Q,P,J; error de truncar sectores.",
+      "criterios_de_aceptacion_y_avance": "Fondo convergente y ausencia justificada de crecimiento en toda la clase de perturbaciones declarada. Una certificación rigurosa y evidencia numérica de alta confianza se etiquetan por separado. Avanzar a acceso y funcionalidad sólo si la estabilidad necesaria queda respaldada.",
+      "resultados_negativos_y_cambio_de_direccion": "Un modo creciente convergente descarta estabilidad de ese estado. Crecimiento que desaparece con malla exige revisar simetrías; no se elimina del informe. Una simulación corta sin fallo no prueba estabilidad orbital.",
+      "archivos_futuros_graficos_y_datos": "Capítulo 14, `herramientas/cierre_m2.py`, `herramientas/dinamica_m2.py`, `herramientas/guia_m2.py`; **nueva propuesta** `validacion/espectro_completo/`. Diagramas espectrales, mapas de crecimiento, trayectorias 3D y presupuesto de error.",
+      "dificultad_y_dependencias": "Muy alta; E01, con E02 en paralelo. Los dos campos introducen escalas rígidas que deben resolverse o eliminarse con error probado.",
+      "archivos_citados": [
+        "herramientas/cierre_m2.py",
+        "herramientas/dinamica_m2.py",
+        "herramientas/guia_m2.py",
+        "validacion/espectro_completo/"
+      ]
+    },
+    {
+      "id": "E04",
+      "titulo": "Preparación común, Semilla y apagado",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E03"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Puede una fuente físicamente especificada llevar un estado inicial accesible a una región operacional sin violar cargas ni ocultar recursos?",
+      "ecuaciones_teoria_y_derivaciones": "Definir estado inicial de todos los sectores, puerto de carga, trabajo, momento e información de la preparación. Separar transferencia desde un reservorio rúnico existente, producción de pares compensados y eventual preparación cuántica desde vacío. La primera ruta no resuelve el origen de la primera Semilla. Una fuente clásica externa lineal debe incluir el sistema que entrega su carga; no es una excepción gratuita a U(1).",
+      "simulaciones_necesarias": "Transitorio completo de inyección/captura, radiación de asentamiento, saturación y retirada. Estudiar conjuntos de datos iniciales y errores de fuente, no sólo el perfil final impuesto. Si se usan fluctuaciones, justificar su distribución y la aproximación clásica o cuántica correspondiente.",
+      "observables": "Probabilidad o cuenca determinista de captura, Q y energía entregadas, tiempo, fidelidad del estado, energía radiada, coste de control y estado final de la fuente.",
+      "criterios_de_aceptacion_y_avance": "Preparación reproducible con márgenes y apagado que deja destinos definidos para energía y carga; habilitar componente condicionado al origen declarado de sus recursos. P-01 completo exige cerrar también su fuente inicial.",
+      "resultados_negativos_y_cambio_de_direccion": "Cero clásico invariante o carga sin compensación descartan el protocolo. Si sólo hay captura desde un recurso previo, registrarla como tal y mantener abierto el arranque primario.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 13.8 y 16.4, `datos/correspondencia.json`, entrada P-01 de `datos/modulos.json`; **nueva propuesta** `validacion/preparacion_M2/`. Balances temporales, mapas de captura y curvas de asentamiento/apagado.",
+      "dificultad_y_dependencias": "Muy alta; E03. Para fuente material o cuántica se necesita E05 y un régimen admisible de E02.",
+      "archivos_citados": [
+        "datos/correspondencia.json",
+        "datos/modulos.json",
+        "validacion/preparacion_M2/"
+      ]
+    },
+    {
+      "id": "E05",
+      "titulo": "Contactos, materia, energía y entorno comunes",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E01",
+        "E03"
+      ],
+      "objetivo_y_pregunta_fisica": "Determinar cómo entra, se mide y se recupera energía del sector rúnico; y si un mismo acoplamiento permite varias funciones.",
+      "ecuaciones_teoria_y_derivaciones": "Primero estudiar contactos entre soluciones de Φ,χ ya existentes. Para materia/EM, evaluar los portales A(s), B(s) ya escritos, un Hamiltoniano material explícito y su retroacción. Activarlos crea un benchmark interactuante nuevo que debe verificarse; no es evidencia del benchmark A=B=1. Separar esta evaluación general de introducir M3 para salvar Canal. Derivar respuesta retardada, transferencia modal, entorno y ruido.",
+      "simulaciones_necesarias": "Dispersión entre estado, contacto y reservorio finito; una realización material mínima y dos observables diferentes con el mismo Θ. Comparar dinámica completa con reducción de baño, incluyendo memoria y recalentamiento del reservorio.",
+      "observables": "Matriz de respuesta, corrientes de energía y carga, fuerza/reacción, emisión, calor, ruido, impedancia y capacidad del contacto.",
+      "criterios_de_aceptacion_y_avance": "Conservación global, respuesta causal, estabilidad y tasas calculadas; al menos dos fenómenos explicados sin constantes especiales. Permite E08 y familias materiales. Si sólo existe contacto rúnico interno, habilita únicamente ese nivel.",
+      "resultados_negativos_y_cambio_de_direccion": "Conversión nula, incompatibilidad empírica o coste que elimina la utilidad obligan a revisar la realización o el portal común. No asignar una eficiencia para suplir el acoplamiento faltante.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 08, 13.2, 15.6 y 21; `datos/interfaces.json`, `datos/theta_comun.json`; **nueva propuesta** `tratado/contactos_comunes.md`, `validacion/contactos/`. Espectros, curvas de transferencia, mapas de calor y balances con incertidumbre.",
+      "dificultad_y_dependencias": "Muy alta; E01–E03. La decisión M3 específica de Canal sigue sujeta a B. No se presume que los portales candidatos sean suficientes.",
+      "archivos_citados": [
+        "datos/interfaces.json",
+        "datos/theta_comun.json",
+        "tratado/contactos_comunes.md",
+        "validacion/contactos/"
+      ]
+    },
+    {
+      "id": "E06",
+      "titulo": "Resolver la decisión física de Canal",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E02",
+        "E03",
+        "C0"
+      ],
+      "objetivo_y_pregunta_fisica": "Encontrar una región de realizaciones estables que conduzca energía o señales, o delimitar por qué las clases razonables de M2 no cumplen esa función.",
+      "ecuaciones_teoria_y_derivaciones": "Ejecutar B: exclusiones analíticas, ramas estacionarias, corrientes, rotación, estados no uniformes y compuestos, geometrías alternativas y control físicamente derivado.",
+      "simulaciones_necesarias": "Escalera desde problemas transversales hasta conjuntos 3D con extremos, uniones y fuentes; no resolver primero los 24 glifos.",
+      "observables": "Los 22 requisitos de B.2, robustez, coste por longitud, banda útil y comparación explícita con R1.",
+      "criterios_de_aceptacion_y_avance": "Si un candidato supera todas las puertas, pasar a E08 y después P-08/P-13/P-16. Si todos los candidatos admisibles quedan agotados según B.5, evaluar F.",
+      "resultados_negativos_y_cambio_de_direccion": "Abandonar la realización fallida; si sólo hay transporte corto, transitorio o por relevos, revisar el contrato y no llamarlo guía larga estable.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 16.1, 18, 20–22; P-04 en `datos/modelos.json`, `datos/aceptacion_m2.json`, `datos/geometria.json` sólo si cambia la realización; **nueva propuesta** `validacion/P04/`. Mapas de ramas, espectros, dispersión, transmisión y estados finales.",
+      "dificultad_y_dependencias": "Muy alta; E02–E05 según candidato. Es la línea principal de infraestructura, sin bloquear E07.",
+      "archivos_citados": [
+        "datos/modelos.json",
+        "datos/aceptacion_m2.json",
+        "datos/geometria.json",
+        "validacion/P04/"
+      ]
+    },
+    {
+      "id": "E07",
+      "titulo": "Convertir la Q-ball en Reserva",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E02",
+        "E03",
+        "RES0"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Puede el estado localizado completar un ciclo útil, con acceso y recuperación, dentro de una región estable?",
+      "ecuaciones_teoria_y_derivaciones": "Ejecutar D y distinguir energía total, mínimo a carga fija, excitación recuperable y exergía relativa a reservorios.",
+      "simulaciones_necesarias": "Familia estable, preparación, carga, aislamiento, descarga y ciclos con contactos locales; reservar modelos reducidos para regímenes contrastados.",
+      "observables": "Capacidad accesible, potencia, fuga, rendimiento de ciclo, degradación, carga remanente, costes de preparación/control y energía del receptor.",
+      "criterios_de_aceptacion_y_avance": "Un ciclo completo reproducible permite aspirar al primer dispositivo numérico de E08. La energía ligada por sí sola no basta. El hito experimental requiere E11.",
+      "resultados_negativos_y_cambio_de_direccion": "Si no hay energía extraíble sin destruir el depósito o consumir recursos ocultos, cambiar el modo de almacenamiento o rechazar esa realización de P-06.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 14, 15.5, 20.5 y 21; P-06 en los JSON de módulos, modelos y aceptación; **nueva propuesta** `validacion/P06/`. Curvas E(Q), ciclos y mapas de potencia/retención.",
+      "dificultad_y_dependencias": "Muy alta; E02–E05. No presupone Canal ni la geometría gráfica vigente de Reserva.",
+      "archivos_citados": [
+        "validacion/P06/"
+      ]
+    },
+    {
+      "id": "E08",
+      "titulo": "Primera demostración de dispositivo de extremo a extremo",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E04",
+        "E05",
+        "E06 o E07"
+      ],
+      "objetivo_y_pregunta_fisica": "Establecer una realización cerrada en un dominio, sin completar eslabones mediante objetivos R1.",
+      "ecuaciones_teoria_y_derivaciones": "Un expediente debe contener acción, Θ, geometría física, estados de fuentes/receptores, preparación, estabilidad, reducción, operación, ruido, fallos y apagado. El estado final debe permitir repetir el procedimiento con recursos declarados.",
+      "simulaciones_necesarias": "Ejecutar el ciclo sin reinicializar artificialmente fases, carga, temperatura ni energía entre pasos. Hacer ensayos fuera del punto usado para diseñarlo, perturbaciones adversas y reproducción independiente. Si no cabe resolver todas las escalas a la vez, verificar solapamientos entre modelos y transferir su incertidumbre.",
+      "observables": "Función medida en la simulación, márgenes, coste neto, error, estado residual, rango de operación y trazabilidad del modelo reducido.",
+      "criterios_de_aceptacion_y_avance": "Todos los eslabones deben ser cuantitativos. Registrar «dispositivo numérico completo bajo M2» únicamente si procede; «experimental» exige evidencia externa. Abrir E09/E10 sobre recursos concretos admitidos.",
+      "resultados_negativos_y_cambio_de_direccion": "Una falla de preparación, contacto, ruido o repetibilidad impide aceptación aunque el estado aislado sea estable. Volver al eslabón responsable, no añadir una primordial que oculte su función.",
+      "archivos_futuros_graficos_y_datos": "`datos/aceptacion_m2.json`, `datos/estado_evidencia.json`, capítulos 16–17, `M2_RESULTADO.md`; **nueva propuesta** expediente de dispositivo con scripts, resultados crudos y gráfica de flujo energético del ciclo.",
+      "dificultad_y_dependencias": "Muy alta; E04/E05 y E06 o E07. E11 fija el nivel de correspondencia con materia real.",
+      "archivos_citados": [
+        "datos/aceptacion_m2.json",
+        "datos/estado_evidencia.json",
+        "M2_RESULTADO.md"
+      ]
+    },
+    {
+      "id": "E09",
+      "titulo": "Ampliar el repertorio mediante recursos físicos compartidos",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E08"
+      ],
+      "objetivo_y_pregunta_fisica": "Identificar qué funciones adicionales se derivan sin cambiar las leyes por dispositivo.",
+      "ecuaciones_teoria_y_derivaciones": "Aplicar la matriz de dependencias E. Distinguir resonador, sensor, memoria, actuador y transductor. Comparar fusiones o sustituciones por equivalencia de función, estado, preparación y lectura, no sólo por semejanza geométrica.",
+      "simulaciones_necesarias": "Una realización mínima por familia, seguida de variación de estado/configuración con Θ fijo. Ensayos de control y fallo para cada función; reutilizar componentes ya aceptados.",
+      "observables": "Respuesta funcional, coeficientes derivados, recursos compartidos, prestaciones incompatibles y coste de adaptación entre funciones.",
+      "criterios_de_aceptacion_y_avance": "Admitir cada función únicamente al completar su expediente; entonces integrarla. El catálogo puede aumentar, reducirse o reorganizarse conservando trazabilidad de sus identificadores.",
+      "resultados_negativos_y_cambio_de_direccion": "Mecanismo repetido con igual obstrucción se archiva; contratos sin observable o con barrera/tasa impuesta permanecen provisionales.",
+      "archivos_futuros_graficos_y_datos": "`datos/modulos.json`, `datos/modelos.json`, `datos/correspondencia.json`, `datos/aceptacion_m2.json`, capítulo 17; **nueva propuesta** `datos/dependencias_fisicas.json`. Matrices de dependencia y mapas comparativos de respuesta/error.",
+      "dificultad_y_dependencias": "Alta a muy alta; E08 y recursos especificados en E. No requiere resolver simultáneamente todas las familias.",
+      "archivos_citados": [
+        "datos/modulos.json",
+        "datos/modelos.json",
+        "datos/correspondencia.json",
+        "datos/aceptacion_m2.json",
+        "datos/dependencias_fisicas.json"
+      ]
+    },
+    {
+      "id": "E10",
+      "titulo": "Integración, redes y control",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E08",
+        "E09"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Conserva una combinación de componentes sus márgenes al intercambiar energía, señales y errores?",
+      "ecuaciones_teoria_y_derivaciones": "Derivar modelos con puertos, restricciones y retardos desde los componentes; demostrar compatibilidad de potencia, referencias y unidades. Analizar pasividad cuando corresponda, estabilidad de lazos, observabilidad y controlabilidad. Un controlador convencional externo es admisible si se identifica como tal; no demuestra P-15 rúnico.",
+      "simulaciones_necesarias": "Dos componentes, luego una unión y finalmente una red pequeña. Comparar reducción con campos en uniones; inyectar errores de medida, ruido correlacionado, carga variable, corte de un enlace, pérdida de referencia y retardos. Probar saturación y recuperación sin control ideal de ancho de banda infinito.",
+      "observables": "Modos colectivos, latencia, diafonía, amplificación transitoria, márgenes de lazo, consumo de servicio y reservas de apagado.",
+      "criterios_de_aceptacion_y_avance": "Región de operación conjunta y fallos cubiertos especificados; avanzar a escala/fabricación. La estabilidad de cada pieza aislada no basta.",
+      "resultados_negativos_y_cambio_de_direccion": "Si conectar piezas crea una inestabilidad, modificar interfaces, topología o consigna antes de retocar leyes fundamentales. Si el controlador depende de una medida no realizable, rechazar esa implementación.",
+      "archivos_futuros_graficos_y_datos": "`datos/interfaces.json`, `datos/recetas.json`, capítulos 03–04; **nueva propuesta** `validacion/redes/`, modelos de control y catálogo de fallos. Diagramas de respuesta, presupuestos por puerto y mapas de estabilidad de red.",
+      "dificultad_y_dependencias": "Muy alta; componentes de E08/E09 y contactos E05. Puede empezar con electrónica ordinaria declarada.",
+      "archivos_citados": [
+        "datos/interfaces.json",
+        "datos/recetas.json",
+        "validacion/redes/"
+      ]
+    },
+    {
+      "id": "E11",
+      "titulo": "Identificación, metrología y contraste experimental",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E02",
+        "E05 para experimentos"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Es el sector propuesto observable, identificable y compatible con mediciones independientes?",
+      "ecuaciones_teoria_y_derivaciones": "Traducir varios observables independientes a Θ y parámetros de material; estudiar degeneraciones de identificación. Formular predicciones frente a una referencia sin efecto rúnico, fondos ordinarios y controles nulos. Comparar portales con observaciones pertinentes; no suponer que A(0)=B(0)=1 los hace invisibles.",
+      "simulaciones_necesarias": "Experimentos sintéticos con ruido y sesgos, análisis de sensibilidad e inferencia conjunta. Después, y sólo con medios físicos definidos, ensayos de detección y réplica con protocolos registrados. Separar datos para identificación de datos para predicción.",
+      "observables": "Incertidumbre y correlación de Θ, límites superiores cuando no hay señal, sensibilidad, discriminación de mecanismos y predicciones de al menos dos funciones no usadas para ajustar.",
+      "criterios_de_aceptacion_y_avance": "Un conjunto común explica mediciones independientes dentro de errores y produce predicciones nuevas comprobables. Sin señal o sin acceso, conservar el nivel matemático/numérico; no declarar ingeniería físicamente validada.",
+      "resultados_negativos_y_cambio_de_direccion": "Un resultado nulo descarta la región accesible con sensibilidad publicada, no todo M2. Incompatibilidad robusta entre observables obliga a revisar el modelo común, no a permitir constantes por dispositivo.",
+      "archivos_futuros_graficos_y_datos": "`datos/theta_comun.json`, `datos/estado_evidencia.json`, capítulo 12; **nueva propuesta** `metrologia/` con protocolo, datos, calibraciones, covarianzas y comparación predicción–medida. Usar el marco GUM/VIM con versión declarada [S7].",
+      "dificultad_y_dependencias": "Muy alta; diseño desde E02, ejecución física después de E05. Es una puerta real hacia ingeniería madura.",
+      "archivos_citados": [
+        "datos/theta_comun.json",
+        "datos/estado_evidencia.json",
+        "metrologia/"
+      ]
+    },
+    {
+      "id": "E12",
+      "titulo": "Fabricación, tolerancias y mantenimiento",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E08",
+        "E11"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Puede producirse y conservarse la configuración física con variación admisible entre unidades y ciclos?",
+      "ecuaciones_teoria_y_derivaciones": "Traducir geometría y estado a proceso material o protocolo de preparación. Derivar sensibilidad a dimensiones, defectos, composición, temperatura y alineación. No deducir fabricabilidad de la precisión racional de un SVG.",
+      "simulaciones_necesarias": "Distribuciones de tolerancias con correlaciones, peores casos, deriva, daño y reparaciones; ensayos reales de lotes cuando existan. Para estructuras puramente de campo, sustituir «fabricar» por preparar/repreparar y verificar fuentes; conservar todos los costes.",
+      "observables": "Rendimiento de unidades conformes, incertidumbre de calibración, degradación por ciclo, tiempo de reparación, recursos de repuesto y cambios de dominio.",
+      "criterios_de_aceptacion_y_avance": "Proceso repetible, inspección independiente y recalibración que restituye prestaciones sin ocultar deterioro. Pasar a operación sostenida sólo con intervalos de mantenimiento respaldados.",
+      "resultados_negativos_y_cambio_de_direccion": "Tolerancias más estrechas que capacidad de preparación/medida obligan a rediseñar la geometría, reducir prestaciones o abandonar el dispositivo.",
+      "archivos_futuros_graficos_y_datos": "`datos/geometria.json`, `datos/modelos.json`, capítulo 04; **nueva propuesta** `ingenieria/fabricacion/`, planes de calibración y mantenimiento. Mapas de tolerancias, distribución de prestaciones y curvas de degradación.",
+      "dificultad_y_dependencias": "Muy alta; E08/E11; integración E10 según producto. No se fijan plazos industriales antes de disponer del mecanismo.",
+      "archivos_citados": [
+        "datos/geometria.json",
+        "datos/modelos.json",
+        "ingenieria/fabricacion/"
+      ]
+    },
+    {
+      "id": "E13",
+      "titulo": "Operación, interfaz y seguridad",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E10",
+        "E11",
+        "E12"
+      ],
+      "objetivo_y_pregunta_fisica": "Permitir una orden sencilla cuya ejecución permanezca dentro de estados caracterizados, incluso ante fallos definidos.",
+      "ecuaciones_teoria_y_derivaciones": "Identificar peligros derivados de energía, carga, presión, radiación, temperatura, momento y productos materiales; diseñar retirada y estado seguro. La desconexión de alimentación no implica desaparición de una Q-ball. Analizar interbloqueos y reservas locales independientes del fallo que deben cubrir.",
+      "simulaciones_necesarias": "Escenarios de fallo y uso erróneo, órdenes incompatibles, sensor inválido, pérdida de energía, recipiente/terminal roto y apagado bajo carga. Evaluar operador con interfaces prototipo después de fijar restricciones físicas.",
+      "observables": "Energía residual, máxima exposición/temperatura/esfuerzo según realización, tiempo de aislamiento, probabilidad de fallo con incertidumbre y capacidad de diagnóstico.",
+      "criterios_de_aceptacion_y_avance": "Expediente de riesgos, límites y fallos cubiertos; procedimientos verificados y revisión de normas aplicables según dispositivo y jurisdicción. La interfaz rechaza tareas sin realización admitida.",
+      "resultados_negativos_y_cambio_de_direccion": "Si el estado seguro exige una función aún no demostrada o no sobrevive a pérdida de control, no habilitar la aplicación. Reconfigurar, limitar energía o revisar arquitectura.",
+      "archivos_futuros_graficos_y_datos": "`datos/recetas.json`, `datos/interfaces.json`, capítulos 03–04; **nueva propuesta** `normas/`, `manuales/`, `validacion/fallos/`. Árboles de fallo, secuencias temporales, mapas de límites y registros de pruebas de usuario.",
+      "dificultad_y_dependencias": "Muy alta; diseño temprano con E04/E05, aceptación final con E10–E12. Referencias de metodología, no certificaciones: ISO 12100 e IEC 61508 cuando sean aplicables [S8–S9].",
+      "archivos_citados": [
+        "datos/recetas.json",
+        "datos/interfaces.json",
+        "normas/",
+        "manuales/",
+        "validacion/fallos/"
+      ]
+    },
+    {
+      "id": "E14",
+      "titulo": "Consolidar teoría, ingeniería y formación",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "H.1"
+      ],
+      "objetivo_y_pregunta_fisica": "Determinar cuándo el trabajo debe centrarse en reproducir, normalizar y enseñar un núcleo estable, en vez de modificarlo para cada aplicación.",
+      "ecuaciones_teoria_y_derivaciones": "Aplicar las puertas de congelación de H. Distinguir versión de teoría, benchmark, realización y manual. Mantener apéndices abiertos sin presentar conjeturas como resultados.",
+      "simulaciones_necesarias": "Regresiones científicas ante cambios, reproducción externa y ejercicios verificables en diferentes niveles; no crear nuevos supuestos físicos para simplificar la enseñanza.",
+      "observables": "Estabilidad de predicciones entre versiones, cobertura de evidencia, contradicciones documentales, reproducibilidad y comprensión de procedimientos.",
+      "criterios_de_aceptacion_y_avance": "Corpus con autoridad única y dominios bien delimitados. Publicar manual operativo sólo de una realización aceptada; libros conceptuales pueden aparecer antes con estados de evidencia claros.",
+      "resultados_negativos_y_cambio_de_direccion": "Una anomalía reproducida que afecta al núcleo abre revisión formal y marca los manuales dependientes. Una mejora de geometría o control no reabre automáticamente la física fundamental.",
+      "archivos_futuros_graficos_y_datos": "`DIRECTRICES_DESARROLLO.md`, `LEEME.md`, fuentes del tratado y generador; **nueva propuesta** estructura editorial de H, versiones y matriz de dependencias. Índices de trazabilidad, mapas didácticos y ejemplos reproducibles.",
+      "dificultad_y_dependencias": "Alta; puertas H. Consolidar no significa proclamar que ya no quedan preguntas científicas.",
+      "archivos_citados": [
+        "DIRECTRICES_DESARROLLO.md",
+        "LEEME.md"
+      ]
+    },
+    {
+      "id": "C0",
+      "titulo": "Delimitar el problema antes de gastar simulación",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E00",
+        "E01"
+      ],
+      "objetivo_y_pregunta_fisica": "Identificar qué requisitos mínimos justifican llamar Canal a una solución y qué clases están excluidas por resultados existentes.",
+      "ecuaciones_teoria_y_derivaciones": "Auditar el argumento de dilatación y Schur del capítulo 18, la identidad de corriente del 21 y las condiciones de localización. Separar invariancia axial, ausencia de nodos, simetría angular, longitud infinita, cinética canónica y ausencia de soporte. Registrar exactamente qué hipótesis cambia cada propuesta.",
+      "simulaciones_necesarias": "Reproducción independiente de una tasa creciente y del límite largo; comprobación de continuo/caja. No barrer ciegamente una clase cubierta por un teorema auditado.",
+      "observables": "Mapa de hipótesis, banda inestable y relación entre longitud de misión, tiempo de propagación y tiempo de crecimiento.",
+      "criterios_de_aceptacion_y_avance": "Contrato cuantitativo y matriz de clases definida. Pasar a C1–C4 sólo para preguntas no resueltas, o para validar los límites de un teorema.",
+      "resultados_negativos_y_cambio_de_direccion": "Si una propuesta conserva todas las hipótesis de exclusión, archivarla sin una campaña 3D. Si el teorema tiene una laguna, resolverla antes de utilizarlo para abandonar una familia.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 18 y 21, entrada P-04 de aceptación; **nueva propuesta** `datos/P04_busqueda.json`. Tabla de clases, supuestos, estado de evidencia y criterio de parada.",
+      "dificultad_y_dependencias": "Alta; E00–E01. Es la primera investigación específica de Canal.",
+      "archivos_citados": [
+        "datos/P04_busqueda.json"
+      ]
+    },
+    {
+      "id": "C1",
+      "titulo": "Otras ramas tubulares y perfiles radiales",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "C0",
+        "E03"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Existe alguna rama transversal distinta que cambie las hipótesis de la inestabilidad, en vez de mover el mismo tubo a otra frecuencia?",
+      "ecuaciones_teoria_y_derivaciones": "Clasificar soluciones sin nodos, excitadas y posibles ramas desconectadas. Para la familia localizada usual, investigar el intervalo permitido por el potencial, entre coexistencia y masa de vacío, sin suponer existencia o estabilidad de cada punto. El teorema del capítulo 18 excluye la clase libre sin nodos cubierta por sus hipótesis, no sólo ω=0.9.",
+      "simulaciones_necesarias": "Continuación en carga/norma y pseudoarco; inicializadores de diferentes anchuras y número de nodos. Usar métodos independientes para distinguir ramas, y analizar índice de Morse antes de la dinámica costosa.",
+      "observables": "E(q), ω(q), radio, nodos, espectro radial, mínimo del Hessiano y bandas longitudinales.",
+      "criterios_de_aceptacion_y_avance": "Sólo pasa una rama con una razón física explícita por la que no le aplica la exclusión, y con región espectral admisible. Entonces exigir B.2 y C9.",
+      "resultados_negativos_y_cambio_de_direccion": "Si todas las nuevas ramas conservan un modo creciente, cerrar C1 en el dominio explorado. Las ramas excitadas no heredan criterios de estabilidad de la fundamental [S2].",
+      "archivos_futuros_graficos_y_datos": "`herramientas/guia_m2.py`, capítulo 18; **nueva propuesta** `validacion/P04/ramas_radiales/`. Diagramas de bifurcación con ramas fallidas y mapas de índices negativos.",
+      "dificultad_y_dependencias": "Alta; C0, E03. Prioridad analítica alta; prioridad baja para repetir barridos de la clase ya excluida.",
+      "archivos_citados": [
+        "herramientas/guia_m2.py",
+        "validacion/P04/ramas_radiales/"
+      ]
+    },
+    {
+      "id": "C2",
+      "titulo": "Carga temporal, corriente y gradiente axial",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "C0",
+        "C1",
+        "E03"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Puede una corriente distinta de la uniforme aportar un mecanismo de soporte sin introducir una fuerza externa oculta?",
+      "ecuaciones_teoria_y_derivaciones": "Partir de Φ=f(ρ)exp[i(ωt−Kz)] y μ²=ω²−K². La identidad transversal vigente excluye perfiles no triviales de esa clase con μ²≤0 por positividad de V. Con μ²>0 hay marco de reposo; en ramas con cL²<0 el capítulo 21 mantiene crecimiento temporal de onda larga. Para flujos no uniformes derivar continuidad, presión y retroacción: q(z), velocidad y sección no pueden elegirse independientemente.",
+      "simulaciones_necesarias": "Sólo si queda pregunta útil, analizar estabilidad absoluta/convectiva mediante dispersión compleja y respuesta a impulsos; luego segmento finito con fuentes y receptores físicos. Continuar perfiles de flujo inhomogéneo compatibles con los balances.",
+      "observables": "Crecimiento temporal/espacial, ganancia de perturbaciones entre extremos, flujo Q/E, cambios del fondo y potencia de la fuente.",
+      "criterios_de_aceptacion_y_avance": "Pasar a C9 si hay estado y región del conjunto con respuesta acotada. Una inestabilidad convectiva tolerable sólo habilita un contrato finito explícito; no establece estabilidad del tubo infinito.",
+      "resultados_negativos_y_cambio_de_direccion": "Reducir la tasa por un boost no elimina la banda. Si la ganancia amplifica ruido por encima del límite o requiere reposición inviable, abandonar esa realización.",
+      "archivos_futuros_graficos_y_datos": "Capítulo 21; **nueva propuesta** `validacion/P04/corrientes/`. Diagramas de dispersión compleja, funciones de Green y presupuesto de ganancia/ruido.",
+      "dificultad_y_dependencias": "Muy alta; C0/C1, E03. El caso uniforme resuelto no necesita volver a proponerse como estabilización.",
+      "archivos_citados": [
+        "validacion/P04/corrientes/"
+      ]
+    },
+    {
+      "id": "C3",
+      "titulo": "Vorticidad, arrollamiento y momento angular",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "C0",
+        "E03"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Aporta el momento angular una región estable o desplaza la inestabilidad hacia otro sector?",
+      "ecuaciones_teoria_y_derivaciones": "Derivar desde la acción el ansatz Φ=f(ρ)exp[iωt−iKz+inφ], n entero, con f∼ρ^|n| en el eje y decaimiento exterior. Calcular Q,Pz,Jz y sus relaciones en este ansatz, sin considerar n,Q,J controles independientes si están ligados. Examinar primero si el argumento de dilatación conserva una dirección negativa incluso en el sector axisimétrico con arrollamiento. No asumir que n protege topológicamente la configuración: el vacío exterior Φ=0 requiere analizar el espacio de configuraciones y las rutas de desenrollamiento.",
+      "simulaciones_necesarias": "Continuación inicial n=1 y n=2, luego otros n sólo por evidencia de una ventana nueva o argumento asintótico. Resolver perturbaciones acopladas de índices n±m, k longitudinal y deformaciones de división/flexión. Estudiar estados rotantes no rígidos si el ansatz estacionario resulta insuficiente.",
+      "observables": "Espectro completo por sector, energía a Q/J fijos, umbrales de fisión y pérdida de momento angular por radiación.",
+      "criterios_de_aceptacion_y_avance": "Región estable con carga angular accesible y tiempo operativo respaldado; pasar a C9. Las soluciones rotantes de otros potenciales sólo orientan métodos [S3].",
+      "resultados_negativos_y_cambio_de_direccion": "Si una extensión rigurosa del teorema excluye la clase entera, cerrar esa clase. Si fallan n pequeños, no declarar excluidos todos los n sin análisis adicional; documentar el límite de recursos o el argumento asintótico.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 18/21; **nueva propuesta** `herramientas/P04_vorticidad.py`, `validacion/P04/vorticidad/`. Mapas (Q,n,K), espectros m/k y películas de ruptura.",
+      "dificultad_y_dependencias": "Muy alta; C0, E03. Merece cribado temprano, no una presunción de éxito.",
+      "archivos_citados": [
+        "herramientas/P04_vorticidad.py",
+        "validacion/P04/vorticidad/"
+      ]
+    },
+    {
+      "id": "C4",
+      "titulo": "Tubos huecos, capas y soporte del mediador existente",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "C0",
+        "C1",
+        "E03"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Puede una interfaz adicional o una distribución de χ producir confinamiento estable con los mismos grados de libertad?",
+      "ecuaciones_teoria_y_derivaciones": "Buscar perfiles anulares/multicapa de ambos campos y justificar interfaces interior/exterior. Estudiar el problema elíptico (−∇²+M²+h|Φ|²)χ=−g|Φ|² con sus condiciones: χ no es una pared independiente elegible a voluntad. Auditar si perfiles sin nodos, aunque huecos, siguen bajo C0; si hay nodos, analizar sus modos negativos. Una capa hueca no equivale a añadir una nueva fase material.",
+      "simulaciones_necesarias": "Continuación desde inicializadores anulares y de dos escalas, con restricciones físicas declaradas. Calcular fluctuaciones de radio, espesor, centro, excentricidad y transferencia entre capas.",
+      "observables": "Tensiones de ambas interfaces, equilibrio de presión, Hessiano de espesor, acoplamiento de modos y energía de colapso/llenado.",
+      "criterios_de_aceptacion_y_avance": "Capas que satisfacen ambas ecuaciones sin potencial externo impuesto y región sin modos crecientes; pasar a C9. Para χ dinámico, transferir a C8.",
+      "resultados_negativos_y_cambio_de_direccion": "Si la capa se rellena, colapsa o sigue la exclusión longitudinal, abandonar su uso como guía. Un inicializador que converge al tubo conocido no descubre una rama nueva.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 13/18/20; **nueva propuesta** `validacion/P04/capas/`. Perfiles, balances de interfaz y mapas de crecimiento de espesor.",
+      "dificultad_y_dependencias": "Alta/muy alta; C0/C1 y E03. Analizar antes de añadir otro campo escalar.",
+      "archivos_citados": [
+        "validacion/P04/capas/"
+      ]
+    },
+    {
+      "id": "C5",
+      "titulo": "Tubos no uniformes y configuraciones periódicas",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "C0",
+        "E03"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Existe un estado modulado estable que sustituya al cilindro uniforme y siga transportando?",
+      "ecuaciones_teoria_y_derivaciones": "Formular fondos f(ρ,z),χ(ρ,z) con periodo a y carga por celda; incluir fase espacial si corresponde. Derivar ecuaciones 2D y condiciones periódicas. El estado modulado debe ser solución, no un radio ondulado prescrito. Analizar bifurcaciones desde modos del tubo y posibles estados desconectados.",
+      "simulaciones_necesarias": "Continuación en a y Qcelda; todo cuasimomento Bloch en [−π/a,π/a], varios índices azimutales y cotas para sectores restantes. Superceldas y evolución 3D para detectar coalescencia, subarmónicos y transporte entre máximos.",
+      "observables": "Bandas, rigidez longitudinal efectiva, corrientes, movilidad de defectos, crecimiento de longitud de modulación y localización modal.",
+      "criterios_de_aceptacion_y_avance": "Región estable frente a cambios de varias celdas y una banda útil no plana; pasar a C9. Estabilidad sólo ante perturbaciones del mismo periodo es insuficiente.",
+      "resultados_negativos_y_cambio_de_direccion": "Si la modulación termina en gotas separadas o coalescencia progresiva, cerrar «tubo periódico» y evaluar C7 como mecanismo distinto, sin atribuirle transporte aún.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 18/20/21; **nueva propuesta** `validacion/P04/periodicos/`. Fondos 2D, diagramas Bloch, superceldas y curvas de transferencia.",
+      "dificultad_y_dependencias": "Muy alta; C0, E03, orientación capilar validada. Es una de las alternativas prioritarias después del cribado analítico.",
+      "archivos_citados": [
+        "validacion/P04/periodicos/"
+      ]
+    },
+    {
+      "id": "C6",
+      "titulo": "Geometrías finitas, curvas, anillos y superficies",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "C0",
+        "E03",
+        "C9 integrado"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Puede una geometría distinta evitar los modos destructivos sin perder función ni necesitar apoyos ficticios?",
+      "ecuaciones_teoria_y_derivaciones": "Examinar segmentos cortos con extremos completos, gotas alargadas, lazos/toroides con momento angular y transporte sobre interfaces de objetos localizados. Derivar equilibrio de curvatura y tensiones, incluyendo contracción del lazo y movimiento de extremos. La periodicidad matemática de una caja no equivale a un anillo físico curvo.",
+      "simulaciones_necesarias": "Fondos 2D/3D con carga y momento pertinentes; espectro del objeto entero y paquetes sobre sus modos. En lazos, incluir cambios de radio y ruptura no axisimétrica; en gotas, discriminar oscilación estacionaria de transporte entre contactos.",
+      "observables": "Estabilidad frente a deformación, distancia útil, retardo, confinamiento, pérdidas por curvatura y coste de sostener posición/orientación.",
+      "criterios_de_aceptacion_y_avance": "Geometría física estable y utilidad medida. Si sólo permite una distancia corta, aceptar únicamente ese contrato y estudiar composición posterior; pasar a C9.",
+      "resultados_negativos_y_cambio_de_direccion": "Acortar por debajo de π/kc bajo Neumann ideal no acredita el segmento. Si toda forma se relaja a una gota sin ruta útil, mover el recurso a resonadores/Reserva, no mantener la etiqueta Canal.",
+      "archivos_futuros_graficos_y_datos": "`datos/geometria.json` después de seleccionar realización; **nueva propuesta** `validacion/P04/geometrias_3D/`. Formas, espectros, mapas de intensidad/flujo y pérdidas de curvas.",
+      "dificultad_y_dependencias": "Muy alta; E03, C0. C9 debe resolverse durante esta rama porque el cuerpo finito depende de los extremos.",
+      "archivos_citados": [
+        "datos/geometria.json",
+        "validacion/P04/geometrias_3D/"
+      ]
+    },
+    {
+      "id": "C7",
+      "titulo": "Estructuras compuestas y confinamiento emergente",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E03",
+        "RES0"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Pueden soluciones localizadas formar un enlace o una red de relevos que se mantenga por interacciones de M2?",
+      "ecuaciones_teoria_y_derivaciones": "Obtener interacción entre dos Q-balls, modos o interfaces desde la energía y la respuesta de ambos campos; calcular fuerzas, transferencia de carga, dependencia de fase y posible radiación. Las posiciones de una cadena no se fijan con resortes añadidos. Distinguir mínimo a restricciones físicas de equilibrio mantenido por fuentes.",
+      "simulaciones_necesarias": "Dos objetos, tres objetos y cadena corta; después límite periódico con perturbaciones de posición, fase y carga. Calcular señales transferidas, fusión, deriva de fase, flexión y expulsión lateral. Las simulaciones deben conservar reacción y movimiento de los elementos.",
+      "observables": "Energía de interacción, rigidez longitudinal/transversal, tasas de acoplamiento modal, distancia, banda y eficiencia por salto.",
+      "criterios_de_aceptacion_y_avance": "Confinamiento y encaminamiento emergen del estado completo en una región; entonces desarrollar terminales. Si se necesita apoyo material, registrar dependencia E05/F en vez de llamar autosostenida a la cadena.",
+      "resultados_negativos_y_cambio_de_direccion": "Atracción sin mínimo, transferencia que vacía unos nodos, bandas planas o fusión invalidan la realización pasiva. Una transferencia puntual durante una colisión no demuestra un enlace repetible.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 14/20/21; **nueva propuesta** `validacion/P04/compuestos/`. Potenciales efectivos contrastados, diagramas de fase/carga, mapas de dispersión y balance por salto.",
+      "dificultad_y_dependencias": "Muy alta; E03 y estabilidad de Q-ball de D/RES0. Puede producir recursos útiles para información aunque no una línea de potencia.",
+      "archivos_citados": [
+        "validacion/P04/compuestos/"
+      ]
+    },
+    {
+      "id": "C8",
+      "titulo": "Estados dinámicos y control con recursos reales",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E03",
+        "E04",
+        "E05"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Pueden oscilaciones o fuentes de los grados existentes estabilizar un enlace con coste y ruido aceptables?",
+      "ecuaciones_teoria_y_derivaciones": "Distinguir estado periódico autónomo, estado mantenido por ondas entrantes M2 y realimentación. Derivar fuente, acoplamiento, medición y acción del controlador; incluir χ dinámico si se usa. Un término −γq̇ o una rigidez temporal prescrita es un modelo condicionado hasta derivar su origen. La aproximación de promedio rápido requiere separación de escalas y contraste con el sistema completo.",
+      "simulaciones_necesarias": "Resolver órbita periódica, multiplicadores de Floquet para k/m o perturbaciones 3D, inestabilidades paramétricas y ruido. Añadir fuente finita, pérdida de sincronización, saturación y fallo de control. Si el actuador es material, la rama no pertenece al benchmark escalar aislado.",
+      "observables": "Margen de estabilidad del conjunto, potencia de sostén, radiación, ruido añadido, tiempo de reacción y energía residual al fallo.",
+      "criterios_de_aceptacion_y_avance": "Región estable o duración útil declarada del sistema fuente–guía–control, dentro de E02, con apagado factible; pasar a C9/C10.",
+      "resultados_negativos_y_cambio_de_direccion": "Requerir medición instantánea, potencia ilimitada o física no derivada cierra la propuesta. El enfriamiento numérico usado para hallar un estado no es un estabilizador físico.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 15.6/21, `datos/interfaces.json`; **nueva propuesta** `validacion/P04/dinamicos/`. Multiplicadores Floquet, espectros de ruido, balances de potencia y ensayos de fallo.",
+      "dificultad_y_dependencias": "Muy alta; E03–E05. Se explora tras las opciones estructurales razonables, salvo una derivación temprana particularmente favorable.",
+      "archivos_citados": [
+        "datos/interfaces.json",
+        "validacion/P04/dinamicos/"
+      ]
+    },
+    {
+      "id": "C9",
+      "titulo": "Terminación, fuente, receptor y empalmes físicos",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "candidato C1–C8",
+        "E05"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Sigue funcionando el candidato al acabar, doblarse o conectarse a otro componente?",
+      "ecuaciones_teoria_y_derivaciones": "Resolver el fondo de la transición axial y el dispositivo finito con fuente/receptor. Empalmar al exterior retardado del capítulo 18 sólo donde la linealización sea válida. Una condición absorbente o PML elimina reflexiones computacionales; la energía que cruza representa radiación, no energía recuperada automáticamente. Derivar la impedancia y la matriz S multimodal; analizar bandas ω±Ω y mediador.",
+      "simulaciones_necesarias": "Extremo aislado, dos extremos, cambio de sección y curva; después unión de tres ramas y cruce. Calcular espectro de todo el conjunto y transmisión con paquetes. Variar carga del receptor y posición de la frontera numérica.",
+      "observables": "Perfil de capuchón/transición, modos localizados en terminal, R/T por canal, fase, trabajo/carga entregados, radiación y fuerzas.",
+      "criterios_de_aceptacion_y_avance": "Terminal estable con transferencia verificable en banda y tolerancias; luego C10. Una coincidencia Neumann en una frecuencia sólo admite esa aproximación local si se cuantifica su ancho de banda.",
+      "resultados_negativos_y_cambio_de_direccion": "Si el extremo destruye el fondo, rediseñar terminación o contrato; volver a otra rama si no hay terminaciones admisibles. No conservar una guía «aceptada» con terminal pendiente.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 16.1/18; `datos/interfaces.json`; **nueva propuesta** `validacion/P04/terminales/`. Mapas de campos, matrices S, cierres de flujo y pérdidas por empalme.",
+      "dificultad_y_dependencias": "Muy alta; candidato de C1–C8 y E05. En C6 es parte del problema de existencia, no un añadido posterior.",
+      "archivos_citados": [
+        "datos/interfaces.json",
+        "validacion/P04/terminales/"
+      ]
+    },
+    {
+      "id": "C10",
+      "titulo": "Preparación, potencia, robustez y decisión final",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "C9",
+        "E02",
+        "E03",
+        "E04",
+        "E05"
+      ],
+      "objetivo_y_pregunta_fisica": "¿Puede el enlace completo cumplir una misión repetible en una región abierta de estados y tolerancias?",
+      "ecuaciones_teoria_y_derivaciones": "Integrar E04, el balance de fuentes y un criterio de error de señal/energía. Fijar antes del ensayo banda, misión y margen; separar energía de estructura, señal, control y recuperación. Derivar límites no lineales y condición de retirada.",
+      "simulaciones_necesarias": "Preparar, cargar señal, transmitir a diferentes potencias, variar receptor, introducir perturbaciones, vaciar y apagar. Repetir ciclos con estados finales reales. Barrer longitudes, amplitudes, temperaturas si hay baño, defectos, fluctuaciones y velocidades de cambio de consigna.",
+      "observables": "Región operacional, potencia máxima estable, BER/fidelidad según codificación, radiación, eficiencia neta, consumo por longitud, tiempos y probabilidad de fallo si existe modelo estocástico.",
+      "criterios_de_aceptacion_y_avance": "Completar los 22 requisitos y comparación con el R1 histórico y revisado. Admitir una realización concreta y pasar a E08/E10; el título «Canal» no sustituye el expediente.",
+      "resultados_negativos_y_cambio_de_direccion": "Si la ventana se reduce a un punto, cambia al refinar o no permite preparación/retirada, no aceptar. Si existe función útil con prestaciones menores, versionar el contrato y conservar ambas comparaciones.",
+      "archivos_futuros_graficos_y_datos": "`datos/aceptacion_m2.json`, `datos/modelos.json`, `datos/parametros.json`, `datos/recetas.json`, `M2_RESULTADO.md`; **nueva propuesta** `validacion/P04/operacion/`. Envolventes operativas, ciclos, curvas potencia–error y expediente de decisión.",
+      "dificultad_y_dependencias": "Muy alta; C9, E02–E05. Este es el final de una derivación de P-04, no la mera solución del tubo.",
+      "archivos_citados": [
+        "datos/aceptacion_m2.json",
+        "datos/modelos.json",
+        "datos/parametros.json",
+        "datos/recetas.json",
+        "M2_RESULTADO.md",
+        "validacion/P04/operacion/"
+      ]
+    },
+    {
+      "id": "RES0",
+      "titulo": "Rama estable y energía accesible",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "objetivo_y_pregunta_fisica": "Identificar un intervalo de estados de Reserva con estabilidad y una variable de carga utilizable.",
+      "ecuaciones_teoria_y_derivaciones": "Extender E(Q), espectro restringido y condiciones de estabilidad a una rama. Comparar con cuantos libres, fragmentaciones, estados con otras distribuciones de Q y momentos. E/Q<m excluye una desintegración concreta, no toda fisión. Auditar ceros de simetría y estabilidad orbital.",
+      "simulaciones_necesarias": "Continuación en Q desde el benchmark, espectro completo, perturbaciones no radiales y finitas; usar capilaridad sólo donde E02 la valide. Evaluar excitaciones ligadas y su acoplamiento al continuo.",
+      "observables": "Qmín/Qmáx de la región estudiada, E(Q), radio, frecuencia, márgenes espectrales, energía de excitación admisible y canales de decaimiento.",
+      "criterios_de_aceptacion_y_avance": "Región robusta y ruta candidata de intercambio de Q o energía modal; avanzar a RES1/RES2.",
+      "resultados_negativos_y_cambio_de_direccion": "Si sólo queda un estado inaccesible o inestable, volver a otra rama. Si el fondo es estable pero no tiene almacenamiento útil por encima de él, conservarlo como soporte/resonador y no declarar Reserva.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 14/20, `validacion/cierre_m2.json`; **nueva propuesta** `validacion/P06/rama/`. Diagramas E(Q), umbrales de fragmentación y espectros frente a Q.",
+      "dificultad_y_dependencias": "Alta/muy alta; E01–E03. Es la primera tarea de Reserva.",
+      "archivos_citados": [
+        "validacion/cierre_m2.json",
+        "validacion/P06/rama/"
+      ]
+    },
+    {
+      "id": "RES1",
+      "titulo": "Preparar el depósito sin circularidad",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "RES0",
+        "E04"
+      ],
+      "objetivo_y_pregunta_fisica": "Producir el estado cargado desde datos iniciales físicamente justificados y especificar de dónde procede la primera carga.",
+      "ecuaciones_teoria_y_derivaciones": "Aplicar E04 a tres rutas separadas: captura de paquetes cargados ya disponibles, transferencia de otro depósito, o producción compensada de cargas mediante interacción derivada. Las dos primeras prueban preparación condicionada, no arranque desde materia sin infraestructura. Derivar el recurso de Semilla que se utiliza.",
+      "simulaciones_necesarias": "Focalización/captura y relajación radiativa con diferentes perfiles, fases, energías y momentos. Para creación de pares, especificar fuente y estado cuántico si procede, formación, separación y destino de la carga opuesta.",
+      "observables": "Fracción capturada, trabajo de fuente, Q total y local, radiación, tiempo de asentamiento y cuenca de captura.",
+      "criterios_de_aceptacion_y_avance": "Protocolo que alcanza la región RES0 con error acotado y origen trazable. Avanzar al ciclo condicionado; reservar la etiqueta P-01 completo para la cadena de arranque realmente cerrada.",
+      "resultados_negativos_y_cambio_de_direccion": "Si se requieren las condiciones finales como entrada, no se ha preparado nada. Si no se justifica la fuente primaria, mantener esa dependencia abierta y no ocultarla con una «Semilla previa» ilimitada.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 13.8/16.4, registros P-01/P-06; **nueva propuesta** `validacion/P06/preparacion/`. Series de Q/E, perfiles iniciales-finales y mapa de éxito/fallo.",
+      "dificultad_y_dependencias": "Muy alta; RES0/E04 y E05 para producción material. Puede comenzar con transferencia interna claramente condicionada.",
+      "archivos_citados": [
+        "validacion/P06/preparacion/"
+      ]
+    },
+    {
+      "id": "RES2",
+      "titulo": "Derivar carga y acceso al estado",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "RES0",
+        "RES1",
+        "E05"
+      ],
+      "objetivo_y_pregunta_fisica": "Determinar si puede aumentarse energía recuperable mediante un contacto cuya acción y coste sean conocidos.",
+      "ecuaciones_teoria_y_derivaciones": "Para Q variable, resolver dos depósitos o depósito/reservorio con su diferencia de potencial químico y transferencia; para Q fija, derivar excitación resonante de modos desde una onda o actuador existente. Obtener acoplamientos por solapamiento/acción, incluyendo selección de modos y reacción. No usar P-07 como interruptor ideal aún no realizado.",
+      "simulaciones_necesarias": "Pulsos de carga, resonancia, contacto encendido/apagado, redistribución interna y calentamiento del entorno. Comprobar que la carga no lleva al estado fuera de RES0 ni consume irreversiblemente el contacto.",
+      "observables": "Potencia absorbida y reflejada, incremento de energía accesible, Q transferida, saturación, trabajo de actuación y energía almacenada en el propio contacto.",
+      "criterios_de_aceptacion_y_avance": "Una de las dos rutas funciona en banda/amplitud y rango de estado; avanzar a RES3. La otra puede rechazarse sin invalidar ambas.",
+      "resultados_negativos_y_cambio_de_direccion": "Si la carga sólo excita radiación que escapa o fusiona los depósitos, cambiar contacto/estado. Un máximo de energía temporal no basta como almacenamiento.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 15.6/21, P-06 en modelos/interfaces; **nueva propuesta** `validacion/P06/carga/`. Matrices de respuesta, curvas potencia–ocupación y balances por pulso.",
+      "dificultad_y_dependencias": "Muy alta; RES0/RES1, E05. No requiere Canal largo.",
+      "archivos_citados": [
+        "validacion/P06/carga/"
+      ]
+    },
+    {
+      "id": "RES3",
+      "titulo": "Aislamiento, retención, pérdidas y ruido",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "RES2",
+        "E02",
+        "E05"
+      ],
+      "objetivo_y_pregunta_fisica": "Medir cuánto tiempo permanece accesible la energía después de retirar la fuente.",
+      "ecuaciones_teoria_y_derivaciones": "Identificar fugas por radiación, contactos residuales, entorno, mezcla modal y errores de control. El sistema clásico cerrado no tiene ruido térmico por decreto. Si hay baño, derivar disipación y correlaciones conjuntamente; si domina física cuántica, comprobar E02.",
+      "simulaciones_necesarias": "Evolución abierta con flujos medidos, ensayos a diferentes tamaños de caja y tiempos; excitaciones simultáneas y perturbaciones ambientales. Para tiempos muy largos, emplear reducción/teoría de tasas contrastada y estimación de errores, no extrapolar el ensayo actual de 24 unidades de tiempo.",
+      "observables": "Energía recuperable frente a espera, carga residual, tasa de escape, difusión de fase, espectro de ruido y coste de aislamiento.",
+      "criterios_de_aceptacion_y_avance": "Ventana de retención con incertidumbre y modelo de fallo declarado; pasar a RES4. Un caso ideal sin pérdidas es sólo un límite de referencia.",
+      "resultados_negativos_y_cambio_de_direccion": "Si la fuga o el mantenimiento superan la energía útil durante la misión, reducir duración, cambiar forma de carga o rechazar el almacenamiento práctico.",
+      "archivos_futuros_graficos_y_datos": "Capítulos 14.6/15.5–15.6, P-06 en aceptación; **nueva propuesta** `validacion/P06/retencion/`. Curvas de supervivencia, energía recuperable y espectros de pérdidas/ruido.",
+      "dificultad_y_dependencias": "Muy alta; RES2/E02/E05. La extrapolación temporal debe ser parte de la prueba, no una suposición.",
+      "archivos_citados": [
+        "validacion/P06/retencion/"
+      ]
+    },
+    {
+      "id": "RES4",
+      "titulo": "Descargar, recuperar y medir el rendimiento neto",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "RES2",
+        "RES3",
+        "E05"
+      ],
+      "objetivo_y_pregunta_fisica": "Transferir energía a un receptor utilizable, conservar Q y terminar en un estado admisible.",
+      "ecuaciones_teoria_y_derivaciones": "Definir carga receptora, energía útil y coste de preparar ese receptor. Calcular el acoplamiento, trabajo de conmutación y destino de Q. Para descarga a Q fija, recuperar modos hasta un estado de referencia; para Q variable, incluir cambio de energía de todos los depósitos y reservorios.",
+      "simulaciones_necesarias": "Descarga con diferentes impedancias/cargas, ritmos y estados iniciales; medir reacción, radiación y energía remanente. Una onda saliente cuenta como energía exportada; sólo es trabajo útil del sistema si se especifica y verifica su recepción/aprovechamiento.",
+      "observables": "Energía útil recibida, potencia pico/sostenida, espectro, Q entregada, energía residual, calor y coste auxiliar.",
+      "criterios_de_aceptacion_y_avance": "Balance y función reproducibles con receptor físico; pasar a RES5. Publicar rendimiento bruto y neto con la misma frontera contable.",
+      "resultados_negativos_y_cambio_de_direccion": "Si extraer la carga cuesta más que el trabajo recuperado, o el apagado destruye el soporte fuera del dominio, modificar la ruta. No contabilizar la destrucción de una estructura como ciclo repetible.",
+      "archivos_futuros_graficos_y_datos": "P-06 en módulos/modelos, capítulo 16 y **nueva propuesta** `validacion/P06/descarga/`. Curvas potencia–estado, energía de receptor y diagrama de balance.",
+      "dificultad_y_dependencias": "Muy alta; RES2/RES3/E05. Es la prueba que separa una solución ligada de una Reserva útil.",
+      "archivos_citados": [
+        "validacion/P06/descarga/"
+      ]
+    },
+    {
+      "id": "RES5",
+      "titulo": "Ciclos repetidos y límites de operación",
+      "estado": "investigacion_propuesta_no_ejecutada",
+      "dependencias": [
+        "RES0",
+        "RES1",
+        "RES2",
+        "RES3",
+        "RES4"
+      ],
+      "objetivo_y_pregunta_fisica": "Demostrar repetibilidad y fijar capacidad, potencia, retención, tolerancias y fallos del dispositivo entero.",
+      "ecuaciones_teoria_y_derivaciones": "Definir un ciclo con mismo estado de referencia y consumo explícito de fuentes. Un balance práctico es Eentrada,total=Eútil,salida+Erechazada+ΔEalmacenada, contabilizando todos los auxiliares. Para ciclos cerrados, ΔEalmacenada=0 dentro del error. Separar energía de puesta en marcha de energía recurrente y amortizarla sólo sobre una vida justificada.",
+      "simulaciones_necesarias": "Ciclos de carga–espera–descarga sin reinicialización; perturbaciones de fuente, contacto y consigna, intentos de sobrecarga, pérdida de lectura y retirada de emergencia. Determinar cuántos ciclos se simulan directamente y cómo se estima cualquier extensión.",
+      "observables": "Rendimiento ηciclo=Eútil,salida/Eentrada,total para una frontera sin aportes ocultos, degradación por ciclo, vida, calor y reservas para apagado. Reportar también energía y carga de los estados de referencia.",
+      "criterios_de_aceptacion_y_avance": "Ventana robusta, repetibilidad y todos los eslabones E08; comparar con el objetivo histórico de densidad útil 10⁹ J/m³ y eficiencias 0.98 sin adoptarlos como datos. Puede aceptarse un contrato más modesto si sigue siendo útil.",
+      "resultados_negativos_y_cambio_de_direccion": "Deriva acumulada, carga atrapada o mantenimiento creciente obligan a limitar ciclos o cambiar realización. Si sólo funciona una descarga inicial, describirla como operación de un solo uso.",
+      "archivos_futuros_graficos_y_datos": "`datos/parametros.json`, `datos/aceptacion_m2.json`, `datos/recetas.json`, `M2_RESULTADO.md`; **nueva propuesta** `validacion/P06/ciclos/`. Envolvente capacidad–potencia–retención, ciclos y curvas de degradación.",
+      "dificultad_y_dependencias": "Muy alta; RES0–RES4. La aceptación numérica puede preceder al contraste empírico, nunca sustituirlo.",
+      "archivos_citados": [
+        "datos/parametros.json",
+        "datos/aceptacion_m2.json",
+        "datos/recetas.json",
+        "M2_RESULTADO.md",
+        "validacion/P06/ciclos/"
+      ]
+    },
+    {
+      "id": "M3",
+      "titulo": "Expediente de extensión común",
+      "estado": "condicional_no_activado",
+      "dependencias": [
+        "B.5",
+        "F.1",
+        "E01",
+        "E02",
+        "E05",
+        "E11"
+      ],
+      "objetivo_y_pregunta_fisica": "Resolver una carencia compartida identificada —contacto, confinamiento, corriente independiente, barrera o relajación— conservando predicciones ya respaldadas en su dominio.",
+      "ecuaciones_teoria_y_derivaciones": "Presentar una acción explícita Sextendida=S_M2+Ssector+Sint, o una dinámica abierta derivada de un conjunto explícito. Enumerar dimensiones, simetrías, restricciones, parámetros universales, operadores omitidos y corte. Derivar balances, vacío, Hamiltoniano, signo cinético, símbolo principal, propagación causal y termodinámica. Estudiar estabilidad clásica y consistencia cuántica al nivel reclamado; no declarar UV completa una EFT.",
+      "simulaciones_necesarias": "Recuperar el límite desacoplado de M2 y sus benchmarks cuando corresponda. Recalcular regiones de estabilidad de al menos dos clases de objeto y dos fenómenos funcionales independientes. Probar sensibilidad, respuesta, ruido, preparación y consistencia con E11.",
+      "observables": "Corrección a E(Q), tensión y espectros; nueva respuesta de contacto, tasa/flujo/fuerza; coste en parámetros y rango empírico admisible.",
+      "criterios_de_aceptacion_y_avance": "Elegir una extensión sólo si ofrece predicciones comprobables, región robusta y ventaja compartida con el menor cambio necesario. Congelar un Θ candidato común antes de diseñar los dispositivos; volver a E02–E08. No saltar desde una acción atractiva al catálogo completo.",
+      "resultados_negativos_y_cambio_de_direccion": "Fantasmas, vacío inestable en el régimen necesario, problema de Cauchy mal puesto, balances incompatibles o sólo un punto ajustado para Canal obligan a rechazar o reformular. Menos términos escritos no siempre significa menor complejidad física; contar también fuentes, estados, control e infraestructura.",
+      "archivos_futuros_graficos_y_datos": "Conservar M2 intacto como referencia; **nueva propuesta** `tratado/M3_candidato.md`, `datos/theta_M3_comun.json`, `validacion/M3/` y registro comparativo. Gráficos de límites desacoplados, regiones admisibles y comparación de dos o más funciones.",
+      "dificultad_y_dependencias": "Muy alta; B.5 para activar M3 como vía de Canal, E01/E02/E05/E11 para cualquier candidato. Las fuentes de parámetros no pueden ser metas de una sola primordial.",
+      "archivos_citados": [
+        "tratado/M3_candidato.md",
+        "datos/theta_M3_comun.json",
+        "validacion/M3/"
+      ]
+    }
+  ],
+  "requisitos_P04": [
+    {
+      "numero": 1,
+      "requisito": "Derivación desde la acción",
+      "prueba_y_observable": "Ecuaciones del fondo, perturbaciones y fronteras; fuente de cada fuerza",
+      "puerta": "Rechazar paredes, tensiones o amortiguamiento añadidos sin origen"
+    },
+    {
+      "numero": 2,
+      "requisito": "Existencia",
+      "prueba_y_observable": "Rama no trivial, regularidad, asintóticos, carga y energía total o por celda/longitud",
+      "puerta": "Newton fallido deja pregunta abierta; una obstrucción analítica sí excluye su clase"
+    },
+    {
+      "numero": 3,
+      "requisito": "Convergencia",
+      "prueba_y_observable": "Fondo, espectro, cuadraturas, caja y tiempo refinados de forma independiente",
+      "puerta": "Observable debe converger con margen respecto de la decisión"
+    },
+    {
+      "numero": 4,
+      "requisito": "Estabilidad radial",
+      "prueba_y_observable": "Segunda variación restringida y generador con ambos campos",
+      "puerta": "Un modo radial creciente convergente rechaza el estado"
+    },
+    {
+      "numero": 5,
+      "requisito": "Estabilidad longitudinal",
+      "prueba_y_observable": "Todo k relevante, incluidos k→0, subarmónicos y dispositivo finito",
+      "puerta": "No basta estabilizar el k elegido para transportar"
+    },
+    {
+      "numero": 6,
+      "requisito": "Estabilidad azimutal",
+      "prueba_y_observable": "Todos los índices relevantes, acoplamientos de bandas y cota para índices altos",
+      "puerta": "Incluir flexión, división, desplazamiento y ruptura no axisimétrica"
+    },
+    {
+      "numero": 7,
+      "requisito": "Espectro de perturbaciones",
+      "prueba_y_observable": "Puntual, esencial, modos de simetría, resonancias y posibles bloques de Jordan",
+      "puerta": "No confundir estabilidad del Hessiano restringido, espectral, orbital y asintótica"
+    },
+    {
+      "numero": 8,
+      "requisito": "Conservación",
+      "prueba_y_observable": "E,Q,P,J y cargas adicionales si existen; flujos y fuentes",
+      "puerta": "El conjunto completo cierra balances dentro del error"
+    },
+    {
+      "numero": 9,
+      "requisito": "Rango de estado",
+      "prueba_y_observable": "Región en Q, frecuencia, corriente, J, longitud, radio, entorno y tolerancias",
+      "puerta": "No aceptar un único punto; excluir vecindades de bifurcación no controladas"
+    },
+    {
+      "numero": 10,
+      "requisito": "Modos guiados",
+      "prueba_y_observable": "Perfil transversal, fracción de energía localizada y separación del continuo",
+      "puerta": "Distinguir modo ligado, resonancia con fuga y dispersión de vacío"
+    },
+    {
+      "numero": 11,
+      "requisito": "Dispersión",
+      "prueba_y_observable": "Ωₙ(k) de la acción linealizada; acoplamiento modal en estructuras no uniformes",
+      "puerta": "La dispersión de un grafo supuesto no realiza su guía"
+    },
+    {
+      "numero": 12,
+      "requisito": "Velocidad de grupo",
+      "prueba_y_observable": "dΩ/dk o fórmula biortogonal; contrastar propagación de paquetes",
+      "puerta": "Separar velocidad de grupo, energía y frente causal"
+    },
+    {
+      "numero": 13,
+      "requisito": "Flujo de energía",
+      "prueba_y_observable": "Integral de T⁰ᶻ, normalización modal, signo energético y flujo de carga",
+      "puerta": "Calcular energía transportada además de amplitud; auditar mezcla de bandas laterales"
+    },
+    {
+      "numero": 14,
+      "requisito": "Reflexión/transmisión",
+      "prueba_y_observable": "Matriz S con canales normalizados por flujo y fuentes incluidas",
+      "puerta": "Un balance unitario sólo vale con sus hipótesis; toda ganancia requiere fuente o descarga del fondo"
+    },
+    {
+      "numero": 15,
+      "requisito": "Pérdidas/radiación",
+      "prueba_y_observable": "Escape a continuo, conversión, defectos, curvatura y contacto; correlaciones de ruido",
+      "puerta": "Separar pérdida numérica de física; ni γ ni ruido se ajustan a R1"
+    },
+    {
+      "numero": 16,
+      "requisito": "Respuesta no lineal",
+      "prueba_y_observable": "Dependencia de dispersión y S con amplitud, armónicos, intermodulación y deformación del fondo",
+      "puerta": "Identificar saturación, choque, colapso o fragmentación si aparecen"
+    },
+    {
+      "numero": 17,
+      "requisito": "Amplitud/potencia",
+      "prueba_y_observable": "Mapa de amplitud, potencia pico/media, ciclo de trabajo y duración",
+      "puerta": "Límite operativo anterior al fallo, con margen y error conocidos"
+    },
+    {
+      "numero": 18,
+      "requisito": "Terminación física",
+      "prueba_y_observable": "Fondo axial completo, fuente/receptor, exterior saliente y reacción",
+      "puerta": "Una condición Neumann o absorbente de cálculo no constituye un terminal"
+    },
+    {
+      "numero": 19,
+      "requisito": "Empalmes",
+      "prueba_y_observable": "Cambio de sección, curva, unión, contacto y proximidad de otros enlaces",
+      "puerta": "Resolver modos atrapados, reflexión, diafonía e inestabilidades de unión"
+    },
+    {
+      "numero": 20,
+      "requisito": "Preparación/apagado",
+      "prueba_y_observable": "Transitorio desde fuente identificada, asentamiento, vaciado y destino de carga",
+      "puerta": "No inicializar el estado final ni borrar campos al terminar"
+    },
+    {
+      "numero": 21,
+      "requisito": "Balance energético completo",
+      "prueba_y_observable": "Construcción, mantenimiento, bombeo, señal, retorno, radiación, carga y retirada",
+      "puerta": "Publicar eficiencia neta y recursos del entorno; no doble contabilidad"
+    },
+    {
+      "numero": 22,
+      "requisito": "Función P-04/R1",
+      "prueba_y_observable": "Predicción o medida con incertidumbre frente a contrato previamente declarado",
+      "puerta": "Admitir, revisar prestación/geometría o rechazar; conservar la comparación original"
+    }
+  ],
+  "proximas_10": [
+    {
+      "prioridad": 1,
+      "investigacion": "Reproducir el núcleo de M2 4.1 y auditar sus convenciones",
+      "pregunta": "¿los resultados de referencia proceden inequívocamente de la acción y del Θ declarados?",
+      "ejecucion": "reproducir el paquete en una copia; recalcular independientemente tensión de interfaz y tasas/modos representativos; resolver la convención de X/corriente/tensor; especificar las cinco coordenadas independientes frente a las restricciones del benchmark. Revisar qué autovalores selecciona cada algoritmo.",
+      "salida_y_decision": "informe de diferencias con presupuesto de error y fuente única de parámetros. Si falla, corregir el eslabón afectado antes de ampliar su análisis; si pasa, habilitar 2–4.",
+      "razon_de_prioridad": "evita dedicar meses a una rama apoyada en una convención o una parametrización equivocada. No pretende repetir todas las simulaciones después de cada cambio menor. Etapas E00/E01."
+    },
+    {
+      "prioridad": 2,
+      "investigacion": "Auditar y ampliar, cuando sea posible, los teoremas de exclusión tubular",
+      "pregunta": "¿qué propuestas son realmente diferentes del tubo libre inestable?",
+      "ejecucion": "comprobar hipótesis del argumento de dilatación/Schur; analizar su posible extensión al sector axisimétrico con arrollamiento y a perfiles huecos sin nodos; precisar corriente temporal/espacial uniforme, casos μ²≤0 y la relación entre estabilidad temporal, convectiva y finita. Identificar explícitamente las clases que el argumento no decide.",
+      "salida_y_decision": "tabla de exclusiones y lagunas con pruebas, contraejemplos o problemas abiertos. Las clases excluidas salen de la cola de simulación; las demás alimentan 5–7.",
+      "razon_de_prioridad": "es la vía más directa para priorizar Canal sin repetir mecanismos que conservan la misma obstrucción. Etapas C0–C4."
+    },
+    {
+      "prioridad": 3,
+      "investigacion": "Delimitar una rama robusta de Q-balls para Reserva",
+      "pregunta": "¿existe un intervalo de Q con estabilidad suficiente y estados de carga/descarga candidatos?",
+      "ejecucion": "continuar desde ω=0.9, obtener E(Q), márgenes del Hessiano restringido y espectro; comprobar modos no radiales, colas y fisión pertinente. Identificar modos ligados que puedan almacenar excitación a Q fija. Añadir perturbaciones 3D de amplitud finita y diferenciar evidencia numérica de prueba orbital.",
+      "salida_y_decision": "mapa estable/abierto/inestable y estados candidatos. Si no hay región, investigar otra rama antes de diseñar contactos; si existe, habilitar 7–9.",
+      "razon_de_prioridad": "abre una primera realización independiente de Canal y aporta constituyentes para guías compuestas. Puede ejecutarse en paralelo con 2. Etapas E03/RES0."
+    },
+    {
+      "prioridad": 4,
+      "investigacion": "Construir la carta de validez capilar y su sensibilidad fundamental",
+      "pregunta": "¿dónde predice el modelo capilar con precisión suficiente y qué cambia al salir del benchmark restringido?",
+      "ejecucion": "variar radios, kR e índices angulares, incluyendo compresibilidad radial fuera de la fórmula ℓ≥2; contrastar con ambos campos. Medir espesor y correcciones de curvatura. Hacer un primer barrido independiente y registrado de razones fundamentales, verificando vacío/coexistencia antes de cada estado; mantener separado el efecto de cambiar Q.",
+      "salida_y_decision": "mapas de error por observable y regiones admisibles de Θ. Si la reducción falla en una rama, usar M2 completo; si la región fundamental pierde estabilidad, descartarla globalmente.",
+      "razon_de_prioridad": "proporciona un filtro cuantitativo de búsqueda y evita extrapolar cuatro radios y un kR a todas las configuraciones. Etapas E02/E03/B.3."
+    },
+    {
+      "prioridad": 5,
+      "investigacion": "Resolver el primer candidato tubular con arrollamiento que sobreviva al análisis",
+      "pregunta": "¿una carga angular cambia la estabilidad completa o sólo añade otra forma de ruptura?",
+      "ejecucion": "si 2 no lo excluye, construir n=1 y n=2 con la misma acción, continuar estados y calcular sectores longitudinales/azimutales acoplados. Emplear perfiles huecos como inicializadores cuando corresponda, sin contar el mismo estado dos veces. Si 2 excluye toda esta clase, sustituir esta tarea por la primera clase estacionaria realmente no cubierta.",
+      "salida_y_decision": "región candidata o resultado negativo convergente con alcance explícito; un superviviente pasa a C9, sin esperar a completar todas las demás ramas.",
+      "razon_de_prioridad": "prueba un mecanismo concreto dentro de los grados de libertad actuales con un coste menor que una búsqueda 3D general. No se investiga por la sola apariencia de protección topológica. Etapas C3/C4."
+    },
+    {
+      "prioridad": 6,
+      "investigacion": "Continuar una rama axialmente modulada y someterla a perturbaciones Bloch",
+      "pregunta": "¿la deformación longitudinal puede desembocar en un medio periódico estable que transporte?",
+      "ejecucion": "buscar rama desde el umbral de modulación y usar inicializadores alternativos; resolver f(ρ,z),χ(ρ,z) a Q por celda. Explorar cuasimomento completo, sectores azimutales y superceldas. Comparar con fragmentación/coalescencia y comprobar existencia de una banda transmisora.",
+      "salida_y_decision": "mapa en periodo/carga, bandas y dinámica de defecto. Si sólo produce gotas separadas, trasladar el recurso a 7 sin llamarlo tubo estabilizado.",
+      "razon_de_prioridad": "cambia una hipótesis estructural de la exclusión y permite aprovechar capilaridad y soluciones existentes. Etapa C5."
+    },
+    {
+      "prioridad": 7,
+      "investigacion": "Calcular la interacción y transferencia entre dos Q-balls y una cadena mínima",
+      "pregunta": "¿los objetos localizados permiten contactos de Reserva o una estructura de transporte emergente?",
+      "ejecucion": "dos Q-balls con separación, fase relativa y cargas controladas; derivar/medir fuerza, intercambio de Q y transferencia modal. Después tres objetos para detectar que el acoplamiento no se reduce a pares independientes. Permitir desplazamiento y deformación; no fijarlos con potenciales externos inexistentes.",
+      "salida_y_decision": "interacción efectiva contrastada y mapa de fusión, separación o transferencia útil. Si no hay equilibrio, rechazar cadena pasiva; los resultados aún pueden servir a contactos temporales de Reserva.",
+      "razon_de_prioridad": "resuelve dos bloqueos comunes con el mismo cálculo, acceso y posible encaminamiento. Depende de 3; comparte herramientas con 6. Etapas C7/RES2."
+    },
+    {
+      "prioridad": 8,
+      "investigacion": "Demostrar preparación por captura y cerrar su contabilidad de origen",
+      "pregunta": "¿puede un conjunto de datos iniciales alcanzables generar una Q-ball operacional y qué recurso requiere la primera Semilla?",
+      "ejecucion": "capturar paquetes o transferir carga desde un reservorio identificado; variar errores de fuente y medir radiación de asentamiento. En un expediente separado, determinar si el origen de esos paquetes/reservorio puede derivarse de los portales existentes con carga compensatoria o preparación cuántica. No atribuir al primer ensayo lo que sólo resolvería el segundo.",
+      "salida_y_decision": "protocolo condicionado con cuenca de captura y listado exacto de dependencias del arranque primario. Si la fuente no es realizable, el ciclo sigue condicionado y no se acepta P-01.",
+      "razon_de_prioridad": "prepara físicamente el estado, en vez de continuar usando el perfil final como entrada. Puede comenzar antes en paralelo una vez fijados los candidatos de 3. Etapas E04/RES1."
+    },
+    {
+      "prioridad": 9,
+      "investigacion": "Ejecutar un ciclo mínimo de carga–retención–descarga de Reserva",
+      "pregunta": "¿qué fracción de la energía añadida puede recuperarse en un receptor y repetirse?",
+      "ejecucion": "elegir la mejor ruta de RES2 —transferencia de Q o excitación a Q fija— a partir de 3/7/8; derivar contacto, cargar, esperar, descargar y repetir sin reinicialización. Contabilizar receptor, fuente, carga residual, trabajo de conmutación y radiación. Contrastar teoría lineal con dinámica completa, según el tipo de ensayo [S10].",
+      "salida_y_decision": "primer ciclo cuantitativo o bloqueo de acceso/extracción. Si funciona, extender a región/ciclos RES5 y E08; si no, conservar el resultado negativo y cambiar modalidad de almacenamiento.",
+      "razon_de_prioridad": "es el intento más directo de demostrar la cadena micro→macro de un dispositivo completo. Su éxito no depende de que Canal tenga ya una guía larga. Etapas RES2–RES5."
+    },
+    {
+      "prioridad": 10,
+      "investigacion": "Identificar un contacto común con materia/EM y dos predicciones contrastables",
+      "pregunta": "¿los portales ya formulados permiten preparar, leer o recuperar energía con materia ordinaria dentro de un mismo dominio coherente?",
+      "ejecucion": "elegir un sistema material o electromagnético mínimo con Hamiltoniano explícito; derivar dos observables distintos —por ejemplo, transferencia a un modo EM y desplazamiento/lectura de un modo material— con un único Θ interactuante candidato. Incluir fuentes, retroacción, pérdidas y ruido. Estudiar identificabilidad y sensibilidad experimental antes de asignar valores operativos. No seleccionar constantes para reproducir dos metas R1.",
+      "salida_y_decision": "contacto calculable y predicciones de prueba, o región de portales descartada. Si los portales existentes bastan, completar M2 interactuante; si no, la decisión M3 sigue requiriendo F y el agotamiento pertinente de B.",
+      "razon_de_prioridad": "abre la transición desde dispositivos internos de campo a ingeniería medible y sirve a Reserva, Semilla, Sensor, Luz y térmica. Su análisis de viabilidad puede empezar temprano; su aceptación no se presume. Etapas E05/E11/F.1."
+    }
+  ],
+  "regla_M3": "No existe un procedimiento numérico finito que descarte todas las configuraciones posibles de una teoría de campos. Sí puede cerrarse un **programa de búsqueda delimitado**. Se declarará «M2 agotado para la función y dominio investigados» sólo cuando se cumplan conjuntamente:\n\n1. Contrato funcional, recursos permitidos y dominio de parámetros registrados antes de la conclusión; no redefinirlos después para eliminar un candidato incómodo.\n2. C0 auditado y clases C1–C8 examinadas mediante pruebas aplicables o campañas convergentes con varias estrategias de continuación/inicialización.\n3. Para cada clase, estado explícito: excluida por teorema, inestable numéricamente en región, insuficiente funcionalmente, o abierta por falta de prueba. Esta última no cuenta como refutada.\n4. Todo candidato que mostró una región prometedora ha pasado por terminales y preparación, o tiene una obstrucción precisa que impide seguir; no dejar un superviviente sin estudiar y proclamar agotamiento.\n5. Las clases grandes —muchos arrollamientos, periodos extremos, energía/carga grande— tienen control asintótico o límites de validez/recursos que justifican el corte. «No probamos n>2» por sí solo no cierra la clase rotante.\n6. Se registra qué ampliación del dominio podría reabrir el resultado y se realiza revisión independiente del razonamiento negativo.\n\n**Puerta:** si queda una variante plausible con una prueba discriminante asequible, ejecutarla. Si las clases útiles registradas fallan y las restantes sólo quedan fuera del dominio o sin mecanismo respaldado, autorizar la evaluación comparativa de extensiones y etiquetar el agotamiento como operacional, no como teorema universal. Si una clase relevante queda abierta por dificultad computacional, registrar esa limitación y mantener pendientes tanto el cierre de esa clase como la activación de M3 para Canal; continuar Reserva y la caracterización de los contactos comunes ya formulados.\n\nEsta última distinción impide que una limitación de recursos se convierta en una conclusión física. La decisión preferida para introducir M3 como solución de Canal sigue siendo cerrar razonablemente las vías de M2; un expediente de incertidumbre no cuenta como demostración de necesidad.",
+  "regla_reordenacion": "en cuanto 5, 6 o 7 produzca un candidato de Canal con región estable, el siguiente trabajo específico de esa línea pasa a ser **C9: extremo físico y receptor**, seguido de C10. No seguir acumulando variantes mientras quede sin comprobar el terminal del primer candidato viable. Si ninguna sobrevive, completar C6/C8 y B.5 antes de activar M3. Si Reserva cierra antes, utilizar su expediente y herramientas para elevar el rigor del resto del programa, sin presentar su éxito como prueba de otras primordiales."
+}

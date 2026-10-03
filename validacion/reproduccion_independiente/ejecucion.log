@@ -1,0 +1,29 @@
+{
+  "comparison": {
+    "sphere_E_relative": 6.894484982922222e-14,
+    "sphere_Q_relative": 1.27675647831893e-13,
+    "tube_E_relative": 2.475797344914099e-13,
+    "tube_Q_relative": 1.759703494030873e-13,
+    "wall_relative": 5.293627758362618e-10,
+    "wall_domain_relative": 4.660606300888048e-08,
+    "sphere_mode_relative": 5.618084676362045e-07,
+    "tube_growth_relative": 9.017792284016224e-07
+  },
+  "checks": {
+    "sphere_E_relative": true,
+    "sphere_Q_relative": true,
+    "tube_E_relative": true,
+    "tube_Q_relative": true,
+    "wall_relative": true,
+    "wall_domain_relative": true,
+    "sphere_mode_relative": true,
+    "tube_growth_relative": true,
+    "sphere_h2_convergence": true,
+    "sphere_box_convergence": true,
+    "sphere_relative_residual": true,
+    "tube_h2_convergence": true,
+    "tube_box_convergence": true,
+    "tube_relative_residual": true
+  },
+  "passed": true
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "timestamp_utc": "2026-09-28T07:03:15.864173+00:00",
+  "checkpoint_base": "CP02_E01",
+  "completed_not_reopened": [
+    "E00",
+    "E01"
+  ],
+  "pending_stage_results": [
+    "C0",
+    "E02",
+    "E03",
+    "RES0"
+  ],
+  "last_pending_calculation": "M +0.0001 recuperado y guardado antes de reanudar; no se vuelve a ejecutar.",
+  "unexecuted_script": "herramientas/captura_radial_m2.py",
+  "files": {
+    "validacion/identidades/intento_01_regresion_con_fallo_svg.log": "d53a22d5f25109d2c38514f0cf7d9ea265cfb5897c227b5c67ef26cdb6d6f4b2",
+    "validacion/identidades/intento_01_regresion.json": "b8a1abad61924b098fb160c0121663a94553fe82461aceef1b5a2ef7ed971a84",
+    "validacion/validez/intento_02_interrumpido.json": "27932f6cc15d861ee0c073f1af43eb43c3738ee270bc7cee8e9783caea4f7315",
+    "validacion/validez/intento_01_resultados.json": "772bd1d51688d3bbb364024556d0c317b408f318ad28b26f2804303a112a397f",
+    "validacion/validez/intento_01.log": "ebbb9925d55320afa85b8b6224cf5cf100b15fae7bae30430cf287de1b649363",
+    "validacion/validez/resultados.json": "49d6e3c5ad248e0911fdb55b075c22e86271fed92786825a64eccdf685a4060b",
+    "validacion/validez/intento_03_resultados.json": "123725faf2cd12fc3d1f102c31968b64dc9a0c13244c62f20ddeec983070ba12",
+    "validacion/validez/intento_02_interrumpido.log": "c86bb2000e3974ea011b624649ee42403d215e1780b2c67c97a79804bdff531e",
+    "validacion/P04/exclusiones/resultados.json": "b343177e3e065576ec953a6fbda5589445393ef2f79a7265bc0fba4233fbd945",
+    "validacion/P06/rama/intento_03_fallo_continuacion.log": "3a11f55ad42aa85710492483711ce3526352c0cc9d1ca47595bdb9d75c5d8969",
+    "validacion/P06/rama/intento_02_fallo_continuacion.log": "19198270ffc39da3f2b6acac5b9cdfea0e0ffa0253e30785464c447b2a04bb9c",
+    "validacion/P06/rama/intento_01_fallo_continuacion.log": "7d83fd28c4f6cda7a0c919f8fda691e793b43ce0a2730c1e8fb81bf438627810",
+    "validacion/P06/rama/resultados.json": "616d4fc3781d420af3c68dfd251340f3021afee3cc166ab866a4b39f1e361eae",
+    "validacion/P06/rama/intento_01.json": "33f1100bed2582eeda8f75a3e9d6c15a06f3bd90f1dedd043b39dfc93f7c5735"
+  }
+}

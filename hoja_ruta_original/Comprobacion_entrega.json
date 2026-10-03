@@ -1,0 +1,25 @@
+{
+  "tipo": "verificacion_editorial_y_estructural_no_validacion_fisica",
+  "guia_palabras_aproximadas": 16957,
+  "expedientes": 33,
+  "campos_por_expediente": [
+    "objetivo_y_pregunta_fisica",
+    "ecuaciones_teoria_y_derivaciones",
+    "simulaciones_necesarias",
+    "observables",
+    "criterios_de_aceptacion_y_avance",
+    "resultados_negativos_y_cambio_de_direccion",
+    "archivos_futuros_graficos_y_datos",
+    "dificultad_y_dependencias"
+  ],
+  "requisitos_Canal": 22,
+  "investigaciones_priorizadas": 10,
+  "identificadores_P01_P24_presentes": true,
+  "delimitadores_matematicos_equilibrados": true,
+  "bloques_de_codigo_equilibrados": true,
+  "JSON_interpretables": true,
+  "SVG_XML_correctos": true,
+  "fuente_221_archivos_sin_modificaciones": true,
+  "nuevas_simulaciones_fisicas": false,
+  "nota": "Las pruebas de integridad y cobertura no demuestran las investigaciones propuestas."
+}

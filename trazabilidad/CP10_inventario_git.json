@@ -1,0 +1,121 @@
+{
+  "scope": "Medición anterior al empaquetado definitivo; no autoridad de hashes. Nuevos informes o manifiesto pueden variar el total.",
+  "measured_files": 931,
+  "measured_bytes": 125605946,
+  "by_extension": {
+    ".c": {
+      "files": 3,
+      "bytes": 2178
+    },
+    ".csv": {
+      "files": 94,
+      "bytes": 55191052
+    },
+    ".json": {
+      "files": 334,
+      "bytes": 5798180
+    },
+    ".log": {
+      "files": 124,
+      "bytes": 251082
+    },
+    ".md": {
+      "files": 114,
+      "bytes": 1974571
+    },
+    ".npz": {
+      "files": 89,
+      "bytes": 53370684
+    },
+    ".png": {
+      "files": 4,
+      "bytes": 385756
+    },
+    ".py": {
+      "files": 95,
+      "bytes": 596105
+    },
+    ".svg": {
+      "files": 67,
+      "bytes": 830980
+    },
+    ".txt": {
+      "files": 3,
+      "bytes": 11329
+    },
+    ".zip": {
+      "files": 2,
+      "bytes": 7193610
+    },
+    "[sin_extension]": {
+      "files": 2,
+      "bytes": 419
+    }
+  },
+  "largest": [
+    {
+      "path": "trazabilidad/fuente_M2_4_1.zip",
+      "bytes": 6022627
+    },
+    {
+      "path": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "bytes": 4681805
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/colocacion_Om2.3000_estado.npz",
+      "bytes": 3622714
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/colocacion_real_Om5.0000_estado.npz",
+      "bytes": 2895682
+    },
+    {
+      "path": "validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "bytes": 2360730
+    },
+    {
+      "path": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "bytes": 2360601
+    },
+    {
+      "path": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_final.csv",
+      "bytes": 2323742
+    },
+    {
+      "path": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_inicial.csv",
+      "bytes": 2280645
+    },
+    {
+      "path": "validacion/capilaridad/perfil_d2_RN128.csv",
+      "bytes": 2006747
+    },
+    {
+      "path": "validacion/capilaridad/perfil_d3_RN128.csv",
+      "bytes": 2006653
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.9500_h0.0031_R60_estado.npz",
+      "bytes": 1812377
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/colocacion_Om1.9500_estado.npz",
+      "bytes": 1677086
+    },
+    {
+      "path": "validacion/P06/rama/perfil_w0.90000.csv",
+      "bytes": 1270139
+    },
+    {
+      "path": "validacion/P06/rama/perfil_w0.90500.csv",
+      "bytes": 1270139
+    },
+    {
+      "path": "validacion/P06/rama/perfil_w0.96500.csv",
+      "bytes": 1270139
+    }
+  ],
+  "individual_files_above_100000000_bytes": 0,
+  "large_files_removed": 0,
+  "LFS_installed": false,
+  "GitHub_migration_performed": false
+}

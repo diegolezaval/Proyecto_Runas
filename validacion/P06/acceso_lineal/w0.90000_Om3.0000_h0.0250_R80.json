@@ -1,0 +1,81 @@
+{
+  "configuration": {
+    "Omega": 3.0,
+    "dx": 0.025,
+    "radius": 80.0,
+    "omega": 0.9,
+    "vacuum": false,
+    "ell": 0
+  },
+  "source": "validacion/P06/rama/perfil_w0.90000.csv",
+  "source_sha256": "9037fb7f1fa691fe5d8712efee3092d26cc2303b95853694cb7a2539ec1f5574",
+  "full_two_field_linearization": true,
+  "closed_mediator_eliminated_algebraically": false,
+  "open_channels": [
+    0,
+    1
+  ],
+  "discrete_flux_velocities": [
+    3.7654281774288294,
+    1.846126514997008,
+    0.0
+  ],
+  "S_real": [
+    [
+      -0.8652164510116036,
+      0.010634174359943379
+    ],
+    [
+      0.01063417435993401,
+      -0.6089288782038382
+    ]
+  ],
+  "S_imag": [
+    [
+      -0.5011393904579738,
+      -0.012112743949168928
+    ],
+    [
+      -0.012112743949158252,
+      -0.7930610424545639
+    ]
+  ],
+  "unitary_error": 1.4199704233904768e-14,
+  "linear_residual_relative": 6.963521737308435e-13,
+  "cases": [
+    {
+      "incoming_channel": 0,
+      "incoming_frequency": 3.9,
+      "outgoing_probabilities": [
+        0.9997401957697042,
+        0.0002598042302953477
+      ],
+      "energy_flux_gain": 0.9998800903552478,
+      "net_outward_charge_flux": -0.001039216921182362,
+      "net_outward_energy_flux": -0.0009352952290671013,
+      "energy_charge_relation_error": 2.97537602195197e-15,
+      "predicted_background_charge_rate": 0.001039216921182362,
+      "predicted_background_energy_rate": 0.0009352952290671013,
+      "background_rates_are_second_order_bookkeeping": true
+    },
+    {
+      "incoming_channel": 1,
+      "incoming_frequency": -2.1,
+      "outgoing_probabilities": [
+        0.00025980423029580574,
+        0.9997401957697044
+      ],
+      "energy_flux_gain": 1.000222689340254,
+      "net_outward_charge_flux": 0.0010392169211828062,
+      "net_outward_energy_flux": 0.0009352952290662131,
+      "energy_charge_relation_error": 1.6875606814736877e-15,
+      "predicted_background_charge_rate": -0.0010392169211828062,
+      "predicted_background_energy_rate": -0.0009352952290662131,
+      "background_rates_are_second_order_bookkeeping": true
+    }
+  ],
+  "balance_passed": true,
+  "background_recomputed": false,
+  "finite_amplitude_backreaction_simulated": false,
+  "complete_RES2": false
+}

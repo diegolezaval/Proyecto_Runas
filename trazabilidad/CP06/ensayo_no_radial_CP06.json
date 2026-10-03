@@ -1,0 +1,124 @@
+{
+  "checkpoint_base": "CP05_SIMETRIA_C7",
+  "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+  "source_time": 1200,
+  "registered_before_evolution": true,
+  "question": "Bounded finite nonaxisymmetric quadrupole deformation of the retained CP04 state?",
+  "duration": 160,
+  "core_radius": 40,
+  "configuration_cases": [
+    {
+      "L": 2,
+      "dx": 0.5,
+      "dt": 0.004,
+      "radius": 220,
+      "eps": 0.02
+    },
+    {
+      "L": 4,
+      "dx": 0.5,
+      "dt": 0.004,
+      "radius": 220,
+      "eps": 0.02
+    },
+    {
+      "L": 4,
+      "dx": 0.25,
+      "dt": 0.004,
+      "radius": 220,
+      "eps": 0.02
+    },
+    {
+      "L": 4,
+      "dx": 0.5,
+      "dt": 0.002,
+      "radius": 220,
+      "eps": 0.02
+    },
+    {
+      "L": 4,
+      "dx": 0.5,
+      "dt": 0.004,
+      "radius": 220,
+      "eps": 0.01
+    },
+    {
+      "L": 0,
+      "dx": 0.5,
+      "dt": 0.004,
+      "radius": 220,
+      "eps": 0
+    },
+    {
+      "L": 2,
+      "dx": 0.5,
+      "dt": 0.004,
+      "radius": 260,
+      "eps": 0.02
+    }
+  ],
+  "criteria": {
+    "energy_drift_max": 0.0002,
+    "charge_drift_max": 1e-09,
+    "nonradial_norm_amplification_max": 3,
+    "core_charge_change_max": 0.005,
+    "angular_norm_relative_change_max": 0.05,
+    "radial_norm_relative_change_max": 0.02,
+    "temporal_norm_relative_change_max": 0.02,
+    "box_core_relative_change_max": 1e-05
+  },
+  "comparison": "sup_t absolute difference divided by max_t reference nonradial norm, avoiding divisions at zeros; energy and charge use own nonzero reference scales",
+  "decision": "All passes support only this finite perturbation family and window; E03 remains partial. Refine failed controls and preserve every result.",
+  "source_construction": "Saved CP04 Cauchy data; finite initial deformation as explicit resource, no primordial source claim",
+  "conditional_domain": "M2 classical benchmark, no matter portal, all angular m up to L, finite radial box with causal margin; not continuum certification",
+  "adaptive_extensions": [
+    {
+      "reason": "L2/L4 angular comparison failed preset 5% gate",
+      "configuration": {
+        "L": 6,
+        "dx": 0.5,
+        "dt": 0.004,
+        "radius": 220,
+        "eps": 0.02
+      },
+      "tmax": 160,
+      "registered_before_execution": true,
+      "comparison": "L4 vs L6, same 5% threshold; preserve original L2 failure"
+    }
+  ],
+  "mediator_refinement": {
+    "reason": "Final mediator field errors of 3.49% spatial and 2.87% temporal; conservation alone does not verify fast phase",
+    "status": "EN_PROGRESO",
+    "scheme": "Exact mass harmonic flow plus fourth-order symmetric Hamiltonian splitting",
+    "same_M2_action": true,
+    "comparison_target": 0.02,
+    "cases": [
+      {
+        "L": 4,
+        "dx": 0.5,
+        "dt": 0.004,
+        "radius": 220,
+        "eps": 0.02,
+        "scheme": "split4"
+      },
+      {
+        "L": 4,
+        "dx": 0.5,
+        "dt": 0.002,
+        "radius": 220,
+        "eps": 0.02,
+        "scheme": "split4"
+      },
+      {
+        "L": 4,
+        "dx": 0.25,
+        "dt": 0.004,
+        "radius": 220,
+        "eps": 0.02,
+        "scheme": "split4"
+      }
+    ],
+    "duration": 160,
+    "registered_before_execution": true
+  }
+}

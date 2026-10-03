@@ -1,0 +1,19 @@
+# Directrices permanentes de investigación y desarrollo
+
+Estas directrices rigen las etapas posteriores del proyecto. El paquete vigente y su trazabilidad son la fuente de estado; las versiones archivadas documentan antecedentes y no sustituyen la evidencia actual. Antes de modificar una entrega se revisarán íntegramente su teoría, datos, código, resultados y límites.
+
+El objetivo es obtener el sistema más sólido, coherente, general y científicamente defendible posible. Se priorizan, en este orden: coherencia física y matemática; capacidad explicativa y predictiva; generalidad; robustez y estabilidad; simplicidad estructural; simplicidad para el operador. La simplicidad de uso puede apoyarse en una infraestructura interna sofisticada y no justifica sacrificar plausibilidad.
+
+Las funciones existentes se someten a la teoría. Una primordial, geometría o mecanismo que falle se corregirá, sustituirá o descartará; se conservarán el resultado negativo y el supuesto que falló. Toda extensión importante deberá tener una justificación física independiente, y se buscará su utilidad compartida antes de introducir constantes o subsistemas específicos. Se preferirá física conocida más la mínima física adicional necesaria. Se recurrirá a las disciplinas que exija el fenómeno.
+
+La cadena de desarrollo es: teoría fundamental, campos e interacciones, soluciones, modos y estabilidad, comportamiento microscópico, coeficientes efectivos, comportamiento macroscópico, componentes, dispositivos, preparación y control, operación y aplicaciones. Los parámetros efectivos importantes se derivarán del nivel inferior siempre que sea posible. Las condiciones de estado, geometría y preparación se distinguirán de las constantes fundamentales. No se ajustará una teoría diferente para cada función.
+
+Se distinguirán definición, hipótesis, aproximación, resultado derivado, resultado analítico, resultado numérico, validación delimitada, objetivo de diseño y problema abierto. Una hipótesis no cambia de estado por conveniencia. Cada cálculo declarará unidades, condiciones de contorno, conservación, estabilidad, límites, incertidumbre, sensibilidad y pruebas de convergencia pertinentes. La conexión analítica–numérica y micro–macro debe ser explícita. Una vez encontrada una solución se buscarán fallos, inestabilidades, casos límite y contradicciones.
+
+Se revisarán las 24 funciones actuales, sin exigir que su número se conserve. Las fusiones responderán a redundancias físicas o funcionales demostradas, no sólo a aplicaciones similares. Se registrarán los recursos fundamentales ausentes que aparezcan naturalmente. La reutilización de estructuras comunes no debe borrar diferencias de preparación, control, medición o dominio de validez.
+
+Se separarán ciencia, ingeniería e interfaz. Una tecnología madura deberá tender a intención sencilla, configuración, sistema interno sofisticado y resultado controlado. El operador no tendrá que resolver manualmente la física; la interfaz tampoco presentará como disponible una función que carece de realización admitida.
+
+La documentación se redactará como literatura científica y técnica, con notación consistente, ecuaciones explícitas y límites honestos. Se usarán Markdown para teoría y metodología, JSON para contratos y evidencia, SVG para figuras vectoriales y scripts/datos brutos para reproducir. Se evitarán duplicaciones de autoridad y reescrituras innecesarias. Las vistas generadas se modificarán desde sus fuentes.
+
+En la etapa actual se priorizan problemas fundamentales y primeras realizaciones completas. La presentación y las aplicaciones secundarias no sustituyen ese trabajo. La presencia de documentos no significa cierre científico. Se avanzará hasta donde permitan las derivaciones y pruebas; lo que no pueda cerrarse sin inventar datos permanecerá identificado, con su condición de resolución.

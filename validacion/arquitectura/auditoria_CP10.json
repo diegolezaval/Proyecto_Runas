@@ -1,0 +1,7246 @@
+{
+  "checkpoint": "CP10_MEDIADOR_ESPACIOTEMPORAL",
+  "passed": true,
+  "issues": [],
+  "counts": {
+    "json": 340,
+    "python": 95,
+    "svg": 67
+  },
+  "claims_indexed": 27,
+  "states_inspected": 89,
+  "readable_states": 88,
+  "preserved_unreadable_states": [
+    "validacion/P06/acceso_lineal/colocacion_Om5.0000_estado.npz"
+  ],
+  "numerical_campaigns_executed": false,
+  "state_details": [
+    {
+      "path": "validacion/P06/acceso_lineal/colocacion_Om1.9500_estado.npz",
+      "bytes": 1677086,
+      "snapshot_sha256": "6ae7ab7cb5de8d1930040f535b0cdc2ae87795f8a69bfcad69a770e731e4b715",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "y"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            17686
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "y": {
+          "shape": [
+            6,
+            17686
+          ],
+          "dtype": "complex128",
+          "finite": true
+        }
+      },
+      "metadata": {},
+      "companion_result": "validacion/P06/acceso_lineal/colocacion_Om1.9500.json",
+      "result_passed_if_recorded": false,
+      "role": "INTENTO_FALLIDO_NO_REANUDAR",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/colocacion_Om2.3000_estado.npz",
+      "bytes": 3622714,
+      "snapshot_sha256": "e85335f53fb798456a3c7ad29e8489891c7d1af6030394e91e0460fea5961446",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "y"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            38401
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "y": {
+          "shape": [
+            6,
+            38401
+          ],
+          "dtype": "complex128",
+          "finite": true
+        }
+      },
+      "metadata": {},
+      "companion_result": "validacion/P06/acceso_lineal/colocacion_Om2.3000.json",
+      "result_passed_if_recorded": false,
+      "role": "INTENTO_FALLIDO_NO_REANUDAR",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/colocacion_Om5.0000_estado.npz",
+      "bytes": 50978,
+      "snapshot_sha256": "d1dd9b6d8f04880a507c4da9cab247674a6ad86f869e275a828bbf11ae157f5c",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "readable": false,
+      "error": "File is not a zip file",
+      "role": "ILEGIBLE_NO_REANUDABLE",
+      "documented_historical_failure": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/colocacion_real_Om1.9500_estado.npz",
+      "bytes": 304775,
+      "snapshot_sha256": "fec115ad042f5e3e1f6c6c6ee01482efdd4dc7c608bba5cb14d1d2a2a9fc70c2",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "y"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            3215
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "y": {
+          "shape": [
+            6,
+            3215
+          ],
+          "dtype": "complex128",
+          "finite": true
+        }
+      },
+      "metadata": {},
+      "companion_result": "validacion/P06/acceso_lineal/colocacion_real_Om1.9500.json",
+      "result_passed_if_recorded": true,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/colocacion_real_Om2.3000_estado.npz",
+      "bytes": 903142,
+      "snapshot_sha256": "4258fe7e9a9b98fef3963877bf93b1f1507d325c13dcff6db6ab1073644aced4",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "y"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            9528
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "y": {
+          "shape": [
+            6,
+            9528
+          ],
+          "dtype": "complex128",
+          "finite": true
+        }
+      },
+      "metadata": {},
+      "companion_result": "validacion/P06/acceso_lineal/colocacion_real_Om2.3000.json",
+      "result_passed_if_recorded": true,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/colocacion_real_Om5.0000_estado.npz",
+      "bytes": 2895682,
+      "snapshot_sha256": "20cf1ec0f993fb9dacaedc4e4002c623085690fb532e1a2d1d7338760d06a8fd",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "y"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            30368
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "y": {
+          "shape": [
+            6,
+            30368
+          ],
+          "dtype": "complex128",
+          "finite": true
+        }
+      },
+      "metadata": {},
+      "companion_result": "validacion/P06/acceso_lineal/colocacion_real_Om5.0000.json",
+      "result_passed_if_recorded": true,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om0.2000_h0.0250_R60_estado.npz",
+      "bytes": 116849,
+      "snapshot_sha256": "dffdbad251955290670ce9836373fbf910a1a8bc6192dee3e58886d0cbc49e4e",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            2400
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            2400,
+            3,
+            1
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            1,
+            1
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 0.2,
+          "dx": 0.025,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om0.2000_h0.0250_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om0.5000_h0.0250_R60_estado.npz",
+      "bytes": 117497,
+      "snapshot_sha256": "dcef4b3712c6620cae4c7a579894287db18065ea61a7e24fd6b80b054b9ff720",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            2400
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            2400,
+            3,
+            1
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            1,
+            1
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 0.5,
+          "dx": 0.025,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om0.5000_h0.0250_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.5000_h0.0250_R60_estado.npz",
+      "bytes": 117506,
+      "snapshot_sha256": "fd730f5c32324a04ec2c3be822a62ebd7bdab385d4958286dce767f40d14eddd",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            2400
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            2400,
+            3,
+            1
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            1,
+            1
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 1.5,
+          "dx": 0.025,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om1.5000_h0.0250_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.9200_h0.0063_R60_estado.npz",
+      "bytes": 908052,
+      "snapshot_sha256": "1374c15bc448e77e6bf7b40585c232018c5f18364a3218b40bfbbd1afc9493a6",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            9600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            9600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U87"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 1.92,
+          "dx": 0.00625,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om1.9200_h0.0063_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.9200_h0.0125_R60_estado.npz",
+      "bytes": 455206,
+      "snapshot_sha256": "89573285579f4507e76692c49266a8bdcc1ff030b987c969a62be8af15e89597",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            4800
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            4800,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U86"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 1.92,
+          "dx": 0.0125,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om1.9200_h0.0125_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.9200_h0.0250_R60_estado.npz",
+      "bytes": 228307,
+      "snapshot_sha256": "dbad0af16c5b5e9e73df381a50721b2a7d2915df7f813dfb1d1ae6f5766ab8e4",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            2400
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            2400,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U85"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 1.92,
+          "dx": 0.025,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om1.9200_h0.0250_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.9200_h0.0250_R80_estado.npz",
+      "bytes": 304544,
+      "snapshot_sha256": "9187b1ee17176c74943f2be5c8dd1aa7659d31ac94f4ff40c044847ba8235451",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            3200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            3200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U85"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 1.92,
+          "dx": 0.025,
+          "radius": 80.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om1.9200_h0.0250_R80.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.9200_h0.0500_R60_estado.npz",
+      "bytes": 114784,
+      "snapshot_sha256": "8db58220f8ea73fd9c4f31fc38fa77b4d1669cc225e7587d2f5acd106cee788d",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            1200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            1200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 1.92,
+          "dx": 0.05,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om1.9200_h0.0500_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.9200_h0.1000_R60_estado.npz",
+      "bytes": 58029,
+      "snapshot_sha256": "dcd646da7216b354b7ec8269b022bfd5f8186eae54486c2a7ca3b2aae50cffbe",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U83"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 1.92,
+          "dx": 0.1,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om1.9200_h0.1000_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.9500_h0.0031_R60_estado.npz",
+      "bytes": 1812377,
+      "snapshot_sha256": "647b5a67f606d9042177193b80d4efb003d8f6465bbc1f2062f775f15c6c1710",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            19200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            19200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U88"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 1.95,
+          "dx": 0.003125,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om1.9500_h0.0031_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.9500_h0.0063_R60_estado.npz",
+      "bytes": 908966,
+      "snapshot_sha256": "a4566122f954b4a7cd5a7517209c5a17b00a3c0f2873a419597e89005d58ed86",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            9600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            9600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U87"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 1.95,
+          "dx": 0.00625,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om1.9500_h0.0063_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.9500_h0.0125_R60_estado.npz",
+      "bytes": 455694,
+      "snapshot_sha256": "0d0b01f1c7523ade083449d577c82e78877eb31ac98cf56f548a8b5421b4fc37",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            4800
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            4800,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U86"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 1.95,
+          "dx": 0.0125,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om1.9500_h0.0125_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.9500_h0.0250_R60_estado.npz",
+      "bytes": 228502,
+      "snapshot_sha256": "f831795c5409149f8adacdc29dc2b88f9481766a4d6a9912defbf36bd8e7a114",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            2400
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            2400,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U85"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 1.95,
+          "dx": 0.025,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om1.9500_h0.0250_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.9500_h0.0500_R60_estado.npz",
+      "bytes": 114851,
+      "snapshot_sha256": "011e23d188c31158037f5301a82d1a081422c8ecc2a713c292e08d36ee6963ea",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            1200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            1200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 1.95,
+          "dx": 0.05,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om1.9500_h0.0500_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om1.9500_h0.1000_R60_estado.npz",
+      "bytes": 58055,
+      "snapshot_sha256": "158e429d1e748ce8da77bc5f3295a51c525c0094af2a1ecef5a5f34488039979",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U83"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 1.95,
+          "dx": 0.1,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om1.9500_h0.1000_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.0000_h0.0063_R60_estado.npz",
+      "bytes": 909451,
+      "snapshot_sha256": "26298852478d7978a62cc375b65d8372fe2ccfbb90ab1b1d9e2934f0e236a97e",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            9600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            9600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U86"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.0,
+          "dx": 0.00625,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.0000_h0.0063_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.0000_h0.0125_R60_estado.npz",
+      "bytes": 455681,
+      "snapshot_sha256": "8514e23462da2fd2b252e10241aee0385da346ef7129dc0b894bd718acd69a3f",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            4800
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            4800,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U85"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.0,
+          "dx": 0.0125,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.0000_h0.0125_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.0000_h0.0250_R60_estado.npz",
+      "bytes": 228449,
+      "snapshot_sha256": "90f7782b2c46906c3d88c0b2445713eb4c053badfd7eb52387678cfd9d7e169f",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            2400
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            2400,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.0,
+          "dx": 0.025,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.0000_h0.0250_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.0000_h0.0500_R60_estado.npz",
+      "bytes": 114823,
+      "snapshot_sha256": "108e0639b337c5b7555807dba6cc41c40dacacb056cef88fb4238f9c2bd08cdb",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            1200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            1200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U83"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.0,
+          "dx": 0.05,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.0000_h0.0500_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.0000_h0.0500_R60_vacio_estado.npz",
+      "bytes": 42587,
+      "snapshot_sha256": "716336065bc761bc8ae8179156271eb7e3f7ac629bddea4c9196f3f207366f49",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            1200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            1200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U82"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.0,
+          "dx": 0.05,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": true,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.0000_h0.0500_R60_vacio.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.0000_h0.1000_R60_estado.npz",
+      "bytes": 57955,
+      "snapshot_sha256": "e59f094bc48116b5119a69c1123b4f61f648236781a6bb3eb4669f934502787f",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U82"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.0,
+          "dx": 0.1,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.0000_h0.1000_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.1000_h0.0063_R60_estado.npz",
+      "bytes": 907825,
+      "snapshot_sha256": "58b6db5a1171039687cac9d42fb115a4d237ea309bfc31cacedb5bf4f667b71f",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            9600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            9600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U86"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.1,
+          "dx": 0.00625,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.1000_h0.0063_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.1000_h0.0125_R60_estado.npz",
+      "bytes": 454978,
+      "snapshot_sha256": "bc7e772edb7b4b8f86f6caae039b0955eca774102c4fdc101507924a0e96a921",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            4800
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            4800,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U85"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.1,
+          "dx": 0.0125,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.1000_h0.0125_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.1000_h0.0250_R60_estado.npz",
+      "bytes": 228108,
+      "snapshot_sha256": "845400db4af14622641ed066d86d87470525a936074ad4492e2c11e9c5ae2ad0",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            2400
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            2400,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.1,
+          "dx": 0.025,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.1000_h0.0250_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.1000_h0.0250_R80_estado.npz",
+      "bytes": 304186,
+      "snapshot_sha256": "067931acf0e65443d484715e861584e453fccaa07daab55427c4361b8c4db9a3",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            3200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            3200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.1,
+          "dx": 0.025,
+          "radius": 80.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.1000_h0.0250_R80.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.1000_h0.0500_R60_estado.npz",
+      "bytes": 114683,
+      "snapshot_sha256": "49b82d86a9797455bd092e49508b87b55fce41dd095ac036d010c707c80fdf0a",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            1200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            1200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U83"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.1,
+          "dx": 0.05,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.1000_h0.0500_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.1000_h0.1000_R60_estado.npz",
+      "bytes": 57906,
+      "snapshot_sha256": "8967cbbc5a7967f27f3a345fc79df0e7d3e2ff72c4ab6d0bb766231e1b4e2e28",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U82"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.1,
+          "dx": 0.1,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.1000_h0.1000_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.3000_h0.0063_R60_estado.npz",
+      "bytes": 909089,
+      "snapshot_sha256": "6b1a195320db90945432263c2ad49e8ccda2eda933c4037f587240eb7f730514",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            9600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            9600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U86"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.3,
+          "dx": 0.00625,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.3000_h0.0063_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.3000_h0.0125_R60_estado.npz",
+      "bytes": 455268,
+      "snapshot_sha256": "3c69977e9dae9dbdbfe87ccee4e6dbf43fb110fadae9c3df604e94426a3472c6",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            4800
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            4800,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U85"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.3,
+          "dx": 0.0125,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.3000_h0.0125_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.3000_h0.0250_R60_estado.npz",
+      "bytes": 228167,
+      "snapshot_sha256": "1b00e8fd230027e5cce98749e24f31fca7566efdfba020f279b9f66d172b0a57",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            2400
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            2400,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.3,
+          "dx": 0.025,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.3000_h0.0250_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.3000_h0.0500_R60_estado.npz",
+      "bytes": 114696,
+      "snapshot_sha256": "50d98921e39f2d487bdd56009158081b8e54ee8f4c34feb070d496d1d7bc01e9",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            1200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            1200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U83"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.3,
+          "dx": 0.05,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.3000_h0.0500_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.3000_h0.1000_R60_estado.npz",
+      "bytes": 57900,
+      "snapshot_sha256": "61f9dbff8f535d9e64ee62b93e14ade9f0dc4a789191950640c8d759938f5586",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U82"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.3,
+          "dx": 0.1,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.3000_h0.1000_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.6000_h0.0063_R60_estado.npz",
+      "bytes": 909086,
+      "snapshot_sha256": "81aa89a672eded386cc2ccfa113698b558e504671d59d595566827c74ea50246",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            9600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            9600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U86"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.6,
+          "dx": 0.00625,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.6000_h0.0063_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.6000_h0.0125_R60_estado.npz",
+      "bytes": 455287,
+      "snapshot_sha256": "9a67639354034d51b5c033e2298b9537eb4722be54c2ded7c70947db9c7d121e",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            4800
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            4800,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U85"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.6,
+          "dx": 0.0125,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.6000_h0.0125_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.6000_h0.0250_R60_estado.npz",
+      "bytes": 228195,
+      "snapshot_sha256": "a33daa811b0608115fad2b25c748823a8e02521ce7363d7c6e9383c613aae41b",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            2400
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            2400,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.6,
+          "dx": 0.025,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.6000_h0.0250_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.6000_h0.0500_R60_estado.npz",
+      "bytes": 114605,
+      "snapshot_sha256": "7625adbb9e9c2d50256c905923faf260a5708d00364c5990c67a0a060b2fa1a1",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            1200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            1200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U83"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.6,
+          "dx": 0.05,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.6000_h0.0500_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om2.6000_h0.1000_R60_estado.npz",
+      "bytes": 57902,
+      "snapshot_sha256": "88960c09b2ac74867ffefb0cb7b6473791266f698605c612bce1ea79759831ab",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U82"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 2.6,
+          "dx": 0.1,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om2.6000_h0.1000_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.0063_R60_estado.npz",
+      "bytes": 909446,
+      "snapshot_sha256": "e080f70edaf5915c003409eae48caa34619b037345a64db5179d398c7666b043",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            9600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            9600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U86"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 3.0,
+          "dx": 0.00625,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.0063_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.0125_R60_estado.npz",
+      "bytes": 455424,
+      "snapshot_sha256": "81ff5d13eb68f4be2a252eb5a1e41a3981e4e74a5fb0ac6e0b7abb70dad6ae76",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            4800
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            4800,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U85"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 3.0,
+          "dx": 0.0125,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.0125_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.0250_R60_estado.npz",
+      "bytes": 228180,
+      "snapshot_sha256": "beea803b63c9e6ebdf38124d1a789d34820dc26c25d859ce5dc880dc238204a5",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            2400
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            2400,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 3.0,
+          "dx": 0.025,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.0250_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.0250_R80_estado.npz",
+      "bytes": 304357,
+      "snapshot_sha256": "21fff42c1d058ec470d80a99d8c3f343573d8cd105d33fd49fcee01dd8af7930",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            3200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            3200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 3.0,
+          "dx": 0.025,
+          "radius": 80.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.0250_R80.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.0500_R60_estado.npz",
+      "bytes": 114680,
+      "snapshot_sha256": "0125508c7fadee91ef552f7d04e4243a03e7e4db7da04947a480747f857b3390",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            1200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            1200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U83"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 3.0,
+          "dx": 0.05,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.0500_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.0500_R60_vacio_estado.npz",
+      "bytes": 42839,
+      "snapshot_sha256": "3760d1ac953b762b8b7af5112e9cb8fce1044a817816f0a50cc2a69fec669689",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            1200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            1200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U82"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 3.0,
+          "dx": 0.05,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": true,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.0500_R60_vacio.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.1000_R60_estado.npz",
+      "bytes": 57884,
+      "snapshot_sha256": "6c0995490dc9d55f0d2a948e26f552584b0b9ec89400edbf0e35254bf18ac146",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U82"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 3.0,
+          "dx": 0.1,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om3.0000_h0.1000_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om4.0000_h0.0063_R60_estado.npz",
+      "bytes": 910052,
+      "snapshot_sha256": "b873036896e29d02baeeae253626775788aae6a5ca19f3f74ed1150a4fe16ba7",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            9600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            9600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U86"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 4.0,
+          "dx": 0.00625,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om4.0000_h0.0063_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om4.0000_h0.0125_R60_estado.npz",
+      "bytes": 455576,
+      "snapshot_sha256": "0ea84579c8862a8d0fa9b7bf52cc93f4103ce3b3082bab837ed756e58268189c",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            4800
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            4800,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U85"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 4.0,
+          "dx": 0.0125,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om4.0000_h0.0125_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om4.0000_h0.0250_R60_estado.npz",
+      "bytes": 228298,
+      "snapshot_sha256": "f19dedbff2abc0b37dc3fc83056f32c881933afb5f0b9191c320f41179d96924",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            2400
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            2400,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 4.0,
+          "dx": 0.025,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om4.0000_h0.0250_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om4.0000_h0.0500_R60_estado.npz",
+      "bytes": 114700,
+      "snapshot_sha256": "a0b63a41273f1c92fb0c21c8b29096d5fba344819fa18e7e5e5e53d41f01583d",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            1200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            1200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U83"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 4.0,
+          "dx": 0.05,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om4.0000_h0.0500_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om4.0000_h0.1000_R60_estado.npz",
+      "bytes": 57885,
+      "snapshot_sha256": "49cf6dc73cc8f5a89a6b3177f2d8ca424bcac9528ccd59766eb63bcee7333514",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U82"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 4.0,
+          "dx": 0.1,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om4.0000_h0.1000_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om5.0000_h0.0063_R60_estado.npz",
+      "bytes": 910181,
+      "snapshot_sha256": "6a0a1ba4e93c94c4878b5bbe16c15fbecc1bb523ef2716354ae6ada064aa20ed",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            9600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            9600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U86"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 5.0,
+          "dx": 0.00625,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om5.0000_h0.0063_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om5.0000_h0.0125_R60_estado.npz",
+      "bytes": 455567,
+      "snapshot_sha256": "4c46105968636ff7d5278d07347a65c455e1fda3d7ddd262805343be3df8831a",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            4800
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            4800,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U85"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 5.0,
+          "dx": 0.0125,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om5.0000_h0.0125_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om5.0000_h0.0250_R60_estado.npz",
+      "bytes": 228292,
+      "snapshot_sha256": "db670b8c473dc757c99749939fc869e30a632268cacb4e1e24fc3df24cd73c93",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            2400
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            2400,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U84"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 5.0,
+          "dx": 0.025,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om5.0000_h0.0250_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om5.0000_h0.0500_R60_estado.npz",
+      "bytes": 114621,
+      "snapshot_sha256": "aa8f7440131c7a358002213c36e149b2342ebf0cda290fd45254e453a9c8a693",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            1200
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            1200,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U83"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 5.0,
+          "dx": 0.05,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om5.0000_h0.0500_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/w0.90000_Om5.0000_h0.1000_R60_estado.npz",
+      "bytes": 57910,
+      "snapshot_sha256": "4a73445cd602726e79762830f2fcc84be2e97a959c55204c2dbd575a55c4f96e",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "r",
+        "radial_amplitudes",
+        "S",
+        "config"
+      ],
+      "arrays": {
+        "r": {
+          "shape": [
+            600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "radial_amplitudes": {
+          "shape": [
+            600,
+            3,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "S": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U82"
+        }
+      },
+      "metadata": {
+        "config": {
+          "Omega": 5.0,
+          "dx": 0.1,
+          "radius": 60.0,
+          "omega": 0.9,
+          "vacuum": false,
+          "ell": 0
+        }
+      },
+      "companion_result": "validacion/P06/acceso_lineal/w0.90000_Om5.0000_h0.1000_R60.json",
+      "result_passed_if_recorded": null,
+      "role": "SOLUCION_GUARDADA_CON_JSON_COMPANERO",
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "bytes": 4681805,
+      "snapshot_sha256": "ecbf667afcbd572af50151e7300bebb63afe54bbb25ecf01b2369b42a1c977ce",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "time",
+        "elapsed",
+        "accepted_steps",
+        "nfev",
+        "maxe",
+        "maxq",
+        "config",
+        "transfer",
+        "labels",
+        "implementations"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            3520,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            3520,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            3520,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            3520,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "time": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "accepted_steps": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "nfev": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "maxe": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "maxq": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U212"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1040"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        },
+        "implementations": {
+          "shape": [],
+          "dtype": "<U227"
+        }
+      },
+      "metadata": {
+        "time": 160.0,
+        "config": {
+          "dx": 0.0625,
+          "dt": 0.02,
+          "radius": 220.0,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160.0,
+          "source_time": 1200.0,
+          "core_radius": 40.0,
+          "scheme": "dop853e10",
+          "adaptive": true,
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step": 0.02
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 15.859739654903933,
+          "regridding_charge_change": -0.05147276573052295,
+          "seed_energy_change": 4.264237830170259,
+          "seed_charge_change": 4.341821521407837,
+          "core_energy_regridding_relative": -1.765840074374747e-05,
+          "core_charge_regridding_relative": -2.079915718422587e-05,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        },
+        "implementations": [
+          {
+            "time": 0.0,
+            "method": "numpy"
+          },
+          {
+            "time": 0.0,
+            "method": "numpy_projection_fused_C_potential",
+            "source_sha256": "74dd2159ac951e701b3acce7f8365847874521769479c08dd8e4634c7e2e9de9",
+            "fast_math": false,
+            "action_changed": false
+          }
+        ]
+      },
+      "companion_result": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "time": 160.0,
+        "source_time": 1200.0,
+        "result": "dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160.json",
+        "restart_file": "dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "bytes": 2360601,
+      "snapshot_sha256": "2ef7efa1ca77549aecf069d65638feb559ae9608ab4bdeda36579390750a03fc",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "time",
+        "elapsed",
+        "accepted_steps",
+        "nfev",
+        "maxe",
+        "maxq",
+        "config",
+        "transfer",
+        "labels",
+        "implementations"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            1760,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            1760,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            1760,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            1760,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "time": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "accepted_steps": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "nfev": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "maxe": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "maxq": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U211"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1037"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        },
+        "implementations": {
+          "shape": [],
+          "dtype": "<U227"
+        }
+      },
+      "metadata": {
+        "time": 160.0,
+        "config": {
+          "dx": 0.125,
+          "dt": 0.02,
+          "radius": 220.0,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160.0,
+          "source_time": 1200.0,
+          "core_radius": 40.0,
+          "scheme": "dop853e10",
+          "adaptive": true,
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step": 0.02
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 7.993337884189714,
+          "regridding_charge_change": 0.04750722228709492,
+          "seed_energy_change": 4.26412821788972,
+          "seed_charge_change": 4.341869318507179,
+          "core_energy_regridding_relative": 1.6298063657771422e-05,
+          "core_charge_regridding_relative": 1.9196770923102235e-05,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        },
+        "implementations": [
+          {
+            "time": 0.0,
+            "method": "numpy"
+          },
+          {
+            "time": 0.0,
+            "method": "numpy_projection_fused_C_potential",
+            "source_sha256": "74dd2159ac951e701b3acce7f8365847874521769479c08dd8e4634c7e2e9de9",
+            "fast_math": false,
+            "action_changed": false
+          }
+        ]
+      },
+      "companion_result": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "time": 160.0,
+        "source_time": 1200.0,
+        "result": "dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160.json",
+        "restart_file": "dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/L0_h0.500_dt0.0040_R220_eps0.000_T160_estado.npz",
+      "bytes": 52072,
+      "snapshot_sha256": "b2ac13805d9a8801b9b4ffa4b8a857dce81c379afbc759f48c21eefa906c816f",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            1
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            1
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            1
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            1
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            6
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U116"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1006"
+        },
+        "labels": {
+          "shape": [
+            1,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 40000,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.004,
+          "radius": 220,
+          "L": 0,
+          "eps": 0.0,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.582120812483936,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 0.0,
+          "seed_charge_change": 0.0,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": "validacion/P06/no_radial/L0_h0.500_dt0.0040_R220_eps0.000_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 40000,
+        "time": 160,
+        "source_time": 1200.0,
+        "result": "L0_h0.500_dt0.0040_R220_eps0.000_T160.json",
+        "restart_file": "L0_h0.500_dt0.0040_R220_eps0.000_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/L2_h0.500_dt0.0040_R220_eps0.020_T160_estado.npz",
+      "bytes": 271715,
+      "snapshot_sha256": "05dc988eeeada22e0b6e2037333ab4a1020539825cf6bfb11072cda5b05a80e7",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            9
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            9
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            9
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            9
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            8
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U117"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1033"
+        },
+        "labels": {
+          "shape": [
+            9,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 40000,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.004,
+          "radius": 220,
+          "L": 2,
+          "eps": 0.02,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.582120812483936,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 4.26197070483795,
+          "seed_charge_change": 4.342825120849739,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": "validacion/P06/no_radial/L2_h0.500_dt0.0040_R220_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 40000,
+        "time": 160,
+        "source_time": 1200.0,
+        "result": "L2_h0.500_dt0.0040_R220_eps0.020_T160.json",
+        "restart_file": "L2_h0.500_dt0.0040_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/L2_h0.500_dt0.0040_R260_eps0.020_T160_estado.npz",
+      "bytes": 309826,
+      "snapshot_sha256": "abbe83317479f4440ab7def35cbbe2fd0da716cb47588d2b50a263d31455fa97",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            520,
+            9
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            520,
+            9
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            520,
+            9
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            520,
+            9
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            8
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U119"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1033"
+        },
+        "labels": {
+          "shape": [
+            9,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 40000,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.004,
+          "radius": 260.0,
+          "L": 2,
+          "eps": 0.02,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2431.237031803832,
+          "source_charge_inside_new_radius": 2621.971873272747,
+          "omitted_exterior_energy": 135.71001184270244,
+          "omitted_exterior_charge": 123.80204739489955,
+          "regridding_and_new_boundary_energy_change": 3.8509436542030926,
+          "regridding_charge_change": 2.027096170005734,
+          "seed_energy_change": 4.261970704837495,
+          "seed_charge_change": 4.342825120849284,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 220.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": "validacion/P06/no_radial/L2_h0.500_dt0.0040_R260_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 40000,
+        "time": 160,
+        "source_time": 1200.0,
+        "result": "L2_h0.500_dt0.0040_R260_eps0.020_T160.json",
+        "restart_file": "L2_h0.500_dt0.0040_R260_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/L4_h0.250_dt0.0040_R220_eps0.020_T160_estado.npz",
+      "bytes": 1197726,
+      "snapshot_sha256": "b2bd5f8606fe47693169dbc0c6e15a965840e535d7e4fbe50011c5eda0863fb2",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            880,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            880,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            880,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            880,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U118"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1038"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 40000,
+        "config": {
+          "dx": 0.25,
+          "dt": 0.004,
+          "radius": 220,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 4.330332855942288,
+          "regridding_charge_change": 0.4434270575516166,
+          "seed_energy_change": 4.263690922879505,
+          "seed_charge_change": 4.3420605126220835,
+          "core_energy_regridding_relative": 0.00015214126443585663,
+          "core_charge_regridding_relative": 0.00017918045455656006,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": "validacion/P06/no_radial/L4_h0.250_dt0.0040_R220_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 40000,
+        "time": 160,
+        "source_time": 1200.0,
+        "result": "L4_h0.250_dt0.0040_R220_eps0.020_T160.json",
+        "restart_file": "L4_h0.250_dt0.0040_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/L4_h0.500_dt0.0020_R220_eps0.020_T160_estado.npz",
+      "bytes": 614233,
+      "snapshot_sha256": "47515af9787ae196f9c624e5658c1f7f1dc38dca0e1e0ac44d797baf614d0829",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U117"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1034"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 80000,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.002,
+          "radius": 220,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.582120812483936,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 4.261970704838404,
+          "seed_charge_change": 4.342825120849739,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": "validacion/P06/no_radial/L4_h0.500_dt0.0020_R220_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 80000,
+        "time": 160,
+        "source_time": 1200.0,
+        "result": "L4_h0.500_dt0.0020_R220_eps0.020_T160.json",
+        "restart_file": "L4_h0.500_dt0.0020_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/L4_h0.500_dt0.0040_R220_eps0.010_T160_estado.npz",
+      "bytes": 613543,
+      "snapshot_sha256": "ac0b02ca2da709f7f578081b7054aacc8f75c25aa819bd89cc12b10bba429ee8",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U117"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1036"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 40000,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.004,
+          "radius": 220,
+          "L": 4,
+          "eps": 0.01,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.582120812483936,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 1.0237016238106662,
+          "seed_charge_change": 1.0857062802124346,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": "validacion/P06/no_radial/L4_h0.500_dt0.0040_R220_eps0.010_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 40000,
+        "time": 160,
+        "source_time": 1200.0,
+        "result": "L4_h0.500_dt0.0040_R220_eps0.010_T160.json",
+        "restart_file": "L4_h0.500_dt0.0040_R220_eps0.010_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/L4_h0.500_dt0.0040_R220_eps0.020_T160_estado.npz",
+      "bytes": 613981,
+      "snapshot_sha256": "90c1f5b7c09efec492acc2d8b95d74634c377d710451ee8e5d14280f37af3a3f",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U117"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1034"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 40000,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.004,
+          "radius": 220,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.582120812483936,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 4.261970704838404,
+          "seed_charge_change": 4.342825120849739,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": "validacion/P06/no_radial/L4_h0.500_dt0.0040_R220_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 40000,
+        "time": 160,
+        "source_time": 1200.0,
+        "result": "L4_h0.500_dt0.0040_R220_eps0.020_T160.json",
+        "restart_file": "L4_h0.500_dt0.0040_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/L6_h0.500_dt0.0040_R220_eps0.020_T160_estado.npz",
+      "bytes": 1116728,
+      "snapshot_sha256": "efb1465ec2eecd69b28d79a5fd6ed32c777dd6f2760b30dd01e5235ba8960909",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            49
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            49
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            49
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            49
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            12
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U117"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1035"
+        },
+        "labels": {
+          "shape": [
+            49,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 40000,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.004,
+          "radius": 220,
+          "L": 6,
+          "eps": 0.02,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.5821208124848454,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 4.261970704837495,
+          "seed_charge_change": 4.342825120849739,
+          "core_energy_regridding_relative": 0.0006957924075023936,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": "validacion/P06/no_radial/L6_h0.500_dt0.0040_R220_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 40000,
+        "time": 160,
+        "source_time": 1200.0,
+        "result": "L6_h0.500_dt0.0040_R220_eps0.020_T160.json",
+        "restart_file": "L6_h0.500_dt0.0040_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/dop853e8_L4_h0.500_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "bytes": 614690,
+      "snapshot_sha256": "84b37218029d71445d16e240306c9d84cd4c82b18d857062ecf2702f933d7efa",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "time",
+        "elapsed",
+        "accepted_steps",
+        "nfev",
+        "maxe",
+        "maxq",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "time": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "accepted_steps": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "nfev": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "maxe": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "maxq": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U208"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1034"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "time": 160.0,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.02,
+          "radius": 220.0,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160.0,
+          "source_time": 1200.0,
+          "core_radius": 40.0,
+          "scheme": "dop853e8",
+          "adaptive": true,
+          "rtol": 1e-08,
+          "atol": 1e-10,
+          "max_step": 0.02
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.582120812483936,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 4.261970704838404,
+          "seed_charge_change": 4.342825120849739,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": "validacion/P06/no_radial/dop853e8_L4_h0.500_dt0.0200_R220_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "time": 160.0,
+        "source_time": 1200.0,
+        "result": "dop853e8_L4_h0.500_dt0.0200_R220_eps0.020_T160.json",
+        "restart_file": "dop853e8_L4_h0.500_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "bytes": 2360730,
+      "snapshot_sha256": "2985ca268585e978bea8b4fc26b8cf015b2441f40c3ac0bb57544eed0569296b",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "time",
+        "elapsed",
+        "accepted_steps",
+        "nfev",
+        "maxe",
+        "maxq",
+        "config",
+        "transfer",
+        "labels",
+        "implementations"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            1760,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            1760,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            1760,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            1760,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "time": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "accepted_steps": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "nfev": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "maxe": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "maxq": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U210"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1037"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        },
+        "implementations": {
+          "shape": [],
+          "dtype": "<U228"
+        }
+      },
+      "metadata": {
+        "time": 160.0,
+        "config": {
+          "dx": 0.125,
+          "dt": 0.02,
+          "radius": 220.0,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160.0,
+          "source_time": 1200.0,
+          "core_radius": 40.0,
+          "scheme": "dop853e9",
+          "adaptive": true,
+          "rtol": 1e-09,
+          "atol": 1e-11,
+          "max_step": 0.02
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 7.993337884189714,
+          "regridding_charge_change": 0.04750722228709492,
+          "seed_energy_change": 4.26412821788972,
+          "seed_charge_change": 4.341869318507179,
+          "core_energy_regridding_relative": 1.6298063657771422e-05,
+          "core_charge_regridding_relative": 1.9196770923102235e-05,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        },
+        "implementations": [
+          {
+            "time": 0.0,
+            "method": "numpy"
+          },
+          {
+            "time": 48.0,
+            "method": "numpy_projection_fused_C_potential",
+            "source_sha256": "74dd2159ac951e701b3acce7f8365847874521769479c08dd8e4634c7e2e9de9",
+            "fast_math": false,
+            "action_changed": false
+          }
+        ]
+      },
+      "companion_result": "validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "time": 160.0,
+        "source_time": 1200.0,
+        "result": "dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160.json",
+        "restart_file": "dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "bytes": 1197756,
+      "snapshot_sha256": "7a2911b0ffa3512ac50857ff85628115518d9952cfe5702614a0fc50c9d7ed13",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "time",
+        "elapsed",
+        "accepted_steps",
+        "nfev",
+        "maxe",
+        "maxq",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            880,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            880,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            880,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            880,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "time": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "accepted_steps": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "nfev": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "maxe": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "maxq": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U209"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1038"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "time": 160.0,
+        "config": {
+          "dx": 0.25,
+          "dt": 0.02,
+          "radius": 220.0,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160.0,
+          "source_time": 1200.0,
+          "core_radius": 40.0,
+          "scheme": "dop853e9",
+          "adaptive": true,
+          "rtol": 1e-09,
+          "atol": 1e-11,
+          "max_step": 0.02
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 4.330332855942288,
+          "regridding_charge_change": 0.4434270575516166,
+          "seed_energy_change": 4.263690922879505,
+          "seed_charge_change": 4.3420605126220835,
+          "core_energy_regridding_relative": 0.00015214126443585663,
+          "core_charge_regridding_relative": 0.00017918045455656006,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": "validacion/P06/no_radial/dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "time": 160.0,
+        "source_time": 1200.0,
+        "result": "dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160.json",
+        "restart_file": "dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/dop853e9_L4_h0.500_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "bytes": 614475,
+      "snapshot_sha256": "b904f416ac7857bb90e0e66b308e4297d3f74ff8c0d90c1ab4bc0cf500603a72",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "time",
+        "elapsed",
+        "accepted_steps",
+        "nfev",
+        "maxe",
+        "maxq",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "time": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "accepted_steps": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "nfev": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "maxe": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "maxq": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U208"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1034"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "time": 160.0,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.02,
+          "radius": 220.0,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160.0,
+          "source_time": 1200.0,
+          "core_radius": 40.0,
+          "scheme": "dop853e9",
+          "adaptive": true,
+          "rtol": 1e-09,
+          "atol": 1e-11,
+          "max_step": 0.02
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.582120812483936,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 4.261970704838404,
+          "seed_charge_change": 4.342825120849739,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": "validacion/P06/no_radial/dop853e9_L4_h0.500_dt0.0200_R220_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "time": 160.0,
+        "source_time": 1200.0,
+        "result": "dop853e9_L4_h0.500_dt0.0200_R220_eps0.020_T160.json",
+        "restart_file": "dop853e9_L4_h0.500_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/split4_L4_h0.500_dt0.0020_R220_eps0.020_T160_estado.npz",
+      "bytes": 588356,
+      "snapshot_sha256": "612463b824b4bd376759ac084bfd22c10d84993e7c204f52e922937c843fe8b7",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            21,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U137"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1034"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 4000,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.002,
+          "radius": 220,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0,
+          "scheme": "split4"
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.582120812483936,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 4.261970704838404,
+          "seed_charge_change": 4.342825120849739,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": null,
+      "progress": {
+        "status": "PARCIAL",
+        "step": 4000,
+        "total_steps": 80000,
+        "source_time": 1200.0,
+        "elapsed_physical_time": 8.0,
+        "restart_file": "split4_L4_h0.500_dt0.0020_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false,
+        "resume_policy": "No prolongar automáticamente este esquema: piloto grueso falla balance; conservar estados y ensayar descomposición centrada."
+      },
+      "role": "PILOTO_O_ESTADO_PARCIAL_ARCHIVADO",
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/split4_L4_h0.500_dt0.0040_R220_eps0.020_T160_estado.npz",
+      "bytes": 588066,
+      "snapshot_sha256": "d8e5048ea8203662d4d9acb99d3c02f818dc1d8ede049aaf88abbde12faaee4e",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            21,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U137"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1034"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 2000,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.004,
+          "radius": 220,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0,
+          "scheme": "split4"
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.582120812483936,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 4.261970704838404,
+          "seed_charge_change": 4.342825120849739,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": null,
+      "progress": {
+        "status": "PARCIAL",
+        "step": 2000,
+        "total_steps": 40000,
+        "source_time": 1200.0,
+        "elapsed_physical_time": 8.0,
+        "restart_file": "split4_L4_h0.500_dt0.0040_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false,
+        "resume_policy": "No prolongar automáticamente este esquema: piloto grueso falla balance; conservar estados y ensayar descomposición centrada."
+      },
+      "role": "PILOTO_O_ESTADO_PARCIAL_ARCHIVADO",
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/split4b_L4_h0.500_dt0.0020_R220_eps0.020_T160_estado.npz",
+      "bytes": 588267,
+      "snapshot_sha256": "116f96d3d6837abb20580c183e03568b604cf3ad685ce816b72bd3908bd5f18b",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            21,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U185"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1034"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 4000,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.002,
+          "radius": 220,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0,
+          "numerical_phase_reference": 0.90132601261449,
+          "scheme": "split4b"
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.582120812483936,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 4.261970704838404,
+          "seed_charge_change": 4.342825120849739,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": null,
+      "progress": {
+        "status": "EN_PROGRESO",
+        "step": 4000,
+        "total_steps": 80000,
+        "source_time": 1200.0,
+        "elapsed_physical_time": 8.0,
+        "restart_file": "split4b_L4_h0.500_dt0.0020_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "PILOTO_O_ESTADO_PARCIAL_ARCHIVADO",
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/split4b_L4_h0.500_dt0.0040_R220_eps0.020_T160_estado.npz",
+      "bytes": 588134,
+      "snapshot_sha256": "50a6a1ba0cc918bc623c482d49a809a2210a7486d5f0b9b8cd437a885cc674c0",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            21,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U185"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1034"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 2000,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.004,
+          "radius": 220,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0,
+          "numerical_phase_reference": 0.90132601261449,
+          "scheme": "split4b"
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.582120812483936,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 4.261970704838404,
+          "seed_charge_change": 4.342825120849739,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": null,
+      "progress": {
+        "status": "EN_PROGRESO",
+        "step": 2000,
+        "total_steps": 40000,
+        "source_time": 1200.0,
+        "elapsed_physical_time": 8.0,
+        "restart_file": "split4b_L4_h0.500_dt0.0040_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "PILOTO_O_ESTADO_PARCIAL_ARCHIVADO",
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/split4c_L4_h0.250_dt0.0040_R220_eps0.020_T160_estado.npz",
+      "bytes": 1187103,
+      "snapshot_sha256": "1cf5a2839d40afb2f71e5a529e10bf27df10c41c1563fec9959b85684eb04c32",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            880,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            880,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            880,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            880,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            281,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U139"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1038"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 28000,
+        "config": {
+          "dx": 0.25,
+          "dt": 0.004,
+          "radius": 220,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0,
+          "scheme": "split4c"
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 4.330332855942288,
+          "regridding_charge_change": 0.4434270575516166,
+          "seed_energy_change": 4.263690922879505,
+          "seed_charge_change": 4.3420605126220835,
+          "core_energy_regridding_relative": 0.00015214126443585663,
+          "core_charge_regridding_relative": 0.00017918045455656006,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": null,
+      "progress": {
+        "status": "PARCIAL",
+        "step": 28000,
+        "total_steps": 40000,
+        "source_time": 1200.0,
+        "elapsed_physical_time": 112.0,
+        "restart_file": "split4c_L4_h0.250_dt0.0040_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false,
+        "resume_policy": "No reanudar automáticamente: deriva energética supera 2e-4. Conservar resultado como fallo numérico; no evidencia de inestabilidad física."
+      },
+      "role": "PILOTO_O_ESTADO_PARCIAL_ARCHIVADO",
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/split4c_L4_h0.500_dt0.0020_R220_eps0.020_T160_estado.npz",
+      "bytes": 614737,
+      "snapshot_sha256": "cd707b235dbd066c8b1f41b10f06b5fc8026c65f002d89ee76313a9599832c5c",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U138"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1034"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 80000,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.002,
+          "radius": 220,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0,
+          "scheme": "split4c"
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.582120812483936,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 4.261970704838404,
+          "seed_charge_change": 4.342825120849739,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": "validacion/P06/no_radial/split4c_L4_h0.500_dt0.0020_R220_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 80000,
+        "time": 160,
+        "source_time": 1200.0,
+        "result": "split4c_L4_h0.500_dt0.0020_R220_eps0.020_T160.json",
+        "restart_file": "split4c_L4_h0.500_dt0.0020_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 160.0,
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/no_radial/split4c_L4_h0.500_dt0.0040_R220_eps0.020_T160_estado.npz",
+      "bytes": 614722,
+      "snapshot_sha256": "d70877da517d865e590150b11a387e05fe785e8fa4b25cc735eaaa063c61dc72",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "q",
+        "v",
+        "initial_q",
+        "initial_v",
+        "rows",
+        "step",
+        "elapsed",
+        "config",
+        "transfer",
+        "labels"
+      ],
+      "arrays": {
+        "q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_q": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial_v": {
+          "shape": [
+            3,
+            440,
+            25
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            401,
+            10
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U138"
+        },
+        "transfer": {
+          "shape": [],
+          "dtype": "<U1034"
+        },
+        "labels": {
+          "shape": [
+            25,
+            3
+          ],
+          "dtype": "<U1"
+        }
+      },
+      "metadata": {
+        "step": 40000,
+        "config": {
+          "dx": 0.5,
+          "dt": 0.004,
+          "radius": 220,
+          "L": 4,
+          "eps": 0.02,
+          "tmax": 160,
+          "source_time": 1200.0,
+          "core_radius": 40.0,
+          "scheme": "split4c"
+        },
+        "transfer": {
+          "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+          "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+          "source_time": 1200.0,
+          "source_full_energy": 2566.9470436465344,
+          "source_full_charge": 2745.7739206676465,
+          "source_energy_inside_new_radius": 2386.5221771840497,
+          "source_charge_inside_new_radius": 2578.2976616782553,
+          "omitted_exterior_energy": 180.42486646248472,
+          "omitted_exterior_charge": 167.47625898939123,
+          "regridding_and_new_boundary_energy_change": 3.582120812483936,
+          "regridding_charge_change": 2.027110458068364,
+          "seed_energy_change": 4.261970704838404,
+          "seed_charge_change": 4.342825120849739,
+          "core_energy_regridding_relative": 0.0006957924075019495,
+          "core_charge_regridding_relative": 0.0008191171182529988,
+          "causal_margin": 180.0,
+          "full_original_domain_evolved": false,
+          "discarded_exterior_state_preserved": true,
+          "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+          "primary_source_derived": false
+        }
+      },
+      "companion_result": "validacion/P06/no_radial/split4c_L4_h0.500_dt0.0040_R220_eps0.020_T160.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO_PUERTA_FALLIDA",
+        "step": 40000,
+        "time": 160,
+        "source_time": 1200.0,
+        "result": "split4c_L4_h0.500_dt0.0040_R220_eps0.020_T160.json",
+        "restart_file": "split4c_L4_h0.500_dt0.0040_R220_eps0.020_T160_estado.npz",
+        "stage_complete": false,
+        "resume_policy": "No reanudar automáticamente: deriva energética supera 2e-4. Conservar resultado como fallo numérico; no evidencia de inestabilidad física."
+      },
+      "role": "PILOTO_O_ESTADO_PARCIAL_ARCHIVADO",
+      "recorded_source_hash_verified": true,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+      "bytes": 999308,
+      "snapshot_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "phi",
+        "vel",
+        "chi",
+        "vchi",
+        "initial",
+        "rows",
+        "late",
+        "step",
+        "elapsed",
+        "config"
+      ],
+      "arrays": {
+        "phi": {
+          "shape": [
+            13000
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "vel": {
+          "shape": [
+            13000
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "chi": {
+          "shape": [
+            13000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "vchi": {
+          "shape": [
+            13000
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial": {
+          "shape": [
+            13000,
+            7
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            1081,
+            6
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "late": {
+          "shape": [
+            121,
+            300
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U103"
+        }
+      },
+      "metadata": {
+        "step": 600000,
+        "config": {
+          "width": 7.2,
+          "dx": 0.1,
+          "dt": 0.002,
+          "radius": 1300.0,
+          "tmax": 1200.0,
+          "n": 13000,
+          "core_radius": 40
+        }
+      },
+      "companion_result": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 600000,
+        "time": 1200.0,
+        "result": "w7.20_h0.100_dt0.0020_R1300_T1200.json",
+        "restart_file": "w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 1200.0,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R260_T240_estado.npz",
+      "bytes": 478923,
+      "snapshot_sha256": "46361b7f2acda572bea47ca1b0b51f82c7dcf3c9fcca456cfe6d78621cee5571",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "phi",
+        "vel",
+        "chi",
+        "vchi",
+        "initial",
+        "rows",
+        "late",
+        "step",
+        "elapsed",
+        "config"
+      ],
+      "arrays": {
+        "phi": {
+          "shape": [
+            2600
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "vel": {
+          "shape": [
+            2600
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "chi": {
+          "shape": [
+            2600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "vchi": {
+          "shape": [
+            2600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial": {
+          "shape": [
+            2600,
+            7
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            601,
+            6
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "late": {
+          "shape": [
+            121,
+            300
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U100"
+        }
+      },
+      "metadata": {
+        "step": 120000,
+        "config": {
+          "width": 7.2,
+          "dx": 0.1,
+          "dt": 0.002,
+          "radius": 260.0,
+          "tmax": 240.0,
+          "n": 2600,
+          "core_radius": 40
+        }
+      },
+      "companion_result": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R260_T240.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 120000,
+        "time": 240.0,
+        "result": "w7.20_h0.100_dt0.0020_R260_T240.json",
+        "restart_file": "w7.20_h0.100_dt0.0020_R260_T240_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 240.0,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/preparacion/w7.20_h0.200_dt0.0040_R1300_T1200_estado.npz",
+      "bytes": 508922,
+      "snapshot_sha256": "bd3b79b3e5041ca79863735c7f47fdca798b55908845d81d498ae3ae3ff90e9f",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "phi",
+        "vel",
+        "chi",
+        "vchi",
+        "initial",
+        "rows",
+        "late",
+        "step",
+        "elapsed",
+        "config"
+      ],
+      "arrays": {
+        "phi": {
+          "shape": [
+            6500
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "vel": {
+          "shape": [
+            6500
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "chi": {
+          "shape": [
+            6500
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "vchi": {
+          "shape": [
+            6500
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial": {
+          "shape": [
+            6500,
+            7
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            601,
+            6
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "late": {
+          "shape": [
+            121,
+            150
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U102"
+        }
+      },
+      "metadata": {
+        "step": 300000,
+        "config": {
+          "width": 7.2,
+          "dx": 0.2,
+          "dt": 0.004,
+          "radius": 1300.0,
+          "tmax": 1200.0,
+          "n": 6500,
+          "core_radius": 40
+        }
+      },
+      "companion_result": "validacion/P06/preparacion/w7.20_h0.200_dt0.0040_R1300_T1200.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 300000,
+        "time": 1200.0,
+        "result": "w7.20_h0.200_dt0.0040_R1300_T1200.json",
+        "restart_file": "w7.20_h0.200_dt0.0040_R1300_T1200_estado.npz",
+        "stage_complete": false,
+        "existing_result_verified_without_evolution": true
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 1200.0,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/preparacion/w7.20_h0.200_dt0.0040_R260_T240_estado.npz",
+      "bytes": 250888,
+      "snapshot_sha256": "a2d1bab6d13fe82b279d4bda2e6a4b33e3c79e919707815324df13c1a08659eb",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "phi",
+        "vel",
+        "chi",
+        "vchi",
+        "initial",
+        "rows",
+        "late",
+        "step",
+        "elapsed",
+        "config"
+      ],
+      "arrays": {
+        "phi": {
+          "shape": [
+            1300
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "vel": {
+          "shape": [
+            1300
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "chi": {
+          "shape": [
+            1300
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "vchi": {
+          "shape": [
+            1300
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial": {
+          "shape": [
+            1300,
+            7
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            601,
+            6
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "late": {
+          "shape": [
+            121,
+            150
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U100"
+        }
+      },
+      "metadata": {
+        "step": 60000,
+        "config": {
+          "width": 7.2,
+          "dx": 0.2,
+          "dt": 0.004,
+          "radius": 260.0,
+          "tmax": 240.0,
+          "n": 1300,
+          "core_radius": 40
+        }
+      },
+      "companion_result": "validacion/P06/preparacion/w7.20_h0.200_dt0.0040_R260_T240.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 60000,
+        "time": 240.0,
+        "result": "w7.20_h0.200_dt0.0040_R260_T240.json",
+        "restart_file": "w7.20_h0.200_dt0.0040_R260_T240_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 240.0,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/preparacion/w8.00_h0.100_dt0.0020_R260_T240_estado.npz",
+      "bytes": 480753,
+      "snapshot_sha256": "981ca8dd7ae01ac284e0d63917d819bd11e94c6edf1c245b4c25251769b82f30",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "phi",
+        "vel",
+        "chi",
+        "vchi",
+        "initial",
+        "rows",
+        "late",
+        "step",
+        "elapsed",
+        "config"
+      ],
+      "arrays": {
+        "phi": {
+          "shape": [
+            2600
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "vel": {
+          "shape": [
+            2600
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "chi": {
+          "shape": [
+            2600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "vchi": {
+          "shape": [
+            2600
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial": {
+          "shape": [
+            2600,
+            7
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            601,
+            6
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "late": {
+          "shape": [
+            121,
+            300
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U100"
+        }
+      },
+      "metadata": {
+        "step": 120000,
+        "config": {
+          "width": 8.0,
+          "dx": 0.1,
+          "dt": 0.002,
+          "radius": 260.0,
+          "tmax": 240.0,
+          "n": 2600,
+          "core_radius": 40
+        }
+      },
+      "companion_result": "validacion/P06/preparacion/w8.00_h0.100_dt0.0020_R260_T240.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 120000,
+        "time": 240.0,
+        "result": "w8.00_h0.100_dt0.0020_R260_T240.json",
+        "restart_file": "w8.00_h0.100_dt0.0020_R260_T240_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 240.0,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/preparacion/w8.00_h0.200_dt0.0020_R260_T240_estado.npz",
+      "bytes": 251654,
+      "snapshot_sha256": "3578a71653b86e212e135d54b09f8fd5b37dc79e7c66fda3e056adbba208a788",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "phi",
+        "vel",
+        "chi",
+        "vchi",
+        "initial",
+        "rows",
+        "late",
+        "step",
+        "elapsed",
+        "config"
+      ],
+      "arrays": {
+        "phi": {
+          "shape": [
+            1300
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "vel": {
+          "shape": [
+            1300
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "chi": {
+          "shape": [
+            1300
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "vchi": {
+          "shape": [
+            1300
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial": {
+          "shape": [
+            1300,
+            7
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            601,
+            6
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "late": {
+          "shape": [
+            121,
+            150
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U100"
+        }
+      },
+      "metadata": {
+        "step": 120000,
+        "config": {
+          "width": 8.0,
+          "dx": 0.2,
+          "dt": 0.002,
+          "radius": 260.0,
+          "tmax": 240.0,
+          "n": 1300,
+          "core_radius": 40
+        }
+      },
+      "companion_result": "validacion/P06/preparacion/w8.00_h0.200_dt0.0020_R260_T240.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 120000,
+        "time": 240.0,
+        "result": "w8.00_h0.200_dt0.0020_R260_T240.json",
+        "restart_file": "w8.00_h0.200_dt0.0020_R260_T240_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 240.0,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/preparacion/w8.00_h0.200_dt0.0040_R260_T240_estado.npz",
+      "bytes": 251726,
+      "snapshot_sha256": "e70563102d8fc8df79b6fb14cbd0f20786892f054c987b6d95e2f09831df6c62",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "phi",
+        "vel",
+        "chi",
+        "vchi",
+        "initial",
+        "rows",
+        "late",
+        "step",
+        "elapsed",
+        "config"
+      ],
+      "arrays": {
+        "phi": {
+          "shape": [
+            1300
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "vel": {
+          "shape": [
+            1300
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "chi": {
+          "shape": [
+            1300
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "vchi": {
+          "shape": [
+            1300
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial": {
+          "shape": [
+            1300,
+            7
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            601,
+            6
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "late": {
+          "shape": [
+            121,
+            150
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U100"
+        }
+      },
+      "metadata": {
+        "step": 60000,
+        "config": {
+          "width": 8.0,
+          "dx": 0.2,
+          "dt": 0.004,
+          "radius": 260.0,
+          "tmax": 240.0,
+          "n": 1300,
+          "core_radius": 40
+        }
+      },
+      "companion_result": "validacion/P06/preparacion/w8.00_h0.200_dt0.0040_R260_T240.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 60000,
+        "time": 240.0,
+        "result": "w8.00_h0.200_dt0.0040_R260_T240.json",
+        "restart_file": "w8.00_h0.200_dt0.0040_R260_T240_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 240.0,
+      "readable": true
+    },
+    {
+      "path": "validacion/P06/preparacion/w8.80_h0.200_dt0.0040_R260_T240_estado.npz",
+      "bytes": 252929,
+      "snapshot_sha256": "cb6c2dbfa3246bdbc262eef2d86133082c4d77ac45f0d2af75f53e6aa90e2dda",
+      "runtime_code_theta_hashes_not_uniformly_recorded": true,
+      "keys": [
+        "phi",
+        "vel",
+        "chi",
+        "vchi",
+        "initial",
+        "rows",
+        "late",
+        "step",
+        "elapsed",
+        "config"
+      ],
+      "arrays": {
+        "phi": {
+          "shape": [
+            1300
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "vel": {
+          "shape": [
+            1300
+          ],
+          "dtype": "complex128",
+          "finite": true
+        },
+        "chi": {
+          "shape": [
+            1300
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "vchi": {
+          "shape": [
+            1300
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "initial": {
+          "shape": [
+            1300,
+            7
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "rows": {
+          "shape": [
+            601,
+            6
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "late": {
+          "shape": [
+            121,
+            150
+          ],
+          "dtype": "float64",
+          "finite": true
+        },
+        "step": {
+          "shape": [],
+          "dtype": "int64",
+          "finite": true
+        },
+        "elapsed": {
+          "shape": [],
+          "dtype": "float64",
+          "finite": true
+        },
+        "config": {
+          "shape": [],
+          "dtype": "<U100"
+        }
+      },
+      "metadata": {
+        "step": 60000,
+        "config": {
+          "width": 8.8,
+          "dx": 0.2,
+          "dt": 0.004,
+          "radius": 260.0,
+          "tmax": 240.0,
+          "n": 1300,
+          "core_radius": 40
+        }
+      },
+      "companion_result": "validacion/P06/preparacion/w8.80_h0.200_dt0.0040_R260_T240.json",
+      "result_passed_if_recorded": null,
+      "progress": {
+        "status": "CALCULO_TERMINADO",
+        "step": 60000,
+        "time": 240.0,
+        "result": "w8.80_h0.200_dt0.0040_R260_T240.json",
+        "restart_file": "w8.80_h0.200_dt0.0040_R260_T240_estado.npz",
+        "stage_complete": false
+      },
+      "role": "CALCULO_TERMINADO_NO_REPETIR",
+      "saved_time": 240.0,
+      "readable": true
+    }
+  ],
+  "scope": "Integridad documental, metadatos y diagnóstico de estados incluidos; no certificación científica."
+}

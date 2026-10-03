@@ -1,0 +1,48 @@
+REANUDADO dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160 tau 120.0
+EVOLUCION dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160 tau 128.0 pasos 17737 E 4.347268545146221e-09 Q 1.0436096431476471e-14 s 820.2
+EVOLUCION dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160 tau 136.0 pasos 18849 E 4.531545028108042e-09 Q 1.0880185641326534e-14 s 866.8
+EVOLUCION dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160 tau 144.0 pasos 19963 E 4.713376688947335e-09 Q 1.0880185641326534e-14 s 912.7
+EVOLUCION dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160 tau 152.0 pasos 21079 E 4.892120708532843e-09 Q 1.0880185641326534e-14 s 958.0
+EVOLUCION dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160 tau 160.0 pasos 22193 E 5.07376363145795e-09 Q 1.1213252548714081e-14 s 1004.8
+{
+  "configuration": {
+    "dx": 0.25,
+    "dt": 0.02,
+    "radius": 220.0,
+    "L": 4,
+    "eps": 0.02,
+    "tmax": 160.0,
+    "source_time": 1200.0,
+    "core_radius": 40.0,
+    "scheme": "dop853e9",
+    "adaptive": true,
+    "rtol": 1e-09,
+    "atol": 1e-11,
+    "max_step": 0.02
+  },
+  "initial_energy": 2395.1162009628715,
+  "initial_charge": 2583.083149248429,
+  "final_core_energy": 2285.918354831644,
+  "final_core_charge": 2479.157000106805,
+  "relative_energy_drift": 5.07376363145795e-09,
+  "relative_charge_drift": 1.1213252548714081e-14,
+  "relative_core_charge_change": 0.00010251030307550923,
+  "initial_nonradial_norm": 0.04190379102641412,
+  "max_nonradial_norm": 0.04190379102641412,
+  "max_amplification": 1.0,
+  "mode_maxima": {
+    "1": 1.244453559510815e-14,
+    "2": 0.04190379102641412,
+    "3": 3.5184536877153183e-15,
+    "4": 0.0011694000794468227
+  },
+  "elapsed_seconds": 1004.80204108,
+  "accepted_steps": 22193,
+  "nfev": 268312,
+  "balance_passed": true,
+  "bounded_window_passed": true,
+  "stage_complete": false,
+  "orbital_stability_proven": false,
+  "full_angular_continuum": false,
+  "interpretation": "Adaptive full-force refinement of finite nonradial continuation; no action change"
+}

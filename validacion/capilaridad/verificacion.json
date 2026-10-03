@@ -1,0 +1,268 @@
+{
+  "schema_version": "4.1.0",
+  "count": 52,
+  "passed": true,
+  "scope": "Verificacion numerica interna, bajo hipotesis M2; no validacion experimental ni certificacion por intervalos.",
+  "checks": [
+    {
+      "check": "Theta comun trazable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Sin parametros fundamentales o capilares ajustados",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Coexistencia: presion nula",
+      "passed": true,
+      "detail": "4.21884749e-15 < 1e-12"
+    },
+    {
+      "check": "Coexistencia: estacionariedad",
+      "passed": true,
+      "detail": "0 < 1e-12"
+    },
+    {
+      "check": "Rama homogenea compresible estable y subluminal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Factorizacion no negativa del potencial",
+      "passed": true,
+      "detail": "1.09884432e-14 < 1e-12"
+    },
+    {
+      "check": "Pared: refinamiento a dominio fijo",
+      "passed": true,
+      "detail": "5.72208947e-13 < 1e-08"
+    },
+    {
+      "check": "Pared: ampliacion de dominio",
+      "passed": true,
+      "detail": "2.90145685e-12 < 1e-08"
+    },
+    {
+      "check": "Pared: frecuencia auxiliar converge a coexistencia",
+      "passed": true,
+      "detail": "6.77236045e-15 < 1e-10"
+    },
+    {
+      "check": "Pared: primera integral",
+      "passed": true,
+      "detail": "1.07032438e-13 < 1e-08"
+    },
+    {
+      "check": "Pared: dos definiciones de tension",
+      "passed": true,
+      "detail": "3.44835271e-13 < 1e-08"
+    },
+    {
+      "check": "Pared: compatible con cotas variacionales",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV pared: energia superficial independiente",
+      "passed": true,
+      "detail": "3.7081449e-14 < 1e-08"
+    },
+    {
+      "check": "CSV pared: normal menos tangencial",
+      "passed": true,
+      "detail": "3.47499807e-13 < 1e-08"
+    },
+    {
+      "check": "Diez estados no triviales en dos geometrías",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Virial: todas las escalas",
+      "passed": true,
+      "detail": "1.91495857e-11 < 1e-07"
+    },
+    {
+      "check": "Norma: todas las escalas",
+      "passed": true,
+      "detail": "4.10227408e-12 < 1e-07"
+    },
+    {
+      "check": "Balance exacto de tensiones: todas las escalas",
+      "passed": true,
+      "detail": "7.57635204e-10 < 1e-06"
+    },
+    {
+      "check": "CSV: carga integrada independientemente",
+      "passed": true,
+      "detail": "4.52970994e-14 < 1e-07"
+    },
+    {
+      "check": "CSV: energia integrada independientemente",
+      "passed": true,
+      "detail": "6.50590692e-14 < 1e-07"
+    },
+    {
+      "check": "d=2: mejora de limite de Laplace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "d=2: mejora del exceso de energia",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "d=2: Laplace a RN128",
+      "passed": true,
+      "detail": "8.4264003e-05 < 0.01"
+    },
+    {
+      "check": "d=2: energia a RN128",
+      "passed": true,
+      "detail": "0.00642999046 < 0.015"
+    },
+    {
+      "check": "d=3: mejora de limite de Laplace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "d=3: mejora del exceso de energia",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "d=3: Laplace a RN128",
+      "passed": true,
+      "detail": "0.00784260442 < 0.01"
+    },
+    {
+      "check": "d=3: energia a RN128",
+      "passed": true,
+      "detail": "0.0119857933 < 0.015"
+    },
+    {
+      "check": "Primera ley dE/dQ=omega",
+      "passed": true,
+      "detail": "9.91976501e-11 < 1e-07"
+    },
+    {
+      "check": "Susceptibilidad de rama: dQ/domega negativo",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Tubo: cL^2 negativo sin contradiccion con cs^2 positivo",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Tubo: cL^2 y limite capilar RN64",
+      "passed": true,
+      "detail": "0.00684437883 < 0.01"
+    },
+    {
+      "check": "Cinco pasos para cada geometria y escala modal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Generador: residuos algebraicos",
+      "passed": true,
+      "detail": "1.90850159e-11 < 1e-07"
+    },
+    {
+      "check": "Richardson: dos extrapolaciones",
+      "passed": true,
+      "detail": "4.32777366e-06 < 0.0002"
+    },
+    {
+      "check": "d=2: error capilar decreciente con radio",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "d=2: prediccion modal a RN128",
+      "passed": true,
+      "detail": "0.00677844387 < 0.01"
+    },
+    {
+      "check": "d=2: dominio energia",
+      "passed": true,
+      "detail": "1.68687286e-12 < 1e-08"
+    },
+    {
+      "check": "d=2: dominio espectro sin correccion de h",
+      "passed": true,
+      "detail": "1.51754741e-07 < 1e-05"
+    },
+    {
+      "check": "d=3: error capilar decreciente con radio",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "d=3: prediccion modal a RN128",
+      "passed": true,
+      "detail": "0.00154015184 < 0.01"
+    },
+    {
+      "check": "d=3: dominio energia",
+      "passed": true,
+      "detail": "1.57673874e-12 < 1e-08"
+    },
+    {
+      "check": "d=3: dominio espectro sin correccion de h",
+      "passed": true,
+      "detail": "1.65144244e-08 < 1e-05"
+    },
+    {
+      "check": "Tubo: crecimiento persiste en todas las mallas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Tubo: shift-invert empieza bajo cota puntual del Hessiano",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Tubo: kcrit R tiende a uno",
+      "passed": true,
+      "detail": "0.00758062938 < 0.01"
+    },
+    {
+      "check": "Esfera: modo seleccionado oscilatorio, no crecimiento apreciable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Malla gruesa conserva contraejemplo a usar solo residuo algebraico",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Corriente: dispersion transformada",
+      "passed": true,
+      "detail": "1.27992095e-23 < 1e-15"
+    },
+    {
+      "check": "Corriente: rama creciente para velocidades muestreadas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Sin certificacion, preparacion ni dispositivo indebidamente declarados",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "P04 conserva resultado negativo",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

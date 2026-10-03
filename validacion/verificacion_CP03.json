@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0.0",
+  "checks": {
+    "saved_results_and_failures_unchanged": true,
+    "requirements_22_exact_for_every_candidate": true,
+    "sensitivity_10_points_recovered": true,
+    "capillary_18_points_refined": true,
+    "branch_23_profiles_consistent": true,
+    "first_law": true,
+    "domain_refinements": true,
+    "unstable_control_preserved": true,
+    "long_wave_crosscheck": true,
+    "no_complete_device_or_continuum_claim": true
+  },
+  "passed": true,
+  "recomputed_profiles": [
+    {
+      "omega": 0.885,
+      "E": 12139.763231275365,
+      "Q": 13549.565686535903,
+      "E_relative": 8.881784197001252e-16,
+      "Q_relative": 4.884981308350689e-15,
+      "virial_relative": 1.265511829136204e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.89,
+      "E": 6433.503898364943,
+      "Q": 7117.338407603869,
+      "E_relative": 2.4424906541753444e-15,
+      "Q_relative": 8.659739592076221e-15,
+      "virial_relative": 1.4265317148693045e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.895,
+      "E": 3862.1751158671186,
+      "Q": 4235.341787101795,
+      "E_relative": 3.3306690738754696e-15,
+      "Q_relative": 4.3298697960381105e-15,
+      "virial_relative": 1.571766275666456e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.9,
+      "E": 2525.6589098691784,
+      "Q": 2745.773920625134,
+      "E_relative": 5.773159728050814e-15,
+      "Q_relative": 1.176836406102666e-14,
+      "virial_relative": 1.6805114078422313e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.905,
+      "E": 1758.0098819909445,
+      "Q": 1894.9908869060314,
+      "E_relative": 3.1530333899354446e-14,
+      "Q_relative": 2.19824158875781e-14,
+      "virial_relative": 1.7941790324837453e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.91,
+      "E": 1283.3427756837636,
+      "Q": 1371.8330266803025,
+      "E_relative": 1.3433698597964394e-14,
+      "Q_relative": 1.709743457922741e-14,
+      "virial_relative": 1.9031701009112314e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.915,
+      "E": 972.7340075844309,
+      "Q": 1031.3771437969908,
+      "E_relative": 2.5757174171303632e-14,
+      "Q_relative": 1.9317880628477724e-14,
+      "virial_relative": 1.915681006311094e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.92,
+      "E": 760.183391661895,
+      "Q": 799.6760480353021,
+      "E_relative": 1.7319479184152442e-14,
+      "Q_relative": 7.771561172376096e-15,
+      "virial_relative": 1.934696289306109e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.925,
+      "E": 609.3971040992444,
+      "Q": 636.1975722749356,
+      "E_relative": 1.787459069646502e-14,
+      "Q_relative": 5.88418203051333e-15,
+      "virial_relative": 1.9112571083713538e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.93,
+      "E": 499.2334066226074,
+      "Q": 517.4063926711725,
+      "E_relative": 4.440892098500626e-16,
+      "Q_relative": 6.217248937900877e-15,
+      "virial_relative": 1.903705819834537e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.935,
+      "E": 416.78122454014624,
+      "Q": 428.9746062320953,
+      "E_relative": 3.730349362740526e-14,
+      "Q_relative": 1.9984014443252818e-14,
+      "virial_relative": 1.877559081259088e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.94,
+      "E": 353.8415600189006,
+      "Q": 361.83101733544487,
+      "E_relative": 1.9539925233402755e-14,
+      "Q_relative": 8.659739592076221e-15,
+      "virial_relative": 1.7670716706674428e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.945,
+      "E": 305.037429610363,
+      "Q": 310.04366187955736,
+      "E_relative": 3.5416114485542494e-14,
+      "Q_relative": 1.6653345369377348e-14,
+      "virial_relative": 1.646043978492195e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.95,
+      "E": 266.7513839486473,
+      "Q": 269.6319030553565,
+      "E_relative": 1.2290168882600483e-13,
+      "Q_relative": 8.93729534823251e-14,
+      "virial_relative": 1.499783450382784e-12,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.955,
+      "E": 236.50658619574588,
+      "Q": 237.8755136950322,
+      "E_relative": 2.2426505097428162e-13,
+      "Q_relative": 2.0039525594484076e-13,
+      "virial_relative": 3.9728447537739793e-13,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.96,
+      "E": 212.5985911072317,
+      "Q": 212.90369251184978,
+      "E_relative": 1.1235457009206584e-13,
+      "Q_relative": 1.0524914273446484e-13,
+      "virial_relative": 3.7133289663621183e-13,
+      "binding_below_free_charge": true,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.965,
+      "E": 193.8790809506877,
+      "Q": 193.4526658712064,
+      "E_relative": 2.220446049250313e-16,
+      "Q_relative": 3.597122599785507e-14,
+      "virial_relative": 5.446921534005256e-13,
+      "binding_below_free_charge": false,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.97,
+      "E": 179.6450264700411,
+      "Q": 178.73853313132147,
+      "E_relative": 1.341149413747189e-13,
+      "Q_relative": 1.4277468096679513e-13,
+      "virial_relative": 7.576201097930493e-13,
+      "binding_below_free_charge": false,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.975,
+      "E": 169.62668405165277,
+      "Q": 168.43500632919756,
+      "E_relative": 5.395683899678261e-14,
+      "Q_relative": 5.639932965095795e-14,
+      "virial_relative": 7.366218183113481e-13,
+      "binding_below_free_charge": false,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.98,
+      "E": 164.12843290686826,
+      "Q": 162.80803322990792,
+      "E_relative": 5.5289106626332796e-14,
+      "Q_relative": 6.961098364399732e-14,
+      "virial_relative": 3.8360387973123755e-13,
+      "binding_below_free_charge": false,
+      "fixed_charge_hessian_positive": true
+    },
+    {
+      "omega": 0.985,
+      "E": 164.55855410224302,
+      "Q": 163.24268288349637,
+      "E_relative": 1.454392162258955e-14,
+      "Q_relative": 1.4432899320127035e-14,
+      "virial_relative": 5.613988932431292e-13,
+      "binding_below_free_charge": false,
+      "fixed_charge_hessian_positive": false
+    },
+    {
+      "omega": 0.99,
+      "E": 175.45277249363767,
+      "Q": 174.26843430519014,
+      "E_relative": 1.7541523789077473e-14,
+      "Q_relative": 1.7763568394002505e-14,
+      "virial_relative": 3.956095263796069e-12,
+      "binding_below_free_charge": false,
+      "fixed_charge_hessian_positive": false
+    },
+    {
+      "omega": 0.995,
+      "E": 216.41543083235433,
+      "Q": 215.5174466310017,
+      "E_relative": 2.4424906541753444e-15,
+      "Q_relative": 2.886579864025407e-15,
+      "virial_relative": 2.2059353810493593e-09,
+      "binding_below_free_charge": false,
+      "fixed_charge_hessian_positive": false
+    }
+  ],
+  "max_profile_quadrature_error": 2.2426505097428162e-13,
+  "sensitivity_max_refinement_error": 2.971978219079574e-11,
+  "capillary_max_sequence_difference": 4.4916662357286086e-06,
+  "scope": "Verification of saved new campaign data; no rerun of E00/E01 or declaration of completed E02/E03/RES0."
+}

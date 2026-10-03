@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "method": "Equilibrio a carga fija de la misma acción FV; Newton de dos campos y frecuencia, cajas 60 y 80.",
+  "rows": [
+    {
+      "run": "w7.20_h0.100_dt0.0020_R1300_T1200",
+      "continuum_subtraction_diagnostic": 0.14822761268851536,
+      "discrete_equilibria": [
+        {
+          "radius": 60,
+          "dx": 0.1,
+          "omega": 0.9013260126144866,
+          "Q": 2474.830567775129,
+          "E": 2281.624343926641,
+          "amplitude_residual": 6.369644395265439e-14,
+          "mediator_residual": 3.410605131648481e-13,
+          "charge_relative": 0.0,
+          "iterations": 3,
+          "excitation_mean_core_minus_discrete_equilibrium": 0.15817754889667412
+        },
+        {
+          "radius": 80,
+          "dx": 0.1,
+          "omega": 0.9013260126144867,
+          "Q": 2474.830567775129,
+          "E": 2281.6243439266414,
+          "amplitude_residual": 6.255000857546822e-14,
+          "mediator_residual": 3.410605131648481e-13,
+          "charge_relative": 0.0,
+          "iterations": 3,
+          "excitation_mean_core_minus_discrete_equilibrium": 0.15817754889621938
+        }
+      ],
+      "box_energy_difference": 4.547473508864641e-13,
+      "estimated_excitation": 0.15817754889621938
+    },
+    {
+      "run": "w7.20_h0.200_dt0.0040_R1300_T1200",
+      "continuum_subtraction_diagnostic": 0.11932043709111895,
+      "discrete_equilibria": [
+        {
+          "radius": 60,
+          "dx": 0.2,
+          "omega": 0.9013207202491064,
+          "Q": 2474.6148906916387,
+          "E": 2281.400074609358,
+          "amplitude_residual": 6.452893774877566e-13,
+          "mediator_residual": 5.4569682106375694e-12,
+          "charge_relative": 8.215650382226158e-15,
+          "iterations": 3,
+          "excitation_mean_core_minus_discrete_equilibrium": 0.15914374026215228
+        },
+        {
+          "radius": 80,
+          "dx": 0.2,
+          "omega": 0.9013207202491064,
+          "Q": 2474.6148906916387,
+          "E": 2281.4000746093584,
+          "amplitude_residual": 6.452893774877566e-13,
+          "mediator_residual": 5.4569682106375694e-12,
+          "charge_relative": 8.215650382226158e-15,
+          "iterations": 3,
+          "excitation_mean_core_minus_discrete_equilibrium": 0.15914374026169753
+        }
+      ],
+      "box_energy_difference": 4.547473508864641e-13,
+      "estimated_excitation": 0.15914374026169753
+    }
+  ],
+  "relative_mesh_difference": 0.006108271194112946,
+  "excitation_convergence_passed": true,
+  "receiver_solved": false,
+  "extractable_energy_demonstrated": false,
+  "stage_complete": false,
+  "caution": "Estimación de exceso energético radial, no energía útil demostrada ni eficiencia de un ciclo."
+}

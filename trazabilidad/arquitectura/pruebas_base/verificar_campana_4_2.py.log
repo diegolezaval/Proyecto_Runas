@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "checks": {
+    "saved_results_and_failures_unchanged": true,
+    "requirements_22_exact_for_every_candidate": true,
+    "sensitivity_10_points_recovered": true,
+    "capillary_18_points_refined": true,
+    "branch_23_profiles_consistent": true,
+    "first_law": true,
+    "domain_refinements": true,
+    "unstable_control_preserved": true,
+    "long_wave_crosscheck": true,
+    "no_complete_device_or_continuum_claim": true
+  },
+  "passed": true,
+  "max_profile_quadrature_error": 2.2426505097428162e-13,
+  "sensitivity_max_refinement_error": 2.971978219079574e-11,
+  "capillary_max_sequence_difference": 4.4916662357286086e-06,
+  "scope": "Verification of saved new campaign data; no rerun of E00/E01 or declaration of completed E02/E03/RES0."
+}

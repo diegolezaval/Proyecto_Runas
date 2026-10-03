@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "registered_before_run": true,
+  "scope": "Exploración E04/RES1; dependencias generales sin cerrar.",
+  "initial_state": "Paquete gaussiano cargado con mediador que minimiza su energía estática; origen primario no derivado.",
+  "base": {
+    "width": 8.0,
+    "dx": 0.2,
+    "dt": 0.004,
+    "radius": 260.0,
+    "tmax": 240.0
+  },
+  "refinement": {
+    "width": 8.0,
+    "dx": 0.1,
+    "dt": 0.002,
+    "radius": 260.0,
+    "tmax": 240.0
+  },
+  "temporal_control": {
+    "width": 8.0,
+    "dx": 0.2,
+    "dt": 0.002,
+    "radius": 260.0,
+    "tmax": 240.0
+  },
+  "width_variants": [
+    7.2,
+    8.8
+  ],
+  "acceptance": {
+    "max_relative_energy_drift": 0.0002,
+    "max_relative_charge_drift": 1e-09,
+    "max_relative_late_core_observable_difference": 0.02,
+    "max_late_profile_deviation_for_settling": 0.05,
+    "min_late_retained_charge_fraction": 0.9
+  },
+  "caution": "Los criterios de asentamiento son del ensayo, no sustituyen puertas E04/RES1. Si una malla falla se conserva y se refina; no se cambian sus umbrales.",
+  "restart": "Reejecutar el mismo comando carga el NPZ de estado completo. Un JSON final existente se reutiliza. Las variantes y refinamientos tienen nombres distintos."
+}

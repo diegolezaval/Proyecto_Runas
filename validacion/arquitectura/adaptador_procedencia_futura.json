@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "tests": {
+    "receipt_and_sources_exist_before_worker_and_threads_applied": true,
+    "campaign_directory_relative_to_corpus": true,
+    "second_live_writer_refused_without_mutation": true,
+    "changed_code_resume_refused_without_new_run": true,
+    "nonfinite_orphan_state_refused_without_receipt_mutation": true,
+    "orphan_segment_preserved_and_recovered": true,
+    "closed_case_reused_without_output_or_receipt_changes": true,
+    "finished_worker_orphan_closed_without_advancing_state": true,
+    "undeclared_launcher_refused": true
+  },
+  "commands": [
+    {
+      "args": [
+        "--stop-at",
+        "1"
+      ],
+      "returncode": 0,
+      "expected": 0
+    },
+    {
+      "args": [
+        "--reanudar"
+      ],
+      "returncode": 1,
+      "expected": 1
+    },
+    {
+      "args": [
+        "--reanudar"
+      ],
+      "returncode": 1,
+      "expected": 1
+    },
+    {
+      "args": [
+        "--reanudar"
+      ],
+      "returncode": 1,
+      "expected": 1
+    },
+    {
+      "args": [
+        "--reanudar"
+      ],
+      "returncode": 0,
+      "expected": 0
+    },
+    {
+      "args": [
+        "--verificar"
+      ],
+      "returncode": 0,
+      "expected": 0
+    },
+    {
+      "args": [
+        "--reanudar"
+      ],
+      "returncode": 0,
+      "expected": 0
+    },
+    {
+      "args": [
+        "--reanudar"
+      ],
+      "returncode": 0,
+      "expected": 0
+    },
+    {
+      "args": [
+        "--verificar"
+      ],
+      "returncode": 0,
+      "expected": 0
+    },
+    {
+      "args": [],
+      "returncode": 1,
+      "expected": 1
+    }
+  ],
+  "adapter_sha256": "a9f0f632a0f2829ff9557ffb19ed0b4378faba20244bb571b65f7de24aead3d2",
+  "numerical_campaigns_executed": false,
+  "scope": "Controles aislados de orquestación con arrays sintéticos; no evidencia física ni integración M2. Corpus científico no modificado."
+}

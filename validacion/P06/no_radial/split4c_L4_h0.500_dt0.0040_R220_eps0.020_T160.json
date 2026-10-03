@@ -1,0 +1,36 @@
+{
+  "configuration": {
+    "dx": 0.5,
+    "dt": 0.004,
+    "radius": 220,
+    "L": 4,
+    "eps": 0.02,
+    "tmax": 160,
+    "source_time": 1200.0,
+    "core_radius": 40.0,
+    "scheme": "split4c"
+  },
+  "initial_energy": 2394.366268701372,
+  "initial_charge": 2584.6675972571734,
+  "final_core_energy": 2343.512833890347,
+  "final_core_charge": 2480.73464042247,
+  "relative_energy_drift": 0.02354052314270816,
+  "relative_charge_drift": 1.7463808177353712e-12,
+  "relative_core_charge_change": 0.00010515665728916268,
+  "initial_nonradial_norm": 0.041894121441218304,
+  "max_nonradial_norm": 0.8325117865217518,
+  "max_amplification": 19.871804393603295,
+  "mode_maxima": {
+    "1": 2.027996974376139e-12,
+    "2": 0.8322712603184216,
+    "3": 3.775145148817558e-13,
+    "4": 0.030725246235553345
+  },
+  "elapsed_seconds": 700.8686371590002,
+  "balance_passed": false,
+  "bounded_window_passed": false,
+  "stage_complete": false,
+  "orbital_stability_proven": false,
+  "full_angular_continuum": false,
+  "interpretation": "Finite conservative nonradial continuation of CP04 with all m through L; no claim outside this window or truncation"
+}

@@ -1,0 +1,9 @@
+{
+  "reason": "An attempted stop returned no stopped process, but a dependent second launch was issued. Both processes were then lost in the Work pause before the second wrote a new checkpoint.",
+  "original_last_checkpoint_time": 48.0,
+  "second_log_last_event": "REANUDADO tau 48.0",
+  "validated_current_state": "reanudacion_tras_pausa_work.json",
+  "existing_completed_runs_repeated": false,
+  "correction": "Exclusive kernel file lock before numerical reads or writes; verify dependent command success before launching another process.",
+  "physical_instability_inferred": false
+}

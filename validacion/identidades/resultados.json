@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "E01",
+  "action_derivative_max_relative": 3.5615450921739324e-16,
+  "jacobian_max_relative": 1.792412366820434e-16,
+  "dimensional_max_relative": 2.7755575615628914e-15,
+  "noether_max_absolute": 2.2737367544323206e-13,
+  "reference_equivalence": {
+    "E": 1.4765966227514582e-14,
+    "Q": 1.5210055437364645e-14,
+    "f0": 1.1102230246251565e-15,
+    "z0": 2.220446049250313e-15
+  },
+  "independent_coordinates": [
+    {
+      "parameter": "m",
+      "derived_lambda": 0.0010000000000000009,
+      "potential_change": 7.200360000325645e-05,
+      "unchanged_other_coordinates": true
+    },
+    {
+      "parameter": "M",
+      "derived_lambda": 0.0009800029996000492,
+      "potential_change": 0.002500125000004516,
+      "unchanged_other_coordinates": true
+    },
+    {
+      "parameter": "lambda0",
+      "derived_lambda": 0.0009901000000000076,
+      "potential_change": 0.0012830400000041209,
+      "unchanged_other_coordinates": true
+    },
+    {
+      "parameter": "g",
+      "derived_lambda": 0.0010200009999999926,
+      "potential_change": -0.0025455844122710403,
+      "unchanged_other_coordinates": true
+    },
+    {
+      "parameter": "h",
+      "derived_lambda": 0.0010000000000000009,
+      "potential_change": 4.500000000018378e-06,
+      "unchanged_other_coordinates": true
+    }
+  ],
+  "phase_sign_example": {
+    "X": 0.77,
+    "j0": 0.9,
+    "jz": 0.2,
+    "T0z": 0.18000000000000002,
+    "Jz_over_Q": -2
+  },
+  "benchmark": {
+    "omega": 0.9,
+    "dimension": 3,
+    "radius": 60.0,
+    "f0": 0.7460192053463056,
+    "z0": -0.0782716722352893,
+    "E": 2525.6589099075654,
+    "Q": 2745.7739206676015,
+    "I": 1525.4299559264452,
+    "gradient": 81.6935719589663,
+    "potential": 1208.3670736481783,
+    "E_over_Q": 0.9198349838261565,
+    "virial_relative": 8.86689162550429e-13,
+    "max_residual": 9.936202876433376e-10,
+    "nodes": 2402
+  },
+  "checks": {
+    "action_derivatives": true,
+    "jacobian": true,
+    "dimensional_equivalence": true,
+    "noether_local": true,
+    "numerical_benchmark": true,
+    "all_five_coordinates": true
+  },
+  "passed": true,
+  "scope": "Identidades clasicas y benchmark; no EFT cuantica ni estabilidad global de dispositivos."
+}

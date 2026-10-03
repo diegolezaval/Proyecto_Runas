@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "checks": {
+    "eight_completed_runs": true,
+    "numerical_verification": true,
+    "three_convergence_controls": true,
+    "two_long_runs_settle_only_conditionally": true,
+    "excitation_same_discrete_action_converges": true,
+    "all_restart_states_complete_and_finite": false,
+    "fine_run_resumed_from_240": true,
+    "failures_preserved": true,
+    "stages_not_falsely_closed": true,
+    "C7_remains_in_progress": true
+  },
+  "passed": false,
+  "snapshots": [
+    {
+      "file": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+      "sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+      "passed": true
+    },
+    {
+      "file": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R260_T240_estado.npz",
+      "sha256": "46361b7f2acda572bea47ca1b0b51f82c7dcf3c9fcca456cfe6d78621cee5571",
+      "passed": true
+    },
+    {
+      "file": "validacion/P06/preparacion/w7.20_h0.200_dt0.0040_R1300_T1200_estado.npz",
+      "sha256": "bd3b79b3e5041ca79863735c7f47fdca798b55908845d81d498ae3ae3ff90e9f",
+      "passed": false
+    },
+    {
+      "file": "validacion/P06/preparacion/w7.20_h0.200_dt0.0040_R260_T240_estado.npz",
+      "sha256": "a2d1bab6d13fe82b279d4bda2e6a4b33e3c79e919707815324df13c1a08659eb",
+      "passed": true
+    },
+    {
+      "file": "validacion/P06/preparacion/w8.00_h0.100_dt0.0020_R260_T240_estado.npz",
+      "sha256": "981ca8dd7ae01ac284e0d63917d819bd11e94c6edf1c245b4c25251769b82f30",
+      "passed": true
+    },
+    {
+      "file": "validacion/P06/preparacion/w8.00_h0.200_dt0.0020_R260_T240_estado.npz",
+      "sha256": "3578a71653b86e212e135d54b09f8fd5b37dc79e7c66fda3e056adbba208a788",
+      "passed": true
+    },
+    {
+      "file": "validacion/P06/preparacion/w8.00_h0.200_dt0.0040_R260_T240_estado.npz",
+      "sha256": "e70563102d8fc8df79b6fb14cbd0f20786892f054c987b6d95e2f09831df6c62",
+      "passed": true
+    },
+    {
+      "file": "validacion/P06/preparacion/w8.80_h0.200_dt0.0040_R260_T240_estado.npz",
+      "sha256": "cb6c2dbfa3246bdbc262eef2d86133082c4d77ac45f0d2af75f53e6aa90e2dda",
+      "passed": true
+    }
+  ],
+  "simulations_repeated": false,
+  "scope": "Consistencia, conservación publicada, refinamiento y honestidad de puertas; no prueba del continuo ni experimento."
+}

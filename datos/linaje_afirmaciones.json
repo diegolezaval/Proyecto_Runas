@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.0.0",
+  "claims": [
+    {
+      "claim": "M2-ACTION",
+      "assertion": "Accion escalar con mediador real y U(1) comun.",
+      "classification": [
+        "hipotesis"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [],
+      "evidence": [
+        "datos/theta_comun.json",
+        "tratado/13_M2_comun_y_teoremas.md"
+      ],
+      "scope": "Sector clasico aislado en Minkowski.",
+      "not_established": "Calibracion experimental y teoria interactuante total.",
+      "verification_type": "revision_analitica_o_definicion; no prueba numerica adicional"
+    },
+    {
+      "claim": "R1",
+      "assertion": "Valores operacionales historicos.",
+      "classification": [
+        "objetivo_de_diseno"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [],
+      "evidence": [
+        "datos/parametros.json"
+      ],
+      "scope": "Metas revisables.",
+      "not_established": "Cumplimiento simultaneo; no fuerzan la teoria.",
+      "verification_type": "revision_analitica_o_definicion; no prueba numerica adicional"
+    },
+    {
+      "claim": "VACUUM",
+      "assertion": "Coercividad y vacio estable del benchmark.",
+      "classification": [
+        "resultado_derivado",
+        "resultado_analitico"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [],
+      "evidence": [
+        "tratado/13_M2_comun_y_teoremas.md"
+      ],
+      "scope": "Hipotesis clasicas explicitadas.",
+      "not_established": "Estabilidad cuantica y material.",
+      "verification_type": "revision_analitica_o_definicion; no prueba numerica adicional"
+    },
+    {
+      "claim": "CAUCHY",
+      "assertion": "Evolucion causal y control global de energia.",
+      "classification": [
+        "resultado_derivado",
+        "resultado_analitico"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [],
+      "evidence": [
+        "tratado/13_M2_comun_y_teoremas.md"
+      ],
+      "scope": "Clase de energia y sector escalar aislado.",
+      "not_established": "Extension a portales, entorno y EFT completa.",
+      "verification_type": "revision_analitica_o_definicion; no prueba numerica adicional"
+    },
+    {
+      "claim": "QBALL",
+      "assertion": "Estado cargado de dos campos y evidencia espectral y dinamica.",
+      "classification": [
+        "resultado_numerico",
+        "validacion_numerica_interna"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [
+        "herramientas/cierre_m2.py",
+        "herramientas/dinamica_m2.py"
+      ],
+      "evidence": [
+        "validacion/cierre_m2.json",
+        "validacion/dinamica_m2.json"
+      ],
+      "scope": "Mallas, modos y transitorio explicitados.",
+      "not_established": "Certificacion continua, estabilidad orbital general, preparacion.",
+      "verification_type": "reproduccion_numerica"
+    },
+    {
+      "claim": "TUBE-NEGATIVE",
+      "assertion": "El tubo libre sin nodos falla como guia larga estable.",
+      "classification": [
+        "resultado_analitico",
+        "resultado_numerico",
+        "resultado_negativo"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [
+        "herramientas/guia_m2.py"
+      ],
+      "evidence": [
+        "tratado/18_guia_y_terminal_desde_M2.md",
+        "validacion/guia_m2.json"
+      ],
+      "scope": "Tubo recto libre en reposo y perturbaciones longitudinales.",
+      "not_established": "No excluye todas las guias con materia o control.",
+      "verification_type": "reproduccion_numerica"
+    },
+    {
+      "claim": "TERMINAL",
+      "assertion": "El exterior de vacio no equivale al terminal Neumann supuesto.",
+      "classification": [
+        "resultado_derivado",
+        "resultado_analitico"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [],
+      "evidence": [
+        "tratado/18_guia_y_terminal_desde_M2.md"
+      ],
+      "scope": "Respuesta de semiespacio de vacio.",
+      "not_established": "Perfil y estabilidad de un extremo completo.",
+      "verification_type": "revision_analitica_o_definicion; no prueba numerica adicional"
+    },
+    {
+      "claim": "PREPARATION",
+      "assertion": "Cero clasico invariante y carga neta conservada.",
+      "classification": [
+        "resultado_analitico",
+        "resultado_negativo"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [],
+      "evidence": [
+        "tratado/16_pruebas_de_dispositivo.md"
+      ],
+      "scope": "Bombeo multiplicativo U(1) invariante en sistema cerrado.",
+      "not_established": "Preparacion con fluctuaciones, pares o reservorio y balances completos.",
+      "verification_type": "revision_analitica_o_definicion; no prueba numerica adicional"
+    },
+    {
+      "claim": "MEMORY",
+      "assertion": "Dos fases U(1) globales no tienen barrera de retencion.",
+      "classification": [
+        "resultado_analitico",
+        "resultado_negativo"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [],
+      "evidence": [
+        "tratado/16_pruebas_de_dispositivo.md"
+      ],
+      "scope": "Codificacion por fase del sistema aislado.",
+      "not_established": "Memoria mediante otros estados con lectura, escritura y ruido.",
+      "verification_type": "revision_analitica_o_definicion; no prueba numerica adicional"
+    },
+    {
+      "claim": "PORTALS",
+      "assertion": "El benchmark desacoplado no convierte directamente entre M2 y materia/EM.",
+      "classification": [
+        "definicion",
+        "resultado_derivado"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [],
+      "evidence": [
+        "datos/theta_comun.json",
+        "tratado/21_corriente_clasificacion_y_cierre.md"
+      ],
+      "scope": "a=b=0.",
+      "not_established": "Hamiltoniano material, transductores y contactos comunes.",
+      "verification_type": "revision_analitica_o_definicion; no prueba numerica adicional"
+    },
+    {
+      "claim": "EOS",
+      "assertion": "Presion, carga, entalpia y sonido del fluido de fase.",
+      "classification": [
+        "resultado_derivado",
+        "aproximacion"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [
+        "herramientas/cierre_m2.py",
+        "herramientas/capilaridad_m2.py"
+      ],
+      "evidence": [
+        "tratado/20_interfaz_y_limite_capilar.md"
+      ],
+      "scope": "Rama homogénea estable y gradientes lentos.",
+      "not_established": "No sustituye amplitudes en toda la interfaz.",
+      "verification_type": "reproduccion_numerica"
+    },
+    {
+      "claim": "WALL",
+      "assertion": "Tension de interfaz de ambos campos, sin ajuste.",
+      "classification": [
+        "resultado_numerico",
+        "validacion_numerica_interna"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [
+        "herramientas/capilaridad_m2.py"
+      ],
+      "evidence": [
+        "validacion/capilaridad/resultados.json",
+        "validacion/capilaridad/pared.csv"
+      ],
+      "scope": "Coexistencia, cajas refinadas y cotas variacionales.",
+      "not_established": "Unicidad y certificacion del minimo global.",
+      "verification_type": "reproduccion_numerica"
+    },
+    {
+      "claim": "CAPILLARY-STATIC",
+      "assertion": "Balance exacto de tensiones y leyes de Laplace/energia a radio grande.",
+      "classification": [
+        "resultado_analitico",
+        "aproximacion",
+        "validacion_numerica_interna"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [
+        "herramientas/capilaridad_m2.py"
+      ],
+      "evidence": [
+        "tratado/20_interfaz_y_limite_capilar.md",
+        "validacion/capilaridad/resultados.json"
+      ],
+      "scope": "Diez estados d=2,3 con el mismo Theta.",
+      "not_established": "Curvatura de orden superior y barrido de constantes independientes.",
+      "verification_type": "reproduccion_numerica"
+    },
+    {
+      "claim": "CAPILLARY-MODES",
+      "assertion": "Una tension e inercia derivadas predicen modos de gotas e inestabilidad de tubos.",
+      "classification": [
+        "resultado_derivado",
+        "aproximacion",
+        "validacion_numerica_interna"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [
+        "herramientas/capilaridad_m2.py"
+      ],
+      "evidence": [
+        "validacion/capilaridad/resultados.json",
+        "validacion/capilaridad/verificacion.json"
+      ],
+      "scope": "Esfera ell=2 y tubo kR=0.6, cuatro escalas y cinco mallas.",
+      "not_established": "Espectro completo y fragmentacion no lineal.",
+      "verification_type": "reproduccion_numerica"
+    },
+    {
+      "claim": "AXIAL-CURRENT",
+      "assertion": "Una corriente axial uniforme no elimina la banda inestable de onda larga.",
+      "classification": [
+        "resultado_derivado",
+        "resultado_analitico",
+        "resultado_negativo"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [],
+      "evidence": [
+        "tratado/21_corriente_clasificacion_y_cierre.md"
+      ],
+      "scope": "Tubos libres con fase uniforme, mu^2>0 y rama de reposo con cL^2<0; transformacion subluminal y regimen de onda larga.",
+      "not_established": "Clasificacion absoluta/convectiva, terminales, rotacion y soporte material.",
+      "verification_type": "revision_analitica_o_definicion; no prueba numerica adicional"
+    },
+    {
+      "claim": "CATALOG",
+      "assertion": "24 funciones evaluadas; ninguna realizacion completa demostrada.",
+      "classification": [
+        "resultado_de_evaluacion"
+      ],
+      "action": "tratado/13_M2_comun_y_teoremas.md",
+      "parameters": "datos/theta_comun.json",
+      "scripts": [
+        "herramientas/catalogo_aceptacion_m2.py"
+      ],
+      "evidence": [
+        "datos/aceptacion_m2.json"
+      ],
+      "scope": "Revision de dependencias y criterios comunes.",
+      "not_established": "Minimo repertorio fisico y primer dispositivo de extremo a extremo.",
+      "verification_type": "reproduccion_numerica"
+    }
+  ],
+  "auxiliary_sectors": {
+    "M1": "aproximacion historica, datos/microscopia.json y ensayo_microscopico.py",
+    "R1": "objetivos adoptados en datos/parametros.json; verificar.py no demuestra dispositivos",
+    "grafos_Kerr_motor": "ensayos condicionados: correspondencia_micro.py y preparacion_y_motor.py; no se identifican con realizaciones M2"
+  },
+  "coverage_inventory": "trazabilidad/auditoria_inicio_4_2.json"
+}

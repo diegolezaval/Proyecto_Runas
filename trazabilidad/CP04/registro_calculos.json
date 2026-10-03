@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "base_checkpoint": "CP02_E01",
+  "checkpoint": "CP04_PREPARACION_PARCIAL",
+  "authoritative_results": {
+    "C0": "validacion/P04/exclusiones/resultados.json",
+    "E02": "validacion/validez/resultados.json",
+    "E03_RES0": "validacion/P06/rama/resultados.json",
+    "E04_RES1": "validacion/P06/preparacion/resultados.json",
+    "excitation_diagnostic": "validacion/P06/preparacion/exceso_energia.json"
+  },
+  "historical_partial_files": {
+    "validacion/validez/partial_sensitivity.json": "Anterior a recuperación M+; no resultado vigente",
+    "validacion/validez/partial_capillary.json": "Instantánea de campaña concluida",
+    "validacion/P06/rama/partial.json": "Instantánea de continuación concluida",
+    "validacion/P06/preparacion/intento_01_diagnostico_parcial.json": "Anterior al diagnóstico de la malla fina larga; los casos ya finalizados no se repitieron."
+  },
+  "calculations": [
+    {
+      "id": "sensibilidad_M_positivo",
+      "status": "COMPLETADA",
+      "stage_still_partial": "E02",
+      "resume": false
+    },
+    {
+      "id": "campana_rama_23",
+      "status": "COMPLETADA",
+      "stage_still_partial": "E03/RES0",
+      "resume": false
+    },
+    {
+      "id": "captura_radial",
+      "status": "COMPLETADA",
+      "stage_still_partial": "E04/RES1",
+      "resume": false,
+      "command": "python herramientas/captura_radial_m2.py --width 8 --dx .2 --dt .004 --tmax 240 --radius 260",
+      "scope": "Ocho ejecuciones; no cierre de etapa. Reutilizar NPZ final para perturbaciones nuevas."
+    },
+    {
+      "id": "C7_simetria",
+      "status": "EN_PROGRESO",
+      "resume": true,
+      "evidence": "investigacion/C7_notas_EN_PROGRESO.md",
+      "next": "Completar verificación matemática; no exclusión nueva."
+    }
+  ],
+  "failures_preserved": "trazabilidad/reanudacion_CP02/inventario.json",
+  "resume_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+  "numerical_runs_in_progress": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0.0",
+  "required_port_fields": [
+    "id",
+    "direction",
+    "domain",
+    "reference",
+    "bandwidth",
+    "capacity",
+    "effort_unit",
+    "flow_unit",
+    "validity_domain"
+  ],
+  "directions": [
+    "in",
+    "out",
+    "bidirectional"
+  ],
+  "domains": {
+    "mechanical_linear": {
+      "effort_unit": "N",
+      "flow_unit": "m/s",
+      "power": "dot(force,velocity)"
+    },
+    "electrical": {
+      "effort_unit": "V",
+      "flow_unit": "A",
+      "power": "voltage*current"
+    },
+    "thermal": {
+      "effort_unit": "K",
+      "flow_unit": "W/K",
+      "power": "temperature*entropy_flow"
+    },
+    "chemical": {
+      "effort_unit": "J/mol",
+      "flow_unit": "mol/s",
+      "power": "chemical_potential*molar_flow"
+    },
+    "power_bus": {
+      "effort_unit": "implementation_declared",
+      "flow_unit": "implementation_declared",
+      "power": "W measured at terminal; carrier realization required"
+    },
+    "data": {
+      "unit": "bit",
+      "power": "service allocation required"
+    },
+    "control": {
+      "unit": "typed_setpoint",
+      "power": "service allocation required"
+    },
+    "clock": {
+      "unit": "s",
+      "power": "service allocation required"
+    }
+  },
+  "connection_rule": "Same domain and compatible units/reference; converter required otherwise. Port capacities and joint service budget enforced.",
+  "scope": "Vocabulary and validation requirements; not a declaration that every port has been physically calibrated."
+}

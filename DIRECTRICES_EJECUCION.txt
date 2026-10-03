@@ -1,0 +1,267 @@
+Tienes dos paquetes:
+1.	Hoja_de_ruta_M2_4_1.zip
+o	Es el plan maestro original.
+o	Define etapas, dependencias, ramas, criterios y puertas de decisión.
+o	Se conserva como referencia histórica y no representa necesariamente el progreso actual.
+2.	El ZIP más reciente de Proyecto_Runas
+o	Es la fuente de verdad del estado actual.
+o	Es el proyecto que debes modificar.
+o	Debe contener resultados, evidencia, checkpoints y progreso acumulado.
+Revisa ambos completamente antes de trabajar.
+Autoridad
+Si existe una discrepancia, usa este orden:
+1.	cálculos, datos, código y evidencia reproducible del proyecto actual;
+2.	ESTADO_ACTUAL.md, estado_progreso.json e informes de entregas;
+3.	ENMIENDAS_HOJA_RUTA.md;
+4.	hoja de ruta original;
+5.	conversaciones anteriores sólo como contexto.
+La hoja de ruta indica hacia dónde avanzar; el proyecto actual indica dónde estamos.
+No reconstruyas el estado del proyecto desde conversaciones anteriores: el checkpoint actual y su evidencia son la fuente de verdad.
+No repitas una etapa porque sea un chat nuevo si el checkpoint demuestra que ya fue cerrada.
+Continuidad
+Crea y mantén, si no existen:
+•	ESTADO_ACTUAL.md
+•	estado_progreso.json
+•	ENMIENDAS_HOJA_RUTA.md
+•	informes de cada entrega.
+estado_progreso.json debe permitir continuar en otro chat sin depender del historial y registrar estados como:
+•	COMPLETADA
+•	PARCIAL
+•	EN_PROGRESO
+•	SIGUIENTE
+•	DESBLOQUEADA
+•	BLOQUEADA
+•	ABIERTA
+•	DESCARTADA_DENTRO_DEL_MODELO
+•	REQUIERE_REAPERTURA
+•	BLOQUEADA_POR_EVIDENCIA_EMPIRICA
+Para cada etapa cerrada registra:
+•	puerta superada;
+•	evidencia;
+•	dependencias;
+•	resultados positivos y negativos;
+•	rango de validez;
+•	checkpoint;
+•	condiciones de reapertura.
+Una etapa sólo se reabre por una causa concreta: contradicción, regresión fallida, cambio fundamental, error matemático/numérico/conceptual o nueva evidencia que invalide su cierre.
+No la repitas silenciosamente.
+Si es la primera ejecución y estos archivos no existen, inicialízalos desde la evidencia real.
+No marques una etapa como completada sólo porque existan cálculos relacionados.
+En particular, los tests ya existentes de M2 4.1 no sustituyen automáticamente E00 si no cumplen su reproducción independiente.
+Si ésta es una conversación nueva, no empieces automáticamente por E00: determina primero mediante estado_progreso.json y la evidencia cuál es la primera etapa realmente pendiente o desbloqueada.
+Objetivo
+Ejecuta la hoja de ruta completa hasta el máximo cierre científicamente justificable:
+teoría
+→ parámetros comunes
+→ soluciones
+→ estabilidad
+→ preparación
+→ interacción
+→ micro→macro
+→ componentes
+→ primordiales
+→ dispositivos
+→ integración
+→ control
+→ ingeniería
+→ operación
+→ documentación.
+No intentes resolver todo simultáneamente.
+Trabaja por entregas cerradas.
+Cada entrega
+Para cada etapa o pequeño conjunto coherente:
+1.	identifica la siguiente etapa desbloqueada;
+2.	verifica dependencias y reutiliza resultados válidos;
+3.	realiza derivaciones y simulaciones necesarias;
+4.	comprueba convergencia, conservación, estabilidad, sensibilidad y validez;
+5.	conserva resultados positivos y negativos;
+6.	aplica explícitamente su puerta de decisión;
+7.	actualiza evidencia, código, datos, Markdown, JSON y SVG afectados;
+8.	ejecuta regresiones pertinentes;
+9.	genera un ZIP reproducible;
+10.	actualiza estado y progreso;
+11.	crea un informe de entrega.
+El informe debe resumir:
+•	pregunta;
+•	métodos;
+•	derivaciones;
+•	simulaciones;
+•	resultados;
+•	errores e incertidumbres;
+•	resultados negativos;
+•	estado de evidencia;
+•	puerta resuelta;
+•	etapas desbloqueadas/bloqueadas;
+•	archivos modificados;
+•	siguiente acción.
+Una etapa puede requerir varios checkpoints.
+Cerrar una entrega no significa detenerse: continúa automáticamente con la siguiente rama desbloqueada mientras puedas trabajar.
+No pidas confirmación rutinaria entre etapas.
+Prioridad
+Sigue dependencias, no una secuencia rígida.
+Especialmente:
+•	E00/E01: reproducción, convenciones y Θ.
+•	E02/E03: validez, soluciones, espectros y estabilidad.
+•	P-04 Canal: prioridad alta.
+•	P-06 Reserva: avanzar en paralelo.
+•	preparación y contactos: en cuanto sus dependencias existan.
+Prioriza:
+1.	argumentos que decidan familias completas;
+2.	modelos reducidos ya contrastados;
+3.	análisis 1D/2D y asintóticos;
+4.	continuación/espectros;
+5.	3D;
+6.	campañas costosas sólo para candidatos supervivientes.
+P-04 Canal
+Haz un intento serio y sistemático de encontrar una realización funcional.
+No es obligatorio conservar el tubo actual, su geometría ni R1.
+Sigue C0–C10 y aplica las 22 comprobaciones pertinentes.
+Usa sus definiciones exactas en la hoja de ruta; no las reinterpretes ni improvises.
+Investiga sólo cuando cambie realmente alguna hipótesis física: ramas tubulares, corriente, vorticidad, arrollamiento, capas, modulación axial, geometrías finitas, lazos, cadenas, estructuras compuestas, confinamiento emergente o control físico.
+Para cada rama registra:
+•	qué hipótesis cambia;
+•	valor informativo;
+•	coste;
+•	resultado que permitiría avanzar;
+•	resultado que permitiría cerrarla.
+Si aparece un candidato prometedor, deja de acumular variantes y pasa a:
+extremos
+→ empalmes
+→ modos
+→ dispersión
+→ flujo
+→ transmisión
+→ pérdidas
+→ no linealidad
+→ preparación
+→ apagado
+→ balance energético
+→ robustez.
+No declares P-04 completa sin cerrar toda su cadena.
+Si sólo funciona como enlace limitado, relevos u otra arquitectura, evalúala bajo su propio contrato y no la presentes como una guía continua estable.
+P-06 Reserva
+Continúa RES0–RES5 en paralelo.
+No confundas energía total de una Q-ball con energía útil.
+Debes intentar cerrar:
+rama estable
+→ preparación
+→ carga
+→ retención
+→ descarga
+→ receptor
+→ energía recuperable
+→ ciclos
+→ eficiencia
+→ degradación
+→ apagado.
+Distingue almacenamiento por variación de Q de excitaciones recuperables a Q fija.
+Si P-06 se completa primero, úsala como primera demostración completa micro→macro→dispositivo, sin extrapolar su éxito a otras primordiales.
+M2 y M3
+Distingue:
+M2 escalar
+→ M2 interactuante
+→ M3 como cambio estructural real.
+No llames M3 a geometrías, contactos, controles, simulaciones o cambios de parámetros.
+Sólo introduce M3 si M2 muestra una carencia fundamental bien documentada.
+Toda extensión debe:
+•	tener dinámica explícita;
+•	conservar coherencia, causalidad y termodinámica;
+•	evitar fantasmas e inestabilidades fundamentales;
+•	usar parámetros comunes;
+•	explicar más de una función;
+•	producir predicciones;
+•	recuperar M2 en su límite cuando corresponda;
+•	no existir sólo para salvar P-04.
+Conserva M2 como referencia histórica aunque aparezca M3.
+Distingue siempre:
+•	versión del proyecto;
+•	versión del modelo fundamental M2/M3;
+•	versión de esquemas de datos;
+•	versión de una realización o dispositivo.
+No aumentes M por cambios documentales, numéricos, de geometría o de interfaz.
+Evidencia y matemática
+Distingue estrictamente:
+•	demostrado;
+•	derivado;
+•	simulado;
+•	aproximado;
+•	plausible;
+•	provisional;
+•	no estudiado;
+•	refutado dentro del modelo;
+•	problema abierto.
+No conviertas:
+•	fallo numérico → inexistencia;
+•	simulación estable finita → estabilidad eterna;
+•	muestra finita → prueba universal;
+•	implementación fallida → primordial imposible.
+“Espectro completo” significa cobertura suficiente para sostener la afirmación, combinando cálculo, cotas, teoremas o análisis asintótico cuando corresponda.
+Regresiones
+Cuando cambie una dependencia fundamental, reevalúa sólo lo afectado.
+Antes del cambio conserva un baseline reproducible y, en el mismo proceso, repite después las pruebas/regresiones afectadas.
+Ejemplos:
+•	cambio en acción/Θ → regresión amplia;
+•	cambio en terminal P-04 → principalmente P-04 y dependientes;
+•	cambio documental → sin recalcular física.
+Si una regresión falla, reabre formalmente las etapas dependientes y conserva el historial anterior.
+Historia científica
+No sobrescribas ni elimines resultados anteriores, especialmente resultados negativos.
+Conserva trazabilidad suficiente para saber:
+•	qué se creía;
+•	qué se comprobó;
+•	qué falló;
+•	qué cambió;
+•	qué evidencia produjo el cambio.
+Una solución nueva no borra un resultado negativo anterior si ese resultado era correcto para otra clase o dominio.
+Límite empírico
+No inventes experimentos, mediciones ni fabricación.
+Si una etapa exige evidencia física inexistente:
+•	completa la parte teórica y numérica posible;
+•	diseña el experimento necesario;
+•	especifica observables y criterios;
+•	marca BLOQUEADA_POR_EVIDENCIA_EMPIRICA;
+•	continúa con otras ramas disponibles.
+Distingue:
+•	cierre matemático;
+•	dispositivo numérico completo;
+•	dispositivo experimentalmente validado.
+Checkpoints
+Cada entrega debe producir un ZIP autocontenido y reproducible.
+Para continuar en otro chat bastarán:
+1.	la misma hoja de ruta original;
+2.	el checkpoint más reciente.
+No es necesario pasar versiones antiguas.
+El checkpoint debe dejar claro qué está terminado, qué sigue y qué no debe repetirse.
+Evolución de la hoja de ruta
+No modifiques silenciosamente el plan original.
+Si la evidencia obliga a cambiarlo, registra el cambio en ENMIENDAS_HOJA_RUTA.md.
+Si más adelante hay muchas enmiendas, puedes crear HOJA_RUTA_VIGENTE.md como vista operacional, sin borrar la hoja original.
+Final del programa
+Después del primer dispositivo continúa con las demás funciones según dependencias reales.
+Las 24 primordiales pueden reorganizarse, fusionarse o ampliarse si la física lo justifica.
+Desarrolla progresivamente:
+componentes
+→ primordiales
+→ redes/control
+→ materia/EM
+→ térmica/materiales
+→ separación/química
+→ ensamblaje
+→ aplicaciones.
+Cuando existan puertas de congelación suficientes, consolida:
+1.	Tratado de Runodinámica.
+2.	Ingeniería Rúnica.
+3.	Manuales de primordiales.
+4.	Manuales técnicos.
+5.	Normas y procedimientos.
+6.	Libros educativos.
+Mantén Markdown, JSON, SVG, scripts y datos crudos como fuentes trazables.
+Dentro del corpus técnico, redacta la Rúnica como una disciplina real de ese mundo, sin convertir hipótesis o simulaciones en hechos establecidos.
+Instrucción final
+Empieza revisando ambos ZIP.
+Determina el estado real.
+Inicializa o actualiza el sistema de continuidad.
+Ejecuta la primera etapa realmente pendiente, ciérrala, genera el checkpoint y continúa automáticamente con la siguiente.
+Sigue hasta el máximo grado de cierre que permitan la teoría, los resultados, los recursos computacionales, las herramientas disponibles y la evidencia real.
+No sacrifiques rigor para poder declarar el proyecto terminado.
+

@@ -1,0 +1,306 @@
+{
+  "schema_version": "4.1.0",
+  "mode": "completa",
+  "passed": true,
+  "python": "3.12.14",
+  "runs": [
+    {
+      "script": "ensayo_microscopico.py",
+      "returncode": 0,
+      "elapsed_seconds": 1.1128611560000081,
+      "log": "validacion/reproduccion/completa/01_ensayo_microscopico.log"
+    },
+    {
+      "script": "correspondencia_micro.py",
+      "returncode": 0,
+      "elapsed_seconds": 1.1437110260000054,
+      "log": "validacion/reproduccion/completa/02_correspondencia_micro.log"
+    },
+    {
+      "script": "complecion_escalar.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.8386666409999748,
+      "log": "validacion/reproduccion/completa/03_complecion_escalar.log"
+    },
+    {
+      "script": "preparacion_y_motor.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.7843240070000093,
+      "log": "validacion/reproduccion/completa/04_preparacion_y_motor.log"
+    },
+    {
+      "script": "graficos_micro.py",
+      "returncode": 0,
+      "elapsed_seconds": 2.011315001000014,
+      "log": "validacion/reproduccion/completa/05_graficos_micro.log"
+    },
+    {
+      "script": "resultados_micro.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.029259876000025997,
+      "log": "validacion/reproduccion/completa/06_resultados_micro.log"
+    },
+    {
+      "script": "cierre_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 2.5243919289999894,
+      "log": "validacion/reproduccion/completa/07_cierre_m2.log"
+    },
+    {
+      "script": "dinamica_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 3.1266836870000247,
+      "log": "validacion/reproduccion/completa/08_dinamica_m2.log"
+    },
+    {
+      "script": "contrastes_r1.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.8283829840000294,
+      "log": "validacion/reproduccion/completa/09_contrastes_r1.log"
+    },
+    {
+      "script": "guia_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 3.102619118000007,
+      "log": "validacion/reproduccion/completa/10_guia_m2.log"
+    },
+    {
+      "script": "capilaridad_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 5.32116849099998,
+      "log": "validacion/reproduccion/completa/11_capilaridad_m2.log"
+    },
+    {
+      "script": "catalogo_aceptacion_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.021204553000018223,
+      "log": "validacion/reproduccion/completa/12_catalogo_aceptacion_m2.log"
+    },
+    {
+      "script": "figuras_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 1.6220729880000135,
+      "log": "validacion/reproduccion/completa/13_figuras_m2.log"
+    },
+    {
+      "script": "figuras_capilaridad.py",
+      "returncode": 0,
+      "elapsed_seconds": 1.3167332350000152,
+      "log": "validacion/reproduccion/completa/14_figuras_capilaridad.log"
+    },
+    {
+      "script": "generar.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.13124034600002688,
+      "log": "validacion/reproduccion/completa/15_generar.log"
+    },
+    {
+      "script": "verificar.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.15414409199996726,
+      "log": "validacion/reproduccion/completa/16_verificar.log"
+    },
+    {
+      "script": "verificar_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.1174017759999515,
+      "log": "validacion/reproduccion/completa/17_verificar_m2.log"
+    },
+    {
+      "script": "verificar_capilaridad.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.8604792950000046,
+      "log": "validacion/reproduccion/completa/18_verificar_capilaridad.log"
+    },
+    {
+      "script": "generar.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.12339971300002617,
+      "log": "validacion/reproduccion/completa/19_generar.log"
+    }
+  ],
+  "meaning": "Ejecucion y verificacion interna. No implica dispositivo aceptado. El manifiesto de entrega no se regenera automaticamente.",
+  "csv_comparison": [
+    {
+      "path": "validacion/m2_perfil_convergente.csv",
+      "shape": [
+        6001,
+        5
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/perfil_dos_campos.csv",
+      "shape": [
+        1201,
+        3
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/memoria_kerr.csv",
+      "shape": [
+        2005,
+        2
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/m2_dinamica_1600.csv",
+      "shape": [
+        241,
+        4
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/m2_dinamica_800.csv",
+      "shape": [
+        241,
+        4
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/m2_guia_perfil.csv",
+      "shape": [
+        5001,
+        5
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/perfil_radial.csv",
+      "shape": [
+        1001,
+        3
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/capilaridad/perfil_d2_RN16.csv",
+      "shape": [
+        4601,
+        5
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/capilaridad/perfil_d3_RN128.csv",
+      "shape": [
+        15801,
+        5
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/capilaridad/perfil_d2_RN32.csv",
+      "shape": [
+        6201,
+        5
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/capilaridad/perfil_d3_RN16.csv",
+      "shape": [
+        4601,
+        5
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/capilaridad/perfil_d3_RN32.csv",
+      "shape": [
+        6201,
+        5
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/capilaridad/perfil_d2_RN64.csv",
+      "shape": [
+        9401,
+        5
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/capilaridad/perfil_d3_RN8.csv",
+      "shape": [
+        3801,
+        5
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/capilaridad/perfil_d2_RN8.csv",
+      "shape": [
+        3801,
+        5
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/capilaridad/perfil_d2_RN128.csv",
+      "shape": [
+        15801,
+        5
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/capilaridad/perfil_d3_RN64.csv",
+      "shape": [
+        9401,
+        5
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    },
+    {
+      "path": "validacion/capilaridad/pared.csv",
+      "shape": [
+        7201,
+        5
+      ],
+      "exactly_equal": true,
+      "max_absolute_difference": 0.0,
+      "relative_norm_difference": 0.0
+    }
+  ],
+  "source_zip_sha256": "f4ebb3095dddb79cf36b8b9be13e93b7553abf01a1905ccdbda93e02bd155595"
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "registered_before_campaign": true,
+  "common_model": "M2 scalar reference 4.1; m=1,M=100,lambda0=.099,g=sqrt(2000),h=.1 in natural units",
+  "reserve_branch": {
+    "frequencies": [
+      0.885,
+      0.89,
+      0.895,
+      0.9,
+      0.905,
+      0.91,
+      0.915,
+      0.92,
+      0.925,
+      0.93,
+      0.935,
+      0.94,
+      0.945,
+      0.95,
+      0.955,
+      0.96,
+      0.965,
+      0.97,
+      0.975,
+      0.98,
+      0.985,
+      0.99,
+      0.995
+    ],
+    "spectral_radius": 80,
+    "spectral_dx": [
+      0.08,
+      0.04
+    ],
+    "refinement_frequencies": [
+      0.9,
+      0.94,
+      0.985
+    ],
+    "scope": "Continuation and linear constrained energy; no preparation or completed cycle"
+  },
+  "fundamental_sensitivity": {
+    "relative_offsets": [
+      -0.0001,
+      0.0001
+    ],
+    "analytic_offsets": [
+      -0.02,
+      -0.01,
+      -0.005,
+      -0.001,
+      -0.0001,
+      0,
+      0.0001,
+      0.001,
+      0.005,
+      0.01,
+      0.02
+    ],
+    "frequency": 0.9,
+    "validity": "Positive quartic/mixed sector, attraction and positive minimum U/s; numeric solutions only if mu0<.9<m"
+  },
+  "capillary_extension": {
+    "norm_radii": [
+      16,
+      32,
+      64
+    ],
+    "sphere_ell": [
+      2,
+      3,
+      4
+    ],
+    "tube_kR": [
+      0.2,
+      0.6,
+      0.9
+    ],
+    "dx": [
+      0.025,
+      0.0125,
+      0.00625
+    ],
+    "relative_error_levels": [
+      0.01,
+      0.05,
+      0.1
+    ]
+  },
+  "P04_contract": {
+    "scope": "New candidate research contract; historical R1 unchanged",
+    "allowed_resources": "Only autonomous Phi,chi; source/receiver and preparation must be specified; other resources define a separate candidate",
+    "type": "Stable guided transfer of a specified linear excitation",
+    "length_ell0": 100,
+    "mission_t0": 500,
+    "relative_frequency_band": [
+      0.01,
+      0.08
+    ],
+    "max_relative_field_signal": 0.01,
+    "min_received_energy_fraction": 0.8,
+    "max_balance_residual": 0.0001,
+    "max_distortion_fraction": 0.05,
+    "caveat": "Targets to test, not measured capabilities. Stability cannot be waived by fitting a lifetime."
+  },
+  "P04_long_wave": {
+    "k": [
+      0.01,
+      0.02
+    ],
+    "dx": [
+      0.02,
+      0.01,
+      0.005
+    ],
+    "radius": 40,
+    "relative_tolerance_to_hydrodynamic_limit": 0.01
+  }
+}

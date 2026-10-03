@@ -1,0 +1,100 @@
+[
+  {
+    "command": [
+      "checkpoint.py",
+      "--verificar"
+    ],
+    "returncode": 0,
+    "seconds": 0.28,
+    "log": "auditoria_trabajo/pruebas_base/checkpoint.py.log",
+    "changed_files": []
+  },
+  {
+    "command": [
+      "verificar_continuidad.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.326,
+    "log": "auditoria_trabajo/pruebas_base/verificar_continuidad.py.log",
+    "changed_files": []
+  },
+  {
+    "command": [
+      "verificar.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.334,
+    "log": "auditoria_trabajo/pruebas_base/verificar.py.log",
+    "changed_files": [
+      "validacion/informe.json"
+    ]
+  },
+  {
+    "command": [
+      "verificar_m2.py"
+    ],
+    "returncode": 1,
+    "seconds": 0.321,
+    "log": "auditoria_trabajo/pruebas_base/verificar_m2.py.log",
+    "changed_files": [
+      "validacion/verificacion_m2.json",
+      "validacion/verificacion_m2.md"
+    ]
+  },
+  {
+    "command": [
+      "verificar_capilaridad.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.031,
+    "log": "auditoria_trabajo/pruebas_base/verificar_capilaridad.py.log",
+    "changed_files": []
+  },
+  {
+    "command": [
+      "verificar_campana_4_2.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.131,
+    "log": "auditoria_trabajo/pruebas_base/verificar_campana_4_2.py.log",
+    "changed_files": []
+  },
+  {
+    "command": [
+      "verificar_preparacion_m2.py"
+    ],
+    "returncode": 1,
+    "seconds": 0.222,
+    "log": "auditoria_trabajo/pruebas_base/verificar_preparacion_m2.py.log",
+    "changed_files": [
+      "validacion/verificacion_CP04.json"
+    ]
+  },
+  {
+    "command": [
+      "verificar_no_radial_m2.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.025,
+    "log": "auditoria_trabajo/pruebas_base/verificar_no_radial_m2.py.log",
+    "changed_files": []
+  },
+  {
+    "command": [
+      "puerta_acceso_lineal_m2.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.138,
+    "log": "auditoria_trabajo/pruebas_base/puerta_acceso_lineal_m2.py.log",
+    "changed_files": []
+  },
+  {
+    "command": [
+      "generar.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.272,
+    "log": "auditoria_trabajo/pruebas_base/generar.py.log",
+    "changed_files": []
+  }
+]

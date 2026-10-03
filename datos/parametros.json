@@ -1,0 +1,666 @@
+{
+  "schema_version": "2.0.0",
+  "profile": "R1",
+  "scope": "Parametros operacionales adoptados; correspondencia conjunta con la accion microscopica no demostrada.",
+  "constants": {
+    "c": {
+      "value": 299792458,
+      "unit": "m/s",
+      "meaning": "Velocidad de la luz",
+      "status": "constante_SI_exacta"
+    },
+    "kB": {
+      "value": 1.380649e-23,
+      "unit": "J/K",
+      "meaning": "Boltzmann",
+      "status": "constante_SI_exacta"
+    },
+    "h": {
+      "value": 6.62607015e-34,
+      "unit": "J s",
+      "meaning": "Planck",
+      "status": "constante_SI_exacta"
+    },
+    "sigmaSB": {
+      "value": 5.670374419e-08,
+      "unit": "W/(m2 K4)",
+      "meaning": "Stefan-Boltzmann",
+      "status": "constante_derivada_SI"
+    },
+    "g": {
+      "value": 9.81,
+      "unit": "m/s2",
+      "meaning": "Gravedad del caso de laboratorio",
+      "status": "hipotesis_del_caso"
+    },
+    "Rgas": {
+      "value": 8.314462618,
+      "unit": "J/(mol K)",
+      "meaning": "Constante molar de gases",
+      "status": "constante_SI_redondeada"
+    },
+    "F": {
+      "value": 96485.33212,
+      "unit": "C/mol",
+      "meaning": "Faraday",
+      "status": "constante_SI_redondeada"
+    }
+  },
+  "seed": {
+    "prep_energy": {
+      "value": 5,
+      "unit": "J",
+      "meaning": "Energia incorporada al estado inicial",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "input_power": {
+      "value": 2,
+      "unit": "W",
+      "meaning": "Potencia fisicamente transferida en el arranque de referencia",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "hold_power": {
+      "value": 0.05,
+      "unit": "W",
+      "meaning": "Mantenimiento durante y despues de preparar",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "settle_time": {
+      "value": 0.25,
+      "unit": "s",
+      "meaning": "Asentamiento tras alcanzar la energia preparada",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "idle_energy": {
+      "value": 5,
+      "unit": "J",
+      "meaning": "Energia retenida en la estructura de Semilla",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "idle_power": {
+      "value": 0.05,
+      "unit": "W",
+      "meaning": "Mantenimiento en espera",
+      "status": "objetivo_de_diseno_R1"
+    }
+  },
+  "solar": {
+    "irradiance": {
+      "value": 1000,
+      "unit": "W/m2",
+      "meaning": "Iluminacion del ensayo",
+      "status": "hipotesis_del_caso"
+    },
+    "efficiency": {
+      "value": 0.8,
+      "unit": "1",
+      "meaning": "Conversion bruta de luz interceptada a bus antes de servicio local",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "maintenance_area": {
+      "value": 2,
+      "unit": "W/m2",
+      "meaning": "Servicio propio del captador",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "deployment_energy_area": {
+      "value": 200,
+      "unit": "J/m2",
+      "meaning": "Energia estructural de despliegue",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "front_speed": {
+      "value": 10,
+      "unit": "m/s",
+      "meaning": "Velocidad maxima de preparacion del borde",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "starter_area": {
+      "value": 0.0025,
+      "unit": "m2",
+      "meaning": "Colector inicial de 5 cm por 5 cm",
+      "status": "objetivo_de_diseno_R1"
+    }
+  },
+  "power_channel": {
+    "signal_speed": {
+      "value": 10000000.0,
+      "unit": "m/s",
+      "meaning": "Velocidad de transporte en la banda del perfil",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "attenuation": {
+      "value": 0.0001,
+      "unit": "1/m",
+      "meaning": "Atenuacion de potencia, exponencial",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "cross_section": {
+      "value": 0.0001,
+      "unit": "m2",
+      "meaning": "Seccion fisica del enlace de referencia",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "power_flux_max": {
+      "value": 1000000000.0,
+      "unit": "W/m2",
+      "meaning": "Flujo de potencia admisible",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "structural_energy_length": {
+      "value": 1,
+      "unit": "J/m",
+      "meaning": "Energia de estructura del canal de potencia; no del soporte mecanico",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "hold_power_length": {
+      "value": 0.01,
+      "unit": "W/m",
+      "meaning": "Mantenimiento por longitud",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "signal_bandwidth": {
+      "value": 1000000.0,
+      "unit": "Hz",
+      "meaning": "Banda equivalente de datos",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "snr": {
+      "value": 100,
+      "unit": "1",
+      "meaning": "Relacion senal a ruido del ensayo",
+      "status": "objetivo_de_diseno_R1"
+    }
+  },
+  "reserve": {
+    "volume": {
+      "value": 0.001,
+      "unit": "m3",
+      "meaning": "Celda de un litro",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "usable_density": {
+      "value": 1000000000.0,
+      "unit": "J/m3",
+      "meaning": "Energia coherente recuperable antes de perdidas de descarga",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "structural_density": {
+      "value": 50000000.0,
+      "unit": "J/m3",
+      "meaning": "Suelo estructural independiente de la carga util",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "power_density": {
+      "value": 100000000.0,
+      "unit": "W/m3",
+      "meaning": "Potencia maxima de cada sentido, no simultanea",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "eta_charge": {
+      "value": 0.98,
+      "unit": "1",
+      "meaning": "Rendimiento de carga desde terminal",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "eta_discharge": {
+      "value": 0.98,
+      "unit": "1",
+      "meaning": "Rendimiento a terminal",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "leak_rate": {
+      "value": 1e-07,
+      "unit": "1/s",
+      "meaning": "Fuga proporcional de energia util",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "idle_power": {
+      "value": 0.2,
+      "unit": "W",
+      "meaning": "Servicio de celda no incluido en la fuga",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "recover_structure": {
+      "value": 0.9,
+      "unit": "1",
+      "meaning": "Fraccion de energia estructural recuperada en desmontaje ordenado",
+      "status": "objetivo_de_diseno_R1"
+    }
+  },
+  "mechanical": {
+    "structural_density": {
+      "value": 1000000000.0,
+      "unit": "J/m3",
+      "meaning": "Densidad energetica del soporte mecanico",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "young_modulus": {
+      "value": 200000000.0,
+      "unit": "Pa",
+      "meaning": "Modulo longitudinal del estado de soporte",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "max_strain": {
+      "value": 0.1,
+      "unit": "1",
+      "meaning": "Deformacion elastica longitudinal maxima del perfil",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "cross_section": {
+      "value": 0.0001,
+      "unit": "m2",
+      "meaning": "Seccion del elemento de referencia",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "length": {
+      "value": 2,
+      "unit": "m",
+      "meaning": "Longitud del elemento de referencia",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "mechanical_efficiency": {
+      "value": 0.9,
+      "unit": "1",
+      "meaning": "Conversion de bus a trabajo mecanico",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "regen_efficiency": {
+      "value": 0.8,
+      "unit": "1",
+      "meaning": "Trabajo mecanico a energia util de reserva, global",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "hold_fraction": {
+      "value": 1e-05,
+      "unit": "1/s",
+      "meaning": "Perdida de energia estructural compensada",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "surface_pressure_max": {
+      "value": 100000.0,
+      "unit": "Pa",
+      "meaning": "Objetivo de presion en terminal material comun; no limite de tejido vivo",
+      "status": "objetivo_de_diseno_R1"
+    }
+  },
+  "thermal": {
+    "carnot_fraction": {
+      "value": 0.5,
+      "unit": "1",
+      "meaning": "COP_real / COP_Carnot para el ciclo de referencia",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "radiator_temperature": {
+      "value": 400,
+      "unit": "K",
+      "meaning": "Temperatura del caso de radiador",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "ambient_temperature": {
+      "value": 300,
+      "unit": "K",
+      "meaning": "Entorno radiativo uniforme",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "emissivity": {
+      "value": 0.9,
+      "unit": "1",
+      "meaning": "Emisividad hemisferica del caso",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "water_cp": {
+      "value": 4184,
+      "unit": "J/(kg K)",
+      "meaning": "Aproximacion cerca del ambiente",
+      "status": "aproximacion_material_del_caso"
+    },
+    "water_latent_fusion": {
+      "value": 333500,
+      "unit": "J/kg",
+      "meaning": "Calor latente del caso",
+      "status": "aproximacion_material_del_caso"
+    },
+    "interface_conductance": {
+      "value": 100,
+      "unit": "W/K",
+      "meaning": "Conductancia por terminal del ejemplo",
+      "status": "objetivo_de_diseno_R1"
+    }
+  },
+  "logic": {
+    "temperature": {
+      "value": 300,
+      "unit": "K",
+      "meaning": "Temperatura del baño de referencia",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "barrier_kBT": {
+      "value": 60,
+      "unit": "1",
+      "meaning": "Barrera libre en unidades kBT",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "attempt_time": {
+      "value": 1e-12,
+      "unit": "s",
+      "meaning": "Prefactor termico del ejemplo",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "density_bits": {
+      "value": 1000000000000000.0,
+      "unit": "bit/m3",
+      "meaning": "Capacidad bruta de memoria",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "switch_energy": {
+      "value": 1e-17,
+      "unit": "J",
+      "meaning": "Presupuesto de conmutacion de referencia",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "clock_frequency": {
+      "value": 1000000.0,
+      "unit": "Hz",
+      "meaning": "Reloj local de referencia",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "control_period": {
+      "value": 0.001,
+      "unit": "s",
+      "meaning": "Periodo del controlador de servicio",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "ecc_block_bits": {
+      "value": 7,
+      "unit": "bit",
+      "meaning": "Bloque ilustrativo de codigo (7,4)",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "ecc_data_bits": {
+      "value": 4,
+      "unit": "bit",
+      "meaning": "Datos utiles por bloque",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "scrub_interval": {
+      "value": 1,
+      "unit": "s",
+      "meaning": "Intervalo ilustrativo de lectura y correccion",
+      "status": "objetivo_de_diseno_R1"
+    }
+  },
+  "optical": {
+    "efficiency": {
+      "value": 0.6,
+      "unit": "1",
+      "meaning": "Rendimiento en banda util del emisor",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "wavelength": {
+      "value": 5.5e-07,
+      "unit": "m",
+      "meaning": "Longitud de onda del ejemplo",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "aperture_diameter": {
+      "value": 0.02,
+      "unit": "m",
+      "meaning": "Apertura efectiva circular del ejemplo",
+      "status": "objetivo_de_diseno_R1"
+    }
+  },
+  "acceptance": {
+    "geometry_join_tolerance": {
+      "value": 1e-09,
+      "unit": "u",
+      "meaning": "Tolerancia del verificador numerico tras datos racionales",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "numerical_relative_tolerance": {
+      "value": 1e-06,
+      "unit": "1",
+      "meaning": "Balance algebraico de ensayos simples",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "deployed_position_tolerance": {
+      "value": 0.001,
+      "unit": "m",
+      "meaning": "Error de seguimiento del caso macromecanico con control dimensionado",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "nominal_temperature_error": {
+      "value": 0.2,
+      "unit": "K",
+      "meaning": "Banda de servicio del termostato",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "passive_crosstalk_power": {
+      "value": 1e-06,
+      "unit": "1",
+      "meaning": "Potencia transferida a ruta ajena / potencia incidente, banda y carga nominales",
+      "status": "objetivo_de_diseno_R1"
+    }
+  },
+  "microscopic_benchmark": {
+    "potential": "Uhat(f)=f^2-f^4+f^6",
+    "omega": 0.9,
+    "units": "adimensionales; x=m_r r, f=sqrt(lambda) Phi/m_r, c=hbar=1",
+    "g6": 1,
+    "m_over_cutoff": 0.001,
+    "lambda": 0.001,
+    "kappa": 1,
+    "a": 0,
+    "b": 0,
+    "xi": 0,
+    "purpose": "Ensayo del sector escalar aislado. No realiza captacion, preparacion manual ni las 24 primordiales."
+  },
+  "layout": {
+    "unit_length": {
+      "value": 0.01,
+      "unit": "m/u",
+      "meaning": "Longitud de unidad gráfica",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "core_radius": {
+      "value": 0.0001,
+      "unit": "m",
+      "meaning": "Radio objetivo de núcleo modal",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "bend_radius_min": {
+      "value": 0.0005,
+      "unit": "m",
+      "meaning": "Radio mínimo de redondeo",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "crossing_layer_gap": {
+      "value": 0.001,
+      "unit": "m",
+      "meaning": "Separación de capas de cruce",
+      "status": "objetivo_de_diseno_R1"
+    }
+  },
+  "lamp_case": {
+    "optical_power": {
+      "value": 6,
+      "unit": "W",
+      "meaning": "Consigna óptica",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "channel_length": {
+      "value": 10,
+      "unit": "m",
+      "meaning": "Longitud de Canal",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "collector_area": {
+      "value": 0.02,
+      "unit": "m2",
+      "meaning": "Área de captación",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "aux_power": {
+      "value": 0.5,
+      "unit": "W",
+      "meaning": "Control y terminales del ejemplo",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "aux_preparation_energy": {
+      "value": 20,
+      "unit": "J",
+      "meaning": "Preparación de emisor, control y terminales sobre soporte existente",
+      "status": "objetivo_de_diseno_R1"
+    }
+  },
+  "control_case": {
+    "mass": {
+      "value": 100,
+      "unit": "kg",
+      "meaning": "Carga de referencia",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "height": {
+      "value": 1,
+      "unit": "m",
+      "meaning": "Elevación de referencia",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "natural_frequency": {
+      "value": 10,
+      "unit": "1/s",
+      "meaning": "Frecuencia natural angular de lazo",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "damping_ratio": {
+      "value": 1,
+      "unit": "1",
+      "meaning": "Amortiguamiento relativo",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "sensor_time_constant": {
+      "value": 0.01,
+      "unit": "s",
+      "meaning": "Transductor termométrico",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "sensor_temperature_uncertainty": {
+      "value": 0.05,
+      "unit": "K",
+      "meaning": "Incertidumbre del caso",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "thermostat_hysteresis": {
+      "value": 0.1,
+      "unit": "K",
+      "meaning": "Semiancho de histéresis",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "heater_power": {
+      "value": 100,
+      "unit": "W",
+      "meaning": "Potencia del calentador",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "water_mass": {
+      "value": 1,
+      "unit": "kg",
+      "meaning": "Masa de agua del caso",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "thermal_loss_conductance": {
+      "value": 2,
+      "unit": "W/K",
+      "meaning": "Pérdidas hacia entorno",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "initial_temperature": {
+      "value": 293.15,
+      "unit": "K",
+      "meaning": "Temperatura inicial",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "target_temperature": {
+      "value": 313.15,
+      "unit": "K",
+      "meaning": "Consigna térmica",
+      "status": "objetivo_de_diseno_R1"
+    }
+  },
+  "vibration_case": {
+    "mass": {
+      "value": 0.01,
+      "unit": "kg",
+      "meaning": "Masa modal",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "frequency": {
+      "value": 100,
+      "unit": "Hz",
+      "meaning": "Frecuencia modal",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "damping_ratio": {
+      "value": 0.05,
+      "unit": "1",
+      "meaning": "Amortiguamiento relativo",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "amplitude": {
+      "value": 0.0001,
+      "unit": "m",
+      "meaning": "Amplitud máxima del ejemplo",
+      "status": "objetivo_de_diseno_R1"
+    }
+  },
+  "chemistry_case": {
+    "carbon_mass": {
+      "value": 0.001,
+      "unit": "kg",
+      "meaning": "Carbono del balance",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "carbon_molar_mass": {
+      "value": 0.012011,
+      "unit": "kg/mol",
+      "meaning": "Masa molar adoptada",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "oxygen_molar_mass": {
+      "value": 0.031998,
+      "unit": "kg/mol",
+      "meaning": "Oxígeno molecular",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "co2_fraction": {
+      "value": 0.00042,
+      "unit": "1",
+      "meaning": "Fracción molar del aire del ejemplo",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "temperature": {
+      "value": 298.15,
+      "unit": "K",
+      "meaning": "Temperatura del caso",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "pressure": {
+      "value": 101325,
+      "unit": "Pa",
+      "meaning": "Presión del caso",
+      "status": "objetivo_de_diseno_R1"
+    },
+    "decomposition_gibbs": {
+      "value": 394389,
+      "unit": "J/mol",
+      "meaning": "CO2 gas a grafito y O2 gas; JANAF 298.15 K",
+      "status": "dato_termoquimico"
+    },
+    "decomposition_enthalpy": {
+      "value": 393522,
+      "unit": "J/mol",
+      "meaning": "Mismos estados y temperatura",
+      "status": "dato_termoquimico"
+    }
+  }
+}

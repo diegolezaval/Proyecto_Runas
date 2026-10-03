@@ -1,0 +1,64 @@
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 10.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 20.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 30.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 40.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 50.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 60.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 70.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 80.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 90.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 100.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 110.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 120.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 130.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 140.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 150.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 160.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 170.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 180.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 190.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 200.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 210.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 220.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 230.0
+EVOLUCION w8.80_h0.200_dt0.0040_R260_T240 240.0
+{
+  "schema_version": "1.1.0",
+  "configuration": {
+    "width": 8.8,
+    "dx": 0.2,
+    "dt": 0.004,
+    "radius": 260.0,
+    "tmax": 240.0,
+    "n": 1300,
+    "core_radius": 40
+  },
+  "initial_energy": 2621.169123261583,
+  "initial_charge": 2745.773920667643,
+  "initial_E_over_Q": 0.9546194257042977,
+  "initial_energy_above_reference": 95.51021335398036,
+  "final_core_energy": 2142.1950789137863,
+  "final_core_charge": 2284.1230248253482,
+  "final_energy_outside_core": 478.97386825853437,
+  "final_charge_outside_core": 461.6508958422846,
+  "mean_late_charge_fraction": 0.8553007237522762,
+  "relative_energy_drift": 1.910676629135466e-07,
+  "relative_charge_drift": 4.3298697960381105e-15,
+  "equilibrium_diagnostic": {
+    "omega_estimate": 0.9020137015133839,
+    "equilibrium_charge": 2349.382167977914,
+    "mean_retained_charge": 2348.4624216071597,
+    "charge_matching_relative": 0.0003916376784622866,
+    "max_late_profile_deviation": 0.30695956681205083,
+    "min_late_profile_deviation": 0.22629454304280813,
+    "equilibrium_energy": 2168.521637711521,
+    "method": "omega(Q) PCHIP seed, then full two-field stationary solve; residual charge mismatch explicitly reported"
+  },
+  "elapsed_seconds": 4.063726655999744,
+  "balance_passed": true,
+  "primary_source_derived": false,
+  "shutdown_derived": false,
+  "full_3D_test": false,
+  "complete_RES1": false,
+  "interpretation": "Conditional radial relaxation from a pre-existing dressed charged packet. No vacuum start, no source construction, no artificial damping. Exterior retains emitted energy and charge."
+}

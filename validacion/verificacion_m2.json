@@ -1,0 +1,199 @@
+{
+  "schema_version": "4.1.0",
+  "count": 38,
+  "passed": true,
+  "scope": "Comprobaciones numericas y editoriales; no certificacion por intervalos ni demostracion de R1.",
+  "complete_device_derived": false,
+  "checks": [
+    {
+      "check": "Una fuente comun: el espejo historico coincide",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Sin nuevos parametros fundamentales de dispositivo",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "El conjunto interactuante R1 no se declara identificado",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Convergencia energia Q-ball",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Virial Q-ball",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Pendiente de rama y primera ley",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Carga fija radial positiva en mallas calculadas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Traslacion: error de autovalor decrece como h^2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Q-ball: el modo cuadrupolar esta bajo el continuo",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Generadores Q-ball: residuos numericos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No se declara certificacion espectral del continuo",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Energia no lineal: mejora al refinar",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Noether numerico conservado",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Transitorio no se vende como preparacion",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Guia: convergencia de energia por longitud",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Guia: virial transversal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Guia: autovalor negativo robusto",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Guia: crecimiento robusto al refinar dominio",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Guia: exterior de banda sin crecimiento en muestra k=0.3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Guia: raiz creciente resuelta",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Guia: signo hidrodinamico concordante",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Guia: no se marca estabilidad ni terminal demostrados",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vacío: las tres constantes de decaimiento son no nulas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vacío: apertura de radiacion en la primera banda",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Grafo terminado: conservacion independiente de potencia",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Canal: presupuesto de reflexion condicionado",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Canal: velocidad R1 requiere presion negativa en ese fondo",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Memoria: barrera de fase y meta no se confunden",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Termica: canal con brecha suprimido",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Semilla: restricciones de cero y carga registradas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Catalogo: 24 identidades unicas",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Catalogo: aceptacion es una conjuncion",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Las 24 primordiales evaluadas, sin la antigua exclusion",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Ningun dispositivo condicional declarado completo",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON: todos parsean",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python: sintaxis de todos los scripts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "SVG: todos parsean como XML",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Enlaces locales Markdown",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

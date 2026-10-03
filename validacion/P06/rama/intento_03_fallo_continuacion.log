@@ -1,0 +1,16 @@
+BRANCH 0.9 2745.7739206251663 0.1919885887789472 0.043779142075828295
+BRANCH 0.895 4235.3417870454505 0.2010198772174352 0.0352519421404959
+Traceback (most recent call last):
+  File "/workspace/scratch/7c7d37442bf3/work/Proyecto_Runas/herramientas/campana_rama_reserva.py", line 102, in <module>
+    if __name__=='__main__':run()
+                            ^^^^^
+  File "/workspace/scratch/7c7d37442bf3/work/Proyecto_Runas/herramientas/campana_rama_reserva.py", line 43, in run
+    bg,row=compute(float(w),bg);backgrounds[w]=bg
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/7c7d37442bf3/work/Proyecto_Runas/herramientas/campana_rama_reserva.py", line 27, in compute
+    bg=solve_state(omega=float(subw),previous=bg,radius=radius,n=n,tol=max(tol,1e-8))
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/7c7d37442bf3/work/Proyecto_Runas/herramientas/soluciones_m2.py", line 24, in solve_state
+    if not s.success:raise RuntimeError(s.message)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: The maximum number of mesh nodes is exceeded.

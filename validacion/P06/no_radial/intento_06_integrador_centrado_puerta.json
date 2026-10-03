@@ -1,0 +1,27 @@
+{
+  "records": [
+    {
+      "name": "split4c_L4_h0.500_dt0.0040_R220_eps0.020_T160",
+      "time": 160.0,
+      "energy_drift": 0.02354052314270816,
+      "charge_drift": 1.7463808177353712e-12,
+      "sha256": "d70877da517d865e590150b11a387e05fe785e8fa4b25cc735eaaa063c61dc72"
+    },
+    {
+      "name": "split4c_L4_h0.250_dt0.0040_R220_eps0.020_T160",
+      "time": 112.0,
+      "energy_drift": 0.010716905100683016,
+      "charge_drift": 1.219691014853197e-12,
+      "sha256": "1cf5a2839d40afb2f71e5a529e10bf27df10c41c1563fec9959b85684eb04c32"
+    },
+    {
+      "name": "split4c_L4_h0.500_dt0.0020_R220_eps0.020_T160",
+      "time": 160.0,
+      "energy_drift": 1.7329312735903102e-05,
+      "charge_drift": 1.829247864293393e-11,
+      "sha256": "cd707b235dbd066c8b1f41b10f06b5fc8026c65f002d89ee76313a9599832c5c"
+    }
+  ],
+  "decision": "Paso .004 falla a tiempos largos; .002 completa con balance. No atribuir divergencia numérica a inestabilidad física. split4b no mejora el piloto; pasar a fuerza completa adaptativa.",
+  "complete_E03": false
+}

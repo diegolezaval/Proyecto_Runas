@@ -1,0 +1,854 @@
+{
+  "schema_version": "1.0.0",
+  "project_version": "4.2.0-dev7",
+  "model_version": "M2",
+  "checkpoint": "CP07_ACCESO_LINEAL_PARCIAL",
+  "roadmap_sha256": "891ca0eaceea516e6d24d76d256cb669ce17d27350fee0edb2bb8bf62f66cc02",
+  "baseline_sha256": "f4ebb3095dddb79cf36b8b9be13e93b7553abf01a1905ccdbda93e02bd155595",
+  "allowed_statuses": [
+    "COMPLETADA",
+    "PARCIAL",
+    "EN_PROGRESO",
+    "SIGUIENTE",
+    "DESBLOQUEADA",
+    "BLOQUEADA",
+    "ABIERTA",
+    "DESCARTADA_DENTRO_DEL_MODELO",
+    "REQUIERE_REAPERTURA",
+    "BLOQUEADA_POR_EVIDENCIA_EMPIRICA"
+  ],
+  "stages": [
+    {
+      "id": "E00",
+      "title": "Congelar la fuente y establecer una reproducción independiente",
+      "status": "COMPLETADA",
+      "dependencies": [
+        "ZIP4.1"
+      ],
+      "gate_original": "Si coinciden dentro de errores justificados y cada afirmación tiene respaldo identificable, avanzar a E01/E03. La comparación no exige igualdad binaria entre entornos.",
+      "evidence": [
+        "validacion/reproduccion_independiente/reproduccion_19_pasos.json",
+        "validacion/reproduccion_independiente/resultados.json",
+        "datos/linaje_afirmaciones.json"
+      ],
+      "positive_results": [
+        "19 pasos correctos; 18 CSV numericamente identicos.",
+        "Energia y carga reproducidas por cuadratura independiente; pared por Newton FD; modos por elementos finitos P1."
+      ],
+      "negative_results": [
+        "La inestabilidad tubular se reproduce; no desaparece.",
+        "La convencion covariante de 20.3 es incoherente con (-+++); correccion pendiente de E01."
+      ],
+      "validity_scope": "Benchmark clasico aislado 4.1, observables y mallas publicados; no certificacion del continuo ni experimento.",
+      "checkpoint": "CP01_E00",
+      "reopen_conditions": [
+        "Regresion de un observable reproducido fuera del presupuesto de error.",
+        "Error en la accion u operadores que invalide las comparaciones.",
+        "Cambio de Theta o de ecuaciones dependientes."
+      ],
+      "next_action": "E01: convenciones y parametros fundamentales independientes."
+    },
+    {
+      "id": "E01",
+      "title": "Fijar la formulación matemática y el espacio fundamental",
+      "status": "COMPLETADA",
+      "dependencies": [
+        "E00"
+      ],
+      "gate_original": "Una única definición alimenta todos los cálculos; las hipótesis de cada teorema están explícitas. Avanzar a barridos globales y soluciones nuevas.",
+      "evidence": [
+        "tratado/23_convenciones_y_espacio_fundamental.md",
+        "datos/convenciones.json",
+        "validacion/identidades/resultados.json",
+        "validacion/identidades/regresion_csv.json",
+        "validacion/reproduccion_completa.json"
+      ],
+      "positive_results": [
+        "Convenciones covariantes unificadas con energia y carga positivas.",
+        "Cinco coordenadas independientes con unidades explicitas, interfaz general y proteccion del benchmark historico.",
+        "19 pasos de regresion correctos; 18 CSV identicos tras refactorizacion."
+      ],
+      "negative_results": [
+        "La subfamilia historica no constituye un barrido fundamental independiente.",
+        "Un SVG truncado durante la primera generacion hizo fallar la regresion editorial; regenerado y verificado. No fallo la fisica."
+      ],
+      "validity_scope": "Sector clasico coercivo con hipotesis de 23.4; no cierre cuantico/material.",
+      "checkpoint": "CP02_E01",
+      "reopen_conditions": [
+        "Cambio de accion o convencion que invalide Noether, tensor o unidades.",
+        "Cambio de Theta fuera del dominio coercivo auditado.",
+        "Fallo de regresion de operadores o benchmark."
+      ],
+      "next_action": "E02/E03 y C0: carta de validez, exclusiones y rama de Reserva."
+    },
+    {
+      "id": "E02",
+      "title": "Determinar dominios de validez, incertidumbre y escalas",
+      "status": "PARCIAL",
+      "dependencies": [
+        "E01"
+      ],
+      "gate_original": "Publicar una carta de validez con límites y zonas indeterminadas; habilitar únicamente los cálculos dentro de ella. Un dominio clásico condicionado puede avanzar aunque la validación empírica siga abierta.",
+      "evidence": [
+        "datos/dominios_validez.json",
+        "validacion/validez/resultados.json",
+        "validacion/verificacion_CP03.json",
+        "tratado/25_carta_validez_y_rama_reserva.md"
+      ],
+      "positive_results": [
+        "Diez variaciones fundamentales convergentes; 18 muestras capilares y carta provisional.",
+        "Punto M+ recuperado sin relajar tolerancias finales."
+      ],
+      "negative_results": [
+        "Alta sensibilidad y errores capilares de hasta 26.99 %.",
+        "Sin control conjunto entre muestras, error temporal global, entorno ni dominio cuántico completo."
+      ],
+      "validity_scope": "Muestras declaradas; campos clásicos completos. No certificación de región.",
+      "checkpoint": "CP03_C0_E02_E03_RES0",
+      "reopen_conditions": [],
+      "next_action": "Completar reducciones y límites temporales/de amplitud; conservar mapa muestreado y fallos.",
+      "gate_decision": "NO_SUPERADA; SUBRESULTADOS_VERIFICADOS",
+      "remaining_work": "Completar reducciones y límites temporales/de amplitud; conservar mapa muestreado y fallos."
+    },
+    {
+      "id": "E03",
+      "title": "Consolidar soluciones, espectro completo y dinámica",
+      "status": "PARCIAL",
+      "dependencies": [
+        "E01"
+      ],
+      "gate_original": "Fondo convergente y ausencia justificada de crecimiento en toda la clase de perturbaciones declarada. Una certificación rigurosa y evidencia numérica de alta confianza se etiquetan por separado. Avanzar a acceso y funcionalidad sólo si la estabilidad necesaria queda respaldada.",
+      "evidence": [
+        "validacion/P06/rama/resultados.json",
+        "validacion/verificacion_CP03.json",
+        "tratado/25_carta_validez_y_rama_reserva.md",
+        "validacion/P06/preparacion/resultados.json",
+        "datos/ensayo_no_radial_CP06.json",
+        "validacion/P06/no_radial/resultados_parciales.json",
+        "tratado/28_estabilidad_no_radial_condicionada.md",
+        "validacion/P06/no_radial/intento_08_mediador_radial_h025.json",
+        "validacion/P06/no_radial/intento_06_integrador_centrado_puerta.json"
+      ],
+      "positive_results": [
+        "23 perfiles; primera ley; refinamiento y Hessiano restringido.",
+        "Dinámica radial finita desde un paquete no estacionario; no reemplaza la estabilidad 3D.",
+        "Monotonía exacta derivada condicionalmente en 27 para soluciones que cumplan sus hipótesis; no prueba existencia de perfiles numéricos ni estabilidad dinámica.",
+        "Ocho continuaciones no radiales finitas desde CP04; conservación y refinamiento de observables Phi, con todos los m hasta L=6.",
+        "Tres evoluciones DOP853 completas hasta tau=160; diferencia temporal chi 0.00191% en posición y 0.00272% en espacio de fases; balances conservados."
+      ],
+      "negative_results": [
+        "Control negativo a omega=.985 y posteriores.",
+        "Espectro dinámico seleccionado y sin campaña no lineal 3D de la rama.",
+        "L2 falla convergencia angular; fase rápida de chi entonces incompleta (control temporal resuelto en CP07); piloto split4 no centrado falla balance grueso.",
+        "Refinamiento h=.5/.25: chi 4.03% en posición y 5.01% en espacio de fases, falla puerta 2%; h=.125 pendiente. Split4c grueso falla a tiempos largos; pilotos split4b no mejoran."
+      ],
+      "validity_scope": "Rama muestreada; estabilidad angular condicionada, sin certificado orbital continuo.",
+      "checkpoint": "CP07_ACCESO_LINEAL_PARCIAL",
+      "reopen_conditions": [],
+      "next_action": "Nuevo control espacial DOP853 h=.125, tau<=160, desde CP04 o su propio reinicio si existe; no repetir las tres evoluciones adaptativas terminadas.",
+      "gate_decision": "NO_SUPERADA; REFINAMIENTO_ESPACIAL_MEDIADOR_PENDIENTE",
+      "remaining_work": "Cobertura espectral suficiente y perturbaciones finitas no radiales sobre candidatos supervivientes."
+    },
+    {
+      "id": "E04",
+      "title": "Preparación común, Semilla y apagado",
+      "status": "PARCIAL",
+      "dependencies": [
+        "E03"
+      ],
+      "gate_original": "Preparación reproducible con márgenes y apagado que deja destinos definidos para energía y carga; habilitar componente condicionado al origen declarado de sus recursos. P-01 completo exige cerrar también su fuente inicial.",
+      "evidence": [
+        "datos/ensayo_preparacion_4_2.json",
+        "validacion/P06/preparacion/resultados.json",
+        "validacion/P06/preparacion/exceso_energia.json",
+        "tratado/26_preparacion_radial_condicionada.md",
+        "datos/ensayo_no_radial_CP06.json",
+        "validacion/P06/no_radial/resultados_parciales.json",
+        "tratado/28_estabilidad_no_radial_condicionada.md",
+        "validacion/P06/no_radial/intento_08_mediador_radial_h025.json",
+        "validacion/P06/no_radial/intento_06_integrador_centrado_puerta.json"
+      ],
+      "positive_results": [
+        "Ocho ejecuciones radiales conservativas con controles de tiempo, espacio y caja.",
+        "Anchura 7.2 a t=1200: asentamiento condicionado, carga retenida 90.13 %, perfil a 1.12 %.",
+        "Refinamiento fino continuado desde t=240; estados completos guardados.",
+        "Ocho continuaciones no radiales finitas desde CP04; conservación y refinamiento de observables Phi, con todos los m hasta L=6.",
+        "Tres evoluciones DOP853 completas hasta tau=160; diferencia temporal chi 0.00191% en posición y 0.00272% en espacio de fases; balances conservados."
+      ],
+      "negative_results": [
+        "Ventanas cortas y otras anchuras no superan asentamiento.",
+        "Fallo de guarda y lanzamiento desde cero del control grueso conservados.",
+        "Fuente primaria, región de preparación, estabilidad no radial y apagado pendientes.",
+        "L2 falla convergencia angular; fase rápida de chi entonces incompleta (control temporal resuelto en CP07); piloto split4 no centrado falla balance grueso.",
+        "Refinamiento h=.5/.25: chi 4.03% en posición y 5.01% en espacio de fases, falla puerta 2%; h=.125 pendiente. Split4c grueso falla a tiempos largos; pilotos split4b no mejoran."
+      ],
+      "validity_scope": "Ensayo radial clásico finito de paquete cargado vestido; no preparación primordial ni dispositivo.",
+      "checkpoint": "CP07_ACCESO_LINEAL_PARCIAL",
+      "reopen_conditions": [
+        "Balance o refinamiento que contradiga el subresultado radial.",
+        "Error de condición de frontera, acción discreta o diagnóstico a Q fija."
+      ],
+      "next_action": "Nuevo control espacial DOP853 h=.125, tau<=160, desde CP04 o su propio reinicio si existe; no repetir las tres evoluciones adaptativas terminadas.",
+      "exploratory_work": "Dependencias generales E02/E03/RES0 parciales; no habilitación de E08 ni cierre funcional.",
+      "gate_decision": "NO_SUPERADA; REFINAMIENTO_ESPACIAL_MEDIADOR_PENDIENTE"
+    },
+    {
+      "id": "E05",
+      "title": "Contactos, materia, energía y entorno comunes",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "E01",
+        "E03"
+      ],
+      "gate_original": "Conservación global, respuesta causal, estabilidad y tasas calculadas; al menos dos fenómenos explicados sin constantes especiales. Permite E08 y familias materiales. Si sólo existe contacto rúnico interno, habilita únicamente ese nivel.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "Determinar cómo entra, se mide y se recupera energía del sector rúnico; y si un mismo acoplamiento permite varias funciones."
+    },
+    {
+      "id": "E06",
+      "title": "Resolver la decisión física de Canal",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "E02",
+        "E03",
+        "C0"
+      ],
+      "gate_original": "Si un candidato supera todas las puertas, pasar a E08 y después P-08/P-13/P-16. Si todos los candidatos admisibles quedan agotados según B.5, evaluar F.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "Encontrar una región de realizaciones estables que conduzca energía o señales, o delimitar por qué las clases razonables de M2 no cumplen esa función."
+    },
+    {
+      "id": "E07",
+      "title": "Convertir la Q-ball en Reserva",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "E02",
+        "E03",
+        "RES0"
+      ],
+      "gate_original": "Un ciclo completo reproducible permite aspirar al primer dispositivo numérico de E08. La energía ligada por sí sola no basta. El hito experimental requiere E11.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "¿Puede el estado localizado completar un ciclo útil, con acceso y recuperación, dentro de una región estable?"
+    },
+    {
+      "id": "E08",
+      "title": "Primera demostración de dispositivo de extremo a extremo",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "E04",
+        "E05",
+        "E06 o E07"
+      ],
+      "gate_original": "Todos los eslabones deben ser cuantitativos. Registrar «dispositivo numérico completo bajo M2» únicamente si procede; «experimental» exige evidencia externa. Abrir E09/E10 sobre recursos concretos admitidos.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "Establecer una realización cerrada en un dominio, sin completar eslabones mediante objetivos R1."
+    },
+    {
+      "id": "E09",
+      "title": "Ampliar el repertorio mediante recursos físicos compartidos",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "E08"
+      ],
+      "gate_original": "Admitir cada función únicamente al completar su expediente; entonces integrarla. El catálogo puede aumentar, reducirse o reorganizarse conservando trazabilidad de sus identificadores.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "Identificar qué funciones adicionales se derivan sin cambiar las leyes por dispositivo."
+    },
+    {
+      "id": "E10",
+      "title": "Integración, redes y control",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "E08",
+        "E09"
+      ],
+      "gate_original": "Región de operación conjunta y fallos cubiertos especificados; avanzar a escala/fabricación. La estabilidad de cada pieza aislada no basta.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "¿Conserva una combinación de componentes sus márgenes al intercambiar energía, señales y errores?"
+    },
+    {
+      "id": "E11",
+      "title": "Identificación, metrología y contraste experimental",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "E02",
+        "E05 para experimentos"
+      ],
+      "gate_original": "Un conjunto común explica mediciones independientes dentro de errores y produce predicciones nuevas comprobables. Sin señal o sin acceso, conservar el nivel matemático/numérico; no declarar ingeniería físicamente validada.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "¿Es el sector propuesto observable, identificable y compatible con mediciones independientes?"
+    },
+    {
+      "id": "E12",
+      "title": "Fabricación, tolerancias y mantenimiento",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "E08",
+        "E11"
+      ],
+      "gate_original": "Proceso repetible, inspección independiente y recalibración que restituye prestaciones sin ocultar deterioro. Pasar a operación sostenida sólo con intervalos de mantenimiento respaldados.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "¿Puede producirse y conservarse la configuración física con variación admisible entre unidades y ciclos?"
+    },
+    {
+      "id": "E13",
+      "title": "Operación, interfaz y seguridad",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "E10",
+        "E11",
+        "E12"
+      ],
+      "gate_original": "Expediente de riesgos, límites y fallos cubiertos; procedimientos verificados y revisión de normas aplicables según dispositivo y jurisdicción. La interfaz rechaza tareas sin realización admitida.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "Permitir una orden sencilla cuya ejecución permanezca dentro de estados caracterizados, incluso ante fallos definidos."
+    },
+    {
+      "id": "E14",
+      "title": "Consolidar teoría, ingeniería y formación",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "H.1"
+      ],
+      "gate_original": "Corpus con autoridad única y dominios bien delimitados. Publicar manual operativo sólo de una realización aceptada; libros conceptuales pueden aparecer antes con estados de evidencia claros.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "Determinar cuándo el trabajo debe centrarse en reproducir, normalizar y enseñar un núcleo estable, en vez de modificarlo para cada aplicación."
+    },
+    {
+      "id": "C0",
+      "title": "Delimitar el problema antes de gastar simulación",
+      "status": "COMPLETADA",
+      "dependencies": [
+        "E00",
+        "E01"
+      ],
+      "gate_original": "Contrato cuantitativo y matriz de clases definida. Pasar a C1–C4 sólo para preguntas no resueltas, o para validar los límites de un teorema.",
+      "evidence": [
+        "datos/P04_busqueda.json",
+        "datos/campana_4_2.json",
+        "tratado/24_exclusiones_tubulares_y_busqueda.md",
+        "validacion/P04/exclusiones/resultados.json",
+        "validacion/verificacion_CP03.json"
+      ],
+      "positive_results": [
+        "Contrato cuantitativo y matriz de 11 clases con las 22 comprobaciones originales.",
+        "Extensión condicionada de la exclusión a arrollamiento rígido y amplitudes positivas periódicas; no agotamiento."
+      ],
+      "negative_results": [
+        "Las clases excluidas conservan crecimiento longitudinal.",
+        "Corrientes/fases distintas, nodos, geometrías finitas, control y contactos siguen abiertos."
+      ],
+      "validity_scope": "Hipótesis de 24.2–24.4; sin extremos físicos ni exclusión de todas las guías.",
+      "checkpoint": "CP03_C0_E02_E03_RES0",
+      "reopen_conditions": [
+        "Error en dominio, virial, positividad o argumento Schur/Bloch.",
+        "Contraejemplo que cumpla todas las hipótesis.",
+        "Cambio de contrato o acción que afecte la clasificación."
+      ],
+      "next_action": "Investigar supervivientes C6/C7 y variantes fuera de las hipótesis; no repetir tubos positivos para buscar estabilización.",
+      "gate_decision": "SUPERADA"
+    },
+    {
+      "id": "C1",
+      "title": "Otras ramas tubulares y perfiles radiales",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "C0",
+        "E03"
+      ],
+      "gate_original": "Sólo pasa una rama con una razón física explícita por la que no le aplica la exclusión, y con región espectral admisible. Entonces exigir B.2 y C9.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "¿Existe alguna rama transversal distinta que cambie las hipótesis de la inestabilidad, en vez de mover el mismo tubo a otra frecuencia?"
+    },
+    {
+      "id": "C2",
+      "title": "Carga temporal, corriente y gradiente axial",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "C0",
+        "C1",
+        "E03"
+      ],
+      "gate_original": "Pasar a C9 si hay estado y región del conjunto con respuesta acotada. Una inestabilidad convectiva tolerable sólo habilita un contrato finito explícito; no establece estabilidad del tubo infinito.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "¿Puede una corriente distinta de la uniforme aportar un mecanismo de soporte sin introducir una fuerza externa oculta?"
+    },
+    {
+      "id": "C3",
+      "title": "Vorticidad, arrollamiento y momento angular",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "C0",
+        "E03"
+      ],
+      "gate_original": "Región estable con carga angular accesible y tiempo operativo respaldado; pasar a C9. Las soluciones rotantes de otros potenciales sólo orientan métodos [S3].",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "¿Aporta el momento angular una región estable o desplaza la inestabilidad hacia otro sector?"
+    },
+    {
+      "id": "C4",
+      "title": "Tubos huecos, capas y soporte del mediador existente",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "C0",
+        "C1",
+        "E03"
+      ],
+      "gate_original": "Capas que satisfacen ambas ecuaciones sin potencial externo impuesto y región sin modos crecientes; pasar a C9. Para χ dinámico, transferir a C8.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "¿Puede una interfaz adicional o una distribución de χ producir confinamiento estable con los mismos grados de libertad?"
+    },
+    {
+      "id": "C5",
+      "title": "Tubos no uniformes y configuraciones periódicas",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "C0",
+        "E03"
+      ],
+      "gate_original": "Región estable frente a cambios de varias celdas y una banda útil no plana; pasar a C9. Estabilidad sólo ante perturbaciones del mismo periodo es insuficiente.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "¿Existe un estado modulado estable que sustituya al cilindro uniforme y siga transportando?"
+    },
+    {
+      "id": "C6",
+      "title": "Geometrías finitas, curvas, anillos y superficies",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "C0",
+        "E03",
+        "C9 integrado"
+      ],
+      "gate_original": "Geometría física estable y utilidad medida. Si sólo permite una distancia corta, aceptar únicamente ese contrato y estudiar composición posterior; pasar a C9.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "¿Puede una geometría distinta evitar los modos destructivos sin perder función ni necesitar apoyos ficticios?",
+      "analytical_subresult": "27 excluye geometrías estacionarias no esféricas positivas de fase común. La puerta funcional de C6 sigue bloqueada."
+    },
+    {
+      "id": "C7",
+      "title": "Estructuras compuestas y confinamiento emergente",
+      "status": "PARCIAL",
+      "dependencies": [
+        "E03",
+        "RES0"
+      ],
+      "gate_original": "Confinamiento y encaminamiento emergen del estado completo en una región; entonces desarrollar terminales. Si se necesita apoyo material, registrar dependencia E05/F en vez de llamar autosostenida a la cadena.",
+      "evidence": [
+        "tratado/27_simetria_estacionaria_y_cadenas_finitas.md",
+        "datos/P04_C7_simetria_CP05.json",
+        "validacion/P04/C7/auditoria_algebra.json",
+        "tratado/30_fase_estacionaria_sin_nodos.md",
+        "validacion/P04/C7/puerta_fase_sin_nodos.json"
+      ],
+      "positive_results": [
+        "Prueba explícita de planos móviles para estados positivos localizados de fase común.",
+        "La subpregunta pendiente de CP04 queda resuelta bajo las hipótesis declaradas.",
+        "Fase espacial necesariamente constante para psi C2 H1 sin ceros en R3: extensión condicionada sin repetir planos móviles."
+      ],
+      "negative_results": [
+        "Cadena estacionaria finita de varios centros descartada en esa clase.",
+        "Nodos, vórtices, contactos y dinámica siguen sin resolver; una fase suave sin nodos queda cubierta por el capítulo 30."
+      ],
+      "validity_scope": "Soluciones clásicas acotadas H1 positivas en R3, fase común, decaimiento uniforme, lambda0>=0, g,h,M>0 y omega²<m². La fase común se deriva para campos complejos sin ceros mediante el capítulo 30.",
+      "checkpoint": "CP07_ACCESO_LINEAL_PARCIAL",
+      "reopen_conditions": [
+        "Contraejemplo o error que invalide la prueba condicionada."
+      ],
+      "next_action": "Candidatos con nodos/vórtices o dinámica y recursos explícitos; no repetir búsquedas estacionarias sin nodos.",
+      "gate_decision": "SUBCLASE_SIN_NODOS_DESCARTADA; C7_NO_SUPERADA"
+    },
+    {
+      "id": "C8",
+      "title": "Estados dinámicos y control con recursos reales",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "E03",
+        "E04",
+        "E05"
+      ],
+      "gate_original": "Región estable o duración útil declarada del sistema fuente–guía–control, dentro de E02, con apagado factible; pasar a C9/C10.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "¿Pueden oscilaciones o fuentes de los grados existentes estabilizar un enlace con coste y ruido aceptables?"
+    },
+    {
+      "id": "C9",
+      "title": "Terminación, fuente, receptor y empalmes físicos",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "candidato C1–C8",
+        "E05"
+      ],
+      "gate_original": "Terminal estable con transferencia verificable en banda y tolerancias; luego C10. Una coincidencia Neumann en una frecuencia sólo admite esa aproximación local si se cuantifica su ancho de banda.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "¿Sigue funcionando el candidato al acabar, doblarse o conectarse a otro componente?"
+    },
+    {
+      "id": "C10",
+      "title": "Preparación, potencia, robustez y decisión final",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "C9",
+        "E02",
+        "E03",
+        "E04",
+        "E05"
+      ],
+      "gate_original": "Completar los 22 requisitos y comparación con el R1 histórico y revisado. Admitir una realización concreta y pasar a E08/E10; el título «Canal» no sustituye el expediente.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "¿Puede el enlace completo cumplir una misión repetible en una región abierta de estados y tolerancias?"
+    },
+    {
+      "id": "RES0",
+      "title": "Rama estable y energía accesible",
+      "status": "PARCIAL",
+      "dependencies": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "gate_original": "Región robusta y ruta candidata de intercambio de Q o energía modal; avanzar a RES1/RES2.",
+      "evidence": [
+        "validacion/P06/rama/resultados.json",
+        "tratado/25_carta_validez_y_rama_reserva.md",
+        "validacion/P06/preparacion/exceso_energia.json",
+        "tratado/29_acceso_lineal_a_reserva.md",
+        "validacion/P06/acceso_lineal/puerta_decision.json"
+      ],
+      "positive_results": [
+        "Rama y separación entre energía ligada y carga libre; límite mQ−E.",
+        "Exceso radial sobre equilibrio de igual carga y malla: ~0.158; no energía extraíble demostrada.",
+        "Ruta candidata de conversión lineal de bandas, con DeltaE=omega DeltaQ, verificada sobre fondo guardado omega=.9 en nueve frecuencias."
+      ],
+      "negative_results": [
+        "Energía total no equivale a energía recuperable.",
+        "Cerca del giro E/Q>1; estabilidad y acceso aún incompletos.",
+        "No se han evolucionado la descarga del fondo, la recepción ni un ciclo; perfil fijo e infinitesimal no bastan."
+      ],
+      "validity_scope": "Candidatos sin ciclo de Reserva.",
+      "checkpoint": "CP07_ACCESO_LINEAL_PARCIAL",
+      "reopen_conditions": [],
+      "next_action": "Cerrar dominio de estabilidad útil y paquete finito con retroacción y recurso incidente explícito.",
+      "gate_decision": "NO_SUPERADA; SUBRESULTADOS_VERIFICADOS",
+      "remaining_work": "Cerrar dominio de estabilidad útil y paquete finito con retroacción y recurso incidente explícito."
+    },
+    {
+      "id": "RES1",
+      "title": "Preparar el depósito sin circularidad",
+      "status": "PARCIAL",
+      "dependencies": [
+        "RES0",
+        "E04"
+      ],
+      "gate_original": "Protocolo que alcanza la región RES0 con error acotado y origen trazable. Avanzar al ciclo condicionado; reservar la etiqueta P-01 completo para la cadena de arranque realmente cerrada.",
+      "evidence": [
+        "datos/ensayo_preparacion_4_2.json",
+        "validacion/P06/preparacion/resultados.json",
+        "validacion/P06/preparacion/exceso_energia.json",
+        "tratado/26_preparacion_radial_condicionada.md",
+        "datos/ensayo_no_radial_CP06.json",
+        "validacion/P06/no_radial/resultados_parciales.json",
+        "tratado/28_estabilidad_no_radial_condicionada.md",
+        "validacion/P06/no_radial/intento_08_mediador_radial_h025.json",
+        "validacion/P06/no_radial/intento_06_integrador_centrado_puerta.json"
+      ],
+      "positive_results": [
+        "Ocho ejecuciones radiales conservativas con controles de tiempo, espacio y caja.",
+        "Anchura 7.2 a t=1200: asentamiento condicionado, carga retenida 90.13 %, perfil a 1.12 %.",
+        "Refinamiento fino continuado desde t=240; estados completos guardados.",
+        "Ocho continuaciones no radiales finitas desde CP04; conservación y refinamiento de observables Phi, con todos los m hasta L=6.",
+        "Tres evoluciones DOP853 completas hasta tau=160; diferencia temporal chi 0.00191% en posición y 0.00272% en espacio de fases; balances conservados."
+      ],
+      "negative_results": [
+        "Ventanas cortas y otras anchuras no superan asentamiento.",
+        "Fallo de guarda y lanzamiento desde cero del control grueso conservados.",
+        "Fuente primaria, región de preparación, estabilidad no radial y apagado pendientes.",
+        "L2 falla convergencia angular; fase rápida de chi entonces incompleta (control temporal resuelto en CP07); piloto split4 no centrado falla balance grueso.",
+        "Refinamiento h=.5/.25: chi 4.03% en posición y 5.01% en espacio de fases, falla puerta 2%; h=.125 pendiente. Split4c grueso falla a tiempos largos; pilotos split4b no mejoran."
+      ],
+      "validity_scope": "Ensayo radial clásico finito de paquete cargado vestido; no preparación primordial ni dispositivo.",
+      "checkpoint": "CP07_ACCESO_LINEAL_PARCIAL",
+      "reopen_conditions": [
+        "Balance o refinamiento que contradiga el subresultado radial.",
+        "Error de condición de frontera, acción discreta o diagnóstico a Q fija."
+      ],
+      "next_action": "Nuevo control espacial DOP853 h=.125, tau<=160, desde CP04 o su propio reinicio si existe; no repetir las tres evoluciones adaptativas terminadas.",
+      "exploratory_work": "Dependencias generales E02/E03/RES0 parciales; no habilitación de E08 ni cierre funcional.",
+      "gate_decision": "NO_SUPERADA; REFINAMIENTO_ESPACIAL_MEDIADOR_PENDIENTE"
+    },
+    {
+      "id": "RES2",
+      "title": "Derivar carga y acceso al estado",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "RES0",
+        "RES1",
+        "E05"
+      ],
+      "gate_original": "Una de las dos rutas funciona en banda/amplitud y rango de estado; avanzar a RES3. La otra puede rechazarse sin invalidar ambas.",
+      "evidence": [
+        "tratado/29_acceso_lineal_a_reserva.md",
+        "validacion/P06/acceso_lineal/puerta_decision.json"
+      ],
+      "positive_results": [
+        "Subpregunta lineal cerrada: conversión y amplificación de flujo con entrada cargada explícita; verificación por diferencias finitas y colocación continua."
+      ],
+      "negative_results": [
+        "Dependencias funcionales no superadas; sin fuente, paquete, retroacción finita, recepción ni recarga demostradas."
+      ],
+      "validity_scope": "Exploración infinitesimal ell=0 sobre un interpolante guardado a omega=.9; no rango continuo ni ciclo.",
+      "checkpoint": "CP07_ACCESO_LINEAL_PARCIAL",
+      "reopen_conditions": [],
+      "next_action": "Determinar si puede aumentarse energía recuperable mediante un contacto cuya acción y coste sean conocidos.",
+      "gate_decision": "SUBPREGUNTA_LINEAL_COMPLETADA; PUERTA_FUNCIONAL_NO_SUPERADA"
+    },
+    {
+      "id": "RES3",
+      "title": "Aislamiento, retención, pérdidas y ruido",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "RES2",
+        "E02",
+        "E05"
+      ],
+      "gate_original": "Ventana de retención con incertidumbre y modelo de fallo declarado; pasar a RES4. Un caso ideal sin pérdidas es sólo un límite de referencia.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "Medir cuánto tiempo permanece accesible la energía después de retirar la fuente."
+    },
+    {
+      "id": "RES4",
+      "title": "Descargar, recuperar y medir el rendimiento neto",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "RES2",
+        "RES3",
+        "E05"
+      ],
+      "gate_original": "Balance y función reproducibles con receptor físico; pasar a RES5. Publicar rendimiento bruto y neto con la misma frontera contable.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "Transferir energía a un receptor utilizable, conservar Q y terminar en un estado admisible."
+    },
+    {
+      "id": "RES5",
+      "title": "Ciclos repetidos y límites de operación",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "RES0",
+        "RES1",
+        "RES2",
+        "RES3",
+        "RES4"
+      ],
+      "gate_original": "Ventana robusta, repetibilidad y todos los eslabones E08; comparar con el objetivo histórico de densidad útil 10⁹ J/m³ y eficiencias 0.98 sin adoptarlos como datos. Puede aceptarse un contrato más modesto si sigue siendo útil.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "Demostrar repetibilidad y fijar capacidad, potencia, retención, tolerancias y fallos del dispositivo entero."
+    },
+    {
+      "id": "M3",
+      "title": "Expediente de extensión común",
+      "status": "BLOQUEADA",
+      "dependencies": [
+        "B.5",
+        "F.1",
+        "E01",
+        "E02",
+        "E05",
+        "E11"
+      ],
+      "gate_original": "Elegir una extensión sólo si ofrece predicciones comprobables, región robusta y ventaja compartida con el menor cambio necesario. Congelar un Θ candidato común antes de diseñar los dispositivos; volver a E02–E08. No saltar desde una acción atractiva al catálogo completo.",
+      "evidence": [],
+      "positive_results": [],
+      "negative_results": [],
+      "validity_scope": "Sin cierre nuevo.",
+      "checkpoint": null,
+      "reopen_conditions": [],
+      "next_action": "Resolver una carencia compartida identificada —contacto, confinamiento, corriente independiente, barrera o relajación— conservando predicciones ya respaldadas en su dominio."
+    }
+  ],
+  "history": [
+    {
+      "checkpoint": "CP01_E00",
+      "closed": [
+        "E00"
+      ],
+      "opened": [
+        "E01"
+      ],
+      "report": "informes/ENTREGA_01_E00.md"
+    },
+    {
+      "checkpoint": "CP02_E01",
+      "closed": [
+        "E01"
+      ],
+      "opened": [
+        "E02",
+        "E03",
+        "C0",
+        "RES0"
+      ],
+      "report": "informes/ENTREGA_02_E01.md"
+    },
+    {
+      "checkpoint": "CP03_C0_E02_E03_RES0",
+      "closed": [
+        "C0"
+      ],
+      "report": "informes/ENTREGA_03_C0_E02_E03_RES0.md"
+    },
+    {
+      "checkpoint": "CP04_PREPARACION_PARCIAL",
+      "closed": [],
+      "report": "informes/ENTREGA_04_PREPARACION_PARCIAL.md"
+    },
+    {
+      "checkpoint": "CP05_SIMETRIA_C7",
+      "closed": [],
+      "report": "informes/ENTREGA_05_SIMETRIA_C7.md"
+    },
+    {
+      "checkpoint": "CP06_NO_RADIAL_PARCIAL",
+      "closed": [],
+      "report": "informes/ENTREGA_06_NO_RADIAL_PARCIAL.md"
+    },
+    {
+      "checkpoint": "CP07_ACCESO_LINEAL_PARCIAL",
+      "closed": [],
+      "completed_subquestions": [
+        "acceso_lineal_muestreado",
+        "fase_estacionaria_sin_nodos"
+      ],
+      "report": "informes/ENTREGA_07_ACCESO_LINEAL_PARCIAL.md"
+    }
+  ],
+  "next_actions": [
+    "E03: refinar espacio del mediador a h=.125 conservando los fallos",
+    "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
+    "C7: nodos/vórtices o candidatos dinámicos con recursos"
+  ],
+  "do_not_repeat": [
+    "E00 salvo una condicion de reapertura documentada.",
+    "E01 salvo causa de reapertura registrada.",
+    "C0 salvo condición explícita de reapertura.",
+    "Campañas cerradas CP03/CP04 y ocho continuaciones VV de CP06.",
+    "Tres evoluciones DOP853 h=.5 (dos tolerancias) y h=.25 finalizadas a tau=160; dispersión lineal y su verificación cerradas."
+  ],
+  "complete_primordials": 0,
+  "next_calculation": "Nuevo control espacial DOP853 h=.125, tau<=160, desde CP04 o su propio reinicio si existe; no repetir las tres evoluciones adaptativas terminadas.",
+  "stage_completion_is_distinct_from_campaign_pass": true,
+  "numerical_runs_in_progress": [],
+  "research_in_progress": [],
+  "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+  "numerical_runs_pending": [
+    "dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160"
+  ]
+}

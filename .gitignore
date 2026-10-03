@@ -1,0 +1,14 @@
+# Sólo artefactos de ejecución; conservar evidencia generada.
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+validacion/P06/no_radial/cache/
+validacion/P06/no_radial/ejecucion_*.lock
+validacion/**/*.tmp
+validacion/**/*.part
+# No ignorar globalmente NPZ, CSV, JSON, SVG, ZIP ni logs científicos.

@@ -1,0 +1,61 @@
+{
+  "checkpoint": "CP08_REFINAMIENTO_NO_RADIAL",
+  "evolutions_repeated": false,
+  "method": "Cocientes de diferencias entre tres mallas al mismo tau=160; comparación inicial por spline cúbico en r<40 y modos no radiales.",
+  "ratios": {
+    "norm_relative_sup_error": {
+      "coarse_difference": 0.005869990499045349,
+      "fine_difference": 0.0015273337447915048,
+      "reduction_ratio": 3.8432926130671308,
+      "observed_log2_ratio": 1.9423428216648253
+    },
+    "final_complex_nonradial_field_error_over_initial_norm": {
+      "coarse_difference": 0.011226382351444806,
+      "fine_difference": 0.0028510562536917454,
+      "reduction_ratio": 3.937622183676,
+      "observed_log2_ratio": 1.9773246907503401
+    },
+    "final_phi_phase_space_error_over_initial_norm": {
+      "coarse_difference": 0.01403783505096348,
+      "fine_difference": 0.009298218204486829,
+      "reduction_ratio": 1.5097338804320124,
+      "observed_log2_ratio": 0.5942942692745319
+    },
+    "final_mediator_nonradial_error_over_initial_norm": {
+      "coarse_difference": 0.040341137191071734,
+      "fine_difference": 0.03453233704860043,
+      "reduction_ratio": 1.168213351279876,
+      "observed_log2_ratio": 0.22430377826316775
+    },
+    "final_mediator_phase_space_error_over_initial_norm": {
+      "coarse_difference": 0.05009240496236852,
+      "fine_difference": 0.05042920771974442,
+      "reduction_ratio": 0.9933212760500293,
+      "observed_log2_ratio": -0.009667681867681174
+    }
+  },
+  "initial_coarse": {
+    "phi": {
+      "initial_field_relative_difference": 4.964143605237497e-05,
+      "initial_phase_space_relative_difference": 5.150129898749227e-05
+    },
+    "chi": {
+      "initial_field_relative_difference": 0.0001270392675526123,
+      "initial_phase_space_relative_difference": 0.0001372589472732677
+    }
+  },
+  "initial_fine": {
+    "phi": {
+      "initial_field_relative_difference": 3.895382973146044e-06,
+      "initial_phase_space_relative_difference": 5.36915483249024e-06
+    },
+    "chi": {
+      "initial_field_relative_difference": 4.4027947242758146e-05,
+      "initial_phase_space_relative_difference": 6.195444204678937e-05
+    }
+  },
+  "conclusion": "El campo Phi muestra reducción próxima a cuatro, pero chi con velocidades no mejora. No se justifica extrapolación de Richardson ni predecir que otra malla superará el umbral.",
+  "cause_identified": false,
+  "continuum_error_certified": false,
+  "next_question": "Discriminar error de fase del mediador y sensibilidad espacial/temporal conjunta con un protocolo adicional prerregistrado; no relajar la puerta."
+}

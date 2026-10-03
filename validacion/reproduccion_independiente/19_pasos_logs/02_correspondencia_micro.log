@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "checks": 34,
+  "failed": [],
+  "homogeneous": {
+    "s_zero_pressure": 0.5,
+    "rho_hat": 0.75,
+    "pressure_hat": 0.0,
+    "sound_speed_over_c": 0.5,
+    "bulk_modulus_over_energy_density": 0.25,
+    "shear_modulus": 0,
+    "slow_R1_density_s": 0.3340742811072326,
+    "slow_R1_pressure_over_energy_density": -0.07676433788683994,
+    "dispersion": [
+      {
+        "k": 0.0001,
+        "omega_minus": 5.000000206850923e-05,
+        "omega_plus": 2.000000004375,
+        "matrix_error": 1.9278971865113737e-12
+      },
+      {
+        "k": 0.01,
+        "omega_minus": 0.005000140617754914,
+        "omega_plus": 2.000043749169953,
+        "matrix_error": 5.4583074171610235e-15
+      },
+      {
+        "k": 0.1,
+        "omega_minus": 0.050139904382900474,
+        "omega_plus": 2.0043667304134924,
+        "matrix_error": 4.773959005888173e-15
+      },
+      {
+        "k": 1.0,
+        "omega_minus": 0.5951879442120861,
+        "omega_plus": 2.3760789782885143,
+        "matrix_error": 2.220446049250313e-15
+      },
+      {
+        "k": 3.0,
+        "omega_minus": 2.3307156920504006,
+        "omega_plus": 4.070351872114992,
+        "matrix_error": 8.881784197001252e-16
+      }
+    ],
+    "illustrative_SI_matching": {
+      "mass_energy_eV": 1,
+      "lambda": 1.5639117633932252e-08,
+      "cutoff_eV": 1000000.0,
+      "kappa": 0.00024458200036797076,
+      "length_unit_m": 1.973269804593025e-07,
+      "energy_density_J_m3": 1000000000.0,
+      "field_amplitude_over_cutoff": 0.005654300415238719,
+      "status": "Una densidad fijada por ajuste. No prueba acoplamientos, vacío ambiental ni R1 completo."
+    }
+  },
+  "radial": {
+    "omega": 0.9,
+    "Qhat": 2845.7469203293717,
+    "Ehat": 2616.4435053455622,
+    "dQ_domega": -232934.0508889925,
+    "dE_dQ": 0.8999622534335401,
+    "hessians": [
+      {
+        "N": 1200,
+        "R": 40.0,
+        "Lplus_lowest": [
+          -0.022163759362741925,
+          0.2012638687094792,
+          0.23457066466659776,
+          0.28879436136451375
+        ],
+        "Lminus_lowest": [
+          -7.462149060149306e-07,
+          0.18338062483774376,
+          0.2054630096497288,
+          0.24082219775944164
+        ]
+      },
+      {
+        "N": 2400,
+        "R": 40.0,
+        "Lplus_lowest": [
+          -0.022158577043176926,
+          0.2012639761846826,
+          0.23457118302576102,
+          0.2887958518422742
+        ],
+        "Lminus_lowest": [
+          -1.866994914837286e-07,
+          0.183382025057509,
+          0.20546347774916432,
+          0.24082304512046218
+        ]
+      }
+    ],
+    "scope": "Identidad de rama y modo de fase. La estabilidad física exige restricción de carga y espectro acoplado, además de sectores no radiales."
+  },
+  "memory": {
+    "Delta_over_kappa": 2,
+    "nonlinearity_normalized": 1,
+    "drive_squared": 0.9,
+    "fixed_points": [
+      {
+        "occupation_normalized": 0.2807347700187803,
+        "eigenvalues_real": [
+          -0.5,
+          -0.5
+        ],
+        "eigenvalues_imag": [
+          1.4108713170031666,
+          -1.4108713170031666
+        ],
+        "linearly_stable": true
+      },
+      {
+        "occupation_normalized": 1.357277629234088,
+        "eigenvalues_real": [
+          0.6539555214196016,
+          -1.6539555214196016
+        ],
+        "eigenvalues_imag": [
+          0.0,
+          0.0
+        ],
+        "linearly_stable": false
+      },
+      {
+        "occupation_normalized": 2.3619876007471277,
+        "eigenvalues_real": [
+          -0.5,
+          -0.5
+        ],
+        "eigenvalues_imag": [
+          1.3568549930897171,
+          -1.3568549930897171
+        ],
+        "linearly_stable": true
+      }
+    ],
+    "after_high_pulse": 2.3619874624009554,
+    "after_low_pulse": 0.280734768842795,
+    "occupation_balance_residual": 3.653238156431371e-09,
+    "scope": "Memoria alimentada en un modelo modal; no calcula tasa de error térmico, túnel ni coeficiente K desde un glifo 3D."
+  }
+}

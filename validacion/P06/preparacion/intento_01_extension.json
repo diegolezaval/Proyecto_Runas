@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "operation": "Ampliación de caja del caso ancho 7.2, h=.2",
+  "status": "FALLO_DE_TRANSFERENCIA_SEGUIDO_DE_EJECUCION_DESDE_CERO",
+  "failure": "La guarda inicial de 40 unidades contenía 1.3708232762577207e-9 de energía relativa, superior a 1e-12; no se creó un estado transferido.",
+  "launcher_error": "El segundo comando se ejecutó pese al fallo del primero. La simulación larga comenzó desde t=0; no se la etiqueta como una reanudación.",
+  "result": "w7.20_h0.200_dt0.0040_R1300_T1200.json",
+  "result_retained": true,
+  "subsequent_action": "Conservar el cálculo válido como control directo en caja grande. Hacer el refinamiento largo mediante transferencia real del caso fino, comprobando guarda y cambio de energía.",
+  "guard_diagnosis": {
+    "annulus40_fraction": 1.3708232762577207e-09,
+    "annulus20_fraction": 2.6205507356177118e-31,
+    "boundary_energy_fraction": 6.385891346995918e-47
+  },
+  "reason_for_guard_revision": "Se distinguió el pulso situado a 40 unidades del borde de los valores en el borde; se medirá además el cambio exacto de energía discreta de la transferencia. No se cambia el criterio de asentamiento ni de balance."
+}

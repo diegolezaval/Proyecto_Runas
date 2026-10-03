@@ -1,0 +1,55 @@
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 8.0 s 11.3
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 16.0 s 23.6
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 24.0 s 37.3
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 32.0 s 51.6
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 40.0 s 66.0
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 48.0 s 80.3
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 56.0 s 95.6
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 64.0 s 112.4
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 72.0 s 151.4
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 80.0 s 188.2
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 88.0 s 218.3
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 96.0 s 242.0
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 104.0 s 286.9
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 112.0 s 301.6
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 120.0 s 310.9
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 128.0 s 320.1
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 136.0 s 328.4
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 144.0 s 342.5
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 152.0 s 362.3
+EVOLUCION L4_h0.500_dt0.0040_R220_eps0.020_T160 tau 160.0 s 383.2
+{
+  "configuration": {
+    "dx": 0.5,
+    "dt": 0.004,
+    "radius": 220,
+    "L": 4,
+    "eps": 0.02,
+    "tmax": 160,
+    "source_time": 1200.0,
+    "core_radius": 40.0
+  },
+  "initial_energy": 2394.366268701372,
+  "initial_charge": 2584.6675972571734,
+  "final_core_energy": 2287.16861288001,
+  "final_core_charge": 2480.755668842366,
+  "relative_energy_drift": 3.284078843313054e-06,
+  "relative_charge_drift": 3.552713678800501e-15,
+  "relative_core_charge_change": 9.668085811453953e-05,
+  "initial_nonradial_norm": 0.041894121441218304,
+  "max_nonradial_norm": 0.041894121441218304,
+  "max_amplification": 1.0,
+  "mode_maxima": {
+    "1": 1.1783343428247565e-14,
+    "2": 0.041894121441218304,
+    "3": 2.7744232801923606e-15,
+    "4": 0.0011760888832806334
+  },
+  "elapsed_seconds": 383.26740804199994,
+  "balance_passed": true,
+  "bounded_window_passed": true,
+  "stage_complete": false,
+  "orbital_stability_proven": false,
+  "full_angular_continuum": false,
+  "interpretation": "Finite conservative nonradial continuation of CP04 with all m through L; no claim outside this window or truncation"
+}

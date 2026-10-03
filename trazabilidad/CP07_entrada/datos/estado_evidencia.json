@@ -1,0 +1,366 @@
+{
+  "schema_version": "4.2.0",
+  "validation": {
+    "experimental": false,
+    "numerical_internal": true,
+    "continuum_certified": false
+  },
+  "claims": [
+    {
+      "id": "M2-ACTION",
+      "assertion": "Accion escalar con mediador real y U(1) comun.",
+      "classification": [
+        "hipotesis"
+      ],
+      "evidence": [
+        "datos/theta_comun.json",
+        "tratado/13_M2_comun_y_teoremas.md"
+      ],
+      "scope": "Sector clasico aislado en Minkowski.",
+      "not_established": "Calibracion experimental y teoria interactuante total."
+    },
+    {
+      "id": "R1",
+      "assertion": "Valores operacionales historicos.",
+      "classification": [
+        "objetivo_de_diseno"
+      ],
+      "evidence": [
+        "datos/parametros.json"
+      ],
+      "scope": "Metas revisables.",
+      "not_established": "Cumplimiento simultaneo; no fuerzan la teoria."
+    },
+    {
+      "id": "VACUUM",
+      "assertion": "Coercividad y vacio estable del benchmark.",
+      "classification": [
+        "resultado_derivado",
+        "resultado_analitico"
+      ],
+      "evidence": [
+        "tratado/13_M2_comun_y_teoremas.md"
+      ],
+      "scope": "Hipotesis clasicas explicitadas.",
+      "not_established": "Estabilidad cuantica y material."
+    },
+    {
+      "id": "CAUCHY",
+      "assertion": "Evolucion causal y control global de energia.",
+      "classification": [
+        "resultado_derivado",
+        "resultado_analitico"
+      ],
+      "evidence": [
+        "tratado/13_M2_comun_y_teoremas.md"
+      ],
+      "scope": "Clase de energia y sector escalar aislado.",
+      "not_established": "Extension a portales, entorno y EFT completa."
+    },
+    {
+      "id": "QBALL",
+      "assertion": "Estado cargado de dos campos y evidencia espectral y dinamica.",
+      "classification": [
+        "resultado_numerico",
+        "validacion_numerica_interna"
+      ],
+      "evidence": [
+        "validacion/cierre_m2.json",
+        "validacion/dinamica_m2.json"
+      ],
+      "scope": "Mallas, modos y transitorio explicitados.",
+      "not_established": "Certificacion continua, estabilidad orbital general, preparacion."
+    },
+    {
+      "id": "TUBE-NEGATIVE",
+      "assertion": "El tubo libre sin nodos falla como guia larga estable.",
+      "classification": [
+        "resultado_analitico",
+        "resultado_numerico",
+        "resultado_negativo"
+      ],
+      "evidence": [
+        "tratado/18_guia_y_terminal_desde_M2.md",
+        "validacion/guia_m2.json"
+      ],
+      "scope": "Tubo recto libre en reposo y perturbaciones longitudinales.",
+      "not_established": "No excluye todas las guias con materia o control."
+    },
+    {
+      "id": "TERMINAL",
+      "assertion": "El exterior de vacio no equivale al terminal Neumann supuesto.",
+      "classification": [
+        "resultado_derivado",
+        "resultado_analitico"
+      ],
+      "evidence": [
+        "tratado/18_guia_y_terminal_desde_M2.md"
+      ],
+      "scope": "Respuesta de semiespacio de vacio.",
+      "not_established": "Perfil y estabilidad de un extremo completo."
+    },
+    {
+      "id": "PREPARATION",
+      "assertion": "Cero clasico invariante y carga neta conservada.",
+      "classification": [
+        "resultado_analitico",
+        "resultado_negativo"
+      ],
+      "evidence": [
+        "tratado/16_pruebas_de_dispositivo.md"
+      ],
+      "scope": "Bombeo multiplicativo U(1) invariante en sistema cerrado.",
+      "not_established": "Preparacion con fluctuaciones, pares o reservorio y balances completos."
+    },
+    {
+      "id": "MEMORY",
+      "assertion": "Dos fases U(1) globales no tienen barrera de retencion.",
+      "classification": [
+        "resultado_analitico",
+        "resultado_negativo"
+      ],
+      "evidence": [
+        "tratado/16_pruebas_de_dispositivo.md"
+      ],
+      "scope": "Codificacion por fase del sistema aislado.",
+      "not_established": "Memoria mediante otros estados con lectura, escritura y ruido."
+    },
+    {
+      "id": "PORTALS",
+      "assertion": "El benchmark desacoplado no convierte directamente entre M2 y materia/EM.",
+      "classification": [
+        "definicion",
+        "resultado_derivado"
+      ],
+      "evidence": [
+        "datos/theta_comun.json",
+        "tratado/21_corriente_clasificacion_y_cierre.md"
+      ],
+      "scope": "a=b=0.",
+      "not_established": "Hamiltoniano material, transductores y contactos comunes."
+    },
+    {
+      "id": "EOS",
+      "assertion": "Presion, carga, entalpia y sonido del fluido de fase.",
+      "classification": [
+        "resultado_derivado",
+        "aproximacion"
+      ],
+      "evidence": [
+        "tratado/20_interfaz_y_limite_capilar.md"
+      ],
+      "scope": "Rama homogénea estable y gradientes lentos.",
+      "not_established": "No sustituye amplitudes en toda la interfaz."
+    },
+    {
+      "id": "WALL",
+      "assertion": "Tension de interfaz de ambos campos, sin ajuste.",
+      "classification": [
+        "resultado_numerico",
+        "validacion_numerica_interna"
+      ],
+      "evidence": [
+        "validacion/capilaridad/resultados.json",
+        "validacion/capilaridad/pared.csv"
+      ],
+      "scope": "Coexistencia, cajas refinadas y cotas variacionales.",
+      "not_established": "Unicidad y certificacion del minimo global."
+    },
+    {
+      "id": "CAPILLARY-STATIC",
+      "assertion": "Balance exacto de tensiones y leyes de Laplace/energia a radio grande.",
+      "classification": [
+        "resultado_analitico",
+        "aproximacion",
+        "validacion_numerica_interna"
+      ],
+      "evidence": [
+        "tratado/20_interfaz_y_limite_capilar.md",
+        "validacion/capilaridad/resultados.json"
+      ],
+      "scope": "Diez estados d=2,3 con el mismo Theta.",
+      "not_established": "Curvatura de orden superior y barrido de constantes independientes."
+    },
+    {
+      "id": "CAPILLARY-MODES",
+      "assertion": "Una tension e inercia derivadas predicen modos de gotas e inestabilidad de tubos.",
+      "classification": [
+        "resultado_derivado",
+        "aproximacion",
+        "validacion_numerica_interna"
+      ],
+      "evidence": [
+        "validacion/capilaridad/resultados.json",
+        "validacion/capilaridad/verificacion.json"
+      ],
+      "scope": "Esfera ell=2 y tubo kR=0.6, cuatro escalas y cinco mallas.",
+      "not_established": "Espectro completo y fragmentacion no lineal."
+    },
+    {
+      "id": "AXIAL-CURRENT",
+      "assertion": "Una corriente axial uniforme no elimina la banda inestable de onda larga.",
+      "classification": [
+        "resultado_derivado",
+        "resultado_analitico",
+        "resultado_negativo"
+      ],
+      "evidence": [
+        "tratado/21_corriente_clasificacion_y_cierre.md"
+      ],
+      "scope": "Tubos libres con fase uniforme, mu^2>0 y rama de reposo con cL^2<0; transformacion subluminal y regimen de onda larga.",
+      "not_established": "Clasificacion absoluta/convectiva, terminales, rotacion y soporte material."
+    },
+    {
+      "id": "CATALOG",
+      "assertion": "24 funciones evaluadas; ninguna realizacion completa demostrada.",
+      "classification": [
+        "resultado_de_evaluacion"
+      ],
+      "evidence": [
+        "datos/aceptacion_m2.json"
+      ],
+      "scope": "Revision de dependencias y criterios comunes.",
+      "not_established": "Minimo repertorio fisico y primer dispositivo de extremo a extremo."
+    },
+    {
+      "id": "C0-EXTENSION",
+      "assertion": "Exclusión condicionada de tubos con arrollamiento rígido y fondos positivos periódicos.",
+      "classification": [
+        "resultado_derivado",
+        "resultado_analitico_condicionado",
+        "resultado_negativo"
+      ],
+      "evidence": [
+        "tratado/24_exclusiones_tubulares_y_busqueda.md",
+        "datos/P04_busqueda.json"
+      ],
+      "scope": "Hipótesis explícitas de 24.2–24.4.",
+      "not_established": "Agotamiento de Canal y de M2."
+    },
+    {
+      "id": "E02-SENSITIVITY",
+      "assertion": "Diez puntos fundamentales independientes y 18 puntos capilares.",
+      "classification": [
+        "resultado_numerico"
+      ],
+      "evidence": [
+        "validacion/validez/resultados.json",
+        "datos/dominios_validez.json"
+      ],
+      "scope": "Muestras publicadas y refinamiento.",
+      "not_established": "Región robusta continua y carta completa de todas las reducciones."
+    },
+    {
+      "id": "E03-BRANCH",
+      "assertion": "23 soluciones y Hessianos con controles positivos y negativos.",
+      "classification": [
+        "resultado_numerico"
+      ],
+      "evidence": [
+        "validacion/P06/rama/resultados.json"
+      ],
+      "scope": "Rama y mallas declaradas.",
+      "not_established": "Estabilidad no lineal 3D y certificación del continuo."
+    },
+    {
+      "id": "RES-ACCESS-BOUND",
+      "assertion": "Liberar toda la carga como ondas libres requiere trabajo externo.",
+      "classification": [
+        "resultado_derivado"
+      ],
+      "evidence": [
+        "tratado/25_carta_validez_y_rama_reserva.md"
+      ],
+      "scope": "Receptor libre diluido, sin otro recurso ligado.",
+      "not_established": "Descarga útil en receptor ligado y ciclo completo."
+    },
+    {
+      "id": "RADIAL-SETTLING",
+      "assertion": "Asentamiento radial condicionado desde paquete gaussiano cargado a t=1200. No resuelve una fuente primaria.",
+      "classification": [
+        "resultado_numerico",
+        "condicionado",
+        "finito"
+      ],
+      "evidence": [
+        "validacion/P06/preparacion/resultados.json",
+        "validacion/P06/preparacion/exceso_energia.json",
+        "tratado/26_preparacion_radial_condicionada.md"
+      ],
+      "scope": "Dos mallas, anchura 7.2, benchmark escalar y datos vestidos declarados.",
+      "not_established": "Región de preparación, estabilidad 3D, fuente, apagado, extracción y ciclo."
+    },
+    {
+      "id": "C7-FINITE-SYMMETRY",
+      "assertion": "Un estado positivo localizado de fase común en la clase 27 tiene un solo centro y simetría esférica.",
+      "classification": [
+        "demostracion_analitica_condicionada",
+        "resultado_negativo_para_cadenas"
+      ],
+      "evidence": [
+        "tratado/27_simetria_estacionaria_y_cadenas_finitas.md",
+        "datos/P04_C7_simetria_CP05.json"
+      ],
+      "scope": "Hipótesis explícitas de 27.1; prueba propia sin revisión externa.",
+      "not_established": "Unicidad, estabilidad, clases con fase/nodos/dinámica/soportes ni imposibilidad general de Canal."
+    },
+    {
+      "id": "CP06-NONRADIAL",
+      "assertion": "Continuación finita no radial de CP04 con refinamientos; mediador todavía pendiente.",
+      "classification": [
+        "resultado_numerico_condicionado"
+      ],
+      "evidence": [
+        "informes/ENTREGA_06_NO_RADIAL_PARCIAL.md",
+        "validacion/P06/no_radial/resultados_parciales.json"
+      ],
+      "scope": "Familia cuadrupolar, tau<=160, mallas declaradas.",
+      "not_established": "Estabilidad orbital, fase convergente de todos los campos, acceso y dispositivo."
+    }
+  ],
+  "provisional": [
+    "Interpretacion de las primordiales como dispositivos realizables",
+    "Contratos de grafos, Kerr, motor termico y operaciones R1",
+    "Eliminaciones adiabaticas fuera de sus jerarquias"
+  ],
+  "open_problems": [
+    {
+      "id": "O-PREP",
+      "problem": "Preparacion de estado",
+      "needed": "Reservorio o fuente con energia/carga y transitorio derivados"
+    },
+    {
+      "id": "O-MAT",
+      "problem": "Materia y portales",
+      "needed": "Hamiltoniano comun, parametros identificados y observables de varias funciones"
+    },
+    {
+      "id": "O-GUIDE",
+      "problem": "Guia alternativa y terminales",
+      "needed": "Nuevo estado justificado y estabilidad del conjunto sin condiciones ideales impuestas"
+    },
+    {
+      "id": "O-STAB",
+      "problem": "Estabilidad continua/no lineal",
+      "needed": "Certificacion o control analitico adicional y dinamica de formas"
+    },
+    {
+      "id": "O-THETA",
+      "problem": "Sensibilidad a parametros fundamentales",
+      "needed": "Barrido independiente con limites EFT y quantum determinados"
+    },
+    {
+      "id": "O-DEVICE",
+      "problem": "Primer dispositivo y operacion",
+      "needed": "Cadena de preparacion, acceso, medida, perdidas, control y limites"
+    }
+  ],
+  "shared_resources_not_new_laws": [
+    "reservorio_de_carga",
+    "contacto_de_transduccion",
+    "interfaz_de_fase",
+    "preparacion_de_estado"
+  ],
+  "classification_decision": "No se fuerza conservar 24 ni fusionar funciones sin equivalencia fisica demostrada.",
+  "current_checkpoint": "CP05_SIMETRIA_C7"
+}

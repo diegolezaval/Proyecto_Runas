@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654",
+  "case": "comparacion_final",
+  "identity": {
+    "case": {
+      "entrypoint": "herramientas/comparar_mediador_CP10.py",
+      "operation": "comparacion_y_puerta_de_datos_guardados",
+      "configuration": {
+        "core_radius": 40,
+        "time": 160,
+        "threshold": 0.02,
+        "chi_phase_rotation_used_for_acceptance": false
+      },
+      "inputs": [
+        "datos/ensayo_no_radial_CP06.json",
+        "validacion/P06/no_radial/resultados.json",
+        "validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/CP10/temporal_h0125__*/*_estado.npz",
+        "validacion/P06/no_radial/CP10/espacial_h00625__*/*_estado.npz",
+        "validacion/P06/no_radial/CP10/temporal_h0125__*/procedencia.json",
+        "validacion/P06/no_radial/CP10/espacial_h00625__*/procedencia.json"
+      ]
+    },
+    "protocol": "datos/ensayo_mediador_CP10.json",
+    "model": "M2",
+    "input_hashes": {
+      "datos/ensayo_mediador_CP10.json": "3c6a9aeace4091dd39598c52e357996f5bbef7bae9d92a532fce3540ddf0f209",
+      "datos/ensayo_no_radial_CP06.json": "3b620c0dd039e4fe1e54b50fa324a900717e7400e44707b58d2d2b0882dccb55",
+      "datos/theta_comun.json": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+      "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz": "ecbf667afcbd572af50151e7300bebb63afe54bbb25ecf01b2369b42a1c977ce",
+      "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/procedencia.json": "d23b6ac4f48d7529ad3e0107439247a5c7200bf9102a82098f8cff56b89ed450",
+      "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz": "2ef7efa1ca77549aecf069d65638feb559ae9608ab4bdeda36579390750a03fc",
+      "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/procedencia.json": "f6217d888ca69aab523a99f0e503200d11a3b89a96d66c46cba6c1d5cc260c46",
+      "validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz": "2985ca268585e978bea8b4fc26b8cf015b2441f40c3ac0bb57544eed0569296b",
+      "validacion/P06/no_radial/resultados.json": "167d316ed69e383960ef1ff807c8b3932f18227fc560d2cd43b7e595dba331d1",
+      "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89"
+    },
+    "code_hashes": {
+      "herramientas/comparar_mediador_CP10.py": "dd1ad09c3b8e27c22ef671e77fda9d2d148367bd1a6f1d6e7c29200bbe1d2625",
+      "herramientas/diagnosticar_mediador_CP10.py": "41f0b56b797f9caca7601577d8db7f846d1d452e77a80940de6092be6a8fea64",
+      "herramientas/ejecutar_con_procedencia.py": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
+      "herramientas/modelo_m2.py": "87562e977135cc5092ef3567b5980f58e726187e4df5c418de4660291702374f"
+    },
+    "environment": {
+      "python": "3.12.14",
+      "system": "Linux",
+      "architecture": "x86_64",
+      "packages": {
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "matplotlib": "3.10.8",
+        "threadpoolctl": "3.6.0"
+      },
+      "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+      "BLAS_threads": 1,
+      "compiler_flags": [
+        "-O3",
+        "-fPIC",
+        "-shared",
+        "-fno-fast-math"
+      ]
+    }
+  },
+  "created_at": "2026-10-03T03:50:43.542052+00:00",
+  "status": "COMPLETADA",
+  "configuration_sha256": "13bd5d4071660a8ec3db9919ecaa1254d0f530a99f05d0748049b31368b2af6f",
+  "source_snapshots": {
+    "datos/ensayo_mediador_CP10.json": "fuentes/datos/ensayo_mediador_CP10.json",
+    "datos/theta_comun.json": "fuentes/datos/theta_comun.json",
+    "herramientas/comparar_mediador_CP10.py": "fuentes/herramientas/comparar_mediador_CP10.py",
+    "herramientas/diagnosticar_mediador_CP10.py": "fuentes/herramientas/diagnosticar_mediador_CP10.py",
+    "herramientas/ejecutar_con_procedencia.py": "fuentes/herramientas/ejecutar_con_procedencia.py",
+    "herramientas/modelo_m2.py": "fuentes/herramientas/modelo_m2.py"
+  },
+  "segments": [
+    {
+      "started_at": "2026-10-03T03:50:43.542320+00:00",
+      "command": [
+        "python3",
+        "herramientas/comparar_mediador_CP10.py",
+        "--config",
+        "configuration.json",
+        "--output-dir",
+        "."
+      ],
+      "resumed_from_hashes": {},
+      "status": "COMPLETADA",
+      "ended_at": "2026-10-03T03:50:45.885012+00:00",
+      "returncode": 0,
+      "final_time": null
+    }
+  ],
+  "output_hashes": {
+    "CP10_errores_mediador.svg": "77817789dcf300156cad64433fb3b04ca12b5e3b0e83a14e876812ab46eb9d05",
+    "comparaciones.csv": "19b34c23326b2ae0de47473e333a95bcd2f564e53abfea590c271c00e473661f",
+    "configuration.json": "13bd5d4071660a8ec3db9919ecaa1254d0f530a99f05d0748049b31368b2af6f",
+    "ejecucion.log": "f0c409494aa2a20faeec9935158d7a22ce79e6624ab111a64a12b354a318fe60",
+    "fuentes/datos/ensayo_mediador_CP10.json": "3c6a9aeace4091dd39598c52e357996f5bbef7bae9d92a532fce3540ddf0f209",
+    "fuentes/datos/theta_comun.json": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+    "fuentes/herramientas/comparar_mediador_CP10.py": "dd1ad09c3b8e27c22ef671e77fda9d2d148367bd1a6f1d6e7c29200bbe1d2625",
+    "fuentes/herramientas/diagnosticar_mediador_CP10.py": "41f0b56b797f9caca7601577d8db7f846d1d452e77a80940de6092be6a8fea64",
+    "fuentes/herramientas/ejecutar_con_procedencia.py": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
+    "fuentes/herramientas/modelo_m2.py": "87562e977135cc5092ef3567b5980f58e726187e4df5c418de4660291702374f",
+    "resultados.json": "4d6c97f9119eaf16cde5bcb2bc96b910d8a00e830ca032eb6b17d08086480faf"
+  },
+  "comparisons_and_decision": "La puerta se registra en el resultado y el informe CP10; completar una ejecución no cierra una etapa."
+}

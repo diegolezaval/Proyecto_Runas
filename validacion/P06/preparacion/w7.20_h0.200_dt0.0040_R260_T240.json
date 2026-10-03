@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.1.0",
+  "configuration": {
+    "width": 7.2,
+    "dx": 0.2,
+    "dt": 0.004,
+    "radius": 260.0,
+    "tmax": 240.0,
+    "n": 1300,
+    "core_radius": 40
+  },
+  "initial_energy": 2566.941686634464,
+  "initial_charge": 2745.7739206676433,
+  "initial_E_over_Q": 0.9348700078010445,
+  "initial_energy_above_reference": 41.28277672686136,
+  "final_core_energy": 2335.7312279439084,
+  "final_core_charge": 2528.3019891245613,
+  "final_energy_outside_core": 231.21036972822685,
+  "final_charge_outside_core": 217.47193154308252,
+  "mean_late_charge_fraction": 0.9277987691064458,
+  "relative_energy_drift": 1.1667327537434602e-07,
+  "relative_charge_drift": 5.10702591327572e-15,
+  "equilibrium_diagnostic": {
+    "omega_estimate": 0.9009360773490594,
+    "equilibrium_charge": 2550.796364295515,
+    "mean_retained_charge": 2547.525663840019,
+    "charge_matching_relative": 0.0012838734078013392,
+    "max_late_profile_deviation": 0.10914897733891656,
+    "min_late_profile_deviation": 0.08152177943418185,
+    "equilibrium_energy": 2350.0894084929846,
+    "method": "omega(Q) PCHIP seed, then full two-field stationary solve; residual charge mismatch explicitly reported"
+  },
+  "elapsed_seconds": 3.9854668309999397,
+  "balance_passed": true,
+  "primary_source_derived": false,
+  "shutdown_derived": false,
+  "full_3D_test": false,
+  "complete_RES1": false,
+  "interpretation": "Conditional radial relaxation from a pre-existing dressed charged packet. No vacuum start, no source construction, no artificial damping. Exterior retains emitted energy and charge."
+}

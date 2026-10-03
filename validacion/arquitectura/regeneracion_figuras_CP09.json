@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "campaigns_executed": false,
+  "corpus_modified": false,
+  "runs": [
+    {
+      "script": "figuras_capilaridad.py",
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "script": "figuras_m2.py",
+      "returncode": 0,
+      "output": "Tres figuras SVG científicas generadas desde los resultados.\n"
+    },
+    {
+      "script": "figuras_campana_4_2.py",
+      "returncode": 0,
+      "output": "Dos SVG y dos PNG generados desde los resultados existentes.\n"
+    },
+    {
+      "script": "figuras_preparacion_m2.py",
+      "returncode": 0,
+      "output": "SVG y PNG de preparación generados.\n"
+    },
+    {
+      "script": "graficos_micro.py",
+      "returncode": 0,
+      "output": "Cuatro SVG científicos generados.\n"
+    }
+  ],
+  "second_run_returncodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "SVG_byte_differences_from_checkpoint": [
+    "graficos/M2_evidencia_numerica.svg",
+    "graficos/CP04_preparacion_radial.svg",
+    "graficos/CP03_rama_reserva.svg",
+    "graficos/M2_guia_inestable.svg",
+    "graficos/M2_terminal_y_canal.svg",
+    "graficos/CP03_validez.svg",
+    "graficos/microscopia/perfiles_M1_M2.svg",
+    "graficos/microscopia/dispersion_grafos.svg",
+    "graficos/microscopia/memoria_alimentada.svg",
+    "graficos/microscopia/dispersion.svg"
+  ],
+  "SVG_semantic_differences_after_removing_metadata_and_normalizing_ids": [],
+  "SVG_nonrepeatable_byte_hashes": [
+    "graficos/M2_evidencia_numerica.svg",
+    "graficos/CP04_preparacion_radial.svg",
+    "graficos/CP03_rama_reserva.svg",
+    "graficos/M2_guia_inestable.svg",
+    "graficos/M2_terminal_y_canal.svg",
+    "graficos/CP03_validez.svg",
+    "graficos/microscopia/perfiles_M1_M2.svg",
+    "graficos/microscopia/dispersion_grafos.svg",
+    "graficos/microscopia/memoria_alimentada.svg",
+    "graficos/microscopia/dispersion.svg"
+  ],
+  "scope": "Regeneración de figuras en copia. Comparación SVG por XML sin metadata y con IDs normalizados; no certificación física ni comparación de render pixel a pixel."
+}

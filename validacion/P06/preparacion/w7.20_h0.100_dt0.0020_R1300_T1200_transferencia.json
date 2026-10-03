@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "source": "w7.20_h0.100_dt0.0020_R260_T240_estado.npz",
+  "source_sha256": "46361b7f2acda572bea47ca1b0b51f82c7dcf3c9fcca456cfe6d78621cee5571",
+  "target": "w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+  "configuration_old": {
+    "width": 7.2,
+    "dx": 0.1,
+    "dt": 0.002,
+    "radius": 260.0,
+    "tmax": 240.0,
+    "n": 2600,
+    "core_radius": 40
+  },
+  "configuration_new": {
+    "width": 7.2,
+    "dx": 0.1,
+    "dt": 0.002,
+    "radius": 1300.0,
+    "tmax": 1200.0,
+    "n": 13000,
+    "core_radius": 40
+  },
+  "continued_from_time": 240.0,
+  "outer_annulus_width": 20,
+  "outer_annulus_energy_fraction": 2.927431468696446e-23,
+  "energy_change_from_outer_face_relative": -4.560628403660369e-40,
+  "prior_steps_repeated": false,
+  "scope": "Misma malla interior, relleno nulo exterior con energía de borde comprobada; no extiende la validez física del modelo."
+}

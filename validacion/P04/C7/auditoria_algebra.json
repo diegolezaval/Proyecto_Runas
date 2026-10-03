@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "samples": 20000,
+  "seed": 27092026,
+  "checks": {
+    "reflected_F_identity": true,
+    "reflected_G_identity": true,
+    "positive_cross_derivatives": true,
+    "negative_mediator_diagonal": true,
+    "cross_bound_on_negative_support": true,
+    "exterior_young_bound": true
+  },
+  "passed": true,
+  "F_identity_relative": 6.071829533512518e-16,
+  "G_identity_relative": 4.1480928998546145e-16,
+  "benchmark_tail_thresholds": {
+    "f": 0.005137011669140813,
+    "u": 6.7175144212722e-05
+  },
+  "mathematical_proof": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md",
+  "proof_by_numeric_samples": false,
+  "complete_C7": false
+}

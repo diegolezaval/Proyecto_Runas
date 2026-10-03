@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "C7",
+  "candidate": "cadena_finita_estacionaria_positiva_fase_comun",
+  "status": "DESCARTADA_DENTRO_DEL_MODELO",
+  "hypothesis_changed": "Localización finita en las tres direcciones; sin periodicidad axial.",
+  "information_value": "Decide una familia sin campaña Newton ni simulación de cadenas.",
+  "cost": "Demostración analítica y auditor de álgebra.",
+  "advance_condition": "Cambiar fase, nodos, rotación, dinámica, soportes o recursos.",
+  "closure_condition": "Todo estado exacto de la clase es radial y monótono desde un centro común.",
+  "proof": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md",
+  "requirements": [
+    {
+      "numero": 1,
+      "requisito": "Derivación desde la acción",
+      "prueba_y_observable": "Ecuaciones del fondo, perturbaciones y fronteras; fuente de cada fuerza",
+      "puerta": "Rechazar paredes, tensiones o amortiguamiento añadidos sin origen",
+      "resultado": "DERIVADA_DESDE_ACCION",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 2,
+      "requisito": "Existencia",
+      "prueba_y_observable": "Rama no trivial, regularidad, asintóticos, carga y energía total o por celda/longitud",
+      "puerta": "Newton fallido deja pregunta abierta; una obstrucción analítica sí excluye su clase",
+      "resultado": "DESCARTADA_GEOMETRIA_MULTICENTRO_BAJO_HIPOTESIS",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 3,
+      "requisito": "Convergencia",
+      "prueba_y_observable": "Fondo, espectro, cuadraturas, caja y tiempo refinados de forma independiente",
+      "puerta": "Observable debe converger con margen respecto de la decisión",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 4,
+      "requisito": "Estabilidad radial",
+      "prueba_y_observable": "Segunda variación restringida y generador con ambos campos",
+      "puerta": "Un modo radial creciente convergente rechaza el estado",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 5,
+      "requisito": "Estabilidad longitudinal",
+      "prueba_y_observable": "Todo k relevante, incluidos k→0, subarmónicos y dispositivo finito",
+      "puerta": "No basta estabilizar el k elegido para transportar",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 6,
+      "requisito": "Estabilidad azimutal",
+      "prueba_y_observable": "Todos los índices relevantes, acoplamientos de bandas y cota para índices altos",
+      "puerta": "Incluir flexión, división, desplazamiento y ruptura no axisimétrica",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 7,
+      "requisito": "Espectro de perturbaciones",
+      "prueba_y_observable": "Puntual, esencial, modos de simetría, resonancias y posibles bloques de Jordan",
+      "puerta": "No confundir estabilidad del Hessiano restringido, espectral, orbital y asintótica",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 8,
+      "requisito": "Conservación",
+      "prueba_y_observable": "E,Q,P,J y cargas adicionales si existen; flujos y fuentes",
+      "puerta": "El conjunto completo cierra balances dentro del error",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 9,
+      "requisito": "Rango de estado",
+      "prueba_y_observable": "Región en Q, frecuencia, corriente, J, longitud, radio, entorno y tolerancias",
+      "puerta": "No aceptar un único punto; excluir vecindades de bifurcación no controladas",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 10,
+      "requisito": "Modos guiados",
+      "prueba_y_observable": "Perfil transversal, fracción de energía localizada y separación del continuo",
+      "puerta": "Distinguir modo ligado, resonancia con fuga y dispersión de vacío",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 11,
+      "requisito": "Dispersión",
+      "prueba_y_observable": "Ωₙ(k) de la acción linealizada; acoplamiento modal en estructuras no uniformes",
+      "puerta": "La dispersión de un grafo supuesto no realiza su guía",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 12,
+      "requisito": "Velocidad de grupo",
+      "prueba_y_observable": "dΩ/dk o fórmula biortogonal; contrastar propagación de paquetes",
+      "puerta": "Separar velocidad de grupo, energía y frente causal",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 13,
+      "requisito": "Flujo de energía",
+      "prueba_y_observable": "Integral de T⁰ᶻ, normalización modal, signo energético y flujo de carga",
+      "puerta": "Calcular energía transportada además de amplitud; auditar mezcla de bandas laterales",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 14,
+      "requisito": "Reflexión/transmisión",
+      "prueba_y_observable": "Matriz S con canales normalizados por flujo y fuentes incluidas",
+      "puerta": "Un balance unitario sólo vale con sus hipótesis; toda ganancia requiere fuente o descarga del fondo",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 15,
+      "requisito": "Pérdidas/radiación",
+      "prueba_y_observable": "Escape a continuo, conversión, defectos, curvatura y contacto; correlaciones de ruido",
+      "puerta": "Separar pérdida numérica de física; ni γ ni ruido se ajustan a R1",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 16,
+      "requisito": "Respuesta no lineal",
+      "prueba_y_observable": "Dependencia de dispersión y S con amplitud, armónicos, intermodulación y deformación del fondo",
+      "puerta": "Identificar saturación, choque, colapso o fragmentación si aparecen",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 17,
+      "requisito": "Amplitud/potencia",
+      "prueba_y_observable": "Mapa de amplitud, potencia pico/media, ciclo de trabajo y duración",
+      "puerta": "Límite operativo anterior al fallo, con margen y error conocidos",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 18,
+      "requisito": "Terminación física",
+      "prueba_y_observable": "Fondo axial completo, fuente/receptor, exterior saliente y reacción",
+      "puerta": "Una condición Neumann o absorbente de cálculo no constituye un terminal",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 19,
+      "requisito": "Empalmes",
+      "prueba_y_observable": "Cambio de sección, curva, unión, contacto y proximidad de otros enlaces",
+      "puerta": "Resolver modos atrapados, reflexión, diafonía e inestabilidades de unión",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 20,
+      "requisito": "Preparación/apagado",
+      "prueba_y_observable": "Transitorio desde fuente identificada, asentamiento, vaciado y destino de carga",
+      "puerta": "No inicializar el estado final ni borrar campos al terminar",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 21,
+      "requisito": "Balance energético completo",
+      "prueba_y_observable": "Construcción, mantenimiento, bombeo, señal, retorno, radiación, carga y retirada",
+      "puerta": "Publicar eficiencia neta y recursos del entorno; no doble contabilidad",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    },
+    {
+      "numero": 22,
+      "requisito": "Función P-04/R1",
+      "prueba_y_observable": "Predicción o medida con incertidumbre frente a contrato previamente declarado",
+      "puerta": "Admitir, revisar prestación/geometría o rechazar; conservar la comparación original",
+      "resultado": "NO_EVALUADA_TRAS_EXCLUSION_DE_EXISTENCIA",
+      "evidencia": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+    }
+  ],
+  "complete_C7": false,
+  "complete_P04": false,
+  "M2_exhausted": false,
+  "M3_enabled": false,
+  "reopen_conditions": [
+    "Error en comparación exterior o continuación del plano.",
+    "Error en regularidad, dominio funcional o cooperación.",
+    "Contraejemplo que cumpla todas las hipótesis."
+  ]
+}

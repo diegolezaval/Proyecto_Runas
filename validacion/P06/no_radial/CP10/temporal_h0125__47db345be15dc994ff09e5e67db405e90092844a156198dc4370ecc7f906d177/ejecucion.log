@@ -1,0 +1,78 @@
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 8.0 pasos 1483 E 5.713018946806869e-11 Q 1.2212453270876722e-15 s 111.7
+PAUSA_REANUDABLE dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 8.0
+REANUDADO dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 8.0
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 16.0 pasos 2966 E 7.07015557210866e-11 Q 1.4432899320127035e-15 s 219.1
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 24.0 pasos 4435 E 8.542588858517774e-11 Q 1.5543122344752192e-15 s 326.0
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 32.0 pasos 5892 E 1.0126843807967134e-10 Q 1.887379141862766e-15 s 430.6
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 40.0 pasos 7337 E 1.183710907071145e-10 Q 1.887379141862766e-15 s 537.3
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 48.0 pasos 8768 E 1.3705947488062975e-10 Q 1.887379141862766e-15 s 641.5
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 56.0 pasos 10186 E 1.5741385972489752e-10 Q 2.1094237467877974e-15 s 746.7
+REANUDADO dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 56.0
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 64.0 pasos 11596 E 1.7877099800500673e-10 Q 2.3314683517128287e-15 s 853.7
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 72.0 pasos 13006 E 2.0009949253108061e-10 Q 2.4424906541753444e-15 s 958.9
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 80.0 pasos 14420 E 2.2091373175214812e-10 Q 2.6645352591003757e-15 s 1062.3
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 88.0 pasos 15838 E 2.4128776754395176e-10 Q 2.6645352591003757e-15 s 1167.9
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 96.0 pasos 17258 E 2.613970151443823e-10 Q 2.6645352591003757e-15 s 1272.9
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 104.0 pasos 18679 E 2.813008714852572e-10 Q 2.6645352591003757e-15 s 1378.6
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 112.0 pasos 20101 E 3.0107649706678785e-10 Q 2.6645352591003757e-15 s 1482.6
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 120.0 pasos 21524 E 3.2081381995396896e-10 Q 2.6645352591003757e-15 s 1586.1
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 128.0 pasos 22947 E 3.405515869303599e-10 Q 2.6645352591003757e-15 s 1689.8
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 136.0 pasos 24369 E 3.603300990917546e-10 Q 2.6645352591003757e-15 s 1794.7
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 144.0 pasos 25790 E 3.8020386838866216e-10 Q 2.6645352591003757e-15 s 1899.1
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 152.0 pasos 27211 E 4.001964315492046e-10 Q 2.6645352591003757e-15 s 2006.0
+EVOLUCION dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160 tau 160.0 pasos 28630 E 4.2032843872163994e-10 Q 2.6645352591003757e-15 s 2112.7
+{
+  "configuration": {
+    "dx": 0.125,
+    "dt": 0.02,
+    "radius": 220.0,
+    "L": 4,
+    "eps": 0.02,
+    "tmax": 160.0,
+    "source_time": 1200.0,
+    "core_radius": 40.0,
+    "scheme": "dop853e10",
+    "adaptive": true,
+    "rtol": 1e-10,
+    "atol": 1e-12,
+    "max_step": 0.02
+  },
+  "initial_energy": 2398.779643286129,
+  "initial_charge": 2582.6870382190496,
+  "final_core_energy": 2285.6042246862958,
+  "final_core_charge": 2478.756846024591,
+  "relative_energy_drift": 4.2032843872163994e-10,
+  "relative_charge_drift": 2.6645352591003757e-15,
+  "relative_core_charge_change": 0.00010416570098148448,
+  "initial_nonradial_norm": 0.04190620959637691,
+  "max_nonradial_norm": 0.04190620959637691,
+  "max_amplification": 1.0,
+  "mode_maxima": {
+    "1": 1.119105447608637e-14,
+    "2": 0.04190620959637691,
+    "3": 2.9351883342557817e-15,
+    "4": 0.0011685216203780845
+  },
+  "elapsed_seconds": 2112.6805942139995,
+  "accepted_steps": 28630,
+  "nfev": 345436,
+  "implementations": [
+    {
+      "time": 0.0,
+      "method": "numpy"
+    },
+    {
+      "time": 0.0,
+      "method": "numpy_projection_fused_C_potential",
+      "source_sha256": "74dd2159ac951e701b3acce7f8365847874521769479c08dd8e4634c7e2e9de9",
+      "fast_math": false,
+      "action_changed": false
+    }
+  ],
+  "balance_passed": true,
+  "bounded_window_passed": true,
+  "stage_complete": false,
+  "orbital_stability_proven": false,
+  "full_angular_continuum": false,
+  "interpretation": "Adaptive full-force refinement of finite nonradial continuation; no action change"
+}

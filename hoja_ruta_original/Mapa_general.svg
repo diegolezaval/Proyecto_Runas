@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1540" viewBox="0 0 1240 1540" role="img">
+  <title>De M2 4.1 a una ingeniería contrastada</title>
+  <desc>Mapa de decisiones. Las flechas señalan dependencias y puertas, no resultados obtenidos ni un calendario.</desc>
+  <rect width="1240" height="1540" fill="#f7f9fc" />
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#63778b" />
+    </marker>
+  </defs>
+  <text x="55" y="58" font-family="DejaVu Sans, sans-serif" font-size="32" fill="#102e4a" font-weight="700" text-anchor="start">
+    <tspan x="55" dy="0">A · Mapa del programa</tspan>
+  </text>
+  <text x="55" y="91" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#263749" font-weight="400" text-anchor="start">
+    <tspan x="55" dy="0">M2 4.1 es la referencia. R1 sigue siendo un objetivo revisable.</tspan>
+  </text>
+  <rect x="350" y="126" width="540" height="106" rx="15" fill="#eaf0fa" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="370" y="155" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#46637f" font-weight="600" text-anchor="start">
+    <tspan x="370" dy="0">E00–E01</tspan>
+  </text>
+  <text x="370" y="184" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#102e4a" font-weight="600" text-anchor="start">
+    <tspan x="370" dy="0">Fuente, acción y parámetros comunes</tspan>
+  </text>
+  <text x="370" y="211" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#41556b" font-weight="400" text-anchor="start">
+    <tspan x="370" dy="0">Reproducción, convenciones y coordenadas independientes.</tspan>
+  </text>
+  <path d="M620 232 L620 266" fill="none" stroke="#63778b" stroke-width="2" marker-end="url(#arrow)" />
+  <rect x="350" y="266" width="540" height="126" rx="15" fill="#eaf0fa" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="370" y="295" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#46637f" font-weight="600" text-anchor="start">
+    <tspan x="370" dy="0">E02–E03</tspan>
+  </text>
+  <text x="370" y="324" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#102e4a" font-weight="600" text-anchor="start">
+    <tspan x="370" dy="0">Validez, soluciones y estabilidad</tspan>
+  </text>
+  <text x="370" y="351" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#41556b" font-weight="400" text-anchor="start">
+    <tspan x="370" dy="0">Errores por observable; espectro y dinámica completos.</tspan>
+    <tspan x="370" dy="21">Capilaridad contrastada dentro de su dominio.</tspan>
+  </text>
+  <path d="M620 392 L620 412 L220 412 L220 446" fill="none" stroke="#63778b" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M620 392 L620 412 L620 412 L620 446" fill="none" stroke="#63778b" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M620 392 L620 412 L1020 412 L1020 446" fill="none" stroke="#63778b" stroke-width="2" marker-end="url(#arrow)" />
+  <rect x="45" y="446" width="350" height="148" rx="15" fill="#e7f3f1" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="65" y="475" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#46637f" font-weight="600" text-anchor="start">
+    <tspan x="65" dy="0">E06 · PRIORIDAD</tspan>
+  </text>
+  <text x="65" y="504" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#102e4a" font-weight="600" text-anchor="start">
+    <tspan x="65" dy="0">Canal en M2</tspan>
+  </text>
+  <text x="65" y="531" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#41556b" font-weight="400" text-anchor="start">
+    <tspan x="65" dy="0">Clases, regiones estables,</tspan>
+    <tspan x="65" dy="21">transporte, extremos y empalmes.</tspan>
+    <tspan x="65" dy="21">11 ramas · 22 requisitos</tspan>
+  </text>
+  <rect x="445" y="446" width="350" height="148" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="465" y="475" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#46637f" font-weight="600" text-anchor="start">
+    <tspan x="465" dy="0">E04–E05 · COMUNES</tspan>
+  </text>
+  <text x="465" y="504" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#102e4a" font-weight="600" text-anchor="start">
+    <tspan x="465" dy="0">Preparación y contactos</tspan>
+  </text>
+  <text x="465" y="531" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#41556b" font-weight="400" text-anchor="start">
+    <tspan x="465" dy="0">Fuente y receptor físicos.</tspan>
+    <tspan x="465" dy="21">Conservación, lectura y entorno.</tspan>
+    <tspan x="465" dy="21">E11: planear el contraste empírico.</tspan>
+  </text>
+  <rect x="845" y="446" width="350" height="148" rx="15" fill="#e7f3f1" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="865" y="475" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#46637f" font-weight="600" text-anchor="start">
+    <tspan x="865" dy="0">E07 · VÍA PARALELA</tspan>
+  </text>
+  <text x="865" y="504" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#102e4a" font-weight="600" text-anchor="start">
+    <tspan x="865" dy="0">Reserva con Q-ball</tspan>
+  </text>
+  <text x="865" y="531" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#41556b" font-weight="400" text-anchor="start">
+    <tspan x="865" dy="0">Energía accesible; preparación,</tspan>
+    <tspan x="865" dy="21">carga, retención y recuperación.</tspan>
+    <tspan x="865" dy="21">Ciclo repetible con costes.</tspan>
+  </text>
+  <rect x="45" y="642" width="350" height="144" rx="15" fill="#fff1dc" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="65" y="671" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#46637f" font-weight="600" text-anchor="start">
+    <tspan x="65" dy="0">B.5 → F · CONDICIONAL</tspan>
+  </text>
+  <text x="65" y="700" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#102e4a" font-weight="600" text-anchor="start">
+    <tspan x="65" dy="0">Si Canal agota M2</tspan>
+  </text>
+  <text x="65" y="727" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#41556b" font-weight="400" text-anchor="start">
+    <tspan x="65" dy="0">Cerrar clases y dominio investigados.</tspan>
+    <tspan x="65" dy="21">Completar portales existentes; sólo</tspan>
+    <tspan x="65" dy="21">después, evaluar M3 compartido.</tspan>
+  </text>
+  <path d="M220 594 L220 642" fill="none" stroke="#63778b" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M45 708 L24 708 L24 327 L350 327" fill="none" stroke="#63778b" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="7 5" />
+  <text x="49" y="823" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#72572c" font-weight="400" text-anchor="start">
+    <tspan x="49" dy="0">Una extensión vuelve a</tspan>
+    <tspan x="49" dy="19.88">las pruebas fundamentales.</tspan>
+  </text>
+  <path d="M395 520 L420 520 L420 833 L520 833 L520 874" fill="none" stroke="#63778b" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M620 594 L620 874" fill="none" stroke="#63778b" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M1020 594 L1020 833 L720 833 L720 874" fill="none" stroke="#63778b" stroke-width="2" marker-end="url(#arrow)" />
+  <rect x="350" y="874" width="540" height="130" rx="15" fill="#dcebea" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="370" y="903" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#46637f" font-weight="600" text-anchor="start">
+    <tspan x="370" dy="0">E08 + E11</tspan>
+  </text>
+  <text x="370" y="932" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#102e4a" font-weight="600" text-anchor="start">
+    <tspan x="370" dy="0">Primer dispositivo y nivel de evidencia</tspan>
+  </text>
+  <text x="370" y="959" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#41556b" font-weight="400" text-anchor="start">
+    <tspan x="370" dy="0">Canal o Reserva + recursos comunes.</tspan>
+    <tspan x="370" dy="21">Separar cierre matemático, numérico y experimental.</tspan>
+  </text>
+  <path d="M620 1004 L620 1040" fill="none" stroke="#63778b" stroke-width="2" marker-end="url(#arrow)" />
+  <rect x="350" y="1040" width="540" height="108" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="370" y="1069" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#46637f" font-weight="600" text-anchor="start">
+    <tspan x="370" dy="0">E09–E10</tspan>
+  </text>
+  <text x="370" y="1098" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#102e4a" font-weight="600" text-anchor="start">
+    <tspan x="370" dy="0">Familias, redes y control</tspan>
+  </text>
+  <text x="370" y="1125" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#41556b" font-weight="400" text-anchor="start">
+    <tspan x="370" dy="0">Admitir funciones por dependencias y utilidad demostrada.</tspan>
+  </text>
+  <path d="M620 1148 L620 1184" fill="none" stroke="#63778b" stroke-width="2" marker-end="url(#arrow)" />
+  <rect x="350" y="1184" width="540" height="108" rx="15" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="370" y="1213" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#46637f" font-weight="600" text-anchor="start">
+    <tspan x="370" dy="0">E12–E13</tspan>
+  </text>
+  <text x="370" y="1242" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#102e4a" font-weight="600" text-anchor="start">
+    <tspan x="370" dy="0">Fabricación y operación</tspan>
+  </text>
+  <text x="370" y="1269" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#41556b" font-weight="400" text-anchor="start">
+    <tspan x="370" dy="0">Tolerancias, calibración, fallos, seguridad e interfaz.</tspan>
+  </text>
+  <path d="M620 1292 L620 1328" fill="none" stroke="#63778b" stroke-width="2" marker-end="url(#arrow)" />
+  <rect x="350" y="1328" width="540" height="108" rx="15" fill="#eaf0fa" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="370" y="1357" font-family="DejaVu Sans, sans-serif" font-size="14" fill="#46637f" font-weight="600" text-anchor="start">
+    <tspan x="370" dy="0">E14</tspan>
+  </text>
+  <text x="370" y="1386" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#102e4a" font-weight="600" text-anchor="start">
+    <tspan x="370" dy="0">Consolidación y enseñanza</tspan>
+  </text>
+  <text x="370" y="1413" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#41556b" font-weight="400" text-anchor="start">
+    <tspan x="370" dy="0">Tratado, ingeniería, manuales, normas y libros.</tspan>
+  </text>
+  <text x="55" y="1490" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263749" font-weight="400" text-anchor="start">
+    <tspan x="55" dy="0">Las realizaciones que fallen se revisan o descartan; no se alteran las leyes para conservar una prestación.</tspan>
+  </text>
+</svg>

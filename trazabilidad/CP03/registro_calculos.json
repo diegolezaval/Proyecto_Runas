@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "base_checkpoint": "CP02_E01",
+  "checkpoint": "CP03_C0_E02_E03_RES0",
+  "authoritative_results": {
+    "C0": "validacion/P04/exclusiones/resultados.json",
+    "E02": "validacion/validez/resultados.json",
+    "E03_RES0": "validacion/P06/rama/resultados.json"
+  },
+  "historical_partial_files": {
+    "validacion/validez/partial_sensitivity.json": "Anterior a recuperación M+; no resultado vigente",
+    "validacion/validez/partial_capillary.json": "Instantánea de campaña concluida",
+    "validacion/P06/rama/partial.json": "Instantánea de continuación concluida"
+  },
+  "calculations": [
+    {
+      "id": "sensibilidad_M_positivo",
+      "status": "COMPLETADA",
+      "stage_still_partial": "E02",
+      "resume": false
+    },
+    {
+      "id": "campana_rama_23",
+      "status": "COMPLETADA",
+      "stage_still_partial": "E03/RES0",
+      "resume": false
+    },
+    {
+      "id": "captura_radial",
+      "status": "SIGUIENTE",
+      "stage_still_partial": "E04/RES1",
+      "resume": false,
+      "command": "python herramientas/captura_radial_m2.py --width 8 --dx .2 --dt .004 --tmax 240 --radius 260"
+    }
+  ],
+  "failures_preserved": "trazabilidad/reanudacion_CP02/inventario.json"
+}

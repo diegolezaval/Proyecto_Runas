@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "tests": {
+    "payload_exactly_tracked": true,
+    "all_checkout_bytes_exact_even_autocrlf_true": true,
+    "transient_fixtures_ignored": true,
+    "all_NPZ_CSV_JSON_SVG_logs_and_history_ZIP_tracked": true,
+    "no_remote": true,
+    "input_project_has_no_git_repository": true,
+    "input_corpus_unmodified": true
+  },
+  "git_version": "git version 2.51.1",
+  "files_checked": 938,
+  "ignored_fixtures": {
+    "__pycache__/prueba.pyc": true,
+    ".venv/prueba": true,
+    "validacion/P06/no_radial/cache/prueba.so": true,
+    "validacion/P06/no_radial/ejecucion_prueba.lock": true,
+    "validacion/prueba_CP10.tmp": true,
+    "validacion/prueba_CP10.part": true
+  },
+  "migrations_performed": 0,
+  "LFS_installed": false,
+  "published": false,
+  "scope": "Repositorio temporal: índice y checkout; no commit o remoto del proyecto, no campaña científica."
+}

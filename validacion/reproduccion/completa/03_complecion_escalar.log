@@ -1,0 +1,46 @@
+{
+  "model": "M2: un escalar complejo Phi y un mediador real chi; portales conservados como EFT",
+  "parameters_dimensionless": {
+    "omega": 0.9,
+    "lambda0_over_lambda": 99.0,
+    "M_over_m": 100.0,
+    "g_over_m_sqrtlambda": 1414.213562373095,
+    "h_over_lambda": 100.0
+  },
+  "exact_effective_potential": "Uhat(s)=s-s^2+s^3/(1+s/100)",
+  "minimum_U_over_s": 0.7487421323990935,
+  "s_at_minimum": 0.5037815259212097,
+  "coarse": {
+    "domain": 50,
+    "success": true,
+    "nodes": 1421,
+    "f0": 0.7460192053447854,
+    "mediator0_rescaled": -0.07827167223497192,
+    "Ehat": 2525.6589044937273,
+    "Qhat": 2745.7739146466333,
+    "E_over_Q": 0.919834983871484,
+    "virial_relative": 9.981251892202758e-11,
+    "max_residual": 1.9689178695941916e-08
+  },
+  "fine": {
+    "domain": 60,
+    "success": true,
+    "nodes": 1773,
+    "f0": 0.7460192053439136,
+    "mediator0_rescaled": -0.0782716722347901,
+    "Ehat": 2525.65890949506,
+    "Qhat": 2745.773920208838,
+    "E_over_Q": 0.9198349838296096,
+    "virial_relative": 1.0906767902719577e-11,
+    "max_residual": 9.776192160777361e-09
+  },
+  "relative_energy_refinement": 1.980209092911406e-09,
+  "adiabatic_no_gradient": {
+    "success": true,
+    "Ehat": 2501.8341315345197,
+    "Qhat": 2719.834041388988,
+    "energy_difference_relative_to_full": -0.009433094021909517
+  },
+  "scope": "Existencia numérica radial en dos campos, virial y convergencia. No prueba estabilidad no radial, portales ni arquitectura de las 24 runas.",
+  "passed": true
+}

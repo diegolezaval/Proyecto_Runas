@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "checks": 194,
+  "failed": [],
+  "calculations": {
+    "lamp": {
+      "incident_W": 20.0,
+      "optical_W": 6,
+      "heat_W": 8.700005001667083,
+      "export_W": 5.299994998332917,
+      "required_bus_W": 10.660005001667084,
+      "preparation_J": 39.0
+    },
+    "heater": {
+      "time_s": 1068.6472049184526,
+      "input_J": 106864.72049184526,
+      "stored_J": 83680.0,
+      "loss_to_environment_J": 23184.72049184526
+    },
+    "freezing": {
+      "heat_extracted_J": 417180.0,
+      "minimum_work_J": 27410.18825661583,
+      "R1_work_ideal_terminals_J": 54820.37651323166,
+      "heat_rejected_J": 472000.37651323166,
+      "entropy_generated_J_K": 93.50226251617232
+    },
+    "reserve": {
+      "useful_J": 1000000.0,
+      "structural_J": 50000.0,
+      "max_power_W": 100000.0,
+      "runtime_1kW_s": 979.7599595938419
+    },
+    "lifting": {
+      "gravity_J": 981.0,
+      "actuator_input_J": 1090.0,
+      "reserve_debit_J": 1112.2448979591836,
+      "regenerated_J": 784.8000000000001,
+      "net_cycle_loss_J": 327.44489795918355
+    },
+    "support": {
+      "stiffness_N_m": 10000.0,
+      "max_force_N": 2000.0,
+      "structural_J": 200000.0,
+      "static_extension_m": 0.0981,
+      "elastic_J": 48.11805,
+      "hold_W": 2.0,
+      "terminal_area_m2": 0.00981,
+      "conditional_wave_speed_m_s": 134071263.04595013
+    },
+    "controller": {
+      "duration_s": 1,
+      "target_step_m": 0.05,
+      "final_x_m": 0.0499750300386192,
+      "analytic_x_m": 0.04997503003863064,
+      "refinement_change_m": 1.7272294705605873e-13,
+      "max_force_N": 1481.0,
+      "scope": "Sin ruido ni retardo de sensor mecánico; no prueba robustez ante todos los fallos."
+    },
+    "solar_growth": {
+      "initial_area_m2": 0.0025,
+      "target_area_m2": 1.0,
+      "time_ideal_s": 1.5079659052067131,
+      "assumption": "Sustrato, soporte, sumidero y control salvo servicio Semilla preexistentes."
+    },
+    "radiator": {
+      "net_W_m2": 893.0839709925,
+      "area_per_collector_m2": 0.22618253888882786
+    },
+    "channel": {
+      "delay_1km_s": 0.0001,
+      "transmission_1km": 0.9048374180359595,
+      "capacity_bound_bit_s": 6658211.482751795
+    },
+    "logic": {
+      "landauer_J": 2.870978885078724e-21,
+      "single_bit_thermal_lifetime_s": 114200738981568.42
+    },
+    "photon_support_power_W": 294096401298.0,
+    "carbon": {
+      "amount_mol": 0.08325701440346349,
+      "air_m3_complete_capture": 4.84980111417455,
+      "minimum_work_J": 32835.650653567565,
+      "oxygen_kg": 0.0026640579468820247,
+      "global_reversible_voltage_V": 1.0218884864009523
+    }
+  }
+}

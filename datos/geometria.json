@@ -1,0 +1,2282 @@
+{
+  "schema_version": "2.0.0",
+  "coordinate_units": "u_grafica",
+  "coordinate_system": "x derecha; y abajo; las coordenadas son una proyeccion",
+  "source_pieces": {
+    "T": {
+      "path": "M -1.4 0 L -1 0 C -1 1.05 1 1.05 1 -0.65",
+      "segments": [
+        [
+          [
+            -1.4,
+            0
+          ],
+          [
+            -1,
+            0
+          ]
+        ],
+        [
+          [
+            -1,
+            0
+          ],
+          [
+            -1,
+            1.05
+          ],
+          [
+            1,
+            1.05
+          ],
+          [
+            1,
+            -0.65
+          ]
+        ]
+      ],
+      "ends": {
+        "a": [
+          -1.4,
+          0
+        ],
+        "b": [
+          1,
+          -0.65
+        ]
+      }
+    },
+    "R": {
+      "path": "M 1 -1 L 0 0 L 1 1",
+      "segments": [
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "ends": {
+        "a": [
+          1,
+          -1
+        ],
+        "b": [
+          1,
+          1
+        ]
+      }
+    },
+    "N": {
+      "path": "M -1 0 L 0 0 C 0.7 0 1 -0.5 1 -1 M 0 0 L 1 1",
+      "segments": [
+        [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0.7,
+            0
+          ],
+          [
+            1,
+            -0.5
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "ends": {
+        "1": [
+          -1,
+          0
+        ],
+        "2": [
+          1,
+          -1
+        ],
+        "3": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  "runes": [
+    {
+      "id": "P-01",
+      "name": "Semilla",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "0",
+            "-1",
+            "0",
+            "2"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "-424/2473",
+            "1946/2473",
+            "-2968/12365",
+            "50717/12365"
+          ],
+          "crossing_lane": 2
+        }
+      ],
+      "joins": [
+        [
+          "R₁.b",
+          "N₁.2"
+        ],
+        [
+          "R₁.a",
+          "N₁.3"
+        ],
+        [
+          "N₁.1",
+          "T₁.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "P",
+          "end": "T₁.b",
+          "exchange": "Preparacion, energia y control",
+          "role": "Puerto bidireccional"
+        }
+      ],
+      "free_ends": [
+        "T₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-02",
+      "name": "Anclaje",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "3/4",
+            "3/4",
+            "-5/2",
+            "1"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "910/2473",
+            "1586/2473",
+            "3747/2473",
+            "23467/12365"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "R₂",
+          "piece": "R",
+          "transform_fraction": [
+            "-1",
+            "0",
+            "1",
+            "-2"
+          ],
+          "crossing_lane": 3
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "R₂.a"
+        ],
+        [
+          "N₁.2",
+          "T₁.a"
+        ],
+        [
+          "N₁.3",
+          "R₁.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "C",
+          "end": "R₁.b",
+          "exchange": "Mecánico",
+          "role": "Enlace con la estructura sostenida."
+        },
+        {
+          "name": "A",
+          "end": "T₁.b",
+          "exchange": "Mecánico",
+          "role": "Enlace con la referencia que recibe la reacción."
+        },
+        {
+          "name": "U",
+          "end": "R₂.b",
+          "exchange": "Control y alimentación",
+          "role": "Consigna de posición, orientación y respuesta del soporte."
+        }
+      ],
+      "free_ends": [
+        "R₁.b",
+        "T₁.b",
+        "R₂.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-03",
+      "name": "Recinto",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "-1",
+            "1",
+            "3",
+            "-1"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "1920/2473",
+            "520/2473",
+            "5161/2473",
+            "3201/2473"
+          ],
+          "crossing_lane": 2
+        }
+      ],
+      "joins": [
+        [
+          "N₁.2",
+          "R₁.b"
+        ],
+        [
+          "N₁.3",
+          "T₁.a"
+        ],
+        [
+          "R₁.a",
+          "T₁.b"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "P",
+          "end": "N₁.1",
+          "exchange": "Control y alimentación",
+          "role": "Definición del recinto, condiciones de paso y lectura de su estado."
+        }
+      ],
+      "free_ends": [
+        "N₁.1"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-04",
+      "name": "Canal",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "1920/2473",
+            "520/2473",
+            "5161/2473",
+            "3201/2473"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "-1",
+            "4",
+            "2"
+          ],
+          "crossing_lane": 2
+        }
+      ],
+      "joins": [
+        [
+          "N₁.3",
+          "T₁.a"
+        ],
+        [
+          "T₁.b",
+          "R₁.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "A",
+          "end": "N₁.1",
+          "exchange": "Intercambio principal",
+          "role": "Primer extremo del enlace."
+        },
+        {
+          "name": "B",
+          "end": "R₁.b",
+          "exchange": "Intercambio principal",
+          "role": "Segundo extremo; puede recibir o entregar según la operación."
+        },
+        {
+          "name": "U",
+          "end": "N₁.2",
+          "exchange": "Control y prueba",
+          "role": "Adaptación del enlace, señal de comprobación y alimentación auxiliar si se utiliza."
+        }
+      ],
+      "free_ends": [
+        "N₁.1",
+        "N₁.2",
+        "R₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-05",
+      "name": "Captador solar",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "0",
+            "-1",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "1",
+            "-1",
+            "-3",
+            "-1"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₂",
+          "piece": "R",
+          "transform_fraction": [
+            "3/2",
+            "3/2",
+            "-3",
+            "-6"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "R₃",
+          "piece": "R",
+          "transform_fraction": [
+            "-3/2",
+            "3/2",
+            "3",
+            "-6"
+          ],
+          "crossing_lane": 3
+        },
+        {
+          "id": "R₄",
+          "piece": "R",
+          "transform_fraction": [
+            "-1",
+            "-1",
+            "3",
+            "-1"
+          ],
+          "crossing_lane": 4
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "-102/2473",
+            "1518/2473",
+            "-714/12365",
+            "22991/12365"
+          ],
+          "crossing_lane": 5
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "T₁.a"
+        ],
+        [
+          "N₁.2",
+          "R₁.b"
+        ],
+        [
+          "N₁.3",
+          "R₄.a"
+        ],
+        [
+          "R₁.a",
+          "R₂.b"
+        ],
+        [
+          "R₂.a",
+          "R₃.b"
+        ],
+        [
+          "R₃.a",
+          "R₄.b"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "P",
+          "end": "T₁.b",
+          "exchange": "Energía y control",
+          "role": "Entrega útil y mensajes de ajuste mediante canales físicamente distinguibles."
+        }
+      ],
+      "free_ends": [
+        "T₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-06",
+      "name": "Reserva",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "-1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "1",
+            "-2",
+            "-2"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₂",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "1",
+            "-4",
+            "-2"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "R₃",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "-1",
+            "-2",
+            "2"
+          ],
+          "crossing_lane": 3
+        },
+        {
+          "id": "R₄",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "-1",
+            "-4",
+            "2"
+          ],
+          "crossing_lane": 4
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "1920/2473",
+            "520/2473",
+            "5161/2473",
+            "728/2473"
+          ],
+          "crossing_lane": 5
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "T₁.a"
+        ],
+        [
+          "N₁.2",
+          "R₃.b"
+        ],
+        [
+          "N₁.3",
+          "R₁.a"
+        ],
+        [
+          "R₁.b",
+          "R₂.a"
+        ],
+        [
+          "R₃.a",
+          "R₄.b"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "C",
+          "end": "R₂.b",
+          "exchange": "Energía",
+          "role": "Carga de referencia; admite retorno si el régimen lo permite."
+        },
+        {
+          "name": "D",
+          "end": "R₄.a",
+          "exchange": "Energía",
+          "role": "Entrega de referencia hacia el consumo."
+        },
+        {
+          "name": "U",
+          "end": "T₁.b",
+          "exchange": "Control",
+          "role": "Estado de reserva, preparación y coordinación del ciclo."
+        }
+      ],
+      "free_ends": [
+        "R₂.b",
+        "R₄.a",
+        "T₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-07",
+      "name": "Compuerta",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "1480/2473",
+            "-1660/2473",
+            "4545/2473",
+            "-4797/2473"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "1",
+            "-1",
+            "1",
+            "3"
+          ],
+          "crossing_lane": 2
+        }
+      ],
+      "joins": [
+        [
+          "N₁.2",
+          "T₁.a"
+        ],
+        [
+          "N₁.3",
+          "R₁.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "A",
+          "end": "T₁.b",
+          "exchange": "Intercambio principal",
+          "role": "Primer lado del paso."
+        },
+        {
+          "name": "B",
+          "end": "R₁.b",
+          "exchange": "Intercambio principal",
+          "role": "Segundo lado del paso."
+        },
+        {
+          "name": "U",
+          "end": "N₁.1",
+          "exchange": "Control y alimentación",
+          "role": "Orden de apertura y suministro de actuación cuando se requiere."
+        }
+      ],
+      "free_ends": [
+        "N₁.1",
+        "T₁.b",
+        "R₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-08",
+      "name": "Distribuidor",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "-1920/2473",
+            "-520/2473",
+            "4731/2473",
+            "-3201/2473"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "T₂",
+          "piece": "T",
+          "transform_fraction": [
+            "1920/2473",
+            "520/2473",
+            "5161/2473",
+            "3201/2473"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "1",
+            "-2",
+            "-1"
+          ],
+          "crossing_lane": 3
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "R₁.a"
+        ],
+        [
+          "N₁.2",
+          "T₁.b"
+        ],
+        [
+          "N₁.3",
+          "T₂.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "C",
+          "end": "R₁.b",
+          "exchange": "Intercambio común",
+          "role": "Suministro de referencia y mando de reparto mediante señal distinguible."
+        },
+        {
+          "name": "A",
+          "end": "T₁.a",
+          "exchange": "Rama",
+          "role": "Primera salida o entrada en el régimen inverso."
+        },
+        {
+          "name": "B",
+          "end": "T₂.b",
+          "exchange": "Rama",
+          "role": "Segunda salida o entrada en el régimen inverso."
+        }
+      ],
+      "free_ends": [
+        "T₁.a",
+        "T₂.b",
+        "R₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-09",
+      "name": "Sensor",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "1920/2473",
+            "520/2473",
+            "215/2473",
+            "3201/2473"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "-1",
+            "1",
+            "0"
+          ],
+          "crossing_lane": 2
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "R₁.a"
+        ],
+        [
+          "N₁.2",
+          "T₁.b"
+        ],
+        [
+          "N₁.3",
+          "T₁.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "P",
+          "end": "R₁.b",
+          "exchange": "Señales y alimentación",
+          "role": "Recibe preparación o interrogación y entrega una medida con su estado de validez."
+        }
+      ],
+      "free_ends": [
+        "R₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-10",
+      "name": "Selector",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "1",
+            "0",
+            "-2",
+            "0"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₂",
+          "piece": "R",
+          "transform_fraction": [
+            "-1",
+            "0",
+            "2",
+            "0"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "520/2473",
+            "-1920/2473",
+            "728/2473",
+            "-5161/2473"
+          ],
+          "crossing_lane": 3
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "T₁.a"
+        ],
+        [
+          "N₁.2",
+          "R₂.a"
+        ],
+        [
+          "N₁.3",
+          "R₁.b"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "O",
+          "end": "R₁.a",
+          "exchange": "Información",
+          "role": "Observaciones procedentes de Sensor o de un vínculo directo."
+        },
+        {
+          "name": "M",
+          "end": "R₂.b",
+          "exchange": "Información",
+          "role": "Muestra, criterio o referencia de comparación."
+        },
+        {
+          "name": "D",
+          "end": "T₁.b",
+          "exchange": "Referencia y control",
+          "role": "Entrega la identificación accesible y su grado de validez; recibe seguimiento y alimentación."
+        }
+      ],
+      "free_ends": [
+        "R₁.a",
+        "R₂.b",
+        "T₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-11",
+      "name": "Memoria",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "-1",
+            "0",
+            "2",
+            "0"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₂",
+          "piece": "R",
+          "transform_fraction": [
+            "-1",
+            "0",
+            "0",
+            "-1"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "-1920/2473",
+            "-520/2473",
+            "-5161/2473",
+            "-5674/2473"
+          ],
+          "crossing_lane": 3
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "R₂.a"
+        ],
+        [
+          "N₁.2",
+          "R₁.b"
+        ],
+        [
+          "N₁.3",
+          "R₁.a"
+        ],
+        [
+          "R₂.b",
+          "T₁.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "P",
+          "end": "T₁.b",
+          "exchange": "Datos, control y alimentación",
+          "role": "Interfaz compartida con operaciones físicamente distinguibles de lectura, escritura y mantenimiento."
+        }
+      ],
+      "free_ends": [
+        "T₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-12",
+      "name": "Comparador",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "-1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "1",
+            "-2",
+            "-2"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₂",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "1",
+            "-2",
+            "0"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "1920/2473",
+            "520/2473",
+            "5161/2473",
+            "728/2473"
+          ],
+          "crossing_lane": 3
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "T₁.a"
+        ],
+        [
+          "N₁.2",
+          "R₂.a"
+        ],
+        [
+          "N₁.3",
+          "R₁.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "A",
+          "end": "R₁.b",
+          "exchange": "Señal",
+          "role": "Valor observado."
+        },
+        {
+          "name": "B",
+          "end": "R₂.b",
+          "exchange": "Señal",
+          "role": "Segundo valor o consigna."
+        },
+        {
+          "name": "C",
+          "end": "T₁.b",
+          "exchange": "Resultado y control",
+          "role": "Diferencia o clasificación, con indicación de validez."
+        }
+      ],
+      "free_ends": [
+        "R₁.b",
+        "R₂.b",
+        "T₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-13",
+      "name": "Retardo",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "-1",
+            "0",
+            "2",
+            "-2"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "-520/2473",
+            "1920/2473",
+            "1745/2473",
+            "5161/2473"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "R₂",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "-2",
+            "3",
+            "5"
+          ],
+          "crossing_lane": 3
+        },
+        {
+          "id": "T₂",
+          "piece": "T",
+          "transform_fraction": [
+            "520/2473",
+            "-1920/2473",
+            "13093/2473",
+            "4731/2473"
+          ],
+          "crossing_lane": 4
+        }
+      ],
+      "joins": [
+        [
+          "N₁.2",
+          "R₁.a"
+        ],
+        [
+          "N₁.3",
+          "T₁.a"
+        ],
+        [
+          "T₁.b",
+          "R₂.a"
+        ],
+        [
+          "R₂.b",
+          "T₂.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "I",
+          "end": "R₁.b",
+          "exchange": "Señal",
+          "role": "Entrada que debe demorarse."
+        },
+        {
+          "name": "O",
+          "end": "T₂.b",
+          "exchange": "Señal",
+          "role": "Entrega posterior."
+        },
+        {
+          "name": "U",
+          "end": "N₁.1",
+          "exchange": "Control y alimentación",
+          "role": "Tiempo solicitado, sincronización y estado de ocupación."
+        }
+      ],
+      "free_ends": [
+        "N₁.1",
+        "R₁.b",
+        "T₂.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-14",
+      "name": "Reloj",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "-1660/2473",
+            "-1480/2473",
+            "5095/2473",
+            "-2072/2473"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "T₂",
+          "piece": "T",
+          "transform_fraction": [
+            "2180/2473",
+            "-440/2473",
+            "5525/2473",
+            "1857/2473"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "1",
+            "-2",
+            "-1"
+          ],
+          "crossing_lane": 3
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "R₁.a"
+        ],
+        [
+          "N₁.2",
+          "T₁.b"
+        ],
+        [
+          "N₁.3",
+          "T₂.a"
+        ],
+        [
+          "T₁.a",
+          "T₂.b"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "P",
+          "end": "R₁.b",
+          "exchange": "Referencia, control y alimentación",
+          "role": "Pulsos salientes, ajuste entrante y suministro mediante señales distinguibles."
+        }
+      ],
+      "free_ends": [
+        "R₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-15",
+      "name": "Secuenciador",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "N₂",
+          "piece": "N",
+          "transform_fraction": [
+            "0",
+            "1",
+            "1",
+            "2"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "-1",
+            "0",
+            "1",
+            "-2"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "-520/2473",
+            "1920/2473",
+            "4218/2473",
+            "10107/2473"
+          ],
+          "crossing_lane": 3
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "R₁.a"
+        ],
+        [
+          "N₁.2",
+          "N₂.1"
+        ],
+        [
+          "N₂.2",
+          "T₁.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "M",
+          "end": "R₁.b",
+          "exchange": "Programa y alimentación",
+          "role": "Recibe la secuencia y su estado inicial."
+        },
+        {
+          "name": "O",
+          "end": "T₁.b",
+          "exchange": "Órdenes",
+          "role": "Entrega acciones identificadas al módulo correspondiente."
+        },
+        {
+          "name": "F",
+          "end": "N₁.3",
+          "exchange": "Respuesta",
+          "role": "Recibe confirmaciones y observaciones de la etapa."
+        },
+        {
+          "name": "G",
+          "end": "N₂.3",
+          "exchange": "Disparo y tiempo",
+          "role": "Recibe inicio, pausa o referencia temporal."
+        }
+      ],
+      "free_ends": [
+        "N₁.3",
+        "N₂.3",
+        "R₁.b",
+        "T₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-16",
+      "name": "Puente",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "-3840/2473",
+            "-1040/2473",
+            "-7849/2473",
+            "-1456/2473"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "3",
+            "0",
+            "-3",
+            "0"
+          ],
+          "crossing_lane": 2
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "T₁.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "A₁",
+          "end": "N₁.2",
+          "exchange": "Ruta A",
+          "role": "Primer extremo de la primera ruta."
+        },
+        {
+          "name": "A₂",
+          "end": "T₁.b",
+          "exchange": "Ruta A",
+          "role": "Segundo extremo de la primera ruta."
+        },
+        {
+          "name": "B₁",
+          "end": "R₁.a",
+          "exchange": "Ruta B",
+          "role": "Primer extremo de la segunda ruta."
+        },
+        {
+          "name": "B₂",
+          "end": "R₁.b",
+          "exchange": "Ruta B",
+          "role": "Segundo extremo de la segunda ruta."
+        },
+        {
+          "name": "U",
+          "end": "N₁.3",
+          "exchange": "Control y alimentación",
+          "role": "Preparación y mantenimiento del aislamiento."
+        }
+      ],
+      "free_ends": [
+        "N₁.2",
+        "N₁.3",
+        "T₁.b",
+        "R₁.a",
+        "R₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-17",
+      "name": "Luz",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "-1",
+            "0",
+            "2",
+            "-2"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "-520/2473",
+            "1920/2473",
+            "1745/2473",
+            "5161/2473"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "T₂",
+          "piece": "T",
+          "transform_fraction": [
+            "520/2473",
+            "-1920/2473",
+            "3201/2473",
+            "9677/2473"
+          ],
+          "crossing_lane": 3
+        }
+      ],
+      "joins": [
+        [
+          "N₁.2",
+          "R₁.a"
+        ],
+        [
+          "N₁.3",
+          "T₁.a"
+        ],
+        [
+          "T₁.b",
+          "T₂.b"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "E",
+          "end": "N₁.1",
+          "exchange": "Energía",
+          "role": "Suministro de referencia."
+        },
+        {
+          "name": "U",
+          "end": "R₁.b",
+          "exchange": "Control",
+          "role": "Espectro, intensidad, dirección y modulación."
+        },
+        {
+          "name": "O",
+          "end": "T₂.a",
+          "exchange": "Acoplamiento óptico",
+          "role": "Terminal que alimenta la región emisora del campo."
+        }
+      ],
+      "free_ends": [
+        "N₁.1",
+        "R₁.b",
+        "T₂.a"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-18",
+      "name": "Intercambio térmico",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "-1920/2473",
+            "-520/2473",
+            "4731/2473",
+            "-3201/2473"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "T₂",
+          "piece": "T",
+          "transform_fraction": [
+            "1920/2473",
+            "520/2473",
+            "5161/2473",
+            "3201/2473"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "1",
+            "0",
+            "2",
+            "0"
+          ],
+          "crossing_lane": 3
+        },
+        {
+          "id": "R₂",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "1",
+            "-2",
+            "-1"
+          ],
+          "crossing_lane": 4
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "R₂.a"
+        ],
+        [
+          "N₁.2",
+          "T₁.b"
+        ],
+        [
+          "N₁.3",
+          "T₂.a"
+        ],
+        [
+          "T₁.a",
+          "R₁.a"
+        ],
+        [
+          "T₂.b",
+          "R₁.b"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "P",
+          "end": "R₂.b",
+          "exchange": "Trabajo y control",
+          "role": "Alimentación, consigna y datos del ciclo."
+        }
+      ],
+      "free_ends": [
+        "R₂.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-19",
+      "name": "Impulso",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "-3/2",
+            "5/2",
+            "1/2"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "-1920/2473",
+            "-520/2473",
+            "-5161/2473",
+            "-728/2473"
+          ],
+          "crossing_lane": 2
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "T₁.a"
+        ],
+        [
+          "N₁.2",
+          "R₁.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "O",
+          "end": "T₁.b",
+          "exchange": "Mecánico",
+          "role": "Objetivo y región donde se aplica la fuerza."
+        },
+        {
+          "name": "A",
+          "end": "R₁.b",
+          "exchange": "Mecánico",
+          "role": "Apoyo o medio que recibe la reacción."
+        },
+        {
+          "name": "U",
+          "end": "N₁.3",
+          "exchange": "Energía y control",
+          "role": "Perfil de fuerza, dirección, duración y realimentación."
+        }
+      ],
+      "free_ends": [
+        "N₁.3",
+        "R₁.b",
+        "T₁.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-20",
+      "name": "Polarización",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "N₂",
+          "piece": "N",
+          "transform_fraction": [
+            "0",
+            "-1",
+            "4",
+            "-2"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "-2",
+            "2",
+            "1"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "1920/2473",
+            "520/2473",
+            "215/2473",
+            "3201/2473"
+          ],
+          "crossing_lane": 3
+        },
+        {
+          "id": "R₂",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "1",
+            "4",
+            "-4"
+          ],
+          "crossing_lane": 4
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "R₁.a"
+        ],
+        [
+          "N₁.2",
+          "T₁.b"
+        ],
+        [
+          "N₁.3",
+          "T₁.a"
+        ],
+        [
+          "N₂.1",
+          "R₁.b"
+        ],
+        [
+          "N₂.2",
+          "R₂.b"
+        ],
+        [
+          "N₂.3",
+          "R₂.a"
+        ]
+      ],
+      "ports": [],
+      "free_ends": [],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-21",
+      "name": "Vibración",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "0",
+            "-1",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "-440/2473",
+            "-2180/2473",
+            "-3089/2473",
+            "-5525/2473"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "T₂",
+          "piece": "T",
+          "transform_fraction": [
+            "-1480/2473",
+            "1660/2473",
+            "2874/2473",
+            "-5095/2473"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "1",
+            "0",
+            "-1",
+            "2"
+          ],
+          "crossing_lane": 3
+        },
+        {
+          "id": "R₂",
+          "piece": "R",
+          "transform_fraction": [
+            "1",
+            "0",
+            "-1",
+            "4"
+          ],
+          "crossing_lane": 4
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "R₁.a"
+        ],
+        [
+          "N₁.2",
+          "T₁.a"
+        ],
+        [
+          "N₁.3",
+          "T₂.b"
+        ],
+        [
+          "R₁.b",
+          "R₂.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "A",
+          "end": "T₁.b",
+          "exchange": "Mecánico",
+          "role": "Región principal que se hace oscilar."
+        },
+        {
+          "name": "B",
+          "end": "T₂.a",
+          "exchange": "Mecánico",
+          "role": "Segunda región o apoyo que recibe la respuesta."
+        },
+        {
+          "name": "U",
+          "end": "R₂.b",
+          "exchange": "Energía y control",
+          "role": "Frecuencia, fase, amplitud y forma temporal."
+        }
+      ],
+      "free_ends": [
+        "T₁.b",
+        "T₂.a",
+        "R₂.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-22",
+      "name": "Separación",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "N₂",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "3",
+            "1"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "-1/2",
+            "3/2",
+            "3/2"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "1920/2473",
+            "520/2473",
+            "5161/2473",
+            "-1745/2473"
+          ],
+          "crossing_lane": 3
+        },
+        {
+          "id": "R₂",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "-1",
+            "5",
+            "3"
+          ],
+          "crossing_lane": 4
+        }
+      ],
+      "joins": [
+        [
+          "N₁.2",
+          "T₁.a"
+        ],
+        [
+          "N₁.3",
+          "R₁.a"
+        ],
+        [
+          "N₂.1",
+          "R₁.b"
+        ],
+        [
+          "N₂.3",
+          "R₂.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "F",
+          "end": "T₁.b",
+          "exchange": "Materia",
+          "role": "Alimentación de mezcla."
+        },
+        {
+          "name": "P",
+          "end": "N₂.2",
+          "exchange": "Materia",
+          "role": "Corriente enriquecida en el componente elegido."
+        },
+        {
+          "name": "R",
+          "end": "R₂.b",
+          "exchange": "Materia",
+          "role": "Resto de la mezcla y componentes no recuperados."
+        },
+        {
+          "name": "U",
+          "end": "N₁.1",
+          "exchange": "Energía e información",
+          "role": "Criterio selectivo, suministro y control de proceso."
+        }
+      ],
+      "free_ends": [
+        "N₁.1",
+        "N₂.2",
+        "T₁.b",
+        "R₂.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-23",
+      "name": "Reacción",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "N₂",
+          "piece": "N",
+          "transform_fraction": [
+            "-1",
+            "0",
+            "4",
+            "0"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "-1",
+            "2",
+            "0"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "1920/2473",
+            "520/2473",
+            "5161/2473",
+            "3201/2473"
+          ],
+          "crossing_lane": 3
+        }
+      ],
+      "joins": [
+        [
+          "N₁.2",
+          "R₁.a"
+        ],
+        [
+          "N₁.3",
+          "T₁.a"
+        ],
+        [
+          "N₂.2",
+          "T₁.b"
+        ],
+        [
+          "N₂.3",
+          "R₁.b"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "F",
+          "end": "N₁.1",
+          "exchange": "Reactivos, control y alimentación",
+          "role": "Acceso de preparación y alimentación; señales y materia usan intercambios físicamente distinguidos."
+        },
+        {
+          "name": "P",
+          "end": "N₂.1",
+          "exchange": "Productos y respuesta",
+          "role": "Entrega de la corriente transformada y datos de resultado."
+        }
+      ],
+      "free_ends": [
+        "N₁.1",
+        "N₂.1"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    },
+    {
+      "id": "P-24",
+      "name": "Ensamblaje",
+      "instances": [
+        {
+          "id": "N₁",
+          "piece": "N",
+          "transform_fraction": [
+            "0",
+            "-1",
+            "0",
+            "0"
+          ],
+          "crossing_lane": 0
+        },
+        {
+          "id": "N₂",
+          "piece": "N",
+          "transform_fraction": [
+            "-1",
+            "0",
+            "-2",
+            "-1"
+          ],
+          "crossing_lane": 1
+        },
+        {
+          "id": "R₁",
+          "piece": "R",
+          "transform_fraction": [
+            "1",
+            "-1",
+            "-3",
+            "2"
+          ],
+          "crossing_lane": 2
+        },
+        {
+          "id": "T₁",
+          "piece": "T",
+          "transform_fraction": [
+            "1220/2473",
+            "-700/2473",
+            "-765/2473",
+            "3966/2473"
+          ],
+          "crossing_lane": 3
+        },
+        {
+          "id": "R₂",
+          "piece": "R",
+          "transform_fraction": [
+            "0",
+            "-1",
+            "2",
+            "0"
+          ],
+          "crossing_lane": 4
+        }
+      ],
+      "joins": [
+        [
+          "N₁.1",
+          "T₁.b"
+        ],
+        [
+          "N₁.2",
+          "N₂.1"
+        ],
+        [
+          "N₁.3",
+          "R₂.a"
+        ],
+        [
+          "N₂.2",
+          "R₁.a"
+        ],
+        [
+          "R₁.b",
+          "T₁.a"
+        ]
+      ],
+      "ports": [
+        {
+          "name": "F",
+          "end": "N₂.3",
+          "exchange": "Materia, información y energía",
+          "role": "Componentes y descripción recibidos por intercambios físicamente distinguidos."
+        },
+        {
+          "name": "O",
+          "end": "R₂.b",
+          "exchange": "Actuación y verificación",
+          "role": "Región donde se colocan y unen los componentes; retorno de observaciones."
+        }
+      ],
+      "free_ends": [
+        "N₂.3",
+        "R₂.b"
+      ],
+      "crossings": "Los cruces interiores son pasos separados; el orden de las instancias define el paso superior de la proyeccion. Solo joins define nodos de trafico."
+    }
+  ]
+}

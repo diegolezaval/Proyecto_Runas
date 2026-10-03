@@ -1,0 +1,12 @@
+{
+  "samples": 20000,
+  "translation_identity_scaled_error": 2.067328726556931e-15,
+  "cooperative_W_positive": true,
+  "quadratic_form_lhs": 154.0279059378054,
+  "quadratic_form_rhs": 154.02790593780543,
+  "quadratic_form_relative_error": 1.845231177906187e-16,
+  "passed": true,
+  "scope": "Numerical algebra audit of the variable translation of existing 14.4 identities; new implication is supplied by chapter 27 monotonicity; no existence certificate",
+  "historical_identity_reused": "tratado/14_espectro_y_dinamica_M2.md#14.4",
+  "new_spectrum_computed": false
+}

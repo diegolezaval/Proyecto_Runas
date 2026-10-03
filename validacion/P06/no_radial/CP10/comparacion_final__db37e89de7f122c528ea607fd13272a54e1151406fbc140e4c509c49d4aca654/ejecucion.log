@@ -1,0 +1,188 @@
+{
+  "checkpoint": "CP10_MEDIADOR_ESPACIOTEMPORAL",
+  "status": "REFINAMIENTO_PENDIENTE",
+  "finite_campaign_passed": false,
+  "configuration": "datos/ensayo_mediador_CP10.json",
+  "comparisons": [
+    {
+      "norm_relative_sup_error": 4.127969494314425e-09,
+      "final_complex_nonradial_field_error_over_initial_norm": 4.356904913034051e-09,
+      "final_phi_phase_space_error_over_initial_norm": 2.093655800819918e-08,
+      "final_mediator_nonradial_error_over_initial_norm": 2.7849018064071554e-06,
+      "final_mediator_phase_space_error_over_initial_norm": 3.945800333606754e-06,
+      "global_phi_phase_removed": -4.776945871823806e-10,
+      "chi_radial_bands": [
+        {
+          "r_min": 0,
+          "r_max": 2,
+          "fraction_of_chi_squared_difference": 1.0760889239989504e-10
+        },
+        {
+          "r_min": 2,
+          "r_max": 5,
+          "fraction_of_chi_squared_difference": 1.8247558682452514e-08
+        },
+        {
+          "r_min": 5,
+          "r_max": 10,
+          "fraction_of_chi_squared_difference": 5.774890210212233e-06
+        },
+        {
+          "r_min": 10,
+          "r_max": 20,
+          "fraction_of_chi_squared_difference": 0.9492276353650395
+        },
+        {
+          "r_min": 20,
+          "r_max": 40,
+          "fraction_of_chi_squared_difference": 0.050766571389582585
+        }
+      ],
+      "chi_multipole_fractions": {
+        "1": 6.616846236810304e-14,
+        "2": 0.7634147688115244,
+        "3": 1.332498834793964e-13,
+        "4": 0.2365852311882762
+      },
+      "descriptive_chi_rotation": {
+        "angle": 6.490841705640348e-07,
+        "rotated_error": 3.933969396202393e-06,
+        "used_for_acceptance": false,
+        "warning": "χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta."
+      },
+      "control": "temporal_fino_h0125",
+      "left": "validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "right": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "threshold": 0.02,
+      "passed": true
+    },
+    {
+      "norm_relative_sup_error": 0.0003562225831024996,
+      "final_complex_nonradial_field_error_over_initial_norm": 0.0007062378185043858,
+      "final_phi_phase_space_error_over_initial_norm": 0.0007471532229974762,
+      "final_mediator_nonradial_error_over_initial_norm": 0.03617435369411942,
+      "final_mediator_phase_space_error_over_initial_norm": 0.0512639096419456,
+      "global_phi_phase_removed": -0.0004829080871444678,
+      "chi_radial_bands": [
+        {
+          "r_min": 0,
+          "r_max": 2,
+          "fraction_of_chi_squared_difference": 8.801710653139411e-08
+        },
+        {
+          "r_min": 2,
+          "r_max": 5,
+          "fraction_of_chi_squared_difference": 2.3054425661465582e-07
+        },
+        {
+          "r_min": 5,
+          "r_max": 10,
+          "fraction_of_chi_squared_difference": 0.0001551196131356387
+        },
+        {
+          "r_min": 10,
+          "r_max": 20,
+          "fraction_of_chi_squared_difference": 0.7028415169747588
+        },
+        {
+          "r_min": 20,
+          "r_max": 40,
+          "fraction_of_chi_squared_difference": 0.29700304485074236
+        }
+      ],
+      "chi_multipole_fractions": {
+        "1": 3.6501198393448375e-22,
+        "2": 0.8376231377252804,
+        "3": 7.219076307576226e-22,
+        "4": 0.16237686227471948
+      },
+      "descriptive_chi_rotation": {
+        "angle": 0.0013389479975576793,
+        "rotated_error": 0.05126005797618618,
+        "used_for_acceptance": false,
+        "warning": "χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta."
+      },
+      "control": "radial_fino_h0125_h00625",
+      "left": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "right": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "threshold": 0.02,
+      "passed": false
+    }
+  ],
+  "run_gates": [
+    {
+      "case": "temporal_h0125",
+      "passed": true,
+      "receipt": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/procedencia.json",
+      "result": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160.json"
+    },
+    {
+      "case": "espacial_h00625",
+      "passed": true,
+      "receipt": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/procedencia.json",
+      "result": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160.json"
+    }
+  ],
+  "inherited_controls": [
+    {
+      "control": "radial_L4",
+      "passed": true,
+      "source": "validacion/P06/no_radial/resultados.json",
+      "scope": "Resolución histórica declarada; no prueba conjunta en la malla CP10"
+    },
+    {
+      "control": "temporal_L4",
+      "passed": true,
+      "source": "validacion/P06/no_radial/resultados.json",
+      "scope": "Resolución histórica declarada; no prueba conjunta en la malla CP10"
+    },
+    {
+      "control": "angular_L4_L6",
+      "passed": true,
+      "source": "validacion/P06/no_radial/resultados.json",
+      "scope": "Resolución histórica declarada; no prueba conjunta en la malla CP10"
+    },
+    {
+      "control": "temporal_mediador",
+      "passed": true,
+      "source": "validacion/P06/no_radial/resultados.json",
+      "scope": "Resolución histórica declarada; no prueba conjunta en la malla CP10"
+    }
+  ],
+  "inherited_box_control": {
+    "core_energy_relative_sup_error": 6.661338147750939e-15,
+    "core_charge_relative_sup_error": 6.217248937900877e-15,
+    "norm_absolute_sup_error": 4.163336342344337e-16,
+    "passed": true
+  },
+  "unaddressed_historical_issues": [],
+  "preserved_old_result": "validacion/P06/no_radial/resultados.json",
+  "same_action_and_Theta": true,
+  "chi_phase_fitted_for_acceptance": false,
+  "completed_new_evolutions": 2,
+  "old_evolutions_repeated": false,
+  "observed_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "version": "0.3.30",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "version": "0.3.30",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "complete_E03": false,
+  "complete_E04": false,
+  "complete_RES0": false,
+  "complete_RES1": false,
+  "nonlinear_orbital_stability_proven": false,
+  "continuum_error_certified": false,
+  "angular_spatial_temporal_joint_convergence_certified": false,
+  "scope": "Deformación cuadrupolar CP04, todos los m hasta L=4, R=220, ε=.02, τ≤160; nuevos controles de espacio/tiempo y controles históricos con sus resoluciones. No perturbaciones arbitrarias ni dispositivo."
+}

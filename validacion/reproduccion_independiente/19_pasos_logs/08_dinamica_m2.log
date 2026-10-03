@@ -1,0 +1,34 @@
+{
+  "model": "M2 escalar comun",
+  "runs": [
+    {
+      "n": 800,
+      "dt": 0.002,
+      "tmax": 24.0,
+      "radius": 40.0,
+      "initial_relative_amplitude": 0.001,
+      "E0": 2525.7042493230974,
+      "Q0": 2745.795788002082,
+      "max_relative_energy_drift": 1.1180292103230016e-07,
+      "max_relative_charge_drift": 1.3322676295501878e-15,
+      "max_amplitude_deviation": 0.0003238036086667943,
+      "final_amplitude_deviation": 0.00030324554015524085
+    },
+    {
+      "n": 1600,
+      "dt": 0.001,
+      "tmax": 24.0,
+      "radius": 40.0,
+      "initial_relative_amplitude": 0.001,
+      "E0": 2525.6914592508983,
+      "Q0": 2745.779387501247,
+      "max_relative_energy_drift": 2.824342715257444e-08,
+      "max_relative_charge_drift": 2.886579864025407e-15,
+      "max_amplitude_deviation": 0.00033267072801460614,
+      "final_amplitude_deviation": 0.00030888073571459643
+    }
+  ],
+  "preparation_demonstrated": false,
+  "scope": "24 unidades de tiempo; perturbacion radial de amplitud 0.001; no certifica estabilidad global ni tiempos R1.",
+  "passed": true
+}

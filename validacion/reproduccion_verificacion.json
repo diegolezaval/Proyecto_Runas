@@ -1,0 +1,27 @@
+{
+  "schema_version": "4.1.0",
+  "mode": "verificacion",
+  "passed": true,
+  "python": "3.12.14",
+  "runs": [
+    {
+      "script": "verificar.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.13911447100008445,
+      "log": "validacion/reproduccion/verificacion/01_verificar.log"
+    },
+    {
+      "script": "verificar_m2.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.11638329900006283,
+      "log": "validacion/reproduccion/verificacion/02_verificar_m2.log"
+    },
+    {
+      "script": "verificar_capilaridad.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.45939231500005917,
+      "log": "validacion/reproduccion/verificacion/03_verificar_capilaridad.log"
+    }
+  ],
+  "meaning": "Ejecucion y verificacion interna. No implica dispositivo aceptado. El manifiesto de entrega no se regenera automaticamente."
+}

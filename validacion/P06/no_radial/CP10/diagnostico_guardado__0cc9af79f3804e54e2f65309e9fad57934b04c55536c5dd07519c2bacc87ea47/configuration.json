@@ -1,0 +1,20 @@
+{
+  "case": {
+    "entrypoint": "herramientas/diagnosticar_mediador_CP10.py",
+    "operation": "diagnostico_de_datos_guardados",
+    "configuration": {
+      "core_radius": 40,
+      "time": 160,
+      "chi_phase_rotation_used_for_acceptance": false
+    },
+    "inputs": [
+      "datos/ensayo_no_radial_CP06.json",
+      "validacion/P06/no_radial/resultados.json",
+      "validacion/P06/no_radial/dop853e9_L4_h0.500_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "validacion/P06/no_radial/dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz"
+    ]
+  },
+  "protocol": "datos/ensayo_mediador_CP10.json",
+  "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz"
+}

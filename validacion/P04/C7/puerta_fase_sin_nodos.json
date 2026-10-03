@@ -1,0 +1,29 @@
+{
+  "subquestion": "C7_fase_sin_nodos",
+  "status": "COMPLETADA",
+  "stage_status": "PARCIAL",
+  "evidence": "tratado/30_fase_estacionaria_sin_nodos.md",
+  "assumptions": [
+    "Phi=e^(i omega t) psi(x), chi real estático",
+    "psi C2 y H1 en R3, sin ceros",
+    "Sin fuentes, sin gauge espacial ni fronteras internas",
+    "Para aplicar CP05 se conservan todas sus otras hipótesis"
+  ],
+  "proof": [
+    "R3 simplemente conexo y psi distinto de cero permiten fase real global",
+    "Parte imaginaria da div(f^2 grad theta)=0",
+    "H1 implica f en L2 y energía de fase finita",
+    "Prueba compacta eta_R^2 T_n(theta), sin asumir theta acotada",
+    "Cota <=2 C n ||f||_2 sqrt(E_theta)/R",
+    "Primero R al infinito con n fijo; después n al infinito",
+    "Fase constante y aplicación de CP05 sin repetirla"
+  ],
+  "decision": "Una fase espacial suave no rescata una cadena estacionaria localizada sin nodos",
+  "not_proven": [
+    "Existencia o estabilidad de alternativas nodales o dinámicas",
+    "Imposibilidad general de Canal",
+    "Agotamiento de M2"
+  ],
+  "formal_or_external_review": false,
+  "numerical_audit_scope": "Local algebra and nodal scope control only; global proof is chapter 30, not numerically certified"
+}

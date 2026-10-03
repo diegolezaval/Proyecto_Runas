@@ -1,0 +1,40 @@
+REANUDADO split4c_L4_h0.500_dt0.0020_R220_eps0.020_T160 paso 68000
+EVOLUCION split4c_L4_h0.500_dt0.0020_R220_eps0.020_T160 tau 144.0 s 1039.1
+EVOLUCION split4c_L4_h0.500_dt0.0020_R220_eps0.020_T160 tau 152.0 s 1060.3
+EVOLUCION split4c_L4_h0.500_dt0.0020_R220_eps0.020_T160 tau 160.0 s 1081.5
+{
+  "configuration": {
+    "dx": 0.5,
+    "dt": 0.002,
+    "radius": 220,
+    "L": 4,
+    "eps": 0.02,
+    "tmax": 160,
+    "source_time": 1200.0,
+    "core_radius": 40.0,
+    "scheme": "split4c"
+  },
+  "initial_energy": 2394.366268701372,
+  "initial_charge": 2584.6675972571734,
+  "final_core_energy": 2287.1721386543118,
+  "final_core_charge": 2480.7546566022884,
+  "relative_energy_drift": 1.7329312735903102e-05,
+  "relative_charge_drift": 1.829247864293393e-11,
+  "relative_core_charge_change": 9.70888556558469e-05,
+  "initial_nonradial_norm": 0.041894121441218304,
+  "max_nonradial_norm": 0.048062099651261035,
+  "max_amplification": 1.1472277732019522,
+  "mode_maxima": {
+    "1": 8.317058665612786e-13,
+    "2": 0.04804515658926215,
+    "3": 1.3726824555177333e-13,
+    "4": 0.0013399915819556762
+  },
+  "elapsed_seconds": 1081.5109892669998,
+  "balance_passed": true,
+  "bounded_window_passed": true,
+  "stage_complete": false,
+  "orbital_stability_proven": false,
+  "full_angular_continuum": false,
+  "interpretation": "Finite conservative nonradial continuation of CP04 with all m through L; no claim outside this window or truncation"
+}

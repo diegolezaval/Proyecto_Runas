@@ -1,0 +1,12 @@
+{
+  "status": "FALLO_DE_CONVERGENCIA_ANGULAR",
+  "interval_end": 160.0,
+  "relative_sup_norm_error": 0.34159895768359017,
+  "threshold": 0.05,
+  "retained_cases": [
+    "L2_h0.500_dt0.0040_R220_eps0.020_T160",
+    "L4_h0.500_dt0.0040_R220_eps0.020_T160"
+  ],
+  "physical_instability_inferred": false,
+  "next": "L6 at same radial and temporal grids, keeping both failed comparison runs"
+}

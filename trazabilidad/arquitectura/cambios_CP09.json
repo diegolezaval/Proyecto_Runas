@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0.0",
+  "date": "2026-10-02",
+  "checkpoint": "CP09_AUDITORIA_ARQUITECTURA",
+  "scientific_checkpoint": "CP08_REFINAMIENTO_NO_RADIAL",
+  "authority": "Recibo administrativo de ediciones y conservación; no fuente científica. Los hashes de altas y del payload final están en el manifiesto raíz.",
+  "original_files": 786,
+  "edits": [
+    {
+      "path": "ENMIENDAS_HOJA_RUTA.md",
+      "operation": "compatible_edit",
+      "before_sha256": "c4c19db7baf78645eac966f2aaed197e670866f8269290b427083c73edb5ca28",
+      "after_sha256": "8ce314b4ff70303c73570e9d6a54b9fcc8d2dc8f3a5b45a88254ef9b579f76cb",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/ENMIENDAS_HOJA_RUTA.md",
+      "after_hash_authority": "this_record_and_final_manifest"
+    },
+    {
+      "path": "ESTADO_ACTUAL.md",
+      "operation": "compatible_edit",
+      "before_sha256": "2ca35ba11b2b033abc968c6b108f9c711183f3ac80ea462ad27492cc9aa66480",
+      "after_sha256": "b457549d6c5ec04ea71634c887597cc24473784f5f95778e4c9a4ac98cad4f94",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/ESTADO_ACTUAL.md",
+      "after_hash_authority": "this_record_and_final_manifest"
+    },
+    {
+      "path": "LEEME.md",
+      "operation": "compatible_edit",
+      "before_sha256": "a665a67eea0641e52a6af9b1b1d20c95d9467fc99b1069d0cfe0e9346455f0a3",
+      "after_sha256": "26ce5829de7ece8c3bc13184ff598a46493b2eec0319c37847d1e2da13d0daa6",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/LEEME.md",
+      "after_hash_authority": "this_record_and_final_manifest"
+    },
+    {
+      "path": "M2_RESULTADO.md",
+      "operation": "compatible_edit",
+      "before_sha256": "595263e637aadf42927dce867a4403ea8a0bc4a75c70a767a14baf8521e514b1",
+      "after_sha256": "462b0c145a741c6002996e951de2e29dfe7a271a87841d3306b67762c0740725",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/M2_RESULTADO.md",
+      "after_hash_authority": "this_record_and_final_manifest"
+    },
+    {
+      "path": "MANIFIESTO_SHA256.json",
+      "operation": "regenerate_manifest",
+      "before_sha256": "b1ada3f285f5aa87a535f6135dd5487c299ef334d7f3ca2c1e88ddc7082e4caf",
+      "after_sha256": null,
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/MANIFIESTO_SHA256.json",
+      "after_hash_authority": "MANIFIESTO_SHA256.json; el manifiesto se excluye a sí mismo"
+    },
+    {
+      "path": "VERSIONES.json",
+      "operation": "compatible_edit",
+      "before_sha256": "882fce5fe555fcc8980ffc8d883bfb2a3f56458a8418eaf303e4a196cea1334d",
+      "after_sha256": "7516e9685a4312cbaffe2cadc6f4bb5849a9f30ab4e66571f52ca0a528b5b83a",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/VERSIONES.json",
+      "after_hash_authority": "this_record_and_final_manifest"
+    },
+    {
+      "path": "estado_progreso.json",
+      "operation": "compatible_edit",
+      "before_sha256": "b85c692a863fd9242d61f51ebb5eff6bfeff4040e84ebc60d758f3e883605b22",
+      "after_sha256": "1dbeecbd3848875b7cd6cb7d4b4d37f0cc62566e018b2e86043e1ee61c29e74f",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/estado_progreso.json",
+      "after_hash_authority": "this_record_and_final_manifest"
+    },
+    {
+      "path": "herramientas/checkpoint.py",
+      "operation": "compatible_edit",
+      "before_sha256": "d4dc03c17e0645cb6696c4711502fdb5d8a62176ceee0d27f0f173eac82c3cc4",
+      "after_sha256": "d7afd24579717eb80f926fea5b6fe31a51d0fd02e25d298434573ffcc5e8904e",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/herramientas/checkpoint.py",
+      "after_hash_authority": "this_record_and_final_manifest"
+    },
+    {
+      "path": "herramientas/continuar_no_radial_adaptativo.py",
+      "operation": "compatible_edit",
+      "before_sha256": "63869c699b87030b057a16840ae7d82dd7d02046b5695fae218ee5757450e0ea",
+      "after_sha256": "32d93a3bf742e736ca581a0ca23ac246aeb442f7fafb499a994ffe81294a96b1",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/herramientas/continuar_no_radial_adaptativo.py",
+      "after_hash_authority": "this_record_and_final_manifest"
+    },
+    {
+      "path": "herramientas/empaquetar.py",
+      "operation": "compatible_edit",
+      "before_sha256": "234cf92ef562a35c9512ea2dda25181f736c706e0c514133d0dbe5800613690d",
+      "after_sha256": "2ce8d9fa05a9bd6ab752971abb6eab411f0207b4e8fe0d91d982e3d7a6625392",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/herramientas/empaquetar.py",
+      "after_hash_authority": "this_record_and_final_manifest"
+    },
+    {
+      "path": "herramientas/verificar_continuidad.py",
+      "operation": "compatible_edit",
+      "before_sha256": "a09a47daa699073d90a8d23e5d568b7d93ccfdf0e8d7acc3c97a4ea6c08d660b",
+      "after_sha256": "850c0d58c46c11383df39621d29eb2f8318d3d429a064febd53776bbbf47b282",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/herramientas/verificar_continuidad.py",
+      "after_hash_authority": "this_record_and_final_manifest"
+    },
+    {
+      "path": "herramientas/verificar_m2.py",
+      "operation": "compatible_edit",
+      "before_sha256": "499c423f766f584ab78ca0f84fe6c6c0059d05c45bc4500d306f391f659535b0",
+      "after_sha256": "f01fa9ce3ceca448d12beaf82a344d665d0806a1060e12aa91775dbfe6d5d132",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/herramientas/verificar_m2.py",
+      "after_hash_authority": "this_record_and_final_manifest"
+    },
+    {
+      "path": "herramientas/verificar_preparacion_m2.py",
+      "operation": "compatible_edit",
+      "before_sha256": "a2a58ee09a985820e17481c89a271723b357fbf4855bee138e5f2155546539f1",
+      "after_sha256": "0e953ec4071490b036c76ea83a78d7b39fffe9813651b12649a4c9576a79d0eb",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/herramientas/verificar_preparacion_m2.py",
+      "after_hash_authority": "this_record_and_final_manifest"
+    },
+    {
+      "path": "investigacion/C7_notas_EN_PROGRESO.md",
+      "operation": "compatible_edit",
+      "before_sha256": "7f43a24e87f094a3875a954e6cc1c62e2660405097540a4c2a895b67b07be1f3",
+      "after_sha256": "21246333d1d22a8a5d5bfbe14bd1abec87e54baae64f3bf8332a9b8824e077a8",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/investigacion/C7_notas_EN_PROGRESO.md",
+      "after_hash_authority": "this_record_and_final_manifest"
+    },
+    {
+      "path": "requirements.txt",
+      "operation": "compatible_edit",
+      "before_sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197",
+      "after_sha256": "fad71a2b9faf97517c831491763eae84515621926627f2bff976d01c3cf4521d",
+      "before_copy": "trazabilidad/CP08_arquitectura_entrada/requirements.txt",
+      "after_hash_authority": "this_record_and_final_manifest"
+    }
+  ],
+  "additions": [
+    ".gitattributes",
+    ".gitignore",
+    "ARQUITECTURA.md",
+    "README.md",
+    "datos/arquitectura.json",
+    "herramientas/auditar_arquitectura.py",
+    "herramientas/generar_continuidad.py",
+    "herramientas/regresion_estructural.py",
+    "herramientas/rutas_documentales.py",
+    "herramientas/verificar_entorno.py",
+    "informes/AUDITORIA_ARQUITECTURA_CP09.md",
+    "trazabilidad/CP08_arquitectura_entrada/ENMIENDAS_HOJA_RUTA.md",
+    "trazabilidad/CP08_arquitectura_entrada/ESTADO_ACTUAL.md",
+    "trazabilidad/CP08_arquitectura_entrada/LEEME.md",
+    "trazabilidad/CP08_arquitectura_entrada/M2_RESULTADO.md",
+    "trazabilidad/CP08_arquitectura_entrada/MANIFIESTO_SHA256.json",
+    "trazabilidad/CP08_arquitectura_entrada/ORIGEN.md",
+    "trazabilidad/CP08_arquitectura_entrada/VERSIONES.json",
+    "trazabilidad/CP08_arquitectura_entrada/estado_progreso.json",
+    "trazabilidad/CP08_arquitectura_entrada/herramientas/checkpoint.py",
+    "trazabilidad/CP08_arquitectura_entrada/herramientas/continuar_no_radial_adaptativo.py",
+    "trazabilidad/CP08_arquitectura_entrada/herramientas/empaquetar.py",
+    "trazabilidad/CP08_arquitectura_entrada/herramientas/verificar_continuidad.py",
+    "trazabilidad/CP08_arquitectura_entrada/herramientas/verificar_m2.py",
+    "trazabilidad/CP08_arquitectura_entrada/herramientas/verificar_preparacion_m2.py",
+    "trazabilidad/CP08_arquitectura_entrada/investigacion/C7_notas_EN_PROGRESO.md",
+    "trazabilidad/CP08_arquitectura_entrada/requirements.txt",
+    "trazabilidad/arquitectura/DIAGNOSTICO_PREVIO.md",
+    "trazabilidad/arquitectura/archivos_CP08.json",
+    "trazabilidad/arquitectura/cambios_CP09.json",
+    "trazabilidad/arquitectura/indice_trazabilidad.json",
+    "trazabilidad/arquitectura/paquetes_entrada.json",
+    "trazabilidad/arquitectura/pruebas_base.json",
+    "trazabilidad/arquitectura/pruebas_base/checkpoint.py.log",
+    "trazabilidad/arquitectura/pruebas_base/generar.py.log",
+    "trazabilidad/arquitectura/pruebas_base/puerta_acceso_lineal_m2.py.log",
+    "trazabilidad/arquitectura/pruebas_base/verificar.py.log",
+    "trazabilidad/arquitectura/pruebas_base/verificar_campana_4_2.py.log",
+    "trazabilidad/arquitectura/pruebas_base/verificar_capilaridad.py.log",
+    "trazabilidad/arquitectura/pruebas_base/verificar_continuidad.py.log",
+    "trazabilidad/arquitectura/pruebas_base/verificar_m2.py.log",
+    "trazabilidad/arquitectura/pruebas_base/verificar_no_radial_m2.py.log",
+    "trazabilidad/arquitectura/pruebas_base/verificar_preparacion_m2.py.log",
+    "validacion/arquitectura/auditoria_CP09.json",
+    "validacion/arquitectura/compatibilidad_git_CP09.json",
+    "validacion/arquitectura/regeneracion_figuras_CP09.json",
+    "validacion/arquitectura/regresion_estructural_CP09.json"
+  ],
+  "moves": [],
+  "renames": [],
+  "deleted_originals": [],
+  "conservation": {
+    "original_scientific_or_view_files_byte_identical": 647,
+    "original_historical_files_byte_identical": 65,
+    "stage_records_identical": 33,
+    "scientific_result_changes": [],
+    "all_original_bytes_recoverable": true
+  },
+  "manifest_note": "Se regenera al empaquetar. No se registra aquí su hash final para evitar un ciclo de hashes.",
+  "added_files_hash_authority": "MANIFIESTO_SHA256.json",
+  "baseline_inventory": "trazabilidad/arquitectura/archivos_CP08.json"
+}

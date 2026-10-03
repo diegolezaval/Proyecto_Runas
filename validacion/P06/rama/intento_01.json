@@ -1,0 +1,6 @@
+{
+  "failed_target_omega": 0.895,
+  "reason": "Maximum mesh nodes reached after direct frequency jump .005",
+  "meaning": "Numerical failure, not nonexistence",
+  "response": "Smaller continuation steps <=.0007; preserve target and tolerances"
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "4.1.0",
+  "scope": "M2 escalar clasico aislado; mismos parametros para pared, esfera y tubo",
+  "wall_runs": [
+    {"L": 12, "n": 500, "tol": 1e-6},
+    {"L": 20, "n": 800, "tol": 1e-8},
+    {"L": 28, "n": 1100, "tol": 1e-9},
+    {"L": 28, "n": 2200, "tol": 2e-10},
+    {"L": 36, "n": 2800, "tol": 2e-10}
+  ],
+  "norm_radii": [8, 16, 32, 64, 128],
+  "dimensions": [2, 3],
+  "background": {"extra_radius": 30, "initial_dx": 0.1, "tol": 1e-8},
+  "spectrum_radii": [16, 32, 64, 128],
+  "spectrum_dx": [0.1, 0.05, 0.025, 0.0125, 0.00625],
+  "tube_kR": 0.6,
+  "sphere_ell": 2,
+  "domain_check": {"norm_radius": 64, "extra_radius": 40, "initial_dx": 0.05, "tol": 2e-10, "spectral_dx": 0.0125},
+  "thresholds": {
+    "wall_last_relative_difference": 1e-8,
+    "wall_first_integral_absolute": 1e-8,
+    "radial_virial_relative": 1e-7,
+    "stress_balance_relative": 1e-6,
+    "norm_relative": 1e-7,
+    "generator_residual_absolute": 1e-7,
+    "domain_spectrum_relative": 1e-5,
+    "large_radius_laplace_relative": 0.01,
+    "large_radius_energy_relative": 0.015,
+    "large_radius_mode_relative": 0.01,
+    "large_radius_kcrit_relative": 0.01,
+    "richardson_sequence_relative": 0.0002
+  },
+  "threshold_status": "Tolerancias de contraste numerico declaradas; no intervalos certificados ni criterios de aceptacion de dispositivos."
+}

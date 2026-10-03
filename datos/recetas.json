@@ -1,0 +1,449 @@
+{
+  "schema_version": "2.0.0",
+  "recipes": [
+    {
+      "id": "R-LUZ",
+      "name": "Iluminar",
+      "modules": [
+        "P-01",
+        "P-04",
+        "P-05",
+        "P-07",
+        "P-08",
+        "P-09",
+        "P-11",
+        "P-14",
+        "P-15",
+        "P-17"
+      ],
+      "setpoints": {
+        "optical_power": {
+          "value": 6,
+          "unit": "W"
+        }
+      },
+      "preconditions": [
+        "fuente disponible",
+        "ruta térmica",
+        "terminal óptico verificado"
+      ],
+      "states": [
+        "preparacion",
+        "verificacion",
+        "disponible",
+        "ejecucion",
+        "degradacion",
+        "retirada",
+        "apagado"
+      ],
+      "initial_state": "preparacion",
+      "transitions": [
+        {
+          "from": "preparacion",
+          "event": "prepared",
+          "to": "verificacion"
+        },
+        {
+          "from": "verificacion",
+          "event": "checks_pass",
+          "to": "disponible"
+        },
+        {
+          "from": "disponible",
+          "event": "start",
+          "to": "ejecucion"
+        },
+        {
+          "from": "ejecucion",
+          "event": "fault",
+          "to": "degradacion"
+        },
+        {
+          "from": "ejecucion",
+          "event": "stop",
+          "to": "retirada"
+        },
+        {
+          "from": "degradacion",
+          "event": "local_fallback",
+          "to": "retirada"
+        },
+        {
+          "from": "retirada",
+          "event": "resources_settled",
+          "to": "apagado"
+        }
+      ],
+      "withdrawal": "Cerrar Compuerta; vaciar Canal; conservar control hasta apagado.",
+      "command_fields": [
+        "recipe_id",
+        "resource_id",
+        "owner_id",
+        "epoch",
+        "sequence",
+        "expires_at",
+        "setpoints_with_units"
+      ],
+      "on_stale_command": "reject_keep_local_controller",
+      "on_invalid_measurement": "degradacion",
+      "resource_binding": "Asignar terminales antes de checks_pass. Los puertos mixtos separan energía y señal; no sobrepasar la capacidad conjunta. Ver contrato de interfaces y presupuesto.",
+      "status": "especificacion_condicional_no_controlador_de_hardware",
+      "resource_budget": {
+        "duration_s": 60,
+        "input_power_max_W": 10.67,
+        "operating_energy_reservation_J": 641,
+        "preparation_energy_J": 39,
+        "heat_with_collector_max_W": 8.71,
+        "reference": "C.1; captación 0.02 m2; soporte y sumidero preexistentes"
+      },
+      "budget_status": "asignacion_de_referencia_bajo_supuestos; no_medicion",
+      "on_timeout": "degradacion",
+      "rearm_requires": "nueva verificación de recursos y terminales",
+      "connections": [
+        {
+          "from": "P-05.P.energy",
+          "to": "P-04.A.energy",
+          "type": "power_bus"
+        },
+        {
+          "from": "P-04.B.energy",
+          "to": "P-07.A.energy",
+          "type": "power_bus"
+        },
+        {
+          "from": "P-07.B.energy",
+          "to": "P-17.E.energy",
+          "type": "power_bus"
+        },
+        {
+          "from": "P-11.P.data",
+          "to": "P-15.M.data",
+          "type": "data"
+        },
+        {
+          "from": "P-14.P.clock",
+          "to": "P-15.G.clock",
+          "type": "clock"
+        },
+        {
+          "from": "P-09.P.data",
+          "to": "P-15.F.data",
+          "type": "data"
+        },
+        {
+          "from": "P-15.O.control",
+          "to": "P-07.U.control",
+          "type": "control"
+        },
+        {
+          "from": "P-15.O.control",
+          "to": "P-17.U.control",
+          "type": "control"
+        }
+      ],
+      "service_bus": "Alimenta subcanales de servicio de Semilla, memoria, reloj, sensor, secuenciador y terminales dentro de los 0.65 W de servicios declarados; debe realizarse un Distribuidor o derivación equivalente contabilizada."
+    },
+    {
+      "id": "R-SOPORTE",
+      "name": "Elevar y sostener",
+      "modules": [
+        "P-02",
+        "P-04",
+        "P-06",
+        "P-09",
+        "P-11",
+        "P-14",
+        "P-15",
+        "P-19"
+      ],
+      "setpoints": {
+        "mass": {
+          "value": 100,
+          "unit": "kg"
+        },
+        "height": {
+          "value": 1,
+          "unit": "m"
+        }
+      },
+      "preconditions": [
+        "referencia admite 981 N y torque",
+        "soporte preparado",
+        "reserva de retirada",
+        "medida local válida"
+      ],
+      "states": [
+        "preparacion",
+        "verificacion",
+        "disponible",
+        "ejecucion",
+        "degradacion",
+        "retirada",
+        "apagado"
+      ],
+      "initial_state": "preparacion",
+      "transitions": [
+        {
+          "from": "preparacion",
+          "event": "prepared",
+          "to": "verificacion"
+        },
+        {
+          "from": "verificacion",
+          "event": "checks_pass",
+          "to": "disponible"
+        },
+        {
+          "from": "disponible",
+          "event": "start",
+          "to": "ejecucion"
+        },
+        {
+          "from": "ejecucion",
+          "event": "fault",
+          "to": "degradacion"
+        },
+        {
+          "from": "ejecucion",
+          "event": "stop",
+          "to": "retirada"
+        },
+        {
+          "from": "degradacion",
+          "event": "local_fallback",
+          "to": "retirada"
+        },
+        {
+          "from": "retirada",
+          "event": "resources_settled",
+          "to": "apagado"
+        }
+      ],
+      "withdrawal": "Transferir apoyo o bajar con velocidad limitada; no soltar la carga.",
+      "command_fields": [
+        "recipe_id",
+        "resource_id",
+        "owner_id",
+        "epoch",
+        "sequence",
+        "expires_at",
+        "setpoints_with_units"
+      ],
+      "on_stale_command": "reject_keep_local_controller",
+      "on_invalid_measurement": "degradacion",
+      "resource_binding": "Asignar terminales antes de checks_pass. Los puertos mixtos separan energía y señal; no sobrepasar la capacidad conjunta. Ver contrato de interfaces y presupuesto.",
+      "status": "especificacion_condicional_no_controlador_de_hardware",
+      "resource_budget": {
+        "duration_s": 10,
+        "input_power_max_W": 1000,
+        "operating_energy_reservation_J": 10000,
+        "preparation_energy_reservation_J": 200500,
+        "emergency_control_reservation_J": 50,
+        "heat_sink_capacity_W": 1000,
+        "reference": "Asignaciones conservadoras; Reserva y control preexistentes; soporte nuevo. Calor reservado como cota de toda potencia de entrada, no estimación nominal."
+      },
+      "budget_status": "asignacion_de_referencia_bajo_supuestos; no_medicion",
+      "on_timeout": "degradacion",
+      "rearm_requires": "nueva verificación de recursos y terminales",
+      "mechanical_authority": "El controlador reparte fuerza entre P-19 durante movimiento y P-02 durante sostén. La suma, no cada uno por separado, sigue la consigna total."
+    },
+    {
+      "id": "R-TERMOSTATO",
+      "name": "Regular temperatura",
+      "modules": [
+        "P-04",
+        "P-06",
+        "P-07",
+        "P-09",
+        "P-11",
+        "P-12",
+        "P-14",
+        "P-15",
+        "P-18"
+      ],
+      "setpoints": {
+        "temperature": {
+          "value": 313.15,
+          "unit": "K"
+        }
+      },
+      "preconditions": [
+        "objeto identificado",
+        "sumidero térmico",
+        "sensor válido",
+        "energía disponible"
+      ],
+      "states": [
+        "preparacion",
+        "verificacion",
+        "disponible",
+        "ejecucion",
+        "degradacion",
+        "retirada",
+        "apagado"
+      ],
+      "initial_state": "preparacion",
+      "transitions": [
+        {
+          "from": "preparacion",
+          "event": "prepared",
+          "to": "verificacion"
+        },
+        {
+          "from": "verificacion",
+          "event": "checks_pass",
+          "to": "disponible"
+        },
+        {
+          "from": "disponible",
+          "event": "start",
+          "to": "ejecucion"
+        },
+        {
+          "from": "ejecucion",
+          "event": "fault",
+          "to": "degradacion"
+        },
+        {
+          "from": "ejecucion",
+          "event": "stop",
+          "to": "retirada"
+        },
+        {
+          "from": "degradacion",
+          "event": "local_fallback",
+          "to": "retirada"
+        },
+        {
+          "from": "retirada",
+          "event": "resources_settled",
+          "to": "apagado"
+        }
+      ],
+      "withdrawal": "Detener trabajo activo; mantener disipación y vigilancia hasta condición estable.",
+      "command_fields": [
+        "recipe_id",
+        "resource_id",
+        "owner_id",
+        "epoch",
+        "sequence",
+        "expires_at",
+        "setpoints_with_units"
+      ],
+      "on_stale_command": "reject_keep_local_controller",
+      "on_invalid_measurement": "degradacion",
+      "resource_binding": "Asignar terminales antes de checks_pass. Los puertos mixtos separan energía y señal; no sobrepasar la capacidad conjunta. Ver contrato de interfaces y presupuesto.",
+      "status": "especificacion_condicional_no_controlador_de_hardware",
+      "resource_budget": {
+        "duration_s": 1200,
+        "input_power_max_W": 101.2,
+        "operating_energy_reservation_J": 124000,
+        "preparation_energy_reservation_J": 20,
+        "heat_sink_capacity_W": 102,
+        "reference": "Calentador 100 W, servicios asignados 1.2 W; reserva incluye descarga al 98% y fuga <=0.1 W; terminales existentes."
+      },
+      "budget_status": "asignacion_de_referencia_bajo_supuestos; no_medicion",
+      "on_timeout": "degradacion",
+      "rearm_requires": "nueva verificación de recursos y terminales"
+    },
+    {
+      "id": "R-CRECIMIENTO",
+      "name": "Ampliar captación",
+      "modules": [
+        "P-01",
+        "P-02",
+        "P-04",
+        "P-05",
+        "P-08",
+        "P-09",
+        "P-11",
+        "P-14",
+        "P-15"
+      ],
+      "setpoints": {
+        "target_area": {
+          "value": 1,
+          "unit": "m2"
+        }
+      },
+      "preconditions": [
+        "superficie accesible",
+        "irradiancia suficiente",
+        "soporte y sumidero preexistentes"
+      ],
+      "states": [
+        "preparacion",
+        "verificacion",
+        "disponible",
+        "ejecucion",
+        "degradacion",
+        "retirada",
+        "apagado"
+      ],
+      "initial_state": "preparacion",
+      "transitions": [
+        {
+          "from": "preparacion",
+          "event": "prepared",
+          "to": "verificacion"
+        },
+        {
+          "from": "verificacion",
+          "event": "checks_pass",
+          "to": "disponible"
+        },
+        {
+          "from": "disponible",
+          "event": "start",
+          "to": "ejecucion"
+        },
+        {
+          "from": "ejecucion",
+          "event": "fault",
+          "to": "degradacion"
+        },
+        {
+          "from": "ejecucion",
+          "event": "stop",
+          "to": "retirada"
+        },
+        {
+          "from": "degradacion",
+          "event": "local_fallback",
+          "to": "retirada"
+        },
+        {
+          "from": "retirada",
+          "event": "resources_settled",
+          "to": "apagado"
+        }
+      ],
+      "withdrawal": "Detener preparación del borde; aislar sectores incompletos; sostener los verificados.",
+      "command_fields": [
+        "recipe_id",
+        "resource_id",
+        "owner_id",
+        "epoch",
+        "sequence",
+        "expires_at",
+        "setpoints_with_units"
+      ],
+      "on_stale_command": "reject_keep_local_controller",
+      "on_invalid_measurement": "degradacion",
+      "resource_binding": "Asignar terminales antes de checks_pass. Los puertos mixtos separan energía y señal; no sobrepasar la capacidad conjunta. Ver contrato de interfaces y presupuesto.",
+      "status": "especificacion_condicional_no_controlador_de_hardware",
+      "resource_budget": {
+        "duration_s": 2,
+        "collector_bus_capacity_at_target_W": 798,
+        "film_energy_at_target_J": 200,
+        "initial_seed_and_film_energy_J": 5.5,
+        "heat_sink_capacity_at_target_W": 202,
+        "reference": "C.2; crecimiento ideal 1.508 s más margen, con infraestructura auxiliar existente. No es plazo garantizado en condiciones diferentes."
+      },
+      "budget_status": "asignacion_de_referencia_bajo_supuestos; no_medicion",
+      "on_timeout": "degradacion",
+      "rearm_requires": "nueva verificación de recursos y terminales"
+    }
+  ],
+  "authority_note": "Especificaciones, mecanismos candidatos o modelos reducidos. El estado de cada realizacion se consulta en aceptacion_m2.json y el alcance cientifico en estado_evidencia.json. Los valores R1 son revisables; no operaciones fisicas habilitadas."
+}

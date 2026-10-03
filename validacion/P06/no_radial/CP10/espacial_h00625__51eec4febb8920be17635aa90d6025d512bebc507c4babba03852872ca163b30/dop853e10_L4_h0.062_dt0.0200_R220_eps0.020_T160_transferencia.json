@@ -1,0 +1,22 @@
+{
+  "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+  "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+  "source_time": 1200.0,
+  "source_full_energy": 2566.9470436465344,
+  "source_full_charge": 2745.7739206676465,
+  "source_energy_inside_new_radius": 2386.5221771840497,
+  "source_charge_inside_new_radius": 2578.2976616782553,
+  "omitted_exterior_energy": 180.42486646248472,
+  "omitted_exterior_charge": 167.47625898939123,
+  "regridding_and_new_boundary_energy_change": 15.859739654903933,
+  "regridding_charge_change": -0.05147276573052295,
+  "seed_energy_change": 4.264237830170259,
+  "seed_charge_change": 4.341821521407837,
+  "core_energy_regridding_relative": -1.765840074374747e-05,
+  "core_charge_regridding_relative": -2.079915718422587e-05,
+  "causal_margin": 180.0,
+  "full_original_domain_evolved": false,
+  "discarded_exterior_state_preserved": true,
+  "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+  "primary_source_derived": false
+}

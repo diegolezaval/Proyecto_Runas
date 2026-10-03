@@ -1,0 +1,26 @@
+{
+  "case": {
+    "entrypoint": "herramientas/evolucion_mediador_CP10.py",
+    "operation": "nueva_resolucion_temporal",
+    "configuration": {
+      "dx": 0.125,
+      "rtol": 1e-10,
+      "atol": 1e-12,
+      "max_step": 0.02,
+      "L": 4,
+      "radius": 220.0,
+      "eps": 0.02,
+      "tmax": 160.0
+    },
+    "implementation": "Potencial C contrastado con NumPy antes de evolucionar; misma acción y fuerza completas.",
+    "extra_code": [
+      "herramientas/fuerza_potencial_m2.c"
+    ],
+    "inputs": [
+      "datos/ensayo_no_radial_CP06.json",
+      "validacion/P06/no_radial/auditoria_operador.json"
+    ]
+  },
+  "protocol": "datos/ensayo_mediador_CP10.json",
+  "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz"
+}

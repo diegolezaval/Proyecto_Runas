@@ -1,0 +1,19 @@
+{
+  "Omega": 1.95,
+  "success": true,
+  "message": "The algorithm converged to the desired accuracy.",
+  "nodes": 3215,
+  "max_rms_residual": 1.997489399388138e-08,
+  "boundary_residual": 5.551115123125783e-17,
+  "probabilities": [
+    2.8567057516873515e-06,
+    0.9999971432943362
+  ],
+  "unitarity_error": 8.79296635503124e-14,
+  "energy_flux_gain": 1.0000048972099478,
+  "relative_conversion_difference_vs_fd": 0.0023882545993786568,
+  "gain_difference_vs_fd": 1.169587160454455e-08,
+  "fd_dx": 0.003125,
+  "passed": true,
+  "method": "Continuous ODE, real/imaginary collocation, exact boundary Jacobian; original failed complex attempt preserved"
+}

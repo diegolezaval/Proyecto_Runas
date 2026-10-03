@@ -1,0 +1,206 @@
+{
+  "checkpoint": "CP10_MEDIADOR_ESPACIOTEMPORAL",
+  "comparisons": [
+    {
+      "norm_relative_sup_error": 0.005869990499045349,
+      "final_complex_nonradial_field_error_over_initial_norm": 0.011226382351444806,
+      "final_phi_phase_space_error_over_initial_norm": 0.01403783505096348,
+      "final_mediator_nonradial_error_over_initial_norm": 0.040341137191071734,
+      "final_mediator_phase_space_error_over_initial_norm": 0.05009240496236852,
+      "global_phi_phase_removed": -0.0077627810908923065,
+      "chi_radial_bands": [
+        {
+          "r_min": 0,
+          "r_max": 2,
+          "fraction_of_chi_squared_difference": 3.876147417532407e-05
+        },
+        {
+          "r_min": 2,
+          "r_max": 5,
+          "fraction_of_chi_squared_difference": 9.779995726260156e-05
+        },
+        {
+          "r_min": 5,
+          "r_max": 10,
+          "fraction_of_chi_squared_difference": 0.573487642539859
+        },
+        {
+          "r_min": 10,
+          "r_max": 20,
+          "fraction_of_chi_squared_difference": 0.4263757499426706
+        },
+        {
+          "r_min": 20,
+          "r_max": 40,
+          "fraction_of_chi_squared_difference": 4.6086032564823126e-08
+        }
+      ],
+      "chi_multipole_fractions": {
+        "1": 4.891272908881873e-22,
+        "2": 0.7511462911006119,
+        "3": 8.069677688837153e-22,
+        "4": 0.24885370889938807
+      },
+      "descriptive_chi_rotation": {
+        "angle": -0.005716994715141167,
+        "rotated_error": 0.050023578173141875,
+        "used_for_acceptance": false,
+        "warning": "χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta."
+      }
+    },
+    {
+      "norm_relative_sup_error": 0.0015273337447915048,
+      "final_complex_nonradial_field_error_over_initial_norm": 0.0028510562536917454,
+      "final_phi_phase_space_error_over_initial_norm": 0.009298218204486829,
+      "final_mediator_nonradial_error_over_initial_norm": 0.03453233704860043,
+      "final_mediator_phase_space_error_over_initial_norm": 0.05042920771974442,
+      "global_phi_phase_removed": -0.001908055928489575,
+      "chi_radial_bands": [
+        {
+          "r_min": 0,
+          "r_max": 2,
+          "fraction_of_chi_squared_difference": 1.7333063326041019e-06
+        },
+        {
+          "r_min": 2,
+          "r_max": 5,
+          "fraction_of_chi_squared_difference": 3.65347126927577e-06
+        },
+        {
+          "r_min": 5,
+          "r_max": 10,
+          "fraction_of_chi_squared_difference": 0.1974797749369029
+        },
+        {
+          "r_min": 10,
+          "r_max": 20,
+          "fraction_of_chi_squared_difference": 0.7739627599139578
+        },
+        {
+          "r_min": 20,
+          "r_max": 40,
+          "fraction_of_chi_squared_difference": 0.028552078371537334
+        }
+      ],
+      "chi_multipole_fractions": {
+        "1": 4.417179292818142e-22,
+        "2": 0.7437684614666465,
+        "3": 7.7112890635985735e-22,
+        "4": 0.25623153853335334
+      },
+      "descriptive_chi_rotation": {
+        "angle": 0.010177555109900057,
+        "rotated_error": 0.05020364759897494,
+        "used_for_acceptance": false,
+        "warning": "χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta."
+      }
+    }
+  ],
+  "spectra": {
+    "dop853e9_L4_h0.500_dt0.0200_R220_eps0.020_T160_estado.npz": {
+      "initial": {
+        "fractions_above_k": {
+          "2": 0.0005793938163710458,
+          "4": 2.4888301291476472e-08,
+          "8": 0.0,
+          "12": 0.0,
+          "20": 0.0
+        },
+        "k_at_max": 0.15707963267948966,
+        "interpretation": "Transformada seno de rχ en el núcleo finito, sin diagonalizar el operador acoplado; localizador descriptivo, no espectro físico certificado."
+      },
+      "final": {
+        "fractions_above_k": {
+          "2": 0.006813284595216362,
+          "4": 0.0046402264881066305,
+          "8": 0.0,
+          "12": 0.0,
+          "20": 0.0
+        },
+        "k_at_max": 0.15707963267948966,
+        "interpretation": "Transformada seno de rχ en el núcleo finito, sin diagonalizar el operador acoplado; localizador descriptivo, no espectro físico certificado."
+      }
+    },
+    "dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160_estado.npz": {
+      "initial": {
+        "fractions_above_k": {
+          "2": 0.0005792876658092435,
+          "4": 2.5684453804634494e-08,
+          "8": 9.441970086439894e-11,
+          "12": 6.552071162755804e-12,
+          "20": 0.0
+        },
+        "k_at_max": 0.15707963267948966,
+        "interpretation": "Transformada seno de rχ en el núcleo finito, sin diagonalizar el operador acoplado; localizador descriptivo, no espectro físico certificado."
+      },
+      "final": {
+        "fractions_above_k": {
+          "2": 0.006603170507513791,
+          "4": 0.0050191308090270234,
+          "8": 0.002432343889893035,
+          "12": 0.0003370923154293935,
+          "20": 0.0
+        },
+        "k_at_max": 0.15707963267948966,
+        "interpretation": "Transformada seno de rχ en el núcleo finito, sin diagonalizar el operador acoplado; localizador descriptivo, no espectro físico certificado."
+      }
+    },
+    "dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz": {
+      "initial": {
+        "fractions_above_k": {
+          "2": 0.0005792937145601933,
+          "4": 2.56368734849204e-08,
+          "8": 1.9141080252736503e-09,
+          "12": 1.8885235048261517e-09,
+          "20": 5.072136564451138e-12
+        },
+        "k_at_max": 0.15707963267948966,
+        "interpretation": "Transformada seno de rχ en el núcleo finito, sin diagonalizar el operador acoplado; localizador descriptivo, no espectro físico certificado."
+      },
+      "final": {
+        "fractions_above_k": {
+          "2": 0.007121097043287522,
+          "4": 0.006306165556806449,
+          "8": 0.004080753946559358,
+          "12": 0.0011131076939569354,
+          "20": 6.569442931437855e-06
+        },
+        "k_at_max": 0.15707963267948966,
+        "interpretation": "Transformada seno de rχ en el núcleo finito, sin diagonalizar el operador acoplado; localizador descriptivo, no espectro físico certificado."
+      }
+    }
+  },
+  "free_cartesian_dispersion_illustration": [
+    {
+      "k": 2,
+      "coarse_pair_phase_difference": -0.049471835745862336,
+      "fine_pair_phase_difference": -0.012465001382224727
+    },
+    {
+      "k": 4,
+      "coarse_pair_phase_difference": -0.7667026078320305,
+      "fine_pair_phase_difference": -0.19777029585156924
+    },
+    {
+      "k": 8,
+      "coarse_pair_phase_difference": -10.791621124399171,
+      "fine_pair_phase_difference": -3.0598570900974664
+    },
+    {
+      "k": 12,
+      "coarse_pair_phase_difference": -44.01225681378264,
+      "fine_pair_phase_difference": -14.650150652628326
+    },
+    {
+      "k": 20,
+      "coarse_pair_phase_difference": -165.058402713953,
+      "fine_pair_phase_difference": -94.64218919089944
+    }
+  ],
+  "illustration_limit": "ω_h²=M²+4 sin²(kh/2)/h² es la dispersión libre cartesiana; no reemplaza el operador radial/centrífugo ni demuestra la causa en M2 acoplado.",
+  "historical_metric_reproduction_passed": true,
+  "evolutions_repeated": false,
+  "cause_certified": false,
+  "continuum_error_certified": false,
+  "next_test": "Control temporal en h=.125 y comparación h=.125/.0625 con tolerancia común fina; no ajustar fase χ ni relajar el 2%."
+}

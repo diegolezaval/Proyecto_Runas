@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "checks": {
+    "eight_completed_runs": true,
+    "numerical_verification": true,
+    "three_convergence_controls": true,
+    "two_long_runs_settle_only_conditionally": true,
+    "excitation_same_discrete_action_converges": true,
+    "all_restart_states_complete_and_finite": true,
+    "fine_run_resumed_from_240": true,
+    "failures_preserved": true,
+    "stages_not_falsely_closed": true,
+    "C7_remains_in_progress": false
+  },
+  "passed": false,
+  "simulations_repeated": false,
+  "scope": "Consistencia, conservación publicada, refinamiento y honestidad de puertas; no prueba del continuo ni experimento."
+}

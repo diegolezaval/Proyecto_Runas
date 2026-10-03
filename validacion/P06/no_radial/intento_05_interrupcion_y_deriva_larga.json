@@ -1,0 +1,35 @@
+{
+  "status": "REANUDACION_TRAS_INTERRUPCION",
+  "cause_of_process_loss": "No determinada; las sesiones de proceso ya no existen",
+  "states": [
+    {
+      "state": "split4c_L4_h0.250_dt0.0040_R220_eps0.020_T160_estado.npz",
+      "step": 28000,
+      "time": 112.0,
+      "energy_drift": 0.010716905100683016,
+      "charge_drift": 1.219691014853197e-12,
+      "sha256": "1cf5a2839d40afb2f71e5a529e10bf27df10c41c1563fec9959b85684eb04c32",
+      "resume": false
+    },
+    {
+      "state": "split4c_L4_h0.500_dt0.0020_R220_eps0.020_T160_estado.npz",
+      "step": 68000,
+      "time": 136.0,
+      "energy_drift": 1.7329312735903102e-05,
+      "charge_drift": 1.5543677456264504e-11,
+      "sha256": "ae3ccfe054c31f062c0a05234895c30828fcd35e89850b1546fec3132ff8bda2",
+      "resume": true
+    },
+    {
+      "state": "split4c_L4_h0.500_dt0.0040_R220_eps0.020_T160_estado.npz",
+      "step": 40000,
+      "time": 160.0,
+      "energy_drift": 0.02354052314270816,
+      "charge_drift": 1.7463808177353712e-12,
+      "sha256": "d70877da517d865e590150b11a387e05fe785e8fa4b25cc735eaaa063c61dc72",
+      "resume": false
+    }
+  ],
+  "action": "Reanudar únicamente split4c h=.5 dt=.002 desde tau=136; preservar los dos fallos del paso grueso",
+  "physical_instability_inferred": false
+}

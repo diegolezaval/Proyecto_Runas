@@ -1,0 +1,59 @@
+{
+  "Omega": 1.95,
+  "success": false,
+  "message": "The maximum number of mesh nodes is exceeded.",
+  "nodes": 17686,
+  "max_rms_residual": 5.9828521933860434e-05,
+  "boundary_residual": 2.647364062235788e-05,
+  "probabilities": [
+    2.6590720738632683e-06,
+    1.0000311447549852
+  ],
+  "unitarity_error": 3.38038270590868e-05,
+  "energy_flux_gain": 1.0000383622363285,
+  "relative_conversion_difference_vs_fd": 0.07175854278230294,
+  "gain_difference_vs_fd": 3.347672225229026e-05,
+  "fd_dx": 0.003125,
+  "passed": false
+}
+{
+  "Omega": 2.3,
+  "success": false,
+  "message": "The maximum number of mesh nodes is exceeded.",
+  "nodes": 38401,
+  "max_rms_residual": 3.182409058500435e-07,
+  "boundary_residual": 3.1005526281947037e-12,
+  "probabilities": [
+    0.0012212659101397227,
+    0.9987787340382723
+  ],
+  "unitarity_error": 5.158795612913991e-11,
+  "energy_flux_gain": 1.0015701989757346,
+  "relative_conversion_difference_vs_fd": 7.927985728851753e-05,
+  "gain_difference_vs_fd": 1.2443356611768763e-07,
+  "fd_dx": 0.00625,
+  "passed": false
+}
+{
+  "Omega": 5.0,
+  "success": false,
+  "message": "The maximum number of mesh nodes is exceeded.",
+  "nodes": 21601,
+  "max_rms_residual": 0.002942731225687126,
+  "boundary_residual": 0.18099734523727196,
+  "probabilities": [
+    0.0003081283447488943,
+    0.9503558273215886
+  ],
+  "unitarity_error": 0.049336044333662454,
+  "energy_flux_gain": 0.9507992315250078,
+  "relative_conversion_difference_vs_fd": 0.025514457652568562,
+  "gain_difference_vs_fd": 0.04933949582383046,
+  "fd_dx": 0.00625,
+  "passed": false
+}
+Traceback (most recent call last):
+  File "/workspace/scratch/7c7d37442bf3/work/Proyecto_Runas/herramientas/verificar_dispersion_colocacion.py", line 45, in <module>
+    assert all(x['passed'] for x in records)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

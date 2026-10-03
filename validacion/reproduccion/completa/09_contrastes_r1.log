@@ -1,0 +1,72 @@
+{
+  "schema_version": "4.0.0",
+  "complete_device_derived": false,
+  "P04": {
+    "length_main_m_planar": 0.0817679079667828,
+    "stub_length_m_planar": 0.01593850866461309,
+    "R1_bulk_loss_fraction": 8.176757366862297e-06,
+    "matched_neumann_stub": {
+      "center_T": 1.0,
+      "half_band_Hz_at_R1_speed_and_zero_bulk_loss": 571070.9134347134,
+      "reflection_at_plus_minus_500kHz": 6.268153983308971e-06,
+      "group_delay_s_at_R1_speed": 8.973716229908934e-09,
+      "bare_main_delay_s_at_R1_speed": 8.17679079667828e-09
+    },
+    "scope": "Grafo ideal, v impuesto, extremo U perfectamente reflectante y sin absorcion; no derivacion M2 de paredes ni velocidad."
+  },
+  "P11": {
+    "phase_encoding_barrier_J_exact_U1": 0.0,
+    "R1_requested_barrier_J": 2.4851682e-19,
+    "R1_requested_barrier_eV": 1.551119987186132,
+    "R1_arrhenius_lifetime_s_if_postulated": 114200738981568.42,
+    "landauer_reset_lower_bound_J_at_300K": 2.870978885078724e-21,
+    "density_kernel_quartic_sign_change_k_over_m": 10.05037815259212,
+    "scope": "Barrera nula solo para codificacion en fase de una orbita U(1) aislada; no excluye memoria alimentada o con otras variables."
+  },
+  "P18": {
+    "T_K": 300.0,
+    "gapless_conductance_quantum_W_K": 2.839293454915992e-10,
+    "minimum_gapless_channels_for_100_W_K": 352200297672.15015,
+    "vacuum_gap_example_eV": 1.0,
+    "gap_over_kBT": 38.681727071833606,
+    "one_gapped_ballistic_channel_W_K": 2.1588776111225018e-24,
+    "minimum_gapped_channels_for_100_W_K": 4.632036549214353e+25,
+    "scope": "Transporte pasivo lineal entre dos banos ideales, transmision <=1 por canal; no cota universal de una bomba activa ni de todo material."
+  },
+  "P01": {
+    "energy_only_minimum_seconds": 2.5641025641025643,
+    "energy_plus_assumed_settle_seconds": 2.8141025641025643,
+    "exact_zero_classical_field_remains_zero": true,
+    "net_charge_created_by_U1_invariant_closed_drive": 0.0,
+    "scope": "Cota energetica condicionada a potencia realmente transferida. No es un protocolo de preparacion."
+  },
+  "validity": {
+    "sextic_term_relative_error_1pct_max_s": 1.0101010101010102,
+    "no_induced_kinetic_term_1pct_max_s_near_vacuum": 0.25253493151419104,
+    "induced_kinetic_correction_at_Qball_center": 0.021773018463451456,
+    "adiabatic_linear_response_sufficient_1pct_condition": "Omega^2+k^2 <= 0.01*(M^2+h*s)",
+    "local_slow_direction_force_linearization_1pct_epsilon": 1.4296001134045101e-05,
+    "local_test_background_s": 0.5037815259212097,
+    "local_test_definition": "delta( sqrt(2)f,z ) = epsilon*sqrt(2)*f0*v_min; un unico sentido, no cota universal.",
+    "physical_EFT_cutoff_identified": false,
+    "universal_long_time_error_bound_identified": false
+  },
+  "scalar_SI_example": {
+    "m_energy_eV": 1.0,
+    "lambda": 0.001,
+    "length_unit_m": 1.973269804593025e-07,
+    "time_unit_s": 6.582119569509067e-16,
+    "field_energy_unit_eV": 31.622776601683796,
+    "energy_unit_J": 1.602176634e-16,
+    "density_unit_J_m3": 20852.156845243,
+    "lambda0": 0.099,
+    "M_energy_eV": 100.0,
+    "g_energy_eV": 44.721359549995796,
+    "h": 0.1,
+    "Qball_E_J": 4.046551690907872e-13,
+    "Qball_Q": 2745773.920667643,
+    "zero_pressure_density_J_m3": 15730.969465665923,
+    "scope": "Una unica escala ilustrativa: m=1 eV, lambda=0.001. No identifica portales ni alcanza R1. No se mezcla con el ajuste de densidad M1."
+  },
+  "passed": true
+}

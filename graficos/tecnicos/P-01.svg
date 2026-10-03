@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.7 -0.7 3.4 6.4" width="640" height="640" role="img"><title>P-01 Semilla</title><desc>Proyección canónica. Uniones declaradas en JSON; los cruces interiores no unen.</desc><rect x="-1.7" y="-0.7" width="3.4" height="6.4" fill="white"/><defs><mask id="joinmask-P-01" maskUnits="userSpaceOnUse" x="-2.0" y="-1.0" width="4.0" height="7.0"><rect x="-2.0" y="-1.0" width="4.0" height="7.0" fill="white"/><circle cx="-1.0" cy="1.0" r=".18" fill="black"/><circle cx="1.0" cy="1.0" r=".18" fill="black"/><circle cx="0.0" cy="3.0" r=".18" fill="black"/></mask></defs>
+<g mask="url(#joinmask-P-01)"><path d="M -1 0 L 0 0 C 0.7 0 1 -0.5 1 -1 M 0 0 L 1 1" transform="matrix(0 -1 1 0 0 2)" fill="none" stroke="white" stroke-width="0.2125" stroke-linejoin="round" stroke-linecap="round"/></g>
+<path d="M -1 0 L 0 0 C 0.7 0 1 -0.5 1 -1 M 0 0 L 1 1" transform="matrix(0 -1 1 0 0 2)" fill="none" stroke="#624ba0" stroke-width="0.085" stroke-linejoin="round" stroke-linecap="round"/>
+<g mask="url(#joinmask-P-01)"><path d="M 1 -1 L 0 0 L 1 1" transform="matrix(0 1 -1 0 0 0)" fill="none" stroke="white" stroke-width="0.2125" stroke-linejoin="round" stroke-linecap="round"/></g>
+<path d="M 1 -1 L 0 0 L 1 1" transform="matrix(0 1 -1 0 0 0)" fill="none" stroke="#a35d25" stroke-width="0.085" stroke-linejoin="round" stroke-linecap="round"/>
+<g mask="url(#joinmask-P-01)"><path d="M -1.4 0 L -1 0 C -1 1.05 1 1.05 1 -0.65" transform="matrix(-0.171451678124 0.786898503841 -0.786898503841 -0.171451678124 -0.240032349373 4.10165790538)" fill="none" stroke="white" stroke-width="0.26385712" stroke-linejoin="round" stroke-linecap="round"/></g>
+<path d="M -1.4 0 L -1 0 C -1 1.05 1 1.05 1 -0.65" transform="matrix(-0.171451678124 0.786898503841 -0.786898503841 -0.171451678124 -0.240032349373 4.10165790538)" fill="none" stroke="#256d85" stroke-width="0.10554285" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="0.0" cy="3.0" r=".09" fill="#23384c" stroke="white" stroke-width=".025"/>
+<circle cx="-1.0" cy="1.0" r=".09" fill="#23384c" stroke="white" stroke-width=".025"/>
+<circle cx="1.0" cy="1.0" r=".09" fill="#23384c" stroke="white" stroke-width=".025"/>
+<circle cx="0.1" cy="5.0" r=".09" fill="#c02e3c" stroke="white" stroke-width=".025"/>
+<text x="0.24000000000000002" y="4.86" font-size=".3" font-family="sans-serif" fill="#c02e3c">P</text></svg>

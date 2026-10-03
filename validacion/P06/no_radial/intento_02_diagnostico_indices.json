@@ -1,0 +1,7 @@
+{
+  "status": "FALLO_DE_DIAGNOSTICO",
+  "cause": "Incorrect radial slice in mediator final-field comparison; detected by incompatible shapes",
+  "evolutions_affected": false,
+  "states_changed": false,
+  "resolution": "Slice modal index explicitly, then reuse completed states without new evolution"
+}

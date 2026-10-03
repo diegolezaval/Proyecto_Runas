@@ -1,0 +1,1245 @@
+{
+  "schema_version": "3.0.0",
+  "scope": "Contratos reducidos; ecuaciones descriptivas, no lenguaje de simulación ejecutable. Cada modalidad requiere realización compatible.",
+  "models": [
+    {
+      "id": "P-01",
+      "name": "Semilla",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "E_preparada",
+        "estado"
+      ],
+      "inputs": [
+        "potencia de preparación",
+        "plantilla",
+        "habilitación"
+      ],
+      "outputs": [
+        "disponibilidad",
+        "estado preparado"
+      ],
+      "equation": "dE/dt=P_in-P_hold-P_write",
+      "domain": "0<=E<=E_prep; disponible tras E=E_prep y asentamiento",
+      "parameter_groups": [
+        "seed"
+      ],
+      "limitation": "Primera preparación: acoplamiento no derivado; operación ordinaria desde Semilla asentada.",
+      "ports": [
+        {
+          "name": "P",
+          "end": "T₁.b",
+          "exchange": "Preparacion, energia y control",
+          "role": "Puerto bidireccional"
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-01",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-02",
+      "name": "Anclaje",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "x",
+        "v",
+        "energía elástica"
+      ],
+      "inputs": [
+        "posición objetivo",
+        "carga",
+        "referencia"
+      ],
+      "outputs": [
+        "fuerza",
+        "reacción",
+        "error"
+      ],
+      "equation": "m*x_ddot=F-m*g; F=sat(m*g+Kp*(x_ref-x)-Kd*v); k=Y*A/L",
+      "domain": "Deformación <=0.1; |F|<=Y*A*0.1; referencia con capacidad de reacción",
+      "parameter_groups": [
+        "mechanical"
+      ],
+      "limitation": "Precompensar extensión; mantener control local y transferir carga al retirar.",
+      "ports": [
+        {
+          "name": "C",
+          "end": "R₁.b",
+          "exchange": "Mecánico",
+          "role": "Enlace con la estructura sostenida."
+        },
+        {
+          "name": "A",
+          "end": "T₁.b",
+          "exchange": "Mecánico",
+          "role": "Enlace con la referencia que recibe la reacción."
+        },
+        {
+          "name": "U",
+          "end": "R₂.b",
+          "exchange": "Control y alimentación",
+          "role": "Consigna de posición, orientación y respuesta del soporte."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-02",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-03",
+      "name": "Recinto",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "inventario n_i",
+        "volumen",
+        "presión"
+      ],
+      "inputs": [
+        "frontera",
+        "permeabilidad_i",
+        "presión exterior"
+      ],
+      "outputs": [
+        "flujo_i",
+        "esfuerzo sobre apoyo"
+      ],
+      "equation": "dn_i/dt=-integral(J_i-v_borde*c_i)·n dA; F=Delta_p*A; c_i es densidad local",
+      "domain": "Frontera y especie declaradas; cargas dentro de capacidad del soporte",
+      "parameter_groups": [
+        "mechanical"
+      ],
+      "limitation": "La retención material no implica aislamiento térmico ni óptico.",
+      "ports": [
+        {
+          "name": "P",
+          "end": "N₁.1",
+          "exchange": "Control y alimentación",
+          "role": "Definición del recinto, condiciones de paso y lectura de su estado."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-03",
+        "complete_device_derived": false
+      },
+      "field_regions": [
+        {
+          "name": "Σ",
+          "location": "Superficie desplegada",
+          "exchange": "Intercambia esfuerzos y flujos con el medio. Su extensión se describe en el estado preparado y no queda igualada al área de tinta."
+        }
+      ]
+    },
+    {
+      "id": "P-04",
+      "name": "Canal",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "campo guiado q(x,t)",
+        "energía en tránsito"
+      ],
+      "inputs": [
+        "potencia",
+        "señal",
+        "ruta"
+      ],
+      "outputs": [
+        "potencia retrasada",
+        "señal recibida"
+      ],
+      "equation": "P_out(t)=exp(-alpha*L)*P_in(t-L/v); P_max=j_max*A",
+      "domain": "Banda y sección R1; vaciado >=L/v",
+      "parameter_groups": [
+        "power_channel"
+      ],
+      "limitation": "El transporte de materia necesita un flujo material adicional.",
+      "ports": [
+        {
+          "name": "A",
+          "end": "N₁.1",
+          "exchange": "Intercambio principal",
+          "role": "Primer extremo del enlace."
+        },
+        {
+          "name": "B",
+          "end": "R₁.b",
+          "exchange": "Intercambio principal",
+          "role": "Segundo extremo; puede recibir o entregar según la operación."
+        },
+        {
+          "name": "U",
+          "end": "N₁.2",
+          "exchange": "Control y prueba",
+          "role": "Adaptación del enlace, señal de comprobación y alimentación auxiliar si se utiliza."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-04",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-05",
+      "name": "Captador solar",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "área preparada",
+        "temperatura"
+      ],
+      "inputs": [
+        "irradiancia",
+        "orientación",
+        "sumidero"
+      ],
+      "outputs": [
+        "potencia bus",
+        "calor"
+      ],
+      "equation": "P_bus=(eta*I-p_A)*A; Qdot=(1-eta)*I*A+p_A*A",
+      "domain": "I>=0; no salida negativa: servicio desde respaldo o retirada",
+      "parameter_groups": [
+        "solar",
+        "thermal"
+      ],
+      "limitation": "80% es rendimiento adoptado, pendiente de realización espectral.",
+      "ports": [
+        {
+          "name": "P",
+          "end": "T₁.b",
+          "exchange": "Energía y control",
+          "role": "Entrega útil y mensajes de ajuste mediante canales físicamente distinguibles."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-05",
+        "complete_device_derived": false
+      },
+      "field_regions": [
+        {
+          "name": "Aₑ",
+          "location": "Región captadora",
+          "exchange": "Intercepta radiación y convierte una parte de su energía."
+        },
+        {
+          "name": "H",
+          "location": "Intercambio residual",
+          "exchange": "Transfiere calor y otras pérdidas a destinos especificados; no es un trazo añadido."
+        }
+      ]
+    },
+    {
+      "id": "P-06",
+      "name": "Reserva",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "E útil",
+        "E estructural",
+        "temperatura"
+      ],
+      "inputs": [
+        "P_charge",
+        "P_discharge"
+      ],
+      "outputs": [
+        "energía disponible",
+        "calor"
+      ],
+      "equation": "dE/dt=eta_c*P_c-P_d/eta_d-k*E-P0",
+      "domain": "0<=E<=rho*V; P_c*P_d=0; cada P<=rho_P*V",
+      "parameter_groups": [
+        "reserve"
+      ],
+      "limitation": "Cero útil obliga a respaldo de servicio o retirada; no usar E estructural como carga útil.",
+      "ports": [
+        {
+          "name": "C",
+          "end": "R₂.b",
+          "exchange": "Energía",
+          "role": "Carga de referencia; admite retorno si el régimen lo permite."
+        },
+        {
+          "name": "D",
+          "end": "R₄.a",
+          "exchange": "Energía",
+          "role": "Entrega de referencia hacia el consumo."
+        },
+        {
+          "name": "U",
+          "end": "T₁.b",
+          "exchange": "Control",
+          "role": "Estado de reserva, preparación y coordinación del ciclo."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-06",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-07",
+      "name": "Compuerta",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "apertura q",
+        "estado lógico"
+      ],
+      "inputs": [
+        "orden",
+        "flujo incidente"
+      ],
+      "outputs": [
+        "flujo transmitido"
+      ],
+      "equation": "tau*dq/dt=u-q; 0<=q<=1; P_out=q*P_in",
+      "domain": "Apertura con alimentación y potencia de modulación contabilizada",
+      "parameter_groups": [
+        "logic",
+        "power_channel"
+      ],
+      "limitation": "No confundir una válvula pasiva con un amplificador.",
+      "ports": [
+        {
+          "name": "A",
+          "end": "T₁.b",
+          "exchange": "Intercambio principal",
+          "role": "Primer lado del paso."
+        },
+        {
+          "name": "B",
+          "end": "R₁.b",
+          "exchange": "Intercambio principal",
+          "role": "Segundo lado del paso."
+        },
+        {
+          "name": "U",
+          "end": "N₁.1",
+          "exchange": "Control y alimentación",
+          "role": "Orden de apertura y suministro de actuación cuando se requiere."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-07",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-08",
+      "name": "Distribuidor",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "reparto w_i",
+        "energía de nodo"
+      ],
+      "inputs": [
+        "potencia",
+        "pesos normalizados"
+      ],
+      "outputs": [
+        "potencias de ramas"
+      ],
+      "equation": "P_i=eta*w_i*P_in; sum(w_i)=1; dH=P_in-sum(P_i)-Qdot",
+      "domain": "w_i>=0; capacidades de ramas respetadas",
+      "parameter_groups": [
+        "power_channel"
+      ],
+      "limitation": "El reparto puede ser dinámico; no duplica potencia.",
+      "ports": [
+        {
+          "name": "C",
+          "end": "R₁.b",
+          "exchange": "Intercambio común",
+          "role": "Suministro de referencia y mando de reparto mediante señal distinguible."
+        },
+        {
+          "name": "A",
+          "end": "T₁.a",
+          "exchange": "Rama",
+          "role": "Primera salida o entrada en el régimen inverso."
+        },
+        {
+          "name": "B",
+          "end": "T₂.b",
+          "exchange": "Rama",
+          "role": "Segunda salida o entrada en el régimen inverso."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-08",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-09",
+      "name": "Sensor",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "estimación z",
+        "estado del transductor"
+      ],
+      "inputs": [
+        "observable físico",
+        "reloj"
+      ],
+      "outputs": [
+        "dato",
+        "incertidumbre",
+        "validez"
+      ],
+      "equation": "tau_s*dz/dt=h(x)-z; y=z+n",
+      "domain": "Modalidad declarada; termometría del caso: tau_s=0.01 s, incertidumbre 0.05 K",
+      "parameter_groups": [
+        "logic",
+        "thermal"
+      ],
+      "limitation": "No se infiere información que no pueda llegar al terminal.",
+      "ports": [
+        {
+          "name": "P",
+          "end": "R₁.b",
+          "exchange": "Señales y alimentación",
+          "role": "Recibe preparación o interrogación y entrega una medida con su estado de validez."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-09",
+        "complete_device_derived": false
+      },
+      "field_regions": [
+        {
+          "name": "S",
+          "location": "Región sensible",
+          "exchange": "Interacciona con el observable elegido. Una medida remota requiere propagación desde el objetivo o un terminal físicamente situado allí."
+        }
+      ]
+    },
+    {
+      "id": "P-10",
+      "name": "Selector",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "objetivo identificado",
+        "estimación de estado",
+        "confianza"
+      ],
+      "inputs": [
+        "observaciones",
+        "referencia de objetivo",
+        "criterio y caducidad"
+      ],
+      "outputs": [
+        "identificador de objetivo",
+        "región accesible",
+        "validez"
+      ],
+      "equation": "objetivo=argmin_i d(observacion_i,referencia) sólo si distancia<umbral y margen suficiente; actualizar vínculo con medida causal",
+      "domain": "Métrica, umbral, margen entre candidatos y edad máxima declarados; ambigüedad produce salida inválida",
+      "parameter_groups": [
+        "logic"
+      ],
+      "limitation": "Selecciona un objetivo; no lo mueve ni separa sus sustancias. No identifica detalles no observados.",
+      "ports": [
+        {
+          "name": "O",
+          "end": "R₁.a",
+          "exchange": "Información",
+          "role": "Observaciones procedentes de Sensor o de un vínculo directo."
+        },
+        {
+          "name": "M",
+          "end": "R₂.b",
+          "exchange": "Información",
+          "role": "Muestra, criterio o referencia de comparación."
+        },
+        {
+          "name": "D",
+          "end": "T₁.b",
+          "exchange": "Referencia y control",
+          "role": "Entrega la identificación accesible y su grado de validez; recibe seguimiento y alimentación."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-10",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-11",
+      "name": "Memoria",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "palabras",
+        "síndrome ECC",
+        "energía de barrera"
+      ],
+      "inputs": [
+        "dato",
+        "dirección",
+        "lectura o escritura"
+      ],
+      "outputs": [
+        "palabra",
+        "validez"
+      ],
+      "equation": "tau_flip=tau0*exp(DeltaF/(kB*T)); P_switch=E_switch*f_switch",
+      "domain": "Capacidad, barrera, temperatura y tasa de errores del perfil",
+      "parameter_groups": [
+        "logic"
+      ],
+      "limitation": "Código (7,4) corrige un error; errores comunes requieren otra redundancia.",
+      "ports": [
+        {
+          "name": "P",
+          "end": "T₁.b",
+          "exchange": "Datos, control y alimentación",
+          "role": "Interfaz compartida con operaciones físicamente distinguibles de lectura, escritura y mantenimiento."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-11",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-12",
+      "name": "Comparador",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "salida binaria",
+        "estado previo"
+      ],
+      "inputs": [
+        "valor",
+        "referencia",
+        "banda de histéresis"
+      ],
+      "outputs": [
+        "mayor o menor",
+        "validez"
+      ],
+      "equation": "y=1 si x-r>h; y=0 si x-r<-h; conserva y en otro caso",
+      "domain": "h>=0; unidades iguales; entrada inválida produce estado inválido",
+      "parameter_groups": [
+        "logic"
+      ],
+      "limitation": "La salida se regenera con alimentación; no interpretar dato inválido como cero.",
+      "ports": [
+        {
+          "name": "A",
+          "end": "R₁.b",
+          "exchange": "Señal",
+          "role": "Valor observado."
+        },
+        {
+          "name": "B",
+          "end": "R₂.b",
+          "exchange": "Señal",
+          "role": "Segundo valor o consigna."
+        },
+        {
+          "name": "C",
+          "end": "T₁.b",
+          "exchange": "Resultado y control",
+          "role": "Diferencia o clasificación, con indicación de validez."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-12",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-13",
+      "name": "Retardo",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "cola temporal"
+      ],
+      "inputs": [
+        "dato con sello temporal",
+        "retardo"
+      ],
+      "outputs": [
+        "dato diferido"
+      ],
+      "equation": "y(t)=x(t-tau_d)",
+      "domain": "tau_d>=0; almacenamiento >= tasa_datos*tau_d",
+      "parameter_groups": [
+        "logic"
+      ],
+      "limitation": "Descartar datos caducados según contrato; no anticipar la entrada.",
+      "ports": [
+        {
+          "name": "I",
+          "end": "R₁.b",
+          "exchange": "Señal",
+          "role": "Entrada que debe demorarse."
+        },
+        {
+          "name": "O",
+          "end": "T₂.b",
+          "exchange": "Señal",
+          "role": "Entrega posterior."
+        },
+        {
+          "name": "U",
+          "end": "N₁.1",
+          "exchange": "Control y alimentación",
+          "role": "Tiempo solicitado, sincronización y estado de ocupación."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-13",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-14",
+      "name": "Reloj",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "fase",
+        "contador"
+      ],
+      "inputs": [
+        "alimentación",
+        "sincronización"
+      ],
+      "outputs": [
+        "pulsos",
+        "tiempo local"
+      ],
+      "equation": "dphi/dtau_propia=2*pi*f0+ruido",
+      "domain": "f0=1 MHz local; sincronización remota con retardo medido",
+      "parameter_groups": [
+        "logic"
+      ],
+      "limitation": "El tiempo propio y una coordenada temporal global no son intercambiables.",
+      "ports": [
+        {
+          "name": "P",
+          "end": "R₁.b",
+          "exchange": "Referencia, control y alimentación",
+          "role": "Pulsos salientes, ajuste entrante y suministro mediante señales distinguibles."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-14",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-15",
+      "name": "Secuenciador",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "estado FSM",
+        "temporizadores",
+        "concesión"
+      ],
+      "inputs": [
+        "eventos",
+        "medidas",
+        "receta"
+      ],
+      "outputs": [
+        "órdenes limitadas",
+        "estado de ejecución"
+      ],
+      "equation": "estado_nuevo=delta(estado,eventos) sólo si guarda válida",
+      "domain": "Transiciones deterministas y caducidad; lazo local de servicio a 1 ms",
+      "parameter_groups": [
+        "logic"
+      ],
+      "limitation": "En pérdida de comunicación ejecutar transición de la receta, no una regla universal.",
+      "ports": [
+        {
+          "name": "M",
+          "end": "R₁.b",
+          "exchange": "Programa y alimentación",
+          "role": "Recibe la secuencia y su estado inicial."
+        },
+        {
+          "name": "O",
+          "end": "T₁.b",
+          "exchange": "Órdenes",
+          "role": "Entrega acciones identificadas al módulo correspondiente."
+        },
+        {
+          "name": "F",
+          "end": "N₁.3",
+          "exchange": "Respuesta",
+          "role": "Recibe confirmaciones y observaciones de la etapa."
+        },
+        {
+          "name": "G",
+          "end": "N₂.3",
+          "exchange": "Disparo y tiempo",
+          "role": "Recibe inicio, pausa o referencia temporal."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-15",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-16",
+      "name": "Puente",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "estado de aislamiento",
+        "energía de mantenimiento"
+      ],
+      "inputs": [
+        "señales A1 y B1",
+        "configuración de capas"
+      ],
+      "outputs": [
+        "señales A2 y B2",
+        "diafonía"
+      ],
+      "equation": "b(omega)=S(omega)*a(omega); S†S<=I en régimen pasivo; |S_ruta_ajena|^2<=1e-6",
+      "domain": "Banda, cargas y amplitudes R1; dos componentes de tráfico independientes",
+      "parameter_groups": [
+        "power_channel"
+      ],
+      "limitation": "Cruce aislado de dos rutas: no es un transductor entre dominios ni conecta sus tráficos. Su geometría tiene dos componentes conexas.",
+      "ports": [
+        {
+          "name": "A₁",
+          "end": "N₁.2",
+          "exchange": "Ruta A",
+          "role": "Primer extremo de la primera ruta."
+        },
+        {
+          "name": "A₂",
+          "end": "T₁.b",
+          "exchange": "Ruta A",
+          "role": "Segundo extremo de la primera ruta."
+        },
+        {
+          "name": "B₁",
+          "end": "R₁.a",
+          "exchange": "Ruta B",
+          "role": "Primer extremo de la segunda ruta."
+        },
+        {
+          "name": "B₂",
+          "end": "R₁.b",
+          "exchange": "Ruta B",
+          "role": "Segundo extremo de la segunda ruta."
+        },
+        {
+          "name": "U",
+          "end": "N₁.3",
+          "exchange": "Control y alimentación",
+          "role": "Preparación y mantenimiento del aislamiento."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-16",
+        "complete_device_derived": false
+      },
+      "field_regions": [
+        {
+          "name": "X",
+          "location": "Zona de cruce",
+          "exchange": "Los trazados se conservan sin unión de tráfico. Los campos pueden interactuar para sostener el conjunto, con diafonía residual caracterizada."
+        }
+      ]
+    },
+    {
+      "id": "P-17",
+      "name": "Luz",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "amplitud",
+        "espectro",
+        "dirección"
+      ],
+      "inputs": [
+        "potencia bus",
+        "patrón óptico"
+      ],
+      "outputs": [
+        "radiancia",
+        "calor"
+      ],
+      "equation": "P_opt=eta_L*P_bus; theta_dif=1.22*lambda/D",
+      "domain": "Banda, apertura y dominio angular especificados",
+      "parameter_groups": [
+        "optical",
+        "thermal"
+      ],
+      "limitation": "La apariencia para un observador no equivale a ocultamiento universal.",
+      "ports": [
+        {
+          "name": "E",
+          "end": "N₁.1",
+          "exchange": "Energía",
+          "role": "Suministro de referencia."
+        },
+        {
+          "name": "U",
+          "end": "R₁.b",
+          "exchange": "Control",
+          "role": "Espectro, intensidad, dirección y modulación."
+        },
+        {
+          "name": "O",
+          "end": "T₂.a",
+          "exchange": "Acoplamiento óptico",
+          "role": "Terminal que alimenta la región emisora del campo."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-17",
+        "complete_device_derived": false
+      },
+      "field_regions": [
+        {
+          "name": "Aₒ",
+          "location": "Apertura emisora",
+          "exchange": "Región desde la que se emiten fotones. Puede desplegarse más allá del contorno del glifo con recursos y referencias locales."
+        }
+      ]
+    },
+    {
+      "id": "P-18",
+      "name": "Intercambio térmico",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "T_c",
+        "T_h",
+        "energía interna"
+      ],
+      "inputs": [
+        "consigna",
+        "fuente de trabajo",
+        "terminales"
+      ],
+      "outputs": [
+        "Q_c",
+        "Q_h",
+        "trabajo"
+      ],
+      "equation": "Wdot=Qdot_c/COP; Qdot_h=Qdot_c+Wdot; COP=eta_C*T_c/(T_h-T_c)",
+      "domain": "T_h>T_c>0; conductancias y disipación finitas",
+      "parameter_groups": [
+        "thermal"
+      ],
+      "limitation": "El terminal de rechazo debe existir y soportar su carga.",
+      "ports": [
+        {
+          "name": "P",
+          "end": "R₂.b",
+          "exchange": "Trabajo y control",
+          "role": "Alimentación, consigna y datos del ciclo."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-18",
+        "complete_device_derived": false
+      },
+      "field_regions": [
+        {
+          "name": "H₁",
+          "location": "Interfaz de T₁",
+          "exchange": "Primer cuerpo o región térmica acoplada."
+        },
+        {
+          "name": "H₂",
+          "location": "Interfaz de T₂",
+          "exchange": "Segundo cuerpo o región térmica acoplada. Los papeles caliente/frío dependen de la operación."
+        }
+      ]
+    },
+    {
+      "id": "P-19",
+      "name": "Impulso",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "x",
+        "p",
+        "energía del actuador"
+      ],
+      "inputs": [
+        "fuerza objetivo",
+        "referencia de reacción"
+      ],
+      "outputs": [
+        "fuerza",
+        "velocidad",
+        "reacción"
+      ],
+      "equation": "dp/dt=F; Wdot=F·v; J_mec=integral F dt",
+      "domain": "F y velocidad limitadas; reacción y torque contabilizados",
+      "parameter_groups": [
+        "mechanical"
+      ],
+      "limitation": "Impulso designa el módulo; J_mec designa la integral de fuerza.",
+      "ports": [
+        {
+          "name": "O",
+          "end": "T₁.b",
+          "exchange": "Mecánico",
+          "role": "Objetivo y región donde se aplica la fuerza."
+        },
+        {
+          "name": "A",
+          "end": "R₁.b",
+          "exchange": "Mecánico",
+          "role": "Apoyo o medio que recibe la reacción."
+        },
+        {
+          "name": "U",
+          "end": "N₁.3",
+          "exchange": "Energía y control",
+          "role": "Perfil de fuerza, dirección, duración y realimentación."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-19",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-20",
+      "name": "Polarización",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "carga",
+        "corriente",
+        "campos EM"
+      ],
+      "inputs": [
+        "modalidad",
+        "consigna",
+        "terminales"
+      ],
+      "outputs": [
+        "respuesta electromagnética"
+      ],
+      "equation": "div(B)=0; curl(E)=-dB/dt; u_EM=(epsilon*E^2+B^2/mu)/2 en medio lineal simple",
+      "domain": "Constitutivas de medio declaradas; cálculo de pérdidas e inducción",
+      "parameter_groups": [
+        "power_channel"
+      ],
+      "limitation": "Nombre de catálogo amplio; especificar si es polarización material, carga o corriente.",
+      "ports": [],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-20",
+        "complete_device_derived": false
+      },
+      "field_regions": [
+        {
+          "name": "Z₊",
+          "location": "Primer lóbulo, junto a N₁–T₁",
+          "exchange": "Interfaz eléctrica de referencia positiva."
+        },
+        {
+          "name": "Z₋",
+          "location": "Segundo lóbulo, junto a N₂–R₂",
+          "exchange": "Interfaz eléctrica de referencia negativa."
+        },
+        {
+          "name": "D",
+          "location": "Zona de enlace R₁",
+          "exchange": "Interfaz distribuida de excitación, alimentación y lectura, por acoplamiento con una estructura próxima."
+        }
+      ]
+    },
+    {
+      "id": "P-21",
+      "name": "Vibración",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "desplazamiento modal",
+        "velocidad"
+      ],
+      "inputs": [
+        "frecuencia",
+        "amplitud",
+        "carga acústica"
+      ],
+      "outputs": [
+        "onda",
+        "calor"
+      ],
+      "equation": "m*x_ddot+b*x_dot+k*x=F(t); P_loss=b*<x_dot^2>",
+      "domain": "Modo lineal: m=0.01 kg, f0=100 Hz, zeta=0.05; amplitud <=0.1 mm en el caso",
+      "parameter_groups": [
+        "mechanical"
+      ],
+      "limitation": "La propagación necesita medio; la intensidad y reflexión fijan energía y reacción.",
+      "ports": [
+        {
+          "name": "A",
+          "end": "T₁.b",
+          "exchange": "Mecánico",
+          "role": "Región principal que se hace oscilar."
+        },
+        {
+          "name": "B",
+          "end": "T₂.a",
+          "exchange": "Mecánico",
+          "role": "Segunda región o apoyo que recibe la respuesta."
+        },
+        {
+          "name": "U",
+          "end": "R₂.b",
+          "exchange": "Energía y control",
+          "role": "Frecuencia, fase, amplitud y forma temporal."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-21",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-22",
+      "name": "Separación",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "n_i por compartimento",
+        "T",
+        "presión"
+      ],
+      "inputs": [
+        "mezcla",
+        "criterio",
+        "trabajo"
+      ],
+      "outputs": [
+        "corrientes enriquecidas",
+        "residuo"
+      ],
+      "equation": "dn_i/dt=sum flujos_i; W_min=DeltaG_mezcla para proceso isotermo isobaro",
+      "domain": "Balance por especie; pureza y recuperación son distintas",
+      "parameter_groups": [
+        "thermal"
+      ],
+      "limitation": "No destruye impurezas; separar una mezcla diluida requiere transporte y trabajo.",
+      "ports": [
+        {
+          "name": "F",
+          "end": "T₁.b",
+          "exchange": "Materia",
+          "role": "Alimentación de mezcla."
+        },
+        {
+          "name": "P",
+          "end": "N₂.2",
+          "exchange": "Materia",
+          "role": "Corriente enriquecida en el componente elegido."
+        },
+        {
+          "name": "R",
+          "end": "R₂.b",
+          "exchange": "Materia",
+          "role": "Resto de la mezcla y componentes no recuperados."
+        },
+        {
+          "name": "U",
+          "end": "N₁.1",
+          "exchange": "Energía e información",
+          "role": "Criterio selectivo, suministro y control de proceso."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-22",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    },
+    {
+      "id": "P-23",
+      "name": "Reacción",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "n_i",
+        "T",
+        "avance de reacción"
+      ],
+      "inputs": [
+        "reactivos",
+        "ruta",
+        "energía"
+      ],
+      "outputs": [
+        "productos",
+        "calor",
+        "composición"
+      ],
+      "equation": "dn/dt=N*v+f; A*N=0; Delta_rG=sum nu_i*mu_i",
+      "domain": "Ruta y cinética específicas; v*Delta_rG<=0 si no hay trabajo externo acoplado",
+      "parameter_groups": [
+        "thermal"
+      ],
+      "limitation": "La catálisis altera tasas, no el balance neto de energía libre.",
+      "ports": [
+        {
+          "name": "F",
+          "end": "N₁.1",
+          "exchange": "Reactivos, control y alimentación",
+          "role": "Acceso de preparación y alimentación; señales y materia usan intercambios físicamente distinguidos."
+        },
+        {
+          "name": "P",
+          "end": "N₂.1",
+          "exchange": "Productos y respuesta",
+          "role": "Entrega de la corriente transformada y datos de resultado."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-23",
+        "complete_device_derived": false
+      },
+      "field_regions": [
+        {
+          "name": "Vᵣ",
+          "location": "Región de reacción",
+          "exchange": "Volumen activo asociado al lazo; intercambia calor y trabajo por interfaces preparadas."
+        }
+      ]
+    },
+    {
+      "id": "P-24",
+      "name": "Ensamblaje",
+      "model_level": "contrato_reducido_R1",
+      "states": [
+        "geometría de producto",
+        "composición",
+        "defectos"
+      ],
+      "inputs": [
+        "material",
+        "plano",
+        "actuadores",
+        "medidas"
+      ],
+      "outputs": [
+        "producto",
+        "residuo",
+        "informe"
+      ],
+      "equation": "dm_producto/dt=mdot_in-mdot_residuo; tiempo>=max(m/caudal,datos/tasa) con dependencias",
+      "domain": "Tolerancias de proceso y estabilidad del producto tras retirada",
+      "parameter_groups": [
+        "mechanical",
+        "thermal",
+        "logic"
+      ],
+      "limitation": "Un plano no contiene materia y una forma sostenida no implica producto permanente.",
+      "ports": [
+        {
+          "name": "F",
+          "end": "N₂.3",
+          "exchange": "Materia, información y energía",
+          "role": "Componentes y descripción recibidos por intercambios físicamente distinguidos."
+        },
+        {
+          "name": "O",
+          "end": "R₂.b",
+          "exchange": "Actuación y verificación",
+          "role": "Región donde se colocan y unen los componentes; retorno de observaciones."
+        }
+      ],
+      "initial_condition": "Sin salida útil hasta preparación y verificación; estados internos inicializados según receta.",
+      "failure_policy": "Pasar a degradación y a retirada específica de receta; no asumir desaparición instantánea.",
+      "microscopic_matching": {
+        "status": "correspondencia_parcial",
+        "reference": "datos/correspondencia.json#P-24",
+        "complete_device_derived": false
+      },
+      "field_regions": []
+    }
+  ],
+  "authority_note": "Especificaciones, mecanismos candidatos o modelos reducidos. El estado de cada realizacion se consulta en aceptacion_m2.json y el alcance cientifico en estado_evidencia.json. Los valores R1 son revisables; no operaciones fisicas habilitadas."
+}

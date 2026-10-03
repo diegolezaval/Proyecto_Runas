@@ -1,0 +1,62 @@
+{
+  "records": [
+    {
+      "Omega": 1.95,
+      "success": true,
+      "message": "The algorithm converged to the desired accuracy.",
+      "nodes": 3215,
+      "max_rms_residual": 1.997489399388138e-08,
+      "boundary_residual": 5.551115123125783e-17,
+      "probabilities": [
+        2.8567057516873515e-06,
+        0.9999971432943362
+      ],
+      "unitarity_error": 8.79296635503124e-14,
+      "energy_flux_gain": 1.0000048972099478,
+      "relative_conversion_difference_vs_fd": 0.0023882545993786568,
+      "gain_difference_vs_fd": 1.169587160454455e-08,
+      "fd_dx": 0.003125,
+      "passed": true,
+      "method": "Continuous ODE, real/imaginary collocation, exact boundary Jacobian; original failed complex attempt preserved"
+    },
+    {
+      "Omega": 2.3,
+      "success": true,
+      "message": "The algorithm converged to the desired accuracy.",
+      "nodes": 9528,
+      "max_rms_residual": 1.9801860152683607e-08,
+      "boundary_residual": 3.1401849173675503e-16,
+      "probabilities": [
+        0.0012212658604527885,
+        0.9987787341393299
+      ],
+      "unitarity_error": 2.1727064591914313e-13,
+      "energy_flux_gain": 1.001570198963222,
+      "relative_conversion_difference_vs_fd": 7.923917573285443e-05,
+      "gain_difference_vs_fd": 1.244210534601109e-07,
+      "fd_dx": 0.00625,
+      "passed": true,
+      "method": "Continuous ODE, real/imaginary collocation, exact boundary Jacobian; original failed complex attempt preserved"
+    },
+    {
+      "Omega": 5.0,
+      "success": true,
+      "message": "The algorithm converged to the desired accuracy.",
+      "nodes": 30368,
+      "max_rms_residual": 1.9995585023114354e-08,
+      "boundary_residual": 1.1102230246251565e-16,
+      "probabilities": [
+        0.0003161144208038742,
+        0.999683885579179
+      ],
+      "unitarity_error": 1.709743457922741e-14,
+      "energy_flux_gain": 1.0001387819408236,
+      "relative_conversion_difference_vs_fd": 0.00039336532326478567,
+      "gain_difference_vs_fd": 5.459198537671739e-08,
+      "fd_dx": 0.00625,
+      "passed": true,
+      "method": "Continuous ODE, real/imaginary collocation, exact boundary Jacobian; original failed complex attempt preserved"
+    }
+  ],
+  "passed": true
+}
