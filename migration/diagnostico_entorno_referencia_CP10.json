@@ -1,0 +1,502 @@
+[
+  {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "NPY_DISABLE_CPU_FEATURES": null,
+    "OPENBLAS_CORETYPE": null,
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "SkylakeX"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "SkylakeX"
+      }
+    ],
+    "rows": [
+      {
+        "case": "temporal_h0125",
+        "field": "initial_q",
+        "exact_equal": true,
+        "different_values": 0,
+        "different_columns": [],
+        "max_abs_error": 0.0,
+        "expected_array_sha256": "4df51158db054b1da65a8eff4b895305882d498a0164a7c040ba5587e8ca8b36",
+        "actual_array_sha256": "4df51158db054b1da65a8eff4b895305882d498a0164a7c040ba5587e8ca8b36",
+        "first_differences": []
+      },
+      {
+        "case": "temporal_h0125",
+        "field": "initial_v",
+        "exact_equal": true,
+        "different_values": 0,
+        "different_columns": [],
+        "max_abs_error": 0.0,
+        "expected_array_sha256": "f282e64737e55be8924418b898ee506d8fcd6a25b05bf5dbd604ed6070670d60",
+        "actual_array_sha256": "f282e64737e55be8924418b898ee506d8fcd6a25b05bf5dbd604ed6070670d60",
+        "first_differences": []
+      },
+      {
+        "case": "espacial_h00625",
+        "field": "initial_q",
+        "exact_equal": true,
+        "different_values": 0,
+        "different_columns": [],
+        "max_abs_error": 0.0,
+        "expected_array_sha256": "173b2299135baf204c678087115082b3d44e6992710ca305d88f0eca81915aa9",
+        "actual_array_sha256": "173b2299135baf204c678087115082b3d44e6992710ca305d88f0eca81915aa9",
+        "first_differences": []
+      },
+      {
+        "case": "espacial_h00625",
+        "field": "initial_v",
+        "exact_equal": true,
+        "different_values": 0,
+        "different_columns": [],
+        "max_abs_error": 0.0,
+        "expected_array_sha256": "4a0ad2778da33d85086a01d79445fbd1b59f24e0c8a6c3b8601fcfc4a072680b",
+        "actual_array_sha256": "4a0ad2778da33d85086a01d79445fbd1b59f24e0c8a6c3b8601fcfc4a072680b",
+        "first_differences": []
+      }
+    ],
+    "integration_steps": 0,
+    "science_modified": false,
+    "variant": "referencia"
+  },
+  {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "NPY_DISABLE_CPU_FEATURES": "AVX512F,AVX512CD,AVX512_SKX,AVX512_CLX,AVX512_CNL,AVX512_ICL",
+    "OPENBLAS_CORETYPE": null,
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "SkylakeX"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "SkylakeX"
+      }
+    ],
+    "rows": [
+      {
+        "case": "temporal_h0125",
+        "field": "initial_q",
+        "exact_equal": false,
+        "different_values": 803,
+        "different_columns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "max_abs_error": 1.3877787807814457e-17,
+        "expected_array_sha256": "4df51158db054b1da65a8eff4b895305882d498a0164a7c040ba5587e8ca8b36",
+        "actual_array_sha256": "c26bcb1232c25e0361e14ee228575497edaaf5163502c6aa3e50968f6d714d46",
+        "first_differences": [
+          {
+            "index": [
+              0,
+              3,
+              4
+            ],
+            "expected_hex": "0x1.3be263e4f65cap-17",
+            "actual_hex": "0x1.3be263e4f65cbp-17"
+          },
+          {
+            "index": [
+              0,
+              3,
+              5
+            ],
+            "expected_hex": "0x1.7b0fab12c13bfp-19",
+            "actual_hex": "0x1.7b0fab12c13c1p-19"
+          },
+          {
+            "index": [
+              0,
+              3,
+              6
+            ],
+            "expected_hex": "-0x1.f96a396e56faap-20",
+            "actual_hex": "-0x1.f96a396e56fadp-20"
+          }
+        ]
+      },
+      {
+        "case": "temporal_h0125",
+        "field": "initial_v",
+        "exact_equal": false,
+        "different_values": 791,
+        "different_columns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "max_abs_error": 1.3877787807814457e-17,
+        "expected_array_sha256": "f282e64737e55be8924418b898ee506d8fcd6a25b05bf5dbd604ed6070670d60",
+        "actual_array_sha256": "cd18a0e0f8e62ae91cffc43ed4699edba6ae0aac8223aff6f3492d1abf216ab2",
+        "first_differences": [
+          {
+            "index": [
+              0,
+              3,
+              5
+            ],
+            "expected_hex": "0x1.7dca7611bc6c5p-18",
+            "actual_hex": "0x1.7dca7611bc6c6p-18"
+          },
+          {
+            "index": [
+              0,
+              3,
+              6
+            ],
+            "expected_hex": "-0x1.fd0df2c250908p-19",
+            "actual_hex": "-0x1.fd0df2c250909p-19"
+          },
+          {
+            "index": [
+              0,
+              3,
+              7
+            ],
+            "expected_hex": "0x1.bd6c346a067e6p-17",
+            "actual_hex": "0x1.bd6c346a067e7p-17"
+          }
+        ]
+      },
+      {
+        "case": "espacial_h00625",
+        "field": "initial_q",
+        "exact_equal": false,
+        "different_values": 1543,
+        "different_columns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "max_abs_error": 1.3877787807814457e-17,
+        "expected_array_sha256": "173b2299135baf204c678087115082b3d44e6992710ca305d88f0eca81915aa9",
+        "actual_array_sha256": "a93cf14c438e8b770b7a2d282ca459620030a2aa3e714f89507058238042dbde",
+        "first_differences": [
+          {
+            "index": [
+              0,
+              30,
+              4
+            ],
+            "expected_hex": "0x1.5a53916630a31p-15",
+            "actual_hex": "0x1.5a53916630a32p-15"
+          },
+          {
+            "index": [
+              0,
+              30,
+              5
+            ],
+            "expected_hex": "0x1.9f977b476d907p-17",
+            "actual_hex": "0x1.9f977b476d908p-17"
+          },
+          {
+            "index": [
+              0,
+              30,
+              6
+            ],
+            "expected_hex": "-0x1.150fa784f3b5ap-17",
+            "actual_hex": "-0x1.150fa784f3b5cp-17"
+          }
+        ]
+      },
+      {
+        "case": "espacial_h00625",
+        "field": "initial_v",
+        "exact_equal": false,
+        "different_values": 1539,
+        "different_columns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "max_abs_error": 1.3877787807814457e-17,
+        "expected_array_sha256": "4a0ad2778da33d85086a01d79445fbd1b59f24e0c8a6c3b8601fcfc4a072680b",
+        "actual_array_sha256": "ee7d64065536028220e7b034feea6b7c4451bf32cb797a1a80c618ae21012111",
+        "first_differences": [
+          {
+            "index": [
+              0,
+              30,
+              4
+            ],
+            "expected_hex": "-0x1.087eecfc36a48p-14",
+            "actual_hex": "-0x1.087eecfc36a49p-14"
+          },
+          {
+            "index": [
+              0,
+              30,
+              5
+            ],
+            "expected_hex": "-0x1.3d651c61db2bcp-16",
+            "actual_hex": "-0x1.3d651c61db2bep-16"
+          },
+          {
+            "index": [
+              0,
+              30,
+              6
+            ],
+            "expected_hex": "0x1.a7317b2d243a7p-17",
+            "actual_hex": "0x1.a7317b2d243a9p-17"
+          }
+        ]
+      }
+    ],
+    "integration_steps": 0,
+    "science_modified": false,
+    "variant": "sin_AVX512"
+  },
+  {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "NPY_DISABLE_CPU_FEATURES": null,
+    "OPENBLAS_CORETYPE": "Haswell",
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "rows": [
+      {
+        "case": "temporal_h0125",
+        "field": "initial_q",
+        "exact_equal": false,
+        "different_values": 11293,
+        "different_columns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "max_abs_error": 1.3877787807814457e-17,
+        "expected_array_sha256": "4df51158db054b1da65a8eff4b895305882d498a0164a7c040ba5587e8ca8b36",
+        "actual_array_sha256": "94d184fc34b701f450e343bd52851b5fe64b9387ca07234734ba6c88715fa21c",
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "expected_hex": "0x1.c47bc991dfbc5p-23",
+            "actual_hex": "0x1.c47bc991dfbc3p-23"
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "expected_hex": "0x1.0f7d78f11fd76p-24",
+            "actual_hex": "0x1.0f7d78f11fd75p-24"
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "expected_hex": "-0x1.69fca1417fc9ep-25",
+            "actual_hex": "-0x1.69fca1417fc9cp-25"
+          }
+        ]
+      },
+      {
+        "case": "temporal_h0125",
+        "field": "initial_v",
+        "exact_equal": false,
+        "different_values": 11267,
+        "different_columns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "max_abs_error": 1.3877787807814457e-17,
+        "expected_array_sha256": "f282e64737e55be8924418b898ee506d8fcd6a25b05bf5dbd604ed6070670d60",
+        "actual_array_sha256": "3afe9626afaaae600e53bae880ead41e3ccbcb82647bb18270dc8a53ce3dfbff",
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "expected_hex": "0x1.d748bda828976p-22",
+            "actual_hex": "0x1.d748bda828974p-22"
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "expected_hex": "0x1.1ac53e98185adp-23",
+            "actual_hex": "0x1.1ac53e98185acp-23"
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "expected_hex": "-0x1.7906fe2020792p-24",
+            "actual_hex": "-0x1.7906fe2020790p-24"
+          }
+        ]
+      },
+      {
+        "case": "espacial_h00625",
+        "field": "initial_q",
+        "exact_equal": false,
+        "different_values": 22609,
+        "different_columns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "max_abs_error": 1.3877787807814457e-17,
+        "expected_array_sha256": "173b2299135baf204c678087115082b3d44e6992710ca305d88f0eca81915aa9",
+        "actual_array_sha256": "bf31bfbe9fc08063414ad93ee2914b963b1e5243feea272b17093133431a436f",
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "expected_hex": "0x1.c4a44929bb078p-25",
+            "actual_hex": "0x1.c4a44929bb076p-25"
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "expected_hex": "0x1.0f95c57f7037bp-26",
+            "actual_hex": "0x1.0f95c57f7037ap-26"
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "expected_hex": "-0x1.6a1d0754959fap-27",
+            "actual_hex": "-0x1.6a1d0754959f9p-27"
+          }
+        ]
+      },
+      {
+        "case": "espacial_h00625",
+        "field": "initial_v",
+        "exact_equal": false,
+        "different_values": 22658,
+        "different_columns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "max_abs_error": 1.3877787807814457e-17,
+        "expected_array_sha256": "4a0ad2778da33d85086a01d79445fbd1b59f24e0c8a6c3b8601fcfc4a072680b",
+        "actual_array_sha256": "d5d032a9e48a9cb9d92b5d01947c2095f5273c5f30c1e777fdc4b1d80422f3ce",
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "expected_hex": "0x1.d781d7a860fffp-24",
+            "actual_hex": "0x1.d781d7a860ffdp-24"
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "expected_hex": "0x1.1ae7816506fffp-25",
+            "actual_hex": "0x1.1ae7816506ffep-25"
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "expected_hex": "-0x1.7934ac86b3fffp-26",
+            "actual_hex": "-0x1.7934ac86b3ffep-26"
+          }
+        ]
+      }
+    ],
+    "integration_steps": 0,
+    "science_modified": false,
+    "variant": "blas_Haswell"
+  }
+]
