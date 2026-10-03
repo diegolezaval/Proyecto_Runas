@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "origin_kind": "github",
+  "remote_clone_verified": true,
+  "commit": "47b5e56cf3fd9f90b865ad2ddcaa313c2b43fa81",
+  "branch": "main",
+  "tag": "CP10",
+  "payload_files": 938,
+  "all_payload_bytes_preserved": true,
+  "deterministic_checkpoint_zip_reproduced": true,
+  "checkpoint_zip_sha256": "c1b8b472f8d1f89c466fd5cb89470f63993ec73dedc9dac3896a88ffc2add4c1",
+  "CP10_checks": [
+    {
+      "command": [
+        "checkpoint.py",
+        "--verificar"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "{\"passed\": true, \"files\": 937, \"failures\": [], \"checkpoint\": \"CP10_MEDIADOR_ESPACIOTEMPORAL\", \"scope\": \"Identidad de bytes y contexto; no aceptación científica.\"}\n"
+    },
+    {
+      "command": [
+        "verificar_entorno.py",
+        "--cp10"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"python\": \"3.12.14\",\n  \"python_supported\": true,\n  \"platform\": \"Linux\",\n  \"adaptive_requires_posix\": true,\n  \"adaptive_platform_supported\": true,\n  \"optional_C_compiler\": true,\n  \"packages\": [\n    {\n      \"package\": \"numpy\",\n      \"expected\": \"2.3.5\",\n      \"installed\": \"2.3.5\",\n      \"passed\": true\n    },\n    {\n      \"package\": \"scipy\",\n      \"expected\": \"1.17.0\",\n      \"installed\": \"1.17.0\",\n      \"passed\": true\n    },\n    {\n      \"package\": \"matplotlib\",\n      \"expected\": \"3.10.8\",\n      \"installed\": \"3.10.8\",\n      \"passed\": true\n    },\n    {\n      \"package\": \"threadpoolctl\",\n      \"expected\": \"3.6.0\",\n      \"installed\": \"3.6.0\",\n      \"passed\": true\n    }\n  ],\n  \"passed\": true,\n  \"scope\": \"Pins del entorno de referencia. La verificación de hashes sólo requiere stdlib; la integración adaptativa usa fcntl/POSIX. La fuerza C es opcional. Reproducir las ejecuciones C de CP10 requiere cc; verificar sus datos guardados no lo requiere.\",\n  \"CP10_registered_backend_requires_C_compiler\": true\n}\n"
+    },
+    {
+      "command": [
+        "generar_continuidad.py",
+        "--comprobar"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "{\"passed\": true, \"stale\": [], \"written\": []}\n"
+    },
+    {
+      "command": [
+        "generar_resumen_CP10.py",
+        "--comprobar"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "{\"passed\": true, \"generated_view\": \"informes/RESUMEN_NUMERICO_CP10.md\", \"integrations_executed\": false}\n"
+    },
+    {
+      "command": [
+        "verificar_continuidad.py",
+        "--solo-lectura"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"schema_version\": \"1.0.0\",\n  \"checkpoint\": \"CP10_MEDIADOR_ESPACIOTEMPORAL\",\n  \"passed\": true,\n  \"counts\": {\n    \"json\": 340,\n    \"python\": 95,\n    \"svg\": 67,\n    \"local_links\": 340\n  },\n  \"issues\": [],\n  \"E00_E01_recalculated\": false,\n  \"scope\": \"Integridad y continuidad editorial; no certificación científica automática.\"\n}\n"
+    },
+    {
+      "command": [
+        "auditar_arquitectura.py"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"checkpoint\": \"CP10_MEDIADOR_ESPACIOTEMPORAL\",\n  \"passed\": true,\n  \"issues\": [],\n  \"counts\": {\n    \"json\": 340,\n    \"python\": 95,\n    \"svg\": 67\n  },\n  \"claims_indexed\": 27,\n  \"states_inspected\": 89,\n  \"readable_states\": 88,\n  \"preserved_unreadable_states\": [\n    \"validacion/P06/acceso_lineal/colocacion_Om5.0000_estado.npz\"\n  ],\n  \"numerical_campaigns_executed\": false,\n  \"scope\": \"Integridad documental, metadatos y diagnóstico de estados incluidos; no certificación científica.\"\n}\n"
+    },
+    {
+      "command": [
+        "ejecutar_con_procedencia.py",
+        "--verificar"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"passed\": true,\n  \"receipts\": [\n    {\n      \"passed\": true,\n      \"run_id\": \"db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654\",\n      \"status\": \"COMPLETADA\",\n      \"issues\": [],\n      \"scope\": \"Fuentes de ejecución capturadas y salidas; no aceptación científica.\"\n    },\n    {\n      \"passed\": true,\n      \"run_id\": \"0cc9af79f3804e54e2f65309e9fad57934b04c55536c5dd07519c2bacc87ea47\",\n      \"status\": \"COMPLETADA\",\n      \"issues\": [],\n      \"scope\": \"Fuentes de ejecución capturadas y salidas; no aceptación científica.\"\n    },\n    {\n      \"passed\": true,\n      \"run_id\": \"51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30\",\n      \"status\": \"COMPLETADA\",\n      \"issues\": [],\n      \"scope\": \"Fuentes de ejecución capturadas y salidas; no aceptación científica.\"\n    },\n    {\n      \"passed\": true,\n      \"run_id\": \"47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177\",\n      \"status\": \"COMPLETADA\",\n      \"issues\": [],\n      \"scope\": \"Fuentes de ejecución capturadas y salidas; no aceptación científica.\"\n    }\n  ]\n}\n"
+    },
+    {
+      "command": [
+        "verificar_CP10.py"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"passed\": true,\n  \"tests\": {\n    \"all_protocol_thresholds_match_original\": true,\n    \"four_closed_receipts_valid\": true,\n    \"final_comparison_observed_single_thread_pools\": true,\n    \"diagnostic_thread_observation_unknown_and_original_preserved\": true,\n    \"all_original_numerical_results_failures_figures_and_roadmap_unchanged\": true,\n    \"all_833_CP09_files_recoverable\": true,\n    \"unchanged:herramientas/modelo_m2.py\": true,\n    \"unchanged:herramientas/continuar_no_radial_m2.py\": true,\n    \"unchanged:herramientas/continuar_no_radial_adaptativo.py\": true,\n    \"unchanged:herramientas/fuerza_potencial_m2.c\": true,\n    \"unchanged:herramientas/acelerar_fuerza_m2.py\": true,\n    \"unchanged:datos/theta_comun.json\": true,\n    \"unchanged:datos/ensayo_no_radial_CP06.json\": true,\n    \"all_33_stage_identities_preserved\": true,\n    \"other_29_stage_records_identical\": true,\n    \"E00_E01_C0_closed_records_identical\": true,\n    \"all_original_stage_gates_and_dependencies_identical\": true,\n    \"general_research_stages_remain_partial\": true,\n    \"no_active_runs_in_delivery\": true,\n    \"no_complete_primordials_declared\": true,\n    \"temporal_h0125:initial_Cauchy_fields_exactly_from_saved_CP04\": true,\n    \"temporal_h0125:source_hash\": true,\n    \"temporal_h0125:all_arrays_finite\": true,\n    \"temporal_h0125:completed_window\": true,\n    \"temporal_h0125:real_restart_from_valid_pilot\": true,\n    \"temporal_h0125:interrupted_segments_preserved_and_recovered\": true,\n    \"temporal_h0125:no_unclosed_receipt_segment\": true,\n    \"temporal_h0125:C_Numpy_force_equivalence\": true,\n    \"espacial_h00625:initial_Cauchy_fields_exactly_from_saved_CP04\": true,\n    \"espacial_h00625:source_hash\": true,\n    \"espacial_h00625:all_arrays_finite\": true,\n    \"espacial_h00625:completed_window\": true,\n    \"espacial_h00625:real_restart_from_valid_pilot\": true,\n    \"espacial_h00625:interrupted_segments_preserved_and_recovered\": true,\n    \"espacial_h00625:no_unclosed_receipt_segment\": true,\n    \"espacial_h00625:C_Numpy_force_equivalence\": true,\n    \"temporal_control_keeps_initial_data_exact\": true,\n    \"temporal_fino_h0125:saved_metrics_recovered\": true,\n    \"temporal_fino_h0125:unchanged_gate_correctly_applied\": true,\n    \"radial_fino_h0125_h00625:saved_metrics_recovered\": true,\n    \"radial_fino_h0125_h00625:unchanged_gate_correctly_applied\": true,\n    \"negative_or_positive_decision_matches_data\": true,\n    \"no_chi_phase_fitting_or_continuum_claim\": true\n  },\n  \"decision\": \"REFINAMIENTO_PENDIENTE\",\n  \"receipt_count\": 4,\n  \"scientific_campaigns_repeated\": false,\n  \"new_integration_steps_executed\": false,\n  \"scope\": \"Recibos, estados, construcción inicial, conservación histórica y recuperación de comparaciones. No certificado del continuo ni dispositivo.\"\n}\n"
+    },
+    {
+      "command": [
+        "probar_procedencia_futura.py"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"passed\": true,\n  \"tests\": {\n    \"receipt_and_sources_exist_before_worker_and_threads_applied\": true,\n    \"campaign_directory_relative_to_corpus\": true,\n    \"second_live_writer_refused_without_mutation\": true,\n    \"changed_code_resume_refused_without_new_run\": true,\n    \"nonfinite_orphan_state_refused_without_receipt_mutation\": true,\n    \"orphan_segment_preserved_and_recovered\": true,\n    \"closed_case_reused_without_output_or_receipt_changes\": true,\n    \"finished_worker_orphan_closed_without_advancing_state\": true,\n    \"undeclared_launcher_refused\": true\n  },\n  \"commands\": [\n    {\n      \"args\": [\n        \"--stop-at\",\n        \"1\"\n      ],\n      \"returncode\": 0,\n      \"expected\": 0\n    },\n    {\n      \"args\": [\n        \"--reanudar\"\n      ],\n      \"returncode\": 1,\n      \"expected\": 1\n    },\n    {\n      \"args\": [\n        \"--reanudar\"\n      ],\n      \"returncode\": 1,\n      \"expected\": 1\n    },\n    {\n      \"args\": [\n        \"--reanudar\"\n      ],\n      \"returncode\": 1,\n      \"expected\": 1\n    },\n    {\n      \"args\": [\n        \"--reanudar\"\n      ],\n      \"returncode\": 0,\n      \"expected\": 0\n    },\n    {\n      \"args\": [\n        \"--verificar\"\n      ],\n      \"returncode\": 0,\n      \"expected\": 0\n    },\n    {\n      \"args\": [\n        \"--reanudar\"\n      ],\n      \"returncode\": 0,\n      \"expected\": 0\n    },\n    {\n      \"args\": [\n        \"--reanudar\"\n      ],\n      \"returncode\": 0,\n      \"expected\": 0\n    },\n    {\n      \"args\": [\n        \"--verificar\"\n      ],\n      \"returncode\": 0,\n      \"expected\": 0\n    },\n    {\n      \"args\": [],\n      \"returncode\": 1,\n      \"expected\": 1\n    }\n  ],\n  \"adapter_sha256\": \"a9f0f632a0f2829ff9557ffb19ed0b4378faba20244bb571b65f7de24aead3d2\",\n  \"numerical_campaigns_executed\": false,\n  \"scope\": \"Controles aislados de orquestación con arrays sintéticos; no evidencia física ni integración M2. Corpus científico no modificado.\"\n}\n"
+    },
+    {
+      "command": [
+        "regresion_estructural.py"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"checkpoint\": \"CP10_MEDIADOR_ESPACIOTEMPORAL\",\n  \"passed\": true,\n  \"numerical_campaigns_executed\": false,\n  \"tests\": {\n    \"geometry_views_idempotent\": true,\n    \"broken_current_link_detected\": true,\n    \"recursive_execution_exclusions\": true,\n    \"dependency_lockfiles_not_ignored\": true,\n    \"scientific_states_not_ignored\": true,\n    \"unfinished_scientific_write_rejected\": true,\n    \"undeclared_directory_symlink_rejected\": true,\n    \"finished_adaptive_run_reused\": true,\n    \"same_destination_different_configuration_rejected\": true,\n    \"colliding_tags_share_lock_identity\": true,\n    \"second_live_writer_rejected\": true,\n    \"historical_bad_state_exception_bound_to_hash\": true,\n    \"original_CP08_reconstructed_786_files\": true,\n    \"saved_CSV_NPZ_unchanged\": true,\n    \"input_corpus_unmodified\": true\n  },\n  \"scope\": \"Verificaciones de datos guardados, generación y controles estructurales en copia temporal. Una puerta científica negativa sigue siendo negativa.\"\n}\n"
+    },
+    {
+      "command": [
+        "verificar_preparacion_git.py",
+        "(exportación exacta del índice)"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"passed\": true,\n  \"tests\": {\n    \"payload_exactly_tracked\": true,\n    \"all_checkout_bytes_exact_even_autocrlf_true\": true,\n    \"transient_fixtures_ignored\": true,\n    \"all_NPZ_CSV_JSON_SVG_logs_and_history_ZIP_tracked\": true,\n    \"no_remote\": true,\n    \"input_project_has_no_git_repository\": true,\n    \"input_corpus_unmodified\": true\n  },\n  \"git_version\": \"git version 2.51.1\",\n  \"files_checked\": 938,\n  \"ignored_fixtures\": {\n    \"__pycache__/prueba.pyc\": true,\n    \".venv/prueba\": true,\n    \"validacion/P06/no_radial/cache/prueba.so\": true,\n    \"validacion/P06/no_radial/ejecucion_prueba.lock\": true,\n    \"validacion/prueba_CP10.tmp\": true,\n    \"validacion/prueba_CP10.part\": true\n  },\n  \"migrations_performed\": 0,\n  \"LFS_installed\": false,\n  \"published\": false,\n  \"scope\": \"Repositorio temporal: índice y checkout; no commit o remoto del proyecto, no campaña científica.\"\n}\n"
+    },
+    {
+      "command": [
+        "comparar_mediador_CP10.py",
+        "--config",
+        "/workspace/scratch/3bbc09a5243b/migracion_cp10/clon_remoto_transportado/clon_GitHub/validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/configuration.json",
+        "--output-dir",
+        "/tmp/cp10_clon_comprobacion_aymoyoce/vistas"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"checkpoint\": \"CP10_MEDIADOR_ESPACIOTEMPORAL\",\n  \"status\": \"REFINAMIENTO_PENDIENTE\",\n  \"finite_campaign_passed\": false,\n  \"configuration\": \"datos/ensayo_mediador_CP10.json\",\n  \"comparisons\": [\n    {\n      \"norm_relative_sup_error\": 4.127969494314425e-09,\n      \"final_complex_nonradial_field_error_over_initial_norm\": 4.356904913034051e-09,\n      \"final_phi_phase_space_error_over_initial_norm\": 2.093655800819918e-08,\n      \"final_mediator_nonradial_error_over_initial_norm\": 2.7849018064071554e-06,\n      \"final_mediator_phase_space_error_over_initial_norm\": 3.945800333606754e-06,\n      \"global_phi_phase_removed\": -4.776945871823806e-10,\n      \"chi_radial_bands\": [\n        {\n          \"r_min\": 0,\n          \"r_max\": 2,\n          \"fraction_of_chi_squared_difference\": 1.0760889239989504e-10\n        },\n        {\n          \"r_min\": 2,\n          \"r_max\": 5,\n          \"fraction_of_chi_squared_difference\": 1.8247558682452514e-08\n        },\n        {\n          \"r_min\": 5,\n          \"r_max\": 10,\n          \"fraction_of_chi_squared_difference\": 5.774890210212233e-06\n        },\n        {\n          \"r_min\": 10,\n          \"r_max\": 20,\n          \"fraction_of_chi_squared_difference\": 0.9492276353650395\n        },\n        {\n          \"r_min\": 20,\n          \"r_max\": 40,\n          \"fraction_of_chi_squared_difference\": 0.050766571389582585\n        }\n      ],\n      \"chi_multipole_fractions\": {\n        \"1\": 6.616846236810304e-14,\n        \"2\": 0.7634147688115244,\n        \"3\": 1.332498834793964e-13,\n        \"4\": 0.2365852311882762\n      },\n      \"descriptive_chi_rotation\": {\n        \"angle\": 6.490841705640348e-07,\n        \"rotated_error\": 3.933969396202393e-06,\n        \"used_for_acceptance\": false,\n        \"warning\": \"χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta.\"\n      },\n      \"control\": \"temporal_fino_h0125\",\n      \"left\": \"validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz\",\n      \"right\": \"validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz\",\n      \"threshold\": 0.02,\n      \"passed\": true\n    },\n    {\n      \"norm_relative_sup_error\": 0.0003562225831024996,\n      \"final_complex_nonradial_field_error_over_initial_norm\": 0.0007062378185043858,\n      \"final_phi_phase_space_error_over_initial_norm\": 0.0007471532229974762,\n      \"final_mediator_nonradial_error_over_initial_norm\": 0.03617435369411942,\n      \"final_mediator_phase_space_error_over_initial_norm\": 0.0512639096419456,\n      \"global_phi_phase_removed\": -0.0004829080871444678,\n      \"chi_radial_bands\": [\n        {\n          \"r_min\": 0,\n          \"r_max\": 2,\n          \"fraction_of_chi_squared_difference\": 8.801710653139411e-08\n        },\n        {\n          \"r_min\": 2,\n          \"r_max\": 5,\n          \"fraction_of_chi_squared_difference\": 2.3054425661465582e-07\n        },\n        {\n          \"r_min\": 5,\n          \"r_max\": 10,\n          \"fraction_of_chi_squared_difference\": 0.0001551196131356387\n        },\n        {\n          \"r_min\": 10,\n          \"r_max\": 20,\n          \"fraction_of_chi_squared_difference\": 0.7028415169747588\n        },\n        {\n          \"r_min\": 20,\n          \"r_max\": 40,\n          \"fraction_of_chi_squared_difference\": 0.29700304485074236\n        }\n      ],\n      \"chi_multipole_fractions\": {\n        \"1\": 3.6501198393448375e-22,\n        \"2\": 0.8376231377252804,\n        \"3\": 7.219076307576226e-22,\n        \"4\": 0.16237686227471948\n      },\n      \"descriptive_chi_rotation\": {\n        \"angle\": 0.0013389479975576793,\n        \"rotated_error\": 0.05126005797618618,\n        \"used_for_acceptance\": false,\n        \"warning\": \"χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta.\"\n      },\n      \"control\": \"radial_fino_h0125_h00625\",\n      \"left\": \"validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz\",\n      \"right\": \"validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz\",\n      \"threshold\": 0.02,\n      \"passed\": false\n    }\n  ],\n  \"run_gates\": [\n    {\n      \"case\": \"temporal_h0125\",\n      \"passed\": true,\n      \"receipt\": \"validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/procedencia.json\",\n      \"result\": \"validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160.json\"\n    },\n    {\n      \"case\": \"espacial_h00625\",\n      \"passed\": true,\n      \"receipt\": \"validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/procedencia.json\",\n      \"result\": \"validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160.json\"\n    }\n  ],\n  \"inherited_controls\": [\n    {\n      \"control\": \"radial_L4\",\n      \"passed\": true,\n      \"source\": \"validacion/P06/no_radial/resultados.json\",\n      \"scope\": \"Resolución histórica declarada; no prueba conjunta en la malla CP10\"\n    },\n    {\n      \"control\": \"temporal_L4\",\n      \"passed\": true,\n      \"source\": \"validacion/P06/no_radial/resultados.json\",\n      \"scope\": \"Resolución histórica declarada; no prueba conjunta en la malla CP10\"\n    },\n    {\n      \"control\": \"angular_L4_L6\",\n      \"passed\": true,\n      \"source\": \"validacion/P06/no_radial/resultados.json\",\n      \"scope\": \"Resolución histórica declarada; no prueba conjunta en la malla CP10\"\n    },\n    {\n      \"control\": \"temporal_mediador\",\n      \"passed\": true,\n      \"source\": \"validacion/P06/no_radial/resultados.json\",\n      \"scope\": \"Resolución histórica declarada; no prueba conjunta en la malla CP10\"\n    }\n  ],\n  \"inherited_box_control\": {\n    \"core_energy_relative_sup_error\": 6.661338147750939e-15,\n    \"core_charge_relative_sup_error\": 6.217248937900877e-15,\n    \"norm_absolute_sup_error\": 4.163336342344337e-16,\n    \"passed\": true\n  },\n  \"unaddressed_historical_issues\": [],\n  \"preserved_old_result\": \"validacion/P06/no_radial/resultados.json\",\n  \"same_action_and_Theta\": true,\n  \"chi_phase_fitted_for_acceptance\": false,\n  \"completed_new_evolutions\": 2,\n  \"old_evolutions_repeated\": false,\n  \"observed_threadpools\": [\n    {\n      \"user_api\": \"blas\",\n      \"internal_api\": \"openblas\",\n      \"num_threads\": 1,\n      \"version\": \"0.3.30\",\n      \"architecture\": \"SkylakeX\"\n    },\n    {\n      \"user_api\": \"blas\",\n      \"internal_api\": \"openblas\",\n      \"num_threads\": 1,\n      \"version\": \"0.3.30\",\n      \"architecture\": \"SkylakeX\"\n    }\n  ],\n  \"complete_E03\": false,\n  \"complete_E04\": false,\n  \"complete_RES0\": false,\n  \"complete_RES1\": false,\n  \"nonlinear_orbital_stability_proven\": false,\n  \"continuum_error_certified\": false,\n  \"angular_spatial_temporal_joint_convergence_certified\": false,\n  \"scope\": \"Deformación cuadrupolar CP04, todos los m hasta L=4, R=220, ε=.02, τ≤160; nuevos controles de espacio/tiempo y controles históricos con sus resoluciones. No perturbaciones arbitrarias ni dispositivo.\"\n}\n"
+    },
+    {
+      "command": [
+        "checkpoint.py",
+        "--salida",
+        "/tmp/cp10_clon_comprobacion_aymoyoce/CP10_reproducido.zip"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "{\"archives\": [{\"path\": \"<temporal>/CP10_reproducido.zip\", \"bytes\": 81773782, \"sha256\": \"c1b8b472f8d1f89c466fd5cb89470f63993ec73dedc9dac3896a88ffc2add4c1\", \"files\": 938}], \"checkpoint\": \"CP10_MEDIADOR_ESPACIOTEMPORAL\", \"combined_files\": 938, \"combined_integrity_passed\": true, \"extraction\": \"Extraer todos los ZIP complementarios en la misma carpeta.\"}\n"
+    }
+  ],
+  "preparation_checker_context": "Exportación exacta del índice; respeta su condición histórica de no contener .git.",
+  "fresh_C_force": {
+    "passed": true,
+    "relative_errors": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "cache_in_checkpoint_required": false,
+    "integration_steps": 0
+  },
+  "views_regenerated_identically": {
+    "resultados.json": true,
+    "comparaciones.csv": true,
+    "CP10_errores_mediador.svg": true
+  },
+  "scientific_gate": "REFINAMIENTO_PENDIENTE",
+  "finite_campaign_passed": false,
+  "scientific_campaigns_executed": false,
+  "CP11_started": false
+}
