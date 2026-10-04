@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "workflow_run_url": "https://github.com/diegolezaval/Proyecto_Runas/actions/runs/37177366644",
+  "administrative_commit": "3b8cb7deb880e9df17f0f69c4468601babb5c874",
+  "conclusion": "FALLIDA_PUBLICACION_PARCIAL",
+  "scientific_verification_changed": false,
+  "main_changed_by_this_workflow": false,
+  "CP10_changed": false,
+  "main_clone_checkpoint_verified": true,
+  "full_zip_reproduced_with_exact_sha256": true,
+  "zip_sha256": "dafff205020e32b8b7128ccdb10a3288aad17691f1d1c4e5a486031f1e6389b0",
+  "annotated_CP11_tag_created": "6a8d429e9fa0da2d301567a9ec62da0dd96d72e9",
+  "release_draft_created": true,
+  "release_published": false,
+  "assets_upload_started": false,
+  "failure": "GET releases/tags/CP11 devolvió 404 para una Release todavía en borrador, después de verificar el clon y ZIP y crear tag y borrador.",
+  "correction": "Localizar el borrador propio por la colección autenticada y acceder por su ID. Conservar tag y borrador, comprobar su identidad antes de continuar; no sustituir ni borrar evidencia.",
+  "new_M2_evolution_steps": 0,
+  "scientific_gate": "REFINAMIENTO_PENDIENTE",
+  "physical_gate_threshold": 0.02
+}

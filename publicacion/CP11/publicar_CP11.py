@@ -57,6 +57,13 @@ def download(name, destination):
     return destination / name
 
 
+def current_release():
+    # El endpoint por tag sólo devuelve Releases publicadas; incluir borradores propios por ID.
+    matches = [item for item in api('releases?per_page=100') if item['tag_name'] == 'CP11']
+    assert len(matches) == 1
+    return api('releases/' + str(matches[0]['id']))
+
+
 def main():
     assert os.environ['GITHUB_REPOSITORY'] == REPO
     assert os.environ['GITHUB_REF'] == 'refs/heads/publicacion/cp11'
@@ -110,16 +117,16 @@ def main():
         else:
             run(['gh', 'release', 'create', 'CP11', '--repo', REPO, '--verify-tag', '--target', CFG['merge_commit'], '--draft', '--title', 'CP11 · Diagnóstico radial de χ', '--notes-file', str(HERE / 'notas_release_CP11.md')])
         assets = [archive, *attachments, HERE / 'configuracion.json', HERE / 'publicar_CP11.py', HERE / 'notas_release_CP11.md']
-        present = {item['name'] for item in api('releases/tags/CP11')['assets']}
+        present = {item['name'] for item in current_release()['assets']}
         for path in assets:
             if path.name not in present: run(['gh', 'release', 'upload', 'CP11', str(path), '--repo', REPO])
             received = download(path.name, work / ('comprobar_' + path.name))
             assert received.stat().st_size == path.stat().st_size and sha(received) == sha(path)
-        release = api('releases/tags/CP11')
+        release = current_release()
         if release['draft']: run(['gh', 'release', 'edit', 'CP11', '--repo', REPO, '--draft=false'])
         published = download(archive.name, work / 'publicada')
         assert sha(published) == CFG['zip_sha256'] and published.stat().st_size == CFG['zip_bytes']
-        refs(); release = api('releases/tags/CP11'); assert not release['draft']
+        refs(); release = current_release(); assert not release['draft']
         report = dict(schema_version=1, passed=True, checkpoint='CP11_DIAGNOSTICO_RADIAL_CHI',
             recorded_at_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(), repository_url='https://github.com/' + REPO,
             main_commit=CFG['merge_commit'], scientific_head=CFG['scientific_head'], tree=CFG['tree'], pull_request=CFG['pull_request'],
