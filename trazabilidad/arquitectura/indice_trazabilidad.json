@@ -7147,8 +7147,8 @@
     {
       "path": "herramientas/ejecutar_con_procedencia.py",
       "role": "codigo_o_herramienta",
-      "bytes": 10600,
-      "snapshot_sha256": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
+      "bytes": 10679,
+      "snapshot_sha256": "5e54113e063e262db60b28a185c0047232904ce328c9d13ac610e5b67235f15e",
       "used_by_claims": [
         "CP10-MEDIADOR",
         "CP11-CHI-RADIAL"
@@ -7170,47 +7170,47 @@
         {
           "run_id": "db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654",
           "recorded_sha256": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
-          "current_bytes_match": true
+          "current_bytes_match": false
         },
         {
           "run_id": "0cc9af79f3804e54e2f65309e9fad57934b04c55536c5dd07519c2bacc87ea47",
           "recorded_sha256": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
-          "current_bytes_match": true
+          "current_bytes_match": false
         },
         {
           "run_id": "51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30",
           "recorded_sha256": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
-          "current_bytes_match": true
+          "current_bytes_match": false
         },
         {
           "run_id": "47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177",
           "recorded_sha256": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
-          "current_bytes_match": true
+          "current_bytes_match": false
         },
         {
           "run_id": "f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9",
           "recorded_sha256": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
-          "current_bytes_match": true
+          "current_bytes_match": false
         },
         {
           "run_id": "95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa",
           "recorded_sha256": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
-          "current_bytes_match": true
+          "current_bytes_match": false
         },
         {
           "run_id": "9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817",
           "recorded_sha256": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
-          "current_bytes_match": true
+          "current_bytes_match": false
         },
         {
           "run_id": "74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed",
           "recorded_sha256": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
-          "current_bytes_match": true
+          "current_bytes_match": false
         },
         {
           "run_id": "43cddeadabcc7447ff2ec56f2191ec157dbc0bc7106e98da6dc9f73ae5fd76b4",
           "recorded_sha256": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
-          "current_bytes_match": true
+          "current_bytes_match": false
         }
       ]
     },
@@ -7775,6 +7775,20 @@
       ]
     },
     {
+      "path": "herramientas/probar_recibo_externo_CP11.py",
+      "role": "codigo_o_herramienta",
+      "bytes": 3231,
+      "snapshot_sha256": "7a01ab7b222ed286b0a89a2de783ce9734c5f54d55544baa423947fea53538bc",
+      "used_by_claims": [],
+      "claim_link_categories": {},
+      "stage_evidence_for": [],
+      "stored_with_campaign_results": [],
+      "read_by_declared_generators": [],
+      "declared_generators": [],
+      "produced_by_executions": [],
+      "used_as_input_by_executions": []
+    },
+    {
       "path": "herramientas/prolongar_captura_radial.py",
       "role": "codigo_o_herramienta",
       "bytes": 2895,
@@ -7829,8 +7843,8 @@
     {
       "path": "herramientas/regresion_estructural.py",
       "role": "codigo_o_herramienta",
-      "bytes": 12534,
-      "snapshot_sha256": "e4b9e9561c0ebcd630cea1231694bebfe8db826efbb76bb2cc99c159895ef81e",
+      "bytes": 12569,
+      "snapshot_sha256": "7c596d3c835f0eb06b6fa93b34aa777e0a6cafbc5c0c9f9bdbfbf8b169e91590",
       "used_by_claims": [],
       "claim_link_categories": {},
       "stage_evidence_for": [],
@@ -7842,7 +7856,7 @@
         {
           "run_id": "43cddeadabcc7447ff2ec56f2191ec157dbc0bc7106e98da6dc9f73ae5fd76b4",
           "recorded_sha256": "e4b9e9561c0ebcd630cea1231694bebfe8db826efbb76bb2cc99c159895ef81e",
-          "current_bytes_match": true
+          "current_bytes_match": false
         }
       ]
     },
@@ -25736,6 +25750,7 @@
     "herramientas/m2_comun.py",
     "herramientas/preparacion_y_motor.py",
     "herramientas/probar_procedencia_futura.py",
+    "herramientas/probar_recibo_externo_CP11.py",
     "herramientas/regresion_estructural.py",
     "herramientas/reproduccion_independiente.py",
     "herramientas/reproducir.py",

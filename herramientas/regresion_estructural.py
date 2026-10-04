@@ -54,7 +54,7 @@ def run_suite():
             for args in [['verificar_CP10.py'], ['generar_resumen_CP10.py', '--comprobar'], ['probar_procedencia_futura.py']]:
                 execute(args)
         if (ROOT / 'herramientas/verificar_CP11.py').is_file():
-            for args in [['verificar_CP11.py'], ['generar_resumen_CP11.py', '--comprobar']]:
+            for args in [['verificar_CP11.py'], ['generar_resumen_CP11.py', '--comprobar'], ['probar_recibo_externo_CP11.py']]:
                 execute(args)
         for args in [
             ['verificar_entorno.py', '--cp10' if (ROOT / 'herramientas/verificar_CP10.py').is_file() else '--adaptativo'],

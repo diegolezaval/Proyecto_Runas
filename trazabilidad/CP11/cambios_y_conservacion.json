@@ -96,6 +96,13 @@
       "original_sha256": "f771cddf498b99c8064693c9288a10bcfa5f42a4a9d2b421a2916f0808964b63",
       "preserved_original": "trazabilidad/CP10_entrada/trazabilidad/arquitectura/indice_trazabilidad.json",
       "operation": "actualizacion_compatible_en_la_misma_ruta"
+    },
+    {
+      "source_CP10": "herramientas/ejecutar_con_procedencia.py",
+      "destination_CP11": "herramientas/ejecutar_con_procedencia.py",
+      "original_sha256": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
+      "preserved_original": "trazabilidad/CP10_entrada/herramientas/ejecutar_con_procedencia.py",
+      "operation": "correccion_de_referencia_de_recibo_externo_sin_cambiar_identidad_o_calculo"
     }
   ],
   "new_files_policy": "Adiciones de diagnósticos, recibos, negativos, verificaciones y vistas; el diff Git enumera las rutas nuevas. Los hashes definitivos están en el manifiesto, no en este mapa."

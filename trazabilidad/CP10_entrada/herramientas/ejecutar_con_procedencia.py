@@ -118,7 +118,6 @@ def execute(protocol, case_name, stop_at=None, resume=False):
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         run.mkdir(parents=True, exist_ok=True)
         receipt_path = run / 'procedencia.json'
-        receipt_reference = (receipt_path.relative_to(ROOT) if receipt_path.is_relative_to(ROOT) else receipt_path).as_posix()
         configuration = run / 'configuration.json'
         if receipt_path.exists():
             receipt = json.loads(receipt_path.read_text())
@@ -128,7 +127,7 @@ def execute(protocol, case_name, stop_at=None, resume=False):
                 if not verify_receipt(receipt_path)['passed']:
                     raise ValueError('Recibo o salida alterados')
             if receipt['status'] == 'COMPLETADA':
-                print(json.dumps(dict(status='REUTILIZADO', run_id=run_id, receipt=receipt_reference)))
+                print(json.dumps(dict(status='REUTILIZADO', run_id=run_id, receipt=receipt_path.relative_to(ROOT).as_posix())))
                 return
             if receipt['status'] == 'FALLIDA':
                 raise ValueError('Intento fallido conservado; no reanudar automáticamente')
@@ -171,7 +170,7 @@ def execute(protocol, case_name, stop_at=None, resume=False):
             receipt['output_hashes'] = {p.relative_to(run).as_posix(): digest(p) for p in sorted(run.rglob('*'))
                                         if p.is_file() and p != receipt_path and '__pycache__' not in p.parts and p.suffix != '.tmp'}
             write(receipt_path, receipt)
-            print(json.dumps(dict(run_id=run_id, status=receipt['status'], receipt=receipt_reference)), flush=True)
+            print(json.dumps(dict(run_id=run_id, status=receipt['status'], receipt=receipt_path.relative_to(ROOT).as_posix())), flush=True)
             if returncode:
                 raise SystemExit(returncode)
         except (KeyboardInterrupt, OSError) as error:

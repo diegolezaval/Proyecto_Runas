@@ -74,16 +74,6 @@
     },
     {
       "command": [
-        "probar_recibo_externo_CP11.py"
-      ],
-      "returncode": 0,
-      "expected_returncode": 0,
-      "passed": true,
-      "changed_files": [],
-      "output": "{\n  \"passed\": true,\n  \"tests\": {\n    \"external_close_exits_zero\": true,\n    \"external_completed_receipt_reused\": true,\n    \"receipt_integrity_verified\": true,\n    \"reused_receipt_byte_identical\": true,\n    \"external_path_reported\": true,\n    \"synthetic_control_only\": true\n  },\n  \"new_M2_evolution_steps\": 0,\n  \"scope\": \"Control aislado de publicación, no cálculo ni aceptación científica.\"\n}\n"
-    },
-    {
-      "command": [
         "verificar_entorno.py",
         "--cp10"
       ],
@@ -112,7 +102,7 @@
       "expected_returncode": 0,
       "passed": true,
       "changed_files": [],
-      "output": "{\n  \"checkpoint\": \"CP11_DIAGNOSTICO_RADIAL_CHI\",\n  \"passed\": true,\n  \"issues\": [],\n  \"counts\": {\n    \"json\": 381,\n    \"python\": 141,\n    \"svg\": 68\n  },\n  \"claims_indexed\": 28,\n  \"states_inspected\": 89,\n  \"readable_states\": 88,\n  \"preserved_unreadable_states\": [\n    \"validacion/P06/acceso_lineal/colocacion_Om5.0000_estado.npz\"\n  ],\n  \"numerical_campaigns_executed\": false,\n  \"scope\": \"Integridad documental, metadatos y diagnóstico de estados incluidos; no certificación científica.\"\n}\n"
+      "output": "{\n  \"checkpoint\": \"CP11_DIAGNOSTICO_RADIAL_CHI\",\n  \"passed\": true,\n  \"issues\": [],\n  \"counts\": {\n    \"json\": 379,\n    \"python\": 139,\n    \"svg\": 68\n  },\n  \"claims_indexed\": 28,\n  \"states_inspected\": 89,\n  \"readable_states\": 88,\n  \"preserved_unreadable_states\": [\n    \"validacion/P06/acceso_lineal/colocacion_Om5.0000_estado.npz\"\n  ],\n  \"numerical_campaigns_executed\": false,\n  \"scope\": \"Integridad documental, metadatos y diagnóstico de estados incluidos; no certificación científica.\"\n}\n"
     },
     {
       "command": [
@@ -123,7 +113,7 @@
       "expected_returncode": 0,
       "passed": true,
       "changed_files": [],
-      "output": "{\n  \"schema_version\": \"1.0.0\",\n  \"checkpoint\": \"CP11_DIAGNOSTICO_RADIAL_CHI\",\n  \"passed\": true,\n  \"counts\": {\n    \"json\": 381,\n    \"python\": 141,\n    \"svg\": 68,\n    \"local_links\": 468\n  },\n  \"issues\": [],\n  \"E00_E01_recalculated\": false,\n  \"scope\": \"Integridad y continuidad editorial; no certificación científica automática.\"\n}\n"
+      "output": "{\n  \"schema_version\": \"1.0.0\",\n  \"checkpoint\": \"CP11_DIAGNOSTICO_RADIAL_CHI\",\n  \"passed\": true,\n  \"counts\": {\n    \"json\": 379,\n    \"python\": 139,\n    \"svg\": 68,\n    \"local_links\": 468\n  },\n  \"issues\": [],\n  \"E00_E01_recalculated\": false,\n  \"scope\": \"Integridad y continuidad editorial; no certificación científica automática.\"\n}\n"
     },
     {
       "command": [
@@ -228,7 +218,7 @@
       "expected_returncode": 1,
       "passed": true,
       "changed_files": [],
-      "output": "{\n  \"schema_version\": \"1.0.0\",\n  \"checkpoint\": \"CP11_DIAGNOSTICO_RADIAL_CHI\",\n  \"passed\": false,\n  \"counts\": {\n    \"json\": 381,\n    \"python\": 141,\n    \"svg\": 68,\n    \"local_links\": 469\n  },\n  \"issues\": [\n    \"LEEME.md: archivo_ausente_de_prueba.md\"\n  ],\n  \"E00_E01_recalculated\": false,\n  \"scope\": \"Integridad y continuidad editorial; no certificación científica automática.\"\n}\n"
+      "output": "{\n  \"schema_version\": \"1.0.0\",\n  \"checkpoint\": \"CP11_DIAGNOSTICO_RADIAL_CHI\",\n  \"passed\": false,\n  \"counts\": {\n    \"json\": 379,\n    \"python\": 139,\n    \"svg\": 68,\n    \"local_links\": 469\n  },\n  \"issues\": [\n    \"LEEME.md: archivo_ausente_de_prueba.md\"\n  ],\n  \"E00_E01_recalculated\": false,\n  \"scope\": \"Integridad y continuidad editorial; no certificación científica automática.\"\n}\n"
     },
     {
       "command": [
