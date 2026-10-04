@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "c4e6fb21b1b02d567c9b3e6ddead7ab2c67f032ee95817e943e17501ddc24b91",
+  "case": "revision_integridad",
+  "identity": {
+    "case": {
+      "entrypoint": "herramientas/revisar_recuperacion_CP12.py",
+      "operation": "revision_recuperacion_sin_evolucion",
+      "configuration": {
+        "M2_steps": 0,
+        "physical_gate_threshold": 0.02,
+        "resume_ready": false
+      },
+      "extra_code": [
+        "herramientas/ejecutar_protocolo.py"
+      ],
+      "inputs": [
+        "informes/INCIDENTE_RECUPERACION_CP12.md",
+        "estado_progreso.json",
+        "datos/registro_calculos.json",
+        "trazabilidad/CP11_entrada/archivos_sha256.json",
+        "trazabilidad/CP11_entrada/estado_progreso.json",
+        "datos/ensayo_causal_chi_CP12.json",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__*/procedencia.json"
+      ]
+    },
+    "protocol": "datos/revision_recuperacion_CP12.json",
+    "model": "M2",
+    "input_hashes": {
+      "datos/ensayo_causal_chi_CP12.json": "0cf1bdbf42cf1240aeaee4faf475541e0cbd45faaf5e5180e16c6de6167b4e2d",
+      "datos/registro_calculos.json": "d51207a6393c741dc33de70b44d2beddaccaf42fa9532b3e9a9a664c85db6580",
+      "datos/revision_recuperacion_CP12.json": "e8d1ce2be303751ad56cab5dc8d3e820e628322e8291407b3d6a2ee2c5d4ac3a",
+      "datos/theta_comun.json": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+      "estado_progreso.json": "472ae354509cfdcd0d5a360d63b0949872041b9969d92637fe4377c75d3c44a5",
+      "informes/INCIDENTE_RECUPERACION_CP12.md": "947a6c4737d0c17f4a7e7b81201f1a2a97147a640254dd3357c5ad4d72cd2a98",
+      "trazabilidad/CP11_entrada/archivos_sha256.json": "a93536cf024861873e8d060de39023d4140339956e9f22b4ce91fb33c1ac48e2",
+      "trazabilidad/CP11_entrada/estado_progreso.json": "ec3e48abb8f4132593e880d1151a51e326b3d7173003f7e100a3de1a1b9162b4",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__1f08e91c9ca6d337d9862f504302cb2ad29162becca17301f713127885db895f/procedencia.json": "bcede7093aec13dbf8892e2744fc82960deac5cecd84dcd617aa40ab28d9df38",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__1f74508bd2a56bfb797b94cd607a68f3d1896199cb52441eb35be4261c67f83b/procedencia.json": "adf9e96e245704fd859a432864a0d855fe182ae65efafc435803474d23d0642d",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__4f4f14caf5598c0992000386ed829578b3c59cd4d8864ba5e70bc9960b115e65/procedencia.json": "36b0d35749bef72e3360a12b81c67b8bd202946c144326be78bb43fe87c1b46f",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__6308bf6d400d008fe982c21160625b24777a4b391ffcab771189c17787a866c2/procedencia.json": "6b1864bf5f79c78af00a0fad37351f169811aace83c96d7b60416376b03f1f0d",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__991469c2b8e28bf9af3170caa2dcf544e95e7bf4bd9f82c8c3819a580a9baedc/procedencia.json": "92c502d790c6a0a8c90fd453e60747acd7ed02af5b7bdec18533bd07e7d4fdff",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__bb96abc951a73ae69313eb4dd3938a60a764cb5e61c92cda627aecdf2070560c/procedencia.json": "d93c6cc62283686c4b0fac59843fbc2c423c362746b07da94821719e1c83be10",
+      "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89"
+    },
+    "code_hashes": {
+      "herramientas/ejecutar_con_procedencia.py": "794b1f884c0d06dbe85c8812a3256342466687b3277d01762735980a1033feff",
+      "herramientas/ejecutar_protocolo.py": "a9f0f632a0f2829ff9557ffb19ed0b4378faba20244bb571b65f7de24aead3d2",
+      "herramientas/revisar_recuperacion_CP12.py": "9220fff0a4f23362d4e093f99feda5ccb4169181ec1aaeeadc0615a9ed5e699d"
+    },
+    "environment": {
+      "python": "3.12.14",
+      "system": "Linux",
+      "architecture": "x86_64",
+      "packages": {
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "matplotlib": "3.10.8",
+        "threadpoolctl": "3.6.0"
+      },
+      "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+      "BLAS_threads": 1,
+      "compiler_flags": [
+        "-O3",
+        "-fPIC",
+        "-shared",
+        "-fno-fast-math"
+      ]
+    }
+  },
+  "created_at": "2026-10-04T15:21:53.680778+00:00",
+  "status": "COMPLETADA",
+  "configuration_sha256": "1db223c3b9c91605668cc753d3584d53b8f76316126f2ebd0b73cdde025fd70c",
+  "source_snapshots": {
+    "datos/revision_recuperacion_CP12.json": "fuentes/datos/revision_recuperacion_CP12.json",
+    "datos/theta_comun.json": "fuentes/datos/theta_comun.json",
+    "herramientas/ejecutar_con_procedencia.py": "fuentes/herramientas/ejecutar_con_procedencia.py",
+    "herramientas/ejecutar_protocolo.py": "fuentes/herramientas/ejecutar_protocolo.py",
+    "herramientas/revisar_recuperacion_CP12.py": "fuentes/herramientas/revisar_recuperacion_CP12.py"
+  },
+  "segments": [
+    {
+      "started_at": "2026-10-04T15:21:53.681034+00:00",
+      "command": [
+        "python",
+        "herramientas/revisar_recuperacion_CP12.py",
+        "--config",
+        "configuration.json",
+        "--output-dir",
+        "."
+      ],
+      "resumed_from_hashes": {},
+      "status": "COMPLETADA",
+      "ended_at": "2026-10-04T15:21:54.142385+00:00",
+      "returncode": 0,
+      "final_time": null
+    }
+  ],
+  "output_hashes": {
+    "configuration.json": "1db223c3b9c91605668cc753d3584d53b8f76316126f2ebd0b73cdde025fd70c",
+    "ejecucion.log": "b8f717b392291635276f8679cd7bc4fe5c04a4ae882674d59f99b2e12f6aef98",
+    "fuentes/datos/revision_recuperacion_CP12.json": "e8d1ce2be303751ad56cab5dc8d3e820e628322e8291407b3d6a2ee2c5d4ac3a",
+    "fuentes/datos/theta_comun.json": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+    "fuentes/herramientas/ejecutar_con_procedencia.py": "794b1f884c0d06dbe85c8812a3256342466687b3277d01762735980a1033feff",
+    "fuentes/herramientas/ejecutar_protocolo.py": "a9f0f632a0f2829ff9557ffb19ed0b4378faba20244bb571b65f7de24aead3d2",
+    "fuentes/herramientas/revisar_recuperacion_CP12.py": "9220fff0a4f23362d4e093f99feda5ccb4169181ec1aaeeadc0615a9ed5e699d",
+    "resultados.json": "b8f717b392291635276f8679cd7bc4fe5c04a4ae882674d59f99b2e12f6aef98"
+  },
+  "comparisons_and_decision": "La puerta se registra en el resultado y el informe CP10; completar una ejecución no cierra una etapa."
+}

@@ -181,6 +181,24 @@
       "scope": "Diagnóstico sobre extremos guardados; no estado nuevo ni paso de evolución M2.",
       "usable_as_accepted_evidence": true,
       "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz"
+    },
+    {
+      "id": "CP12_par_instrumentado",
+      "status": "PAUSADA_REANUDABLE",
+      "run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
+      "resume": true,
+      "completed": false,
+      "physical_gate_passed": false,
+      "cause_certified": false,
+      "correction_tested": false,
+      "preregistered_campaign": "datos/ensayo_causal_chi_CP12.json",
+      "evidence": "trazabilidad/CP12_reconstruccion/respaldos/tau0000.json",
+      "evidence_role": "REINICIO_DE_TRABAJO_VERIFICADO_NO_CIERRE_CIENTIFICO",
+      "last_time_observed_in_prior_session": 16.0,
+      "prior_session_arrays_not_currently_available": true,
+      "missing_state_is_scientific_negative": false,
+      "current_verified_time": 0.0,
+      "recovery_preregistration": "informes/PRERREGISTRO_RECONSTRUCCION_CP12.md"
     }
   ],
   "failures_preserved": "trazabilidad/reanudacion_CP02/inventario.json",

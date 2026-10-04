@@ -1,0 +1,14 @@
+{
+  "time": "2026-10-04",
+  "scientific_M2_steps": 0,
+  "expected_zip_bytes": 18000023,
+  "expected_zip_sha256": "290f168a57b671a1ab8f06e0610bada6e9bc3e29e9316d19facef01b13f1008b",
+  "observed_bytes": 12170634,
+  "observed_sha256": "9b59b4695da3058ed8dc267d240a34bd390c06ab09c4f7c535c8ab12b19b464c",
+  "library_file_id": "libfile_09796cf4417c81919c7f750cf3c1f82d",
+  "file_id": "file_0000000035cc81f686a214394fe0e9dd",
+  "passed": false,
+  "zip_readable": false,
+  "original_path_and_download_both_truncated": true,
+  "decision": "No ejecutar M2; reconstruir únicamente cápsula de respaldo y verificar fuera de la ruta original. No atribuir causa del truncamiento sin evidencia."
+}

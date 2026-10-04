@@ -1,0 +1,11 @@
+# CP12 · Simetría del observador, sin restricción de M2
+
+El control completo `4f4f14caf5598c0992000386ed829578b3c59cd4d8864ba5e70bc9960b115e65` queda conservado COMPLETADA y positivo, antes de evolucionar. Su coste es todavía 3.51 s por ventana pasiva. Se deriva una reducción compatible del **observador acoplado**, sin reducir los integradores ni el presupuesto escalar de χ.
+
+La semilla es un cuadrupolo triaxial con paridad par sobre una solución esférica. Representar su armónico de grado 2 por un tensor simétrico sin traza determina tres ejes principales. Las rotaciones de π alrededor de esos ejes forman D2. La acción isotrópica y su truncación L=4, con cuadratura suficiente para el potencial cuártico, preservan ese subespacio: sus dimensiones pares son 1 en ℓ=0, 2 en ℓ=2 y 3 en ℓ=4. No es una restricción axisimétrica.
+
+Se construye el proyector `(1+D(Rx)+D(Ry)+D(Rz))/4` sólo a partir de los **datos iniciales**; su base ortonormal S tiene seis columnas y no mezcla ℓ. Por ello conmuta con las masas, el operador radial y la transferencia radial. El Jacobiano medio condicionado a dos historias invariantes conserva el mismo subespacio. Los observadores acoplados usan `Sᵀ J S`, con la misma cuadratura de 180 direcciones. Se reconstruyen sus 25 coeficientes para todas las métricas y cierres.
+
+Antes de M2 se exige ortonormalidad, pertenencia de q/v iniciales/finales CP10 en ambas mallas y equivalencia/invariancia del Jacobiano a 2e−12. Durante cada ventana se mide la fuga de la historia física fina a cada nodo pasivo y se detiene la inferencia si supera 2e−12. El cierre contra la diferencia **completa** de χ y Φ y el control entre órdenes siguen sin cambio. Se guardan S, respuestas completas y estado reducido del observador, sin perder estados físicos ni evidencia. La dinámica física continúa con los 25 modos, fuerza, solver, tolerancias y métricas originales; no se elimina ningún coeficiente de M2 ni se utiliza S para aceptación.
+
+Esta reducción sigue una simetría de la acción/semilla, no una selección posterior de modos con buen resultado. Si sus controles fallan, no se declara válida ni se evoluciona M2. El prerregistro actualizado captura código, esta derivación y el control positivo anterior bajo una identidad nueva.

@@ -1,0 +1,94 @@
+{
+  "case": {
+    "entrypoint": "herramientas/reproducir_par_CP12.py",
+    "operation": "control_pasivo_sin_evolucion_M2",
+    "configuration": {
+      "reference_states": [
+        "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz"
+      ],
+      "physical_configurations": [
+        {
+          "dx": 0.125,
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step": 0.02,
+          "L": 4,
+          "radius": 220.0,
+          "eps": 0.02,
+          "tmax": 160.0
+        },
+        {
+          "dx": 0.0625,
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step": 0.02,
+          "L": 4,
+          "radius": 220.0,
+          "eps": 0.02,
+          "tmax": 160.0
+        }
+      ],
+      "observer_stages": [
+        7,
+        6
+      ],
+      "observer_relative_tolerance": 0.001,
+      "modal_diagnostics": true,
+      "tmax": 160.0,
+      "control_directory": "validacion/P06/no_radial/CP12",
+      "core_radius": 40.0,
+      "smooth_core_start": 32.0,
+      "wave_number_cuts": [
+        2,
+        4,
+        8,
+        12,
+        20
+      ],
+      "physical_gate_threshold": 0.02,
+      "observer_max_step": 0.01,
+      "coupled_observer_basis": "D2_de_semilla_paridad_par_seis_dimensiones",
+      "symmetry_relative_tolerance": 2e-12
+    },
+    "extra_code": [
+      "herramientas/ejecutar_protocolo.py",
+      "herramientas/fuerza_potencial_m2.c",
+      "herramientas/evolucion_mediador_CP10.py",
+      "herramientas/continuar_no_radial_adaptativo.py",
+      "herramientas/referencia_pasiva_CP12.c"
+    ],
+    "inputs": [
+      "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "validacion/P06/no_radial/CP10/temporal_h0125__*/procedencia.json",
+      "validacion/P06/no_radial/CP10/espacial_h00625__*/procedencia.json",
+      "datos/ensayo_mediador_CP10.json",
+      "datos/ensayo_no_radial_CP06.json",
+      "validacion/P06/no_radial/auditoria_operador.json",
+      "informes/PROTOCOLO_CP12_CAUSA_CHI.md",
+      "trazabilidad/CP11_entrada/ORIGEN.json",
+      "trazabilidad/CP11_entrada/archivos_sha256.json",
+      "trazabilidad/CP11_entrada/estado_progreso.json",
+      "trazabilidad/CP11_entrada/datos/registro_calculos.json",
+      "trazabilidad/CP11_entrada/datos/estado_evidencia.json",
+      "ENMIENDAS_HOJA_RUTA.md",
+      "tratado/31_diagnostico_radial_del_mediador.md",
+      "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__*/resultados.json",
+      "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__*/procedencia.json",
+      "informes/ENMIENDA_CP12_SERIALIZACION_CONTROL.md",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__1f74508bd2a56bfb797b94cd607a68f3d1896199cb52441eb35be4261c67f83b/procedencia.json",
+      "informes/ENMIENDA_CP12_REFERENCIA_Y_OBSERVADOR.md",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__1f08e91c9ca6d337d9862f504302cb2ad29162becca17301f713127885db895f/procedencia.json",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__1f08e91c9ca6d337d9862f504302cb2ad29162becca17301f713127885db895f/resultados.json",
+      "informes/ENMIENDA_CP12_ESCALA_DE_REDONDEO.md",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__6308bf6d400d008fe982c21160625b24777a4b391ffcab771189c17787a866c2/procedencia.json",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__6308bf6d400d008fe982c21160625b24777a4b391ffcab771189c17787a866c2/resultados.json",
+      "informes/ENMIENDA_CP12_SIMETRIA_PASIVA.md",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__4f4f14caf5598c0992000386ed829578b3c59cd4d8864ba5e70bc9960b115e65/procedencia.json",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__4f4f14caf5598c0992000386ed829578b3c59cd4d8864ba5e70bc9960b115e65/resultados.json"
+    ]
+  },
+  "protocol": "datos/ensayo_causal_chi_CP12.json",
+  "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz"
+}

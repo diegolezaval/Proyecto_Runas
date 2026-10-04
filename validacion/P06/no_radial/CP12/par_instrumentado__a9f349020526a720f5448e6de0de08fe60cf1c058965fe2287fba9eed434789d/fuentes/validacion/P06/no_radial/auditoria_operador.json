@@ -1,0 +1,36 @@
+{
+  "angular": [
+    {
+      "L": 0,
+      "modes": 1,
+      "angles": 4,
+      "gram_error": 1.1102230246251565e-16,
+      "quartic_quadrature_relative": 4.837465301028097e-16
+    },
+    {
+      "L": 2,
+      "modes": 9,
+      "angles": 60,
+      "gram_error": 6.661338147750939e-16,
+      "quartic_quadrature_relative": 6.9284862478818065e-16
+    },
+    {
+      "L": 4,
+      "modes": 25,
+      "angles": 180,
+      "gram_error": 1.3322676295501878e-15,
+      "quartic_quadrature_relative": 1.512518965688057e-16
+    },
+    {
+      "L": 6,
+      "modes": 49,
+      "angles": 364,
+      "gram_error": 4.773959005888173e-15,
+      "quartic_quadrature_relative": 3.4549870717581024e-16
+    }
+  ],
+  "variational_force_relative": 1.4329684719224944e-12,
+  "charge_acceleration_absolute": 2.7755575615628914e-17,
+  "passed": true,
+  "scope": "Discrete variational and quadrature audit, not a continuum proof"
+}

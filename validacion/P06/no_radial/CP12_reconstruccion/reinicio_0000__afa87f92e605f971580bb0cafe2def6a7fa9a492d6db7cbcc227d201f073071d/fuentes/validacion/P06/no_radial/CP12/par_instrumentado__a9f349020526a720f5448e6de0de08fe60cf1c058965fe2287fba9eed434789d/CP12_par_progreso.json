@@ -1,0 +1,55 @@
+{
+  "status": "EN_PROGRESO",
+  "time": 0.0,
+  "restart_file": "CP12_par_estado.npz",
+  "stage_complete": false,
+  "configuration": {
+    "reference_states": [
+      "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz"
+    ],
+    "physical_configurations": [
+      {
+        "dx": 0.125,
+        "rtol": 1e-10,
+        "atol": 1e-12,
+        "max_step": 0.02,
+        "L": 4,
+        "radius": 220.0,
+        "eps": 0.02,
+        "tmax": 160.0
+      },
+      {
+        "dx": 0.0625,
+        "rtol": 1e-10,
+        "atol": 1e-12,
+        "max_step": 0.02,
+        "L": 4,
+        "radius": 220.0,
+        "eps": 0.02,
+        "tmax": 160.0
+      }
+    ],
+    "observer_stages": [
+      7,
+      6
+    ],
+    "observer_relative_tolerance": 0.001,
+    "modal_diagnostics": true,
+    "tmax": 160.0,
+    "control_directory": "validacion/P06/no_radial/CP12",
+    "core_radius": 40.0,
+    "smooth_core_start": 32.0,
+    "wave_number_cuts": [
+      2,
+      4,
+      8,
+      12,
+      20
+    ],
+    "physical_gate_threshold": 0.02,
+    "observer_max_step": 0.01,
+    "coupled_observer_basis": "D2_de_semilla_paridad_par_seis_dimensiones",
+    "symmetry_relative_tolerance": 2e-12
+  }
+}
