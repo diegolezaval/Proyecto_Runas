@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "project_version": "4.2.0-dev10",
+  "project_version": "4.2.0-dev11",
   "model_version": "M2",
-  "checkpoint": "CP10_MEDIADOR_ESPACIOTEMPORAL",
+  "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
   "roadmap_sha256": "891ca0eaceea516e6d24d76d256cb669ce17d27350fee0edb2bb8bf62f66cc02",
   "baseline_sha256": "f4ebb3095dddb79cf36b8b9be13e93b7553abf01a1905ccdbda93e02bd155595",
   "allowed_statuses": [
@@ -130,7 +130,14 @@
         "validacion/P06/no_radial/intento_06_integrador_centrado_puerta.json",
         "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
         "datos/ensayo_mediador_CP10.json",
-        "informes/ENTREGA_10_MEDIADOR_ESPACIOTEMPORAL.md"
+        "informes/ENTREGA_10_MEDIADOR_ESPACIOTEMPORAL.md",
+        "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json",
+        "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json",
+        "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+        "datos/ensayo_diagnostico_chi_CP11.json",
+        "datos/ensayo_respuesta_forzada_precisa_CP11.json",
+        "tratado/31_diagnostico_radial_del_mediador.md",
+        "informes/ENTREGA_11_DIAGNOSTICO_RADIAL_CHI.md"
       ],
       "positive_results": [
         "23 perfiles; primera ley; refinamiento y Hessiano restringido.",
@@ -139,20 +146,24 @@
         "Ocho continuaciones no radiales finitas desde CP04; conservación y refinamiento de observables Phi, con todos los m hasta L=6.",
         "Tres evoluciones DOP853 completas hasta tau=160; diferencia temporal chi 0.00191% en posición y 0.00272% en espacio de fases; balances conservados.",
         "El cálculo pendiente h=.125 terminó hasta tau=160 y se completaron sus comparaciones; la puerta sigue sin superarse.",
-        "CP10 completa dos evoluciones nuevas y sus controles temporal/espacial con procedencia, reinicios reales y balances verificados; cifras y puerta en el resultado registrado."
+        "CP10 completa dos evoluciones nuevas y sus controles temporal/espacial con procedencia, reinicios reales y balances verificados; cifras y puerta en el resultado registrado.",
+        "CP11 audita el operador radial real y descarta el cruce artificial de la puerta por las métricas spline declaradas; la diferencia se localiza en componentes cortas y respuesta forzada, con procedencia.",
+        "Se valida la identidad exacta de defecto y los momentos recuperables desde los extremos; cifras y alcances en los resultados CP11."
       ],
       "negative_results": [
         "Control negativo a omega=.985 y posteriores.",
         "Espectro dinámico seleccionado y sin campaña no lineal 3D de la rama.",
         "L2 falla convergencia angular; fase rápida de chi entonces incompleta (control temporal resuelto en CP07); piloto split4 no centrado falla balance grueso.",
         "Refinamiento h=.5/.25: chi 4.03% en posición y 5.01% en espacio de fases, falla puerta 2%; h=.125 quedó pendiente en CP07; su resultado se registra en CP08. Split4c grueso falla a tiempos largos; pilotos split4b no mejoran.",
-        "CP10 no supera la puerta finita: conservar el resultado negativo de convergencia registrado; no atribuirlo a inestabilidad física ni ajustar chi para aceptar."
+        "CP10 no supera la puerta finita: conservar el resultado negativo de convergencia registrado; no atribuirlo a inestabilidad física ni ajustar chi para aceptar.",
+        "La propagación libre inicial no basta; la corrección modal prerregistrada del residuo congelado no supera el criterio explicativo. La historia de fuente necesaria para atribuir causa no está guardada. No equivale a inestabilidad física o agotamiento de M2.",
+        "Control aritmético doble de identidad inicial FALLIDA y preservado; referencia extendida de la misma ecuación pasa sin relajar tolerancias."
       ],
       "validity_scope": "Rama muestreada; estabilidad angular condicionada, sin certificado orbital continuo.",
-      "checkpoint": "CP10_MEDIADOR_ESPACIOTEMPORAL",
+      "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
       "reopen_conditions": [],
-      "next_action": "Diagnosticar el operador radial y las componentes cortas de chi sobre los estados CP10 guardados; prerregistrar el próximo control espacial o una discretización contrastada, sin relajar la puerta ni repetir las catorce evoluciones cerradas.",
-      "gate_decision": "ETAPA_GENERAL_PARCIAL; PUERTA_FINITA_EN_RESULTADO_CP10",
+      "next_action": "Detener nuevas campañas: la diferencia corta de respuesta forzada requiere distinguir la historia del defecto radial y la fuente acoplada, no guardada en CP10. Formular evidencia discriminante y prerregistrar antes de continuar; no otra malla, más tiempo ni fases ajustadas.",
+      "gate_decision": "ETAPA_GENERAL_PARCIAL; PUERTA_CP10_NEGATIVA_CONSERVADA; CAUSA_ABIERTA_EN_CP11",
       "remaining_work": "Cobertura espectral suficiente y perturbaciones finitas no radiales sobre candidatos supervivientes."
     },
     {
@@ -890,10 +901,25 @@
       ],
       "finite_campaign_passed": false,
       "report": "informes/ENTREGA_10_MEDIADOR_ESPACIOTEMPORAL.md"
+    },
+    {
+      "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+      "closed": [],
+      "opened": [],
+      "completed_subquestions": [
+        "auditoria_radial_y_metricas_independientes",
+        "localizacion_modal_de_componentes_cortas",
+        "contraste_congelado_negativo_delimitado",
+        "momentos_forzados_y_limite_de_informacion"
+      ],
+      "finite_campaign_passed": false,
+      "new_M2_evolution_steps": 0,
+      "automatic_continuation_paused": true,
+      "report": "informes/ENTREGA_11_DIAGNOSTICO_RADIAL_CHI.md"
     }
   ],
   "next_actions": [
-    "Diagnosticar el operador radial y las componentes cortas de chi sobre los estados CP10 guardados; prerregistrar el próximo control espacial o una discretización contrastada, sin relajar la puerta ni repetir las catorce evoluciones cerradas.",
+    "Detener nuevas campañas: la diferencia corta de respuesta forzada requiere distinguir la historia del defecto radial y la fuente acoplada, no guardada en CP10. Formular evidencia discriminante y prerregistrar antes de continuar; no otra malla, más tiempo ni fases ajustadas.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -903,24 +929,31 @@
     "C0 salvo condición explícita de reapertura.",
     "Campañas cerradas CP03/CP04 y ocho continuaciones VV de CP06.",
     "Cuatro evoluciones DOP853 h=.5 (dos tolerancias), h=.25 y h=.125 finalizadas a tau=160; dispersión lineal y su verificación cerradas.",
-    "Dos evoluciones CP10 temporal_h0125 y espacial_h00625 terminadas hasta tau=160, con recibos y comparación final. Reutilizar sus estados; no volver a evolucionarlas sin una pregunta y protocolo nuevos."
+    "Dos evoluciones CP10 temporal_h0125 y espacial_h00625 terminadas hasta tau=160, con recibos y comparación final. Reutilizar sus estados; no volver a evolucionarlas sin una pregunta y protocolo nuevos.",
+    "Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Diagnosticar el operador radial y las componentes cortas de chi sobre los estados CP10 guardados; prerregistrar el próximo control espacial o una discretización contrastada, sin relajar la puerta ni repetir las catorce evoluciones cerradas.",
+  "next_calculation": "Detener nuevas campañas: la diferencia corta de respuesta forzada requiere distinguir la historia del defecto radial y la fuente acoplada, no guardada en CP10. Formular evidencia discriminante y prerregistrar antes de continuar; no otra malla, más tiempo ni fases ajustadas.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [],
   "research_in_progress": [],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
-  "delivery_boundary": "Dos evoluciones nuevas completas hasta tau=160, comparación cerrada y recibos verificados. No hay cálculos activos ni cierre de etapas generales.",
+  "delivery_boundary": "Diagnóstico finito cerrado sobre estados guardados: operador, métricas, modos cortos, contraste congelado negativo y respuesta forzada. Cero pasos M2 nuevos; parada por ambigüedad causal y evidencia temporal faltante.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
   "latest_completed_nonradial_time": 160,
-  "diagnostic_after_gate": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
-  "scientific_checkpoint": "CP10_MEDIADOR_ESPACIOTEMPORAL",
+  "diagnostic_after_gate": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+  "scientific_checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
   "architecture_audit": {
     "report": "informes/AUDITORIA_ARQUITECTURA_CP09.md",
     "baseline_manifest": "trazabilidad/arquitectura/archivos_CP08.json",
     "entry_snapshot": "trazabilidad/CP08_arquitectura_entrada",
     "generated_index": "trazabilidad/arquitectura/indice_trazabilidad.json"
   },
-  "checkpoint_kind": "CIENTIFICO"
+  "checkpoint_kind": "CIENTIFICO",
+  "automatic_continuation_paused": {
+    "reason": "AMBIGUEDAD_CAUSAL_POR_HISTORIA_DE_FUENTE_NO_GUARDADA",
+    "evidence": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+    "fundamental_model_change_authorized": false,
+    "M2_exhaustion_claimed": false
+  }
 }

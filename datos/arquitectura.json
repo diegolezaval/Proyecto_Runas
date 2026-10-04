@@ -9,7 +9,8 @@
     "trazabilidad/CP08_entrada",
     "trazabilidad/CP08_arquitectura_entrada",
     "trazabilidad/CP09_entrada",
-    "trazabilidad/CP10_codigo_entrada"
+    "trazabilidad/CP10_codigo_entrada",
+    "trazabilidad/CP10_entrada"
   ],
   "generated_views": [
     {
@@ -222,6 +223,59 @@
       ],
       "scientific_solver": false,
       "scope": "Puente generado a la entrada canónica; no nueva autoridad científica o de progreso."
+    },
+    {
+      "generator": "herramientas/diagnosticar_chi_CP11.py",
+      "outputs": [],
+      "derived_evidence": [
+        "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json",
+        "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/modos_radiales.csv",
+        "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json"
+      ],
+      "inputs": [
+        "datos/ensayo_diagnostico_chi_CP11.json",
+        "datos/ensayo_respuesta_forzada_precisa_CP11.json",
+        "datos/theta_comun.json",
+        "validacion/P06/no_radial/CP10/*/*_estado.npz"
+      ],
+      "scientific_solver": true,
+      "evolves_M2": false,
+      "requires_scientific_review": true,
+      "scope": "Diagnóstico prerregistrado de estados existentes; evidencia derivada por recibo, sin evolución."
+    },
+    {
+      "generator": "herramientas/respuesta_forzada_chi_CP11_precisa.py",
+      "outputs": [],
+      "derived_evidence": [
+        "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+        "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/momentos_duhamel.csv"
+      ],
+      "inputs": [
+        "datos/ensayo_diagnostico_chi_CP11.json",
+        "datos/ensayo_respuesta_forzada_precisa_CP11.json",
+        "datos/theta_comun.json",
+        "validacion/P06/no_radial/CP10/*/*_estado.npz"
+      ],
+      "scientific_solver": true,
+      "evolves_M2": false,
+      "requires_scientific_review": true,
+      "scope": "Diagnóstico prerregistrado de estados existentes; evidencia derivada por recibo, sin evolución."
+    },
+    {
+      "generator": "herramientas/generar_resumen_CP11.py",
+      "outputs": [
+        "informes/RESUMEN_NUMERICO_CP11.md",
+        "graficos/CP11_diagnostico_chi.svg"
+      ],
+      "inputs": [
+        "datos/registro_calculos.json",
+        "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json",
+        "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json",
+        "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/resultados.json",
+        "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json"
+      ],
+      "scientific_solver": false,
+      "scope": "Vistas de los resultados y límites; no fuente manual de cifras ni aceptación."
     }
   ],
   "claim_links": {
@@ -589,6 +643,44 @@
         "datos/ensayo_mediador_CP10.json"
       ],
       "basis": "Recibos capturados antes de ejecutar, fuentes y salidas verificadas, comparación de estados concluidos y protocolo inalterado. Los controles históricos conservan sus resoluciones."
+    },
+    "CP11-CHI-RADIAL": {
+      "equations": [
+        "tratado/13_M2_comun_y_teoremas.md",
+        "tratado/23_convenciones_y_espacio_fundamental.md",
+        "tratado/31_diagnostico_radial_del_mediador.md"
+      ],
+      "parameters": [
+        "datos/theta_comun.json"
+      ],
+      "scripts": [
+        "herramientas/diagnosticar_chi_CP11.py",
+        "herramientas/respuesta_forzada_chi_CP11_precisa.py",
+        "herramientas/ejecutar_protocolo.py",
+        "herramientas/ejecutar_con_procedencia.py"
+      ],
+      "configurations": [
+        "datos/ensayo_diagnostico_chi_CP11.json",
+        "datos/ensayo_respuesta_forzada_precisa_CP11.json",
+        "validacion/P06/no_radial/CP11/*/configuration.json"
+      ],
+      "data": [
+        "validacion/P06/no_radial/CP10/temporal_h0125__*/*_estado.npz",
+        "validacion/P06/no_radial/CP10/espacial_h00625__*/*_estado.npz",
+        "validacion/P06/no_radial/CP11/diagnostico_radial__*/modos_radiales.csv",
+        "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__*/momentos_duhamel.csv",
+        "validacion/P06/no_radial/CP11/*/procedencia.json"
+      ],
+      "figures": [
+        "graficos/CP11_diagnostico_chi.svg"
+      ],
+      "gates": [
+        "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json",
+        "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json",
+        "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+        "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json"
+      ],
+      "basis": "Prerregistros, recibos previos y estados existentes CP10. El intento doble fallido es antecedente, no resultado aceptado."
     }
   },
   "known_unreadable_artifacts": [

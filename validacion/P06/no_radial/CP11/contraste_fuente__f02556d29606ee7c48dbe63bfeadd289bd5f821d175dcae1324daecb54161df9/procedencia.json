@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9",
+  "case": "contraste_fuente",
+  "identity": {
+    "case": {
+      "entrypoint": "herramientas/diagnosticar_chi_CP11.py",
+      "operation": "equilibrio_congelado_y_contraste_modal_sin_ajuste",
+      "configuration": {
+        "core_radius": 40.0,
+        "time": 160.0,
+        "radius": 220.0,
+        "L": 4,
+        "states": {
+          "coarse": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+          "fine": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz"
+        },
+        "source_comparison": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+        "wave_number_cuts": [
+          2,
+          4,
+          8,
+          12,
+          20
+        ],
+        "ell": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "quadrature_orders": [
+          8,
+          12
+        ],
+        "smooth_core_start": 32.0,
+        "algebra_relative_tolerance": 2e-12,
+        "parseval_relative_tolerance": 2e-11,
+        "elliptic_relative_tolerance": 2e-10,
+        "short_component_predominance_min": 0.5,
+        "free_prediction_squared_fraction_min": 0.5,
+        "free_prediction_vector_cosine_min": 0.8,
+        "modal_correction_squared_reduction_min": 0.5,
+        "manufactured_seed": 20261003,
+        "chi_phase_rotation_used_for_acceptance": false,
+        "new_evolution_steps": 0
+      },
+      "extra_code": [
+        "herramientas/ejecutar_protocolo.py"
+      ],
+      "inputs": [
+        "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+        "validacion/P06/no_radial/CP10/temporal_h0125__*/procedencia.json",
+        "validacion/P06/no_radial/CP10/espacial_h00625__*/procedencia.json",
+        "datos/ensayo_no_radial_CP06.json",
+        "validacion/P06/no_radial/auditoria_operador.json",
+        "informes/PROTOCOLO_CP11_DIAGNOSTICO_CHI.md",
+        "trazabilidad/CP10_entrada/ORIGEN.json",
+        "validacion/P06/no_radial/CP11/diagnostico_radial__*/resultados.json",
+        "validacion/P06/no_radial/CP11/diagnostico_radial__*/procedencia.json"
+      ],
+      "condition": "Operador consistente y control libre inicial insuficiente. No ejecutar si hay incompatibilidad algebraica."
+    },
+    "protocol": "datos/ensayo_diagnostico_chi_CP11.json",
+    "model": "M2",
+    "input_hashes": {
+      "datos/ensayo_diagnostico_chi_CP11.json": "89cce61dddead39a60ab918960b8d2e7c918109a14db2d7648b24d27accdd534",
+      "datos/ensayo_no_radial_CP06.json": "3b620c0dd039e4fe1e54b50fa324a900717e7400e44707b58d2d2b0882dccb55",
+      "datos/theta_comun.json": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+      "informes/PROTOCOLO_CP11_DIAGNOSTICO_CHI.md": "9d45913d12119068943a69dd0cee5f606302d718d92f41256fe083f34e1faf8e",
+      "trazabilidad/CP10_entrada/ORIGEN.json": "24a9b3d0bad52169e11a95b61c8392b61fcfb71ae905959ea086a276749c1c02",
+      "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json": "4d6c97f9119eaf16cde5bcb2bc96b910d8a00e830ca032eb6b17d08086480faf",
+      "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz": "ecbf667afcbd572af50151e7300bebb63afe54bbb25ecf01b2369b42a1c977ce",
+      "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/procedencia.json": "d23b6ac4f48d7529ad3e0107439247a5c7200bf9102a82098f8cff56b89ed450",
+      "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz": "2ef7efa1ca77549aecf069d65638feb559ae9608ab4bdeda36579390750a03fc",
+      "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/procedencia.json": "f6217d888ca69aab523a99f0e503200d11a3b89a96d66c46cba6c1d5cc260c46",
+      "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/procedencia.json": "dda3343d533970276d7a754b3cde2ebe08094379a05242db1f3ae7cb691fde89",
+      "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json": "6163f753758f224b7f195b3645518a69fa4c52cba485974b6275005433c8f221",
+      "validacion/P06/no_radial/auditoria_operador.json": "cedcdd11221e75a027b638c3b75021e39044965303a93aa4ab023ce73bf3a1bd",
+      "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89"
+    },
+    "code_hashes": {
+      "herramientas/continuar_no_radial_m2.py": "d4a7f8ad89a4bc321931926d8de161348e9223a0bd21336e0b13edfdbbe3493c",
+      "herramientas/diagnosticar_chi_CP11.py": "60bc4c209d15fbb12e280c2f55a526347c2b7484c5c8bd6f09ef010f872dd2db",
+      "herramientas/diagnosticar_mediador_CP10.py": "41f0b56b797f9caca7601577d8db7f846d1d452e77a80940de6092be6a8fea64",
+      "herramientas/ejecutar_con_procedencia.py": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
+      "herramientas/ejecutar_protocolo.py": "a9f0f632a0f2829ff9557ffb19ed0b4378faba20244bb571b65f7de24aead3d2",
+      "herramientas/modelo_m2.py": "87562e977135cc5092ef3567b5980f58e726187e4df5c418de4660291702374f"
+    },
+    "environment": {
+      "python": "3.12.14",
+      "system": "Linux",
+      "architecture": "x86_64",
+      "packages": {
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "matplotlib": "3.10.8",
+        "threadpoolctl": "3.6.0"
+      },
+      "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+      "BLAS_threads": 1,
+      "compiler_flags": [
+        "-O3",
+        "-fPIC",
+        "-shared",
+        "-fno-fast-math"
+      ]
+    }
+  },
+  "created_at": "2026-10-04T03:53:34.585330+00:00",
+  "status": "COMPLETADA",
+  "configuration_sha256": "21fd1f34e720fe19c685711e94c9d9c15bfa06eb1acbea970a6415a17ee09c96",
+  "source_snapshots": {
+    "datos/ensayo_diagnostico_chi_CP11.json": "fuentes/datos/ensayo_diagnostico_chi_CP11.json",
+    "datos/theta_comun.json": "fuentes/datos/theta_comun.json",
+    "herramientas/continuar_no_radial_m2.py": "fuentes/herramientas/continuar_no_radial_m2.py",
+    "herramientas/diagnosticar_chi_CP11.py": "fuentes/herramientas/diagnosticar_chi_CP11.py",
+    "herramientas/diagnosticar_mediador_CP10.py": "fuentes/herramientas/diagnosticar_mediador_CP10.py",
+    "herramientas/ejecutar_con_procedencia.py": "fuentes/herramientas/ejecutar_con_procedencia.py",
+    "herramientas/ejecutar_protocolo.py": "fuentes/herramientas/ejecutar_protocolo.py",
+    "herramientas/modelo_m2.py": "fuentes/herramientas/modelo_m2.py"
+  },
+  "segments": [
+    {
+      "started_at": "2026-10-04T03:53:34.585597+00:00",
+      "command": [
+        "python",
+        "herramientas/diagnosticar_chi_CP11.py",
+        "--config",
+        "configuration.json",
+        "--output-dir",
+        "."
+      ],
+      "resumed_from_hashes": {},
+      "status": "COMPLETADA",
+      "ended_at": "2026-10-04T03:53:39.671603+00:00",
+      "returncode": 0,
+      "final_time": null
+    }
+  ],
+  "output_hashes": {
+    "configuration.json": "21fd1f34e720fe19c685711e94c9d9c15bfa06eb1acbea970a6415a17ee09c96",
+    "ejecucion.log": "974e924ccb8bcda76ece483764f53b0e388ececfbe235973d7d4c0114634f580",
+    "fuentes/datos/ensayo_diagnostico_chi_CP11.json": "89cce61dddead39a60ab918960b8d2e7c918109a14db2d7648b24d27accdd534",
+    "fuentes/datos/theta_comun.json": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+    "fuentes/herramientas/continuar_no_radial_m2.py": "d4a7f8ad89a4bc321931926d8de161348e9223a0bd21336e0b13edfdbbe3493c",
+    "fuentes/herramientas/diagnosticar_chi_CP11.py": "60bc4c209d15fbb12e280c2f55a526347c2b7484c5c8bd6f09ef010f872dd2db",
+    "fuentes/herramientas/diagnosticar_mediador_CP10.py": "41f0b56b797f9caca7601577d8db7f846d1d452e77a80940de6092be6a8fea64",
+    "fuentes/herramientas/ejecutar_con_procedencia.py": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
+    "fuentes/herramientas/ejecutar_protocolo.py": "a9f0f632a0f2829ff9557ffb19ed0b4378faba20244bb571b65f7de24aead3d2",
+    "fuentes/herramientas/modelo_m2.py": "87562e977135cc5092ef3567b5980f58e726187e4df5c418de4660291702374f",
+    "resultados.json": "2b93b2da72f24934b4ae451fe2534c14d0543fa1d11c69bb355eb6763dd3eb4c"
+  },
+  "comparisons_and_decision": "La puerta se registra en el resultado y el informe CP10; completar una ejecución no cierra una etapa."
+}

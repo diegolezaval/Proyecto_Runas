@@ -373,6 +373,27 @@
       ],
       "scope": "Deformación cuadrupolar CP04, todos los m hasta L=4, R=220, ε=.02, τ≤160; nuevos controles de espacio/tiempo y controles históricos con sus resoluciones. No perturbaciones arbitrarias ni dispositivo.",
       "not_established": "Causa certificada del error, convergencia conjunta o del continuo, estabilidad orbital, perturbaciones arbitrarias, fuente primaria, apagado, retroacción, ciclo o dispositivo."
+    },
+    {
+      "id": "CP11-CHI-RADIAL",
+      "assertion": "El fallo espacial de chi persiste en las métricas spline declaradas; el operador FV pasa la auditoría y la diferencia está dominada por componentes cortas de la respuesta forzada. El contraste de fase libre congelada es insuficiente. La causa acoplada permanece abierta por historia temporal no guardada.",
+      "classification": [
+        "resultado_analitico_condicionado",
+        "resultado_numerico_condicionado",
+        "validacion_numerica_interna",
+        "resultado_negativo",
+        "problema_abierto"
+      ],
+      "evidence": [
+        "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json",
+        "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json",
+        "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+        "tratado/31_diagnostico_radial_del_mediador.md",
+        "informes/ENMIENDA_CP11_PRECISION_DEFECTO.md",
+        "informes/ENTREGA_11_DIAGNOSTICO_RADIAL_CHI.md"
+      ],
+      "scope": "Mismas mallas CP10 .125/.0625, todos los m hasta L=4, R=220, tau=160, nu/M y núcleo r<40. Autobase radial libre, fuentes/defectos en extremos y momentos exactos; cero evoluciones nuevas.",
+      "not_established": "Historia de fuente ni atribución causal completa, convergencia del continuo o conjunta, inestabilidad física, estabilidad orbital, agotamiento M2, dispositivo o aceptación mediante fase corregida."
     }
   ],
   "provisional": [
@@ -410,6 +431,12 @@
       "id": "O-DEVICE",
       "problem": "Primer dispositivo y operacion",
       "needed": "Cadena de preparacion, acceso, medida, perdidas, control y limites"
+    },
+    {
+      "id": "O-CHI-SPATIAL-CAUSE",
+      "problem": "Separar la causa acoplada del fallo espacial de chi",
+      "needed": "Historia o evidencia equivalente que discrimine presupuesto Duhamel del conmutador radial y diferencia de fuente no lineal, con error controlado y sin repetir evoluciones cerradas. No malla o fase escogida para aprobar.",
+      "evidence": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json"
     }
   ],
   "shared_resources_not_new_laws": [
@@ -419,5 +446,5 @@
     "preparacion_de_estado"
   ],
   "classification_decision": "No se fuerza conservar 24 ni fusionar funciones sin equivalencia fisica demostrada.",
-  "current_checkpoint": "CP10_MEDIADOR_ESPACIOTEMPORAL"
+  "current_checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI"
 }

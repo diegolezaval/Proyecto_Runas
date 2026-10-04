@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "base_checkpoint": "CP02_E01",
-  "checkpoint": "CP10_MEDIADOR_ESPACIOTEMPORAL",
+  "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
   "authoritative_results": {
     "C0": "validacion/P04/exclusiones/resultados.json",
     "E02": "validacion/validez/resultados.json",
@@ -12,7 +12,10 @@
     "nodal_phase": "validacion/P04/C7/puerta_fase_sin_nodos.json",
     "nonradial_latest_completed_comparison": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
     "nonradial": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
-    "mediator_diagnostic_before_CP10": "validacion/P06/no_radial/CP10/diagnostico_guardado__0cc9af79f3804e54e2f65309e9fad57934b04c55536c5dd07519c2bacc87ea47/diagnostico.json"
+    "mediator_diagnostic_before_CP10": "validacion/P06/no_radial/CP10/diagnostico_guardado__0cc9af79f3804e54e2f65309e9fad57934b04c55536c5dd07519c2bacc87ea47/diagnostico.json",
+    "chi_radial_diagnostic": "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json",
+    "chi_frozen_source_contrast": "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json",
+    "chi_forced_response": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json"
   },
   "historical_partial_files": {
     "validacion/validez/partial_sensitivity.json": "Anterior a recuperación M+; no resultado vigente",
@@ -134,6 +137,50 @@
       "evidence": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
       "receipt": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/procedencia.json",
       "scope": "Análisis de estados guardados; ninguna evolución nueva."
+    },
+    {
+      "id": "CP11_diagnostico_radial",
+      "status": "COMPLETADA",
+      "resume": false,
+      "evidence": "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json",
+      "receipt": "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/procedencia.json",
+      "preregistered_campaign": "datos/ensayo_diagnostico_chi_CP11.json",
+      "scope": "Diagnóstico sobre extremos guardados; no estado nuevo ni paso de evolución M2.",
+      "usable_as_accepted_evidence": true,
+      "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz"
+    },
+    {
+      "id": "CP11_contraste_fuente",
+      "status": "COMPLETADA",
+      "resume": false,
+      "evidence": "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json",
+      "receipt": "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/procedencia.json",
+      "preregistered_campaign": "datos/ensayo_diagnostico_chi_CP11.json",
+      "scope": "Diagnóstico sobre extremos guardados; no estado nuevo ni paso de evolución M2.",
+      "usable_as_accepted_evidence": true,
+      "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz"
+    },
+    {
+      "id": "CP11_respuesta_forzada",
+      "status": "FALLIDA",
+      "resume": false,
+      "evidence": "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/resultados.json",
+      "receipt": "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/procedencia.json",
+      "preregistered_campaign": "datos/ensayo_respuesta_forzada_CP11.json",
+      "scope": "Diagnóstico sobre extremos guardados; no estado nuevo ni paso de evolución M2.",
+      "usable_as_accepted_evidence": false,
+      "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz"
+    },
+    {
+      "id": "CP11_respuesta_forzada_precisa",
+      "status": "COMPLETADA",
+      "resume": false,
+      "evidence": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+      "receipt": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/procedencia.json",
+      "preregistered_campaign": "datos/ensayo_respuesta_forzada_precisa_CP11.json",
+      "scope": "Diagnóstico sobre extremos guardados; no estado nuevo ni paso de evolución M2.",
+      "usable_as_accepted_evidence": true,
+      "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz"
     }
   ],
   "failures_preserved": "trazabilidad/reanudacion_CP02/inventario.json",
@@ -141,5 +188,15 @@
   "numerical_runs_in_progress": [],
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
   "latest_completed_nonradial_time": 160,
-  "diagnostic_after_gate": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json"
+  "diagnostic_after_gate": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+  "verification_protocol": "datos/verificacion_diagnostico_CP11.json",
+  "failed_CP11_controls_preserved": [
+    {
+      "result": "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/resultados.json",
+      "receipt": "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/procedencia.json",
+      "reason": "Cancelación en el control doble de identidad; sin interpretación física.",
+      "replaced_as_validated_reference_by": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+      "implementation_amendment": "informes/ENMIENDA_CP11_PRECISION_DEFECTO.md"
+    }
+  ]
 }
