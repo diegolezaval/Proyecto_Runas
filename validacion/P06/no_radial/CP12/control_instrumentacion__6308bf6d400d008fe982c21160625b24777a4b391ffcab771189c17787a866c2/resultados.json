@@ -1,0 +1,140 @@
+{
+  "passed": false,
+  "tests": {
+    "initial_fields_exact_CP10_both_grids": true,
+    "C_source_and_variational_force_unchanged": true,
+    "initial_q:mean_jacobian_extended_identity": true,
+    "initial_q:weighted_Jacobian_symmetry": true,
+    "initial_q:passive_C_Jacobian_equivalence": true,
+    "initial_q:source_partition": false,
+    "initial_q:CP11_exact_radial_defect_identity": true,
+    "q:mean_jacobian_extended_identity": true,
+    "q:weighted_Jacobian_symmetry": true,
+    "q:passive_C_Jacobian_equivalence": true,
+    "q:source_partition": false,
+    "q:CP11_exact_radial_defect_identity": true,
+    "passive_dense_preserves_every_step_and_counter": true,
+    "Gauss_manufactured_fields_1": true,
+    "Gauss_manufactured_fields_3": true,
+    "passive_free_propagation_global_bound": true,
+    "longdouble_exceeds_float64": true,
+    "observed_threads_one": true
+  },
+  "algebra": [
+    {
+      "frame": "initial_q",
+      "mean_jacobian_identity_extended_relative_residual": 2.8557861594499943e-28,
+      "prior_longdouble_subtraction_relative_residual": 2.1092001601221038e-12,
+      "weighted_jacobian_symmetry_residual": 2.0731558372202296e-15,
+      "fused_passive_jacobian_relative_error": 0.0,
+      "production_force_absolute_scaled_residual": 5.081757575370804e-12,
+      "extended_epsilon": 1.0842021724855044e-19,
+      "reference_is_not_evolution": true
+    },
+    {
+      "frame": "q",
+      "mean_jacobian_identity_extended_relative_residual": 4.200907975574158e-31,
+      "prior_longdouble_subtraction_relative_residual": 3.0717668815625157e-15,
+      "weighted_jacobian_symmetry_residual": 5.169595795504149e-15,
+      "fused_passive_jacobian_relative_error": 0.0,
+      "production_force_absolute_scaled_residual": 5.0266665829745705e-12,
+      "extended_epsilon": 1.0842021724855044e-19,
+      "reference_is_not_evolution": true
+    },
+    {
+      "control": "radial_fabricado",
+      "fields": 1,
+      "maximum_absolute_error": 1.0679391398982219e-16,
+      "dx": 0.0625,
+      "radius": 2.0,
+      "L": 4,
+      "step": 0.003
+    },
+    {
+      "control": "radial_fabricado",
+      "fields": 3,
+      "maximum_absolute_error": 1.209969624493823e-16,
+      "dx": 0.0625,
+      "radius": 2.0,
+      "L": 4,
+      "step": 0.003
+    },
+    {
+      "stages": 7,
+      "maximum_free_global_phase_modulus_bound": 5.74651437545981e-09,
+      "maximum_frequency": 163.4275173602725,
+      "step": 0.01,
+      "time": 160
+    },
+    {
+      "stages": 6,
+      "maximum_free_global_phase_modulus_bound": 1.5651977491870639e-06,
+      "maximum_frequency": 163.4275173602725,
+      "step": 0.01,
+      "time": 160
+    },
+    {
+      "control": "coste_observacion_pasiva_estado_fijo",
+      "wall_seconds": 4.096520337000584,
+      "interval": 0.003,
+      "measured_only": true,
+      "M2_integration_steps": 0,
+      "maximum_iterations": 4
+    }
+  ],
+  "force_audits": [
+    {
+      "method": "numpy_projection_fused_C_potential",
+      "source_sha256": "74dd2159ac951e701b3acce7f8365847874521769479c08dd8e4634c7e2e9de9",
+      "fast_math": false,
+      "action_changed": false,
+      "errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "method": "numpy_projection_fused_C_potential",
+      "source_sha256": "74dd2159ac951e701b3acce7f8365847874521769479c08dd8e4634c7e2e9de9",
+      "fast_math": false,
+      "action_changed": false,
+      "errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true
+    }
+  ],
+  "observed_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "new_M2_evolution_steps": 0,
+  "physical_gate_threshold": 0.02,
+  "scope": "Pruebas de implementación sobre datos existentes y soluciones fabricadas; no evolución ni aceptación M2."
+}

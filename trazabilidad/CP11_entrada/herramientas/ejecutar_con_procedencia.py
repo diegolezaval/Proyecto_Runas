@@ -94,14 +94,6 @@ def verify_receipt(path):
         errors.append('run_identity')
     for original, expected in {**receipt['identity']['input_hashes'], **receipt['identity']['code_hashes']}.items():
         actual_path = run / receipt['source_snapshots'][original] if original in receipt['source_snapshots'] else ROOT / original
-        # CP12 conserva el contexto CP11 sin reescribir sus recibos históricos.
-        if original not in receipt['source_snapshots'] and (not actual_path.is_file() or digest(actual_path) != expected):
-            historical = ROOT / 'trazabilidad/CP11_entrada' / original
-            inventory_path = ROOT / 'trazabilidad/CP11_entrada/archivos_sha256.json'
-            if historical.is_file() and inventory_path.is_file():
-                inventory = json.loads(inventory_path.read_text())
-                if inventory.get(original) == expected and digest(historical) == expected:
-                    actual_path = historical
         if not actual_path.is_file() or digest(actual_path) != expected:
             errors.append('source:' + original)
     for name, expected in receipt.get('output_hashes', {}).items():
