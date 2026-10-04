@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "repository": "diegolezaval/Proyecto_Runas",
+  "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+  "scientific_head": "54bfa7a705edcf7d0eda13de530d4d9c532db4d6",
+  "tree": "501f7ee9584cbe2cd79a3da486e15177aa24c94f",
+  "merge_commit": "ed8d818b622a0687aeb56d34ca9e3913bd54e124",
+  "pull_request": 1,
+  "CP10_commit": "47b5e56cf3fd9f90b865ad2ddcaa313c2b43fa81",
+  "CP10_tag_object": "b361fae70ba0c90a4d7a73e6f9049881bc702982",
+  "zip_filename": "Proyecto_Runas_M2_4_2_CP11_DIAGNOSTICO_RADIAL_CHI.zip",
+  "zip_bytes": 85069747,
+  "zip_sha256": "dafff205020e32b8b7128ccdb10a3288aad17691f1d1c4e5a486031f1e6389b0",
+  "attachments": [
+    {
+      "filename": "Comprobacion_clon_CP11.json",
+      "bytes": 2319,
+      "sha256": "826b9fbd990ec38b0622c9fd2fd22936ce9b24486781e68e428c3484c1b39c4e"
+    },
+    {
+      "filename": "regresion_clon_CP11.json",
+      "bytes": 34768,
+      "sha256": "ac6692f24de70d777ef723b88e98583459b02e37f0302b555852bab148886e15"
+    },
+    {
+      "filename": "Reproduccion_diagnosticos_clon_CP11.json",
+      "bytes": 4155,
+      "sha256": "6beaa29df21993d85404498fa549da12cf6be8f01adc81f6f5193bc45b6fd020"
+    },
+    {
+      "filename": "recibos_verificacion_clon_CP11.zip",
+      "bytes": 277745,
+      "sha256": "a8dd6ac088c7983faace0569668a8692690597dd72a49c27596a3d6dd1403de1"
+    }
+  ],
+  "source_scientific_gate": "REFINAMIENTO_PENDIENTE",
+  "physical_gate_threshold": 0.02,
+  "new_M2_evolution_steps": 0,
+  "administrative_branch": "publicacion/cp11",
+  "administrative_branch_must_not_be_merged_into_main": true,
+  "authentication": "GitHub Actions ephemeral repository token; no exported credentials"
+}
