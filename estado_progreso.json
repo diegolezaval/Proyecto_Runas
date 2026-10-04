@@ -924,10 +924,28 @@
       "stages_closed": [],
       "stages_reopened": [],
       "note": "Prerregistro y seis controles recuperados. Estado del par instrumentado ausente tras limpieza; la información previa de τ=16 se conserva como antecedente de sesión no reverificable."
+    },
+    {
+      "event": "CP12_RECONSTRUCCION_EXPLICITA_PRERREGISTRADA",
+      "date": "2026-10-04T15:53:41.905297+00:00",
+      "scientific_checkpoint_unchanged": true,
+      "protocol": "datos/reconstruccion_CP12.json",
+      "run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/PRERREGISTRO_RECONSTRUCCION_CP12.md"
+    },
+    {
+      "event": "CP12_REINICIO_TAU0_RECUPERADO_DE_RESPALDO",
+      "date": "2026-10-04T17:09:03.158169+00:00",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/RETOMA_CP12_20261004.md"
     }
   ],
   "next_actions": [
-    "Recuperar el paquete de trabajo CP12 y verificar el reinicio antes de continuar. El estado τ=16 observado en la sesión anterior no está disponible. Si no existe copia, documentar y prerregistrar la reconstrucción del tramo perdido antes de repetirlo; no iniciar silenciosamente el par desde cero.",
+    "Reconstruir CP12 desde el reinicio τ=0 recuperado, verificado y respaldado: 0→8→16 y, sólo si reproduce, mismo ID hasta 160; respaldo comprobado antes de cada frontera.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -941,7 +959,7 @@
     "Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Recuperar el paquete de trabajo CP12 y verificar el reinicio antes de continuar. El estado τ=16 observado en la sesión anterior no está disponible. Si no existe copia, documentar y prerregistrar la reconstrucción del tramo perdido antes de repetirlo; no iniciar silenciosamente el par desde cero.",
+  "next_calculation": "Reconstruir CP12 desde el reinicio τ=0 recuperado, verificado y respaldado: 0→8→16 y, sólo si reproduce, mismo ID hasta 160; respaldo comprobado antes de cada frontera.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [],
   "research_in_progress": [],
@@ -959,9 +977,10 @@
   },
   "checkpoint_kind": "CIENTIFICO",
   "automatic_continuation_paused": {
-    "reason": "ESTADO_CP12_NO_DISPONIBLE_TRAS_LIMPIEZA",
-    "evidence": "informes/INCIDENTE_RECUPERACION_CP12.md",
-    "resume_ready": false,
+    "reason": "REINICIO_TAU0_RECUPERADO_Y_VERIFICADO_LISTO_PARA_RECONSTRUIR",
+    "evidence": "trazabilidad/CP12_reconstruccion/respaldos/tau0000.json",
+    "resume_ready": true,
+    "reconstruction_authorized": true,
     "last_scientific_checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
     "fundamental_model_change_authorized": false,
     "M2_exhaustion_claimed": false,

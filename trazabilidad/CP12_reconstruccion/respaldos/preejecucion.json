@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "time": null,
+  "verified_at": "2026-10-04T16:00:14.994275+00:00",
+  "library_file_id": "libfile_306be63ad240819191cde727cde4c804",
+  "file_id": "file_000000006f9081f699f3a4fb2a00971e",
+  "library_version": 0,
+  "file_name": "Proyecto_Runas_CP12_PREEJECUCION_ATOMICA.zip",
+  "zip_sha256": "fb83d0017b24954fa33508e763fc07dbe126fcef11b18ab697e895eed9c5a38a",
+  "state_sha256": null,
+  "receipt_sha256": "16780b43d34e22285349ee323a2e5d4c8399086da301d9950083c04e70387873",
+  "configuration_sha256": "148dfb982ce59ff5e9e7696749f58c77584c96c2833ca5fb4bd03122af5e5541",
+  "download_verification": {
+    "passed": true,
+    "zip_sha256": "fb83d0017b24954fa33508e763fc07dbe126fcef11b18ab697e895eed9c5a38a",
+    "time": null,
+    "payload_files": 249,
+    "all_payload_hashes_verified": true,
+    "independent_extracted_check": {
+      "passed": true,
+      "tests": {
+        "original_identity_and_fourteen_files": true,
+        "receipt_integrity": true,
+        "six_controls_intact": true,
+        "one_current_positive_control": true,
+        "original_stage_records_unchanged": true,
+        "physical_gate_unchanged": true,
+        "observed_BLAS_threads_one": true,
+        "new_receipt_explicitly_declares_reconstruction": true,
+        "no_physical_segment_started": true,
+        "all_inputs_captured_before_execution": true
+      },
+      "time": null,
+      "run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
+      "M2_steps_executed": 0,
+      "observer_changes": false,
+      "correction_tested": false,
+      "causal_inference_allowed": false,
+      "receipt": {
+        "passed": true,
+        "run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
+        "status": "REGISTRADA",
+        "issues": [],
+        "scope": "Fuentes de ejecución capturadas y salidas; no aceptación científica."
+      }
+    },
+    "stderr": "",
+    "downloaded_path": "../CP12_descargas/preejecucion_atomica/Proyecto_Runas_CP12_PREEJECUCION_ATOMICA.zip",
+    "extracted_path": "/workspace/scratch/3bbc09a5243b/CP12_verificados/preejecucion_atomica/Proyecto_Runas"
+  },
+  "previous_backup": null,
+  "scope": "Procedencia previa íntegra; cero pasos M2, no checkpoint científico CP12 cerrado."
+}

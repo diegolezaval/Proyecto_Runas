@@ -184,19 +184,21 @@
     },
     {
       "id": "CP12_par_instrumentado",
-      "status": "INTERRUMPIDA_ESTADO_NO_DISPONIBLE",
+      "status": "PAUSADA_REANUDABLE",
       "run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
-      "resume": false,
+      "resume": true,
       "completed": false,
       "physical_gate_passed": false,
       "cause_certified": false,
       "correction_tested": false,
       "preregistered_campaign": "datos/ensayo_causal_chi_CP12.json",
-      "evidence": "informes/INCIDENTE_RECUPERACION_CP12.md",
-      "evidence_role": "INCIDENTE_ADMINISTRATIVO_NO_RESULTADO_FISICO",
+      "evidence": "trazabilidad/CP12_reconstruccion/respaldos/tau0000.json",
+      "evidence_role": "REINICIO_DE_TRABAJO_VERIFICADO_NO_CIERRE_CIENTIFICO",
       "last_time_observed_in_prior_session": 16.0,
       "prior_session_arrays_not_currently_available": true,
-      "missing_state_is_scientific_negative": false
+      "missing_state_is_scientific_negative": false,
+      "current_verified_time": 0.0,
+      "recovery_preregistration": "informes/PRERREGISTRO_RECONSTRUCCION_CP12.md"
     }
   ],
   "failures_preserved": "trazabilidad/reanudacion_CP02/inventario.json",
