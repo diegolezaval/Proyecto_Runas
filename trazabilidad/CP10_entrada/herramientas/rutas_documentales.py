@@ -35,25 +35,12 @@ def local_target(document, link, root=ROOT):
     return document.parent / target
 
 
-def document_links(document):
-    """Los bloques de ecuaciones declarados con \\[ ... \\] no son enlaces.
-
-    Sólo se omiten bloques con delimitadores en líneas propias; los enlaces
-    documentales fuera del bloque siguen verificándose, incluidos los rotos.
-    """
-    content = document.read_text(encoding='utf-8')
-    content = re.sub(r'(?ms)^[ \t]*\\\[[ \t]*\n.*?^[ \t]*\\\][ \t]*$', '', content)
-    # Una expresión escrita como código tampoco es un enlace renderizado.
-    content = re.sub(r'(?s)(`+)(.*?)\1', '', content)
-    return re.findall(r'\]\(([^)]+)\)', content)
-
-
 def missing_links(root=ROOT):
     missing = []
     for document in sorted(root.rglob('*.md')):
         if any(x in document.parts for x in ['.git', '.venv', '__pycache__']):
             continue
-        for link in document_links(document):
+        for link in re.findall(r'\]\(([^)]+)\)', document.read_text(encoding='utf-8')):
             target = local_target(document, link, root)
             if target is not None and not target.exists():
                 missing.append(f'{document.relative_to(root)} -> {link}')

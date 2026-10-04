@@ -916,10 +916,18 @@
       "new_M2_evolution_steps": 0,
       "automatic_continuation_paused": true,
       "report": "informes/ENTREGA_11_DIAGNOSTICO_RADIAL_CHI.md"
+    },
+    {
+      "checkpoint": "CP12_RECUPERACION_BLOQUEADA",
+      "report": "informes/INCIDENTE_RECUPERACION_CP12.md",
+      "scientific_checkpoint_unchanged": true,
+      "stages_closed": [],
+      "stages_reopened": [],
+      "note": "Prerregistro y seis controles recuperados. Estado del par instrumentado ausente tras limpieza; la información previa de τ=16 se conserva como antecedente de sesión no reverificable."
     }
   ],
   "next_actions": [
-    "Detener nuevas campañas: la diferencia corta de respuesta forzada requiere distinguir la historia del defecto radial y la fuente acoplada, no guardada en CP10. Formular evidencia discriminante y prerregistrar antes de continuar; no otra malla, más tiempo ni fases ajustadas.",
+    "Recuperar el paquete de trabajo CP12 y verificar el reinicio antes de continuar. El estado τ=16 observado en la sesión anterior no está disponible. Si no existe copia, documentar y prerregistrar la reconstrucción del tramo perdido antes de repetirlo; no iniciar silenciosamente el par desde cero.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -933,7 +941,7 @@
     "Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Detener nuevas campañas: la diferencia corta de respuesta forzada requiere distinguir la historia del defecto radial y la fuente acoplada, no guardada en CP10. Formular evidencia discriminante y prerregistrar antes de continuar; no otra malla, más tiempo ni fases ajustadas.",
+  "next_calculation": "Recuperar el paquete de trabajo CP12 y verificar el reinicio antes de continuar. El estado τ=16 observado en la sesión anterior no está disponible. Si no existe copia, documentar y prerregistrar la reconstrucción del tramo perdido antes de repetirlo; no iniciar silenciosamente el par desde cero.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [],
   "research_in_progress": [],
@@ -951,9 +959,12 @@
   },
   "checkpoint_kind": "CIENTIFICO",
   "automatic_continuation_paused": {
-    "reason": "AMBIGUEDAD_CAUSAL_POR_HISTORIA_DE_FUENTE_NO_GUARDADA",
-    "evidence": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+    "reason": "ESTADO_CP12_NO_DISPONIBLE_TRAS_LIMPIEZA",
+    "evidence": "informes/INCIDENTE_RECUPERACION_CP12.md",
+    "resume_ready": false,
+    "last_scientific_checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
     "fundamental_model_change_authorized": false,
-    "M2_exhaustion_claimed": false
+    "M2_exhaustion_claimed": false,
+    "missing_state_is_scientific_negative": false
   }
 }

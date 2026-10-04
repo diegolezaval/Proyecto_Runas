@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+  "tests": {
+    "all_938_CP10_files_recoverable": true,
+    "no_original_file_removed_or_renamed": true,
+    "all_original_scientific_evidence_and_chapters_unchanged": true,
+    "unchanged:herramientas/modelo_m2.py": true,
+    "unchanged:herramientas/continuar_no_radial_m2.py": true,
+    "unchanged:herramientas/continuar_no_radial_adaptativo.py": true,
+    "unchanged:herramientas/fuerza_potencial_m2.c": true,
+    "unchanged:datos/theta_comun.json": true,
+    "unchanged:datos/ensayo_no_radial_CP06.json": true,
+    "unchanged:datos/ensayo_mediador_CP10.json": true,
+    "all_33_stage_identities_and_gates_preserved": true,
+    "other_32_stage_records_identical": true,
+    "E00_E01_C0_not_reopened": true,
+    "general_research_stages_remain_partial": true,
+    "no_active_runs_no_primordial_declared": true,
+    "latest_valid_M2_state_is_still_CP10": true,
+    "diagnostico_radial:receipt_integrity_and_expected_status": true,
+    "diagnostico_radial:unchanged_physical_gate_and_no_evolution": true,
+    "contraste_fuente:receipt_integrity_and_expected_status": true,
+    "contraste_fuente:unchanged_physical_gate_and_no_evolution": true,
+    "respuesta_forzada:receipt_integrity_and_expected_status": true,
+    "respuesta_forzada:unchanged_physical_gate_and_no_evolution": true,
+    "respuesta_forzada_precisa:receipt_integrity_and_expected_status": true,
+    "respuesta_forzada_precisa:unchanged_physical_gate_and_no_evolution": true,
+    "metric_and_algebra_decisions_match_data": true,
+    "negative_frozen_phase_gate_preserved": true,
+    "arithmetic_failure_preserved_without_physical_inference": true,
+    "extended_reference_meets_same_tolerance": true,
+    "forced_response_bound_and_stop_delimited": true,
+    "CP10_original_checkpoint_reconstructed_and_verified": true,
+    "diagnostico_radial:reproduction_byte_identical": true,
+    "contraste_fuente:reproduction_byte_identical": true,
+    "respuesta_forzada_precisa:reproduction_byte_identical": true
+  },
+  "original_files_recoverable": 938,
+  "missing_originals": [],
+  "receipts": [
+    {
+      "passed": true,
+      "run_id": "95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa",
+      "status": "COMPLETADA",
+      "issues": [],
+      "scope": "Fuentes de ejecución capturadas y salidas; no aceptación científica."
+    },
+    {
+      "passed": true,
+      "run_id": "f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9",
+      "status": "COMPLETADA",
+      "issues": [],
+      "scope": "Fuentes de ejecución capturadas y salidas; no aceptación científica."
+    },
+    {
+      "passed": true,
+      "run_id": "9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817",
+      "status": "FALLIDA",
+      "issues": [],
+      "scope": "Fuentes de ejecución capturadas y salidas; no aceptación científica."
+    },
+    {
+      "passed": true,
+      "run_id": "74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed",
+      "status": "COMPLETADA",
+      "issues": [],
+      "scope": "Fuentes de ejecución capturadas y salidas; no aceptación científica."
+    }
+  ],
+  "reproductions": [
+    {
+      "case": "diagnostico_radial",
+      "returncode": 0,
+      "outputs": [
+        "modos_radiales.csv",
+        "resultados.json"
+      ],
+      "byte_identical": true,
+      "new_M2_evolution_steps": 0,
+      "error": null
+    },
+    {
+      "case": "contraste_fuente",
+      "returncode": 0,
+      "outputs": [
+        "resultados.json"
+      ],
+      "byte_identical": true,
+      "new_M2_evolution_steps": 0,
+      "error": null
+    },
+    {
+      "case": "respuesta_forzada_precisa",
+      "returncode": 0,
+      "outputs": [
+        "momentos_duhamel.csv",
+        "resultados.json"
+      ],
+      "byte_identical": true,
+      "new_M2_evolution_steps": 0,
+      "error": null
+    }
+  ],
+  "new_M2_evolution_steps": 0,
+  "physical_gate": "REFINAMIENTO_PENDIENTE",
+  "physical_gate_threshold": 0.02,
+  "scope": "Identidad, antecedentes, puertas y reproducción de diagnósticos en temporales; no evolución, aceptación física ni certificación del continuo."
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "model": "M2",
+  "campaign_directory": "validacion/P06/no_radial/CP12_recuperacion",
+  "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+  "registered_before_execution": true,
+  "checkpoint_base": "CP11_DIAGNOSTICO_RADIAL_CHI",
+  "question": "¿Son íntegros los antecedentes recuperados y queda explícitamente bloqueada la continuación cuyo estado falta?",
+  "cases": {
+    "revision_integridad": {
+      "entrypoint": "herramientas/revisar_recuperacion_CP12.py",
+      "operation": "revision_recuperacion_sin_evolucion",
+      "configuration": {
+        "M2_steps": 0,
+        "physical_gate_threshold": 0.02,
+        "resume_ready": false
+      },
+      "extra_code": [
+        "herramientas/ejecutar_protocolo.py"
+      ],
+      "inputs": [
+        "informes/INCIDENTE_RECUPERACION_CP12.md",
+        "estado_progreso.json",
+        "datos/registro_calculos.json",
+        "trazabilidad/CP11_entrada/archivos_sha256.json",
+        "trazabilidad/CP11_entrada/estado_progreso.json",
+        "datos/ensayo_causal_chi_CP12.json",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__*/procedencia.json"
+      ]
+    }
+  },
+  "decision_policy": "passed sólo verifica la integridad recuperada; resume_ready=false impide atribución, corrección o cierre CP12 sin recuperar el estado. Cero nuevas evoluciones físicas."
+}

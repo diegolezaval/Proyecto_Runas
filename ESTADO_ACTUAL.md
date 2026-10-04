@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Detener nuevas campañas: la diferencia corta de respuesta forzada requiere distinguir la historia del defecto radial y la fuente acoplada, no guardada en CP10. Formular evidencia discriminante y prerregistrar antes de continuar; no otra malla, más tiempo ni fases ajustadas.
+- Recuperar el paquete de trabajo CP12 y verificar el reinicio antes de continuar. El estado τ=16 observado en la sesión anterior no está disponible. Si no existe copia, documentar y prerregistrar la reconstrucción del tramo perdido antes de repetirlo; no iniciar silenciosamente el par desde cero.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -86,7 +86,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/ENTREGA_11_DIAGNOSTICO_RADIAL_CHI.md](informes/ENTREGA_11_DIAGNOSTICO_RADIAL_CHI.md).
+Informe de esta entrega: [informes/INCIDENTE_RECUPERACION_CP12.md](informes/INCIDENTE_RECUPERACION_CP12.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

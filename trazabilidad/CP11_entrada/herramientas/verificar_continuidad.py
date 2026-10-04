@@ -1,7 +1,7 @@
 """Integridad editorial, antecedentes y estados; no ejecuta física histórica."""
 from pathlib import Path
 import ast, json, re, hashlib, zipfile, argparse
-from rutas_documentales import local_target, document_links
+from rutas_documentales import local_target
 import xml.etree.ElementTree as ET
 R=Path(__file__).resolve().parents[1]
 issues=[]; counts=dict(json=0,python=0,svg=0,local_links=0)
@@ -12,7 +12,7 @@ for p in R.rglob('*'):
         elif p.suffix=='.py':ast.parse(p.read_text());counts['python']+=1
         elif p.suffix=='.svg':ET.parse(p);counts['svg']+=1
         elif p.suffix=='.md':
-            for link in document_links(p):
+            for link in re.findall(r'\]\(([^)]+)\)',p.read_text()):
                 if re.match(r'\w+://',link) or link.startswith('#'):continue
                 target=link.split('#')[0]
                 if not target or ' ' in target or '`' in target:continue
