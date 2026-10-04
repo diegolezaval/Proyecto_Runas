@@ -1,20 +1,19 @@
 {
   "schema_version": "1.0.0",
   "passed": true,
+  "verified_at": "2026-10-04T17:08:01.261393+00:00",
   "time": 0.0,
-  "verified_at": "2026-10-04T20:45:03.265945+00:00",
-  "library_file_id": "libfile_2af25731aeb88191b2abbb13e507aa47",
-  "file_id": "file_0000000044f081f5b2a85123b80875c9",
-  "file_name": "Proyecto_Runas_CP12_tau0000_RETOMA2.zip",
-  "zip_sha256": "163e7fca652c8d926a75e442d074db3af0d991408cdb27c790d181db360866cc",
+  "library_file_id": "libfile_01fc669445848191b212e2ce0af9f15c",
+  "file_id": "file_00000000b654820c99505d4cd84613cf",
+  "zip_sha256": "095d24aea32c1299296d3889a37c3f34ad15cbf83a0a49c5a09d92484d508e2c",
   "state_sha256": "cb63bb745f11d69e346dbf384de7042f5ca25745119445ef89a02dffa316f3e1",
-  "receipt_sha256": "e249f598a547e3c1c273fb1ec15a5e665684505e4f504cca49295cda356a7dae",
+  "receipt_sha256": "be751a9be23555f75cfb28683f75854709321c75628056267d761ba3f12f4370",
   "configuration_sha256": "148dfb982ce59ff5e9e7696749f58c77584c96c2833ca5fb4bd03122af5e5541",
   "download_verification": {
     "passed": true,
-    "zip_sha256": "163e7fca652c8d926a75e442d074db3af0d991408cdb27c790d181db360866cc",
+    "zip_sha256": "095d24aea32c1299296d3889a37c3f34ad15cbf83a0a49c5a09d92484d508e2c",
     "time": 0.0,
-    "payload_files": 266,
+    "payload_files": 262,
     "all_payload_hashes_verified": true,
     "independent_extracted_check": {
       "passed": true,
@@ -58,7 +57,7 @@
       "M2_steps_executed": 0,
       "state_sha256": "cb63bb745f11d69e346dbf384de7042f5ca25745119445ef89a02dffa316f3e1",
       "configuration_sha256": "148dfb982ce59ff5e9e7696749f58c77584c96c2833ca5fb4bd03122af5e5541",
-      "receipt_sha256": "e249f598a547e3c1c273fb1ec15a5e665684505e4f504cca49295cda356a7dae",
+      "receipt_sha256": "be751a9be23555f75cfb28683f75854709321c75628056267d761ba3f12f4370",
       "observation_count": 1,
       "metadata": [
         {
@@ -102,17 +101,14 @@
       "receipt": {
         "passed": true,
         "run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
-        "status": "INTERRUMPIDA",
+        "status": "PAUSADA_REANUDABLE",
         "issues": [],
         "scope": "Fuentes de ejecución capturadas y salidas; no aceptación científica."
       }
     },
-    "stderr": "",
-    "downloaded_path": "../descarga_tau0000_retoma2/Proyecto_Runas_CP12_tau0000_RETOMA2.zip",
-    "extracted_path": "/workspace/scratch/a3d1ffbab034/comprobacion_tau0000_retoma2/Proyecto_Runas"
+    "downloaded_path": "/workspace/scratch/a3d1ffbab034/respaldos_recuperados/Proyecto_Runas_CP12_REINICIO_tau0000_VERIFICADO.zip",
+    "extracted_path": "/workspace/scratch/a3d1ffbab034/restauracion_tau0000/Proyecto_Runas"
   },
-  "previous_verified_backup": "095d24aea32c1299296d3889a37c3f34ad15cbf83a0a49c5a09d92484d508e2c",
-  "original_protocol_unchanged": true,
-  "scientific_checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
-  "original_scientific_code_matches_GitHub": true
+  "original_scientific_code_matches_GitHub": true,
+  "recovered_from_persistent_artifact": true
 }

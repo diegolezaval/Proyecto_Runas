@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "model": "M2",
+  "checkpoint_base": "CP11_DIAGNOSTICO_RADIAL_CHI",
+  "campaign_directory": "validacion/P06/no_radial/CP12_interpretacion",
+  "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+  "registered_before_execution": true,
+  "registered_at": "2026-10-04T20:50:23.769995+00:00",
+  "scientific_run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
+  "question": "Interpretar las respuestas ya integradas y exigir la reproducción y las puertas originales, sin evolucionar ni corregir M2.",
+  "cases": {
+    "interpretacion_causal": {
+      "entrypoint": "herramientas/interpretar_presupuesto_CP12.py",
+      "operation": "lectura_offline_de_respuestas_CP12_verificadas",
+      "configuration": {
+        "time": 160,
+        "M2_steps": 0,
+        "physical_gate_threshold": 0.02,
+        "groups": {
+          "raw": {
+            "inicial": [
+              0
+            ],
+            "operador": [
+              1
+            ],
+            "fuente_total": [
+              2,
+              3,
+              4
+            ]
+          },
+          "coupled": {
+            "inicial": [
+              0
+            ],
+            "operador_total": [
+              1,
+              2
+            ],
+            "transferencia_total": [
+              3,
+              4
+            ]
+          }
+        }
+      },
+      "extra_code": [
+        "herramientas/ejecutar_protocolo.py",
+        "herramientas/fuerza_potencial_m2.c",
+        "herramientas/referencia_pasiva_CP12.c"
+      ],
+      "inputs": [
+        "datos/ensayo_causal_chi_CP12.json",
+        "informes/PROTOCOLO_CP12_CAUSA_CHI.md",
+        "informes/LECTURA_PRESUPUESTO_CP12.md",
+        "validacion/P06/no_radial/CP12/par_instrumentado__a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d/CP12_par_estado.npz",
+        "validacion/P06/no_radial/CP12/par_instrumentado__a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d/CP12_par.json",
+        "validacion/P06/no_radial/CP12/par_instrumentado__a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d/respuestas_finales.npz",
+        "validacion/P06/no_radial/CP12/par_instrumentado__a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d/serie_presupuestos.json",
+        "validacion/P06/no_radial/CP12/par_instrumentado__a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d/identidades_algebraicas.json",
+        "validacion/P06/no_radial/CP12/par_instrumentado__a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d/procedencia.json",
+        "validacion/P06/no_radial/CP12/par_instrumentado__a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d/configuration.json",
+        "trazabilidad/CP12_reconstruccion/respaldos/tau0160.json"
+      ]
+    }
+  }
+}

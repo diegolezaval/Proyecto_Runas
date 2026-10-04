@@ -1,0 +1,11 @@
+{
+  "recorded_at": "2026-10-04T20:59:10.104932+00:00",
+  "kind": "METADATOS_DE_EJECUCION_EN_COPIA_ADMINISTRATIVA",
+  "initial_command": "regresion_estructural.py",
+  "error": "NotADirectoryError: .git/objects; el puntero de un worktree era un archivo, no un directorio",
+  "scientific_state_modified": false,
+  "physical_calculation_interrupted": false,
+  "resolution": "Verificar la exportación sin metadatos Git; ninguna exclusión ni herramienta científica modificada",
+  "resolved": true,
+  "verification": "trazabilidad/CP12_reconstruccion/regresion_retoma2.json"
+}
