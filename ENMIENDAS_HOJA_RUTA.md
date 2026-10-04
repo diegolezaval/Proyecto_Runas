@@ -33,3 +33,22 @@ Se corrige infraestructura de continuidad, entorno, enlaces de instantáneas, ve
 ## A07 · CP10: discriminación temporal y espacial del mediador
 
 Se ejecuta el protocolo prerregistrado sobre la base arquitectónica CP09, con procedencia previa, dos resoluciones nuevas, pilotos reanudados y recuperación de estados válidos. La comparación y su puerta se registran como evidencia derivada; el registro apunta al resultado vigente y conserva el resultado CP08. No se modifica Θ, la acción M2, los cinco archivos numéricos base, ninguna puerta original o dependencia, ni la hoja de ruta original. E00/E01/C0 permanecen cerradas; E03/E04/RES0/RES1 siguen PARCIALES. Se incorpora un adaptador compatible para futuros protocolos M2 y controles estructurales aislados; no se migra a GitHub ni se reorganiza el corpus.
+# Enmienda CP11 · Diagnóstico de χ y parada delimitada
+
+Se conserva íntegra la hoja de ruta original. CP11 continúa exclusivamente
+el pendiente de CP10 sobre estados guardados, con operador radial, métricas
+independientes, modos discretos, fuente congelada y respuesta forzada.
+El [informe](informes/ENTREGA_11_DIAGNOSTICO_RADIAL_CHI.md),
+[capítulo 31](tratado/31_diagnostico_radial_del_mediador.md) y registro
+identifican evidencia y límites. La puerta original 2 % no cambia y sigue
+sin superarse. Ninguna etapa general se cierra.
+
+El contraste modal libre es negativo según su criterio prerregistrado.
+Se descarta como explicación suficiente y no se prueban fases ajustadas.
+La causa acoplada necesita historia temporal de fuente no guardada; se
+detiene antes de otra campaña. No se declara inestabilidad física ni
+agotamiento de M2. El control aritmético fallido y su referencia extendida
+se conservan, con [enmienda de implementación](informes/ENMIENDA_CP11_PRECISION_DEFECTO.md)
+anterior a la ejecución correctiva y sin relajar tolerancias.
+
+`main` se actualiza sólo mediante PR verificado; CP10 permanece inmutable.

@@ -1,0 +1,615 @@
+{
+  "schema_version": "1.0.0",
+  "authority": "Metadatos de organización y enlaces; no define física, parámetros, estados de etapa ni puertas.",
+  "archive_root": "Proyecto_Runas",
+  "snapshot_document_roots": [
+    "trazabilidad/reanudacion_CP02",
+    "trazabilidad/CP07_entrada",
+    "trazabilidad/CP07",
+    "trazabilidad/CP08_entrada",
+    "trazabilidad/CP08_arquitectura_entrada",
+    "trazabilidad/CP09_entrada",
+    "trazabilidad/CP10_codigo_entrada"
+  ],
+  "generated_views": [
+    {
+      "generator": "herramientas/generar.py",
+      "outputs": [
+        "fichas/*.md",
+        "graficos/atlas.svg",
+        "graficos/runas/*.svg",
+        "graficos/tecnicos/*.svg",
+        "graficos/elementales/*.svg",
+        "tratado/05_parametros.md",
+        "tratado/06_revision.md",
+        "Runica_Tratado_integrado.md"
+      ],
+      "inputs": [
+        "datos/geometria.json",
+        "datos/parametros.json",
+        "datos/modelos.json",
+        "datos/modulos.json",
+        "datos/correspondencia.json",
+        "datos/aceptacion_m2.json",
+        "datos/revision.json",
+        "tratado/*.md"
+      ],
+      "scientific_solver": false
+    },
+    {
+      "generator": "herramientas/verificar.py",
+      "outputs": [
+        "validacion/informe.json",
+        "validacion/informe.md",
+        "tratado/07_resultados.md"
+      ],
+      "inputs": [
+        "datos/*.json",
+        "validacion/microscopia.json",
+        "validacion/correspondencia_micro.json",
+        "validacion/complecion_escalar.json",
+        "validacion/preparacion_motor.json"
+      ],
+      "scientific_solver": false,
+      "scope": "Casos reducidos y lectura de resultados guardados; no campaña fundamental."
+    },
+    {
+      "generator": "herramientas/resultados_micro.py",
+      "outputs": [
+        "tratado/11_resultados_micro.md"
+      ],
+      "inputs": [
+        "validacion/correspondencia_micro.json",
+        "validacion/complecion_escalar.json",
+        "validacion/preparacion_motor.json"
+      ],
+      "scientific_solver": false
+    },
+    {
+      "generator": "herramientas/catalogo_aceptacion_m2.py",
+      "outputs": [
+        "datos/aceptacion_m2.json",
+        "tratado/17_aceptacion_catalogo.md"
+      ],
+      "inputs": [
+        "datos/geometria.json"
+      ],
+      "scientific_solver": false,
+      "requires_scientific_review": true,
+      "scope": "La política de aceptación está codificada; no ejecutar como trámite editorial sin revisión de nueva evidencia."
+    },
+    {
+      "generator": "herramientas/figuras_capilaridad.py",
+      "outputs": [
+        "graficos/M2_capilaridad.svg"
+      ],
+      "inputs": [
+        "validacion/capilaridad/resultados.json"
+      ],
+      "scientific_solver": false
+    },
+    {
+      "generator": "herramientas/figuras_m2.py",
+      "outputs": [
+        "graficos/M2_guia_inestable.svg",
+        "graficos/M2_evidencia_numerica.svg",
+        "graficos/M2_terminal_y_canal.svg"
+      ],
+      "inputs": [
+        "validacion/cierre_m2.json",
+        "validacion/guia_m2.json",
+        "validacion/contrastes_r1.json",
+        "validacion/m2_guia_perfil.csv",
+        "validacion/m2_perfil_convergente.csv",
+        "validacion/m2_dinamica_*.csv"
+      ],
+      "scientific_solver": false
+    },
+    {
+      "generator": "herramientas/figuras_campana_4_2.py",
+      "outputs": [
+        "graficos/CP03_rama_reserva.svg",
+        "graficos/CP03_validez.svg",
+        "validacion/CP03_rama_reserva.png",
+        "validacion/CP03_validez.png"
+      ],
+      "inputs": [
+        "validacion/P06/rama/resultados.json",
+        "validacion/validez/resultados.json"
+      ],
+      "scientific_solver": false
+    },
+    {
+      "generator": "herramientas/figuras_preparacion_m2.py",
+      "outputs": [
+        "graficos/CP04_preparacion_radial.svg",
+        "validacion/CP04_preparacion_radial.png"
+      ],
+      "inputs": [
+        "validacion/P06/preparacion/resultados.json",
+        "validacion/P06/preparacion/*.csv"
+      ],
+      "scientific_solver": false
+    },
+    {
+      "generator": "herramientas/graficos_micro.py",
+      "outputs": [
+        "graficos/microscopia/*.svg"
+      ],
+      "inputs": [
+        "validacion/correspondencia_micro.json",
+        "validacion/perfil_radial.csv",
+        "validacion/perfil_dos_campos.csv",
+        "validacion/memoria_kerr.csv"
+      ],
+      "scientific_solver": false
+    },
+    {
+      "generator": "herramientas/generar_continuidad.py",
+      "outputs": [
+        "ESTADO_ACTUAL.md",
+        "trazabilidad/arquitectura/indice_trazabilidad.json"
+      ],
+      "inputs": [
+        "estado_progreso.json",
+        "VERSIONES.json",
+        "datos/estado_evidencia.json",
+        "datos/linaje_afirmaciones.json",
+        "datos/registro_calculos.json",
+        "datos/arquitectura.json"
+      ],
+      "scientific_solver": false
+    },
+    {
+      "generator": "herramientas/diagnosticar_mediador_CP10.py",
+      "outputs": [],
+      "derived_evidence": [
+        "validacion/P06/no_radial/CP10/diagnostico_guardado__*/diagnostico.json"
+      ],
+      "inputs": [
+        "validacion/P06/no_radial/dop853e9_*_estado.npz",
+        "validacion/P06/no_radial/resultados.json",
+        "datos/theta_comun.json"
+      ],
+      "scientific_solver": false,
+      "scope": "Análisis guardado de las tres mallas declaradas; no evolución ni nueva autoridad manual."
+    },
+    {
+      "generator": "herramientas/comparar_mediador_CP10.py",
+      "outputs": [
+        "validacion/P06/no_radial/CP10/comparacion_final__*/comparaciones.csv",
+        "validacion/P06/no_radial/CP10/comparacion_final__*/CP10_errores_mediador.svg"
+      ],
+      "derived_evidence": [
+        "validacion/P06/no_radial/CP10/comparacion_final__*/resultados.json"
+      ],
+      "inputs": [
+        "validacion/P06/no_radial/CP10/temporal_h0125__*/procedencia.json",
+        "validacion/P06/no_radial/CP10/espacial_h00625__*/procedencia.json",
+        "validacion/P06/no_radial/CP10/temporal_h0125__*/*_estado.npz",
+        "validacion/P06/no_radial/CP10/espacial_h00625__*/*_estado.npz",
+        "validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/resultados.json",
+        "datos/ensayo_mediador_CP10.json",
+        "datos/ensayo_no_radial_CP06.json",
+        "datos/theta_comun.json"
+      ],
+      "scientific_solver": false,
+      "requires_scientific_review": true,
+      "scope": "Deriva evidencia y aplica puertas desde estados concluidos; CSV/SVG son vistas del mismo evaluador."
+    },
+    {
+      "generator": "herramientas/generar_resumen_CP10.py",
+      "outputs": [
+        "informes/RESUMEN_NUMERICO_CP10.md"
+      ],
+      "inputs": [
+        "datos/registro_calculos.json",
+        "validacion/P06/no_radial/CP10/comparacion_final__*/resultados.json",
+        "validacion/P06/no_radial/CP10/temporal_h0125__*/procedencia.json",
+        "validacion/P06/no_radial/CP10/espacial_h00625__*/procedencia.json"
+      ],
+      "scientific_solver": false,
+      "scope": "Vista de cifras y límites; no segunda autoridad numérica."
+    },
+    {
+      "generator": "herramientas/generar_continuidad.py",
+      "outputs": [
+        "README.md"
+      ],
+      "inputs": [
+        "LEEME.md"
+      ],
+      "scientific_solver": false,
+      "scope": "Puente generado a la entrada canónica; no nueva autoridad científica o de progreso."
+    }
+  ],
+  "claim_links": {
+    "R1": {
+      "equations": [
+        "tratado/03_especificacion_operacional.md",
+        "tratado/04_procedimientos_y_casos.md"
+      ],
+      "scripts": [],
+      "configurations": [
+        "datos/parametros.json",
+        "datos/modelos.json",
+        "datos/recetas.json"
+      ],
+      "data": [],
+      "figures": [],
+      "gates": [],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "EOS": {
+      "equations": [
+        "tratado/20_interfaz_y_limite_capilar.md"
+      ],
+      "scripts": [],
+      "configurations": [
+        "datos/theta_comun.json"
+      ],
+      "data": [],
+      "figures": [],
+      "gates": [
+        "validacion/capilaridad/verificacion.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "WALL": {
+      "equations": [
+        "tratado/20_interfaz_y_limite_capilar.md"
+      ],
+      "scripts": [],
+      "configurations": [
+        "datos/ensayo_capilaridad.json"
+      ],
+      "data": [
+        "validacion/capilaridad/pared.csv"
+      ],
+      "figures": [
+        "graficos/M2_capilaridad.svg"
+      ],
+      "gates": [
+        "validacion/capilaridad/verificacion.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "CAPILLARY-STATIC": {
+      "equations": [
+        "tratado/20_interfaz_y_limite_capilar.md"
+      ],
+      "scripts": [],
+      "configurations": [
+        "datos/ensayo_capilaridad.json"
+      ],
+      "data": [
+        "validacion/capilaridad/*.csv"
+      ],
+      "figures": [
+        "graficos/M2_capilaridad.svg"
+      ],
+      "gates": [
+        "validacion/capilaridad/verificacion.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "CAPILLARY-MODES": {
+      "equations": [
+        "tratado/20_interfaz_y_limite_capilar.md"
+      ],
+      "scripts": [],
+      "configurations": [
+        "datos/ensayo_capilaridad.json"
+      ],
+      "data": [],
+      "figures": [
+        "graficos/M2_capilaridad.svg"
+      ],
+      "gates": [
+        "validacion/capilaridad/verificacion.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "TUBE-NEGATIVE": {
+      "equations": [
+        "tratado/18_guia_y_terminal_desde_M2.md",
+        "tratado/21_corriente_clasificacion_y_cierre.md"
+      ],
+      "scripts": [],
+      "configurations": [],
+      "data": [
+        "validacion/m2_guia_perfil.csv"
+      ],
+      "figures": [
+        "graficos/M2_guia_inestable.svg"
+      ],
+      "gates": [
+        "validacion/verificacion_m2.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "QBALL": {
+      "equations": [
+        "tratado/14_espectro_y_dinamica_M2.md"
+      ],
+      "scripts": [],
+      "configurations": [],
+      "data": [
+        "validacion/m2_perfil_convergente.csv"
+      ],
+      "figures": [
+        "graficos/M2_evidencia_numerica.svg"
+      ],
+      "gates": [
+        "validacion/verificacion_m2.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "C0-EXTENSION": {
+      "equations": [
+        "tratado/24_exclusiones_tubulares_y_busqueda.md"
+      ],
+      "scripts": [
+        "herramientas/P04_exclusiones.py"
+      ],
+      "configurations": [
+        "datos/campana_4_2.json"
+      ],
+      "data": [
+        "validacion/P04/exclusiones/resultados.json"
+      ],
+      "figures": [],
+      "gates": [
+        "datos/P04_busqueda.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "E02-SENSITIVITY": {
+      "equations": [
+        "tratado/25_carta_validez_y_rama_reserva.md"
+      ],
+      "scripts": [
+        "herramientas/campana_validez.py",
+        "herramientas/verificar_campana_4_2.py"
+      ],
+      "configurations": [
+        "datos/campana_4_2.json"
+      ],
+      "data": [
+        "validacion/validez/resultados.json"
+      ],
+      "figures": [
+        "graficos/CP03_validez.svg"
+      ],
+      "gates": [
+        "validacion/verificacion_CP03.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "E03-BRANCH": {
+      "equations": [
+        "tratado/25_carta_validez_y_rama_reserva.md"
+      ],
+      "scripts": [
+        "herramientas/campana_rama_reserva.py",
+        "herramientas/verificar_campana_4_2.py"
+      ],
+      "configurations": [
+        "datos/campana_4_2.json"
+      ],
+      "data": [
+        "validacion/P06/rama/*.csv"
+      ],
+      "figures": [
+        "graficos/CP03_rama_reserva.svg"
+      ],
+      "gates": [
+        "validacion/verificacion_CP03.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "RES-ACCESS-BOUND": {
+      "equations": [
+        "tratado/25_carta_validez_y_rama_reserva.md"
+      ],
+      "scripts": [],
+      "configurations": [
+        "datos/theta_comun.json"
+      ],
+      "data": [],
+      "figures": [],
+      "gates": [],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "RADIAL-SETTLING": {
+      "equations": [
+        "tratado/26_preparacion_radial_condicionada.md"
+      ],
+      "scripts": [
+        "herramientas/captura_radial_m2.py",
+        "herramientas/prolongar_captura_radial.py",
+        "herramientas/diagnostico_preparacion_m2.py",
+        "herramientas/exceso_energia_preparacion.py",
+        "herramientas/verificar_preparacion_m2.py"
+      ],
+      "configurations": [
+        "datos/ensayo_preparacion_4_2.json"
+      ],
+      "data": [
+        "validacion/P06/preparacion/*_estado.npz",
+        "validacion/P06/preparacion/*_tiempo.csv"
+      ],
+      "figures": [
+        "graficos/CP04_preparacion_radial.svg"
+      ],
+      "gates": [
+        "validacion/P06/preparacion/resultados.json",
+        "validacion/verificacion_CP04.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "C7-FINITE-SYMMETRY": {
+      "equations": [
+        "tratado/27_simetria_estacionaria_y_cadenas_finitas.md"
+      ],
+      "scripts": [
+        "herramientas/auditar_simetria_C7.py"
+      ],
+      "configurations": [
+        "datos/P04_C7_simetria_CP05.json"
+      ],
+      "data": [],
+      "figures": [],
+      "gates": [
+        "validacion/P04/C7/auditoria_algebra.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "CP06-NONRADIAL": {
+      "equations": [
+        "tratado/28_estabilidad_no_radial_condicionada.md"
+      ],
+      "scripts": [
+        "herramientas/continuar_no_radial_m2.py"
+      ],
+      "configurations": [
+        "datos/ensayo_no_radial_CP06.json"
+      ],
+      "data": [
+        "trazabilidad/CP06/resultados_parciales.json"
+      ],
+      "figures": [],
+      "gates": [],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "CP07-LINEAR-ACCESS": {
+      "equations": [
+        "tratado/29_acceso_lineal_a_reserva.md"
+      ],
+      "scripts": [
+        "herramientas/dispersion_reserva_m2.py",
+        "herramientas/verificar_dispersion_colocacion.py",
+        "herramientas/auditar_acceso_lineal_m2.py",
+        "herramientas/puerta_acceso_lineal_m2.py"
+      ],
+      "configurations": [
+        "datos/ensayo_acceso_lineal_CP07.json"
+      ],
+      "data": [
+        "validacion/P06/acceso_lineal/*_estado.npz",
+        "validacion/P06/rama/perfil_w0.90000.csv"
+      ],
+      "figures": [],
+      "gates": [
+        "validacion/P06/acceso_lineal/puerta_decision.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "CP07-PHASE": {
+      "equations": [
+        "tratado/30_fase_estacionaria_sin_nodos.md"
+      ],
+      "scripts": [
+        "herramientas/auditar_fase_estacionaria_m2.py"
+      ],
+      "configurations": [],
+      "data": [],
+      "figures": [],
+      "gates": [
+        "validacion/P04/C7/puerta_fase_sin_nodos.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "CP08-NONRADIAL": {
+      "equations": [
+        "tratado/28_estabilidad_no_radial_condicionada.md"
+      ],
+      "scripts": [
+        "herramientas/continuar_no_radial_m2.py",
+        "herramientas/continuar_no_radial_adaptativo.py",
+        "herramientas/acelerar_fuerza_m2.py",
+        "herramientas/fuerza_potencial_m2.c",
+        "herramientas/verificar_no_radial_m2.py",
+        "herramientas/diagnosticar_convergencia_CP08.py"
+      ],
+      "configurations": [
+        "datos/ensayo_no_radial_CP06.json"
+      ],
+      "data": [
+        "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+        "validacion/P06/no_radial/*_estado.npz",
+        "validacion/P06/no_radial/*_tiempo.csv"
+      ],
+      "figures": [],
+      "gates": [
+        "validacion/P06/no_radial/resultados.json"
+      ],
+      "basis": "Enlaces documentales declarados en CP09; no recibo retrospectivo de ejecución."
+    },
+    "CP10-MEDIADOR": {
+      "equations": [
+        "tratado/13_M2_comun_y_teoremas.md",
+        "tratado/23_convenciones_y_espacio_fundamental.md",
+        "tratado/28_estabilidad_no_radial_condicionada.md"
+      ],
+      "parameters": [
+        "datos/theta_comun.json"
+      ],
+      "scripts": [
+        "herramientas/evolucion_mediador_CP10.py",
+        "herramientas/comparar_mediador_CP10.py",
+        "herramientas/diagnosticar_mediador_CP10.py",
+        "herramientas/ejecutar_con_procedencia.py",
+        "herramientas/modelo_m2.py",
+        "herramientas/continuar_no_radial_m2.py",
+        "herramientas/continuar_no_radial_adaptativo.py",
+        "herramientas/acelerar_fuerza_m2.py",
+        "herramientas/fuerza_potencial_m2.c"
+      ],
+      "configurations": [
+        "datos/ensayo_mediador_CP10.json",
+        "validacion/P06/no_radial/CP10/*/configuration.json"
+      ],
+      "data": [
+        "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+        "validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/CP10/*/*_estado.npz",
+        "validacion/P06/no_radial/CP10/*/procedencia.json",
+        "validacion/P06/no_radial/CP10/diagnostico_guardado__0cc9af79f3804e54e2f65309e9fad57934b04c55536c5dd07519c2bacc87ea47/diagnostico.json",
+        "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+        "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/comparaciones.csv"
+      ],
+      "figures": [
+        "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/CP10_errores_mediador.svg"
+      ],
+      "gates": [
+        "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+        "datos/ensayo_no_radial_CP06.json",
+        "datos/ensayo_mediador_CP10.json"
+      ],
+      "basis": "Recibos capturados antes de ejecutar, fuentes y salidas verificadas, comparación de estados concluidos y protocolo inalterado. Los controles históricos conservan sus resoluciones."
+    }
+  },
+  "known_unreadable_artifacts": [
+    {
+      "path": "validacion/P06/acceso_lineal/colocacion_Om5.0000_estado.npz",
+      "sha256": "d1dd9b6d8f04880a507c4da9cab247674a6ad86f869e275a828bbf11ae157f5c",
+      "bytes": 50978,
+      "result": "validacion/P06/acceso_lineal/colocacion_Om5.0000.json",
+      "role": "INTENTO_FALLIDO_NO_REANUDABLE",
+      "reason": "Contenedor NPZ ilegible en los bytes originales de CP08; JSON compañero declara fallo. Se preserva, no se sustituye por resultado válido."
+    }
+  ],
+  "initial_lineage": "datos/linaje_afirmaciones.json",
+  "initial_lineage_scope": "16 afirmaciones de E00; preservado como evidencia del cierre, no catálogo exhaustivo de CP08.",
+  "historical_notes": {
+    "investigacion/C7_notas_EN_PROGRESO.md": {
+      "superseded_by": [
+        "tratado/27_simetria_estacionaria_y_cadenas_finitas.md",
+        "tratado/30_fase_estacionaria_sin_nodos.md"
+      ],
+      "original_copy": "trazabilidad/CP08_arquitectura_entrada/investigacion/C7_notas_EN_PROGRESO.md"
+    }
+  }
+}

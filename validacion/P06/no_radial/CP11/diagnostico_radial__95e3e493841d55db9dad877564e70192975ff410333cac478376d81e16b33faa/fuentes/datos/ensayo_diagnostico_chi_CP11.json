@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0.0",
+  "checkpoint_base": "CP10_MEDIADOR_ESPACIOTEMPORAL",
+  "base_commit": "47b5e56cf3fd9f90b865ad2ddcaa313c2b43fa81",
+  "branch": "ciencia/cp11-diagnostico-chi",
+  "model": "M2",
+  "campaign_directory": "validacion/P06/no_radial/CP11",
+  "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+  "registered_before_execution": true,
+  "unchanged_gate_source": "datos/ensayo_no_radial_CP06.json",
+  "criteria": {
+    "energy_drift_max": 0.0002,
+    "charge_drift_max": 1e-09,
+    "nonradial_norm_amplification_max": 3,
+    "core_charge_change_max": 0.005,
+    "angular_norm_relative_change_max": 0.05,
+    "radial_norm_relative_change_max": 0.02,
+    "temporal_norm_relative_change_max": 0.02,
+    "box_core_relative_change_max": 1e-05
+  },
+  "question": "Diagnosticar el fallo espacial de chi: operador radial, modos cortos, dispersión, interpolación y fuente; no aumentar resolución ni evolucionar.",
+  "hypotheses_document": "informes/PROTOCOLO_CP11_DIAGNOSTICO_CHI.md",
+  "decision_policy": "No aceptar mediante interpolación escogida ni fase corregida. Cada negativo excluye su hipótesis delimitada. Falta de historia de fuente: parar con diagnóstico causal limitado, no declarar inestabilidad física ni agotamiento de M2.",
+  "environment_policy": {
+    "BLAS_threads": 1,
+    "OMP_threads": 1,
+    "MKL_threads": 1,
+    "packages": "Capturados automáticamente por ejecutar_con_procedencia; pools observados por trabajador.",
+    "compiler": "Capturado; este diagnóstico Python no compila ni evoluciona."
+  },
+  "cases": {
+    "diagnostico_radial": {
+      "entrypoint": "herramientas/diagnosticar_chi_CP11.py",
+      "operation": "operador_metricas_modos_y_propagador_libre",
+      "configuration": {
+        "core_radius": 40.0,
+        "time": 160.0,
+        "radius": 220.0,
+        "L": 4,
+        "states": {
+          "coarse": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+          "fine": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz"
+        },
+        "source_comparison": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+        "wave_number_cuts": [
+          2,
+          4,
+          8,
+          12,
+          20
+        ],
+        "ell": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "quadrature_orders": [
+          8,
+          12
+        ],
+        "smooth_core_start": 32.0,
+        "algebra_relative_tolerance": 2e-12,
+        "parseval_relative_tolerance": 2e-11,
+        "elliptic_relative_tolerance": 2e-10,
+        "short_component_predominance_min": 0.5,
+        "free_prediction_squared_fraction_min": 0.5,
+        "free_prediction_vector_cosine_min": 0.8,
+        "modal_correction_squared_reduction_min": 0.5,
+        "manufactured_seed": 20261003,
+        "chi_phase_rotation_used_for_acceptance": false,
+        "new_evolution_steps": 0
+      },
+      "extra_code": [
+        "herramientas/ejecutar_protocolo.py"
+      ],
+      "inputs": [
+        "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+        "validacion/P06/no_radial/CP10/temporal_h0125__*/procedencia.json",
+        "validacion/P06/no_radial/CP10/espacial_h00625__*/procedencia.json",
+        "datos/ensayo_no_radial_CP06.json",
+        "validacion/P06/no_radial/auditoria_operador.json",
+        "informes/PROTOCOLO_CP11_DIAGNOSTICO_CHI.md",
+        "trazabilidad/CP10_entrada/ORIGEN.json"
+      ]
+    },
+    "contraste_fuente": {
+      "entrypoint": "herramientas/diagnosticar_chi_CP11.py",
+      "operation": "equilibrio_congelado_y_contraste_modal_sin_ajuste",
+      "configuration": {
+        "core_radius": 40.0,
+        "time": 160.0,
+        "radius": 220.0,
+        "L": 4,
+        "states": {
+          "coarse": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+          "fine": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz"
+        },
+        "source_comparison": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+        "wave_number_cuts": [
+          2,
+          4,
+          8,
+          12,
+          20
+        ],
+        "ell": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "quadrature_orders": [
+          8,
+          12
+        ],
+        "smooth_core_start": 32.0,
+        "algebra_relative_tolerance": 2e-12,
+        "parseval_relative_tolerance": 2e-11,
+        "elliptic_relative_tolerance": 2e-10,
+        "short_component_predominance_min": 0.5,
+        "free_prediction_squared_fraction_min": 0.5,
+        "free_prediction_vector_cosine_min": 0.8,
+        "modal_correction_squared_reduction_min": 0.5,
+        "manufactured_seed": 20261003,
+        "chi_phase_rotation_used_for_acceptance": false,
+        "new_evolution_steps": 0
+      },
+      "extra_code": [
+        "herramientas/ejecutar_protocolo.py"
+      ],
+      "inputs": [
+        "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+        "validacion/P06/no_radial/CP10/temporal_h0125__*/procedencia.json",
+        "validacion/P06/no_radial/CP10/espacial_h00625__*/procedencia.json",
+        "datos/ensayo_no_radial_CP06.json",
+        "validacion/P06/no_radial/auditoria_operador.json",
+        "informes/PROTOCOLO_CP11_DIAGNOSTICO_CHI.md",
+        "trazabilidad/CP10_entrada/ORIGEN.json",
+        "validacion/P06/no_radial/CP11/diagnostico_radial__*/resultados.json",
+        "validacion/P06/no_radial/CP11/diagnostico_radial__*/procedencia.json"
+      ],
+      "condition": "Operador consistente y control libre inicial insuficiente. No ejecutar si hay incompatibilidad algebraica."
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "base_commit": "47b5e56cf3fd9f90b865ad2ddcaa313c2b43fa81",
+  "base_tag": "CP10",
+  "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+  "source_inventory": "trazabilidad/CP10_entrada/archivos_sha256.json",
+  "original_files": 938,
+  "moves": [],
+  "renames": [],
+  "deletions": [],
+  "physical_parameters_changed": false,
+  "acceptance_gates_changed": false,
+  "M2_evolution_code_changed": false,
+  "scientific_results_rewritten": false,
+  "updated_existing_files_with_exact_original_recoverable": [
+    {
+      "source_CP10": "ENMIENDAS_HOJA_RUTA.md",
+      "destination_CP11": "ENMIENDAS_HOJA_RUTA.md",
+      "original_sha256": "eec3d69ab6372cbb1c2823bc6f97112540b2f69ddefe4b0ff0beba5c2e3c34f5",
+      "preserved_original": "trazabilidad/CP10_entrada/ENMIENDAS_HOJA_RUTA.md",
+      "operation": "actualizacion_compatible_en_la_misma_ruta"
+    },
+    {
+      "source_CP10": "ESTADO_ACTUAL.md",
+      "destination_CP11": "ESTADO_ACTUAL.md",
+      "original_sha256": "048615e5acfa94d076bc4a225f664a219bc650058a418bb51dd9d62a6176ca3b",
+      "preserved_original": "trazabilidad/CP10_entrada/ESTADO_ACTUAL.md",
+      "operation": "actualizacion_compatible_en_la_misma_ruta"
+    },
+    {
+      "source_CP10": "LEEME.md",
+      "destination_CP11": "LEEME.md",
+      "original_sha256": "f0d7e7cecec8069dbf67cc00ee980f2acc7c5bde74a271ac895400c934c59f7e",
+      "preserved_original": "trazabilidad/CP10_entrada/LEEME.md",
+      "operation": "actualizacion_compatible_en_la_misma_ruta"
+    },
+    {
+      "source_CP10": "MANIFIESTO_SHA256.json",
+      "destination_CP11": "MANIFIESTO_SHA256.json",
+      "original_sha256": "df5c6cffc3f06106854bb03d69b11b6d52b2a0e4050f23023db1720ac7e80f3b",
+      "preserved_original": "trazabilidad/CP10_entrada/MANIFIESTO_SHA256.json",
+      "operation": "actualizacion_compatible_en_la_misma_ruta"
+    },
+    {
+      "source_CP10": "Runica_Tratado_integrado.md",
+      "destination_CP11": "Runica_Tratado_integrado.md",
+      "original_sha256": "9d827ff86c48d44fb3302ac6b0af3b1e0c7cd0a5ff498a3a9b806e09fa84c487",
+      "preserved_original": "trazabilidad/CP10_entrada/Runica_Tratado_integrado.md",
+      "operation": "actualizacion_compatible_en_la_misma_ruta"
+    },
+    {
+      "source_CP10": "VERSIONES.json",
+      "destination_CP11": "VERSIONES.json",
+      "original_sha256": "24975254d6385d34dcf8fc96c934863606aecabf91727a401a1f5007972a916a",
+      "preserved_original": "trazabilidad/CP10_entrada/VERSIONES.json",
+      "operation": "actualizacion_compatible_en_la_misma_ruta"
+    },
+    {
+      "source_CP10": "datos/arquitectura.json",
+      "destination_CP11": "datos/arquitectura.json",
+      "original_sha256": "cc1cbb79bac051c6e8e8e845b3e3916cb2b75791145266361045b2ac9329a36b",
+      "preserved_original": "trazabilidad/CP10_entrada/datos/arquitectura.json",
+      "operation": "actualizacion_compatible_en_la_misma_ruta"
+    },
+    {
+      "source_CP10": "datos/estado_evidencia.json",
+      "destination_CP11": "datos/estado_evidencia.json",
+      "original_sha256": "7246729a6da9cd94ad8f61370e0ccc954236848bbbc83e43ba06ce1a248d0f2e",
+      "preserved_original": "trazabilidad/CP10_entrada/datos/estado_evidencia.json",
+      "operation": "actualizacion_compatible_en_la_misma_ruta"
+    },
+    {
+      "source_CP10": "datos/registro_calculos.json",
+      "destination_CP11": "datos/registro_calculos.json",
+      "original_sha256": "f133481cd055eeadd8c6000518f7f6d67857c339e4f37a58cc8f3452ee45d2dc",
+      "preserved_original": "trazabilidad/CP10_entrada/datos/registro_calculos.json",
+      "operation": "actualizacion_compatible_en_la_misma_ruta"
+    },
+    {
+      "source_CP10": "estado_progreso.json",
+      "destination_CP11": "estado_progreso.json",
+      "original_sha256": "66b8ece9f7945bfc01907148ea91657bb1390256e170d35a24fdb051ae8c0157",
+      "preserved_original": "trazabilidad/CP10_entrada/estado_progreso.json",
+      "operation": "actualizacion_compatible_en_la_misma_ruta"
+    },
+    {
+      "source_CP10": "herramientas/regresion_estructural.py",
+      "destination_CP11": "herramientas/regresion_estructural.py",
+      "original_sha256": "97cb16385e0de9aee200b6d2bc0eee9794583c63d475bebf97813fb05a9c97ea",
+      "preserved_original": "trazabilidad/CP10_entrada/herramientas/regresion_estructural.py",
+      "operation": "actualizacion_compatible_en_la_misma_ruta"
+    },
+    {
+      "source_CP10": "trazabilidad/arquitectura/indice_trazabilidad.json",
+      "destination_CP11": "trazabilidad/arquitectura/indice_trazabilidad.json",
+      "original_sha256": "f771cddf498b99c8064693c9288a10bcfa5f42a4a9d2b421a2916f0808964b63",
+      "preserved_original": "trazabilidad/CP10_entrada/trazabilidad/arquitectura/indice_trazabilidad.json",
+      "operation": "actualizacion_compatible_en_la_misma_ruta"
+    },
+    {
+      "source_CP10": "herramientas/ejecutar_con_procedencia.py",
+      "destination_CP11": "herramientas/ejecutar_con_procedencia.py",
+      "original_sha256": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
+      "preserved_original": "trazabilidad/CP10_entrada/herramientas/ejecutar_con_procedencia.py",
+      "operation": "correccion_de_referencia_de_recibo_externo_sin_cambiar_identidad_o_calculo"
+    }
+  ],
+  "new_files_policy": "Adiciones de diagnósticos, recibos, negativos, verificaciones y vistas; el diff Git enumera las rutas nuevas. Los hashes definitivos están en el manifiesto, no en este mapa."
+}

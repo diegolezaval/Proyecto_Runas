@@ -50,11 +50,14 @@ def run_suite():
                           output=output)
             runs.append(record)
             return record
-        if state.get('scientific_checkpoint', '').startswith('CP10'):
+        if (ROOT / 'herramientas/verificar_CP10.py').is_file():
             for args in [['verificar_CP10.py'], ['generar_resumen_CP10.py', '--comprobar'], ['probar_procedencia_futura.py']]:
                 execute(args)
+        if (ROOT / 'herramientas/verificar_CP11.py').is_file():
+            for args in [['verificar_CP11.py'], ['generar_resumen_CP11.py', '--comprobar'], ['probar_recibo_externo_CP11.py']]:
+                execute(args)
         for args in [
-            ['verificar_entorno.py', '--cp10' if state.get('scientific_checkpoint', '').startswith('CP10') else '--adaptativo'],
+            ['verificar_entorno.py', '--cp10' if (ROOT / 'herramientas/verificar_CP10.py').is_file() else '--adaptativo'],
             ['generar_continuidad.py', '--comprobar'],
             (['auditar_arquitectura.py', '--conservacion-cp08'] if state['checkpoint'] == 'CP09_AUDITORIA_ARQUITECTURA' else ['auditar_arquitectura.py']),
             ['verificar_continuidad.py', '--solo-lectura'],
