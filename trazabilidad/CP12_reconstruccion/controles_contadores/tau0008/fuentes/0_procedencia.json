@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177",
+  "case": "temporal_h0125",
+  "identity": {
+    "case": {
+      "entrypoint": "herramientas/evolucion_mediador_CP10.py",
+      "operation": "nueva_resolucion_temporal",
+      "configuration": {
+        "dx": 0.125,
+        "rtol": 1e-10,
+        "atol": 1e-12,
+        "max_step": 0.02,
+        "L": 4,
+        "radius": 220.0,
+        "eps": 0.02,
+        "tmax": 160.0
+      },
+      "implementation": "Potencial C contrastado con NumPy antes de evolucionar; misma acción y fuerza completas.",
+      "extra_code": [
+        "herramientas/fuerza_potencial_m2.c"
+      ],
+      "inputs": [
+        "datos/ensayo_no_radial_CP06.json",
+        "validacion/P06/no_radial/auditoria_operador.json"
+      ]
+    },
+    "protocol": "datos/ensayo_mediador_CP10.json",
+    "model": "M2",
+    "input_hashes": {
+      "datos/ensayo_mediador_CP10.json": "3c6a9aeace4091dd39598c52e357996f5bbef7bae9d92a532fce3540ddf0f209",
+      "datos/ensayo_no_radial_CP06.json": "3b620c0dd039e4fe1e54b50fa324a900717e7400e44707b58d2d2b0882dccb55",
+      "datos/theta_comun.json": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+      "validacion/P06/no_radial/auditoria_operador.json": "cedcdd11221e75a027b638c3b75021e39044965303a93aa4ab023ce73bf3a1bd",
+      "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89"
+    },
+    "code_hashes": {
+      "herramientas/acelerar_fuerza_m2.py": "2d12e2636d4e5a37ef36f03412bbfce5b0d3de292fadc17168f27b0632f0f406",
+      "herramientas/continuar_no_radial_adaptativo.py": "32d93a3bf742e736ca581a0ca23ac246aeb442f7fafb499a994ffe81294a96b1",
+      "herramientas/continuar_no_radial_m2.py": "d4a7f8ad89a4bc321931926d8de161348e9223a0bd21336e0b13edfdbbe3493c",
+      "herramientas/ejecutar_con_procedencia.py": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
+      "herramientas/evolucion_mediador_CP10.py": "2b99b98b4d32919a799d5417ea24c6ca897d7c64eb13cc59b6bc6b3c57226583",
+      "herramientas/fuerza_potencial_m2.c": "74dd2159ac951e701b3acce7f8365847874521769479c08dd8e4634c7e2e9de9",
+      "herramientas/modelo_m2.py": "87562e977135cc5092ef3567b5980f58e726187e4df5c418de4660291702374f"
+    },
+    "environment": {
+      "python": "3.12.14",
+      "system": "Linux",
+      "architecture": "x86_64",
+      "packages": {
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "matplotlib": "3.10.8",
+        "threadpoolctl": "3.6.0"
+      },
+      "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+      "BLAS_threads": 1,
+      "compiler_flags": [
+        "-O3",
+        "-fPIC",
+        "-shared",
+        "-fno-fast-math"
+      ]
+    }
+  },
+  "created_at": "2026-10-02T22:38:09.912477+00:00",
+  "status": "COMPLETADA",
+  "configuration_sha256": "70facc04381ffe404815b4063ac409ef22bf7a2ab25cd5062d8892e6894d4459",
+  "source_snapshots": {
+    "datos/ensayo_mediador_CP10.json": "fuentes/datos/ensayo_mediador_CP10.json",
+    "datos/theta_comun.json": "fuentes/datos/theta_comun.json",
+    "herramientas/acelerar_fuerza_m2.py": "fuentes/herramientas/acelerar_fuerza_m2.py",
+    "herramientas/continuar_no_radial_adaptativo.py": "fuentes/herramientas/continuar_no_radial_adaptativo.py",
+    "herramientas/continuar_no_radial_m2.py": "fuentes/herramientas/continuar_no_radial_m2.py",
+    "herramientas/ejecutar_con_procedencia.py": "fuentes/herramientas/ejecutar_con_procedencia.py",
+    "herramientas/evolucion_mediador_CP10.py": "fuentes/herramientas/evolucion_mediador_CP10.py",
+    "herramientas/fuerza_potencial_m2.c": "fuentes/herramientas/fuerza_potencial_m2.c",
+    "herramientas/modelo_m2.py": "fuentes/herramientas/modelo_m2.py"
+  },
+  "segments": [
+    {
+      "started_at": "2026-10-02T22:38:09.912719+00:00",
+      "command": [
+        "python",
+        "herramientas/evolucion_mediador_CP10.py",
+        "--config",
+        "configuration.json",
+        "--output-dir",
+        ".",
+        "--stop-at",
+        "8.0"
+      ],
+      "resumed_from_hashes": {},
+      "status": "PAUSADA_REANUDABLE",
+      "ended_at": "2026-10-02T22:40:02.284473+00:00",
+      "returncode": 0,
+      "final_time": 8.0
+    },
+    {
+      "started_at": "2026-10-02T22:42:34.298744+00:00",
+      "command": [
+        "python",
+        "herramientas/evolucion_mediador_CP10.py",
+        "--config",
+        "configuration.json",
+        "--output-dir",
+        "."
+      ],
+      "resumed_from_hashes": {
+        "dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz": "898fbc0bc29b035bc7ea336670d8472c5cc51e51a55fac5d271d2c9ba08cb6a2"
+      },
+      "status": "INTERRUMPIDA",
+      "interruption_detected_at": "2026-10-03T02:44:57.533651+00:00",
+      "reason": "La sesión anterior terminó sin cerrar el segmento; no hay proceso activo. Instante exacto de terminación desconocido.",
+      "recovered_time": 56.0,
+      "recovered_state": "dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "recovered_state_sha256": "261e145e95f81a5b7b957232b26316751c1b753d752f075145b61fe8c19b93a4"
+    },
+    {
+      "started_at": "2026-10-03T02:44:58.115533+00:00",
+      "command": [
+        "python3",
+        "herramientas/evolucion_mediador_CP10.py",
+        "--config",
+        "configuration.json",
+        "--output-dir",
+        "."
+      ],
+      "resumed_from_hashes": {
+        "dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz": "261e145e95f81a5b7b957232b26316751c1b753d752f075145b61fe8c19b93a4"
+      },
+      "status": "COMPLETADA",
+      "ended_at": "2026-10-03T03:07:44.715909+00:00",
+      "returncode": 0,
+      "final_time": 160.0
+    }
+  ],
+  "output_hashes": {
+    "auditoria_fuerza_fusionada.json": "70c183fc285dddefd40f67b564d8937818949567133d23b775afc57beec775f6",
+    "configuration.json": "70facc04381ffe404815b4063ac409ef22bf7a2ab25cd5062d8892e6894d4459",
+    "dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160.json": "c2c68b4b5e56d3a3fb0c4ff6f27c846cd14ec83b1522b3dfe0697b1451dc6201",
+    "dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz": "2ef7efa1ca77549aecf069d65638feb559ae9608ab4bdeda36579390750a03fc",
+    "dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_progreso.json": "d3b0cc1ba83a0afafc224ea8dde6617890ca83f1b9c6571f42046f730c1a8018",
+    "dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_tiempo.csv": "894fd7cfe5e267d0b6398f7695382221c82c7d17849d8bdd2e2f2440370619a5",
+    "dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_transferencia.json": "113811916b7717cef76fd98db9a4df8f525212ba8a5019e5fddf8c83654af21b",
+    "ejecucion.log": "933a1235a1ad55262dfa901c97f7e21ce1bfdef910280d7e14d967657e4cf059",
+    "fuentes/datos/ensayo_mediador_CP10.json": "3c6a9aeace4091dd39598c52e357996f5bbef7bae9d92a532fce3540ddf0f209",
+    "fuentes/datos/theta_comun.json": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+    "fuentes/herramientas/acelerar_fuerza_m2.py": "2d12e2636d4e5a37ef36f03412bbfce5b0d3de292fadc17168f27b0632f0f406",
+    "fuentes/herramientas/continuar_no_radial_adaptativo.py": "32d93a3bf742e736ca581a0ca23ac246aeb442f7fafb499a994ffe81294a96b1",
+    "fuentes/herramientas/continuar_no_radial_m2.py": "d4a7f8ad89a4bc321931926d8de161348e9223a0bd21336e0b13edfdbbe3493c",
+    "fuentes/herramientas/ejecutar_con_procedencia.py": "e0d3c40681c00647e0fa7f9bff0f401c3b1721999a32a8278b4b2293ba451d8e",
+    "fuentes/herramientas/evolucion_mediador_CP10.py": "2b99b98b4d32919a799d5417ea24c6ca897d7c64eb13cc59b6bc6b3c57226583",
+    "fuentes/herramientas/fuerza_potencial_m2.c": "74dd2159ac951e701b3acce7f8365847874521769479c08dd8e4634c7e2e9de9",
+    "fuentes/herramientas/modelo_m2.py": "87562e977135cc5092ef3567b5980f58e726187e4df5c418de4660291702374f"
+  },
+  "comparisons_and_decision": "La puerta se registra en el resultado y el informe CP10; completar una ejecución no cierra una etapa.",
+  "recoveries": [
+    {
+      "detected_at": "2026-10-03T02:44:57.533651+00:00",
+      "source_state": "dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "source_state_sha256": "261e145e95f81a5b7b957232b26316751c1b753d752f075145b61fe8c19b93a4",
+      "saved_time": 56.0,
+      "configuration_and_identity_verified": true,
+      "finite_arrays_verified": true,
+      "progress_time_matches": true,
+      "exclusive_kernel_lock_available": true,
+      "old_pilot_output_hashes_preserved": true
+    }
+  ]
+}

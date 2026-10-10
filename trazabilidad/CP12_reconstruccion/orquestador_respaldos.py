@@ -35,6 +35,8 @@ def preserve(root, helpers, time_, client):
     pair=root/'validacion/P06/no_radial/CP12/par_instrumentado__a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d'
     print(json.dumps({'event':'AUDIT_BOUNDARY','time':time_}),flush=True)
     run([sys.executable,str(manager),'--auditar','--time',str(time_)],cwd=root,output=outside/(label+'_auditoria.log'))
+    run([sys.executable,str(support/'auditar_contadores_CP12.py'),'--time',str(time_)],cwd=root,
+        output=outside/(label+'_contadores.log'))
     archive=outside/('Proyecto_Runas_CP12_REINICIO_'+label+'.zip')
     run([sys.executable,str(manager),'--paquete',str(archive),'--time',str(time_)],cwd=root,output=outside/(label+'_paquete.json'))
     packaged=json.loads((outside/(label+'_paquete.json')).read_text())
