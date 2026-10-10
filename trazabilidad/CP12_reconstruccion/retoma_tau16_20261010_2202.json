@@ -1,0 +1,133 @@
+{
+  "passed": true,
+  "zip_sha256": "505840842b4d2097a67981f7e71e0af3a95dc1ec98fbe909d2d2faf55c5233cf",
+  "time": 16.0,
+  "payload_files": 291,
+  "all_payload_hashes_verified": true,
+  "independent_extracted_check": {
+    "passed": true,
+    "tests": {
+      "original_identity_and_fourteen_files": true,
+      "receipt_integrity": true,
+      "six_controls_intact": true,
+      "one_current_positive_control": true,
+      "original_stage_records_unchanged": true,
+      "physical_gate_unchanged": true,
+      "observed_BLAS_threads_one": true,
+      "new_receipt_explicitly_declares_reconstruction": true,
+      "time_and_original_boundary": true,
+      "original_configuration_exact": true,
+      "expected_schema": true,
+      "companion_progress_time": true,
+      "finite_physical_arrays": true,
+      "finite_observer_arrays": true,
+      "observation_count": true,
+      "budget_count": true,
+      "budget_time_labels": true,
+      "metadata_times": true,
+      "original_observer_error_gate": true,
+      "original_parseval_gate": true,
+      "original_symmetry_gate": true,
+      "extended_identity_gate": true,
+      "original_force_partition_and_symmetry": true,
+      "0_initial_q_array_equal_CP10": true,
+      "0_initial_v_array_equal_CP10": true,
+      "0_prefix_observations_array_equal_CP10": true,
+      "0_original_balances": true,
+      "1_initial_q_array_equal_CP10": true,
+      "1_initial_v_array_equal_CP10": true,
+      "1_prefix_observations_array_equal_CP10": true,
+      "1_original_balances": true,
+      "prior_accepted_steps_exact": true,
+      "prior_original_nfev_exact": true,
+      "prior_npz_size_exact": true,
+      "prior_npz_hash_exact": true,
+      "original_worker_zero_step_restart": true,
+      "audited_state_not_modified": true
+    },
+    "time": 16.0,
+    "run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
+    "M2_steps_executed": 0,
+    "state_sha256": "3262c6eb99838319c31e2379cc11c4cd97b0631d5fd2760b741fc716622f4b21",
+    "configuration_sha256": "148dfb982ce59ff5e9e7696749f58c77584c96c2833ca5fb4bd03122af5e5541",
+    "receipt_sha256": "3a43e51a4702e8b4a11d15b021409ef3ee5918f10a6ed34e811a46434c121b06",
+    "observation_count": 41,
+    "metadata": [
+      {
+        "t": 16.0,
+        "accepted": 2966,
+        "nfev": 36136,
+        "maxe": 7.07015557210866e-11,
+        "maxq": 1.4432899320127035e-15
+      },
+      {
+        "t": 16.0,
+        "accepted": 2966,
+        "nfev": 36136,
+        "maxe": 7.056366602142816e-11,
+        "maxq": 5.551115123125783e-16
+      }
+    ],
+    "maximum_errors": {
+      "raw_closure": 5.80276454319202e-07,
+      "raw_order_difference": 5.0225952121474986e-09,
+      "raw_individual_order_difference": 1.5454341742022157e-08,
+      "coupled_closure": 5.798568786415206e-07,
+      "coupled_order_difference": 4.324047523769744e-10,
+      "coupled_individual_order_difference": 8.764254364203059e-09,
+      "coupled_Phi_closure": 3.055202377437216e-11,
+      "coupled_Phi_order_difference": 9.831954581163487e-12,
+      "modal_parseval": 1.9164694958146692e-14,
+      "short_core_raw_closure": 5.333111863365882e-07,
+      "short_core_raw_order_difference": 8.245600113233125e-08,
+      "short_core_coupled_closure": 5.281626474268679e-07,
+      "short_core_coupled_order_difference": 7.789512458914647e-08,
+      "short_smooth_raw_closure": 5.298985530755664e-07,
+      "short_smooth_raw_order_difference": 7.853989430353702e-08,
+      "short_smooth_coupled_closure": 5.282257353974324e-07,
+      "short_smooth_coupled_order_difference": 8.273626100338046e-08
+    },
+    "prior_comparisons": {
+      "prior_status": "ANTECEDENTE_DE_SALIDA_DE_HERRAMIENTA_NO_ARCHIVO_RECUPERADO",
+      "expected": {
+        "observations_per_grid": 41,
+        "accepted_steps_per_grid": 2966,
+        "original_nfev_per_grid": 36136,
+        "state_sha256": "3262c6eb99838319c31e2379cc11c4cd97b0631d5fd2760b741fc716622f4b21",
+        "state_bytes": 28393475,
+        "raw_closure_maximum": 5.80276454319202e-07
+      },
+      "observed_state_sha256": "3262c6eb99838319c31e2379cc11c4cd97b0631d5fd2760b741fc716622f4b21",
+      "observed_state_bytes": 28393475,
+      "observed_metadata": [
+        {
+          "t": 16.0,
+          "accepted": 2966,
+          "nfev": 36136,
+          "maxe": 7.07015557210866e-11,
+          "maxq": 1.4432899320127035e-15
+        },
+        {
+          "t": 16.0,
+          "accepted": 2966,
+          "nfev": 36136,
+          "maxe": 7.056366602142816e-11,
+          "maxq": 5.551115123125783e-16
+        }
+      ]
+    },
+    "observer_changes": false,
+    "correction_tested": false,
+    "causal_inference_allowed": false,
+    "receipt": {
+      "passed": true,
+      "run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
+      "status": "PAUSADA_REANUDABLE",
+      "issues": [],
+      "scope": "Fuentes de ejecuci\u00f3n capturadas y salidas; no aceptaci\u00f3n cient\u00edfica."
+    }
+  },
+  "stderr": "",
+  "downloaded_path": "/workspace/scratch/66996d39ad08/retoma_raiz_recuperada/Proyecto_Runas_CP12_REINICIO_tau0016.zip",
+  "extracted_path": "/workspace/scratch/66996d39ad08/retoma_raiz_tau16_verificada/Proyecto_Runas"
+}

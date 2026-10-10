@@ -1,0 +1,13 @@
+# CP12: continuidad verificada y objetivo causal de χ
+
+Retoma desde GitHub en c3af9624a94af18d890a8192145bc70c65e508d1, PR #2 abierto y borrador; main permanece en CP11. Se revisaron protocolo, todas las enmiendas, prerregistro de recuperación, lectura offline, estado científico y evidencia CP11.
+
+La búsqueda actual en respaldos permanentes y almacenamiento disponible no encontró una frontera posterior a 16. Las sesiones anteriores ya no existen, no hay trabajador físico y el lock estaba libre. El recibo local 16→24 quedó EN_PROGRESO sin salida ni reinicio τ=24. Su evidencia se conserva íntegra en trazabilidad/CP12_reconstruccion/incidentes/20261010_2201_tramo16_24_interrumpido, sin editarla ni convertirla en negativo científico.
+
+La cápsula τ=16 fue descargada de nuevo; sus 291 archivos, manifiesto y SHA-256 pasan. La auditoría del árbol extraído reproduce fuentes originales, configuración, recibos, controles, prefijo CP10 array_equal, contadores y hash histórico 3262c6eb99838319c31e2379cc11c4cd97b0631d5fd2760b741fc716622f4b21. La recarga original sin avance conserva el estado. Se restauró sólo el par y su auditoría original en un clon nuevo de GitHub, dejando intacta la evidencia del proceso interrumpido.
+
+Se reanuda únicamente 16→24. Un coordinador administrativo usa las herramientas originales: termina cada tramo de ocho unidades, audita, guarda la cápsula, la descarga y verifica completamente antes de permitir el siguiente. Cualquier fallo detiene la continuación. La lectura prerregistrada original sólo se ejecuta tras reproducción y respaldo τ=160 comprobados; no ejecuta pasos M2 adicionales ni declara cierre científico. El estado volátil de un tramo no acredita un reinicio; no puede inferirse actividad futura a partir de este informe.
+
+El objetivo prioritario es identificar el mecanismo causal. Las respuestas integradas, proyecciones firmadas, cosenos, reducciones por retirada y cancelaciones en las tres ventanas decidirán si hay mecanismo suficiente, conjunto necesario o ambigüedad. La reacción de χ no se denomina causa por una norma grande. Una corrección exige atribución suficiente, derivación independiente de la acción y prerregistro de eliminación del mecanismo, conservación, estabilidad, convergencia y robustez. Se conserva la puerta original del 2 %. No se cambia M2, Θ, solver, tolerancias ni observadores.
+
+La instantánea NPZ bajo validacion/ en GitHub permanece en τ=0; el reinicio permanente completo τ=16 está identificado en respaldos/tau0016.json. No repetir 0→16 ni mezclar recibos. Comprobar siempre los respaldos posteriores y la actividad real antes de lanzar un trabajador. CP12 está abierto. Sin merge, tag ni Release.
