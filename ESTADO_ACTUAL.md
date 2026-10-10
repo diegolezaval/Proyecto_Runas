@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Reconstruir CP12 desde el reinicio τ=0 recuperado, verificado y respaldado: 0→8→16 y, sólo si reproduce, mismo ID hasta 160; respaldo comprobado antes de cada frontera.
+- Recuperar la cápsula permanente τ=8 identificada en respaldos/tau0008.json, verificarla y continuar 8→16→24…→160 sin duplicar un escritor activo; el par incluido en GitHub conserva la instantánea τ=0.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -86,7 +86,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/RETOMA_CP12_20261004.md](informes/RETOMA_CP12_20261004.md).
+Informe de esta entrega: [informes/RETOMA_CP12_20261010.md](informes/RETOMA_CP12_20261010.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

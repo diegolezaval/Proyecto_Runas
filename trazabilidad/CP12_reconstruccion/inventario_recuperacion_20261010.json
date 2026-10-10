@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-10T21:06:52.423237+00:00",
+  "github_head": "20086395db8b39028490a5d9c35c58c4cf203db7",
+  "github_main": "ed8d818b622a0687aeb56d34ca9e3913bd54e124",
+  "github_files_verified": 1385,
+  "github_mismatches": [],
+  "pr_number": 2,
+  "pr_state": "open",
+  "pr_draft": true,
+  "available_storage_searched": [
+    "GitHub branches/tree/release assets/workflow runs",
+    "Library CP12/title search and full nonimage inventory since 2026-10-04",
+    "Available local workspaces and temporary/mounted artifact paths"
+  ],
+  "maximum_recovered_valid_time": 8.0,
+  "backup": "Proyecto_Runas_CP12_REINICIO_tau0008.zip",
+  "state_sha256": "4f79027f479da1136825b47bcff9bb90a8a989cd78af90e570c205eafa904281",
+  "restart_after_8_found": false,
+  "notes": [
+    "El estado GitHub τ=0 se supera mediante cápsula persistente τ=8 con manifiesto de 273 archivos.",
+    "No hubo pasos M2 durante la recuperación.",
+    "El árbol local anterior tenía tres archivos modificados; se usó clon nuevo de GitHub y comparación completa de sus blobs."
+  ]
+}

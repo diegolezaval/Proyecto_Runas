@@ -1,0 +1,23 @@
+{
+  "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+  "passed": true,
+  "numerical_campaigns_executed": false,
+  "tests": {
+    "geometry_views_idempotent": true,
+    "broken_current_link_detected": true,
+    "recursive_execution_exclusions": true,
+    "dependency_lockfiles_not_ignored": true,
+    "scientific_states_not_ignored": true,
+    "unfinished_scientific_write_rejected": true,
+    "undeclared_directory_symlink_rejected": true,
+    "finished_adaptive_run_reused": true,
+    "same_destination_different_configuration_rejected": true,
+    "colliding_tags_share_lock_identity": true,
+    "second_live_writer_rejected": true,
+    "historical_bad_state_exception_bound_to_hash": true,
+    "original_CP08_reconstructed_786_files": true,
+    "saved_CSV_NPZ_unchanged": true,
+    "input_corpus_unmodified": true
+  },
+  "scope": "Verificaciones de datos guardados, generación y controles estructurales en copia temporal. Una puerta científica negativa sigue siendo negativa."
+}
