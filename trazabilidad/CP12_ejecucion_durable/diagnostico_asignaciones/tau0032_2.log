@@ -1,0 +1,344 @@
+﻿2026-10-11T16:32:28.5823682Z Current runner version: '2.337.0'
+2026-10-11T16:32:28.5859003Z ##[group]Runner Image Provisioner
+2026-10-11T16:32:28.5860404Z Hosted Compute Agent
+2026-10-11T16:32:28.5861425Z Version: 20261002.596
+2026-10-11T16:32:28.5862764Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-11T16:32:28.5864026Z Build Date: 2026-10-02T22:28:27Z
+2026-10-11T16:32:28.5865225Z Worker ID: {850e4394-d545-4481-a479-d399497466d1}
+2026-10-11T16:32:28.5866832Z Region: centralus
+2026-10-11T16:32:28.5867862Z Cloud: Azure
+2026-10-11T16:32:28.5868967Z ##[endgroup]
+2026-10-11T16:32:28.5871413Z ##[group]Operating System
+2026-10-11T16:32:28.5872931Z Ubuntu
+2026-10-11T16:32:28.5874003Z 24.04.5
+2026-10-11T16:32:28.5874868Z LTS
+2026-10-11T16:32:28.5875942Z ##[endgroup]
+2026-10-11T16:32:28.5877262Z ##[group]Runner Image
+2026-10-11T16:32:28.5878468Z Image: ubuntu-24.04
+2026-10-11T16:32:28.5879680Z Version: 20261004.327.1
+2026-10-11T16:32:28.5881739Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-11T16:32:28.5884662Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-11T16:32:28.5886419Z ##[endgroup]
+2026-10-11T16:32:28.5888810Z ##[group]GITHUB_TOKEN Permissions
+2026-10-11T16:32:28.5891842Z Contents: write
+2026-10-11T16:32:28.5892913Z Metadata: read
+2026-10-11T16:32:28.5893943Z ##[endgroup]
+2026-10-11T16:32:28.5897201Z Secret source: Actions
+2026-10-11T16:32:28.5898933Z Cache mode: write
+2026-10-11T16:32:28.5900355Z Prepare workflow directory
+2026-10-11T16:32:28.6373942Z Prepare all required actions
+2026-10-11T16:32:28.6443656Z Getting action download info
+2026-10-11T16:32:28.8961841Z Download action repository 'actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+2026-10-11T16:32:29.0019824Z Download action repository 'actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1' (SHA:ece7cb06caefa5fff74198d8649806c4678c61a1)
+2026-10-11T16:32:29.0822682Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-11T16:32:29.2930269Z Uses: diegolezaval/Proyecto_Runas/.github/workflows/cp12-frontera-original.yml@refs/heads/ciencia/cp12-causal-chi (e6253118bf6c75382a44aed9dcc8929998816a53)
+2026-10-11T16:32:29.2935513Z ##[group] Inputs
+2026-10-11T16:32:29.2936783Z   target: 32
+2026-10-11T16:32:29.2937268Z ##[endgroup]
+2026-10-11T16:32:29.2937727Z Complete job name: tau0032 / frontera
+2026-10-11T16:32:29.3726340Z ##[group]Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+2026-10-11T16:32:29.3728021Z with:
+2026-10-11T16:32:29.3728473Z   ref: ciencia/cp12-causal-chi
+2026-10-11T16:32:29.3728979Z   fetch-depth: 1
+2026-10-11T16:32:29.3729464Z   repository: diegolezaval/Proyecto_Runas
+2026-10-11T16:32:29.3733105Z   token: ***
+2026-10-11T16:32:29.3733537Z   ssh-strict: true
+2026-10-11T16:32:29.3733970Z   ssh-user: git
+2026-10-11T16:32:29.3734419Z   persist-credentials: true
+2026-10-11T16:32:29.3734929Z   clean: true
+2026-10-11T16:32:29.3735370Z   sparse-checkout-cone-mode: true
+2026-10-11T16:32:29.3735886Z   fetch-tags: false
+2026-10-11T16:32:29.3736318Z   show-progress: true
+2026-10-11T16:32:29.3736956Z   lfs: false
+2026-10-11T16:32:29.3737359Z   submodules: false
+2026-10-11T16:32:29.3737802Z   set-safe-directory: true
+2026-10-11T16:32:29.3738298Z   allow-unsafe-pr-checkout: false
+2026-10-11T16:32:29.3739117Z env:
+2026-10-11T16:32:29.3739538Z   OPENBLAS_NUM_THREADS: 1
+2026-10-11T16:32:29.3740060Z   OMP_NUM_THREADS: 1
+2026-10-11T16:32:29.3740498Z   MKL_NUM_THREADS: 1
+2026-10-11T16:32:29.3740936Z ##[endgroup]
+2026-10-11T16:32:29.4778165Z Syncing repository: diegolezaval/Proyecto_Runas
+2026-10-11T16:32:29.4780169Z ##[group]Getting Git version info
+2026-10-11T16:32:29.4780969Z Working directory is '/home/runner/work/Proyecto_Runas/Proyecto_Runas'
+2026-10-11T16:32:29.4782127Z [command]/usr/bin/git version
+2026-10-11T16:32:29.4852750Z git version 2.55.0
+2026-10-11T16:32:29.4878736Z ##[endgroup]
+2026-10-11T16:32:29.4896314Z Temporarily overriding HOME='/home/runner/work/_temp/734b7616-2aab-43e8-8b7a-def17a7f0836' before making global git config changes
+2026-10-11T16:32:29.4898903Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-11T16:32:29.4903784Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Proyecto_Runas/Proyecto_Runas
+2026-10-11T16:32:29.4957310Z Deleting the contents of '/home/runner/work/Proyecto_Runas/Proyecto_Runas'
+2026-10-11T16:32:29.4961406Z ##[group]Determining repository object format
+2026-10-11T16:32:29.7623698Z ##[endgroup]
+2026-10-11T16:32:29.7625068Z ##[group]Initializing the repository
+2026-10-11T16:32:29.7627697Z [command]/usr/bin/git init /home/runner/work/Proyecto_Runas/Proyecto_Runas
+2026-10-11T16:32:29.7779921Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-11T16:32:29.7782030Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-11T16:32:29.7789250Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-11T16:32:29.7791048Z hint: call:
+2026-10-11T16:32:29.7791831Z hint:
+2026-10-11T16:32:29.7792733Z hint: 	git config --global init.defaultBranch <name>
+2026-10-11T16:32:29.7793803Z hint:
+2026-10-11T16:32:29.7794850Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-11T16:32:29.7796845Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-11T16:32:29.7798157Z hint:
+2026-10-11T16:32:29.7798917Z hint: 	git branch -m <name>
+2026-10-11T16:32:29.7799741Z hint:
+2026-10-11T16:32:29.7800844Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-11T16:32:29.7802674Z Initialized empty Git repository in /home/runner/work/Proyecto_Runas/Proyecto_Runas/.git/
+2026-10-11T16:32:29.7817788Z [command]/usr/bin/git remote add origin https://github.com/diegolezaval/Proyecto_Runas
+2026-10-11T16:32:29.7885115Z ##[endgroup]
+2026-10-11T16:32:29.7887196Z ##[group]Disabling automatic garbage collection
+2026-10-11T16:32:29.7891759Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-11T16:32:29.7935349Z ##[endgroup]
+2026-10-11T16:32:29.7936947Z ##[group]Setting up auth
+2026-10-11T16:32:29.7937980Z Removing SSH command configuration
+2026-10-11T16:32:29.7945124Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-11T16:32:29.7989407Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-11T16:32:29.8384437Z Removing HTTP extra header
+2026-10-11T16:32:29.8391639Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-11T16:32:29.8433182Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-11T16:32:29.8654987Z Removing includeIf entries pointing to credentials config files
+2026-10-11T16:32:29.8661925Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-11T16:32:29.8701113Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-11T16:32:29.8932483Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-11T16:32:29.8985502Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git.path /home/runner/work/_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config
+2026-10-11T16:32:29.9022311Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config
+2026-10-11T16:32:29.9062321Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config
+2026-10-11T16:32:29.9098612Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config
+2026-10-11T16:32:29.9132542Z ##[endgroup]
+2026-10-11T16:32:29.9133321Z ##[group]Fetching the repository
+2026-10-11T16:32:29.9141256Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/ciencia/cp12-causal-chi*:refs/remotes/origin/ciencia/cp12-causal-chi* +refs/tags/ciencia/cp12-causal-chi*:refs/tags/ciencia/cp12-causal-chi*
+2026-10-11T16:32:39.0878311Z From https://github.com/diegolezaval/Proyecto_Runas
+2026-10-11T16:32:39.0880110Z  * [new branch]      ciencia/cp12-causal-chi -> origin/ciencia/cp12-causal-chi
+2026-10-11T16:32:39.0884727Z ##[endgroup]
+2026-10-11T16:32:39.0886008Z ##[group]Determining the checkout info
+2026-10-11T16:32:39.0892080Z [command]/usr/bin/git branch --list --remote origin/ciencia/cp12-causal-chi
+2026-10-11T16:32:39.0923968Z   origin/ciencia/cp12-causal-chi
+2026-10-11T16:32:39.0930897Z ##[endgroup]
+2026-10-11T16:32:39.0934974Z [command]/usr/bin/git sparse-checkout disable
+2026-10-11T16:32:39.0992335Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-11T16:32:39.1029393Z ##[group]Checking out the ref
+2026-10-11T16:32:39.1033282Z [command]/usr/bin/git checkout --progress --force -B ciencia/cp12-causal-chi refs/remotes/origin/ciencia/cp12-causal-chi
+2026-10-11T16:32:39.6276865Z Switched to a new branch 'ciencia/cp12-causal-chi'
+2026-10-11T16:32:39.6287790Z branch 'ciencia/cp12-causal-chi' set up to track 'origin/ciencia/cp12-causal-chi'.
+2026-10-11T16:32:39.6321874Z ##[endgroup]
+2026-10-11T16:32:39.6380016Z [command]/usr/bin/git log -1 --format=%H
+2026-10-11T16:32:39.6410786Z 4e6f208f8045753d3663363fca43b6b8dbc1b510
+2026-10-11T16:32:39.6744369Z ##[group]Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+2026-10-11T16:32:39.6744873Z with:
+2026-10-11T16:32:39.6745133Z   python-version: 3.12.14
+2026-10-11T16:32:39.6745436Z   architecture: x64
+2026-10-11T16:32:39.6745697Z   check-latest: false
+2026-10-11T16:32:39.6748547Z   token: ***
+2026-10-11T16:32:39.6748841Z   update-environment: true
+2026-10-11T16:32:39.6749160Z   allow-prereleases: false
+2026-10-11T16:32:39.6749460Z   freethreaded: false
+2026-10-11T16:32:39.6749738Z env:
+2026-10-11T16:32:39.6749983Z   OPENBLAS_NUM_THREADS: 1
+2026-10-11T16:32:39.6750262Z   OMP_NUM_THREADS: 1
+2026-10-11T16:32:39.6750518Z   MKL_NUM_THREADS: 1
+2026-10-11T16:32:39.6750785Z ##[endgroup]
+2026-10-11T16:32:39.8050298Z ##[group]Installed versions
+2026-10-11T16:32:39.8074296Z Version 3.12.14 was not found in the local cache
+2026-10-11T16:32:40.6159838Z Version 3.12.14 is available for downloading
+2026-10-11T16:32:40.6161178Z Download from "https://github.com/actions/python-versions/releases/download/3.12.14-31661455385/python-3.12.14-linux-24.04-x64.tar.gz"
+2026-10-11T16:32:41.2368607Z Extract downloaded archive
+2026-10-11T16:32:41.2488017Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/d6e5ac69-8535-48c1-b302-563581f7da54 -f /home/runner/work/_temp/73190e25-b9f2-4a0d-b04e-df59f6f6beef
+2026-10-11T16:32:43.1415295Z Execute installation script
+2026-10-11T16:32:43.1510003Z Check if Python hostedtoolcache folder exist...
+2026-10-11T16:32:43.1510466Z Create Python 3.12.14 folder
+2026-10-11T16:32:43.1526153Z Copy Python binaries to hostedtoolcache folder
+2026-10-11T16:32:43.6252432Z Create additional symlinks (Required for the UsePythonVersion Azure Pipelines task and the setup-python GitHub Action)
+2026-10-11T16:32:43.6294499Z Upgrading pip...
+2026-10-11T16:32:45.3778710Z Collecting pip
+2026-10-11T16:32:45.4483643Z Downloading pip-26.2.1-py3-none-any.whl.metadata (4.6 kB)
+2026-10-11T16:32:45.4670031Z Downloading pip-26.2.1-py3-none-any.whl (1.8 MB)
+2026-10-11T16:32:45.5633645Z ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 26.3 MB/s eta 0:00:00
+2026-10-11T16:32:45.5634355Z 
+2026-10-11T16:32:45.5829100Z Installing collected packages: pip
+2026-10-11T16:32:45.5837984Z Attempting uninstall: pip
+2026-10-11T16:32:45.5854251Z Found existing installation: pip 25.0.1
+2026-10-11T16:32:45.6213366Z Uninstalling pip-25.0.1:
+2026-10-11T16:32:45.6271162Z Successfully uninstalled pip-25.0.1
+2026-10-11T16:32:46.5171684Z Successfully installed pip-26.2.1
+2026-10-11T16:32:46.5631737Z Create complete file
+2026-10-11T16:32:46.5669143Z Successfully set up CPython (3.12.14)
+2026-10-11T16:32:46.5670543Z ##[endgroup]
+2026-10-11T16:32:46.5820586Z ##[group]Run python -m pip install -r requirements.txt
+2026-10-11T16:32:46.5821066Z [36;1mpython -m pip install -r requirements.txt[0m
+2026-10-11T16:32:46.6123461Z shell: /usr/bin/bash -e {0}
+2026-10-11T16:32:46.6123786Z env:
+2026-10-11T16:32:46.6124060Z   OPENBLAS_NUM_THREADS: 1
+2026-10-11T16:32:46.6124377Z   OMP_NUM_THREADS: 1
+2026-10-11T16:32:46.6124632Z   MKL_NUM_THREADS: 1
+2026-10-11T16:32:46.6124988Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T16:32:46.6125523Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-10-11T16:32:46.6126061Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T16:32:46.6126730Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T16:32:46.6127216Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T16:32:46.6127689Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-10-11T16:32:46.6128086Z ##[endgroup]
+2026-10-11T16:32:47.2777257Z Collecting numpy==2.3.5 (from -r requirements.txt (line 1))
+2026-10-11T16:32:47.3436875Z   Downloading numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-10-11T16:32:47.5092824Z Collecting scipy==1.17.0 (from -r requirements.txt (line 2))
+2026-10-11T16:32:47.5197855Z   Downloading scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-10-11T16:32:47.6823257Z Collecting matplotlib==3.10.8 (from -r requirements.txt (line 3))
+2026-10-11T16:32:47.6927915Z   Downloading matplotlib-3.10.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
+2026-10-11T16:32:47.7245302Z Collecting threadpoolctl==3.6.0 (from -r requirements.txt (line 4))
+2026-10-11T16:32:47.7349207Z   Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+2026-10-11T16:32:47.8085255Z Collecting contourpy>=1.0.1 (from matplotlib==3.10.8->-r requirements.txt (line 3))
+2026-10-11T16:32:47.8191706Z   Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+2026-10-11T16:32:47.8375249Z Collecting cycler>=0.10 (from matplotlib==3.10.8->-r requirements.txt (line 3))
+2026-10-11T16:32:47.8478048Z   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2026-10-11T16:32:48.0041151Z Collecting fonttools>=4.22.0 (from matplotlib==3.10.8->-r requirements.txt (line 3))
+2026-10-11T16:32:48.0144822Z   Downloading fonttools-4.66.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (130 kB)
+2026-10-11T16:32:48.1107137Z Collecting kiwisolver>=1.3.1 (from matplotlib==3.10.8->-r requirements.txt (line 3))
+2026-10-11T16:32:48.1212573Z   Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+2026-10-11T16:32:48.1448285Z Collecting packaging>=20.0 (from matplotlib==3.10.8->-r requirements.txt (line 3))
+2026-10-11T16:32:48.1549226Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+2026-10-11T16:32:48.3436056Z Collecting pillow>=8 (from matplotlib==3.10.8->-r requirements.txt (line 3))
+2026-10-11T16:32:48.3550121Z   Downloading pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2026-10-11T16:32:48.3870268Z Collecting pyparsing>=3 (from matplotlib==3.10.8->-r requirements.txt (line 3))
+2026-10-11T16:32:48.3971669Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+2026-10-11T16:32:48.4162986Z Collecting python-dateutil>=2.7 (from matplotlib==3.10.8->-r requirements.txt (line 3))
+2026-10-11T16:32:48.4266076Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2026-10-11T16:32:48.4494881Z Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib==3.10.8->-r requirements.txt (line 3))
+2026-10-11T16:32:48.4594748Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2026-10-11T16:32:48.4730304Z Downloading numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+2026-10-11T16:32:48.9333274Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 37.9 MB/s  0:00:00
+2026-10-11T16:32:48.9435501Z Downloading scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.0 MB)
+2026-10-11T16:32:49.1722363Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.0/35.0 MB 154.1 MB/s  0:00:00
+2026-10-11T16:32:49.1827651Z Downloading matplotlib-3.10.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+2026-10-11T16:32:49.2213539Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 232.8 MB/s  0:00:00
+2026-10-11T16:32:49.2314955Z Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+2026-10-11T16:32:49.2437158Z Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (383 kB)
+2026-10-11T16:32:49.2569973Z Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2026-10-11T16:32:49.2688453Z Downloading fonttools-4.66.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+2026-10-11T16:32:49.2908633Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 260.3 MB/s  0:00:00
+2026-10-11T16:32:49.3011025Z Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+2026-10-11T16:32:49.3085162Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 240.7 MB/s  0:00:00
+2026-10-11T16:32:49.3185509Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+2026-10-11T16:32:49.3309824Z Downloading pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+2026-10-11T16:32:49.3577817Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 272.2 MB/s  0:00:00
+2026-10-11T16:32:49.3684789Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+2026-10-11T16:32:49.3806102Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2026-10-11T16:32:49.3929425Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2026-10-11T16:32:49.6145406Z Installing collected packages: threadpoolctl, six, pyparsing, pillow, packaging, numpy, kiwisolver, fonttools, cycler, scipy, python-dateutil, contourpy, matplotlib
+2026-10-11T16:32:58.9055558Z 
+2026-10-11T16:32:58.9075290Z Successfully installed contourpy-1.4.0 cycler-0.12.1 fonttools-4.66.1 kiwisolver-1.5.1 matplotlib-3.10.8 numpy-2.3.5 packaging-26.3 pillow-12.3.0 pyparsing-3.3.3 python-dateutil-2.9.0.post0 scipy-1.17.0 six-1.17.0 threadpoolctl-3.6.0
+2026-10-11T16:32:58.9808163Z ##[group]Run python trazabilidad/CP12_reconstruccion/comprobar_dispatch_original.py
+2026-10-11T16:32:58.9808824Z [36;1mpython trazabilidad/CP12_reconstruccion/comprobar_dispatch_original.py[0m
+2026-10-11T16:32:58.9876083Z shell: /usr/bin/bash -e {0}
+2026-10-11T16:32:58.9876350Z env:
+2026-10-11T16:32:58.9876787Z   OPENBLAS_NUM_THREADS: 1
+2026-10-11T16:32:58.9877033Z   OMP_NUM_THREADS: 1
+2026-10-11T16:32:58.9877250Z   MKL_NUM_THREADS: 1
+2026-10-11T16:32:58.9877543Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T16:32:58.9878014Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-10-11T16:32:58.9878471Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T16:32:58.9878884Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T16:32:58.9879288Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T16:32:58.9879706Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-10-11T16:32:58.9880268Z ##[endgroup]
+2026-10-11T16:32:59.1007547Z Traceback (most recent call last):
+2026-10-11T16:32:59.1014186Z   File "/home/runner/work/Proyecto_Runas/Proyecto_Runas/trazabilidad/CP12_reconstruccion/comprobar_dispatch_original.py", line 21, in <module>
+2026-10-11T16:32:59.1015085Z {
+2026-10-11T16:32:59.1015745Z     if not passed:raise ValueError('Original BLAS dispatch unavailable on this runner; zero M2 steps; do not migrate.')
+2026-10-11T16:32:59.1016867Z                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-10-11T16:32:59.1017598Z ValueError: Original BLAS dispatch unavailable on this runner; zero M2 steps; do not migrate.
+2026-10-11T16:32:59.1018118Z   "passed": false,
+2026-10-11T16:32:59.1018407Z   "checked_at": "2026-10-11T16:32:59.100346+00:00",
+2026-10-11T16:32:59.1018777Z   "expected_observed_architecture": "SkylakeX",
+2026-10-11T16:32:59.1019119Z   "observed_threadpools": [
+2026-10-11T16:32:59.1019378Z     {
+2026-10-11T16:32:59.1019617Z       "user_api": "blas",
+2026-10-11T16:32:59.1019882Z       "internal_api": "openblas",
+2026-10-11T16:32:59.1020162Z       "num_threads": 1,
+2026-10-11T16:32:59.1020419Z       "prefix": "libscipy_openblas",
+2026-10-11T16:32:59.1021065Z       "filepath": "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+2026-10-11T16:32:59.1021714Z       "version": "0.3.30",
+2026-10-11T16:32:59.1022001Z       "threading_layer": "pthreads",
+2026-10-11T16:32:59.1022293Z       "architecture": "Haswell"
+2026-10-11T16:32:59.1022546Z     }
+2026-10-11T16:32:59.1022733Z   ],
+2026-10-11T16:32:59.1022923Z   "M2_steps": 0,
+2026-10-11T16:32:59.1023170Z   "physical_execution_started": false,
+2026-10-11T16:32:59.1023477Z   "coretype_override_used": false,
+2026-10-11T16:32:59.1023761Z   "GitHub_run_id": "38155352563",
+2026-10-11T16:32:59.1024037Z   "GitHub_run_attempt": "4",
+2026-10-11T16:32:59.1024612Z   "purpose": "Actual dispatch eligibility only; original full identity and exact zero-step restart remain mandatory."
+2026-10-11T16:32:59.1025209Z }
+2026-10-11T16:32:59.1167622Z ##[error]Process completed with exit code 1.
+2026-10-11T16:32:59.1306339Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-11T16:32:59.1307078Z with:
+2026-10-11T16:32:59.1307308Z   name: CP12-frontera-32-38155352563-4
+2026-10-11T16:32:59.1308283Z   path: trazabilidad/CP12_reconstruccion/entorno_durable/dispatch_GitHub_38155352563_4.json
+trazabilidad/CP12_reconstruccion/entorno_durable/GitHub_38155352563_4.json
+trazabilidad/CP12_reconstruccion/incidentes/GitHub_38155352563_*/
+
+2026-10-11T16:32:59.1309270Z   if-no-files-found: warn
+2026-10-11T16:32:59.1309514Z   compression-level: 6
+2026-10-11T16:32:59.1309731Z   overwrite: false
+2026-10-11T16:32:59.1309947Z   include-hidden-files: false
+2026-10-11T16:32:59.1310183Z env:
+2026-10-11T16:32:59.1310372Z   OPENBLAS_NUM_THREADS: 1
+2026-10-11T16:32:59.1310595Z   OMP_NUM_THREADS: 1
+2026-10-11T16:32:59.1310822Z   MKL_NUM_THREADS: 1
+2026-10-11T16:32:59.1311095Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T16:32:59.1311557Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-10-11T16:32:59.1311986Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T16:32:59.1312367Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T16:32:59.1312754Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T16:32:59.1313144Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-10-11T16:32:59.1313471Z ##[endgroup]
+2026-10-11T16:32:59.3000301Z (node:2464) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-11T16:32:59.3001176Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-11T16:32:59.3067342Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-10-11T16:32:59.3070429Z The least common ancestor is /home/runner/work/Proyecto_Runas/Proyecto_Runas/trazabilidad/CP12_reconstruccion. This will be the root directory of the artifact
+2026-10-11T16:32:59.3072376Z With the provided path, there will be 1 file uploaded
+2026-10-11T16:32:59.3075847Z Artifact name is valid!
+2026-10-11T16:32:59.3077243Z Root directory input is valid!
+2026-10-11T16:32:59.5703263Z Beginning upload of artifact content to blob storage
+2026-10-11T16:32:59.5952400Z (node:2464) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-11T16:32:59.7223928Z Uploaded bytes 665
+2026-10-11T16:32:59.7620399Z Finished uploading artifact content to blob storage!
+2026-10-11T16:32:59.7621880Z SHA256 digest of uploaded artifact zip is 00022066ae82c2d29ea048935d5523218f348675cdf6f68e6fdb2b205a3b08bf
+2026-10-11T16:32:59.7623219Z Finalizing artifact upload
+2026-10-11T16:32:59.9708032Z Artifact CP12-frontera-32-38155352563-4.zip successfully finalized. Artifact ID 11708043774
+2026-10-11T16:32:59.9709690Z Artifact CP12-frontera-32-38155352563-4 has been successfully uploaded! Final size is 665 bytes. Artifact ID is 11708043774
+2026-10-11T16:32:59.9714151Z Artifact download URL: https://github.com/diegolezaval/Proyecto_Runas/actions/runs/38155352563/artifacts/11708043774
+2026-10-11T16:32:59.9899325Z Post job cleanup.
+2026-10-11T16:33:00.0760435Z [command]/usr/bin/git version
+2026-10-11T16:33:00.0803018Z git version 2.55.0
+2026-10-11T16:33:00.0845216Z Temporarily overriding HOME='/home/runner/work/_temp/1a63e65b-6c6f-451e-9c54-c849a8fd3fbf' before making global git config changes
+2026-10-11T16:33:00.0846983Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-11T16:33:00.0851007Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Proyecto_Runas/Proyecto_Runas
+2026-10-11T16:33:00.0883236Z Removing SSH command configuration
+2026-10-11T16:33:00.0890143Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-11T16:33:00.0925653Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-11T16:33:00.1181442Z Removing HTTP extra header
+2026-10-11T16:33:00.1184640Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-11T16:33:00.1224739Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-11T16:33:00.1475288Z Removing includeIf entries pointing to credentials config files
+2026-10-11T16:33:00.1482674Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-11T16:33:00.1514011Z includeif.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git.path
+2026-10-11T16:33:00.1515225Z includeif.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git/worktrees/*.path
+2026-10-11T16:33:00.1516364Z includeif.gitdir:/github/workspace/.git.path
+2026-10-11T16:33:00.1517302Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-11T16:33:00.1525559Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git.path
+2026-10-11T16:33:00.1552850Z /home/runner/work/_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config
+2026-10-11T16:33:00.1568306Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git.path /home/runner/work/_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config
+2026-10-11T16:33:00.1611709Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git/worktrees/*.path
+2026-10-11T16:33:00.1639439Z /home/runner/work/_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config
+2026-10-11T16:33:00.1650950Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config
+2026-10-11T16:33:00.1690667Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-11T16:33:00.1716851Z /github/runner_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config
+2026-10-11T16:33:00.1727079Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config
+2026-10-11T16:33:00.1764707Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-11T16:33:00.1790484Z /github/runner_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config
+2026-10-11T16:33:00.1802627Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config
+2026-10-11T16:33:00.1849426Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-11T16:33:00.2084234Z Removing credentials config '/home/runner/work/_temp/git-credentials-1122c35d-15dd-4e47-ac94-88491716b0ea.config'
+2026-10-11T16:33:00.2231728Z Cleaning up orphan processes
+2026-10-11T16:33:00.2511388Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
