@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-11T02:46:13.327151+00:00",
+  "M2_steps": 0,
+  "passed": false,
+  "original_state_unchanged": true,
+  "error": "Los datos iniciales no reproducen CP10; detener antes de evolucionar",
+  "diagnosis": "The BLAS dispatch Haswell fails exact seed reproduction with unchanged original code. Environment versions and run_id alone do not guarantee restart portability.",
+  "scientific_negative_result": false,
+  "correction_tested": false,
+  "candidate_environment_blocked": true
+}

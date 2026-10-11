@@ -260,7 +260,7 @@ def check_handoff():
         actual=result['independent_extracted_check']
         for key in ['state_sha256','receipt_sha256','configuration_sha256']:
             if actual[key]!=proof[key]:raise ValueError('Original zero-step handoff differs: '+key)
-    record=ADMIN/('verificacion_traslado_'+os.environ['GITHUB_RUN_ID']+'.json')
+    record=ADMIN/('verificacion_traslado_'+os.environ['GITHUB_RUN_ID']+'_'+os.environ.get('GITHUB_RUN_ATTEMPT','1')+'.json')
     write_new(record,dict(passed=True,M2_steps=0,time=time_,checked_at=manager.prov.now(),
         original_full_identity=manager.original_identity()[2],fresh_remote_recovery=result,
         scientific_closure=False,correction_tested=False))
@@ -283,7 +283,7 @@ if __name__=='__main__':
     except Exception:
         details=dict(failed_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),target=args.target,
             error=traceback.format_exc(),scientific_closure=False,main_modified=False)
-        incident=SUPPORT/'incidentes'/('GitHub_'+os.environ.get('GITHUB_RUN_ID','local')+'_'+str(args.target))
+        incident=SUPPORT/'incidentes'/('GitHub_'+os.environ.get('GITHUB_RUN_ID','local')+'_'+os.environ.get('GITHUB_RUN_ATTEMPT','1')+'_'+str(args.target))
         try:
             write_new(incident/'fallo.json',details)
             for name in ['procedencia.json','ejecucion.log','CP12_par_progreso.json']:

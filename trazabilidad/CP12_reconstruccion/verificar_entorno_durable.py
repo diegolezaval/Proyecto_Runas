@@ -35,7 +35,8 @@ def main():
     result['execution_origin'] = dict(GitHub_run_id=os.environ.get('GITHUB_RUN_ID'),
                                      GitHub_job=os.environ.get('GITHUB_JOB'),
                                      available_logical_CPUs=os.cpu_count())
-    filename='GitHub_'+os.environ['GITHUB_RUN_ID']+'.json' if os.environ.get('GITHUB_RUN_ID') else 'resultados.json'
+    result['execution_origin']['GitHub_run_attempt']=os.environ.get('GITHUB_RUN_ATTEMPT')
+    filename='GitHub_'+os.environ['GITHUB_RUN_ID']+'_'+os.environ.get('GITHUB_RUN_ATTEMPT','1')+'.json' if os.environ.get('GITHUB_RUN_ID') else 'resultados.json'
     prov.write(out/filename,result)
     print(json.dumps(result,indent=2))
     if not result['passed']:

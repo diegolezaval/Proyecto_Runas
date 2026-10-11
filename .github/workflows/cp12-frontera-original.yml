@@ -27,6 +27,10 @@ jobs:
         with:
           python-version: '3.12.14'
           architecture: x64
+      - name: Dependencias originales
+        run: python -m pip install -r requirements.txt
+      - name: Exigir dispatch BLAS original con cero pasos M2
+        run: python trazabilidad/CP12_reconstruccion/comprobar_dispatch_original.py
       - name: Instalar el compilador original desde el archivo firmado de Ubuntu
         run: |
           sudo tee /tmp/cp12-snapshot.list >/dev/null <<'APT'
@@ -47,8 +51,6 @@ jobs:
             g++-13-x86-64-linux-gnu=13.3.0-6ubuntu2~24.04 \
             libstdc++-13-dev=13.3.0-6ubuntu2~24.04
           cc --version
-      - name: Dependencias originales
-        run: python -m pip install -r requirements.txt
       - name: Exigir identidad original antes de actuar
         run: python trazabilidad/CP12_reconstruccion/verificar_entorno_durable.py
       - name: Verificar traslado con cero pasos M2
@@ -64,8 +66,9 @@ jobs:
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: CP12-frontera-${{ inputs.target }}-${{ github.run_id }}
+          name: CP12-frontera-${{ inputs.target }}-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
-            trazabilidad/CP12_reconstruccion/entorno_durable/GitHub_${{ github.run_id }}.json
+            trazabilidad/CP12_reconstruccion/entorno_durable/dispatch_GitHub_${{ github.run_id }}_${{ github.run_attempt }}.json
+            trazabilidad/CP12_reconstruccion/entorno_durable/GitHub_${{ github.run_id }}_${{ github.run_attempt }}.json
             trazabilidad/CP12_reconstruccion/incidentes/GitHub_${{ github.run_id }}_*/
           if-no-files-found: warn
