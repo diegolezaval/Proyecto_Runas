@@ -1,0 +1,80 @@
+{
+  "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+  "status": "RESPUESTA_FORZADA_DELIMITADA_CAUSA_ABIERTA",
+  "algebra_passed": true,
+  "observed_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "original_phase_space_error": 0.0512639096419456,
+  "free_initial_phase_space_error": 0.0007188339270932052,
+  "forced_response_phase_space_difference": 0.05127140369404427,
+  "forced_difference_amplitude_ratio": 1.000146185730878,
+  "forced_difference_lower_bound_amplitude_ratio": 0.9859777778925969,
+  "forced_difference_upper_bound_amplitude_ratio": 1.0140222221074031,
+  "decomposition_closure_relative_residual": 3.459089827900026e-15,
+  "instantaneous_defect_terms": [
+    {
+      "frame": "initial",
+      "identity_relative_residual": 4.0108595261042504e-13,
+      "spline_matrix_equivalence_relative_error": 1.1117262442943358e-16,
+      "operator_commutator_norm_over_M2_initial_chi": 3.4983992891277257e-07,
+      "source_difference_norm_over_M2_initial_chi": 2.7638131049259694e-06,
+      "float64_epsilon": 2.220446049250313e-16,
+      "reference_epsilon": 1.0842021724855044e-19,
+      "values_are_instantaneous_not_integrated_error_budgets": true,
+      "same_equations_parameters_states_and_interpolation": true
+    },
+    {
+      "frame": "final",
+      "identity_relative_residual": 1.184924871473654e-16,
+      "spline_matrix_equivalence_relative_error": 1.0350898655922542e-16,
+      "operator_commutator_norm_over_M2_initial_chi": 4.683797280348404e-05,
+      "source_difference_norm_over_M2_initial_chi": 0.0006682798120396041,
+      "float64_epsilon": 2.220446049250313e-16,
+      "reference_epsilon": 1.0842021724855044e-19,
+      "values_are_instantaneous_not_integrated_error_budgets": true,
+      "same_equations_parameters_states_and_interpolation": true
+    }
+  ],
+  "main_free_initial_explanation_rejected": true,
+  "source_history_reconstructible_from_endpoints": false,
+  "fundamental_model_Cauchy_uniqueness_questioned": false,
+  "cause_certified": false,
+  "physical_gate": "REFINAMIENTO_PENDIENTE",
+  "physical_gate_threshold": 0.02,
+  "new_M2_evolution_steps": 0,
+  "old_evolutions_repeated": false,
+  "decisions": [
+    {
+      "hypothesis": "PROPAGACION_LIBRE_INICIAL_DOMINANTE",
+      "decision": "DESCARTADA",
+      "scope": "Cota triangular exacta de la diferencia en respuesta forzada. No separa error de operador y fuente."
+    },
+    {
+      "hypothesis": "CAUSA_ACOPLADA_IDENTIFICADA",
+      "decision": "ABIERTA_POR_HISTORIA_NO_GUARDADA",
+      "scope": "Los extremos dan dos momentos por modo; el presupuesto Duhamel de conmutador y fuente necesita su historia."
+    }
+  ],
+  "arithmetic_reference": "longdouble; misma acción y estados, spline fijo; intento doble fallido preservado",
+  "stop_reason": "Diagnóstico finito cerrado. No otra malla, otra fase ajustada o evolución sin evidencia discriminante y prerregistro nuevo."
+}

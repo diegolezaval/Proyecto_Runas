@@ -1,0 +1,23 @@
+{
+  "detected_at": "2026-10-10T22:02:06.753837+00:00",
+  "scientific_negative": false,
+  "CP12_closed": false,
+  "physical_lock_held": false,
+  "previous_sessions_not_found": [
+    74186,
+    2643
+  ],
+  "last_saved_time": 16,
+  "target_not_completed": 24,
+  "all_evidence_sha256": {
+    "procedencia.json": "f95015a144b263267de9a310dde78c964de5a27d063ab54b8eb12bed6b9f4500",
+    "ejecucion.log": "1a0f1ff69409a5fd1cd60baf423032299c37310e03c94c3e93d354a6614e92c7",
+    "lectura_final_cp12.log": "df42671146100a41e0b2ce38a1943ce6e67507f07d8968eeec87fc63dd5b6da0",
+    "continuation_cp12.log": "c88d1136152b8c6de7cdcb4430a5a4a39b081205a7ace5c84cf7d3cdbcdfd17f",
+    "configuration.json": "148dfb982ce59ff5e9e7696749f58c77584c96c2833ca5fb4bd03122af5e5541",
+    "CP12_par_progreso.json": "13e4fa62eb76bd589592d762d441cd18f7e7e1fa2f5aaa09082091430a36d388",
+    "continue_cp12_verified.py": "8579d55d1ffca607c17a43a389123824c78c7e15cdf7fef50f28c0f7d79d2076"
+  },
+  "restart_sha256": "3262c6eb99838319c31e2379cc11c4cd97b0631d5fd2760b741fc716622f4b21",
+  "resume_policy": "Restaurar c\u00e1psula tau16 comprobada; conservar el recibo interrumpido sin editarlo; no repetir tramos validados."
+}

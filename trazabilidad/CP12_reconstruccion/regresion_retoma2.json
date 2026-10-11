@@ -1,0 +1,313 @@
+{
+  "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+  "passed": true,
+  "numerical_campaigns_executed": false,
+  "tests": {
+    "geometry_views_idempotent": true,
+    "broken_current_link_detected": true,
+    "recursive_execution_exclusions": true,
+    "dependency_lockfiles_not_ignored": true,
+    "scientific_states_not_ignored": true,
+    "unfinished_scientific_write_rejected": true,
+    "undeclared_directory_symlink_rejected": true,
+    "finished_adaptive_run_reused": true,
+    "same_destination_different_configuration_rejected": true,
+    "colliding_tags_share_lock_identity": true,
+    "second_live_writer_rejected": true,
+    "historical_bad_state_exception_bound_to_hash": true,
+    "original_CP08_reconstructed_786_files": true,
+    "saved_CSV_NPZ_unchanged": true,
+    "input_corpus_unmodified": true
+  },
+  "runs": [
+    {
+      "command": [
+        "verificar_CP10.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\n  \"passed\": true,\n  \"tests\": {\n    \"all_protocol_thresholds_match_original\": true,\n    \"four_closed_receipts_valid\": true,\n    \"final_comparison_observed_single_thread_pools\": true,\n    \"diagnostic_thread_observation_unknown_and_original_preserved\": true,\n    \"all_original_numerical_results_failures_figures_and_roadmap_unchanged\": true,\n    \"all_833_CP09_files_recoverable\": true,\n    \"unchanged:herramientas/modelo_m2.py\": true,\n    \"unchanged:herramientas/continuar_no_radial_m2.py\": true,\n    \"unchanged:herramientas/continuar_no_radial_adaptativo.py\": true,\n    \"unchanged:herramientas/fuerza_potencial_m2.c\": true,\n    \"unchanged:herramientas/acelerar_fuerza_m2.py\": true,\n    \"unchanged:datos/theta_comun.json\": true,\n    \"unchanged:datos/ensayo_no_radial_CP06.json\": true,\n    \"all_33_stage_identities_preserved\": true,\n    \"other_29_stage_records_identical\": true,\n    \"E00_E01_C0_closed_records_identical\": true,\n    \"all_original_stage_gates_and_dependencies_identical\": true,\n    \"general_research_stages_remain_partial\": true,\n    \"no_active_runs_in_delivery\": true,\n    \"no_complete_primordials_declared\": true,\n    \"temporal_h0125:initial_Cauchy_fields_exactly_from_saved_CP04\": true,\n    \"temporal_h0125:source_hash\": true,\n    \"temporal_h0125:all_arrays_finite\": true,\n    \"temporal_h0125:completed_window\": true,\n    \"temporal_h0125:real_restart_from_valid_pilot\": true,\n    \"temporal_h0125:interrupted_segments_preserved_and_recovered\": true,\n    \"temporal_h0125:no_unclosed_receipt_segment\": true,\n    \"temporal_h0125:C_Numpy_force_equivalence\": true,\n    \"espacial_h00625:initial_Cauchy_fields_exactly_from_saved_CP04\": true,\n    \"espacial_h00625:source_hash\": true,\n    \"espacial_h00625:all_arrays_finite\": true,\n    \"espacial_h00625:completed_window\": true,\n    \"espacial_h00625:real_restart_from_valid_pilot\": true,\n    \"espacial_h00625:interrupted_segments_preserved_and_recovered\": true,\n    \"espacial_h00625:no_unclosed_receipt_segment\": true,\n    \"espacial_h00625:C_Numpy_force_equivalence\": true,\n    \"temporal_control_keeps_initial_data_exact\": true,\n    \"temporal_fino_h0125:saved_metrics_recovered\": true,\n    \"temporal_fino_h0125:unchanged_gate_correctly_applied\": true,\n    \"radial_fino_h0125_h00625:saved_metrics_recovered\": true,\n    \"radial_fino_h0125_h00625:unchanged_gate_correctly_applied\": true,\n    \"negative_or_positive_decision_matches_data\": true,\n    \"no_chi_phase_fitting_or_continuum_claim\": true\n  },\n  \"decision\": \"REFINAMIENTO_PENDIENTE\",\n  \"receipt_count\": 4,\n  \"scientific_campaigns_repeated\": false,\n  \"new_integration_steps_executed\": false,\n  \"scope\": \"Recibos, estados, construcción inicial, conservación histórica y recuperación de comparaciones. No certificado del continuo ni dispositivo.\"\n}\n"
+    },
+    {
+      "command": [
+        "generar_resumen_CP10.py",
+        "--comprobar"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\"passed\": true, \"generated_view\": \"informes/RESUMEN_NUMERICO_CP10.md\", \"integrations_executed\": false}\n"
+    },
+    {
+      "command": [
+        "probar_procedencia_futura.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\n  \"passed\": true,\n  \"tests\": {\n    \"receipt_and_sources_exist_before_worker_and_threads_applied\": true,\n    \"campaign_directory_relative_to_corpus\": true,\n    \"second_live_writer_refused_without_mutation\": true,\n    \"changed_code_resume_refused_without_new_run\": true,\n    \"nonfinite_orphan_state_refused_without_receipt_mutation\": true,\n    \"orphan_segment_preserved_and_recovered\": true,\n    \"closed_case_reused_without_output_or_receipt_changes\": true,\n    \"finished_worker_orphan_closed_without_advancing_state\": true,\n    \"undeclared_launcher_refused\": true\n  },\n  \"commands\": [\n    {\n      \"args\": [\n        \"--stop-at\",\n        \"1\"\n      ],\n      \"returncode\": 0,\n      \"expected\": 0\n    },\n    {\n      \"args\": [\n        \"--reanudar\"\n      ],\n      \"returncode\": 1,\n      \"expected\": 1\n    },\n    {\n      \"args\": [\n        \"--reanudar\"\n      ],\n      \"returncode\": 1,\n      \"expected\": 1\n    },\n    {\n      \"args\": [\n        \"--reanudar\"\n      ],\n      \"returncode\": 1,\n      \"expected\": 1\n    },\n    {\n      \"args\": [\n        \"--reanudar\"\n      ],\n      \"returncode\": 0,\n      \"expected\": 0\n    },\n    {\n      \"args\": [\n        \"--verificar\"\n      ],\n      \"returncode\": 0,\n      \"expected\": 0\n    },\n    {\n      \"args\": [\n        \"--reanudar\"\n      ],\n      \"returncode\": 0,\n      \"expected\": 0\n    },\n    {\n      \"args\": [\n        \"--reanudar\"\n      ],\n      \"returncode\": 0,\n      \"expected\": 0\n    },\n    {\n      \"args\": [\n        \"--verificar\"\n      ],\n      \"returncode\": 0,\n      \"expected\": 0\n    },\n    {\n      \"args\": [],\n      \"returncode\": 1,\n      \"expected\": 1\n    }\n  ],\n  \"adapter_sha256\": \"a9f0f632a0f2829ff9557ffb19ed0b4378faba20244bb571b65f7de24aead3d2\",\n  \"numerical_campaigns_executed\": false,\n  \"scope\": \"Controles aislados de orquestación con arrays sintéticos; no evidencia física ni integración M2. Corpus científico no modificado.\"\n}\n"
+    },
+    {
+      "command": [
+        "verificar_CP11.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\n  \"passed\": true,\n  \"checkpoint\": \"CP11_DIAGNOSTICO_RADIAL_CHI\",\n  \"tests\": {\n    \"all_938_CP10_files_recoverable\": true,\n    \"no_original_file_removed_or_renamed\": true,\n    \"all_original_scientific_evidence_and_chapters_unchanged\": true,\n    \"unchanged:herramientas/modelo_m2.py\": true,\n    \"unchanged:herramientas/continuar_no_radial_m2.py\": true,\n    \"unchanged:herramientas/continuar_no_radial_adaptativo.py\": true,\n    \"unchanged:herramientas/fuerza_potencial_m2.c\": true,\n    \"unchanged:datos/theta_comun.json\": true,\n    \"unchanged:datos/ensayo_no_radial_CP06.json\": true,\n    \"unchanged:datos/ensayo_mediador_CP10.json\": true,\n    \"all_33_stage_identities_and_gates_preserved\": true,\n    \"other_32_stage_records_identical\": true,\n    \"E00_E01_C0_not_reopened\": true,\n    \"general_research_stages_remain_partial\": true,\n    \"no_active_runs_no_primordial_declared\": true,\n    \"latest_valid_M2_state_is_still_CP10\": true,\n    \"diagnostico_radial:receipt_integrity_and_expected_status\": true,\n    \"diagnostico_radial:unchanged_physical_gate_and_no_evolution\": true,\n    \"contraste_fuente:receipt_integrity_and_expected_status\": true,\n    \"contraste_fuente:unchanged_physical_gate_and_no_evolution\": true,\n    \"respuesta_forzada:receipt_integrity_and_expected_status\": true,\n    \"respuesta_forzada:unchanged_physical_gate_and_no_evolution\": true,\n    \"respuesta_forzada_precisa:receipt_integrity_and_expected_status\": true,\n    \"respuesta_forzada_precisa:unchanged_physical_gate_and_no_evolution\": true,\n    \"metric_and_algebra_decisions_match_data\": true,\n    \"negative_frozen_phase_gate_preserved\": true,\n    \"arithmetic_failure_preserved_without_physical_inference\": true,\n    \"extended_reference_meets_same_tolerance\": true,\n    \"forced_response_bound_and_stop_delimited\": true,\n    \"CP10_original_checkpoint_reconstructed_and_verified\": true\n  },\n  \"original_files_recoverable\": 938,\n  \"missing_originals\": [],\n  \"receipts\": [\n    {\n      \"passed\": true,\n      \"run_id\": \"95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa\",\n      \"status\": \"COMPLETADA\",\n      \"issues\": [],\n      \"scope\": \"Fuentes de ejecución capturadas y salidas; no aceptación científica.\"\n    },\n    {\n      \"passed\": true,\n      \"run_id\": \"f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9\",\n      \"status\": \"COMPLETADA\",\n      \"issues\": [],\n      \"scope\": \"Fuentes de ejecución capturadas y salidas; no aceptación científica.\"\n    },\n    {\n      \"passed\": true,\n      \"run_id\": \"9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817\",\n      \"status\": \"FALLIDA\",\n      \"issues\": [],\n      \"scope\": \"Fuentes de ejecución capturadas y salidas; no aceptación científica.\"\n    },\n    {\n      \"passed\": true,\n      \"run_id\": \"74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed\",\n      \"status\": \"COMPLETADA\",\n      \"issues\": [],\n      \"scope\": \"Fuentes de ejecución capturadas y salidas; no aceptación científica.\"\n    }\n  ],\n  \"reproductions\": [],\n  \"new_M2_evolution_steps\": 0,\n  \"physical_gate\": \"REFINAMIENTO_PENDIENTE\",\n  \"physical_gate_threshold\": 0.02,\n  \"scope\": \"Identidad, antecedentes, puertas y reproducción de diagnósticos en temporales; no evolución, aceptación física ni certificación del continuo.\"\n}\n"
+    },
+    {
+      "command": [
+        "generar_resumen_CP11.py",
+        "--comprobar"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\"passed\": true, \"generated_views\": [\"informes/RESUMEN_NUMERICO_CP11.md\", \"graficos/CP11_diagnostico_chi.svg\"], \"new_M2_evolution_steps\": 0}\n"
+    },
+    {
+      "command": [
+        "probar_recibo_externo_CP11.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\n  \"passed\": true,\n  \"tests\": {\n    \"external_close_exits_zero\": true,\n    \"external_completed_receipt_reused\": true,\n    \"receipt_integrity_verified\": true,\n    \"reused_receipt_byte_identical\": true,\n    \"external_path_reported\": true,\n    \"synthetic_control_only\": true\n  },\n  \"new_M2_evolution_steps\": 0,\n  \"scope\": \"Control aislado de publicación, no cálculo ni aceptación científica.\"\n}\n"
+    },
+    {
+      "command": [
+        "verificar_entorno.py",
+        "--cp10"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\n  \"python\": \"3.12.14\",\n  \"python_supported\": true,\n  \"platform\": \"Linux\",\n  \"adaptive_requires_posix\": true,\n  \"adaptive_platform_supported\": true,\n  \"optional_C_compiler\": true,\n  \"packages\": [\n    {\n      \"package\": \"numpy\",\n      \"expected\": \"2.3.5\",\n      \"installed\": \"2.3.5\",\n      \"passed\": true\n    },\n    {\n      \"package\": \"scipy\",\n      \"expected\": \"1.17.0\",\n      \"installed\": \"1.17.0\",\n      \"passed\": true\n    },\n    {\n      \"package\": \"matplotlib\",\n      \"expected\": \"3.10.8\",\n      \"installed\": \"3.10.8\",\n      \"passed\": true\n    },\n    {\n      \"package\": \"threadpoolctl\",\n      \"expected\": \"3.6.0\",\n      \"installed\": \"3.6.0\",\n      \"passed\": true\n    }\n  ],\n  \"passed\": true,\n  \"scope\": \"Pins del entorno de referencia. La verificación de hashes sólo requiere stdlib; la integración adaptativa usa fcntl/POSIX. La fuerza C es opcional. Reproducir las ejecuciones C de CP10 requiere cc; verificar sus datos guardados no lo requiere.\",\n  \"CP10_registered_backend_requires_C_compiler\": true\n}\n"
+    },
+    {
+      "command": [
+        "generar_continuidad.py",
+        "--comprobar"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\"passed\": true, \"stale\": [], \"written\": []}\n"
+    },
+    {
+      "command": [
+        "auditar_arquitectura.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\n  \"checkpoint\": \"CP11_DIAGNOSTICO_RADIAL_CHI\",\n  \"passed\": true,\n  \"issues\": [],\n  \"counts\": {\n    \"json\": 512,\n    \"python\": 280,\n    \"svg\": 68\n  },\n  \"claims_indexed\": 28,\n  \"states_inspected\": 97,\n  \"readable_states\": 96,\n  \"preserved_unreadable_states\": [\n    \"validacion/P06/acceso_lineal/colocacion_Om5.0000_estado.npz\"\n  ],\n  \"numerical_campaigns_executed\": false,\n  \"scope\": \"Integridad documental, metadatos y diagnóstico de estados incluidos; no certificación científica.\"\n}\n"
+    },
+    {
+      "command": [
+        "verificar_continuidad.py",
+        "--solo-lectura"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\n  \"schema_version\": \"1.0.0\",\n  \"checkpoint\": \"CP11_DIAGNOSTICO_RADIAL_CHI\",\n  \"passed\": true,\n  \"counts\": {\n    \"json\": 512,\n    \"python\": 280,\n    \"svg\": 68,\n    \"local_links\": 631\n  },\n  \"issues\": [],\n  \"E00_E01_recalculated\": false,\n  \"scope\": \"Integridad y continuidad editorial; no certificación científica automática.\"\n}\n"
+    },
+    {
+      "command": [
+        "verificar.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [
+        "validacion/informe.json"
+      ],
+      "output": "{\n  \"passed\": true,\n  \"checks\": 194,\n  \"failed\": [],\n  \"calculations\": {\n    \"lamp\": {\n      \"incident_W\": 20.0,\n      \"optical_W\": 6,\n      \"heat_W\": 8.700005001667083,\n      \"export_W\": 5.299994998332917,\n      \"required_bus_W\": 10.660005001667084,\n      \"preparation_J\": 39.0\n    },\n    \"heater\": {\n      \"time_s\": 1068.6472049184526,\n      \"input_J\": 106864.72049184526,\n      \"stored_J\": 83680.0,\n      \"loss_to_environment_J\": 23184.72049184526\n    },\n    \"freezing\": {\n      \"heat_extracted_J\": 417180.0,\n      \"minimum_work_J\": 27410.18825661583,\n      \"R1_work_ideal_terminals_J\": 54820.37651323166,\n      \"heat_rejected_J\": 472000.37651323166,\n      \"entropy_generated_J_K\": 93.50226251617232\n    },\n    \"reserve\": {\n      \"useful_J\": 1000000.0,\n      \"structural_J\": 50000.0,\n      \"max_power_W\": 100000.0,\n      \"runtime_1kW_s\": 979.7599595938419\n    },\n    \"lifting\": {\n      \"gravity_J\": 981.0,\n      \"actuator_input_J\": 1090.0,\n      \"reserve_debit_J\": 1112.2448979591836,\n      \"regenerated_J\": 784.8000000000001,\n      \"net_cycle_loss_J\": 327.44489795918355\n    },\n    \"support\": {\n      \"stiffness_N_m\": 10000.0,\n      \"max_force_N\": 2000.0,\n      \"structural_J\": 200000.0,\n      \"static_extension_m\": 0.0981,\n      \"elastic_J\": 48.11805,\n      \"hold_W\": 2.0,\n      \"terminal_area_m2\": 0.00981,\n      \"conditional_wave_speed_m_s\": 134071263.04595013\n    },\n    \"controller\": {\n      \"duration_s\": 1,\n      \"target_step_m\": 0.05,\n      \"final_x_m\": 0.0499750300386192,\n      \"analytic_x_m\": 0.04997503003863064,\n      \"refinement_change_m\": 1.7272294705605873e-13,\n      \"max_force_N\": 1481.0,\n      \"scope\": \"Sin ruido ni retardo de sensor mecánico; no prueba robustez ante todos los fallos.\"\n    },\n    \"solar_growth\": {\n      \"initial_area_m2\": 0.0025,\n      \"target_area_m2\": 1.0,\n      \"time_ideal_s\": 1.5079659052067131,\n      \"assumption\": \"Sustrato, soporte, sumidero y control salvo servicio Semilla preexistentes.\"\n    },\n    \"radiator\": {\n      \"net_W_m2\": 893.0839709925,\n      \"area_per_collector_m2\": 0.22618253888882786\n    },\n    \"channel\": {\n      \"delay_1km_s\": 0.0001,\n      \"transmission_1km\": 0.9048374180359595,\n      \"capacity_bound_bit_s\": 6658211.482751795\n    },\n    \"logic\": {\n      \"landauer_J\": 2.870978885078724e-21,\n      \"single_bit_thermal_lifetime_s\": 114200738981568.42\n    },\n    \"photon_support_power_W\": 294096401298.0,\n    \"carbon\": {\n      \"amount_mol\": 0.08325701440346349,\n      \"air_m3_complete_capture\": 4.84980111417455,\n      \"minimum_work_J\": 32835.650653567565,\n      \"oxygen_kg\": 0.0026640579468820247,\n      \"global_reversible_voltage_V\": 1.0218884864009523\n    }\n  }\n}\n"
+    },
+    {
+      "command": [
+        "verificar_m2.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\n  \"count\": 38,\n  \"passed\": true,\n  \"failed\": []\n}\n"
+    },
+    {
+      "command": [
+        "verificar_capilaridad.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\n  \"count\": 52,\n  \"passed\": true,\n  \"failed\": []\n}\n"
+    },
+    {
+      "command": [
+        "verificar_campana_4_2.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\n  \"schema_version\": \"1.0.0\",\n  \"checks\": {\n    \"saved_results_and_failures_unchanged\": true,\n    \"requirements_22_exact_for_every_candidate\": true,\n    \"sensitivity_10_points_recovered\": true,\n    \"capillary_18_points_refined\": true,\n    \"branch_23_profiles_consistent\": true,\n    \"first_law\": true,\n    \"domain_refinements\": true,\n    \"unstable_control_preserved\": true,\n    \"long_wave_crosscheck\": true,\n    \"no_complete_device_or_continuum_claim\": true\n  },\n  \"passed\": true,\n  \"max_profile_quadrature_error\": 2.2426505097428162e-13,\n  \"sensitivity_max_refinement_error\": 2.971978219079574e-11,\n  \"capillary_max_sequence_difference\": 4.4916662357286086e-06,\n  \"scope\": \"Verification of saved new campaign data; no rerun of E00/E01 or declaration of completed E02/E03/RES0.\"\n}\n"
+    },
+    {
+      "command": [
+        "verificar_preparacion_m2.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [
+        "validacion/verificacion_CP04.json"
+      ],
+      "output": "{\n  \"schema_version\": \"1.0.0\",\n  \"checks\": {\n    \"eight_completed_runs\": true,\n    \"numerical_verification\": true,\n    \"three_convergence_controls\": true,\n    \"two_long_runs_settle_only_conditionally\": true,\n    \"excitation_same_discrete_action_converges\": true,\n    \"all_restart_states_complete_and_finite\": true,\n    \"fine_run_resumed_from_240\": true,\n    \"failures_preserved\": true,\n    \"stages_not_falsely_closed\": true,\n    \"C7_remains_in_progress\": true\n  },\n  \"passed\": true,\n  \"simulations_repeated\": false,\n  \"progress_context\": \"trazabilidad/CP04/estado_progreso.json\",\n  \"scope\": \"Consistencia, conservación publicada, refinamiento y puertas de CP04 en su contexto histórico; progreso vigente se verifica por separado. No prueba del continuo ni experimento.\"\n}\n"
+    },
+    {
+      "command": [
+        "verificar_no_radial_m2.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\n  \"status\": \"REFINAMIENTO_PENDIENTE\",\n  \"configuration\": \"datos/ensayo_no_radial_CP06.json\",\n  \"pending\": [],\n  \"issues\": [\n    \"radial_mediador_refinado:final_mediator_field\",\n    \"radial_mediador_refinado:final_phase_space\"\n  ],\n  \"comparisons\": [\n    {\n      \"control\": \"angular_L2_L4\",\n      \"left\": \"L2_h0.500_dt0.0040_R220_eps0.020_T160\",\n      \"right\": \"L4_h0.500_dt0.0040_R220_eps0.020_T160\",\n      \"norm_relative_sup_error\": 0.34159895768359017,\n      \"threshold\": 0.05,\n      \"passed\": false,\n      \"core_energy_relative_sup_error\": 1.857927725834596e-05,\n      \"core_charge_relative_sup_error\": 1.4111836778019082e-05,\n      \"global_phase_removed\": -0.0023617384659981107,\n      \"final_complex_nonradial_field_error_over_initial_norm\": 1.2105984957883222,\n      \"final_mediator_nonradial_error_over_initial_norm\": 0.4107782475753249,\n      \"final_phi_phase_space_error_over_initial_norm\": 1.2593967644607464,\n      \"final_mediator_phase_space_error_over_initial_norm\": 0.4121295242183382,\n      \"interpretation\": \"Additional final-field diagnostic; not the preregistered temporal norm gate\",\n      \"norm_gate_passed\": false,\n      \"phi_field_gate_passed\": false,\n      \"mediator_field_gate_required\": true,\n      \"mediator_field_gate_passed\": false\n    },\n    {\n      \"control\": \"radial_L4\",\n      \"left\": \"L4_h0.500_dt0.0040_R220_eps0.020_T160\",\n      \"right\": \"L4_h0.250_dt0.0040_R220_eps0.020_T160\",\n      \"norm_relative_sup_error\": 0.005883060057532515,\n      \"threshold\": 0.02,\n      \"passed\": true,\n      \"core_energy_relative_sup_error\": 0.0005490344351621879,\n      \"core_charge_relative_sup_error\": 0.0006448647244630124,\n      \"global_phase_removed\": -0.007762669626673871,\n      \"final_complex_nonradial_field_error_over_initial_norm\": 0.011255694990002282,\n      \"final_mediator_nonradial_error_over_initial_norm\": 0.03488969989476375,\n      \"final_phi_phase_space_error_over_initial_norm\": 0.015275534475406059,\n      \"final_mediator_phase_space_error_over_initial_norm\": 0.048743048409130796,\n      \"interpretation\": \"Additional final-field diagnostic; not the preregistered temporal norm gate\",\n      \"norm_gate_passed\": true,\n      \"phi_field_gate_passed\": true,\n      \"mediator_field_gate_required\": false,\n      \"mediator_field_gate_passed\": false\n    },\n    {\n      \"control\": \"temporal_L4\",\n      \"left\": \"L4_h0.500_dt0.0040_R220_eps0.020_T160\",\n      \"right\": \"L4_h0.500_dt0.0020_R220_eps0.020_T160\",\n      \"norm_relative_sup_error\": 0.0001197738534341782,\n      \"threshold\": 0.02,\n      \"passed\": true,\n      \"core_energy_relative_sup_error\": 3.023616438335708e-06,\n      \"core_charge_relative_sup_error\": 3.885424870730958e-09,\n      \"global_phase_removed\": 5.6584424813172364e-05,\n      \"final_complex_nonradial_field_error_over_initial_norm\": 0.00016754866274366613,\n      \"final_mediator_nonradial_error_over_initial_norm\": 0.028727878564362336,\n      \"final_phi_phase_space_error_over_initial_norm\": 0.01394468990278087,\n      \"final_mediator_phase_space_error_over_initial_norm\": 0.04210590931956264,\n      \"interpretation\": \"Additional final-field diagnostic; not the preregistered temporal norm gate\",\n      \"norm_gate_passed\": true,\n      \"phi_field_gate_passed\": true,\n      \"mediator_field_gate_required\": false,\n      \"mediator_field_gate_passed\": false\n    },\n    {\n      \"control\": \"angular_L4_L6\",\n      \"left\": \"L4_h0.500_dt0.0040_R220_eps0.020_T160\",\n      \"right\": \"L6_h0.500_dt0.0040_R220_eps0.020_T160\",\n      \"norm_relative_sup_error\": 0.0034229707671244456,\n      \"threshold\": 0.05,\n      \"passed\": true,\n      \"core_energy_relative_sup_error\": 4.31298538439151e-07,\n      \"core_charge_relative_sup_error\": 1.3597622516847707e-07,\n      \"global_phase_removed\": -1.203692165130148e-07,\n      \"final_complex_nonradial_field_error_over_initial_norm\": 0.016796749895167485,\n      \"final_mediator_nonradial_error_over_initial_norm\": 0.013983210042243482,\n      \"final_phi_phase_space_error_over_initial_norm\": 0.017976912404379267,\n      \"final_mediator_phase_space_error_over_initial_norm\": 0.016452612023214536,\n      \"interpretation\": \"Additional final-field diagnostic; not the preregistered temporal norm gate\",\n      \"norm_gate_passed\": true,\n      \"phi_field_gate_passed\": true,\n      \"mediator_field_gate_required\": true,\n      \"mediator_field_gate_passed\": true\n    },\n    {\n      \"control\": \"temporal_mediador\",\n      \"left\": \"dop853e8_L4_h0.500_dt0.0200_R220_eps0.020_T160\",\n      \"right\": \"dop853e9_L4_h0.500_dt0.0200_R220_eps0.020_T160\",\n      \"norm_relative_sup_error\": 9.402654641242573e-08,\n      \"threshold\": 0.02,\n      \"passed\": true,\n      \"core_energy_relative_sup_error\": 4.713923962285094e-08,\n      \"core_charge_relative_sup_error\": 2.1451729281807275e-12,\n      \"global_phase_removed\": -2.147705540236496e-08,\n      \"final_complex_nonradial_field_error_over_initial_norm\": 1.5182809001069195e-07,\n      \"final_mediator_nonradial_error_over_initial_norm\": 1.907705963070565e-05,\n      \"final_phi_phase_space_error_over_initial_norm\": 7.0325326182966745e-06,\n      \"final_mediator_phase_space_error_over_initial_norm\": 2.7188616659673762e-05,\n      \"interpretation\": \"Additional final-field diagnostic; not the preregistered temporal norm gate\",\n      \"norm_gate_passed\": true,\n      \"phi_field_gate_passed\": true,\n      \"mediator_field_gate_required\": true,\n      \"mediator_field_gate_passed\": true\n    },\n    {\n      \"control\": \"radial_mediador_grueso\",\n      \"left\": \"dop853e9_L4_h0.500_dt0.0200_R220_eps0.020_T160\",\n      \"right\": \"dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160\",\n      \"norm_relative_sup_error\": 0.005869990499045349,\n      \"threshold\": 0.02,\n      \"passed\": false,\n      \"core_energy_relative_sup_error\": 0.0005485431688148079,\n      \"core_charge_relative_sup_error\": 0.0006448641802541122,\n      \"global_phase_removed\": -0.0077627810908923065,\n      \"final_complex_nonradial_field_error_over_initial_norm\": 0.011226382351444806,\n      \"final_mediator_nonradial_error_over_initial_norm\": 0.040341137191071734,\n      \"final_phi_phase_space_error_over_initial_norm\": 0.01403783505096348,\n      \"final_mediator_phase_space_error_over_initial_norm\": 0.05009240496236852,\n      \"interpretation\": \"Additional final-field diagnostic; not the preregistered temporal norm gate\",\n      \"norm_gate_passed\": true,\n      \"phi_field_gate_passed\": true,\n      \"mediator_field_gate_required\": true,\n      \"mediator_field_gate_passed\": false\n    },\n    {\n      \"control\": \"radial_mediador_refinado\",\n      \"left\": \"dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160\",\n      \"right\": \"dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160\",\n      \"norm_relative_sup_error\": 0.0015273337447915048,\n      \"threshold\": 0.02,\n      \"passed\": false,\n      \"core_energy_relative_sup_error\": 0.0001377445299619584,\n      \"core_charge_relative_sup_error\": 0.0001617081177107682,\n      \"global_phase_removed\": -0.001908055928489575,\n      \"final_complex_nonradial_field_error_over_initial_norm\": 0.0028510562536917454,\n      \"final_mediator_nonradial_error_over_initial_norm\": 0.03453233704860043,\n      \"final_phi_phase_space_error_over_initial_norm\": 0.009298218204486829,\n      \"final_mediator_phase_space_error_over_initial_norm\": 0.05042920771974442,\n      \"interpretation\": \"Additional final-field diagnostic; not the preregistered temporal norm gate\",\n      \"norm_gate_passed\": true,\n      \"phi_field_gate_passed\": true,\n      \"mediator_field_gate_required\": true,\n      \"mediator_field_gate_passed\": false\n    }\n  ],\n  \"box_control\": {\n    \"core_energy_relative_sup_error\": 6.661338147750939e-15,\n    \"core_charge_relative_sup_error\": 6.217248937900877e-15,\n    \"norm_absolute_sup_error\": 4.163336342344337e-16,\n    \"passed\": true\n  },\n  \"amplitude_comparison\": {\n    \"relative_departure_from_linear_amplitude_scaling\": 0.007948835006434462,\n    \"interpretation\": \"Finite-amplitude comparison, not a proof of an open basin or linear response at all epsilon\"\n  },\n  \"finite_campaign_passed\": false,\n  \"original_L2_convergence_failure_preserved\": true,\n  \"complete_E03\": false,\n  \"complete_E04\": false,\n  \"complete_RES0\": false,\n  \"complete_RES1\": false,\n  \"nonlinear_orbital_stability_proven\": false,\n  \"arbitrary_nonradial_perturbations_tested\": false,\n  \"scope\": \"CP04 quadrupole deformation epsilon 0.01 and 0.02, tau<=160, declared grids and full m through finite L; only conditional subexperiment\"\n}\n"
+    },
+    {
+      "command": [
+        "puerta_acceso_lineal_m2.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\n  \"checkpoint\": \"CP07\",\n  \"status\": \"SUBPREGUNTA_LINEAL_COMPLETADA\",\n  \"passed\": true,\n  \"source\": \"validacion/P06/rama/perfil_w0.90000.csv\",\n  \"source_sha256\": \"9037fb7f1fa691fe5d8712efee3092d26cc2303b95853694cb7a2539ec1f5574\",\n  \"finite_difference_cases\": 46,\n  \"control_cases\": 8,\n  \"independent_continuous_ode_cases\": 3,\n  \"max_unitarity_error\": 1.0680828010224012e-13,\n  \"max_solver_residual\": 8.074795421214708e-11,\n  \"max_energy_charge_relation_error\": 1.3389246308892488e-14,\n  \"vacuum_gain_error\": 4.440892098500626e-16,\n  \"one_open_channel_gain_error\": 7.771561172376096e-16,\n  \"max_last_relative_grid_difference\": 0.015953985636970508,\n  \"max_independent_relative_conversion_difference\": 0.0023882545993786568,\n  \"scope\": \"Infinitesimal ell=0 monochromatic scattering at omega=.9 on the saved interpolated profile, nine sampled frequencies; no interval or background uncertainty certificate\",\n  \"complete_E03\": false,\n  \"complete_RES0\": false,\n  \"complete_RES2\": false,\n  \"complete_device\": false,\n  \"earlier_failed_meshes_preserved\": true,\n  \"earlier_failed_complex_collocation_preserved\": true,\n  \"gate_decision\": \"Accept the linear conversion subresult only. Functional gates remain unsatisfied.\",\n  \"next\": \"Finite wave packets with explicit incident resource, full backreaction, error controls, reception and recharge remain required.\"\n}\n"
+    },
+    {
+      "command": [
+        "generar.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "Generados: 24 fichas, 52 SVG de geometría, tablas y tratado integrado.\n"
+    },
+    {
+      "command": [
+        "generar.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "Generados: 24 fichas, 52 SVG de geometría, tablas y tratado integrado.\n"
+    },
+    {
+      "command": [
+        "verificar_continuidad.py",
+        "--solo-lectura"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "passed": true,
+      "changed_files": [],
+      "output": "{\n  \"schema_version\": \"1.0.0\",\n  \"checkpoint\": \"CP11_DIAGNOSTICO_RADIAL_CHI\",\n  \"passed\": false,\n  \"counts\": {\n    \"json\": 512,\n    \"python\": 280,\n    \"svg\": 68,\n    \"local_links\": 632\n  },\n  \"issues\": [\n    \"LEEME.md: archivo_ausente_de_prueba.md\"\n  ],\n  \"E00_E01_recalculated\": false,\n  \"scope\": \"Integridad y continuidad editorial; no certificación científica automática.\"\n}\n"
+    },
+    {
+      "command": [
+        "continuar_no_radial_adaptativo.py",
+        "--dx",
+        ".125",
+        "--rtol",
+        "1e-9",
+        "--atol",
+        "1e-11",
+        "--max-step",
+        ".02",
+        "--L",
+        "4",
+        "--radius",
+        "220",
+        "--eps",
+        ".02",
+        "--tmax",
+        "160"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true,
+      "changed_files": [],
+      "output": "REUTILIZADO dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160\n"
+    },
+    {
+      "command": [
+        "continuar_no_radial_adaptativo.py",
+        "--dx",
+        ".125",
+        "--rtol",
+        "1e-9",
+        "--atol",
+        "1e-10",
+        "--max-step",
+        ".02",
+        "--L",
+        "4",
+        "--radius",
+        "220",
+        "--eps",
+        ".02",
+        "--tmax",
+        "160"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "passed": true,
+      "changed_files": [],
+      "output": "Traceback (most recent call last):\n  File \"<Proyecto_Runas>/herramientas/continuar_no_radial_adaptativo.py\", line 125, in <module>\n    with threadpool_limits(limits=1):run(**args)\n                                     ^^^^^^^^^^^\n  File \"<Proyecto_Runas>/herramientas/continuar_no_radial_adaptativo.py\", line 26, in run\n    assert json.loads(rp.read_text())['configuration']==config\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "command": [
+        "continuar_no_radial_adaptativo.py",
+        "--dx",
+        ".125",
+        "--rtol",
+        "1e-9",
+        "--atol",
+        "1e-11",
+        "--max-step",
+        ".02",
+        "--L",
+        "4",
+        "--radius",
+        "220",
+        "--eps",
+        ".02",
+        "--tmax",
+        "160"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "passed": true,
+      "changed_files": [],
+      "output": "Traceback (most recent call last):\n  File \"<Proyecto_Runas>/herramientas/continuar_no_radial_adaptativo.py\", line 123, in <module>\n    try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nBlockingIOError: [Errno 11] Resource temporarily unavailable\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"<Proyecto_Runas>/herramientas/continuar_no_radial_adaptativo.py\", line 124, in <module>\n    except BlockingIOError:raise RuntimeError('This adaptive configuration already has a live writer')\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: This adaptive configuration already has a live writer\n"
+    }
+  ],
+  "scope": "Verificaciones de datos guardados, generación y controles estructurales en copia temporal. Una puerta científica negativa sigue siendo negativa."
+}

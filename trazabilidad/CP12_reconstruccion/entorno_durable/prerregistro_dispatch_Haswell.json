@@ -1,0 +1,10 @@
+{
+  "recorded_before_execution": "2026-10-11T02:45:11.407902+00:00",
+  "administrative_test_only": true,
+  "M2_steps": 0,
+  "question": "Can the unchanged original worker load the verified tau16 restart under the BLAS dispatch observed on the GitHub runner?",
+  "original_fourteen_sources_unchanged": true,
+  "OPENBLAS_CORETYPE": "Haswell",
+  "scope": "Independent extracted capsule, no change to active original trajectory or saved arrays",
+  "acceptance": "Original audit including array_equal angular basis and unchanged NPZ hash; any mismatch blocks this candidate environment and is diagnosed as a technical portability issue, not a causal CP12 result."
+}

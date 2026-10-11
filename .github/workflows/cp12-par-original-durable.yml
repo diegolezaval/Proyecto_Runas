@@ -1,0 +1,109 @@
+name: CP12 par original hasta 160 con respaldos permanentes
+
+on:
+  push:
+    branches: [ciencia/cp12-causal-chi]
+    paths: [trazabilidad/CP12_ejecucion_durable/activacion.json]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cp12-par-original
+  cancel-in-progress: false
+
+jobs:
+  verificar_traslado:
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: -1
+  tau0032:
+    needs: verificar_traslado
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 32
+  tau0040:
+    needs: tau0032
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 40
+  tau0048:
+    needs: tau0040
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 48
+  tau0056:
+    needs: tau0048
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 56
+  tau0064:
+    needs: tau0056
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 64
+  tau0072:
+    needs: tau0064
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 72
+  tau0080:
+    needs: tau0072
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 80
+  tau0088:
+    needs: tau0080
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 88
+  tau0096:
+    needs: tau0088
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 96
+  tau0104:
+    needs: tau0096
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 104
+  tau0112:
+    needs: tau0104
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 112
+  tau0120:
+    needs: tau0112
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 120
+  tau0128:
+    needs: tau0120
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 128
+  tau0136:
+    needs: tau0128
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 136
+  tau0144:
+    needs: tau0136
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 144
+  tau0152:
+    needs: tau0144
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 152
+  tau0160:
+    needs: tau0152
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 160
+  presupuesto_causal:
+    needs: tau0160
+    uses: ./.github/workflows/cp12-frontera-original.yml
+    with:
+      target: 0

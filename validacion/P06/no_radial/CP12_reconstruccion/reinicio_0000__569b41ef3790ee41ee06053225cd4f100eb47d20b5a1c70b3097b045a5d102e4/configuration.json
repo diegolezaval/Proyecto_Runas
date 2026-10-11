@@ -1,0 +1,33 @@
+{
+  "case": {
+    "entrypoint": "herramientas/gestionar_respaldo_CP12.py",
+    "operation": "comprobacion_de_reconstruccion_sin_evolucion",
+    "configuration": {
+      "time": 0,
+      "M2_steps": 0,
+      "physical_gate_threshold": 0.02
+    },
+    "extra_code": [
+      "herramientas/ejecutar_protocolo.py",
+      "herramientas/fuerza_potencial_m2.c",
+      "herramientas/evolucion_mediador_CP10.py",
+      "herramientas/continuar_no_radial_adaptativo.py",
+      "herramientas/referencia_pasiva_CP12.c"
+    ],
+    "inputs": [
+      "informes/PRERREGISTRO_RECONSTRUCCION_CP12.md",
+      "informes/INCIDENTE_RECUPERACION_CP12.md",
+      "trazabilidad/CP12_reconstruccion/identidad_original.json",
+      "datos/ensayo_causal_chi_CP12.json",
+      "trazabilidad/CP11_entrada/estado_progreso.json",
+      "validacion/P06/no_radial/CP12/par_instrumentado__a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d/configuration.json",
+      "validacion/P06/no_radial/CP12/par_instrumentado__a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d/procedencia.json",
+      "validacion/P06/no_radial/CP12/control_instrumentacion__*/procedencia.json",
+      "validacion/P06/no_radial/CP12/par_instrumentado__a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d/CP12_par_estado.npz",
+      "validacion/P06/no_radial/CP12/par_instrumentado__a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d/CP12_par_progreso.json",
+      "estado_progreso.json"
+    ]
+  },
+  "protocol": "datos/reconstruccion_CP12.json",
+  "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz"
+}

@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "tests": {
+    "original_run_id": true,
+    "original_full_identity": true,
+    "fourteen_original_sources": true,
+    "six_original_controls_intact": true,
+    "CP10_references_intact": true,
+    "observed_BLAS_one": true
+  },
+  "checked_at": "2026-10-11T02:42:46.543395+00:00",
+  "expected_environment": {
+    "python": "3.12.14",
+    "system": "Linux",
+    "architecture": "x86_64",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "threadpoolctl": "3.6.0"
+    },
+    "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "BLAS_threads": 1,
+    "compiler_flags": [
+      "-O3",
+      "-fPIC",
+      "-shared",
+      "-fno-fast-math"
+    ]
+  },
+  "observed_environment": {
+    "python": "3.12.14",
+    "system": "Linux",
+    "architecture": "x86_64",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "threadpoolctl": "3.6.0"
+    },
+    "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "BLAS_threads": 1,
+    "compiler_flags": [
+      "-O3",
+      "-fPIC",
+      "-shared",
+      "-fno-fast-math"
+    ]
+  },
+  "observed_run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
+  "expected_run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
+  "M2_steps": 0,
+  "correction_tested": false,
+  "physical_protocol_changes": false,
+  "observed_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "scope": "Environment gate only; no new boundary or causal conclusion.",
+  "execution_origin": {
+    "GitHub_run_id": "38105771323",
+    "GitHub_job": "entorno",
+    "available_logical_CPUs": 4
+  }
+}

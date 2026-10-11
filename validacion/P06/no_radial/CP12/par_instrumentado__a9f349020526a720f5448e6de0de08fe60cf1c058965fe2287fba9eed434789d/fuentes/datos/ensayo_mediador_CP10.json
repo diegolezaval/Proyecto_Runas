@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "checkpoint_base": "CP09_AUDITORIA_ARQUITECTURA",
+  "scientific_base": "CP08_REFINAMIENTO_NO_RADIAL",
+  "model": "M2",
+  "registered_before_execution": true,
+  "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+  "question": "¿El error del mediador en CP08 se debe al control temporal fino o persiste al refinar radialmente con tolerancia temporal común?",
+  "unchanged_gate_source": "datos/ensayo_no_radial_CP06.json",
+  "criteria": {"field_and_phase_space_relative_error_max": 0.02, "energy_drift_max": 0.0002, "charge_drift_max": 1e-9, "core_charge_change_max": 0.005, "amplification_max": 3},
+  "hypotheses": ["El control temporal h=.5 no certifica por sí solo el error temporal en h=.125.", "La fase de un mediador pesado puede ser sensible a dispersión espacial; esto se examina sin reemplazar su dinámica ni ajustar su fase en la puerta."],
+  "decision_policy": "Conservar todas las comparaciones antiguas. Un control nuevo que pase sólo supera su comparación declarada. No certificar convergencia conjunta angular/espacial/temporal ni cerrar E03/E04/RES0/RES1. Si falla, conservar el fallo y delimitar el siguiente test sin prometer que otra malla lo resolverá.",
+  "cases": {
+    "diagnostico_guardado": {
+      "entrypoint": "herramientas/diagnosticar_mediador_CP10.py",
+      "operation": "diagnostico_de_datos_guardados",
+      "configuration": {"core_radius": 40, "time": 160, "chi_phase_rotation_used_for_acceptance": false},
+      "inputs": ["datos/ensayo_no_radial_CP06.json", "validacion/P06/no_radial/resultados.json", "validacion/P06/no_radial/dop853e9_L4_h0.500_dt0.0200_R220_eps0.020_T160_estado.npz", "validacion/P06/no_radial/dop853e9_L4_h0.250_dt0.0200_R220_eps0.020_T160_estado.npz", "validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz"]
+    },
+    "temporal_h0125": {
+      "entrypoint": "herramientas/evolucion_mediador_CP10.py",
+      "operation": "nueva_resolucion_temporal",
+      "configuration": {"dx": 0.125, "rtol": 1e-10, "atol": 1e-12, "max_step": 0.02, "L": 4, "radius": 220.0, "eps": 0.02, "tmax": 160.0},
+      "implementation": "Potencial C contrastado con NumPy antes de evolucionar; misma acción y fuerza completas.",
+      "extra_code": ["herramientas/fuerza_potencial_m2.c"],
+      "inputs": ["datos/ensayo_no_radial_CP06.json", "validacion/P06/no_radial/auditoria_operador.json"]
+    },
+    "espacial_h00625": {
+      "entrypoint": "herramientas/evolucion_mediador_CP10.py",
+      "operation": "nueva_resolucion_espacial_con_control_temporal",
+      "configuration": {"dx": 0.0625, "rtol": 1e-10, "atol": 1e-12, "max_step": 0.02, "L": 4, "radius": 220.0, "eps": 0.02, "tmax": 160.0},
+      "implementation": "Potencial C contrastado con NumPy antes de evolucionar; misma acción y fuerza completas.",
+      "extra_code": ["herramientas/fuerza_potencial_m2.c"],
+      "inputs": ["datos/ensayo_no_radial_CP06.json", "validacion/P06/no_radial/auditoria_operador.json"]
+    },
+    "comparacion_final": {
+      "entrypoint": "herramientas/comparar_mediador_CP10.py",
+      "operation": "comparacion_y_puerta_de_datos_guardados",
+      "configuration": {"core_radius": 40, "time": 160, "threshold": 0.02, "chi_phase_rotation_used_for_acceptance": false},
+      "inputs": ["datos/ensayo_no_radial_CP06.json", "validacion/P06/no_radial/resultados.json", "validacion/P06/no_radial/dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz", "validacion/P06/no_radial/CP10/temporal_h0125__*/*_estado.npz", "validacion/P06/no_radial/CP10/espacial_h00625__*/*_estado.npz", "validacion/P06/no_radial/CP10/temporal_h0125__*/procedencia.json", "validacion/P06/no_radial/CP10/espacial_h00625__*/procedencia.json"]
+    }
+  },
+  "pilot_policy": "Pausa verificable en tau=8 de cada caso nuevo; continuar el mismo ID y NPZ hasta tau=160 si el balance pasa. No repetir las doce evoluciones cerradas ni la preparación CP04.",
+  "seeds": {"physical_initial_state": "Determinista desde CP04, mismo H2", "implementation_audit_rng": 20261002},
+  "limitations": ["Fuente CP04 con malla .1; su error propio no queda eliminado por una nueva malla de evolución.", "Los controles angulares/caja existentes conservan su alcance histórico; no equivalen a comprobaciones conjuntas en la malla nueva.", "La rotación descriptiva de χ y la dispersión libre ilustrativa no se utilizan para decidir aceptación."]
+}

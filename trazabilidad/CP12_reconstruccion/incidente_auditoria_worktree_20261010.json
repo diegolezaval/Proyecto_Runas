@@ -1,0 +1,11 @@
+{
+  "kind": "INCIDENTE_TECNICO_DE_AUDITORIA_NO_RESULTADO_CIENTIFICO",
+  "recorded_at": "2026-10-10T21:17:24.114897+00:00",
+  "command": "python3 herramientas/regresion_estructural.py",
+  "context": "Copia de publicación basada en git worktree separado del trabajador científico",
+  "error": "NotADirectoryError: .git/objects; el fixture del verificador espera un directorio .git, mientras el worktree aporta un archivo .git",
+  "scientific_worker_affected": false,
+  "live_restart_state_unchanged": true,
+  "action": "Se abandonó esa copia de publicación para las verificaciones y se usó un clon Git independiente. Se recuperaron los archivos de la cápsula verificada donde correspondía; no se reinició M2.",
+  "clean_clone_regression_passed": true
+}

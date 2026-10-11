@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "recorded_before_local_execution": "2026-10-11T16:41:42.618791+00:00",
+  "decision": "CONTINUAR_EN_EJECUTOR_LOCAL_ORIGINAL_COMPATIBLE",
+  "remote_run": 38155352563,
+  "remote_final_attempt": 6,
+  "remote_frontier_target": 32,
+  "remote_frontier_assignments": 4,
+  "remote_frontier_M2_steps": 0,
+  "hardware_rejections": "Haswell instead of original SkylakeX; all before recovery/evolution",
+  "remote_handoff_tau24_passed": true,
+  "remote_handoff_commit": "4e6f208f8045753d3663363fca43b6b8dbc1b510",
+  "remote_execution_completed_and_inactive": true,
+  "matching_local_dispatch": [
+    {
+      "architecture": "SkylakeX",
+      "threads": 1,
+      "version": "0.3.30"
+    },
+    {
+      "architecture": "SkylakeX",
+      "threads": 1,
+      "version": "0.3.30"
+    }
+  ],
+  "local_original_identity_passed": true,
+  "local_independent_tau24_recovery_passed": true,
+  "initial_time": 24,
+  "previous_backup_sha256": "77db2bc9b8c76cd7779c565ca2d6d8baf90aaee504ac52abbe27356a610e8c52",
+  "previous_state_sha256": "508f32f167abd6211b330d707172612a47fec1f2701577b1a9939d8390fbc529",
+  "existing_coordinator": "trazabilidad/CP12_reconstruccion/continuacion_raiz_20261010.py",
+  "existing_coordinator_sha256": "d23fbdc9d2475c563b886902c7dc166280670b407cdf3c7cb1f4158c59f11dcc",
+  "backup_orchestrator_sha256": "ff47b4af9c1227f47fd4302fa19e12d50ac87102bcea1af3b13de74be1b57afa",
+  "boundaries": [
+    32,
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    88,
+    96,
+    104,
+    112,
+    120,
+    128,
+    136,
+    144,
+    152,
+    160
+  ],
+  "each_boundary_must_be_saved_downloaded_and_verified_before_next": true,
+  "scientific_protocol_changed": false,
+  "observer_changed": false,
+  "correction_tested": false,
+  "CP12_closed": false
+}

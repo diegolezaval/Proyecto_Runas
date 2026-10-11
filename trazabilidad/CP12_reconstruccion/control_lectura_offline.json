@@ -1,0 +1,29 @@
+{
+  "time": "2026-10-04T20:55:30.359007+00:00",
+  "passed": true,
+  "tests": {
+    "large_norm_with_cancellation_not_sufficient": true,
+    "joint_exact_response_is_sufficient": true,
+    "onset_requires_three_consecutive_samples": true,
+    "no_sustained_onset_is_not_reported": true,
+    "incomplete_pair_receipt_blocks_interpretation": true,
+    "no_final_output_created": true
+  },
+  "scope": "Control analítico de cancelaciones y protección previa a interpretación; cero integración física.",
+  "M2_steps": 0,
+  "interpretation_executed": false,
+  "guard": "Recibo final no completado y verificado; no interpretar",
+  "analytic_operator": {
+    "relative_error": 1.8027756377319946,
+    "signed_projection": 1.5,
+    "cosine": 0.8320502943378437,
+    "removal_squared_reduction": -0.25
+  },
+  "analytic_sum": {
+    "relative_error": 1.0,
+    "signed_projection": 1.0,
+    "cosine": 1.0,
+    "removal_squared_reduction": 1.0
+  },
+  "reading_source_sha256": "c0e09c0383f3b5c3764bba37de2dd30a3311945e62f32f09534d49e241385244"
+}

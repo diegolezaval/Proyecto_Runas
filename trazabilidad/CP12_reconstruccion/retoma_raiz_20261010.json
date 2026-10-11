@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-10T22:03:46.829989+00:00",
+  "github_head": "c3af9624a94af18d890a8192145bc70c65e508d1",
+  "last_permanent_verified_boundary": 16,
+  "active_requested_segment": [
+    16,
+    24
+  ],
+  "exec_session_id": 53227,
+  "physical_lock_observed": "HELD",
+  "main": "CP11",
+  "causal_mechanism": "OPEN",
+  "correction_tested": false,
+  "scientific_checkpoint_closed": false,
+  "scientific_inputs_unchanged": true,
+  "protocol": "datos/ensayo_causal_chi_CP12.json",
+  "run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
+  "backup": "respaldos/tau0016.json",
+  "continuation_script": "continuacion_raiz_20261010.py",
+  "runtime_scope": "Exec session IDs and paths are session-specific; actual liveness must be rechecked, never inferred from this record."
+}

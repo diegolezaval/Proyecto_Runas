@@ -1,0 +1,238 @@
+{
+  "checkpoint_base": "CP05_SIMETRIA_C7",
+  "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+  "source_time": 1200,
+  "registered_before_evolution": true,
+  "question": "Bounded finite nonaxisymmetric quadrupole deformation of the retained CP04 state?",
+  "duration": 160,
+  "core_radius": 40,
+  "configuration_cases": [
+    {
+      "L": 2,
+      "dx": 0.5,
+      "dt": 0.004,
+      "radius": 220,
+      "eps": 0.02
+    },
+    {
+      "L": 4,
+      "dx": 0.5,
+      "dt": 0.004,
+      "radius": 220,
+      "eps": 0.02
+    },
+    {
+      "L": 4,
+      "dx": 0.25,
+      "dt": 0.004,
+      "radius": 220,
+      "eps": 0.02
+    },
+    {
+      "L": 4,
+      "dx": 0.5,
+      "dt": 0.002,
+      "radius": 220,
+      "eps": 0.02
+    },
+    {
+      "L": 4,
+      "dx": 0.5,
+      "dt": 0.004,
+      "radius": 220,
+      "eps": 0.01
+    },
+    {
+      "L": 0,
+      "dx": 0.5,
+      "dt": 0.004,
+      "radius": 220,
+      "eps": 0
+    },
+    {
+      "L": 2,
+      "dx": 0.5,
+      "dt": 0.004,
+      "radius": 260,
+      "eps": 0.02
+    }
+  ],
+  "criteria": {
+    "energy_drift_max": 0.0002,
+    "charge_drift_max": 1e-09,
+    "nonradial_norm_amplification_max": 3,
+    "core_charge_change_max": 0.005,
+    "angular_norm_relative_change_max": 0.05,
+    "radial_norm_relative_change_max": 0.02,
+    "temporal_norm_relative_change_max": 0.02,
+    "box_core_relative_change_max": 1e-05
+  },
+  "comparison": "sup_t absolute difference divided by max_t reference nonradial norm, avoiding divisions at zeros; energy and charge use own nonzero reference scales",
+  "decision": "All passes support only this finite perturbation family and window; E03 remains partial. Refine failed controls and preserve every result.",
+  "source_construction": "Saved CP04 Cauchy data; finite initial deformation as explicit resource, no primordial source claim",
+  "conditional_domain": "M2 classical benchmark, no matter portal, all angular m up to L, finite radial box with causal margin; not continuum certification",
+  "adaptive_extensions": [
+    {
+      "reason": "L2/L4 angular comparison failed preset 5% gate",
+      "configuration": {
+        "L": 6,
+        "dx": 0.5,
+        "dt": 0.004,
+        "radius": 220,
+        "eps": 0.02
+      },
+      "tmax": 160,
+      "registered_before_execution": true,
+      "comparison": "L4 vs L6, same 5% threshold; preserve original L2 failure"
+    }
+  ],
+  "mediator_refinement": {
+    "reason": "Final mediator field errors of 3.49% spatial and 2.87% temporal; conservation alone does not verify fast phase",
+    "status": "PARCIAL",
+    "scheme": "Equilibrium-phase and chi-centred exact harmonic flow plus fourth-order composition",
+    "same_M2_action": true,
+    "comparison_target": 0.02,
+    "cases": [
+      {
+        "scheme": "dop853e8",
+        "L": 4,
+        "dx": 0.5,
+        "dt": 0.02,
+        "radius": 220.0,
+        "eps": 0.02
+      },
+      {
+        "scheme": "dop853e9",
+        "L": 4,
+        "dx": 0.5,
+        "dt": 0.02,
+        "radius": 220.0,
+        "eps": 0.02
+      },
+      {
+        "scheme": "dop853e9",
+        "L": 4,
+        "dx": 0.25,
+        "dt": 0.02,
+        "radius": 220.0,
+        "eps": 0.02
+      },
+      {
+        "scheme": "dop853e9",
+        "L": 4,
+        "dx": 0.125,
+        "dt": 0.02,
+        "radius": 220.0,
+        "eps": 0.02
+      }
+    ],
+    "duration": 160,
+    "registered_before_execution": true,
+    "rejected_uncentered_cases": [
+      {
+        "L": 4,
+        "dx": 0.5,
+        "dt": 0.004,
+        "radius": 220,
+        "eps": 0.02,
+        "scheme": "split4"
+      },
+      {
+        "L": 4,
+        "dx": 0.5,
+        "dt": 0.002,
+        "radius": 220,
+        "eps": 0.02,
+        "scheme": "split4"
+      },
+      {
+        "L": 4,
+        "dx": 0.25,
+        "dt": 0.004,
+        "radius": 220,
+        "eps": 0.02,
+        "scheme": "split4"
+      }
+    ],
+    "reference": "Initial chi modal field; added to A and subtracted from B exactly; total action and forces unchanged",
+    "failed_centered_cases": [
+      {
+        "L": 4,
+        "dx": 0.5,
+        "dt": 0.004,
+        "radius": 220,
+        "eps": 0.02,
+        "scheme": "split4c"
+      },
+      {
+        "L": 4,
+        "dx": 0.5,
+        "dt": 0.002,
+        "radius": 220,
+        "eps": 0.02,
+        "scheme": "split4c"
+      },
+      {
+        "L": 4,
+        "dx": 0.25,
+        "dt": 0.004,
+        "radius": 220,
+        "eps": 0.02,
+        "scheme": "split4c"
+      }
+    ],
+    "numerical_phase_reference": 0.90132601261449,
+    "reference_reason": "Choose the already saved CP04 equilibrium frequency for the split harmonic rotation, so stationary field-space rotation is not forced apart between split substeps; correction cancels from full M2 force.",
+    "registered_before_balanced_execution": true,
+    "balanced_phase_pilots": [
+      {
+        "L": 4,
+        "dx": 0.5,
+        "dt": 0.004,
+        "radius": 220,
+        "eps": 0.02,
+        "scheme": "split4b"
+      },
+      {
+        "L": 4,
+        "dx": 0.5,
+        "dt": 0.002,
+        "radius": 220,
+        "eps": 0.02,
+        "scheme": "split4b"
+      },
+      {
+        "L": 4,
+        "dx": 0.25,
+        "dt": 0.004,
+        "radius": 220,
+        "eps": 0.02,
+        "scheme": "split4b"
+      }
+    ],
+    "balanced_phase_decision": "No mejora sobre split4c a tau=8: no prolongar automáticamente; archivos conservados.",
+    "current_method": "DOP853 sobre fuerza completa, tolerancias 1e-8/1e-10 y 1e-9/1e-11; paso máximo .02; reinicio con tiempo explícito. Pilotos tau=8 antes de prolongar.",
+    "gate_unchanged": "Conservación E<2e-4,Q<1e-9; norma 2%; campos finales Phi y chi 2% respecto a perturbación inicial. No se relajan puertas.",
+    "phase_space_diagnostic": {
+      "added_before_final_radial_comparison": true,
+      "reason": "Comparar sólo posiciones puede ocultar un error de fase en un instante; incluir velocidades escaladas por la masa.",
+      "norm": "sqrt(integral_core |dq|^2+|dv|^2/mass^2), divided by initial perturbation same norm",
+      "threshold": 0.02,
+      "does_not_replace_existing_field_gate": true
+    },
+    "radial_extension": {
+      "registered_before_execution": true,
+      "reason": "h .5/.25 fail chi position 4.03% and phase space 5.01% while temporal error is 0.00272%; refine space without relaxing 2% gate.",
+      "new_dx": 0.125,
+      "rtol": 1e-09,
+      "atol": 1e-11,
+      "tmax": 160.0,
+      "source": "Original CP04 at t=1200; no completed evolution repeated",
+      "resume_policy": "If a saved valid adaptive restart exists, continue from its explicit time; otherwise initialize this new grid only."
+    },
+    "final_decision": "REFINAMIENTO_PENDIENTE",
+    "completed_adaptive_evolutions": 4,
+    "final_result": "validacion/P06/no_radial/resultados.json",
+    "historical_scheme_note": "Los campos scheme/reference y los candidatos split preservan intentos anteriores; el método final vigente es current_method (DOP853). No todas las configuraciones candidatas de esas listas se ejecutaron."
+  }
+}

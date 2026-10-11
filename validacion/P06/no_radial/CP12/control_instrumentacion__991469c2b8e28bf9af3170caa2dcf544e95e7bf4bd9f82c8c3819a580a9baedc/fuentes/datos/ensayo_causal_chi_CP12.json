@@ -1,0 +1,248 @@
+{
+  "schema_version": "1.0.0",
+  "checkpoint_base": "CP11_DIAGNOSTICO_RADIAL_CHI",
+  "base_commit": "ed8d818b622a0687aeb56d34ca9e3913bd54e124",
+  "branch": "ciencia/cp12-causal-chi",
+  "model": "M2",
+  "campaign_directory": "validacion/P06/no_radial/CP12",
+  "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+  "registered_before_execution": true,
+  "question": "Separar causalmente defecto/dispersión radial, fuente no lineal y propagación inicial de la diferencia espacial de χ, incluidas realimentaciones.",
+  "hypotheses_document": "informes/PROTOCOLO_CP12_CAUSA_CHI.md",
+  "unchanged_gate_source": "datos/ensayo_no_radial_CP06.json",
+  "criteria": {
+    "field_and_phase_space_relative_error_max": 0.02,
+    "energy_drift_max": 0.0002,
+    "charge_drift_max": 1e-09,
+    "core_charge_change_max": 0.005,
+    "amplification_max": 3
+  },
+  "observer_criteria": {
+    "algebra_relative_tolerance": 2e-12,
+    "parseval_relative_tolerance": 2e-11,
+    "closure_relative_tolerance": 0.001,
+    "order_control_relative_tolerance": 0.001,
+    "initial_norm_floor_fraction": 1e-05,
+    "stage_iteration_relative_tolerance": 1e-12,
+    "stage_iteration_maximum": 12,
+    "majority_signed_projection_min": 0.8,
+    "majority_cosine_min": 0.8,
+    "removal_squared_reduction_min": 0.5,
+    "onset_final_observed_norm_fraction": 0.01,
+    "onset_consecutive_samples": 3,
+    "passive_free_global_bound_max": 0.0001
+  },
+  "reproduction_criteria": {
+    "initial_fields": "array_equal",
+    "final_fields": "array_equal",
+    "observations": "array_equal",
+    "accepted_steps": "exact",
+    "original_nfev": "exact",
+    "energy_charge_maxima": "exact"
+  },
+  "environment_policy": {
+    "BLAS_threads": 1,
+    "OMP_threads": 1,
+    "MKL_threads": 1,
+    "reference": "Python 3.12.14 y requirements.txt; entorno, compilador y pools observados registrados antes/durante ejecución.",
+    "passive_worker_threads": 8
+  },
+  "cases": {
+    "control_instrumentacion": {
+      "entrypoint": "herramientas/reproducir_par_CP12.py",
+      "operation": "control_pasivo_sin_evolucion_M2",
+      "configuration": {
+        "reference_states": [
+          "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+          "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz"
+        ],
+        "physical_configurations": [
+          {
+            "dx": 0.125,
+            "rtol": 1e-10,
+            "atol": 1e-12,
+            "max_step": 0.02,
+            "L": 4,
+            "radius": 220.0,
+            "eps": 0.02,
+            "tmax": 160.0
+          },
+          {
+            "dx": 0.0625,
+            "rtol": 1e-10,
+            "atol": 1e-12,
+            "max_step": 0.02,
+            "L": 4,
+            "radius": 220.0,
+            "eps": 0.02,
+            "tmax": 160.0
+          }
+        ],
+        "observer_stages": [
+          7,
+          6
+        ],
+        "observer_relative_tolerance": 0.001,
+        "modal_diagnostics": true,
+        "tmax": 160.0,
+        "control_directory": "validacion/P06/no_radial/CP12",
+        "core_radius": 40.0,
+        "smooth_core_start": 32.0,
+        "wave_number_cuts": [
+          2,
+          4,
+          8,
+          12,
+          20
+        ],
+        "physical_gate_threshold": 0.02,
+        "observer_max_step": 0.01,
+        "coupled_observer_basis": "D2_de_semilla_paridad_par_seis_dimensiones",
+        "symmetry_relative_tolerance": 2e-12
+      },
+      "extra_code": [
+        "herramientas/ejecutar_protocolo.py",
+        "herramientas/fuerza_potencial_m2.c",
+        "herramientas/evolucion_mediador_CP10.py",
+        "herramientas/continuar_no_radial_adaptativo.py",
+        "herramientas/referencia_pasiva_CP12.c"
+      ],
+      "inputs": [
+        "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/CP10/temporal_h0125__*/procedencia.json",
+        "validacion/P06/no_radial/CP10/espacial_h00625__*/procedencia.json",
+        "datos/ensayo_mediador_CP10.json",
+        "datos/ensayo_no_radial_CP06.json",
+        "validacion/P06/no_radial/auditoria_operador.json",
+        "informes/PROTOCOLO_CP12_CAUSA_CHI.md",
+        "trazabilidad/CP11_entrada/ORIGEN.json",
+        "trazabilidad/CP11_entrada/archivos_sha256.json",
+        "trazabilidad/CP11_entrada/estado_progreso.json",
+        "trazabilidad/CP11_entrada/datos/registro_calculos.json",
+        "trazabilidad/CP11_entrada/datos/estado_evidencia.json",
+        "ENMIENDAS_HOJA_RUTA.md",
+        "tratado/31_diagnostico_radial_del_mediador.md",
+        "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__*/resultados.json",
+        "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__*/procedencia.json",
+        "informes/ENMIENDA_CP12_SERIALIZACION_CONTROL.md",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__1f74508bd2a56bfb797b94cd607a68f3d1896199cb52441eb35be4261c67f83b/procedencia.json",
+        "informes/ENMIENDA_CP12_REFERENCIA_Y_OBSERVADOR.md",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__1f08e91c9ca6d337d9862f504302cb2ad29162becca17301f713127885db895f/procedencia.json",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__1f08e91c9ca6d337d9862f504302cb2ad29162becca17301f713127885db895f/resultados.json",
+        "informes/ENMIENDA_CP12_ESCALA_DE_REDONDEO.md",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__6308bf6d400d008fe982c21160625b24777a4b391ffcab771189c17787a866c2/procedencia.json",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__6308bf6d400d008fe982c21160625b24777a4b391ffcab771189c17787a866c2/resultados.json",
+        "informes/ENMIENDA_CP12_SIMETRIA_PASIVA.md",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__4f4f14caf5598c0992000386ed829578b3c59cd4d8864ba5e70bc9960b115e65/procedencia.json",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__4f4f14caf5598c0992000386ed829578b3c59cd4d8864ba5e70bc9960b115e65/resultados.json"
+      ]
+    },
+    "par_instrumentado": {
+      "entrypoint": "herramientas/reproducir_par_CP12.py",
+      "operation": "reproduccion_instrumentada_de_dos_CP10",
+      "configuration": {
+        "reference_states": [
+          "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+          "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz"
+        ],
+        "physical_configurations": [
+          {
+            "dx": 0.125,
+            "rtol": 1e-10,
+            "atol": 1e-12,
+            "max_step": 0.02,
+            "L": 4,
+            "radius": 220.0,
+            "eps": 0.02,
+            "tmax": 160.0
+          },
+          {
+            "dx": 0.0625,
+            "rtol": 1e-10,
+            "atol": 1e-12,
+            "max_step": 0.02,
+            "L": 4,
+            "radius": 220.0,
+            "eps": 0.02,
+            "tmax": 160.0
+          }
+        ],
+        "observer_stages": [
+          7,
+          6
+        ],
+        "observer_relative_tolerance": 0.001,
+        "modal_diagnostics": true,
+        "tmax": 160.0,
+        "control_directory": "validacion/P06/no_radial/CP12",
+        "core_radius": 40.0,
+        "smooth_core_start": 32.0,
+        "wave_number_cuts": [
+          2,
+          4,
+          8,
+          12,
+          20
+        ],
+        "physical_gate_threshold": 0.02,
+        "observer_max_step": 0.01,
+        "coupled_observer_basis": "D2_de_semilla_paridad_par_seis_dimensiones",
+        "symmetry_relative_tolerance": 2e-12
+      },
+      "extra_code": [
+        "herramientas/ejecutar_protocolo.py",
+        "herramientas/fuerza_potencial_m2.c",
+        "herramientas/evolucion_mediador_CP10.py",
+        "herramientas/continuar_no_radial_adaptativo.py",
+        "herramientas/referencia_pasiva_CP12.c"
+      ],
+      "inputs": [
+        "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
+        "validacion/P06/no_radial/CP10/temporal_h0125__*/procedencia.json",
+        "validacion/P06/no_radial/CP10/espacial_h00625__*/procedencia.json",
+        "datos/ensayo_mediador_CP10.json",
+        "datos/ensayo_no_radial_CP06.json",
+        "validacion/P06/no_radial/auditoria_operador.json",
+        "informes/PROTOCOLO_CP12_CAUSA_CHI.md",
+        "trazabilidad/CP11_entrada/ORIGEN.json",
+        "trazabilidad/CP11_entrada/archivos_sha256.json",
+        "trazabilidad/CP11_entrada/estado_progreso.json",
+        "trazabilidad/CP11_entrada/datos/registro_calculos.json",
+        "trazabilidad/CP11_entrada/datos/estado_evidencia.json",
+        "ENMIENDAS_HOJA_RUTA.md",
+        "tratado/31_diagnostico_radial_del_mediador.md",
+        "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__*/resultados.json",
+        "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__*/procedencia.json",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__*/procedencia.json",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__*/resultados.json",
+        "informes/ENMIENDA_CP12_SERIALIZACION_CONTROL.md",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__1f74508bd2a56bfb797b94cd607a68f3d1896199cb52441eb35be4261c67f83b/procedencia.json",
+        "informes/ENMIENDA_CP12_REFERENCIA_Y_OBSERVADOR.md",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__1f08e91c9ca6d337d9862f504302cb2ad29162becca17301f713127885db895f/procedencia.json",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__1f08e91c9ca6d337d9862f504302cb2ad29162becca17301f713127885db895f/resultados.json",
+        "informes/ENMIENDA_CP12_ESCALA_DE_REDONDEO.md",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__6308bf6d400d008fe982c21160625b24777a4b391ffcab771189c17787a866c2/procedencia.json",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__6308bf6d400d008fe982c21160625b24777a4b391ffcab771189c17787a866c2/resultados.json",
+        "informes/ENMIENDA_CP12_SIMETRIA_PASIVA.md",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__4f4f14caf5598c0992000386ed829578b3c59cd4d8864ba5e70bc9960b115e65/procedencia.json",
+        "validacion/P06/no_radial/CP12/control_instrumentacion__4f4f14caf5598c0992000386ed829578b3c59cd4d8864ba5e70bc9960b115e65/resultados.json"
+      ]
+    }
+  },
+  "pilot_policy": "Pausa verificable sólo en frontera original τ=8; reanudar mismo ID si reproducción, identidad y observadores son válidos. No modificar física para satisfacer observadores.",
+  "decision_policy": "Discrepancia con CP10: detener y diagnosticar. Fallo del observador: no atribuir causalidad. Corrección sólo tras mecanismo suficientemente identificado y con derivación/prerregistro nuevo. Ambigüedad o agotamiento: cerrar alcance exacto, sin otra malla por inercia.",
+  "explicit_user_authorization": "Reproducción únicamente de las dos evoluciones CP10 relevantes con instrumentación pasiva; lectura de CP04, sin repetir preparación.",
+  "limitations": [
+    "La atribución lineal está condicionada a ambas historias y al spline fijo, no demuestra universalidad sobre M2.",
+    "Las respuestas con término retirado son contrastes offline sobre historias medidas, no soluciones M2 autoconsistentes.",
+    "No se concede aceptación física mediante una respuesta corregida o rotada."
+  ],
+  "implementation_amendments": [
+    "informes/ENMIENDA_CP12_SERIALIZACION_CONTROL.md",
+    "informes/ENMIENDA_CP12_REFERENCIA_Y_OBSERVADOR.md",
+    "informes/ENMIENDA_CP12_ESCALA_DE_REDONDEO.md",
+    "informes/ENMIENDA_CP12_SIMETRIA_PASIVA.md"
+  ]
+}

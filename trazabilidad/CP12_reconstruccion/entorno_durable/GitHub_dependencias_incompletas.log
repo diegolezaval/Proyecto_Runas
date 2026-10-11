@@ -1,0 +1,344 @@
+﻿2026-10-11T02:24:56.7832043Z Current runner version: '2.337.0'
+2026-10-11T02:24:56.7870181Z ##[group]Runner Image Provisioner
+2026-10-11T02:24:56.7871640Z Hosted Compute Agent
+2026-10-11T02:24:56.7872727Z Version: 20261002.596
+2026-10-11T02:24:56.7873803Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-11T02:24:56.7874986Z Build Date: 2026-10-02T22:28:27Z
+2026-10-11T02:24:56.7876141Z Worker ID: {e7bc4f21-e080-4dcc-831d-2b72574a9f5a}
+2026-10-11T02:24:56.7877743Z Region: eastus
+2026-10-11T02:24:56.7878598Z Cloud: Azure
+2026-10-11T02:24:56.7879472Z ##[endgroup]
+2026-10-11T02:24:56.7881721Z ##[group]Operating System
+2026-10-11T02:24:56.7882806Z Ubuntu
+2026-10-11T02:24:56.7883809Z 24.04.5
+2026-10-11T02:24:56.7884677Z LTS
+2026-10-11T02:24:56.7885561Z ##[endgroup]
+2026-10-11T02:24:56.7886779Z ##[group]Runner Image
+2026-10-11T02:24:56.7887766Z Image: ubuntu-24.04
+2026-10-11T02:24:56.7888802Z Version: 20261004.327.1
+2026-10-11T02:24:56.7890897Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-11T02:24:56.7894115Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-11T02:24:56.7895971Z ##[endgroup]
+2026-10-11T02:24:56.7898110Z ##[group]GITHUB_TOKEN Permissions
+2026-10-11T02:24:56.7901124Z Contents: read
+2026-10-11T02:24:56.7902071Z Metadata: read
+2026-10-11T02:24:56.7902981Z ##[endgroup]
+2026-10-11T02:24:56.7906047Z Secret source: Actions
+2026-10-11T02:24:56.7907847Z Cache mode: write
+2026-10-11T02:24:56.7909311Z Prepare workflow directory
+2026-10-11T02:24:56.8469995Z Prepare all required actions
+2026-10-11T02:24:56.8540890Z Getting action download info
+2026-10-11T02:24:57.0389881Z Download action repository 'actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+2026-10-11T02:24:57.1594642Z Download action repository 'actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1' (SHA:ece7cb06caefa5fff74198d8649806c4678c61a1)
+2026-10-11T02:24:57.2705467Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-11T02:24:57.4817918Z Complete job name: entorno
+2026-10-11T02:24:57.5581653Z ##[group]Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+2026-10-11T02:24:57.5582730Z with:
+2026-10-11T02:24:57.5583246Z   repository: diegolezaval/Proyecto_Runas
+2026-10-11T02:24:57.5587414Z   token: ***
+2026-10-11T02:24:57.5587853Z   ssh-strict: true
+2026-10-11T02:24:57.5588290Z   ssh-user: git
+2026-10-11T02:24:57.5588724Z   persist-credentials: true
+2026-10-11T02:24:57.5589208Z   clean: true
+2026-10-11T02:24:57.5589669Z   sparse-checkout-cone-mode: true
+2026-10-11T02:24:57.5590188Z   fetch-depth: 1
+2026-10-11T02:24:57.5590616Z   fetch-tags: false
+2026-10-11T02:24:57.5591047Z   show-progress: true
+2026-10-11T02:24:57.5591492Z   lfs: false
+2026-10-11T02:24:57.5591896Z   submodules: false
+2026-10-11T02:24:57.5592335Z   set-safe-directory: true
+2026-10-11T02:24:57.5592829Z   allow-unsafe-pr-checkout: false
+2026-10-11T02:24:57.5593620Z env:
+2026-10-11T02:24:57.5594027Z   OPENBLAS_NUM_THREADS: 1
+2026-10-11T02:24:57.5594492Z   OMP_NUM_THREADS: 1
+2026-10-11T02:24:57.5594955Z   MKL_NUM_THREADS: 1
+2026-10-11T02:24:57.5595385Z ##[endgroup]
+2026-10-11T02:24:57.6586085Z Syncing repository: diegolezaval/Proyecto_Runas
+2026-10-11T02:24:57.6588758Z ##[group]Getting Git version info
+2026-10-11T02:24:57.6589932Z Working directory is '/home/runner/work/Proyecto_Runas/Proyecto_Runas'
+2026-10-11T02:24:57.6591353Z [command]/usr/bin/git version
+2026-10-11T02:24:57.6647232Z git version 2.55.0
+2026-10-11T02:24:57.6672554Z ##[endgroup]
+2026-10-11T02:24:57.6689383Z Temporarily overriding HOME='/home/runner/work/_temp/c7353ed4-0d11-4b87-9bb0-18d595e96242' before making global git config changes
+2026-10-11T02:24:57.6691832Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-11T02:24:57.6697442Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Proyecto_Runas/Proyecto_Runas
+2026-10-11T02:24:57.6753340Z Deleting the contents of '/home/runner/work/Proyecto_Runas/Proyecto_Runas'
+2026-10-11T02:24:57.6759066Z ##[group]Determining repository object format
+2026-10-11T02:24:57.6766094Z ##[endgroup]
+2026-10-11T02:24:57.6767535Z ##[group]Initializing the repository
+2026-10-11T02:24:57.6776901Z [command]/usr/bin/git init /home/runner/work/Proyecto_Runas/Proyecto_Runas
+2026-10-11T02:24:57.6872664Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-11T02:24:57.6874245Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-11T02:24:57.6875971Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-11T02:24:57.6877657Z hint: call:
+2026-10-11T02:24:57.6878488Z hint:
+2026-10-11T02:24:57.6879497Z hint: 	git config --global init.defaultBranch <name>
+2026-10-11T02:24:57.6880685Z hint:
+2026-10-11T02:24:57.6881801Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-11T02:24:57.6883715Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-11T02:24:57.6885145Z hint:
+2026-10-11T02:24:57.6885964Z hint: 	git branch -m <name>
+2026-10-11T02:24:57.6887109Z hint:
+2026-10-11T02:24:57.6888361Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-11T02:24:57.6890137Z Initialized empty Git repository in /home/runner/work/Proyecto_Runas/Proyecto_Runas/.git/
+2026-10-11T02:24:57.6891900Z [command]/usr/bin/git remote add origin https://github.com/diegolezaval/Proyecto_Runas
+2026-10-11T02:24:57.6942054Z ##[endgroup]
+2026-10-11T02:24:57.6943372Z ##[group]Disabling automatic garbage collection
+2026-10-11T02:24:57.6947416Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-11T02:24:57.6980080Z ##[endgroup]
+2026-10-11T02:24:57.6981329Z ##[group]Setting up auth
+2026-10-11T02:24:57.6982133Z Removing SSH command configuration
+2026-10-11T02:24:57.6990067Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-11T02:24:57.7025201Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-11T02:24:57.7391159Z Removing HTTP extra header
+2026-10-11T02:24:57.7398578Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-11T02:24:57.7439024Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-11T02:24:57.7700038Z Removing includeIf entries pointing to credentials config files
+2026-10-11T02:24:57.7701194Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-11T02:24:57.7744102Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-11T02:24:57.7999041Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-11T02:24:57.8043291Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git.path /home/runner/work/_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config
+2026-10-11T02:24:57.8087139Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config
+2026-10-11T02:24:57.8133720Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config
+2026-10-11T02:24:57.8176763Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config
+2026-10-11T02:24:57.8223226Z ##[endgroup]
+2026-10-11T02:24:57.8224373Z ##[group]Fetching the repository
+2026-10-11T02:24:57.8235614Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +214447256cf15a9c222da539729202151f442881:refs/remotes/origin/ciencia/cp12-causal-chi
+2026-10-11T02:24:59.7142326Z From https://github.com/diegolezaval/Proyecto_Runas
+2026-10-11T02:24:59.7144640Z  * [new ref]         214447256cf15a9c222da539729202151f442881 -> origin/ciencia/cp12-causal-chi
+2026-10-11T02:24:59.7155301Z [command]/usr/bin/git branch --list --remote origin/ciencia/cp12-causal-chi
+2026-10-11T02:24:59.7185247Z   origin/ciencia/cp12-causal-chi
+2026-10-11T02:24:59.7194361Z [command]/usr/bin/git rev-parse refs/remotes/origin/ciencia/cp12-causal-chi
+2026-10-11T02:24:59.7219788Z 214447256cf15a9c222da539729202151f442881
+2026-10-11T02:24:59.7224948Z ##[endgroup]
+2026-10-11T02:24:59.7226708Z ##[group]Determining the checkout info
+2026-10-11T02:24:59.7228373Z ##[endgroup]
+2026-10-11T02:24:59.7230083Z [command]/usr/bin/git sparse-checkout disable
+2026-10-11T02:24:59.7279375Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-11T02:24:59.7310495Z ##[group]Checking out the ref
+2026-10-11T02:24:59.7313913Z [command]/usr/bin/git checkout --progress --force -B ciencia/cp12-causal-chi refs/remotes/origin/ciencia/cp12-causal-chi
+2026-10-11T02:25:00.1838076Z Switched to a new branch 'ciencia/cp12-causal-chi'
+2026-10-11T02:25:00.1840542Z branch 'ciencia/cp12-causal-chi' set up to track 'origin/ciencia/cp12-causal-chi'.
+2026-10-11T02:25:00.1871874Z ##[endgroup]
+2026-10-11T02:25:00.1921562Z [command]/usr/bin/git log -1 --format=%H
+2026-10-11T02:25:00.1950733Z 214447256cf15a9c222da539729202151f442881
+2026-10-11T02:25:00.2338943Z ##[group]Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+2026-10-11T02:25:00.2407745Z with:
+2026-10-11T02:25:00.2409316Z   python-version: 3.12.14
+2026-10-11T02:25:00.2411256Z   architecture: x64
+2026-10-11T02:25:00.2413022Z   check-latest: false
+2026-10-11T02:25:00.2427901Z   token: ***
+2026-10-11T02:25:00.2428995Z   update-environment: true
+2026-10-11T02:25:00.2430221Z   allow-prereleases: false
+2026-10-11T02:25:00.2431380Z   freethreaded: false
+2026-10-11T02:25:00.2432411Z env:
+2026-10-11T02:25:00.2433298Z   OPENBLAS_NUM_THREADS: 1
+2026-10-11T02:25:00.2434394Z   OMP_NUM_THREADS: 1
+2026-10-11T02:25:00.2435395Z   MKL_NUM_THREADS: 1
+2026-10-11T02:25:00.2436602Z ##[endgroup]
+2026-10-11T02:25:00.3782912Z ##[group]Installed versions
+2026-10-11T02:25:00.3805075Z Version 3.12.14 was not found in the local cache
+2026-10-11T02:25:00.9279822Z Version 3.12.14 is available for downloading
+2026-10-11T02:25:00.9281894Z Download from "https://github.com/actions/python-versions/releases/download/3.12.14-31661455385/python-3.12.14-linux-24.04-x64.tar.gz"
+2026-10-11T02:25:01.6821274Z Extract downloaded archive
+2026-10-11T02:25:01.6963430Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/bafb6ae8-973c-4210-bc84-b2ed7c3fcb41 -f /home/runner/work/_temp/6b5ccedb-d196-4206-9f4a-fc41281b0cf3
+2026-10-11T02:25:03.6057550Z Execute installation script
+2026-10-11T02:25:03.6150742Z Check if Python hostedtoolcache folder exist...
+2026-10-11T02:25:03.6151338Z Create Python 3.12.14 folder
+2026-10-11T02:25:03.6166215Z Copy Python binaries to hostedtoolcache folder
+2026-10-11T02:25:04.1249648Z Create additional symlinks (Required for the UsePythonVersion Azure Pipelines task and the setup-python GitHub Action)
+2026-10-11T02:25:04.1298895Z Upgrading pip...
+2026-10-11T02:25:05.9317177Z Collecting pip
+2026-10-11T02:25:05.9999419Z Downloading pip-26.2.1-py3-none-any.whl.metadata (4.6 kB)
+2026-10-11T02:25:06.0203120Z Downloading pip-26.2.1-py3-none-any.whl (1.8 MB)
+2026-10-11T02:25:06.1348639Z ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 22.4 MB/s eta 0:00:00
+2026-10-11T02:25:06.1349412Z 
+2026-10-11T02:25:06.1546057Z Installing collected packages: pip
+2026-10-11T02:25:06.1548552Z Attempting uninstall: pip
+2026-10-11T02:25:06.1570934Z Found existing installation: pip 25.0.1
+2026-10-11T02:25:06.1932634Z Uninstalling pip-25.0.1:
+2026-10-11T02:25:06.1989896Z Successfully uninstalled pip-25.0.1
+2026-10-11T02:25:07.1509497Z Successfully installed pip-26.2.1
+2026-10-11T02:25:07.2105891Z Create complete file
+2026-10-11T02:25:07.2152183Z Successfully set up CPython (3.12.14)
+2026-10-11T02:25:07.2153496Z ##[endgroup]
+2026-10-11T02:25:07.2480574Z ##[group]Run sudo apt-get update --snapshot 20250101T000000Z
+2026-10-11T02:25:07.2481195Z [36;1msudo apt-get update --snapshot 20250101T000000Z[0m
+2026-10-11T02:25:07.2481778Z [36;1msudo apt-get install -y --allow-downgrades --snapshot 20250101T000000Z \[0m
+2026-10-11T02:25:07.2482315Z [36;1m  gcc-13=13.3.0-6ubuntu2~24.04 \[0m
+2026-10-11T02:25:07.2482655Z [36;1m  cpp-13=13.3.0-6ubuntu2~24.04 \[0m
+2026-10-11T02:25:07.2483019Z [36;1m  gcc-13-base=13.3.0-6ubuntu2~24.04 \[0m
+2026-10-11T02:25:07.2483404Z [36;1m  libgcc-13-dev=13.3.0-6ubuntu2~24.04 \[0m
+2026-10-11T02:25:07.2483824Z [36;1m  g++-13=13.3.0-6ubuntu2~24.04 \[0m
+2026-10-11T02:25:07.2484178Z [36;1m  libstdc++-13-dev=13.3.0-6ubuntu2~24.04[0m
+2026-10-11T02:25:07.2484548Z [36;1mcc --version[0m
+2026-10-11T02:25:07.2975746Z shell: /usr/bin/bash -e {0}
+2026-10-11T02:25:07.2976184Z env:
+2026-10-11T02:25:07.2976888Z   OPENBLAS_NUM_THREADS: 1
+2026-10-11T02:25:07.2977269Z   OMP_NUM_THREADS: 1
+2026-10-11T02:25:07.2977653Z   MKL_NUM_THREADS: 1
+2026-10-11T02:25:07.2978098Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T02:25:07.2978851Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-10-11T02:25:07.2979891Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T02:25:07.2980984Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T02:25:07.2981835Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T02:25:07.2982703Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-10-11T02:25:07.2983444Z ##[endgroup]
+2026-10-11T02:25:08.3517789Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-11T02:25:08.3757136Z Get:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-10-11T02:25:08.3838062Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-10-11T02:25:08.3853420Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-10-11T02:25:08.3913594Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-10-11T02:25:08.3962348Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-10-11T02:25:08.4394457Z Get:7 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [548 kB]
+2026-10-11T02:25:08.4559268Z Get:8 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [492 kB]
+2026-10-11T02:25:08.4615959Z Get:9 https://packages.microsoft.com/ubuntu/24.04/prod noble/main all Packages [640 B]
+2026-10-11T02:25:08.4654700Z Get:10 https://packages.microsoft.com/ubuntu/24.04/prod noble/main armhf Packages [12.3 kB]
+2026-10-11T02:25:08.5556628Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1375 kB]
+2026-10-11T02:25:08.5637649Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [306 kB]
+2026-10-11T02:25:08.5660653Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1702 kB]
+2026-10-11T02:25:08.5745270Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [342 kB]
+2026-10-11T02:25:08.5772076Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1761 kB]
+2026-10-11T02:25:08.5860396Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [401 kB]
+2026-10-11T02:25:08.5891632Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [55.0 kB]
+2026-10-11T02:25:08.5907495Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [14.3 kB]
+2026-10-11T02:25:08.6633365Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1121 kB]
+2026-10-11T02:25:08.6691969Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [228 kB]
+2026-10-11T02:25:08.7177650Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1220 kB]
+2026-10-11T02:25:08.7228954Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [245 kB]
+2026-10-11T02:25:08.7252247Z Get:23 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1669 kB]
+2026-10-11T02:25:08.7381729Z Get:24 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [383 kB]
+2026-10-11T02:25:08.7407544Z Get:25 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [49.8 kB]
+2026-10-11T02:25:08.7420900Z Get:26 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse Translation-en [12.4 kB]
+2026-10-11T02:25:14.1389188Z Get:27 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble InRelease [256 kB]
+2026-10-11T02:25:22.3381906Z Get:28 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-updates InRelease [126 kB]
+2026-10-11T02:25:34.9823987Z Get:29 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-backports InRelease [126 kB]
+2026-10-11T02:25:52.5271965Z Get:30 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-security InRelease [126 kB]
+2026-10-11T02:25:55.7458573Z Get:31 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble/main amd64 Packages [1401 kB]
+2026-10-11T02:26:06.2692150Z Get:32 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble/main Translation-en [513 kB]
+2026-10-11T02:26:27.0304142Z Get:33 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble/main amd64 c-n-f Metadata [30.5 kB]
+2026-10-11T02:26:34.9146547Z Get:34 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble/universe amd64 Packages [15.0 MB]
+2026-10-11T02:27:29.6296008Z Get:35 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble/universe Translation-en [5982 kB]
+2026-10-11T02:27:57.6799042Z Get:36 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble/universe amd64 c-n-f Metadata [301 kB]
+2026-10-11T02:28:09.0374654Z Get:37 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble/restricted amd64 Packages [93.9 kB]
+2026-10-11T02:28:31.1637002Z Get:38 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble/restricted Translation-en [18.7 kB]
+2026-10-11T02:29:01.6084954Z Ign:39 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble/restricted amd64 c-n-f Metadata
+2026-10-11T02:29:29.7748694Z Get:40 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble/multiverse amd64 Packages [269 kB]
+2026-10-11T02:29:55.4525837Z Get:41 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble/multiverse Translation-en [118 kB]
+2026-10-11T02:30:03.5292365Z Get:42 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble/multiverse amd64 c-n-f Metadata [8328 B]
+2026-10-11T02:30:15.4216669Z Get:43 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-updates/main amd64 Packages [761 kB]
+2026-10-11T02:30:23.9402019Z Get:44 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-updates/main Translation-en [173 kB]
+2026-10-11T02:30:30.3800932Z Get:45 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-updates/main amd64 c-n-f Metadata [10.4 kB]
+2026-10-11T02:30:38.7351404Z Get:46 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-updates/universe amd64 Packages [965 kB]
+2026-10-11T02:30:50.5452204Z Get:47 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-updates/universe Translation-en [238 kB]
+2026-10-11T02:30:59.7678445Z Get:48 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-updates/universe amd64 c-n-f Metadata [19.9 kB]
+2026-10-11T02:31:06.5912500Z Get:49 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-updates/restricted amd64 Packages [572 kB]
+2026-10-11T02:31:12.9049867Z Get:50 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-updates/restricted Translation-en [110 kB]
+2026-10-11T02:31:14.9712807Z Get:51 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-updates/restricted amd64 c-n-f Metadata [424 B]
+2026-10-11T02:31:27.5810717Z Get:52 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-updates/multiverse amd64 Packages [16.0 kB]
+2026-10-11T02:31:35.5506181Z Get:53 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-updates/multiverse Translation-en [3844 B]
+2026-10-11T02:31:47.1713272Z Get:54 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-updates/multiverse amd64 c-n-f Metadata [552 B]
+2026-10-11T02:31:49.8311591Z Get:55 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-backports/main amd64 c-n-f Metadata [112 B]
+2026-10-11T02:31:55.2006837Z Get:56 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-backports/universe amd64 Packages [10.7 kB]
+2026-10-11T02:32:01.1418024Z Get:57 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-backports/universe Translation-en [10.8 kB]
+2026-10-11T02:32:06.3882768Z Get:58 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-backports/universe amd64 c-n-f Metadata [1104 B]
+2026-10-11T02:32:10.9374002Z Get:59 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-backports/restricted amd64 c-n-f Metadata [116 B]
+2026-10-11T02:32:20.5310081Z Get:60 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+2026-10-11T02:32:30.9211920Z Get:61 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-security/main amd64 Packages [572 kB]
+2026-10-11T02:32:44.5891460Z Get:62 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-security/main Translation-en [111 kB]
+2026-10-11T02:32:51.4755375Z Get:63 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-security/main amd64 c-n-f Metadata [5892 B]
+2026-10-11T02:32:59.5401370Z Get:64 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-security/universe amd64 Packages [795 kB]
+2026-10-11T02:33:15.7168566Z Get:65 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-security/universe Translation-en [169 kB]
+2026-10-11T02:33:19.9150554Z Get:66 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-security/universe amd64 c-n-f Metadata [13.5 kB]
+2026-10-11T02:33:28.0757049Z Get:67 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-security/restricted amd64 Packages [560 kB]
+2026-10-11T02:33:42.1318252Z Get:68 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-security/restricted Translation-en [108 kB]
+2026-10-11T02:34:04.7311844Z Get:69 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-security/restricted amd64 c-n-f Metadata [424 B]
+2026-10-11T02:34:13.5682866Z Get:70 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-security/multiverse amd64 Packages [12.2 kB]
+2026-10-11T02:34:25.7413261Z Get:71 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-security/multiverse Translation-en [2940 B]
+2026-10-11T02:34:28.3674546Z Get:72 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble-security/multiverse amd64 c-n-f Metadata [356 B]
+2026-10-11T02:34:32.5979227Z Get:39 https://snapshot.ubuntu.com/ubuntu/20250101T000000Z noble/restricted amd64 c-n-f Metadata [416 B]
+2026-10-11T02:34:41.0011997Z Fetched 42.0 MB in 9min 24s (74.4 kB/s)
+2026-10-11T02:34:41.7558337Z Reading package lists...
+2026-10-11T02:34:41.8162774Z Reading package lists...
+2026-10-11T02:34:41.9870600Z Building dependency tree...
+2026-10-11T02:34:41.9877973Z Reading state information...
+2026-10-11T02:34:42.0466012Z Some packages could not be installed. This may mean that you have
+2026-10-11T02:34:42.0469618Z requested an impossible situation or if you are using the unstable
+2026-10-11T02:34:42.0470698Z distribution that some required packages have not yet been created
+2026-10-11T02:34:42.0471383Z or been moved out of Incoming.
+2026-10-11T02:34:42.0471951Z The following information may help to resolve the situation:
+2026-10-11T02:34:42.0472424Z 
+2026-10-11T02:34:42.0472656Z The following packages have unmet dependencies:
+2026-10-11T02:34:42.1079577Z  cpp-13 : Depends: cpp-13-x86-64-linux-gnu (= 13.3.0-6ubuntu2~24.04) but it is not going to be installed
+2026-10-11T02:34:42.1081594Z  g++-13 : Depends: g++-13-x86-64-linux-gnu (= 13.3.0-6ubuntu2~24.04) but it is not going to be installed
+2026-10-11T02:34:42.1082912Z  gcc-13 : Depends: gcc-13-x86-64-linux-gnu (= 13.3.0-6ubuntu2~24.04) but it is not going to be installed
+2026-10-11T02:34:42.1111311Z E: Unable to correct problems, you have held broken packages.
+2026-10-11T02:34:42.1147276Z ##[error]Process completed with exit code 100.
+2026-10-11T02:34:42.1246639Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-11T02:34:42.1247106Z with:
+2026-10-11T02:34:42.1247331Z   name: CP12-entorno-durable
+2026-10-11T02:34:42.1247718Z   path: trazabilidad/CP12_reconstruccion/entorno_durable/resultados.json
+2026-10-11T02:34:42.1248140Z   if-no-files-found: warn
+2026-10-11T02:34:42.1248386Z   compression-level: 6
+2026-10-11T02:34:42.1248629Z   overwrite: false
+2026-10-11T02:34:42.1248863Z   include-hidden-files: false
+2026-10-11T02:34:42.1249109Z env:
+2026-10-11T02:34:42.1249301Z   OPENBLAS_NUM_THREADS: 1
+2026-10-11T02:34:42.1249532Z   OMP_NUM_THREADS: 1
+2026-10-11T02:34:42.1249745Z   MKL_NUM_THREADS: 1
+2026-10-11T02:34:42.1250030Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T02:34:42.1250493Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-10-11T02:34:42.1250943Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T02:34:42.1251382Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T02:34:42.1251787Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-10-11T02:34:42.1252197Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-10-11T02:34:42.1252535Z ##[endgroup]
+2026-10-11T02:34:42.2996072Z (node:3006) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-11T02:34:42.2997620Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-11T02:34:42.3066278Z With the provided path, there will be 1 file uploaded
+2026-10-11T02:34:42.3118010Z Artifact name is valid!
+2026-10-11T02:34:42.3145058Z Root directory input is valid!
+2026-10-11T02:34:42.5053780Z Beginning upload of artifact content to blob storage
+2026-10-11T02:34:42.5260416Z (node:3006) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-11T02:34:42.5699484Z Uploaded bytes 858
+2026-10-11T02:34:42.5889399Z Finished uploading artifact content to blob storage!
+2026-10-11T02:34:42.5890926Z SHA256 digest of uploaded artifact zip is 981ba96168ff8eb4d529d9082b766cd62640bca92109190526c960c8f4638ca7
+2026-10-11T02:34:42.5892352Z Finalizing artifact upload
+2026-10-11T02:34:42.7893108Z Artifact CP12-entorno-durable.zip successfully finalized. Artifact ID 11690220403
+2026-10-11T02:34:42.7895076Z Artifact CP12-entorno-durable has been successfully uploaded! Final size is 858 bytes. Artifact ID is 11690220403
+2026-10-11T02:34:42.7902112Z Artifact download URL: https://github.com/diegolezaval/Proyecto_Runas/actions/runs/38105072892/artifacts/11690220403
+2026-10-11T02:34:42.8095561Z Post job cleanup.
+2026-10-11T02:34:42.8942185Z [command]/usr/bin/git version
+2026-10-11T02:34:42.8985972Z git version 2.55.0
+2026-10-11T02:34:42.9029893Z Temporarily overriding HOME='/home/runner/work/_temp/997b4386-7dfd-4030-8b91-056a57ff3eba' before making global git config changes
+2026-10-11T02:34:42.9031487Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-11T02:34:42.9037175Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Proyecto_Runas/Proyecto_Runas
+2026-10-11T02:34:42.9071095Z Removing SSH command configuration
+2026-10-11T02:34:42.9079732Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-11T02:34:42.9117690Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-11T02:34:42.9370502Z Removing HTTP extra header
+2026-10-11T02:34:42.9377757Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-11T02:34:42.9425562Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-11T02:34:42.9683559Z Removing includeIf entries pointing to credentials config files
+2026-10-11T02:34:42.9695124Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-11T02:34:42.9727273Z includeif.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git.path
+2026-10-11T02:34:42.9728520Z includeif.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git/worktrees/*.path
+2026-10-11T02:34:42.9729648Z includeif.gitdir:/github/workspace/.git.path
+2026-10-11T02:34:42.9730634Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-11T02:34:42.9738129Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git.path
+2026-10-11T02:34:42.9765175Z /home/runner/work/_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config
+2026-10-11T02:34:42.9779389Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git.path /home/runner/work/_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config
+2026-10-11T02:34:42.9827651Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git/worktrees/*.path
+2026-10-11T02:34:42.9855735Z /home/runner/work/_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config
+2026-10-11T02:34:42.9870101Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Proyecto_Runas/Proyecto_Runas/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config
+2026-10-11T02:34:42.9915002Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-11T02:34:42.9945663Z /github/runner_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config
+2026-10-11T02:34:42.9955085Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config
+2026-10-11T02:34:42.9993158Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-11T02:34:43.0027506Z /github/runner_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config
+2026-10-11T02:34:43.0047122Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config
+2026-10-11T02:34:43.0090860Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-11T02:34:43.0348795Z Removing credentials config '/home/runner/work/_temp/git-credentials-17b37b33-d972-41f0-a6c9-cf078d08f80c.config'
+2026-10-11T02:34:43.0507022Z Cleaning up orphan processes
+2026-10-11T02:34:43.0914678Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

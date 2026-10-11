@@ -1,0 +1,28 @@
+{
+  "schema": "CP12_PUBLIC_LOCAL_REVIEW_PRIVATE_HOST_FIELDS_OMITTED",
+  "observed_at": "2026-10-11T21:16:14.057078+00:00",
+  "original_executor_identity_matches": false,
+  "candidate_pipeline_count": 0,
+  "process_query_error_count": 0,
+  "absence_on_another_executor_proves_inactivity": false,
+  "state_sha256": "508f32f167abd6211b330d707172612a47fec1f2701577b1a9939d8390fbc529",
+  "receipt_sha256": "1e75549f9a67d04edef4eb92f49d3ba3de910292068b5041180d8ec04ab42437",
+  "configuration_sha256": "148dfb982ce59ff5e9e7696749f58c77584c96c2833ca5fb4bd03122af5e5541",
+  "receipt_status": "PAUSADA_REANUDABLE",
+  "scientific_source_hashes_match": {
+    "herramientas/acelerar_fuerza_m2.py": true,
+    "herramientas/continuar_no_radial_adaptativo.py": true,
+    "herramientas/continuar_no_radial_m2.py": true,
+    "herramientas/diagnosticar_chi_CP11.py": true,
+    "herramientas/diagnosticar_mediador_CP10.py": true,
+    "herramientas/ejecutar_con_procedencia.py": true,
+    "herramientas/ejecutar_protocolo.py": true,
+    "herramientas/evolucion_mediador_CP10.py": true,
+    "herramientas/fuerza_potencial_m2.c": true,
+    "herramientas/modelo_m2.py": true,
+    "herramientas/observador_causal_CP12.py": true,
+    "herramientas/referencia_pasiva_CP12.c": true,
+    "herramientas/reproducir_par_CP12.py": true,
+    "herramientas/respuesta_forzada_chi_CP11_precisa.py": true
+  }
+}

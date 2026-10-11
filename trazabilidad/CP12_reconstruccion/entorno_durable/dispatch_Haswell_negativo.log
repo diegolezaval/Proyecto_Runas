@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/66996d39ad08/CP12_tau16_verificada_20261011/Proyecto_Runas/herramientas/gestionar_respaldo_CP12.py", line 262, in <module>
+    result=audit(args.time);print(json.dumps(result,ensure_ascii=False));raise SystemExit(0 if result['passed'] else 1)
+           ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/66996d39ad08/CP12_tau16_verificada_20261011/Proyecto_Runas/herramientas/gestionar_respaldo_CP12.py", line 145, in audit
+    result=physical.run_pair(cfg,temporary,stop_at=time_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/66996d39ad08/CP12_tau16_verificada_20261011/Proyecto_Runas/herramientas/reproducir_par_CP12.py", line 282, in run_pair
+    streams=[PhysicalStream(c,d,None if restored is None else restored[i]) for i,(c,d) in enumerate(zip(cfg['physical_configurations'],states))]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/66996d39ad08/CP12_tau16_verificada_20261011/Proyecto_Runas/herramientas/reproducir_par_CP12.py", line 90, in __init__
+    raise ValueError('Los datos iniciales no reproducen CP10; detener antes de evolucionar')
+ValueError: Los datos iniciales no reproducen CP10; detener antes de evolucionar

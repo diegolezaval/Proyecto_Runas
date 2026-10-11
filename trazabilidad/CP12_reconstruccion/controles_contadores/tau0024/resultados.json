@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "time": 24.0,
+  "passed": true,
+  "checked_at": "2026-10-11T03:10:53.739894+00:00",
+  "M2_steps_executed": 0,
+  "physical_solver_or_observer_changes": false,
+  "code_sha256": "74d99adb266fa597f5f7ee6a4492e354174c03cafbabdc845e286770cb9a08dd",
+  "input_sha256": {
+    "validacion/P06/no_radial/CP12/par_instrumentado__a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d/CP12_par_estado.npz": "508f32f167abd6211b330d707172612a47fec1f2701577b1a9939d8390fbc529",
+    "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/ejecucion.log": "933a1235a1ad55262dfa901c97f7e21ce1bfdef910280d7e14d967657e4cf059",
+    "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/procedencia.json": "f6217d888ca69aab523a99f0e503200d11a3b89a96d66c46cba6c1d5cc260c46",
+    "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/ejecucion.log": "77a654e19780227b2f1884fd0ac0aba93a1030f60b62ac124fe1356e7dff906a",
+    "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/procedencia.json": "d23b6ac4f48d7529ad3e0107439247a5c7200bf9102a82098f8cff56b89ed450"
+  },
+  "tests": {
+    "0_CP10_receipt_integrity": true,
+    "0_twenty_original_boundaries": true,
+    "0_accepted_exact_CP10_log": true,
+    "0_maxe_exact_CP10_log": true,
+    "0_maxq_exact_CP10_log": true,
+    "0_nfev_integer_nonnegative_rejection_accounting": true,
+    "1_CP10_receipt_integrity": true,
+    "1_twenty_original_boundaries": true,
+    "1_accepted_exact_CP10_log": true,
+    "1_maxe_exact_CP10_log": true,
+    "1_maxq_exact_CP10_log": true,
+    "1_nfev_integer_nonnegative_rejection_accounting": true,
+    "audited_state_unchanged": true
+  },
+  "grids": [
+    {
+      "grid": 0.125,
+      "observed": {
+        "t": 24.0,
+        "accepted": 4435,
+        "nfev": 53838,
+        "maxe": 8.542588858517774e-11,
+        "maxq": 1.5543122344752192e-15
+      },
+      "CP10_log_expected": {
+        "accepted": 4435,
+        "maxe": 8.542588858517774e-11,
+        "maxq": 1.5543122344752192e-15
+      },
+      "rejected_attempts_implied_by_bookkeeping": 36,
+      "exact_nfev_reference_available": false
+    },
+    {
+      "grid": 0.0625,
+      "observed": {
+        "t": 24.0,
+        "accepted": 4435,
+        "nfev": 53838,
+        "maxe": 8.530331996325913e-11,
+        "maxq": 8.881784197001252e-16
+      },
+      "CP10_log_expected": {
+        "accepted": 4435,
+        "maxe": 8.530331996325913e-11,
+        "maxq": 8.881784197001252e-16
+      },
+      "rejected_attempts_implied_by_bookkeeping": 36,
+      "exact_nfev_reference_available": false
+    }
+  ],
+  "limitation": "Intermediate nfev without a historical record is checked for DOP853 accounting only; final exact CP10 comparison remains mandatory."
+}

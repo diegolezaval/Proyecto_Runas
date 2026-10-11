@@ -1,0 +1,11 @@
+{
+  "schema": "CP12_ADMINISTRATIVE_MATERIALIZATION_DIAGNOSIS",
+  "recorded_at": "2026-10-11T21:15:26.591286+00:00",
+  "failure": "The baseline hash gate rejected one extra final LF introduced while materializing text.",
+  "actual_sha256": "691067181af2314ab91a98adacde5d14b507b5b411abba020b010ac4d1147ef6",
+  "expected_sha256": "a81957a7f3a9a8888cef936d1c5a0811dec5da0a299e791cae6febc97e92060d",
+  "diagnosis": "Removing exactly the materialization-added LF restores the original published SHA256; no code formula was changed.",
+  "M2_steps": 0,
+  "monitor_process_queries_before_failure": 0,
+  "scientific_negative": false
+}

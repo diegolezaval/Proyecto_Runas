@@ -1,0 +1,91 @@
+{
+  "schema_version": "4.2.0",
+  "model": "M2",
+  "authority": "Fuente de parametros del benchmark escalar comun; no se identifica un Theta total que realice R1.",
+  "scalar_benchmark": {
+    "fundamental_coordinates": [
+      "m",
+      "M",
+      "lambda0",
+      "g",
+      "h"
+    ],
+    "derived_lambda": "g^2/(2*M^2)-lambda0",
+    "dimensionless": {
+      "lambda0_over_lambda": 99,
+      "M_over_m": 100
+    },
+    "g_definition": "M*sqrt(200*lambda)",
+    "h_definition": "100*lambda",
+    "extra_potential_terms": "Cero en la teoria clasica ensayada; no afirmacion de invariancia bajo renormalizacion.",
+    "fundamental_natural_units": {
+      "mass_unit_eV": 1.0,
+      "m": 1.0,
+      "M": 100.0,
+      "lambda0": 0.099,
+      "g": 44.721359549995796,
+      "h": 0.1
+    },
+    "normalization": {
+      "mass_reference_eV": 1.0,
+      "lambda_reference": 0.001,
+      "meaning": "Unidades f=sqrt(lambda_reference)*Phi/mass_reference; no sexta constante fisica. Se mantienen al variar cada coordenada fundamental."
+    },
+    "dimensionless_role": "Vista historica de control del benchmark; las cinco coordenadas fundamental_natural_units alimentan el codigo."
+  },
+  "SI_illustration": {
+    "m_energy_eV": 1.0,
+    "lambda": 0.001,
+    "status": "Escala comun ilustrativa, fijada para todos los contrastes; no calibrada contra R1."
+  },
+  "portal_benchmark": {
+    "a": 0,
+    "b": 0,
+    "A": "1",
+    "B": "1",
+    "scope": "Sector desacoplado utilizado en las soluciones numericas. Las escalas sA y sB no intervienen cuando A=B=1."
+  },
+  "gravity_benchmark": {
+    "metric": "Minkowski",
+    "xi": 0
+  },
+  "total_interacting_theory": {
+    "additional_common_parameters": [
+      "a",
+      "b",
+      "sA",
+      "sB",
+      "Theta_materia",
+      "Lambda_EFT",
+      "c_i(mu0)",
+      "condiciones_de_renormalizacion"
+    ],
+    "identified_jointly": false,
+    "physical_cutoff_identified": false,
+    "R1_realized": false
+  },
+  "allowed_device_configuration": [
+    "geometria_fisica",
+    "composicion_y_estado_del_material",
+    "condiciones_iniciales",
+    "carga_total",
+    "frecuencia_del_estado",
+    "terminales_y_reservorios",
+    "consignas_y_fuentes"
+  ],
+  "must_be_derived": [
+    "dispersion",
+    "velocidad",
+    "impedancia",
+    "coeficientes_no_lineales",
+    "perdidas",
+    "ruido",
+    "conductancia",
+    "barreras",
+    "tasas_de_error",
+    "umbrales",
+    "saturacion",
+    "tiempos_de_preparacion"
+  ],
+  "forbidden_inference": "Asignar un coeficiente R1 como entrada y presentarlo como una prediccion de M2."
+}

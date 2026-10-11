@@ -1,0 +1,17 @@
+{
+  "schema": "CP12_ADMINISTRATIVE_MONITOR_GUARD_PREREGISTRATION",
+  "registered_at": "2026-10-11T21:42:27.544442+00:00",
+  "scope": "Prevent false inactive certificates on a different executor; synthetic process fixtures, no physical calculation or Library publication.",
+  "prior_source_commit": "43b51cc419897783f3111586b16dfc76875f1c61",
+  "monitor_sha256": "11f409fe8bc531e1e2027dd48ec2d52051f07451b83b6157f2419fd474d23046",
+  "control_sha256": "4c63aea2b8d37e201f6ec7cdae0d642b3fdcd0a06436f66abcf49a61e44b8fa8",
+  "criteria": [
+    "Different boot with no processes or reused PID must yield UNKNOWN_ACTIVITY and active=null.",
+    "Same boot, complete process query and no worker can yield observed inactivity.",
+    "Matching coordinator or orphan pipeline on same boot remains active.",
+    "Incomplete query without positive activity remains unknown."
+  ],
+  "M2_steps": 0,
+  "scientific_protocol_changed": false,
+  "amendment": "Public synthetic fixtures use fictitious process identifiers; real executor details remain private. Same administrative criteria; no physics."
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/3bbc09a5243b/Runas_CP12/herramientas/reproducir_par_CP12.py", line 301, in <module>
+    if case['operation']=='control_pasivo_sin_evolucion_M2':result=controls(case['configuration'],a.output_dir)
+                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/3bbc09a5243b/Runas_CP12/herramientas/reproducir_par_CP12.py", line 191, in controls
+    if not result['passed']:raise ValueError('Control de instrumentación falló; no iniciar M2')
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Control de instrumentación falló; no iniciar M2

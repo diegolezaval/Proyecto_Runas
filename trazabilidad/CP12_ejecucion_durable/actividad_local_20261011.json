@@ -1,0 +1,30 @@
+{
+  "schema": "CP12_ACTIVITY_MONITOR_REGISTRATION_NOT_A_CHECKPOINT",
+  "registered_at": "2026-10-11T17:11:51.549100+00:00",
+  "library_file_id": "libfile_8106c011ee04819195a120fbf37cd529",
+  "file_name": "Proyecto_Runas_CP12_ACTIVIDAD_EJECUTOR_20261011.json",
+  "executor_instance": "cp12-local-original-20261011T164243Z",
+  "original_workspace": "/workspace/scratch/66996d39ad08/CP12_raiz_persistente",
+  "coordinator_pid": 8783,
+  "coordinator_start_ticks": "286742",
+  "executor_boot_sha256": "61e569884eda269c3919d4ab8333113ce676b16d7d266af1b83d6b9c50d057de",
+  "monitor_source": "trazabilidad/CP12_reconstruccion/actividad_ejecutor.py",
+  "monitor_source_sha256": "a81957a7f3a9a8888cef936d1c5a0811dec5da0a299e791cae6febc97e92060d",
+  "active_observed_at_registration": true,
+  "last_verified_boundary_at_registration": {
+    "time": 24.0,
+    "zip_sha256": "77db2bc9b8c76cd7779c565ca2d6d8baf90aaee504ac52abbe27356a610e8c52",
+    "state_sha256": "508f32f167abd6211b330d707172612a47fec1f2701577b1a9939d8390fbc529",
+    "proof_path": "trazabilidad/CP12_reconstruccion/respaldos/tau0024.json"
+  },
+  "read_current_record_before_any_resume": true,
+  "staleness_proves_inactivity": false,
+  "missing_workspace_on_another_host_proves_inactivity": false,
+  "physical_or_observer_changes": false,
+  "M2_steps_by_monitor": 0,
+  "policy": "Read the current record. Recent activity prevents duplicate execution. Confirm inactivity on the original executor or obtain a reliable original-executor inactive record; absence in a different workspace is insufficient. Recover and verify the latest complete scientific backup before any continuation. An activity record never certifies a new frontier or closes CP12.",
+  "previous_monitor_source_sha256": "458879c0471e9e48ec853f2c452138262400cb6fa1ab853a071613eb64d6d4db",
+  "administrative_fix_registered_at": "2026-10-11T17:17:51.608362+00:00",
+  "administrative_fix": "procps lookup self failed inside the nested PID namespace. Read mounted procfs directly, tolerate disappearing processes, retain UNKNOWN_ACTIVITY on uncertain reads. No physics or checkpoint was changed.",
+  "intermediate_monitor_source_sha256": "db0713d7a4f91c2a8dd1afaf66c7f8d02758c150cdef18203b558aff723205f4"
+}
