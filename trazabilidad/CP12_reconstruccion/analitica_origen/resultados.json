@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-11T16:53:00.109410+00:00",
+  "M2_steps": 0,
+  "original_sources_before": {
+    "herramientas/continuar_no_radial_m2.py": "d4a7f8ad89a4bc321931926d8de161348e9223a0bd21336e0b13edfdbbe3493c",
+    "datos/ensayo_causal_chi_CP12.json": "0cf1bdbf42cf1240aeaee4faf475541e0cbd45faaf5e5180e16c6de6167b4e2d"
+  },
+  "original_sources_after": {
+    "herramientas/continuar_no_radial_m2.py": "d4a7f8ad89a4bc321931926d8de161348e9223a0bd21336e0b13edfdbbe3493c",
+    "datos/ensayo_causal_chi_CP12.json": "0cf1bdbf42cf1240aeaee4faf475541e0cbd45faaf5e5180e16c6de6167b4e2d"
+  },
+  "code_sha256": "7a5553275df39e70a9557cc013718026cb7cdc709dc15321d5fd24e5c36b6ee6",
+  "preregistration_sha256": "de173a1b6a48063c57206327ba01b68e306f08b13d49c247018dbbe11edee6bb",
+  "records": [
+    {
+      "h": 0.125,
+      "first_cell": 1.5,
+      "first_cell_expected": 1.5,
+      "maximum_absolute_interior_error": 1.7625767250791663e-15,
+      "weighted_residual_norm_core": 0.043709397802593745,
+      "outer_Dirichlet_row_excluded": true
+    },
+    {
+      "h": 0.0625,
+      "first_cell": 1.5,
+      "first_cell_expected": 1.5,
+      "maximum_absolute_interior_error": 1.7625767250791663e-15,
+      "weighted_residual_norm_core": 0.015456691084566649,
+      "outer_Dirichlet_row_excluded": true
+    }
+  ],
+  "norm_ratio_fine_over_coarse": 0.35362397703062015,
+  "asymptotic_ratio": 0.3535533905932738,
+  "causal_sufficiency_not_established": true,
+  "physical_gate_unchanged": 0.02,
+  "correction_tested": false
+}
