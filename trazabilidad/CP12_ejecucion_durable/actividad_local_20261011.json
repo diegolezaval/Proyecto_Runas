@@ -9,7 +9,7 @@
   "coordinator_start_ticks": "286742",
   "executor_boot_sha256": "61e569884eda269c3919d4ab8333113ce676b16d7d266af1b83d6b9c50d057de",
   "monitor_source": "trazabilidad/CP12_reconstruccion/actividad_ejecutor.py",
-  "monitor_source_sha256": "458879c0471e9e48ec853f2c452138262400cb6fa1ab853a071613eb64d6d4db",
+  "monitor_source_sha256": "a81957a7f3a9a8888cef936d1c5a0811dec5da0a299e791cae6febc97e92060d",
   "active_observed_at_registration": true,
   "last_verified_boundary_at_registration": {
     "time": 24.0,
@@ -22,5 +22,9 @@
   "missing_workspace_on_another_host_proves_inactivity": false,
   "physical_or_observer_changes": false,
   "M2_steps_by_monitor": 0,
-  "policy": "Read the current record. Recent activity prevents duplicate execution. Confirm inactivity on the original executor or obtain a reliable original-executor inactive record; absence in a different workspace is insufficient. Recover and verify the latest complete scientific backup before any continuation. An activity record never certifies a new frontier or closes CP12."
+  "policy": "Read the current record. Recent activity prevents duplicate execution. Confirm inactivity on the original executor or obtain a reliable original-executor inactive record; absence in a different workspace is insufficient. Recover and verify the latest complete scientific backup before any continuation. An activity record never certifies a new frontier or closes CP12.",
+  "previous_monitor_source_sha256": "458879c0471e9e48ec853f2c452138262400cb6fa1ab853a071613eb64d6d4db",
+  "administrative_fix_registered_at": "2026-10-11T17:17:51.608362+00:00",
+  "administrative_fix": "procps lookup self failed inside the nested PID namespace. Read mounted procfs directly, tolerate disappearing processes, retain UNKNOWN_ACTIVITY on uncertain reads. No physics or checkpoint was changed.",
+  "intermediate_monitor_source_sha256": "db0713d7a4f91c2a8dd1afaf66c7f8d02758c150cdef18203b558aff723205f4"
 }
