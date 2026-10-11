@@ -970,10 +970,19 @@
       "report": "informes/RETOMA_CP12_TAU24_20261011.md",
       "state_sha256": "508f32f167abd6211b330d707172612a47fec1f2701577b1a9939d8390fbc529",
       "zip_sha256": "77db2bc9b8c76cd7779c565ca2d6d8baf90aaee504ac52abbe27356a610e8c52"
+    },
+    {
+      "event": "CP12_ACTIVIDAD_ORIGINAL_INCIERTA_Y_RECUPERACION_TAU24_VERIFICADA",
+      "date": "2026-10-11T21:19:17.973540+00:00",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/ACTIVIDAD_INCIERTA_CP12_20261011.md",
+      "new_M2_evolution_steps": 0
     }
   ],
   "next_actions": [
-    "Recuperar el respaldo completo verificado τ=24 en trazabilidad/CP12_reconstruccion/respaldos/tau0024.json y continuar las dos trayectorias originales 24→32…→160 con cada frontera conservada, descargada y comprobada antes de avanzar. Buscar estados posteriores y comprobar trabajadores activos. La ubicación original del par en Git conserva τ=0; las cápsulas y sus comprobantes son los reinicios.",
+    "Resolver primero la actividad desconocida del ejecutor original mediante evidencia fiable de ese ejecutor; el latido antiguo y la ausencia local en otro boot no certifican inactividad. No iniciar un segundo trabajador ni reactivar GitHub. Después de confirmar inactividad, diagnosticar la terminación y buscar todas las cápsulas posteriores; recuperar y verificar la más avanzada antes de continuar el mismo par hasta τ=160. Última frontera encontrada y recuperada íntegramente: τ=24. Véase informes/ACTIVIDAD_INCIERTA_CP12_20261011.md.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -987,12 +996,12 @@
     "Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Recuperar la cápsula permanente τ=8 identificada en respaldos/tau0008.json, verificarla y continuar 8→16→24…→160 sin duplicar un escritor activo; el par incluido en GitHub conserva la instantánea τ=0.",
+  "next_calculation": "Resolver primero la actividad desconocida del ejecutor original mediante evidencia fiable de ese ejecutor; el latido antiguo y la ausencia local en otro boot no certifican inactividad. No iniciar un segundo trabajador ni reactivar GitHub. Después de confirmar inactividad, diagnosticar la terminación y buscar todas las cápsulas posteriores; recuperar y verificar la más avanzada antes de continuar el mismo par hasta τ=160. Última frontera encontrada y recuperada íntegramente: τ=24. Véase informes/ACTIVIDAD_INCIERTA_CP12_20261011.md.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [],
   "research_in_progress": [],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
-  "delivery_boundary": "Diagnóstico finito cerrado sobre estados guardados: operador, métricas, modos cortos, contraste congelado negativo y respuesta forzada. Cero pasos M2 nuevos; parada por ambigüedad causal y evidencia temporal faltante.",
+  "delivery_boundary": "CP11 permanece el último checkpoint científico. CP12 conserva el par original y τ=24 recuperado/verificado; τ24→32 no tiene final confirmado. Actividad externa desconocida: se bloquea otro trabajador. La identidad local del operador sobre r²Y₂m es una pista matemática, no una atribución dominante; presupuesto final y corrección pendientes.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
   "latest_completed_nonradial_time": 160,
   "diagnostic_after_gate": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
@@ -1005,13 +1014,33 @@
   },
   "checkpoint_kind": "CIENTIFICO",
   "automatic_continuation_paused": {
-    "reason": "REINICIO_TAU8_VERIFICADO_EN_CAPSULA_EXTERNA",
-    "evidence": "trazabilidad/CP12_reconstruccion/respaldos/tau0008.json",
-    "resume_ready": true,
+    "reason": "ACTIVIDAD_DEL_EJECUTOR_ORIGINAL_DESCONOCIDA",
+    "evidence": "trazabilidad/CP12_ejecucion_durable/actividad_incierta_20261011.json",
+    "resume_ready": false,
     "reconstruction_authorized": true,
     "last_scientific_checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
     "fundamental_model_change_authorized": false,
     "M2_exhaustion_claimed": false,
-    "missing_state_is_scientific_negative": false
+    "missing_state_is_scientific_negative": false,
+    "verified_checkpoint_ready": true,
+    "second_worker_allowed": false,
+    "unknown_activity_is_scientific_negative": false
+  },
+  "execution_activity": {
+    "status": "UNKNOWN_ACTIVITY",
+    "activity_known": false,
+    "active": null,
+    "observed_at": "2026-10-11T21:19:17.973540+00:00",
+    "evidence": "trazabilidad/CP12_ejecucion_durable/actividad_incierta_20261011.json",
+    "latest_verified_cp12_time": 24,
+    "second_worker_allowed": false,
+    "last_rechecked_at": "2026-10-11T21:44:49.283489+00:00"
+  },
+  "latest_verified_cp12_restart": {
+    "time": 24,
+    "proof": "trazabilidad/CP12_reconstruccion/respaldos/tau0024.json",
+    "zip_sha256": "77db2bc9b8c76cd7779c565ca2d6d8baf90aaee504ac52abbe27356a610e8c52",
+    "state_sha256": "508f32f167abd6211b330d707172612a47fec1f2701577b1a9939d8390fbc529",
+    "verified_recovery": "trazabilidad/CP12_ejecucion_durable/supervision_20261011_2105/recuperacion_tau0024_original.json"
   }
 }

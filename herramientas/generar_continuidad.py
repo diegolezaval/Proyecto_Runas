@@ -67,12 +67,16 @@ def render_state(root=ROOT):
     current = state.get('scientific_checkpoint', state['checkpoint'])
     completed = ', '.join(s['id'] for s in state['stages'] if s['status'] == 'COMPLETADA') or 'Ninguna'
     partial = ', '.join(s['id'] for s in state['stages'] if s['status'] == 'PARCIAL') or 'Ninguna'
+    activity = state.get('execution_activity', {})
+    active_count = ('DESCONOCIDOS; no iniciar otro trabajador' if
+                    activity.get('activity_known') is False else
+                    str(len(state.get('numerical_runs_in_progress', []))))
     latest_nonradial = read(registry['authoritative_results']['nonradial'], root)
     lines = [f"# Estado actual · {state['checkpoint']}", '',
              '> Vista generada por herramientas/generar_continuidad.py. Editar las fuentes JSON; no este archivo.', '',
              f"Proyecto: **{state['project_version']}**. Modelo: **{state['model_version']}**. Último checkpoint científico: **{current}**.", '',
              f"**Completadas:** {completed}. **Parciales:** {partial}.", '',
-             f"**Puerta no radial vigente:** {latest_nonradial['status']}. **Cálculos numéricos activos:** {len(state.get('numerical_runs_in_progress', []))}. **Primordiales/dispositivos completos:** {state['complete_primordials']}.", '',
+             f"**Puerta no radial vigente:** {latest_nonradial['status']}. **Cálculos numéricos activos:** {active_count}. **Primordiales/dispositivos completos:** {state['complete_primordials']}.", '',
              ('La auditoría administrativa no cambia las etapas ni sus puertas.' if state.get('checkpoint_kind', 'ADMINISTRATIVO' if current != state['checkpoint'] else 'CIENTIFICO') == 'ADMINISTRATIVO' else 'Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa.') + ' La evidencia reproducible prevalece ante una discrepancia documental.', '',
              '## Siguiente trabajo científico', '']
     lines += ['- ' + action for action in state['next_actions']]

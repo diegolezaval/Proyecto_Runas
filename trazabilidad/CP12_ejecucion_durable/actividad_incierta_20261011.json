@@ -1,0 +1,39 @@
+{
+  "schema": "CP12_EXTERNAL_EXECUTOR_ACTIVITY_UNCERTAIN_NOT_SCIENTIFIC_NEGATIVE",
+  "observed_at": "2026-10-11T21:19:17.973540+00:00",
+  "repo_head_reviewed": "43b51cc419897783f3111586b16dfc76875f1c61",
+  "status": "UNKNOWN_ACTIVITY",
+  "activity_known": false,
+  "original_executor_inactivity_certified": false,
+  "second_worker_allowed": false,
+  "physical_steps_executed": 0,
+  "new_frontier_certified": false,
+  "latest_verified_time": 24,
+  "verified_backup": {
+    "zip_sha256": "77db2bc9b8c76cd7779c565ca2d6d8baf90aaee504ac52abbe27356a610e8c52",
+    "state_sha256": "508f32f167abd6211b330d707172612a47fec1f2701577b1a9939d8390fbc529",
+    "receipt_sha256": "1e75549f9a67d04edef4eb92f49d3ba3de910292068b5041180d8ec04ab42437",
+    "configuration_sha256": "148dfb982ce59ff5e9e7696749f58c77584c96c2833ca5fb4bd03122af5e5541",
+    "payload_files": 329,
+    "independent_recovery_passed": true
+  },
+  "original_activity": {
+    "version_id": "13",
+    "last_observed_at": "2026-10-11T17:25:20.001746+00:00",
+    "status": "ACTIVE"
+  },
+  "next_missing_evidence": "Reliable inactivity observation from the registered original executor, or an authoritative executor termination record. Then diagnose termination and search all later capsules before resuming the verified frontier.",
+  "technical_interruption_of_segment_not_confirmed": true,
+  "CP12_closed": false,
+  "cause_identified": false,
+  "correction_tested": false,
+  "main_scientific_checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+  "github_tau32_assignments_exhausted": 4,
+  "github_rerun_allowed": false,
+  "source_evidence_folder": "trazabilidad/CP12_ejecucion_durable/supervision_20261011_2105",
+  "report": "informes/ACTIVIDAD_INCIERTA_CP12_20261011.md",
+  "counter_audit_reused_without_overwriting": true,
+  "counter_exact_intermediate_nfev_reference_available": false,
+  "original_executor_identity_matches": false,
+  "last_rechecked_at": "2026-10-11T21:44:49.283489+00:00"
+}

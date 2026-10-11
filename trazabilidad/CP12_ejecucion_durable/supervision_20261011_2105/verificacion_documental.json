@@ -1,0 +1,39 @@
+{
+  "generacion_vistas_publicas.json": {
+    "passed": true,
+    "stale": [],
+    "written": [
+      "ESTADO_ACTUAL.md",
+      "README.md",
+      "trazabilidad/arquitectura/indice_trazabilidad.json"
+    ]
+  },
+  "comprobacion_vistas_publicas.json": {
+    "passed": true,
+    "stale": [],
+    "written": []
+  },
+  "comprobacion_continuidad_publica.json": {
+    "schema_version": "1.0.0",
+    "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+    "passed": true,
+    "counts": {
+      "json": 562,
+      "python": 294,
+      "svg": 68,
+      "local_links": 640
+    },
+    "issues": [],
+    "E00_E01_recalculated": false,
+    "scope": "Integridad y continuidad editorial; no certificación científica automática."
+  },
+  "checked_at": "2026-10-11T21:45:49.830002+00:00",
+  "passed": true,
+  "M2_steps": 0,
+  "original_stage_records_unchanged": true,
+  "scientific_checkpoint_unchanged": true,
+  "public_copy_omits_private_executor_metadata": true,
+  "full_operational_evidence_privately_saved_and_recovered": true,
+  "private_evidence_payload_hashes_verified": 18,
+  "scope": "Scientific byte checks and editorial checks. Administrative fixtures do not certify original executor inactivity."
+}

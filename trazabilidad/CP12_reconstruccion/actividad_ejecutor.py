@@ -35,7 +35,10 @@ def process_identity(pid):
         return None
 
 
-def observe(pid, start_ticks, instance, continuation_log):
+def observe(pid, start_ticks, instance, continuation_log, expected_boot_sha256):
+    observed_boot_sha256 = hashlib.sha256(
+        Path('/proc/sys/kernel/random/boot_id').read_bytes()).hexdigest()
+    original_executor_matches = observed_boot_sha256 == expected_boot_sha256
     identity = process_identity(pid)
     coordinator = bool(identity and identity['start_ticks'] == start_ticks and
                        'continuacion_raiz_20261010.py' in identity['command'])
@@ -70,7 +73,7 @@ def observe(pid, start_ticks, instance, continuation_log):
         raise ValueError('No verified boundary: do not publish activity without context')
     path, proof = max(proofs, key=lambda item: item[1]['time'])
     events = []
-    for line in continuation_log.read_text().splitlines():
+    for line in (continuation_log.read_text().splitlines() if continuation_log.exists() else []):
         try:
             value = json.loads(line)
         except json.JSONDecodeError:
@@ -79,16 +82,28 @@ def observe(pid, start_ticks, instance, continuation_log):
             events.append(value)
     active = coordinator or bool(pipeline)
     activity_known = active or not query_errors
+    if not original_executor_matches:
+        # Local PID/lock absence on another host cannot certify the original
+        # worker's inactivity, even when the local process query is complete.
+        activity_known = False
     status = 'ACTIVE' if active else (
         'INACTIVE_OBSERVED_ON_ORIGINAL_EXECUTOR' if activity_known else 'UNKNOWN_ACTIVITY')
+    if not original_executor_matches:
+        status = 'UNKNOWN_ACTIVITY'
     return dict(schema='CP12_OBSERVED_EXECUTOR_ACTIVITY_NOT_A_CHECKPOINT',
                 observed_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),
                 monitor_source_sha256=MONITOR_SHA256,
                 executor_instance=instance,
-                executor_boot_sha256=hashlib.sha256(Path('/proc/sys/kernel/random/boot_id').read_bytes()).hexdigest(),
+                executor_boot_sha256=observed_boot_sha256,
+                expected_original_executor_boot_sha256=expected_boot_sha256,
+                original_executor_matches=original_executor_matches,
                 original_workspace=str(ROOT), coordinator_pid=pid,
-                coordinator_start_ticks=start_ticks, coordinator_identity_matches=coordinator,
-                pipeline_processes=pipeline, active=active if activity_known else None,
+                coordinator_start_ticks=start_ticks,
+                coordinator_identity_matches=coordinator and original_executor_matches,
+                pipeline_processes=pipeline if original_executor_matches else [],
+                local_candidate_coordinator_identity_matches=coordinator,
+                local_candidate_pipeline_processes=pipeline,
+                active=active if activity_known else None,
                 status=status, activity_known=activity_known,
                 process_query_method='mounted_procfs', process_query_errors=query_errors,
                 last_verified_boundary=dict(time=proof['time'], zip_sha256=proof['zip_sha256'],
@@ -104,6 +119,8 @@ def main():
     parser.add_argument('--pid', type=int, required=True)
     parser.add_argument('--start-ticks', required=True)
     parser.add_argument('--instance', required=True)
+    parser.add_argument('--expected-boot-sha256', required=True,
+                        help='Original boot hash from the persistent registration; never infer it from this host')
     parser.add_argument('--state-file', type=Path, required=True)
     parser.add_argument('--metadata-file', type=Path, required=True)
     parser.add_argument('--continuation-log', type=Path, required=True)
@@ -114,7 +131,8 @@ def main():
     with args.state_file.with_suffix('.lock').open('a+') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         while True:
-            state = observe(args.pid, args.start_ticks, args.instance, args.continuation_log)
+            state = observe(args.pid, args.start_ticks, args.instance, args.continuation_log,
+                            args.expected_boot_sha256)
             write(args.state_file, state)
             upload = dict(local_path=str(args.state_file.resolve()), purpose='create_library_file',
                           library_artifact_type='other')
@@ -143,3 +161,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

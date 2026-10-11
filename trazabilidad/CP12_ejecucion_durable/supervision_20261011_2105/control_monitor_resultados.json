@@ -1,0 +1,21 @@
+{
+  "schema": "CP12_SYNTHETIC_ACTIVITY_REGRESSION_NOT_SCIENTIFIC_EVIDENCE",
+  "checked_at": "2026-10-11T21:42:28.240603+00:00",
+  "source_sha256": "11f409fe8bc531e1e2027dd48ec2d52051f07451b83b6157f2419fd474d23046",
+  "baseline_commit": "43b51cc419897783f3111586b16dfc76875f1c61",
+  "baseline_sha256": "a81957a7f3a9a8888cef936d1c5a0811dec5da0a299e791cae6febc97e92060d",
+  "passed": true,
+  "tests": {
+    "baseline_without_boot_guard_falsely_reports_inactivity": true,
+    "different_boot_no_process_is_unknown": true,
+    "same_boot_complete_empty_query_can_observe_inactivity": true,
+    "different_boot_reused_pid_is_unknown": true,
+    "same_boot_matching_coordinator_is_active": true,
+    "same_boot_incomplete_query_is_unknown": true,
+    "same_boot_orphan_pipeline_still_blocks_duplicates": true
+  },
+  "M2_steps_executed": 0,
+  "physics_or_observer_changed": false,
+  "certifies_original_executor_inactivity": false,
+  "certifies_a_boundary": false
+}

@@ -1,0 +1,345 @@
+{
+  "jobs": [
+    {
+      "id": 114519459043,
+      "name": "tau0032 / frontera",
+      "status": "completed",
+      "conclusion": "failure",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Dependencias originales",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Exigir dispatch BLAS original con cero pasos M2",
+          "status": "completed",
+          "conclusion": "failure",
+          "number": 5
+        },
+        {
+          "name": "Instalar el compilador original desde el archivo firmado de Ubuntu",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 6
+        },
+        {
+          "name": "Exigir identidad original antes de actuar",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 7
+        },
+        {
+          "name": "Verificar traslado con cero pasos M2",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 8
+        },
+        {
+          "name": "Ejecutar sólo la frontera original y conservarla antes de avanzar",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 9
+        },
+        {
+          "name": "Interpretar el presupuesto con el prerregistro existente",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 10
+        },
+        {
+          "name": "Conservar diagnóstico operativo adicional",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 21
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23
+        }
+      ]
+    },
+    {
+      "id": 114519489303,
+      "name": "verificar_traslado / frontera",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Dependencias originales",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Exigir dispatch BLAS original con cero pasos M2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Instalar el compilador original desde el archivo firmado de Ubuntu",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Exigir identidad original antes de actuar",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Verificar traslado con cero pasos M2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Ejecutar sólo la frontera original y conservarla antes de avanzar",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 9
+        },
+        {
+          "name": "Interpretar el presupuesto con el prerregistro existente",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 10
+        },
+        {
+          "name": "Conservar diagnóstico operativo adicional",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21
+        },
+        {
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23
+        }
+      ]
+    },
+    {
+      "id": 114519572223,
+      "name": "tau0040",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519572481,
+      "name": "tau0048",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519572568,
+      "name": "tau0056",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519573252,
+      "name": "tau0064",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519573643,
+      "name": "tau0072",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519573686,
+      "name": "tau0080",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519574242,
+      "name": "tau0104",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519574283,
+      "name": "tau0088",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519574361,
+      "name": "tau0096",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519574761,
+      "name": "tau0112",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519575148,
+      "name": "tau0120",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519575495,
+      "name": "tau0128",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519575904,
+      "name": "tau0136",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519576075,
+      "name": "tau0144",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519576249,
+      "name": "tau0152",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519576490,
+      "name": "tau0160",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 114519576682,
+      "name": "presupuesto_causal",
+      "status": "completed",
+      "conclusion": "skipped",
+      "run_id": 38155352563,
+      "logs_url": null,
+      "steps": null
+    }
+  ]
+}
