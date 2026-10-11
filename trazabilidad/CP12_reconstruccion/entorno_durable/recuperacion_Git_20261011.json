@@ -1,0 +1,29 @@
+{
+  "original_capsule_commit": "127f70c6ab460027e6b3f214ecbb922b1c1c1806",
+  "time": 24,
+  "zip_sha256": "77db2bc9b8c76cd7779c565ca2d6d8baf90aaee504ac52abbe27356a610e8c52",
+  "zip_bytes": 75252550,
+  "canonical_recipe_preserved": true,
+  "alternative_recipe": "trazabilidad/CP12_respaldos_Git/tau0024_API.json",
+  "fragment_bytes": 524288,
+  "preregistered_upper_bound": 1048576,
+  "lossless_local_replay": true,
+  "native_promisor_error": "HTTP 502, expected packfile, could not fetch recipe from promisor remote",
+  "native_complete_error": "Network access to https://github.com:443 was blocked by policy",
+  "API_large_object": {
+    "git_blob_sha": "71716237418844940975f50adbb1ad0b6915a98d",
+    "bytes": 1048576,
+    "returned_encoding": "base64",
+    "returned_content_length": 0
+  },
+  "API_small_object": {
+    "git_blob_sha": "1d2bcfeb938ece2ac6b633da64fdad4e483220c3",
+    "bytes": 206020,
+    "retrieved_bytes_and_sha_verified": true
+  },
+  "M2_steps": 0,
+  "physical_protocol_changed": false,
+  "observer_changed": false,
+  "correction_tested": false,
+  "permanent_commit_recovery_required_before_activation": true
+}

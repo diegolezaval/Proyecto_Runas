@@ -75,8 +75,9 @@ def recover_commit(commit,time_,expected_sha,workspace):
     if not re.fullmatch('[0-9a-f]{40}',commit):raise ValueError('Actual immutable Git commit required')
     recipe_path=Path('trazabilidad/CP12_respaldos_Git')/(label(time_)+'.json')
     download=workspace/'remote_checkout'
-    # Fresh object database: no local Git objects can satisfy this retrieval.
-    command(['git','clone','--filter=blob:none','--no-checkout','--depth=1','--branch',BRANCH,REMOTE,str(download)])
+    # Fresh complete object database. Some authenticated transports do not
+    # implement promisor blob requests; no local object may satisfy retrieval.
+    command(['git','clone','--no-checkout','--depth=1','--branch',BRANCH,REMOTE,str(download)])
     git('fetch','--depth=1','origin',commit,cwd=download)
     recipe=json.loads(git('show',commit+':'+recipe_path.as_posix(),cwd=download))
     if recipe['time']!=time_ or recipe['run_id']!=manager.RUN_ID or recipe['original_zip_sha256']!=expected_sha:

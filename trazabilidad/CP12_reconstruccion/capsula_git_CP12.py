@@ -12,7 +12,9 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[2]
 STORE = ROOT/'trazabilidad/CP12_respaldos_Git'
-CHUNK = 1048576
+# Below the GitHub Contents API's 1 MiB content threshold. The preregistered
+# upper bound remains 1 MiB; changing transport pieces preserves every ZIP byte.
+CHUNK = 524288
 SMALL = 65536
 PENDING = {}
 
@@ -58,11 +60,14 @@ def flush_small():
     PENDING.clear()
 
 
-def pack(archive):
+def pack(archive, api_recipe=False):
     if PENDING:raise ValueError('Unfinished earlier transport operation')
     raw=archive.read_bytes()
     with zipfile.ZipFile(archive) as z:
         manifest=json.loads(z.read('Proyecto_Runas/MANIFIESTO_REINICIO_CP12.json'))
+        suffix='_API' if api_recipe else ''
+        path=STORE/('tau'+str(int(manifest['time'])).zfill(4)+suffix+'.json')
+        if path.exists():raise ValueError('Do not overwrite an earlier capsule recipe')
         infos=z.infolist()
         if not infos:raise ValueError('Empty checkpoint')
         recipe=dict(schema='CP12_ZIP_BYTES_CAS_1',time=manifest['time'],run_id=manifest['run_id'],
@@ -82,8 +87,6 @@ def pack(archive):
                 suffix_b64=base64.b64encode(raw[end:next_start]).decode()))
         recipe['tail']=keep(raw[z.start_dir:])
         flush_small()
-    path=STORE/('tau'+str(int(recipe['time'])).zfill(4)+'.json')
-    if path.exists():raise ValueError('Do not overwrite an earlier capsule recipe')
     path.write_text(json.dumps(recipe,indent=2)+'\n')
     return path
 
