@@ -1,0 +1,9 @@
+# CP12: puerta administrativa de ejecución durable
+
+Las limpiezas del entorno de trabajo interrumpieron el tramo16→24 sin un reinicio nuevo. La última frontera permanente comprobada sigue siendo16. Se conserva el incidente; no es un negativo científico. Se explora ejecutar el mismo protocolo en GitHub Actions para que la vida del trabajador no dependa de una sesión de chat. Esta puerta ejecuta cero pasos M2 y no autoriza todavía una nueva trayectoria.
+
+Se exigen Python3.12.14, las cuatro versiones originales de requirements.txt, el compilador y flags originales, BLAS a un hilo, las catorce fuentes e identidad completaa9f349…. No se modifica ni falsifica la información de entorno. La comprobación inicial en GitHub falla porque el runner tiene el empaquetado del compilador13.3.0-6ubuntu2~24.04.1; el original es13.3.0-6ubuntu2~24.04. El log y artefacto de la ejecución38104874799 quedan conservados. No ejecutó M2.
+
+El changelog del paquete original fecha su construcción el4 de septiembre de2024. La siguiente comprobación intenta instalar ese paquete exacto desde la instantánea firmada de Ubuntu del1 de enero de2025. La disponibilidad se comprueba mediante apt y el compilador real debe acreditar la identidad original; no se cambia el criterio para aceptar el paquete nuevo. Fuente del servicio de archivo: https://snapshot.ubuntu.com/.
+
+Pasar la identidad no certifica una reproducción física. Antes de una continuación remota se exigirá también el reinicio completo validado, su carga sin avance y la base pasiva array_equal; cada nueva frontera conservará todas las puertas CP12 y la comparación exacta contra CP10. Una divergencia detendrá el trabajo para diagnóstico. No se modifican las fuerzas, solver, tolerancias, observadores ni puerta2%. No hay corrección ensayada ni cierre CP12.
