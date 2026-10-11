@@ -1,0 +1,41 @@
+name: CP12 entorno durable sin pasos M2
+
+on:
+  push:
+    branches: [ciencia/cp12-causal-chi]
+    paths:
+      - .github/workflows/cp12-entorno-durable.yml
+      - trazabilidad/CP12_reconstruccion/verificar_entorno_durable.py
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cp12-entorno-durable
+  cancel-in-progress: false
+
+jobs:
+  entorno:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12.14'
+          architecture: x64
+      - name: Dependencias originales
+        run: python -m pip install -r requirements.txt
+      - name: Verificar identidad completa sin evolucionar
+        run: python trazabilidad/CP12_reconstruccion/verificar_entorno_durable.py
+      - name: Conservar la comprobación incluso si falla
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: CP12-entorno-durable
+          path: trazabilidad/CP12_reconstruccion/entorno_durable/resultados.json
+          if-no-files-found: warn
