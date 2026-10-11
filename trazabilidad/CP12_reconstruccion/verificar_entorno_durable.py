@@ -32,7 +32,11 @@ def main():
                   scope='Environment gate only; no new boundary or causal conclusion.')
     out=ROOT/'trazabilidad/CP12_reconstruccion/entorno_durable'
     out.mkdir(exist_ok=True)
-    prov.write(out/'resultados.json',result)
+    result['execution_origin'] = dict(GitHub_run_id=os.environ.get('GITHUB_RUN_ID'),
+                                     GitHub_job=os.environ.get('GITHUB_JOB'),
+                                     available_logical_CPUs=os.cpu_count())
+    filename='GitHub_'+os.environ['GITHUB_RUN_ID']+'.json' if os.environ.get('GITHUB_RUN_ID') else 'resultados.json'
+    prov.write(out/filename,result)
     print(json.dumps(result,indent=2))
     if not result['passed']:
         raise ValueError('Original identity not reproduced; no M2 execution allowed.')
