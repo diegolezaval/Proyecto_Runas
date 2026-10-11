@@ -950,10 +950,30 @@
       "closed_stages": [],
       "reopened_stages": [],
       "report": "informes/RETOMA_CP12_20261010.md"
+    },
+    {
+      "event": "CP12_COMPATIBILIDAD_ARITMETICA_DE_EJECUCION_DURABLE",
+      "date": "2026-10-11T03:00:40.425735+00:00",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/ENTORNO_DURABLE_CP12.md",
+      "M2_steps_in_environment_tests": 0,
+      "note": "Haswell no reproduce la semilla CP10 y queda excluido; se exige dispatch SkylakeX observado, identidad original completa y reinicio exacto sin avance. No resultado causal de χ ni prueba de corrección."
+    },
+    {
+      "event": "CP12_FRONTERA_TAU24_PERMANENTE_Y_VERIFICADA",
+      "date": "2026-10-11T03:11:19.714217+00:00",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/RETOMA_CP12_TAU24_20261011.md",
+      "state_sha256": "508f32f167abd6211b330d707172612a47fec1f2701577b1a9939d8390fbc529",
+      "zip_sha256": "77db2bc9b8c76cd7779c565ca2d6d8baf90aaee504ac52abbe27356a610e8c52"
     }
   ],
   "next_actions": [
-    "Recuperar la cápsula permanente τ=8 identificada en respaldos/tau0008.json, verificarla y continuar 8→16→24…→160 sin duplicar un escritor activo; el par incluido en GitHub conserva la instantánea τ=0.",
+    "Recuperar el respaldo completo verificado τ=24 en trazabilidad/CP12_reconstruccion/respaldos/tau0024.json y continuar las dos trayectorias originales 24→32…→160 con cada frontera conservada, descargada y comprobada antes de avanzar. Buscar estados posteriores y comprobar trabajadores activos. La ubicación original del par en Git conserva τ=0; las cápsulas y sus comprobantes son los reinicios.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],

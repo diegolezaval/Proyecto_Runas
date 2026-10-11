@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Recuperar la cápsula permanente τ=8 identificada en respaldos/tau0008.json, verificarla y continuar 8→16→24…→160 sin duplicar un escritor activo; el par incluido en GitHub conserva la instantánea τ=0.
+- Recuperar el respaldo completo verificado τ=24 en trazabilidad/CP12_reconstruccion/respaldos/tau0024.json y continuar las dos trayectorias originales 24→32…→160 con cada frontera conservada, descargada y comprobada antes de avanzar. Buscar estados posteriores y comprobar trabajadores activos. La ubicación original del par en Git conserva τ=0; las cápsulas y sus comprobantes son los reinicios.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -86,7 +86,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/RETOMA_CP12_20261010.md](informes/RETOMA_CP12_20261010.md).
+Informe de esta entrega: [informes/RETOMA_CP12_TAU24_20261011.md](informes/RETOMA_CP12_TAU24_20261011.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 
