@@ -1,0 +1,227 @@
+{
+  "schema": "CP12_PASSIVE_LOCAL_PRINCIPAL_SYMBOL_REFERENCE",
+  "mediator_mass": 100.0,
+  "original_wave_number_cuts": [
+    2,
+    4,
+    8,
+    12,
+    20
+  ],
+  "maps": [
+    0.125,
+    0.0625
+  ],
+  "rows": [
+    {
+      "k": 2,
+      "continuum_omega": 100.0199980003999,
+      "continuum_group_velocity": 0.01999600119960014,
+      "grids": [
+        {
+          "h": 0.125,
+          "omega": 100.01989407123484,
+          "omega_minus_continuum": -0.00010392916504997629,
+          "group_velocity": 0.019788380025943252,
+          "kh": 0.25,
+          "coarse_or_fine_nyquist_respected": true
+        },
+        {
+          "h": 0.0625,
+          "omega": 100.01997197749348,
+          "omega_minus_continuum": -2.6022906411071745e-05,
+          "group_velocity": 0.019943974135610762,
+          "kh": 0.125,
+          "coarse_or_fine_nyquist_respected": true
+        }
+      ],
+      "phase_contrasts": [
+        {
+          "time": 24,
+          "signed_unwrapped_phase": -0.0018697502073337091,
+          "unit_complex_wave_difference": 0.0018697499349761022
+        },
+        {
+          "time": 32,
+          "signed_unwrapped_phase": -0.0024930002764449455,
+          "unit_complex_wave_difference": 0.002492999630856566
+        },
+        {
+          "time": 160,
+          "signed_unwrapped_phase": -0.012465001382224727,
+          "unit_complex_wave_difference": 0.012464920683827756
+        }
+      ]
+    },
+    {
+      "k": 4,
+      "continuum_omega": 100.07996802557443,
+      "continuum_group_velocity": 0.039968038348871575,
+      "grids": [
+        {
+          "h": 0.125,
+          "omega": 100.07831649302476,
+          "omega_minus_continuum": -0.0016515325496726518,
+          "group_velocity": 0.0383240290527963,
+          "kh": 0.5,
+          "coarse_or_fine_nyquist_respected": true
+        },
+        {
+          "h": 0.0625,
+          "omega": 100.07955255737383,
+          "omega_minus_continuum": -0.00041546820060034406,
+          "group_velocity": 0.03955316792411767,
+          "kh": 0.25,
+          "coarse_or_fine_nyquist_respected": true
+        }
+      ],
+      "phase_contrasts": [
+        {
+          "time": 24,
+          "signed_unwrapped_phase": -0.029665544377735387,
+          "unit_complex_wave_difference": 0.02966445659804088
+        },
+        {
+          "time": 32,
+          "signed_unwrapped_phase": -0.03955405917031385,
+          "unit_complex_wave_difference": 0.03955148075161753
+        },
+        {
+          "time": 160,
+          "signed_unwrapped_phase": -0.19777029585156924,
+          "unit_complex_wave_difference": 0.19744814475574765
+        }
+      ]
+    },
+    {
+      "k": 8,
+      "continuum_omega": 100.31948963187563,
+      "continuum_group_velocity": 0.07974522228289,
+      "grids": [
+        {
+          "h": 0.125,
+          "omega": 100.29377500547518,
+          "omega_minus_continuum": -0.025714626400443308,
+          "group_velocity": 0.06712049554516893,
+          "kh": 1.0,
+          "coarse_or_fine_nyquist_respected": true
+        },
+        {
+          "h": 0.0625,
+          "omega": 100.31289911228829,
+          "omega_minus_continuum": -0.006590519587334143,
+          "group_velocity": 0.07646881593044874,
+          "kh": 0.5,
+          "coarse_or_fine_nyquist_respected": true
+        }
+      ],
+      "phase_contrasts": [
+        {
+          "time": 24,
+          "signed_unwrapped_phase": -0.45897856351461996,
+          "unit_complex_wave_difference": 0.45496044926907636
+        },
+        {
+          "time": 32,
+          "signed_unwrapped_phase": -0.6119714180194933,
+          "unit_complex_wave_difference": 0.6024664894126349
+        },
+        {
+          "time": 160,
+          "signed_unwrapped_phase": -3.0598570900974664,
+          "unit_complex_wave_difference": 1.9983300568594138
+        }
+      ]
+    },
+    {
+      "k": 12,
+      "continuum_omega": 100.71742649611338,
+      "continuum_group_velocity": 0.11914522061843064,
+      "grids": [
+        {
+          "h": 0.125,
+          "omega": 100.59297012309824,
+          "omega_minus_continuum": -0.12445637301513557,
+          "group_velocity": 0.07932920047064075,
+          "kh": 1.5,
+          "coarse_or_fine_nyquist_respected": true
+        },
+        {
+          "h": 0.0625,
+          "omega": 100.68453356467717,
+          "omega_minus_continuum": -0.03289293143620853,
+          "group_velocity": 0.10832070998638008,
+          "kh": 0.75,
+          "coarse_or_fine_nyquist_respected": true
+        }
+      ],
+      "phase_contrasts": [
+        {
+          "time": 24,
+          "signed_unwrapped_phase": -2.197522597894249,
+          "unit_complex_wave_difference": 1.7812896129730242
+        },
+        {
+          "time": 32,
+          "signed_unwrapped_phase": -2.9300301305256653,
+          "unit_complex_wave_difference": 1.9888207548870949
+        },
+        {
+          "time": 160,
+          "signed_unwrapped_phase": -14.650150652628326,
+          "unit_complex_wave_difference": 1.7267189046367935
+        }
+      ]
+    },
+    {
+      "k": 20,
+      "continuum_omega": 101.9803902718557,
+      "continuum_group_velocity": 0.19611613513818404,
+      "grids": [
+        {
+          "h": 0.125,
+          "omega": 101.14616346055844,
+          "omega_minus_continuum": -0.8342268112972562,
+          "group_velocity": 0.04733523239068408,
+          "kh": 2.5,
+          "coarse_or_fine_nyquist_respected": true
+        },
+        {
+          "h": 0.0625,
+          "omega": 101.73767714300156,
+          "omega_minus_continuum": -0.24271312885413465,
+          "group_velocity": 0.1492441574850115,
+          "kh": 1.25,
+          "coarse_or_fine_nyquist_respected": true
+        }
+      ],
+      "phase_contrasts": [
+        {
+          "time": 24,
+          "signed_unwrapped_phase": -14.196328378634917,
+          "unit_complex_wave_difference": 1.4554222287262215
+        },
+        {
+          "time": 32,
+          "signed_unwrapped_phase": -18.92843783817989,
+          "unit_complex_wave_difference": 0.07886146692225068
+        },
+        {
+          "time": 160,
+          "signed_unwrapped_phase": -94.64218919089944,
+          "unit_complex_wave_difference": 0.3918581358282764
+        }
+      ]
+    }
+  ],
+  "M2_steps": 0,
+  "scientific_sources_unchanged": true,
+  "model_sha256": "87562e977135cc5092ef3567b5980f58e726187e4df5c418de4660291702374f",
+  "preregistration_sha256": "0251b1e456ad2498abb13243e3a631689542aba2cc8c1b14c22004abb1816e37",
+  "source_sha256": "f49051a268b2770668aae2d196bbe68c575b90355cafe1aea24e13bc996d838c",
+  "measured_CP12_chi_error": false,
+  "radial_geometry_and_feedback_included": false,
+  "physical_gate_evaluated": false,
+  "physical_correction_tested": false,
+  "CP12_closed": false
+}
