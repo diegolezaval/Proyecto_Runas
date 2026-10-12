@@ -1,0 +1,131 @@
+{
+  "schema": "CP12_PASSIVE_CANONICAL_LOCAL_MEAN_JACOBIAN_HIGH_BRANCH",
+  "time": 56,
+  "execution_run_id": "17ae99084634d164e4edaefa35fbd1418beb24c2e50217ef57ef74bcc1ef6aeb",
+  "proof_sha256": "da0984fa8f41b00809a24e5991e85c512b54f87b1c11d2d69bbe459138b3d70b",
+  "state_sha256": "1cef4a7e70a081dd7d2cf4b536f9e0a0fcc32cd15f65845814da534b533a954b",
+  "original_model_parameters": {
+    "mass2_Phi": 1.0,
+    "mediator": 100.0,
+    "quartic": 99.0,
+    "trilinear": 1414.213562373095,
+    "mixed": 100.0
+  },
+  "highest_local_frequency": {
+    "weighted_mean": 100.03225885900883,
+    "weighted_percentiles": {
+      "5": 100.01203084698454,
+      "50": 100.02792503339708,
+      "95": 100.06419278683781
+    },
+    "minimum_all_core_points": 100.00000022017645,
+    "maximum_all_core_points": 101.36826460964974
+  },
+  "chi_diagonal_frequency_shift": {
+    "weighted_mean": 0.0064554647397728464,
+    "weighted_percentiles": {
+      "5": 0.0024063617957068573,
+      "50": 0.005586753324237748,
+      "95": 0.012848893774290104
+    },
+    "minimum_all_core_points": 4.403332809488347e-08,
+    "maximum_all_core_points": 0.2787874340061762
+  },
+  "highest_branch_extra_shift": {
+    "weighted_mean": 0.02580339426901877,
+    "weighted_percentiles": {
+      "5": 0.009624485188837184,
+      "50": 0.02233828007284444,
+      "95": 0.0513438930635175
+    },
+    "minimum_all_core_points": 1.7614311786928738e-07,
+    "maximum_all_core_points": 1.089477175643566
+  },
+  "chi_participation_highest_branch": {
+    "weighted_mean": 0.9994842261274437,
+    "weighted_percentiles": {
+      "5": 0.9989739564600941,
+      "50": 0.9995533694042781,
+      "95": 0.9998075233044754
+    },
+    "minimum_all_core_points": 0.9786154441644765,
+    "maximum_all_core_points": 0.999999996476785
+  },
+  "local_stationary_chi_to_high_mode_ratios_fine_grid": {
+    "2": {
+      "weighted_mean": -0.0005159101456844293,
+      "weighted_percentiles": {
+        "5": -0.0010265994875615747,
+        "50": -0.00044661214502434836,
+        "95": -0.00019241747139104942
+      },
+      "minimum_all_core_points": -0.02183832735329182,
+      "maximum_all_core_points": -3.5214558551900884e-09
+    },
+    "4": {
+      "weighted_mean": -0.0005152961678935841,
+      "weighted_percentiles": {
+        "5": -0.0010253778294133952,
+        "50": -0.00044608059743374826,
+        "95": -0.00019218844596081042
+      },
+      "minimum_all_core_points": -0.021812477080611934,
+      "maximum_all_core_points": -3.517264231169132e-09
+    },
+    "8": {
+      "weighted_mean": -0.0005129020529351816,
+      "weighted_percentiles": {
+        "5": -0.0010206141534826712,
+        "50": -0.00044400790768511143,
+        "95": -0.0001912953961307807
+      },
+      "minimum_all_core_points": -0.02171167463967646,
+      "maximum_all_core_points": -3.500919635438387e-09
+    },
+    "12": {
+      "weighted_mean": -0.0005091234184146779,
+      "weighted_percentiles": {
+        "5": -0.0010130956318154098,
+        "50": -0.0004407365819393182,
+        "95": -0.00018988589686513813
+      },
+      "minimum_all_core_points": -0.02155256781530712,
+      "maximum_all_core_points": -3.475122998293658e-09
+    },
+    "20": {
+      "weighted_mean": -0.0004986394346358214,
+      "weighted_percentiles": {
+        "5": -0.0009922351306868996,
+        "50": -0.00043166016724571977,
+        "95": -0.0001859751957150571
+      },
+      "minimum_all_core_points": -0.021111053628221205,
+      "maximum_all_core_points": -3.4035494921410043e-09
+    }
+  },
+  "all_eigenvalue_ranges": [
+    {
+      "minimum": 0.2833751716930737,
+      "maximum": 1.3670113803261443
+    },
+    {
+      "minimum": 0.3391595489886684,
+      "maximum": 2.2295932229704927
+    },
+    {
+      "minimum": 10000.00004403529,
+      "maximum": 10275.525069971967
+    }
+  ],
+  "original_phase_weight_parseval_relative_residual": 4.513032285434918e-16,
+  "M2_steps": 0,
+  "original_scientific_sources_unchanged": true,
+  "full_radial_generator_stability_claimed": false,
+  "actual_time_dependent_phase_history_predicted": false,
+  "pure_global_feedback_return_isolated": false,
+  "physical_gate_evaluated": false,
+  "physical_correction_tested": false,
+  "CP12_closed": false,
+  "source_sha256": "f930ac8b575245db2ac32a7337eca2dddc70431e5f1cc3fd01ac9621ce6a7671",
+  "preregistration_sha256": "d4642de386ffff8156ea4bcc39c9d6cdbdc5d01b88bafcb04baf7c81122c26b0"
+}

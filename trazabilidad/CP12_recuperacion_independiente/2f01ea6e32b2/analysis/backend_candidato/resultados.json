@@ -1,0 +1,634 @@
+{
+  "schema": "CP12_CANDIDATE_FIVE_BAND_PASSIVE_BACKEND_PREFLIGHT",
+  "preregistration_git_commit": "e343095802f4a69b6e9a792253404c73b73f1f5a",
+  "preregistration_sha256": "38e131de629bb4a93c034bd905f4d06c2553f01c9ec23571e82675e684fae071",
+  "backend_sha256": "9ee945d1eb6d33a1972df773b6b858868e5d0498fb15cd03617951389d96d759",
+  "verification_source_sha256": "9acce3008a20a14222ad7c70f6196bcc87ba1c326b3fbb7f2b86406c10c027ee",
+  "algebra": [
+    {
+      "h": 0.125,
+      "ell": 0,
+      "min_eigenvalue": 2.47059570899489,
+      "max_eigenvalue": 354.36154725714243,
+      "weighted_action_relative_residual": 3.411589458237819e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.125,
+      "ell": 1,
+      "min_eigenvalue": 5.066132239275845,
+      "max_eigenvalue": 474.37804131662836,
+      "weighted_action_relative_residual": 1.2414077623902104e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.125,
+      "ell": 2,
+      "min_eigenvalue": 8.351096328438397,
+      "max_eigenvalue": 712.8942919015536,
+      "weighted_action_relative_residual": 3.021399364370523e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.125,
+      "ell": 3,
+      "min_eigenvalue": 12.299150277092723,
+      "max_eigenvalue": 1008.5719895362375,
+      "weighted_action_relative_residual": 2.138583105469656e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.125,
+      "ell": 4,
+      "min_eigenvalue": 16.893058504548094,
+      "max_eigenvalue": 1349.4206066699112,
+      "weighted_action_relative_residual": 2.1805585376256095e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.0625,
+      "ell": 0,
+      "min_eigenvalue": 2.468203151530745,
+      "max_eigenvalue": 1417.4352534482437,
+      "weighted_action_relative_residual": 2.1812200302032143e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.0625,
+      "ell": 1,
+      "min_eigenvalue": 5.052326886305922,
+      "max_eigenvalue": 1897.5121652665027,
+      "weighted_action_relative_residual": 2.9956311644422176e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.0625,
+      "ell": 2,
+      "min_eigenvalue": 8.31620669818927,
+      "max_eigenvalue": 2851.577167606215,
+      "weighted_action_relative_residual": 2.0001831239673547e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.0625,
+      "ell": 3,
+      "min_eigenvalue": 12.231176606585995,
+      "max_eigenvalue": 4034.2879581449497,
+      "weighted_action_relative_residual": 2.0469434258005978e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.0625,
+      "ell": 4,
+      "min_eigenvalue": 16.778651114482276,
+      "max_eigenvalue": 5397.682426679646,
+      "weighted_action_relative_residual": 1.582827993942803e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.03125,
+      "ell": 0,
+      "min_eigenvalue": 2.467601826615175,
+      "max_eigenvalue": 5669.741013208194,
+      "weighted_action_relative_residual": 2.53328964265724e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.03125,
+      "ell": 1,
+      "min_eigenvalue": 5.0488453459250096,
+      "max_eigenvalue": 7590.048661066011,
+      "weighted_action_relative_residual": 3.996051663052044e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.03125,
+      "ell": 2,
+      "min_eigenvalue": 8.30733572850619,
+      "max_eigenvalue": 11406.30867042486,
+      "weighted_action_relative_residual": 2.393822159230949e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.03125,
+      "ell": 3,
+      "min_eigenvalue": 12.213676941111029,
+      "max_eigenvalue": 16137.151832579799,
+      "weighted_action_relative_residual": 2.275706453400459e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    },
+    {
+      "h": 0.03125,
+      "ell": 4,
+      "min_eigenvalue": 16.74868804226384,
+      "max_eigenvalue": 21590.729706718583,
+      "weighted_action_relative_residual": 3.2802498723098955e-16,
+      "original_candidate_prototype_relative_difference": 0.0,
+      "symmetric": true
+    }
+  ],
+  "responses": [
+    {
+      "h": 0.125,
+      "fields": 1,
+      "stages": 7,
+      "step": 0.005,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 3.48697493748853e-14,
+      "homogeneous_energy_relative_change": 2.55351295663786e-14,
+      "homogeneous_charge_scaled_change": 0.0
+    },
+    {
+      "h": 0.125,
+      "fields": 1,
+      "stages": 7,
+      "step": 0.005,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 4.060932359006145e-14,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.125,
+      "fields": 1,
+      "stages": 7,
+      "step": 0.01,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 6.367769498615368e-14,
+      "homogeneous_energy_relative_change": 7.616129948928574e-14,
+      "homogeneous_charge_scaled_change": 0.0
+    },
+    {
+      "h": 0.125,
+      "fields": 1,
+      "stages": 7,
+      "step": 0.01,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 6.222755237734262e-14,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.125,
+      "fields": 1,
+      "stages": 6,
+      "step": 0.005,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 5.156038827331562e-15,
+      "homogeneous_energy_relative_change": 1.7763568394002505e-15,
+      "homogeneous_charge_scaled_change": 0.0
+    },
+    {
+      "h": 0.125,
+      "fields": 1,
+      "stages": 6,
+      "step": 0.005,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 5.263313850746099e-15,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.125,
+      "fields": 1,
+      "stages": 6,
+      "step": 0.01,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 2.020300722023377e-13,
+      "homogeneous_energy_relative_change": 6.328271240363392e-15,
+      "homogeneous_charge_scaled_change": 0.0
+    },
+    {
+      "h": 0.125,
+      "fields": 1,
+      "stages": 6,
+      "step": 0.01,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 2.0203350369087878e-13,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.125,
+      "fields": 3,
+      "stages": 7,
+      "step": 0.005,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 4.750305076240683e-14,
+      "homogeneous_energy_relative_change": 2.1094237467877974e-14,
+      "homogeneous_charge_scaled_change": 8.558049046563339e-14
+    },
+    {
+      "h": 0.125,
+      "fields": 3,
+      "stages": 7,
+      "step": 0.005,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 4.981830289294858e-14,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.125,
+      "fields": 3,
+      "stages": 7,
+      "step": 0.01,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 1.0980094017200206e-13,
+      "homogeneous_energy_relative_change": 8.149037000748649e-14,
+      "homogeneous_charge_scaled_change": 1.0810167216711586e-13
+    },
+    {
+      "h": 0.125,
+      "fields": 3,
+      "stages": 7,
+      "step": 0.01,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 1.1184348628344874e-13,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.125,
+      "fields": 3,
+      "stages": 6,
+      "step": 0.005,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 8.33045705536771e-15,
+      "homogeneous_energy_relative_change": 1.6653345369377348e-15,
+      "homogeneous_charge_scaled_change": 3.3189109875868906e-15
+    },
+    {
+      "h": 0.125,
+      "fields": 3,
+      "stages": 6,
+      "step": 0.005,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 9.226347242165935e-15,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.125,
+      "fields": 3,
+      "stages": 6,
+      "step": 0.01,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 8.147738038985998e-14,
+      "homogeneous_energy_relative_change": 5.329070518200751e-15,
+      "homogeneous_charge_scaled_change": 1.0430863103844512e-14
+    },
+    {
+      "h": 0.125,
+      "fields": 3,
+      "stages": 6,
+      "step": 0.01,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 8.153573700839713e-14,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.0625,
+      "fields": 1,
+      "stages": 7,
+      "step": 0.005,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 3.7519667839829155e-14,
+      "homogeneous_energy_relative_change": 2.55351295663786e-14,
+      "homogeneous_charge_scaled_change": 0.0
+    },
+    {
+      "h": 0.0625,
+      "fields": 1,
+      "stages": 7,
+      "step": 0.005,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 4.1670227928377965e-14,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.0625,
+      "fields": 1,
+      "stages": 7,
+      "step": 0.01,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 6.802926974476531e-14,
+      "homogeneous_energy_relative_change": 8.282263763703668e-14,
+      "homogeneous_charge_scaled_change": 0.0
+    },
+    {
+      "h": 0.0625,
+      "fields": 1,
+      "stages": 7,
+      "step": 0.01,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 6.780310104267983e-14,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.0625,
+      "fields": 1,
+      "stages": 6,
+      "step": 0.005,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 5.6134197339667836e-15,
+      "homogeneous_energy_relative_change": 1.9984014443252818e-15,
+      "homogeneous_charge_scaled_change": 0.0
+    },
+    {
+      "h": 0.0625,
+      "fields": 1,
+      "stages": 6,
+      "step": 0.005,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 5.7357272366671e-15,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.0625,
+      "fields": 1,
+      "stages": 6,
+      "step": 0.01,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 2.927983483478946e-13,
+      "homogeneous_energy_relative_change": 5.551115123125783e-15,
+      "homogeneous_charge_scaled_change": 0.0
+    },
+    {
+      "h": 0.0625,
+      "fields": 1,
+      "stages": 6,
+      "step": 0.01,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 2.929214784285687e-13,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.0625,
+      "fields": 3,
+      "stages": 7,
+      "step": 0.005,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 1.8156773317486004e-13,
+      "homogeneous_energy_relative_change": 2.1538326677728037e-14,
+      "homogeneous_charge_scaled_change": 7.810370646174302e-13
+    },
+    {
+      "h": 0.0625,
+      "fields": 3,
+      "stages": 7,
+      "step": 0.005,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 1.870713943471377e-13,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.0625,
+      "fields": 3,
+      "stages": 7,
+      "step": 0.01,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 3.8705399892854957e-13,
+      "homogeneous_energy_relative_change": 6.861178292183467e-14,
+      "homogeneous_charge_scaled_change": 1.1378926971747837e-12
+    },
+    {
+      "h": 0.0625,
+      "fields": 3,
+      "stages": 7,
+      "step": 0.01,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 3.961840086289469e-13,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.0625,
+      "fields": 3,
+      "stages": 6,
+      "step": 0.005,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 2.962506435148252e-14,
+      "homogeneous_energy_relative_change": 1.3322676295501878e-15,
+      "homogeneous_charge_scaled_change": 2.167139468971782e-14
+    },
+    {
+      "h": 0.0625,
+      "fields": 3,
+      "stages": 6,
+      "step": 0.005,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 3.000811571052735e-14,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.0625,
+      "fields": 3,
+      "stages": 6,
+      "step": 0.01,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 1.4283084417651159e-13,
+      "homogeneous_energy_relative_change": 4.107825191113079e-15,
+      "homogeneous_charge_scaled_change": 6.385837635236851e-14
+    },
+    {
+      "h": 0.0625,
+      "fields": 3,
+      "stages": 6,
+      "step": 0.01,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 1.4396123804720644e-13,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.03125,
+      "fields": 1,
+      "stages": 7,
+      "step": 0.005,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 4.2757332131320286e-14,
+      "homogeneous_energy_relative_change": 2.930988785010413e-14,
+      "homogeneous_charge_scaled_change": 0.0
+    },
+    {
+      "h": 0.03125,
+      "fields": 1,
+      "stages": 7,
+      "step": 0.005,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 4.3569360790991914e-14,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.03125,
+      "fields": 1,
+      "stages": 7,
+      "step": 0.01,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 7.712522402968809e-14,
+      "homogeneous_energy_relative_change": 8.704148513061227e-14,
+      "homogeneous_charge_scaled_change": 0.0
+    },
+    {
+      "h": 0.03125,
+      "fields": 1,
+      "stages": 7,
+      "step": 0.01,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 7.950516905082421e-14,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.03125,
+      "fields": 1,
+      "stages": 6,
+      "step": 0.005,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 6.029677001778095e-15,
+      "homogeneous_energy_relative_change": 1.7763568394002505e-15,
+      "homogeneous_charge_scaled_change": 0.0
+    },
+    {
+      "h": 0.03125,
+      "fields": 1,
+      "stages": 6,
+      "step": 0.005,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 6.234322313646266e-15,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.03125,
+      "fields": 1,
+      "stages": 6,
+      "step": 0.01,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 1.5491784746918609e-12,
+      "homogeneous_energy_relative_change": 6.439293542825908e-15,
+      "homogeneous_charge_scaled_change": 0.0
+    },
+    {
+      "h": 0.03125,
+      "fields": 1,
+      "stages": 6,
+      "step": 0.01,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 1.5490999892595569e-12,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.03125,
+      "fields": 3,
+      "stages": 7,
+      "step": 0.005,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 7.414709794213043e-13,
+      "homogeneous_energy_relative_change": 2.1316282072803006e-14,
+      "homogeneous_charge_scaled_change": 4.0811798385220754e-13
+    },
+    {
+      "h": 0.03125,
+      "fields": 3,
+      "stages": 7,
+      "step": 0.005,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 7.462014724885087e-13,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.03125,
+      "fields": 3,
+      "stages": 7,
+      "step": 0.01,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 1.4255020992036934e-12,
+      "homogeneous_energy_relative_change": 6.727951529228449e-14,
+      "homogeneous_charge_scaled_change": 3.906208689841151e-12
+    },
+    {
+      "h": 0.03125,
+      "fields": 3,
+      "stages": 7,
+      "step": 0.01,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 1.3867699924197503e-12,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.03125,
+      "fields": 3,
+      "stages": 6,
+      "step": 0.005,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 1.1155061517020477e-13,
+      "homogeneous_energy_relative_change": 1.4432899320127035e-15,
+      "homogeneous_charge_scaled_change": 1.0880185641326534e-13
+    },
+    {
+      "h": 0.03125,
+      "fields": 3,
+      "stages": 6,
+      "step": 0.005,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 1.1031136194570348e-13,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    },
+    {
+      "h": 0.03125,
+      "fields": 3,
+      "stages": 6,
+      "step": 0.01,
+      "force": "zero",
+      "exact_linear_phase_relative_error": 8.138996767382087e-13,
+      "homogeneous_energy_relative_change": 4.3298697960381105e-15,
+      "homogeneous_charge_scaled_change": 9.414691248821327e-14
+    },
+    {
+      "h": 0.03125,
+      "fields": 3,
+      "stages": 6,
+      "step": 0.01,
+      "force": "constant",
+      "exact_linear_phase_relative_error": 8.151960287655903e-13,
+      "homogeneous_energy_relative_change": null,
+      "homogeneous_charge_scaled_change": null
+    }
+  ],
+  "M2_steps": 0,
+  "original_scientific_sources_unchanged": true,
+  "original_trajectories_untouched": true,
+  "nonlinear_feedback_backend_validated": false,
+  "corrected_DOP853_trajectory_validated": false,
+  "physical_gate_evaluated": false,
+  "CP12_closed": false,
+  "passed": true
+}

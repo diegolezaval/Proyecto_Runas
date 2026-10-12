@@ -28,10 +28,10 @@ def main():
     if t==160:
         for d in sorted((home/'analysis/causal').glob('lectura__*')):
             files.extend(sorted(d.glob('*.json')))
-    if (home/'analysis/dispersion_candidato').exists():
-        files.extend(sorted((home/'analysis/dispersion_candidato').glob('*.py')))
-        files.extend(sorted((home/'analysis/dispersion_candidato').glob('*.md')))
-        files.extend(sorted((home/'analysis/dispersion_candidato').glob('*.json')))
+    for directory in ['dispersion_candidato','referencia_CP10','backend_candidato']:
+        if (home/'analysis'/directory).exists():
+            for pattern in ['*.py','*.md','*.json']:
+                files.extend(sorted((home/'analysis'/directory).glob(pattern)))
     entries=[dict(path=prefix+f.relative_to(home).as_posix(),mode='100644',type='blob',content=f.read_text()) for f in dict.fromkeys(files)]
     reading=home/'analysis/prefix'/('tau%04d.json'%t)
     text=f'''# CP12: recuperación independiente {meta['execution_uuid'][:12]}
