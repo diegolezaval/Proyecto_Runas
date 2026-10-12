@@ -1,0 +1,226 @@
+{
+  "schema": "CP12_PASSIVE_ORIGINAL_CP10_ENDPOINT_REFERENCE",
+  "execution_uuid": "2f01ea6e32b24b83b3a7f8ec723beb90",
+  "execution_run_id": "17ae99084634d164e4edaefa35fbd1418beb24c2e50217ef57ef74bcc1ef6aeb",
+  "preregistration_git_commit": "fb314475dac6344412c07c65db76825b0a217277",
+  "preregistration_sha256": "0c70d237fe75bb0e87325cc268a9099879f1a5ea4ff9ccf120f252241c33dd9a",
+  "source_sha256": "3f730e6e562934daa788e3fa09fcb279995391dfe9c2588b89bdacd3819cadab",
+  "CP10_input_hashes": {
+    "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz": "2ef7efa1ca77549aecf069d65638feb559ae9608ab4bdeda36579390750a03fc",
+    "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz": "ecbf667afcbd572af50151e7300bebb63afe54bbb25ecf01b2369b42a1c977ce"
+  },
+  "original_CP11_configuration": {
+    "core_radius": 40.0,
+    "time": 160.0,
+    "radius": 220.0,
+    "L": 4,
+    "states": {
+      "coarse": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "fine": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz"
+    },
+    "source_comparison": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+    "wave_number_cuts": [
+      2,
+      4,
+      8,
+      12,
+      20
+    ],
+    "ell": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "quadrature_orders": [
+      8,
+      12
+    ],
+    "smooth_core_start": 32.0,
+    "algebra_relative_tolerance": 2e-12,
+    "parseval_relative_tolerance": 2e-11,
+    "elliptic_relative_tolerance": 2e-10,
+    "short_component_predominance_min": 0.5,
+    "free_prediction_squared_fraction_min": 0.5,
+    "free_prediction_vector_cosine_min": 0.8,
+    "modal_correction_squared_reduction_min": 0.5,
+    "manufactured_seed": 20261003,
+    "chi_phase_rotation_used_for_acceptance": false,
+    "new_evolution_steps": 0,
+    "forced_lower_bound_predominance_min": 0.5,
+    "prior_results": [
+      "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json",
+      "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json"
+    ]
+  },
+  "original_phase_scale": 0.023527191262137537,
+  "records": [
+    {
+      "time": 0,
+      "CP10_inputs": true,
+      "elliptic_audits": [
+        {
+          "field": {
+            "relative_residual": 4.0879414102061196e-15,
+            "iterations": 5
+          },
+          "velocity": {
+            "relative_residual": 5.100905593507321e-15,
+            "iterations": 5
+          },
+          "force_translation_relative_error": 1.2062883340318026e-15,
+          "positivity_bound": "A>=M^2 I; rho>=0 y proyecci\u00f3n con cuadratura positiva."
+        },
+        {
+          "field": {
+            "relative_residual": 4.115178653800839e-15,
+            "iterations": 5
+          },
+          "velocity": {
+            "relative_residual": 5.121696499478688e-15,
+            "iterations": 5
+          },
+          "force_translation_relative_error": 1.1907320340179723e-15,
+          "positivity_bound": "A>=M^2 I; rho>=0 y proyecci\u00f3n con cuadratura positiva."
+        }
+      ],
+      "observed_chi_core_phase_relative_error": 1.1223149257216455e-05,
+      "reference_difference_metrics": {
+        "relative_error": 2.6286226129040874e-06,
+        "signed_projection": 0.0683552738911967,
+        "cosine": 0.29184921320875956,
+        "removal_squared_reduction": 0.0818541858414659
+      },
+      "nonstationary_difference_metrics": {
+        "relative_error": 1.075401326800505e-05,
+        "signed_projection": 0.9316447261088032,
+        "cosine": 0.9722870481223899,
+        "removal_squared_reduction": 0.9451436380590724
+      },
+      "cross_gram": [
+        [
+          2.9634633487118026e-12,
+          2.025683488677182e-13,
+          2.760894999844084e-12
+        ],
+        [
+          2.025683488677182e-13,
+          1.6256481805560767e-13,
+          4.000353081211053e-14
+        ],
+        [
+          2.760894999844084e-12,
+          4.000353081211053e-14,
+          2.7208914690319736e-12
+        ]
+      ],
+      "fine_field_decomposition": [
+        {
+          "component": "physical",
+          "relative_phase_norm": 1.0,
+          "core_weighted_mean_radius": 8.551383713431953
+        },
+        {
+          "component": "instantaneous_reference",
+          "relative_phase_norm": 0.9947100239699223,
+          "core_weighted_mean_radius": 8.546936528718465
+        },
+        {
+          "component": "nonstationary_residue",
+          "relative_phase_norm": 0.03150538175966839,
+          "core_weighted_mean_radius": 9.320859491224365
+        }
+      ],
+      "instantaneous_operator_chi_core_squared_norm": 2.8794453162833544e-07,
+      "instantaneous_operator_chi_fraction_r_lt_half": 1.664623201515125e-08,
+      "force_identity_audit_not_recomputed": true
+    },
+    {
+      "time": 160,
+      "CP10_inputs": true,
+      "elliptic_audits": [
+        {
+          "field": {
+            "relative_residual": 4.111019742037714e-15,
+            "iterations": 5
+          },
+          "velocity": {
+            "relative_residual": 4.8646012542184565e-15,
+            "iterations": 5
+          },
+          "force_translation_relative_error": 1.1833449951582217e-15,
+          "positivity_bound": "A>=M^2 I; rho>=0 y proyecci\u00f3n con cuadratura positiva."
+        },
+        {
+          "field": {
+            "relative_residual": 4.100192147576027e-15,
+            "iterations": 5
+          },
+          "velocity": {
+            "relative_residual": 4.921222863159071e-15,
+            "iterations": 5
+          },
+          "force_translation_relative_error": 1.1861114124896223e-15,
+          "positivity_bound": "A>=M^2 I; rho>=0 y proyecci\u00f3n con cuadratura positiva."
+        }
+      ],
+      "observed_chi_core_phase_relative_error": 0.0512639096419456,
+      "reference_difference_metrics": {
+        "relative_error": 0.0006682590227531053,
+        "signed_projection": 0.00016970166090106065,
+        "cosine": 0.013018261354226719,
+        "removal_squared_reduction": 0.00016947482588828015
+      },
+      "nonstationary_difference_metrics": {
+        "relative_error": 0.05125956548680109,
+        "signed_projection": 0.9998302983390986,
+        "cosine": 0.9999150321423003,
+        "removal_squared_reduction": 0.9998300715040858
+      },
+      "cross_gram": [
+        [
+          6.18291864691156e-05,
+          1.0492515635970302e-08,
+          6.181869395347961e-05
+        ],
+        [
+          1.0492515635970302e-08,
+          1.0506540660273232e-08,
+          -1.4025024302927766e-11
+        ],
+        [
+          6.181869395347961e-05,
+          -1.4025024302927766e-11,
+          6.181870797850392e-05
+        ]
+      ],
+      "fine_field_decomposition": [
+        {
+          "component": "physical",
+          "relative_phase_norm": 0.47106845833277017,
+          "core_weighted_mean_radius": 8.400310906333843
+        },
+        {
+          "component": "instantaneous_reference",
+          "relative_phase_norm": 0.46948593173409503,
+          "core_weighted_mean_radius": 8.320868291326883
+        },
+        {
+          "component": "nonstationary_residue",
+          "relative_phase_norm": 0.03858446241308086,
+          "core_weighted_mean_radius": 20.1539490174304
+        }
+      ],
+      "instantaneous_operator_chi_core_squared_norm": 0.005161385093784326,
+      "instantaneous_operator_chi_fraction_r_lt_half": 8.770961199301651e-10,
+      "force_identity_audit_not_recomputed": true
+    }
+  ],
+  "M2_steps": 0,
+  "CP12_evolution_to_160_certified_by_this_diagnostic": false,
+  "final_causal_budget_evaluated": false,
+  "physical_gate_evaluated": false,
+  "physical_state_changed": false,
+  "nonstationary_residue_proved_free_wave": false,
+  "CP12_closed": false
+}
