@@ -1,0 +1,17 @@
+{
+  "original_scientific_identity_exact": true,
+  "scientific_source_count": 14,
+  "observed_BLAS_threads_one": true,
+  "observed_dispatch_SkylakeX": true,
+  "dispatch_not_forced": true,
+  "configuration_sha256": "148dfb982ce59ff5e9e7696749f58c77584c96c2833ca5fb4bd03122af5e5541",
+  "state_sha256": "073e747f7f72dec706b6e561d9783f218419d70c60417f29a31111412abcaa39",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "threadpoolctl": "3.6.0"
+  },
+  "M2_steps": 0,
+  "initial_frontier": 48
+}
