@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-12T09:23:36.628475+00:00",
+  "schema": "CP12_ADMINISTRATIVE_LAUNCH_AMENDMENT_NO_NUMERICAL_CHANGE",
+  "detached_launcher_created_no_guard_start_marker_or_restart_certificate": true,
+  "actual_guard_mode": "supervised_exec_session",
+  "one_guard_marker_and_one_physical_worker_marker_required": true,
+  "prior_receipts_or_states_overwritten": false,
+  "scientific_sources_changed": false,
+  "reason": "The command interface did not retain an untracked detached launch; the tracked foreground guard is the sole registered scientific launch."
+}
