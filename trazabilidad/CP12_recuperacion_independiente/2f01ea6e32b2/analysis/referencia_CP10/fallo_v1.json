@@ -1,0 +1,10 @@
+{
+  "schema": "CP12_PASSIVE_DIAGNOSTIC_IMPLEMENTATION_FAILURE",
+  "registered_at": "2026-10-12T16:07:24.231841+00:00",
+  "preregistration_commit": "7b7c72fde47f7f284fde6a9e643df8cf7f158229",
+  "source_sha256": "2fd0df42c3dbea938dbce54751f5afb0bbffc986d4b23d03509c8e7333b76f47",
+  "reason": "ValueError: terms() returns three values; initial adapter incorrectly expected four. No result accepted.",
+  "M2_steps": 0,
+  "physical_trajectories_changed": false,
+  "CP12_closed": false
+}
