@@ -1,0 +1,11 @@
+# Candidato derivado de la acción: pruebas estáticas previas
+
+No se aplicará a las trayectorias CP12 originales. Una campaña física exige primero τ160, reproducción CP10 exacta y atribución suficiente según las tres ventanas originales. Este ensayo estático conserva la masa radial W original, el potencial M2, Θ, las cuadraturas angulares y la definición de carga. No integra M2 ni modifica sus catorce fuentes.
+
+Para cada ℓ se escribe q=r^ℓu. La acción de gradiente bajo Dirichlet es ∫r^(2ℓ+2)(u′)². Se usa la masa ya fijada Mℓ,j=Wj rj^(2ℓ). La identidad continua a^(2ℓ+2)=(2ℓ+3)/a ∫₀ᵃ r^(2ℓ+2)dr determina conductancias usando exactamente esa cuadratura discreta: Cℓ,face=(2ℓ+3) Σj<face Mℓ,j/(a h). Son positivas, convergen a la conductancia continua y para ℓ=0 coinciden con el operador radial FV original.
+
+La rigidez K₂ se deriva de ΣCℓ(Δu)² y penalización Dirichlet exterior positiva. No se calibra con datos de χ. Conserva los momentos regulares r^ℓ y r^(ℓ+2), ℓ=0…4. Se define K=K₂+(h²/12)K₂ W⁻¹ K₂. El coeficiente 1/12 procede de la expansión universal del símbolo centrado, sin ajuste de fases: elimina el término de dispersión principal de orden h² en el volumen. La forma es simétrica y positiva. Su gradiente, energía y fuente M2 conservan la misma masa W; la simetría U(1) y carga original permanecen.
+
+Se verifican todos los armónicos y momentos regulares citados, excluyendo las dos filas exteriores afectadas por la condición Dirichlet que el polinomio no cumple. Se prueban gradiente variacional y aceleración de carga con la misma semilla sintética 28092026, sin evolución. Se comparan las tres primeras eigenvalores para ℓ=0…4 y N=32,64,128,256,512, R=1, con los ceros de jℓ. Se publican todos los errores, aun si empeoran. La geometría y los datos iniciales C¹ impiden prometer orden global cuatro por el mero símbolo principal; se mide el orden.
+
+La variante puede necesitar adaptación del backend de los observadores al operador real, preservando sus ecuaciones, grupos, ventanas, etapas 7/6, pasos y tolerancias originales. Ningún cambio de definición o puerta del 2 % está autorizado por este prototipo. Se registran costes y limitaciones antes de cualquier trayectoria corregida. No se ensaya una pérdida, filtrado, nueva Θ o ajuste de masa.

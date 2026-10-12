@@ -1,0 +1,205 @@
+{
+  "schema": "CP12_PASSIVE_INSTANTANEOUS_PHI_CONDITIONED_REFERENCE",
+  "time": 40,
+  "execution_run_id": "3f7a6b3251ed7f27696fc6d1015449b502a8513aa2c30cf15422e0e0361551ed",
+  "proof_sha256": "bd945075b30efcb7b6663d83e91bce0342916fa887d23393f16a4ae2f5ac98cd",
+  "state_sha256": "d20716451e62e8974e305391d36188354bf42fed2c5ba7595b0c56703f3d2ec0",
+  "diagnostic_CP11_configuration": {
+    "core_radius": 40.0,
+    "time": 160.0,
+    "radius": 220.0,
+    "L": 4,
+    "states": {
+      "coarse": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "fine": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz"
+    },
+    "source_comparison": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+    "wave_number_cuts": [
+      2,
+      4,
+      8,
+      12,
+      20
+    ],
+    "ell": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "quadrature_orders": [
+      8,
+      12
+    ],
+    "smooth_core_start": 32.0,
+    "algebra_relative_tolerance": 2e-12,
+    "parseval_relative_tolerance": 2e-11,
+    "elliptic_relative_tolerance": 2e-10,
+    "short_component_predominance_min": 0.5,
+    "free_prediction_squared_fraction_min": 0.5,
+    "free_prediction_vector_cosine_min": 0.8,
+    "modal_correction_squared_reduction_min": 0.5,
+    "manufactured_seed": 20261003,
+    "chi_phase_rotation_used_for_acceptance": false,
+    "new_evolution_steps": 0,
+    "forced_lower_bound_predominance_min": 0.5,
+    "prior_results": [
+      "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json",
+      "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json"
+    ]
+  },
+  "elliptic_audits": [
+    {
+      "field": {
+        "relative_residual": 4.139104970313018e-15,
+        "iterations": 5
+      },
+      "velocity": {
+        "relative_residual": 5.102656144072298e-15,
+        "iterations": 5
+      },
+      "force_translation_relative_error": 1.1767467359420942e-15,
+      "positivity_bound": "A>=M^2 I; rho>=0 y proyecci\u00f3n con cuadratura positiva."
+    },
+    {
+      "field": {
+        "relative_residual": 4.100840796802456e-15,
+        "iterations": 5
+      },
+      "velocity": {
+        "relative_residual": 5.148700293427075e-15,
+        "iterations": 5
+      },
+      "force_translation_relative_error": 1.165179816489718e-15,
+      "positivity_bound": "A>=M^2 I; rho>=0 y proyecci\u00f3n con cuadratura positiva."
+    }
+  ],
+  "spectral_window_verification": {
+    "core": {
+      "observed_norm_relative_difference": 6.096104251337203e-15,
+      "original_parseval_tolerance": 2e-11,
+      "passed": true
+    },
+    "smooth": {
+      "observed_norm_relative_difference": 5.4475825506345435e-15,
+      "original_parseval_tolerance": 2e-11,
+      "passed": true
+    }
+  },
+  "tables": {
+    "core_phase": {
+      "instantaneous_reference_difference": {
+        "relative_error": 0.00020543290892285882,
+        "signed_projection": -0.0017386284220572137,
+        "cosine": -0.14101498856484057,
+        "removal_squared_reduction": -0.0036292706375699387
+      },
+      "nonstationary_residue_difference": {
+        "relative_error": 0.016692261389256165,
+        "signed_projection": 1.001738628422057,
+        "cosine": 0.9999257711492958,
+        "removal_squared_reduction": 0.9998479862065445
+      }
+    },
+    "short_core_k4": {
+      "instantaneous_reference_difference": {
+        "relative_error": 3.511493626818197e-05,
+        "signed_projection": -0.0018867610411156936,
+        "cosine": -0.895185135378966,
+        "removal_squared_reduction": -0.003777964384193524
+      },
+      "nonstationary_residue_difference": {
+        "relative_error": 0.01669193463123379,
+        "signed_projection": 1.0018867610411157,
+        "cosine": 0.9999995604431653,
+        "removal_squared_reduction": 0.9999955576980379
+      }
+    },
+    "short_smooth_k4": {
+      "instantaneous_reference_difference": {
+        "relative_error": 3.511483504952776e-05,
+        "signed_projection": -0.00188676073937029,
+        "cosine": -0.8951875702744294,
+        "removal_squared_reduction": -0.0037779637551158874
+      },
+      "nonstationary_residue_difference": {
+        "relative_error": 0.01669193458285616,
+        "signed_projection": 1.00188676073937,
+        "cosine": 0.999999560455343,
+        "removal_squared_reduction": 0.9999955577236246
+      }
+    }
+  },
+  "cross_grams": {
+    "core_phase": [
+      [
+        6.531713360848176e-06,
+        -1.1356222493901484e-08,
+        6.543069583342077e-06
+      ],
+      [
+        -1.1356222493901484e-08,
+        9.92910525746578e-10,
+        -1.2349133019648062e-08
+      ],
+      [
+        6.543069583342077e-06,
+        -1.2349133019648062e-08,
+        6.555418716361725e-06
+      ]
+    ],
+    "short_core_k4": [
+      [
+        6.530490109682716e-06,
+        -1.23214743183407e-08,
+        6.542811584001057e-06
+      ],
+      [
+        -1.23214743183407e-08,
+        2.9010409027962574e-11,
+        -1.2350484727368666e-08
+      ],
+      [
+        6.542811584001057e-06,
+        -1.2350484727368666e-08,
+        6.555162068728425e-06
+      ]
+    ],
+    "short_smooth_k4": [
+      [
+        6.530490075921278e-06,
+        -1.2321472284095572e-08,
+        6.542811548205372e-06
+      ],
+      [
+        -1.2321472284095572e-08,
+        2.901024178344273e-11,
+        -1.2350482525879015e-08
+      ],
+      [
+        6.542811548205372e-06,
+        -1.2350482525879015e-08,
+        6.5551620307312495e-06
+      ]
+    ]
+  },
+  "Phi_response_to_chi_operator_alignment_full_box": {
+    "relative_error": 0.00011062560368345225,
+    "signed_projection": 2.978271529333079e-06,
+    "cosine": 0.0017424617266457796,
+    "removal_squared_reduction": 3.035068661239115e-06
+  },
+  "Phi_alignment_new_gate_applied": false,
+  "M2_steps": 0,
+  "original_scientific_sources_unchanged": true,
+  "physical_state_not_substituted": true,
+  "stationary_or_adiabatic_physical_evolution_assumed": false,
+  "nonstationary_residue_proved_free_wave": false,
+  "independent_causal_identification_proved": false,
+  "physical_gate_evaluated": false,
+  "CP12_closed": false,
+  "source_sha256": "1e1b4d03052196c200dfd5df73b7b6ceec72bc1b855eb45b94b7ad04a482c5d5",
+  "preregistration_sha256": "32b2877b6343cb3fa419b3045c6a1b9636808d08c3ea8cea95718af7ef4b8601",
+  "CP11_function_source_sha256": "60bc4c209d15fbb12e280c2f55a526347c2b7484c5c8bd6f09ef010f872dd2db",
+  "components_sha256": "e4e448dd0307ab15c60a203d27df690bf3534229e3751ca90d1ff38d826e1798"
+}
