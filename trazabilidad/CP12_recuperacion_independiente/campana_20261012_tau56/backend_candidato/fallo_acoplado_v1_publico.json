@@ -1,0 +1,18 @@
+{
+  "schema": "CP12_CANDIDATE_STATIC_PREFLIGHT_FAILURE",
+  "registered_at": "2026-10-12T16:39:10.994588+00:00",
+  "source_sha256": "67eb87dc90a6ef65d5214a7b1a302e30ea9a010df8a1c879339beb76ed8378d0",
+  "preregistration_commit": "7f849e8f8fb78ca72633d7b83f72f9db59b65b47",
+  "failed_criterion": "Full instantaneous candidate defect scaled by max(1,max|I force_c-force_f|) <=2e-12",
+  "failure": "AssertionError at initial snapshot; no coupled or nonlinear history validation accepted",
+  "M2_steps": 0,
+  "original_trajectories_changed": false,
+  "CP12_closed": false,
+  "observed_residuals": {
+    "absolute": 5.033414794833095e-12,
+    "difference_scaled": 4.471372855287116e-12,
+    "radial_linearity_absolute": 5.772021315769704e-15,
+    "nonlinear_mean_identity_absolute": 4.855734744683721e-12
+  },
+  "v1_accepted": false
+}
