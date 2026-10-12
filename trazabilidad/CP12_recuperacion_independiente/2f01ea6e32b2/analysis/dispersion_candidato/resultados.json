@@ -1,0 +1,790 @@
+{
+  "schema": "CP12_PASSIVE_MANUFACTURED_BULK_SYMBOL_AND_INTERPOLATION",
+  "execution_uuid": "2f01ea6e32b24b83b3a7f8ec723beb90",
+  "execution_run_id": "17ae99084634d164e4edaefa35fbd1418beb24c2e50217ef57ef74bcc1ef6aeb",
+  "preregistration_git_commit": "7d87c80ea30147573829945e191cc9e30398a493",
+  "preregistration_sha256": "5d8b598a5170f2c13d0e8be30035982651df13aa11dae27ab61c52fe5f764a21",
+  "source_sha256": "2e0ceb94abfafd39e9c65abb36452c1da2b5592b25961f16d6656c77f76d319c",
+  "original_interpolator_source_sha256": "b5fc749bd161dbc5c2f264631ff4927a47e6fde8a28056ed518bcc155a741ac6",
+  "M2_steps": 0,
+  "physical_observers_changed": false,
+  "physical_gate_evaluated": false,
+  "physical_correction_tested": false,
+  "CP12_closed": false,
+  "mass": 100.0,
+  "wave_number_cuts": [
+    2,
+    4,
+    8,
+    12,
+    20
+  ],
+  "transfer_checks": [
+    {
+      "k": 2,
+      "low_amplitude": 0.9999941955847708,
+      "image_amplitude": 8.010645708433906e-07,
+      "image_wave_number": 52.26548245743669,
+      "original_CubicSpline_interior_absolute_residual": 3.376611507232129e-16
+    },
+    {
+      "k": 4,
+      "low_amplitude": 0.9999030957786574,
+      "image_amplitude": 2.625140054966779e-05,
+      "image_wave_number": 54.26548245743669,
+      "original_CubicSpline_interior_absolute_residual": 3.510833468576701e-16
+    },
+    {
+      "k": 8,
+      "low_amplitude": 0.9981717690615993,
+      "image_amplitude": 0.0009233621680539983,
+      "image_wave_number": 58.26548245743669,
+      "original_CubicSpline_interior_absolute_residual": 1.355199909595506e-15
+    },
+    {
+      "k": 12,
+      "low_amplitude": 0.9880416079240052,
+      "image_amplitude": 0.00817213962925345,
+      "image_wave_number": 62.26548245743669,
+      "original_CubicSpline_interior_absolute_residual": 1.0622954805017668e-14
+    },
+    {
+      "k": 20,
+      "low_amplitude": 0.8276472944689833,
+      "image_amplitude": 0.15278286217682158,
+      "image_wave_number": 70.26548245743669,
+      "original_CubicSpline_interior_absolute_residual": 1.9632825138151833e-13
+    }
+  ],
+  "exact_free_Duhamel_max_absolute_residual": 2.929642751054232e-16,
+  "dispersion": [
+    {
+      "k": 2,
+      "continuous_frequency": 100.0199980003999,
+      "symbols": {
+        "2": {
+          "steps": [
+            0.125,
+            0.0625,
+            0.03125,
+            0.015625
+          ],
+          "frequencies": [
+            100.01989407123484,
+            100.01997197749348,
+            100.0199914921322,
+            100.01999637317412
+          ],
+          "absolute_frequency_errors": [
+            0.00010392916504997629,
+            2.6022906411071745e-05,
+            6.5082676883321255e-06,
+            1.627225771017038e-06
+          ],
+          "refinement_orders": [
+            1.9977465604219464,
+            1.9994366047031344,
+            1.9998591579853837
+          ],
+          "coarse_fine_phase_mismatch": {
+            "24": 0.0018697502073337091,
+            "48": 0.0037395004146674182,
+            "160": 0.012465001382224727
+          }
+        },
+        "4": {
+          "steps": [
+            0.125,
+            0.0625,
+            0.03125,
+            0.015625
+          ],
+          "frequencies": [
+            100.01999713734689,
+            100.01999794623289,
+            100.01999799701092,
+            100.01999800018802
+          ],
+          "absolute_frequency_errors": [
+            8.630530032860406e-07,
+            5.416700332716573e-08,
+            3.3889762107719434e-09,
+            2.1186963294894667e-10
+          ],
+          "refinement_orders": [
+            3.9939629792461377,
+            3.998492864179249,
+            3.999600782046504
+          ],
+          "coarse_fine_phase_mismatch": {
+            "24": 1.9413263999012997e-05,
+            "48": 3.8826527998025995e-05,
+            "160": 0.00012942175999341998
+          }
+        }
+      },
+      "phase_ratio_candidate_to_original": 0.010382811523629455
+    },
+    {
+      "k": 4,
+      "continuous_frequency": 100.07996802557443,
+      "symbols": {
+        "2": {
+          "steps": [
+            0.125,
+            0.0625,
+            0.03125,
+            0.015625
+          ],
+          "frequencies": [
+            100.07831649302476,
+            100.07955255737383,
+            100.07986399628216,
+            100.07994200810064
+          ],
+          "absolute_frequency_errors": [
+            0.0016515325496726518,
+            0.00041546820060034406,
+            0.00010402929227382174,
+            2.6017473786055234e-05
+          ],
+          "refinement_orders": [
+            1.9909954393281015,
+            1.9977482436475316,
+            1.9994370226886429
+          ],
+          "coarse_fine_phase_mismatch": {
+            "24": 0.029665544377735387,
+            "48": 0.05933108875547077,
+            "160": 0.19777029585156924
+          }
+        },
+        "4": {
+          "steps": [
+            0.125,
+            0.0625,
+            0.03125,
+            0.015625
+          ],
+          "frequencies": [
+            100.07991373913801,
+            100.07996457543099,
+            100.07996780903623,
+            100.07996801202663
+          ],
+          "absolute_frequency_errors": [
+            5.428643642346742e-05,
+            3.4501434384992535e-06,
+            2.1653819715083955e-07,
+            1.3547804655900109e-08
+          ],
+          "refinement_orders": [
+            3.9758635349744074,
+            3.993962900004657,
+            3.9984905423908943
+          ],
+          "coarse_fine_phase_mismatch": {
+            "24": 0.001220071031639236,
+            "48": 0.002440142063278472,
+            "160": 0.008133806877594907
+          }
+        }
+      },
+      "phase_ratio_candidate_to_original": 0.04112754568410769
+    },
+    {
+      "k": 8,
+      "continuous_frequency": 100.31948963187563,
+      "symbols": {
+        "2": {
+          "steps": [
+            0.125,
+            0.0625,
+            0.03125,
+            0.015625
+          ],
+          "frequencies": [
+            100.29377500547518,
+            100.31289911228829,
+            100.31783171668235,
+            100.31907450757974
+          ],
+          "absolute_frequency_errors": [
+            0.025714626400443308,
+            0.006590519587334143,
+            0.0016579151932774039,
+            0.00041512429588408395
+          ],
+          "refinement_orders": [
+            1.9641250785029964,
+            1.9910219986983064,
+            1.9977549352696895
+          ],
+          "coarse_fine_phase_mismatch": {
+            "24": 0.45897856351461996,
+            "48": 0.9179571270292399,
+            "160": 3.0598570900974664
+          }
+        },
+        "4": {
+          "steps": [
+            0.125,
+            0.0625,
+            0.03125,
+            0.015625
+          ],
+          "frequencies": [
+            100.31624747205875,
+            100.31927300440934,
+            100.31947586425126,
+            100.31948876779086
+          ],
+          "absolute_frequency_errors": [
+            0.003242159816878143,
+            0.00021662746628692275,
+            1.3767624366778364e-05,
+            8.640847681817831e-07
+          ],
+          "refinement_orders": [
+            3.9036671282989883,
+            3.975864628524556,
+            3.9939629804251346
+          ],
+          "coarse_fine_phase_mismatch": {
+            "24": 0.07261277641418928,
+            "48": 0.14522555282837857,
+            "160": 0.4840851760945952
+          }
+        }
+      },
+      "phase_ratio_candidate_to_original": 0.15820515855502765
+    },
+    {
+      "k": 12,
+      "continuous_frequency": 100.71742649611338,
+      "symbols": {
+        "2": {
+          "steps": [
+            0.125,
+            0.0625,
+            0.03125,
+            0.015625
+          ],
+          "frequencies": [
+            100.59297012309824,
+            100.68453356467717,
+            100.70908792320374,
+            100.71533457758315
+          ],
+          "absolute_frequency_errors": [
+            0.12445637301513557,
+            0.03289293143620853,
+            0.008338572909636355,
+            0.0020919185302261667
+          ],
+          "refinement_orders": [
+            1.9197906152422013,
+            1.9799051852729805,
+            1.9949738303798883
+          ],
+          "coarse_fine_phase_mismatch": {
+            "24": 2.197522597894249,
+            "48": 4.395045195788498,
+            "160": 14.650150652628326
+          }
+        },
+        "4": {
+          "steps": [
+            0.125,
+            0.0625,
+            0.03125,
+            0.015625
+          ],
+          "frequencies": [
+            100.68449531888368,
+            100.71503621333457,
+            100.71727137910644,
+            100.71741670961464
+          ],
+          "absolute_frequency_errors": [
+            0.03293117722969896,
+            0.002390282778804931,
+            0.00015511700694048614,
+            9.78649873673021e-06
+          ],
+          "refinement_orders": [
+            3.784200877299535,
+            3.945752527744206,
+            3.9864202542313043
+          ],
+          "coarse_fine_phase_mismatch": {
+            "24": 0.7329814668214567,
+            "48": 1.4659629336429134,
+            "160": 4.886543112143045
+          }
+        }
+      },
+      "phase_ratio_candidate_to_original": 0.33354900082657984
+    },
+    {
+      "k": 20,
+      "continuous_frequency": 101.9803902718557,
+      "symbols": {
+        "2": {
+          "steps": [
+            0.125,
+            0.0625,
+            0.03125,
+            0.015625
+          ],
+          "frequencies": [
+            101.14616346055844,
+            101.73767714300156,
+            101.91735637884901,
+            101.96448092149232
+          ],
+          "absolute_frequency_errors": [
+            0.8342268112972562,
+            0.24271312885413465,
+            0.06303389300668982,
+            0.01590935036337271
+          ],
+          "refinement_orders": [
+            1.781187530937134,
+            1.945052476744603,
+            1.9862528407081723
+          ],
+          "coarse_fine_phase_mismatch": {
+            "24": 14.196328378634917,
+            "48": 28.392656757269833,
+            "160": 94.64218919089944
+          }
+        },
+        "4": {
+          "steps": [
+            0.125,
+            0.0625,
+            0.03125,
+            0.015625
+          ],
+          "frequencies": [
+            101.48770487288078,
+            101.93408559623957,
+            101.97717910486907,
+            101.98018426325802
+          ],
+          "absolute_frequency_errors": [
+            0.49268539897491337,
+            0.04630467561612761,
+            0.003211166986631042,
+            0.0002060085976722803
+          ],
+          "refinement_orders": [
+            3.4114369350250824,
+            3.8499882820782076,
+            3.9623212358496875
+          ],
+          "coarse_fine_phase_mismatch": {
+            "24": 10.713137360610858,
+            "48": 21.426274721221716,
+            "160": 71.42091573740572
+          }
+        }
+      },
+      "phase_ratio_candidate_to_original": 0.7546414167718066
+    }
+  ],
+  "duhamel": [
+    {
+      "k": 2,
+      "time": 24,
+      "coarse_frequency": 100.01989407123484,
+      "source_squared_norm": 0.00024353181768137282,
+      "source_image_power_fraction": 0.002720125726589062,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 100.01997197749348,
+          "initial_phase_power": 6.738247278391822e-11,
+          "operator_response_phase_power": 6.991849743002105e-06,
+          "total_phase_power": 6.99195771092392e-06,
+          "cross_term": 4.05854490309558e-11
+        },
+        {
+          "component": "image",
+          "frequency": 104.97621257037909,
+          "initial_phase_power": 1.2835079302705235e-12,
+          "operator_response_phase_power": 2.326826289431103e-13,
+          "total_phase_power": 1.2834089022296317e-12,
+          "cross_term": -2.327816569840021e-13
+        }
+      ],
+      "relative_unit_phase_contrast": 0.001869753860048539
+    },
+    {
+      "k": 2,
+      "time": 48,
+      "coarse_frequency": 100.01989407123484,
+      "source_squared_norm": 0.00024353181768137282,
+      "source_image_power_fraction": 0.002720125726589062,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 100.01997197749348,
+          "initial_phase_power": 6.73824740457998e-11,
+          "operator_response_phase_power": 2.796737350698806e-05,
+          "total_phase_power": 2.796760323019537e-05,
+          "cross_term": 1.62340733266881e-10
+        },
+        {
+          "component": "image",
+          "frequency": 104.97621257037909,
+          "initial_phase_power": 1.2837985652736067e-12,
+          "operator_response_phase_power": 8.885919904949525e-13,
+          "total_phase_power": 1.283408925829954e-12,
+          "cross_term": -8.889816299386052e-13
+        }
+      ],
+      "relative_unit_phase_contrast": 0.003739492245853994
+    },
+    {
+      "k": 2,
+      "time": 160,
+      "coarse_frequency": 100.01989407123484,
+      "source_squared_norm": 0.00024353181768137282,
+      "source_image_power_fraction": 0.002720125726589062,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 100.01997197749348,
+          "initial_phase_power": 6.738247233900385e-11,
+          "operator_response_phase_power": 0.0003107449111269868,
+          "total_phase_power": 0.00031074678221055873,
+          "cross_term": 1.8037010996114003e-09
+        },
+        {
+          "component": "image",
+          "frequency": 104.97621257037909,
+          "initial_phase_power": 1.2888270055000826e-12,
+          "operator_response_phase_power": 1.9594013009515322e-12,
+          "total_phase_power": 1.2834088941401462e-12,
+          "cross_term": -1.9648194123114684e-12
+        }
+      ],
+      "relative_unit_phase_contrast": 0.012464886351145918
+    },
+    {
+      "k": 4,
+      "time": 24,
+      "coarse_frequency": 100.07831649302476,
+      "source_squared_norm": 0.06187757865631949,
+      "source_image_power_fraction": 0.010968750869284196,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 100.07955255737383,
+          "initial_phase_power": 1.8780879364975633e-08,
+          "operator_response_phase_power": 0.0017596189026222414,
+          "total_phase_power": 0.0017598082198451977,
+          "cross_term": 1.7053634359135914e-07
+        },
+        {
+          "component": "image",
+          "frequency": 104.91941269334217,
+          "initial_phase_power": 1.3845939328348452e-09,
+          "operator_response_phase_power": 5.518841303976322e-09,
+          "total_phase_power": 1.3782737217634656e-09,
+          "cross_term": -5.525161515047702e-09
+        }
+      ],
+      "relative_unit_phase_contrast": 0.02966318929345696
+    },
+    {
+      "k": 4,
+      "time": 48,
+      "coarse_frequency": 100.07831649302476,
+      "source_squared_norm": 0.06187757865631949,
+      "source_image_power_fraction": 0.010968750869284196,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 100.07955255737383,
+          "initial_phase_power": 1.8780858626182724e-08,
+          "operator_response_phase_power": 0.007036936472538455,
+          "total_phase_power": 0.0070376372369011595,
+          "cross_term": 6.819835040782971e-07
+        },
+        {
+          "component": "image",
+          "frequency": 104.91941269334217,
+          "initial_phase_power": 1.3784311194725694e-09,
+          "operator_response_phase_power": 1.527422562834368e-11,
+          "total_phase_power": 1.3782721766929148e-09,
+          "cross_term": -1.5433168407998267e-11
+        }
+      ],
+      "relative_unit_phase_contrast": 0.059319636778950934
+    },
+    {
+      "k": 4,
+      "time": 160,
+      "coarse_frequency": 100.07831649302476,
+      "source_squared_norm": 0.06187757865631949,
+      "source_image_power_fraction": 0.010968750869284196,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 100.07955255737383,
+          "initial_phase_power": 1.878085625032951e-08,
+          "operator_response_phase_power": 0.07795652450362803,
+          "total_phase_power": 0.07796409832656387,
+          "cross_term": 7.555042079596119e-06
+        },
+        {
+          "component": "image",
+          "frequency": 104.91941269334217,
+          "initial_phase_power": 1.384633743278424e-09,
+          "operator_response_phase_power": 3.237423860485643e-09,
+          "total_phase_power": 1.3782721083819104e-09,
+          "cross_term": -3.243785495382157e-09
+        }
+      ],
+      "relative_unit_phase_contrast": 0.19743872429799073
+    },
+    {
+      "k": 8,
+      "time": 24,
+      "coarse_frequency": 100.29377500547518,
+      "source_squared_norm": 15.358794707125801,
+      "source_image_power_fraction": 0.04521297879712679,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 100.31289911228829,
+          "initial_phase_power": 6.684954867054241e-06,
+          "operator_response_phase_power": 0.4124702865168782,
+          "total_phase_power": 0.41323247769014726,
+          "cross_term": 0.0007555062184019801
+        },
+        {
+          "component": "image",
+          "frequency": 104.69633361148743,
+          "initial_phase_power": 1.7072373020891525e-06,
+          "operator_response_phase_power": 2.0290928347727556e-06,
+          "total_phase_power": 1.7052044877557915e-06,
+          "cross_term": -2.0311256491061164e-06
+        }
+      ],
+      "relative_unit_phase_contrast": 0.4545515278242034
+    },
+    {
+      "k": 8,
+      "time": 48,
+      "coarse_frequency": 100.29377500547518,
+      "source_squared_norm": 15.358794707125801,
+      "source_image_power_fraction": 0.04521297879712679,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 100.31289911228829,
+          "initial_phase_power": 6.684954049397666e-06,
+          "operator_response_phase_power": 1.5644869126043148,
+          "total_phase_power": 1.5673590790784222,
+          "cross_term": 0.002865481520057944
+        },
+        {
+          "component": "image",
+          "frequency": 104.69633361148743,
+          "initial_phase_power": 1.7110428971382128e-06,
+          "operator_response_phase_power": 5.70583854657972e-06,
+          "total_phase_power": 1.705220501168872e-06,
+          "cross_term": -5.71166094254906e-06
+        }
+      ],
+      "relative_unit_phase_contrast": 0.8852572463128793
+    },
+    {
+      "k": 8,
+      "time": 160,
+      "coarse_frequency": 100.29377500547518,
+      "source_squared_norm": 15.358794707125801,
+      "source_image_power_fraction": 0.04521297879712679,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 100.31289911228829,
+          "initial_phase_power": 6.684870671824186e-06,
+          "operator_response_phase_power": 7.957482079878423,
+          "total_phase_power": 7.972063529437889,
+          "cross_term": 0.014574764688794595
+        },
+        {
+          "component": "image",
+          "frequency": 104.69633361148743,
+          "initial_phase_power": 1.7065069805476708e-06,
+          "operator_response_phase_power": 7.875879425297389e-07,
+          "total_phase_power": 1.705197201028603e-06,
+          "cross_term": -7.888977220488068e-07
+        }
+      ],
+      "relative_unit_phase_contrast": 1.996505100749193
+    },
+    {
+      "k": 12,
+      "time": 24,
+      "coarse_frequency": 100.59297012309824,
+      "source_squared_norm": 370.9353930647023,
+      "source_image_power_fraction": 0.10610422437040257,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 100.68453356467717,
+          "initial_phase_power": 0.00028601341459316427,
+          "operator_response_phase_power": 6.195464880392429,
+          "total_phase_power": 6.270734334472837,
+          "cross_term": 0.07498344066581542
+        },
+        {
+          "component": "image",
+          "frequency": 104.338989360945,
+          "initial_phase_power": 0.00013360621766502702,
+          "operator_response_phase_power": 0.00036364019419066543,
+          "total_phase_power": 0.000133577006125786,
+          "cross_term": -0.00036366940572990644
+        }
+      ],
+      "relative_unit_phase_contrast": 1.7707156620246745
+    },
+    {
+      "k": 12,
+      "time": 48,
+      "coarse_frequency": 100.59297012309824,
+      "source_squared_norm": 370.9353930647023,
+      "source_image_power_fraction": 0.10610422437040257,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 100.68453356467717,
+          "initial_phase_power": 0.00028602716835379825,
+          "operator_response_phase_power": 5.123507448044261,
+          "total_phase_power": 5.18580561236821,
+          "cross_term": 0.062012137155594615
+        },
+        {
+          "component": "image",
+          "frequency": 104.338989360945,
+          "initial_phase_power": 0.0001337093883899224,
+          "operator_response_phase_power": 0.0004648549174842436,
+          "total_phase_power": 0.00013356798519426034,
+          "cross_term": -0.00046499632067990566
+        }
+      ],
+      "relative_unit_phase_contrast": 1.6102700364152287
+    },
+    {
+      "k": 12,
+      "time": 160,
+      "coarse_frequency": 100.59297012309824,
+      "source_squared_norm": 370.9353930647023,
+      "source_image_power_fraction": 0.10610422437040257,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 100.68453356467717,
+          "initial_phase_power": 0.000286013835803585,
+          "operator_response_phase_power": 5.821352744604173,
+          "total_phase_power": 5.8920955740827985,
+          "cross_term": 0.0704568156428218
+        },
+        {
+          "component": "image",
+          "frequency": 104.338989360945,
+          "initial_phase_power": 0.00013358406033441331,
+          "operator_response_phase_power": 0.0004746557085780529,
+          "total_phase_power": 0.00013356984755171218,
+          "cross_term": -0.000474669921360754
+        }
+      ],
+      "relative_unit_phase_contrast": 1.7164249392167357
+    },
+    {
+      "k": 20,
+      "time": 24,
+      "coarse_frequency": 101.14616346055844,
+      "source_squared_norm": 14444.276211231303,
+      "source_image_power_fraction": 0.31700217690363536,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 101.73767714300156,
+          "initial_phase_power": 0.05942508807247472,
+          "operator_response_phase_power": 2.903144203901081,
+          "total_phase_power": 3.5671516087282003,
+          "cross_term": 0.6045823167546445
+        },
+        {
+          "component": "image",
+          "frequency": 103.31236639215257,
+          "initial_phase_power": 0.046734282199329034,
+          "operator_response_phase_power": 0.10767117660843344,
+          "total_phase_power": 0.04669315173159666,
+          "cross_term": -0.1077123070761658
+        }
+      ],
+      "relative_unit_phase_contrast": 1.3442181297058517
+    },
+    {
+      "k": 20,
+      "time": 48,
+      "coarse_frequency": 101.14616346055844,
+      "source_squared_norm": 14444.276211231303,
+      "source_image_power_fraction": 0.31700217690363536,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 101.73767714300156,
+          "initial_phase_power": 0.05944482366062871,
+          "operator_response_phase_power": 5.462992357167686,
+          "total_phase_power": 6.660169252159396,
+          "cross_term": 1.1377320713310812
+        },
+        {
+          "component": "image",
+          "frequency": 103.31236639215257,
+          "initial_phase_power": 0.04678438087192484,
+          "operator_response_phase_power": 0.1826223547520754,
+          "total_phase_power": 0.046696164980064035,
+          "cross_term": -0.1827105706439362
+        }
+      ],
+      "relative_unit_phase_contrast": 1.8312380261914971
+    },
+    {
+      "k": 20,
+      "time": 160,
+      "coarse_frequency": 101.14616346055844,
+      "source_squared_norm": 14444.276211231303,
+      "source_image_power_fraction": 0.31700217690363536,
+      "components": [
+        {
+          "component": "low",
+          "frequency": 101.73767714300156,
+          "initial_phase_power": 0.05944554910955292,
+          "operator_response_phase_power": 0.21047077047200985,
+          "total_phase_power": 0.3138566897772022,
+          "cross_term": 0.043940370195639455
+        },
+        {
+          "component": "image",
+          "frequency": 103.31236639215257,
+          "initial_phase_power": 0.04676251565095904,
+          "operator_response_phase_power": 0.04430454856647557,
+          "total_phase_power": 0.04669425090890504,
+          "cross_term": -0.04437281330852957
+        }
+      ],
+      "relative_unit_phase_contrast": 0.42458858951113326
+    }
+  ],
+  "limits": "Manufactured interior/free-wave reference; not a reconstruction of radial interacting CP12 histories. The full candidate has only demonstrated global spectral order two and some modes worsen."
+}
