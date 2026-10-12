@@ -1,0 +1,58 @@
+{
+  "schema": "CP12_FETCHED_ADMINISTRATIVE_AND_OFFLINE_SOURCES_BYTE_PRESERVATION",
+  "at": "2026-10-12T09:51:18.550778+00:00",
+  "fixes": [
+    {
+      "source": "runtime/library/library_upload.py",
+      "change": "Remove one extra terminal newline introduced by file-writing wrapper; original fetched bytes now exact",
+      "old_sha256": "b11e4929596e321366c2f7291890fbb6d6bf8b413ae6d24593e9548f9bf50f23",
+      "source_sha256": "5bc473dadefe1f68ee8797baaed19d6662642d0ea4bcba128fa12938faa0d767",
+      "exact_bytes": true
+    },
+    {
+      "source": "runtime/library/library_hosted_apps.py",
+      "change": "Remove one extra terminal newline introduced by file-writing wrapper; original fetched bytes now exact",
+      "old_sha256": "b7961301f7ca6f76b2f2f30e4e5673a303532680a790e545c3207a2bf5e63de4",
+      "source_sha256": "97d029b097ace62b744c82dfde20ef6921ed543a33a771ecf6452bd655d11b59",
+      "exact_bytes": true
+    },
+    {
+      "source": "runtime/library/library_file_transfer.py",
+      "change": "Remove one extra terminal newline introduced by file-writing wrapper; original fetched bytes now exact",
+      "old_sha256": "5c81478cd94a59d721a1677d0bd36f7cec23c18a21b48740b1c9ff94d27fb26f",
+      "source_sha256": "5e1557817be17db06e2375f8c34ed83e948d520242e5ee4cb50a30c7a4c83378",
+      "exact_bytes": true
+    },
+    {
+      "source": "analysis/sources/interpretacion_CP12_original.json",
+      "change": "Remove one extra terminal newline introduced by file-writing wrapper; original fetched bytes now exact",
+      "old_sha256": "e2ecc1fc450cf133079e69ebb686a612271a2e21cb9e65fb2761fb5d7377c79a",
+      "source_sha256": "a557ef567c321c0af3fdbc34bb64c8dd0a03b87f0790dac8a531f155cc286035",
+      "exact_bytes": true
+    },
+    {
+      "source": "analysis/sources/interpretar_presupuesto_CP12_original.py",
+      "change": "Remove one extra terminal newline introduced by file-writing wrapper; original fetched bytes now exact",
+      "old_sha256": "a2b454880897e223696d89c8508dfe81a2aabcbe80a87fc95ba6377dfafdbfa3",
+      "source_sha256": "c0e09c0383f3b5c3764bba37de2dd30a3311945e62f32f09534d49e241385244",
+      "exact_bytes": true
+    },
+    {
+      "source": "analysis/sources/lectura_final_automatica_original.py",
+      "change": "Remove one extra terminal newline introduced by file-writing wrapper; original fetched bytes now exact",
+      "old_sha256": "1e82eb4a00111fb4dce1791141ccc12a441ce68a47b6ae1718f8106946135f75",
+      "source_sha256": "d27c040a6678e4704af5caecce19602b16460163f04a71c9721b23841ec40a8d",
+      "exact_bytes": true
+    },
+    {
+      "source": "analysis/sources/LECTURA_PRESUPUESTO_CP12_original.md",
+      "change": "Remove one extra terminal newline introduced by file-writing wrapper; original fetched bytes now exact",
+      "old_sha256": "2234cb5ac98707ccdea72b7842b6b34dce45738f09a1010c5de3fbf2d7a790e8",
+      "source_sha256": "f4e5d0ddb52347ab8892c0164c6b537d5498b61e9429d5c0640ef31f39515c74",
+      "exact_bytes": true
+    }
+  ],
+  "scientific_fourteen_sources_changed": false,
+  "M2_steps": 0,
+  "original_final_reader_not_executed": true
+}

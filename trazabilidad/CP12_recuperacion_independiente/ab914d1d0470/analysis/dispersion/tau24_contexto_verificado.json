@@ -1,0 +1,48 @@
+{
+  "schema": "TRANSCRIPTION_OF_ALREADY_VERIFIED_TAU24_FOR_PASSIVE_DISPERSION_CONTEXT",
+  "time": 24.0,
+  "source_state_sha256": "508f32f167abd6211b330d707172612a47fec1f2701577b1a9939d8390fbc529",
+  "M2_steps": 0,
+  "original_trajectory_modified": false,
+  "observed_core_phase_relative_error": 0.002470666503437848,
+  "raw_operator_chi_metrics": {
+    "name": "operador_chi",
+    "relative_error": 0.0013276883113891894,
+    "signed_projection": 0.2280578499810887,
+    "cosine": 0.42438792746828846,
+    "removal_squared_reduction": 0.16733776313851367
+  },
+  "coupled_operator_chi_metrics": {
+    "name": "operador_chi",
+    "relative_error": 0.0024645340950661854,
+    "signed_projection": 0.995167561822832,
+    "cosine": 0.9976438001915957,
+    "removal_squared_reduction": 0.9952931362132289
+  },
+  "windows": {
+    "core": {
+      "fraction_of_squared_observed_phase_error_above_k": {
+        "2": 0.9960824027300442,
+        "4": 0.9945461422128375,
+        "8": 0.5669748500352809,
+        "12": 0.0013444754733567543,
+        "20": 9.720995782565353e-05
+      },
+      "short_relative_error": 0.0024639199603151453,
+      "fraction_between_k4_and_k12": 0.9932016667394807
+    },
+    "smooth": {
+      "fraction_of_squared_observed_phase_error_above_k": {
+        "2": 0.9960823524080832,
+        "4": 0.9945461428230967,
+        "8": 0.5669748078033664,
+        "12": 0.0013444636368995747,
+        "20": 9.720987842153957e-05
+      },
+      "short_relative_error": 0.0024639199332234336,
+      "fraction_between_k4_and_k12": 0.9932016791861972
+    }
+  },
+  "causal_explanation_by_principal_symbol_demonstrated": false,
+  "CP12_closed": false
+}
