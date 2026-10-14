@@ -17,11 +17,18 @@ def recover(boundary, work):
     assert not work.exists(), 'Use a new, isolated destination'
     work.mkdir(parents=True)
     state = work / 'CP12_par_estado.npz'
-    with state.open('xb') as output:
-        for chunk in manifest['state_chunks']:
-            p = source / chunk['path']
-            assert p.stat().st_size == chunk['bytes'] and sha(p) == chunk['sha256']
-            output.write(p.read_bytes())
+    readable = source / 'numerical_text' / 'MANIFIESTO_TEXTUAL.json'
+    if readable.exists():
+        sys.path.insert(0, str(BASE))
+        from recuperar_texto_numerico import recover as recover_readable
+        recovery = recover_readable(readable.parent, ROOT, state)
+        assert recovery['passed'] and recovery['exact_original_npz_bytes']
+    else:
+        with state.open('xb') as output:
+            for chunk in manifest['state_chunks']:
+                p = source / chunk['path']
+                assert p.stat().st_size == chunk['bytes'] and sha(p) == chunk['sha256']
+                output.write(p.read_bytes())
     assert state.stat().st_size == manifest['state_bytes']
     assert sha(state) == manifest['state_sha256']
     for name, record in manifest['companion_files'].items():
