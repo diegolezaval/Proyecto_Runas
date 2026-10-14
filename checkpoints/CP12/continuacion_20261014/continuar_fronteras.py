@@ -70,7 +70,7 @@ def preserve(home,t):
         for p in selected:z.write(p,info['execution_uuid']+'/'+p.relative_to(home).as_posix())
         z.writestr(info['execution_uuid']+'/MANIFIESTO_RECUPERACION_INDEPENDIENTE.json',json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')
     tmp.replace(archive)
-    expected=sha(archive)
+    expected=sha(archive);original_archive_bytes=archive.stat().st_size
     output=helper(home,'library_upload.py',[],{'uploads':[{'local_path':str(archive),'purpose':'create_library_file','library_artifact_type':'other'}]})
     uploaded=json.loads(output[output.rfind('\n{"results"'):].strip() if '\n{"results"' in output else output)['results']
     assert len(uploaded)==1 and uploaded[0]['status']=='succeeded'
@@ -87,7 +87,18 @@ def preserve(home,t):
     else:
         download=home/'recoveries'/(label+'_download')/item['file_name']
         helper(home,'library_file_transfer.py',['materialize',str(download)],tr)
-    assert download.stat().st_size==archive.stat().st_size and sha(download)==expected
+    assert download.stat().st_size==original_archive_bytes and sha(download)==expected
+    source_unchanged=archive.is_file() and archive.stat().st_size==original_archive_bytes and sha(archive)==expected
+    if not source_unchanged:
+        retained=home/'proofs'/('tau%04d_local_source_archive_changed.bin'%t)
+        if archive.is_file():shutil.copyfile(archive,retained)
+        write(home/'proofs'/('tau%04d_local_source_archive_anomaly.json'%t),dict(
+            passed=False,scope='Local archive after upload; not a failure of the independently verified retrieved bytes',
+            expected_sha256=expected,expected_bytes=original_archive_bytes,
+            local_source_exists=archive.is_file(),
+            observed_sha256=sha(archive) if archive.is_file() else None,
+            observed_bytes=archive.stat().st_size if archive.is_file() else None,
+            cause='NOT_IDENTIFIED',retained_without_overwrite=True,M2_steps=0,CP12_closed=False))
     dest=home/'recoveries'/(label+'_checked');assert not dest.exists();dest.mkdir()
     with zipfile.ZipFile(download) as z:
         for name in z.namelist():
@@ -102,8 +113,9 @@ def preserve(home,t):
     if proc.returncode:raise RuntimeError('Independent extraction audit failed: '+proc.stderr[-3000:]+' '+proc.stdout[-3000:])
     remote=json.loads(proc.stdout)
     assert remote['passed'] and remote['time']==t and remote['state_sha256']==checked['state_sha256']
-    proof=dict(schema='CP12_INDEPENDENT_BOUNDARY_PERMANENTLY_RECOVERED_AND_AUDITED',time=t,execution_uuid=info['execution_uuid'],execution_run_id=meta['execution_run_id'],branch=info['branch'],library_file_id=item['library_file_id'],file_id=item['file_id'],file_name=item['file_name'],zip_sha256=expected,zip_bytes=archive.stat().st_size,state_sha256=checked['state_sha256'],configuration_sha256=checked['configuration_sha256'],receipt_sha256=checked['receipt_sha256'],all_payload_hashes_verified=True,independent_extracted_audit=remote,passed=True,at=now(),CP12_closed=False)
+    proof=dict(schema='CP12_INDEPENDENT_BOUNDARY_PERMANENTLY_RECOVERED_AND_AUDITED',time=t,execution_uuid=info['execution_uuid'],execution_run_id=meta['execution_run_id'],branch=info['branch'],library_file_id=item['library_file_id'],file_id=item['file_id'],file_name=item['file_name'],zip_sha256=expected,zip_bytes=original_archive_bytes,state_sha256=checked['state_sha256'],configuration_sha256=checked['configuration_sha256'],receipt_sha256=checked['receipt_sha256'],all_payload_hashes_verified=True,independent_extracted_audit=remote,local_source_archive_unchanged_after_upload=source_unchanged,passed=True,at=now(),CP12_closed=False)
     target=home/'proofs'/('tau%04d_permanent.json'%t);assert not target.exists();write(target,proof)
+    if not source_unchanged:preserve_additional(home,'ANOMALIA_FUENTE_LOCAL_%04d'%t)
     event(home,'BOUNDARY_PERMANENTLY_VERIFIED',time=t,state_sha256=proof['state_sha256'],capsule_bytes=proof['zip_bytes'],independent_recovery_passed=True)
     return proof
 
