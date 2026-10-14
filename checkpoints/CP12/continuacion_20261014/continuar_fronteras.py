@@ -205,7 +205,15 @@ def main():
             receipt=read(run/'procedencia.json');receipt['status']='PAUSADA_REANUDABLE' if target<160 else 'COMPLETADA'
             receipt['segments'][-1].update(status=receipt['status'],ended_at=now(),final_time=result['time'])
             prov.write(run/'procedencia.json',receipt);finish_receipt(run,prov)
-            preserve(home,target)
+            try:
+                preserve(home,target)
+            except BaseException as exc:
+                write(home/'proofs'/('preservation_%04d_negative.json'%target),dict(
+                    passed=False,time=target,reason=repr(exc),CP12_closed=False,
+                    not_a_certified_frontier=True,scope='Audit or permanent recovery failure; no scientific inference'))
+                event(home,'BOUNDARY_AUDIT_OR_RECOVERY_FAILED',time=target,reason=repr(exc))
+                preserve_additional(home,'FRONTERA_NO_CERTIFICADA_%04d'%target)
+                raise
         event(home,'EVOLUTION_160_REPRODUCTION_AUDITED_CAUSAL_INTERPRETATION_PENDING',time=160,CP12_closed=False)
         interpret_final(home)
     finally:stop.set()
