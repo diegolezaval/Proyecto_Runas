@@ -1,0 +1,18 @@
+{
+  "schema": "CP12_PUBLIC_RECOVERY_NEGATIVE_ADMINISTRATIVE_OBSERVATION",
+  "time": 80,
+  "M2_steps_executed": 0,
+  "reconstruction_initially_exact": true,
+  "scientific_checks_passed_before_final_integrity_check": true,
+  "failed_test": "audited_state_not_modified",
+  "NPZ_expected_sha256": "645a2d701fd9395b3f1d6f77b95a784fc1e99106af2ce92b475cc906c4b78d01",
+  "NPZ_expected_bytes": 29335404,
+  "observed_after_sha256": "57842e8b50feccdcb0382984fadf963f9a65c00ead960418dad564e8ee436675",
+  "observed_after_bytes": 19484150,
+  "observed_after_ZIP_directory_missing": true,
+  "cause": "NOT_IDENTIFIED",
+  "preserved": true,
+  "subsequent_fresh_destination_audits_passed": 2,
+  "scientific_sources_unchanged": true,
+  "CP12_closed": false
+}
