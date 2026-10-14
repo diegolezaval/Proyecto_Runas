@@ -996,9 +996,21 @@
     "Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Resolver primero la actividad desconocida del ejecutor original mediante evidencia fiable de ese ejecutor; el latido antiguo y la ausencia local en otro boot no certifican inactividad. No iniciar un segundo trabajador ni reactivar GitHub. Después de confirmar inactividad, diagnosticar la terminación y buscar todas las cápsulas posteriores; recuperar y verificar la más avanzada antes de continuar el mismo par hasta τ=160. Última frontera encontrada y recuperada íntegramente: τ=24. Véase informes/ACTIVIDAD_INCIERTA_CP12_20261011.md.",
+  "next_calculation": "Continuar el par CP12 original desde τ80 certificado hasta τ160 en la instancia independiente. Cada frontera de ocho unidades se crea, recupera y audita permanentemente antes de avanzar. En τ160 comparar CP10 exactamente y aplicar las tres ventanas causales y las puertas originales; sólo después investigar y validar correcciones justificadas.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [],
+  "numerical_runs_in_progress": [
+    {
+      "campaign": "CP12_PAR_ORIGINAL_CONTINUACION_AISLADA",
+      "latest_certified_time": 80,
+      "segment": [
+        80,
+        88
+      ],
+      "target": 160,
+      "physical_configuration_changed": false,
+      "CP12_closed": false
+    }
+  ],
   "research_in_progress": [],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
   "delivery_boundary": "CP11 permanece el último checkpoint científico. CP12 conserva el par original y τ=24 recuperado/verificado; τ24→32 no tiene final confirmado. Actividad externa desconocida: se bloquea otro trabajador. La identidad local del operador sobre r²Y₂m es una pista matemática, no una atribución dominante; presupuesto final y corrección pendientes.",
@@ -1014,33 +1026,35 @@
   },
   "checkpoint_kind": "CIENTIFICO",
   "automatic_continuation_paused": {
-    "reason": "ACTIVIDAD_DEL_EJECUTOR_ORIGINAL_DESCONOCIDA",
-    "evidence": "trazabilidad/CP12_ejecucion_durable/actividad_incierta_20261011.json",
-    "resume_ready": false,
-    "reconstruction_authorized": true,
+    "paused": false,
+    "reason": "CONTINUACION_INDEPENDIENTE_AUTORIZADA_CON_AISLAMIENTO_REAL",
+    "old_executor_termination_assumed": false,
+    "original_activity_unknown": true,
+    "new_isolated_worker_allowed": true,
     "last_scientific_checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
     "fundamental_model_change_authorized": false,
     "M2_exhaustion_claimed": false,
     "missing_state_is_scientific_negative": false,
+    "unknown_activity_is_scientific_negative": false,
     "verified_checkpoint_ready": true,
-    "second_worker_allowed": false,
-    "unknown_activity_is_scientific_negative": false
+    "resume_ready": true
   },
   "execution_activity": {
-    "status": "UNKNOWN_ACTIVITY",
-    "activity_known": false,
-    "active": null,
-    "observed_at": "2026-10-11T21:19:17.973540+00:00",
-    "evidence": "trazabilidad/CP12_ejecucion_durable/actividad_incierta_20261011.json",
-    "latest_verified_cp12_time": 24,
-    "second_worker_allowed": false,
-    "last_rechecked_at": "2026-10-11T21:44:49.283489+00:00"
+    "original_executor_status": "UNKNOWN_ACTIVITY",
+    "original_executor_termination_assumed": false,
+    "new_independent_worker_status": "SEGMENTO_80_A_88_INICIADO",
+    "activity_observed_for_new_worker_only": true,
+    "latest_verified_cp12_time": 80,
+    "target": 160,
+    "activity_is_restart_certificate": false,
+    "evidence": "checkpoints/CP12/continuacion_20261014/CONTINUACION_AISLADA.json"
   },
   "latest_verified_cp12_restart": {
-    "time": 24,
-    "proof": "trazabilidad/CP12_reconstruccion/respaldos/tau0024.json",
-    "zip_sha256": "77db2bc9b8c76cd7779c565ca2d6d8baf90aaee504ac52abbe27356a610e8c52",
-    "state_sha256": "508f32f167abd6211b330d707172612a47fec1f2701577b1a9939d8390fbc529",
-    "verified_recovery": "trazabilidad/CP12_ejecucion_durable/supervision_20261011_2105/recuperacion_tau0024_original.json"
+    "time": 80,
+    "state_sha256": "645a2d701fd9395b3f1d6f77b95a784fc1e99106af2ce92b475cc906c4b78d01",
+    "public_recovery_certified": true,
+    "proof": "checkpoints/CP12/continuacion_20261014/tau0080/CERTIFICACION_CLON_LIMPIO.json",
+    "numeric_json_uploaded": 145,
+    "total_numeric_json": 145
   }
 }
