@@ -1,7 +1,9 @@
-# CP12: recuperación pública τ80 certificada
+# CP12: τ88 conservado y auditado
 
-La frontera τ80 está preservada y reconstruida exactamente desde GitHub: 145/145 partes JSON, NPZ SHA-256 `645a2d701fd9395b3f1d6f77b95a784fc1e99106af2ce92b475cc906c4b78d01`, 33 pruebas del auditor original superadas con cero pasos M2. Véase `checkpoints/CP12/continuacion_20261014/tau0080/CERTIFICACION.md`. El primer incidente local negativo se conserva.
+La recuperación pública τ80 sigue completa y certificada: 145/145 JSON reconstruyen exactamente su NPZ original. Certificado en `checkpoints/CP12/continuacion_20261014/tau0080/CERTIFICACION_CLON_LIMPIO.json`.
 
-Una instancia nueva, con fuentes/entradas inmutables y destinos independientes, creó, recuperó y auditó su cápsula inicial τ80 antes de iniciar 80→88. El controlador continúa hasta τ160, conservando cada frontera de ocho unidades antes del avance siguiente. La actividad observada no certifica una frontera nueva. La durabilidad del entorno no se presume; los respaldos completos quedan guardados.
+La continuación independiente alcanzó **τ88**. Su cápsula completa fue guardada, recuperada por separado y auditada; pasan los 33 controles originales y las 221 observaciones CP10 por malla son idénticas. Estado SHA-256 `c421fa81728b7d4079807bf0a1848b062ec0a5c596316652be1fb933a994da3a`. La cápsula íntegra está conservada privadamente; el comprobante público omite los metadatos privados del ejecutor. Los JSON numéricos públicos todavía corresponden a τ80.
 
-La actividad de los ejecutores anteriores continúa desconocida y no se presupone su terminación. Main permanece en CP11, las 33 etapas y los resultados negativos quedan originales, y el PR #2 abierto y en borrador. CP12 no está cerrado. En τ160 se exigen reproducción CP10 exacta, tres ventanas causales y las puertas originales antes de estudiar correcciones justificadas.
+El trabajador comenzó 88→96 y sigue programado hasta τ160, guardando y auditando cada frontera antes de avanzar. La actividad observada no acredita una frontera nueva. Las fuentes y entradas de su instancia permanecen inmutables; no se presupone terminación de ejecutores anteriores.
+
+Main sigue en CP11, las 33 etapas y todos los negativos se conservan, y PR #2 abierto y en borrador. CP12 continúa abierto. La reproducción final CP10 exacta y las tres ventanas causales preceden cualquier validación de correcciones. M2, Θ, mallas, DOP853, tolerancias, observadores y criterio del 2 % no cambian.

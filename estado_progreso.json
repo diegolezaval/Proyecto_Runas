@@ -996,15 +996,15 @@
     "Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Continuar el par CP12 original desde τ80 certificado hasta τ160 en la instancia independiente. Cada frontera de ocho unidades se crea, recupera y audita permanentemente antes de avanzar. En τ160 comparar CP10 exactamente y aplicar las tres ventanas causales y las puertas originales; sólo después investigar y validar correcciones justificadas.",
+  "next_calculation": "Continuar el par CP12 original desde la frontera τ88 guardada, recuperada y auditada, hasta τ160; 88→96 iniciado. Conservar, recuperar y auditar cada frontera de ocho unidades antes de avanzar. En τ160 exigir comparación CP10 exacta, tres ventanas causales y puertas originales antes de investigar correcciones justificadas. La recuperación numérica pública completa disponible permanece en τ80.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [
     {
       "campaign": "CP12_PAR_ORIGINAL_CONTINUACION_AISLADA",
-      "latest_certified_time": 80,
+      "latest_certified_time": 88,
       "segment": [
-        80,
-        88
+        88,
+        96
       ],
       "target": 160,
       "physical_configuration_changed": false,
@@ -1042,19 +1042,19 @@
   "execution_activity": {
     "original_executor_status": "UNKNOWN_ACTIVITY",
     "original_executor_termination_assumed": false,
-    "new_independent_worker_status": "SEGMENTO_80_A_88_INICIADO",
+    "new_independent_worker_status": "SEGMENTO_88_A_96_INICIADO",
     "activity_observed_for_new_worker_only": true,
-    "latest_verified_cp12_time": 80,
+    "latest_verified_cp12_time": 88,
     "target": 160,
     "activity_is_restart_certificate": false,
     "evidence": "checkpoints/CP12/continuacion_20261014/CONTINUACION_AISLADA.json"
   },
   "latest_verified_cp12_restart": {
-    "time": 80,
-    "state_sha256": "645a2d701fd9395b3f1d6f77b95a784fc1e99106af2ce92b475cc906c4b78d01",
-    "public_recovery_certified": true,
-    "proof": "checkpoints/CP12/continuacion_20261014/tau0080/CERTIFICACION_CLON_LIMPIO.json",
-    "numeric_json_uploaded": 145,
-    "total_numeric_json": 145
+    "time": 88,
+    "state_sha256": "c421fa81728b7d4079807bf0a1848b062ec0a5c596316652be1fb933a994da3a",
+    "proof": "checkpoints/CP12/continuacion_20261014/tau0088/AUDITORIA_FRONTERA_GUARDADA.json",
+    "complete_private_capsule_recovered_and_audited": true,
+    "public_numeric_recovery_boundary": 80,
+    "public_NPZ_recovery_available_for_this_frontier": false
   }
 }
