@@ -1,0 +1,37 @@
+{
+  "schema": "CP12_MIXED_PHYSICAL_EXECUTABLE_PREREGISTRATION",
+  "base_commit": "5c90c43c3ef2ec6730ede8c32312001d87c6152f",
+  "preflight_A_D_complete": true,
+  "reuse_without_repeating": true,
+  "new_physical_experiment": true,
+  "initial_time": 0,
+  "pilot_target": 8,
+  "conditional_final_time": 160,
+  "grids": [
+    0.125,
+    0.0625
+  ],
+  "original_configuration_unchanged": true,
+  "physical_sources_original_unchanged": true,
+  "original_Cauchy_data_array_equal_required": true,
+  "initial_permanent_capsule_independent_recovery_audit_required": true,
+  "gates": {
+    "original_FV_energy": 0.0002,
+    "mixed_energy": 0.0002,
+    "charge": 1e-9,
+    "identity": 2e-12,
+    "symmetry": 2e-12,
+    "Parseval": 2e-11,
+    "observer_closure": 0.001,
+    "physical_spatial": 0.02,
+    "mechanism_coupled_chi_response_norm_reduction_each_window": 0.5
+  },
+  "mechanism_windows": [
+    "core_phase",
+    "short_core_k4",
+    "short_smooth_k4"
+  ],
+  "correction_validated": false,
+  "CP12_closed": false,
+  "other_candidate_automatic": false
+}

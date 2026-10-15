@@ -1,0 +1,21 @@
+{
+  "schema": "CP12_MIXED_PUBLIC_SOURCE_CAPTURE_BEFORE_M2",
+  "captured_sources": {
+    "coordinator.py": "00ba6be4b0914f1903b1fe1c812881f2a6137d04b315a2cbc61ab6b48b3fa9ae",
+    "preservation.py": "dbf96764696abb325be322b09aead72fd0115a910b1a6c71ec0067e90dcdda26",
+    "guardian.py": "2f5c13c400ad90fef534fd7139ed74ea95892ca3c61cb69b48a372b2017fd44d",
+    "configuration.json": "0719d82ab2187b6076fa2baf6d010495bdffd59622b9ca8f56345beb19e7f182",
+    "candidate/operador.py": "8c4232ddc9366b8331729a0336552bb701039ff3be802abf43c24f4de5c1dca4",
+    "candidate/backend.py": "9ee945d1eb6d33a1972df773b6b858868e5d0498fb15cd03617951389d96d759",
+    "candidate/mixed_backend.py": "4115bddbe8e7b3674b85df9f09610049a857d6f87a0cc52bb1d081cffc58558c",
+    "preregistration/PRERREGISTRO.md": "63ebc47961adc628f9ae1d38c29a16acdf0bf040d33ff33fc662e115e0c5dc9d",
+    "preregistration/REGISTRO.json": "f73cef4d57bca623192f081dcf821ac787c73dedf249eb2b6fb99945cd3c815c",
+    "preregistration/preflight_certificate.json": "8d1433998714ab7c165bd9073402a0bfd9038e79834a96ff87c918c6a968c2c0"
+  },
+  "base_commit": "5c90c43c3ef2ec6730ede8c32312001d87c6152f",
+  "mixed_backend_public_path": "checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015/fase_A/mixed_backend.py",
+  "M2_steps_executed": 0,
+  "initial_capsule_still_required": true,
+  "correction_validated": false,
+  "CP12_closed": false
+}
