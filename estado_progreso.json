@@ -998,10 +998,23 @@
       "report": "informes/CONTINUIDAD_CP12_TAU96_20261015.md",
       "new_M2_evolution_steps_in_audit": 0,
       "state_sha256": "4bdb57d4e06516367f19a1c90955835b4924bbf40ef219eebd2ecb41b64c1ece"
+    },
+    {
+      "event": "CP12_FRONTERA_TAU104_PERMANENTE_RECUPERADA_Y_AUDITADA",
+      "date": "2026-10-15",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/CONTINUIDAD_CP12_TAU104_20261015.md",
+      "evolution_interval": [
+        96,
+        104
+      ],
+      "M2_steps_executed_by_publication_and_auditor": 0
     }
   ],
   "next_actions": [
-    "Supervisar la continuación aislada autorizada desde la última cápsula íntegra: τ96, con 33 controles originales y 241 observaciones CP10 exactas por malla. Hay una instancia directamente observada en 96→104; no duplicar su evolución. Recuperar, auditar y publicar cada nueva frontera permanente antes de considerarla válida. La actividad de ejecutores anteriores sigue desconocida y no se presupone su terminación; la autorización de aislamiento vigente no depende de declararlos inactivos. Exigir reproducción final CP10 y las tres ventanas causales en τ160 antes de investigar correcciones. Véanse RECUPERACION_CP12_ACTUAL.md y checkpoints/CP12/continuacion_20261014/tau0096/AUDITORIA_FRONTERA_GUARDADA.json.",
+    "Supervisar la continuación aislada autorizada desde τ104 guardado, recuperado y auditado: 33 controles originales y 261 observaciones CP10 exactas por malla. La instancia observada inició 104→112; no duplicar su evolución. Conservar, recuperar y auditar cada nueva frontera. Exigir CP10 exacto y las tres ventanas causales en τ160 antes de validar correcciones. La actividad anterior sigue desconocida; no se presupone su terminación. Véanse RECUPERACION_CP12_ACTUAL.md y checkpoints/CP12/continuacion_20261014/tau0104/AUDITORIA_FRONTERA_GUARDADA.json.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -1015,15 +1028,15 @@
     "Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Continuar el par CP12 original desde τ96 guardado, recuperado y auditado hasta τ160; 96→104 iniciado. Conservar, recuperar y auditar cada frontera antes de avanzar. En τ160 exigir reproducción final CP10 exacta y las tres ventanas causales antes de investigar correcciones. La recuperación numérica pública completa permanece en τ80.",
+  "next_calculation": "Continuar el par CP12 original desde τ104 hasta τ160; 104→112 iniciado. Conservar, recuperar y auditar cada frontera antes de avanzar. Exigir reproducción final CP10 exacta y las tres ventanas causales antes de investigar correcciones. La recuperación numérica pública completa permanece en τ80.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [
     {
       "campaign": "CP12_PAR_ORIGINAL_CONTINUACION_AISLADA",
-      "latest_certified_time": 96,
+      "latest_certified_time": 104,
       "segment": [
-        96,
-        104
+        104,
+        112
       ],
       "target": 160,
       "physical_configuration_changed": false,
@@ -1032,7 +1045,7 @@
   ],
   "research_in_progress": [],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
-  "delivery_boundary": "CP11 permanece el último checkpoint científico. CP12 tiene τ96 guardado, recuperado y auditado; la recuperación numérica pública completa corresponde a τ80. La continuación aislada 96→104 está directamente observada, sin certificar τ104 por actividad. Las 33 etapas, negativos, fuentes científicas, M2, Θ, solver, tolerancias, observadores y puerta del 2 % permanecen intactos. La identidad local del operador sobre r²Y₂m es una pista matemática, no una atribución dominante; presupuesto final, causa suficiente y corrección siguen pendientes.",
+  "delivery_boundary": "CP11 permanece el último checkpoint científico. CP12 tiene τ104 guardado, recuperado y auditado; la recuperación numérica pública completa sigue en τ80. Se observó el inicio de 104→112. Las 33 etapas y todos los negativos se conservan. Presupuesto final, causa suficiente, convergencia y corrección validada siguen pendientes; CP12 permanece abierto.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
   "latest_completed_nonradial_time": 160,
   "diagnostic_after_gate": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
@@ -1061,22 +1074,23 @@
   "execution_activity": {
     "original_executor_status": "UNKNOWN_ACTIVITY",
     "original_executor_termination_assumed": false,
-    "new_independent_worker_status": "FRONTERA_96_GUARDADA_RECUPERADA_Y_AUDITADA_SEGMENTO_96_A_104_INICIADO",
+    "new_independent_worker_status": "FRONTERA_104_PERMANENTE_Y_AUDITADA_SEGMENTO_104_A_112_INICIADO",
     "activity_observed_for_new_worker_only": true,
-    "latest_verified_cp12_time": 96,
+    "latest_verified_cp12_time": 104,
     "target": 160,
     "activity_is_restart_certificate": false,
-    "evidence": "checkpoints/CP12/continuacion_20261014/tau0096/AUDITORIA_FRONTERA_GUARDADA.json",
+    "evidence": "checkpoints/CP12/continuacion_20261014/tau0104/AUDITORIA_FRONTERA_GUARDADA.json",
     "previous_independent_worker_status": "SESSION_UNAVAILABLE_WITHOUT_EXIT_CERTIFICATE",
     "previous_independent_worker_termination_assumed": false,
     "new_independent_initial_frontier": 88,
     "new_independent_initial_capsule_recovered_and_audited": true,
-    "last_uncertified_observation": 92.48
+    "last_uncertified_observation": 92.48,
+    "last_uncertified_observation_scope": "Registro histórico de la sesión anterior; no corresponde al trabajador actual"
   },
   "latest_verified_cp12_restart": {
-    "time": 96,
-    "state_sha256": "4bdb57d4e06516367f19a1c90955835b4924bbf40ef219eebd2ecb41b64c1ece",
-    "proof": "checkpoints/CP12/continuacion_20261014/tau0096/AUDITORIA_FRONTERA_GUARDADA.json",
+    "time": 104,
+    "state_sha256": "515e882c2a439a6418fde0847cbfcb7b6fe5a1303e2b47a40e343329bc760d4a",
+    "proof": "checkpoints/CP12/continuacion_20261014/tau0104/AUDITORIA_FRONTERA_GUARDADA.json",
     "complete_private_capsule_recovered_and_audited": true,
     "public_numeric_recovery_boundary": 80,
     "public_NPZ_recovery_available_for_this_frontier": false
