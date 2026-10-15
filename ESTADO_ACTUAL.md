@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Continuar sólo matriz canónica independiente, resolventes y propagación congelada del diseño mixto, sin pasos M2. Reutilizar fases A (32 comprobaciones) y B (52) ya positivas, sin repetirlas. Registrar fuentes antes de cada control; no autorizar piloto hasta todas las puertas, nuevo prerregistro físico y τ0 conservado/recuperado/auditado. Véase informes/CONTROLES_MIXTOS_FASE_B_CP12_20261015.md.
+- Preparar el nuevo prerregistro ejecutable y coordinador físico mixto Φ-FV/χ-K4: los controles previos A–D ya pasaron y deben reutilizarse. Capturar fuentes, configuración y procedencia propias; guardar, recuperar y auditar τ0 íntegro antes de M2. No iniciar la evolución sólo por el aprobado estático/congelado. Mantener ambas puertas energéticas, carga y 2 %, y conservar todos los negativos. Véase informes/PREFLIGHT_MIXTO_A_D_CP12_20261015.md.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/CONTROLES_MIXTOS_FASE_B_CP12_20261015.md](informes/CONTROLES_MIXTOS_FASE_B_CP12_20261015.md).
+Informe de esta entrega: [informes/PREFLIGHT_MIXTO_A_D_CP12_20261015.md](informes/PREFLIGHT_MIXTO_A_D_CP12_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

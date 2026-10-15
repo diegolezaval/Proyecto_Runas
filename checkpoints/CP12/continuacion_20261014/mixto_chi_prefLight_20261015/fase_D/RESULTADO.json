@@ -1,0 +1,187 @@
+{
+  "schema": "CP12_MIXED_FROZEN_LINEAR_PREFLIGHT_NOT_CORRECTION_VALIDATION",
+  "passed": true,
+  "rows": [
+    {
+      "dx": 0.125,
+      "background": "initial",
+      "duration": 0.1,
+      "windows": 10,
+      "frequency_bound": 116.20033890327962,
+      "reference_expm_vs_Taylor16": 1.6674707440566761e-15,
+      "reference_expm_vs_Taylor32": 1.7204517646585647e-15,
+      "reference_Taylor_split_contrast": 1.0082677192632892e-15,
+      "reference_truncation_bound": 1.437955936416486e-34,
+      "reference_certification": "Fixed three-way controlled contrast plus analytic truncation bound; not interval arithmetic",
+      "reference_passed": true,
+      "orders": [
+        {
+          "stages": 7,
+          "phase_error": 7.61264880387998e-14,
+          "quadratic_balance": 3.588355978716909e-13,
+          "maximum_iterations": 6,
+          "maximum_iteration_residual": 2.81581908645575e-13,
+          "tests": {
+            "frozen_phase_error": true,
+            "frozen_quadratic_balance": true,
+            "original_stage_iteration_residual": true,
+            "original_stage_iteration_count": true
+          },
+          "passed": true
+        },
+        {
+          "stages": 6,
+          "phase_error": 3.207779796358129e-13,
+          "quadratic_balance": 4.972526940913684e-14,
+          "maximum_iterations": 6,
+          "maximum_iteration_residual": 7.865466318668189e-14,
+          "tests": {
+            "frozen_phase_error": true,
+            "frozen_quadratic_balance": true,
+            "original_stage_iteration_residual": true,
+            "original_stage_iteration_count": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "dx": 0.125,
+      "background": "initial_final_mean",
+      "duration": 0.1,
+      "windows": 10,
+      "frequency_bound": 116.13562594569412,
+      "reference_expm_vs_Taylor16": 1.6578381021601787e-15,
+      "reference_expm_vs_Taylor32": 1.712651805573329e-15,
+      "reference_Taylor_split_contrast": 9.943850640219478e-16,
+      "reference_truncation_bound": 1.4018097453805697e-34,
+      "reference_certification": "Fixed three-way controlled contrast plus analytic truncation bound; not interval arithmetic",
+      "reference_passed": true,
+      "orders": [
+        {
+          "stages": 7,
+          "phase_error": 7.433601436672534e-14,
+          "quadratic_balance": 3.55943088816209e-13,
+          "maximum_iterations": 6,
+          "maximum_iteration_residual": 4.4158591962977747e-13,
+          "tests": {
+            "frozen_phase_error": true,
+            "frozen_quadratic_balance": true,
+            "original_stage_iteration_residual": true,
+            "original_stage_iteration_count": true
+          },
+          "passed": true
+        },
+        {
+          "stages": 6,
+          "phase_error": 3.1536963281048823e-13,
+          "quadratic_balance": 5.049485900728478e-14,
+          "maximum_iterations": 6,
+          "maximum_iteration_residual": 8.255993730859131e-14,
+          "tests": {
+            "frozen_phase_error": true,
+            "frozen_quadratic_balance": true,
+            "original_stage_iteration_residual": true,
+            "original_stage_iteration_count": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "dx": 0.0625,
+      "background": "initial",
+      "duration": 0.1,
+      "windows": 10,
+      "frequency_bound": 133.47931069825097,
+      "reference_expm_vs_Taylor16": 3.286162453182159e-15,
+      "reference_expm_vs_Taylor32": 3.412401380547696e-15,
+      "reference_Taylor_split_contrast": 1.697369514953238e-15,
+      "reference_truncation_bound": 9.922294357847943e-32,
+      "reference_certification": "Fixed three-way controlled contrast plus analytic truncation bound; not interval arithmetic",
+      "reference_passed": true,
+      "orders": [
+        {
+          "stages": 7,
+          "phase_error": 1.5748901971756275e-13,
+          "quadratic_balance": 3.890190178769796e-13,
+          "maximum_iterations": 6,
+          "maximum_iteration_residual": 3.9248452383498583e-13,
+          "tests": {
+            "frozen_phase_error": true,
+            "frozen_quadratic_balance": true,
+            "original_stage_iteration_residual": true,
+            "original_stage_iteration_count": true
+          },
+          "passed": true
+        },
+        {
+          "stages": 6,
+          "phase_error": 5.884211973082644e-12,
+          "quadratic_balance": 5.65743144217946e-14,
+          "maximum_iterations": 6,
+          "maximum_iteration_residual": 2.417334236149191e-13,
+          "tests": {
+            "frozen_phase_error": true,
+            "frozen_quadratic_balance": true,
+            "original_stage_iteration_residual": true,
+            "original_stage_iteration_count": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "dx": 0.0625,
+      "background": "initial_final_mean",
+      "duration": 0.1,
+      "windows": 10,
+      "frequency_bound": 133.15043333588923,
+      "reference_expm_vs_Taylor16": 2.7282059551227374e-15,
+      "reference_expm_vs_Taylor32": 2.8503341409617737e-15,
+      "reference_Taylor_split_contrast": 1.6669316320128426e-15,
+      "reference_truncation_bound": 8.785146576922164e-32,
+      "reference_certification": "Fixed three-way controlled contrast plus analytic truncation bound; not interval arithmetic",
+      "reference_passed": true,
+      "orders": [
+        {
+          "stages": 7,
+          "phase_error": 1.5577234833263582e-13,
+          "quadratic_balance": 3.831190865752949e-13,
+          "maximum_iterations": 6,
+          "maximum_iteration_residual": 4.3240470371798616e-13,
+          "tests": {
+            "frozen_phase_error": true,
+            "frozen_quadratic_balance": true,
+            "original_stage_iteration_residual": true,
+            "original_stage_iteration_count": true
+          },
+          "passed": true
+        },
+        {
+          "stages": 6,
+          "phase_error": 4.502817888328089e-12,
+          "quadratic_balance": 4.7512342756002304e-14,
+          "maximum_iterations": 6,
+          "maximum_iteration_residual": 1.3321692038510837e-13,
+          "tests": {
+            "frozen_phase_error": true,
+            "frozen_quadratic_balance": true,
+            "original_stage_iteration_residual": true,
+            "original_stage_iteration_count": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "M2_steps_executed": 0,
+  "physical_histories_evolved": 0,
+  "physical_evolution_authorized": false,
+  "correction_validated": false,
+  "CP12_closed": false
+}
