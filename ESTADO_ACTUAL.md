@@ -6,13 +6,13 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** DESCONOCIDOS; no iniciar otro trabajador. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
 ## Siguiente trabajo científico
 
-- Resolver primero la actividad desconocida del ejecutor original mediante evidencia fiable de ese ejecutor; el latido antiguo y la ausencia local en otro boot no certifican inactividad. No iniciar un segundo trabajador ni reactivar GitHub. Después de confirmar inactividad, diagnosticar la terminación y buscar todas las cápsulas posteriores; recuperar y verificar la más avanzada antes de continuar el mismo par hasta τ=160. Última frontera encontrada y recuperada íntegramente: τ=24. Véase informes/ACTIVIDAD_INCIERTA_CP12_20261011.md.
+- Supervisar la continuación aislada autorizada desde la última cápsula íntegra: τ88, con 33 controles originales y 221 observaciones CP10 exactas por malla. Hay una instancia directamente observada en 88→96; no duplicar su evolución. Recuperar, auditar y publicar cada nueva frontera permanente antes de considerarla válida. La actividad de ejecutores anteriores sigue desconocida y no se presupone su terminación; la autorización de aislamiento vigente no depende de declararlos inactivos. Exigir reproducción final CP10 y las tres ventanas causales en τ160 antes de investigar correcciones. Véanse RECUPERACION_CP12_ACTUAL.md y checkpoints/CP12/continuacion_20261014/INTERRUPCION_Y_REANUDACION_20261015.json.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -86,7 +86,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/ACTIVIDAD_INCIERTA_CP12_20261011.md](informes/ACTIVIDAD_INCIERTA_CP12_20261011.md).
+Informe de esta entrega: [informes/COHERENCIA_CONTINUIDAD_CP12_20261015.md](informes/COHERENCIA_CONTINUIDAD_CP12_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

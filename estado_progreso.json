@@ -979,10 +979,19 @@
       "reopened_stages": [],
       "report": "informes/ACTIVIDAD_INCIERTA_CP12_20261011.md",
       "new_M2_evolution_steps": 0
+    },
+    {
+      "event": "CP12_COHERENCIA_VISTA_CONTINUIDAD_TAU88",
+      "date": "2026-10-15T01:05:00+00:00",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/COHERENCIA_CONTINUIDAD_CP12_20261015.md",
+      "new_M2_evolution_steps": 0
     }
   ],
   "next_actions": [
-    "Resolver primero la actividad desconocida del ejecutor original mediante evidencia fiable de ese ejecutor; el latido antiguo y la ausencia local en otro boot no certifican inactividad. No iniciar un segundo trabajador ni reactivar GitHub. Después de confirmar inactividad, diagnosticar la terminación y buscar todas las cápsulas posteriores; recuperar y verificar la más avanzada antes de continuar el mismo par hasta τ=160. Última frontera encontrada y recuperada íntegramente: τ=24. Véase informes/ACTIVIDAD_INCIERTA_CP12_20261011.md.",
+    "Supervisar la continuación aislada autorizada desde la última cápsula íntegra: τ88, con 33 controles originales y 221 observaciones CP10 exactas por malla. Hay una instancia directamente observada en 88→96; no duplicar su evolución. Recuperar, auditar y publicar cada nueva frontera permanente antes de considerarla válida. La actividad de ejecutores anteriores sigue desconocida y no se presupone su terminación; la autorización de aislamiento vigente no depende de declararlos inactivos. Exigir reproducción final CP10 y las tres ventanas causales en τ160 antes de investigar correcciones. Véanse RECUPERACION_CP12_ACTUAL.md y checkpoints/CP12/continuacion_20261014/INTERRUPCION_Y_REANUDACION_20261015.json.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -1013,7 +1022,7 @@
   ],
   "research_in_progress": [],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
-  "delivery_boundary": "CP11 permanece el último checkpoint científico. CP12 conserva el par original y τ=24 recuperado/verificado; τ24→32 no tiene final confirmado. Actividad externa desconocida: se bloquea otro trabajador. La identidad local del operador sobre r²Y₂m es una pista matemática, no una atribución dominante; presupuesto final y corrección pendientes.",
+  "delivery_boundary": "CP11 permanece el último checkpoint científico. CP12 tiene τ88 guardado, recuperado y auditado; la recuperación numérica pública completa corresponde a τ80. La continuación aislada 88→96 está directamente observada, sin certificar τ96 por actividad. Las 33 etapas, negativos, fuentes científicas, M2, Θ, solver, tolerancias, observadores y puerta del 2 % permanecen intactos. La identidad local del operador sobre r²Y₂m es una pista matemática, no una atribución dominante; presupuesto final, causa suficiente y corrección siguen pendientes.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
   "latest_completed_nonradial_time": 160,
   "diagnostic_after_gate": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
