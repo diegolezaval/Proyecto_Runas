@@ -1,0 +1,28 @@
+{
+  "schema": "CP12_MIXED_PHASE_A_RESULT_PRESERVED_WITH_REGISTERED_SOURCES",
+  "passed": true,
+  "scope": "Partial static preflight only; not a frozen or physical evolution approval",
+  "registration_commit": "b3b65b072f5584b5786c3ab05ea187c8016d73e0",
+  "source_sha256": {
+    "verify_negative_inputs.py": "e983ad91e5fb38a5a4040eeddc75f18f460c8ac7b240c7a9e8076551b33c3a21",
+    "mixed_backend.py": "4115bddbe8e7b3674b85df9f09610049a857d6f87a0cc52bb1d081cffc58558c",
+    "check_mixed_static.py": "63ed34387c10584e0a37eb1a17a8d210a3b0e8946a02c9d1a345ad9e74bfd06c"
+  },
+  "result_sha256": "b6f770a410efe3e661f4255f2c871aade7fd103f3f75ea246a476c39c1f8f6f4",
+  "input_capsule_sha256": "f4176ec466647faa5a48a427403db3a865f3eef8fda21ea0f837520adfc5bf0b",
+  "payload_files_verified": 84,
+  "coverage_exact": true,
+  "original_input_files_unchanged_after_controls": true,
+  "checks_passed": 32,
+  "snapshots_checked": 4,
+  "M2_steps_executed": 0,
+  "remaining_controls": [
+    "complete_defect_and_extended_identity",
+    "mixed_sparse_matrix_and_symmetry",
+    "frozen_Gauss_7_6_reference_phase_and_balance"
+  ],
+  "all_registered_controls_passed": false,
+  "physical_evolution_authorized": false,
+  "correction_validated": false,
+  "CP12_closed": false
+}

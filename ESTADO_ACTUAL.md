@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Implementar y ejecutar únicamente los controles nuevos sin pasos M2 del diseño Φ-FV / χ-K4 ya derivado y registrado en checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015/DERIVACION_Y_PRERREGISTRO.md. Autenticar y reutilizar cápsulas, fuentes K4, CP10 y controles cerrados; capturar hashes antes del control y guardar todos los resultados negativos. El aprobado previo sólo permite preparar un prerregistro físico nuevo: no autoriza todavía un piloto. Mantener ambas puertas energéticas, carga, observadores y 2 %; no repetir K4 ni K6/K8 por inercia.
+- Continuar sólo los controles mixtos pendientes sin pasos M2: identidad completa de defecto/Jacobiano, matriz canónica dispersa y simetría, y propagación congelada Gauss 7/6. La fase A ya pasó 32 comprobaciones sobre los estados CP10 iniciales/finales de ambas mallas; reutilizarla sin repetir. Capturar el código de cada control antes de ejecutarlo y conservar cualquier negativo. No iniciar piloto mixto antes del aprobado completo, nuevo prerregistro físico y τ0 preservado/recuperado/auditado. Véase informes/CONTROLES_MIXTOS_FASE_A_CP12_20261015.md.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015/DERIVACION_Y_PRERREGISTRO.md](checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015/DERIVACION_Y_PRERREGISTRO.md).
+Informe de esta entrega: [informes/CONTROLES_MIXTOS_FASE_A_CP12_20261015.md](informes/CONTROLES_MIXTOS_FASE_A_CP12_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 
