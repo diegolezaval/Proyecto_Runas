@@ -1,0 +1,13 @@
+# CP12 · Continuación con transporte interno exacto
+
+La sesión anterior dejó de ser accesible sin recibo de salida. Su último latido fue τ≈4.12; no contenía un estado completo reiniciable y no produjo una cápsula τ8. Su terminación remota no se presume. No hay negativo científico observado por esa interrupción. La última frontera mixta científica conservada seguía siendo τ0.
+
+Se prerregistró en `e080cec73d44fe099d6de40715732ef7d11f7d9a` el transporte completo de los internos DOP853, interpolaciones densas, relojes, estados de ambas mallas y observadores. Las fuentes científicas originales y los archivos capturados del piloto permanecen intactos. La restauración no evalúa RHS, no resemilla campos, no añade una frontera adaptativa ni cambia el paso del observador. Dos controles con ODE genéricas recuperan 17 pasos y sus interpolaciones bit a bit, con nfev igual. No son pasos M2 ni repetición de A–D.
+
+La nueva cápsula inicial completa tiene 11 007 644 bytes y SHA256 `654e8ff022d0dd528aa4b57dfe057093234e71ea597e4ea335f357c9909d19e6`. El valor SHA externo autoritativo es el del certificado adjunto; se conserva el NPZ exacto `753c8400b3fad8a34b8286cfb6ac6ea8a10def61c8abd42ea4336efe5026874b`. Fue guardada, recuperada íntegramente y auditada con las 28 comprobaciones originales sin pasos M2. Certificado: `checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/CERTIFICADO_TAU0.json`.
+
+Después comenzó el piloto con el guardián de este intento. Se registró un contraste adicional obligatorio en la primera observación τ=.4: rehidratar el transporte en otro proceso y comparar un intervalo original .01 con el flujo sin restaurar. Debe coincidir bit a bit; el trabajo diagnóstico se contabiliza aparte. Hasta que pase, el nuevo transporte no se considera verificado en M2.
+
+Se guardan estados internos locales cada .4 y cápsulas completas recuperadas/auditadas en el primero y cada 1.6. Estos transportes son reiniciables, sin aceptación científica CP12. Las fronteras científicas siguen cada ocho unidades, con sus auditorías originales. Todas las puertas energéticas, de carga, observadores, identidad y convergencia permanecen intactas. Si hay una parada se conserva y se distingue su causa administrativa o científica; no hay reintento ciego.
+
+La recuperación ejecutable se documenta en `checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/RECUPERAR.md`: elegir la cápsula válida más avanzada, verificar cada byte y rehidratar antes de continuar. El recibo científico no se reescribe para simular otro ejecutor; la sesión recuperada se identifica por separado. CP11 sigue aceptado, CP12 abierto, y las 33 etapas conservan sus puertas. Main y PR #2 permanecen intactos.
