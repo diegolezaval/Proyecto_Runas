@@ -1,0 +1,18 @@
+{
+  "schema": "CP12_MIXED_ISOLATED_CHECKPOINT_RECOVERY_REGISTRATION",
+  "base_commit": "1d56b266e32b3df3a4db21bf21f182adaa528746",
+  "original_experiment_unchanged": true,
+  "original_worker_status": "UNKNOWN_ACTIVITY",
+  "original_worker_termination_assumed": false,
+  "new_attempt_isolated": true,
+  "resume_time": 0,
+  "source_state_sha256": "753c8400b3fad8a34b8286cfb6ac6ea8a10def61c8abd42ea4336efe5026874b",
+  "source_files_sha256": {
+    "PRERREGISTRO.md": "6fe6e666b3dd37bfdbe39694e4f43abd2335bb04667a8217eb347df06e9ad3a6",
+    "preparar_recuperacion.py": "74dfbd61481daf4a615910acd4879232bcd95d593261de2b6738ce14ca9aa9dc"
+  },
+  "physical_sources_changed": false,
+  "preflight_repeated": false,
+  "gates_changed": false,
+  "CP12_closed": false
+}
