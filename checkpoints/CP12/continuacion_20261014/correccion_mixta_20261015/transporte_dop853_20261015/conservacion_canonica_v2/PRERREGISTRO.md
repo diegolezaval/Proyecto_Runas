@@ -1,0 +1,13 @@
+# Enmienda administrativa de conservación canónica
+
+El piloto se detuvo en el reloj τ=1.6 por la preparación fallida de una subida. No falló una puerta científica: energía FV ≤2.877e-9, mixta ≤4.627e-11, carga ≤6.662e-16, cierres ≤6.4e-7 y Parseval ≤1.512e-14. El estado interno completo y su recibo previo a la parada quedaron escritos. La salida propia observada es 1. No se reintenta física antes de conservar y recuperar ese estado.
+
+La inspección del archivo fallido encontró 608 504 980 bytes, de los que aproximadamente 404 MB correspondían a copias transitorias incompletas de sincronización. No forman parte de los campos, internos, entradas, fuentes ni observadores. El archivo del negativo administrativo también se conserva localmente y su evidencia canónica completa se guarda por separado. Se registran hashes y tamaños de los originales y de los archivos excluidos.
+
+La selección canónica excluye esos archivos de transferencia durante las operaciones de conservación. `seleccion_canonica.py` aplica el filtro sólo mientras el conservador enumera archivos y siempre restaura el enumerador, incluso con excepciones. No elimina el archivo original del incidente ni modifica un archivo científico, el integrador, sus contadores, las puertas, la interpolación o las respuestas pasivas.
+
+Esta versión reutiliza el serializador sin cambiar un byte. `interval`, `control_next_interval`, `audit_transport` y `advance_segment` conservan AST idéntico. Sólo las llamadas de conservación se rodean del selector administrativo. Los catorce fuentes científicos y los diez archivos capturados del piloto se mantienen intactos. Se reutilizan los controles sintéticos y el contraste M2 .4→.41 positivos; no se repiten A–D ni una campaña certificada.
+
+Antes de reanudar: conservar los paquetes canónicos del transporte 1.6 y del incidente, recuperarlos y verificar cada miembro; rehidratar 1.6 con el controlador capturado; añadir la actualización administrativa en otra raíz con su registro nuevo; volver a exigir identidad del estado/recibo y auditoría sin pasos M2. La nueva sesión se identifica aparte y continúa el paso DOP853 existente, sin regresar a τ0 o .4. No se relaja ningún umbral.
+
+Las fronteras científicas permanecen cada ocho unidades y las pruebas de convergencia/estabilidad/robustez y eliminación del mecanismo siguen pendientes. La enmienda resuelve conservación de archivos, sin validar una corrección física ni cerrar CP12. CP11, main, PR #2 y las 33 etapas siguen intactos.

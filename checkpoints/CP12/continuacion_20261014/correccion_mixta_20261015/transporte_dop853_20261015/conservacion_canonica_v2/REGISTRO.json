@@ -1,0 +1,21 @@
+{
+  "schema": "CP12_CANONICAL_PRESERVATION_ADMINISTRATIVE_AMENDMENT",
+  "base_registration_commit": "e080cec73d44fe099d6de40715732ef7d11f7d9a",
+  "files": {
+    "transporte.py": "7c887990b991f33ccb86737b821daff0ab5e68e54cbd96c4b8475a62bee731dd",
+    "controlador_transporte.py": "aacdeb10236748e52c2808599ea44f0f690ba1f6c69da6cdd0f6fcf022b8faee",
+    "guardian_transporte.py": "13067b0b978384347a55749686682afbd0bcc1f133b4ac321e974c1356a6deda",
+    "probar_transporte.py": "e831290147a0c98efb5dbdde8cb7664c137780a8ae16692327b62833e6599eb4",
+    "CONTROLES_SINTETICOS.json": "5632bced882f12548c46b688990d36e58c108f6e2d0ec09b0bc8e50c7f41ec2c",
+    "seleccion_canonica.py": "c7172d2fb3053779031371dd1c2dff4eb20851272d8851979db91b796f4ef69a",
+    "PRERREGISTRO.md": "7f02f76b9cda05bfeda49bf94d247931c5f001b668cee62126642ea1c25869e8",
+    "IDENTIDAD_KERNELS.json": "3c2afbf34b1c655a79fbc8daf97353f3bd4ad6a28fafcdc352f6f1d9114f7760",
+    "CONTROL_SELECCION.json": "a51383b18455f8dda3c92fe7a4dc53ea37832aba21c37d75cc2ca13dcb2929cf"
+  },
+  "synthetic_controls_passed": true,
+  "physical_sources_changed": false,
+  "scientific_gates_changed": false,
+  "resume_observer_clock": 1.6,
+  "no_solver_restart": true,
+  "CP12_closed": false
+}
