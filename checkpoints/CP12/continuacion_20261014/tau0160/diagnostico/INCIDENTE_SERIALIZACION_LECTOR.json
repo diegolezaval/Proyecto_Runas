@@ -1,0 +1,20 @@
+{
+  "schema": "CP12_OFFLINE_READER_SERIALIZATION_NEGATIVE_PRESERVED",
+  "time": 160,
+  "status": "ORIGINAL_READER_FAILED_AT_JSON_OUTPUT",
+  "error": "TypeError: Object of type bool is not JSON serializable",
+  "scientific_evolution_complete_and_audited_before_failure": true,
+  "original_worker_exit_code_observed": 1,
+  "scope": "Serialización administrativa de salida; la frontera científica τ160 conserva sus 44 comprobaciones positivas.",
+  "failure_capsule_saved_recovered_all_hashes_verified": true,
+  "failure_capsule_sha256": "0c1baa140c8afc6cd00581f28d6ee55da53d9e3500c16ae00798d4e0079dbcf3",
+  "failure_capsule_bytes": 15300,
+  "remedy": "El lector original se repitió sin pasos M2 sobre una extracción independiente; sólo seis booleanos NumPy false se representaron como booleanos Python false al escribir JSON.",
+  "native_algorithm_changed": false,
+  "numeric_values_changed": false,
+  "criteria_changed": false,
+  "scientific_inputs_unchanged": true,
+  "offline_replay_completed": true,
+  "original_failure_retained": true,
+  "CP12_closed": false
+}

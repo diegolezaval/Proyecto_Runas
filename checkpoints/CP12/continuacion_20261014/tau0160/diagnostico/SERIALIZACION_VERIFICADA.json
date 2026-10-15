@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "only_type_conversions": [
+    {
+      "path": "$/sufficiency/raw/operador_chi/tests_by_window/core_phase",
+      "value": false,
+      "from": "numpy.bool_",
+      "to": "builtins.bool"
+    },
+    {
+      "path": "$/sufficiency/raw/operador_chi/tests_by_window/short_core_k4",
+      "value": false,
+      "from": "numpy.bool_",
+      "to": "builtins.bool"
+    },
+    {
+      "path": "$/sufficiency/raw/operador_chi/tests_by_window/short_smooth_k4",
+      "value": false,
+      "from": "numpy.bool_",
+      "to": "builtins.bool"
+    },
+    {
+      "path": "$/sufficiency/raw/operador/tests_by_window/core_phase",
+      "value": false,
+      "from": "numpy.bool_",
+      "to": "builtins.bool"
+    },
+    {
+      "path": "$/sufficiency/raw/operador/tests_by_window/short_core_k4",
+      "value": false,
+      "from": "numpy.bool_",
+      "to": "builtins.bool"
+    },
+    {
+      "path": "$/sufficiency/raw/operador/tests_by_window/short_smooth_k4",
+      "value": false,
+      "from": "numpy.bool_",
+      "to": "builtins.bool"
+    }
+  ],
+  "scientific_input_hashes_unchanged": true,
+  "original_fourteen_source_hashes_unchanged": true,
+  "native_algorithm_and_criteria_unchanged": true,
+  "M2_steps": 0,
+  "CP12_closed": false
+}

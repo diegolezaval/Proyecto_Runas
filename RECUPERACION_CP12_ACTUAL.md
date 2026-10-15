@@ -1,9 +1,11 @@
-# CP12: τ152 conservado y auditado
+# CP12: τ160 conservado; causa condicionada identificada
 
-La recuperación pública **τ80** sigue completa y certificada: 145/145 JSON reconstruyen exactamente el NPZ original. Certificado: `checkpoints/CP12/continuacion_20261014/tau0080/CERTIFICACION_CLON_LIMPIO.json`.
+La recuperación pública **τ80** está completa y certificada: 145/145 JSON reconstruyen exactamente el NPZ original. Certificado: `checkpoints/CP12/continuacion_20261014/tau0080/CERTIFICACION_CLON_LIMPIO.json`.
 
-La continuación original alcanzó **τ152**. Su cápsula completa fue guardada, recuperada independientemente y auditada: todos los hashes y los 33 controles científicos pasan; las 381 observaciones por malla coinciden exactamente con CP10. Estado SHA-256 `25261ca5cf78601af4d247846e2c73dc07bd7d27219147374a31963d8fd6cc3e`. Comprobante: `checkpoints/CP12/continuacion_20261014/tau0152/AUDITORIA_FRONTERA_GUARDADA.json`. Las cápsulas completas permanecen privadas; la recuperación numérica pública completa sigue en τ80.
+La continuación original alcanzó **τ160** y supera las **44 comprobaciones finales**, incluida la igualdad exacta con CP10 en los estados, las 401 observaciones por malla y todos los contadores. NPZ SHA-256 `22078538ebba2e948b433b0ab946ee034be132b27f7e72ca1ee30540323b2413`. Las cápsulas completas de cada frontera de ocho unidades están conservadas; la recuperación numérica pública completa sigue en τ80.
 
-El trabajador inició **152→160** y continúa hasta τ160, conservando y auditando cada frontera antes de avanzar. La actividad observada no certifica una nueva frontera. Los registros de interrupciones y todos los negativos se conservan; no se presupone la terminación de ejecutores anteriores.
+Las tres ventanas causales originales dan suficiencia al **operador χ acoplado** y a **operador_total**. La discrepancia espacial final de χ es **5,126390964 %**, superior al **2 %**: CP12 sigue abierto. Los resultados completos incluyen cancelaciones, términos cruzados y los canales negativos. El fallo inicial del lector al escribir booleanos NumPy quedó conservado; una adaptación exclusiva de serialización completó la lectura con cero pasos M2 y hashes científicos idénticos.
 
-Main sigue en CP11, las 33 etapas permanecen intactas y PR #2 sigue abierto y en borrador. CP12 continúa abierto. La reproducción final CP10 exacta y las tres ventanas causales preceden cualquier validación de correcciones. M2, Θ, ambas mallas, DOP853, tolerancias, observadores y criterio del 2 % permanecen originales.
+La siguiente tarea es revisar el prerregistro de corrección ya conservado y ejecutar únicamente pruebas justificadas de una evolución corregida autoconsistente. No se repite la evolución original ni los controles certificados. Informe: `informes/RESULTADO_CP12_TAU160_20261015.md`.
+
+Main permanece en CP11, las 33 etapas siguen intactas y PR #2 permanece abierto y en borrador. El trabajador propio terminó tras la evolución; los ejecutores anteriores conservan estado de actividad desconocida. M2, Θ, mallas, DOP853, tolerancias, observadores, spline y criterio del 2 % permanecen originales.

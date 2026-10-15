@@ -6,13 +6,13 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
 ## Siguiente trabajo científico
 
-- Supervisar la continuación aislada desde τ152 guardado, recuperado y auditado: 33 controles y 381 observaciones CP10 exactas por malla. Se observó el inicio de 152→160; no duplicar su evolución. Conservar, recuperar y auditar cada frontera. Exigir reproducción final CP10 exacta y las tres ventanas causales en τ160 antes de validar correcciones. No se presupone la terminación de ejecutores anteriores. Véanse RECUPERACION_CP12_ACTUAL.md y checkpoints/CP12/continuacion_20261014/tau0152/AUDITORIA_FRONTERA_GUARDADA.json.
+- Revisar la derivación y el prerregistro condicional de corrección ya conservados. τ160 está guardado, recuperado y auditado: 44 comprobaciones y CP10 exacto. El operador χ acoplado cumple las tres ventanas originales; la discrepancia espacial es 5.12639096419456 %, superior al 2 %. Prerregistrar y ejecutar sólo pruebas justificadas de una evolución corregida autoconsistente, con conservación, estabilidad, convergencia y robustez; reutilizar los controles cerrados y conservar todo negativo. No repetir la evolución original 0→160 ni la publicación τ80. Véanse RECUPERACION_CP12_ACTUAL.md y informes/RESULTADO_CP12_TAU160_20261015.md.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -20,7 +20,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 - Estado CP04 terminado de origen para nuevas perturbaciones: [validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz](validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz).
 - Último estado no radial terminado; no repetir ni prolongar sin protocolo nuevo: [validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz](validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz).
-- Diagnóstico guardado después de la puerta: [validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json](validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json).
+- Diagnóstico guardado después de la puerta: [τ160 y CP10 exacto comprobados; lector original con serialización NumPy booleana administrativa verificada. Las tres ventanas dan suficiencia al operador χ acoplado y a operador_total. El operador libre no cumple las puertas; se conservan términos cruzados y cancelaciones. No se atribuye una fracción pura al bucle χ→Φ→χ.](τ160 y CP10 exacto comprobados; lector original con serialización NumPy booleana administrativa verificada. Las tres ventanas dan suficiencia al operador χ acoplado y a operador_total. El operador libre no cumple las puertas; se conservan términos cruzados y cancelaciones. No se atribuye una fracción pura al bucle χ→Φ→χ.).
 - Tiempo no radial final registrado: 160.
 
 ## Qué no repetir
@@ -32,6 +32,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 - Cuatro evoluciones DOP853 h=.5 (dos tolerancias), h=.25 y h=.125 finalizadas a tau=160; dispersión lineal y su verificación cerradas.
 - Dos evoluciones CP10 temporal_h0125 y espacial_h00625 terminadas hasta tau=160, con recibos y comparación final. Reutilizar sus estados; no volver a evolucionarlas sin una pregunta y protocolo nuevos.
 - Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo.
+- CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo.
 
 ## Resultados vigentes y límites
 
@@ -86,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/CONTINUIDAD_CP12_TAU152_20261015.md](informes/CONTINUIDAD_CP12_TAU152_20261015.md).
+Informe de esta entrega: [informes/RESULTADO_CP12_TAU160_20261015.md](informes/RESULTADO_CP12_TAU160_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

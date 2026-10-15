@@ -1,0 +1,33 @@
+{
+  "schema": "CP12_ORIGINAL_CAUSAL_BUDGET_AND_PHYSICAL_GATE_REVIEW",
+  "time": 160,
+  "exact_CP10_reproduction": true,
+  "three_original_windows_evaluated": true,
+  "original_criteria_unchanged": true,
+  "physical_gate_threshold": 0.02,
+  "observed_core_phase_relative_error": 0.0512639096419456,
+  "physical_2_percent_phase_gate_passed": false,
+  "sufficient_coupled_channels": [
+    "operador_chi",
+    "operador_total"
+  ],
+  "interpretation_scope": "Dos historias CP10, spline fijo y descomposición prerregistrada; atribución condicionada.",
+  "full_box_chi_closure": {
+    "raw": 0.000005641671118181181,
+    "coupled": 0.000005437128410420561
+  },
+  "only_numpy_boolean_serialization_adapted": true,
+  "boolean_conversions": 6,
+  "original_reader_source_unchanged": true,
+  "scientific_input_hashes_unchanged": true,
+  "original_audit_before_and_after_passed": true,
+  "diagnostic_capsule_recovered_and_all_hashes_verified": true,
+  "diagnostic_capsule_sha256": "6126859fbcf158f27d7c430d126f6d676bf288cfb067d4d27fbf7f8dbb533c14",
+  "diagnostic_capsule_bytes": 31555,
+  "diagnostic_capsule_payload_files": 11,
+  "source_serialization_failure_preserved_recovered_and_verified": true,
+  "correction_tested": false,
+  "subsequent_corrections_require_independent_derivation_preregistration_and_validation": true,
+  "M2_steps": 0,
+  "CP12_closed": false
+}

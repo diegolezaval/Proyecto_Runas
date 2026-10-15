@@ -1099,10 +1099,36 @@
         152
       ],
       "M2_steps_executed_by_publication_and_auditor": 0
+    },
+    {
+      "event": "CP12_TAU160_PERMANENTE_RECUPERADO_AUDITADO_CP10_EXACTO",
+      "date": "2026-10-15",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/RESULTADO_CP12_TAU160_20261015.md",
+      "evolution_interval": [
+        152,
+        160
+      ],
+      "M2_steps_executed_by_publication_and_auditor": 0
+    },
+    {
+      "event": "CP12_TRES_VENTANAS_CAUSALES_Y_PUERTA_ESPACIAL_NEGATIVA",
+      "date": "2026-10-15",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/RESULTADO_CP12_TAU160_20261015.md",
+      "original_reader_source_unchanged": true,
+      "only_boolean_serialization_adapted": true,
+      "original_serialization_failure_preserved": true,
+      "correction_tested": false,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Supervisar la continuación aislada desde τ152 guardado, recuperado y auditado: 33 controles y 381 observaciones CP10 exactas por malla. Se observó el inicio de 152→160; no duplicar su evolución. Conservar, recuperar y auditar cada frontera. Exigir reproducción final CP10 exacta y las tres ventanas causales en τ160 antes de validar correcciones. No se presupone la terminación de ejecutores anteriores. Véanse RECUPERACION_CP12_ACTUAL.md y checkpoints/CP12/continuacion_20261014/tau0152/AUDITORIA_FRONTERA_GUARDADA.json.",
+    "Revisar la derivación y el prerregistro condicional de corrección ya conservados. τ160 está guardado, recuperado y auditado: 44 comprobaciones y CP10 exacto. El operador χ acoplado cumple las tres ventanas originales; la discrepancia espacial es 5.12639096419456 %, superior al 2 %. Prerregistrar y ejecutar sólo pruebas justificadas de una evolución corregida autoconsistente, con conservación, estabilidad, convergencia y robustez; reutilizar los controles cerrados y conservar todo negativo. No repetir la evolución original 0→160 ni la publicación τ80. Véanse RECUPERACION_CP12_ACTUAL.md y informes/RESULTADO_CP12_TAU160_20261015.md.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -1113,30 +1139,29 @@
     "Campañas cerradas CP03/CP04 y ocho continuaciones VV de CP06.",
     "Cuatro evoluciones DOP853 h=.5 (dos tolerancias), h=.25 y h=.125 finalizadas a tau=160; dispersión lineal y su verificación cerradas.",
     "Dos evoluciones CP10 temporal_h0125 y espacial_h00625 terminadas hasta tau=160, con recibos y comparación final. Reutilizar sus estados; no volver a evolucionarlas sin una pregunta y protocolo nuevos.",
-    "Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo."
+    "Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo.",
+    "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Continuar el par CP12 original desde τ152 hasta τ160; 152→160 iniciado. Cada frontera exige conservación, recuperación y auditoría. En τ160 exigir CP10 exacto y las tres ventanas causales antes de investigar correcciones. Recuperación numérica pública completa: τ80.",
+  "next_calculation": "Revisar el prerregistro de corrección existente después de τ160 y las tres ventanas causales. El presupuesto matemático cierra y el operador χ acoplado es suficiente bajo el protocolo; falta demostrar que una corrección justificada funciona. Discrepancia original 5.12639096419456 %, puerta 2 %. CP12 permanece abierto.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [
+  "numerical_runs_in_progress": [],
+  "research_in_progress": [
     {
-      "campaign": "CP12_PAR_ORIGINAL_CONTINUACION_AISLADA",
-      "latest_certified_time": 152,
-      "segment": [
-        152,
-        160
-      ],
-      "target": 160,
-      "physical_configuration_changed": false,
-      "CP12_closed": false
+      "campaign": "CP12_DIAGNOSTICO_Y_CORRECCION_JUSTIFICADA",
+      "status": "REVISION_DEL_PRERREGISTRO_EXISTENTE_TRAS_PUERTAS_TAU160",
+      "scientific_scope": "El operador χ acoplado cumple las tres ventanas; la puerta espacial del 2 % falla. Falta ensayar y validar una evolución corregida autoconsistente.",
+      "physics_and_original_protocol_unchanged": true,
+      "correction_tested": false,
+      "CP12_closed": false,
+      "evidence": "checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json"
     }
   ],
-  "research_in_progress": [],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
-  "delivery_boundary": "CP11 permanece el último checkpoint científico. CP12 tiene τ152 guardado, recuperado y auditado; la recuperación numérica pública completa sigue en τ80. Se observó el inicio de 152→160. Las 33 etapas y todos los negativos se conservan. Presupuesto final, causa suficiente, convergencia y corrección validada siguen pendientes; CP12 permanece abierto.",
+  "delivery_boundary": "CP11 sigue siendo el último checkpoint científico aceptado. CP12 original llegó a τ160 con CP10 exacto y 44 comprobaciones positivas; sus tres ventanas causales están evaluadas y conservadas. La puerta espacial del 2 % falla con 5.12639096419456 %. Hay atribución condicionada al canal acoplado del operador χ, sin corrección autoconsistente ensayada. Recuperación numérica pública completa: τ80; cápsulas completas posteriores conservadas privadamente. Las 33 etapas y todos los negativos permanecen intactos.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
   "latest_completed_nonradial_time": 160,
-  "diagnostic_after_gate": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+  "diagnostic_after_gate": "τ160 y CP10 exacto comprobados; lector original con serialización NumPy booleana administrativa verificada. Las tres ventanas dan suficiencia al operador χ acoplado y a operador_total. El operador libre no cumple las puertas; se conservan términos cruzados y cancelaciones. No se atribuye una fracción pura al bucle χ→Φ→χ.",
   "scientific_checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
   "architecture_audit": {
     "report": "informes/AUDITORIA_ARQUITECTURA_CP09.md",
@@ -1145,42 +1170,48 @@
     "generated_index": "trazabilidad/arquitectura/indice_trazabilidad.json"
   },
   "checkpoint_kind": "CIENTIFICO",
-  "automatic_continuation_paused": {
-    "paused": false,
-    "reason": "CONTINUACION_INDEPENDIENTE_AUTORIZADA_CON_AISLAMIENTO_REAL",
-    "old_executor_termination_assumed": false,
-    "original_activity_unknown": true,
-    "new_isolated_worker_allowed": true,
-    "last_scientific_checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
-    "fundamental_model_change_authorized": false,
-    "M2_exhaustion_claimed": false,
-    "missing_state_is_scientific_negative": false,
-    "unknown_activity_is_scientific_negative": false,
-    "verified_checkpoint_ready": true,
-    "resume_ready": true
-  },
+  "automatic_continuation_paused": false,
   "execution_activity": {
     "original_executor_status": "UNKNOWN_ACTIVITY",
     "original_executor_termination_assumed": false,
-    "new_independent_worker_status": "FRONTERA_152_PERMANENTE_Y_AUDITADA_SEGMENTO_152_A_160_INICIADO",
+    "new_independent_worker_status": "EVOLUCION_TAU160_COMPLETADA_Y_AUDITADA_LECTURA_CAUSAL_OFFLINE_CONSERVADA",
     "activity_observed_for_new_worker_only": true,
-    "latest_verified_cp12_time": 152,
+    "latest_verified_cp12_time": 160,
     "target": 160,
     "activity_is_restart_certificate": false,
-    "evidence": "checkpoints/CP12/continuacion_20261014/tau0152/AUDITORIA_FRONTERA_GUARDADA.json",
+    "evidence": "checkpoints/CP12/continuacion_20261014/tau0160/AUDITORIA_FRONTERA_GUARDADA.json",
     "previous_independent_worker_status": "NOT_DIRECTLY_ACCESSIBLE_AFTER_WORKSPACE_MAINTENANCE",
     "previous_independent_worker_termination_assumed": false,
     "new_independent_initial_frontier": 136,
     "new_independent_initial_capsule_recovered_and_audited": true,
     "last_uncertified_observation": 136.74,
-    "last_uncertified_observation_scope": "Registro histórico de la sesión anterior; no corresponde al trabajador actual"
+    "last_uncertified_observation_scope": "Registro histórico de la sesión anterior; no corresponde al trabajador actual",
+    "original_worker_exit_code_observed": 1,
+    "original_worker_exit_scope": "Fallo de serialización del lector posterior al guardado y auditoría de τ160",
+    "offline_diagnostic_replay_completed": true,
+    "target_reached_and_certified": true
   },
   "latest_verified_cp12_restart": {
-    "time": 152,
-    "state_sha256": "25261ca5cf78601af4d247846e2c73dc07bd7d27219147374a31963d8fd6cc3e",
-    "proof": "checkpoints/CP12/continuacion_20261014/tau0152/AUDITORIA_FRONTERA_GUARDADA.json",
+    "time": 160,
+    "state_sha256": "22078538ebba2e948b433b0ab946ee034be132b27f7e72ca1ee30540323b2413",
+    "proof": "checkpoints/CP12/continuacion_20261014/tau0160/AUDITORIA_FRONTERA_GUARDADA.json",
     "complete_private_capsule_recovered_and_audited": true,
     "public_numeric_recovery_boundary": 80,
     "public_NPZ_recovery_available_for_this_frontier": false
+  },
+  "latest_verified_cp12_diagnostic": {
+    "time": 160,
+    "proof": "checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json",
+    "results": "checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/RESULTADOS_LECTOR_ORIGINAL.json",
+    "three_original_windows_evaluated": true,
+    "sufficient_coupled_channels": [
+      "operador_chi",
+      "operador_total"
+    ],
+    "observed_core_phase_relative_error": 0.0512639096419456,
+    "physical_2_percent_phase_gate_passed": false,
+    "correction_tested": false,
+    "complete_private_evidence_saved_recovered_and_verified": true,
+    "CP12_closed": false
   }
 }
