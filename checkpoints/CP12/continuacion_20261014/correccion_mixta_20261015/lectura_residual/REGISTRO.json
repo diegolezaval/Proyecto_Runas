@@ -1,0 +1,35 @@
+{
+  "schema": "CP12_MIXED_RESIDUAL_READING_REGISTRATION_BEFORE_EXECUTION",
+  "source_sha256": "b29659e0fd03731ec2aa11f2175a604f9ce64eed9562dee8de01249cea9fb314",
+  "document_sha256": "e281f8d177aae1988727fe44c781c37e0ac91e2ff12fbe3b9456a3247b3d4c7b",
+  "original_physical_registration_commit": "5fa178a8b85f4c860c1308051791c1742e6e8843",
+  "original_reader_sha256": "c0e09c0383f3b5c3764bba37de2dd30a3311945e62f32f09534d49e241385244",
+  "original_result_sha256": "644a82f7fce38fbdb76e5d807a45e7ed9644e54fb58d709496b0e6ce257cf6b1",
+  "original_functions_reused": [
+    "metrics",
+    "sufficient",
+    "onset",
+    "GROUPS"
+  ],
+  "original_exact_CP10_entrypoint_called": false,
+  "original_full_history_gate_not_spoofed": true,
+  "required_time": 160,
+  "required_inputs": "Full independently recovered mixed state and final physical-review result, authenticated separately",
+  "mechanism_gate": {
+    "channel": "coupled:operador_chi",
+    "windows": [
+      "core_phase",
+      "short_core_k4",
+      "short_smooth_k4"
+    ],
+    "maximum_mixed_over_original_norm": 0.5,
+    "same_original_initial_normalization": true
+  },
+  "physical_gates_unchanged": true,
+  "A_to_D_reexecution": false,
+  "syntax_checked": true,
+  "numerical_reading_executed": false,
+  "M2_steps_executed": 0,
+  "correction_validated": false,
+  "CP12_closed": false
+}
