@@ -1205,10 +1205,21 @@
       "physical_histories_evolved": 0,
       "physical_preregistration_pending": true,
       "correction_validated": false
+    },
+    {
+      "event": "CP12_PILOTO_MIXTO_PRERREGISTRADO_TAU0_RECUPERADO_INICIADO",
+      "date": "2026-10-15",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/PILOTO_MIXTO_TAU0_CP12_20261015.md",
+      "preregistration_commit": "5fa178a8b85f4c860c1308051791c1742e6e8843",
+      "initial_zero_step_checks": 28,
+      "correction_validated": false
     }
   ],
   "next_actions": [
-    "Preparar el nuevo prerregistro ejecutable y coordinador físico mixto Φ-FV/χ-K4: los controles previos A–D ya pasaron y deben reutilizarse. Capturar fuentes, configuración y procedencia propias; guardar, recuperar y auditar τ0 íntegro antes de M2. No iniciar la evolución sólo por el aprobado estático/congelado. Mantener ambas puertas energéticas, carga y 2 %, y conservar todos los negativos. Véase informes/PREFLIGHT_MIXTO_A_D_CP12_20261015.md.",
+    "Supervisar el piloto mixto Φ-FV/χ-K4 0→8 ya prerregistrado e iniciado desde τ0 guardado/recuperado/auditado. No duplicarlo ni modificar sus fuentes. Sólo continuar con cada frontera íntegra recuperada/auditada; detener y conservar cualquier fallo, manteniendo ambas energías, carga y 2 %. La reducción del mecanismo en tres ventanas y la validación espacial/estabilidad/robustez siguen pendientes.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -1223,16 +1234,27 @@
     "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Preparación y prerregistro de un piloto físico mixto nuevo, con τ0 preservado/recuperado/auditado antes de M2. Preflight A–D positivo; ninguna evolución mixta ni corrección física validada.",
+  "next_calculation": "Supervisar el piloto mixto Φ-FV/χ-K4 0→8 ya prerregistrado e iniciado desde τ0 guardado/recuperado/auditado. No duplicarlo ni modificar sus fuentes. Sólo continuar con cada frontera íntegra recuperada/auditada; detener y conservar cualquier fallo, manteniendo ambas energías, carga y 2 %. La reducción del mecanismo en tres ventanas y la validación espacial/estabilidad/robustez siguen pendientes.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [],
+  "numerical_runs_in_progress": [
+    {
+      "campaign": "CP12_PILOTO_MIXTO_PHI_FV_CHI_K4",
+      "status": "INICIADO_DESDE_TAU0_AUDITADO",
+      "latest_certified_time": 0,
+      "first_target": 8,
+      "conditional_target": 160,
+      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/tau0000/CERTIFICADO.json",
+      "original_CP10_trajectories_repeated": false,
+      "correction_validated": false,
+      "CP12_closed": false
+    }
+  ],
   "research_in_progress": [
     {
       "campaign": "CP12_DERIVACION_VARIACIONAL_MIXTA",
-      "status": "PREFLIGHT_A_D_POSITIVO_PRERREGISTRO_FISICO_Y_TAU0_PENDIENTES",
-      "scope": "Diseño prospectivo: conservar FV en ambos Φ y usar K4 en χ, con M2 plenamente acoplado. Requiere registro y controles de la implementación nueva antes de M2.",
-      "evidence": "checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015/CERTIFICADO_PREFLIGHT_A_D.json",
-      "new_M2_steps": 0,
+      "status": "PREFLIGHT_A_D_POSITIVO_PILOTO_FISICO_PRERREGISTRADO_E_INICIADO",
+      "scope": "Diseño mixto nuevo con datos iniciales exactos. τ0 íntegro guardado, recuperado y auditado; el piloto aún no certifica τ8 ni aceptación.",
+      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/tau0000/CERTIFICADO.json",
       "correction_validated": false,
       "CP12_closed": false
     }
@@ -1271,7 +1293,9 @@
     "offline_diagnostic_replay_completed": true,
     "target_reached_and_certified": true,
     "candidate_K4_status": "DETENIDO_POR_PUERTA_CIENTIFICA_NEGATIVO_GUARDADO_RECUPERADO",
-    "candidate_K4_exit_code_observed": 1
+    "candidate_K4_exit_code_observed": 1,
+    "mixed_candidate_status": "INICIADO_DESDE_TAU0_AUDITADO",
+    "mixed_candidate_latest_certified_time": 0
   },
   "latest_verified_cp12_restart": {
     "time": 160,

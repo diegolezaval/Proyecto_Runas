@@ -6,13 +6,13 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
 ## Siguiente trabajo científico
 
-- Preparar el nuevo prerregistro ejecutable y coordinador físico mixto Φ-FV/χ-K4: los controles previos A–D ya pasaron y deben reutilizarse. Capturar fuentes, configuración y procedencia propias; guardar, recuperar y auditar τ0 íntegro antes de M2. No iniciar la evolución sólo por el aprobado estático/congelado. Mantener ambas puertas energéticas, carga y 2 %, y conservar todos los negativos. Véase informes/PREFLIGHT_MIXTO_A_D_CP12_20261015.md.
+- Supervisar el piloto mixto Φ-FV/χ-K4 0→8 ya prerregistrado e iniciado desde τ0 guardado/recuperado/auditado. No duplicarlo ni modificar sus fuentes. Sólo continuar con cada frontera íntegra recuperada/auditada; detener y conservar cualquier fallo, manteniendo ambas energías, carga y 2 %. La reducción del mecanismo en tres ventanas y la validación espacial/estabilidad/robustez siguen pendientes.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/PREFLIGHT_MIXTO_A_D_CP12_20261015.md](informes/PREFLIGHT_MIXTO_A_D_CP12_20261015.md).
+Informe de esta entrega: [informes/PILOTO_MIXTO_TAU0_CP12_20261015.md](informes/PILOTO_MIXTO_TAU0_CP12_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 
