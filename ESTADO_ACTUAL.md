@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Supervisar el piloto mixto Φ-FV/χ-K4 0→8 ya prerregistrado e iniciado desde τ0 guardado/recuperado/auditado. No duplicarlo ni modificar sus fuentes. Sólo continuar con cada frontera íntegra recuperada/auditada; detener y conservar cualquier fallo, manteniendo ambas energías, carga y 2 %. La reducción del mecanismo en tres ventanas y la validación espacial/estabilidad/robustez siguen pendientes.
+- Supervisar el intento aislado del piloto mixto Φ-FV/χ-K4, recuperado desde τ0 exacto tras 28 controles y conservación/recuperación completas. No duplicar el trabajador propio ni modificar sus fuentes. La actividad del intento anterior sigue desconocida. Aplicar cada puerta original y exigir cápsula íntegra recuperada/auditada antes del siguiente tramo; conservar y analizar cualquier negativo. CP12 abierto.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/PILOTO_MIXTO_TAU0_CP12_20261015.md](informes/PILOTO_MIXTO_TAU0_CP12_20261015.md).
+Informe de esta entrega: [informes/REANUDACION_MIXTA_CP12_20261015.md](informes/REANUDACION_MIXTA_CP12_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

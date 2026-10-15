@@ -1216,10 +1216,23 @@
       "preregistration_commit": "5fa178a8b85f4c860c1308051791c1742e6e8843",
       "initial_zero_step_checks": 28,
       "correction_validated": false
+    },
+    {
+      "event": "CP12_MIXTO_TAU0_EXACTO_RECUPERADO_INTENTO_AISLADO_INICIADO",
+      "date": "2026-10-15",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/REANUDACION_MIXTA_CP12_20261015.md",
+      "initial_zero_step_checks": 28,
+      "source_state_bytes_unchanged": true,
+      "previous_attempt_termination_assumed": false,
+      "correction_validated": false,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Supervisar el piloto mixto Φ-FV/χ-K4 0→8 ya prerregistrado e iniciado desde τ0 guardado/recuperado/auditado. No duplicarlo ni modificar sus fuentes. Sólo continuar con cada frontera íntegra recuperada/auditada; detener y conservar cualquier fallo, manteniendo ambas energías, carga y 2 %. La reducción del mecanismo en tres ventanas y la validación espacial/estabilidad/robustez siguen pendientes.",
+    "Supervisar el intento aislado del piloto mixto Φ-FV/χ-K4, recuperado desde τ0 exacto tras 28 controles y conservación/recuperación completas. No duplicar el trabajador propio ni modificar sus fuentes. La actividad del intento anterior sigue desconocida. Aplicar cada puerta original y exigir cápsula íntegra recuperada/auditada antes del siguiente tramo; conservar y analizar cualquier negativo. CP12 abierto.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -1234,33 +1247,35 @@
     "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Supervisar el piloto mixto Φ-FV/χ-K4 0→8 ya prerregistrado e iniciado desde τ0 guardado/recuperado/auditado. No duplicarlo ni modificar sus fuentes. Sólo continuar con cada frontera íntegra recuperada/auditada; detener y conservar cualquier fallo, manteniendo ambas energías, carga y 2 %. La reducción del mecanismo en tres ventanas y la validación espacial/estabilidad/robustez siguen pendientes.",
+  "next_calculation": "Supervisar el intento aislado del piloto mixto Φ-FV/χ-K4, recuperado desde τ0 exacto tras 28 controles y conservación/recuperación completas. No duplicar el trabajador propio ni modificar sus fuentes. La actividad del intento anterior sigue desconocida. Aplicar cada puerta original y exigir cápsula íntegra recuperada/auditada antes del siguiente tramo; conservar y analizar cualquier negativo. CP12 abierto.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [
     {
       "campaign": "CP12_PILOTO_MIXTO_PHI_FV_CHI_K4",
-      "status": "INICIADO_DESDE_TAU0_AUDITADO",
+      "status": "RECUPERACION_AISLADA_INICIADA_DESDE_TAU0_EXACTO",
       "latest_certified_time": 0,
       "first_target": 8,
       "conditional_target": 160,
-      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/tau0000/CERTIFICADO.json",
+      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/recuperacion_20261015/CERTIFICADO_TAU0.json",
       "original_CP10_trajectories_repeated": false,
       "correction_validated": false,
-      "CP12_closed": false
+      "CP12_closed": false,
+      "previous_attempt_activity": "UNKNOWN_ACTIVITY",
+      "previous_attempt_termination_assumed": false
     }
   ],
   "research_in_progress": [
     {
       "campaign": "CP12_DERIVACION_VARIACIONAL_MIXTA",
-      "status": "PREFLIGHT_A_D_POSITIVO_PILOTO_FISICO_PRERREGISTRADO_E_INICIADO",
-      "scope": "Diseño mixto nuevo con datos iniciales exactos. τ0 íntegro guardado, recuperado y auditado; el piloto aún no certifica τ8 ni aceptación.",
-      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/tau0000/CERTIFICADO.json",
+      "status": "PILOTO_MIXTO_RECUPERADO_EN_INTENTO_AISLADO",
+      "scope": "El estado τ0 se conserva byte a byte y fue guardado/recuperado/auditado en el intento nuevo. No hay τ8 certificado ni aceptación.",
+      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/recuperacion_20261015/CERTIFICADO_TAU0.json",
       "correction_validated": false,
       "CP12_closed": false
     }
   ],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
-  "delivery_boundary": "CP11 sigue siendo el último checkpoint científico aceptado. CP12 original llegó a τ160 con CP10 exacto y 44 comprobaciones positivas; sus tres ventanas causales están evaluadas y conservadas. La puerta espacial del 2 % falla con 5.12639096419456 %. Hay atribución condicionada al canal acoplado del operador χ, sin corrección autoconsistente ensayada. Recuperación numérica pública completa: τ80; cápsulas completas posteriores conservadas privadamente. Las 33 etapas y todos los negativos permanecen intactos.",
+  "delivery_boundary": "CP11 sigue siendo el último checkpoint científico aceptado. CP12 original τ160 y CP10 exacto se reutilizan; χ original 5.12639096419456 % >2 %. A–D mixtos no se repiten. El piloto mixto se recuperó en un intento aislado desde τ0 exacto, conservado/recuperado/auditado; no hay τ8 certificado ni corrección validada. El intento anterior conserva actividad desconocida. Las 33 etapas y todos los negativos permanecen intactos.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
   "latest_completed_nonradial_time": 160,
   "diagnostic_after_gate": "τ160 y CP10 exacto comprobados; lector original con serialización NumPy booleana administrativa verificada. Las tres ventanas dan suficiencia al operador χ acoplado y a operador_total. El operador libre no cumple las puertas; se conservan términos cruzados y cancelaciones. No se atribuye una fracción pura al bucle χ→Φ→χ.",
@@ -1294,8 +1309,11 @@
     "target_reached_and_certified": true,
     "candidate_K4_status": "DETENIDO_POR_PUERTA_CIENTIFICA_NEGATIVO_GUARDADO_RECUPERADO",
     "candidate_K4_exit_code_observed": 1,
-    "mixed_candidate_status": "INICIADO_DESDE_TAU0_AUDITADO",
-    "mixed_candidate_latest_certified_time": 0
+    "mixed_candidate_status": "INTENTO_AISLADO_INICIADO_DESDE_TAU0_EXACTO",
+    "mixed_candidate_latest_certified_time": 0,
+    "previous_mixed_attempt_status": "UNKNOWN_ACTIVITY",
+    "previous_mixed_attempt_termination_assumed": false,
+    "mixed_attempt_activity_scope": "Only own guardian observed; historical heartbeat not attributed to it"
   },
   "latest_verified_cp12_restart": {
     "time": 160,
@@ -1337,5 +1355,17 @@
     "original_energy_gate_unchanged": true,
     "new_trajectory_tested": false,
     "correction_validated": false
+  },
+  "latest_verified_cp12_mixed_restart": {
+    "time": 0,
+    "state_sha256": "753c8400b3fad8a34b8286cfb6ac6ea8a10def61c8abd42ea4336efe5026874b",
+    "configuration_sha256": "0719d82ab2187b6076fa2baf6d010495bdffd59622b9ca8f56345beb19e7f182",
+    "receipt_sha256": "fb46cece428311fa964b9cf65452b9d8c233843580e583caf2f9f932c2e2e861",
+    "zip_sha256": "30250321fb38146d56a398057cf2b4302269548be733907b3d77c24ad74e045c",
+    "zip_bytes": 10992104,
+    "proof": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/recuperacion_20261015/CERTIFICADO_TAU0.json",
+    "full_capsule_recovered_and_audited": true,
+    "correction_validated": false,
+    "CP12_closed": false
   }
 }
