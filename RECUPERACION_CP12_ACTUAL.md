@@ -1,11 +1,13 @@
-# CP12: τ88 recuperado; continuación aislada hacia τ160
+# CP12: τ88 certificado; nueva continuación aislada hacia τ96
 
-La recuperación pública **τ80** está completa y certificada: 145/145 JSON reconstruyen exactamente el NPZ original. Certificado: `checkpoints/CP12/continuacion_20261014/tau0080/CERTIFICACION_CLON_LIMPIO.json`.
+La recuperación pública **τ80** sigue completa y certificada: 145/145 JSON reconstruyen exactamente el NPZ original. Certificado: `checkpoints/CP12/continuacion_20261014/tau0080/CERTIFICACION_CLON_LIMPIO.json`.
 
-La última frontera científica conservada y certificada es **τ88**. Tras la limpieza del entorno temporal, su cápsula se recuperó de nuevo: tamaño y SHA-256 exactos, cobertura completa, 242 hashes y 33 controles científicos superados, con cero pasos M2. Sus 221 observaciones por malla coinciden exactamente con CP10. Estado SHA-256 `c421fa81728b7d4079807bf0a1848b062ec0a5c596316652be1fb933a994da3a`. No se encontró una cápsula posterior.
+La última frontera científica guardada, recuperada y auditada es **τ88**. Pasan sus 33 controles originales, incluidas las 221 observaciones CP10 exactas en ambas mallas. Estado SHA-256 `c421fa81728b7d4079807bf0a1848b062ec0a5c596316652be1fb933a994da3a`. Las cápsulas completas permanecen conservadas privadamente; la recuperación numérica pública corresponde a τ80.
 
-Se preparó una nueva instancia con copias sin enlaces, rutas científicas y destinos independientes, fuentes heredadas de sólo lectura, recibo nuevo, caché y temporales propios. Su cápsula inicial τ88 fue guardada, recuperada y auditada antes de iniciar **88→96**. La actividad de los ejecutores anteriores no es directamente accesible; no se presupone su terminación. Comprobante: `checkpoints/CP12/continuacion_20261014/REANUDACION_20261015.json`.
+Tras una interrupción de la espera, la sesión anterior dejó de ser directamente accesible. Su último registro de actividad fue τ≈92,48; el archivo de reinicio seguía en τ88 y no había una cápsula posterior. No existe certificado de salida y no se presupone la terminación del proceso. La interrupción y los datos operativos se conservaron privadamente; no constituyen un fallo científico.
 
-Cada frontera de ocho unidades debe quedar guardada, recuperada y auditada antes de avanzar. La actividad observada no certifica una nueva frontera. Las cápsulas completas permanecen privadas; la recuperación numérica pública sigue correspondiendo a τ80.
+Se preparó otra instancia con copias sin enlaces, fuentes heredadas de sólo lectura, rutas, salidas, recibo, bloqueo, caché y temporales propios. Su cápsula inicial τ88 fue guardada, recuperada y auditada antes de iniciar **88→96**. Comprobante público: `checkpoints/CP12/continuacion_20261014/INTERRUPCION_Y_REANUDACION_20261015.json`. Los registros anteriores se conservan.
 
-Main sigue en CP11; las 33 etapas y los resultados negativos se conservan. El PR #2 permanece abierto y en borrador. CP12 continúa abierto. La reproducción final CP10 exacta y las tres ventanas causales preceden cualquier validación de correcciones. M2, Θ, ambas mallas, DOP853, tolerancias, observadores y criterio del 2 % permanecen originales.
+La continuación está programada hasta τ160 y exige conservar, recuperar y auditar cada frontera de ocho unidades antes de avanzar. Una observación de actividad no certifica una frontera. M2, Θ, ambas mallas, DOP853, tolerancias, observadores y criterio del 2 % permanecen originales.
+
+Main sigue en CP11, las 33 etapas y los resultados negativos se conservan, y PR #2 permanece abierto y en borrador. CP12 sigue abierto. La reproducción final CP10 exacta y las tres ventanas causales preceden cualquier validación de correcciones.

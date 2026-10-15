@@ -1,0 +1,29 @@
+{
+  "schema": "CP12_INTERRUPTED_OBSERVATION_AND_NEW_ISOLATED_RESUME",
+  "latest_certified_time": 88,
+  "last_uncertified_observation": 92.48,
+  "last_saved_scientific_state_time": 88,
+  "previous_session_direct_access": "UNAVAILABLE",
+  "previous_exit_certificate_available": false,
+  "previous_termination_assumed": false,
+  "physical_failure_inferred": false,
+  "cause": "NOT_IDENTIFIED",
+  "interrupted_wait_observed": true,
+  "raw_interruption_record_permanently_preserved_in_private_initial_capsule": true,
+  "ancestor_state_sha256": "c421fa81728b7d4079807bf0a1848b062ec0a5c596316652be1fb933a994da3a",
+  "ancestor_state_integrity_unchanged": true,
+  "new_isolated_bootstrap_original_33_checks_passed": true,
+  "new_initial_capsule_created_recovered_and_audited": true,
+  "new_segment_observed_started": [
+    88,
+    96
+  ],
+  "scientific_sources_configuration_and_observers_unchanged": true,
+  "original_eight_unit_boundaries_and_2_percent_gate_unchanged": true,
+  "previous_sources_and_evidence_untouched": true,
+  "private_executor_metadata_included": false,
+  "public_numeric_recovery_boundary": 80,
+  "causal_conclusion_final": false,
+  "correction_tested": false,
+  "CP12_closed": false
+}

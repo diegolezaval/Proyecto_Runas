@@ -1042,16 +1042,17 @@
   "execution_activity": {
     "original_executor_status": "UNKNOWN_ACTIVITY",
     "original_executor_termination_assumed": false,
-    "new_independent_worker_status": "NUEVA_INSTANCIA_88_A_96_INICIADA_TRAS_RECUPERACION_VERIFICADA",
+    "new_independent_worker_status": "OTRA_INSTANCIA_AISLADA_88_A_96_INICIADA_TRAS_INTERRUPCION",
     "activity_observed_for_new_worker_only": true,
     "latest_verified_cp12_time": 88,
     "target": 160,
     "activity_is_restart_certificate": false,
-    "evidence": "checkpoints/CP12/continuacion_20261014/REANUDACION_20261015.json",
-    "previous_independent_worker_status": "NOT_DIRECTLY_ACCESSIBLE_AFTER_WORKSPACE_MAINTENANCE",
+    "evidence": "checkpoints/CP12/continuacion_20261014/INTERRUPCION_Y_REANUDACION_20261015.json",
+    "previous_independent_worker_status": "SESSION_UNAVAILABLE_WITHOUT_EXIT_CERTIFICATE",
     "previous_independent_worker_termination_assumed": false,
     "new_independent_initial_frontier": 88,
-    "new_independent_initial_capsule_recovered_and_audited": true
+    "new_independent_initial_capsule_recovered_and_audited": true,
+    "last_uncertified_observation": 92.48
   },
   "latest_verified_cp12_restart": {
     "time": 88,
