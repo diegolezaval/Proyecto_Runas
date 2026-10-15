@@ -1,0 +1,26 @@
+{
+  "schema": "CP12_REGISTERED_RESIDUAL_AUTOMATIC_ADMINISTRATION",
+  "original_reading_registration_commit": "1d56b266e32b3df3a4db21bf21f182adaa528746",
+  "source_sha256": "0ceb130a5dd657607417117167fa7dd44f19e8e55b943556fdd8ce5b6e0215db",
+  "document_sha256": "cc647e412defd47e81a5956f43ae3251f7487f78308e88ec53f70318be046331",
+  "captured_residual_reader_sha256": "b29659e0fd03731ec2aa11f2175a604f9ce64eed9562dee8de01249cea9fb314",
+  "scientific_controller_changed": false,
+  "physical_steps_authorized": false,
+  "M2_steps_executed": 0,
+  "synthetic_administrative_checks": {
+    "negative_exit": {
+      "returncode": 0,
+      "status": "WORKER_STOPPED_NO_AUTOMATIC_RETRY",
+      "administrative_failure_retained": false,
+      "no_residual_output": true
+    },
+    "missing_final_certificate": {
+      "returncode": 1,
+      "status": "WAITING_FOR_OBSERVED_OWN_GUARDIAN_EXIT",
+      "administrative_failure_retained": true,
+      "no_residual_output": true
+    }
+  },
+  "numerical_residual_reading_executed": false,
+  "CP12_closed": false
+}
