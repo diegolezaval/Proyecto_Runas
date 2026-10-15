@@ -1,0 +1,31 @@
+{
+  "schema": "CP12_MIXED_PREFLIGHT_PHASE_B_BEFORE_EXECUTION",
+  "parent_commit": "a6cedd69ad14a6b62d45ce8d4e5465d69405cd73",
+  "scope": "Only mixed full/bare defect, symmetric mean Jacobian and original extended polynomial reference; no physical or frozen time evolution.",
+  "source_sha256": "bbfc661bec12d662c39e2e327c6ec12b57a9f6a05926907ab9ada17a68f14428",
+  "phase_A_backend_sha256": "4115bddbe8e7b3674b85df9f09610049a857d6f87a0cc52bb1d081cffc58558c",
+  "input_capsule_sha256": "f4176ec466647faa5a48a427403db3a865f3eef8fda21ea0f837520adfc5bf0b",
+  "complete_manifest_files": 84,
+  "seed": 20261015001,
+  "snapshots": [
+    "CP10_initial",
+    "CP10_final"
+  ],
+  "perturbed_pairs_per_snapshot": 4,
+  "perturbation_amplitude": 0.00001,
+  "reference": "original referencia_pasiva_CP12.c with float128 polynomial cancellation; original weights and projection",
+  "source_compile_flags": [
+    "-O3",
+    "-fPIC",
+    "-shared",
+    "-fno-fast-math",
+    "-lquadmath"
+  ],
+  "algebra_tolerance": 2e-12,
+  "physical_D2_gate_only_on_unperturbed_recorded_states": true,
+  "arbitrary_perturbations_do_not_claim_D2_invariance": true,
+  "M2_steps": 0,
+  "all_registered_controls_passed": false,
+  "physical_evolution_authorized": false,
+  "CP12_closed": false
+}
