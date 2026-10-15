@@ -1,0 +1,22 @@
+{
+  "schema": "CP12_EXACT_INTERNAL_TRANSPORT_PREREGISTRATION",
+  "base_commit": "c4283f84b28c764bf4681a660d4827ecdb51afee",
+  "files": {
+    "transporte.py": "7c887990b991f33ccb86737b821daff0ab5e68e54cbd96c4b8475a62bee731dd",
+    "controlador_transporte.py": "785307ed4356ae0a47f8d61d2415dc252d5376ed9b9853cf4c1ab6c53cf0a1a6",
+    "guardian_transporte.py": "13067b0b978384347a55749686682afbd0bcc1f133b4ac321e974c1356a6deda",
+    "probar_transporte.py": "e831290147a0c98efb5dbdde8cb7664c137780a8ae16692327b62833e6599eb4",
+    "PRERREGISTRO.md": "0e017105397a4f9a88d353ffeef3ca07ac5fa3fcb19ae6ee5cf0b909c9df4407",
+    "CONTROLES_SINTETICOS.json": "5632bced882f12548c46b688990d36e58c108f6e2d0ec09b0bc8e50c7f41ec2c"
+  },
+  "synthetic_controls_passed": true,
+  "physical_sources_changed": false,
+  "scientific_frontier_spacing": 8,
+  "local_transport_spacing": 0.4,
+  "permanent_transport_spacing": 1.6,
+  "first_permanent_transport": 0.4,
+  "new_M2_control_one_original_observer_interval": 0.01,
+  "diagnostic_work_counted_separately": true,
+  "scientific_gates_changed": false,
+  "CP12_closed": false
+}
