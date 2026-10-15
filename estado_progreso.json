@@ -1063,6 +1063,16 @@
         136
       ],
       "M2_steps_executed_by_publication_and_auditor": 0
+    },
+    {
+      "event": "CP12_RECUPERACION_INDEPENDIENTE_TAU136_TRAS_LIMPIEZA",
+      "date": "2026-10-15",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "checkpoints/CP12/continuacion_20261014/REANUDACION_TAU136_20261015_0529.json",
+      "M2_steps_in_recovery_and_bootstrap": 0,
+      "old_executor_termination_assumed": false
     }
   ],
   "next_actions": [
@@ -1126,17 +1136,17 @@
   "execution_activity": {
     "original_executor_status": "UNKNOWN_ACTIVITY",
     "original_executor_termination_assumed": false,
-    "new_independent_worker_status": "FRONTERA_136_PERMANENTE_Y_AUDITADA_SEGMENTO_136_A_144_INICIADO",
+    "new_independent_worker_status": "NUEVA_INSTANCIA_136_A_144_INICIADA_TRAS_LIMPIEZA_0529",
     "activity_observed_for_new_worker_only": true,
     "latest_verified_cp12_time": 136,
     "target": 160,
     "activity_is_restart_certificate": false,
-    "evidence": "checkpoints/CP12/continuacion_20261014/tau0136/AUDITORIA_FRONTERA_GUARDADA.json",
-    "previous_independent_worker_status": "SESSION_UNAVAILABLE_WITHOUT_EXIT_CERTIFICATE",
+    "evidence": "checkpoints/CP12/continuacion_20261014/REANUDACION_TAU136_20261015_0529.json",
+    "previous_independent_worker_status": "NOT_DIRECTLY_ACCESSIBLE_AFTER_WORKSPACE_MAINTENANCE",
     "previous_independent_worker_termination_assumed": false,
-    "new_independent_initial_frontier": 88,
+    "new_independent_initial_frontier": 136,
     "new_independent_initial_capsule_recovered_and_audited": true,
-    "last_uncertified_observation": 92.48,
+    "last_uncertified_observation": 136.74,
     "last_uncertified_observation_scope": "Registro histórico de la sesión anterior; no corresponde al trabajador actual"
   },
   "latest_verified_cp12_restart": {
