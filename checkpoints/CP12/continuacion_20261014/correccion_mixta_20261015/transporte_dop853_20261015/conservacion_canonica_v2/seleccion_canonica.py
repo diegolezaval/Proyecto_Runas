@@ -14,7 +14,9 @@ def canonical_selection(home):
             except ValueError:
                 yield item
                 continue
-            if not any(part.startswith('.') for part in relative.parts):
+            inherited_manifest = len(relative.parts) == 1 and relative.name in (
+                'MANIFIESTO_NEGATIVO.json', 'MANIFIESTO_RECUPERACION_INDEPENDIENTE.json')
+            if not inherited_manifest and not any(part.startswith('.') for part in relative.parts):
                 yield item
     Path.rglob = enumerate_canonical
     try:
