@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Supervisar la continuación aislada desde τ144 guardado, recuperado y auditado: 33 controles y 361 observaciones CP10 exactas por malla. Se observó el inicio de 144→152; no duplicar su evolución. Conservar, recuperar y auditar cada frontera. Exigir reproducción final CP10 exacta y las tres ventanas causales en τ160 antes de validar correcciones. No se presupone la terminación de ejecutores anteriores. Véanse RECUPERACION_CP12_ACTUAL.md y checkpoints/CP12/continuacion_20261014/tau0144/AUDITORIA_FRONTERA_GUARDADA.json.
+- Supervisar la continuación aislada desde τ152 guardado, recuperado y auditado: 33 controles y 381 observaciones CP10 exactas por malla. Se observó el inicio de 152→160; no duplicar su evolución. Conservar, recuperar y auditar cada frontera. Exigir reproducción final CP10 exacta y las tres ventanas causales en τ160 antes de validar correcciones. No se presupone la terminación de ejecutores anteriores. Véanse RECUPERACION_CP12_ACTUAL.md y checkpoints/CP12/continuacion_20261014/tau0152/AUDITORIA_FRONTERA_GUARDADA.json.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -86,7 +86,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/CONTINUIDAD_CP12_TAU144_20261015.md](informes/CONTINUIDAD_CP12_TAU144_20261015.md).
+Informe de esta entrega: [informes/CONTINUIDAD_CP12_TAU152_20261015.md](informes/CONTINUIDAD_CP12_TAU152_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 
