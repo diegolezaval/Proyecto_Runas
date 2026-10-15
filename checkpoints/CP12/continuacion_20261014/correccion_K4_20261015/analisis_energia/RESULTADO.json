@@ -1,0 +1,433 @@
+{
+  "schema": "CP12_K4_FAILED_TRIAL_PASSIVE_ENERGY_FORM_AND_WORK_DIAGNOSIS",
+  "passed": true,
+  "M2_steps_executed": 0,
+  "input_negative_archive_sha256": "f4176ec466647faa5a48a427403db3a865f3eef8fda21ea0f837520adfc5bf0b",
+  "all_selected_input_hashes_verified": true,
+  "input_files_verified": 55,
+  "grids": [
+    {
+      "dx": 0.125,
+      "physical_failed_time": 0.022873976998663583,
+      "initial_FV_energy": 2398.779643286129,
+      "initial_K4_energy": 2400.1207599063846,
+      "failed_FV_energy": 2398.9382173022987,
+      "failed_K4_energy": 2400.1207598026244,
+      "signed_FV_energy_change_over_initial": 0.00006610612050728531,
+      "signed_K4_energy_change_over_initial": -4.323122383357182e-11,
+      "regularization_gap_change_over_initial_FV_energy": {
+        "RePhi": 6.364831719788069e-10,
+        "ImPhi": -6.375877888417361e-10,
+        "chi": 2.4499442705686444e-12
+      },
+      "composition_gap_change_over_initial_FV_energy": {
+        "RePhi": -5.869961300166931e-7,
+        "ImPhi": -0.00006551851713985948,
+        "chi": -6.518383917109372e-10
+      },
+      "minus_gap_change_by_field_over_initial_FV_energy": {
+        "RePhi": 5.863596468447144e-7,
+        "ImPhi": 0.00006551915472764832,
+        "chi": 6.493884474403687e-10
+      },
+      "Phi_minus_gap_change_over_initial_FV_energy": 0.00006610551437449304,
+      "chi_minus_gap_change_over_initial_FV_energy": 6.493884474403687e-10,
+      "consistent_energy_change_over_initial_FV_energy": -4.32553936704968e-11,
+      "energy_change_identity_relative_residual": 2.6134028912864507e-16,
+      "independent_gradient_gap_relative_residual": 2.487699588360287e-16,
+      "instantaneous_work": [
+        {
+          "snapshot": "initial",
+          "instantaneous_work_by_field": {
+            "RePhi": -1.0240407910150588,
+            "ImPhi": 0.867576303207715,
+            "chi": -8.397395211050284e-8
+          },
+          "work_by_field_over_initial_FV_energy": {
+            "RePhi": -0.0004269007342467722,
+            "ImPhi": 0.000361674031058229,
+            "chi": -3.5006947113935605e-11
+          },
+          "independent_quadratic_directional_derivative_residual": 8.070114167153303e-15,
+          "radial_bins": [
+            {
+              "r_min": 0,
+              "r_max": 0.25,
+              "work_by_field_over_initial_FV_energy": [
+                5.318762852464705e-10,
+                5.004707638535261e-10,
+                5.798697029038286e-15
+              ]
+            },
+            {
+              "r_min": 0.25,
+              "r_max": 1,
+              "work_by_field_over_initial_FV_energy": [
+                1.6829811511466136e-8,
+                1.7528359269050128e-8,
+                1.4613938336678565e-13
+              ]
+            },
+            {
+              "r_min": 1,
+              "r_max": 2,
+              "work_by_field_over_initial_FV_energy": [
+                -5.082395185615798e-8,
+                -9.873932233816303e-9,
+                -5.968850593580107e-14
+              ]
+            },
+            {
+              "r_min": 2,
+              "r_max": 5,
+              "work_by_field_over_initial_FV_energy": [
+                -0.0000021029365744943404,
+                0.0000019624634783707477,
+                -3.389819905044646e-13
+              ]
+            },
+            {
+              "r_min": 5,
+              "r_max": 10,
+              "work_by_field_over_initial_FV_energy": [
+                0.000010424934102723985,
+                -0.000010375598295955405,
+                -3.678003918483882e-11
+              ]
+            },
+            {
+              "r_min": 10,
+              "r_max": 20,
+              "work_by_field_over_initial_FV_energy": [
+                -0.0000025804744151474394,
+                0.0000026896482337785135,
+                1.6112247368717355e-12
+              ]
+            },
+            {
+              "r_min": 20,
+              "r_max": 40,
+              "work_by_field_over_initial_FV_energy": [
+                1.79025029962432e-9,
+                2.360165342643977e-10,
+                3.122613057349903e-13
+              ]
+            },
+            {
+              "r_min": 40,
+              "r_max": 220,
+              "work_by_field_over_initial_FV_energy": [
+                -0.00043261058534609456,
+                0.0003673891267277018,
+                9.633844434093699e-14
+              ]
+            }
+          ]
+        },
+        {
+          "snapshot": "failed",
+          "instantaneous_work_by_field": {
+            "RePhi": 1.1299052598854304,
+            "ImPhi": 12.207375131779301,
+            "chi": 0.00006988600277395721
+          },
+          "work_by_field_over_initial_FV_energy": {
+            "RePhi": 0.00047103337025886793,
+            "ImPhi": 0.0050889939665555144,
+            "chi": 2.913398192683476e-8
+          },
+          "independent_quadratic_directional_derivative_residual": 1.1653830799344102e-15,
+          "radial_bins": [
+            {
+              "r_min": 0,
+              "r_max": 0.25,
+              "work_by_field_over_initial_FV_energy": [
+                5.741968248763874e-10,
+                4.6419233242619323e-10,
+                4.458230528194005e-15
+              ]
+            },
+            {
+              "r_min": 0.25,
+              "r_max": 1,
+              "work_by_field_over_initial_FV_energy": [
+                1.8247513909345097e-8,
+                1.6316210427788927e-8,
+                1.1243164612327326e-13
+              ]
+            },
+            {
+              "r_min": 1,
+              "r_max": 2,
+              "work_by_field_over_initial_FV_energy": [
+                -5.3083604468251844e-8,
+                -7.918734739804675e-9,
+                -1.166259171959564e-13
+              ]
+            },
+            {
+              "r_min": 2,
+              "r_max": 5,
+              "work_by_field_over_initial_FV_energy": [
+                -0.000002087937256033579,
+                0.0000019480764647629613,
+                -8.584653961832351e-13
+              ]
+            },
+            {
+              "r_min": 5,
+              "r_max": 10,
+              "work_by_field_over_initial_FV_energy": [
+                0.00001033467602440049,
+                -0.000010260888888662219,
+                2.9311458217303226e-8
+              ]
+            },
+            {
+              "r_min": 10,
+              "r_max": 20,
+              "work_by_field_over_initial_FV_energy": [
+                -0.000002554320652449921,
+                0.0000026533070519503044,
+                -2.251928625874125e-10
+              ]
+            },
+            {
+              "r_min": 20,
+              "r_max": 40,
+              "work_by_field_over_initial_FV_energy": [
+                1.7307811432630627e-9,
+                2.355162865485039e-10,
+                1.338834338426111e-13
+              ]
+            },
+            {
+              "r_min": 40,
+              "r_max": 220,
+              "work_by_field_over_initial_FV_energy": [
+                0.00046537348325554175,
+                0.005094644374743157,
+                4.8440890121826533e-11
+              ]
+            }
+          ]
+        }
+      ],
+      "all_algebra_checks_passed": true
+    },
+    {
+      "dx": 0.0625,
+      "physical_failed_time": 0.017672153921661566,
+      "initial_FV_energy": 2406.646154669124,
+      "initial_K4_energy": 2409.2989350841276,
+      "failed_FV_energy": 2407.3635119061614,
+      "failed_K4_energy": 2409.298934979977,
+      "signed_FV_energy_change_over_initial": 0.0002980734145922376,
+      "signed_K4_energy_change_over_initial": -4.322866882846572e-11,
+      "regularization_gap_change_over_initial_FV_energy": {
+        "RePhi": 1.2272093937308898e-10,
+        "ImPhi": -1.2296908488642963e-10,
+        "chi": 5.714402905154618e-13
+      },
+      "composition_gap_change_over_initial_FV_energy": {
+        "RePhi": -0.00003086159180440375,
+        "ImPhi": -0.00026721174526474103,
+        "chi": -1.2112218236341102e-10
+      },
+      "minus_gap_change_by_field_over_initial_FV_energy": {
+        "RePhi": 0.000030861469083464375,
+        "ImPhi": 0.0002672118682338259,
+        "chi": 1.2055074207289556e-10
+      },
+      "Phi_minus_gap_change_over_initial_FV_energy": 0.0002980733373172903,
+      "chi_minus_gap_change_over_initial_FV_energy": 1.2055074207289556e-10,
+      "consistent_energy_change_over_initial_FV_energy": -4.3276318611053135e-11,
+      "energy_change_identity_relative_residual": 5.232469188875666e-16,
+      "independent_gradient_gap_relative_residual": 3.035799825302765e-16,
+      "instantaneous_work": [
+        {
+          "snapshot": "initial",
+          "instantaneous_work_by_field": {
+            "RePhi": -2.070559297785079,
+            "ImPhi": 1.7577872286194898,
+            "chi": -2.729309331709339e-8
+          },
+          "work_by_field_over_initial_FV_energy": {
+            "RePhi": -0.0008603505312852061,
+            "ImPhi": 0.0007303887300628779,
+            "chi": -1.1340717148693494e-11
+          },
+          "independent_quadratic_directional_derivative_residual": 1.1020025053637746e-15,
+          "radial_bins": [
+            {
+              "r_min": 0,
+              "r_max": 0.25,
+              "work_by_field_over_initial_FV_energy": [
+                1.3360835080002335e-10,
+                1.2563093642452135e-10,
+                1.4467497871896903e-15
+              ]
+            },
+            {
+              "r_min": 0.25,
+              "r_max": 1,
+              "work_by_field_over_initial_FV_energy": [
+                4.233424850677767e-9,
+                4.400258421938219e-9,
+                3.6444947184060024e-14
+              ]
+            },
+            {
+              "r_min": 1,
+              "r_max": 2,
+              "work_by_field_over_initial_FV_energy": [
+                -1.2737608517683767e-8,
+                -2.541182302605478e-9,
+                -1.4615455824300923e-14
+              ]
+            },
+            {
+              "r_min": 2,
+              "r_max": 5,
+              "work_by_field_over_initial_FV_energy": [
+                -5.237271671067268e-7,
+                4.883624214687403e-7,
+                -8.850075182639941e-14
+              ]
+            },
+            {
+              "r_min": 5,
+              "r_max": 10,
+              "work_by_field_over_initial_FV_energy": [
+                0.000002593647577968304,
+                -0.000002581230848249744,
+                -9.173489948693109e-12
+              ]
+            },
+            {
+              "r_min": 10,
+              "r_max": 20,
+              "work_by_field_over_initial_FV_energy": [
+                -6.37829418183712e-7,
+                6.653411411677199e-7,
+                4.145124369820494e-13
+              ]
+            },
+            {
+              "r_min": 20,
+              "r_max": 40,
+              "work_by_field_over_initial_FV_energy": [
+                4.4716719275403045e-10,
+                6.08035503480104e-11,
+                -6.558200024113198e-15
+              ]
+            },
+            {
+              "r_min": 40,
+              "r_max": 220,
+              "work_by_field_over_initial_FV_energy": [
+                -0.0008617746988697606,
+                0.0007318142118378851,
+                -2.509956926278848e-12
+              ]
+            }
+          ]
+        },
+        {
+          "snapshot": "failed",
+          "instantaneous_work_by_field": {
+            "RePhi": 9.423828180793032,
+            "ImPhi": 62.45418598142259,
+            "chi": 0.000023718809582090195
+          },
+          "work_by_field_over_initial_FV_energy": {
+            "RePhi": 0.003915751454575033,
+            "ImPhi": 0.025950713967757784,
+            "chi": 9.855545043908277e-9
+          },
+          "independent_quadratic_directional_derivative_residual": 4.448427371115717e-16,
+          "radial_bins": [
+            {
+              "r_min": 0,
+              "r_max": 0.25,
+              "work_by_field_over_initial_FV_energy": [
+                1.4179933437575549e-10,
+                1.1856005414834716e-10,
+                1.1872536950178713e-15
+              ]
+            },
+            {
+              "r_min": 0.25,
+              "r_max": 1,
+              "work_by_field_over_initial_FV_energy": [
+                4.508676729070146e-9,
+                4.164909025378185e-9,
+                3.001318081215488e-14
+              ]
+            },
+            {
+              "r_min": 1,
+              "r_max": 2,
+              "work_by_field_over_initial_FV_energy": [
+                -1.3176928792787534e-8,
+                -2.157859466078847e-9,
+                -2.3983812834893982e-14
+              ]
+            },
+            {
+              "r_min": 2,
+              "r_max": 5,
+              "work_by_field_over_initial_FV_energy": [
+                -5.209347356558539e-7,
+                4.856946843704613e-7,
+                3.8393603850183953e-13
+              ]
+            },
+            {
+              "r_min": 5,
+              "r_max": 10,
+              "work_by_field_over_initial_FV_energy": [
+                0.0000025780601801129187,
+                -0.0000025592632878510213,
+                9.64439973632992e-9
+              ]
+            },
+            {
+              "r_min": 10,
+              "r_max": 20,
+              "work_by_field_over_initial_FV_energy": [
+                -6.338001785311935e-7,
+                6.589172715529802e-7,
+                -1.1204372243349471e-10
+              ]
+            },
+            {
+              "r_min": 20,
+              "r_max": 40,
+              "work_by_field_over_initial_FV_energy": [
+                4.360143073726265e-10,
+                6.040792290386403e-11,
+                8.861892656324396e-14
+              ]
+            },
+            {
+              "r_min": 40,
+              "r_max": 220,
+              "work_by_field_over_initial_FV_energy": [
+                0.00391433621974753,
+                0.02595212643307217,
+                3.2270925842511876e-10
+              ]
+            }
+          ]
+        }
+      ],
+      "all_algebra_checks_passed": true
+    }
+  ],
+  "field_contributions_describe_energy_form_difference_on_measured_states": true,
+  "counterfactual_new_evolution_tested": false,
+  "new_correction_validated": false,
+  "criteria_changed": false,
+  "CP12_closed": false
+}

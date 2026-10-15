@@ -1149,10 +1149,21 @@
       "correction_tested": true,
       "correction_validated": false,
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_NEGATIVO_K4_IDENTIDAD_ENERGETICA_PASIVA_VERIFICADA",
+      "date": "2026-10-15",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/DIAGNOSTICO_ENERGETICO_NEGATIVO_K4_20261015.md",
+      "M2_steps_executed": 0,
+      "correction_validated": false,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "No repetir el piloto K4 ni relajar la puerta energética original. El intento se detuvo en la malla fina a τ=0.017672153921661566, deriva FV 0.00029807341459231473 >2e-4; el negativo completo está recuperado y verificado. Analizar pasivamente el trabajo del cambio de operador y la diferencia entre formas energéticas en los estados guardados. Una nueva corrección exige fundamento independiente específico, nuevos controles cuando correspondan y otro prerregistro. El original τ160 y sus tres ventanas permanecen certificados. Véase informes/RESULTADO_NEGATIVO_K4_20261015.md.",
+    "Derivar y registrar el diseño mixto motivado por el presupuesto τ160 y el negativo energético: Φ conserva su FV original, χ usa la acción K4 fija, potencial M2 plenamente acoplado. Comprobar primero gradiente, trabajo y backend mixto con criterios originales; reutilizar controles cerrados. No iniciar una nueva evolución antes de ese registro y sus controles. La descomposición pasiva no prueba que la corrección funcione. Mantener ambas puertas energéticas, carga y 2 %, conservar el K4 original fallido y todos los negativos. Véase informes/DIAGNOSTICO_ENERGETICO_NEGATIVO_K4_20261015.md.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -1167,21 +1178,16 @@
     "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Análisis pasivo del negativo K4, sin pasos M2 ni reintento: identificar el trabajo y la diferencia de formas energéticas usando los estados fallidos guardados. La energía K4 conservada no aprueba la puerta FV original. No hay τ8 K4 certificado ni corrección validada.",
+  "next_calculation": "Derivación y controles sin pasos M2 de un diseño espacial mixto Φ-FV / χ-K4. La lectura pasiva del fallo K4 reproduce ΔE_FV; no se ha ensayado ni validado el diseño mixto. CP12 sigue abierto.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [],
   "research_in_progress": [
     {
-      "campaign": "CP12_ANALISIS_DEL_NEGATIVO_K4",
-      "candidate": "K4",
-      "status": "PILOTO_DETENIDO_POR_ENERGIA_FV_ORIGINAL_NEGATIVO_PERMANENTE_VERIFICADO",
-      "latest_certified_candidate_time": 0,
-      "failed_fine_grid_time": 0.017672153921661566,
-      "failed_gate": "original_FV_energy_drift",
-      "threshold": 0.0002,
-      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/RESULTADO_NEGATIVO_PILOTO.json",
-      "next_operation": "Análisis pasivo de trabajo y formas energéticas sobre los estados ya guardados, sin pasos M2",
-      "correction_tested": true,
+      "campaign": "CP12_DERIVACION_VARIACIONAL_MIXTA",
+      "status": "TRABAJO_ENERGETICO_K4_DESCOMPUESTO_DERIVACION_Y_PREFLIGHT_MIXTOS_PENDIENTES",
+      "scope": "Diseño prospectivo: conservar FV en ambos Φ y usar K4 en χ, con M2 plenamente acoplado. Requiere registro y controles de la implementación nueva antes de M2.",
+      "evidence": "informes/DIAGNOSTICO_ENERGETICO_NEGATIVO_K4_20261015.md",
+      "new_M2_steps": 0,
       "correction_validated": false,
       "CP12_closed": false
     }
@@ -1219,7 +1225,7 @@
     "original_worker_exit_scope": "Fallo de serialización del lector posterior al guardado y auditoría de τ160",
     "offline_diagnostic_replay_completed": true,
     "target_reached_and_certified": true,
-    "candidate_K4_status": "DETenido_POR_PUERTA_CIENTIFICA_NEGATIVO_GUARDADO_RECUPERADO",
+    "candidate_K4_status": "DETENIDO_POR_PUERTA_CIENTIFICA_NEGATIVO_GUARDADO_RECUPERADO",
     "candidate_K4_exit_code_observed": 1
   },
   "latest_verified_cp12_restart": {
@@ -1252,6 +1258,15 @@
     "initial_conditions_exact_CP10": true,
     "negative_pilot_proof": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/RESULTADO_NEGATIVO_PILOTO.json",
     "tau8_completed": false,
+    "correction_validated": false
+  },
+  "K4_passive_energy_diagnostic": {
+    "proof": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/analisis_energia/CERTIFICADO_SUPLEMENTO.json",
+    "result": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/analisis_energia/RESULTADO.json",
+    "M2_steps_executed": 0,
+    "passed": true,
+    "original_energy_gate_unchanged": true,
+    "new_trajectory_tested": false,
     "correction_validated": false
   }
 }

@@ -1,0 +1,34 @@
+{
+  "operation": "Passive exact quadratic-form gap and work identities at initial and failed saved states",
+  "M2_steps": 0,
+  "input_negative_archive_sha256": "f4176ec466647faa5a48a427403db3a865f3eef8fda21ea0f837520adfc5bf0b",
+  "identities": [
+    "E_FV(t)-E_FV(0)=E_K4(t)-E_K4(0)-(G(t)-G(0))",
+    "G=sum_fields canonical_energy_weight*(regular_K2_energy-original_FV_gradient_energy+fixed_h2_over12_composition_energy)",
+    "instantaneous_dE_FV_dt=sum_fields canonical_equation_weight*W*v*(L_K4-L_FV)q"
+  ],
+  "split_fields": [
+    "RePhi",
+    "ImPhi",
+    "chi"
+  ],
+  "split_action": [
+    "regularization",
+    "fixed_positive_composition"
+  ],
+  "radii": [
+    0,
+    0.25,
+    1,
+    2,
+    5,
+    10,
+    20,
+    40,
+    220
+  ],
+  "algebra_relative_tolerance": 2e-12,
+  "acceptance_gate_changed": false,
+  "new_correction_validated": false,
+  "CP12_closed": false
+}

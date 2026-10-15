@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- No repetir el piloto K4 ni relajar la puerta energética original. El intento se detuvo en la malla fina a τ=0.017672153921661566, deriva FV 0.00029807341459231473 >2e-4; el negativo completo está recuperado y verificado. Analizar pasivamente el trabajo del cambio de operador y la diferencia entre formas energéticas en los estados guardados. Una nueva corrección exige fundamento independiente específico, nuevos controles cuando correspondan y otro prerregistro. El original τ160 y sus tres ventanas permanecen certificados. Véase informes/RESULTADO_NEGATIVO_K4_20261015.md.
+- Derivar y registrar el diseño mixto motivado por el presupuesto τ160 y el negativo energético: Φ conserva su FV original, χ usa la acción K4 fija, potencial M2 plenamente acoplado. Comprobar primero gradiente, trabajo y backend mixto con criterios originales; reutilizar controles cerrados. No iniciar una nueva evolución antes de ese registro y sus controles. La descomposición pasiva no prueba que la corrección funcione. Mantener ambas puertas energéticas, carga y 2 %, conservar el K4 original fallido y todos los negativos. Véase informes/DIAGNOSTICO_ENERGETICO_NEGATIVO_K4_20261015.md.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/RESULTADO_NEGATIVO_K4_20261015.md](informes/RESULTADO_NEGATIVO_K4_20261015.md).
+Informe de esta entrega: [informes/DIAGNOSTICO_ENERGETICO_NEGATIVO_K4_20261015.md](informes/DIAGNOSTICO_ENERGETICO_NEGATIVO_K4_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 
