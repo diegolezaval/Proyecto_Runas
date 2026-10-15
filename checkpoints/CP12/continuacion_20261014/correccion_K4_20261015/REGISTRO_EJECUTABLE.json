@@ -1,0 +1,43 @@
+{
+  "schema": "CP12_FIRST_K4_TRIAL_REGISTERED_BEFORE_ANY_M2_STEP",
+  "registered_before_M2": true,
+  "original_evolution_complete_and_CP10_exact": true,
+  "original_tau160_state_sha256": "22078538ebba2e948b433b0ab946ee034be132b27f7e72ca1ee30540323b2413",
+  "original_causal_windows_positive_for_coupled_operator_chi": true,
+  "original_observed_chi_phase_space_error": 0.0512639096419456,
+  "original_physical_gate_threshold": 0.02,
+  "candidate": "K4_fixed_positive_variational_composition",
+  "coefficient_source": "Fixed Taylor series of 4 arcsin^2(sqrt(s)/2), independent of chi data",
+  "captured_sources": {
+    "coordinator.py": "c32054b1d6a6242f7857b858e744fa2bcd10573b2652c4826d6f6fe1083bf855",
+    "guardian.py": "2f5c13c400ad90fef534fd7139ed74ea95892ca3c61cb69b48a372b2017fd44d",
+    "preservation.py": "26e42b9ce7ed0299c755e3e16225f8ba25a04ec5cee3e130ce728fe14a1b8c38",
+    "configuration.json": "2ef891fdf4dd67d06dd955197f629bf00e32bdff3342ec821bceced07e64267e",
+    "candidate/operador.py": "8c4232ddc9366b8331729a0336552bb701039ff3be802abf43c24f4de5c1dca4",
+    "candidate/backend.py": "9ee945d1eb6d33a1972df773b6b858868e5d0498fb15cd03617951389d96d759",
+    "preregistration/PRERREGISTRO.md": "846e2393271ae849bf71872a85259726e0ed8f5b647e1b7ae67cdaa54df1bfd2"
+  },
+  "original_scientific_source_count": 14,
+  "original_Cauchy_data_exact_CP10_required": true,
+  "physical_initial_time": 0,
+  "target": 160,
+  "original_two_grids_unchanged": true,
+  "original_observer_equations_windows_stages_tolerances_and_criteria_unchanged": true,
+  "original_and_consistent_energy_both_required": true,
+  "source_locations": {
+    "coordinator.py": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/coordinator.py",
+    "guardian.py": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/guardian.py",
+    "preservation.py": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/preservation.py",
+    "candidate/operador.py": "trazabilidad/CP12_recuperacion_independiente/ab914d1d0470/analysis/candidato_operador/operador.py",
+    "candidate/backend.py": "trazabilidad/CP12_recuperacion_independiente/2f01ea6e32b2/analysis/backend_candidato/backend.py",
+    "configuration.json": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/configuration.json",
+    "preregistration/PRERREGISTRO.md": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/PRERREGISTRO.md"
+  },
+  "initial_capsule_required_saved_retrieved_and_audited_before_M2": true,
+  "every_eight_unit_frontier_required_saved_retrieved_and_audited_before_next": true,
+  "other_candidates_not_automatically_launched": true,
+  "additional_reference_and_robustness_required_after_positive_original_pair": true,
+  "M2_steps_executed": 0,
+  "correction_validated": false,
+  "CP12_closed": false
+}

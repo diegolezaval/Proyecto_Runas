@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Revisar la derivación y el prerregistro condicional de corrección ya conservados. τ160 está guardado, recuperado y auditado: 44 comprobaciones y CP10 exacto. El operador χ acoplado cumple las tres ventanas originales; la discrepancia espacial es 5.12639096419456 %, superior al 2 %. Prerregistrar y ejecutar sólo pruebas justificadas de una evolución corregida autoconsistente, con conservación, estabilidad, convergencia y robustez; reutilizar los controles cerrados y conservar todo negativo. No repetir la evolución original 0→160 ni la publicación τ80. Véanse RECUPERACION_CP12_ACTUAL.md y informes/RESULTADO_CP12_TAU160_20261015.md.
+- Inicializar la prueba K4 registrada en checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/PRERREGISTRO.md. Guardar, recuperar y auditar primero τ0 sin M2. Sólo después iniciar 0→8 y continuar en fronteras de ocho hasta τ160 si pasan todas las puertas originales. Usar las dos mallas y los seis datos de Cauchy CP10 originales; conservar por separado energía FV original y Hamiltoniano K4. Un fallo detiene la prueba y se conserva recuperado con todos sus hashes. No repetir la evolución original τ0→160, ya certificada, ni controles estáticos cerrados; no lanzar K6/K8 por inercia.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/RESULTADO_CP12_TAU160_20261015.md](informes/RESULTADO_CP12_TAU160_20261015.md).
+Informe de esta entrega: [checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/PRERREGISTRO.md](checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/PRERREGISTRO.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

@@ -9,3 +9,5 @@ Las tres ventanas causales originales dan suficiencia al **operador χ acoplado*
 La siguiente tarea es revisar el prerregistro de corrección ya conservado y ejecutar únicamente pruebas justificadas de una evolución corregida autoconsistente. No se repite la evolución original ni los controles certificados. Informe: `informes/RESULTADO_CP12_TAU160_20261015.md`.
 
 Main permanece en CP11, las 33 etapas siguen intactas y PR #2 permanece abierto y en borrador. El trabajador propio terminó tras la evolución; los ejecutores anteriores conservan estado de actividad desconocida. M2, Θ, mallas, DOP853, tolerancias, observadores, spline y criterio del 2 % permanecen originales.
+
+La **primera prueba K4** queda prerregistrada antes de cualquier paso M2 en `checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/PRERREGISTRO.md`. Reutiliza los controles estáticos y lineales conservados. La siguiente operación es construir, guardar, recuperar y auditar su τ0; luego ejecutar el piloto 0→8 con las dos mallas originales, ambos balances energéticos y los observadores originales. Todavía no hay evolución K4 ni corrección validada.
