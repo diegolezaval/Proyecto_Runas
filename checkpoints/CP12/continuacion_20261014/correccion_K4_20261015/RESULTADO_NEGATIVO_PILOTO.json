@@ -1,0 +1,44 @@
+{
+  "schema": "CP12_K4_PILOT_ORIGINAL_PHYSICAL_GATE_FAILED",
+  "candidate": "K4_all_three_fields",
+  "status": "SCIENTIFIC_TRIAL_STOPPED",
+  "target": 8,
+  "latest_certified_candidate_frontier": 0,
+  "observer_clock_at_stop": 0.01,
+  "metadata": [
+    {
+      "time": 0.022873976998663583,
+      "accepted_steps": 3,
+      "nfev_closed_segments": 0,
+      "maximum_consistent_K4_energy_drift": 4.3231196400483896e-11,
+      "maximum_original_FV_energy_drift": 0.00006610612050739206,
+      "maximum_original_charge_drift": 3.3306690738754696e-16
+    },
+    {
+      "time": 0.017672153921661566,
+      "accepted_steps": 2,
+      "nfev_closed_segments": 0,
+      "maximum_consistent_K4_energy_drift": 4.322864288752726e-11,
+      "maximum_original_FV_energy_drift": 0.00029807341459231473,
+      "maximum_original_charge_drift": 2.220446049250313e-16
+    }
+  ],
+  "failed_gate": "original_FV_energy_drift",
+  "unchanged_threshold": 0.0002,
+  "fine_grid_failed_time": 0.017672153921661566,
+  "fine_grid_original_FV_energy_drift": 0.00029807341459231473,
+  "original_worker_exit_observed": 1,
+  "complete_failure_physical_and_observer_state_saved_retrieved": true,
+  "all_payload_hashes_verified": true,
+  "complete_negative_capsule_sha256": "f4176ec466647faa5a48a427403db3a865f3eef8fda21ea0f837520adfc5bf0b",
+  "complete_negative_capsule_bytes": 39126835,
+  "open_segment_nfev_not_captured": true,
+  "nfev_scope": "Los ceros conservados son contadores de segmentos cerrados; no significan cero evaluaciones durante el intento.",
+  "original_evolution_repeated": false,
+  "original_tau160_intact": true,
+  "tau8_completed": false,
+  "correction_tested": true,
+  "correction_validated": false,
+  "CP12_closed": false,
+  "next_scope": "Análisis pasivo del trabajo y de la diferencia de formas energéticas en los estados guardados; ningún reintento ni relajación de puertas."
+}

@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Inicializar la prueba K4 registrada en checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/PRERREGISTRO.md. Guardar, recuperar y auditar primero τ0 sin M2. Sólo después iniciar 0→8 y continuar en fronteras de ocho hasta τ160 si pasan todas las puertas originales. Usar las dos mallas y los seis datos de Cauchy CP10 originales; conservar por separado energía FV original y Hamiltoniano K4. Un fallo detiene la prueba y se conserva recuperado con todos sus hashes. No repetir la evolución original τ0→160, ya certificada, ni controles estáticos cerrados; no lanzar K6/K8 por inercia.
+- No repetir el piloto K4 ni relajar la puerta energética original. El intento se detuvo en la malla fina a τ=0.017672153921661566, deriva FV 0.00029807341459231473 >2e-4; el negativo completo está recuperado y verificado. Analizar pasivamente el trabajo del cambio de operador y la diferencia entre formas energéticas en los estados guardados. Una nueva corrección exige fundamento independiente específico, nuevos controles cuando correspondan y otro prerregistro. El original τ160 y sus tres ventanas permanecen certificados. Véase informes/RESULTADO_NEGATIVO_K4_20261015.md.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/PRERREGISTRO.md](checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/PRERREGISTRO.md).
+Informe de esta entrega: [informes/RESULTADO_NEGATIVO_K4_20261015.md](informes/RESULTADO_NEGATIVO_K4_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

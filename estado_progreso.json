@@ -1136,10 +1136,23 @@
       "M2_steps_executed": 0,
       "correction_validated": false,
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_K4_PRIMER_PILOTO_NEGATIVO_ENERGIA_FV_ORIGINAL",
+      "date": "2026-10-15",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/RESULTADO_NEGATIVO_K4_20261015.md",
+      "failed_fine_grid_time": 0.017672153921661566,
+      "negative_saved_retrieved_and_all_hashes_verified": true,
+      "correction_tested": true,
+      "correction_validated": false,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Inicializar la prueba K4 registrada en checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/PRERREGISTRO.md. Guardar, recuperar y auditar primero τ0 sin M2. Sólo después iniciar 0→8 y continuar en fronteras de ocho hasta τ160 si pasan todas las puertas originales. Usar las dos mallas y los seis datos de Cauchy CP10 originales; conservar por separado energía FV original y Hamiltoniano K4. Un fallo detiene la prueba y se conserva recuperado con todos sus hashes. No repetir la evolución original τ0→160, ya certificada, ni controles estáticos cerrados; no lanzar K6/K8 por inercia.",
+    "No repetir el piloto K4 ni relajar la puerta energética original. El intento se detuvo en la malla fina a τ=0.017672153921661566, deriva FV 0.00029807341459231473 >2e-4; el negativo completo está recuperado y verificado. Analizar pasivamente el trabajo del cambio de operador y la diferencia entre formas energéticas en los estados guardados. Una nueva corrección exige fundamento independiente específico, nuevos controles cuando correspondan y otro prerregistro. El original τ160 y sus tres ventanas permanecen certificados. Véase informes/RESULTADO_NEGATIVO_K4_20261015.md.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -1154,26 +1167,23 @@
     "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Primera prueba autoconsistente K4: inicialización y respaldo de τ0 antes de pasos M2, después piloto 0→8 con DOP853 y observadores originales. K4 tiene coeficiente fijo 1/12, sin ajuste a χ. La puerta original sigue en 2 % y CP12 permanece abierto.",
+  "next_calculation": "Análisis pasivo del negativo K4, sin pasos M2 ni reintento: identificar el trabajo y la diferencia de formas energéticas usando los estados fallidos guardados. La energía K4 conservada no aprueba la puerta FV original. No hay τ8 K4 certificado ni corrección validada.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [],
   "research_in_progress": [
     {
-      "campaign": "CP12_K4_PRIMERA_PRUEBA_AUTOCONSISTENTE",
+      "campaign": "CP12_ANALISIS_DEL_NEGATIVO_K4",
       "candidate": "K4",
-      "status": "PRERREGISTRADA_SIN_PASOS_M2_INICIALIZACION_Y_RESPALDO_TAU0_PENDIENTES",
-      "physical_initial_time": 0,
-      "target": 160,
-      "original_two_grids_unchanged": true,
-      "original_Cauchy_data_required_exact_CP10": true,
-      "spatial_discretization_changed": true,
-      "M2_Theta_and_solver_unchanged": true,
-      "original_observer_equations_and_criteria_unchanged": true,
-      "correction_tested": false,
+      "status": "PILOTO_DETENIDO_POR_ENERGIA_FV_ORIGINAL_NEGATIVO_PERMANENTE_VERIFICADO",
+      "latest_certified_candidate_time": 0,
+      "failed_fine_grid_time": 0.017672153921661566,
+      "failed_gate": "original_FV_energy_drift",
+      "threshold": 0.0002,
+      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/RESULTADO_NEGATIVO_PILOTO.json",
+      "next_operation": "Análisis pasivo de trabajo y formas energéticas sobre los estados ya guardados, sin pasos M2",
+      "correction_tested": true,
       "correction_validated": false,
-      "CP12_closed": false,
-      "preregistration": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/PRERREGISTRO.md",
-      "executable_registry": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/REGISTRO_EJECUTABLE.json"
+      "CP12_closed": false
     }
   ],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
@@ -1209,7 +1219,8 @@
     "original_worker_exit_scope": "Fallo de serialización del lector posterior al guardado y auditoría de τ160",
     "offline_diagnostic_replay_completed": true,
     "target_reached_and_certified": true,
-    "candidate_K4_status": "PRERREGISTRADO_SIN_PASOS_M2"
+    "candidate_K4_status": "DETenido_POR_PUERTA_CIENTIFICA_NEGATIVO_GUARDADO_RECUPERADO",
+    "candidate_K4_exit_code_observed": 1
   },
   "latest_verified_cp12_restart": {
     "time": 160,
@@ -1233,5 +1244,14 @@
     "correction_tested": false,
     "complete_private_evidence_saved_recovered_and_verified": true,
     "CP12_closed": false
+  },
+  "latest_verified_K4_trial": {
+    "time": 0,
+    "state_sha256": "3a8386d3fc4d304d8db81b185ca5d5f77f01024c97f35a005cfbf4047c6a6a0c",
+    "proof": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/AUDITORIA_INICIAL_TAU0000.json",
+    "initial_conditions_exact_CP10": true,
+    "negative_pilot_proof": "checkpoints/CP12/continuacion_20261014/correccion_K4_20261015/RESULTADO_NEGATIVO_PILOTO.json",
+    "tau8_completed": false,
+    "correction_validated": false
   }
 }
