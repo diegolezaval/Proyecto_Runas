@@ -1,0 +1,31 @@
+{
+  "schema": "CP12_NEW_ISOLATED_RESUME_AFTER_WORKSPACE_MAINTENANCE",
+  "initial_certified_frontier": 88,
+  "target": 160,
+  "ancestor_capsule_size_and_SHA256_exact": true,
+  "all_242_payload_hashes_verified": true,
+  "manifest_coverage_exact": true,
+  "recovered_state_sha256": "c421fa81728b7d4079807bf0a1848b062ec0a5c596316652be1fb933a994da3a",
+  "recovered_configuration_sha256": "148dfb982ce59ff5e9e7696749f58c77584c96c2833ca5fb4bd03122af5e5541",
+  "original_scientific_audit_checks": 33,
+  "all_scientific_checks_passed": true,
+  "M2_steps_in_recovery_and_bootstrap": 0,
+  "new_initial_capsule_created_recovered_and_audited": true,
+  "new_segment_observed_started": [
+    88,
+    96
+  ],
+  "previous_workers_direct_activity_unavailable": true,
+  "previous_worker_termination_assumed": false,
+  "independent_files_outputs_receipt_lock_cache_and_temporary_destinations": true,
+  "no_symlinks_or_hardlinks": true,
+  "fourteen_original_scientific_sources_unchanged": true,
+  "physical_configuration_and_2_percent_gate_unchanged": true,
+  "administrative_supervisor_captured_from_verified_branch_head": true,
+  "scientific_completion_not_inferred_from_activity": true,
+  "latest_public_numeric_recovery_boundary": 80,
+  "private_executor_metadata_included": false,
+  "causal_conclusion_final": false,
+  "correction_tested": false,
+  "CP12_closed": false
+}
