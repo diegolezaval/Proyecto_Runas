@@ -1,0 +1,21 @@
+{
+  "schema": "CP12_NEW_TRANSPORT_CONTROL_NOT_PREFLIGHT_REPETITION",
+  "passed": true,
+  "from_observer_clock": 0.4,
+  "to_observer_clock": 0.41,
+  "physical_and_passive_states_solver_memory_dense_and_counters_bitwise_exact": true,
+  "source_transport_sha256": "3a1332db0b5ae4d259bab692cd8a384a7012e251a2628e5e0c425c07888cbce8",
+  "shadow_transport_sha256": "f12ba29d576ed7b5ffeecf61a48003e805e91945911ae73bee28216c557def83",
+  "shadow_physical_accepted_steps": [
+    2,
+    2
+  ],
+  "shadow_solver_RHS_evaluations": [
+    24,
+    24
+  ],
+  "diagnostic_work_separate_from_production_counters": true,
+  "certified_campaign_repeated": false,
+  "correction_validated": false,
+  "CP12_closed": false
+}

@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Supervisar el piloto mixto Φ-FV/χ-K4 del intento con transporte interno DOP853 prerregistrado. τ0 exacto fue guardado/recuperado/auditado; exigir identidad bit a bit del contraste de recuperación de un intervalo en τ=.4. Recuperar siempre el transporte o frontera más avanzado, sin resembrar ni duplicar un trabajador observado activo. Fronteras científicas cada 8; energías, carga, observadores y convergencia originales intactos. Conservar cualquier negativo; CP12 abierto.
+- Continuar/supervisar el piloto mixto con transporte exacto DOP853 verificado. Último transporte permanente recuperado/auditado: reloj observador .4; contraste .4→.41 bit a bit positivo. Recuperar primero cualquier transporte o frontera posterior; no regresar a τ0 ni reiniciar DOP853 si existe un transporte válido. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/INTERRUPCION_Y_TRANSPORTE_CP12_20261015.md](informes/INTERRUPCION_Y_TRANSPORTE_CP12_20261015.md).
+Informe de esta entrega: [informes/TRANSPORTE_MIXTO_VERIFICADO_CP12_20261015.md](informes/TRANSPORTE_MIXTO_VERIFICADO_CP12_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 
