@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Derivar y registrar el diseño mixto motivado por el presupuesto τ160 y el negativo energético: Φ conserva su FV original, χ usa la acción K4 fija, potencial M2 plenamente acoplado. Comprobar primero gradiente, trabajo y backend mixto con criterios originales; reutilizar controles cerrados. No iniciar una nueva evolución antes de ese registro y sus controles. La descomposición pasiva no prueba que la corrección funcione. Mantener ambas puertas energéticas, carga y 2 %, conservar el K4 original fallido y todos los negativos. Véase informes/DIAGNOSTICO_ENERGETICO_NEGATIVO_K4_20261015.md.
+- Implementar y ejecutar únicamente los controles nuevos sin pasos M2 del diseño Φ-FV / χ-K4 ya derivado y registrado en checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015/DERIVACION_Y_PRERREGISTRO.md. Autenticar y reutilizar cápsulas, fuentes K4, CP10 y controles cerrados; capturar hashes antes del control y guardar todos los resultados negativos. El aprobado previo sólo permite preparar un prerregistro físico nuevo: no autoriza todavía un piloto. Mantener ambas puertas energéticas, carga, observadores y 2 %; no repetir K4 ni K6/K8 por inercia.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/DIAGNOSTICO_ENERGETICO_NEGATIVO_K4_20261015.md](informes/DIAGNOSTICO_ENERGETICO_NEGATIVO_K4_20261015.md).
+Informe de esta entrega: [checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015/DERIVACION_Y_PRERREGISTRO.md](checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015/DERIVACION_Y_PRERREGISTRO.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

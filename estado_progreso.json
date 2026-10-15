@@ -1160,10 +1160,20 @@
       "M2_steps_executed": 0,
       "correction_validated": false,
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_DERIVACION_MIXTA_Y_PRERREGISTRO_CONTROLES_SIN_M2",
+      "date": "2026-10-15",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015/DERIVACION_Y_PRERREGISTRO.md",
+      "M2_steps_executed": 0,
+      "correction_validated": false
     }
   ],
   "next_actions": [
-    "Derivar y registrar el diseño mixto motivado por el presupuesto τ160 y el negativo energético: Φ conserva su FV original, χ usa la acción K4 fija, potencial M2 plenamente acoplado. Comprobar primero gradiente, trabajo y backend mixto con criterios originales; reutilizar controles cerrados. No iniciar una nueva evolución antes de ese registro y sus controles. La descomposición pasiva no prueba que la corrección funcione. Mantener ambas puertas energéticas, carga y 2 %, conservar el K4 original fallido y todos los negativos. Véase informes/DIAGNOSTICO_ENERGETICO_NEGATIVO_K4_20261015.md.",
+    "Implementar y ejecutar únicamente los controles nuevos sin pasos M2 del diseño Φ-FV / χ-K4 ya derivado y registrado en checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015/DERIVACION_Y_PRERREGISTRO.md. Autenticar y reutilizar cápsulas, fuentes K4, CP10 y controles cerrados; capturar hashes antes del control y guardar todos los resultados negativos. El aprobado previo sólo permite preparar un prerregistro físico nuevo: no autoriza todavía un piloto. Mantener ambas puertas energéticas, carga, observadores y 2 %; no repetir K4 ni K6/K8 por inercia.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -1178,15 +1188,15 @@
     "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Derivación y controles sin pasos M2 de un diseño espacial mixto Φ-FV / χ-K4. La lectura pasiva del fallo K4 reproduce ΔE_FV; no se ha ensayado ni validado el diseño mixto. CP12 sigue abierto.",
+  "next_calculation": "Controles del enrutado y backend mixto Φ-FV/χ-K4, exclusivamente sin pasos M2, bajo el prerregistro publicado. Derivación registrada; implementación y resultados pendientes. No iniciar evolución antes de todos los controles y un nuevo registro físico.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [],
   "research_in_progress": [
     {
       "campaign": "CP12_DERIVACION_VARIACIONAL_MIXTA",
-      "status": "TRABAJO_ENERGETICO_K4_DESCOMPUESTO_DERIVACION_Y_PREFLIGHT_MIXTOS_PENDIENTES",
+      "status": "DERIVACION_Y_PRERREGISTRO_PREVIO_REGISTRADOS_CONTROLES_PENDIENTES",
       "scope": "Diseño prospectivo: conservar FV en ambos Φ y usar K4 en χ, con M2 plenamente acoplado. Requiere registro y controles de la implementación nueva antes de M2.",
-      "evidence": "informes/DIAGNOSTICO_ENERGETICO_NEGATIVO_K4_20261015.md",
+      "evidence": "checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015/DERIVACION_Y_PRERREGISTRO.md",
       "new_M2_steps": 0,
       "correction_validated": false,
       "CP12_closed": false

@@ -1,0 +1,35 @@
+{
+  "schema": "CP12_MIXED_PHI_FV_CHI_K4_PROSPECTIVE_PREFLIGHT_ONLY",
+  "base_commit": "58079431302c1b2ac30bea8f3b3afce3fafba095",
+  "scientific_basis": [
+    "informes/RESULTADO_CP12_TAU160_20261015.md",
+    "informes/RESULTADO_NEGATIVO_K4_20261015.md",
+    "informes/DIAGNOSTICO_ENERGETICO_NEGATIVO_K4_20261015.md"
+  ],
+  "stage": "DERIVATION_REGISTERED_CONTROLS_PENDING",
+  "original_K4_failure_preserved": true,
+  "physical_evolution_authorized_by_this_record": false,
+  "M2_steps_executed": 0,
+  "operators": {
+    "RePhi": "original_FV",
+    "ImPhi": "original_FV",
+    "chi": "recorded_K2_plus_h2_over12_K2_Winv_K2"
+  },
+  "coefficient": "1/12_fixed_not_fitted",
+  "seed": 20261015001,
+  "algebra_tolerance": 2e-12,
+  "passive_phase_tolerance": 0.001,
+  "linear_quadratic_balance_tolerance": 0.0002,
+  "physical_FV_energy_gate": 0.0002,
+  "physical_consistent_energy_gate": 0.0002,
+  "physical_charge_gate": 1e-9,
+  "spatial_gate": 0.02,
+  "inputs_must_be_authenticated": true,
+  "implementation_hashes_required_before_controls": true,
+  "controls_passed": false,
+  "new_correction_validated": false,
+  "CP12_closed": false,
+  "frozen_duration": 0.1,
+  "frozen_windows": 10,
+  "frozen_reference_phase_error_max": 1e-8
+}
