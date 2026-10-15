@@ -1,0 +1,38 @@
+{
+  "schema": "CP12_MIXED_PHASE_C_BEFORE_EXECUTION",
+  "parent_defect_registration": "427659b67b1e6cc259c66b5039f809876f858918",
+  "prior_phase_B_result_sha256": "875fbd204819df3ae498db1a2034a019fc61c763f71e60dc7ac1394d1135c0d3",
+  "phase_B_passed": true,
+  "source_sha256": "f3e2e78af743bb9fc6e2536e1c73d7a9314ed2bb6c568b9d6dc856fbbef68fef",
+  "mixed_backend_sha256": "4115bddbe8e7b3674b85df9f09610049a857d6f87a0cc52bb1d081cffc58558c",
+  "seed": 20261015001,
+  "grids": [
+    0.125,
+    0.0625
+  ],
+  "R": 220,
+  "L": 4,
+  "backgrounds": [
+    "DN_at_CP10_initial",
+    "mean_J_between_CP10_initial_and_final_same_grid"
+  ],
+  "initial_D2_basis_only": true,
+  "canonical_weights": [
+    2,
+    2,
+    1
+  ],
+  "probe_channels": 5,
+  "gauss_stages": [
+    7,
+    6
+  ],
+  "resolvent_h": 0.01,
+  "algebra_tolerance": 2e-12,
+  "independent_matrix_uses_original_cell_weights_faces_origin_and_boundary": true,
+  "scope": "Independent spatial/J canonical sparse matrix action and symmetry plus Gauss stage resolvents. Not a time evolution or frozen exponential test.",
+  "M2_steps": 0,
+  "physical_evolution_authorized": false,
+  "all_registered_controls_passed": false,
+  "CP12_closed": false
+}

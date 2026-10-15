@@ -1,0 +1,191 @@
+{
+  "schema": "CP12_MIXED_PREFLIGHT_PHASE_B_DEFECT_ONLY",
+  "passed": true,
+  "rows": [
+    {
+      "snapshot": "initial",
+      "perturbation": 0,
+      "tests": {
+        "mixed_complete_defect": true,
+        "bare_source_partition": true,
+        "polynomial_J_action": true,
+        "extended_polynomial_reference": true,
+        "kinetic_weighted_J_symmetry": true,
+        "original_physical_D2_invariance": true
+      },
+      "mixed_defect_error": 7.56229952630359e-13,
+      "bare_partition_error": 7.372516230449735e-13,
+      "polynomial_error": 8.726276597406956e-16,
+      "extended_reference_error": 1.6533511050439635e-28,
+      "weighted_symmetry_error": 3.0780658292647914e-15,
+      "physical_D2_leakage": 1.9147604935358405e-17,
+      "passed": true
+    },
+    {
+      "snapshot": "initial",
+      "perturbation": 1,
+      "tests": {
+        "mixed_complete_defect": true,
+        "bare_source_partition": true,
+        "polynomial_J_action": true,
+        "extended_polynomial_reference": true,
+        "kinetic_weighted_J_symmetry": true
+      },
+      "mixed_defect_error": 6.428958762212362e-13,
+      "bare_partition_error": 6.392010605313647e-13,
+      "polynomial_error": 6.914582587351879e-16,
+      "extended_reference_error": 5.580425975975497e-31,
+      "weighted_symmetry_error": 7.56322888576454e-16,
+      "passed": true
+    },
+    {
+      "snapshot": "initial",
+      "perturbation": 2,
+      "tests": {
+        "mixed_complete_defect": true,
+        "bare_source_partition": true,
+        "polynomial_J_action": true,
+        "extended_polynomial_reference": true,
+        "kinetic_weighted_J_symmetry": true
+      },
+      "mixed_defect_error": 7.36312599551283e-13,
+      "bare_partition_error": 6.960446944199331e-13,
+      "polynomial_error": 8.004300992327238e-16,
+      "extended_reference_error": 6.547269484709671e-31,
+      "weighted_symmetry_error": 1.2256241213829356e-14,
+      "passed": true
+    },
+    {
+      "snapshot": "initial",
+      "perturbation": 3,
+      "tests": {
+        "mixed_complete_defect": true,
+        "bare_source_partition": true,
+        "polynomial_J_action": true,
+        "extended_polynomial_reference": true,
+        "kinetic_weighted_J_symmetry": true
+      },
+      "mixed_defect_error": 5.99595059821845e-13,
+      "bare_partition_error": 5.485352008045414e-13,
+      "polynomial_error": 7.218013858165985e-16,
+      "extended_reference_error": 8.746924791158147e-31,
+      "weighted_symmetry_error": 6.702171344140401e-16,
+      "passed": true
+    },
+    {
+      "snapshot": "initial",
+      "perturbation": 4,
+      "tests": {
+        "mixed_complete_defect": true,
+        "bare_source_partition": true,
+        "polynomial_J_action": true,
+        "extended_polynomial_reference": true,
+        "kinetic_weighted_J_symmetry": true
+      },
+      "mixed_defect_error": 7.428726425101325e-13,
+      "bare_partition_error": 6.561063067381164e-13,
+      "polynomial_error": 8.636801494268584e-16,
+      "extended_reference_error": 7.997391759554282e-31,
+      "weighted_symmetry_error": 5.875604102425875e-16,
+      "passed": true
+    },
+    {
+      "snapshot": "final",
+      "perturbation": 0,
+      "tests": {
+        "mixed_complete_defect": true,
+        "bare_source_partition": true,
+        "polynomial_J_action": true,
+        "extended_polynomial_reference": true,
+        "kinetic_weighted_J_symmetry": true,
+        "original_physical_D2_invariance": true
+      },
+      "mixed_defect_error": 1.0512367930378466e-12,
+      "bare_partition_error": 1.0414720874864995e-12,
+      "polynomial_error": 8.11277954960077e-16,
+      "extended_reference_error": 2.561842606100221e-31,
+      "weighted_symmetry_error": 2.225180916245103e-15,
+      "physical_D2_leakage": 1.7824803301198122e-14,
+      "passed": true
+    },
+    {
+      "snapshot": "final",
+      "perturbation": 1,
+      "tests": {
+        "mixed_complete_defect": true,
+        "bare_source_partition": true,
+        "polynomial_J_action": true,
+        "extended_polynomial_reference": true,
+        "kinetic_weighted_J_symmetry": true
+      },
+      "mixed_defect_error": 1.1952022289969334e-12,
+      "bare_partition_error": 1.09860968549219e-12,
+      "polynomial_error": 8.205058703504538e-16,
+      "extended_reference_error": 2.6412265462102767e-31,
+      "weighted_symmetry_error": 2.727383044995579e-14,
+      "passed": true
+    },
+    {
+      "snapshot": "final",
+      "perturbation": 2,
+      "tests": {
+        "mixed_complete_defect": true,
+        "bare_source_partition": true,
+        "polynomial_J_action": true,
+        "extended_polynomial_reference": true,
+        "kinetic_weighted_J_symmetry": true
+      },
+      "mixed_defect_error": 1.266800948072244e-12,
+      "bare_partition_error": 1.1269069693700423e-12,
+      "polynomial_error": 6.400196607966235e-16,
+      "extended_reference_error": 2.632998912481443e-31,
+      "weighted_symmetry_error": 1.1221393969769216e-15,
+      "passed": true
+    },
+    {
+      "snapshot": "final",
+      "perturbation": 3,
+      "tests": {
+        "mixed_complete_defect": true,
+        "bare_source_partition": true,
+        "polynomial_J_action": true,
+        "extended_polynomial_reference": true,
+        "kinetic_weighted_J_symmetry": true
+      },
+      "mixed_defect_error": 1.3749882018300795e-12,
+      "bare_partition_error": 1.2256360350795707e-12,
+      "polynomial_error": 9.683062768923044e-16,
+      "extended_reference_error": 3.136842964456677e-31,
+      "weighted_symmetry_error": 4.52450474536952e-16,
+      "passed": true
+    },
+    {
+      "snapshot": "final",
+      "perturbation": 4,
+      "tests": {
+        "mixed_complete_defect": true,
+        "bare_source_partition": true,
+        "polynomial_J_action": true,
+        "extended_polynomial_reference": true,
+        "kinetic_weighted_J_symmetry": true
+      },
+      "mixed_defect_error": 1.7139360988500792e-12,
+      "bare_partition_error": 1.6825961035376955e-12,
+      "polynomial_error": 7.881330880301202e-16,
+      "extended_reference_error": 2.2890610560600772e-31,
+      "weighted_symmetry_error": 7.56014961254828e-16,
+      "passed": true
+    }
+  ],
+  "input_files_unchanged": true,
+  "float128_epsilon": 1.925929944387236e-34,
+  "M2_steps_executed": 0,
+  "remaining_controls": [
+    "independent_canonical_sparse_matrix_and_symmetry",
+    "frozen_Gauss_7_6_reference_phase_and_balance"
+  ],
+  "all_registered_controls_passed": false,
+  "physical_evolution_authorized": false,
+  "correction_validated": false,
+  "CP12_closed": false
+}

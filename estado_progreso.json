@@ -1181,10 +1181,22 @@
       "M2_steps_executed": 0,
       "all_registered_controls_passed": false,
       "correction_validated": false
+    },
+    {
+      "event": "CP12_PREFLIGHT_MIXTO_FASE_B_DEFECTO_POSITIVO",
+      "date": "2026-10-15",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/CONTROLES_MIXTOS_FASE_B_CP12_20261015.md",
+      "M2_steps_executed": 0,
+      "checks_passed": 52,
+      "all_registered_controls_passed": false,
+      "correction_validated": false
     }
   ],
   "next_actions": [
-    "Continuar sólo los controles mixtos pendientes sin pasos M2: identidad completa de defecto/Jacobiano, matriz canónica dispersa y simetría, y propagación congelada Gauss 7/6. La fase A ya pasó 32 comprobaciones sobre los estados CP10 iniciales/finales de ambas mallas; reutilizarla sin repetir. Capturar el código de cada control antes de ejecutarlo y conservar cualquier negativo. No iniciar piloto mixto antes del aprobado completo, nuevo prerregistro físico y τ0 preservado/recuperado/auditado. Véase informes/CONTROLES_MIXTOS_FASE_A_CP12_20261015.md.",
+    "Continuar sólo matriz canónica independiente, resolventes y propagación congelada del diseño mixto, sin pasos M2. Reutilizar fases A (32 comprobaciones) y B (52) ya positivas, sin repetirlas. Registrar fuentes antes de cada control; no autorizar piloto hasta todas las puertas, nuevo prerregistro físico y τ0 conservado/recuperado/auditado. Véase informes/CONTROLES_MIXTOS_FASE_B_CP12_20261015.md.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -1199,15 +1211,15 @@
     "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Controles mixtos restantes de defecto, matriz y propagación congelada, con cero pasos M2. Fase A positiva no equivale a corrección validada ni autoriza evolución.",
+  "next_calculation": "Matriz canónica mixta, resolventes y propagación congelada con cero pasos M2. Fases A y B positivas no validan la corrección ni autorizan evolución.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [],
   "research_in_progress": [
     {
       "campaign": "CP12_DERIVACION_VARIACIONAL_MIXTA",
-      "status": "FASE_A_32_CONTROLES_POSITIVOS_CONTROLES_ACOPLADOS_Y_CONGELADOS_PENDIENTES",
+      "status": "FASES_A_Y_B_POSITIVAS_MATRIZ_Y_PROPAGACION_PENDIENTES",
       "scope": "Diseño prospectivo: conservar FV en ambos Φ y usar K4 en χ, con M2 plenamente acoplado. Requiere registro y controles de la implementación nueva antes de M2.",
-      "evidence": "checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015/fase_A/RESULTADO.json",
+      "evidence": "checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015/fase_B/RESULTADO.json",
       "new_M2_steps": 0,
       "correction_validated": false,
       "CP12_closed": false

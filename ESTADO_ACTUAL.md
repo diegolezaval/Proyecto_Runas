@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Continuar sólo los controles mixtos pendientes sin pasos M2: identidad completa de defecto/Jacobiano, matriz canónica dispersa y simetría, y propagación congelada Gauss 7/6. La fase A ya pasó 32 comprobaciones sobre los estados CP10 iniciales/finales de ambas mallas; reutilizarla sin repetir. Capturar el código de cada control antes de ejecutarlo y conservar cualquier negativo. No iniciar piloto mixto antes del aprobado completo, nuevo prerregistro físico y τ0 preservado/recuperado/auditado. Véase informes/CONTROLES_MIXTOS_FASE_A_CP12_20261015.md.
+- Continuar sólo matriz canónica independiente, resolventes y propagación congelada del diseño mixto, sin pasos M2. Reutilizar fases A (32 comprobaciones) y B (52) ya positivas, sin repetirlas. Registrar fuentes antes de cada control; no autorizar piloto hasta todas las puertas, nuevo prerregistro físico y τ0 conservado/recuperado/auditado. Véase informes/CONTROLES_MIXTOS_FASE_B_CP12_20261015.md.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/CONTROLES_MIXTOS_FASE_A_CP12_20261015.md](informes/CONTROLES_MIXTOS_FASE_A_CP12_20261015.md).
+Informe de esta entrega: [informes/CONTROLES_MIXTOS_FASE_B_CP12_20261015.md](informes/CONTROLES_MIXTOS_FASE_B_CP12_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

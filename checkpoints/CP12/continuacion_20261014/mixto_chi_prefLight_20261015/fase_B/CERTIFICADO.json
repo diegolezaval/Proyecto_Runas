@@ -1,0 +1,18 @@
+{
+  "schema": "CP12_MIXED_PHASE_B_DEFECT_RESULT_PRESERVED",
+  "passed": true,
+  "scope": "Only mixed defect/Jacobian; no frozen propagation or physical evolution approval",
+  "registration_commit": "427659b67b1e6cc259c66b5039f809876f858918",
+  "source_sha256": "bbfc661bec12d662c39e2e327c6ec12b57a9f6a05926907ab9ada17a68f14428",
+  "phase_A_backend_sha256": "4115bddbe8e7b3674b85df9f09610049a857d6f87a0cc52bb1d081cffc58558c",
+  "result_sha256": "875fbd204819df3ae498db1a2034a019fc61c763f71e60dc7ac1394d1135c0d3",
+  "input_capsule_sha256": "f4176ec466647faa5a48a427403db3a865f3eef8fda21ea0f837520adfc5bf0b",
+  "original_inputs_unchanged": true,
+  "checks_passed": 52,
+  "original_algebra_tolerance": 2e-12,
+  "M2_steps_executed": 0,
+  "all_registered_controls_passed": false,
+  "physical_evolution_authorized": false,
+  "correction_validated": false,
+  "CP12_closed": false
+}
