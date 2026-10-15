@@ -1,0 +1,36 @@
+{
+  "schema": "CP12_MIXED_PREFLIGHT_PHASE_A_BEFORE_EXECUTION",
+  "parent_preregistration_commit": "af7e8e188f99dea2462df50ee33e29881775329a",
+  "scope": "Subset of registered gates: physical/passive spatial routing, mixed variational gradient, U1, FV energy-gap/work identities and fused potential. Remaining coupled/frozen controls stay pending.",
+  "source_sha256": {
+    "verify_negative_inputs.py": "e983ad91e5fb38a5a4040eeddc75f18f460c8ac7b240c7a9e8076551b33c3a21",
+    "mixed_backend.py": "4115bddbe8e7b3674b85df9f09610049a857d6f87a0cc52bb1d081cffc58558c",
+    "check_mixed_static.py": "63ed34387c10584e0a37eb1a17a8d210a3b0e8946a02c9d1a345ad9e74bfd06c"
+  },
+  "input_capsule_sha256": "f4176ec466647faa5a48a427403db3a865f3eef8fda21ea0f837520adfc5bf0b",
+  "input_capsule_bytes": 39126835,
+  "complete_manifest_payload_files": 84,
+  "complete_manifest_verified": true,
+  "seed": 20261015001,
+  "grids": [
+    0.125,
+    0.0625
+  ],
+  "radius": 220,
+  "L": 4,
+  "snapshots": [
+    "CP10_initial",
+    "CP10_final"
+  ],
+  "algebra_tolerance": 2e-12,
+  "complex_step": 1e-30,
+  "fused_trials_per_snapshot": 5,
+  "fused_perturbation_amplitude": 0.00001,
+  "BLAS_observed": "SkylakeX",
+  "BLAS_threads": 1,
+  "OPENBLAS_CORETYPE_forced": false,
+  "physical_evolution_authorized": false,
+  "M2_steps": 0,
+  "all_registered_controls_passed": false,
+  "CP12_closed": false
+}
