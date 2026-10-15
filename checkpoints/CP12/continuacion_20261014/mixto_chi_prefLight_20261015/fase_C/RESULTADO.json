@@ -1,0 +1,110 @@
+{
+  "schema": "CP12_MIXED_PHASE_C_MATRIX_AND_RESOLVENT_NOT_FROZEN_APPROVAL",
+  "passed": true,
+  "rows": [
+    {
+      "dx": 0.125,
+      "background": "initial",
+      "canonical_dimension": 31680,
+      "canonical_matrix_action_error": 3.684015784713336e-16,
+      "canonical_matrix_symmetry_error": 1.9936044429544272e-17,
+      "resolvents": [
+        {
+          "stages": 7,
+          "residual": 9.665816029838449e-13
+        },
+        {
+          "stages": 6,
+          "residual": 9.499224079449594e-14
+        }
+      ],
+      "tests": {
+        "canonical_matrix_action": true,
+        "canonical_matrix_symmetry": true,
+        "mixed_resolvent_order_7": true,
+        "mixed_resolvent_order_6": true
+      },
+      "passed": true
+    },
+    {
+      "dx": 0.125,
+      "background": "initial_final_mean",
+      "canonical_dimension": 31680,
+      "canonical_matrix_action_error": 4.219535605469756e-16,
+      "canonical_matrix_symmetry_error": 1.9937480109460907e-17,
+      "resolvents": [
+        {
+          "stages": 7,
+          "residual": 8.067806859973738e-13
+        },
+        {
+          "stages": 6,
+          "residual": 9.399200424748508e-14
+        }
+      ],
+      "tests": {
+        "canonical_matrix_action": true,
+        "canonical_matrix_symmetry": true,
+        "mixed_resolvent_order_7": true,
+        "mixed_resolvent_order_6": true
+      },
+      "passed": true
+    },
+    {
+      "dx": 0.0625,
+      "background": "initial",
+      "canonical_dimension": 63360,
+      "canonical_matrix_action_error": 3.6181429786328343e-16,
+      "canonical_matrix_symmetry_error": 1.3981421142318438e-17,
+      "resolvents": [
+        {
+          "stages": 7,
+          "residual": 1.0862437661430524e-12
+        },
+        {
+          "stages": 6,
+          "residual": 9.053004709814918e-14
+        }
+      ],
+      "tests": {
+        "canonical_matrix_action": true,
+        "canonical_matrix_symmetry": true,
+        "mixed_resolvent_order_7": true,
+        "mixed_resolvent_order_6": true
+      },
+      "passed": true
+    },
+    {
+      "dx": 0.0625,
+      "background": "initial_final_mean",
+      "canonical_dimension": 63360,
+      "canonical_matrix_action_error": 4.3788832895198883e-16,
+      "canonical_matrix_symmetry_error": 1.3995696379682084e-17,
+      "resolvents": [
+        {
+          "stages": 7,
+          "residual": 9.036749441969659e-13
+        },
+        {
+          "stages": 6,
+          "residual": 9.520185980486914e-14
+        }
+      ],
+      "tests": {
+        "canonical_matrix_action": true,
+        "canonical_matrix_symmetry": true,
+        "mixed_resolvent_order_7": true,
+        "mixed_resolvent_order_6": true
+      },
+      "passed": true
+    }
+  ],
+  "M2_steps_executed": 0,
+  "remaining_controls": [
+    "frozen_Gauss_7_6_reference_phase_and_balance"
+  ],
+  "all_registered_controls_passed": false,
+  "physical_evolution_authorized": false,
+  "correction_validated": false,
+  "CP12_closed": false
+}

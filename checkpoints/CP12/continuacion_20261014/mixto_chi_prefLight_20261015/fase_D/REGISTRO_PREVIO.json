@@ -1,0 +1,39 @@
+{
+  "schema": "CP12_MIXED_FROZEN_CONTROL_BEFORE_EXECUTION",
+  "parent_commit": "b23d28701e3a9557f6b066bd8eb17be702434fc0",
+  "preregistration_commit": "af7e8e188f99dea2462df50ee33e29881775329a",
+  "source_sha256": "194bfa687b078be454cf32311ca179823b61dfc3a541c7b6bea53bb3e7efd8bb",
+  "independent_matrix_source_sha256": "f3e2e78af743bb9fc6e2536e1c73d7a9314ed2bb6c568b9d6dc856fbbef68fef",
+  "mixed_backend_sha256": "4115bddbe8e7b3674b85df9f09610049a857d6f87a0cc52bb1d081cffc58558c",
+  "seed": 20261015001,
+  "input_capsule_sha256": "f4176ec466647faa5a48a427403db3a865f3eef8fda21ea0f837520adfc5bf0b",
+  "duration": 0.1,
+  "windows": 10,
+  "Gauss_step": 0.01,
+  "Gauss_stages": [
+    7,
+    6
+  ],
+  "channels": 5,
+  "iteration_relative_tolerance": 1e-12,
+  "iteration_limit": 12,
+  "reference_methods": [
+    "sparse_expm_multiply",
+    "scaled_Taylor_degree32_16_subintervals",
+    "scaled_Taylor_degree32_32_subintervals"
+  ],
+  "reference_agreement_and_truncation_gate": 1e-8,
+  "reference_not_interval_arithmetic": true,
+  "frequency_bound": "sqrt(max(abs(H) row sums, abs(H) column sums))",
+  "phase_error_gate": 0.001,
+  "quadratic_balance_gate": 0.0002,
+  "physical_energy_gates_unchanged": true,
+  "backgrounds": [
+    "DN_at_CP10_initial",
+    "mean_J_between_CP10_initial_and_final_same_grid"
+  ],
+  "M2_steps": 0,
+  "physical_evolution_authorized": false,
+  "correction_validated": false,
+  "CP12_closed": false
+}
