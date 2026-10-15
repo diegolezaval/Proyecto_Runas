@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Supervisar la continuación aislada autorizada desde la última cápsula íntegra: τ88, con 33 controles originales y 221 observaciones CP10 exactas por malla. Hay una instancia directamente observada en 88→96; no duplicar su evolución. Recuperar, auditar y publicar cada nueva frontera permanente antes de considerarla válida. La actividad de ejecutores anteriores sigue desconocida y no se presupone su terminación; la autorización de aislamiento vigente no depende de declararlos inactivos. Exigir reproducción final CP10 y las tres ventanas causales en τ160 antes de investigar correcciones. Véanse RECUPERACION_CP12_ACTUAL.md y checkpoints/CP12/continuacion_20261014/INTERRUPCION_Y_REANUDACION_20261015.json.
+- Supervisar la continuación aislada autorizada desde la última cápsula íntegra: τ96, con 33 controles originales y 241 observaciones CP10 exactas por malla. Hay una instancia directamente observada en 96→104; no duplicar su evolución. Recuperar, auditar y publicar cada nueva frontera permanente antes de considerarla válida. La actividad de ejecutores anteriores sigue desconocida y no se presupone su terminación; la autorización de aislamiento vigente no depende de declararlos inactivos. Exigir reproducción final CP10 y las tres ventanas causales en τ160 antes de investigar correcciones. Véanse RECUPERACION_CP12_ACTUAL.md y checkpoints/CP12/continuacion_20261014/tau0096/AUDITORIA_FRONTERA_GUARDADA.json.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -86,7 +86,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/COHERENCIA_CONTINUIDAD_CP12_20261015.md](informes/COHERENCIA_CONTINUIDAD_CP12_20261015.md).
+Informe de esta entrega: [informes/CONTINUIDAD_CP12_TAU96_20261015.md](informes/CONTINUIDAD_CP12_TAU96_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 
