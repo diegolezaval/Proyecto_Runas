@@ -1257,10 +1257,23 @@
       "scientific_frontier": false,
       "correction_validated": false,
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_TRANSPORTE_INTERNO_RECUPERADO",
+      "at": "2026-10-15T22:32:29.442280+00:00",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/TRANSPORTES_MIXTOS_CP12_20261015.md",
+      "recoverable_observer_clock": 1.6,
+      "independent_zero_step_checks": 14,
+      "scientific_frontier": false,
+      "correction_validated": false,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Continuar/supervisar el piloto mixto con transporte exacto DOP853 verificado. Último transporte permanente recuperado/auditado: reloj observador .4; contraste .4→.41 bit a bit positivo. Recuperar primero cualquier transporte o frontera posterior; no regresar a τ0 ni reiniciar DOP853 si existe un transporte válido. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.",
+    "Continuar/supervisar el piloto mixto con transporte DOP853 verificado; último respaldo completo recuperado/auditado: reloj 1.6. Recuperar primero cualquier estado posterior, sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -1275,37 +1288,37 @@
     "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Continuar/supervisar el piloto mixto con transporte exacto DOP853 verificado. Último transporte permanente recuperado/auditado: reloj observador .4; contraste .4→.41 bit a bit positivo. Recuperar primero cualquier transporte o frontera posterior; no regresar a τ0 ni reiniciar DOP853 si existe un transporte válido. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.",
+  "next_calculation": "Continuar/supervisar el piloto mixto con transporte DOP853 verificado; último respaldo completo recuperado/auditado: reloj 1.6. Recuperar primero cualquier estado posterior, sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [
     {
       "campaign": "CP12_PILOTO_MIXTO_PHI_FV_CHI_K4",
-      "status": "PILOTO_TRANSPORTE_INTERNO_VERIFICADO_EN_M2",
+      "status": "REANUDADO_DESDE_1p6_SIN_REINICIAR_DOP853",
       "latest_certified_time": 0,
       "first_target": 8,
       "conditional_target": 160,
-      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000004.json",
+      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000016.json",
       "original_CP10_trajectories_repeated": false,
       "correction_validated": false,
       "CP12_closed": false,
       "previous_attempt_activity": "SESSION_NO_LONGER_ACCESSIBLE",
       "previous_attempt_termination_assumed": false,
       "previous_attempt_last_uncheckpointed_observation": 4.12,
-      "latest_recoverable_observer_clock": 0.4
+      "latest_recoverable_observer_clock": 1.6
     }
   ],
   "research_in_progress": [
     {
       "campaign": "CP12_DERIVACION_VARIACIONAL_MIXTA",
-      "status": "TRANSPORTE_EXACTO_M2_VERIFICADO_PILOTO_CONTINUA",
-      "scope": "Transporte .4 recuperado/auditado; contraste .4→.41 bit a bit positivo. Sin τ8 certificado ni corrección validada.",
+      "status": "PILOTO_REANUDADO_DESDE_1p6_RECUPERADO",
+      "scope": "1.6 guardado, recuperado y rehidratado; incidentes administrativos conservados. Kernels y estado idénticos. Sin τ8 científico ni validación de corrección.",
       "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000004.json",
       "correction_validated": false,
       "CP12_closed": false
     }
   ],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
-  "delivery_boundary": "CP11 sigue siendo el último checkpoint científico aceptado. CP12 original τ160/CP10 exacto no se repite; χ original 5.12639096419456 % >2 %. El piloto mixto ahora tiene transporte interno .4 completo guardado, recuperado y auditado; .4→.41 coincide bit a bit tras restauración. La producción continúa sin reiniciar DOP853. Frontera científica mixta última: τ0; convergencia, robustez y cierre CP12 pendientes. Las 33 etapas y todos los negativos permanecen intactos.",
+  "delivery_boundary": "CP11 sigue siendo el último checkpoint científico aceptado. CP12 original τ160/CP10 exacto no se repite. El piloto mixto dispone de transporte interno 1.6 completo guardado, recuperado y auditado; .4→.41 coincide bit a bit al restaurar. Dos incidentes administrativos de empaquetado se conservaron y corrigieron sin modificar estado, recibo, kernels ni puertas. Se reanudó DOP853 desde1.6 con contadores íntegros. Última frontera científica mixta: τ0; convergencia, robustez y cierre CP12 pendientes. Las 33 etapas y todos los negativos permanecen intactos.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
   "latest_completed_nonradial_time": 160,
   "diagnostic_after_gate": "τ160 y CP10 exacto comprobados; lector original con serialización NumPy booleana administrativa verificada. Las tres ventanas dan suficiencia al operador χ acoplado y a operador_total. El operador libre no cumple las puertas; se conservan términos cruzados y cancelaciones. No se atribuye una fracción pura al bucle χ→Φ→χ.",
@@ -1339,13 +1352,16 @@
     "target_reached_and_certified": true,
     "candidate_K4_status": "DETENIDO_POR_PUERTA_CIENTIFICA_NEGATIVO_GUARDADO_RECUPERADO",
     "candidate_K4_exit_code_observed": 1,
-    "mixed_candidate_status": "PILOTO_TRANSPORTE_VERIFICADO_EN_M2_CONTINUA",
+    "mixed_candidate_status": "REANUDADO_DESDE_TRANSPORTE_1p6_CON_SELECCION_CANONICA",
     "mixed_candidate_latest_certified_time": 0,
     "previous_mixed_attempt_status": "SESSION_NO_LONGER_ACCESSIBLE",
     "previous_mixed_attempt_termination_assumed": false,
     "mixed_attempt_activity_scope": "Only own transport-enabled guardian; no termination inferred for older executors",
     "previous_mixed_attempt_last_observation": 4.12,
-    "mixed_candidate_latest_recoverable_observer_clock": 0.4
+    "mixed_candidate_latest_recoverable_observer_clock": 1.6,
+    "transport_worker_previous_session_exit_observed": 1,
+    "transport_administrative_incidents_preserved": true,
+    "transport_amendment_commit": "19c8b2b2eb40052ae81fc66e5ccc7acc76607348"
   },
   "latest_verified_cp12_restart": {
     "time": 160,
@@ -1401,13 +1417,14 @@
     "CP12_closed": false
   },
   "latest_verified_cp12_mixed_transport": {
-    "observer_clock": 0.4,
-    "proof": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000004.json",
-    "state_sha256": "3a1332db0b5ae4d259bab692cd8a384a7012e251a2628e5e0c425c07888cbce8",
-    "zip_sha256": "fc7e044658650e8c3fbb731c942192b387bcc31f0455b5731368f675f38ac21c",
-    "zip_bytes": 204098285,
+    "observer_clock": 1.6,
+    "proof": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000016.json",
+    "state_sha256": "5776cceadd2ca07b94a25e4171791b068ed4205de06ac286564f4e6ef5869061",
+    "zip_sha256": "7b069c111340596a258252bd3fee767835d62078d74fecf0a459042214661c55",
+    "zip_bytes": 203934316,
     "full_capsule_recovered_and_rehydrated": true,
     "scientific_frontier": false,
     "CP12_closed": false
-  }
+  },
+  "mixed_transport_initial_capsule_sha256": "654e8ff022d0dd528aa4b57dfe057093234e71ea597e4ea335f357c9909d19e6"
 }
