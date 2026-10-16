@@ -75,9 +75,13 @@ def export(home, repo):
         zip_bytes=proof['zip_bytes'], full_capsule_recovered_and_audited=True,
         correction_validated=False, CP12_closed=False)
     state['execution_activity']['mixed_candidate_latest_certified_time'] = time
+    state['execution_activity']['mixed_candidate_latest_recoverable_observer_clock'] = max(
+        time, state['execution_activity'].get('mixed_candidate_latest_recoverable_observer_clock', 0))
     for item in state['numerical_runs_in_progress']:
         if item.get('campaign') == 'CP12_PILOTO_MIXTO_PHI_FV_CHI_K4':
-            item.update(latest_certified_time=time, evidence=str(relative))
+            item.update(latest_certified_time=time,
+                        latest_recoverable_observer_clock=max(time, item.get('latest_recoverable_observer_clock', 0)),
+                        evidence=str(relative))
     action = (f'Última frontera numérica mixta guardada, recuperada y auditada: τ={time}. '
               'Consultar primero estados posteriores y actividad propia; continuar sólo desde '
               'evidencia válida, sin repetir el prefijo. Mantener ambas energías, carga, '
