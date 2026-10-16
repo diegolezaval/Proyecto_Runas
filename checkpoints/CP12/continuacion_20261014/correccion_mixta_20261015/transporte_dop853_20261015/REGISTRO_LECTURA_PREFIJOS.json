@@ -1,0 +1,19 @@
+{
+  "schema": "CP12_SUPPLEMENTARY_OFFLINE_PREFIX_READING_REGISTERED_BEFORE_ANALYSIS",
+  "at": "2026-10-16T04:14:08.037445+00:00",
+  "reader_sha256": "3043d3f58bb0a28cac20a528d3680408191a75c18a0c36505884e0cd9eac330b",
+  "protocol_sha256": "1f23c314c7a0a388146b0c079b031fce42155ee5d70622ee842e82f7671f63dc",
+  "original_source_relative": "herramientas/diagnosticar_mediador_CP10.py",
+  "original_source_sha256": "41f0b56b797f9caca7601577d8db7f846d1d452e77a80940de6092be6a8fea64",
+  "prefix_times": [
+    8,
+    16
+  ],
+  "metrics_threshold": 0.02,
+  "only_original_time_guard_parameterized": true,
+  "retrospective_saved_data": true,
+  "new_M2_steps_authorized": false,
+  "original_final_horizon": 160,
+  "scientific_gates_changed": false,
+  "CP12_closed": false
+}

@@ -1374,10 +1374,22 @@
       "scientific_frontier": false,
       "correction_validated": false,
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_FRONTERA_NUMERICA_MIXTA_RECUPERADA",
+      "at": "2026-10-16T04:14:08.069027+00:00",
+      "time": 16,
+      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/FRONTERA_MIXTA_TAU0016.json",
+      "report": "informes/FRONTERAS_MIXTAS_CP12_20261016.md",
+      "closed_stages": [],
+      "reopened_stages": [],
+      "project_scientific_checkpoint_unchanged": true,
+      "correction_validated": false,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Continuar/supervisar la evolución mixta con transporte DOP853 verificado; último respaldo completo recuperado/auditado: reloj 14.4. Recuperar primero cualquier estado posterior, sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.",
+    "Última frontera numérica mixta guardada, recuperada y auditada: τ=16. Consultar primero estados posteriores y actividad propia; continuar sólo desde evidencia válida, sin repetir el prefijo. Mantener ambas energías, carga, observadores, comparación espacial original del 2 % y dependencias causales, de convergencia, estabilidad y robustez. CP12 abierto.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -1392,16 +1404,16 @@
     "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Continuar/supervisar la evolución mixta con transporte DOP853 verificado; último respaldo completo recuperado/auditado: reloj 14.4. Recuperar primero cualquier estado posterior, sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.",
+  "next_calculation": "Última frontera numérica mixta guardada, recuperada y auditada: τ=16. Consultar primero estados posteriores y actividad propia; continuar sólo desde evidencia válida, sin repetir el prefijo. Mantener ambas energías, carga, observadores, comparación espacial original del 2 % y dependencias causales, de convergencia, estabilidad y robustez. CP12 abierto.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [
     {
       "campaign": "CP12_PILOTO_MIXTO_PHI_FV_CHI_K4",
-      "status": "PILOTO_TAU8_AUDITADO_CONTINUACION_CONDICIONAL_EN_CURSO",
-      "latest_certified_time": 8,
+      "status": "CONTINUACION_MIXTA_PRERREGISTRADA_CON_FRONTERAS_AUDITADAS",
+      "latest_certified_time": 16,
       "first_target": 8,
       "conditional_target": 160,
-      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000144.json",
+      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/FRONTERA_MIXTA_TAU0016.json",
       "original_CP10_trajectories_repeated": false,
       "correction_validated": false,
       "CP12_closed": false,
@@ -1459,8 +1471,8 @@
     "target_reached_and_certified": true,
     "candidate_K4_status": "DETENIDO_POR_PUERTA_CIENTIFICA_NEGATIVO_GUARDADO_RECUPERADO",
     "candidate_K4_exit_code_observed": 1,
-    "mixed_candidate_status": "PILOTO_TAU8_RECUPERADO_AUDITADO_CONTINUACION_PRERREGISTRADA_ACTIVA",
-    "mixed_candidate_latest_certified_time": 8,
+    "mixed_candidate_status": "PILOTO_SUPERADO_CONTINUACION_CON_FRONTERAS_AUDITADAS",
+    "mixed_candidate_latest_certified_time": 16,
     "previous_mixed_attempt_status": "SESSION_NO_LONGER_ACCESSIBLE",
     "previous_mixed_attempt_termination_assumed": false,
     "mixed_attempt_activity_scope": "Only own transport-enabled guardian; no termination inferred for older executors",
@@ -1515,13 +1527,13 @@
     "correction_validated": false
   },
   "latest_verified_cp12_mixed_restart": {
-    "time": 8,
-    "proof": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/FRONTERA_MIXTA_TAU0008.json",
-    "state_sha256": "4c91c0c61e57635573f69c940205c465b116ce8861c2a105dd361e26f5c4603c",
+    "time": 16,
+    "proof": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/FRONTERA_MIXTA_TAU0016.json",
+    "state_sha256": "0acb7e746b5368c620ef8cb9f92de34076daca469b85bfef0b1d1b489640f714",
     "configuration_sha256": "0719d82ab2187b6076fa2baf6d010495bdffd59622b9ca8f56345beb19e7f182",
-    "receipt_sha256": "33ecb6eb94139c4c8152455e9a3b9dbcaf54d5c0d0cdbdcd45410e0427dfa599",
-    "zip_sha256": "1ec03795f13feee243498100ffdfc505ea101ae48ace51d65bf028d30ccab561",
-    "zip_bytes": 229600254,
+    "receipt_sha256": "67386aa1220fd870fa5eabb2fbd4dae51f61f91f091a3b9af4c9028e9644c92d",
+    "zip_sha256": "b6d9edf7660e4d175febe8f093e3be8917bf5ce5b4cca4da84b32cdf2bd32615",
+    "zip_bytes": 229872238,
     "full_capsule_recovered_and_audited": true,
     "correction_validated": false,
     "CP12_closed": false
