@@ -1,0 +1,14 @@
+{
+  "schema": "CP12_SYNTHETIC_STOP_CONTROL_LOCAL_REGISTRATION_BEFORE_TEST",
+  "at": "2026-10-16T17:59:43.525034+00:00",
+  "source_sha256": "43da74dd25c9ebcd8c250019cc65c97990174f4b32ac8c700d1a43838af0628a",
+  "question": "Does the managed session interruption reach a guardian child started in a new session?",
+  "duration_bound_seconds": 18,
+  "M2_steps_executed": 0,
+  "physical_run_not_interrupted": true,
+  "acceptance": "Record parent and child outcomes separately; do not infer child termination from parent exit alone. All tested processes end naturally by18 seconds if the signal does not reach them.",
+  "CP12_closed": false,
+  "locally_registered_before_test": true,
+  "public_publication_after_test": true,
+  "does_not_authorize_uncheckpointed_physical_interruption": true
+}

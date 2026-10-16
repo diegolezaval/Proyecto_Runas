@@ -1,0 +1,18 @@
+{
+  "schema": "CP12_SYNTHETIC_MANAGED_SESSION_INTERRUPTION_OBSERVATION",
+  "at": "2026-10-16T18:00:23.741187+00:00",
+  "tool_managed_session_exit_observed": 130,
+  "child_heartbeat_count": 19,
+  "child_last_heartbeat_seconds_after_start": 4.513264,
+  "child_natural_end_record_present": false,
+  "child_exception_checkpoint_present": false,
+  "child_finally_record_present": false,
+  "parent_observed_child_exit_record_present": false,
+  "matching_synthetic_processes_now": 0,
+  "bounded_synthetic_case_completed": true,
+  "graceful_python_checkpoint_not_observed": true,
+  "conclusion": "The managed interruption ends this synthetic process tree abruptly; it does not provide a graceful Python-level checkpoint. It can be used only after a separately preserved scientific frontier/negative and with separate evidence of this own managed-session termination, never a fabricated guardian wait record.",
+  "M2_steps_executed": 0,
+  "real_scientific_worker_not_interrupted": true,
+  "CP12_closed": false
+}
