@@ -1,6 +1,6 @@
 # CP12 · Transportes mixtos recuperados
 
-Último reloj del observador recuperado y rehidratado: **τ=12.8**. Los tiempos físicos reales, balances y contadores están en cada certificado. Estos estados internos permiten continuar DOP853 sin resembrar ni partir un paso adaptativo.
+Último reloj del observador recuperado y rehidratado: **τ=14.4**. Los tiempos físicos reales, balances y contadores están en cada certificado. Estos estados internos permiten continuar DOP853 sin resembrar ni partir un paso adaptativo.
 
 | Reloj | Bytes del ZIP | SHA256 |
 |---|---:|---|
@@ -12,6 +12,7 @@
 | 9.6 | 229607879 | `5e173cbd5244fbb4e114b755c96a6e9cf7659334e07e840d55c306984bf25b3f` |
 | 11.2 | 229631946 | `f9d1944405c615876adee7d37c35cc97ad33c54cab2ee82a4add2a8d7fe3a4dd` |
 | 12.8 | 229655330 | `3bc6afe37b5d4dd69b1d4219dcda3b80edb6cb57c957e908aa6cd08667fe80e8` |
+| 14.4 | 229683299 | `1e40dfd025a7f23ecd078722c9a38c0c280f5e4328fd7ebf7c328b14557155f8` |
 
 Cada cápsula completa supera cobertura/tamaños/hashes y la auditoría independiente de rehidratación con cero pasos M2. El contraste preregistrado .4→.41 coincide bit a bit; su trabajo diagnóstico se registra separadamente. No se repiten A–D ni campañas certificadas.
 
@@ -30,3 +31,7 @@ El nuevo respaldo τ=1.6 tiene 203 934 316 bytes y SHA256 `7b069c111340596a25825
 Máximos hasta ese respaldo: energía FV 2.876830996e-9/6.949043563e-10; energía mixta 4.626332650e-11/4.619737926e-11; carga 6.661338148e-16/4.440892099e-16. Los cierres y Parseval pasan sus criterios originales. Son balances de un prefijo corto; la puerta espacial final y las demás dependencias CP12 siguen pendientes.
 
 Para recuperar este respaldo, usar las fuentes capturadas de `conservacion_canonica_v2` del commit registrado y la guía `RECUPERAR.md`. Recuperar primero cualquier transporte o frontera posterior; no volver a τ0 si existe un estado más avanzado.
+
+## Copias transitorias incompletas
+
+Se registró y comprobó una limpieza administrativa separada del integrador (`15b84bf`). Los 13 controles sintéticos y el bloqueo de un único limpiador pasan sin M2. Las copias antiguas incompletas entran en cuarentena con inventarios de hashes después de un respaldo recuperado; su retirada requiere otro checkpoint posterior positivo. Se protegen los NPZ válidos, datos canónicos, negativos, fuentes y respaldos. Véase `COPIAS_TRANSFERENCIAS.md` y `OBSERVACION_CUARENTENA_TRANSFERENCIAS.json`.
