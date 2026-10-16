@@ -1,0 +1,27 @@
+{
+  "schema": "CP12_MIXTO_AUDITED_TRIAL_BOUNDARY_CONTINUATION_DECISION",
+  "at": "2026-10-16T18:36:06.616801+00:00",
+  "time": 40,
+  "decision": "CONTINUAR_MISMO_ENSAYO_40_A_48",
+  "full_boundary_certificate": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/FRONTERA_MIXTA_TAU0040.json",
+  "spatial_prefix_result": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0040.json",
+  "independent_zero_step_audit_checks": 28,
+  "all_28_checks_passed": true,
+  "all_five_registered_prefix_spatial_limits_met": true,
+  "original_threshold": 0.02,
+  "source_state_sha256": "0e52bfd1b1f78fbed48cf8b0b97e46a0da454fc2c695f0886594e631e4ab47e4",
+  "source_receipt_sha256": "533cd7dfed4d592eeed85daad1f9cdbd6ac105f266e8ee70f9c1616cd1776ae4",
+  "zip_sha256": "a01caf2e8ced46cca4edfeddbb5add78c3c21ba0794e6ba80633f6961dc7e24d",
+  "payload_files": 253,
+  "next_segment": {
+    "from_time": 40,
+    "to_time": 48
+  },
+  "scope": "Numerical MIXTO trial boundary only",
+  "project_scientific_checkpoint": "CP11",
+  "final_tau160_spatial_and_mechanism_gates_pending": true,
+  "additional_reference_stability_robustness_pending": true,
+  "new_discretization_variants_authorized": false,
+  "correction_validated": false,
+  "CP12_closed": false
+}
