@@ -1386,6 +1386,23 @@
       "project_scientific_checkpoint_unchanged": true,
       "correction_validated": false,
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_METRICAS_ESPACIALES_PREFIJOS_GUARDADOS",
+      "at": "2026-10-16T04:17:53.362200+00:00",
+      "report": "informes/CONTINUACION_MIXTA_TAU16_CP12_20261016.md",
+      "times": [
+        8,
+        16
+      ],
+      "all_five_prefix_pair_limits_met": true,
+      "registration_commit": "c0c8006685294ace20d3204b315f4e5781288355",
+      "M2_steps_executed": 0,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "scientific_checkpoint_unchanged": true,
+      "correction_validated": false,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
@@ -1548,5 +1565,23 @@
     "scientific_frontier": false,
     "CP12_closed": false
   },
-  "mixed_transport_initial_capsule_sha256": "654e8ff022d0dd528aa4b57dfe057093234e71ea597e4ea335f357c9909d19e6"
+  "mixed_transport_initial_capsule_sha256": "654e8ff022d0dd528aa4b57dfe057093234e71ea597e4ea335f357c9909d19e6",
+  "mixed_saved_prefix_spatial_agreement": {
+    "8": {
+      "time": 8,
+      "result": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0008.json",
+      "all_five_pair_limits_met": true,
+      "threshold": 0.02,
+      "final_tau160_acceptance": false,
+      "M2_steps_executed": 0
+    },
+    "16": {
+      "time": 16,
+      "result": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0016.json",
+      "all_five_pair_limits_met": true,
+      "threshold": 0.02,
+      "final_tau160_acceptance": false,
+      "M2_steps_executed": 0
+    }
+  }
 }

@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/FRONTERAS_MIXTAS_CP12_20261016.md](informes/FRONTERAS_MIXTAS_CP12_20261016.md).
+Informe de esta entrega: [informes/CONTINUACION_MIXTA_TAU16_CP12_20261016.md](informes/CONTINUACION_MIXTA_TAU16_CP12_20261016.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 
