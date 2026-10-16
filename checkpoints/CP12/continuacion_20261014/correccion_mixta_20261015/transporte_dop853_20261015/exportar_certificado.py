@@ -47,6 +47,9 @@ def export(home, repo):
     public['original_transport_registration_commit'] = 'e080cec73d44fe099d6de40715732ef7d11f7d9a'
     write(repo / relative, public)
     report = Path('informes/TRANSPORTES_MIXTOS_CP12_20261015.md')
+    previous_report = (repo / report).read_text() if (repo / report).exists() else ''
+    incident_marker = '## Incidentes administrativos conservados'
+    incident_tail = previous_report[previous_report.index(incident_marker):] if incident_marker in previous_report else ''
     lines = ['# CP12 · Transportes mixtos recuperados', '',
              f'Último reloj del observador recuperado y rehidratado: **τ={clock:g}**. '
              'Los tiempos físicos reales, balances y contadores están en cada certificado. '
@@ -63,7 +66,7 @@ def export(home, repo):
               'CP12 permanece abierto y CP11 sigue aceptado. La producción conserva sus paradas y negativos. '
               'Main, PR #2 y las 33 etapas permanecen intactos. Recuperar primero el transporte o frontera '
               'válido más avanzado usando RECUPERAR.md; no volver a τ0 si existe un estado posterior.', '']
-    (repo / report).write_text('\n'.join(lines))
+    (repo / report).write_text('\n'.join(lines) + ('\n' + incident_tail if incident_tail else ''))
     state['mixed_transport_initial_capsule_sha256'] = initial_hash
     state['latest_verified_cp12_mixed_transport'] = dict(observer_clock=clock, proof=str(relative),
         state_sha256=proof['transport_state_sha256'], zip_sha256=proof['zip_sha256'], zip_bytes=proof['zip_bytes'],

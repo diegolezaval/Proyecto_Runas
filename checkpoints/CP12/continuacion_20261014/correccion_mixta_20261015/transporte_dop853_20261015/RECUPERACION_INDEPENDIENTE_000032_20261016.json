@@ -1,0 +1,63 @@
+{
+  "schema": "CP12_PERMANENTLY_RECOVERED_INTERNAL_TRANSPORT_NOT_SCIENTIFIC_FRONTIER",
+  "passed": true,
+  "observer_clock": 3.2,
+  "payload_files": 126,
+  "zip_sha256": "14f597dee11e5a6a7e473992f1a7a88f431f217d0b90ca71a99ae2199ca1f3f9",
+  "zip_bytes": 203910964,
+  "transport_state_sha256": "56683211f7d937dc4793bc19e61cb603c007c78ceed1016584a091e89b4ea8e1",
+  "all_payload_hashes_verified": true,
+  "independent_zero_step_audit": {
+    "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
+    "passed": true,
+    "tests": {
+      "all_internal_state_bits_and_nfev_restored": true,
+      "original_sources_and_configuration": true,
+      "scientific_seed_unchanged": true,
+      "restore_used_no_solver_step": true,
+      "exact_stage_alias": true,
+      "accepted_states_match_solver": true,
+      "clocks_bracket_observer": true,
+      "both_energy_and_charge_gates": true,
+      "original_observer_maximum_gates": true,
+      "original_Parseval": true,
+      "original_symmetry": true,
+      "independently_reloaded_observer_closure": true,
+      "independently_reloaded_Parseval": true,
+      "file_unchanged": true
+    },
+    "observer_clock": 3.2,
+    "target": 8,
+    "state_sha256": "56683211f7d937dc4793bc19e61cb603c007c78ceed1016584a091e89b4ea8e1",
+    "physical_metadata": [
+      {
+        "t": 3.201729201032835,
+        "accepted": 592,
+        "nfev": 0,
+        "nfev_live": 7538,
+        "maxe": 4.9108717092849474e-11,
+        "maxq": 6.661338147750939e-16,
+        "maxe_original": 2.9103917054129624e-09
+      },
+      {
+        "t": 3.2017332077561567,
+        "accepted": 592,
+        "nfev": 0,
+        "nfev_live": 7538,
+        "maxe": 4.903433215019959e-11,
+        "maxq": 4.440892098500626e-16,
+        "maxe_original": 7.019338443825518e-10
+      }
+    ],
+    "M2_steps_executed": 0,
+    "scientific_frontier": false,
+    "correction_validated": false,
+    "CP12_closed": false
+  },
+  "scientific_frontier": false,
+  "correction_validated": false,
+  "CP12_closed": false,
+  "archive_digest_provenance": "Computed on the preserved version-0 archive after retrieval on 2026-10-16; no earlier public ZIP digest was available",
+  "previous_executor_activity": "UNKNOWN_ACTIVITY",
+  "previous_executor_termination_assumed": false
+}
