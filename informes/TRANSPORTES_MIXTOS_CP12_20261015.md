@@ -1,6 +1,6 @@
 # CP12 · Transportes mixtos recuperados
 
-Último reloj del observador recuperado y rehidratado: **τ=28.8**. Los tiempos físicos reales, balances y contadores están en cada certificado. Estos estados internos permiten continuar DOP853 sin resembrar ni partir un paso adaptativo.
+Último reloj del observador recuperado y rehidratado: **τ=30.4**. Los tiempos físicos reales, balances y contadores están en cada certificado. Estos estados internos permiten continuar DOP853 sin resembrar ni partir un paso adaptativo.
 
 | Reloj | Bytes del ZIP | SHA256 |
 |---|---:|---|
@@ -20,6 +20,7 @@
 | 25.6 | 230174758 | `fb187e35ed1fc216ef6d752ffec15fadbcac3ff616cad08b7168387cc22993ba` |
 | 27.2 | 230195437 | `c0a0671c2787049af4478f59b45988a7c41d0dc112134a283cbf97dd763b4775` |
 | 28.8 | 230275138 | `b48c0b5e6040c0092c5bfca8da20b6303e36eb718095e2c15a1b49296dde07f1` |
+| 30.4 | 230296645 | `75dcffacc457a6eace93821350cf767cb497a23ac173bdbb37f04b9c8f84c8ec` |
 
 Cada cápsula completa supera cobertura/tamaños/hashes y la auditoría independiente de rehidratación con cero pasos M2. El contraste preregistrado .4→.41 coincide bit a bit; su trabajo diagnóstico se registra separadamente. No se repiten A–D ni campañas certificadas.
 
@@ -42,3 +43,9 @@ Para recuperar este respaldo, usar las fuentes capturadas de `conservacion_canon
 ## Copias transitorias incompletas
 
 Se registró y comprobó una limpieza administrativa separada del integrador (`15b84bf`). Los 13 controles sintéticos y el bloqueo de un único limpiador pasan sin M2. Las copias antiguas incompletas entran en cuarentena con inventarios de hashes después de un respaldo recuperado; su retirada requiere otro checkpoint posterior positivo. Se protegen los NPZ válidos, datos canónicos, negativos, fuentes y respaldos. Véase `COPIAS_TRANSFERENCIAS.md` y `OBSERVACION_CUARENTENA_TRANSFERENCIAS.json`.
+
+## Actualización administrativa del entorno · 16 de octubre
+
+Se actualizaron los cuatro auxiliares de conservación desde la versión vigente del entorno, conservando sus versiones anteriores y hashes en la evidencia privada. No se reinició el trabajador ni se modificaron sus fuentes científicas, configuración o estado cerrado. El transporte28.8 completó después la conservación, recuperación y auditoría independiente de14 comprobaciones.
+
+Una actualización del registro de recuperación fue rechazada por conflicto entre una versión local15 y la vigente17. Se releyó el registro autoritativo y se aplicó la actualización válida con su guarda de versión, obteniendo18. Se conserva el incidente; no afecta a las cápsulas científicas ni autoriza repetir trayectorias.

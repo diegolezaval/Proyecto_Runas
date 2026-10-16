@@ -1,0 +1,62 @@
+{
+  "schema": "CP12_PERMANENTLY_RECOVERED_INTERNAL_TRANSPORT_NOT_SCIENTIFIC_FRONTIER",
+  "passed": true,
+  "observer_clock": 30.4,
+  "payload_files": 216,
+  "zip_sha256": "75dcffacc457a6eace93821350cf767cb497a23ac173bdbb37f04b9c8f84c8ec",
+  "zip_bytes": 230296645,
+  "all_payload_hashes_verified": true,
+  "transport_state_sha256": "e4f8f9a35a31d1e67684adb6e9cebc8dd72e28ee3eb74c8a08f07178effae0db",
+  "independent_zero_step_audit": {
+    "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
+    "passed": true,
+    "tests": {
+      "all_internal_state_bits_and_nfev_restored": true,
+      "original_sources_and_configuration": true,
+      "scientific_seed_unchanged": true,
+      "restore_used_no_solver_step": true,
+      "exact_stage_alias": true,
+      "accepted_states_match_solver": true,
+      "clocks_bracket_observer": true,
+      "both_energy_and_charge_gates": true,
+      "original_observer_maximum_gates": true,
+      "original_Parseval": true,
+      "original_symmetry": true,
+      "independently_reloaded_observer_closure": true,
+      "independently_reloaded_Parseval": true,
+      "file_unchanged": true
+    },
+    "observer_clock": 30.4,
+    "target": 32,
+    "state_sha256": "e4f8f9a35a31d1e67684adb6e9cebc8dd72e28ee3eb74c8a08f07178effae0db",
+    "physical_metadata": [
+      {
+        "t": 30.401989458021447,
+        "accepted": 5599,
+        "nfev": 53826,
+        "nfev_live": 14042,
+        "maxe": 9.8267616266412e-11,
+        "maxq": 8.881784197001252e-16,
+        "maxe_original": 1.0952294404731333e-08
+      },
+      {
+        "t": 30.403880526732138,
+        "accepted": 5598,
+        "nfev": 53814,
+        "nfev_live": 14042,
+        "maxe": 9.808343026662669e-11,
+        "maxq": 6.661338147750939e-16,
+        "maxe_original": 3.2610590894321945e-09
+      }
+    ],
+    "M2_steps_executed": 0,
+    "scientific_frontier": false,
+    "correction_validated": false,
+    "CP12_closed": false
+  },
+  "scientific_frontier": false,
+  "correction_validated": false,
+  "CP12_closed": false,
+  "registration_commit": "19c8b2b2eb40052ae81fc66e5ccc7acc76607348",
+  "original_transport_registration_commit": "e080cec73d44fe099d6de40715732ef7d11f7d9a"
+}
