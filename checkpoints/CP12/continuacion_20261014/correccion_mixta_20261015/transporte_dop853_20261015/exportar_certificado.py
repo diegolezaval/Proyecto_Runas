@@ -75,7 +75,7 @@ def export(home, repo):
     for item in state['numerical_runs_in_progress']:
         if item.get('campaign') == 'CP12_PILOTO_MIXTO_PHI_FV_CHI_K4':
             item.update(latest_recoverable_observer_clock=clock, evidence=str(relative))
-    action = (f'Continuar/supervisar el piloto mixto con transporte DOP853 verificado; último respaldo '
+    action = (f'Continuar/supervisar la evolución mixta con transporte DOP853 verificado; último respaldo '
               f'completo recuperado/auditado: reloj {clock:g}. Recuperar primero cualquier estado posterior, '
               'sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas '
               'las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.')
