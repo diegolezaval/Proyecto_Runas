@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Última frontera numérica mixta guardada, recuperada y auditada: τ=32. Consultar primero estados posteriores y actividad propia; continuar sólo desde evidencia válida, sin repetir el prefijo. Mantener ambas energías, carga, observadores, comparación espacial original del 2 % y dependencias causales, de convergencia, estabilidad y robustez. CP12 abierto.
+- Continuar/supervisar la evolución mixta con transporte DOP853 verificado; último respaldo completo recuperado/auditado: reloj 33.6. Recuperar primero cualquier estado posterior, sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/CONTINUACION_MIXTA_TAU32_CP12_20261016.md](informes/CONTINUACION_MIXTA_TAU32_CP12_20261016.md).
+Informe de esta entrega: [informes/TRANSPORTES_MIXTOS_CP12_20261015.md](informes/TRANSPORTES_MIXTOS_CP12_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 
