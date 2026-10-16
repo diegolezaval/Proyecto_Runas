@@ -1,0 +1,24 @@
+{
+  "schema": "CP12_SYNTHETIC_TRANSFER_CLEANUP_CONTROLS",
+  "passed": true,
+  "tests": {
+    "no_cleanup_without_permanent_certificate": true,
+    "first_observation_does_not_move_files": true,
+    "only_six_old_malformed_copies_quarantined": true,
+    "valid_zip_is_preserved": true,
+    "recent_copies_are_preserved": true,
+    "canonical_state_is_untouched": true,
+    "negative_is_untouched": true,
+    "unrelated_and_unrecognized_files_are_untouched": true,
+    "symlink_and_target_are_untouched": true,
+    "same_checkpoint_does_not_authorize_release": true,
+    "later_verified_checkpoint_authorizes_release": true,
+    "all_removed_hashes_and_authorizations_retained": true,
+    "corrupt_archive_blocks_cleanup": true
+  },
+  "synthetic_files_only": true,
+  "M2_steps_executed": 0,
+  "Library_calls": 0,
+  "scientific_gates_changed": false,
+  "CP12_closed": false
+}

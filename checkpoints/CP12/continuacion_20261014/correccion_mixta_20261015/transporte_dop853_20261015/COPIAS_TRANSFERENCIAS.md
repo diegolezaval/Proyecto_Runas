@@ -1,0 +1,11 @@
+# Conservación de temporales de transferencia
+
+Se observó crecimiento de copias incompletas de transferencia en el directorio de transporte: 16 archivos, 2 874 933 248 bytes, mientras el respaldo τ12,8 completo estaba recuperado/auditado. Los archivos inspeccionados tienen cabecera ZIP pero no un ZIP completo, y llevaban decenas de minutos sin cambios. Ya estaban excluidos de las cápsulas canónicas por la revisión administrativa registrada.
+
+`limpiar_transferencias.py` se ejecuta por separado del integrador. Sólo considera archivos regulares con el nombre temporal específico del escritor de transporte. Conserva cualquier ZIP válido, enlaces simbólicos, los dos temporales más recientes y todo archivo que no cumpla ese nombre/cabecera. Nunca selecciona el NPZ canónico, recibos, fuentes, configuración, observadores, negativos ni respaldos permanentes.
+
+Para autorizar una cuarentena exige un certificado de transporte o frontera recuperado con auditoría positiva y cero pasos M2, su archivo local con tamaño y SHA256 exactos, dos observaciones del temporal sin cambios separadas por al menos 60 segundos, antigüedad mínima 300 segundos y fecha anterior al respaldo autenticado. Registra hash, tamaño y autorización antes de mover el archivo a cuarentena fuera de la carga canónica. La eliminación posterior exige otro checkpoint recuperado de reloj estrictamente mayor, al menos 60 segundos en cuarentena y una nueva comprobación del hash y ZIP incompleto. Los inventarios permanecen en el prerregistro y se incluyen en las cápsulas posteriores. Se conservan todas las evidencias negativas.
+
+Los 13 controles sintéticos observados pasan: protección del archivo canónico y negativos, ZIP válido, archivos recientes/ajenos y enlaces; bloqueo sin certificado o con archivo corrupto; doble observación; cuarentena con hash; conservación hasta un checkpoint posterior y registro de cada liberación. No ejecutan M2 ni usan objetos reales de Library. No se repite A–D ni se cambia una fuente física, el transporte numérico, una puerta o el programa activo.
+
+La herramienta se publica antes de aplicarse a los temporales propios. Se captura su fuente y registro en otra carpeta del prerregistro; se ejecuta con `--home` explícito y termina al observar la salida del guardián propio. No infiere terminación de otros ejecutores ni acepta una corrección o CP12.

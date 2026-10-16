@@ -1,0 +1,19 @@
+{
+  "schema": "CP12_ADMINISTRATIVE_MALFORMED_TRANSFER_QUARANTINE_REGISTRATION",
+  "at": "2026-10-16T04:03:51.309237+00:00",
+  "files": {
+    "limpiar_transferencias.py": "1a347642b78bab8568b2e17de9ff7f64251d58db9ee13e12c22a0c04301646a6",
+    "probar_limpieza_transferencias.py": "c938a8f41531010ce7abc4e5961e73736ead91dd21ceb33cde4f47a6cbc1bfc4",
+    "CONTROLES_LIMPIEZA_TRANSFERENCIAS.json": "80534e368c98de2522138a65a0a94f9d2cff322eacc3fb570b914b947e3b8838",
+    "COPIAS_TRANSFERENCIAS.md": "6e53b2a7b96db3e803efed9ae8672f3ea3fa8dc4a8a722a0980a1d9a371f4914",
+    "CONTROL_BLOQUEO_LIMPIEZA.json": "d4828f9f81889e36b4dac4fbc2e0d5d9b842eb389d5ab7c769f133ea2dfa2b48"
+  },
+  "synthetic_controls_passed": 13,
+  "original_fourteen_sources_unchanged": true,
+  "registered_transport_sources_unchanged": true,
+  "registered_before_real_quarantine": true,
+  "M2_steps_executed": 0,
+  "scientific_gates_changed": false,
+  "CP12_closed": false,
+  "single_cleaner_lock_control_passed": true
+}
