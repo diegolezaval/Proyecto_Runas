@@ -1442,6 +1442,19 @@
       "correction_validated": false,
       "CP12_closed": false,
       "saved_prefix_extension_registered_before_analysis": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/REGISTRO_LECTURA_PREFIJOS_CONTINUACION_20261016.json"
+    },
+    {
+      "event": "CP12_ACUERDO_ESPACIAL_PREFIJO_GUARDADO",
+      "at": "2026-10-16T17:18:42.722301+00:00",
+      "time": 24,
+      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0024.json",
+      "report": "informes/ACUERDO_ESPACIAL_PREFIJOS_MIXTOS_CP12_20261016.md",
+      "all_five_pair_limits_met": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "M2_steps_executed": 0,
+      "correction_validated": false,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
@@ -1621,6 +1634,15 @@
       "threshold": 0.02,
       "final_tau160_acceptance": false,
       "M2_steps_executed": 0
+    },
+    "24": {
+      "time": 24,
+      "result": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0024.json",
+      "all_five_pair_limits_met": true,
+      "threshold": 0.02,
+      "final_tau160_acceptance": false,
+      "M2_steps_executed": 0,
+      "registration_commit": "b805708d3faedc37118164f574325d3a6ebb3d2b"
     }
   }
 }
