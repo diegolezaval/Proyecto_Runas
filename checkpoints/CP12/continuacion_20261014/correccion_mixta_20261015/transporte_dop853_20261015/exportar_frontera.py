@@ -40,6 +40,7 @@ def export(home, repo):
     stages = json.dumps(state['stages'], sort_keys=True)
     prefix = Path('checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015')
     relative = prefix / 'transporte_dop853_20261015' / ('FRONTERA_MIXTA_TAU%04d.json' % time)
+    report = Path('informes/FRONTERAS_MIXTAS_CP12_20261016.md')
     keys = ('schema', 'time', 'passed', 'execution_run_id', 'zip_sha256', 'zip_bytes',
             'state_sha256', 'configuration_sha256', 'receipt_sha256',
             'all_payload_hashes_verified', 'independent_extracted_audit',
@@ -49,6 +50,25 @@ def export(home, repo):
                   project_scientific_checkpoint_unchanged='CP11',
                   final_spatial_and_mechanism_gates_not_accepted_by_this_export=True)
     write(repo / relative, public)
+    lines = ['# CP12 · Fronteras numéricas mixtas recuperadas', '',
+             f'Última frontera completa recuperada y auditada: **τ={time}**. '
+             'CP11 sigue siendo el último checkpoint científico aceptado; CP12 permanece abierto.', '',
+             '| Frontera | Bytes del ZIP | SHA256 |', '|---|---:|---|']
+    for item in sorted(candidates, key=lambda value: value['time']):
+        lines.append(f"| {item['time']} | {item['zip_bytes']} | `{item['zip_sha256']}` |")
+    lines += ['', 'Cada frontera conserva ambas mallas, entradas, fuentes, campos y observadores, '
+              'configuración, contadores y recibo. Sus recuperaciones pasan las auditorías '
+              'independientes con cero pasos M2. Un transporte intermedio anterior conserva su '
+              'alcance como evidencia del tramo abierto y no sustituye una frontera posterior.', '',
+              'Las puertas de conservación e integridad del prefijo están verificadas. '
+              'La comparación espacial original del 2 % en τ160, la eliminación del mecanismo '
+              'en las tres ventanas y las pruebas justificadas de convergencia, estabilidad y '
+              'robustez conservan sus dependencias; esta exportación no las acepta.', '',
+              'Consultar primero cápsulas posteriores y actividad propia antes de recuperar. '
+              'Usar RECUPERAR_FRONTERA.md para una frontera completa y RECUPERAR.md para un '
+              'transporte interno posterior. Conservar todos los negativos; main, PR #2 y las '
+              '33 etapas permanecen intactos.', '']
+    (repo / report).write_text('\n'.join(lines))
     state['latest_verified_cp12_mixed_restart'] = dict(time=time, proof=str(relative),
         state_sha256=proof['state_sha256'], configuration_sha256=proof['configuration_sha256'],
         receipt_sha256=proof['receipt_sha256'], zip_sha256=proof['zip_sha256'],
@@ -66,7 +86,7 @@ def export(home, repo):
     state['next_actions'][0] = state['next_calculation'] = action
     state['history'].append(dict(event='CP12_FRONTERA_NUMERICA_MIXTA_RECUPERADA',
         at=datetime.datetime.now(datetime.timezone.utc).isoformat(), time=time,
-        evidence=str(relative), closed_stages=[], reopened_stages=[],
+        evidence=str(relative), report=str(report), closed_stages=[], reopened_stages=[],
         project_scientific_checkpoint_unchanged=True, correction_validated=False, CP12_closed=False))
     assert json.dumps(state['stages'], sort_keys=True) == stages
     write(repo / 'estado_progreso.json', state)
