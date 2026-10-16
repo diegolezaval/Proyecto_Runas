@@ -1283,10 +1283,23 @@
       "scientific_frontier": false,
       "correction_validated": false,
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_TRANSPORTE_INTERNO_RECUPERADO",
+      "at": "2026-10-16T03:20:02.863979+00:00",
+      "scientific_checkpoint_unchanged": true,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "report": "informes/TRANSPORTES_MIXTOS_CP12_20261015.md",
+      "recoverable_observer_clock": 4.8,
+      "independent_zero_step_checks": 14,
+      "scientific_frontier": false,
+      "correction_validated": false,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Continuar/supervisar el piloto mixto con transporte DOP853 verificado; último respaldo completo recuperado/auditado: reloj 3.2. Recuperar primero cualquier estado posterior, sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.",
+    "Continuar/supervisar el piloto mixto con transporte DOP853 verificado; último respaldo completo recuperado/auditado: reloj 4.8. Recuperar primero cualquier estado posterior, sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -1301,23 +1314,23 @@
     "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Continuar/supervisar el piloto mixto con transporte DOP853 verificado; último respaldo completo recuperado/auditado: reloj 3.2. Recuperar primero cualquier estado posterior, sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.",
+  "next_calculation": "Continuar/supervisar el piloto mixto con transporte DOP853 verificado; último respaldo completo recuperado/auditado: reloj 4.8. Recuperar primero cualquier estado posterior, sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [
     {
       "campaign": "CP12_PILOTO_MIXTO_PHI_FV_CHI_K4",
-      "status": "RECUPERADO_3p2_AUDITADO_PREPARADO_PARA_REANUDAR",
+      "status": "EVOLUCION_MIXTA_REANUDADA_CON_TRANSPORTE_EXACTO",
       "latest_certified_time": 0,
       "first_target": 8,
       "conditional_target": 160,
-      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000032.json",
+      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000048.json",
       "original_CP10_trajectories_repeated": false,
       "correction_validated": false,
       "CP12_closed": false,
       "previous_attempt_activity": "SESSION_NO_LONGER_ACCESSIBLE",
       "previous_attempt_termination_assumed": false,
       "previous_attempt_last_uncheckpointed_observation": 4.12,
-      "latest_recoverable_observer_clock": 3.2,
+      "latest_recoverable_observer_clock": 4.8,
       "previous_transport_session_activity": "UNKNOWN_ACTIVITY",
       "previous_transport_session_termination_assumed": false
     }
@@ -1367,17 +1380,17 @@
     "target_reached_and_certified": true,
     "candidate_K4_status": "DETENIDO_POR_PUERTA_CIENTIFICA_NEGATIVO_GUARDADO_RECUPERADO",
     "candidate_K4_exit_code_observed": 1,
-    "mixed_candidate_status": "RECUPERADO_TRANSPORTE_3p2_AUDITADO_PREPARADO_PARA_REANUDAR",
+    "mixed_candidate_status": "REANUDADO_DESDE_TRANSPORTE_3p2_ULTIMO_RESPALDO_4p8_AUDITADO",
     "mixed_candidate_latest_certified_time": 0,
     "previous_mixed_attempt_status": "SESSION_NO_LONGER_ACCESSIBLE",
     "previous_mixed_attempt_termination_assumed": false,
     "mixed_attempt_activity_scope": "Only own transport-enabled guardian; no termination inferred for older executors",
     "previous_mixed_attempt_last_observation": 4.12,
-    "mixed_candidate_latest_recoverable_observer_clock": 3.2,
+    "mixed_candidate_latest_recoverable_observer_clock": 4.8,
     "transport_worker_previous_session_exit_observed": 1,
     "transport_administrative_incidents_preserved": true,
     "transport_amendment_commit": "19c8b2b2eb40052ae81fc66e5ccc7acc76607348",
-    "previous_transport_session_status": "SESSION_NO_LONGER_ACCESSIBLE",
+    "previous_transport_session_status": "UNKNOWN_ACTIVITY",
     "previous_transport_session_termination_assumed": false
   },
   "latest_verified_cp12_restart": {
@@ -1434,11 +1447,11 @@
     "CP12_closed": false
   },
   "latest_verified_cp12_mixed_transport": {
-    "observer_clock": 3.2,
-    "proof": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000032.json",
-    "state_sha256": "56683211f7d937dc4793bc19e61cb603c007c78ceed1016584a091e89b4ea8e1",
-    "zip_sha256": "14f597dee11e5a6a7e473992f1a7a88f431f217d0b90ca71a99ae2199ca1f3f9",
-    "zip_bytes": 203910964,
+    "observer_clock": 4.8,
+    "proof": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000048.json",
+    "state_sha256": "1921880f391ee49e22ea92c9323625b255676466d94a63357a4f7026d6f4099d",
+    "zip_sha256": "883b97fe1e0c327ebe8aa1aa25cfa31a5e177df42ca3802a21ba1014b5f0f0a5",
+    "zip_bytes": 203957944,
     "full_capsule_recovered_and_rehydrated": true,
     "scientific_frontier": false,
     "CP12_closed": false
