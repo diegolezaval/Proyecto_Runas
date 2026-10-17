@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Continuar/supervisar el tramo mixto reanudado49,6→56 con aislamiento administrativo de la copia de subida v2. Recuperar primero cualquier estado posterior, sin repetir el prefijo ni reiniciar DOP853. Mantener todas las puertas y auditar las cinco métricas antes del siguiente tramo. CP12 abierto; CP11 aceptado.
+- Continuar/supervisar la evolución mixta con transporte DOP853 verificado; último respaldo completo recuperado/auditado: reloj 51.2. Recuperar primero cualquier estado posterior, sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/CONTINUACION_CP12_20261017.md](informes/CONTINUACION_CP12_20261017.md).
+Informe de esta entrega: [informes/TRANSPORTES_MIXTOS_CP12_20261015.md](informes/TRANSPORTES_MIXTOS_CP12_20261015.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 
