@@ -1,0 +1,21 @@
+{
+  "schema": "CP12_ADMINISTRATIVE_BOUNDARY_SEQUENCE_REGISTERED_BEFORE_NEW_M2",
+  "at": "2026-10-17T21:10:07.497172+00:00",
+  "source_commit": "a1bb9ed23103cf73140c0ca41eec5c307bbd9f5a",
+  "resume_observer_clock": 46.4,
+  "closed_trial_frontier": 40,
+  "administrative_files": {
+    "supervisar_fronteras.py": "4d68a93dbbf4b3b2e0fc24674ab8020f553d43ca02400261fdce56bec85a46f8",
+    "guardian_sesion.py": "ec4f1904849d17785532bcb256fc3203f764edc692a0632edf49b23fc90834d0",
+    "probar_secuencia.py": "8107447212327c2b70c48a70cf1c70f23db6232ed5ec73d6374f63097305152a",
+    "CONTROL_SECUENCIA.json": "061c2de158b860d569eb1a572767b7023d99ca95ac4f359853e5ad5941073cfc",
+    "PRERREGISTRO.md": "4d35d88868290eea2ff020038e20c6cfaa05a29e3f64bd4e8edff346408cca60",
+    "auditar_transporte_sin_pasos.py": "29c884f365137cbda6cced4d0727fd4027e5370b5644f5a4f1259235e5e349bf"
+  },
+  "prefix_reader_sha256": "3043d3f58bb0a28cac20a528d3680408191a75c18a0c36505884e0cd9eac330b",
+  "prefix_registration_sha256": "ae1405fa3ce9938230f88e7cdfe67b54f236c3b19aad0f6c3415ae10a387aa3b",
+  "scientific_kernels_changed": false,
+  "scientific_gates_changed": false,
+  "no_solver_restart": true,
+  "CP12_closed": false
+}
