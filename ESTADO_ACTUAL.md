@@ -6,13 +6,13 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
 ## Siguiente trabajo científico
 
-- Última frontera numérica mixta guardada, recuperada y auditada: τ=48. Consultar primero estados posteriores y actividad propia; continuar sólo desde evidencia válida, sin repetir el prefijo. Mantener ambas energías, carga, observadores, comparación espacial original del 2 % y dependencias causales, de convergencia, estabilidad y robustez. CP12 abierto.
+- Reanudar desde el transporte íntegro τ49,6, ya recuperado/auditado sin pasos M2. La copia separada de subida pasó controles sintéticos y conservación/recuperación íntegra con auxiliares vigentes; usar el supervisor administrativo v2. La sesión anterior terminó observadamente con salida1; no repetir 48→49,6 ni reiniciar DOP853. Mantener todas las puertas, CP12 abierto y CP11 aceptado.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -87,7 +87,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/ACUERDO_ESPACIAL_PREFIJOS_MIXTOS_CP12_20261016.md](informes/ACUERDO_ESPACIAL_PREFIJOS_MIXTOS_CP12_20261016.md).
+Informe de esta entrega: [informes/CONTINUACION_CP12_20261017.md](informes/CONTINUACION_CP12_20261017.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

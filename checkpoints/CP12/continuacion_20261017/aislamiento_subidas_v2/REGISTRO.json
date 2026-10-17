@@ -1,0 +1,28 @@
+{
+  "schema": "CP12_ADMINISTRATIVE_UPLOAD_ISOLATION_V2_REGISTERED_BEFORE_NEW_M2",
+  "at": "2026-10-17T21:35:08.944052+00:00",
+  "source_commit": "2de9952e4318872421524dc87f3bf95102cc1ec7",
+  "resume_observer_clock": 49.6,
+  "closed_trial_frontier": 48,
+  "administrative_files": {
+    "supervisar_fronteras.py": "45e7258b8c1d3ddd40d86222b154b2093c1d910d46dcf9836807b8f25c2e1fe6",
+    "guardian_sesion.py": "ec4f1904849d17785532bcb256fc3203f764edc692a0632edf49b23fc90834d0",
+    "probar_secuencia.py": "8107447212327c2b70c48a70cf1c70f23db6232ed5ec73d6374f63097305152a",
+    "CONTROL_SECUENCIA.json": "061c2de158b860d569eb1a572767b7023d99ca95ac4f359853e5ad5941073cfc",
+    "PRERREGISTRO.md": "4d35d88868290eea2ff020038e20c6cfaa05a29e3f64bd4e8edff346408cca60",
+    "auditar_transporte_sin_pasos.py": "29c884f365137cbda6cced4d0727fd4027e5370b5644f5a4f1259235e5e349bf",
+    "aislar_fuentes_subida.py": "19cfe61a0d3bf926c9ef7d1dc06da1f36511cd50b53333b044beb2eaddee9a3b",
+    "probar_aislamiento.py": "52bb221f430e12b08d6f3491872a3a3783c68129fb9af3dce625c088a2eb1d92",
+    "CONTROL_AISLAMIENTO.json": "3ee34d61b673608667d4a4f5a1e8f0b4ce778dfdbdbfe26ec1f902137c20effd",
+    "ENMIENDA_SUBIDAS.md": "9c091fbd954a81fa7c7c8d37e1f0d3127e37945d21339c3c318007933b79a0cb",
+    "control_ruta_conservacion.py": "585529544c3b23b30ef9e96d1b9c7ae00018b833e70009b703417364cce53c72",
+    "CONTROL_RUTA_COMPLETA.json": "5ef6ed9aedab56836bcfa3e3b89c455aa262ce81268c9c79f39c7a87caf37925"
+  },
+  "prefix_reader_sha256": "3043d3f58bb0a28cac20a528d3680408191a75c18a0c36505884e0cd9eac330b",
+  "prefix_registration_sha256": "ae1405fa3ce9938230f88e7cdfe67b54f236c3b19aad0f6c3415ae10a387aa3b",
+  "scientific_kernels_changed": false,
+  "scientific_gates_changed": false,
+  "no_solver_restart": true,
+  "CP12_closed": false,
+  "full_current_helper_roundtrip_control_passed": true
+}
