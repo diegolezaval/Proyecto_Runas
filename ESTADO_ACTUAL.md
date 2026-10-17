@@ -6,13 +6,13 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
 ## Siguiente trabajo científico
 
-- Reanudar desde el transporte íntegro τ49,6, ya recuperado/auditado sin pasos M2. La copia separada de subida pasó controles sintéticos y conservación/recuperación íntegra con auxiliares vigentes; usar el supervisor administrativo v2. La sesión anterior terminó observadamente con salida1; no repetir 48→49,6 ni reiniciar DOP853. Mantener todas las puertas, CP12 abierto y CP11 aceptado.
+- Continuar/supervisar el tramo mixto reanudado49,6→56 con aislamiento administrativo de la copia de subida v2. Recuperar primero cualquier estado posterior, sin repetir el prefijo ni reiniciar DOP853. Mantener todas las puertas y auditar las cinco métricas antes del siguiente tramo. CP12 abierto; CP11 aceptado.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 

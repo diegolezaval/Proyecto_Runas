@@ -1734,10 +1734,20 @@
       "closed_stages": [],
       "reopened_stages": [],
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_REANUDACION_TAU49p6_AISLAMIENTO_SUBIDAS_V2",
+      "at": "2026-10-17T21:38:50.557397+00:00",
+      "report": "informes/CONTINUACION_CP12_20261017.md",
+      "source_public_commit": "30c89de9fb8fe1e5d11d6936478e314a526a4e8f",
+      "previous_own_exit_observed": 1,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Reanudar desde el transporte íntegro τ49,6, ya recuperado/auditado sin pasos M2. La copia separada de subida pasó controles sintéticos y conservación/recuperación íntegra con auxiliares vigentes; usar el supervisor administrativo v2. La sesión anterior terminó observadamente con salida1; no repetir 48→49,6 ni reiniciar DOP853. Mantener todas las puertas, CP12 abierto y CP11 aceptado.",
+    "Continuar/supervisar el tramo mixto reanudado49,6→56 con aislamiento administrativo de la copia de subida v2. Recuperar primero cualquier estado posterior, sin repetir el prefijo ni reiniciar DOP853. Mantener todas las puertas y auditar las cinco métricas antes del siguiente tramo. CP12 abierto; CP11 aceptado.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -1752,9 +1762,28 @@
     "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Reanudar desde el transporte íntegro τ49,6, ya recuperado/auditado sin pasos M2. La copia separada de subida pasó controles sintéticos y conservación/recuperación íntegra con auxiliares vigentes; usar el supervisor administrativo v2. La sesión anterior terminó observadamente con salida1; no repetir 48→49,6 ni reiniciar DOP853. Mantener todas las puertas, CP12 abierto y CP11 aceptado.",
+  "next_calculation": "Continuar/supervisar el tramo mixto reanudado49,6→56 con aislamiento administrativo de la copia de subida v2. Recuperar primero cualquier estado posterior, sin repetir el prefijo ni reiniciar DOP853. Mantener todas las puertas y auditar las cinco métricas antes del siguiente tramo. CP12 abierto; CP11 aceptado.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [],
+  "numerical_runs_in_progress": [
+    {
+      "campaign": "CP12_PILOTO_MIXTO_PHI_FV_CHI_K4",
+      "status": "EN_PROGRESO",
+      "latest_certified_time": 48,
+      "first_target": 8,
+      "conditional_target": 160,
+      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000496.json",
+      "original_CP10_trajectories_repeated": false,
+      "correction_validated": false,
+      "CP12_closed": false,
+      "previous_attempt_activity": "SESSION_NO_LONGER_ACCESSIBLE",
+      "previous_attempt_termination_assumed": false,
+      "previous_attempt_last_uncheckpointed_observation": 4.12,
+      "latest_recoverable_observer_clock": 49.6,
+      "previous_transport_session_activity": "UNKNOWN_ACTIVITY",
+      "previous_transport_session_termination_assumed": false,
+      "first_target_reached_and_audited": true
+    }
+  ],
   "research_in_progress": [
     {
       "campaign": "CP12_DERIVACION_VARIACIONAL_MIXTA",
@@ -1825,6 +1854,14 @@
       "returncode": 1,
       "scientific_gate_failed": false,
       "last_recovered_internal_clock": 49.6
+    },
+    "session_20261017_v2": {
+      "status": "OWN_CHILD_STARTED_EXIT_NOT_OBSERVED",
+      "observed_start_at": "2026-10-17T21:38:50.557397+00:00",
+      "recovered_observer_clock": 49.6,
+      "administrative_registration_commit": "30c89de9fb8fe1e5d11d6936478e314a526a4e8f",
+      "previous_own_session_exit_observed": 1,
+      "activity_is_scientific_certificate": false
     }
   },
   "latest_verified_cp12_restart": {
@@ -1945,27 +1982,7 @@
       "registration_commit": "b805708d3faedc37118164f574325d3a6ebb3d2b"
     }
   },
-  "numerical_runs_paused": [
-    {
-      "campaign": "CP12_PILOTO_MIXTO_PHI_FV_CHI_K4",
-      "status": "PAUSADA_ADMINISTRATIVA",
-      "latest_certified_time": 48,
-      "first_target": 8,
-      "conditional_target": 160,
-      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000496.json",
-      "original_CP10_trajectories_repeated": false,
-      "correction_validated": false,
-      "CP12_closed": false,
-      "previous_attempt_activity": "SESSION_NO_LONGER_ACCESSIBLE",
-      "previous_attempt_termination_assumed": false,
-      "previous_attempt_last_uncheckpointed_observation": 4.12,
-      "latest_recoverable_observer_clock": 49.6,
-      "previous_transport_session_activity": "UNKNOWN_ACTIVITY",
-      "previous_transport_session_termination_assumed": false,
-      "first_target_reached_and_audited": true,
-      "reason": "Local archive changed after upload; valid permanent copy recovered and audited; upload isolation controls pending before resuming"
-    }
-  ],
+  "numerical_runs_paused": [],
   "administrative_upload_isolation_20261017": {
     "protocol": "checkpoints/CP12/continuacion_20261017/aislamiento_subidas_v2/ENMIENDA_SUBIDAS.md",
     "controls": "checkpoints/CP12/continuacion_20261017/aislamiento_subidas_v2/CONTROL_RUTA_COMPLETA.json",
