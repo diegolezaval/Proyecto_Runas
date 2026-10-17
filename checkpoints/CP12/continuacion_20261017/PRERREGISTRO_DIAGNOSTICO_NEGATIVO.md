@@ -1,0 +1,11 @@
+# Diagnóstico pasivo condicionado a un negativo espacial nuevo
+
+Este registro precede a la lectura de nuevas métricas causales mixtas. Sólo se ejecutará `diagnosticar_negativo_espacial.py` si una frontera completa nueva falla alguna de las cinco métricas espaciales y la continuación ya está suspendida. No autoriza pasos físicos, repetición de campañas, modificación de umbrales ni otra corrección.
+
+Se usarán la extracción independiente de la frontera negativa, su certificado de 28 controles y la lectura espacial registrada. Como referencia se recupera la cápsula original τ160 ya certificada (84575117 bytes, SHA256 `1c13b199592dc91ab2ec3ac382d4bd73736ba5e2c577438882de8932a6ec69c9`, 254 archivos de carga útil). Su NPZ conserva SHA256 `22078538ebba2e948b433b0ab946ee034be132b27f7e72ca1ee30540323b2413`; se reutiliza la auditoría científica original, sin ejecutarla otra vez ni evolucionar M2.
+
+Se comparan las métricas **ya guardadas** de los cinco canales individuales, libres y acoplados, en el mismo tiempo real de la frontera negativa y en las tres ventanas originales. Se exigen datos iniciales idénticos, configuración, cierre, Parseval, fuentes y hashes. Las proyecciones, cosenos y reducciones cuadráticas se leen tal como fueron adquiridos. Se aplica únicamente la función `sufficient` original autenticada y sus umbrales originales para describir suficiencia condicionada en las tres ventanas. Se conservan las matrices Gram ya guardadas de las dos ventanas cortas, la respuesta inducida en Φ y las razones de norma mixta/original de cada canal acoplado.
+
+No se reconstruyen grupos o cruces del núcleo completo sin los campos de la historia original en ese prefijo. Las razones de un prefijo no sustituyen la puerta de reducción causal final de τ160. El diagnóstico sirve para distinguir un residuo directo de operador χ de contribuciones inducidas por Φ y transferencia, manteniendo términos y canales negativos. Una descomposición condicionada no es una prueba de eficacia física de otra corrección ni una cuantificación de un bucle puro χ→Φ→χ.
+
+El resultado se conserva con el negativo y su trazabilidad, sin editar los datos de entrada. CP12 queda abierto y CP11 aceptado. Toda conclusión permanece en el ámbito matemático o numérico del modelo M2; no se afirma evidencia experimental.

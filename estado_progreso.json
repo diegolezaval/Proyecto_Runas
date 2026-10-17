@@ -1663,6 +1663,16 @@
       "scientific_frontier": false,
       "correction_validated": false,
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_REANUDACION_TRANSPORTE_46p4_SESION_20261017",
+      "at": "2026-10-17T21:13:24.449001+00:00",
+      "source_public_commit": "2e0234b36776d7abd790ed9c0dbde3787de1e80e",
+      "report": "informes/CONTINUACION_CP12_20261017.md",
+      "closed_stages": [],
+      "reopened_stages": [],
+      "scientific_checkpoint_unchanged": true,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
@@ -1760,7 +1770,16 @@
     "transport_amendment_commit": "19c8b2b2eb40052ae81fc66e5ccc7acc76607348",
     "previous_transport_session_status": "UNKNOWN_ACTIVITY",
     "previous_transport_session_termination_assumed": false,
-    "mixed_candidate_pilot_passed": true
+    "mixed_candidate_pilot_passed": true,
+    "session_20261017": {
+      "status": "OWN_CHILD_STARTED_EXIT_NOT_OBSERVED",
+      "observed_start_at": "2026-10-17T21:13:24.449001+00:00",
+      "recovered_observer_clock": 46.4,
+      "administrative_registration_commit": "2e0234b36776d7abd790ed9c0dbde3787de1e80e",
+      "earlier_executors_activity": "UNKNOWN_ACTIVITY",
+      "earlier_termination_assumed": false,
+      "activity_is_scientific_certificate": false
+    }
   },
   "latest_verified_cp12_restart": {
     "time": 160,
