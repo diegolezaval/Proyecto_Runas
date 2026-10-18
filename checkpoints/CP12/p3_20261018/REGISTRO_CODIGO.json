@@ -1,0 +1,22 @@
+{
+  "schema": "CP12_P3_CODE_AFTER_PROPOSAL_BEFORE_CONTROLS",
+  "proposal_commit": "538ef767aee6134cdaa4ab3673d183b63bce80bb",
+  "at": "2026-10-18T16:34:42.558727+00:00",
+  "source_hashes": {
+    "control_F0_structure.py": "6b65ce71b46828cfbaf53c741ef0f552b440ea2e4a0ee181aa30a8d69ffe3019",
+    "control_F1_action.py": "a1f92a4c368992f5c1d4a291529291af12e6efa5c91fe0f71fe3150e35e1b0b7",
+    "control_F2_defect.py": "91bcd1534864b5475572cee43d1c7651d4bd79fb9155babdad2f5aa3bea42fd4",
+    "control_F3_matrix.py": "f32098b95ed9145da298ad6ca28e2fe9f4dd584101be597a88b37180aee5be73",
+    "control_F4_frozen.py": "bbc24521452b47d486db2afc23f9456cd31f590be4085f49508c6bfc560d65a4",
+    "controls_common.py": "6b458a42c529fc68c3a4170af4b546b78c6ad166de074f7fd7a19916ab0c9c28",
+    "p3_backend.py": "e98bbba57e37baeb64d004f061a7ae2fddf022219206b71a93dab7e68ad37459",
+    "DERIVACION.md": "a6890b2fb5a72c7ac4f6dcf041bc352aef9c0507800c5ba353eb708111e9562b",
+    "PRERREGISTRO_CONTROLES.md": "03920cf7c7ecdc467f13cf374f407d50b63665e004bed03af423b623a7a6df4d",
+    "EJECUCION_CONTROLES.md": "c16420da97a06f0730a6af25927d0b2df9e540d3f7562c61a033d69b285deafd"
+  },
+  "controls_executed": false,
+  "M2_steps_executed": 0,
+  "CP12_closed": false,
+  "adapted_contrast_methods_from": "checkpoints/CP12/continuacion_20261014/mixto_chi_prefLight_20261015",
+  "historical_P2_sources_modified": false
+}
