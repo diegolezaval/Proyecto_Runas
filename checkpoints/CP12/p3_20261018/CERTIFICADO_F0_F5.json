@@ -1,0 +1,51 @@
+{
+  "schema": "CP12_P3_ALL_NEW_PREFLIGHT_CONTROLS_F0_F5_PASS",
+  "at": "2026-10-18T16:39:28.316612+00:00",
+  "proposal_commit": "538ef767aee6134cdaa4ab3673d183b63bce80bb",
+  "code_registration_commit": "c7a61e6c951f38f0b55432fdffbcac378837b1e8",
+  "F5_registration_commit": "967d0bf9e16ce7a9657b4f3cefb575c43d93a7d8",
+  "all_registered_preflight_controls_passed": true,
+  "phases": [
+    {
+      "phase": "F0_structure",
+      "result_sha256": "bd3bb6f121d8c147c698a9811c6be57c84322011a7c72c5f5796f2466797ccd1",
+      "cases": 15
+    },
+    {
+      "phase": "F1_action",
+      "result_sha256": "2f438b6e4d467674d5dd83a61f763485e0fbf8484a7b20ad6806239be16d32a5",
+      "cases": 6
+    },
+    {
+      "phase": "F2_defect",
+      "result_sha256": "f209c57e9c5f93ace075d653626b58df8505f9eaf40acf532e8a301749e392b5",
+      "cases": 15
+    },
+    {
+      "phase": "F3_matrix",
+      "result_sha256": "416c0ab997bcdec1512c67ca697f72c966c14e2b96fb19743ddbaa2b57815e20",
+      "cases": 6
+    },
+    {
+      "phase": "F4_frozen",
+      "result_sha256": "bc3b2a77ca00e812ffae9e7e0231f42a4c3679110df2628e702b71b17db14222",
+      "cases": 6
+    },
+    {
+      "phase": "F5_increment",
+      "result_sha256": "d1102c35f10407eedb8557d5f8ff18080438e47bde2f276721cb13ade5021966",
+      "cases": 25
+    }
+  ],
+  "M2_steps_executed": 0,
+  "DOP853_attempts": 0,
+  "all472_historical_payloads_unchanged": true,
+  "old_P2_trial_resumed": false,
+  "physical_evolution_authorized": false,
+  "next_required": "Preserve and retrieve these controls, then new pilot registration and independent tau0 audit",
+  "correction_validated": false,
+  "CP12_closed": false,
+  "controls_preserved_and_independently_retrieved": true,
+  "preservation_proof": "CONSERVACION_F0_F5.json",
+  "can_prepare_new_pilot_registration": true
+}

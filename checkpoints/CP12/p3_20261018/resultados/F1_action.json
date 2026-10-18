@@ -1,0 +1,190 @@
+{
+  "schema": "CP12_P3_NEW_PREFLIGHT_F1",
+  "passed": true,
+  "M2_steps_executed": 0,
+  "rows": [
+    {
+      "dx": 0.125,
+      "snapshot": "initial",
+      "tests": {
+        "Phi_lap_array_equal_FV": true,
+        "chi_lap_array_equal_P3": true,
+        "passive_lap_array_equal_physical": true,
+        "mixed_variational_gradient": true,
+        "U1_acceleration": true,
+        "energy_gap_identity": true,
+        "original_FV_work_identity": true,
+        "mixed_fused_C_vs_numpy": true
+      },
+      "gradient_relative_error": 1.3182236925244334e-16,
+      "charge_relative_error": 3.5137234665077844e-17,
+      "energy_gap_relative_error": 2.4455206723883952e-18,
+      "work_relative_error": 2.7096949518767335e-14,
+      "fused_C_relative_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "dx": 0.125,
+      "snapshot": "original160",
+      "tests": {
+        "Phi_lap_array_equal_FV": true,
+        "chi_lap_array_equal_P3": true,
+        "passive_lap_array_equal_physical": true,
+        "mixed_variational_gradient": true,
+        "U1_acceleration": true,
+        "energy_gap_identity": true,
+        "original_FV_work_identity": true,
+        "mixed_fused_C_vs_numpy": true
+      },
+      "gradient_relative_error": 5.737945778705334e-16,
+      "charge_relative_error": 2.917599737100184e-17,
+      "energy_gap_relative_error": 4.70513649776716e-16,
+      "work_relative_error": 1.1772071800175838e-14,
+      "fused_C_relative_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "dx": 0.125,
+      "snapshot": "mixed80",
+      "tests": {
+        "Phi_lap_array_equal_FV": true,
+        "chi_lap_array_equal_P3": true,
+        "passive_lap_array_equal_physical": true,
+        "mixed_variational_gradient": true,
+        "U1_acceleration": true,
+        "energy_gap_identity": true,
+        "original_FV_work_identity": true,
+        "mixed_fused_C_vs_numpy": true
+      },
+      "gradient_relative_error": 1.5819353931188814e-14,
+      "charge_relative_error": 8.463553223287324e-18,
+      "energy_gap_relative_error": 8.583549598435584e-17,
+      "work_relative_error": 5.812786706199252e-15,
+      "fused_C_relative_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "dx": 0.0625,
+      "snapshot": "initial",
+      "tests": {
+        "Phi_lap_array_equal_FV": true,
+        "chi_lap_array_equal_P3": true,
+        "passive_lap_array_equal_physical": true,
+        "mixed_variational_gradient": true,
+        "U1_acceleration": true,
+        "energy_gap_identity": true,
+        "original_FV_work_identity": true,
+        "mixed_fused_C_vs_numpy": true
+      },
+      "gradient_relative_error": 3.9407751012512078e-16,
+      "charge_relative_error": 2.4388974106757282e-17,
+      "energy_gap_relative_error": 5.842790245102214e-17,
+      "work_relative_error": 1.139113692241337e-13,
+      "fused_C_relative_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "dx": 0.0625,
+      "snapshot": "original160",
+      "tests": {
+        "Phi_lap_array_equal_FV": true,
+        "chi_lap_array_equal_P3": true,
+        "passive_lap_array_equal_physical": true,
+        "mixed_variational_gradient": true,
+        "U1_acceleration": true,
+        "energy_gap_identity": true,
+        "original_FV_work_identity": true,
+        "mixed_fused_C_vs_numpy": true
+      },
+      "gradient_relative_error": 5.222117235843263e-16,
+      "charge_relative_error": 1.8788552698652125e-17,
+      "energy_gap_relative_error": 2.0599177075735907e-16,
+      "work_relative_error": 1.5608345705185922e-14,
+      "fused_C_relative_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "dx": 0.0625,
+      "snapshot": "mixed80",
+      "tests": {
+        "Phi_lap_array_equal_FV": true,
+        "chi_lap_array_equal_P3": true,
+        "passive_lap_array_equal_physical": true,
+        "mixed_variational_gradient": true,
+        "U1_acceleration": true,
+        "energy_gap_identity": true,
+        "original_FV_work_identity": true,
+        "mixed_fused_C_vs_numpy": true
+      },
+      "gradient_relative_error": 9.693203393391577e-16,
+      "charge_relative_error": 1.3155091471654744e-17,
+      "energy_gap_relative_error": 3.6122439514406797e-16,
+      "work_relative_error": 5.522632702963346e-16,
+      "fused_C_relative_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true
+    }
+  ],
+  "original_input_manifest_files_verified": 472,
+  "remaining_controls": [
+    "complete_defect_and_extended_identity",
+    "mixed_sparse_matrix_and_symmetry",
+    "frozen_Gauss_7_6_reference_phase_and_balance"
+  ],
+  "all_registered_controls_passed": false,
+  "physical_evolution_authorized": false,
+  "correction_validated": false,
+  "CP12_closed": false,
+  "registered_source_hashes": {
+    "control_F0_structure.py": "6b65ce71b46828cfbaf53c741ef0f552b440ea2e4a0ee181aa30a8d69ffe3019",
+    "control_F1_action.py": "a1f92a4c368992f5c1d4a291529291af12e6efa5c91fe0f71fe3150e35e1b0b7",
+    "control_F2_defect.py": "91bcd1534864b5475572cee43d1c7651d4bd79fb9155babdad2f5aa3bea42fd4",
+    "control_F3_matrix.py": "f32098b95ed9145da298ad6ca28e2fe9f4dd584101be597a88b37180aee5be73",
+    "control_F4_frozen.py": "bbc24521452b47d486db2afc23f9456cd31f590be4085f49508c6bfc560d65a4",
+    "controls_common.py": "6b458a42c529fc68c3a4170af4b546b78c6ad166de074f7fd7a19916ab0c9c28",
+    "p3_backend.py": "e98bbba57e37baeb64d004f061a7ae2fddf022219206b71a93dab7e68ad37459",
+    "DERIVACION.md": "a6890b2fb5a72c7ac4f6dcf041bc352aef9c0507800c5ba353eb708111e9562b",
+    "PRERREGISTRO_CONTROLES.md": "03920cf7c7ecdc467f13cf374f407d50b63665e004bed03af423b623a7a6df4d",
+    "EJECUCION_CONTROLES.md": "c16420da97a06f0730a6af25927d0b2df9e540d3f7562c61a033d69b285deafd"
+  },
+  "phase": "F1",
+  "at": "2026-10-18T16:35:59.663314+00:00",
+  "old_P2_trial_resumed": false,
+  "DOP853_attempts": 0,
+  "all_472_input_hashes_unchanged": true
+}

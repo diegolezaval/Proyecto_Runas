@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Contrastar la hipótesis mínima P3 de dispersión de χ: derivación variacional, prerregistro en rama experimental y controles independientes antes de un piloto nuevo desde los datos originales. Diagnóstico pasivo D1/D2 conservado y recuperado, cero pasos M2. El ensayo Φ-FV/χ-K4 terminó con negativo válido en τ80 y no se reanuda. CP12 abierto; CP11 aceptado.
+- Preparar y registrar piloto nuevo P3 desde datos originales exactos; F0…F5 positivos conservados y recuperados en rama ciencia/cp12-residuo-p3-20261018. Guardar, recuperar y auditar τ0 antes de M2; luego fronteras condicionadas 8…160. P2 terminó con negativo80 y no se reanuda. CP12 abierto.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -88,7 +88,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md](informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md).
+Informe de esta entrega: [informes/PREFLIGHT_P3_CP12_20261018.md](informes/PREFLIGHT_P3_CP12_20261018.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 
