@@ -8,6 +8,9 @@ La última frontera con las cinco puertas espaciales positivas es **τ72**. **Re
 El diagnóstico causal pasivo registrado ya fue ejecutado con cero pasos M2 y bytes de entrada idénticos. El operador χ acoplado permanece suficiente en las tres ventanas; su norma mixta/original en80 es≈0,51594. La reducción parcial no cumple el2% espacial ni decide la puerta causal final de160. [Resultado y causa condicionada](informes/NEGATIVO_ESPACIAL_MIXTO_TAU80_CP12_20261018.md); [certificados de suspensión y conservación](checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/).
 
 **CP12 abierto; CP11 aceptado; main intacto; PR#2 en borrador.** Buscar actividad propia y evidencia posterior antes de cualquier nueva actuación; las sesiones antiguas inaccesibles conservan actividad desconocida. El historial siguiente mantiene sus tiempos y alcances originales.
+
+**Nueva investigación autorizada el 18 de octubre, posterior a la parada:** los diagnósticos discriminantes D1/D2 fueron prerregistrados, ejecutados con cero pasos M2, conservados y recuperados. [Informe](informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md), [resumen](checkpoints/CP12/residuo_tau80_20261018/RESUMEN_D1_D2.json) y [conservación independiente](checkpoints/CP12/residuo_tau80_20261018/CONSERVACION_D1_D2.json). El ensayo P2 permanece terminado. Se deriva una hipótesis P3 para controles nuevos en rama experimental; no está implementada ni aprobada para física. La instrucción actual autoriza progresar científicamente tras derivación, prerregistro y controles; no autoriza eludir el negativo ni relajar puertas.
+
 <!-- CP12_CURRENT_RECOVERY_END -->
 
 ## Historial: CP12 original τ160 conservado; causa condicionada identificada

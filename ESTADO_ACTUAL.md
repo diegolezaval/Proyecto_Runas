@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Ensayo mixto suspendido enτ80 por fasesχ>2%, negativo recuperado y causa condicionada diagnosticada con cero pasosM2. Conservar evidencia; ninguna continuación o corrección nueva automática. Toda nueva evolución necesita pregunta, derivación y prerregistro nuevos. CP12 abierto; CP11 aceptado.
+- Contrastar la hipótesis mínima P3 de dispersión de χ: derivación variacional, prerregistro en rama experimental y controles independientes antes de un piloto nuevo desde los datos originales. Diagnóstico pasivo D1/D2 conservado y recuperado, cero pasos M2. El ensayo Φ-FV/χ-K4 terminó con negativo válido en τ80 y no se reanuda. CP12 abierto; CP11 aceptado.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -88,7 +88,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/NEGATIVO_ESPACIAL_MIXTO_TAU80_CP12_20261018.md](informes/NEGATIVO_ESPACIAL_MIXTO_TAU80_CP12_20261018.md).
+Informe de esta entrega: [informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md](informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

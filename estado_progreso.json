@@ -2087,10 +2087,22 @@
       "reopened_stages": [],
       "correction_validated": false,
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_RESIDUO_TAU80_DIAGNOSTICOS_D1_D2_CONSERVADOS_RECUPERADOS",
+      "at": "2026-10-18T16:28:06.182484+00:00",
+      "report": "informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md",
+      "evidence": "checkpoints/CP12/residuo_tau80_20261018/RESUMEN_D1_D2.json",
+      "M2_steps_executed": 0,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "accepted_scientific_checkpoint_unchanged": "CP11",
+      "correction_validated": false,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Ensayo mixto suspendido enτ80 por fasesχ>2%, negativo recuperado y causa condicionada diagnosticada con cero pasosM2. Conservar evidencia; ninguna continuación o corrección nueva automática. Toda nueva evolución necesita pregunta, derivación y prerregistro nuevos. CP12 abierto; CP11 aceptado.",
+    "Contrastar la hipótesis mínima P3 de dispersión de χ: derivación variacional, prerregistro en rama experimental y controles independientes antes de un piloto nuevo desde los datos originales. Diagnóstico pasivo D1/D2 conservado y recuperado, cero pasos M2. El ensayo Φ-FV/χ-K4 terminó con negativo válido en τ80 y no se reanuda. CP12 abierto; CP11 aceptado.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -2106,7 +2118,7 @@
     "Ensayo mixto Φ-FV/χ-K4 0→80: conservar fronteras, transportes y negativo espacial80. No repetir A–D ni reanudar desde72/78,4/79,6 para eludir la puerta negativa."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Ensayo mixto suspendido enτ80 por fasesχ>2%, negativo recuperado y causa condicionada diagnosticada con cero pasosM2. Conservar evidencia; ninguna continuación o corrección nueva automática. Toda nueva evolución necesita pregunta, derivación y prerregistro nuevos. CP12 abierto; CP11 aceptado.",
+  "next_calculation": "Contrastar la hipótesis mínima P3 de dispersión de χ: derivación variacional, prerregistro en rama experimental y controles independientes antes de un piloto nuevo desde los datos originales. Diagnóstico pasivo D1/D2 conservado y recuperado, cero pasos M2. El ensayo Φ-FV/χ-K4 terminó con negativo válido en τ80 y no se reanuda. CP12 abierto; CP11 aceptado.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [],
   "research_in_progress": [
@@ -2115,6 +2127,17 @@
       "status": "NEGATIVO_ESPACIAL_TAU80_DIAGNOSTICADO_CAUSA_CONDICIONADA",
       "scope": "Φ-FV/χ-K4 suspendido en80. Operadorχ acoplado suficiente en tres ventanas; cero pasos en diagnóstico. Sin nueva corrección automática.",
       "evidence": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/RESULTADO_DIAGNOSTICO.json",
+      "correction_validated": false,
+      "CP12_closed": false
+    },
+    {
+      "campaign": "CP12_DIAGNOSTICO_RESIDUO_TAU80_Y_HIPOTESIS_P3",
+      "status": "DIAGNOSTICO_D1_D2_CONSERVADO_RECUPERADO_PROPUESTA_NO_VALIDADA",
+      "scope": "Autorización del usuario 2026-10-18: nueva investigación y propuesta derivada; geometría radial h2 demostrada, dispersión ocupada contrastada, fuentes/preparación no identificadas como causa dominante. P3 requiere nuevos controles antes de M2.",
+      "evidence": "checkpoints/CP12/residuo_tau80_20261018/RESUMEN_D1_D2.json",
+      "report": "informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md",
+      "M2_steps_executed": 0,
+      "physical_evolution_started": false,
       "correction_validated": false,
       "CP12_closed": false
     }
@@ -2225,7 +2248,17 @@
     },
     "mixed_candidate_exit_code_observed": 2,
     "mixed_candidate_last_all_five_spatial_gates_positive_boundary": 72,
-    "mixed_candidate_automatic_continuation_authorized": false
+    "mixed_candidate_automatic_continuation_authorized": false,
+    "session_20261018_residue": {
+      "status": "PASSIVE_DIAGNOSES_FINISHED_NO_NEW_M2_WORKER",
+      "source_public_registration": [
+        "3f2f289fbe95f95e5abaac2fb4e80b177f3d696a",
+        "f2dd6014cf1e2f2844e12b5c1ee8ead9f7770812"
+      ],
+      "M2_steps_executed": 0,
+      "earlier_executor_termination_assumed": false,
+      "evidence": "checkpoints/CP12/residuo_tau80_20261018/RESUMEN_D1_D2.json"
+    }
   },
   "latest_verified_cp12_restart": {
     "time": 160,
@@ -2439,5 +2472,15 @@
     "diagnosis_preservation": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/CONSERVACION_DIAGNOSTICO.json",
     "diagnosis_zip_sha256": "d8d8c5dd4face5d17561dec75d2e6d92222865b330e5fff4e9e29185c47349bf",
     "diagnosis_zip_bytes": 232254542
+  },
+  "latest_cp12_residue_diagnosis": {
+    "evidence": "checkpoints/CP12/residuo_tau80_20261018/RESUMEN_D1_D2.json",
+    "report": "informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md",
+    "preservation": "checkpoints/CP12/residuo_tau80_20261018/CONSERVACION_D1_D2.json",
+    "archive_sha256": "dc94cf77eeebfe08f1cbf1b20e725c7bb51df4376125e4ffdc7f6b4e3cd4c30e",
+    "archive_bytes": 232883013,
+    "M2_steps_executed": 0,
+    "old_mixed_trial_must_not_resume": true,
+    "P3_hypothesis_only": true
   }
 }
