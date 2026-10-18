@@ -1,0 +1,19 @@
+{
+  "schema": "CP12_P3_AUXILIARY_V2_LOSSLESS_PREFIX_CONTROLS",
+  "tests": {
+    "dry_run_mutates_no_files": true,
+    "unsettled_prefix_retained": true,
+    "prefix_reconstruction_hash_exact": true,
+    "only_verified_staging_removed": true,
+    "two_latest_transport_duplicates_retained": true,
+    "all_canonical_archives_retained_exact": true,
+    "scientific_path_rejected_before_deletion": true,
+    "receipts_written_for_real_cleanup_only": true
+  },
+  "passed": true,
+  "M2_steps_executed": 0,
+  "Library_calls": 0,
+  "scientific_gates_changed": false,
+  "source_sha256": "23f61722e4ed3e91c41880ea80ef24b8a7e9aef341fbcaa136c1b4f2c83f36ce",
+  "CP12_closed": false
+}
