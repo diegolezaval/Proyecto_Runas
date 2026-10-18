@@ -1,7 +1,7 @@
 # CP12: recuperación vigente y registro histórico
 
 <!-- CP12_CURRENT_RECOVERY_START -->
-**PARADA CIENTÍFICA VIGENTE: Φ-FV / χ-K4 falla en τ80.** Fases χ=**2,311907990946478 % >2 %**; las otras cuatro métricas pasan. La frontera completa80 se guardó, recuperó y auditó con28 controles; el negativo separado también fue conservado y recuperado. La salida propia con código2 quedó observada2026-10-18 08:12:33,566 UTC. No se ejecutó80→88.
+**ENSAYO P2 TERMINADO: Φ-FV / χ-K4 falla en τ80.** Fases χ=**2,311907990946478 % >2 %**; las otras cuatro métricas pasan. La frontera completa80 se guardó, recuperó y auditó con28 controles; el negativo separado también fue conservado y recuperado. La salida propia con código2 quedó observada2026-10-18 08:12:33,566 UTC. No se ejecutó80→88.
 
 La última frontera con las cinco puertas espaciales positivas es **τ72**. **Recuperar80 sólo para análisis forense; no reanudar desde72,78,4 o el transporte79,6 incrustado en80 para eludir el negativo.** El ensayo está suspendido. No relajar puertas, repetir A–D/campañas originales ni introducir otra corrección automáticamente. Conservar el K4 de tres campos fallido y todos los incidentes administrativos históricos.
 
@@ -9,8 +9,9 @@ El diagnóstico causal pasivo registrado ya fue ejecutado con cero pasos M2 y by
 
 **CP12 abierto; CP11 aceptado; main intacto; PR#2 en borrador.** Buscar actividad propia y evidencia posterior antes de cualquier nueva actuación; las sesiones antiguas inaccesibles conservan actividad desconocida. El historial siguiente mantiene sus tiempos y alcances originales.
 
-**Nueva investigación autorizada el 18 de octubre, posterior a la parada:** los diagnósticos discriminantes D1/D2 fueron prerregistrados, ejecutados con cero pasos M2, conservados y recuperados. [Informe](informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md), [resumen](checkpoints/CP12/residuo_tau80_20261018/RESUMEN_D1_D2.json) y [conservación independiente](checkpoints/CP12/residuo_tau80_20261018/CONSERVACION_D1_D2.json). El ensayo P2 permanece terminado. Se deriva una hipótesis P3 para controles nuevos en rama experimental; no está implementada ni aprobada para física. La instrucción actual autoriza progresar científicamente tras derivación, prerregistro y controles; no autoriza eludir el negativo ni relajar puertas.
+**Nueva investigación autorizada el 18 de octubre, posterior a la parada:** los diagnósticos discriminantes D1/D2 fueron prerregistrados, ejecutados con cero pasos M2, conservados y recuperados. [Informe](informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md), [resumen](checkpoints/CP12/residuo_tau80_20261018/RESUMEN_D1_D2.json) y [conservación independiente](checkpoints/CP12/residuo_tau80_20261018/CONSERVACION_D1_D2.json). El ensayo P2 permanece terminado. P3 fue derivada, prerregistrada y contrastada en rama experimental separada; F0…F5 y τ0 recuperado pasaron. El único guardián nuevo arrancó y su transporte0.4 fue recuperado/rehidratado con control bit a bit positivo. La instrucción actual autoriza progresar científicamente tras derivación, prerregistro y controles; no autoriza eludir el negativo ni relajar puertas.
 
+**Continuidad nueva:** [P3 en rama experimental, fuentes y certificados](informes/CONTINUIDAD_P3_EXPERIMENTAL_CP12_20261018.md). Buscar cualquier progreso P3 posterior y su actividad propia. Esta rama conserva documentación; no reanudar P2 ni inferirτ8 a partir de un latido.
 <!-- CP12_CURRENT_RECOVERY_END -->
 
 ## Historial: CP12 original τ160 conservado; causa condicionada identificada

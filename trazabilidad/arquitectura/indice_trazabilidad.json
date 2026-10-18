@@ -33557,29 +33557,6 @@
       ]
     },
     {
-      "path": "validacion/P06/preparacion/.w7.20_h0.100_dt0.0020_R1300_T1200_final.csv.mTMok5",
-      "role": "resultado_o_diagnostico",
-      "bytes": 1048576,
-      "snapshot_sha256": "8a5b9506c735294491be3e2bf3c3166c7fba502b95fda9a187098c7eed575543",
-      "used_by_claims": [],
-      "claim_link_categories": {},
-      "stage_evidence_for": [],
-      "stored_with_campaign_results": [
-        {
-          "registry_role": "E04_RES1",
-          "authoritative_result": "validacion/P06/preparacion/resultados.json"
-        },
-        {
-          "registry_role": "excitation_diagnostic",
-          "authoritative_result": "validacion/P06/preparacion/exceso_energia.json"
-        }
-      ],
-      "read_by_declared_generators": [],
-      "declared_generators": [],
-      "produced_by_executions": [],
-      "used_as_input_by_executions": []
-    },
-    {
       "path": "validacion/P06/preparacion/exceso_energia.json",
       "role": "resultado_o_diagnostico",
       "bytes": 2743,
@@ -40223,7 +40200,6 @@
     "validacion/P06/no_radial/verificacion.log",
     "validacion/P06/no_radial/verificacion_CP07.log",
     "validacion/P06/no_radial/verificacion_dop853_parcial.log",
-    "validacion/P06/preparacion/.w7.20_h0.100_dt0.0020_R1300_T1200_final.csv.mTMok5",
     "validacion/P06/preparacion/intento_01_diagnostico_parcial.json",
     "validacion/P06/preparacion/intento_01_extension.json",
     "validacion/P06/preparacion/intento_02_marca_progreso_pendiente.json",

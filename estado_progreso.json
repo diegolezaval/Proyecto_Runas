@@ -2099,10 +2099,18 @@
       "accepted_scientific_checkpoint_unchanged": "CP11",
       "correction_validated": false,
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_ENLACE_A_PILOTO_P3_EXPERIMENTAL_VERIFICADO",
+      "at": "2026-10-18T21:28:13.960561+00:00",
+      "report": "informes/CONTINUIDAD_P3_EXPERIMENTAL_CP12_20261018.md",
+      "closed_stages": [],
+      "reopened_stages": [],
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Contrastar la hipótesis mínima P3 de dispersión de χ: derivación variacional, prerregistro en rama experimental y controles independientes antes de un piloto nuevo desde los datos originales. Diagnóstico pasivo D1/D2 conservado y recuperado, cero pasos M2. El ensayo Φ-FV/χ-K4 terminó con negativo válido en τ80 y no se reanuda. CP12 abierto; CP11 aceptado.",
+    "Nuevo piloto P3 en rama ciencia/cp12-residuo-p3-20261018: F0…F5 y τ0 recuperado positivos, transporte0.4 rehidratado y control bit a bit positivo. Consultar actividad propia y respaldos posteriores antes de actuar; no duplicar trabajador. P2 terminó en80 y no se reanuda. Todas las puertas y dependencias CP12 siguen abiertas.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -2118,9 +2126,20 @@
     "Ensayo mixto Φ-FV/χ-K4 0→80: conservar fronteras, transportes y negativo espacial80. No repetir A–D ni reanudar desde72/78,4/79,6 para eludir la puerta negativa."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Contrastar la hipótesis mínima P3 de dispersión de χ: derivación variacional, prerregistro en rama experimental y controles independientes antes de un piloto nuevo desde los datos originales. Diagnóstico pasivo D1/D2 conservado y recuperado, cero pasos M2. El ensayo Φ-FV/χ-K4 terminó con negativo válido en τ80 y no se reanuda. CP12 abierto; CP11 aceptado.",
+  "next_calculation": "Nuevo piloto P3 en rama ciencia/cp12-residuo-p3-20261018: F0…F5 y τ0 recuperado positivos, transporte0.4 rehidratado y control bit a bit positivo. Consultar actividad propia y respaldos posteriores antes de actuar; no duplicar trabajador. P2 terminó en80 y no se reanuda. Todas las puertas y dependencias CP12 siguen abiertas.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [],
+  "numerical_runs_in_progress": [
+    {
+      "campaign": "CP12_P3_EXPERIMENTAL",
+      "status": "OWN_GUARDIAN_OBSERVED_STARTED",
+      "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+      "latest_certified_frontier": 0,
+      "latest_verified_internal_transport": 0.4,
+      "experimental_branch": "ciencia/cp12-residuo-p3-20261018",
+      "evidence": "informes/CONTINUIDAD_P3_EXPERIMENTAL_CP12_20261018.md",
+      "CP12_closed": false
+    }
+  ],
   "research_in_progress": [
     {
       "campaign": "CP12_DERIVACION_VARIACIONAL_MIXTA",
@@ -2139,6 +2158,16 @@
       "M2_steps_executed": 0,
       "physical_evolution_started": false,
       "correction_validated": false,
+      "CP12_closed": false
+    },
+    {
+      "campaign": "CP12_P3_EN_RAMA_EXPERIMENTAL",
+      "status": "PILOTO_INICIADO_CON_TAU0_RECUPERADO_Y_TRANSPORTE0p4_VERIFICADO",
+      "scope": "Enlace documental; fuentes del candidato y certificados completos en rama experimental separada",
+      "experimental_branch": "ciencia/cp12-residuo-p3-20261018",
+      "external_public_commit": "3e7db26f9f1451a41e93c022c1572b510b3d2870",
+      "report": "informes/CONTINUIDAD_P3_EXPERIMENTAL_CP12_20261018.md",
+      "old_P2_must_not_resume": true,
       "CP12_closed": false
     }
   ],

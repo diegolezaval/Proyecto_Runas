@@ -6,13 +6,13 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
 ## Siguiente trabajo científico
 
-- Contrastar la hipótesis mínima P3 de dispersión de χ: derivación variacional, prerregistro en rama experimental y controles independientes antes de un piloto nuevo desde los datos originales. Diagnóstico pasivo D1/D2 conservado y recuperado, cero pasos M2. El ensayo Φ-FV/χ-K4 terminó con negativo válido en τ80 y no se reanuda. CP12 abierto; CP11 aceptado.
+- Nuevo piloto P3 en rama ciencia/cp12-residuo-p3-20261018: F0…F5 y τ0 recuperado positivos, transporte0.4 rehidratado y control bit a bit positivo. Consultar actividad propia y respaldos posteriores antes de actuar; no duplicar trabajador. P2 terminó en80 y no se reanuda. Todas las puertas y dependencias CP12 siguen abiertas.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -88,7 +88,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md](informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md).
+Informe de esta entrega: [informes/CONTINUIDAD_P3_EXPERIMENTAL_CP12_20261018.md](informes/CONTINUIDAD_P3_EXPERIMENTAL_CP12_20261018.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 
