@@ -85,3 +85,5 @@ Cápsula completa: **231918011 bytes**, SHA256 `03d0f4b224edf24befe58c21172f2729
 | Fases χ | 1.9942703120 | 2 |
 
 Fases χ=1,994270311985376 %, margen de 0,005729688014624 puntos porcentuales frente al 2 %. No se redondea la puerta ni se usa la rotación descriptiva de χ. El orden observado conservación/auditoría→cinco métricas positivas→comienzo de 72→80 queda en el certificado de orden. El diagnóstico causal condicionado a un negativo no se ejecuta: esta frontera pasa. CP12 sigue abierto; causalidad final y convergencia/referencia/estabilidad/robustez pendientes.
+
+Transporte posterior recuperado: **τ73,6**, 231923675 bytes, SHA256 `b6c8beac9576073386c7146e99958509731215b4cd2f6dd69dabf6038caad34f`, 424 archivos íntegros y 14 controles de cero pasos positivos. Estado interno `6b589787d34ec40cd89c82945abae3a8755c55160d364f048e2bbcea258f8297`. La última frontera completa con cinco puertas positivas es τ72; este transporte permite reanudar exactamente DOP853 dentro de 72→80 sin ser una nueva aceptación espacial.
