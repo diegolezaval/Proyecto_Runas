@@ -1,0 +1,26 @@
+{
+  "schema": "CP12_P3_PILOT_IMPLEMENTATION_REGISTERED_BEFORE_INITIALIZATION",
+  "at": "2026-10-18T16:44:38.846224+00:00",
+  "pilot_protocol_commit": "095fce40a3497f9f9ece56d8b8d02b9e7b975475",
+  "source_hashes": {
+    "CONTROLES_SINTETICOS.json": "5632bced882f12548c46b688990d36e58c108f6e2d0ec09b0bc8e50c7f41ec2c",
+    "CONTROL_ADAPTACION_ESTATICA.json": "6609f3a34f5f66dc9deac851e130336f56288c4aba5b5405633a5a3a968b1a3d",
+    "administration/CONTROL_AISLAMIENTO.json": "3ee34d61b673608667d4a4f5a1e8f0b4ce778dfdbdbfe26ec1f902137c20effd",
+    "administration/CONTROL_RUTA_COMPLETA.json": "5ef6ed9aedab56836bcfa3e3b89c455aa262ce81268c9c79f39c7a87caf37925",
+    "administration/CONTROL_SECUENCIA.json": "061c2de158b860d569eb1a572767b7023d99ca95ac4f359853e5ad5941073cfc",
+    "administration/aislar_fuentes_subida.py": "19cfe61a0d3bf926c9ef7d1dc06da1f36511cd50b53333b044beb2eaddee9a3b",
+    "administration/guardian_sesion.py": "ec4f1904849d17785532bcb256fc3203f764edc692a0632edf49b23fc90834d0",
+    "administration/leer_metricas_prefijo.py": "4a688f79997a934d5dd396a2fe11a17499e62cad3a2083bf894c1c9ad4731427",
+    "administration/supervisar_fronteras.py": "6024688792116e77fe7373c4c59c6d4ec2d811093b30101432f8e02957d7c023",
+    "controlador_transporte.py": "d45176f3f0730c9d8dbda73952436fac3ba3c37c20b631e4793e7c38433333ae",
+    "coordinator.py": "badfd42b62b33c6dc7b9e8182e55eb311a75e235b30935b3f6872b5ffcf4a421",
+    "prepare_pilot.py": "4bb12a74d291692d97aaf34085cc51d361a3b40c1aa3728e58f790c234f054e8",
+    "preservation.py": "33000c4c6961dd975a20c9bffe0e189803ab52c8c55aeb31fd405533143d7ed9",
+    "seleccion_canonica.py": "2efd95a92eb57fb0d1715a4e40e951f7ea75e25a72bf34d499cbb9749dca33ae",
+    "transporte.py": "7c887990b991f33ccb86737b821daff0ab5e68e54cbd96c4b8475a62bee731dd"
+  },
+  "new_P3_action_source_unchanged_from_c7a61e6": true,
+  "M2_steps_executed": 0,
+  "initialization_executed": false,
+  "CP12_closed": false
+}
