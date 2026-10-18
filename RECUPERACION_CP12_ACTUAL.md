@@ -1,4 +1,14 @@
-# CP12: τ160 conservado; causa condicionada identificada
+# CP12: recuperación vigente y registro histórico
+
+<!-- CP12_CURRENT_RECOVERY_START -->
+Estado mixto vigente al 18 de octubre: **transporte τ76,8** guardado, recuperado y auditado con 437 hashes y 14 controles de cero pasos M2. Conserva exactamente la memoria DOP853 y los observadores del tramo 72→80. Certificado: `checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000768.json`.
+
+Última frontera completa con las cinco métricas espaciales positivas: **τ72**, χ fases **1,994270311985376 % ≤2 %**. El trabajador propio iniciado desde70,4 sigue supervisado; buscar primero su salida observada y cualquier estado posterior antes de recuperar o iniciar otro. Usar RECUPERAR.md para un transporte interno o RECUPERAR_FRONTERA.md para una frontera completa, con las fuentes canónicas v2 y los auxiliares actuales. No repetir segmentos, A–D ni campañas originales. Un fallo de cualquier puerta suspende esa continuación y conserva el negativo para diagnóstico, sin relajar umbrales ni aplicar otra corrección automáticamente.
+
+**CP12 abierto; CP11 aceptado; main intacto; PR#2 en borrador.** Véase [informe vigente](informes/CONTINUACION_CP12_20261018.md). Las entradas siguientes conservan el historial y sus alcances originales.
+<!-- CP12_CURRENT_RECOVERY_END -->
+
+## Historial: CP12 original τ160 conservado; causa condicionada identificada
 
 La recuperación pública **τ80** está completa y certificada: 145/145 JSON reconstruyen exactamente el NPZ original. Certificado: `checkpoints/CP12/continuacion_20261014/tau0080/CERTIFICACION_CLON_LIMPIO.json`.
 
@@ -117,3 +127,5 @@ La frontera mixta τ16 está conservada, recuperada y auditada con 28 comprobaci
 Último transporte permanente recuperado/rehidratado: reloj observador τ=73.6. Comprobante `checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000736.json`; estado interno SHA256 `6b589787d34ec40cd89c82945abae3a8755c55160d364f048e2bbcea258f8297`. No es una frontera científica ni cierre CP12. Recuperar primero cualquier transporte o frontera posterior; no volver a τ0.
 
 Último transporte permanente recuperado/rehidratado: reloj observador τ=75.2. Comprobante `checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000752.json`; estado interno SHA256 `322290cc199e24f5e2eea0a93324b58395d194f65cf3a6817729d68e964c23dc`. No es una frontera científica ni cierre CP12. Recuperar primero cualquier transporte o frontera posterior; no volver a τ0.
+
+Último transporte permanente recuperado/rehidratado: reloj observador τ=76.8. Comprobante `checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000768.json`; estado interno SHA256 `38344efb88f4800f40f7931901e21adf0fd68f791afc823b464d25bbae1ba1db`. No es una frontera científica ni cierre CP12. Recuperar primero cualquier transporte o frontera posterior; no volver a τ0.
