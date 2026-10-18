@@ -35,3 +35,5 @@ La cápsula completa tiene **231337637 bytes**, SHA256 `5620a3171b6371fab3485bff
 | Fases χ | 1.1827210176 | 2 |
 
 Las cinco pasan. El orden observado es conservación/auditoría completa 02:40:46 UTC, lectura espacial positiva 02:40:51 y comienzo de 56→64 a 02:40:52. El certificado de orden conserva los eventos completos. No se aplica la rotación descriptiva de χ a la aceptación. La continuación mantiene sus paradas; una nueva discrepancia >2 % detendrá esta versión. La frontera τ56 no cierra CP12 ni valida el continuo.
+
+Transporte posterior recuperado: **τ57,6**, 231350117 bytes, SHA256 `c553e26b0410a3cd547a6393a3a8a56280c18a53c7ac363f10a2ca75b46fef7c`, 353 archivos íntegros y 14 controles de cero pasos positivos. Estado interno `bd38267097bbb2d03843be526b805074ca3fde06ad8c14376bec78733513dbfa`. Continúa 56→64 con fronteras y puertas sin cambios; no es una nueva aceptación espacial.
