@@ -1,0 +1,17 @@
+{
+  "schema": "CP12_P3_AUXILIARY_COPY_OWNERSHIP_CONTROLS",
+  "tests": {
+    "dry_run_mutates_no_files": true,
+    "only_verified_staging_removed": true,
+    "two_latest_transport_duplicates_retained": true,
+    "all_canonical_archives_retained_exact": true,
+    "scientific_path_rejected_before_deletion": true,
+    "receipts_written_for_real_cleanup_only": true
+  },
+  "passed": true,
+  "M2_steps_executed": 0,
+  "Library_calls": 0,
+  "scientific_gates_changed": false,
+  "source_sha256": "412bd40af866fc28ebc76f25811221008a9b38c2e64b382f971dfdc83cd56030",
+  "CP12_closed": false
+}

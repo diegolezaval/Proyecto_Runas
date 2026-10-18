@@ -1,0 +1,23 @@
+{
+  "schema": "CP12_P3_LATEST_VERIFIED_RECOVERY_AUTHORITY",
+  "at": "2026-10-18T21:34:02.225755+00:00",
+  "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+  "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
+  "branch": "ciencia/cp12-residuo-p3-20261018",
+  "own_guardian_tool_session_id": 65474,
+  "own_worker_exit_observed": false,
+  "latest_full_numerical_trial_frontier": 0,
+  "latest_permanent_internal_clock": 1.6,
+  "latest_transport_proof": "checkpoints/CP12/p3_20261018/recuperacion_2113/TRANSPORTE_TAU_000016.json",
+  "transport_state_sha256": "25fa15593e1269e39b517fa4c1d4fb0c03e18bf1d56235b4f16a4eb5f519495f",
+  "transport_zip_sha256": "348520714cd767212c34a404016b4dd83ccfffe861c7563cba42fdec51cdc1d1",
+  "all_payload_hashes_verified": true,
+  "independent_zero_step_audit_passed": true,
+  "scientific_frontier": false,
+  "current_target": 8,
+  "conditional_horizon": 160,
+  "recovery_register_name": "CP12_P3_RECUPERACION_ESTADO_20261018.json",
+  "recovery_register_library_file_id": "libfile_2c8d727c2c0881919a835e29b9121643",
+  "CP12_closed": false,
+  "old_P2_must_not_resume": true
+}
