@@ -36012,25 +36012,6 @@
       ]
     },
     {
-      "path": "validacion/P06/rama/.perfil_w0.90500.csv.sJ9YtK",
-      "role": "resultado_o_diagnostico",
-      "bytes": 1048576,
-      "snapshot_sha256": "d1a141b63efcfbcabc05837029672c866668b81f42a2c994ee9b6e3e2ed04bbb",
-      "used_by_claims": [],
-      "claim_link_categories": {},
-      "stage_evidence_for": [],
-      "stored_with_campaign_results": [
-        {
-          "registry_role": "E03_RES0",
-          "authoritative_result": "validacion/P06/rama/resultados.json"
-        }
-      ],
-      "read_by_declared_generators": [],
-      "declared_generators": [],
-      "produced_by_executions": [],
-      "used_as_input_by_executions": []
-    },
-    {
       "path": "validacion/P06/rama/campana.log",
       "role": "registro_de_ejecucion",
       "bytes": 1638,
@@ -40272,7 +40253,6 @@
     "validacion/P06/preparacion/w8.80_h0.200_dt0.0040_R260_T240_inicial.csv",
     "validacion/P06/preparacion/w8.80_h0.200_dt0.0040_R260_T240_perfil_referencia.csv",
     "validacion/P06/preparacion/w8.80_h0.200_dt0.0040_R260_T240_progreso.json",
-    "validacion/P06/rama/.perfil_w0.90500.csv.sJ9YtK",
     "validacion/P06/rama/campana.log",
     "validacion/P06/rama/intento_01.json",
     "validacion/P06/rama/intento_01_fallo_continuacion.log",
