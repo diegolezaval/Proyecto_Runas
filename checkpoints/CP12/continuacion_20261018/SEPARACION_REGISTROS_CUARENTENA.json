@@ -1,0 +1,38 @@
+{
+  "schema": "CP12_ANCESTRAL_DISPOSABLE_TRANSFER_RECEIPTS_RETAINED_OUTSIDE_LIVE_SESSION_QUEUE",
+  "at": "2026-10-18T02:36:45.537053+00:00",
+  "own_started_at": "2026-10-18T02:26:24.253411+00:00",
+  "previous_own_cleanup_helper_exit_observed": 1,
+  "source_cleanup_helper_sha256": "1a347642b78bab8568b2e17de9ff7f64251d58db9ee13e12c22a0c04301646a6",
+  "selection": "Only pre-session quarantine receipts whose disposable runtime copies were not materialized",
+  "scientific_gate_failed": false,
+  "science_or_canonical_state_mutated": false,
+  "administrative_procedure_M2_steps": 0,
+  "physical_worker_continues_independently": true,
+  "older_executor_termination_assumed": false,
+  "CP12_closed": false,
+  "moves": [
+    {
+      "original": "preregistration/limpieza_transferencias/24d0c417ebc0453ba2d04f513b28d17b.json",
+      "preserved_as": "ancestor/limpieza_transferencias_no_materializadas_20261018/24d0c417ebc0453ba2d04f513b28d17b.json",
+      "sha256": "be2cbded0525f3b18502d7e190c0cbe96283d36a72233d4216489b33dc97c943",
+      "bytes": 830,
+      "bytes_identical": true
+    },
+    {
+      "original": "preregistration/limpieza_transferencias/3e8bff2640d24db7a84642ec4ecf1fce.json",
+      "preserved_as": "ancestor/limpieza_transferencias_no_materializadas_20261018/3e8bff2640d24db7a84642ec4ecf1fce.json",
+      "sha256": "b1d1777781540831e9d6a2c61edd1d0ff96f69f4a06325cab82a6f3bbc995ac4",
+      "bytes": 830,
+      "bytes_identical": true
+    },
+    {
+      "original": "preregistration/limpieza_transferencias/0b1c6e5a39ec4389a999e63167fea9cf.json",
+      "preserved_as": "ancestor/limpieza_transferencias_no_materializadas_20261018/0b1c6e5a39ec4389a999e63167fea9cf.json",
+      "sha256": "53a5da57a13ef31fa2d4c701df3f5a05dd7190040a4a1b9d238c553d38cb6254",
+      "bytes": 831,
+      "bytes_identical": true
+    }
+  ],
+  "cleanup_source_and_configuration_unchanged": true
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "CP12_ANCESTOR_CLEANUP_RECEIPT_SCOPE_REPAIR_PREREGISTRATION",
+  "at": "2026-10-18T02:36:45.137922+00:00",
+  "own_cleanup_session": 2285,
+  "own_cleanup_exit_observed": 1,
+  "own_physical_worker_session": 64799,
+  "physical_worker_exit_observed": false,
+  "diagnosed_cause": "Three pre-session disposable-copy quarantine records refer to runtime-only files not materialized in this isolated recovery; original cleaner rejects absent files safely",
+  "procedure_sha256": "384aaf3239658824d50a080b00f383cbcad3bffbfc4e1c624081893d3718dfd0",
+  "action": "Move only those pre-session records byte-identically into ancestor; retain mapping and unchanged captured cleaner. Do not select any canonical state, archive or scientific negative",
+  "scientific_gate_failed": false,
+  "new_M2_steps_in_administrative_procedure": 0,
+  "original_gates_unchanged": true,
+  "CP12_closed": false
+}

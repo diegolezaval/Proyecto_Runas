@@ -1,6 +1,6 @@
 # CP12 · Fronteras numéricas mixtas recuperadas
 
-Última frontera completa recuperada y auditada: **τ=48**. CP11 sigue siendo el último checkpoint científico aceptado; CP12 permanece abierto.
+Última frontera completa recuperada y auditada: **τ=56**. CP11 sigue siendo el último checkpoint científico aceptado; CP12 permanece abierto.
 
 | Frontera | Bytes del ZIP | SHA256 |
 |---|---:|---|
@@ -11,6 +11,7 @@
 | 32 | 230481444 | `330c5e3d89b4025649e086719630a8758cf9c239e99b96cc29b893753ad12df3` |
 | 40 | 230737013 | `a01caf2e8ced46cca4edfeddbb5add78c3c21ba0794e6ba80633f6961dc7e24d` |
 | 48 | 231038030 | `5794a212157221de25a6b672ffa1020f0d241c814eec75307e3f85ad84738878` |
+| 56 | 231337637 | `5620a3171b6371fab3485bff8c9eb41a996b1b1c2b5d51878cca1829a7c996fb` |
 
 Cada frontera conserva ambas mallas, entradas, fuentes, campos y observadores, configuración, contadores y recibo. Sus recuperaciones pasan las auditorías independientes con cero pasos M2. Un transporte intermedio anterior conserva su alcance como evidencia del tramo abierto y no sustituye una frontera posterior.
 

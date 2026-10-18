@@ -17,3 +17,21 @@ CP12 sigue abierto y CP11 es el último checkpoint científico aceptado. Main si
 El primer transporte nuevo de esta sesión quedó guardado, recuperado y auditado: 231175107 bytes, SHA256 `26b2123c732d640fe04a3c12799a054b7faab6c4d903e30b69dfdac14fc3f4d5`, 339 archivos de carga y 14 controles positivos de cero pasos. Estado interno `168a61734524496cae39cc64053e66d60cff66d50abac75a727ad5ecc82ed74d`. La inspección independiente del archivo canónico después de la ruta completa reproduce tamaño y hash y confirma su separación de la copia de subida. Sigue vigente la frontera completa τ48; la siguiente es τ56.
 
 [Figura derivada de las cinco métricas certificadas](figuras/CP12_mixto_prefijos.svg). Las fuentes y sus hashes figuran en el JSON adjunto; no se extrapolan valores entre fronteras o hasta τ160.
+
+## Alcance del auxiliar de limpieza
+
+El auxiliar propio de copias temporales de transferencia terminó con salida 1 al exigir tres copias en cuarentena de una sesión anterior que no estaban materializadas bajo runtime en esta recuperación. Sus registros, anteriores al inicio propio y relativos exclusivamente a copias temporales inválidas, estaban conservados. El trabajador M2 no se detuvo y no falló ninguna puerta científica. Tras registrar el procedimiento, los tres JSON se movieron byte a byte a ancestor, con mapeo de nombres, tamaños y SHA256, sin editar su contenido. El auxiliar original sigue con el mismo hash y volvió a emitir una comprobación válida sobre τ54,4. No se seleccionó un estado, ZIP canónico o negativo científico. Certificados: `PRERREGISTRO_LIMPIEZA_HEREDADA.json` y `SEPARACION_REGISTROS_CUARENTENA.json` en el registro del 18.
+
+## Frontera τ56: conservación y cinco puertas positivas
+
+La cápsula completa tiene **231337637 bytes**, SHA256 `5620a3171b6371fab3485bff8c9eb41a996b1b1c2b5d51878cca1829a7c996fb`. El estado cerrado tiene SHA256 `32fa195151ca4c7941dad6ab3b828c69979c0820220b0609839ed64bffe40150`. La recuperación independiente pasa los 28 controles con cero pasos M2. Máximos: E FV 2,564e-8; E mixta 1,607e-10; carga 8,882e-16; cierres 1,432e-6 y Parseval 2,039e-14.
+
+| Métrica original | Error relativo (%) | Límite (%) |
+|---|---:|---:|
+| Norma temporal suprema | 0.0208614924 | 2 |
+| Campo Φ | 0.0575775745 | 2 |
+| Fases Φ | 0.1128965814 | 2 |
+| Campo χ | 0.8334899370 | 2 |
+| Fases χ | 1.1827210176 | 2 |
+
+Las cinco pasan. El orden observado es conservación/auditoría completa 02:40:46 UTC, lectura espacial positiva 02:40:51 y comienzo de 56→64 a 02:40:52. El certificado de orden conserva los eventos completos. No se aplica la rotación descriptiva de χ a la aceptación. La continuación mantiene sus paradas; una nueva discrepancia >2 % detendrá esta versión. La frontera τ56 no cierra CP12 ni valida el continuo.
