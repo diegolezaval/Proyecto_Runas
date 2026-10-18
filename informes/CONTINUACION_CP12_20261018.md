@@ -11,3 +11,9 @@ La sesión anterior y sus identificadores propios dejaron de ser accesibles; no 
 La última frontera completa del ensayo es **τ48**, con 28 controles positivos y error espacial de fases χ **0,7508082788 %**. τ52,8 es un transporte reanudable, no otra frontera científica. En cada nueva frontera se conserva, recupera y audita el estado completo antes de exigir las cinco métricas espaciales originales ≤2 %. Un fallo suspende esa continuación y conserva el negativo para el diagnóstico pasivo registrado. Ambas energías ≤2e-4, carga ≤1e-9 y los demás controles permanecen originales.
 
 CP12 sigue abierto y CP11 es el último checkpoint científico aceptado. Main sigue en `ed8d818b622a0687aeb56d34ca9e3913bd54e124`; PR #2 permanece abierto y en borrador con su head histórico. Llegar a τ160 y superar el acuerdo entre dos mallas no bastan: quedan la verificación causal en las tres ventanas y las pruebas justificadas de convergencia, referencia, estabilidad y robustez. Los resultados son numéricos dentro de M2; no constituyen evidencia física experimental.
+
+## Transporte posterior τ54,4
+
+El primer transporte nuevo de esta sesión quedó guardado, recuperado y auditado: 231175107 bytes, SHA256 `26b2123c732d640fe04a3c12799a054b7faab6c4d903e30b69dfdac14fc3f4d5`, 339 archivos de carga y 14 controles positivos de cero pasos. Estado interno `168a61734524496cae39cc64053e66d60cff66d50abac75a727ad5ecc82ed74d`. La inspección independiente del archivo canónico después de la ruta completa reproduce tamaño y hash y confirma su separación de la copia de subida. Sigue vigente la frontera completa τ48; la siguiente es τ56.
+
+[Figura derivada de las cinco métricas certificadas](figuras/CP12_mixto_prefijos.svg). Las fuentes y sus hashes figuran en el JSON adjunto; no se extrapolan valores entre fronteras o hasta τ160.

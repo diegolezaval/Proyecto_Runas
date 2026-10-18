@@ -1,6 +1,6 @@
 # CP12 · Transportes mixtos recuperados
 
-Último reloj del observador recuperado y rehidratado: **τ=52.8**. Los tiempos físicos reales, balances y contadores están en cada certificado. Estos estados internos permiten continuar DOP853 sin resembrar ni partir un paso adaptativo.
+Último reloj del observador recuperado y rehidratado: **τ=54.4**. Los tiempos físicos reales, balances y contadores están en cada certificado. Estos estados internos permiten continuar DOP853 sin resembrar ni partir un paso adaptativo.
 
 | Reloj | Bytes del ZIP | SHA256 |
 |---|---:|---|
@@ -32,6 +32,7 @@
 | 49.6 | 231033067 | `2bead8add607c20a45f1e80c7333adb7ac640d43c15c3037a03989b60ba64eaf` |
 | 51.2 | 231099351 | `f3b0a2980716cd7d9ac542f3bb45fc01efa897e0de7df91638cf56af05fb36a3` |
 | 52.8 | 231132357 | `29c54eca208b5306042a1a2063206d6c6d2a01d883fdb8c8c78572348662fcb7` |
+| 54.4 | 231175107 | `26b2123c732d640fe04a3c12799a054b7faab6c4d903e30b69dfdac14fc3f4d5` |
 
 Cada cápsula completa supera cobertura/tamaños/hashes y la auditoría independiente de rehidratación con cero pasos M2. El contraste preregistrado .4→.41 coincide bit a bit; su trabajo diagnóstico se registra separadamente. No se repiten A–D ni campañas certificadas.
 
