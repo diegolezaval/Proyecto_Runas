@@ -71,3 +71,17 @@ Dos recuperaciones independientes de τ70,4 coinciden: **231734063 bytes**, SHA2
 La nueva sesión observó su propio comienzo desde τ70,4 hacia τ72 a las 07:29:47 UTC. Reutiliza el supervisor v2 y los controles registrados sin repetir 0→70,4, A–D ni reiniciar DOP853 dentro del tramo. La última frontera completa sigue en τ64, con χ fases 1,6121229097 % y las cinco métricas positivas. Se mantienen las barreras de conservación, recuperación, auditoría y las cinco puertas antes del tramo siguiente.
 
 Se preservaron por separado los tres registros heredados de cinco copias temporales no materializadas, con hashes y bytes idénticos; el auxiliar original de limpieza no se cambió. La referencia original τ160 se recuperó con sus 254 hashes y su NPZ exacto, sin repetir M2, para el diagnóstico condicionado si se produce un negativo. Las pruebas adicionales y la causalidad final siguen pendientes. CP12 abierto; CP11 aceptado; main intacto y PR2 en borrador.
+
+## Frontera τ72: cinco puertas positivas, margen pequeño
+
+Cápsula completa: **231918011 bytes**, SHA256 `03d0f4b224edf24befe58c21172f27293e15ec89603b8b364d52446a918a3399`. Estado cerrado: `2f7bd352c91e0b122632c15579624696fb8d327e352f51147c050c215b7b0f25`. Pasan las 28 comprobaciones de recuperación independiente con cero pasos M2 y los cinco límites espaciales originales.
+
+| Métrica original | Error relativo (%) | Límite (%) |
+|---|---:|---:|
+| Norma temporal suprema | 0.0208614924 | 2 |
+| Campo Φ | 0.0408335556 | 2 |
+| Fases Φ | 0.0749354604 | 2 |
+| Campo χ | 1.4050053301 | 2 |
+| Fases χ | 1.9942703120 | 2 |
+
+Fases χ=1,994270311985376 %, margen de 0,005729688014624 puntos porcentuales frente al 2 %. No se redondea la puerta ni se usa la rotación descriptiva de χ. El orden observado conservación/auditoría→cinco métricas positivas→comienzo de 72→80 queda en el certificado de orden. El diagnóstico causal condicionado a un negativo no se ejecuta: esta frontera pasa. CP12 sigue abierto; causalidad final y convergencia/referencia/estabilidad/robustez pendientes.

@@ -1,0 +1,34 @@
+{
+  "schema": "CP12_FULL_BOUNDARY_AND_FIVE_SPATIAL_GATES_BEFORE_NEXT_SEGMENT",
+  "time": 72,
+  "next_target": 80,
+  "passed": true,
+  "events": [
+    {
+      "at": "2026-10-18T07:36:54.688523+00:00",
+      "event": "BOUNDARY_PERMANENTLY_VERIFIED",
+      "time": 72,
+      "state_sha256": "2f7bd352c91e0b122632c15579624696fb8d327e352f51147c050c215b7b0f25",
+      "capsule_bytes": 231918011,
+      "independent_recovery_passed": true
+    },
+    {
+      "at": "2026-10-18T07:37:00.243103+00:00",
+      "event": "SPATIAL_PREFIX_GATE_BEFORE_NEXT_M2_SEGMENT",
+      "time": 72,
+      "all_five_pair_limits_met": true,
+      "CP12_closed": false
+    },
+    {
+      "at": "2026-10-18T07:37:01.425587+00:00",
+      "event": "MIXTO_TRANSPORT_BEGIN_OR_RESUME_SEGMENT",
+      "to_time": 80,
+      "resuming_internal_state": false,
+      "CP12_closed": false
+    }
+  ],
+  "original_spatial_threshold": 0.02,
+  "all_five_passed": true,
+  "canonical_archive_unchanged_after_roundtrip": true,
+  "CP12_closed": false
+}
