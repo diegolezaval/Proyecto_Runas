@@ -11,6 +11,9 @@ El diagnóstico causal pasivo registrado ya fue ejecutado con cero pasos M2 y by
 
 **Nueva investigación autorizada el 18 de octubre, posterior a la parada:** los diagnósticos discriminantes D1/D2 fueron prerregistrados, ejecutados con cero pasos M2, conservados y recuperados. [Informe](informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md), [resumen](checkpoints/CP12/residuo_tau80_20261018/RESUMEN_D1_D2.json) y [conservación independiente](checkpoints/CP12/residuo_tau80_20261018/CONSERVACION_D1_D2.json). El ensayo P2 permanece terminado. Se deriva una hipótesis P3 para controles nuevos en rama experimental; no está implementada ni aprobada para física. La instrucción actual autoriza progresar científicamente tras derivación, prerregistro y controles; no autoriza eludir el negativo ni relajar puertas.
 
+
+**P3: nuevo piloto en rama experimental.** F0…F5 pasaron y están conservados/recuperados. τ0 de la instancia128492e27d6d44798f2ef9336fc1b2e7 pasó30 comprobaciones independientes, sin pasos ni intentos DOP853. [Informe y siguiente trabajo](informes/PILOTO_P3_TAU0_CP12_20261018.md), [certificado](checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json). Buscar primero cualquier transporte o frontera P3 posterior y su actividad propia. El ensayo P2 sigue terminado en80; su prohibición de reanudación no impide este experimento nuevo derivado y prerregistrado. No confundir instancias ni dar por cerrado CP12.
+
 <!-- CP12_CURRENT_RECOVERY_END -->
 
 ## Historial: CP12 original τ160 conservado; causa condicionada identificada

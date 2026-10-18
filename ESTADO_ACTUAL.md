@@ -12,7 +12,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Siguiente trabajo científico
 
-- Preparar y registrar piloto nuevo P3 desde datos originales exactos; F0…F5 positivos conservados y recuperados en rama ciencia/cp12-residuo-p3-20261018. Guardar, recuperar y auditar τ0 antes de M2; luego fronteras condicionadas 8…160. P2 terminó con negativo80 y no se reanuda. CP12 abierto.
+- Piloto P3 nuevo desde τ0 conservado/recuperado/auditado con30 controles. Instancia128492e27d6d44798f2ef9336fc1b2e7, rama ciencia/cp12-residuo-p3-20261018; avanzar 0→8 y sólo por puertas originales hasta160. P2 terminó con negativo80 y no se reanuda. CP12 abierto; CP11 aceptado.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -88,7 +88,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/PREFLIGHT_P3_CP12_20261018.md](informes/PREFLIGHT_P3_CP12_20261018.md).
+Informe de esta entrega: [informes/PILOTO_P3_TAU0_CP12_20261018.md](informes/PILOTO_P3_TAU0_CP12_20261018.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

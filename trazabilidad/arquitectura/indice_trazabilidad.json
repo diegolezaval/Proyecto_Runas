@@ -24456,6 +24456,25 @@
       ]
     },
     {
+      "path": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/.momentos_duhamel.csv.91qHtj",
+      "role": "resultado_o_diagnostico",
+      "bytes": 1048576,
+      "snapshot_sha256": "10ebcaee5f4eec910015c4208ec78efe9a3cce24e584a7f791bfd90a6e279622",
+      "used_by_claims": [],
+      "claim_link_categories": {},
+      "stage_evidence_for": [],
+      "stored_with_campaign_results": [
+        {
+          "registry_role": "chi_forced_response",
+          "authoritative_result": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json"
+        }
+      ],
+      "read_by_declared_generators": [],
+      "declared_generators": [],
+      "produced_by_executions": [],
+      "used_as_input_by_executions": []
+    },
+    {
       "path": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/configuration.json",
       "role": "resultado_o_diagnostico",
       "bytes": 4043,
@@ -33557,29 +33576,6 @@
       ]
     },
     {
-      "path": "validacion/P06/preparacion/.w7.20_h0.100_dt0.0020_R1300_T1200_final.csv.mTMok5",
-      "role": "resultado_o_diagnostico",
-      "bytes": 1048576,
-      "snapshot_sha256": "8a5b9506c735294491be3e2bf3c3166c7fba502b95fda9a187098c7eed575543",
-      "used_by_claims": [],
-      "claim_link_categories": {},
-      "stage_evidence_for": [],
-      "stored_with_campaign_results": [
-        {
-          "registry_role": "E04_RES1",
-          "authoritative_result": "validacion/P06/preparacion/resultados.json"
-        },
-        {
-          "registry_role": "excitation_diagnostic",
-          "authoritative_result": "validacion/P06/preparacion/exceso_energia.json"
-        }
-      ],
-      "read_by_declared_generators": [],
-      "declared_generators": [],
-      "produced_by_executions": [],
-      "used_as_input_by_executions": []
-    },
-    {
       "path": "validacion/P06/preparacion/exceso_energia.json",
       "role": "resultado_o_diagnostico",
       "bytes": 2743,
@@ -39837,6 +39833,7 @@
     "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/fuentes/herramientas/respuesta_forzada_chi_CP11.py",
     "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/momentos_duhamel.csv",
     "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/resultados.json",
+    "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/.momentos_duhamel.csv.91qHtj",
     "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/ejecucion.log",
     "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/fuentes/datos/ensayo_respuesta_forzada_precisa_CP11.json",
     "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/fuentes/datos/theta_comun.json",
@@ -40223,7 +40220,6 @@
     "validacion/P06/no_radial/verificacion.log",
     "validacion/P06/no_radial/verificacion_CP07.log",
     "validacion/P06/no_radial/verificacion_dop853_parcial.log",
-    "validacion/P06/preparacion/.w7.20_h0.100_dt0.0020_R1300_T1200_final.csv.mTMok5",
     "validacion/P06/preparacion/intento_01_diagnostico_parcial.json",
     "validacion/P06/preparacion/intento_01_extension.json",
     "validacion/P06/preparacion/intento_02_marca_progreso_pendiente.json",

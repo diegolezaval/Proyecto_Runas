@@ -2110,10 +2110,19 @@
       "reopened_stages": [],
       "correction_validated": false,
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_P3_TAU0_CONSERVADO_RECUPERADO_AUDITADO",
+      "at": "2026-10-18T21:16:52.558015+00:00",
+      "report": "informes/PILOTO_P3_TAU0_CP12_20261018.md",
+      "closed_stages": [],
+      "reopened_stages": [],
+      "M2_steps_executed": 0,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Preparar y registrar piloto nuevo P3 desde datos originales exactos; F0…F5 positivos conservados y recuperados en rama ciencia/cp12-residuo-p3-20261018. Guardar, recuperar y auditar τ0 antes de M2; luego fronteras condicionadas 8…160. P2 terminó con negativo80 y no se reanuda. CP12 abierto.",
+    "Piloto P3 nuevo desde τ0 conservado/recuperado/auditado con30 controles. Instancia128492e27d6d44798f2ef9336fc1b2e7, rama ciencia/cp12-residuo-p3-20261018; avanzar 0→8 y sólo por puertas originales hasta160. P2 terminó con negativo80 y no se reanuda. CP12 abierto; CP11 aceptado.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -2129,7 +2138,7 @@
     "Ensayo mixto Φ-FV/χ-K4 0→80: conservar fronteras, transportes y negativo espacial80. No repetir A–D ni reanudar desde72/78,4/79,6 para eludir la puerta negativa."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Preparar y registrar piloto nuevo P3 desde datos originales exactos; F0…F5 positivos conservados y recuperados en rama ciencia/cp12-residuo-p3-20261018. Guardar, recuperar y auditar τ0 antes de M2; luego fronteras condicionadas 8…160. P2 terminó con negativo80 y no se reanuda. CP12 abierto.",
+  "next_calculation": "Piloto P3 nuevo desde τ0 conservado/recuperado/auditado con30 controles. Instancia128492e27d6d44798f2ef9336fc1b2e7, rama ciencia/cp12-residuo-p3-20261018; avanzar 0→8 y sólo por puertas originales hasta160. P2 terminó con negativo80 y no se reanuda. CP12 abierto; CP11 aceptado.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [],
   "research_in_progress": [
@@ -2143,10 +2152,10 @@
     },
     {
       "campaign": "CP12_DIAGNOSTICO_RESIDUO_TAU80_Y_HIPOTESIS_P3",
-      "status": "P3_F0_F5_POSITIVOS_CONSERVADOS_RECUPERADOS_PILOTO_PENDIENTE",
+      "status": "P3_TAU0_CONSERVADO_RECUPERADO_AUDITADO_PILOTO_AUTORIZADO_PENDIENTE_DE_ARRANQUE",
       "scope": "Autorización del usuario 2026-10-18: nueva investigación y propuesta derivada; geometría radial h2 demostrada, dispersión ocupada contrastada, fuentes/preparación no identificadas como causa dominante. P3 requiere nuevos controles antes de M2.",
-      "evidence": "checkpoints/CP12/p3_20261018/CERTIFICADO_F0_F5.json",
-      "report": "informes/PREFLIGHT_P3_CP12_20261018.md",
+      "evidence": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
+      "report": "informes/PILOTO_P3_TAU0_CP12_20261018.md",
       "M2_steps_executed": 0,
       "physical_evolution_started": false,
       "correction_validated": false,
@@ -2494,5 +2503,15 @@
     "M2_steps_executed": 0,
     "old_mixed_trial_must_not_resume": true,
     "P3_hypothesis_only": true
+  },
+  "latest_verified_cp12_P3_restart": {
+    "time": 0,
+    "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+    "run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
+    "state_sha256": "4a27b6f1852389b9642801727cd19db65d275715206f4dd2829de4dc8a2a70f0",
+    "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+    "receipt_sha256": "32ff3e830d4fecced3cf6a3726dc62a28fa2a78009b7676f7f837f1f0eadc6be",
+    "evidence": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
+    "CP12_closed": false
   }
 }
