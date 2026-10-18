@@ -13,6 +13,7 @@ Aritmética de las comparaciones guardadas y auditadas; cero pasos M2. Los facto
 | 56 | 1.1827210176 | 0.4319127389 | 1.57526369 | Pasan |
 | 64 | 1.6121229097 | 0.4294018920 | 1.36306271 | Pasan |
 | 72 | 1.9942703120 | 0.3821474023 | 1.23704607 | Pasan |
+| 80 | 2.3119079909 | 0.3176376790 | 1.15927514 | NEGATIVO |
 
 Un factor que disminuye puede acompañar a un error que sigue aumentando. Cada frontera conserva su propia decisión con el límite original del 2 %. Superar ese límite suspende la continuación correspondiente, aunque el crecimiento relativo se reduzca. El acuerdo entre mallas y estos incrementos son evidencia numérica de M2; no validación experimental.
 

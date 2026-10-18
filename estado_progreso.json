@@ -2036,10 +2036,61 @@
       "scientific_frontier": false,
       "correction_validated": false,
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_FRONTERA_NUMERICA_MIXTA_RECUPERADA",
+      "at": "2026-10-18T08:15:47.037974+00:00",
+      "time": 80,
+      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/FRONTERA_MIXTA_TAU0080.json",
+      "report": "informes/FRONTERAS_MIXTAS_CP12_20261016.md",
+      "closed_stages": [],
+      "reopened_stages": [],
+      "project_scientific_checkpoint_unchanged": true,
+      "correction_validated": false,
+      "CP12_closed": false
+    },
+    {
+      "event": "CP12_LECTURA_ESPACIAL_PREFIJO_NEGATIVA",
+      "at": "2026-10-18T08:15:47.072226+00:00",
+      "time": 80,
+      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0080.json",
+      "report": "informes/ACUERDO_ESPACIAL_PREFIJOS_MIXTOS_CP12_20261016.md",
+      "all_five_pair_limits_met": false,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "M2_steps_executed": 0,
+      "correction_validated": false,
+      "CP12_closed": false
+    },
+    {
+      "event": "CP12_MIXTO_NEGATIVO_ESPACIAL_TAU80_SUSPENDIDO_Y_DIAGNOSTICADO",
+      "at": "2026-10-18T08:15:47.174812+00:00",
+      "time": 80,
+      "report": "informes/NEGATIVO_ESPACIAL_MIXTO_TAU80_CP12_20261018.md",
+      "evidence": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/SUSPENSION.json",
+      "M2_steps_in_diagnosis": 0,
+      "own_exit_code_observed": 2,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "accepted_scientific_checkpoint_unchanged": "CP11",
+      "correction_validated": false,
+      "CP12_closed": false
+    },
+    {
+      "event": "CP12_DIAGNOSTICO_NEGATIVO_TAU80_CONSERVADO_RECUPERADO",
+      "at": "2026-10-18T08:17:47.677538+00:00",
+      "time": 80,
+      "report": "informes/NEGATIVO_ESPACIAL_MIXTO_TAU80_CP12_20261018.md",
+      "evidence": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/CONSERVACION_DIAGNOSTICO.json",
+      "M2_steps_executed": 0,
+      "closed_stages": [],
+      "reopened_stages": [],
+      "correction_validated": false,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Continuar/supervisar la evolución mixta con transporte DOP853 verificado; último respaldo completo recuperado/auditado: reloj 78.4. Recuperar primero cualquier estado posterior, sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.",
+    "Ensayo mixto suspendido enτ80 por fasesχ>2%, negativo recuperado y causa condicionada diagnosticada con cero pasosM2. Conservar evidencia; ninguna continuación o corrección nueva automática. Toda nueva evolución necesita pregunta, derivación y prerregistro nuevos. CP12 abierto; CP11 aceptado.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -2051,37 +2102,19 @@
     "Cuatro evoluciones DOP853 h=.5 (dos tolerancias), h=.25 y h=.125 finalizadas a tau=160; dispersión lineal y su verificación cerradas.",
     "Dos evoluciones CP10 temporal_h0125 y espacial_h00625 terminadas hasta tau=160, con recibos y comparación final. Reutilizar sus estados; no volver a evolucionarlas sin una pregunta y protocolo nuevos.",
     "Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo.",
-    "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo."
+    "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo.",
+    "Ensayo mixto Φ-FV/χ-K4 0→80: conservar fronteras, transportes y negativo espacial80. No repetir A–D ni reanudar desde72/78,4/79,6 para eludir la puerta negativa."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Continuar/supervisar la evolución mixta con transporte DOP853 verificado; último respaldo completo recuperado/auditado: reloj 78.4. Recuperar primero cualquier estado posterior, sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.",
+  "next_calculation": "Ensayo mixto suspendido enτ80 por fasesχ>2%, negativo recuperado y causa condicionada diagnosticada con cero pasosM2. Conservar evidencia; ninguna continuación o corrección nueva automática. Toda nueva evolución necesita pregunta, derivación y prerregistro nuevos. CP12 abierto; CP11 aceptado.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [
-    {
-      "campaign": "CP12_PILOTO_MIXTO_PHI_FV_CHI_K4",
-      "status": "EN_PROGRESO",
-      "latest_certified_time": 72,
-      "first_target": 8,
-      "conditional_target": 160,
-      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000784.json",
-      "original_CP10_trajectories_repeated": false,
-      "correction_validated": false,
-      "CP12_closed": false,
-      "previous_attempt_activity": "SESSION_NO_LONGER_ACCESSIBLE",
-      "previous_attempt_termination_assumed": false,
-      "previous_attempt_last_uncheckpointed_observation": 4.12,
-      "latest_recoverable_observer_clock": 78.4,
-      "previous_transport_session_activity": "UNKNOWN_ACTIVITY",
-      "previous_transport_session_termination_assumed": false,
-      "first_target_reached_and_audited": true
-    }
-  ],
+  "numerical_runs_in_progress": [],
   "research_in_progress": [
     {
       "campaign": "CP12_DERIVACION_VARIACIONAL_MIXTA",
-      "status": "PILOTO_REANUDADO_DESDE_1p6_RECUPERADO",
-      "scope": "1.6 guardado, recuperado y rehidratado; incidentes administrativos conservados. Kernels y estado idénticos. Sin τ8 científico ni validación de corrección.",
-      "evidence": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000004.json",
+      "status": "NEGATIVO_ESPACIAL_TAU80_DIAGNOSTICADO_CAUSA_CONDICIONADA",
+      "scope": "Φ-FV/χ-K4 suspendido en80. Operadorχ acoplado suficiente en tres ventanas; cero pasos en diagnóstico. Sin nueva corrección automática.",
+      "evidence": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/RESULTADO_DIAGNOSTICO.json",
       "correction_validated": false,
       "CP12_closed": false
     }
@@ -2099,7 +2132,7 @@
     "generated_index": "trazabilidad/arquitectura/indice_trazabilidad.json"
   },
   "checkpoint_kind": "CIENTIFICO",
-  "automatic_continuation_paused": false,
+  "automatic_continuation_paused": true,
   "execution_activity": {
     "original_executor_status": "UNKNOWN_ACTIVITY",
     "original_executor_termination_assumed": false,
@@ -2121,13 +2154,13 @@
     "target_reached_and_certified": true,
     "candidate_K4_status": "DETENIDO_POR_PUERTA_CIENTIFICA_NEGATIVO_GUARDADO_RECUPERADO",
     "candidate_K4_exit_code_observed": 1,
-    "mixed_candidate_status": "PILOTO_SUPERADO_CONTINUACION_CON_FRONTERAS_AUDITADAS",
-    "mixed_candidate_latest_certified_time": 72,
+    "mixed_candidate_status": "SUSPENDIDO_PUERTA_ESPACIAL_TAU80_NEGATIVO_CONSERVADO_DIAGNOSTICADO",
+    "mixed_candidate_latest_certified_time": 80,
     "previous_mixed_attempt_status": "SESSION_NO_LONGER_ACCESSIBLE",
     "previous_mixed_attempt_termination_assumed": false,
     "mixed_attempt_activity_scope": "Only own transport-enabled guardian; no termination inferred for older executors",
     "previous_mixed_attempt_last_observation": 4.12,
-    "mixed_candidate_latest_recoverable_observer_clock": 78.4,
+    "mixed_candidate_latest_recoverable_observer_clock": 80,
     "transport_worker_previous_session_exit_observed": 1,
     "transport_administrative_incidents_preserved": true,
     "transport_amendment_commit": "19c8b2b2eb40052ae81fc66e5ccc7acc76607348",
@@ -2174,16 +2207,25 @@
       "last_known_recoverable_transport": 70.4
     },
     "session_20261018_0730": {
-      "status": "OWN_CHILD_STARTED_EXIT_NOT_OBSERVED",
+      "status": "OWN_EXIT_OBSERVED_CODE2_SPATIAL_NEGATIVE",
       "observed_start_at": "2026-10-18T07:29:47.097522+00:00",
       "recovered_observer_clock": 70.4,
-      "latest_full_trial_frontier": 72,
-      "next_target": 80,
+      "latest_full_trial_frontier": 80,
+      "next_target": null,
       "earlier_termination_assumed": false,
       "activity_is_scientific_certificate": false,
       "recovery_evidence": "checkpoints/CP12/continuacion_20261018/recuperacion_tau70p4/REGISTRO_RECUPERACION.json",
-      "own_exit_observed": false
-    }
+      "own_exit_observed": {
+        "at": "2026-10-18T08:12:33.566034+00:00",
+        "returncode": 2,
+        "scope": "Observed own guardian only",
+        "previous_executor_termination_assumed": false
+      },
+      "negative_evidence": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/SUSPENSION.json"
+    },
+    "mixed_candidate_exit_code_observed": 2,
+    "mixed_candidate_last_all_five_spatial_gates_positive_boundary": 72,
+    "mixed_candidate_automatic_continuation_authorized": false
   },
   "latest_verified_cp12_restart": {
     "time": 160,
@@ -2227,16 +2269,20 @@
     "correction_validated": false
   },
   "latest_verified_cp12_mixed_restart": {
-    "time": 72,
-    "proof": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/FRONTERA_MIXTA_TAU0072.json",
-    "state_sha256": "2f7bd352c91e0b122632c15579624696fb8d327e352f51147c050c215b7b0f25",
+    "time": 80,
+    "proof": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/FRONTERA_MIXTA_TAU0080.json",
+    "state_sha256": "abfae6d6b88a1f5b6a58df1657ea3f860a81b02835fe6598b97315da3c1f3ba4",
     "configuration_sha256": "0719d82ab2187b6076fa2baf6d010495bdffd59622b9ca8f56345beb19e7f182",
-    "receipt_sha256": "31683631089b0ea14feab4af95704395bcca5fc14179dc4f30689cea69f25354",
-    "zip_sha256": "03d0f4b224edf24befe58c21172f27293e15ec89603b8b364d52446a918a3399",
-    "zip_bytes": 231918011,
+    "receipt_sha256": "ee4c1d86652736ca3ac227f6e1a65adc539a8320ba49c415fabcd3108b14c6c5",
+    "zip_sha256": "af4c927287e6eec056af436b8f40fca0fc7553a429aa0de049b30a6fe4aa5801",
+    "zip_bytes": 232220697,
     "full_capsule_recovered_and_audited": true,
     "correction_validated": false,
-    "CP12_closed": false
+    "CP12_closed": false,
+    "spatial_gate_failed": true,
+    "forensic_only": true,
+    "automatic_continuation_authorized": false,
+    "last_all_five_spatial_gates_positive_boundary": 72
   },
   "latest_verified_cp12_mixed_transport": {
     "observer_clock": 78.4,
@@ -2246,7 +2292,9 @@
     "zip_bytes": 232034503,
     "full_capsule_recovered_and_rehydrated": true,
     "scientific_frontier": false,
-    "CP12_closed": false
+    "CP12_closed": false,
+    "historical_before_spatial_negative80": true,
+    "automatic_continuation_authorized": false
   },
   "mixed_transport_initial_capsule_sha256": "654e8ff022d0dd528aa4b57dfe057093234e71ea597e4ea335f357c9909d19e6",
   "mixed_saved_prefix_spatial_agreement": {
@@ -2328,9 +2376,46 @@
       "final_tau160_acceptance": false,
       "M2_steps_executed": 0,
       "registration_commit": "b805708d3faedc37118164f574325d3a6ebb3d2b"
+    },
+    "80": {
+      "time": 80,
+      "result": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0080.json",
+      "all_five_pair_limits_met": false,
+      "threshold": 0.02,
+      "final_tau160_acceptance": false,
+      "M2_steps_executed": 0,
+      "registration_commit": "b805708d3faedc37118164f574325d3a6ebb3d2b"
     }
   },
-  "numerical_runs_paused": [],
+  "numerical_runs_paused": [
+    {
+      "campaign": "CP12_PILOTO_MIXTO_PHI_FV_CHI_K4",
+      "status": "PAUSADA_PUERTA_ESPACIAL_TAU80",
+      "latest_certified_time": 80,
+      "first_target": 8,
+      "conditional_target": 160,
+      "evidence": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/SUSPENSION.json",
+      "original_CP10_trajectories_repeated": false,
+      "correction_validated": false,
+      "CP12_closed": false,
+      "previous_attempt_activity": "SESSION_NO_LONGER_ACCESSIBLE",
+      "previous_attempt_termination_assumed": false,
+      "previous_attempt_last_uncheckpointed_observation": 4.12,
+      "latest_recoverable_observer_clock": 80,
+      "previous_transport_session_activity": "UNKNOWN_ACTIVITY",
+      "previous_transport_session_termination_assumed": false,
+      "first_target_reached_and_audited": true,
+      "last_all_five_spatial_gates_positive_boundary": 72,
+      "automatic_continuation_authorized": false,
+      "own_exit_observed": {
+        "at": "2026-10-18T08:12:33.566034+00:00",
+        "returncode": 2,
+        "scope": "Observed own guardian only",
+        "previous_executor_termination_assumed": false
+      },
+      "scientific_gate_failed": true
+    }
+  ],
   "administrative_upload_isolation_20261017": {
     "protocol": "checkpoints/CP12/continuacion_20261017/aislamiento_subidas_v2/ENMIENDA_SUBIDAS.md",
     "controls": "checkpoints/CP12/continuacion_20261017/aislamiento_subidas_v2/CONTROL_RUTA_COMPLETA.json",
@@ -2338,5 +2423,21 @@
     "M2_steps_executed": 0,
     "scientific_gates_changed": false,
     "scientific_kernels_changed": false
+  },
+  "latest_cp12_mixed_spatial_negative": {
+    "time": 80,
+    "threshold": 0.02,
+    "metric": "final_mediator_phase_space_error_over_initial_norm",
+    "observed": 0.02311907990946478,
+    "suspension": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/SUSPENSION.json",
+    "negative_preservation": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/CONSERVACION_NEGATIVO.json",
+    "diagnosis": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/RESULTADO_DIAGNOSTICO.json",
+    "report": "informes/NEGATIVO_ESPACIAL_MIXTO_TAU80_CP12_20261018.md",
+    "scientific_gate_failed": true,
+    "automatic_continuation_authorized": false,
+    "CP12_closed": false,
+    "diagnosis_preservation": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/CONSERVACION_DIAGNOSTICO.json",
+    "diagnosis_zip_sha256": "d8d8c5dd4face5d17561dec75d2e6d92222865b330e5fff4e9e29185c47349bf",
+    "diagnosis_zip_bytes": 232254542
   }
 }

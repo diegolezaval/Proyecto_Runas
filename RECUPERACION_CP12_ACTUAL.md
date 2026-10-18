@@ -1,11 +1,13 @@
 # CP12: recuperación vigente y registro histórico
 
 <!-- CP12_CURRENT_RECOVERY_START -->
-Estado mixto vigente al 18 de octubre: **transporte τ78,4** guardado, recuperado y auditado con 442 hashes y 14 controles de cero pasos M2. Conserva exactamente la memoria DOP853 y los observadores del tramo 72→80. Certificado: `checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000784.json`.
+**PARADA CIENTÍFICA VIGENTE: Φ-FV / χ-K4 falla en τ80.** Fases χ=**2,311907990946478 % >2 %**; las otras cuatro métricas pasan. La frontera completa80 se guardó, recuperó y auditó con28 controles; el negativo separado también fue conservado y recuperado. La salida propia con código2 quedó observada2026-10-18 08:12:33,566 UTC. No se ejecutó80→88.
 
-Última frontera completa con las cinco métricas espaciales positivas: **τ72**, χ fases **1,994270311985376 % ≤2 %**. El trabajador propio iniciado desde70,4 sigue supervisado; buscar primero su salida observada y cualquier estado posterior antes de recuperar o iniciar otro. Usar RECUPERAR.md para un transporte interno o RECUPERAR_FRONTERA.md para una frontera completa, con las fuentes canónicas v2 y los auxiliares actuales. No repetir segmentos, A–D ni campañas originales. Un fallo de cualquier puerta suspende esa continuación y conserva el negativo para diagnóstico, sin relajar umbrales ni aplicar otra corrección automáticamente.
+La última frontera con las cinco puertas espaciales positivas es **τ72**. **Recuperar80 sólo para análisis forense; no reanudar desde72,78,4 o el transporte79,6 incrustado en80 para eludir el negativo.** El ensayo está suspendido. No relajar puertas, repetir A–D/campañas originales ni introducir otra corrección automáticamente. Conservar el K4 de tres campos fallido y todos los incidentes administrativos históricos.
 
-**CP12 abierto; CP11 aceptado; main intacto; PR#2 en borrador.** Véase [informe vigente](informes/CONTINUACION_CP12_20261018.md). Las entradas siguientes conservan el historial y sus alcances originales.
+El diagnóstico causal pasivo registrado ya fue ejecutado con cero pasos M2 y bytes de entrada idénticos. El operador χ acoplado permanece suficiente en las tres ventanas; su norma mixta/original en80 es≈0,51594. La reducción parcial no cumple el2% espacial ni decide la puerta causal final de160. [Resultado y causa condicionada](informes/NEGATIVO_ESPACIAL_MIXTO_TAU80_CP12_20261018.md); [certificados de suspensión y conservación](checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/).
+
+**CP12 abierto; CP11 aceptado; main intacto; PR#2 en borrador.** Buscar actividad propia y evidencia posterior antes de cualquier nueva actuación; las sesiones antiguas inaccesibles conservan actividad desconocida. El historial siguiente mantiene sus tiempos y alcances originales.
 <!-- CP12_CURRENT_RECOVERY_END -->
 
 ## Historial: CP12 original τ160 conservado; causa condicionada identificada
@@ -131,3 +133,5 @@ La frontera mixta τ16 está conservada, recuperada y auditada con 28 comprobaci
 Último transporte permanente recuperado/rehidratado: reloj observador τ=76.8. Comprobante `checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000768.json`; estado interno SHA256 `38344efb88f4800f40f7931901e21adf0fd68f791afc823b464d25bbae1ba1db`. No es una frontera científica ni cierre CP12. Recuperar primero cualquier transporte o frontera posterior; no volver a τ0.
 
 Último transporte permanente recuperado/rehidratado: reloj observador τ=78.4. Comprobante `checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/TRANSPORTE_TAU_000784.json`; estado interno SHA256 `973d6be9f0b0c0b2dee94eb90866feb7e7f6785b4ab891fb8cffa8e07e945e42`. No es una frontera científica ni cierre CP12. Recuperar primero cualquier transporte o frontera posterior; no volver a τ0.
+
+Última frontera numérica del ensayo mixto guardada/recuperada/auditada: τ=80, comprobante `checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/FRONTERA_MIXTA_TAU0080.json`, estado SHA256 `abfae6d6b88a1f5b6a58df1657ea3f860a81b02835fe6598b97315da3c1f3ba4`. No valida la corrección ni cierra CP12. Buscar primero cápsulas posteriores; no repetir este prefijo.

@@ -1,0 +1,34 @@
+{
+  "schema": "CP12_EDITORIAL_VERIFICATION_WITH_INHERITED_MATH_LINK_ALERTS",
+  "at": "2026-10-18T08:18:16.147029+00:00",
+  "command": "python3 herramientas/verificar_continuidad.py --solo-lectura",
+  "exit_code": 1,
+  "verification_result": {
+    "schema_version": "1.0.0",
+    "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+    "passed": false,
+    "counts": {
+      "json": 933,
+      "python": 391,
+      "svg": 69,
+      "local_links": 648
+    },
+    "issues": [
+      "trazabilidad/CP12_recuperacion_independiente/2f01ea6e32b2/analysis/dispersion_candidato/DERIVACION_Y_RESULTADOS.md: ωf[j]²−ωc²",
+      "trazabilidad/CP12_recuperacion_independiente/2f01ea6e32b2/analysis/dispersion_candidato/DERIVACION_Y_RESULTADOS.md: Pωc−Pωf[j]"
+    ],
+    "E00_E01_recalculated": false,
+    "scope": "Integridad y continuidad editorial; no certificación científica automática."
+  },
+  "reported_file_unchanged_from_user_anchor_a1bb9ed": true,
+  "reported_file_sha256": "51954a304789ee45086af8f1aec8a9fe39be7f9c3b07937761a1c190ba1c3af5",
+  "alerts_are_inherited_mathematical_expressions_interpreted_as_links": true,
+  "new_code_AST_and_JSON_and_SVG_validation_issues": [],
+  "generated_continuity_check": {
+    "passed": true,
+    "stale": []
+  },
+  "all33_stages_unchanged": true,
+  "M2_steps_executed": 0,
+  "CP12_closed": false
+}

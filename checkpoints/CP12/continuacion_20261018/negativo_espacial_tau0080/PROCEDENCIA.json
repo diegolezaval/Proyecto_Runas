@@ -1,0 +1,21 @@
+{
+  "schema": "CP12_SAVED_SPATIAL_NEGATIVE_DIAGNOSIS_PUBLICATION",
+  "at": "2026-10-18T08:15:47.174812+00:00",
+  "time": 80,
+  "source_hashes": {
+    "/workspace/scratch/7679f367a48b/mixed_recovered704/proofs/tau0080_permanent.json": "f17036dbdb7522e0cbcbdc29eb1bc39fd87c1318e784a50f5000fd3e29ba36dd",
+    "/workspace/scratch/7679f367a48b/mixed_recovered704/analysis/lectura_prefijos_continuacion/TAU0080_RESULTADO.json": "2bfde3b5fb37e25c24110b6049a63d9d0f66760bf0a91c41167f1a4d79b8bd54",
+    "/workspace/scratch/7679f367a48b/mixed_recovered704/proofs/NEGATIVO_ESPACIAL_TAU0080_20261017_permanent.json": "94bcf49c22d995cfb3a9c7a5059029f152e1c5395c8930232bdf81f1addd7a2a",
+    "/workspace/scratch/7679f367a48b/mixed_recovered704/runtime/observed_guardian_exit.json": "8e5b094bffd328522ab7014b532ca543a00a5bc1dacc11d23e5d395a1b2c4bd0",
+    "/workspace/scratch/7679f367a48b/mixed_negative_diagnosis80_20261018/RESULTADO.json": "cd3faabb1d6f350daa5ed84d618646acbb3fc629367442998182c6cecfc05d6b"
+  },
+  "registered_diagnosis": "checkpoints/CP12/continuacion_20261017/diagnosticar_negativo_espacial.py",
+  "registered_diagnosis_sha256": "886ee9d45d283eb6030ab513e77d2f313a691ae9bacfb3d4cc499d8603c21814",
+  "original_state_sha256": "22078538ebba2e948b433b0ab946ee034be132b27f7e72ca1ee30540323b2413",
+  "mixed_state_sha256": "abfae6d6b88a1f5b6a58df1657ea3f860a81b02835fe6598b97315da3c1f3ba4",
+  "reporting_script_sha256": "d55e2eecb467c16be77f929e2fc1ab00db2087978e2a2c34c6cbe45f3c7fa570",
+  "reporting_imports_model_or_solver": false,
+  "M2_steps_executed": 0,
+  "inputs_not_modified": true,
+  "CP12_closed": false
+}

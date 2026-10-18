@@ -1,5 +1,7 @@
 # CP12 · Transportes mixtos recuperados
 
+**Estado vigente: continuación suspendida enτ80 por fasesχ=2,311907990946478% >2%.** Frontera y negativo recuperados; salida propia2 observada, diagnóstico pasivo concluido. Última frontera con cinco puertas positivas:72. Los transportes anteriores conservan su valor histórico; no autorizan eludir el negativo. [Informe del negativo](NEGATIVO_ESPACIAL_MIXTO_TAU80_CP12_20261018.md).
+
 Último reloj del observador recuperado y rehidratado: **τ=78.4**. Los tiempos físicos reales, balances y contadores están en cada certificado. Estos estados internos permiten continuar DOP853 sin resembrar ni partir un paso adaptativo.
 
 | Reloj | Bytes del ZIP | SHA256 |

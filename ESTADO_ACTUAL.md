@@ -6,13 +6,13 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
 ## Siguiente trabajo científico
 
-- Continuar/supervisar la evolución mixta con transporte DOP853 verificado; último respaldo completo recuperado/auditado: reloj 78.4. Recuperar primero cualquier estado posterior, sin volver a τ0 ni reiniciar el integrador. Mantener fronteras científicas cada 8 y todas las puertas originales; conservar y analizar cualquier fallo. CP12 abierto.
+- Ensayo mixto suspendido enτ80 por fasesχ>2%, negativo recuperado y causa condicionada diagnosticada con cero pasosM2. Conservar evidencia; ninguna continuación o corrección nueva automática. Toda nueva evolución necesita pregunta, derivación y prerregistro nuevos. CP12 abierto; CP11 aceptado.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 
@@ -33,6 +33,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 - Dos evoluciones CP10 temporal_h0125 y espacial_h00625 terminadas hasta tau=160, con recibos y comparación final. Reutilizar sus estados; no volver a evolucionarlas sin una pregunta y protocolo nuevos.
 - Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo.
 - CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo.
+- Ensayo mixto Φ-FV/χ-K4 0→80: conservar fronteras, transportes y negativo espacial80. No repetir A–D ni reanudar desde72/78,4/79,6 para eludir la puerta negativa.
 
 ## Resultados vigentes y límites
 
@@ -87,7 +88,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/TRANSPORTES_MIXTOS_CP12_20261015.md](informes/TRANSPORTES_MIXTOS_CP12_20261015.md).
+Informe de esta entrega: [informes/NEGATIVO_ESPACIAL_MIXTO_TAU80_CP12_20261018.md](informes/NEGATIVO_ESPACIAL_MIXTO_TAU80_CP12_20261018.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

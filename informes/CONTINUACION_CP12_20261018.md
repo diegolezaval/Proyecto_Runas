@@ -1,4 +1,10 @@
-# CP12: recuperación y continuación desde τ52,8
+# CP12: continuación mixta suspendida en τ80
+
+**Resultado vigente:** Φ-FV / χ-K4 queda suspendido en **τ80**: fases χ **2,311907990946478 % >2 %**. Las otras cuatro métricas pasan. La frontera completa y el negativo están conservados, recuperados y auditados; la salida propia con código2 está observada y no se ejecutó 80→88. La última frontera con cinco puertas positivas es τ72.
+
+El [diagnóstico pasivo del negativo](NEGATIVO_ESPACIAL_MIXTO_TAU80_CP12_20261018.md), prerregistrado y ejecutado después de esa salida con cero pasos M2, mantiene al operador χ acoplado como canal suficiente en las tres ventanas. Su norma cayó aproximadamente48,4% frente al original en el mismo τ80, mientras el error observado cayó48,16196%. Se conservan signos, cancelaciones y límites de la atribución condicionada. **CP12 abierto, CP11 aceptado; main intacto y PR#2 en borrador.** Ninguna nueva corrección automática.
+
+## Recuperación inicial desde τ52,8
 
 El 18 de octubre se revisaron GitHub, el registro persistente de recuperación y las cápsulas disponibles. La rama seguía en `5c39ea1d1a407b0aadf8262252d488c081f7a47a`. Se encontró un transporte posterior **τ52,8** sin certificado externo conservado. No apareció una frontera posterior a τ48 ni un negativo científico nuevo. El registro persistente estaba en versión 33, con τ51,2 como último transporte auditado.
 
@@ -93,3 +99,19 @@ Transporte posterior recuperado: **τ75,2**, 231958735 bytes, SHA256 `130d09d584
 Transporte posterior recuperado: **τ76,8**, 232009894 bytes, SHA256 `0f555fa48c231abc8345a0ec9146f727d009711bf983cdbcf1b114696de5e471`, 437 archivos íntegros y 14 controles de cero pasos positivos. Estado interno `38344efb88f4800f40f7931901e21adf0fd68f791afc823b464d25bbae1ba1db`. Se conserva la reanudación exacta del tramo 72→80; la última frontera completa con cinco puertas positivas sigue siendo τ72.
 
 Transporte posterior recuperado: **τ78,4**, 232034503 bytes, SHA256 `d1683c6aae60953c7fd44eafb15dd76588ae1ebf8b9b1c3943922303696fcf24`, 442 archivos íntegros y 14 controles de cero pasos positivos. Estado interno `973d6be9f0b0c0b2dee94eb90866feb7e7f6785b4ab891fb8cffa8e07e945e42`. Se conserva la reanudación exacta del tramo 72→80; la última frontera completa con cinco puertas positivas sigue siendo τ72.
+
+## Frontera τ80: negativo espacial y suspensión observada
+
+La cápsula completa tiene **232220697 bytes**, SHA256 `af4c927287e6eec056af436b8f40fca0fc7553a429aa0de049b30a6fe4aa5801`. Estado `abfae6d6b88a1f5b6a58df1657ea3f860a81b02835fe6598b97315da3c1f3ba4`. Pasan 28 comprobaciones de recuperación con cero pasos M2. Máximos: energía FV2,87059e-8; energía mixta2,20613e-10; carga8,88178e-16; cierre/orden1,65990e-6; Parseval2,03821e-14.
+
+| Métrica original | Error (%) | Puerta del2% |
+|---|---:|---|
+| Norma temporal suprema | 0.0208614923952 | Pasa |
+| Campo Φ | 0.0347184015964 | Pasa |
+| Fases Φ | 0.0580769705122 | Pasa |
+| Campo χ | 1.62881967649 | Pasa |
+| Fases χ | 2.31190799095 | NEGATIVO |
+
+El negativo completo tiene **232196186 bytes**, SHA256 `d883338d801a2357f8904ae89a2866b0ad4d8b0057e935e82343b067c1c7394d`, recuperado y verificado. La auditoría terminó08:12:03 UTC; la lectura negativa08:12:09; el negativo quedó recuperado08:12:33,480; la salida propia con código2 se observó08:12:33,566. No comenzó80→88. El certificado de secuencia y el resultado causal quedan en `checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/`.
+
+El diagnóstico guardado del mismo tiempo identifica proyecciones≥0,99125 y cosenos≥0,99991 del operador χ acoplado en las tres ventanas; el contraste pasivo al retirarlo reduce≥99,975% del residuo cuadrático. La norma del canal mixto es≈0,51594 de la original. El error observado original en80 era4,4598676746%; el mixto2,31190799095%. Estos prefijos no aceptan la puerta causal final de160 ni el continuo. Las pruebas adicionales quedan pendientes bajo la condición original. La continuación de esta versión está suspendida: conservar80 para análisis; no reanudar72,78,4 o79,6 para eludir el fallo ni introducir otra corrección automáticamente. Evidencia numérica de M2, sin validación física experimental.

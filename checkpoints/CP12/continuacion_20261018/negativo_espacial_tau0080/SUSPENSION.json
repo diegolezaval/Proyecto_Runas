@@ -1,0 +1,45 @@
+{
+  "schema": "CP12_SPATIAL_NEGATIVE_ORDER_AND_OWN_EXIT_OBSERVED",
+  "time": 80,
+  "events": [
+    {
+      "at": "2026-10-18T08:12:03.842519+00:00",
+      "event": "BOUNDARY_PERMANENTLY_VERIFIED",
+      "time": 80,
+      "state_sha256": "abfae6d6b88a1f5b6a58df1657ea3f860a81b02835fe6598b97315da3c1f3ba4",
+      "capsule_bytes": 232220697,
+      "independent_recovery_passed": true
+    },
+    {
+      "at": "2026-10-18T08:12:09.096653+00:00",
+      "event": "SPATIAL_PREFIX_GATE_BEFORE_NEXT_M2_SEGMENT",
+      "time": 80,
+      "all_five_pair_limits_met": false,
+      "CP12_closed": false
+    },
+    {
+      "at": "2026-10-18T08:12:33.480335+00:00",
+      "event": "MIXTO_ADDITIONAL_EVIDENCE_PERMANENTLY_RECOVERED_AND_HASH_VERIFIED",
+      "label": "NEGATIVO_ESPACIAL_TAU0080_20261017",
+      "scientific_gate_failed": true,
+      "CP12_closed": false
+    }
+  ],
+  "own_observed_exit": {
+    "at": "2026-10-18T08:12:33.566034+00:00",
+    "returncode": 2,
+    "scope": "Observed own guardian only",
+    "previous_executor_termination_assumed": false
+  },
+  "diagnosis_at": "2026-10-18T08:12:56.250054+00:00",
+  "no_next_M2_segment_executed": true,
+  "scientific_gate_failed": true,
+  "original_threshold": 0.02,
+  "last_all_five_spatial_gates_positive_boundary": 72,
+  "numerical_full_frontier_recovered_and_audited": 80,
+  "forensic_recovery_only": true,
+  "automatic_continuation_authorized": false,
+  "old_inaccessible_executors_termination_assumed": false,
+  "accepted_scientific_checkpoint": "CP11",
+  "CP12_closed": false
+}
