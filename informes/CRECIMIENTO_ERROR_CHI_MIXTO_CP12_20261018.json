@@ -1,0 +1,81 @@
+{
+  "rows": [
+    {
+      "time": 8,
+      "chi_phase_percent": 0.03399386197674961,
+      "change_percentage_points": null,
+      "factor": null,
+      "five_spatial_gates_passed": true,
+      "source": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0008.json",
+      "sha256": "ba0798dba28005dc1a7815e0b3b9810641a254ea9ef84c37bfd6bc2a7dff7db5"
+    },
+    {
+      "time": 16,
+      "chi_phase_percent": 0.024862769686405845,
+      "change_percentage_points": -0.009131092290343767,
+      "factor": 0.7313899698542915,
+      "five_spatial_gates_passed": true,
+      "source": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0016.json",
+      "sha256": "cbdfcde9a155964998bd8432655663105ae9f931b7c0014260ee5326a3de1656"
+    },
+    {
+      "time": 24,
+      "chi_phase_percent": 0.03753995687408938,
+      "change_percentage_points": 0.012677187187683531,
+      "factor": 1.5098863621221978,
+      "five_spatial_gates_passed": true,
+      "source": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0024.json",
+      "sha256": "c7292b10862a9379d3a1aa72334b46c97a7d6d9d9c6fbb7f740b2c4c361916cd"
+    },
+    {
+      "time": 32,
+      "chi_phase_percent": 0.14321517570281703,
+      "change_percentage_points": 0.10567521882872766,
+      "factor": 3.815006399265904,
+      "five_spatial_gates_passed": true,
+      "source": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0032.json",
+      "sha256": "d42d200e713651f1838b1473d5be979b0ef387919213f05eff3eea8d9a716049"
+    },
+    {
+      "time": 40,
+      "chi_phase_percent": 0.384127731582531,
+      "change_percentage_points": 0.24091255587971397,
+      "factor": 2.6821719814080796,
+      "five_spatial_gates_passed": true,
+      "source": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0040.json",
+      "sha256": "85e326002dd80caf58bfd620f5c7f9b53b07a38b53c80a5190f6055425e7f497"
+    },
+    {
+      "time": 48,
+      "chi_phase_percent": 0.7508082787578753,
+      "change_percentage_points": 0.36668054717534426,
+      "factor": 1.954579732279917,
+      "five_spatial_gates_passed": true,
+      "source": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0048.json",
+      "sha256": "1a83a03a1a43d8e7aa0d1c175260c0d6afb1900ee506609cc16e64de512c8147"
+    },
+    {
+      "time": 56,
+      "chi_phase_percent": 1.182721017636114,
+      "change_percentage_points": 0.4319127388782388,
+      "factor": 1.5752636872795116,
+      "five_spatial_gates_passed": true,
+      "source": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0056.json",
+      "sha256": "17c37466ce24d0465d638d3df72de37242d4efc943c4ab0ad5199d7bb2b29754"
+    },
+    {
+      "time": 64,
+      "chi_phase_percent": 1.6121229096577623,
+      "change_percentage_points": 0.42940189202164825,
+      "factor": 1.363062705083137,
+      "five_spatial_gates_passed": true,
+      "source": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0064.json",
+      "sha256": "3560f180d92a43e394527bc0e4653e4703dba209d832c1d3651fa52db7a3ccaa"
+    }
+  ],
+  "threshold_percent": 2,
+  "M2_steps_executed": 0,
+  "temporal_model_fitted": false,
+  "extrapolation_used": false,
+  "CP12_closed": false
+}

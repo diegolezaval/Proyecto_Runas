@@ -35,13 +35,18 @@
       "time": 56,
       "path": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0056.json",
       "sha256": "17c37466ce24d0465d638d3df72de37242d4efc943c4ab0ad5199d7bb2b29754"
+    },
+    {
+      "time": 64,
+      "path": "checkpoints/CP12/continuacion_20261014/correccion_mixta_20261015/transporte_dop853_20261015/METRICAS_ESPACIALES_PREFIJO_TAU0064.json",
+      "sha256": "3560f180d92a43e394527bc0e4653e4703dba209d832c1d3651fa52db7a3ccaa"
     }
   ],
   "original_threshold": 0.02,
-  "final_time": 56,
+  "final_time": 64,
   "derived_from_saved_comparisons_only": true,
   "M2_steps_executed": 0,
-  "figure_sha256": "4b154755faa574bb5764f3c568bf374f8191a022b0f8a46a15fca4c0b7b0d82e",
+  "figure_sha256": "70c974603f8c7c70023ea0055b252dfeddd4e7565171c259d9a10e924dac1ad7",
   "continuum_or_experimental_validation": false,
   "CP12_closed": false
 }

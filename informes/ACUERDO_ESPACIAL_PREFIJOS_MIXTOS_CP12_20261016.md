@@ -11,8 +11,9 @@ Las cinco métricas originales se leen en extracciones independientes de fronter
 | 40 | 0.01401204814 | 0.05121103028 | 0.09273087343 | 0.2709887145 | 0.3841277316 |
 | 48 | 0.01850100307 | 0.05759187898 | 0.1143372769 | 0.5293110703 | 0.7508082788 |
 | 56 | 0.0208614924 | 0.05757757447 | 0.1128965814 | 0.833489937 | 1.182721018 |
+| 64 | 0.0208614924 | 0.05140544279 | 0.09523351109 | 1.135839791 | 1.61212291 |
 
-En el prefijo más reciente, τ56, el mayor error es 1.18272101764 %. Las cinco comparaciones pasan el límite original.
+En el prefijo más reciente, τ64, el mayor error es 1.61212290966 %. Las cinco comparaciones pasan el límite original.
 
 τ8/16 reutilizan sus certificados sin repetir la lectura. Las nuevas fronteras siguen la extensión registrada en `b805708d3faedc37118164f574325d3a6ebb3d2b` antes de su análisis; τ24 ya estaba adquirido al registrar esa extensión. Sólo se parametriza la comprobación temporal, con identidad AST del resto. La rotación descriptiva de χ no interviene en aceptación. Los JSON conservan todos los diagnósticos.
 

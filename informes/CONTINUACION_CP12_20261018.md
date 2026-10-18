@@ -43,3 +43,19 @@ Transporte posterior recuperado: **τ59.2**, 231378571 bytes, SHA256 `d127dcee4e
 Transporte posterior recuperado: **τ60.8**, 231415877 bytes, SHA256 `dcb0a4f0b737854b2953f7db3036ced2a34a4a3278d3bf4fc4803893290cc2c6`, 366 archivos íntegros y 14 controles de cero pasos positivos. Estado interno `0597bc067150b3a1d04620123cd201188ac38e0ca30820c330b8cbd297dd2e12`. Se mantiene la continuación condicionada a las puertas originales; no es una frontera espacial nueva.
 
 Transporte posterior recuperado: **τ62.4**, 231442602 bytes, SHA256 `d74bd2766b04eed6aa6866d91f445f3b2201501f42034e94f3ab1f8a3a52ae76`, 372 archivos íntegros y 14 controles de cero pasos positivos. Estado interno `7f9dcb82f52e2f60dd15187b0bd5f5d31c412d3da2d6f5b81d625ead53da9ac1`. Se mantiene la continuación condicionada a las puertas originales; no es una frontera espacial nueva.
+
+## Frontera τ64: conservación y cinco puertas positivas
+
+La cápsula completa tiene **231609336 bytes**, SHA256 `f06537aa4b7774d34d4b02ff76b590767963279f2142d78a35dd1222f95ccb06`. El estado cerrado tiene SHA256 `d7618eb12a6f1444e56be0b696cfc0e232e60b0ed3b77002b5aa1cadcb8ae696`. Pasan las 28 comprobaciones de recuperación independiente con cero pasos M2. E FV ≤2,687e-8, E mixta ≤1,815e-10 y carga ≤8,882e-16.
+
+| Métrica original | Error relativo (%) | Límite (%) |
+|---|---:|---:|
+| Norma temporal suprema | 0.0208614924 | 2 |
+| Campo Φ | 0.0514054428 | 2 |
+| Fases Φ | 0.0952335111 | 2 |
+| Campo χ | 1.1358397905 | 2 |
+| Fases χ | 1.6121229097 | 2 |
+
+Las cinco métricas pasan. El registro de orden verifica recuperación/auditoría, lectura positiva y después comienzo de 64→72. No se ejecutó diagnóstico causal condicionado a un negativo, porque no ha ocurrido. CP12 continúa abierto; no hay aceptación del continuo ni evidencia experimental.
+
+La [tabla de crecimiento medido](CRECIMIENTO_ERROR_CHI_MIXTO_CP12_20261018.md) conserva diferencias y factores entre prefijos, sin ajuste de una ley temporal ni extrapolación. La multiplicación disminuye en los últimos prefijos mientras el error absoluto de χ continúa aumentando. Esa tendencia no altera el umbral del 2 % ni decide fronteras futuras.
