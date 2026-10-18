@@ -1,0 +1,20 @@
+{
+  "schema": "CP12_ADMINISTRATIVE_CLEANUP_SCOPE_RECORD_BEFORE_LOCAL_QUEUE_REPAIR",
+  "at": "2026-10-18T07:30:27.935479+00:00",
+  "source_original_sha256": "384aaf3239658824d50a080b00f383cbcad3bffbfc4e1c624081893d3718dfd0",
+  "procedure_sha256": "65367d163a2251607c28e02bba7bb82fc8317b6d92dbc3266ec1bca763cedd59",
+  "changes": "Only new archive/record paths and metadata attribution. Same strict selection of ancestral disposable-copy receipts, identical-byte preservation, unchanged original cleaner and configuration.",
+  "own_physical_worker_session": 60552,
+  "own_physical_worker_started": {
+    "at": "2026-10-18T07:29:47.097522+00:00",
+    "pid_in_parent_namespace": 5,
+    "scope": "Observed own child only",
+    "scientific_frontier_inferred": false
+  },
+  "preexisting_records_selected": 3,
+  "preexisting_missing_disposable_copies": 5,
+  "original_cleaner_not_started_on_inherited_queue": true,
+  "scientific_gate_failed": false,
+  "administrative_procedure_M2_steps": 0,
+  "CP12_closed": false
+}
