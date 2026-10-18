@@ -59,3 +59,5 @@ La cápsula completa tiene **231609336 bytes**, SHA256 `f06537aa4b7774d34d4b02ff
 Las cinco métricas pasan. El registro de orden verifica recuperación/auditoría, lectura positiva y después comienzo de 64→72. No se ejecutó diagnóstico causal condicionado a un negativo, porque no ha ocurrido. CP12 continúa abierto; no hay aceptación del continuo ni evidencia experimental.
 
 La [tabla de crecimiento medido](CRECIMIENTO_ERROR_CHI_MIXTO_CP12_20261018.md) conserva diferencias y factores entre prefijos, sin ajuste de una ley temporal ni extrapolación. La multiplicación disminuye en los últimos prefijos mientras el error absoluto de χ continúa aumentando. Esa tendencia no altera el umbral del 2 % ni decide fronteras futuras.
+
+Transporte posterior recuperado: **τ65.6**, 231620991 bytes, SHA256 `27c534b0949c6f932932035eca56ec00f26bca407af4b2170e6a209913334f6d`, 385 archivos íntegros y 14 controles de cero pasos positivos. Estado interno `0df7daf5f355412b79de8ab2aff8dbc1dfba1185b191b5dc25e8ff29f1340f83`. Se mantiene la continuación condicionada a las puertas originales; no es una frontera espacial nueva.
