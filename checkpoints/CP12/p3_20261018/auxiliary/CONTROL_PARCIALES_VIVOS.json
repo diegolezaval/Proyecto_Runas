@@ -1,0 +1,19 @@
+{
+  "schema": "CP12_P3_LIVE_PARTIAL_DEDUP_SCOPE_AND_RECOVERY_CONTROLS",
+  "tests": {
+    "dry_run_has_no_mutation": true,
+    "new_observation_retains_partials": true,
+    "only_redundant_partials_removed": true,
+    "unique_unknown_anchor_retained": true,
+    "all_canonical_and_protected_paths_retained": true,
+    "symlink_preserved": true,
+    "all_removed_bytes_reconstruct_exactly": true,
+    "both_canonical_and_local_reference_cases": true
+  },
+  "passed": true,
+  "source_sha256": "98d2362932a3a668b6d5842201668c3b3ac591a14410f7eb5c3ee3f92ad8181c",
+  "M2_steps_executed": 0,
+  "Library_calls": 0,
+  "scientific_kernels_changed": false,
+  "CP12_closed": false
+}
