@@ -1,0 +1,27 @@
+{
+  "schema": "CP12_P3_ADDITIONAL_EXACT_INTERIOR_GROUP_VELOCITY",
+  "tests": {
+    "exact_identity": true,
+    "nonnegative_coefficients": true,
+    "positive_symbol_for_positive_x": true,
+    "exact_nyquist_symbol": true
+  },
+  "passed": true,
+  "difference_coefficients": [
+    "0",
+    "0",
+    "0",
+    "1/80",
+    "1/600",
+    "1/3600"
+  ],
+  "nyquist_symbol": "272/45",
+  "source_sha256": "c6408915abb27fcf7acb0becf4f45d51029c288fc34f7096ab48b95110d1e01e",
+  "scope": "Homogeneous infinite flat linear operator, constant nonnegative mass squared",
+  "radial_box_or_nonlinear_causality_proved": false,
+  "M2_steps_executed": 0,
+  "DOP853_constructions_or_steps": 0,
+  "F0_F5_repeated": false,
+  "candidate_changed": false,
+  "CP12_closed": false
+}

@@ -1,0 +1,141 @@
+{
+  "at": "2026-10-18T21:45:42.922540+00:00",
+  "schema": "CP12_P3_AUXILIARY_ACTUAL_RECEIPTS_AND_INDEPENDENT_PREFIX_RECONSTRUCTION",
+  "activation": {
+    "at": "2026-10-18T21:42:34.041852+00:00",
+    "schema": "CP12_P3_PROSPECTIVE_VERIFIED_DUPLICATE_AUXILIARY_ACTIVATION",
+    "public_control_commit": "2c3c2647a5b16d003eae0a4aeaaf0ee7117c6f63",
+    "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+    "run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
+    "source_hashes": {
+      "clean_verified_copies_v2.py": "23f61722e4ed3e91c41880ea80ef24b8a7e9aef341fbcaa136c1b4f2c83f36ce",
+      "check_cleanup_scope_v2.py": "58a194671cd9d1f6aefba9cf6ddb9a4c0c9af6b33cf1f1c6e1ddaa83b19c9afa",
+      "REGISTRO_V2.json": "f3915d129bcc912c152de57c9db2a8a94f2f450943a79f24115893ba82745437",
+      "INCIDENTE_CONTROL_V2.json": "a69c5fdb2bee7ad667ccb5d1815a1298cdfcdc518bf0ce66bca1ee4458fcc8d6",
+      "CONTROL_AMBITO_V2.json": "2312717f6225a0895193477ca1f1929ee6777a256c0808201b4a6b0280610f00",
+      "SELECCION_SECA_V2.json": "176a65164182aaf639b1fc65c7433e5899bcce5a71ee04c3cd79eab379a02cc9",
+      "ENMIENDA_PREFIJOS.md": "bf92bd24deb687c885e4caafc487b1d56b27a54b03848a6ea99ae5f114151796",
+      "DIAGNOSTICO_PREFIJOS.json": "008c76a677e5170afdaec36229d47f627295eae41b24a5ab5e76fec494f8da5b"
+    },
+    "scientific_kernels_changed": false,
+    "M2_steps_executed": 0,
+    "canonical_archives_frontiers_and_negatives_always_retained": true
+  },
+  "tool_session_id": 17349,
+  "receipts": {
+    "STAGING_383540ddeef946a4b844d43efa68523e.json": {
+      "kind": "STAGING",
+      "path": "runtime/tmp/library_upload_staging/383540ddeef946a4b844d43efa68523e/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000004.zip",
+      "bytes": 204244275,
+      "archive_sha256": "9e60c4cddd34a25baee4422ebfed8a3b96ffde32794dc9f75827f20788309556",
+      "library_file_id": "libfile_52d5acd642b48191aea216075c6492df",
+      "canonical_archive_kept": true,
+      "at": "2026-10-18T21:42:35.061633+00:00",
+      "scope": "Disposable local duplicate only; canonical archive and Library untouched",
+      "M2_steps_executed": 0,
+      "scientific_files_changed": false
+    },
+    "STAGING_3c90232d176d4805b448b7d3c0212c11.json": {
+      "kind": "STAGING",
+      "path": "runtime/tmp/library_upload_staging/3c90232d176d4805b448b7d3c0212c11/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_tau0000.zip",
+      "bytes": 11146511,
+      "archive_sha256": "c7f4ceed013196935f106ea46554c0deb9ea9f30f0258082e3546462683a9732",
+      "library_file_id": "libfile_b15310e4b1e081918c8c83cd1350daae",
+      "canonical_archive_kept": true,
+      "at": "2026-10-18T21:42:34.913638+00:00",
+      "scope": "Disposable local duplicate only; canonical archive and Library untouched",
+      "M2_steps_executed": 0,
+      "scientific_files_changed": false
+    },
+    "TRANSPORTE_TAU_000004_LOSSLESS_PREFIX_REPRESENTATIONS.json": {
+      "kind": "LOSSLESS_PREFIX_REPRESENTATIONS_BEFORE_DUPLICATE_REMOVAL",
+      "observer_clock": 0.4,
+      "prefixes": [
+        {
+          "path": "transport/.current.npz.VVWEdB",
+          "bytes": 134479872,
+          "sha256": "687001e4269af2d9b1d727363ab77af56b36aa059439e3c1287aec26259f3480",
+          "source_payload": "transport/current.npz",
+          "source_payload_sha256": "a5c0eea6b203206c4ea0455040dd488ad9aad36782b25aefdd14c326dc7e4f5b",
+          "source_payload_bytes": 193042514,
+          "exact_prefix_comparison": true,
+          "reconstruction": "Read the first bytes bytes of source_payload in the retained canonical archive",
+          "stable_seconds": 62.36583614349365
+        }
+      ],
+      "canonical_archive_kept": true,
+      "archive_sha256": "9e60c4cddd34a25baee4422ebfed8a3b96ffde32794dc9f75827f20788309556",
+      "library_file_id": "libfile_52d5acd642b48191aea216075c6492df",
+      "at": "2026-10-18T21:43:38.477869+00:00",
+      "scope": "Disposable local duplicate only; canonical archive and Library untouched",
+      "M2_steps_executed": 0,
+      "scientific_files_changed": false
+    },
+    "STAGING_d17fd120486d42d0b29a3c8006b534d3.json": {
+      "kind": "STAGING",
+      "path": "runtime/tmp/library_upload_staging/d17fd120486d42d0b29a3c8006b534d3/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000016.zip",
+      "bytes": 204051522,
+      "archive_sha256": "348520714cd767212c34a404016b4dd83ccfffe861c7563cba42fdec51cdc1d1",
+      "library_file_id": "libfile_1ff2ed842984819181f5782b09578397",
+      "canonical_archive_kept": true,
+      "at": "2026-10-18T21:42:35.365444+00:00",
+      "scope": "Disposable local duplicate only; canonical archive and Library untouched",
+      "M2_steps_executed": 0,
+      "scientific_files_changed": false
+    },
+    "STAGING_c7656cfcd4cf41a5a9f2225c0ee55b47.json": {
+      "kind": "STAGING",
+      "path": "runtime/tmp/library_upload_staging/c7656cfcd4cf41a5a9f2225c0ee55b47/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000048.zip",
+      "bytes": 204078834,
+      "archive_sha256": "494ec8b8c59cf2eb1f9dc146eb2fa5f842083000a58cdd98acefb8173ddfdb97",
+      "library_file_id": "libfile_10bcfe47aba8819199157cad221d1253",
+      "canonical_archive_kept": true,
+      "at": "2026-10-18T21:45:10.496119+00:00",
+      "scope": "Disposable local duplicate only; canonical archive and Library untouched",
+      "M2_steps_executed": 0,
+      "scientific_files_changed": false
+    },
+    "STAGING_8f9fdc096adb4251bb7057a1b16a3eb1.json": {
+      "kind": "STAGING",
+      "path": "runtime/tmp/library_upload_staging/8f9fdc096adb4251bb7057a1b16a3eb1/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000032.zip",
+      "bytes": 204019193,
+      "archive_sha256": "b60b41d4e9aed0ee297b6b798ec8280794c357d31a376fc516ca91ef45343898",
+      "library_file_id": "libfile_ec33ee74603c8191a206a996f957c115",
+      "canonical_archive_kept": true,
+      "at": "2026-10-18T21:42:35.208623+00:00",
+      "scope": "Disposable local duplicate only; canonical archive and Library untouched",
+      "M2_steps_executed": 0,
+      "scientific_files_changed": false
+    },
+    "TRANSPORTE_TAU_000004.json": {
+      "kind": "OLDER_TRANSPORT_DUPLICATES",
+      "observer_clock": 0.4,
+      "paths": [
+        "recoveries/TRANSPORTE_TAU_000004",
+        "recoveries/TRANSPORTE_TAU_000004_runtime_checked"
+      ],
+      "archive_sha256": "9e60c4cddd34a25baee4422ebfed8a3b96ffde32794dc9f75827f20788309556",
+      "library_file_id": "libfile_52d5acd642b48191aea216075c6492df",
+      "canonical_archive_kept": true,
+      "two_latest_transport_copies_retained": true,
+      "all_frontier_copies_retained": true,
+      "at": "2026-10-18T21:43:38.520717+00:00",
+      "scope": "Disposable local duplicate only; canonical archive and Library untouched",
+      "M2_steps_executed": 0,
+      "scientific_files_changed": false
+    }
+  },
+  "independent_reconstructions": [
+    {
+      "label": "TRANSPORTE_TAU_000004",
+      "path": "transport/.current.npz.VVWEdB",
+      "bytes": 134479872,
+      "sha256": "687001e4269af2d9b1d727363ab77af56b36aa059439e3c1287aec26259f3480",
+      "reconstruction_from_kept_archive_exact": true
+    }
+  ],
+  "all_reconstructions_exact": true,
+  "M2_steps_executed": 0,
+  "scientific_kernels_changed": false,
+  "CP12_closed": false
+}
