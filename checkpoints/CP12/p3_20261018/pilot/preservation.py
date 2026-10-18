@@ -232,5 +232,3 @@ def main():
         interpret_final(home)
     finally:stop.set()
 if __name__=='__main__':main()
-
-

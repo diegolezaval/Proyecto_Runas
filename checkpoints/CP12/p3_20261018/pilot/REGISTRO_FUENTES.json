@@ -15,12 +15,14 @@
     "controlador_transporte.py": "d45176f3f0730c9d8dbda73952436fac3ba3c37c20b631e4793e7c38433333ae",
     "coordinator.py": "badfd42b62b33c6dc7b9e8182e55eb311a75e235b30935b3f6872b5ffcf4a421",
     "prepare_pilot.py": "4bb12a74d291692d97aaf34085cc51d361a3b40c1aa3728e58f790c234f054e8",
-    "preservation.py": "33000c4c6961dd975a20c9bffe0e189803ab52c8c55aeb31fd405533143d7ed9",
+    "preservation.py": "038ac12a331d4b13ffc49d306e1fd7329f9f2f1c9cdf946de0dc5466d1d2b644",
     "seleccion_canonica.py": "2efd95a92eb57fb0d1715a4e40e951f7ea75e25a72bf34d499cbb9749dca33ae",
     "transporte.py": "7c887990b991f33ccb86737b821daff0ab5e68e54cbd96c4b8475a62bee731dd"
   },
   "new_P3_action_source_unchanged_from_c7a61e6": true,
   "M2_steps_executed": 0,
   "initialization_executed": false,
-  "CP12_closed": false
+  "CP12_closed": false,
+  "format_only_followup_to": "61578e785c5516f80e04583f5b3fdb66896631d8",
+  "format_only_change": "Remove copied historical extra blank EOF line; no executable AST change"
 }
