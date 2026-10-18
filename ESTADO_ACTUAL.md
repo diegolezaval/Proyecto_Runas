@@ -6,13 +6,13 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
 ## Siguiente trabajo científico
 
-- Piloto P3 nuevo desde τ0 conservado/recuperado/auditado con30 controles. Instancia128492e27d6d44798f2ef9336fc1b2e7, rama ciencia/cp12-residuo-p3-20261018; avanzar 0→8 y sólo por puertas originales hasta160. P2 terminó con negativo80 y no se reanuda. CP12 abierto; CP11 aceptado.
+- Consultar primero la actividad del único guardián P3 y cualquier transporte posterior. Piloto0→8 en curso; último transporte recuperado0.4 y control .4→.41 bit a bit positivo. Avanzar sólo tras guardar/recuperar/auditar cada frontera y pasar todas las puertas. No duplicar trabajador ni reanudar P2. CP12 abierto.
 - RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
 - C7: nodos/vórtices o candidatos dinámicos con recursos
 

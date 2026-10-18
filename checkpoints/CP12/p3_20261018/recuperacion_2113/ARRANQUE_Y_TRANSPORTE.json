@@ -1,0 +1,22 @@
+{
+  "schema": "CP12_P3_OWN_GUARDIAN_STARTED_FROM_RECOVERED_TAU0",
+  "at": "2026-10-18T21:25:58.752195+00:00",
+  "home": "/workspace/scratch/7679f367a48b/p3_recovered_tau0_2113",
+  "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+  "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
+  "own_guardian_tool_session_id": 65474,
+  "own_observed_start": {
+    "at": "2026-10-18T21:22:10.776153+00:00",
+    "pid_in_parent_namespace": 5,
+    "scope": "Observed own child only",
+    "scientific_frontier_inferred": false
+  },
+  "source_public_certificate_commit": "9f337805cf39c3793a1fb7c59dbfc65a15d8a1fa",
+  "latest_certified_frontier": 0,
+  "latest_recovered_internal_clock": 0.4,
+  "P3_one_interval_control_passed": true,
+  "activity_is_scientific_certificate": false,
+  "old_P2_must_not_resume": true,
+  "recovery_register_library_file_id": "libfile_2c8d727c2c0881919a835e29b9121643",
+  "CP12_closed": false
+}

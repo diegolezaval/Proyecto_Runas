@@ -2119,10 +2119,19 @@
       "reopened_stages": [],
       "M2_steps_executed": 0,
       "CP12_closed": false
+    },
+    {
+      "event": "CP12_P3_PILOTO_INICIADO_Y_TRANSPORTE0p4_RECUPERADO",
+      "at": "2026-10-18T21:25:58.752195+00:00",
+      "report": "informes/PILOTO_P3_TAU0_CP12_20261018.md",
+      "evidence": "checkpoints/CP12/p3_20261018/recuperacion_2113/ARRANQUE_Y_TRANSPORTE.json",
+      "closed_stages": [],
+      "reopened_stages": [],
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Piloto P3 nuevo desde τ0 conservado/recuperado/auditado con30 controles. Instancia128492e27d6d44798f2ef9336fc1b2e7, rama ciencia/cp12-residuo-p3-20261018; avanzar 0→8 y sólo por puertas originales hasta160. P2 terminó con negativo80 y no se reanuda. CP12 abierto; CP11 aceptado.",
+    "Consultar primero la actividad del único guardián P3 y cualquier transporte posterior. Piloto0→8 en curso; último transporte recuperado0.4 y control .4→.41 bit a bit positivo. Avanzar sólo tras guardar/recuperar/auditar cada frontera y pasar todas las puertas. No duplicar trabajador ni reanudar P2. CP12 abierto.",
     "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
     "C7: nodos/vórtices o candidatos dinámicos con recursos"
   ],
@@ -2138,9 +2147,23 @@
     "Ensayo mixto Φ-FV/χ-K4 0→80: conservar fronteras, transportes y negativo espacial80. No repetir A–D ni reanudar desde72/78,4/79,6 para eludir la puerta negativa."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Piloto P3 nuevo desde τ0 conservado/recuperado/auditado con30 controles. Instancia128492e27d6d44798f2ef9336fc1b2e7, rama ciencia/cp12-residuo-p3-20261018; avanzar 0→8 y sólo por puertas originales hasta160. P2 terminó con negativo80 y no se reanuda. CP12 abierto; CP11 aceptado.",
+  "next_calculation": "Consultar primero la actividad del único guardián P3 y cualquier transporte posterior. Piloto0→8 en curso; último transporte recuperado0.4 y control .4→.41 bit a bit positivo. Avanzar sólo tras guardar/recuperar/auditar cada frontera y pasar todas las puertas. No duplicar trabajador ni reanudar P2. CP12 abierto.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [],
+  "numerical_runs_in_progress": [
+    {
+      "campaign": "CP12_PILOTO_P3_PHI_FV_CHI_COMPOSICION_CUBICA",
+      "status": "OWN_GUARDIAN_OBSERVED_STARTED_PHYSICAL_EVOLUTION_IN_PROGRESS",
+      "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+      "run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
+      "first_target": 8,
+      "conditional_target": 160,
+      "latest_certified_frontier": 0,
+      "latest_recovered_internal_clock": 0.4,
+      "evidence": "checkpoints/CP12/p3_20261018/recuperacion_2113/ARRANQUE_Y_TRANSPORTE.json",
+      "correction_validated": false,
+      "CP12_closed": false
+    }
+  ],
   "research_in_progress": [
     {
       "campaign": "CP12_DERIVACION_VARIACIONAL_MIXTA",
@@ -2152,7 +2175,7 @@
     },
     {
       "campaign": "CP12_DIAGNOSTICO_RESIDUO_TAU80_Y_HIPOTESIS_P3",
-      "status": "P3_TAU0_CONSERVADO_RECUPERADO_AUDITADO_PILOTO_AUTORIZADO_PENDIENTE_DE_ARRANQUE",
+      "status": "P3_PILOTO_EN_PROGRESO_PRIMER_TRANSPORTE_RECUPERADO_Y_CONTROL_EXACTO_POSITIVO",
       "scope": "Autorización del usuario 2026-10-18: nueva investigación y propuesta derivada; geometría radial h2 demostrada, dispersión ocupada contrastada, fuentes/preparación no identificadas como causa dominante. P3 requiere nuevos controles antes de M2.",
       "evidence": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
       "report": "informes/PILOTO_P3_TAU0_CP12_20261018.md",
@@ -2279,6 +2302,29 @@
       "M2_steps_executed": 0,
       "earlier_executor_termination_assumed": false,
       "evidence": "checkpoints/CP12/residuo_tau80_20261018/RESUMEN_D1_D2.json"
+    },
+    "P3_candidate": {
+      "schema": "CP12_P3_OWN_GUARDIAN_STARTED_FROM_RECOVERED_TAU0",
+      "at": "2026-10-18T21:25:58.752195+00:00",
+      "home": "/workspace/scratch/7679f367a48b/p3_recovered_tau0_2113",
+      "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+      "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
+      "own_guardian_tool_session_id": 65474,
+      "own_observed_start": {
+        "at": "2026-10-18T21:22:10.776153+00:00",
+        "pid_in_parent_namespace": 5,
+        "scope": "Observed own child only",
+        "scientific_frontier_inferred": false
+      },
+      "source_public_certificate_commit": "9f337805cf39c3793a1fb7c59dbfc65a15d8a1fa",
+      "latest_certified_frontier": 0,
+      "latest_recovered_internal_clock": 0.4,
+      "P3_one_interval_control_passed": true,
+      "activity_is_scientific_certificate": false,
+      "old_P2_must_not_resume": true,
+      "recovery_register_library_file_id": "libfile_2c8d727c2c0881919a835e29b9121643",
+      "CP12_closed": false,
+      "heartbeat_scope": "Observation only; latest certified state requires separate proof"
     }
   },
   "latest_verified_cp12_restart": {
