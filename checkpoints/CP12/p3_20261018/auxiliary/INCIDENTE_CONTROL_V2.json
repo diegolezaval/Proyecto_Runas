@@ -1,0 +1,17 @@
+{
+  "schema": "CP12_P3_ADMINISTRATIVE_SYNTHETIC_TEST_FAILURE_AND_PROSPECTIVE_FIX",
+  "at": "2026-10-18T21:40:44.492915+00:00",
+  "failed_source_commit": "aed0d6951dde75c121099a1e6c20f39782d2e811",
+  "command": "check_cleanup_scope_v2.py --output CONTROL_AMBITO_V2_2113.json",
+  "failure": "FileNotFoundError: TRANSPORTE_TAU_000016_LOSSLESS_PREFIX_REPRESENTATIONS.json",
+  "cause": "Synthetic fixture backdated mtime but not ctime. The production condition correctly retained the prefix because ctime was less than 300s old. No cleanup of real files was activated.",
+  "change": "Only synthetic fixture clock advances by 601s; production implementation and 300s/60s safeguards unchanged.",
+  "source_hashes": {
+    "clean_verified_copies_v2.py": "23f61722e4ed3e91c41880ea80ef24b8a7e9aef341fbcaa136c1b4f2c83f36ce",
+    "check_cleanup_scope_v2.py": "58a194671cd9d1f6aefba9cf6ddb9a4c0c9af6b33cf1f1c6e1ddaa83b19c9afa"
+  },
+  "M2_steps_executed": 0,
+  "scientific_files_changed": false,
+  "real_cleanup_activated": false,
+  "CP12_closed": false
+}

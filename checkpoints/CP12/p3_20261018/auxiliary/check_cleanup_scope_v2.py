@@ -65,7 +65,7 @@ def main():
             staging_relative=staging.relative_to(home).as_posix(),
             canonical_source_unchanged_after_helper=True, bytes=staging.stat().st_size, sha256=module.sha(staging))
         put(home/'preregistration/upload_staging'/(key+'.json'), record)
-        fixed=time.time()
+        fixed=time.time()+601  # Simulate age of both mtime and ctime; no real sleeping.
         prefix=archives[0][2]/'transport/.current.npz.aaaaaa'
         prefix.write_bytes(b'known_d');os.utime(prefix,(fixed-600,fixed-600))
         planned=module.clean(home,uid,run_id,True,now=fixed)
