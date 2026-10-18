@@ -57,14 +57,12 @@ def run(home,output):
             eigen_residual=np.max(abs(d[:,None]*U[:,:3]+np.r_[e[:,None]*U[1:,:3],np.zeros((1,3))]+np.r_[np.zeros((1,3)),e[:,None]*U[:-1,:3]]-U[:,:3]*lam[:3]))
             grid.append((lam,norms))
             summary.append(dict(ell=ell,h=h,Parseval_residuals=errors,first_three_eigenpair_max_absolute_residual=float(eigen_residual),
-                full_vs_smooth_squared_norm_ratio={str(t):float(norms[f'smooth_core_{t}'].sum()/norms[f'full_box_{t}'].sum()) for t in (0,80)}))
+                full_vs_smooth_squared_norm_ratio={str(t):(float(norms[f'smooth_core_{t}'].sum()/norms[f'full_box_{t}'].sum()) if norms[f'full_box_{t}'].sum()>0 else None) for t in (0,80)}))
         count=len(grid[0][0]);roots=[]
         for j in range(1,count+1):
             centre=(j+ell/2)*np.pi
             roots.append(brentq(lambda z:spherical_jn(ell,z),centre-np.pi*.499999,centre+np.pi*.499999,xtol=1e-12))
         k=np.array(roots)/220;store[f'ell{ell}_continuum_k']=k
-        weights=grid[1][1]['smooth_core_0'][:count];total=grid[1][1]['smooth_core_0'].sum()
-        quantiles={str(q):float(k[min(np.searchsorted(np.cumsum(weights),q*total),count-1)]) for q in (.5,.9,.99,.999)}
         alternatives=[]
         for degree in range(1,5):
             omega=[]
@@ -73,20 +71,29 @@ def run(home,output):
                 omega.append(np.sqrt(model.mediator**2+eigenvalues))
             difference=omega[0]-omega[1];store[f'ell{ell}_P{degree}_frequency_grid_difference']=difference
             exact=np.sqrt(model.mediator**2+k*k)
-            alternatives.append(dict(degree=degree,coefficients=coefficients[:degree],
-                occupied_phase_proxy80=float(np.sqrt(np.dot(weights,4*np.sin(40*difference)**2)/total)),
-                occupied_rms_frequency_difference=float(np.sqrt(np.dot(weights,difference*difference)/total)),
-                occupied_rms_coarse_frequency_error=float(np.sqrt(np.dot(weights,(omega[0]-exact)**2)/total)),
-                occupied_rms_fine_frequency_error=float(np.sqrt(np.dot(weights,(omega[1]-exact)**2)/total)),
+            exposures={}
+            for clock in (0,80):
+                weights=grid[1][1][f'smooth_core_{clock}'][:count];total=grid[1][1][f'smooth_core_{clock}'].sum()
+                exposures[str(clock)]=None if total==0 else dict(
+                    occupied_phase_exposure80=float(np.sqrt(np.dot(weights,4*np.sin(40*difference)**2)/total)),
+                    occupied_rms_frequency_difference=float(np.sqrt(np.dot(weights,difference*difference)/total)),
+                    occupied_rms_coarse_frequency_error=float(np.sqrt(np.dot(weights,(omega[0]-exact)**2)/total)),
+                    occupied_rms_fine_frequency_error=float(np.sqrt(np.dot(weights,(omega[1]-exact)**2)/total)))
+            alternatives.append(dict(degree=degree,coefficients=coefficients[:degree],exposure_by_snapshot=exposures,
                 positive_polynomial=True,global_radial_high_order_claim=False))
-        summary.append(dict(ell=ell,occupied_k_quantiles_initial=quantiles,
-            fine_initial_power_above_coarse_mode_count=float(1-weights.sum()/total),alternatives=alternatives))
+        occupancy={}
+        for clock in (0,80):
+            weights=grid[1][1][f'smooth_core_{clock}'][:count];total=grid[1][1][f'smooth_core_{clock}'].sum()
+            occupancy[str(clock)]=dict(squared_norm=float(total),identically_zero=bool(total==0),
+                k_quantiles=None if total==0 else {str(q):float(k[min(np.searchsorted(np.cumsum(weights),q*total),count-1)]) for q in (.5,.9,.99,.999)},
+                fine_power_above_coarse_mode_count=None if total==0 else float(1-weights.sum()/total))
+        summary.append(dict(ell=ell,occupancy_by_snapshot=occupancy,alternatives=alternatives))
     assert sha(state)==expected and not ATTEMPTS
     output.mkdir(parents=True);np.savez_compressed(output/'ESPECTROS.npz',**store)
     result=dict(schema='CP12_OCCUPIED_RADIAL_FREQUENCY_DISCRIMINANT_NO_M2',at=datetime.datetime.now(datetime.timezone.utc).isoformat(),
         state_sha256=expected,code_sha256=sha(Path(__file__)),spectra_sha256=sha(output/'ESPECTROS.npz'),summary=summary,
         M2_steps_executed=0,DOP853_attempts=0,state_unchanged=True,coefficients_not_fitted=True,
-        phase_proxy_definition='sqrt(sum initial fine smooth-core powers *4sin²(80*(omega_coarse-omega_fine)/2)/sum powers)',
+        phase_proxy_definition='sqrt(sum fine smooth-core snapshot powers *4sin²(80*(omega_coarse-omega_fine)/2)/sum powers); null for identically zero snapshot',
         limitations=['Free occupation-weighted phase proxy is not actual coupled evolution or a physical gate',
                     'Mode indices matched by radial Sturm ordering; basis and shape errors not included in phase proxy',
                     'Finite positive compositions retain the derived radial h² residual',

@@ -1,0 +1,11 @@
+{
+  "schema": "CP12_SPECTRAL_DIAGNOSTIC_PROSPECTIVE_ZERO_MODE_AMENDMENT",
+  "at": "2026-10-18T16:20:58.445382+00:00",
+  "registration_commit": "3f2f289fbe95f95e5abaac2fb4e80b177f3d696a",
+  "superseded_spectral_code_sha256": "01e87fd9c8f36062ce3d52637247511bca04577a73689ff5689d5c9c371cdbc6",
+  "new_spectral_code_sha256": "2874e1d583a7df0bf11e1e68f2d5dda258b81caf7f8f2148c712bace182adabe",
+  "reason": "Initial seed has only ell0/2. Keep identically zero ell4 initial occupation as null, never divide by zero. Report descriptive exposures for both saved0/80 snapshots, without claiming free propagation of the actual nonlinear history. Smooth32→40 window already original; retain full-box spectra too.",
+  "spectral_execution_preceded_amendment": false,
+  "thresholds_or_physical_sources_changed": false,
+  "M2_steps_authorized": false
+}
