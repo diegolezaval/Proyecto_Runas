@@ -1,0 +1,24 @@
+# CP12: diagnóstico discriminante del residuo mixto τ80
+
+Registro posterior al negativo válido de `6ed49b308e68b48094dffcaa939bde41c07161c4` y anterior a estos diagnósticos nuevos. La solicitud del usuario del 18 de octubre autoriza investigar, derivar y ensayar propuestas nuevas después de sus controles. No autoriza reanudar el ensayo Φ-FV/χ-K4 fallido. CP11 sigue aceptado; CP12 abierto.
+
+## Datos, integridad y restricciones
+
+Se recupera la cápsula diagnóstica de 232254542 bytes, SHA256 `d8d8c5dd4face5d17561dec75d2e6d92222865b330e5fff4e9e29185c47349bf`, con472 cargas comprobadas. Estado80 `abfae6d6b88a1f5b6a58df1657ea3f860a81b02835fe6598b97315da3c1f3ba4`, recibo `ee4c1d86652736ca3ac227f6e1a65adc539a8320ba49c415fabcd3108b14c6c5`. Se reutilizan los 28 controles de frontera y la recuperación nueva con cero pasos. Se conservan las fuentes y los datos de Cauchy originales y los 201 presupuestos ya adquiridos. No se repiten CP10, CP12 original, A–D ni tramos mixtos. No se integran trayectorias físicas ni observadores nuevos. Se bloquean construcción/avance DOP853 en los lectores nuevos y se comparan hashes antes/después.
+
+## Preguntas y operaciones prefijadas
+
+1. Historia: leer todas las filas guardadas .4 desde0 hasta80, sin interpolar un tiempo de primer fallo. Conservar errores, proyecciones, cosenos, reducciones y fracciones modales. Las normas de canales no se suman como potencias independientes.
+2. Acoplamiento: en80 reconstruir los vectores libres/acoplados guardados y su diferencia para el canal operadorχ. Medir norma, proyección y cruces, además de la respuesta inducida enΦ. Esta diferencia incluye el Jacobiano acoplado condicionado a ambas historias; no separa retornos puros χ→Φ→χ. Conservar matrices Gram y grupos únicamente donde existen datos suficientes.
+3. Fuente y origen: evaluar el conmutador real de χ-K4 y la transferencia no lineal sobre los campos80 guardados. Separar bandas0–2,2–5,5–10,10–20,20–40,40–220 y ℓ2/4. Una fuerza instantánea no determina su respuesta propagada. La atribución propagada se apoya en los observadores conservados.
+4. Métrica: contrastar en80 interpolación cúbica original, extensión por paridad y restricción fina→gruesa. Sólo sensibilidad diagnóstica; la puerta se conserva con el comparador original. No alinear fases deχ.
+5. Preparación: autenticar el CP04 y reconstruir sólo su interpolación inicial, sin evolucionar. Medir saltos de la tercera derivada del spline y de la segunda derivada de la perturbación cuadrupolar. Distinguir regularidad central y regularidad entre nudos; no suavizar ni sustituir la semilla. Examinar la fracción espectral de los datos iniciales y finales, sin afirmar que un orden formal alto mejora una función de regularidad limitada.
+6. Angular/frontera: medir fuente no lineal omitida en ℓ6…12 mediante cuadratura angular más amplia, sobre los mismos campos0/80, y las colas radiales guardadas. Es sensibilidad instantánea, no una trayectoria conL distinto ni un certificado de independencia de caja.
+7. Geometría: contrastar la expansión matemática adjunta sobre campos fabricados pares regulares, ℓ0…4, h=.25,.125,.0625,.03125,.015625, R40. Usar u=exp(−r²/64)(1−r²/1600)^6 y u=exp(−((r²−225)/60)^2)(1−r²/1600)^6. Comparar en r<32 con la solución diferencial exacta y con el término h² derivado; conservar los resultados del borde aparte. No repetir las antiguas pruebas de anulación de armónicos ni los tres primeros autovaloresR1.
+8. Espectro ocupado: diagonalizar K2 ponderado real en las dos mallas originales R220 para ℓ2/4. Proyectar χ inicial/final y el canalχ acoplado80, verificar Parseval y conservar espectros completos. Comparar frecuencias con ceros de jℓ y entre mallas, para las composiciones positivas prefijadas P1…P4 con coeficientes a_n=2/[n² binom(2n,n)]. Se comparan alternativas matemáticas; no se implementa un nuevo candidato físico. Las exposiciones de fase libres ponderadas por ocupación son aproximaciones lineales descriptivas: no predicen la puerta ni eliminan el acoplamiento de la historia real.
+
+## Decisión y límites
+
+Se distinguirán: mecanismo suficiente demostrado por el presupuesto condicionado; defecto formal demostrado por la expansión; firmas compatibles de frecuencia/regularidad; causas aún inseparables por falta de historias o trayectorias de contraste. No se convertirá una correlación modal en causalidad. Las alternativas conservarán sus resultados negativos.
+
+Ningún diagnóstico acepta una nueva corrección. Antes de M2 se requiere derivación, propuesta explícita, rama experimental, registro de código y controles independientes. Ambas energías≤2e-4, carga≤1e-9, cinco métricas≤.02 y el resto de puertas quedan intactos. Todo piloto nuevo comienza con los datos originales, con identidad distinta yτ0 conservado/recuperado/auditado. Una tercera malla y robustez son obligaciones posteriores, no sustitutos de una puerta fallida. Evidencia numérica deM2; sin validación experimental.
