@@ -14,7 +14,7 @@
     "administration/supervisar_fronteras.py": "6024688792116e77fe7373c4c59c6d4ec2d811093b30101432f8e02957d7c023",
     "controlador_transporte.py": "d45176f3f0730c9d8dbda73952436fac3ba3c37c20b631e4793e7c38433333ae",
     "coordinator.py": "badfd42b62b33c6dc7b9e8182e55eb311a75e235b30935b3f6872b5ffcf4a421",
-    "prepare_pilot.py": "4bb12a74d291692d97aaf34085cc51d361a3b40c1aa3728e58f790c234f054e8",
+    "prepare_pilot.py": "7bbfe291550a042652adaef36092071056a9b4a485fd39934ad62f2d8579b7b8",
     "preservation.py": "038ac12a331d4b13ffc49d306e1fd7329f9f2f1c9cdf946de0dc5466d1d2b644",
     "seleccion_canonica.py": "2efd95a92eb57fb0d1715a4e40e951f7ea75e25a72bf34d499cbb9749dca33ae",
     "transporte.py": "7c887990b991f33ccb86737b821daff0ab5e68e54cbd96c4b8475a62bee731dd"
@@ -24,5 +24,6 @@
   "initialization_executed": false,
   "CP12_closed": false,
   "format_only_followup_to": "61578e785c5516f80e04583f5b3fdb66896631d8",
-  "format_only_change": "Remove copied historical extra blank EOF line; no executable AST change"
+  "format_only_change": "Remove copied historical extra blank EOF line; no executable AST change",
+  "administrative_followup": "Exclude bytecode/caches from future captures, matching canonical archive selection; preserve failed initial instance"
 }

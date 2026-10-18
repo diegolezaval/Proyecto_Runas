@@ -105,7 +105,9 @@ def main():
         synthetic_controls_passed=True, registered_before_new_M2=True,
         new_P3_one_interval_control_required=True, CP12_closed=False))
     captured = [p for p in home.rglob('*') if p.is_file()
-                and p.relative_to(home).parts[0] not in ('science', 'prior', 'runtime')]
+                and p.relative_to(home).parts[0] not in ('science', 'prior', 'runtime')
+                and not any(x in ('__pycache__','cache') or x.startswith('.') for x in p.relative_to(home).parts)
+                and p.suffix not in ('.pyc','.so','.tmp')]
     hashes = {p.relative_to(home).as_posix(): sha(p) for p in captured}
     uid = uuid.uuid4().hex
     run_id = hashlib.sha256(json.dumps(dict(uuid=uid, sources=hashes), sort_keys=True).encode()).hexdigest()

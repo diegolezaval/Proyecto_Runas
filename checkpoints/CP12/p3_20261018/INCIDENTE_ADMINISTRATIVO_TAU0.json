@@ -1,0 +1,23 @@
+{
+  "schema": "CP12_P3_ADMINISTRATIVE_TAU0_RECOVERY_FAILURE_NO_M2",
+  "at": "2026-10-18T16:48:37.030944+00:00",
+  "own_preservation_process_exit_observed": 1,
+  "scientific_gate_failed": false,
+  "numerical_state_was_locally_audited_with_30_tests": true,
+  "independent_extraction_audit_passed": false,
+  "failure": "Captured source map includes __pycache__/transporte.cpython-312.pyc while canonical archive excludes bytecode; independent setup correctly rejects missing captured file",
+  "cause_demonstrated": "Preparer imported transport module before selecting captured files and did not exclude bytecode from that selection",
+  "archive_sha256": "7336e5c6a81ef5f77ab2902e10a26ae86c371e055adfb47b59b490e1f7c39735",
+  "archive_bytes": 11107310,
+  "source_state_sha256": "4a27b6f1852389b9642801727cd19db65d275715206f4dd2829de4dc8a2a70f0",
+  "source_receipt_sha256": "4e8e3f60acff20dc1b8c33af605523b99e9f1b6d7cbf4d44bd7ae2d6ac709587",
+  "source_configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+  "extra_bytecode_sha256": "f923a5e0449468c022bed826ab3062fa9c2eecb11b2dcff78a376bc2fa89444a",
+  "physical_steps": 0,
+  "worker_never_started": true,
+  "preflight_repeated": false,
+  "CP12_closed": false,
+  "library_file_id": "libfile_020f95a6ab048191a47c3918c1422ee1",
+  "file_id": "file_00000000d7988230986a1db5d3e4ce04",
+  "file_name": "CP12_CANDIDATO_P3_d43807ae26fe43ed9e965a051b5f7659_tau0000.zip"
+}
