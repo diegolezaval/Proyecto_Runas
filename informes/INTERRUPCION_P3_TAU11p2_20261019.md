@@ -1,0 +1,11 @@
+# P3: interrupción administrativa y pérdida local de τ11,2
+
+La recuperación inicial de τ8 y τ9,6 fue íntegra. El piloto reanudó exactamente desde9,6 y alcanzó el reloj11,2, con ambas energías y carga positivas. El guardián salió con código1 al fallar la conservación por `library_storage_limit_exceeded`; no fue un negativo científico. La cápsula local11,2 se extrajo por separado, verificó289 cargas y pasó14 controles sin pasos DOP853. Ese certificado y la salida están publicados en el incidente anterior.
+
+Posteriormente el directorio de trabajo quedó vacío entre llamadas. La búsqueda de los nombres propios bajo scratch y de descriptores abiertos no recuperó la cápsula. La causa no está identificada; no se atribuye al auxiliar ni al almacenamiento sin evidencia. Ninguna acción solicitó borrar el directorio. No puede afirmarse que sobreviva el estado11,2: su conservación completa había fallado. La tentativa de conservarlo por Git alcanzó sólo los primeros760000 bytes; se retiene ese fragmento con alcance forense y jamás como estado reanudable.
+
+**Última frontera completa aprobada: τ8. Último transporte completo permanente: τ9,6. Último avance local observado y auditado antes de perderse: τ11,2. No hay trabajador propio activo.** No se alcanzóτ16 ni se repitió física tras el incidente.
+
+La comparación homogéneaτ8 quedó conservada: fasesχ original0,0003414021249874907;P2 0,00033993861976749614;P3 0,0003379721627178551. P3 mejora≈1,00467% respecto del original y≈0,57847% respecto deP2 en este prefijo; no valida su comportamiento tardío. Las cinco métricas completas y sus hashes están publicados. También se completó la derivación nueva de primeras filas, espectro radial y colas de la matriz finita;30 controles racionales positivos, sin repetirF0…F5.
+
+La continuación requiere capacidad de conservación y un estado íntegro posterior. Si11,2 no reaparece, continuar desde9,6 repetiría el tramo9,6→11,2; esa excepción no se presume porque el usuario prohibió repetir pasos físicos. No se borra evidencia para liberar cuota, no se vuelve aτ0, no se reanudaP2 ni se creaP4. CP12 abierto;CP11 aceptado. Main sigueed8d818b622a0687aeb56d34ca9e3913bd54e124 y PR2 abierto/en borrador, sin merge.

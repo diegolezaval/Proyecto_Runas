@@ -1,0 +1,47 @@
+{
+  "schema": "CP12_P3_LOCAL_WORKSPACE_DISAPPEARANCE_AFTER_LIBRARY_QUOTA_FAILURE",
+  "observed_after_commit": "5cb247226b37739d38dc64a02836ce6fc8f35c5c",
+  "cause": "NOT_IDENTIFIED",
+  "observation": "The task working directory became empty between tool calls. Exact own filenames were not found elsewhere under /workspace/scratch; no matching open file descriptors were found.",
+  "deletion_requested_or_executed_by_scientific_or_recovery_actions": false,
+  "last_complete_certified_scientific_frontier": 8,
+  "last_complete_permanent_internal_transport": 9.6,
+  "last_local_internal_transport_audited_before_disappearance": 11.2,
+  "local_transport112_sha256": "d99a97188aebebc44d162fad500872dffbfa5a9d683080c8e159e628c9117c08",
+  "lost_local_transport112_archive_sha256": "d97fb63725820aaf372783c231886d6fa8e3a1c9c411b8fd0c6afa553a14efbb",
+  "lost_local_transport112_archive_bytes": 229848115,
+  "local112_had_passed_independent14_checks_without_steps": true,
+  "new112_archive_permanent_preservation_completed": false,
+  "scientific_negative": false,
+  "quota_error": "library_storage_limit_exceeded",
+  "quota_preparation_failed_before_upload_finalization": true,
+  "alternative_Git_partial_preservation": {
+    "blob_sha1": "c617c41b4e337c574b111460a77c1a8ed0184816",
+    "bytes": 760000,
+    "scope": "First bytes of transport112 archive only; incomplete and not rehydratable",
+    "reconstructs_transport": false
+  },
+  "own_guardian_exit_observed": {
+    "returncode": 1,
+    "at": "2026-10-19T02:30:45.682570+00:00"
+  },
+  "own_auxiliary_exit_observed": {
+    "returncode": 0,
+    "tool_session_id": 82799
+  },
+  "scientific_or_helper_worker_currently_running": false,
+  "no_physical_steps_repeated_after_disappearance": true,
+  "no_CP10_original_P2_or_F0_F5_repeated": true,
+  "P2_remains_ended_at80": true,
+  "main": "ed8d818b622a0687aeb56d34ca9e3913bd54e124",
+  "PR2": {
+    "state": "open",
+    "draft": true,
+    "merged": false
+  },
+  "continuation_blocked": true,
+  "required_next_step": "Find a later intact transport or restore persistable capacity. If no complete11.2 transport can be found, explicitly resolve the user's no-physical-replay constraint before replaying9.6→11.2. Never initialize again at0 or resumeP2.",
+  "correction_validated": false,
+  "CP12_closed": false,
+  "accepted_scientific_checkpoint": "CP11"
+}
