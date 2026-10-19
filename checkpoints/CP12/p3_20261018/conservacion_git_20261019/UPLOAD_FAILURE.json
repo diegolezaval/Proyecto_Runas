@@ -1,0 +1,13 @@
+{
+  "exception_type": "HostedAppsToolError",
+  "message": "prepare_uploads failed",
+  "app_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Error code: INVALID_ARGUMENT; Error: HTTP error prior to action invocation. HTTPException: 400: {'code': 'library_storage_limit_exceeded', 'message': \"You've reached your Library storage limit. Delete files to free up space before saving more.\"}"
+      }
+    ],
+    "isError": true
+  }
+}
