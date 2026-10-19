@@ -1,0 +1,47 @@
+{
+  "schema": "CP12_P3_RECOVERY_OF_SAVED_BOUNDARY8_AND_INTERNAL_TRANSPORT9p6",
+  "at": "2026-10-19T02:22:19.674706+00:00",
+  "branch": "ciencia/cp12-residuo-p3-20261018",
+  "public_p3_head_verified": "329286a2d37c320906dcff3682e46e0b2f78a99a",
+  "historical_branch_head_verified": "3ed272c1c567c39b357ac76b366f66c6ad9c1fa0",
+  "main_head_verified": "ed8d818b622a0687aeb56d34ca9e3913bd54e124",
+  "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+  "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
+  "latest_full_frontier_recovered_audited": 8,
+  "latest_recoverable_observer_clock": 9.6,
+  "latest_transport_target": 16,
+  "library_p3_index_version3_stale": true,
+  "no_later_library_p3_file_in_current_inventory": true,
+  "previous_worker_tool_session": 65474,
+  "previous_session_access_result": "Unknown process id 65474",
+  "previous_worker_directory_missing": true,
+  "local_process_inventory_no_scientific_worker": true,
+  "github_workflow_runs_all_completed": true,
+  "previous_inaccessible_executor_termination_assumed": false,
+  "new_worker_will_use_one_local_lock": true,
+  "M2_steps_executed": 0,
+  "DOP853_construction_or_step_attempts": 0,
+  "seed_reinitialized_for_evolution": false,
+  "original_trajectories_repeated": false,
+  "preflight_repeated": false,
+  "scientific_sources_unchanged": true,
+  "original_gates_unchanged": true,
+  "old_P2_must_not_resume": true,
+  "correction_validated": false,
+  "CP12_closed": false,
+  "accepted_scientific_checkpoint": "CP11",
+  "source_archives": [
+    {
+      "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_tau0008.zip",
+      "library_file_id": "libfile_97261c7e73b08191b65470381a42a23e",
+      "sha256": "440c39bf64a93851ff0d7fec7b533afb22581590e4752c0628dd87981431820c",
+      "bytes": 229805232
+    },
+    {
+      "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000096.zip",
+      "library_file_id": "libfile_5c97bdb47da08191819fae6e4705d8dc",
+      "sha256": "a71554ff3e213d09cf7365697e4d9c9307e9529478d567ae3f89ccc11e43b959",
+      "bytes": 229821160
+    }
+  ]
+}

@@ -1,6 +1,16 @@
 # CP12: recuperación vigente y registro histórico
 
 <!-- CP12_CURRENT_RECOVERY_START -->
+**P3: última frontera completa recuperada y auditada τ8; último transporte interno reanudable τ9,6, objetivoτ16.** Misma instancia128492e27d6d44798f2ef9336fc1b2e7; códigos y configuración originales. La nueva recuperación verificó263/283 cargas y30/14 controles sin pasos ni construcciones DOP853. Las cinco métricasτ8 pasan; error fasesχ0,03379721627178551%. [Informe](informes/RECUPERACION_P3_TAU8_TAU9p6_20261019.md), [certificados](checkpoints/CP12/p3_20261018/recuperacion_20261019/).
+
+Buscar siempre actividad y estados posteriores antes de calcular. La sesión antigua65474 y su directorio son inaccesibles; no se afirma su terminación. No hay trabajador local observable ni Actions activo. La reanudación usa un solo guardián local desde la memoria exactaτ9,6, sin repetir física.
+
+**P2 terminado enτ80 con2,311907990946478%>2%; no reanudar.** Conservar todos los negativos. P3 no está validada. Todas las puertas originales permanecen, incluyendo dos energías≤2e-4, carga≤1e-9 y cinco métricas≤.02 en cada frontera8. **CP12 abierto; CP11 aceptado; main y PR2 intactos.**
+<!-- CP12_CURRENT_RECOVERY_END -->
+
+<details><summary>Registro de recuperación anterior, histórico</summary>
+
+<!-- CP12_CURRENT_RECOVERY_START -->
 **ENSAYO P2 TERMINADO: Φ-FV / χ-K4 falla en τ80.** Fases χ=**2,311907990946478 % >2 %**; las otras cuatro métricas pasan. La frontera completa80 se guardó, recuperó y auditó con28 controles; el negativo separado también fue conservado y recuperado. La salida propia con código2 quedó observada2026-10-18 08:12:33,566 UTC. No se ejecutó80→88.
 
 La última frontera con las cinco puertas espaciales positivas es **τ72**. **Recuperar80 sólo para análisis forense; no reanudar desde72,78,4 o el transporte79,6 incrustado en80 para eludir el negativo.** El ensayo está suspendido. No relajar puertas, repetir A–D/campañas originales ni introducir otra corrección automáticamente. Conservar el K4 de tres campos fallido y todos los incidentes administrativos históricos.
@@ -15,6 +25,8 @@ El diagnóstico causal pasivo registrado ya fue ejecutado con cero pasos M2 y by
 **P3: nuevo piloto en rama experimental.** F0…F5 pasaron y están conservados/recuperados. τ0 de la instancia128492e27d6d44798f2ef9336fc1b2e7 pasó30 comprobaciones independientes, sin pasos ni intentos DOP853. [Informe y siguiente trabajo](informes/PILOTO_P3_TAU0_CP12_20261018.md), [certificado](checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json). Buscar primero cualquier transporte o frontera P3 posterior y su actividad propia. El ensayo P2 sigue terminado en80; su prohibición de reanudación no impide este experimento nuevo derivado y prerregistrado. No confundir instancias ni dar por cerrado CP12.
 
 <!-- CP12_CURRENT_RECOVERY_END -->
+
+</details>
 
 ## Historial: CP12 original τ160 conservado; causa condicionada identificada
 
