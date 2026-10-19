@@ -1,0 +1,48 @@
+{
+  "target": 16,
+  "observer_clock": 11.2,
+  "metadata": [
+    {
+      "t": 11.205183926229115,
+      "accepted": 2078,
+      "nfev": 18266,
+      "nfev_live": 7178,
+      "maxe": 6.24522655812143e-11,
+      "maxq": 1.1102230246251565e-15,
+      "maxe_original": 3.4873062215723394e-09
+    },
+    {
+      "t": 11.205178976893324,
+      "accepted": 2078,
+      "nfev": 18266,
+      "nfev_live": 7178,
+      "maxe": 6.234057714493701e-11,
+      "maxq": 4.440892098500626e-16,
+      "maxe_original": 8.379739124819707e-10
+    }
+  ],
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/a70983420f3a/p3_transport96/controlador_transporte.py\", line 194, in advance_segment\n    preserve_transport(home, legacy, durable_clock)\n  File \"/workspace/scratch/a70983420f3a/p3_transport96/controlador_transporte.py\", line 111, in preserve_transport\n    legacy.preserve_negative(home, label, 'Exact DOP853 and observer transport; not a scientific frontier', negative=False)\n  File \"/workspace/scratch/a70983420f3a/p3_transport96/coordinator.py\", line 260, in preserve_negative\n    raw=module.helper(home,'library_upload.py',[],{'uploads':[{'local_path':str(archive),'purpose':'create_library_file','library_artifact_type':'other'}]})\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/a70983420f3a/p3_transport96/preregistration/administration/aislar_fuentes_subida.py\", line 52, in helper\n    result = original(home, name, arguments, request)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/a70983420f3a/p3_transport96/preservation.py\", line 53, in helper\n    if result.returncode: raise RuntimeError('Library helper failed: '+result.stderr[-2500:])\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Library helper failed: library upload failed: prepare_uploads failed\n\n",
+  "administrative_transport_phase": true,
+  "maximum_errors": {
+    "raw_closure": 6.732817679515122e-07,
+    "raw_order_difference": 4.543916583922817e-09,
+    "raw_individual_order_difference": 1.3505349442233632e-08,
+    "coupled_closure": 6.727611417012493e-07,
+    "coupled_order_difference": 3.950505175606651e-10,
+    "coupled_individual_order_difference": 7.424794545371443e-09,
+    "coupled_Phi_closure": 2.096800157390629e-11,
+    "coupled_Phi_order_difference": 7.189855888656792e-12,
+    "modal_parseval": 1.8697801768411226e-14,
+    "short_core_raw_closure": 6.375456525722054e-07,
+    "short_core_raw_order_difference": 7.287350444571677e-08,
+    "short_core_coupled_closure": 6.383597718076692e-07,
+    "short_core_coupled_order_difference": 8.456700029635227e-08,
+    "short_smooth_raw_closure": 6.361070506896642e-07,
+    "short_smooth_raw_order_difference": 6.780070769603382e-08,
+    "short_smooth_coupled_closure": 6.375673257218949e-07,
+    "short_smooth_coupled_order_difference": 6.661440174260762e-08
+  },
+  "failed_state_is_certified_frontier": false,
+  "correction_validated": false,
+  "CP12_closed": false
+}

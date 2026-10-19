@@ -1,0 +1,45 @@
+{"at": "2026-10-19T02:23:13.930256+00:00", "event": "MIXTO_TRANSPORT_BEGIN_OR_RESUME_SEGMENT", "to_time": 16, "resuming_internal_state": true, "CP12_closed": false}
+{"at": "2026-10-19T02:30:36.403603+00:00", "event": "MIXTO_TRANSPORT_STOPPED", "target": 16, "reason": "", "administrative_transport_phase": true, "CP12_closed": false}
+Traceback (most recent call last):
+  File "/workspace/scratch/a70983420f3a/p3_transport96/preregistration/administration/supervisar_fronteras.py", line 94, in evolve_preserve
+    controller.advance_segment(home, legacy, target, progress)
+  File "/workspace/scratch/a70983420f3a/p3_transport96/controlador_transporte.py", line 194, in advance_segment
+    preserve_transport(home, legacy, durable_clock)
+  File "/workspace/scratch/a70983420f3a/p3_transport96/controlador_transporte.py", line 111, in preserve_transport
+    legacy.preserve_negative(home, label, 'Exact DOP853 and observer transport; not a scientific frontier', negative=False)
+  File "/workspace/scratch/a70983420f3a/p3_transport96/coordinator.py", line 260, in preserve_negative
+    raw=module.helper(home,'library_upload.py',[],{'uploads':[{'local_path':str(archive),'purpose':'create_library_file','library_artifact_type':'other'}]})
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a70983420f3a/p3_transport96/preregistration/administration/aislar_fuentes_subida.py", line 52, in helper
+    result = original(home, name, arguments, request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a70983420f3a/p3_transport96/preservation.py", line 53, in helper
+    if result.returncode: raise RuntimeError('Library helper failed: '+result.stderr[-2500:])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Library helper failed: library upload failed: prepare_uploads failed
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/scratch/a70983420f3a/p3_transport96/preregistration/administration/supervisar_fronteras.py", line 161, in <module>
+    raise SystemExit(run(args.home, args.registered))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a70983420f3a/p3_transport96/preregistration/administration/supervisar_fronteras.py", line 139, in run
+    failed_at = sequence(range(start + 8, 161, 8), evolve_preserve, check_prefix)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a70983420f3a/p3_transport96/preregistration/administration/supervisar_fronteras.py", line 31, in sequence
+    evolve_preserve(target)
+  File "/workspace/scratch/a70983420f3a/p3_transport96/preregistration/administration/supervisar_fronteras.py", line 109, in evolve_preserve
+    legacy.preserve_negative(home, 'NEGATIVO_P3_SESION_20261018_%04d' % target, failure, negative=not administrative)
+  File "/workspace/scratch/a70983420f3a/p3_transport96/coordinator.py", line 260, in preserve_negative
+    raw=module.helper(home,'library_upload.py',[],{'uploads':[{'local_path':str(archive),'purpose':'create_library_file','library_artifact_type':'other'}]})
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a70983420f3a/p3_transport96/preregistration/administration/aislar_fuentes_subida.py", line 52, in helper
+    result = original(home, name, arguments, request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a70983420f3a/p3_transport96/preservation.py", line 53, in helper
+    if result.returncode: raise RuntimeError('Library helper failed: '+result.stderr[-2500:])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Library helper failed: library upload failed: prepare_uploads failed
+

@@ -221,5 +221,14 @@
     "at": "2026-10-18T21:59:59.023846+00:00",
     "CP12_closed": false
   },
-  "current_own_worker_status": "RECOVERY_AUDITS_PASSED_READY_FOR_EXACT_RESUME_9p6"
+  "current_own_worker_status": "OWN_GUARDIAN_EXIT1_LIBRARY_STORAGE_LIMIT_AT_TRANSPORT11p2",
+  "latest_local_recoverable_observer_clock": 11.2,
+  "own_exit_observed": {
+    "at": "2026-10-19T02:30:45.682570+00:00",
+    "returncode": 1,
+    "scope": "Observed own guardian only",
+    "previous_executor_termination_assumed": false
+  },
+  "latest_permanent_transport_clock": 9.6,
+  "continuation_blocked_by_permanent_preservation": true
 }
