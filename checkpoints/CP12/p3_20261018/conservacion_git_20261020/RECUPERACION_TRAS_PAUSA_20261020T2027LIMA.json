@@ -1,0 +1,44 @@
+{
+  "schema": "CP12_P3_SESSION_RECOVERY_AFTER_INTERRUPTION_20261020",
+  "at_UTC": "2026-10-21T01:27:17.909172+00:00",
+  "at_America_Lima": "2026-10-20T20:27:17.909172-05:00",
+  "previous_head": "32c7501c8805bfcef2357ffbd063a4037ec14e14",
+  "scratch_survived": false,
+  "last_capacity_test": {
+    "archive_bytes": 230870106,
+    "archive_sha256": "c69aaf89ede8f3d3de62b766e1333595cd79e6303a5396666333cac0b6ac7a16",
+    "codec_control_observed_passed": 8,
+    "archive_was_published": false,
+    "independent_remote_reconstruction": false,
+    "first_expected_blob": "1d266240205bc3e7fb8fe7dd5d9172255f4a2866",
+    "first_expected_blob_current_GET": "404",
+    "capacity_complete": false
+  },
+  "last_observed_zero_step_audit_before_pause": {
+    "transport_clock": 9.6,
+    "payload_hashes_positive": 283,
+    "checks_positive": 14,
+    "DOP853_construction_or_step_attempts": 0,
+    "state_sha256": "1bf0a52cf3cfd357e07d54fc519591558181508fdbb718242d369411a082e4e2",
+    "archive_sha256": "a71554ff3e213d09cf7365697e4d9c9307e9529478d567ae3f89ccc11e43b959"
+  },
+  "current_retrieval": {
+    "archive_bytes": 229821160,
+    "archive_sha256": "a71554ff3e213d09cf7365697e4d9c9307e9529478d567ae3f89ccc11e43b959",
+    "payload_hashes_positive": 283,
+    "library_file_id": "libfile_5c97bdb47da08191819fae6e4705d8dc"
+  },
+  "certified_scientific_frontier": 8,
+  "permanent_recoverable_transport": 9.6,
+  "authorized_replay": [
+    9.6,
+    11.2
+  ],
+  "replay_started": false,
+  "M2_steps_executed": 0,
+  "local_scientific_worker_observed": false,
+  "Actions_in_progress": 0,
+  "CP12_closed": false,
+  "accepted_scientific_checkpoint": "CP11",
+  "next": "Complete capacity publication and independent hash-verified recovery before any physical step; retain historical lost11.2 and interrupted tests."
+}
