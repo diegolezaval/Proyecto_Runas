@@ -1,0 +1,48 @@
+{
+  "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
+  "passed": true,
+  "tests": {
+    "all_internal_state_bits_and_nfev_restored": true,
+    "original_sources_and_configuration": true,
+    "scientific_seed_unchanged": true,
+    "restore_used_no_solver_step": true,
+    "exact_stage_alias": true,
+    "accepted_states_match_solver": true,
+    "clocks_bracket_observer": true,
+    "both_energy_and_charge_gates": true,
+    "original_observer_maximum_gates": true,
+    "original_Parseval": true,
+    "original_symmetry": true,
+    "independently_reloaded_observer_closure": true,
+    "independently_reloaded_Parseval": true,
+    "file_unchanged": true
+  },
+  "observer_clock": 9.6,
+  "target": 16,
+  "state_sha256": "1bf0a52cf3cfd357e07d54fc519591558181508fdbb718242d369411a082e4e2",
+  "physical_metadata": [
+    {
+      "t": 9.604628893170256,
+      "accepted": 1781,
+      "nfev": 18266,
+      "nfev_live": 3602,
+      "maxe": 5.977562889114552e-11,
+      "maxq": 1.1102230246251565e-15,
+      "maxe_original": 3.4873062215723394e-9
+    },
+    {
+      "t": 9.60462717098377,
+      "accepted": 1781,
+      "nfev": 18266,
+      "nfev_live": 3602,
+      "maxe": 5.96717120160406e-11,
+      "maxq": 4.440892098500626e-16,
+      "maxe_original": 8.379739124819707e-10
+    }
+  ],
+  "M2_steps_executed": 0,
+  "scientific_frontier": false,
+  "correction_validated": false,
+  "CP12_closed": false,
+  "DOP853_construction_or_step_attempts": 0
+}
