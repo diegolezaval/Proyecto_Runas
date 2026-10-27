@@ -1,0 +1,29 @@
+{
+  "schema": "CP12_PARTIAL_UPLOAD_RECOVERY_AFTER_REVIEW_SERVICE_FAILURE",
+  "previous_branch_head": "2ded087640d8e73c1d48fd1b3d4f3fffb5f67c56",
+  "parts_previously_in_tree": 90,
+  "previous_tool_confirmed_new_object_indices": [
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97
+  ],
+  "new_blob_bytes_not_reuploaded": true,
+  "all_parts_match_preregistered_manifest": true,
+  "interruption": {
+    "action": "github_create_blob",
+    "executed": false,
+    "reason": "Automatic approval review could not be completed: usage limit reached. Not a determination that the action is unsafe.",
+    "failed_index_not_inferred": true
+  },
+  "continued_action": "Anchor only previously acknowledged immutable objects to the existing experimental branch through normal review",
+  "scientific_frontier": 8,
+  "latest_preserved_transport": 9.6,
+  "physical_replay_started": false,
+  "M2_steps_executed": 0,
+  "CP12_closed": false
+}
