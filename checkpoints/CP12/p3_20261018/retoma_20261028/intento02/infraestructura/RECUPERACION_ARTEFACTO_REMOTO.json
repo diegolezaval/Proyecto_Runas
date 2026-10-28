@@ -1,0 +1,18 @@
+{
+  "schema": "CP12_P3_REMOTE_DISPATCH_ORIGINAL_ARTIFACT_RECOVERY_V1",
+  "artifact_id": 12849997525,
+  "run_id": 40765474986,
+  "job_id": 123088332218,
+  "run_attempt": 1,
+  "archive_bytes": 634,
+  "archive_sha256": "a781297ecd7479e4e7482d771e63e335844b117074bd76c58af2b1d01e1a7eae",
+  "github_artifact_digest_matches": true,
+  "member": "dispatch_GitHub_40765474986_1.json",
+  "member_sha256": "249ffa39885c0e3a3e8c409c9baf6aca6a3449c495966b28cb7c8e1c73c686b8",
+  "original_json_equals_complete_job_stdout_result": true,
+  "recovered_original_bytes": true,
+  "compatible": false,
+  "observed_architecture": "Haswell",
+  "M2_steps": 0,
+  "additional_exception_consumed": false
+}

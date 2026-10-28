@@ -1,0 +1,38 @@
+{
+  "schema": "CP12_ADMINISTRATIVE_TEXT_RESTORATION_NOTE_V1",
+  "scientific_sources_modified": false,
+  "scientific_state_changed": false,
+  "M2_steps_executed": 0,
+  "prepared_capsule_requires_rebuild_before_a_registered_direct_test": true,
+  "prepared_prototype_not_published": true,
+  "files": [
+    {
+      "file": "auditar_recuperacion.py",
+      "prepared_copy_sha256": "6b5af8d040b85cfe05b9d5bbe38d553f804380348e3e560716ee02708eb8cb4e",
+      "registered_sha256": "5ec8064cb2ef130b6796a296940a564d5c290e6f1000c4ca3ba2b0705f76aae0",
+      "only_difference_was_one_additional_final_newline": true,
+      "current_source_matches_registered_bytes": true
+    },
+    {
+      "file": "conservar_release.py",
+      "prepared_copy_sha256": "a3d86a39ed520de2ff85af4b247d528deb3613f948f62a0ec07319d0c7ae3a1f",
+      "registered_sha256": "f4382caecef573f089c44b8871ab3307767da6be90835acbe0e109b4119ca41b",
+      "only_difference_was_one_additional_final_newline": true,
+      "current_source_matches_registered_bytes": true
+    },
+    {
+      "file": "publicar_desde_proceso.py",
+      "prepared_copy_sha256": "30097061045073b54a7edd3ae4cdbc25479605d7d1618e701cd6ed31a26bda6e",
+      "registered_sha256": "eb6144496eab21444d74ed21d667dedc9ad6b9035630d1c8c91c45c53d1c96bf",
+      "only_difference_was_one_additional_final_newline": true,
+      "current_source_matches_registered_bytes": true
+    },
+    {
+      "file": "probar_publicador_directo.py",
+      "prepared_copy_sha256": "3cb101ec711c922d2a4517d46b4a813a672c2bf85e48b5feda745d178e20ea74",
+      "registered_sha256": "920b235712cc0f731b9e371115bae198e1570e9166f24eb60e790d617f6ab779",
+      "only_difference_was_one_additional_final_newline": true,
+      "current_source_matches_registered_bytes": true
+    }
+  ]
+}

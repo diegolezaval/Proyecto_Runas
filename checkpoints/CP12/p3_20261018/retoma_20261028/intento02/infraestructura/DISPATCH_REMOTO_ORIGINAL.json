@@ -1,0 +1,23 @@
+{
+  "passed": false,
+  "checked_at": "2026-10-28T20:41:43.912711+00:00",
+  "expected_observed_architecture": "SkylakeX",
+  "observed_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "M2_steps": 0,
+  "physical_execution_started": false,
+  "coretype_override_used": false,
+  "GitHub_run_id": "40765474986",
+  "GitHub_run_attempt": "1",
+  "purpose": "Actual dispatch eligibility only; original full identity and exact zero-step restart remain mandatory."
+}

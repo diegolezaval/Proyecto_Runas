@@ -1,8 +1,8 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-10-28T20:40:37.507Z",
+  "updated_at": "2026-10-28T20:45:40.340Z",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "24ab1b2d2d6cd6d78c4749a1fe0a581185505adf",
+  "last_public_commit": "a42f533f6dc00da9f043b724c9fb973c8d928208",
   "own_attempt_home": null,
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
@@ -214,21 +214,16 @@
     "correction_validated": false,
     "CP12_closed": false
   },
-  "current_own_worker_status": "NO_M2_LOCAL_DIRECT_PUBLISHER_NETWORK_BLOCKED_ALTERNATIVE_ZERO_STEP_DISPATCH_CHECK_REGISTERED",
-  "own_observed_start": {
-    "at": "2026-10-19T02:23:11.384928+00:00",
-    "pid_in_parent_namespace": 5,
-    "scope": "Observed own child only",
-    "scientific_frontier_inferred": false
-  },
-  "own_guardian_tool_session_id": 24226,
+  "current_own_worker_status": "STOPPED_INFRASTRUCTURE_LOCAL_PUBLICATION_BLOCKED_REMOTE_HASWELL_ZERO_M2_NEW_EXCEPTION_UNUSED",
+  "own_observed_start": null,
+  "own_guardian_tool_session_id": null,
   "own_exit_observed": {
     "returncode": 0,
     "at": "2026-10-28T07:17:37.391241+00:00",
     "scope": "Own bounded replay only; source receipt preserved",
     "tool_session_id": 24226
   },
-  "current_target": 16,
+  "current_target": 11.2,
   "conditional_horizon": 160,
   "activity_is_restart_certificate": false,
   "automatic_continuation_authorized_only_after_each_original_gate": true,
@@ -243,7 +238,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
   "current_helper_directory": null,
-  "next_recovery": "Inspect the single preregistered GitHub Actions dispatch diagnostic. No M2. If incompatible, keep stopped; do not repeatedly allocate another runner or override BLAS. The local direct publisher did not persist authentication and its execution session reported a network policy block. A complete live direct upload/download/zero-step rehydration proof, new bounded runner and exclusive durable allocation remain mandatory before the newly authorized additional9.6→11.2 replay.",
+  "next_recovery": "The user's additional bounded9.6→11.2 replay authorization remains unused and must not be requested again solely because infrastructure failed. First search for any later intact P3 transport; otherwise establish an executor matching the original full environment and observed unforced SkylakeX with a working process-integrated publication route. The local CLI did not persist a connection; its session reported a network policy block. The single current GitHub Actions eligibility check recovered Haswell and stopped before M2; no further reassignment or architecture override is authorized by this diagnostic. Before any use of the existing additional replay authorization, pass a live full-size direct upload/download/independent exact zero-step rehydration test, then register the new bounded runner and exclusive durable allocation in Git. Do not reuse the consumed old runner, initialize at0, resumeP2, or repeat CP10, originalCP12 orF0–F5.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-9,
@@ -617,14 +612,14 @@
     },
     "recovery_commit": "cd8db32b40fae0ce6f397ad58a60e8e6bdd3b6b3"
   },
-  "latest_local_recoverable_observer_clock": null,
+  "latest_local_recoverable_observer_clock": 9.6,
   "latest_permanent_recoverable_observer_clock": 9.6,
   "local_transport112_archive": null,
   "local_transport112_archive_sha256": "d97fb63725820aaf372783c231886d6fa8e3a1c9c411b8fd0c6afa553a14efbb",
   "continuation_blocked_by_permanent_preservation": true,
   "storage_error": "library_storage_limit_exceeded",
   "no_evidence_deleted": false,
-  "local_recovery_home": null,
+  "local_recovery_home": "/workspace/scratch/699b1bd1764f/intento02_20261028/home_operativo_canonico",
   "local_disappearance_incident": {
     "schema": "CP12_P3_LOCAL_WORKSPACE_DISAPPEARANCE_AFTER_LIBRARY_QUOTA_FAILURE",
     "observed_after_commit": "5cb247226b37739d38dc64a02836ce6fc8f35c5c",
@@ -715,10 +710,44 @@
       "direct_publication_authenticated": false,
       "live_direct_publication_capacity_test_passed": false,
       "original_archive_recovered_and_audited_again": true,
-      "zero_step_audit": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/auditoria_inicial/RESULTADO.json",
+      "zero_step_audit": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/auditoria_canonica/RESULTADO.json",
       "capacity_capsule_prepared": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/CAPSULA_PREPARADA.json",
       "local_connection_observation": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/CONEXION_LOCAL.json",
-      "remote_dispatch_check_preregistration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/README.md"
+      "remote_dispatch_check_preregistration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/README.md",
+      "own_worker_running": false,
+      "additional_exception_consumed": false,
+      "registered_audit_driver_sha256": "5ec8064cb2ef130b6796a296940a564d5c290e6f1000c4ca3ba2b0705f76aae0",
+      "canonical_audit_passed": true,
+      "canonical_audit_tests": {
+        "boundary8": 30,
+        "transport96": 14
+      },
+      "DOP853_construction_or_step_attempts": 0,
+      "prior_prepared_capacity_capsule_is_an_unpublished_administrative_prototype": true,
+      "prepared_capsule_requires_rebuild_with_registered_exact_administrative_bytes": true,
+      "administrative_byte_identity_note": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/IDENTIDAD_ADMINISTRATIVA.json",
+      "canonical_publication_guard_tests": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/CONTROLES_PUBLICADOR_CANONICO.json",
+      "remote_dispatch": {
+        "run_id": 40765474986,
+        "job_id": 123088332218,
+        "run_attempt": 1,
+        "status": "completed",
+        "conclusion": "failure",
+        "scientific_execution_started": false,
+        "observed": "Haswell",
+        "required": "SkylakeX",
+        "M2_steps": 0,
+        "original_result": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/DISPATCH_REMOTO_ORIGINAL.json",
+        "recovery_receipt": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/RECUPERACION_ARTEFACTO_REMOTO.json",
+        "full_log": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/job_123088332218.log",
+        "no_reassignment_after_failure": true
+      },
+      "remaining_blockers": [
+        "Local process-integrated publication connection not operational; session network policy block",
+        "Checked GitHub-hosted executor has incompatible Haswell dispatch; original requires unforced SkylakeX"
+      ],
+      "previous_replay_loss_history_preserved": true,
+      "scientific_negative": false
     }
   }
 }
