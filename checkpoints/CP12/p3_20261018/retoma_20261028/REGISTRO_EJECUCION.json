@@ -1,0 +1,20 @@
+{
+  "schema": "CP12_P3_BOUNDED_REPLAY_REGISTRATION_V1",
+  "registered_before_M2": true,
+  "one_time_replay_reserved": true,
+  "one_time_replay_started": false,
+  "from_observer_clock": 9.6,
+  "to_observer_clock": 11.2,
+  "internal_solver_bound": 16,
+  "bounded_runner_sha256": "0bdf663843a7f5a6f8a05dd61bec033f1b0e7a655888e7f6b0bd50ff693e99fb",
+  "capacity_acceptance_sha256": "26c66cbf28a446f7982196fb2fdbdee80c41df1c257102e792042d6d598edd07",
+  "capacity_release_asset_id": 684138678,
+  "capacity_archive_sha256": "287cf653cf804d858ae0d20f50942a38c7fd200dd7c0e035fc12df5fadbd031d",
+  "capacity_archive_bytes": 230902380,
+  "original_scientific_and_captured_source_files_changed": false,
+  "M2_steps_executed_so_far": 0,
+  "stop_and_preserve_at11p2": true,
+  "M2_after11p2_authorized_by_this_runner": false,
+  "CP12_closed": false,
+  "correction_validated": false
+}

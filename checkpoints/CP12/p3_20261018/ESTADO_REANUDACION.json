@@ -214,7 +214,7 @@
     "correction_validated": false,
     "CP12_closed": false
   },
-  "current_own_worker_status": "TAU9P6_RECOVERED_ZERO_STEP_AUDITS_PASSED_RELEASE_ROUTE_PENDING",
+  "current_own_worker_status": "TAU9P6_AUDITED_RELEASE_CONSERVATION_PROVEN_BOUNDED_REPLAY_RESERVED_NOT_STARTED",
   "own_observed_start": {
     "at": "2026-10-19T02:23:11.384928+00:00",
     "pid_in_parent_namespace": 5,
@@ -243,7 +243,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
   "current_helper_directory": null,
-  "next_recovery": "Complete the registered Release conservation capacity test: publish, independently download, compare archive/payload hashes and zero-step audit the extraction. Only then start the one-time bounded9.6→11.2 replay, preserve/retrieve/audit11.2 before any further physics.",
+  "next_recovery": "Execute the registered one-time bounded9.6→11.2 replay. Stop at11.2, publish the complete new capsule, independently download, verify and rehydrate without steps before any later interval. A reservation is not evidence that physical evolution has started.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-9,
@@ -621,7 +621,7 @@
   "latest_permanent_recoverable_observer_clock": 9.6,
   "local_transport112_archive": null,
   "local_transport112_archive_sha256": "d97fb63725820aaf372783c231886d6fa8e3a1c9c411b8fd0c6afa553a14efbb",
-  "continuation_blocked_by_permanent_preservation": true,
+  "continuation_blocked_by_permanent_preservation": false,
   "storage_error": "library_storage_limit_exceeded",
   "no_evidence_deleted": false,
   "local_recovery_home": null,
@@ -676,7 +676,7 @@
   "historical_local_recovery_home": "/workspace/scratch/a70983420f3a/p3_recovered112",
   "last_observed_completed_local_observer_clock": 11.2,
   "no_evidence_deleted_by_agent": true,
-  "continuation_blocked_by_missing_latest_local_state": true,
+  "continuation_blocked_by_missing_latest_local_state": false,
   "recovery_history_20261028": {
     "previous_own_worker_status": "STOPPED_NO_SCIENTIFIC_FAILURE_QUOTA_AND_LOCAL_FILES_MISSING",
     "previous_next_recovery": "Find a later intact transport or restore persistable capacity. If no complete11.2 transport can be found, explicitly resolve the user's no-physical-replay constraint before replaying9.6→11.2. Never initialize again at0 or resumeP2.",
@@ -689,8 +689,11 @@
       "passed": true,
       "DOP853_construction_or_step_attempts": 0
     },
-    "preservation_adapter_status": "REGISTERED_PENDING_END_TO_END_RELEASE_CAPACITY_TEST",
+    "preservation_adapter_status": "FULL_RELEASE_CAPACITY_TEST_PASSED",
     "one_time_replay96_to112_started": false,
-    "scientific_worker_started": false
+    "scientific_worker_started": false,
+    "capacity_acceptance": "checkpoints/CP12/p3_20261018/retoma_20261028/conservacion_control/ACEPTACION.json",
+    "one_time_replay96_to112_reserved": true,
+    "bounded_runner_registration": "checkpoints/CP12/p3_20261018/retoma_20261028/REGISTRO_EJECUCION.json"
   }
 }

@@ -1,0 +1,11 @@
+{
+  "schema": "CP12_P3_BOUNDED_REPLAY_GATE_NEGATIVE_CONTROLS_V1",
+  "passed": true,
+  "tests": {
+    "sin_aceptacion_bloquea_antes_de_restaurar_o_asignar_fisica": true,
+    "capacidad_insuficiente_bloquea_antes_de_restaurar_o_asignar_fisica": true,
+    "codigo_no_registrado_bloquea_antes_de_restaurar_o_asignar_fisica": true
+  },
+  "M2_steps_executed": 0,
+  "scientific_data_used_for_controls": false
+}
