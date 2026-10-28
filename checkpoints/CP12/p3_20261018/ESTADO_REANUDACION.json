@@ -1,8 +1,8 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-10-28T20:56:06.077Z",
+  "updated_at": "2026-10-28T21:03:26.557Z",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "1d6fe4becc1330f8d3cefa8e4943d85dd57ff32c",
+  "last_public_commit": "5eaf96bec6e4b637e06f19fdcaec6f0f6c72067d",
   "own_attempt_home": null,
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
@@ -214,7 +214,7 @@
     "correction_validated": false,
     "CP12_closed": false
   },
-  "current_own_worker_status": "ZERO_STEP_TEMPORARY_TRANSIT_CAPACITY_TEST_PREREGISTERED_ADDITIONAL_REPLAY_UNUSED",
+  "current_own_worker_status": "ZERO_STEP_TRANSIT_CONTROL01_SAVED_PARSER_FAILURE_RECONCILIATION_AND_CONTROL02_REGISTERED",
   "own_observed_start": null,
   "own_guardian_tool_session_id": null,
   "own_exit_observed": {
@@ -750,12 +750,16 @@
       "scientific_negative": false,
       "temporary_transit": {
         "preregistration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/transito_temporal/PRERREGISTRO.md",
-        "native_driver_sha256": "5513842340cfb3f8fa32a9b8e188e1369b8f033e0265f3e05616023b95b2a3b8",
-        "synthetic_guard_tests_passed": 7,
-        "live_test_started": false,
+        "native_driver_sha256": "f9ec6e5bf394df17ed9328895971b9f8d1c0aec986140f5dbff69e3b9d372957",
+        "synthetic_guard_tests_passed": 8,
+        "live_test_started": true,
         "live_transit_verified": false,
         "github_final_copy_verified": false,
-        "scientific_worker_started": false
+        "scientific_worker_started": false,
+        "control01_native_upload_confirmed": true,
+        "control01_library_file_id": "libfile_bb9939370c608191b8d4d4b5b623dde3",
+        "control01_complete_cycle_passed": false,
+        "control02_preregistration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/transito_temporal/PRERREGISTRO_CONTROL02.md"
       }
     }
   }

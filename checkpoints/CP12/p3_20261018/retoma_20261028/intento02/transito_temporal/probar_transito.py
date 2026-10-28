@@ -37,6 +37,10 @@ def run():
         helpers = root / 'helpers'; helpers.mkdir()
         for name in ['library_upload.py','library_hosted_apps.py','library_file_transfer.py']:
             (helpers/name).write_bytes(b'fixture only')
+        private = root/'private';private.mkdir()
+        with patch.object(subject.subprocess,'run',return_value=types.SimpleNamespace(returncode=0,stdout='Archivo materializado\n',stderr='')):
+            transfer_result=subject.helper(helpers,'library_file_transfer.py',['materialize','unused'],{},private)
+        tests['documented_text_transfer_response_not_mistaken_for_json'] = transfer_result is None
         validation = (request, archive, root/'unused-auditor.py')
         first = root/'failed-upload'
         with patch.object(subject,'validate_request',return_value=validation), patch.object(subject,'helper',side_effect=RuntimeError('fixture')):

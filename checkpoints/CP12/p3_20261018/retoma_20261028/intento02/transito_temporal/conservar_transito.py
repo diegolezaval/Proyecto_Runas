@@ -64,6 +64,10 @@ def helper(directory, name, arguments, payload, private):
     (private / (name + '.stderr.txt')).write_text(process.stderr)
     if process.returncode:
         raise RuntimeError('El ayudante de transferencia no terminó; no se reintenta automáticamente')
+    # La transferencia documentada puede responder texto; su código de salida,
+    # los bytes descargados y las auditorías siguientes determinan la aceptación.
+    if name != 'library_upload.py':
+        return None
     raw = process.stdout
     if '\n{"results"' in raw:
         raw = raw[raw.rfind('\n{"results"'):].strip()

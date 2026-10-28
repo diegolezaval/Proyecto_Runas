@@ -1,0 +1,9 @@
+# Corrección del control de tránsito y prueba completa 02
+
+El control01 sí guardó la cápsula completa en Biblioteca: libfile_bb9939370c608191b8d4d4b5b623dde3, 230900851 bytes, SHA-256 2d2212430208dbaf783d1d824f8f8c82e432cc0953f5a82a056a303250f42c01. También obtuvo una descarga independiente con los mismos bytes. El adaptador se detuvo al intentar interpretar como JSON la salida de texto del ayudante que aplica los atributos del archivo. Ese ciclo no se acepta como completo; se conserva su resultado negativo administrativo y sus identificadores.
+
+La corrección afecta únicamente a la interpretación de esa respuesta: se exige el código de salida correcto y se mantienen todas las comprobaciones posteriores de bytes, manifiesto, origen intacto y los auditores originales. No se modifica el ayudante ni una fuente científica. Se añade un control sintético de respuesta textual; pasan ocho controles de parada sin red, credenciales ni ciencia.
+
+Antes de otra escritura se audita sin pasos la descarga ya obtenida del control01. Sólo si pasa se ejecuta una segunda prueba completa y deliberada con el adaptador corregido, desde una copia local nueva de exactamente el mismo ZIP y una solicitud nueva. No se reintenta un resultado de escritura incierto: la identidad y los bytes de la escritura anterior ya están determinados. Se conservarán ambos registros. Esta prueba adicional usa exclusivamente el estado τ9,6 existente y no consume la autorización adicional de evolución.
+
+La segunda prueba debe acreditar en una sola ejecución nativa: escritura preparada, identidad persistente, descarga nueva independiente, todos los hashes y los 30+14 controles originales sin construcciones o pasos DOP853. Después siguen siendo obligatorias la copia a GitHub Releases y su aceptación independiente, y registrar el lanzador nuevo y la asignación exclusiva antes de M2.
