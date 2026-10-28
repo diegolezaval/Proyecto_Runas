@@ -1,0 +1,19 @@
+{
+  "schema": "CP12_P3_ONE_TIME_REPLAY_ALLOCATION_V1",
+  "allocation": {
+    "at": "2026-10-28T07:08:23.246038+00:00",
+    "pid": 2,
+    "source_time": 9.6,
+    "stop_time": 11.2,
+    "source_state_sha256": "1bf0a52cf3cfd357e07d54fc519591558181508fdbb718242d369411a082e4e2",
+    "scope": "Exclusive one-time allocation; physical progress is recorded separately",
+    "original_inaccessible_executor_termination_assumed": false
+  },
+  "registered_commit": "4088598a647401c49b2f944fa08fe8417b45c5a2",
+  "own_tool_session_id": 24226,
+  "status": "EXCLUSIVELY_ALLOCATED_WORKER_LAUNCHED_PHYSICAL_PROGRESS_PENDING_OBSERVATION",
+  "source_replay_must_not_be_started_again_if_worker_or_workspace_unavailable": true,
+  "termination_of_other_executors_assumed": false,
+  "CP12_closed": false,
+  "scientific_frontier": false
+}
