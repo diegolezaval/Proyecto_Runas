@@ -1,0 +1,35 @@
+{
+  "schema": "CP12_P3_BOUNDED_REPLAY_OBSERVED_RUNNING_V1",
+  "observation": {
+    "at": "2026-10-28T07:10:53.591726+00:00",
+    "observer_clock": 10.02,
+    "physical_streams": [
+      {
+        "t": 10.030286825905744,
+        "accepted": 1860,
+        "nfev": 18266,
+        "nfev_live": 4553,
+        "maxe": 6.048594958230069e-11,
+        "maxq": 1.1102230246251565e-15,
+        "maxe_original": 3.4873062215723394e-09
+      },
+      {
+        "t": 10.030285571735876,
+        "accepted": 1860,
+        "nfev": 18266,
+        "nfev_live": 4553,
+        "maxe": 6.037104149925199e-11,
+        "maxq": 4.440892098500626e-16,
+        "maxe_original": 8.379739124819707e-10
+      }
+    ],
+    "not_a_restart_certificate": true
+  },
+  "own_tool_session_id": 24226,
+  "one_time_replay_started": true,
+  "original_replay_source_must_not_be_used_again": true,
+  "permanent_transport_remains": 9.6,
+  "complete_approved_frontier_remains": 8,
+  "CP12_closed": false,
+  "correction_validated": false
+}
