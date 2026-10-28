@@ -1,8 +1,8 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-10-28T12:47:01.365Z",
+  "updated_at": "2026-10-28T20:40:37.507Z",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "5cb247226b37739d38dc64a02836ce6fc8f35c5c",
+  "last_public_commit": "24ab1b2d2d6cd6d78c4749a1fe0a581185505adf",
   "own_attempt_home": null,
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
@@ -214,7 +214,7 @@
     "correction_validated": false,
     "CP12_closed": false
   },
-  "current_own_worker_status": "ADDITIONAL_BOUNDED_REPLAY_AUTHORIZED_DIRECT_PUBLICATION_AUTHENTICATION_PENDING_NO_M2",
+  "current_own_worker_status": "NO_M2_LOCAL_DIRECT_PUBLISHER_NETWORK_BLOCKED_ALTERNATIVE_ZERO_STEP_DISPATCH_CHECK_REGISTERED",
   "own_observed_start": {
     "at": "2026-10-19T02:23:11.384928+00:00",
     "pid_in_parent_namespace": 5,
@@ -243,7 +243,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
   "current_helper_directory": null,
-  "next_recovery": "First authenticate the direct process publisher through GitHub's secure consent flow. Complete a fresh full-size upload/download/independent zero-step rehydration test at9.6. Register new bounded runner, exact hashes, gates and exclusive allocation in Git before using the newly authorized additional replay. Do not reuse the consumed first runner or restart any allocated attempt blindly. Preserve the original scientific action, environment and gates.",
+  "next_recovery": "Inspect the single preregistered GitHub Actions dispatch diagnostic. No M2. If incompatible, keep stopped; do not repeatedly allocate another runner or override BLAS. The local direct publisher did not persist authentication and its execution session reported a network policy block. A complete live direct upload/download/zero-step rehydration proof, new bounded runner and exclusive durable allocation remain mandatory before the newly authorized additional9.6→11.2 replay.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-9,
@@ -713,7 +713,12 @@
       "scientific_worker_started": false,
       "allocation_consumed": false,
       "direct_publication_authenticated": false,
-      "live_direct_publication_capacity_test_passed": false
+      "live_direct_publication_capacity_test_passed": false,
+      "original_archive_recovered_and_audited_again": true,
+      "zero_step_audit": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/auditoria_inicial/RESULTADO.json",
+      "capacity_capsule_prepared": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/CAPSULA_PREPARADA.json",
+      "local_connection_observation": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/CONEXION_LOCAL.json",
+      "remote_dispatch_check_preregistration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/README.md"
     }
   }
 }
