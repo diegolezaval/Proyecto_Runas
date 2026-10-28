@@ -1,0 +1,17 @@
+{
+  "schema": "CP12_P3_TEMPORARY_TRANSIT_GUARDS_V1",
+  "passed": true,
+  "tests": {
+    "changed_source_rejected_before_upload": true,
+    "other_repository_rejected_before_upload": true,
+    "other_release_rejected_before_upload": true,
+    "unregistered_clock_rejected_before_upload": true,
+    "unregistered_adapter_rejected_before_upload": true,
+    "uncertain_write_stops_without_retry_or_success": true,
+    "failed_recovery_keeps_saved_identity_and_blocks_physics": true
+  },
+  "M2_steps_executed": 0,
+  "scientific_data_used": false,
+  "real_network_or_credentials_used": false,
+  "real_capacity_test_passed": false
+}
