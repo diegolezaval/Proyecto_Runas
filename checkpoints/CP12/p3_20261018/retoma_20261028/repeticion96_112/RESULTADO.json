@@ -1,0 +1,48 @@
+{
+  "schema": "CP12_P3_BOUNDED_REPLAY_96_TO_112_V1",
+  "started_at_utc": "2026-10-28T07:08:23.385094+00:00",
+  "from_observer_clock": 9.6,
+  "to_observer_clock": 11.2,
+  "internal_solver_bound": 16,
+  "source_transport_sha256": "1bf0a52cf3cfd357e07d54fc519591558181508fdbb718242d369411a082e4e2",
+  "capacity_acceptance_sha256": "26c66cbf28a446f7982196fb2fdbdee80c41df1c257102e792042d6d598edd07",
+  "exact_restore_without_construction_or_steps": true,
+  "passed": true,
+  "correction_validated": false,
+  "CP12_closed": false,
+  "scientific_frontier": false,
+  "observer_clock": 11.2,
+  "transport_state_sha256": "1143fc5a44401fbea426ab16ef23fe94059715bf1a80df1e3cb113d9507bbabf",
+  "physical_streams": [
+    {
+      "t": 11.205183926229115,
+      "accepted": 2078,
+      "nfev": 18266,
+      "nfev_live": 7178,
+      "maxe": 6.24522655812143e-11,
+      "maxq": 1.1102230246251565e-15,
+      "maxe_original": 3.4873062215723394e-09
+    },
+    {
+      "t": 11.205178976893324,
+      "accepted": 2078,
+      "nfev": 18266,
+      "nfev_live": 7178,
+      "maxe": 6.234057714493701e-11,
+      "maxq": 4.440892098500626e-16,
+      "maxe_original": 8.379739124819707e-10
+    }
+  ],
+  "physical_accepted_steps_executed": [
+    297,
+    297
+  ],
+  "physical_RHS_evaluations_executed": [
+    3576,
+    3576
+  ],
+  "closed_frontier_unchanged": true,
+  "permanent_preservation_pending": true,
+  "next_physical_interval_executed": false,
+  "finished_at_utc": "2026-10-28T07:17:37.391241+00:00"
+}

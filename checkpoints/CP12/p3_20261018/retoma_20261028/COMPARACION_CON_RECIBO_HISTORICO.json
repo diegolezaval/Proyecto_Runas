@@ -1,0 +1,10 @@
+{
+  "schema": "CP12_P3_REPLAY_HISTORICAL_METADATA_COMPARISON_V1",
+  "passed": true,
+  "new_transport_state_sha256": "1143fc5a44401fbea426ab16ef23fe94059715bf1a80df1e3cb113d9507bbabf",
+  "lost_transport_state_sha256": "d99a97188aebebc44d162fad500872dffbfa5a9d683080c8e159e628c9117c08",
+  "physical_metadata_exactly_equal": true,
+  "old_full_state_bytes_available": false,
+  "scope": "Compara exclusivamente los metadatos numéricos conservados; no acredita identidad binaria con el archivo perdido. La nueva rehidratación completa tiene auditoría propia.",
+  "M2_steps_executed_for_comparison": 0
+}
