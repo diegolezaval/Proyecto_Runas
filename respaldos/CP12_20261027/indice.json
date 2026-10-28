@@ -1,0 +1,88 @@
+{
+  "schema": "CP12_ORIGINAL_CAPSULE_BACKUP_INDEX_V1",
+  "date_lima": "2026-10-27",
+  "repository": "diegolezaval/Proyecto_Runas",
+  "scientific_reference_commit": "be4bf493517e3f6f51989fa8fc8d6c6ea8cb8cb2",
+  "administrative_branch": "respaldo/cp12-p3-20261027",
+  "release": {
+    "id": 426273098,
+    "tag": "respaldo-cp12-p3-20261027",
+    "url": "https://github.com/diegolezaval/Proyecto_Runas/releases/tag/respaldo-cp12-p3-20261027",
+    "prerelease": true,
+    "published_at_utc": "2026-10-28T04:50:35Z"
+  },
+  "scientific_status": {
+    "accepted_checkpoint": "CP11",
+    "CP12_closed": false,
+    "P3_correction_validated": false,
+    "P3_last_approved_scientific_frontier": 8,
+    "P3_preserved_transport": 9.6,
+    "P2_stopped_at": 80,
+    "P3_tau11p2_full_capsule_available": false
+  },
+  "archives": [
+    {
+      "id": "P3_tau9p6",
+      "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000096.zip",
+      "role": "Transporte P3 τ9,6; contiene también el estado cerrado τ8",
+      "bytes": 229821160,
+      "sha256": "a71554ff3e213d09cf7365697e4d9c9307e9529478d567ae3f89ccc11e43b959",
+      "payload_files": 283,
+      "manifest_path": "MANIFIESTO_NEGATIVO.json",
+      "payload_prefix": "",
+      "required_member_sha256": {
+        "transport/current.npz": "1bf0a52cf3cfd357e07d54fc519591558181508fdbb718242d369411a082e4e2",
+        "outputs/MIXTO_par_estado.npz": "1984303f49cac1c424952af632b6b5fa552c2a119d233a613c869cf0055b2db0",
+        "configuration.json": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed"
+      },
+      "download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000096.zip",
+      "github_asset_id": 683858555,
+      "github_reported_digest": "sha256:a71554ff3e213d09cf7365697e4d9c9307e9529478d567ae3f89ccc11e43b959"
+    },
+    {
+      "id": "CP12_original_tau160",
+      "file_name": "CP12_RI_2b11da8c1f004704aa3e74d271c24846_tau0160.zip",
+      "role": "CP12 original τ160, referencia histórica con fallo espacial; CP12 abierto",
+      "bytes": 84575117,
+      "sha256": "1c13b199592dc91ab2ec3ac382d4bd73736ba5e2c577438882de8932a6ec69c9",
+      "payload_files": 254,
+      "manifest_path": "2b11da8c1f004704aa3e74d271c24846/MANIFIESTO_RECUPERACION_INDEPENDIENTE.json",
+      "payload_prefix": "2b11da8c1f004704aa3e74d271c24846/",
+      "required_member_sha256": {
+        "science/validacion/P06/no_radial/CP12/par_continuacion_aislada__554f5744cb0c29e4fb43c567ed98e6539866230c12147cf4e37d5a8957cf0fab/CP12_par_estado.npz": "22078538ebba2e948b433b0ab946ee034be132b27f7e72ca1ee30540323b2413"
+      },
+      "download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_RI_2b11da8c1f004704aa3e74d271c24846_tau0160.zip",
+      "github_asset_id": 683858764,
+      "github_reported_digest": "sha256:1c13b199592dc91ab2ec3ac382d4bd73736ba5e2c577438882de8932a6ec69c9"
+    },
+    {
+      "id": "P2_diagnostico_tau80",
+      "file_name": "CP12_CANDIDATO_MIXTO_2cf74f0d65ad47048781e0502aec6a50_DIAGNOSTICO_DISCRIMINANTE_TAU0080_20261018.zip",
+      "role": "Diagnóstico discriminante D1/D2 de P2 τ80; ensayo suspendido, evidencia conservada",
+      "bytes": 232883013,
+      "sha256": "dc94cf77eeebfe08f1cbf1b20e725c7bb51df4376125e4ffdc7f6b4e3cd4c30e",
+      "payload_files": 484,
+      "manifest_path": "MANIFIESTO_NEGATIVO.json",
+      "payload_prefix": "",
+      "required_member_sha256": {
+        "outputs/MIXTO_par_estado.npz": "abfae6d6b88a1f5b6a58df1657ea3f860a81b02835fe6598b97315da3c1f3ba4",
+        "analysis/DIAGNOSTICO_DISCRIMINANTE_TAU0080_20261018/D2/ESPECTROS.npz": "c3547c4919310cb5318dcec8a47ed5f89c18b9fdb33e290dafecc83381ffa8ee"
+      },
+      "download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_MIXTO_2cf74f0d65ad47048781e0502aec6a50_DIAGNOSTICO_DISCRIMINANTE_TAU0080_20261018.zip",
+      "github_asset_id": 683858833,
+      "github_reported_digest": "sha256:dc94cf77eeebfe08f1cbf1b20e725c7bb51df4376125e4ffdc7f6b4e3cd4c30e"
+    }
+  ],
+  "original_bytes_preserved": true,
+  "M2_evolution_steps_executed": 0,
+  "legacy_transfer": {
+    "expected_parts": 308,
+    "present_parts": 116,
+    "next_part_index": 116,
+    "complete": false,
+    "archive_sha256": "ae98a6b87978d2cd58c6d4c3c2188d6a2cfd43bc8d99b95fce221170d08c5743",
+    "scope": "Paquete de capacidad histórico, distinto de los tres ZIP originales publicados directamente"
+  },
+  "verification_receipt": "verificacion_descarga.json",
+  "recovery_guide": "LEEME.md"
+}
