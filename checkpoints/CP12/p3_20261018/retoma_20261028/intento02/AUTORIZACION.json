@@ -1,0 +1,20 @@
+{
+  "schema": "CP12_P3_ADDITIONAL_BOUNDED_REPLAY_USER_AUTHORIZATION_V1",
+  "recorded_at_utc": "2026-10-28T12:47:01.365Z",
+  "source": "Latest direct user message in the current conversation",
+  "user_statement": "Autorizo, Todo lo referente al proyecto como esto autorizo",
+  "interpreted_scope": "One additional bounded replay of P3 observer clock9.6 to11.2, only after authenticated direct process publication passes a live full-size zero-step cycle",
+  "authorization_id": "P3_REPLAY_96_112_INTENTO02_20261028",
+  "attempt_id": "intento02_20261028",
+  "previous_exception_consumed": true,
+  "previous_loss_history_preserved": true,
+  "M2_started": false,
+  "additional_replay_allocation_consumed": false,
+  "direct_publisher_authenticated": false,
+  "live_direct_publication_test_passed": false,
+  "does_not_authorize_new_scientific_acceptance": true,
+  "accepted_checkpoint": "CP11",
+  "CP12_closed": false,
+  "correction_validated": false,
+  "source_commit": "0bdf668ec0f521ce05abb0dc65964038430d83ca"
+}

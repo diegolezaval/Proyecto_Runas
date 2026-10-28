@@ -1,6 +1,6 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-10-28T12:20:19.318Z",
+  "updated_at": "2026-10-28T12:47:01.365Z",
   "branch": "ciencia/cp12-residuo-p3-20261018",
   "last_public_commit": "5cb247226b37739d38dc64a02836ce6fc8f35c5c",
   "own_attempt_home": null,
@@ -214,7 +214,7 @@
     "correction_validated": false,
     "CP12_closed": false
   },
-  "current_own_worker_status": "STOPPED_NEW112_BYTES_UNAVAILABLE_ONE_TIME_REPLAY_CONSUMED",
+  "current_own_worker_status": "ADDITIONAL_BOUNDED_REPLAY_AUTHORIZED_DIRECT_PUBLICATION_AUTHENTICATION_PENDING_NO_M2",
   "own_observed_start": {
     "at": "2026-10-19T02:23:11.384928+00:00",
     "pid_in_parent_namespace": 5,
@@ -243,7 +243,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
   "current_helper_directory": null,
-  "next_recovery": "Recover the new112 bytes if any independent copy appears. Otherwise a second physical replay requires an explicit new exception and a tested publisher that runs from the computing process without waiting for another chat action.",
+  "next_recovery": "First authenticate the direct process publisher through GitHub's secure consent flow. Complete a fresh full-size upload/download/independent zero-step rehydration test at9.6. Register new bounded runner, exact hashes, gates and exclusive allocation in Git before using the newly authorized additional replay. Do not reuse the consumed first runner or restart any allocated attempt blindly. Preserve the original scientific action, environment and gates.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-9,
@@ -704,6 +704,16 @@
     "new112_permanent_recovery_verified": false,
     "second_local_loss_incident": "checkpoints/CP12/p3_20261018/retoma_20261028/INCIDENTE_SEGUNDA_PERDIDA_LOCAL.json",
     "direct_publisher_status": "CODE_AND_EIGHT_GUARD_TESTS_READY_AUTHENTICATION_AND_LIVE_UPLOAD_TEST_PENDING",
-    "direct_publisher_plan": "checkpoints/CP12/p3_20261018/retoma_20261028/PUBLICACION_DIRECTA_Y_CONDICIONES.md"
+    "direct_publisher_plan": "checkpoints/CP12/p3_20261018/retoma_20261028/PUBLICACION_DIRECTA_Y_CONDICIONES.md",
+    "additional_attempt02": {
+      "authorization": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/AUTORIZACION.json",
+      "preregistration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/PRERREGISTRO.md",
+      "attempt_id": "intento02_20261028",
+      "additional_replay_authorized": true,
+      "scientific_worker_started": false,
+      "allocation_consumed": false,
+      "direct_publication_authenticated": false,
+      "live_direct_publication_capacity_test_passed": false
+    }
   }
 }
