@@ -1,15 +1,17 @@
 # Retoma P3 · 28 de octubre de 2026
 
-Esta carpeta reúne las comprobaciones y el código administrativo para recuperar y retomar P3 bajo sus puertas originales. CP11 sigue aceptado; CP12 abierto y P3 sin validar.
+**Estado: bloqueada la continuación.** La repetición única terminó en transporte τ11,2, pero sus bytes no quedaron acreditados como respaldo permanente y no se encontraron al retomar. Los comprobantes de texto permanecen íntegros. Consulta el [incidente](INCIDENTE_SEGUNDA_PERDIDA_LOCAL.json).
 
-| Paso | Estado | Evidencia |
+| Paso | Resultado | Evidencia |
 | --- | --- | --- |
-| Recuperar τ8 y transporte τ9,6 desde GitHub | Superado: 30 y 14 controles originales; cero pasos | [Auditoría inicial](auditoria_inicial/RESULTADO.json) |
-| Probar conservación integrada por Releases | Superado: cápsula de 230902380 bytes, 292 archivos, descarga y auditoría independiente | [Aceptación](conservacion_control/ACEPTACION.json), [auditoría recuperada](conservacion_control/AUDITORIA_RECUPERADA.json) |
-| Repetir una sola vez τ9,6→τ11,2 y conservar el nuevo estado | Reservado, pendiente de ejecución y conservación | [Registro del lanzador acotado](REGISTRO_EJECUCION.json) |
+| Integrar los tres respaldos originales | Completado; PR #3 integrado en P3 | [Guía de recuperación](../../../../respaldos/CP12_20261027/LEEME.md) |
+| Recuperar τ8 y τ9,6 sin pasos | 30 y 14 controles superados | [Auditoría inicial](auditoria_inicial/RESULTADO.json) |
+| Probar publicación y recuperación por Releases | Superado; 230902380 bytes y 292 archivos del manifiesto | [Aceptación](conservacion_control/ACEPTACION.json) |
+| Repetir τ9,6→τ11,2 una sola vez | Cálculo terminado; 297 pasos físicos por malla; transporte local auditado | [Resultado](repeticion96_112/RESULTADO.json) y [comparación con recibo histórico](COMPARACION_CON_RECIBO_HISTORICO.json) |
+| Conservar y recuperar el transporte nuevo τ11,2 | No completado; bytes no encontrados tras la interrupción | [Incidente](INCIDENTE_SEGUNDA_PERDIDA_LOCAL.json) |
 
-La [Release](https://github.com/diegolezaval/Proyecto_Runas/releases/tag/respaldo-cp12-p3-20261027) conserva los tres originales y el adjunto adicional `CONTROL_RUTA_RELEASE_TAU9P6_20261028`. Este último incluye relleno determinista identificado como prueba administrativa de capacidad. Conserva el mismo transporte τ9,6; no es un avance científico.
+La excepción está consumida y el lanzador de entrada queda bloqueado. Su [código exacto usado](https://github.com/diegolezaval/Proyecto_Runas/blob/4088598a647401c49b2f944fa08fe8417b45c5a2/checkpoints/CP12/p3_20261018/retoma_20261028/retomar_hasta11p2.py), [registro previo](REGISTRO_EJECUCION.json), [asignación exclusiva](ASIGNACION_UNICA.json) y resultados conservan su trazabilidad. Un hash o un comprobante no reconstruyen los bytes perdidos.
 
-El [prerregistro](PRERREGISTRO.md) fija orden, puertas y límites. Los [controles de conservación](CONTROLES_CONSERVACION.json) y [del bloqueo de reanudación](CONTROLES_REANUDACION.json) rechazan entradas inválidas sin física. Las fuentes científicas y administrativas capturadas originalmente permanecen intactas; la nueva administración se añade por separado.
+El último transporte permanente recuperable sigue en τ9,6. La frontera científica del ensayo sigue en τ8. CP11 aceptado; CP12 abierto y P3 sin validar. Las fuentes científicas, sus parámetros, puertas, estados anteriores y negativos se conservan.
 
-[Estado vigente de P3](../../../../RECUPERACION_CP12_ACTUAL.md).
+[Estado vigente](../../../../RECUPERACION_CP12_ACTUAL.md) · [Prerregistro](PRERREGISTRO.md).

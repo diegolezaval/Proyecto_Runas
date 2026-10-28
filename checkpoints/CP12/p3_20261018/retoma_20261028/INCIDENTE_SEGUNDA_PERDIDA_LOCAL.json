@@ -1,0 +1,50 @@
+{
+  "schema": "CP12_P3_SECOND_LOCAL_LOSS_AFTER_ONE_TIME_REPLAY_V1",
+  "observed_at_utc": "2026-10-28T12:20:19.318Z",
+  "scientific_reference_commit": "0d39086e66b1503ecf5a16351e45d7222cded193",
+  "last_observed_complete_computation": 11.2,
+  "replay_result": "checkpoints/CP12/p3_20261018/retoma_20261028/repeticion96_112/RESULTADO.json",
+  "new_local_transport_sha256": "1143fc5a44401fbea426ab16ef23fe94059715bf1a80df1e3cb113d9507bbabf",
+  "full_new_transport_bytes_recovered": false,
+  "new_transport_archive_completion_observed": false,
+  "new_transport_release_asset_published": false,
+  "last_permanent_recoverable_transport": 9.6,
+  "last_approved_complete_frontier": 8,
+  "original_three_archives_and_capacity_probe_preserved": true,
+  "local_task_files_found": false,
+  "targeted_file_search": {
+    "roots": [
+      "/workspace",
+      "/mnt/data",
+      "/tmp"
+    ],
+    "maximum_depth": 10,
+    "matches": 0
+  },
+  "shared_browser_paths_checked": 4,
+  "shared_browser_paths_result": "ENOENT for new transport ZIP, current.npz, current.json and SOLICITUD.json",
+  "packaging_session_47890_status": "Unknown process id",
+  "actions_active": 0,
+  "library_search": {
+    "query": "P3 and exact new112 archive name",
+    "matching_recoverable_capsules": [
+      "tau9.6"
+    ],
+    "coverage": "Accessible account only; not a universal absence claim"
+  },
+  "release_assets_checked": 5,
+  "predecessor_review_error": {
+    "kind": "automatic_approval_review_usage_limit",
+    "action": "Open Release edit page",
+    "executed": false
+  },
+  "cause_of_workspace_disappearance": "NOT_IDENTIFIED",
+  "replay_exception_consumed": true,
+  "further_M2_steps_executed_after_resuming_this_task": 0,
+  "automatic_replay_forbidden": true,
+  "original_scientific_or_captured_sources_changed": false,
+  "scientific_failure_inferred": false,
+  "CP12_closed": false,
+  "correction_validated": false,
+  "required_next_step": "Recover the new112 bytes if any independent copy appears. Otherwise a second physical replay requires an explicit new exception and a tested publisher that runs from the computing process without waiting for another chat action."
+}

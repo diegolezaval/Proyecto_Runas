@@ -1,6 +1,6 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-10-19T02:46:00Z",
+  "updated_at": "2026-10-28T12:20:19.318Z",
   "branch": "ciencia/cp12-residuo-p3-20261018",
   "last_public_commit": "5cb247226b37739d38dc64a02836ce6fc8f35c5c",
   "own_attempt_home": null,
@@ -77,7 +77,7 @@
           "nfev_live": 0,
           "maxe": 5.71112046543476e-11,
           "maxq": 1.1102230246251565e-15,
-          "maxe_original": 3.4873062215723394e-09
+          "maxe_original": 3.4873062215723394e-9
         },
         {
           "t": 8,
@@ -90,23 +90,23 @@
         }
       ],
       "maximum_errors": {
-        "raw_closure": 6.732817679515122e-07,
-        "raw_order_difference": 4.543916583922817e-09,
-        "raw_individual_order_difference": 1.1061484037917525e-08,
-        "coupled_closure": 6.727611417012493e-07,
+        "raw_closure": 6.732817679515122e-7,
+        "raw_order_difference": 4.543916583922817e-9,
+        "raw_individual_order_difference": 1.1061484037917525e-8,
+        "coupled_closure": 6.727611417012493e-7,
         "coupled_order_difference": 3.950505175606651e-10,
-        "coupled_individual_order_difference": 6.515497063763762e-09,
+        "coupled_individual_order_difference": 6.515497063763762e-9,
         "coupled_Phi_closure": 1.5789252538044598e-11,
         "coupled_Phi_order_difference": 4.667121523536763e-12,
         "modal_parseval": 1.8697801768411226e-14,
-        "short_core_raw_closure": 6.375456525722054e-07,
-        "short_core_raw_order_difference": 6.183625157552711e-08,
-        "short_core_coupled_closure": 6.383597718076692e-07,
-        "short_core_coupled_order_difference": 8.235103289737191e-08,
-        "short_smooth_raw_closure": 6.361070506896642e-07,
-        "short_smooth_raw_order_difference": 6.780070769603382e-08,
-        "short_smooth_coupled_closure": 6.375673257218949e-07,
-        "short_smooth_coupled_order_difference": 6.661440174260762e-08
+        "short_core_raw_closure": 6.375456525722054e-7,
+        "short_core_raw_order_difference": 6.183625157552711e-8,
+        "short_core_coupled_closure": 6.383597718076692e-7,
+        "short_core_coupled_order_difference": 8.235103289737191e-8,
+        "short_smooth_raw_closure": 6.361070506896642e-7,
+        "short_smooth_raw_order_difference": 6.780070769603382e-8,
+        "short_smooth_coupled_closure": 6.375673257218949e-7,
+        "short_smooth_coupled_order_difference": 6.661440174260762e-8
       },
       "extended_identity": {
         "mean_jacobian_identity_extended_relative_residual": 3.619422240251692e-31,
@@ -123,8 +123,8 @@
       },
       "full_instantaneous_identity": 8.560284112695024e-13,
       "full_box_chi_closure": {
-        "raw": 6.765772237692367e-08,
-        "coupled": 6.779199943272241e-08
+        "raw": 6.765772237692367e-8,
+        "coupled": 6.779199943272241e-8
       },
       "observed_core_phase_relative_error": 0.0003379721627178551,
       "M2_steps_executed": 0,
@@ -193,7 +193,7 @@
           "nfev_live": 3602,
           "maxe": 5.977562889114552e-11,
           "maxq": 1.1102230246251565e-15,
-          "maxe_original": 3.4873062215723394e-09
+          "maxe_original": 3.4873062215723394e-9
         },
         {
           "t": 9.60462717098377,
@@ -214,7 +214,7 @@
     "correction_validated": false,
     "CP12_closed": false
   },
-  "current_own_worker_status": "OWN_BOUNDED_REPLAY_96_TO_112_RUNNING",
+  "current_own_worker_status": "STOPPED_NEW112_BYTES_UNAVAILABLE_ONE_TIME_REPLAY_CONSUMED",
   "own_observed_start": {
     "at": "2026-10-19T02:23:11.384928+00:00",
     "pid_in_parent_namespace": 5,
@@ -223,10 +223,10 @@
   },
   "own_guardian_tool_session_id": 24226,
   "own_exit_observed": {
-    "at": "2026-10-19T02:30:45.682570+00:00",
-    "returncode": 1,
-    "scope": "Observed own guardian only",
-    "previous_executor_termination_assumed": false
+    "returncode": 0,
+    "at": "2026-10-28T07:17:37.391241+00:00",
+    "scope": "Own bounded replay only; source receipt preserved",
+    "tool_session_id": 24226
   },
   "current_target": 16,
   "conditional_horizon": 160,
@@ -243,10 +243,10 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
   "current_helper_directory": null,
-  "next_recovery": "Inspect the registered own worker and every newer intact local/remote state. The one-time9.6→11.2 replay has started; do not repeat from9.6. At11.2 stop, publish, independently retrieve and audit without steps before any more physics.",
+  "next_recovery": "Recover the new112 bytes if any independent copy appears. Otherwise a second physical replay requires an explicit new exception and a tested publisher that runs from the computing process without waiting for another chat action.",
   "original_thresholds": {
     "both_energy": 0.0002,
-    "charge": 1e-09,
+    "charge": 1e-9,
     "five_spatial": 0.02,
     "identity_symmetry": 2e-12,
     "Parseval": 2e-11,
@@ -264,7 +264,7 @@
         "nfev_live": 12005,
         "maxe": 5.2471138545229223e-11,
         "maxq": 8.881784197001252e-16,
-        "maxe_original": 3.4873062215723394e-09
+        "maxe_original": 3.4873062215723394e-9
       },
       {
         "t": 5.201218981914814,
@@ -413,7 +413,7 @@
             "modal_parseval": 2.725843617672908e-15,
             "short_core_raw_closure": 0,
             "short_core_raw_order_difference": 0,
-            "short_core_coupled_closure": 1.6515387507089995e-08,
+            "short_core_coupled_closure": 1.6515387507089995e-8,
             "short_core_coupled_order_difference": 0,
             "short_smooth_raw_closure": 0,
             "short_smooth_raw_order_difference": 0,
@@ -438,7 +438,7 @@
             "raw": 0,
             "coupled": 8.445301044444244e-13
           },
-          "observed_core_phase_relative_error": 1.1223149257216455e-05,
+          "observed_core_phase_relative_error": 0.000011223149257216455,
           "M2_steps_executed": 0,
           "experiment_kind": "NEW_P3_DISCRETIZATION_TRIAL",
           "correction_tested": false,
@@ -504,7 +504,7 @@
               "nfev_live": 11114,
               "maxe": 5.180289530670734e-11,
               "maxq": 8.881784197001252e-16,
-              "maxe_original": 3.3427267620567136e-09
+              "maxe_original": 3.3427267620567136e-9
             },
             {
               "t": 4.802505254516359,
@@ -552,7 +552,7 @@
       "next_recovery": "First search current own activity and every later P3 frontier/transport in GitHub and Library. Use latest valid P3 state, never repeat completed P3 intervals or initialize again. Audit without M2 steps. Old P2 tau80 is forensic only. Every new boundary must be saved/retrieved/audited and pass both energies, charge, all5 spatial metrics and other original gates before advancing. Stop and preserve any negative. CP12 remains open.",
       "original_thresholds": {
         "both_energy": 0.0002,
-        "charge": 1e-09,
+        "charge": 1e-9,
         "five_spatial": 0.02,
         "identity_symmetry": 2e-12,
         "Parseval": 2e-11,
@@ -570,7 +570,7 @@
             "nfev_live": 12005,
             "maxe": 5.2471138545229223e-11,
             "maxq": 8.881784197001252e-16,
-            "maxe_original": 3.4873062215723394e-09
+            "maxe_original": 3.4873062215723394e-9
           },
           {
             "t": 5.201218981914814,
@@ -621,7 +621,7 @@
   "latest_permanent_recoverable_observer_clock": 9.6,
   "local_transport112_archive": null,
   "local_transport112_archive_sha256": "d97fb63725820aaf372783c231886d6fa8e3a1c9c411b8fd0c6afa553a14efbb",
-  "continuation_blocked_by_permanent_preservation": false,
+  "continuation_blocked_by_permanent_preservation": true,
   "storage_error": "library_storage_limit_exceeded",
   "no_evidence_deleted": false,
   "local_recovery_home": null,
@@ -676,7 +676,7 @@
   "historical_local_recovery_home": "/workspace/scratch/a70983420f3a/p3_recovered112",
   "last_observed_completed_local_observer_clock": 11.2,
   "no_evidence_deleted_by_agent": true,
-  "continuation_blocked_by_missing_latest_local_state": false,
+  "continuation_blocked_by_missing_latest_local_state": true,
   "recovery_history_20261028": {
     "previous_own_worker_status": "STOPPED_NO_SCIENTIFIC_FAILURE_QUOTA_AND_LOCAL_FILES_MISSING",
     "previous_next_recovery": "Find a later intact transport or restore persistable capacity. If no complete11.2 transport can be found, explicitly resolve the user's no-physical-replay constraint before replaying9.6→11.2. Never initialize again at0 or resumeP2.",
@@ -695,6 +695,13 @@
     "capacity_acceptance": "checkpoints/CP12/p3_20261018/retoma_20261028/conservacion_control/ACEPTACION.json",
     "one_time_replay96_to112_reserved": true,
     "bounded_runner_registration": "checkpoints/CP12/p3_20261018/retoma_20261028/REGISTRO_EJECUCION.json",
-    "observed_execution": "checkpoints/CP12/p3_20261018/retoma_20261028/EJECUCION_OBSERVADA.json"
+    "observed_execution": "checkpoints/CP12/p3_20261018/retoma_20261028/EJECUCION_OBSERVADA.json",
+    "previous_status_before_resume_inspection": "OWN_BOUNDED_REPLAY_96_TO_112_RUNNING",
+    "replay96_to112_result": "checkpoints/CP12/p3_20261018/retoma_20261028/repeticion96_112/RESULTADO.json",
+    "replay96_to112_completed": true,
+    "one_time_replay96_to112_exception_consumed": true,
+    "new112_source_transport_sha256": "1143fc5a44401fbea426ab16ef23fe94059715bf1a80df1e3cb113d9507bbabf",
+    "new112_permanent_recovery_verified": false,
+    "second_local_loss_incident": "checkpoints/CP12/p3_20261018/retoma_20261028/INCIDENTE_SEGUNDA_PERDIDA_LOCAL.json"
   }
 }
