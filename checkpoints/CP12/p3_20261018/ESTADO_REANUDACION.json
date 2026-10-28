@@ -214,7 +214,7 @@
     "correction_validated": false,
     "CP12_closed": false
   },
-  "current_own_worker_status": "STOPPED_NO_SCIENTIFIC_FAILURE_QUOTA_AND_LOCAL_FILES_MISSING",
+  "current_own_worker_status": "TAU9P6_RECOVERED_ZERO_STEP_AUDITS_PASSED_RELEASE_ROUTE_PENDING",
   "own_observed_start": {
     "at": "2026-10-19T02:23:11.384928+00:00",
     "pid_in_parent_namespace": 5,
@@ -243,7 +243,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
   "current_helper_directory": null,
-  "next_recovery": "Find a later intact transport or restore persistable capacity. If no complete11.2 transport can be found, explicitly resolve the user's no-physical-replay constraint before replaying9.6→11.2. Never initialize again at0 or resumeP2.",
+  "next_recovery": "Complete the registered Release conservation capacity test: publish, independently download, compare archive/payload hashes and zero-step audit the extraction. Only then start the one-time bounded9.6→11.2 replay, preserve/retrieve/audit11.2 before any further physics.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-9,
@@ -676,5 +676,21 @@
   "historical_local_recovery_home": "/workspace/scratch/a70983420f3a/p3_recovered112",
   "last_observed_completed_local_observer_clock": 11.2,
   "no_evidence_deleted_by_agent": true,
-  "continuation_blocked_by_missing_latest_local_state": true
+  "continuation_blocked_by_missing_latest_local_state": true,
+  "recovery_history_20261028": {
+    "previous_own_worker_status": "STOPPED_NO_SCIENTIFIC_FAILURE_QUOTA_AND_LOCAL_FILES_MISSING",
+    "previous_next_recovery": "Find a later intact transport or restore persistable capacity. If no complete11.2 transport can be found, explicitly resolve the user's no-physical-replay constraint before replaying9.6→11.2. Never initialize again at0 or resumeP2.",
+    "preregistered_commit": "603be2469c3f1a6ae3673039708011ff70391564",
+    "source_release": "https://github.com/diegolezaval/Proyecto_Runas/releases/tag/respaldo-cp12-p3-20261027",
+    "audit_receipt": "checkpoints/CP12/p3_20261018/retoma_20261028/auditoria_inicial/RESULTADO.json",
+    "zero_step_audits": {
+      "boundary8_tests": 30,
+      "transport96_tests": 14,
+      "passed": true,
+      "DOP853_construction_or_step_attempts": 0
+    },
+    "preservation_adapter_status": "REGISTERED_PENDING_END_TO_END_RELEASE_CAPACITY_TEST",
+    "one_time_replay96_to112_started": false,
+    "scientific_worker_started": false
+  }
 }

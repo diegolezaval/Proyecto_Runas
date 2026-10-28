@@ -1,0 +1,199 @@
+{
+  "schema": "CP12_P3_RELEASE_RECOVERY_ZERO_STEP_AUDIT_V1",
+  "started_at_utc": "2026-10-28T06:55:28.261517+00:00",
+  "archive_sha256": "a71554ff3e213d09cf7365697e4d9c9307e9529478d567ae3f89ccc11e43b959",
+  "archive_bytes": 229821160,
+  "passed": true,
+  "M2_steps_executed": 0,
+  "CP12_closed": false,
+  "correction_validated": false,
+  "original_trajectories_repeated": false,
+  "scope": "Restauración y comprobaciones originales sin construir ni avanzar DOP853",
+  "audits": {
+    "boundary8": {
+      "returncode": 0,
+      "stdout_sha256": "f0663bc0c991af9e0371c2b8bc532c6d5a440aab3962f9803c5da5e528dc8168",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "audit": {
+        "schema": "CP12_P3_CORRECTION_TRIAL_ZERO_STEP_AUDIT",
+        "time": 8,
+        "passed": true,
+        "tests": {
+          "own_receipt_and_all_output_hashes": true,
+          "original_fourteen_sources_and_all_inputs_unchanged": true,
+          "captured_candidate_and_administrative_sources_unchanged": true,
+          "original_M2_Theta_two_grids_solver_tolerances_and_observer_configuration": true,
+          "original_DOP853_implementation_identity": true,
+          "new_experiment_schema_and_identity": true,
+          "saved_P3_action_identity": true,
+          "time_original_eight_unit_boundary": true,
+          "original_CP10_Cauchy_data_exact": true,
+          "Phi_FV_chi_P3_physical_routing_exact": true,
+          "mixed_passive_routing_exact": true,
+          "mixed_observer_class_selected": true,
+          "initial_or_closed_segment_evaluation_accounting": true,
+          "current_original_and_mixed_energy_rows_reproduced": true,
+          "finite_physical_and_observer_arrays": true,
+          "observation_count_and_original_time_labels": true,
+          "budget_count_and_time_labels": true,
+          "original_FV_energy_gate": true,
+          "consistent_MIXTO_energy_gate": true,
+          "original_charge_gate": true,
+          "original_observer_closure_and_order_gates": true,
+          "original_Parseval_gate": true,
+          "original_symmetry_gate": true,
+          "original_angular_basis_exact_on_restart": true,
+          "independent_reloaded_observer_closure_and_order": true,
+          "independent_reloaded_Parseval": true,
+          "original_extended_force_identity_and_symmetry": true,
+          "MIXTO_full_instantaneous_defect_identity_original_force_scale": true,
+          "original_full_box_chi_closure_gate": true,
+          "zero_M2_restart_no_state_mutation": true
+        },
+        "state_sha256": "1984303f49cac1c424952af632b6b5fa552c2a119d233a613c869cf0055b2db0",
+        "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+        "receipt_sha256": "b1f5b7216b77a588e2c73c90a0d4374faa95c3c124f2eaa52a48be6108a95a8c",
+        "observation_count": 21,
+        "metadata": [
+          {
+            "t": 8.0,
+            "accepted": 1483,
+            "nfev": 18266,
+            "nfev_live": 0,
+            "maxe": 5.71112046543476e-11,
+            "maxq": 1.1102230246251565e-15,
+            "maxe_original": 3.4873062215723394e-09
+          },
+          {
+            "t": 8.0,
+            "accepted": 1483,
+            "nfev": 18266,
+            "nfev_live": 0,
+            "maxe": 5.701616956343969e-11,
+            "maxq": 4.440892098500626e-16,
+            "maxe_original": 8.379739124819707e-10
+          }
+        ],
+        "maximum_errors": {
+          "raw_closure": 6.732817679515122e-07,
+          "raw_order_difference": 4.543916583922817e-09,
+          "raw_individual_order_difference": 1.1061484037917525e-08,
+          "coupled_closure": 6.727611417012493e-07,
+          "coupled_order_difference": 3.950505175606651e-10,
+          "coupled_individual_order_difference": 6.515497063763762e-09,
+          "coupled_Phi_closure": 1.5789252538044598e-11,
+          "coupled_Phi_order_difference": 4.667121523536763e-12,
+          "modal_parseval": 1.8697801768411226e-14,
+          "short_core_raw_closure": 6.375456525722054e-07,
+          "short_core_raw_order_difference": 6.183625157552711e-08,
+          "short_core_coupled_closure": 6.383597718076692e-07,
+          "short_core_coupled_order_difference": 8.235103289737191e-08,
+          "short_smooth_raw_closure": 6.361070506896642e-07,
+          "short_smooth_raw_order_difference": 6.780070769603382e-08,
+          "short_smooth_coupled_closure": 6.375673257218949e-07,
+          "short_smooth_coupled_order_difference": 6.661440174260762e-08
+        },
+        "extended_identity": {
+          "mean_jacobian_identity_extended_relative_residual": 3.619422240251692e-31,
+          "prior_longdouble_subtraction_relative_residual": 2.699740799358673e-15,
+          "weighted_jacobian_symmetry_residual": 5.612711568481693e-17,
+          "fused_passive_jacobian_relative_error": 0.0,
+          "production_force_absolute_scaled_residual": 7.951806501011413e-16,
+          "production_source_residual_absolute": 4.436853662248552e-12,
+          "production_source_difference_scaled_residual": 4.436853662248552e-12,
+          "production_source_absolute_force_scale": 5579.68011631598,
+          "quad_reference_epsilon": 1.925929944387236e-34,
+          "extended_epsilon": 1.0842021724855044e-19,
+          "reference_is_not_evolution": true
+        },
+        "full_instantaneous_identity": 8.560284112695024e-13,
+        "full_box_chi_closure": {
+          "raw": 6.765772237692367e-08,
+          "coupled": 6.779199943272241e-08
+        },
+        "observed_core_phase_relative_error": 0.0003379721627178551,
+        "M2_steps_executed": 0,
+        "experiment_kind": "NEW_P3_DISCRETIZATION_TRIAL",
+        "correction_tested": true,
+        "correction_validated": false,
+        "CP12_closed": false,
+        "run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
+        "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+        "original_trajectories_repeated": false,
+        "DOP853_implementation_identity": {
+          "version": "1.17.0",
+          "rk_sha256": "fa5d6300917f4f949e699b116f59ae147159d5c6147d55d940dc9d3303891056",
+          "base_sha256": "4e70402b4c092e0a502dba07e33f91784e1e6d3645710cc8a916fd6e3ead7548"
+        },
+        "DOP853_construction_or_step_attempts": 0
+      }
+    },
+    "transport": {
+      "returncode": 0,
+      "stdout_sha256": "05af999e6d65b330ee30443ff02fb9b420e5709c33011b8ccbd2ceeb94b5bdbb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "audit": {
+        "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
+        "passed": true,
+        "tests": {
+          "all_internal_state_bits_and_nfev_restored": true,
+          "original_sources_and_configuration": true,
+          "scientific_seed_unchanged": true,
+          "restore_used_no_solver_step": true,
+          "exact_stage_alias": true,
+          "accepted_states_match_solver": true,
+          "clocks_bracket_observer": true,
+          "both_energy_and_charge_gates": true,
+          "original_observer_maximum_gates": true,
+          "original_Parseval": true,
+          "original_symmetry": true,
+          "independently_reloaded_observer_closure": true,
+          "independently_reloaded_Parseval": true,
+          "file_unchanged": true
+        },
+        "observer_clock": 9.6,
+        "target": 16,
+        "state_sha256": "1bf0a52cf3cfd357e07d54fc519591558181508fdbb718242d369411a082e4e2",
+        "physical_metadata": [
+          {
+            "t": 9.604628893170256,
+            "accepted": 1781,
+            "nfev": 18266,
+            "nfev_live": 3602,
+            "maxe": 5.977562889114552e-11,
+            "maxq": 1.1102230246251565e-15,
+            "maxe_original": 3.4873062215723394e-09
+          },
+          {
+            "t": 9.60462717098377,
+            "accepted": 1781,
+            "nfev": 18266,
+            "nfev_live": 3602,
+            "maxe": 5.96717120160406e-11,
+            "maxq": 4.440892098500626e-16,
+            "maxe_original": 8.379739124819707e-10
+          }
+        ],
+        "M2_steps_executed": 0,
+        "scientific_frontier": false,
+        "correction_validated": false,
+        "CP12_closed": false,
+        "DOP853_construction_or_step_attempts": 0
+      }
+    }
+  },
+  "payload_files": 283,
+  "all_payload_hashes_verified_before_and_after": true,
+  "source_archive_unchanged": true,
+  "python": "3.12.14",
+  "platform": "Linux",
+  "architecture": "x86_64",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "threadpoolctl": "3.6.0"
+  },
+  "audit_driver_sha256": "5ec8064cb2ef130b6796a296940a564d5c290e6f1000c4ca3ba2b0705f76aae0",
+  "finished_at_utc": "2026-10-28T06:55:55.079427+00:00"
+}

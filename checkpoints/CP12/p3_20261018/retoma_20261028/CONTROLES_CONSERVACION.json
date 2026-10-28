@@ -1,0 +1,13 @@
+{
+  "schema": "CP12_P3_RELEASE_CONSERVATION_NEGATIVE_CONTROLS_V1",
+  "checked_at_utc": "2026-10-28T06:59:28.185333+00:00",
+  "passed": true,
+  "tests": {
+    "ruta_insegura_rechazado_antes_de_extraer": true,
+    "manifiesto_incorrecto_rechazado_antes_de_extraer": true,
+    "digest_incorrecto_rechazado_sin_descarga_ni_aceptacion": true,
+    "url_ajena_rechazado_sin_descarga_ni_aceptacion": true
+  },
+  "M2_steps_executed": 0,
+  "scientific_data_used_for_controls": false
+}
