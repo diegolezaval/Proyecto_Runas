@@ -1,0 +1,29 @@
+{
+  "schema": "CP12_P3_TEMPORARY_LIBRARY_TRANSIT_RECEIPT_V1",
+  "started_at_utc": "2026-10-28T21:03:57.387778+00:00",
+  "passed": false,
+  "uploaded": false,
+  "upload_outcome": "unknown_requires_reconciliation",
+  "independent_recovery_verified": false,
+  "observer_clock": 9.6,
+  "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_TRANSITO_INTENTO02_TAU9P6_20261028.zip",
+  "bytes": 230900851,
+  "sha256": "2d2212430208dbaf783d1d824f8f8c82e432cc0953f5a82a056a303250f42c01",
+  "request_sha256": "b888320f9f92d8d7f8a3a9ae1fbaca1705dccca7b6f04c819a6e1c12f6732efa",
+  "transit_driver_sha256": "f9ec6e5bf394df17ed9328895971b9f8d1c0aec986140f5dbff69e3b9d372957",
+  "temporary_transit_only": true,
+  "github_publication_verified": false,
+  "further_physics_authorized": false,
+  "M2_steps_executed": 0,
+  "CP12_closed": false,
+  "correction_validated": false,
+  "current_helper_sha256": {
+    "library_upload.py": "5bc473dadefe1f68ee8797baaed19d6662642d0ea4bcba128fa12938faa0d767",
+    "library_hosted_apps.py": "7958642b88cde925aaca036989de1028c0864eb6d82a9cb175ebf9380cb9677b",
+    "library_file_transfer.py": "d0385de4b634c4a6d4c26a83b40ee4ff33461e42473ce8c0387460be2465e314"
+  },
+  "failed_stage": "native_upload",
+  "error_type": "ValueError",
+  "automatic_retry_permitted": false,
+  "finished_at_utc": "2026-10-28T21:04:14.679863+00:00"
+}

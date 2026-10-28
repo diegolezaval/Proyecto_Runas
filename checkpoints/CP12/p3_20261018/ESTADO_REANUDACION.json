@@ -1,8 +1,8 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-10-28T21:03:26.557Z",
+  "updated_at": "2026-10-28T21:07:18.311Z",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "5eaf96bec6e4b637e06f19fdcaec6f0f6c72067d",
+  "last_public_commit": "55fa1660f7ab239cb6eba0d4525fcb7e553cfc2a",
   "own_attempt_home": null,
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
@@ -214,7 +214,7 @@
     "correction_validated": false,
     "CP12_closed": false
   },
-  "current_own_worker_status": "ZERO_STEP_TRANSIT_CONTROL01_SAVED_PARSER_FAILURE_RECONCILIATION_AND_CONTROL02_REGISTERED",
+  "current_own_worker_status": "TWO_NATIVE_TEMPORARY_COPIES_SAVED_RECONCILING_AUTHORITATIVE_IDENTITIES_NO_M2",
   "own_observed_start": null,
   "own_guardian_tool_session_id": null,
   "own_exit_observed": {
@@ -750,8 +750,8 @@
       "scientific_negative": false,
       "temporary_transit": {
         "preregistration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/transito_temporal/PRERREGISTRO.md",
-        "native_driver_sha256": "f9ec6e5bf394df17ed9328895971b9f8d1c0aec986140f5dbff69e3b9d372957",
-        "synthetic_guard_tests_passed": 8,
+        "native_driver_sha256": "dd9f11ca33e4afbb1bf012c03f293aa396a739a3c94a0dfee0f8db3d296efe5f",
+        "synthetic_guard_tests_passed": 10,
         "live_test_started": true,
         "live_transit_verified": false,
         "github_final_copy_verified": false,
@@ -759,7 +759,12 @@
         "control01_native_upload_confirmed": true,
         "control01_library_file_id": "libfile_bb9939370c608191b8d4d4b5b623dde3",
         "control01_complete_cycle_passed": false,
-        "control02_preregistration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/transito_temporal/PRERREGISTRO_CONTROL02.md"
+        "control02_preregistration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/transito_temporal/PRERREGISTRO_CONTROL02.md",
+        "control01_recovered_and_original_zero_step_audit_passed": true,
+        "control02_native_upload_confirmed": true,
+        "control02_library_file_id": "libfile_449a0e5d8da88191b536c741bfc6c3e2",
+        "control02_full_native_cycle_passed": false,
+        "additional_replay_consumed": false
       }
     }
   }

@@ -62,6 +62,19 @@ def run():
             result['library_file_id']=='libfile_fixture' and not result['passed'] and
             not result['independent_recovery_verified'] and not result['further_physics_authorized'] and
             pending['library_file_id']=='libfile_fixture')
+        renamed = root/'renamed'
+        renamed_upload = {'results':[dict(uploaded['results'][0],file_name='fixture(1).zip')]}
+        with patch.object(subject,'validate_request',return_value=validation), patch.object(subject,'helper',return_value=renamed_upload), patch.dict(sys.modules,{'library_hosted_apps':module}):
+            try:subject.preserve(request_path,renamed,helpers)
+            except ValueError:pass
+        result = subject.read(renamed/'RESULTADO_TRANSITO.json')
+        tests['authoritative_renamed_file_identity_kept_before_recovery'] = (result['uploaded'] and result['library_file_name']=='fixture(1).zip' and result['failed_stage']=='independent_materialization')
+        resumed = root/'resumed'
+        with patch.object(subject,'validate_request',return_value=validation), patch.object(subject,'helper',side_effect=AssertionError('No upload allowed during reconciliation')), patch.dict(sys.modules,{'library_hosted_apps':module}):
+            try:subject.preserve(request_path,resumed,helpers,renamed/'GUARDADO_DURABLE_PENDIENTE_AUDITORIA.json')
+            except ValueError:pass
+        result = subject.read(resumed/'RESULTADO_TRANSITO.json')
+        tests['read_only_reconciliation_never_reuploads_or_claims_full_native_cycle'] = (result['uploaded'] and not result['native_full_cycle_performed_in_this_invocation'] and not result['further_physics_authorized'] and result['failed_stage']=='independent_materialization')
     report = dict(schema='CP12_P3_TEMPORARY_TRANSIT_GUARDS_V1',passed=all(tests.values()),tests=tests,
                   M2_steps_executed=0,scientific_data_used=False,real_network_or_credentials_used=False,
                   real_capacity_test_passed=False)

@@ -92,7 +92,7 @@ def validate_request(request_path):
     return request, archive, auditor
 
 
-def preserve(request_path, output, directory):
+def preserve(request_path, output, directory, existing_save=None):
     request_path, output, directory = request_path.resolve(), output.resolve(), directory.resolve()
     request, archive, auditor = validate_request(request_path)
     output.mkdir(parents=True, exist_ok=False)
@@ -104,26 +104,39 @@ def preserve(request_path, output, directory):
                   bytes=request['bytes'], sha256=request['sha256'],
                   request_sha256=sha(request_path), transit_driver_sha256=sha(Path(__file__)),
                   temporary_transit_only=True, github_publication_verified=False,
+                  native_full_cycle_performed_in_this_invocation=existing_save is None,
                   further_physics_authorized=False, M2_steps_executed=0, CP12_closed=False,
                   correction_validated=False)
     stage = 'initial_validation'
     try:
         names = ['library_upload.py', 'library_hosted_apps.py', 'library_file_transfer.py']
         report['current_helper_sha256'] = {name:sha(directory / name) for name in names}
-        stage = 'native_upload'
-        report['upload_outcome'] = 'attempted_outcome_pending'
-        uploaded = helper(directory, 'library_upload.py', [], {'uploads':[{
-            'local_path':str(archive), 'purpose':'create_library_file',
-            'library_artifact_type':'other'}]}, private)
-        items = uploaded.get('results', [])
-        if len(items) != 1 or items[0].get('status') != 'succeeded':
-            raise RuntimeError('La escritura no fue acreditada; revisar el resultado sin repetirla')
-        item = items[0]
-        if item['file_name'] != archive.name or not item['library_file_id'] or not item['file_id']:
-            raise ValueError('Identidad de la escritura inconsistente')
+        if existing_save is None:
+            stage = 'native_upload'
+            report['upload_outcome'] = 'attempted_outcome_pending'
+            uploaded = helper(directory, 'library_upload.py', [], {'uploads':[{
+                'local_path':str(archive), 'purpose':'create_library_file',
+                'library_artifact_type':'other'}]}, private)
+            items = uploaded.get('results', [])
+            if len(items) != 1 or items[0].get('status') != 'succeeded':
+                raise RuntimeError('La escritura no fue acreditada; revisar el resultado sin repetirla')
+            item = items[0]
+        else:
+            stage = 'reconcile_existing_saved_identity'
+            saved = read(existing_save)
+            if saved.get('schema') != report['schema'] or not saved.get('uploaded') or saved['request_sha256'] != report['request_sha256']:
+                raise ValueError('La identidad existente no corresponde a esta solicitud')
+            if any(saved[k] != report[k] for k in ['sha256','bytes','file_name','observer_clock']):
+                raise ValueError('El guardado existente tiene otra identidad de bytes')
+            item = dict(file_name=saved['library_file_name'], library_file_id=saved['library_file_id'],file_id=saved['file_id'])
+            report['existing_save_receipt_sha256'] = sha(existing_save)
         report.update(uploaded=True, upload_outcome='confirmed', library_file_id=item['library_file_id'],
                       file_id=item['file_id'], library_file_name=item['file_name'])
         write_new(output / 'GUARDADO_DURABLE_PENDIENTE_AUDITORIA.json', report)
+        if not item['library_file_id'] or not item['file_id'] or Path(item['file_name']).name != item['file_name'] or not item['file_name'].endswith('.zip'):
+            raise ValueError('Identidad de la escritura inconsistente')
+        # La Biblioteca puede añadir un sufijo al nombre. Sus identificadores y
+        # el nombre devuelto son autoritativos; los bytes se exigen por SHA-256.
         print(json.dumps(dict(stage='uploaded', library_file_id=item['library_file_id'],
                              observer_clock=request['observer_clock'], further_physics_authorized=False)), flush=True)
         stage = 'independent_materialization'
@@ -196,9 +209,10 @@ def main():
     parser.add_argument('--solicitud', type=Path, required=True)
     parser.add_argument('--salida', type=Path, required=True)
     parser.add_argument('--helpers', type=Path, required=True)
+    parser.add_argument('--guardado-existente', type=Path)
     args = parser.parse_args()
     try:
-        report = preserve(args.solicitud, args.salida, args.helpers)
+        report = preserve(args.solicitud, args.salida, args.helpers, args.guardado_existente)
     except BaseException as error:
         print(json.dumps(dict(passed=False, error_type=type(error).__name__,
                              automatic_retry_permitted=False, further_physics_authorized=False)), flush=True)
