@@ -111,16 +111,18 @@ def render_state(root=ROOT):
 
 
 def render_readme(root=ROOT):
-    """Puente generado a la entrada canónica, visible también en GitHub."""
-    intro = (root / 'LEEME.md').read_text(encoding='utf-8').split('\n\n')[1]
+    """Portada generada desde la navegación canónica de LEEME.md."""
+    source = (root / 'LEEME.md').read_text(encoding='utf-8')
+    intro = source.split('\n\n')[1]
+    _, begin, rest = source.partition('<!-- INICIO_NAVEGACION -->')
+    navigation, end, _ = rest.partition('<!-- FIN_NAVEGACION -->')
+    if not begin or not end:
+        raise ValueError('LEEME.md no contiene el bloque canónico de navegación')
     return '\n'.join([
         '# Rúnica', '',
         '> Vista generada desde LEEME.md por herramientas/generar_continuidad.py. No editar manualmente.', '',
-        intro, '',
-        'Abrir [LEEME.md](LEEME.md) para la entrada completa, las fuentes de verdad y los comandos.', '',
-        '- [Estado actual y siguiente trabajo](ESTADO_ACTUAL.md).',
-        '- [Arquitectura y trazabilidad](ARQUITECTURA.md).',
-        '- [Preparación para una migración posterior a GitHub](MIGRACION_GITHUB.md).', ''
+        intro, '', navigation.strip(), '',
+        'La [entrada técnica completa](LEEME.md) contiene autoridad, entorno y comandos.', ''
     ])
 
 
