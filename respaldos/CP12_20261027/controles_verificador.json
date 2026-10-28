@@ -1,0 +1,12 @@
+{
+  "schema": "CP12_BACKUP_VERIFIER_NEGATIVE_CONTROLS_V1",
+  "checked_at_utc": "2026-10-28T06:36:47.683716+00:00",
+  "passed": true,
+  "tests": {
+    "truncated_archive_rejected": true,
+    "unsafe_zip_path_rejected": true,
+    "member_mismatch_rejected_even_with_matching_archive_hash": true
+  },
+  "scientific_data_used_for_controls": false,
+  "M2_evolution_steps_executed": 0
+}
