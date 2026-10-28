@@ -1,0 +1,19 @@
+{
+  "schema": "CP12_DIRECT_PUBLICATION_GUARDS_TEST_V1",
+  "checked_at_utc": "2026-10-28T12:24:50.619774+00:00",
+  "passed": true,
+  "tests": {
+    "identical_existing_asset_reused_without_upload": true,
+    "conflicting_existing_asset_preserved": true,
+    "new_upload_has_no_clobber_or_delete": true,
+    "changed_source_rejected_before_upload": true,
+    "stable_scientific_release_rejected": true,
+    "failed_independent_audit_emits_no_acceptance": true,
+    "missing_cli_cannot_authorize_scientific_replay": true,
+    "consumed_replay_blocked_even_in_fresh_workspace": true
+  },
+  "M2_steps_executed": 0,
+  "scientific_data_used": false,
+  "real_network_or_authentication_used": false,
+  "full_live_direct_publication_test_passed": false
+}

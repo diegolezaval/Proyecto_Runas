@@ -15,3 +15,5 @@ La excepción está consumida y el lanzador de entrada queda bloqueado. Su [cód
 El último transporte permanente recuperable sigue en τ9,6. La frontera científica del ensayo sigue en τ8. CP11 aceptado; CP12 abierto y P3 sin validar. Las fuentes científicas, sus parámetros, puertas, estados anteriores y negativos se conservan.
 
 [Estado vigente](../../../../RECUPERACION_CP12_ACTUAL.md) · [Prerregistro](PRERREGISTRO.md).
+
+Se preparó un [publicador desde el proceso y sus condiciones](PUBLICACION_DIRECTA_Y_CONDICIONES.md), con ocho controles superados. La autenticación y la prueba real siguen pendientes; no autorizan otra física.
