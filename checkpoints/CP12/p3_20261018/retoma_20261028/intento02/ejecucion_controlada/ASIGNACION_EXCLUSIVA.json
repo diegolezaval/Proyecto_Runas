@@ -1,0 +1,19 @@
+{
+  "schema": "CP12_P3_ADDITIONAL_REPLAY_EXCLUSIVE_ALLOCATION_V1",
+  "reserved_at_utc": "2026-10-29T01:53:13.474944+00:00",
+  "reserved_before_M2": true,
+  "attempt_id": "intento02_20261028",
+  "authorization_id": "P3_REPLAY_96_112_INTENTO02_20261028",
+  "runner_sha256": "308609826daabcfac76560ccac1167f7b322c3badba5ffe26c757bd14887d64f",
+  "capacity_acceptance_sha256": "2cca732d601e35ae14537ba68c9d4676a160d137d07990c6d5c0a3cdd5f80292",
+  "ticket_basename": "P3_INTENTO02_20261028_EJECUCION.token",
+  "one_use_ticket_sha256": "4e91ba1e0244791e663d962849acb5a4bdb454c450357fd89189feac41638077",
+  "source_transport_sha256": "1bf0a52cf3cfd357e07d54fc519591558181508fdbb718242d369411a082e4e2",
+  "from_observer_clock": 9.6,
+  "to_observer_clock": 11.2,
+  "internal_solver_bound": 16,
+  "scientific_execution_observed": false,
+  "additional_exception_consumed": false,
+  "automatic_replay_permitted": false,
+  "CP12_closed": false
+}
