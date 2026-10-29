@@ -1,8 +1,8 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-10-28T21:07:18.311Z",
+  "updated_at": "2026-10-29T01:39:40.178Z",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "55fa1660f7ab239cb6eba0d4525fcb7e553cfc2a",
+  "last_public_commit": "d52cc494ae6341332ca626648a821b17d795f361",
   "own_attempt_home": null,
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
@@ -214,7 +214,7 @@
     "correction_validated": false,
     "CP12_closed": false
   },
-  "current_own_worker_status": "TWO_NATIVE_TEMPORARY_COPIES_SAVED_RECONCILING_AUTHORITATIVE_IDENTITIES_NO_M2",
+  "current_own_worker_status": "ZERO_STEP_FULL_NATIVE_TRANSIT_CONTROL03_PREREGISTERED_ADDITIONAL_REPLAY_UNUSED",
   "own_observed_start": null,
   "own_guardian_tool_session_id": null,
   "own_exit_observed": {
@@ -764,7 +764,13 @@
         "control02_native_upload_confirmed": true,
         "control02_library_file_id": "libfile_449a0e5d8da88191b536c741bfc6c3e2",
         "control02_full_native_cycle_passed": false,
-        "additional_replay_consumed": false
+        "additional_replay_consumed": false,
+        "control03_registration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/transito_temporal/REGISTRO_CONTROL03.json",
+        "control03_archive_sha256": "5faf037f7a22f47285773b006fd020a2d39906bd54c74db9cf7c1e7d70c54651",
+        "control03_native_full_cycle_passed": false,
+        "control01_github_asset_id": 686352032,
+        "control01_current_public_download_and_original_audits_passed": true,
+        "current_native_driver_sha256": "dd9f11ca33e4afbb1bf012c03f293aa396a739a3c94a0dfee0f8db3d296efe5f"
       }
     }
   }
