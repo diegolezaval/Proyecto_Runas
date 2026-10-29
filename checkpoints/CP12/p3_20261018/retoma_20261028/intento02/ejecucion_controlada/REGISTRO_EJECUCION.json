@@ -1,0 +1,30 @@
+{
+  "schema": "CP12_P3_ADDITIONAL_BOUNDED_REPLAY_TRANSIT_REGISTRATION_V1",
+  "registered_at_utc": "2026-10-29T01:47:41.385340+00:00",
+  "registered_before_M2": true,
+  "additional_replay_authorized": true,
+  "authorization_id": "P3_REPLAY_96_112_INTENTO02_20261028",
+  "attempt_id": "intento02_20261028",
+  "one_time_replay_reserved": false,
+  "from_observer_clock": 9.6,
+  "to_observer_clock": 11.2,
+  "internal_solver_bound": 16,
+  "bounded_runner_sha256": "308609826daabcfac76560ccac1167f7b322c3badba5ffe26c757bd14887d64f",
+  "capacity_acceptance_sha256": "2cca732d601e35ae14537ba68c9d4676a160d137d07990c6d5c0a3cdd5f80292",
+  "native_transit_driver_sha256": "dd9f11ca33e4afbb1bf012c03f293aa396a739a3c94a0dfee0f8db3d296efe5f",
+  "conservation_driver_sha256": "f4382caecef573f089c44b8871ab3307767da6be90835acbe0e109b4119ca41b",
+  "audit_driver_sha256": "5ec8064cb2ef130b6796a296940a564d5c290e6f1000c4ca3ba2b0705f76aae0",
+  "current_helper_sha256": {
+    "library_upload.py": "5bc473dadefe1f68ee8797baaed19d6662642d0ea4bcba128fa12938faa0d767",
+    "library_hosted_apps.py": "7958642b88cde925aaca036989de1028c0864eb6d82a9cb175ebf9380cb9677b",
+    "library_file_transfer.py": "d0385de4b634c4a6d4c26a83b40ee4ff33461e42473ce8c0387460be2465e314"
+  },
+  "source_transport_sha256": "1bf0a52cf3cfd357e07d54fc519591558181508fdbb718242d369411a082e4e2",
+  "source_archive_sha256": "a71554ff3e213d09cf7365697e4d9c9307e9529478d567ae3f89ccc11e43b959",
+  "closed_state_sha256": "1984303f49cac1c424952af632b6b5fa552c2a119d233a613c869cf0055b2db0",
+  "dry_run_receipt_sha256": null,
+  "allocation_record_sha256": null,
+  "CP12_closed": false,
+  "correction_validated": false,
+  "scientific_worker_started": false
+}

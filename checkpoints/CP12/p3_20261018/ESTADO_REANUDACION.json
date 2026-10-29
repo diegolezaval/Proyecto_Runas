@@ -1,8 +1,8 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-10-29T01:39:40.178Z",
+  "updated_at": "2026-10-29T01:50:14.402Z",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "d52cc494ae6341332ca626648a821b17d795f361",
+  "last_public_commit": "74cc17eca96c455b78b6e298c417b02bcc8ca79c",
   "own_attempt_home": null,
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
@@ -214,7 +214,7 @@
     "correction_validated": false,
     "CP12_closed": false
   },
-  "current_own_worker_status": "ZERO_STEP_FULL_NATIVE_TRANSIT_CONTROL03_PREREGISTERED_ADDITIONAL_REPLAY_UNUSED",
+  "current_own_worker_status": "FULL_NATIVE_AND_GITHUB_CAPACITY_PASSED_BOUNDED_RUNNER_PREREGISTERED_ZERO_STEP_GATES_PENDING",
   "own_observed_start": null,
   "own_guardian_tool_session_id": null,
   "own_exit_observed": {
@@ -238,7 +238,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
   "current_helper_directory": null,
-  "next_recovery": "The user's additional bounded9.6→11.2 replay authorization remains unused and must not be requested again solely because infrastructure failed. First search for any later intact P3 transport; otherwise establish an executor matching the original full environment and observed unforced SkylakeX with a working process-integrated publication route. The local CLI did not persist a connection; its session reported a network policy block. The single current GitHub Actions eligibility check recovered Haswell and stopped before M2; no further reassignment or architecture override is authorized by this diagnostic. Before any use of the existing additional replay authorization, pass a live full-size direct upload/download/independent exact zero-step rehydration test, then register the new bounded runner and exclusive durable allocation in Git. Do not reuse the consumed old runner, initialize at0, resumeP2, or repeat CP10, originalCP12 orF0–F5.",
+  "next_recovery": "Run only the registered new launcher's zero-step gate audit first. If it passes, commit the receipt and an exclusive one-use allocation before the existing additional bounded9.6→11.2 authorization is used. Stop at11.2 and require native temporary preservation and independent recovery, then final GitHub publication and recovery before any further physics. The old consumed entrypoint remains blocked; never restart an allocated attempt blindly.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-9,
@@ -753,8 +753,8 @@
         "native_driver_sha256": "dd9f11ca33e4afbb1bf012c03f293aa396a739a3c94a0dfee0f8db3d296efe5f",
         "synthetic_guard_tests_passed": 10,
         "live_test_started": true,
-        "live_transit_verified": false,
-        "github_final_copy_verified": false,
+        "live_transit_verified": true,
+        "github_final_copy_verified": true,
         "scientific_worker_started": false,
         "control01_native_upload_confirmed": true,
         "control01_library_file_id": "libfile_bb9939370c608191b8d4d4b5b623dde3",
@@ -767,11 +767,20 @@
         "additional_replay_consumed": false,
         "control03_registration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/transito_temporal/REGISTRO_CONTROL03.json",
         "control03_archive_sha256": "5faf037f7a22f47285773b006fd020a2d39906bd54c74db9cf7c1e7d70c54651",
-        "control03_native_full_cycle_passed": false,
+        "control03_native_full_cycle_passed": true,
         "control01_github_asset_id": 686352032,
         "control01_current_public_download_and_original_audits_passed": true,
-        "current_native_driver_sha256": "dd9f11ca33e4afbb1bf012c03f293aa396a739a3c94a0dfee0f8db3d296efe5f"
-      }
+        "current_native_driver_sha256": "dd9f11ca33e4afbb1bf012c03f293aa396a739a3c94a0dfee0f8db3d296efe5f",
+        "control03_library_file_id": "libfile_55136f82d91c81919e2d69126e6d5878",
+        "control03_github_asset_id": 686994248,
+        "control03_github_recovery_passed": true
+      },
+      "full_capacity_control_passed": true,
+      "new_bounded_runner_registration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/REGISTRO_EJECUCION.json",
+      "new_bounded_runner_preregistration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/PRERREGISTRO.md",
+      "capacity_acceptance": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/ACEPTACION_CAPACIDAD_COMBINADA.json",
+      "new_runner_synthetic_guard_tests_passed": 10,
+      "allocation_reserved": false
     }
   }
 }

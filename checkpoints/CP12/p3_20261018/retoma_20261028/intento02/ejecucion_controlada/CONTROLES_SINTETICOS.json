@@ -1,0 +1,20 @@
+{
+  "schema": "CP12_P3_ADDITIONAL_BOUNDED_REPLAY_GUARDS_V1",
+  "passed": true,
+  "tests": {
+    "complete_combined_capacity_gate_accepted": true,
+    "manual_only_recovery_rejected": true,
+    "read_only_reconciliation_cannot_replace_full_native_cycle": true,
+    "missing_final_github_copy_rejected": true,
+    "insufficient_capacity_rejected": true,
+    "physical_steps_in_capacity_control_rejected": true,
+    "execution_permission_consumed_once": true,
+    "recreated_private_ticket_cannot_run_same_allocation_twice": true,
+    "wrong_ticket_identity_stops_before_consumption": true,
+    "symlink_cannot_reuse_execution_permission": true
+  },
+  "runner_sha256": "308609826daabcfac76560ccac1167f7b322c3badba5ffe26c757bd14887d64f",
+  "M2_steps_executed": 0,
+  "real_network_or_credentials_used": false,
+  "scientific_data_used": false
+}
