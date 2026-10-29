@@ -1,0 +1,61 @@
+{
+  "schema": "CP12_P3_ATTEMPT02_RECOVERY_STATUS_V1",
+  "verified_at_utc": "2026-10-29T14:20:19.542794+00:00",
+  "physical_interval_completed": true,
+  "from_observer_clock": 9.6,
+  "observer_clock": 11.2,
+  "internal_solver_bound": 16,
+  "transport_state_sha256": "bc129cff71c7558cd0298873fdc816da14e01fdcb4728235b33666a1ecfcf3ac",
+  "physical_accepted_steps_executed": [
+    297,
+    297
+  ],
+  "physical_RHS_evaluations_executed": [
+    3576,
+    3576
+  ],
+  "physical_streams": [
+    {
+      "t": 11.205183926229115,
+      "accepted": 2078,
+      "nfev": 18266,
+      "nfev_live": 7178,
+      "maxe": 6.24522655812143e-11,
+      "maxq": 1.1102230246251565e-15,
+      "maxe_original": 3.4873062215723394e-09
+    },
+    {
+      "t": 11.205178976893324,
+      "accepted": 2078,
+      "nfev": 18266,
+      "nfev_live": 7178,
+      "maxe": 6.234057714493701e-11,
+      "maxq": 4.440892098500626e-16,
+      "maxe_original": 8.379739124819707e-10
+    }
+  ],
+  "temporary_durable_recovery_passed": true,
+  "github_publication_pending": false,
+  "permanent_preservation_pending": false,
+  "bounded_calculation_and_native_recovery_passed": true,
+  "final_github_acceptance_passed": true,
+  "passed": true,
+  "passed_scope": "Bounded interval completed; existing capsule independently recovered from Library and GitHub with original zero-step audits.",
+  "additional_replay_exception_consumed": true,
+  "next_physical_interval_executed": false,
+  "M2_steps_executed_during_this_recovery": 0,
+  "further_physics_authorized": false,
+  "closed_frontier": 8,
+  "scientific_frontier": false,
+  "correction_validated": false,
+  "CP12_closed": false,
+  "receipt": "RECIBO_CAPSULA_TEMPORAL.json",
+  "audit": "auditoria_recuperacion/RESULTADO.json",
+  "pre_preservation_physical_snapshot": "CALCULO_TERMINADO_CONSERVACION_PENDIENTE.json",
+  "provenance": "Recovered exact physical snapshot and payload from the saved capsule; post-packaging runner files were not available after scratch cleanup and are not fabricated.",
+  "github_asset_id": 688783601,
+  "github_acceptance": "github/ACEPTACION.json",
+  "archive_sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
+  "archive_bytes": 229880902,
+  "further_physics_scope": "This bounded runner is finished and cannot be used again. Any forward continuation must use the applicable original gated procedure after reviewing the preserved state; no new physics was launched during recovery."
+}

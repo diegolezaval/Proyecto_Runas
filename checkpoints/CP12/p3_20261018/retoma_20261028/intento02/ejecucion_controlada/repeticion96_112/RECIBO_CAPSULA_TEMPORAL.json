@@ -1,0 +1,31 @@
+{
+  "schema": "CP12_P3_EXISTING_TEMPORARY_CAPSULE_RECOVERY_V1",
+  "verified_at_utc": "2026-10-29T14:16:32.578817+00:00",
+  "passed": true,
+  "library_file_id": "libfile_d40e171a875c8191a50c880c9b4125ce",
+  "file_id": "file_000000007ac481f59fea1a56d1d8a9b3",
+  "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000112_TRANSITO_INTENTO02_20261028.zip",
+  "bytes": 229880902,
+  "sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
+  "transport_state_sha256": "bc129cff71c7558cd0298873fdc816da14e01fdcb4728235b33666a1ecfcf3ac",
+  "observer_clock": 11.2,
+  "closed_frontier": 8,
+  "payload_files": 293,
+  "independent_recovery_after_session_loss": true,
+  "library_identity_metadata_applied": true,
+  "exact_manifest_coverage": true,
+  "all_payload_hashes_verified_before_and_after": true,
+  "source_archive_unchanged": true,
+  "original_zero_step_audit_tests": {
+    "boundary8": 30,
+    "transport112": 14
+  },
+  "audit_receipt_sha256": "b7aaba1a069387fff9f2fd6981e2b42ad7d4ad46c2c0c4ae97964103a2975c02",
+  "M2_steps_executed": 0,
+  "DOP853_construction_or_step_attempts": 0,
+  "scientific_frontier": false,
+  "correction_validated": false,
+  "CP12_closed": false,
+  "github_final_copy_pending": true,
+  "provenance": "Fresh download of the already saved capsule; no physical replay and no new Library upload."
+}

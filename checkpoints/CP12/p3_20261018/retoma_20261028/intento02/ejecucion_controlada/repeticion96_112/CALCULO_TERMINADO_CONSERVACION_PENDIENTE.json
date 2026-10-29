@@ -1,0 +1,52 @@
+{
+  "schema": "CP12_P3_ADDITIONAL_BOUNDED_REPLAY_TRANSIT_V1",
+  "started_at_utc": "2026-10-29T01:54:36.082700+00:00",
+  "from_observer_clock": 9.6,
+  "to_observer_clock": 11.2,
+  "internal_solver_bound": 16,
+  "source_transport_sha256": "1bf0a52cf3cfd357e07d54fc519591558181508fdbb718242d369411a082e4e2",
+  "capacity_acceptance_sha256": "2cca732d601e35ae14537ba68c9d4676a160d137d07990c6d5c0a3cdd5f80292",
+  "exact_restore_without_construction_or_steps": true,
+  "passed": false,
+  "correction_validated": false,
+  "CP12_closed": false,
+  "scientific_frontier": false,
+  "physical_start_observed": true,
+  "observer_clock": 11.2,
+  "transport_state_sha256": "bc129cff71c7558cd0298873fdc816da14e01fdcb4728235b33666a1ecfcf3ac",
+  "physical_streams": [
+    {
+      "t": 11.205183926229115,
+      "accepted": 2078,
+      "nfev": 18266,
+      "nfev_live": 7178,
+      "maxe": 6.24522655812143e-11,
+      "maxq": 1.1102230246251565e-15,
+      "maxe_original": 3.4873062215723394e-09
+    },
+    {
+      "t": 11.205178976893324,
+      "accepted": 2078,
+      "nfev": 18266,
+      "nfev_live": 7178,
+      "maxe": 6.234057714493701e-11,
+      "maxq": 4.440892098500626e-16,
+      "maxe_original": 8.379739124819707e-10
+    }
+  ],
+  "physical_accepted_steps_executed": [
+    297,
+    297
+  ],
+  "physical_RHS_evaluations_executed": [
+    3576,
+    3576
+  ],
+  "closed_frontier_unchanged": true,
+  "permanent_preservation_pending": true,
+  "next_physical_interval_executed": false,
+  "physical_interval_completed": true,
+  "github_publication_pending": true,
+  "further_physics_authorized": false,
+  "additional_replay_exception_consumed": true
+}

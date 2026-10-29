@@ -1,0 +1,45 @@
+{
+  "schema": "CP12_P3_ATTEMPT02_COMPARABLE_METADATA_CHECK_V1",
+  "checked_at_utc": "2026-10-29T14:16:32.578817+00:00",
+  "reference": "checkpoints/CP12/p3_20261018/retoma_20261028/repeticion96_112/RESULTADO.json",
+  "reference_commit": "08816ee0303ac3003fe9f5dff9c11bae604f4ec4",
+  "compared_fields": [
+    "t",
+    "accepted",
+    "nfev",
+    "nfev_live",
+    "maxe",
+    "maxq",
+    "maxe_original"
+  ],
+  "per_grid_matches": [
+    {
+      "t": true,
+      "accepted": true,
+      "nfev": true,
+      "nfev_live": true,
+      "maxe": true,
+      "maxq": true,
+      "maxe_original": true
+    },
+    {
+      "t": true,
+      "accepted": true,
+      "nfev": true,
+      "nfev_live": true,
+      "maxe": true,
+      "maxq": true,
+      "maxe_original": true
+    }
+  ],
+  "physical_accepted_steps_equal": true,
+  "physical_RHS_evaluations_equal": true,
+  "current_transport_sha256": "bc129cff71c7558cd0298873fdc816da14e01fdcb4728235b33666a1ecfcf3ac",
+  "reference_transport_sha256": "1143fc5a44401fbea426ab16ef23fe94059715bf1a80df1e3cb113d9507bbabf",
+  "old_binary_bytes_available": false,
+  "binary_identity_proven": false,
+  "scope": "Exact equality only of listed scalar metadata and counters; old binary identity is not established.",
+  "scientific_frontier": false,
+  "CP12_closed": false,
+  "all_compared_metadata_equal": true
+}
