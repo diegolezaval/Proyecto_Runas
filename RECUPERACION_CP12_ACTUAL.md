@@ -1,6 +1,6 @@
 # CP12: recuperación vigente
 
-**Preparada una única ejecución adicional τ9,6→τ11,2.** La conservación completa y la restauración exacta ya pasaron; la [asignación exclusiva](checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/ASIGNACION_EXCLUSIVA.json) se registra antes de comenzar M2. La autorización adicional existente todavía no se presenta como evolución ejecutada.
+**En ejecución: tramo adicional τ9,6→τ11,2.** La conservación completa y la restauración exacta pasaron antes de comenzar. La [reserva exclusiva](checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/ASIGNACION_EXCLUSIVA.json) quedó registrada y el [comienzo físico](checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/INICIO_FISICO_OBSERVADO.json) ya acredita pasos nuevos en ambas mallas. **La autorización adicional está consumida: no iniciar otra repetición desde τ9,6.**
 
 | Referencia | Estado comprobado |
 | --- | --- |
@@ -14,7 +14,7 @@
 
 ## Por dónde continuar
 
-Consulta el [prerregistro del lanzador nuevo](checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/PRERREGISTRO.md), la [aceptación combinada](checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/ACEPTACION_CAPACIDAD_COMBINADA.json) y la [auditoría sin pasos](checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/PUERTAS_SIN_PASOS.json). El registro canónico indicará el comienzo físico observado; una reserva o un latido no son certificados de reinicio.
+Consulta el [prerregistro del lanzador nuevo](checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/PRERREGISTRO.md), la [aceptación combinada](checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/ACEPTACION_CAPACIDAD_COMBINADA.json) y la [auditoría sin pasos](checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/PUERTAS_SIN_PASOS.json). El registro canónico conserva el comienzo físico observado; una reserva o un latido no son certificados de reinicio.
 
 El proceso de cálculo debe guardar y recuperar su cápsula temporal antes de declarar el tramo completado. Después se exige la copia íntegra en [GitHub Releases](https://github.com/diegolezaval/Proyecto_Runas/releases/tag/respaldo-cp12-p3-20261027), su descarga y auditoría antes de más física. El permiso de ejecución es de un solo uso y no se reconstruye desde su huella pública.
 

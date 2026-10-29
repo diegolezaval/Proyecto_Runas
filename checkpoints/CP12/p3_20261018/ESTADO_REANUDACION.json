@@ -1,9 +1,9 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-10-29T01:53:14.104Z",
+  "updated_at": "2026-10-29T01:57:01.811Z",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "e5c03d684b0e16dc2884662b17f3c16b489397e6",
-  "own_attempt_home": null,
+  "last_public_commit": "6e40ea86a468032eaa805b9719e087b8f419f06e",
+  "own_attempt_home": "/workspace/scratch/699b1bd1764f/recuperacion_actual/home_ejecucion_intento02",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
   "accepted_scientific_checkpoint": "CP11",
@@ -214,9 +214,20 @@
     "correction_validated": false,
     "CP12_closed": false
   },
-  "current_own_worker_status": "ADDITIONAL_REPLAY_EXCLUSIVE_ALLOCATION_RESERVED_GATES_PASSED_NOT_YET_OBSERVED_RUNNING",
-  "own_observed_start": null,
-  "own_guardian_tool_session_id": null,
+  "current_own_worker_status": "OWN_ADDITIONAL_BOUNDED_REPLAY96_TO112_RUNNING",
+  "own_observed_start": {
+    "at": "2026-10-29T01:54:39.628500+00:00",
+    "scope": "Own registered worker only",
+    "tool_session_id": 34638,
+    "source_observer_clock": 9.6,
+    "first_observed_observer_clock": 9.61,
+    "accepted_steps_since_restore": [
+      1,
+      1
+    ],
+    "scientific_frontier_inferred": false
+  },
+  "own_guardian_tool_session_id": 34638,
   "own_exit_observed": {
     "returncode": 0,
     "at": "2026-10-28T07:17:37.391241+00:00",
@@ -238,7 +249,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
   "current_helper_directory": null,
-  "next_recovery": "An exclusive one-use allocation is now reserved in Git for the already authorized additional9.6→11.2 replay. Observe this live allocation and its worker; never create another allocation or reconstruct the private execution permission merely because the workspace or session is missing. Physical consumption must be established by observed accepted steps/RHS counters. The registered worker stops at11.2, performs native temporary saving and independent audits, then requires final GitHub publication and recovery before more physics. Search later intact P3 transports before any recovery decision.",
+  "next_recovery": "The already authorized additional9.6→11.2 exception has now been physically consumed: positive accepted steps were observed in both grids. Observe worker34638 and its output; never launch another replay from9.6 or recreate its private one-use permission. On any interruption first search native temporary files and the latest intact GitHub/Library transport. At11.2 the registered worker must save, independently recover and audit its capsule natively; final GitHub publication and recovery are required before any more physics. CP12 remains open; no new scientific frontier is inferred from activity.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-9,
@@ -619,7 +630,7 @@
   "continuation_blocked_by_permanent_preservation": true,
   "storage_error": "library_storage_limit_exceeded",
   "no_evidence_deleted": false,
-  "local_recovery_home": "/workspace/scratch/699b1bd1764f/intento02_20261028/home_operativo_canonico",
+  "local_recovery_home": "/workspace/scratch/699b1bd1764f/recuperacion_actual/home_ejecucion_intento02",
   "local_disappearance_incident": {
     "schema": "CP12_P3_LOCAL_WORKSPACE_DISAPPEARANCE_AFTER_LIBRARY_QUOTA_FAILURE",
     "observed_after_commit": "5cb247226b37739d38dc64a02836ce6fc8f35c5c",
@@ -705,8 +716,8 @@
       "preregistration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/PRERREGISTRO.md",
       "attempt_id": "intento02_20261028",
       "additional_replay_authorized": true,
-      "scientific_worker_started": false,
-      "allocation_consumed": false,
+      "scientific_worker_started": true,
+      "allocation_consumed": true,
       "direct_publication_authenticated": false,
       "live_direct_publication_capacity_test_passed": false,
       "original_archive_recovered_and_audited_again": true,
@@ -715,7 +726,7 @@
       "local_connection_observation": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/CONEXION_LOCAL.json",
       "remote_dispatch_check_preregistration": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/infraestructura/README.md",
       "own_worker_running": false,
-      "additional_exception_consumed": false,
+      "additional_exception_consumed": true,
       "registered_audit_driver_sha256": "5ec8064cb2ef130b6796a296940a564d5c290e6f1000c4ca3ba2b0705f76aae0",
       "canonical_audit_passed": true,
       "canonical_audit_tests": {
@@ -783,7 +794,9 @@
       "allocation_reserved": true,
       "zero_step_runner_gate_audit": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/PUERTAS_SIN_PASOS.json",
       "zero_step_runner_gate_audit_passed": true,
-      "exclusive_allocation": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/ASIGNACION_EXCLUSIVA.json"
+      "exclusive_allocation": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/ASIGNACION_EXCLUSIVA.json",
+      "observed_physical_start": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/INICIO_FISICO_OBSERVADO.json",
+      "own_tool_session_id": 34638
     }
   }
 }
