@@ -34,4 +34,7 @@ La primera repetición perdió sus bytes antes de una publicación observada; su
 
 CP11 sigue aceptado. P2 conserva su negativo y no se reanuda. No se repiten CP10, CP12 original, F0…F5 ni P3 τ0→τ9,6; no se modificaron fuentes científicas ni puertas. La migración histórica 116/308 continúa pendiente.
 
-[Registro canónico](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json) · [Expediente histórico](checkpoints/CP12/p3_20261018/retoma_20261028/README.md) · [Guía del proyecto](GUIA_DEL_PROYECTO.md).
+[Registro canónico](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json) · [Expediente histórico](checkpoints/CP12/p3_20261018/retoma_20261028/README.md) · [Guía del proyecto](https://github.com/diegolezaval/Proyecto_Runas/blob/main/GUIA_DEL_PROYECTO.md).
+
+Para una visión del programa completo y el relevo entre chats: [panorama global y prioridades](informes/PANORAMA_GLOBAL_Y_PRIORIDADES_20261029.md) · [prompt de continuación](CONTINUAR_EN_CHAT_NUEVO.md). Son documentos de orientación; los protocolos y registros científicos mantienen su autoridad.
+

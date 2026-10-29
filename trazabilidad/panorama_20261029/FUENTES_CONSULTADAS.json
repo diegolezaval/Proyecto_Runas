@@ -1,0 +1,2569 @@
+{
+  "review": {
+    "schema": "RUNICA_GLOBAL_REVIEW_READ_ONLY_V1",
+    "main_commit": "90e8fcffbba65629a1628f435d3c3240832fe9c4",
+    "p3_commit": "9f7baa9cb80d8dcb0878110306d4fac25e1ad2fd",
+    "read_text_files": 317,
+    "read_text_bytes": 3240024,
+    "all_read_text_git_blobs_match": true,
+    "git_blob_mismatch_count": 0,
+    "python_files_parsed": 80,
+    "python_syntax_errors": 0,
+    "stage_statuses_equal_across_main_and_p3": true,
+    "stage_counts": {
+      "COMPLETADA": 3,
+      "PARCIAL": 6,
+      "BLOQUEADA": 24
+    },
+    "p3_root_manifest_files": 1384,
+    "p3_extra_git_paths_outside_root_manifest": 1167,
+    "p3_root_manifest_available_text_comparisons": 42,
+    "p3_root_manifest_available_text_mismatches": [
+      "datos/registro_calculos.json",
+      "estado_progreso.json",
+      "herramientas/generar_continuidad.py"
+    ],
+    "scientific_evolution_executed": false,
+    "scientific_sources_modified": false,
+    "full_numerical_rerun_performed": false,
+    "scope": "Tree inventories, exact text identity, static code and cross-document state comparison. Not mathematical certification of all historical proofs or full-tree byte revalidation."
+  },
+  "files": [
+    {
+      "branch_scope": "main",
+      "path": "ARQUITECTURA.md",
+      "bytes": 13735,
+      "git_blob_sha1": "b90f05d94003ee879ecafc2fd184569ba3180dbe",
+      "sha256": "89a961acd7a9d99531e892c8914b94905b26dbf0e1b3c2fdb7afc273131a9788",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "DIRECTRICES_DESARROLLO.md",
+      "bytes": 3968,
+      "git_blob_sha1": "1166282cf1699e5d0548e17229daa809c0286cf2",
+      "sha256": "5436fd736ea34e002cf2387220b388954d77f9759fc38025b2dbcd5595d82352",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "DIRECTRICES_EJECUCION.txt",
+      "bytes": 11216,
+      "git_blob_sha1": "58b994a08147727fc9a51d76385516c047066bdc",
+      "sha256": "d431c201527462603b1dc334dd48b43517b4939ad9a87b2bd4f700b51add996c",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "ENMIENDAS_HOJA_RUTA.md",
+      "bytes": 4544,
+      "git_blob_sha1": "b3910c76782cf5cb26fec048be20f38ab7f2fabe",
+      "sha256": "83fbbb02119a4845f03ebce0e2a9dfbfe4cd088d437f5a60fc5d8c94a8d26047",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "ESTADO_ACTUAL.md",
+      "bytes": 7645,
+      "git_blob_sha1": "9b9e265fddbbcbd0778fd6884c83eeff83d2f7ea",
+      "sha256": "b7714ee3435eee50f5ea0f0bacec173d6ef29fb54363a263c49ce1ebe7b582d3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "GUIA_DEL_PROYECTO.md",
+      "bytes": 9329,
+      "git_blob_sha1": "370ee075b78a5a44bff429e00d6e8b4942828833",
+      "sha256": "f6fadf74f13ee7d47960a53afaf888547993e275d496eeb354a6310d84fc7de4",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "LEEME.md",
+      "bytes": 10067,
+      "git_blob_sha1": "8d2128e17456b5bbac561e5497bb254efb3df601",
+      "sha256": "b2f491cdf2508d7ccd11f73187a7d7b4fee32c066fd25471f22065efa40d3257",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "M2_RESULTADO.md",
+      "bytes": 8835,
+      "git_blob_sha1": "9970b77dd1eab68414dda32d57627f1911585b6d",
+      "sha256": "462b0c145a741c6002996e951de2e29dfe7a271a87841d3306b67762c0740725",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "MIGRACION_GITHUB.md",
+      "bytes": 5641,
+      "git_blob_sha1": "0ab19d2a7b4e1567fd94c195b29f97930577b74a",
+      "sha256": "866e3b7355c146c6edb26ebfdc92a68dbead3bacb016a12c46b8dea26e89824e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "VERSIONES.json",
+      "bytes": 193,
+      "git_blob_sha1": "1a7be9a2f334c8a002f56e3bfda92e0cd3aff882",
+      "sha256": "ddc8c6f5bd86c54dabb85567e929d8d925782db2b2c8d61b80a407734dac8763",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/P04_C7_simetria_CP05.json",
+      "bytes": 9993,
+      "git_blob_sha1": "99f8adb85fa298827ff0846e87a7f007a4a5752b",
+      "sha256": "c6d83729720667bf45d11b91870a91464371d27cc4b9b837b6d7cd170327a15a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/P04_busqueda.json",
+      "bytes": 98429,
+      "git_blob_sha1": "954c140319bc14e439adc0f681e86fd821a6ad40",
+      "sha256": "86c6c014a407eaf5a225be4946362ed2e1afd40f832782ba10f6d370f167ef4f",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/aceptacion_m2.json",
+      "bytes": 26054,
+      "git_blob_sha1": "d1d05d149086dd66ab14b11fc16a3574f4e8149b",
+      "sha256": "3a10d2bde65d685ec847f011d702a43aa0cde451e44d07a5c1d4bccf7ed0cd25",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/arquitectura.json",
+      "bytes": 24949,
+      "git_blob_sha1": "6025e44dd93968f8c7a578e0faba47ac354f14ec",
+      "sha256": "bd6ee71bb74c89c0f4440c48a7b666a81929d96faad09d8a5a0678e8454ea298",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/campana_4_2.json",
+      "bytes": 2385,
+      "git_blob_sha1": "668ab0f7d3a7d01c6dfaba7b42551ecffae18ccf",
+      "sha256": "7e3d389a28353c26d62a6869eb4e6b4ca8aee83d3b5ffb2d253fe5cead0151e5",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/convenciones.json",
+      "bytes": 1268,
+      "git_blob_sha1": "9b40c10538952c47106007ae50a4ee2b36297250",
+      "sha256": "26589c0ad257e20634950655bc7abd1ada31415e5c88df261766f39549ace074",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/correspondencia.json",
+      "bytes": 15960,
+      "git_blob_sha1": "895ad0a65af79ac5364acd119e65ea56a75def7d",
+      "sha256": "a2b5bc8cbdc23754afd6f369c503f87405facb284eda522310d6e86ecc793d39",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/dominios_validez.json",
+      "bytes": 108559,
+      "git_blob_sha1": "d03f4e267a027838f0dd8214152b478b14296282",
+      "sha256": "e9ea0367da2eecc373146fb6abda3c5c43e24067fd7eb0a8c6028ce9c38fd081",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/ensayo_acceso_lineal_CP07.json",
+      "bytes": 2103,
+      "git_blob_sha1": "08ee4226c9dcee55f63bcc2e548f4163027e15c5",
+      "sha256": "4398daad4b0f784272215e5b72a7bb69858bfae054bfef96b99493b647fc84ad",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/ensayo_capilaridad.json",
+      "bytes": 1351,
+      "git_blob_sha1": "07eaa5a91abdb74d52b9492a4f823f5df55ea6b2",
+      "sha256": "e06dcb317a716965c32dc1cfdce7d57cad28386a9dc3efe612f7a4a861c7a1d0",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/ensayo_diagnostico_chi_CP11.json",
+      "bytes": 7083,
+      "git_blob_sha1": "9d13b7760b4dd214efb61b829092b704ee4e804f",
+      "sha256": "89cce61dddead39a60ab918960b8d2e7c918109a14db2d7648b24d27accdd534",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/ensayo_mediador_CP10.json",
+      "bytes": 4443,
+      "git_blob_sha1": "c33928971d18db9410f2405dbc1ffcf4693764bb",
+      "sha256": "3c6a9aeace4091dd39598c52e357996f5bbef7bae9d92a532fce3540ddf0f209",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/ensayo_no_radial_CP06.json",
+      "bytes": 7068,
+      "git_blob_sha1": "2246e80d77ebfb217375b8cfbcf5ec27e037e444",
+      "sha256": "3b620c0dd039e4fe1e54b50fa324a900717e7400e44707b58d2d2b0882dccb55",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/ensayo_preparacion_4_2.json",
+      "bytes": 1240,
+      "git_blob_sha1": "83c1a941053d3cbe006e197b013da644e0bb4b40",
+      "sha256": "c0795bb80effa178e3966c62c4e5a9b5efef81a940fce41b5fbb567821989dbf",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/ensayo_respuesta_forzada_CP11.json",
+      "bytes": 5428,
+      "git_blob_sha1": "ea4bc81b19444f658bf0971465cf289ac8d96f8b",
+      "sha256": "d75909f25c466ab645181988c678f8d834f100184d1b5a0f59f64eb5d284e733",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/ensayo_respuesta_forzada_precisa_CP11.json",
+      "bytes": 5928,
+      "git_blob_sha1": "fffbe55d6d0122d74b4b2489cb4e60b8e347d37a",
+      "sha256": "19e0d7f8c5fe6b8d742402ff9f309af4cfa1666dd9eecba9bddead20e3e492e0",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/estado_evidencia.json",
+      "bytes": 18179,
+      "git_blob_sha1": "a274bc6b2697a597c32dc89fc54c49e324e694cd",
+      "sha256": "9de6d37466c4071c2f3eca51afc0bc9d801055eb763685d5aee1cb92d9c6ed68",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/geometria.json",
+      "bytes": 48809,
+      "git_blob_sha1": "16eb561745d363b055ea23c6db1df1cc8d001045",
+      "sha256": "fb6559033b3005c45d4c058d0913bf682d4c5661002c17190dbd6d16a091b7f2",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/interfaces.json",
+      "bytes": 1511,
+      "git_blob_sha1": "24e0445b02b5d231e8520d29a493f25441c018d7",
+      "sha256": "b5e2ad5b07b7e229ec362ae047667ae0de8222f36b4459970db8e9793029f235",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/linaje_afirmaciones.json",
+      "bytes": 11286,
+      "git_blob_sha1": "2538ce0d5a820ca8892fd3ca403786c361519a99",
+      "sha256": "8625a0e55876d392cbae76c8ab899d9de59467f889b652684de18af53dcbfc65",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/microscopia.json",
+      "bytes": 3030,
+      "git_blob_sha1": "c665367aaa46881797883f618e4ac0dffcbe05d7",
+      "sha256": "0e90a1b628e620df84af417cb34a913cca5c498ad83b94eba3c4fc31569a8d4b",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/modelos.json",
+      "bytes": 41246,
+      "git_blob_sha1": "e13c7bc5c1c390e6143d5e50991e580abc8e4d1c",
+      "sha256": "3ee430ff56778469fa35808914f67bd14e1b6763f30aa6da360cce2aeb41a812",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/modulos.json",
+      "bytes": 70423,
+      "git_blob_sha1": "b3209e60b77b878a0cea6809c47e6921af429719",
+      "sha256": "bd0b3ceccc04b40d331b51a5770b54e1d405a824d6d82952600cdf6b365091d7",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/parametros.json",
+      "bytes": 18053,
+      "git_blob_sha1": "c75e83b45b0020a68cfbb720e8e6deba3497e2a3",
+      "sha256": "718b39d2f3fefdd1c772bd80b13ab392b25b449a4d980bb9549e0bd7c8b2268e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/procedencia.json",
+      "bytes": 2368,
+      "git_blob_sha1": "d30c3eb0682e788f632e485bcf543bbbbc48e6fd",
+      "sha256": "e059ef0a1e4d39faa21cb4170f0d3f43fe10de924bcb1cbd2eb97e4350f7f004",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/recetas.json",
+      "bytes": 12858,
+      "git_blob_sha1": "7f41cfabe0e537704e2aa79f7606d61250c0789f",
+      "sha256": "8fa04e08c763b79366bf6616cb542509731a0081cc4dc14ce37289a4c01dcf84",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/registro_calculos.json",
+      "bytes": 12169,
+      "git_blob_sha1": "9eaa34193c46314674d59d8ecf81cfa6fc86b786",
+      "sha256": "2966c42d0ac8fc2eb34971e62a46edfd55a92c7e5f6b2242a4c24d30d777164d",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/revision.json",
+      "bytes": 12503,
+      "git_blob_sha1": "40fa2ce0fb65859440f6201e56b6564a896f71ca",
+      "sha256": "e5b71d4aafdd073c270daeb71e9803999c11ff72838e438ccb4b1a56915354fb",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/theta_comun.json",
+      "bytes": 2562,
+      "git_blob_sha1": "18006648a246d485ea2dd696544af2c08c19e50d",
+      "sha256": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "datos/verificacion_diagnostico_CP11.json",
+      "bytes": 132986,
+      "git_blob_sha1": "98a3938b7102c4ef52197cbdcbd2e3d93b45571c",
+      "sha256": "108cdfd05d68badcbc645916db80e013a62e405f77b836c4044e80e11046f1f4",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "estado_progreso.json",
+      "bytes": 48835,
+      "git_blob_sha1": "bd8ec6f66fb91e8f4a866c3156ee5df0c26271ad",
+      "sha256": "ec3e48abb8f4132593e880d1151a51e326b3d7173003f7e100a3de1a1b9162b4",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-01.md",
+      "bytes": 7672,
+      "git_blob_sha1": "005509d3360f5b5a6c8bf92c1f0bc2be20055d80",
+      "sha256": "04bb2f8e953ec4fd295e2dded16879e9c72fd16b223262e1f3b0fa69a0f2a513",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-02.md",
+      "bytes": 6076,
+      "git_blob_sha1": "04037359d393951bbe8c936b6544165774a25c84",
+      "sha256": "8e088af3fdb991243042beb14e48f377138f017cbd99551630f29f0dd6c3308d",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-03.md",
+      "bytes": 5731,
+      "git_blob_sha1": "582671b262a954a4ec5a19175fac33d86561218a",
+      "sha256": "63812ea00ca79573dad4d95aa8959b016f87c8d598ebf3e5424894a71a75ef53",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-04.md",
+      "bytes": 5628,
+      "git_blob_sha1": "3c4e0ee1b8de5287605e74fd2dea469af86eda88",
+      "sha256": "495b510320492ce8cd5b4b36b5fcb8ba13c65fb9878997de77662cecd0462a67",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-05.md",
+      "bytes": 5806,
+      "git_blob_sha1": "032b341c4f5d4647ddd986a407e71fea5b219c83",
+      "sha256": "d1319c1af94b61ef2a403a0d9a5ee9e23616e81c4df865dbca93cb198d56daaa",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-06.md",
+      "bytes": 5805,
+      "git_blob_sha1": "61a84572a98e77d931bc31c1867b5c44c18216f1",
+      "sha256": "f5e3551230c8c118acbebb6e3e94549d4b99217bc1812418054df895e5a32a0e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-07.md",
+      "bytes": 5344,
+      "git_blob_sha1": "1740c60fa6270fd05d29a79becf7692f488e642e",
+      "sha256": "40df202944e76b11a22f42172739631c49a2ab3828048296d7ef86c875a2d61d",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-08.md",
+      "bytes": 5203,
+      "git_blob_sha1": "98966f083bc37f177e10dda3885ebe8e601f67f2",
+      "sha256": "6face33cd79ecc9f46f1f5e190699b6be01eb79d39b649d42f9c5cdede420df8",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-09.md",
+      "bytes": 5664,
+      "git_blob_sha1": "6f4638b97dbe050af48e298847e66fdefcfeea08",
+      "sha256": "d20d69ea4fb683042779309c778f1688f2abdf21ab5e95e158bd00054270985e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-10.md",
+      "bytes": 5976,
+      "git_blob_sha1": "4f222c1fe5bdd1ab7d081abfbee1204c56354555",
+      "sha256": "d80becaad34a0b843128b4d13ad7f8c853bbbdbc281ffde3546d6a9938a93496",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-11.md",
+      "bytes": 5761,
+      "git_blob_sha1": "8140a789f4732feef8ec11b5977510ddbc535cf6",
+      "sha256": "863eefd5ca73914c347ad0d7c319d0b44a50b4dbae988d20ffc5efa562e97049",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-12.md",
+      "bytes": 5291,
+      "git_blob_sha1": "b9796f35b78c635dce153b34d9e476868fa455e4",
+      "sha256": "f51e8b5ca878f648837686d731e6f458cfe853de4e2f182678773f26efab03e0",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-13.md",
+      "bytes": 5251,
+      "git_blob_sha1": "c2e5cfc65a6aa503a63e165581d1f80fb59d4fbc",
+      "sha256": "80a3f68c373f8246fb20e7f94d16399371ac837061b541eb25dcb0af3f3fcfb2",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-14.md",
+      "bytes": 5155,
+      "git_blob_sha1": "efb9c6b0b75b9c5ec0d4e2c085f90661a0f987b6",
+      "sha256": "5d5762918f14e3c50e54f7b93772d4c58ee62f50e51c473d391ff03ce1d94b78",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-15.md",
+      "bytes": 5479,
+      "git_blob_sha1": "c7604624fc1eb9ec82592b0ce4bdd154f86f360e",
+      "sha256": "a216c6c2914d98b3e210b6ed38d330b5b8a4a21c21c79b701ba84cc6e95a0ce0",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-16.md",
+      "bytes": 5897,
+      "git_blob_sha1": "695aae82638cfeecdeb122e2a988877149414ae8",
+      "sha256": "2e624a007843de248b6e8c65291ca5f77fd6a93f73a5edf405b8ea411191db7d",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-17.md",
+      "bytes": 5905,
+      "git_blob_sha1": "52d9595fbb68692a19319148fb4c89ccf0459e68",
+      "sha256": "e48a2c1f3ff019d9ae3c22a8fd5a6c1a9a043bccdf2a3d56531e5feb44e643bf",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-18.md",
+      "bytes": 5864,
+      "git_blob_sha1": "4b72125d55c6b52379cae294a6eef4ef6cc0e92f",
+      "sha256": "7f20784be11bc08b6d2ed33939a46d2bc8ac6ab686fde43b74c02eaed7c75b0d",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-19.md",
+      "bytes": 5273,
+      "git_blob_sha1": "6145ab22a2edff089dc7717065cf0d6afe86308e",
+      "sha256": "3fdcba811293bc14725c9ef2a0f77417c1651b4891b9785d9d0aa16fdcf60a02",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-20.md",
+      "bytes": 6313,
+      "git_blob_sha1": "0c4b46ac8bc1ba18a57a703c7cca5d09f59faf7c",
+      "sha256": "756ec6a998c28e5cf280421051c424e014cbb4a897af1a27017eb7cbf8d752c9",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-21.md",
+      "bytes": 5560,
+      "git_blob_sha1": "da731e2897325a6cbe56062c88662e5e1e06fe83",
+      "sha256": "089af0ccb1a58d6cd279444bbae7170d18b2039298e08e5ce157219a7036f6ae",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-22.md",
+      "bytes": 5805,
+      "git_blob_sha1": "7ec5411336bb77b719e5afdcd52efddb6a4a7e93",
+      "sha256": "97be210f5008c236c39d315ca49c81f0b68be61f0774951a07a1b8e02e398beb",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-23.md",
+      "bytes": 6195,
+      "git_blob_sha1": "a0d61b6090f1eff89951564c32486dd54b79c896",
+      "sha256": "7363fdcb78be0e574e9242c8c4fd7d3dd728ccb2ff86f92f89dcb12e49affc35",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "fichas/P-24.md",
+      "bytes": 6354,
+      "git_blob_sha1": "84938d45ed2f4624dacdf49c730a4b81aac86589",
+      "sha256": "d26139bba0ec8dbfbda24601725a736ea5480fddff38f2e2f6c97bc63185a670",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/P04_exclusiones.py",
+      "bytes": 2385,
+      "git_blob_sha1": "4d1c58289151f7e627740b6aaa2af136d7ff7cec",
+      "sha256": "5172040f4bba3303eeb9cbec9964128fefb13dc677d5de2da4b23aec14cf94cd",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/acelerar_fuerza_m2.py",
+      "bytes": 2571,
+      "git_blob_sha1": "0b95485f6b2a6ef3d890b82822bb77ef16fb2f3a",
+      "sha256": "2d12e2636d4e5a37ef36f03412bbfce5b0d3de292fadc17168f27b0632f0f406",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/auditar_acceso_lineal_m2.py",
+      "bytes": 2464,
+      "git_blob_sha1": "e11dbff83a13e438bd99f915a8219fe8d63e1b9e",
+      "sha256": "a42bde2a320f844bd6ea410418d0dc7a8632068655c829bed2377dbaf7492de8",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/auditar_arquitectura.py",
+      "bytes": 11256,
+      "git_blob_sha1": "1bd5c0b966abebc79ca0f40a5e9c6aa899d4daac",
+      "sha256": "5f6a350c39cfc85bc7eb5fe54889d6da1a5c29a4445b1c77b701e36103ce5510",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/auditar_fase_estacionaria_m2.py",
+      "bytes": 1548,
+      "git_blob_sha1": "681b2ff6cba35b0643bf216c48c0b4b6438bc498",
+      "sha256": "d07681c0cbfa7a8d134f8955eb968b2ac2a40395882e53ca9b87bbb263b5db0f",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/auditar_positividad_angular_m2.py",
+      "bytes": 2609,
+      "git_blob_sha1": "44bf45caedaf9a2e684c7fd78e19f98bdbcd461f",
+      "sha256": "43c5cb99497bbaece139be04421b57c4b128fba912a44c1e7f2c1bbd6dc9736c",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/auditar_simetria_C7.py",
+      "bytes": 1877,
+      "git_blob_sha1": "06b41eac0ed8e0230ef2ed8baeac65d068ea88f9",
+      "sha256": "5036271bb400d215459625728f41d86d0dfd45df67770e58584c77d2146ca2f7",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/campana_rama_reserva.py",
+      "bytes": 7601,
+      "git_blob_sha1": "d76fbd37e79ae521de0f6bd08d00f4034866178b",
+      "sha256": "26d248252b8b4b091b59f675f1ce905ac319cb3ed049507b0f90e8c5f1cb65cd",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/campana_validez.py",
+      "bytes": 8316,
+      "git_blob_sha1": "739609f802173eb0a408790100d560701e1c0130",
+      "sha256": "2f742e9add5972e0fa6e5b4fc34a5ffb258dd8d29b9230e5dc3c737f6e3ffb36",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/capilaridad_m2.py",
+      "bytes": 14041,
+      "git_blob_sha1": "e9f7d9403d0eb430cd9d9f3fa97d4144f5537e16",
+      "sha256": "b982d3a3c4878396d729a396d8a3008cb3fcd90e71d9771beba60a1360e21dd3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/captura_radial_m2.py",
+      "bytes": 9482,
+      "git_blob_sha1": "f126e0c065e1fd00fd6b08c96a3bdfd203d82f44",
+      "sha256": "4c35a8d36d9403781e7bc73b687771dce753442399682747adf44c8cab70ea61",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/catalogo_aceptacion_m2.py",
+      "bytes": 9573,
+      "git_blob_sha1": "1645b2f9bde0b66c492b76d4a59179d7c162e5dd",
+      "sha256": "fc17373ee4c80eab269d544615a30da01df342c4d9e85677c68cd69a19b0dd9b",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/checkpoint.py",
+      "bytes": 8398,
+      "git_blob_sha1": "5034f5d3c42770a38ed6a124c22ee7b64cc7429d",
+      "sha256": "d7afd24579717eb80f926fea5b6fe31a51d0fd02e25d298434573ffcc5e8904e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/cierre_m2.py",
+      "bytes": 8759,
+      "git_blob_sha1": "51f7e7740c9fc4e403aca5cb334eb83e7a9db43d",
+      "sha256": "fa36c80f4437ff6d86a54693f84e46e87bbd535e3b3b3afaa9270c2ab0aed973",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/comparar_mediador_CP10.py",
+      "bytes": 7988,
+      "git_blob_sha1": "0f22a245962b7b99a2b594f9e3364a8415c2c16b",
+      "sha256": "dd1ad09c3b8e27c22ef671e77fda9d2d148367bd1a6f1d6e7c29200bbe1d2625",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/complecion_escalar.py",
+      "bytes": 3440,
+      "git_blob_sha1": "cf2bf51fa08aac5154e363b69b82e2fb33a305f1",
+      "sha256": "8ace142b469632dbcb7c9cf46436a63057cbecaff818ed886d2797e1ad2f8956",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/continuar_no_radial_adaptativo.py",
+      "bytes": 8470,
+      "git_blob_sha1": "f29d5318f09e3259a519be7a681ce27d6cb75459",
+      "sha256": "32d93a3bf742e736ca581a0ca23ac246aeb442f7fafb499a994ffe81294a96b1",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/continuar_no_radial_m2.py",
+      "bytes": 16790,
+      "git_blob_sha1": "b20f86fe8a1de538a5ff3bb1859b4641a54567bf",
+      "sha256": "d4a7f8ad89a4bc321931926d8de161348e9223a0bd21336e0b13edfdbbe3493c",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/contrastes_r1.py",
+      "bytes": 5773,
+      "git_blob_sha1": "781472e290d486e02f2f32c307c7d21be6c62af2",
+      "sha256": "1ed1fa2badcf80176da590eec1cb3c7df37d3399c2ee2f080e42979198b8a762",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/correspondencia_micro.py",
+      "bytes": 14243,
+      "git_blob_sha1": "47ae763ac7d706f04e78029f774995afd921efcd",
+      "sha256": "d2a0da03084e5abcb848838d7eceb90f305a4a69188d700f672586fc2f844515",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/diagnosticar_chi_CP11.py",
+      "bytes": 24544,
+      "git_blob_sha1": "a0a4cb6dfb760d21fff057e9270a1d1532045bbc",
+      "sha256": "60bc4c209d15fbb12e280c2f55a526347c2b7484c5c8bd6f09ef010f872dd2db",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/diagnosticar_convergencia_CP08.py",
+      "bytes": 3117,
+      "git_blob_sha1": "e88062ad62e20daf2e8f78a926ce062cadebad4b",
+      "sha256": "23440fa37a90dbbcf808cac6b002cde35ed5dc8e701a5259b4978734fafcce79",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/diagnosticar_mediador_CP10.py",
+      "bytes": 7229,
+      "git_blob_sha1": "8d18bd9be1d7370a4889fe5d0fa0c8d9d888beed",
+      "sha256": "41f0b56b797f9caca7601577d8db7f846d1d452e77a80940de6092be6a8fea64",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/diagnostico_preparacion_m2.py",
+      "bytes": 6048,
+      "git_blob_sha1": "9b139b9239372bb5de9e4c94d30f92a9b4516f10",
+      "sha256": "f8d63e8ebbdd96512125894398d273c50fb60d91956996c5e10e95517bec8f99",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/dinamica_m2.py",
+      "bytes": 3113,
+      "git_blob_sha1": "af98f6fc95ac096ce76315c6133adf40fad2892a",
+      "sha256": "00a01ac97846c66c028e65c7a07414880310104901e19fe44f4e1cc98c301779",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/dispersion_reserva_m2.py",
+      "bytes": 7992,
+      "git_blob_sha1": "d8ad8a01d9f849b7248f276653ad08e35e7b1418",
+      "sha256": "43ec3bfd0144829215043dad0a5527916e3b8ffa7bb9cb50e4cc55d92c270413",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/ejecutar_con_procedencia.py",
+      "bytes": 10679,
+      "git_blob_sha1": "f231fa304922b76d7a3f1b01d9c7e30d4345be79",
+      "sha256": "5e54113e063e262db60b28a185c0047232904ce328c9d13ac610e5b67235f15e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/ejecutar_protocolo.py",
+      "bytes": 7154,
+      "git_blob_sha1": "962da8d753f31ffe34b35346ec24688d4866ed2f",
+      "sha256": "a9f0f632a0f2829ff9557ffb19ed0b4378faba20244bb571b65f7de24aead3d2",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/empaquetar.py",
+      "bytes": 303,
+      "git_blob_sha1": "7f4abbb5fa76b580c421a15dc09c461abf0df095",
+      "sha256": "2ce8d9fa05a9bd6ab752971abb6eab411f0207b4e8fe0d91d982e3d7a6625392",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/ensayo_microscopico.py",
+      "bytes": 2892,
+      "git_blob_sha1": "54d20b43241833e9c93505bb01c2ecef9a64f3b6",
+      "sha256": "ddd47c2f1c8b1985cb75763006c55ac5e7bbbb546aec432e8288db5378e91886",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/evolucion_mediador_CP10.py",
+      "bytes": 2276,
+      "git_blob_sha1": "25578bd7edefbbb1b0dc3ba80d9ab93673e558f8",
+      "sha256": "2b99b98b4d32919a799d5417ea24c6ca897d7c64eb13cc59b6bc6b3c57226583",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/exceso_energia_preparacion.py",
+      "bytes": 4253,
+      "git_blob_sha1": "aef3125e647a202f1c43a972324b89ed2498dd52",
+      "sha256": "a30aa476a79e9266f5bb96ac3d38d5b07146ccfcb3229417ff787654e24c3ca1",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/figuras_campana_4_2.py",
+      "bytes": 2796,
+      "git_blob_sha1": "2ddfde3927ea47c34cc8e0423fc6e3a7ff1a3c13",
+      "sha256": "90348d227950eb4ed78418af4bc688776f350f7693c637a9618422f801145780",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/figuras_capilaridad.py",
+      "bytes": 2265,
+      "git_blob_sha1": "6889a15b9413d0ef9f4c5081ed6ed92f99029bfb",
+      "sha256": "d9358f1e3353569b267ea439681a040751e8cd6dedc2c73887440b54436b84e0",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/figuras_m2.py",
+      "bytes": 5188,
+      "git_blob_sha1": "9ed4ab7e1e83971d1561a02296a365e0d507da21",
+      "sha256": "de6751c3b57a900f65eb143f3c5dea119a6c80ed071322b047124f31e98f6a78",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/figuras_preparacion_m2.py",
+      "bytes": 2218,
+      "git_blob_sha1": "bc1eabb7a4da7c4bd5341bf94fc92cbf64592682",
+      "sha256": "6f784ee02ccba3a3332c1c8db2a539d623cda28cc40ce78748994068f12813d1",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/fuerza_potencial_m2.c",
+      "bytes": 726,
+      "git_blob_sha1": "734df4db1764ac45dd76faabc6831bd6cc3dc39e",
+      "sha256": "74dd2159ac951e701b3acce7f8365847874521769479c08dd8e4634c7e2e9de9",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/generar.py",
+      "bytes": 10923,
+      "git_blob_sha1": "7aaf092b63094108149f99766a26d13275e1f957",
+      "sha256": "414e837362e1cd3b7efcd66f9b716570732d8b6ccf4e770774c147abb9395dab",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/generar_continuidad.py",
+      "bytes": 15076,
+      "git_blob_sha1": "90828ddaa54753d5c314ebb212ace4d0ed1b64f1",
+      "sha256": "741458880dfc00926d455522af1ec6be2078951e12773b7916b2e75f0514c2b6",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/generar_resumen_CP10.py",
+      "bytes": 6689,
+      "git_blob_sha1": "ef28fd3440a4b7b6604bb4e29795f41c19dba06d",
+      "sha256": "620cb81415955b5381bc8cfba00f3afa7bd6fc8394347fe0ff1b8a4ee53ea6c9",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/generar_resumen_CP11.py",
+      "bytes": 9438,
+      "git_blob_sha1": "b70180d549734733c86787b2a8d611f4593079a4",
+      "sha256": "64e01f11df7080f362bf740bcc645511c4b02bb80721f00718e78355719adcf6",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/geometria.py",
+      "bytes": 2295,
+      "git_blob_sha1": "136d8d36058dc0c27a0fcaaef1e3d27b5ed9eaff",
+      "sha256": "4ef3e0e80adeb46916aacfa27eddc04eeb86052c146145264fc1a073fecb294c",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/graficos_micro.py",
+      "bytes": 3198,
+      "git_blob_sha1": "f8f5036f709c16e010cb7579d5d114f5790b3e27",
+      "sha256": "392725a0f055778c6541bc81256d67fc14390aeb9a957eeb4d95c8b97d40f018",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/guia_m2.py",
+      "bytes": 7452,
+      "git_blob_sha1": "122f0adb60687c032294306c4552eb30aeb24b2a",
+      "sha256": "80144b59011d2751841ae178c0a56bf4f14588d78dd0abeafd8435ec74191782",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/identidades_m2.py",
+      "bytes": 3980,
+      "git_blob_sha1": "389388c931a84c30f38d7246c4e2e19362154631",
+      "sha256": "1ab0c285151929843c90d402038291b9dc40666a4f80b7822667887703100334",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/m2_comun.py",
+      "bytes": 2912,
+      "git_blob_sha1": "3069bce674f2c916d000ad55268ea91849042561",
+      "sha256": "076d6c5b637366af0b912195f2cb3a17e4440f279b11df8b876a3427da11826f",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/modelo_m2.py",
+      "bytes": 3817,
+      "git_blob_sha1": "4dc8ddb9f733c91e7eb4b4194563d66d177a1f38",
+      "sha256": "87562e977135cc5092ef3567b5980f58e726187e4df5c418de4660291702374f",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/preparacion_y_motor.py",
+      "bytes": 4092,
+      "git_blob_sha1": "0d9e6885cad298de97dcf39f8d62de2b496e5911",
+      "sha256": "a23d34b26afd0f0a15c024a3d572e235645122ddb3aebbb5c32f1d520e4e15d5",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/probar_procedencia_futura.py",
+      "bytes": 7502,
+      "git_blob_sha1": "fed0ab339ccbaf8ae3a6707bf958aad7cbf4dc8c",
+      "sha256": "b18c810a690882c72d95149399ccefa9db2ae866db9ad91c4623d36df5ebadc2",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/probar_recibo_externo_CP11.py",
+      "bytes": 3231,
+      "git_blob_sha1": "6a31ca0463e810c417c3dea91a8ad5c7c1265744",
+      "sha256": "7a01ab7b222ed286b0a89a2de783ce9734c5f54d55544baa423947fea53538bc",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/prolongar_captura_radial.py",
+      "bytes": 2895,
+      "git_blob_sha1": "45ba15e1556ec23260c753efe69bfb43c6d60283",
+      "sha256": "f738f01cfce5ceb1d41bde2f6306d08703e453b3a07847412c038bc87f0e6656",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/puerta_acceso_lineal_m2.py",
+      "bytes": 2824,
+      "git_blob_sha1": "5a305a2e6bccf6b0291cff568ba5c04a10c96f76",
+      "sha256": "bed621b3ff5c6d0fd7b9da22e4951ddb7387533921ec52f34e2c72fe43f81ed2",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/regresion_estructural.py",
+      "bytes": 12569,
+      "git_blob_sha1": "499587b3ec6ef3e81efdf470aec00a1acf241269",
+      "sha256": "7c596d3c835f0eb06b6fa93b34aa777e0a6cafbc5c0c9f9bdbfbf8b169e91590",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/reproduccion_independiente.py",
+      "bytes": 11140,
+      "git_blob_sha1": "2dcdc386aadced4879c729907a990995789832f3",
+      "sha256": "1fdd8f0d85a0e90bac9cd3e3e9da4d0412492a68797531c20dcecad959e244db",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/reproducir.py",
+      "bytes": 2259,
+      "git_blob_sha1": "7a15672d796bdca51e43ba1028525d3748616e6c",
+      "sha256": "a0c9fa19edd5a360dbfad4290f742d020088e85bdf73c9d849c65687a587f04e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/respuesta_forzada_chi_CP11.py",
+      "bytes": 7370,
+      "git_blob_sha1": "69afebab29f2a3dc3301de4d0d03fa0c1c8dcced",
+      "sha256": "bcef48fcd54220ea31b11aa463bb991e40d6c2672e8454df88e0b11302f98b6f",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/respuesta_forzada_chi_CP11_precisa.py",
+      "bytes": 9155,
+      "git_blob_sha1": "232f1ce0e307c33994e02db7d291f76a173ee80d",
+      "sha256": "995a632de07a0a0bd2f1def241f02d5c49abcb3112beb903d7017bf8eea63760",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/resultados_micro.py",
+      "bytes": 4875,
+      "git_blob_sha1": "602a77bd123a354a8015735eda4eb291df9a337f",
+      "sha256": "78ed9c578e9c91c5e28af385b6e1d7fefad7868e7126dda871a044239a7dfb63",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/rutas_documentales.py",
+      "bytes": 1807,
+      "git_blob_sha1": "f07559b72d135c26a91d21a2da0af677283a4281",
+      "sha256": "11e641a2cafb29698766a48eaa6bf3f7ee1f8e20f9a6c91a5bd4c99f8c456eb8",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/soluciones_m2.py",
+      "bytes": 1984,
+      "git_blob_sha1": "023a4069c37e083b79719a429d1c6aa2da29d843",
+      "sha256": "2e163ef9970875436bd746af3219ad20692a4d56124bb1013c59269a8e244e69",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/verificar.py",
+      "bytes": 13501,
+      "git_blob_sha1": "379401309a888561c225244af1d657c13848740b",
+      "sha256": "0620a1f9f1074cc402235d307ab2eb1d35876801c35472a01fdf3d59c229836d",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/verificar_CP10.py",
+      "bytes": 9258,
+      "git_blob_sha1": "a9236c100997e32458f9a859df6d10f059860f82",
+      "sha256": "0eb09a58143e4ef4c7d622400e1347212eebaf78bedc0dc9011134064d88eeb3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/verificar_CP11.py",
+      "bytes": 9636,
+      "git_blob_sha1": "c4e925b0d928ea3f86021dbb1ba3ecb05f9c37a9",
+      "sha256": "21b9748a70ba01ff05f53dbd26c657d370a5e5d5e22bf07f491c3d237b9fd137",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/verificar_campana_4_2.py",
+      "bytes": 4280,
+      "git_blob_sha1": "5bb38588bb55f5d01de0b50df36199bb10b596ca",
+      "sha256": "9a25ad76134bed52d6108afbac92d1fff63633982dea9ad68231a7a2b1a99f22",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/verificar_capilaridad.py",
+      "bytes": 8459,
+      "git_blob_sha1": "905fd24abccf97156da6cbadf5b899556312b8d8",
+      "sha256": "1358a1549674eaa22eb4f9991eaca381f720c3e810761c9c087038407e097abd",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/verificar_continuidad.py",
+      "bytes": 2882,
+      "git_blob_sha1": "783c6fa43b0234cade3556d203539afc43a6237e",
+      "sha256": "850c0d58c46c11383df39621d29eb2f8318d3d429a064febd53776bbbf47b282",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/verificar_dispersion_colocacion.py",
+      "bytes": 4452,
+      "git_blob_sha1": "b9f861dc76e4509e28cdfc2d6ad88ec9f2d1b266",
+      "sha256": "f34c1b75681cdfec8c22b394b874e370b7aea571b82cb155377d34cab5c773f3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/verificar_entorno.py",
+      "bytes": 2325,
+      "git_blob_sha1": "d652327b7894a85ac8ef3d1b552e3e18280818ba",
+      "sha256": "464871ad799965bb04342082d350527a8c84611060ee2243d623dcf7ab608d8a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/verificar_m2.py",
+      "bytes": 6690,
+      "git_blob_sha1": "55e4187ed4864f1386c54cb40ae48f0519f16dfe",
+      "sha256": "f01fa9ce3ceca448d12beaf82a344d665d0806a1060e12aa91775dbfe6d5d132",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/verificar_no_radial_m2.py",
+      "bytes": 8396,
+      "git_blob_sha1": "242e56c9c6895bd39cdbccfdf9f444979b7bdebc",
+      "sha256": "35b0776e25d32c575d54264e54f972c1259ef51110100ff92e015dc87594f1c0",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/verificar_preparacion_git.py",
+      "bytes": 3792,
+      "git_blob_sha1": "a5582c1bf2db87f47fa8b09c7ddb9307d3192ddf",
+      "sha256": "48b2efcbe7e59649e3dd2195528b571fe0a7c3f769ccb1cd76286a74fba485c3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "herramientas/verificar_preparacion_m2.py",
+      "bytes": 2866,
+      "git_blob_sha1": "ef7de213fef2b90bbe5165948063867f308a373e",
+      "sha256": "0e953ec4071490b036c76ea83a78d7b39fffe9813651b12649a4c9576a79d0eb",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "hoja_ruta_original/Guia_tecnica.md",
+      "bytes": 125161,
+      "git_blob_sha1": "14b3e2d84efe4d7d4640683a038b75cd7f27bdf3",
+      "sha256": "1deb112f12a0a37fc48f653aeafb81ab3b3626c585ef5b34666554df327fbaab",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "hoja_ruta_original/Plan_investigacion.json",
+      "bytes": 92299,
+      "git_blob_sha1": "5ea34e34e5af0eabcf6c9816a1ed4bddbeae1021",
+      "sha256": "af9f87bfacf60431d6e74bfdb11cbb259bc1d2a8f56c5984f02206b3b281f742",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/AUDITORIA_ARQUITECTURA_CP09.md",
+      "bytes": 46073,
+      "git_blob_sha1": "4b5caa9ab26dbb1231eab952c044207961ba38f0",
+      "sha256": "190c16d5ff89cb09e3d5c4132b5031dc2bac62bf14381e1960ec3d4298d885bf",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/ENMIENDA_CP11_PRECISION_DEFECTO.md",
+      "bytes": 1779,
+      "git_blob_sha1": "03a818b55aad9dd306d806e3b088072e59ffad56",
+      "sha256": "e4579bf7267f0a391c54ce54f48ed8614cf06496dce850cf4a5a7992ab886b9f",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/ENTREGA_01_E00.md",
+      "bytes": 3194,
+      "git_blob_sha1": "8568d7b64f4341fbab79f2d1337e3088165c1457",
+      "sha256": "ff993c28b40475c530eef148aa37ec3f2c5daee5e20ad1f7d6b0be8e575ff2a3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/ENTREGA_02_E01.md",
+      "bytes": 2757,
+      "git_blob_sha1": "7b32753ea18d0974ab341dfa76d9b99a389583e8",
+      "sha256": "2a2bb227c49a7a834028d1048ba34f9ff5be5ee3c4f38e7d3a9777903bb03116",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/ENTREGA_03_C0_E02_E03_RES0.md",
+      "bytes": 3928,
+      "git_blob_sha1": "9259143a1d58c3ee0c9523f36c0ca648828650c5",
+      "sha256": "10e7f97dff07bacbc858acde2aa6c58581646f99926c0033462477cb1626cade",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/ENTREGA_04_PREPARACION_PARCIAL.md",
+      "bytes": 3226,
+      "git_blob_sha1": "164c8cbf99de7a21f131bbb018a9e099e12b593c",
+      "sha256": "1e6e9e430e0a85a51f478fc1b49d08df1a69d360bad229756b7ae268c9f29755",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/ENTREGA_05_SIMETRIA_C7.md",
+      "bytes": 1733,
+      "git_blob_sha1": "9b232c9bc3e96ed66300cdc2c28a42c853571746",
+      "sha256": "950768ccc4c8dc51b1b9ce6799ccbd41bda60ea322938b86de7da9ed36d64069",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/ENTREGA_06_NO_RADIAL_PARCIAL.md",
+      "bytes": 3249,
+      "git_blob_sha1": "ea7791bbcbe69ae5fb6064e3992668f1bdfe681f",
+      "sha256": "2c3923cd282bc4f52d1dee293ba84a722ec1d50f6a29317abbc853eb11b8e908",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/ENTREGA_07_ACCESO_LINEAL_PARCIAL.md",
+      "bytes": 5387,
+      "git_blob_sha1": "b8f0fbf0a5a4ecf8ff45fa11b9f12be65f0a39bb",
+      "sha256": "24f310177c07baee7fedec651458865bf9f19b60735d38cf8b0da6ee952b3ec3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/ENTREGA_08_REFINAMIENTO_NO_RADIAL.md",
+      "bytes": 6287,
+      "git_blob_sha1": "51e1ea88877aa176009f0f21194e4d7a06277ffa",
+      "sha256": "db3980f81de201dd8946e08e0197682a112ab617ce48e890ea718e873fd6c27a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/ENTREGA_10_MEDIADOR_ESPACIOTEMPORAL.md",
+      "bytes": 11914,
+      "git_blob_sha1": "47e0fd3bdd23b79c6ba699dc73a4bc881e719bea",
+      "sha256": "53b137b6a7539b9187656f23adea6e8932666b873548d5d0795c5a0da77e502e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/ENTREGA_11_DIAGNOSTICO_RADIAL_CHI.md",
+      "bytes": 5143,
+      "git_blob_sha1": "57599f1284aef820c9c5fcfc9a1e24518416b0a3",
+      "sha256": "ccea83857fb381c548a1f8ef206211121ae679f3fe45b7bb427f52373ec62b8d",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/PROTOCOLO_CP10_MEDIADOR.md",
+      "bytes": 3006,
+      "git_blob_sha1": "55a95f9460189ebe710e2eef4feed022326bf0eb",
+      "sha256": "bfa570763493af2ada7f9e15aa87708d886d8f499e0fb147fc8d901b5fef6996",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/PROTOCOLO_CP11_DIAGNOSTICO_CHI.md",
+      "bytes": 6362,
+      "git_blob_sha1": "791dc6ba9d8c64c6d00f8e4b02343bec5868c095",
+      "sha256": "9d45913d12119068943a69dd0cee5f606302d718d92f41256fe083f34e1faf8e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/PROTOCOLO_CP11_RESPUESTA_FORZADA.md",
+      "bytes": 2864,
+      "git_blob_sha1": "40e6acdec0880e5baf07cf561e34c0a174c3c594",
+      "sha256": "a46059231992ea5d93c5dc16cd7ef8b52959d3abcd58e20a72c60352cc042697",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/RESUMEN_NUMERICO_CP10.md",
+      "bytes": 5352,
+      "git_blob_sha1": "f1e79f8543de7f00b15d17679fa9c97f3362a42a",
+      "sha256": "a25b99edaf36e4dc15385e615db4a693ccf236947fb2149f8f8731f05f3cdc6e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "informes/RESUMEN_NUMERICO_CP11.md",
+      "bytes": 6270,
+      "git_blob_sha1": "1cda5a307b3e4cd21f770e3813189ad1fe385117",
+      "sha256": "b36e6c9573a37aac0a7508dc47299524afa8c28388572d3def081175c025aa8c",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "requirements.txt",
+      "bytes": 67,
+      "git_blob_sha1": "d9810ecca3de5754420b8836ad37ac21897d6e68",
+      "sha256": "fad71a2b9faf97517c831491763eae84515621926627f2bff976d01c3cf4521d",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/01_tratado.md",
+      "bytes": 79256,
+      "git_blob_sha1": "8de2f2f6451cf3b2a93249ecefef20c3cbeb9f32",
+      "sha256": "dddab5101c4a93beaea57acc1f55c6aa46cc8ae812c7894b4c55363e4cf1a356",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/02_micro_derivaciones.md",
+      "bytes": 10208,
+      "git_blob_sha1": "087fd4f12b4da8aabc9a086de70f78d6e2ac1a05",
+      "sha256": "6bdeb759cfdce01acb352957c6cc4ffe2b8b2adc2de8f132cb0c065b3fdef548",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/03_especificacion_operacional.md",
+      "bytes": 16557,
+      "git_blob_sha1": "a05972fb76adf84e43d68270d141a83faa4bc1bd",
+      "sha256": "ab3f4d3395e2c2f6d4cf5cb64eca2be6e6db120e10cbf24022d1b37e6c863651",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/04_procedimientos_y_casos.md",
+      "bytes": 12690,
+      "git_blob_sha1": "1c80b341e1222a72611276109ac296ab48621acd",
+      "sha256": "2579d9a048aa3fd327b8127048ff83b51e0362455d0fb5a25eac1e1a04613898",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/05_parametros.md",
+      "bytes": 10954,
+      "git_blob_sha1": "931b259b24b3a8f3d45a4fe1d7f69f4ab0124b83",
+      "sha256": "ddd4aa24f44c0fe058bed1f1ebc37c172c8599c3698749e22337ab2a2c58b139",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/06_revision.md",
+      "bytes": 7920,
+      "git_blob_sha1": "7e62c6b371563161a7632e4d14902adb65c9aa50",
+      "sha256": "74bdd81387a5151e121730c387527c4e85266d8634df423882e7ffd208bc0325",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/07_resultados.md",
+      "bytes": 11738,
+      "git_blob_sha1": "a58ec58eb6d89363c14501656080120706405571",
+      "sha256": "09f9477614d730edb9bcd4c31a87d45f16acbf9d5ffb58d0b492afb3ab70b3c5",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/08_puente_microscopico.md",
+      "bytes": 26630,
+      "git_blob_sha1": "94ddaf2d69d7ae80fc9d4a62a76dca0e6efbeec7",
+      "sha256": "a90f24ab2b0395703833da97cdae22486d5193283f783b3eb7be9a0bb0e6dcf7",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/09_complecion_escalar_y_preparacion.md",
+      "bytes": 11835,
+      "git_blob_sha1": "fb607e73420fd179b11d3c358928b42b75d70491",
+      "sha256": "94fc8145f9882db94dd89c9f37f278737957a03227e9aefeb9f187298c854a14",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/10_correspondencia_24.md",
+      "bytes": 5500,
+      "git_blob_sha1": "ed5b282f89b75778479fe852b520f48fa6c3a222",
+      "sha256": "21a46be4593219de325e15a3607b48f81c203b348c8243e2202f320c3a6b0d3a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/11_resultados_micro.md",
+      "bytes": 9312,
+      "git_blob_sha1": "2a5e89b30120ceb9982af7b9e59b7c0031c70ed0",
+      "sha256": "d850cc5f479d47bfecc41007cdd9d04ebb7a63609147b5107ac84d402852689f",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/12_fuentes_y_limites.md",
+      "bytes": 5483,
+      "git_blob_sha1": "4624a7634412cde5dc31a52e7fb1d6f683f9b3c4",
+      "sha256": "e2e39eccf96cf92974834a4e127a7bd5d3706f587f95ffa47025cd166e10ed35",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/13_M2_comun_y_teoremas.md",
+      "bytes": 12493,
+      "git_blob_sha1": "dfb4efa30856a83e59fd97f952c6687dee8ea629",
+      "sha256": "5ca7e6aac9bb46e3f6e6e7f82bcabf3da2e844e89cb79fc63457040303b54349",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/14_espectro_y_dinamica_M2.md",
+      "bytes": 10703,
+      "git_blob_sha1": "ddcc9771f844115ed727657c30f9718dca457ef2",
+      "sha256": "54afb160e163b0aed1d26afe386969321d934670749bda5737d37f026345ca40",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/15_regimenes_y_coeficientes.md",
+      "bytes": 10757,
+      "git_blob_sha1": "8b3a2ef534f69e88e9638c81a475da311cade696",
+      "sha256": "66a3f5bc520e4f4cde5211339e47d884c85350d6b76ae5226fbfb55420ca6190",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/16_pruebas_de_dispositivo.md",
+      "bytes": 14302,
+      "git_blob_sha1": "7d5a0738601df2fcf4006f5058584127f4969a25",
+      "sha256": "68d257a6605d0becda89416852b745c6f617bea8d281be7cb829e90f569a4b3e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/17_aceptacion_catalogo.md",
+      "bytes": 8000,
+      "git_blob_sha1": "831d70eb106948b7194658f30a9eb730263443c7",
+      "sha256": "f8835d835b08e00bd1229e79b7a2ac28b1d809ed5bd6ebdc4ee2eff5da957c6b",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/18_guia_y_terminal_desde_M2.md",
+      "bytes": 12892,
+      "git_blob_sha1": "f9828df4c51bd6c10044706e5eb2c42a9c50591a",
+      "sha256": "d1ccf6bd6d3b668b5b88a3c83e47d4bc7132a5a1e24c3f89c8aa4974121a0a71",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/19_resultados_edicion4.md",
+      "bytes": 1945,
+      "git_blob_sha1": "614619d713a056c3458dae598c6c96deaaaf6448",
+      "sha256": "4eaed0e4ea2d17f75f1242886fae979f3cafe1f7dd09128a7e2d3edb69015be8",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/20_interfaz_y_limite_capilar.md",
+      "bytes": 13782,
+      "git_blob_sha1": "dac48385705028532077367540d09040d7306b9c",
+      "sha256": "ee791dd664f0ae5f26aa1e04ded1b09b8e17b507938808fe17d62f71b248cc93",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/21_corriente_clasificacion_y_cierre.md",
+      "bytes": 9269,
+      "git_blob_sha1": "3b20757b50e0089e036a300200c66b234dd6d545",
+      "sha256": "b399a1ddc221088249f62bae867c2102d213db244566182535e67ba26884ed15",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/22_evidencia_y_metodologia.md",
+      "bytes": 8049,
+      "git_blob_sha1": "587bb25eee4c9a19d0339cb4391e0325699b85f6",
+      "sha256": "c9b122c7211347e34a27513750fd2f03bd3ce12e842292c91a7462ea08abb2e8",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/23_convenciones_y_espacio_fundamental.md",
+      "bytes": 5498,
+      "git_blob_sha1": "70c80d8f9bf21840d262a0b229c18a6d8dbf6273",
+      "sha256": "b634d3f57f8f386bfeb2997aff028204841d35661105d3b167cad4c090496613",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/24_exclusiones_tubulares_y_busqueda.md",
+      "bytes": 9815,
+      "git_blob_sha1": "436707930bc6e18db78d76384a62b68fe2ba414f",
+      "sha256": "c039b7a67c4d7ac4e64b429eef4a732968c1b3b217b26253e816b02582b3412a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/25_carta_validez_y_rama_reserva.md",
+      "bytes": 8923,
+      "git_blob_sha1": "cd8a6dc70285e3e03de15382b24175b300954c4b",
+      "sha256": "555a15ab8722e10b6f4ce34b9bfbdbc60e8df78076b1259eb62e473a5c2db164",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/26_preparacion_radial_condicionada.md",
+      "bytes": 7557,
+      "git_blob_sha1": "1eda5478b500f639482ec752831484ee4cd0fbbb",
+      "sha256": "7430027b6ab2621baff7831ffd72d2832a6ce4ee2cd1a72db28bb64533e2cf86",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md",
+      "bytes": 8262,
+      "git_blob_sha1": "5f992ca1750b5f0d84e7e90ce9240cf4427bd7c0",
+      "sha256": "88dd66051548023653e95cd2360507f31e2746b8537cb74cfaab692b07607368",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/28_estabilidad_no_radial_condicionada.md",
+      "bytes": 12222,
+      "git_blob_sha1": "a9fb30b91e1186c648d43eae6d7083cb02bfb126",
+      "sha256": "e68c3e6831426f746faee6606439ad809b5bc378553a29f25b24629149667d6c",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/29_acceso_lineal_a_reserva.md",
+      "bytes": 8680,
+      "git_blob_sha1": "8435e97096ce291a91c3e9f1d455a2820238cf93",
+      "sha256": "ad32cac0954f25368fca655bbfd3c1f6adb4d91c0ff399ee5309ff0e21cf3f3e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/30_fase_estacionaria_sin_nodos.md",
+      "bytes": 5770,
+      "git_blob_sha1": "65f205722d1ff6543ac6662f1695cfcfbdfa3a6e",
+      "sha256": "99eba88604268a462593c35c81998413f18a94a795ad95e673a4ef3947557e6e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "main",
+      "path": "tratado/31_diagnostico_radial_del_mediador.md",
+      "bytes": 5392,
+      "git_blob_sha1": "2dfed462c4fb4726895e2ad870901f4485c38b92",
+      "sha256": "b60e8b8e0b360afca1234ecd3d690838d432604832217809ca63314d2a3b2b5a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "MANIFIESTO_SHA256.json",
+      "bytes": 222078,
+      "git_blob_sha1": "3a67efb828ad564126f1dba6bcd3164366df9176",
+      "sha256": "2f9f44f96efcfe6bb527e4c111a00dfe2a931cbd8b1cb7eec367dddd2c97abe4",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/CERTIFICADO_F0_F5.json",
+      "bytes": 1792,
+      "git_blob_sha1": "43806a83dc0d84076d43bbe424979c42645ca049",
+      "sha256": "d3301fdfb8b1a6c2319d1bca0158c084507d94b45c3e1face53715f78914d20f",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/CONFIGURACION_INSTANCIA.json",
+      "bytes": 2116,
+      "git_blob_sha1": "2ea9de466e0768189cc30b93123551bdb4c6207b",
+      "sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/CONSERVACION_F0_F5.json",
+      "bytes": 557,
+      "git_blob_sha1": "1359003764299d7ed8cb01f496a76dddde08e513",
+      "sha256": "1e0759940ed14c3f5c075c315592f4a2568291053f8a481665dd75cad8d7868a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/DERIVACION.md",
+      "bytes": 4968,
+      "git_blob_sha1": "e3ad89f1851d68b69b2759c4adbf0d5b44fb00aa",
+      "sha256": "a6890b2fb5a72c7ac4f6dcf041bc352aef9c0507800c5ba353eb708111e9562b",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/DISPERSION_Y_ALCANCE.md",
+      "bytes": 2408,
+      "git_blob_sha1": "eebab578033ad89ff1cfcb950fb683071e060aa3",
+      "sha256": "3f202389480d47a32eee9384885bf69288dda4926d2453e0f580fa1d8a75362b",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/EJECUCION_CONTROLES.md",
+      "bytes": 1643,
+      "git_blob_sha1": "2bc16d2b1d806463ead00bffd1bc8b0f71929a46",
+      "sha256": "c16420da97a06f0730a6af25927d0b2df9e540d3f7562c61a033d69b285deafd",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/ENMIENDA_F5.json",
+      "bytes": 472,
+      "git_blob_sha1": "6071983caebba46b9839bc3296a5ebfa322b8208",
+      "sha256": "a88fa4955194434cb4b23a98af840bf35ece8373a742ed2240e81f67772e841a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
+      "bytes": 48457,
+      "git_blob_sha1": "af063ef9b53f2144ea27866a88e886d6788a3ed3",
+      "sha256": "400a14e11a60396280c3eb7939ed988c1f3d7bf3c85b01422db9a2a498a37842",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/INCIDENTE_ADMINISTRATIVO_TAU0.json",
+      "bytes": 1443,
+      "git_blob_sha1": "761198b54342b4b454c3e920272d0b58fd8c1235",
+      "sha256": "cea4a1b3e0e97916e8b62789eb86b784899e1fe23cb270df2d5461c323a159c1",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/INSTANCIA.json",
+      "bytes": 9289,
+      "git_blob_sha1": "f4719d38ec783f155b4843124d342d786a33522a",
+      "sha256": "7d848318ae4f993aca83ab369d1b472d254a37684e8079a58d039c3bdb816720",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/PRERREGISTRO_CONTROLES.md",
+      "bytes": 5251,
+      "git_blob_sha1": "4de70c1ea5436fb05a54911f45076c9c8d3f7b3d",
+      "sha256": "03920cf7c7ecdc467f13cf374f407d50b63665e004bed03af423b623a7a6df4d",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/PRERREGISTRO_F5.md",
+      "bytes": 1403,
+      "git_blob_sha1": "81df936b24a9007b6715a74947e1cbce2e6fe418",
+      "sha256": "fc3c2a08f2684b6b1831cfb07a7a38aca7ae4c55c2873e8ceea46006697e4be4",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/PRERREGISTRO_PILOTO.md",
+      "bytes": 5652,
+      "git_blob_sha1": "1bd40e5dd6a3549966b379f99ec28b87a7e0439a",
+      "sha256": "27f6b7a5d0c79d2c40b13bc24390e3629d0b31d5fcb4b146ee02424bc1695931",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/RAMA_EXPERIMENTAL.json",
+      "bytes": 603,
+      "git_blob_sha1": "430ed8911439ab345e18ee4e756f5967b1b52b6c",
+      "sha256": "75affc0fc0be8544ce6933b3045101d2bcdc99241398f29ea0cfec01cb00f2a7",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/RECUPERACION_INSTANCIA.json",
+      "bytes": 10945,
+      "git_blob_sha1": "7e52a4ae49ce3e90fbd091b73118ce9285629d36",
+      "sha256": "a86222fd01cc2f8df537a1ad9b640cf8581a9ada4c8ee43c84889213e629cd2a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/RECUPERACION_TAU0.md",
+      "bytes": 2193,
+      "git_blob_sha1": "236d40e3efcd84993ea1802d20ca898fbf20c694",
+      "sha256": "d58aa6e934464f8fc0b0bff9d6e22902c387ee3e072870b38d26b7a7d4ec61ea",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/REGISTRO_CODIGO.json",
+      "bytes": 1379,
+      "git_blob_sha1": "bb5258ff16e1ac5c86758560a18c827237074203",
+      "sha256": "402cea325da02023cfb883fa5dded4541c6e9ccd95b1219410bdd724ec0d2df2",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/REGISTRO_DISPERSION.json",
+      "bytes": 557,
+      "git_blob_sha1": "ec3beba4f334100b5e11c0044f35ebf9dc95fc41",
+      "sha256": "b5af91524ef257504b6480109bfbca14ceca12eb2aecbbb02bc459ef1c9af89c",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/REGULARIDAD_Y_ORDEN.md",
+      "bytes": 3530,
+      "git_blob_sha1": "7d7bb8ea250aefea7e5c394173c9c4c8c5f4c28d",
+      "sha256": "935267dda47e9364c99fdc6599f52c005a8453a503a827eba03a1d5167037921",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/check_group_velocity.py",
+      "bytes": 2064,
+      "git_blob_sha1": "60b8d8515b1af77e56d478ee160506a18acd8068",
+      "sha256": "c6408915abb27fcf7acb0becf4f45d51029c288fc34f7096ab48b95110d1e01e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/conservacion_git_20261020b/PRERREGISTRO.md",
+      "bytes": 3823,
+      "git_blob_sha1": "11231ba9b433e470f1fad5c26b893e86e08a2de3",
+      "sha256": "78679f8e4fd74e3ccbac77380cd3be3b73356c2a710ffc25132bb953ef14ce36",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/conservacion_git_20261022/ESTADO_VERIFICADO.md",
+      "bytes": 2846,
+      "git_blob_sha1": "bd53e729e6941f91dc371696d26586c05107b16d",
+      "sha256": "235771adb0cdd79e9b6f23c21cb235d6501bfec44616dcd0f549fdaa2764ae3d",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/conservacion_git_20261022/capacidad/ESTADO.json",
+      "bytes": 1251,
+      "git_blob_sha1": "98d55c02847caad0bd275e6f3ecce29a685e491c",
+      "sha256": "610fcf67663adc643531a91fe0f77c0084440e5bf17eb20a4a84ba7e91f8ecab",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/conservacion_git_20261022/capacidad/MANIFIESTO.json",
+      "bytes": 97602,
+      "git_blob_sha1": "084dd62630a64d3489bfe206bb15440fbf7fcbae",
+      "sha256": "6a29b77bd268d7328d68421a38638d24e97316b06d82afb4c19f571f4272e5b8",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/control_F0_structure.py",
+      "bytes": 5742,
+      "git_blob_sha1": "f46fb7b2709978f074be35aa4a023ce0106160d7",
+      "sha256": "6b65ce71b46828cfbaf53c741ef0f552b440ea2e4a0ee181aa30a8d69ffe3019",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/control_F1_action.py",
+      "bytes": 4800,
+      "git_blob_sha1": "b645c58f367295f836533c1b1caba3d528363793",
+      "sha256": "a1f92a4c368992f5c1d4a291529291af12e6efa5c91fe0f71fe3150e35e1b0b7",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/control_F2_defect.py",
+      "bytes": 5621,
+      "git_blob_sha1": "6929269fc5b513a4898cf2d5cbdd887ac63fbc10",
+      "sha256": "91bcd1534864b5475572cee43d1c7651d4bd79fb9155babdad2f5aa3bea42fd4",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/control_F3_matrix.py",
+      "bytes": 5604,
+      "git_blob_sha1": "0996fd685184708f96f07b1bc4a670af58dd3faa",
+      "sha256": "f32098b95ed9145da298ad6ca28e2fe9f4dd584101be597a88b37180aee5be73",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/control_F4_frozen.py",
+      "bytes": 6198,
+      "git_blob_sha1": "1cc422704b1b5fad677ed0a49aeb81c0ad4728c3",
+      "sha256": "bbc24521452b47d486db2afc23f9456cd31f590be4085f49508c6bfc560d65a4",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/control_F5_increment.py",
+      "bytes": 3032,
+      "git_blob_sha1": "7e2c00aa349d2885f8d1b5efd5b008a734928770",
+      "sha256": "1ecc35d770410e585c2b10d01a2502c3d6d1b6988e09682bc0a1c2acf7c9b3bf",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/controls_common.py",
+      "bytes": 4551,
+      "git_blob_sha1": "dae220bf9f4608710ee46ccae637e31cc5d8306a",
+      "sha256": "6b458a42c529fc68c3a4170af4b546b78c6ad166de074f7fd7a19916ab0c9c28",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/p3_backend.py",
+      "bytes": 6361,
+      "git_blob_sha1": "1ade7703c65199754d6e3fbd5b967a13ee7f81c7",
+      "sha256": "e98bbba57e37baeb64d004f061a7ae2fddf022219206b71a93dab7e68ad37459",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/recover_tau0.py",
+      "bytes": 6097,
+      "git_blob_sha1": "9d8320b855ed3c65ed041223f1e6253c40e5bb19",
+      "sha256": "40da32516b400cff0253d7a38bcc0218a20ccc27bc2d18d7bf6adfefeec415c1",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/PRERREGISTRO.md",
+      "bytes": 3560,
+      "git_blob_sha1": "b5c51c5275d4c3724864103e55c3176358d2a30f",
+      "sha256": "dd98e58c74883f544e3f9b7586f8ed778de334c0847d8e6209e144a7d8b229da",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/repeticion96_112/README.md",
+      "bytes": 4750,
+      "git_blob_sha1": "a801c481a045eb12bd77edc41dade16f4eac99b5",
+      "sha256": "cb6d0ef3f0676f848a8c017b8c2985fcca206acf4ca6ad088498c12eea04e633",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/repeticion96_112/github/ACEPTACION.json",
+      "bytes": 1283,
+      "git_blob_sha1": "301427aab18178e8400ad9ae97ea00f7383a1205",
+      "sha256": "c3bd252d3df6d89d85d97666a71216156595140bf81a9b39b7ed33af6ce7f0d7",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "datos/arquitectura.json",
+      "bytes": 26249,
+      "git_blob_sha1": "bbd7137f53466a1a52d20f79ffbc4122fc54302b",
+      "sha256": "bbf3d644e9d881efac7101b177521b79e3bc0a2785dbf2f5fed22f36b97492b0",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "datos/interpretacion_CP12.json",
+      "bytes": 2854,
+      "git_blob_sha1": "4da7fc821834de09c6f77a040742be374db2a945",
+      "sha256": "a557ef567c321c0af3fdbc34bb64c8dd0a03b87f0790dac8a531f155cc286035",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "datos/registro_calculos.json",
+      "bytes": 13187,
+      "git_blob_sha1": "373c355250c9d2e2ce2d36677f04e0bbf0ddbe4d",
+      "sha256": "68538f7f5511c900bdd2df8a0b64e8a070f939a139501b35d3a7a7a34ab0a8eb",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "estado_progreso.json",
+      "bytes": 115195,
+      "git_blob_sha1": "a90014c5c6fbaaa28266a454ef196ef38fbdf400",
+      "sha256": "5f4f9c686759d5c9d3384bec6bba6b056c4319a2a5b229291a1ffe3bdefa29c2",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "herramientas/ejecutar_con_procedencia.py",
+      "bytes": 11308,
+      "git_blob_sha1": "ca4abccdecadd7a275f7e88c42126b1ac9270339",
+      "sha256": "794b1f884c0d06dbe85c8812a3256342466687b3277d01762735980a1033feff",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "herramientas/generar_continuidad.py",
+      "bytes": 15244,
+      "git_blob_sha1": "cfd0308e52d97e2d2604885eb79aecb2dcdd63fb",
+      "sha256": "8c5d214ba983b9879f059d86ee427fb91730ffd68daf97c7184afc45f443f06b",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "herramientas/gestionar_respaldo_CP12.py",
+      "bytes": 18068,
+      "git_blob_sha1": "3113533ed4487f7e7fb5f456fd3db6e9f04e9ad3",
+      "sha256": "28af7f824341fb4d21113b422dc706257bedb919e89c795bc17aa2c15956feb0",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "herramientas/interpretar_presupuesto_CP12.py",
+      "bytes": 8217,
+      "git_blob_sha1": "6c7100679b05ab483f2ca5ed6dd84e2d123eaac5",
+      "sha256": "c0e09c0383f3b5c3764bba37de2dd30a3311945e62f32f09534d49e241385244",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "herramientas/observador_causal_CP12.py",
+      "bytes": 22083,
+      "git_blob_sha1": "f5811bcec886d99fecbc7721b2b6e51b679d7cf2",
+      "sha256": "b5fc749bd161dbc5c2f264631ff4927a47e6fde8a28056ed518bcc155a741ac6",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "herramientas/referencia_pasiva_CP12.c",
+      "bytes": 1814,
+      "git_blob_sha1": "b8bce86cdb1ac0a7968d2ad9cef071f7600f9ffb",
+      "sha256": "90c4387aeab789dd7608bfce1d4f68408b09cd98b1acf4eacde2dfbf8784b2b3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "herramientas/reproducir_par_CP12.py",
+      "bytes": 26167,
+      "git_blob_sha1": "c26fdb07e07d0573ff8a51e6986713103f279dc6",
+      "sha256": "e8ec83104d369feb8f274855d42d0b40d226c4ffaf371f462efbd8ed44953e06",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "herramientas/revisar_recuperacion_CP12.py",
+      "bytes": 5231,
+      "git_blob_sha1": "2065055758b7a0df58e1e14cbe6da015e83d5577",
+      "sha256": "9220fff0a4f23362d4e093f99feda5ccb4169181ec1aaeeadc0615a9ed5e699d",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "herramientas/rutas_documentales.py",
+      "bytes": 2352,
+      "git_blob_sha1": "514a96f2b75b9fb36225d395e5f5fc9bf1b844ec",
+      "sha256": "8c7eb80116db0d62199d27e0ba85f7b5468029313d67c32ee5cf0f9b16c38d02",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "herramientas/verificar_continuidad.py",
+      "bytes": 2873,
+      "git_blob_sha1": "075a32dbf50da14c814b79975ae5db6feb2a1655",
+      "sha256": "bc9597c43f62744c249507ff39a865352b51ff1df9b2a4d4914744a8ae0019f3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ACTIVIDAD_INCIERTA_CP12_20261011.md",
+      "bytes": 6544,
+      "git_blob_sha1": "68a84808de27912370561ccf7db2c5d70a0c4685",
+      "sha256": "3bbb1d00e1a0c0de67a4941a6516df68c5ddb3e95b7da07d331fa17e404fda08",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ACUERDO_ESPACIAL_PREFIJOS_MIXTOS_CP12_20261016.md",
+      "bytes": 2309,
+      "git_blob_sha1": "ab6ef012d85ed2652f9fd596e4078d4dbc2b1753",
+      "sha256": "3232f9ea52a56f85de7098e3360a197064ea5a6d226bf997c3bdb1c5a813732a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ANALISIS_ORIGEN_RADIAL_CP12.md",
+      "bytes": 2747,
+      "git_blob_sha1": "1dd4e39c7f84b59c7c738de2ffd6bc787091e878",
+      "sha256": "ed47923d9656fafd34eeb120b9665b6d83ad91d2f7d413dd2842bd72376cce4b",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/AUDITORIA_ARQUITECTURA_CP09.md",
+      "bytes": 46073,
+      "git_blob_sha1": "4b5caa9ab26dbb1231eab952c044207961ba38f0",
+      "sha256": "190c16d5ff89cb09e3d5c4132b5031dc2bac62bf14381e1960ec3d4298d885bf",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/COHERENCIA_CONTINUIDAD_CP12_20261015.md",
+      "bytes": 1577,
+      "git_blob_sha1": "953fbb582c7f24dad8e5ae1c570688b9b697ab05",
+      "sha256": "9e7270408b1e59844e05973a719604aab660298f1e51142801af0c35845f1946",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/COMPARACION_P3_ORIGINAL_P2_TAU8_20261019.md",
+      "bytes": 1318,
+      "git_blob_sha1": "674acd1b5bfa6760ad604807c31057760904eb2d",
+      "sha256": "c6e8a53785e94a5dbe7ae582f1ddca1f507cedf4bd1054dd7d73e2e83326ff4e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUACION_CP12_20261017.md",
+      "bytes": 6195,
+      "git_blob_sha1": "1e6e165096fd0957231b1bdcd2ebf28eee049e43",
+      "sha256": "6a58178383fecf56573bfb2f2ef9f5f408c883486704a51c5ce6749667a333e9",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUACION_CP12_20261018.md",
+      "bytes": 17017,
+      "git_blob_sha1": "add223b2c9244d08605f40eb1003619940c0387b",
+      "sha256": "29524bf8228b4a32d35be38d76b0f07699a2b152b8c4b972d91088987708116b",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUACION_MIXTA_TAU16_CP12_20261016.md",
+      "bytes": 4282,
+      "git_blob_sha1": "12e9e9b8d112ab5ba10a7a64bbf76eadaed0e60b",
+      "sha256": "7c45b6749b84b67ecc9368a671ee8992cc0249ae7f6795c83acc1e02dfcaf4f4",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUACION_MIXTA_TAU24_CP12_20261016.md",
+      "bytes": 3093,
+      "git_blob_sha1": "5e02b6f8dd2dad3e5cf9afe6c3702454e6a23fdb",
+      "sha256": "816bfd616573f50ffae0f0889beb7f6688c22fb8e51873866a2b1e2afff3c26c",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUACION_MIXTA_TAU32_CP12_20261016.md",
+      "bytes": 3008,
+      "git_blob_sha1": "a3ecad99c0116b6d0d5e41cd03ea014b00c68f9f",
+      "sha256": "3e8a2ecc9d9a0e75f2a728449a4e345589f40110818782b1660fddd79f9fa1ad",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUACION_MIXTA_TAU40_CP12_20261016.md",
+      "bytes": 2990,
+      "git_blob_sha1": "90c33198c97cfe81265d720067587c388436a2b1",
+      "sha256": "a2d558e461e12de645ef69634970a6fedaea17211369d88dc5890b78cc28b776",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUIDAD_CP12_TAU104_20261015.md",
+      "bytes": 1754,
+      "git_blob_sha1": "474dc09a3a786d7d412f782433cef9e0ef71befc",
+      "sha256": "1f0458792dcb90c4aec91f7996b8a81c1fc2302018ccccd94e4c36dee5694b5c",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUIDAD_CP12_TAU112_20261015.md",
+      "bytes": 1754,
+      "git_blob_sha1": "deeb1f33ebcea5c7c96dfc0e05bb74a432df5bdc",
+      "sha256": "835132df7093e59f6f25f766900e18e569e3f5378497eaeff3d4233a5aa715cc",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUIDAD_CP12_TAU120_20261015.md",
+      "bytes": 1756,
+      "git_blob_sha1": "738884734bf74b4f5d2ac85ff46238714e681609",
+      "sha256": "ebada3905ae583b5e2ff45d5985cd2114ad33c695d43a89669f9230d66787dab",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUIDAD_CP12_TAU128_20261015.md",
+      "bytes": 1754,
+      "git_blob_sha1": "ad2df1ed14df8cc353c1e20eca08fc40db868b10",
+      "sha256": "c5c7ee65616bfe61285998086856d1ae0151b6af3d87351a013236d248d534a2",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUIDAD_CP12_TAU136_20261015.md",
+      "bytes": 1754,
+      "git_blob_sha1": "b58bf74c7fe9c1383fdc05108c02523c23ee7b1f",
+      "sha256": "639ee47eb50730064390030bd8ca9418125d3f58a414ae3549cb00513314410a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUIDAD_CP12_TAU144_20261015.md",
+      "bytes": 1586,
+      "git_blob_sha1": "404fd61e1f448c5940fdcc54a0943bf3f0a4bee6",
+      "sha256": "20e4e2c306f2c61d1df8d6ccd0b31d7ebaaf0e39d6c03cf7488a3ab11764f8f6",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUIDAD_CP12_TAU152_20261015.md",
+      "bytes": 1586,
+      "git_blob_sha1": "7ec7a9ccd7ef044c558bcedda14148c797afe802",
+      "sha256": "7a5ea56b50b5a60e32b76f76c0580821cd3006ebe852ff4d916609061ddb58d3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTINUIDAD_CP12_TAU96_20261015.md",
+      "bytes": 2264,
+      "git_blob_sha1": "bb21c60a0770ab1f03d84c5750c1ede054e3ee78",
+      "sha256": "45b7c16a600af7a9551cd9fa5c7ccc4be318764c3a60722ae324a504fc356469",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTROLES_MIXTOS_FASE_A_CP12_20261015.md",
+      "bytes": 2978,
+      "git_blob_sha1": "4528d6c822d0c2222741cee9976c546798c608af",
+      "sha256": "8745aa016a0f1894ba3d0932ff80e72f85f1f47d92ca6111764e5aa650b58a33",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTROLES_MIXTOS_FASE_B_CP12_20261015.md",
+      "bytes": 1626,
+      "git_blob_sha1": "5f158ca4c7b95632bdc88beb77464f9eda4a4454",
+      "sha256": "82a141464fcee71901abb22dac72e34aabfe1af831540aa8ea5a7bc2b142a629",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CONTROLES_MIXTOS_FASE_C_CP12_20261015.md",
+      "bytes": 1373,
+      "git_blob_sha1": "81ce90c3eb9fb05fbe2091f57e7574cd42cdc176",
+      "sha256": "5b734053805e610926d1f083b2a55708832d241a38e3f5cf61d3ea0084e0a90c",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CRECIMIENTO_ERROR_CHI_MIXTO_CP12_20261018.json",
+      "bytes": 4581,
+      "git_blob_sha1": "3b282e12c5132c071b8f0a201749be1f6750d283",
+      "sha256": "f7c7512a9a61a4a5168b800063b76a997fb03ffc103f951ce57f631d1b63c834",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/CRECIMIENTO_ERROR_CHI_MIXTO_CP12_20261018.md",
+      "bytes": 1434,
+      "git_blob_sha1": "769799ac6f76010844b10a736aeb840a6163bce0",
+      "sha256": "3af4ee1c94ca9801e721c8642ee2bbcdbc205a10a66fffa8ff1bda69e95c499a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/DECISION_EJECUTOR_CP12_20261011.md",
+      "bytes": 2835,
+      "git_blob_sha1": "f48902a7e69ff2a5b8cbd0ce59276326177b12b2",
+      "sha256": "747e5828e2e7b75d1a846460a98690decb37ee0ac9598089e544d875f7680f6a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/DIAGNOSTICO_DISCRIMINANTE_RESIDUO_TAU80_CP12_20261018.md",
+      "bytes": 8200,
+      "git_blob_sha1": "d3ddb90955f0bdc0b75612a6491dfed0537aacc7",
+      "sha256": "b859449fc802b7117f29312d6ccb347d4c9e55d2b1a681f2ba5384d98ae45a30",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/DIAGNOSTICO_ENERGETICO_NEGATIVO_K4_20261015.md",
+      "bytes": 3274,
+      "git_blob_sha1": "7261b48a11d6d513c16c3f7cd3fdfd46d8f67dd2",
+      "sha256": "6f32a50beeafaf5558c047e2e3d4cb948f4217c7fcb68deff088692299122b6b",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENMIENDA_CP11_PRECISION_DEFECTO.md",
+      "bytes": 1779,
+      "git_blob_sha1": "03a818b55aad9dd306d806e3b088072e59ffad56",
+      "sha256": "e4579bf7267f0a391c54ce54f48ed8614cf06496dce850cf4a5a7992ab886b9f",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENMIENDA_CP12_CONTEXTO_DOCUMENTAL.md",
+      "bytes": 2150,
+      "git_blob_sha1": "f194240b5cb5a428831e4f4e46d2e2f846ea068e",
+      "sha256": "e114e35cf13b0dcb6425ff08adee2aa3d3c8d90b982f95b451523c3fffc711c1",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENMIENDA_CP12_CONTRACCION_PASIVA.md",
+      "bytes": 1076,
+      "git_blob_sha1": "34f8e34dd26baeab1f04bc63112508216c023d10",
+      "sha256": "f9de1da179ad514d00706ec8246c15a2f60b27a61824a0f71144e88997a03c20",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENMIENDA_CP12_ESCALA_DE_REDONDEO.md",
+      "bytes": 1380,
+      "git_blob_sha1": "8cd57207f5c91241c209d6062aeaa4f30aefd62d",
+      "sha256": "bf1052cb4bc84883093f797c8f363586af1eee316ba99c4406622ea3fbced6e0",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENMIENDA_CP12_REFERENCIA_Y_OBSERVADOR.md",
+      "bytes": 2881,
+      "git_blob_sha1": "cf33f6411cadeb42098fa4a7283c2c2892da87ae",
+      "sha256": "b07a0d3f5aeb0103f1d79678fc64960b301dac4a04b9a8823ef5487bf64d1a56",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENMIENDA_CP12_SERIALIZACION_CONTROL.md",
+      "bytes": 989,
+      "git_blob_sha1": "917a13084e460472b53a68da8fdce8598325401b",
+      "sha256": "be5f1af5e8aaf3ae2c5317fad181b89d05d31ca5962f5dc53ea42a566e97fc77",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENMIENDA_CP12_SIMETRIA_PASIVA.md",
+      "bytes": 2307,
+      "git_blob_sha1": "4659cf9b5ee756788af9dbc62d04dc47e220a8cc",
+      "sha256": "0dec824c972831c44b752c8ca7a4502a96288862d16b7dee18a738eb751129a3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENTORNO_DURABLE_CP12.md",
+      "bytes": 3591,
+      "git_blob_sha1": "06b4fa00940d5172b84c8e180fda2264dd6ddb1b",
+      "sha256": "62cec18418bbef2bdb50725880dbb845b8a8506e21ef5f0271e7444d4f4a287e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENTREGA_01_E00.md",
+      "bytes": 3194,
+      "git_blob_sha1": "8568d7b64f4341fbab79f2d1337e3088165c1457",
+      "sha256": "ff993c28b40475c530eef148aa37ec3f2c5daee5e20ad1f7d6b0be8e575ff2a3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENTREGA_02_E01.md",
+      "bytes": 2757,
+      "git_blob_sha1": "7b32753ea18d0974ab341dfa76d9b99a389583e8",
+      "sha256": "2a2bb227c49a7a834028d1048ba34f9ff5be5ee3c4f38e7d3a9777903bb03116",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENTREGA_03_C0_E02_E03_RES0.md",
+      "bytes": 3928,
+      "git_blob_sha1": "9259143a1d58c3ee0c9523f36c0ca648828650c5",
+      "sha256": "10e7f97dff07bacbc858acde2aa6c58581646f99926c0033462477cb1626cade",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENTREGA_04_PREPARACION_PARCIAL.md",
+      "bytes": 3226,
+      "git_blob_sha1": "164c8cbf99de7a21f131bbb018a9e099e12b593c",
+      "sha256": "1e6e9e430e0a85a51f478fc1b49d08df1a69d360bad229756b7ae268c9f29755",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENTREGA_05_SIMETRIA_C7.md",
+      "bytes": 1733,
+      "git_blob_sha1": "9b232c9bc3e96ed66300cdc2c28a42c853571746",
+      "sha256": "950768ccc4c8dc51b1b9ce6799ccbd41bda60ea322938b86de7da9ed36d64069",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENTREGA_06_NO_RADIAL_PARCIAL.md",
+      "bytes": 3249,
+      "git_blob_sha1": "ea7791bbcbe69ae5fb6064e3992668f1bdfe681f",
+      "sha256": "2c3923cd282bc4f52d1dee293ba84a722ec1d50f6a29317abbc853eb11b8e908",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENTREGA_07_ACCESO_LINEAL_PARCIAL.md",
+      "bytes": 5387,
+      "git_blob_sha1": "b8f0fbf0a5a4ecf8ff45fa11b9f12be65f0a39bb",
+      "sha256": "24f310177c07baee7fedec651458865bf9f19b60735d38cf8b0da6ee952b3ec3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENTREGA_08_REFINAMIENTO_NO_RADIAL.md",
+      "bytes": 6287,
+      "git_blob_sha1": "51e1ea88877aa176009f0f21194e4d7a06277ffa",
+      "sha256": "db3980f81de201dd8946e08e0197682a112ab617ce48e890ea718e873fd6c27a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENTREGA_10_MEDIADOR_ESPACIOTEMPORAL.md",
+      "bytes": 11914,
+      "git_blob_sha1": "47e0fd3bdd23b79c6ba699dc73a4bc881e719bea",
+      "sha256": "53b137b6a7539b9187656f23adea6e8932666b873548d5d0795c5a0da77e502e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/ENTREGA_11_DIAGNOSTICO_RADIAL_CHI.md",
+      "bytes": 5143,
+      "git_blob_sha1": "57599f1284aef820c9c5fcfc9a1e24518416b0a3",
+      "sha256": "ccea83857fb381c548a1f8ef206211121ae679f3fe45b7bb427f52373ec62b8d",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/FRONTERAS_MIXTAS_CP12_20261016.md",
+      "bytes": 2498,
+      "git_blob_sha1": "99db7c2224ebca5ae16c51c43da481a2ec27a7f0",
+      "sha256": "c091ba4730afeac45d73afbaf2bece501b8fffaacaab4e1546a9469d9f2961f8",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/FRONTERA_CP12_TAU16_20261010.md",
+      "bytes": 1987,
+      "git_blob_sha1": "3b7627eade7ae6bd939c82ce33c5987ee5a8f7f9",
+      "sha256": "e53a9b95b94a65db8179c8a8b610820e8f48673bf784c3088e5461babe6d4207",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/INCIDENTE_RECUPERACION_CP12.md",
+      "bytes": 6115,
+      "git_blob_sha1": "f886f733043b8191dca3c45c7bb2963a820b69d0",
+      "sha256": "947a6c4737d0c17f4a7e7b81201f1a2a97147a640254dd3357c5ad4d72cd2a98",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/INTERRUPCION_P3_TAU11p2_20261019.md",
+      "bytes": 2278,
+      "git_blob_sha1": "119f2c123c517bae10a74293fb06b86ccc970422",
+      "sha256": "4883fc42874fb159e650362c18c3f6413d6cdcdba5c833f396a1c6322c1ebf8e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/INTERRUPCION_Y_TRANSPORTE_CP12_20261015.md",
+      "bytes": 2811,
+      "git_blob_sha1": "782e721601d658cc530585c8db06b089829e9244",
+      "sha256": "1354e97106525020f634973e98e68415615d7b4dcaa656ec15c0d437c03eec4b",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/LECTURA_PRESUPUESTO_CP12.md",
+      "bytes": 1941,
+      "git_blob_sha1": "cc2e279d23cbe019e104488558ef0adc81e6e151",
+      "sha256": "f4e5d0ddb52347ab8892c0164c6b537d5498b61e9429d5c0640ef31f39515c74",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/NEGATIVO_ESPACIAL_MIXTO_TAU80_CP12_20261018.md",
+      "bytes": 9593,
+      "git_blob_sha1": "5d161af5aa831bd30c0cf60d45353e71af58a90d",
+      "sha256": "59f06269350964645805fc2f28693c4be43b6900d417ca1c4e63e59eae567a8c",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/PILOTO_MIXTO_TAU0_CP12_20261015.md",
+      "bytes": 2121,
+      "git_blob_sha1": "9c5cd3a25efb89e437eb3b4f34e0bb27bec6934d",
+      "sha256": "db7e09a83dedd0677253120e767d6cc7e33e149f8aad46d997b92222161ad03a",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/PILOTO_P3_TAU0_CP12_20261018.md",
+      "bytes": 3000,
+      "git_blob_sha1": "99a579484e5d79b62416861f0fa55b7a3e31c9cd",
+      "sha256": "8e6a17ab5d71e978d0b2da71b70506b2983a7dd4a2ddebd222d7035efca1126d",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/PREFLIGHT_MIXTO_A_D_CP12_20261015.md",
+      "bytes": 3187,
+      "git_blob_sha1": "351435a753c3fbd2f9c17ab0e30bfdbb7d35a1b0",
+      "sha256": "e8407c74ec9c4a5ce293927900796da1c7ff85cc9330cdc18374363ea0438433",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/PREFLIGHT_P3_CP12_20261018.md",
+      "bytes": 3268,
+      "git_blob_sha1": "c61a16ce5100384784524f983ee8cf0a726077f3",
+      "sha256": "21789b5eeca7b6d91c4e3d9fa107e6aef59c4a76625c3f0974dbe8388e0645fb",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/PRERREGISTRO_EJECUCION_DURABLE_CP12.md",
+      "bytes": 6671,
+      "git_blob_sha1": "6d74476f81f1aaf5af6395ce84cfc1ff8cb91d04",
+      "sha256": "fbfa980e32230048946180fc8973fe6d6f83e4bffb7b69f834dcbaf93e7f3011",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/PRERREGISTRO_RECONSTRUCCION_CP12.md",
+      "bytes": 6604,
+      "git_blob_sha1": "38a9cb67cb77cedaef1ffd089c01784046b2c4aa",
+      "sha256": "60ae67399b83380ef218356387d79282d6b93aeaad15d205dfbb16f3031b925f",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/PROTOCOLO_CP10_MEDIADOR.md",
+      "bytes": 3006,
+      "git_blob_sha1": "55a95f9460189ebe710e2eef4feed022326bf0eb",
+      "sha256": "bfa570763493af2ada7f9e15aa87708d886d8f499e0fb147fc8d901b5fef6996",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/PROTOCOLO_CP11_DIAGNOSTICO_CHI.md",
+      "bytes": 6362,
+      "git_blob_sha1": "791dc6ba9d8c64c6d00f8e4b02343bec5868c095",
+      "sha256": "9d45913d12119068943a69dd0cee5f606302d718d92f41256fe083f34e1faf8e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/PROTOCOLO_CP11_RESPUESTA_FORZADA.md",
+      "bytes": 2864,
+      "git_blob_sha1": "40e6acdec0880e5baf07cf561e34c0a174c3c594",
+      "sha256": "a46059231992ea5d93c5dc16cd7ef8b52959d3abcd58e20a72c60352cc042697",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/PROTOCOLO_CP12_CAUSA_CHI.md",
+      "bytes": 8301,
+      "git_blob_sha1": "d6f4e130962eb8bcf8ec4a1d1494f70d1919988c",
+      "sha256": "af2a820159ade03811bb9d8573b84cf15c955ac0830d665227f173812858a157",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/REANUDACION_MIXTA_CP12_20261015.md",
+      "bytes": 2565,
+      "git_blob_sha1": "b73dc28b66952671e33eb39b5ece6b0cd9650379",
+      "sha256": "3c45da01c8b51e620b6a9d643ad391452bd0deb8854524488c1c3f320240b069",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/RECUPERACION_GIT_CP12_20261011.md",
+      "bytes": 3344,
+      "git_blob_sha1": "388fe8b46d403b6228ae84eeea23050a075e7092",
+      "sha256": "509458a044b72461ccf4cbaf8ae33e6a3c1504796d97b38e6d013af23c5e65ef",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/RECUPERACION_P3_TAU8_TAU9p6_20261019.md",
+      "bytes": 1851,
+      "git_blob_sha1": "e1252debb0d60baccff6d35d9d408fbaca25127e",
+      "sha256": "07b939006950740b9826a5ba75135157f22858498ef24a78a320730bb58682e5",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/RECUPERACION_TRANSPORTE_MIXTO_CP12_20261016.md",
+      "bytes": 3706,
+      "git_blob_sha1": "5a98d6115850baffbb4d1ce5559854983fe4bf05",
+      "sha256": "639a2368f558a24bd6133732d6631fc35fb6c2650d5a5c67e0e63c3c3b52e6f1",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/RESULTADO_CP12_TAU160_20261015.md",
+      "bytes": 4935,
+      "git_blob_sha1": "edb8987b1fa5c8465a7efbbc658d4923ce476338",
+      "sha256": "69b75f4619e24a07c53b8b9347197bb93635c0be1cdb398ac44f808e7a7418ba",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/RESULTADO_NEGATIVO_K4_20261015.md",
+      "bytes": 2651,
+      "git_blob_sha1": "08a1a4de351f8ca83cd641db757b75b13d7199e1",
+      "sha256": "1b2fda4fdcd6ac16d2e0339d7d1a8016e4b20c07389e1e51fe67fb6b59c9b340",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/RESULTADO_PILOTO_MIXTO_CP12_20261016.md",
+      "bytes": 4213,
+      "git_blob_sha1": "4f3834e3303fe3d5baedc5a381a1eed17ccbfde6",
+      "sha256": "37e9224bdd23da0d5f1a7d0833d4a1c5f7e7265a7097a43b7ad4f433e6ff0926",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/RESUMEN_NUMERICO_CP10.md",
+      "bytes": 5352,
+      "git_blob_sha1": "f1e79f8543de7f00b15d17679fa9c97f3362a42a",
+      "sha256": "a25b99edaf36e4dc15385e615db4a693ccf236947fb2149f8f8731f05f3cdc6e",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/RESUMEN_NUMERICO_CP11.md",
+      "bytes": 6270,
+      "git_blob_sha1": "1cda5a307b3e4cd21f770e3813189ad1fe385117",
+      "sha256": "b36e6c9573a37aac0a7508dc47299524afa8c28388572d3def081175c025aa8c",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/RETOMA_CP12_20261004.md",
+      "bytes": 3612,
+      "git_blob_sha1": "82ee789f9fb6062b7c589abd7286b9b8189dc32a",
+      "sha256": "35ea0246b89c3d699507f55384fe2e5b7db5d1ca07782fa56bbe513cf27dd412",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/RETOMA_CP12_20261010.md",
+      "bytes": 3105,
+      "git_blob_sha1": "714c197ec26687858a815457f6d592431c6ce726",
+      "sha256": "88b7b7413c576590b94d02ef38f4d80a8f309926fad3651595676aac6170aa5c",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/RETOMA_CP12_TAU24_20261011.md",
+      "bytes": 2463,
+      "git_blob_sha1": "cd68409a7075cf564da37aeaaf2fe3355a2ffcfd",
+      "sha256": "b3c23a3fe5704bce3e6a39b2104c975503954facbc740804560d8da6d014fad5",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/RETOMA_RAIZ_CP12_20261010.md",
+      "bytes": 2736,
+      "git_blob_sha1": "e5d4234d93343f39e6032ce6a36f7387aafcf7a1",
+      "sha256": "804b79fb12bbaa255e59709f244ad2ede88e3553936a7ff3fb3ceb4bd3e3dbe7",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/TRANSPORTES_MIXTOS_CP12_20261015.md",
+      "bytes": 8498,
+      "git_blob_sha1": "7955f89f991bdb99a11760cf4223c4361133bc7e",
+      "sha256": "cb969c4540774b8dc0cce62897413d4f8f51f559ba047f8ca1adb569c46f30f3",
+      "matches_current_tree": true
+    },
+    {
+      "branch_scope": "p3",
+      "path": "informes/TRANSPORTE_MIXTO_VERIFICADO_CP12_20261015.md",
+      "bytes": 2638,
+      "git_blob_sha1": "b8d7aa24c967c6593a779554c71aaafb5b26c2b6",
+      "sha256": "70c671113321b9d53af7abc09e70f7fe351f40f28f42b2a53491d9e401e522e4",
+      "matches_current_tree": true
+    }
+  ]
+}

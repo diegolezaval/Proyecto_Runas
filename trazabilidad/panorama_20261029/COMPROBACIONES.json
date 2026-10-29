@@ -1,0 +1,29 @@
+{
+  "schema": "RUNICA_GLOBAL_REVIEW_READ_ONLY_V1",
+  "main_commit": "90e8fcffbba65629a1628f435d3c3240832fe9c4",
+  "p3_commit": "9f7baa9cb80d8dcb0878110306d4fac25e1ad2fd",
+  "read_text_files": 317,
+  "read_text_bytes": 3240024,
+  "all_read_text_git_blobs_match": true,
+  "git_blob_mismatch_count": 0,
+  "python_files_parsed": 80,
+  "python_syntax_errors": 0,
+  "stage_statuses_equal_across_main_and_p3": true,
+  "stage_counts": {
+    "COMPLETADA": 3,
+    "PARCIAL": 6,
+    "BLOQUEADA": 24
+  },
+  "p3_root_manifest_files": 1384,
+  "p3_extra_git_paths_outside_root_manifest": 1167,
+  "p3_root_manifest_available_text_comparisons": 42,
+  "p3_root_manifest_available_text_mismatches": [
+    "datos/registro_calculos.json",
+    "estado_progreso.json",
+    "herramientas/generar_continuidad.py"
+  ],
+  "scientific_evolution_executed": false,
+  "scientific_sources_modified": false,
+  "full_numerical_rerun_performed": false,
+  "scope": "Tree inventories, exact text identity, static code and cross-document state comparison. Not mathematical certification of all historical proofs or full-tree byte revalidation."
+}
