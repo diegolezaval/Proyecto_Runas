@@ -1,0 +1,145 @@
+{
+  "schema": "RUNICA_REMOTE_REFERENCES_OBSERVED_20261029",
+  "branches": [
+    {
+      "name": "ciencia/cp11-diagnostico-chi",
+      "sha": "54bfa7a705edcf7d0eda13de530d4d9c532db4d6",
+      "protected": false
+    },
+    {
+      "name": "ciencia/cp12-causal-chi",
+      "sha": "aca1636db6320519867bf12a771ab21d843a34f3",
+      "protected": false
+    },
+    {
+      "name": "ciencia/cp12-continuacion-20261014",
+      "sha": "3ed272c1c567c39b357ac76b366f66c6ad9c1fa0",
+      "protected": false
+    },
+    {
+      "name": "ciencia/cp12-recuperacion-20261012t203801z",
+      "sha": "f98510d1538f410bac4e19f9779ba9f9d8dc26cb",
+      "protected": false
+    },
+    {
+      "name": "ciencia/cp12-recuperacion-20261013t2000z",
+      "sha": "f98510d1538f410bac4e19f9779ba9f9d8dc26cb",
+      "protected": false
+    },
+    {
+      "name": "ciencia/cp12-recuperacion-aislada-20261012-ab914d1d0470",
+      "sha": "9d59ae2902d0d5e759d940723cc1d013aa2f6632",
+      "protected": false
+    },
+    {
+      "name": "ciencia/cp12-recuperacion-aislada-20261012-ab8034463e96",
+      "sha": "cdc2acdd28c1b1399ce0989bc6f70026502660f2",
+      "protected": false
+    },
+    {
+      "name": "ciencia/cp12-recuperacion-tau48-20261012-2f01ea6e32b2",
+      "sha": "7f849e8f8fb78ca72633d7b83f72f9db59b65b47",
+      "protected": false
+    },
+    {
+      "name": "ciencia/cp12-recuperacion-tau56-20261012-c3e32b84ebbf",
+      "sha": "f98510d1538f410bac4e19f9779ba9f9d8dc26cb",
+      "protected": false
+    },
+    {
+      "name": "ciencia/cp12-residuo-p3-20261018",
+      "sha": "4a88af2dbdcdbdfbd7983fc3d6ae44a0776cdfbf",
+      "protected": false
+    },
+    {
+      "name": "docs/navegacion-humana-20261028",
+      "sha": "e3edfda597f40cdd3023c7f7b4086b69a0201e7c",
+      "protected": false
+    },
+    {
+      "name": "main",
+      "sha": "90e8fcffbba65629a1628f435d3c3240832fe9c4",
+      "protected": true
+    },
+    {
+      "name": "migration/cp10",
+      "sha": "a529888555680ebf94a3b1d9decca694fdfeb142",
+      "protected": false
+    },
+    {
+      "name": "publicacion/cp11",
+      "sha": "743da6095ef9f0e6ea87af512f729d795b3ce0b7",
+      "protected": false
+    },
+    {
+      "name": "respaldo/cp12-p3-20261027",
+      "sha": "6b8757585e49df7b45cd121c19eae3979d237632",
+      "protected": false
+    }
+  ],
+  "release": {
+    "id": 426273098,
+    "tag": "respaldo-cp12-p3-20261027",
+    "prerelease": true,
+    "assets": [
+      {
+        "id": 683858833,
+        "name": "CP12_CANDIDATO_MIXTO_2cf74f0d65ad47048781e0502aec6a50_DIAGNOSTICO_DISCRIMINANTE_TAU0080_20261018.zip",
+        "size": 232883013,
+        "digest": "sha256:dc94cf77eeebfe08f1cbf1b20e725c7bb51df4376125e4ffdc7f6b4e3cd4c30e",
+        "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_MIXTO_2cf74f0d65ad47048781e0502aec6a50_DIAGNOSTICO_DISCRIMINANTE_TAU0080_20261018.zip"
+      },
+      {
+        "id": 686994248,
+        "name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL03_TRANSITO_INTENTO02_TAU9P6_20261028.zip",
+        "size": 230901677,
+        "digest": "sha256:5faf037f7a22f47285773b006fd020a2d39906bd54c74db9cf7c1e7d70c54651",
+        "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL03_TRANSITO_INTENTO02_TAU9P6_20261028.zip"
+      },
+      {
+        "id": 684138678,
+        "name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_RUTA_RELEASE_TAU9P6_20261028.zip",
+        "size": 230902380,
+        "digest": "sha256:287cf653cf804d858ae0d20f50942a38c7fd200dd7c0e035fc12df5fadbd031d",
+        "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_RUTA_RELEASE_TAU9P6_20261028.zip"
+      },
+      {
+        "id": 686352032,
+        "name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_TRANSITO_INTENTO02_TAU9P6_20261028.zip",
+        "size": 230900851,
+        "digest": "sha256:2d2212430208dbaf783d1d824f8f8c82e432cc0953f5a82a056a303250f42c01",
+        "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_TRANSITO_INTENTO02_TAU9P6_20261028.zip"
+      },
+      {
+        "id": 683858555,
+        "name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000096.zip",
+        "size": 229821160,
+        "digest": "sha256:a71554ff3e213d09cf7365697e4d9c9307e9529478d567ae3f89ccc11e43b959",
+        "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000096.zip"
+      },
+      {
+        "id": 688783601,
+        "name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000112_TRANSITO_INTENTO02_20261028.zip",
+        "size": 229880902,
+        "digest": "sha256:b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
+        "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000112_TRANSITO_INTENTO02_20261028.zip"
+      },
+      {
+        "id": 683858764,
+        "name": "CP12_RI_2b11da8c1f004704aa3e74d271c24846_tau0160.zip",
+        "size": 84575117,
+        "digest": "sha256:1c13b199592dc91ab2ec3ac382d4bd73736ba5e2c577438882de8932a6ec69c9",
+        "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_RI_2b11da8c1f004704aa3e74d271c24846_tau0160.zip"
+      },
+      {
+        "id": 683858998,
+        "name": "SHA256SUMS",
+        "size": 429,
+        "digest": "sha256:5c48c5b7a2ec10f012f6c08b76b4e10648a0a684275d212bb193a94bf2afc7c7",
+        "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/SHA256SUMS"
+      }
+    ]
+  },
+  "active_actions": 0,
+  "scope": "Observaciones públicas de referencias y conservación; no certificado de actividad de ejecutores históricos."
+}

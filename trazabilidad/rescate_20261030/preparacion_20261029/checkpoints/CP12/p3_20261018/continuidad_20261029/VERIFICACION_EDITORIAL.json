@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+  "passed": false,
+  "counts": {
+    "json": 1122,
+    "python": 437,
+    "svg": 69,
+    "local_links": 771
+  },
+  "issues": [
+    "trazabilidad/CP12_recuperacion_independiente/2f01ea6e32b2/analysis/dispersion_candidato/DERIVACION_Y_RESULTADOS.md: ωf[j]²−ωc²",
+    "trazabilidad/CP12_recuperacion_independiente/2f01ea6e32b2/analysis/dispersion_candidato/DERIVACION_Y_RESULTADOS.md: Pωc−Pωf[j]"
+  ],
+  "E00_E01_recalculated": false,
+  "scope": "Integridad y continuidad editorial; no certificación científica automática."
+}
