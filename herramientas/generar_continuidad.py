@@ -78,7 +78,18 @@ def render_state(root=ROOT):
              f"**Completadas:** {completed}. **Parciales:** {partial}.", '',
              f"**Puerta no radial vigente:** {latest_nonradial['status']}. **Cálculos numéricos activos:** {active_count}. **Primordiales/dispositivos completos:** {state['complete_primordials']}.", '',
              ('La auditoría administrativa no cambia las etapas ni sus puertas.' if state.get('checkpoint_kind', 'ADMINISTRATIVO' if current != state['checkpoint'] else 'CIENTIFICO') == 'ADMINISTRATIVO' else 'Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa.') + ' La evidencia reproducible prevalece ante una discrepancia documental.', '',
-             '## Siguiente trabajo científico', '']
+             '## Continuidad operativa', '']
+    operation = state.get('current_operational_state')
+    if operation:
+        lines += ['| Referencia | Estado |', '|---|---|',
+                  f"| CP12 / P3 | {operation['CP12_status']} / {operation['P3_status']} |",
+                  f"| Última frontera completa positiva P3 | τ{operation['last_full_frontier']:g} |",
+                  f"| Transporte interno recuperado | τ{operation['recovered_transport']:g} |",
+                  f"| Próxima frontera completa | τ{operation['next_full_frontier']:g}, pendiente |",
+                  f"| Trabajadores propios activos | {operation['own_workers']} |", '',
+                  f"Registro: [{operation['canonical_register']}]({operation['canonical_register']}).", '',
+                  'El transporte interno no es una frontera completa ni una validación de P3.', '']
+    lines += ['## Siguiente trabajo científico', '']
     lines += ['- ' + action for action in state['next_actions']]
     lines += ['', '## Estados de origen y continuación', '']
     labels = {'restart_state': 'Estado CP04 terminado de origen para nuevas perturbaciones',
@@ -124,7 +135,9 @@ def render_readme(root=ROOT):
         'Abrir [LEEME.md](LEEME.md) para la entrada completa, las fuentes de verdad y los comandos.', '',
         '- [Estado actual y siguiente trabajo](ESTADO_ACTUAL.md).',
         '- [Arquitectura y trazabilidad](ARQUITECTURA.md).',
-        '- [Preparación para una migración posterior a GitHub](MIGRACION_GITHUB.md).', ''
+        '- [Recuperación vigente de CP12/P3](RECUPERACION_CP12_ACTUAL.md).',
+        '- [Panorama global](informes/PANORAMA_GLOBAL_Y_PRIORIDADES_20261029.md).',
+        '- [Preparación histórica de la migración](MIGRACION_GITHUB.md).', ''
     ])
 
 

@@ -89,6 +89,11 @@ def run_suite():
         tests['recursive_execution_exclusions'] = bool(paths) and not any('/cache/' in p or p.startswith(('.git/', '.venv/')) or (p.startswith('validacion/P06/no_radial/ejecucion_') and p.endswith('.lock')) for p in paths)
         tests['dependency_lockfiles_not_ignored'] = 'uv.lock' in paths
         tests['scientific_states_not_ignored'] = len([p for p in paths if p.endswith('.npz')]) == len([p for p in original if p.endswith('.npz')])
+        shutil.rmtree(clone / '.git')
+        (clone / '.git').write_text('gitdir: /private/example/worktrees/review\n')
+        worktree_result = subprocess.run([sys.executable, '-c', code, str(clone / 'herramientas'), str(clone)], cwd=work, env=env, text=True, capture_output=True, timeout=20)
+        tests['git_worktree_metadata_file_excluded'] = worktree_result.returncode == 0 and '.git' not in json.loads(worktree_result.stdout)
+        (clone / '.git').unlink()
         unfinished = clone / 'validacion/P06/no_radial/prueba_estado.tmp'
         unfinished.write_bytes(b'escritura incompleta')
         rejected = subprocess.run([sys.executable, '-c', code, str(clone / 'herramientas'), str(clone)], cwd=work, env=env, text=True, capture_output=True, timeout=20)

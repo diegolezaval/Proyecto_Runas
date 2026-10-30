@@ -21,7 +21,8 @@
     "validacion/P06/no_radial/CP12/control_instrumentacion__bb96abc951a73ae69313eb4dd3938a60a764cb5e61c92cda627aecdf2070560c/fuentes",
     "validacion/P06/no_radial/CP12/control_instrumentacion__6308bf6d400d008fe982c21160625b24777a4b391ffcab771189c17787a866c2/fuentes",
     "validacion/P06/no_radial/CP12_reconstruccion/reinicio_0000__569b41ef3790ee41ee06053225cd4f100eb47d20b5a1c70b3097b045a5d102e4/fuentes",
-    "validacion/P06/no_radial/CP12_reconstruccion/reinicio_0000__afa87f92e605f971580bb0cafe2def6a7fa9a492d6db7cbcc227d201f073071d/fuentes"
+    "validacion/P06/no_radial/CP12_reconstruccion/reinicio_0000__afa87f92e605f971580bb0cafe2def6a7fa9a492d6db7cbcc227d201f073071d/fuentes",
+    "trazabilidad/continuidad_20261030/entrada"
   ],
   "generated_views": [
     {
@@ -714,5 +715,16 @@
       ],
       "original_copy": "trazabilidad/CP08_arquitectura_entrada/investigacion/C7_notas_EN_PROGRESO.md"
     }
-  }
+  },
+  "non_documentary_link_expressions": [
+    {
+      "path": "trazabilidad/CP12_recuperacion_independiente/2f01ea6e32b2/analysis/dispersion_candidato/DERIVACION_Y_RESULTADOS.md",
+      "sha256": "51954a304789ee45086af8f1aec8a9fe39be7f9c3b07937761a1c190ba1c3af5",
+      "expressions": [
+        "ωf[j]²−ωc²",
+        "Pωc−Pωf[j]"
+      ],
+      "reason": "Productos matemáticos históricos a[j](...), ligados a sus bytes completos; no documentos."
+    }
+  ]
 }

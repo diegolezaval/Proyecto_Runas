@@ -2128,12 +2128,22 @@
       "closed_stages": [],
       "reopened_stages": [],
       "CP12_closed": false
+    },
+    {
+      "event": "RECONCILIACION_Y_RECUPERACION_11P2_20261030",
+      "at": "2026-10-30T19:12:43.603948+00:00",
+      "report": "informes/ENTREGA_CONTINUIDAD_Y_RECUPERACION_20261030.md",
+      "evidence": "checkpoints/CP12/p3_20261018/continuidad_20261030/auditoria_recuperacion/RESULTADO.json",
+      "closed_stages": [],
+      "reopened_stages": [],
+      "M2_steps_executed": 0,
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Consultar primero la actividad del único guardián P3 y cualquier transporte posterior. Piloto0→8 en curso; último transporte recuperado0.4 y control .4→.41 bit a bit positivo. Avanzar sólo tras guardar/recuperar/auditar cada frontera y pasar todas las puertas. No duplicar trabajador ni reanudar P2. CP12 abierto.",
-    "RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil",
-    "C7: nodos/vórtices o candidatos dinámicos con recursos"
+    "P3: usar el transporte exacto τ11,2 del adjunto688783601 ya recuperado y auditado. Última frontera completa positivaτ8; siguienteτ16. Preparar y probar la conservación desde el ejecutor antes de física nueva. No repetirτ9,6→τ11,2 ni recrear su permiso consumido. No hay trabajador numérico propio activo. CP12 abierto.",
+    "Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.",
+    "Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico."
   ],
   "do_not_repeat": [
     "E00 salvo una condicion de reapertura documentada.",
@@ -2144,53 +2154,20 @@
     "Dos evoluciones CP10 temporal_h0125 y espacial_h00625 terminadas hasta tau=160, con recibos y comparación final. Reutilizar sus estados; no volver a evolucionarlas sin una pregunta y protocolo nuevos.",
     "Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo.",
     "CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo.",
-    "Ensayo mixto Φ-FV/χ-K4 0→80: conservar fronteras, transportes y negativo espacial80. No repetir A–D ni reanudar desde72/78,4/79,6 para eludir la puerta negativa."
+    "Ensayo mixto Φ-FV/χ-K4 0→80: conservar fronteras, transportes y negativo espacial80. No repetir A–D ni reanudar desde72/78,4/79,6 para eludir la puerta negativa.",
+    "P3τ0→τ11,2 y F0…F5; la repetición adicionalτ9,6→τ11,2 y su permiso están consumidos.",
+    "La prueba administrativa116/308 sigue INCOMPLETA y no representa308 documentos originales."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Consultar primero la actividad del único guardián P3 y cualquier transporte posterior. Piloto0→8 en curso; último transporte recuperado0.4 y control .4→.41 bit a bit positivo. Avanzar sólo tras guardar/recuperar/auditar cada frontera y pasar todas las puertas. No duplicar trabajador ni reanudar P2. CP12 abierto.",
+  "next_calculation": "P3: usar el transporte exacto τ11,2 del adjunto688783601 ya recuperado y auditado. Última frontera completa positivaτ8; siguienteτ16. Preparar y probar la conservación desde el ejecutor antes de física nueva. No repetirτ9,6→τ11,2 ni recrear su permiso consumido. No hay trabajador numérico propio activo. CP12 abierto.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [
-    {
-      "campaign": "CP12_PILOTO_P3_PHI_FV_CHI_COMPOSICION_CUBICA",
-      "status": "OWN_GUARDIAN_OBSERVED_STARTED_PHYSICAL_EVOLUTION_IN_PROGRESS",
-      "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
-      "run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
-      "first_target": 8,
-      "conditional_target": 160,
-      "latest_certified_frontier": 0,
-      "latest_recovered_internal_clock": 0.4,
-      "evidence": "checkpoints/CP12/p3_20261018/recuperacion_2113/ARRANQUE_Y_TRANSPORTE.json",
-      "correction_validated": false,
-      "CP12_closed": false
-    }
-  ],
-  "research_in_progress": [
-    {
-      "campaign": "CP12_DERIVACION_VARIACIONAL_MIXTA",
-      "status": "NEGATIVO_ESPACIAL_TAU80_DIAGNOSTICADO_CAUSA_CONDICIONADA",
-      "scope": "Φ-FV/χ-K4 suspendido en80. Operadorχ acoplado suficiente en tres ventanas; cero pasos en diagnóstico. Sin nueva corrección automática.",
-      "evidence": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/RESULTADO_DIAGNOSTICO.json",
-      "correction_validated": false,
-      "CP12_closed": false
-    },
-    {
-      "campaign": "CP12_DIAGNOSTICO_RESIDUO_TAU80_Y_HIPOTESIS_P3",
-      "status": "P3_PILOTO_EN_PROGRESO_PRIMER_TRANSPORTE_RECUPERADO_Y_CONTROL_EXACTO_POSITIVO",
-      "scope": "Autorización del usuario 2026-10-18: nueva investigación y propuesta derivada; geometría radial h2 demostrada, dispersión ocupada contrastada, fuentes/preparación no identificadas como causa dominante. P3 requiere nuevos controles antes de M2.",
-      "evidence": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
-      "report": "informes/PILOTO_P3_TAU0_CP12_20261018.md",
-      "M2_steps_executed": 0,
-      "physical_evolution_started": false,
-      "correction_validated": false,
-      "CP12_closed": false,
-      "experimental_branch": "ciencia/cp12-residuo-p3-20261018"
-    }
-  ],
+  "numerical_runs_in_progress": [],
+  "research_in_progress": [],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
-  "delivery_boundary": "CP11 sigue siendo el último checkpoint científico aceptado. CP12 original τ160/CP10 exacto no se repite. El piloto mixto dispone de transporte interno 1.6 completo guardado, recuperado y auditado; .4→.41 coincide bit a bit al restaurar. Dos incidentes administrativos de empaquetado se conservaron y corrigieron sin modificar estado, recibo, kernels ni puertas. Se reanudó DOP853 desde1.6 con contadores íntegros. Última frontera científica mixta: τ0; convergencia, robustez y cierre CP12 pendientes. Las 33 etapas y todos los negativos permanecen intactos.",
+  "delivery_boundary": "CP11 aceptado, CP12 abierto, P3 sin validar. τ8 es la última frontera completa positiva. Transporteτ11,2 recuperado desde GitHub,293 cargas y44 controles originales sin construcciones/pasos. P2 suspendido por negativoτ80; última frontera con cinco puertas positivasτ72. Las33 etapas y todos los negativos se conservan. El paquete administrativo de29/10 no fue publicado; doce blobs exactos se rescataron por separado.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
   "latest_completed_nonradial_time": 160,
-  "diagnostic_after_gate": "τ160 y CP10 exacto comprobados; lector original con serialización NumPy booleana administrativa verificada. Las tres ventanas dan suficiencia al operador χ acoplado y a operador_total. El operador libre no cumple las puertas; se conservan términos cruzados y cancelaciones. No se atribuye una fracción pura al bucle χ→Φ→χ.",
+  "diagnostic_after_gate": "checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json",
   "scientific_checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
   "architecture_audit": {
     "report": "informes/AUDITORIA_ARQUITECTURA_CP09.md",
@@ -2199,133 +2176,20 @@
     "generated_index": "trazabilidad/arquitectura/indice_trazabilidad.json"
   },
   "checkpoint_kind": "CIENTIFICO",
-  "automatic_continuation_paused": true,
+  "automatic_continuation_paused": {
+    "paused": true,
+    "reason": "Conservación del proceso futuro y registro de continuación exacta pendientes.",
+    "M2_exhaustion_claimed": false,
+    "CP12_closed": false
+  },
   "execution_activity": {
-    "original_executor_status": "UNKNOWN_ACTIVITY",
-    "original_executor_termination_assumed": false,
-    "new_independent_worker_status": "EVOLUCION_TAU160_COMPLETADA_Y_AUDITADA_LECTURA_CAUSAL_OFFLINE_CONSERVADA",
-    "activity_observed_for_new_worker_only": true,
-    "latest_verified_cp12_time": 160,
-    "target": 160,
+    "activity_known": true,
+    "scope": "Sólo procesos propios accesibles; no se presume terminación de ejecutores históricos inaccesibles.",
+    "own_worker_status": "NO_NEW_M2_WORKER",
+    "historical_termination_assumed": false,
     "activity_is_restart_certificate": false,
-    "evidence": "checkpoints/CP12/continuacion_20261014/tau0160/AUDITORIA_FRONTERA_GUARDADA.json",
-    "previous_independent_worker_status": "NOT_DIRECTLY_ACCESSIBLE_AFTER_WORKSPACE_MAINTENANCE",
-    "previous_independent_worker_termination_assumed": false,
-    "new_independent_initial_frontier": 136,
-    "new_independent_initial_capsule_recovered_and_audited": true,
-    "last_uncertified_observation": 136.74,
-    "last_uncertified_observation_scope": "Registro histórico de la sesión anterior; no corresponde al trabajador actual",
-    "original_worker_exit_code_observed": 1,
-    "original_worker_exit_scope": "Fallo de serialización del lector posterior al guardado y auditoría de τ160",
-    "offline_diagnostic_replay_completed": true,
-    "target_reached_and_certified": true,
-    "candidate_K4_status": "DETENIDO_POR_PUERTA_CIENTIFICA_NEGATIVO_GUARDADO_RECUPERADO",
-    "candidate_K4_exit_code_observed": 1,
-    "mixed_candidate_status": "SUSPENDIDO_PUERTA_ESPACIAL_TAU80_NEGATIVO_CONSERVADO_DIAGNOSTICADO",
-    "mixed_candidate_latest_certified_time": 80,
-    "previous_mixed_attempt_status": "SESSION_NO_LONGER_ACCESSIBLE",
-    "previous_mixed_attempt_termination_assumed": false,
-    "mixed_attempt_activity_scope": "Only own transport-enabled guardian; no termination inferred for older executors",
-    "previous_mixed_attempt_last_observation": 4.12,
-    "mixed_candidate_latest_recoverable_observer_clock": 80,
-    "transport_worker_previous_session_exit_observed": 1,
-    "transport_administrative_incidents_preserved": true,
-    "transport_amendment_commit": "19c8b2b2eb40052ae81fc66e5ccc7acc76607348",
-    "previous_transport_session_status": "UNKNOWN_ACTIVITY",
-    "previous_transport_session_termination_assumed": false,
-    "mixed_candidate_pilot_passed": true,
-    "session_20261017": {
-      "status": "OWN_EXIT_OBSERVED_ADMINISTRATIVE_FAILURE",
-      "observed_start_at": "2026-10-17T21:13:24.449001+00:00",
-      "recovered_observer_clock": 46.4,
-      "administrative_registration_commit": "2e0234b36776d7abd790ed9c0dbde3787de1e80e",
-      "earlier_executors_activity": "UNKNOWN_ACTIVITY",
-      "earlier_termination_assumed": false,
-      "activity_is_scientific_certificate": false,
-      "observed_exit_at": "2026-10-17T21:29:18.305778+00:00",
-      "returncode": 1,
-      "scientific_gate_failed": false,
-      "last_recovered_internal_clock": 49.6
-    },
-    "session_20261017_v2": {
-      "status": "UNKNOWN_ACTIVITY_AFTER_SESSION_BECAME_INACCESSIBLE",
-      "observed_start_at": "2026-10-17T21:38:50.557397+00:00",
-      "recovered_observer_clock": 49.6,
-      "administrative_registration_commit": "30c89de9fb8fe1e5d11d6936478e314a526a4e8f",
-      "previous_own_session_exit_observed": 1,
-      "activity_is_scientific_certificate": false,
-      "observed_exit": false,
-      "termination_assumed": false,
-      "last_known_permanent_transport": 52.8
-    },
-    "session_20261018": {
-      "status": "UNKNOWN_ACTIVITY_AFTER_SESSION_INACCESSIBLE",
-      "observed_start_at": "2026-10-18T02:26:24.253411+00:00",
-      "recovered_observer_clock": 52.8,
-      "administrative_sources_registration": "30c89de9fb8fe1e5d11d6936478e314a526a4e8f",
-      "recovery_registration": "checkpoints/CP12/continuacion_20261018/REGISTRO_RECUPERACION.json",
-      "earlier_executors_activity": "UNKNOWN_ACTIVITY",
-      "earlier_termination_assumed": false,
-      "activity_is_scientific_certificate": false,
-      "latest_full_trial_frontier": 64,
-      "next_target": 72,
-      "own_exit_observed": false,
-      "termination_assumed": false,
-      "last_known_recoverable_transport": 70.4
-    },
-    "session_20261018_0730": {
-      "status": "OWN_EXIT_OBSERVED_CODE2_SPATIAL_NEGATIVE",
-      "observed_start_at": "2026-10-18T07:29:47.097522+00:00",
-      "recovered_observer_clock": 70.4,
-      "latest_full_trial_frontier": 80,
-      "next_target": null,
-      "earlier_termination_assumed": false,
-      "activity_is_scientific_certificate": false,
-      "recovery_evidence": "checkpoints/CP12/continuacion_20261018/recuperacion_tau70p4/REGISTRO_RECUPERACION.json",
-      "own_exit_observed": {
-        "at": "2026-10-18T08:12:33.566034+00:00",
-        "returncode": 2,
-        "scope": "Observed own guardian only",
-        "previous_executor_termination_assumed": false
-      },
-      "negative_evidence": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/SUSPENSION.json"
-    },
-    "mixed_candidate_exit_code_observed": 2,
-    "mixed_candidate_last_all_five_spatial_gates_positive_boundary": 72,
-    "mixed_candidate_automatic_continuation_authorized": false,
-    "session_20261018_residue": {
-      "status": "PASSIVE_DIAGNOSES_FINISHED_NO_NEW_M2_WORKER",
-      "source_public_registration": [
-        "3f2f289fbe95f95e5abaac2fb4e80b177f3d696a",
-        "f2dd6014cf1e2f2844e12b5c1ee8ead9f7770812"
-      ],
-      "M2_steps_executed": 0,
-      "earlier_executor_termination_assumed": false,
-      "evidence": "checkpoints/CP12/residuo_tau80_20261018/RESUMEN_D1_D2.json"
-    },
-    "P3_candidate": {
-      "schema": "CP12_P3_OWN_GUARDIAN_STARTED_FROM_RECOVERED_TAU0",
-      "at": "2026-10-18T21:25:58.752195+00:00",
-      "home": "/workspace/scratch/7679f367a48b/p3_recovered_tau0_2113",
-      "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
-      "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
-      "own_guardian_tool_session_id": 65474,
-      "own_observed_start": {
-        "at": "2026-10-18T21:22:10.776153+00:00",
-        "pid_in_parent_namespace": 5,
-        "scope": "Observed own child only",
-        "scientific_frontier_inferred": false
-      },
-      "source_public_certificate_commit": "9f337805cf39c3793a1fb7c59dbfc65a15d8a1fa",
-      "latest_certified_frontier": 0,
-      "latest_recovered_internal_clock": 0.4,
-      "P3_one_interval_control_passed": true,
-      "activity_is_scientific_certificate": false,
-      "old_P2_must_not_resume": true,
-      "recovery_register_library_file_id": "libfile_2c8d727c2c0881919a835e29b9121643",
-      "CP12_closed": false,
-      "heartbeat_scope": "Observation only; latest certified state requires separate proof"
-    }
+    "previous_activity_source": "trazabilidad/continuidad_20261030/entrada/estado_progreso.json",
+    "evidence": "checkpoints/CP12/p3_20261018/continuidad_20261030/auditoria_recuperacion/RESULTADO.json"
   },
   "latest_verified_cp12_restart": {
     "time": 160,
@@ -2551,13 +2415,60 @@
     "P3_hypothesis_only": true
   },
   "latest_verified_cp12_P3_restart": {
-    "time": 0,
+    "time": 8,
+    "state_sha256": "1984303f49cac1c424952af632b6b5fa552c2a119d233a613c869cf0055b2db0",
+    "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+    "receipt_sha256": "f67e0d4bf430d1113dc0974dd936f8604d053e64f80e1e091e8023804408e9ae",
     "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
     "run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
-    "state_sha256": "4a27b6f1852389b9642801727cd19db65d275715206f4dd2829de4dc8a2a70f0",
-    "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
-    "receipt_sha256": "32ff3e830d4fecced3cf6a3726dc62a28fa2a78009b7676f7f837f1f0eadc6be",
-    "evidence": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
+    "evidence": "checkpoints/CP12/p3_20261018/continuidad_20261030/auditoria_recuperacion/RESULTADO.json",
+    "CP12_closed": false
+  },
+  "research_paused": [
+    {
+      "campaign": "CP12_DERIVACION_VARIACIONAL_MIXTA",
+      "status": "NEGATIVO_ESPACIAL_TAU80_DIAGNOSTICADO_CAUSA_CONDICIONADA",
+      "scope": "Φ-FV/χ-K4 suspendido en80. Operadorχ acoplado suficiente en tres ventanas; cero pasos en diagnóstico. Sin nueva corrección automática.",
+      "evidence": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/RESULTADO_DIAGNOSTICO.json",
+      "correction_validated": false,
+      "CP12_closed": false
+    },
+    {
+      "campaign": "CP12_DIAGNOSTICO_RESIDUO_TAU80_Y_HIPOTESIS_P3",
+      "status": "TRANSPORTE_11P2_RECUPERADO_PREPARACION_DE_16",
+      "scope": "Autorización del usuario 2026-10-18: nueva investigación y propuesta derivada; geometría radial h2 demostrada, dispersión ocupada contrastada, fuentes/preparación no identificadas como causa dominante. P3 requiere nuevos controles antes de M2.",
+      "evidence": "checkpoints/CP12/p3_20261018/continuidad_20261030/auditoria_recuperacion/RESULTADO.json",
+      "report": "informes/ENTREGA_CONTINUIDAD_Y_RECUPERACION_20261030.md",
+      "M2_steps_executed": 0,
+      "physical_evolution_started": true,
+      "correction_validated": false,
+      "CP12_closed": false,
+      "experimental_branch": "ciencia/cp12-residuo-p3-20261018",
+      "M2_steps_executed_scope": "Sólo recuperación de esta entrega; historia física anterior preservada."
+    }
+  ],
+  "current_operational_state": {
+    "accepted_checkpoint": "CP11",
+    "CP12_status": "ABIERTO",
+    "P3_status": "SIN_VALIDAR",
+    "last_full_frontier": 8,
+    "recovered_transport": 11.2,
+    "next_full_frontier": 16,
+    "own_workers": 0,
+    "forward_evolution_started": false,
+    "canonical_register": "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
+    "evidence": "checkpoints/CP12/p3_20261018/continuidad_20261030/auditoria_recuperacion/RESULTADO.json",
+    "preservation_in_current_process": "PENDIENTE"
+  },
+  "latest_verified_cp12_P3_transport": {
+    "observer_clock": 11.2,
+    "target": 16,
+    "state_sha256": "bc129cff71c7558cd0298873fdc816da14e01fdcb4728235b33666a1ecfcf3ac",
+    "archive_sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
+    "archive_bytes": 229880902,
+    "github_asset_id": 688783601,
+    "evidence": "checkpoints/CP12/p3_20261018/continuidad_20261030/auditoria_recuperacion/RESULTADO.json",
+    "scientific_frontier": false,
     "CP12_closed": false
   }
 }

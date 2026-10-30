@@ -7,6 +7,7 @@ siguen resolviéndose respecto de su propia carpeta.
 from pathlib import Path
 import json
 import re
+import hashlib
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -45,7 +46,13 @@ def document_links(document):
     content = re.sub(r'(?ms)^[ \t]*\\\[[ \t]*\n.*?^[ \t]*\\\][ \t]*$', '', content)
     # Una expresión escrita como código tampoco es un enlace renderizado.
     content = re.sub(r'(?s)(`+)(.*?)\1', '', content)
-    return re.findall(r'\]\(([^)]+)\)', content)
+    links = re.findall(r'\]\(([^)]+)\)', content)
+    config = ROOT / 'datos/arquitectura.json'
+    if config.exists() and document.is_relative_to(ROOT):
+        for item in json.loads(config.read_text()).get('non_documentary_link_expressions', []):
+            if document.relative_to(ROOT).as_posix() == item['path'] and hashlib.sha256(document.read_bytes()).hexdigest() == item['sha256']:
+                links = [link for link in links if link not in item['expressions']]
+    return links
 
 
 def missing_links(root=ROOT):

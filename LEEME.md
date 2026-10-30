@@ -2,7 +2,7 @@
 
 Rúnica desarrolla una física para un sistema ficticio de runas: desde una teoría común hasta soluciones, estabilidad, preparación, componentes y dispositivos con límites comprobables. El modelo fundamental actual es M2, con un campo complejo y un mediador real. Las fichas y metas operacionales describen funciones propuestas; la aceptación depende de evidencia y puertas explícitas.
 
-**Estado y siguiente acción:** [ESTADO_ACTUAL.md](ESTADO_ACTUAL.md), generado desde [progreso](estado_progreso.json) y [registro de cálculos](datos/registro_calculos.json). CP12 retoma la reconstrucción explícita desde un reinicio τ=0 recuperado y verificado; [retoma y pruebas](informes/RETOMA_CP12_20261004.md), [prerregistro de reconstrucción](informes/PRERREGISTRO_RECONSTRUCCION_CP12.md) y [protocolo causal](informes/PROTOCOLO_CP12_CAUSA_CHI.md). Cada frontera requiere respaldo permanente descargado y comprobado antes de continuar. El [incidente anterior](informes/INCIDENTE_RECUPERACION_CP12.md) queda conservado. El último checkpoint científico cerrado sigue siendo CP11; la causa permanece abierta. No hay causa ni corrección CP12 certificada. No repetir E00/E01/C0 ni otras campañas cerradas.
+**Estado y siguiente acción:** [ESTADO_ACTUAL.md](ESTADO_ACTUAL.md), generado desde [progreso](estado_progreso.json) y [registro de cálculos](datos/registro_calculos.json). CP11 aceptado, CP12 abierto y P3 sin validar. Última frontera P3 completa positiva τ8; transporte interno vigente τ11,2, recuperado de GitHub con 293 cargas y 44 controles originales sin pasos. La próxima frontera completa es τ16. Abrir [recuperación vigente](RECUPERACION_CP12_ACTUAL.md) y [registro canónico](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json). No repetir τ9,6→τ11,2 ni reconstruir su permiso consumido. P2 permanece suspendido por negativo espacial τ80. No repetir campañas cerradas ni F0…F5. [Entrega de continuidad](informes/ENTREGA_CONTINUIDAD_Y_RECUPERACION_20261030.md).
 
 El repositorio autoritativo es [Proyecto_Runas](https://github.com/diegolezaval/Proyecto_Runas). `main` está protegida: crear ramas desde el último `origin/main`, verificar y entrar sólo mediante PR. [Política vigente](https://github.com/diegolezaval/Proyecto_Runas/blob/migration/cp10/gobernanza/POLITICA_MAIN.md). El documento de migración describe la preparación histórica CP10; no es el estado actual de publicación.
 
@@ -62,7 +62,7 @@ python herramientas/regresion_estructural.py --salida ../regresion_estructural.j
 python herramientas/checkpoint.py --salida ../Proyecto_Runas_checkpoint.zip
 ```
 
-El manifiesto cubre historia y fallos, además de fuentes y estados válidos. Un intento fallido de colocación tiene un NPZ ilegible conservado por hash; el auditor lo identifica como no reanudable, sin confundirlo con el resultado posterior válido. Las limitaciones de procedencia de cálculos antiguos permanecen declaradas.
+El manifiesto de cada paquete verificado cubre historia y fallos, además de fuentes y estados válidos. El manifiesto anterior era incompleto para P3 y se conserva con su inventario; las cápsulas científicas se verifican por separado. Un intento fallido de colocación tiene un NPZ ilegible conservado por hash; el auditor lo identifica como no reanudable, sin confundirlo con el resultado posterior válido. Las limitaciones de procedencia de cálculos antiguos permanecen declaradas.
 
 ## Ejecuciones y recuperación
 

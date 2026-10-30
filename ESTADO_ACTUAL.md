@@ -6,21 +6,35 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
+## Continuidad operativa
+
+| Referencia | Estado |
+|---|---|
+| CP12 / P3 | ABIERTO / SIN_VALIDAR |
+| Última frontera completa positiva P3 | τ8 |
+| Transporte interno recuperado | τ11.2 |
+| Próxima frontera completa | τ16, pendiente |
+| Trabajadores propios activos | 0 |
+
+Registro: [checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
+
+El transporte interno no es una frontera completa ni una validación de P3.
+
 ## Siguiente trabajo científico
 
-- Consultar primero la actividad del único guardián P3 y cualquier transporte posterior. Piloto0→8 en curso; último transporte recuperado0.4 y control .4→.41 bit a bit positivo. Avanzar sólo tras guardar/recuperar/auditar cada frontera y pasar todas las puertas. No duplicar trabajador ni reanudar P2. CP12 abierto.
-- RES0/RES2: paquete finito, retroacción y contabilidad de recursos tras estabilidad útil
-- C7: nodos/vórtices o candidatos dinámicos con recursos
+- P3: usar el transporte exacto τ11,2 del adjunto688783601 ya recuperado y auditado. Última frontera completa positivaτ8; siguienteτ16. Preparar y probar la conservación desde el ejecutor antes de física nueva. No repetirτ9,6→τ11,2 ni recrear su permiso consumido. No hay trabajador numérico propio activo. CP12 abierto.
+- Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
+- Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 
 ## Estados de origen y continuación
 
 - Estado CP04 terminado de origen para nuevas perturbaciones: [validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz](validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz).
 - Último estado no radial terminado; no repetir ni prolongar sin protocolo nuevo: [validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz](validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz).
-- Diagnóstico guardado después de la puerta: [τ160 y CP10 exacto comprobados; lector original con serialización NumPy booleana administrativa verificada. Las tres ventanas dan suficiencia al operador χ acoplado y a operador_total. El operador libre no cumple las puertas; se conservan términos cruzados y cancelaciones. No se atribuye una fracción pura al bucle χ→Φ→χ.](τ160 y CP10 exacto comprobados; lector original con serialización NumPy booleana administrativa verificada. Las tres ventanas dan suficiencia al operador χ acoplado y a operador_total. El operador libre no cumple las puertas; se conservan términos cruzados y cancelaciones. No se atribuye una fracción pura al bucle χ→Φ→χ.).
+- Diagnóstico guardado después de la puerta: [checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json](checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json).
 - Tiempo no radial final registrado: 160.
 
 ## Qué no repetir
@@ -34,6 +48,8 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 - Diagnósticos CP11 cerrados: reutilizar recibos para consultar; reproducción verificable en temporales. Conservar el intento aritmético fallido y no ajustar otra fase tras el negativo.
 - CP12 original 0→160: todas las fronteras de ocho unidades conservadas y auditadas; comparación final CP10 exacta y lectura causal de las tres ventanas completadas. Reutilizar certificados; conservar el fallo inicial de serialización y su arreglo administrativo.
 - Ensayo mixto Φ-FV/χ-K4 0→80: conservar fronteras, transportes y negativo espacial80. No repetir A–D ni reanudar desde72/78,4/79,6 para eludir la puerta negativa.
+- P3τ0→τ11,2 y F0…F5; la repetición adicionalτ9,6→τ11,2 y su permiso están consumidos.
+- La prueba administrativa116/308 sigue INCOMPLETA y no representa308 documentos originales.
 
 ## Resultados vigentes y límites
 
@@ -88,7 +104,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/PILOTO_P3_TAU0_CP12_20261018.md](informes/PILOTO_P3_TAU0_CP12_20261018.md).
+Informe de esta entrega: [informes/ENTREGA_CONTINUIDAD_Y_RECUPERACION_20261030.md](informes/ENTREGA_CONTINUIDAD_Y_RECUPERACION_20261030.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

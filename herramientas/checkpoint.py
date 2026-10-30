@@ -9,7 +9,7 @@ import zipfile
 R = Path(__file__).resolve().parents[1]
 TRANSIENT_DIRS = {'.git', '.venv', 'venv', '__pycache__', '.pytest_cache', '.mypy_cache', '.ruff_cache'}
 CACHE = 'validacion/P06/no_radial/cache'
-EXCLUDED = ['MANIFIESTO_SHA256.json', '**/.git/**', '**/.venv/**', '**/venv/**', '**/__pycache__/**', '**/.pytest_cache/**', '**/.mypy_cache/**', '**/.ruff_cache/**', '**/*.pyc', '**/*.pyo', 'validacion/P06/no_radial/ejecucion_*.lock', CACHE + '/**']
+EXCLUDED = ['MANIFIESTO_SHA256.json', '**/.git', '**/.git/**', '**/.venv/**', '**/venv/**', '**/__pycache__/**', '**/.pytest_cache/**', '**/.mypy_cache/**', '**/.ruff_cache/**', '**/*.pyc', '**/*.pyo', 'validacion/P06/no_radial/ejecucion_*.lock', CACHE + '/**']
 
 
 def digest(path):
@@ -29,6 +29,8 @@ def files(root=R):
                 raise ValueError('Directorio científico enlazado fuera del payload: ' + str((folder / d).relative_to(root)))
         dirs[:] = sorted(d for d in dirs if d not in TRANSIENT_DIRS and (folder / d).relative_to(root).as_posix() != CACHE)
         for name in sorted(names):
+            if name == '.git':
+                continue  # Git worktree metadata is a file, not a directory.
             path = folder / name
             if path.suffix in ['.pyc', '.pyo']:
                 continue

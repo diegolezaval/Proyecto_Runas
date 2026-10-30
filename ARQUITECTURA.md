@@ -115,8 +115,10 @@ Antes de editar una evidencia ya entregada, conservar sus bytes y manifiesto en 
 
 ## Git y crecimiento
 
-Git directo para código, Markdown, JSON, configuraciones, SVG y datos de referencia razonables. NPZ/CSV grandes pueden pasar a LFS cuando su tamaño y frecuencia de cambio lo justifiquen, con hashes y recuperación probada. ZIP completos nuevos deben distribuirse como artefactos/Releases. Los ZIP fuente históricos actuales permanecen incluidos. No se activó LFS ni se creó/publicó un repositorio remoto.
+Git directo para código, Markdown, JSON, configuraciones, SVG y datos de referencia razonables. NPZ/CSV grandes pueden pasar a LFS cuando su tamaño y frecuencia de cambio lo justifiquen, con hashes y recuperación probada. ZIP completos nuevos deben distribuirse como artefactos/Releases. Los ZIP fuente históricos actuales permanecen incluidos. No se activó LFS. El repositorio remoto ya está publicado: main conserva CP11 y P3 continúa en su rama experimental. La preparación de migración queda como historia.
 
 Las exclusiones locales sólo cubren cachés, entornos y escritura temporal. Los atributos conservan bytes al hacer checkout para que la conversión automática de líneas no invalide los manifiestos. Datos numéricos, fallos y logs científicos se conservan. Las limitaciones de GitHub y la precaución de recuperar objetos LFS están documentadas con fuentes oficiales en el informe de auditoría.
 
 No hace falta una nueva jerarquía ahora. Para nuevas campañas numerosas, crear una subcarpeta por modelo/campaña con recibo e índice; no mover las campañas cerradas. Una migración grande futura exige mapa origen→destino, hashes, actualización de referencias, prueba de extracción/recuperación y preservación de historia antes de reemplazar rutas.
+
+El manifiesto raíz anterior y sus fuentes se conservan en `trazabilidad/continuidad_20261030/entrada/`. No cubrían el árbol P3 completo. Generar la identidad de cada entrega con `checkpoint.py` y comprobar una extracción independiente; no confundirla con la validación de las cápsulas científicas.

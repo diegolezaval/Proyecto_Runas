@@ -57,7 +57,7 @@
       "id": "no_radial_CP04",
       "status": "COMPLETADA",
       "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
-      "next": "Diagnosticar el operador radial y las componentes cortas de chi sobre los estados CP10 guardados; prerregistrar el próximo control espacial o una discretización contrastada, sin relajar la puerta ni repetir las catorce evoluciones cerradas.",
+      "next": "Reutilizar CP10/CP11 y negativos CP12/P2; sólo continuación P3 desde su transporte exactoτ11,2.",
       "preregistered_campaign": "datos/ensayo_no_radial_CP06.json",
       "completed_evolutions": 8,
       "partial_pilots": [
@@ -184,25 +184,46 @@
     },
     {
       "id": "CP12_par_instrumentado",
-      "status": "PAUSADA_REANUDABLE",
+      "status": "COMPLETADA_CON_NEGATIVO_ESPACIAL_TAU160",
       "run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
-      "resume": true,
-      "completed": false,
+      "resume": false,
+      "completed": true,
       "physical_gate_passed": false,
       "cause_certified": false,
       "correction_tested": false,
       "preregistered_campaign": "datos/ensayo_causal_chi_CP12.json",
-      "evidence": "trazabilidad/CP12_reconstruccion/respaldos/tau0008.json",
-      "evidence_role": "REINICIO_DE_TRABAJO_VERIFICADO_NO_CIERRE_CIENTIFICO",
+      "evidence": "checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json",
+      "evidence_role": "RESULTADO_NEGATIVO_NO_CIERRE_CP12",
       "last_time_observed_in_prior_session": 16.0,
       "prior_session_arrays_not_currently_available": false,
       "missing_state_is_scientific_negative": false,
-      "current_verified_time": 8.0,
+      "current_verified_time": 160,
       "recovery_preregistration": "informes/PRERREGISTRO_RECONSTRUCCION_CP12.md",
       "prior_tau16_arrays_available": false,
       "recovered_from_persistent_capsule": true,
       "repository_pair_snapshot_time": 0.0,
-      "restore_from_capsule_before_resume": true
+      "restore_from_capsule_before_resume": true,
+      "scope": "No reanudar el reinicio históricoτ8. Fuentes anteriores conservadas en trazabilidad/continuidad_20261030/entrada/."
+    },
+    {
+      "id": "CP12_P2_mixto",
+      "status": "SUSPENDIDA_NEGATIVO_ESPACIAL_TAU80",
+      "resume": false,
+      "evidence": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/SUSPENSION.json",
+      "last_all_five_spatial_gates_positive_boundary": 72,
+      "CP12_closed": false
+    },
+    {
+      "id": "CP12_P3_pareja",
+      "status": "PAUSADA_PREPARACION_CONTINUACION_DESDE_11P2",
+      "resume": true,
+      "resume_only_from_exact_transport": true,
+      "recovered_observer_clock": 11.2,
+      "last_positive_full_frontier": 8,
+      "next_full_frontier": 16,
+      "evidence": "checkpoints/CP12/p3_20261018/continuidad_20261030/auditoria_recuperacion/RESULTADO.json",
+      "consumed_replay_permission_available": false,
+      "CP12_closed": false
     }
   ],
   "failures_preserved": "trazabilidad/reanudacion_CP02/inventario.json",
@@ -210,7 +231,7 @@
   "numerical_runs_in_progress": [],
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
   "latest_completed_nonradial_time": 160,
-  "diagnostic_after_gate": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+  "diagnostic_after_gate": "checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json",
   "verification_protocol": "datos/verificacion_diagnostico_CP11.json",
   "failed_CP11_controls_preserved": [
     {
@@ -220,5 +241,18 @@
       "replaced_as_validated_reference_by": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
       "implementation_amendment": "informes/ENMIENDA_CP11_PRECISION_DEFECTO.md"
     }
-  ]
+  ],
+  "current_operational_state": {
+    "accepted_checkpoint": "CP11",
+    "CP12_status": "ABIERTO",
+    "P3_status": "SIN_VALIDAR",
+    "last_full_frontier": 8,
+    "recovered_transport": 11.2,
+    "next_full_frontier": 16,
+    "own_workers": 0,
+    "forward_evolution_started": false,
+    "canonical_register": "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
+    "evidence": "checkpoints/CP12/p3_20261018/continuidad_20261030/auditoria_recuperacion/RESULTADO.json",
+    "preservation_in_current_process": "PENDIENTE"
+  }
 }

@@ -1,9 +1,9 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-10-29T14:20:19.542794+00:00",
+  "updated_at": "2026-10-30T19:12:43.610833+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "08816ee0303ac3003fe9f5dff9c11bae604f4ec4",
-  "own_attempt_home": "/workspace/scratch/699b1bd1764f/recuperacion_vigente/extraido_t112",
+  "last_public_commit": "4a88af2dbdcdbdfbd7983fc3d6ae44a0776cdfbf",
+  "own_attempt_home": "/workspace/scratch/105d4db4f9e7/runtime_20261030/extraido",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
   "accepted_scientific_checkpoint": "CP11",
@@ -255,7 +255,7 @@
     },
     "latest_public_recovery_receipt_sha256": "2d0941119877af47e395c82923e62630d7e2aaab2b608711e6dcd1c9ad954d76"
   },
-  "current_own_worker_status": "BOUNDED_REPLAY_COMPLETED_TAU112_PRESERVED_AND_PUBLICLY_RECOVERED_NO_FURTHER_PHYSICS",
+  "current_own_worker_status": "RECOVERED_11P2_NO_NEW_M2_WORKER",
   "own_observed_start": {
     "at": "2026-10-29T01:54:39.628500+00:00",
     "scope": "Own registered worker only",
@@ -291,7 +291,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
   "current_helper_directory": null,
-  "next_recovery": "Recover the existing tau11.2 capsule from GitHub asset688783601 (229880902 bytes, SHA256 b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d) or its identical temporary copy. Never replay9.6 or recreate the consumed single-use permission. Recovery and public preservation are complete. Before forward evolution review the original P3 protocol and a continuation procedure starting from this exact live transport with original internal bound16; at full frontier16 all five original spatial gates and the original full-frontier preservation gates are required. This administrative recovery launched no next interval, changed no scientific sources or thresholds, and did not close CP12. CP11 remains accepted, P3 unvalidated, last full frontier8; historical transfer116/308 remains incomplete.",
+  "next_recovery": "P3: usar el transporte exacto τ11,2 del adjunto688783601 ya recuperado y auditado. Última frontera completa positivaτ8; siguienteτ16. Preparar y probar la conservación desde el ejecutor antes de física nueva. No repetirτ9,6→τ11,2 ni recrear su permiso consumido. No hay trabajador numérico propio activo. CP12 abierto.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -667,12 +667,12 @@
   },
   "latest_local_recoverable_observer_clock": 11.2,
   "latest_permanent_recoverable_observer_clock": 11.2,
-  "local_transport112_archive": "/workspace/scratch/699b1bd1764f/recuperacion_vigente/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000112_TRANSITO_INTENTO02_20261028.zip",
+  "local_transport112_archive": "/workspace/scratch/105d4db4f9e7/runtime_20261030/tau11p2.zip",
   "local_transport112_archive_sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
   "continuation_blocked_by_permanent_preservation": false,
   "storage_error": null,
   "no_evidence_deleted": false,
-  "local_recovery_home": "/workspace/scratch/699b1bd1764f/recuperacion_vigente/extraido_t112",
+  "local_recovery_home": "/workspace/scratch/105d4db4f9e7/runtime_20261030/extraido",
   "local_disappearance_incident": {
     "schema": "CP12_P3_LOCAL_WORKSPACE_DISAPPEARANCE_AFTER_LIBRARY_QUOTA_FAILURE",
     "observed_after_commit": "5cb247226b37739d38dc64a02836ce6fc8f35c5c",
@@ -933,5 +933,17 @@
   "continuation_blocked_by_final_github_copy": false,
   "historical_storage_error_before_attempt02": "library_storage_limit_exceeded",
   "storage_error_scope_note": "Current capsule recovery succeeded; this does not establish resolution of old account quota errors.",
-  "last_public_commit_scope": "Parent known before this record update; the branch ref identifies the newest commit."
+  "last_public_commit_scope": "Parent known before this record update; the branch ref identifies the newest commit.",
+  "new_executor_20261030": {
+    "audit": "checkpoints/CP12/p3_20261018/continuidad_20261030/auditoria_recuperacion/RESULTADO.json",
+    "preregistration": "checkpoints/CP12/p3_20261018/continuidad_20261030/PRERREGISTRO.md",
+    "report": "informes/ENTREGA_CONTINUIDAD_Y_RECUPERACION_20261030.md",
+    "rescue_commit": "7a1a86eb5199cc6e82de657f5fed3069fd8e08a7",
+    "old_prepared_delivery_bytes_currently_available": false,
+    "old_physical_worker_started": false,
+    "new_physical_worker_started": false,
+    "exact_forward_procedure_pending": true,
+    "preservation_in_current_process_verified": false,
+    "M2_steps_executed": 0
+  }
 }

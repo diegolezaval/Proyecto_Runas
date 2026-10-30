@@ -8089,8 +8089,8 @@
     {
       "path": "datos/arquitectura.json",
       "role": "fuente_o_protocolo_JSON",
-      "bytes": 26249,
-      "snapshot_sha256": "bbf3d644e9d881efac7101b177521b79e3bc0a2785dbf2f5fed22f36b97492b0",
+      "bytes": 26766,
+      "snapshot_sha256": "c1764040735995df4a16d3aa1f22ac7a5e2c1a8443d5a2af2de7e565fb9e3984",
       "used_by_claims": [],
       "claim_link_categories": {},
       "stage_evidence_for": [],
@@ -9349,8 +9349,8 @@
     {
       "path": "datos/registro_calculos.json",
       "role": "fuente_o_protocolo_JSON",
-      "bytes": 13187,
-      "snapshot_sha256": "68538f7f5511c900bdd2df8a0b64e8a070f939a139501b35d3a7a7a34ab0a8eb",
+      "bytes": 14464,
+      "snapshot_sha256": "30732f4f13ff3c4ea2638b6aa3531c8b3caf3b6f6a44dcd277e8c890fd8dc3b1",
       "used_by_claims": [],
       "claim_link_categories": {},
       "stage_evidence_for": [],
@@ -12042,6 +12042,20 @@
       ]
     },
     {
+      "path": "herramientas/auditar_arbol_git.py",
+      "role": "codigo_o_herramienta",
+      "bytes": 2605,
+      "snapshot_sha256": "896da29a6b6e643abf2724a9ed636ba3f8fad2abbc313002bb8f88d594342718",
+      "used_by_claims": [],
+      "claim_link_categories": {},
+      "stage_evidence_for": [],
+      "stored_with_campaign_results": [],
+      "read_by_declared_generators": [],
+      "declared_generators": [],
+      "produced_by_executions": [],
+      "used_as_input_by_executions": []
+    },
+    {
       "path": "herramientas/auditar_arquitectura.py",
       "role": "codigo_o_herramienta",
       "bytes": 11256,
@@ -12278,8 +12292,8 @@
     {
       "path": "herramientas/checkpoint.py",
       "role": "codigo_o_herramienta",
-      "bytes": 8398,
-      "snapshot_sha256": "d7afd24579717eb80f926fea5b6fe31a51d0fd02e25d298434573ffcc5e8904e",
+      "bytes": 8518,
+      "snapshot_sha256": "70993187fe885552957ac87f2cf24b3374b3a635bc102d8b4cfa953a4f11307e",
       "used_by_claims": [],
       "claim_link_categories": {},
       "stage_evidence_for": [],
@@ -12291,7 +12305,7 @@
         {
           "run_id": "43cddeadabcc7447ff2ec56f2191ec157dbc0bc7106e98da6dc9f73ae5fd76b4",
           "recorded_sha256": "d7afd24579717eb80f926fea5b6fe31a51d0fd02e25d298434573ffcc5e8904e",
-          "current_bytes_match": true
+          "current_bytes_match": false
         }
       ]
     },
@@ -14332,8 +14346,8 @@
     {
       "path": "herramientas/generar_continuidad.py",
       "role": "codigo_o_herramienta",
-      "bytes": 15244,
-      "snapshot_sha256": "8c5d214ba983b9879f059d86ee427fb91730ffd68daf97c7184afc45f443f06b",
+      "bytes": 16266,
+      "snapshot_sha256": "f02943a02213e042840ddc0643726be10ea6f3110a7006dcd72bf2d304204636",
       "used_by_claims": [],
       "claim_link_categories": {},
       "stage_evidence_for": [],
@@ -15149,8 +15163,8 @@
     {
       "path": "herramientas/regresion_estructural.py",
       "role": "codigo_o_herramienta",
-      "bytes": 12569,
-      "snapshot_sha256": "7c596d3c835f0eb06b6fa93b34aa777e0a6cafbc5c0c9f9bdbfbf8b169e91590",
+      "bytes": 13039,
+      "snapshot_sha256": "f7580b71f0f736c18201a0ee5dfd16a57ed7769c4f574ad1546e22726cd8c2db",
       "used_by_claims": [],
       "claim_link_categories": {},
       "stage_evidence_for": [],
@@ -15615,8 +15629,8 @@
     {
       "path": "herramientas/rutas_documentales.py",
       "role": "codigo_o_herramienta",
-      "bytes": 2352,
-      "snapshot_sha256": "8c7eb80116db0d62199d27e0ba85f7b5468029313d67c32ee5cf0f9b16c38d02",
+      "bytes": 2811,
+      "snapshot_sha256": "79af854a10fa2d75dd0666987591238c6a133427e178b35d3c170575e1783e9a",
       "used_by_claims": [],
       "claim_link_categories": {},
       "stage_evidence_for": [],
@@ -17337,6 +17351,25 @@
           "current_bytes_match": true
         }
       ]
+    },
+    {
+      "path": "validacion/P06/acceso_lineal/.w0.90000_Om4.0000_h0.0063_R60_estado.npz.FPMBsD",
+      "role": "resultado_o_diagnostico",
+      "bytes": 262144,
+      "snapshot_sha256": "4db92dd4d659f6bd49e16cc943944bf76648f30c97bf768091b35ef5f67b1838",
+      "used_by_claims": [],
+      "claim_link_categories": {},
+      "stage_evidence_for": [],
+      "stored_with_campaign_results": [
+        {
+          "registry_role": "linear_access",
+          "authoritative_result": "validacion/P06/acceso_lineal/puerta_decision.json"
+        }
+      ],
+      "read_by_declared_generators": [],
+      "declared_generators": [],
+      "produced_by_executions": [],
+      "used_as_input_by_executions": []
     },
     {
       "path": "validacion/P06/acceso_lineal/auditoria_linealizacion_y_flujos.json",
@@ -24454,25 +24487,6 @@
           "current_bytes_match": true
         }
       ]
-    },
-    {
-      "path": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/.momentos_duhamel.csv.91qHtj",
-      "role": "resultado_o_diagnostico",
-      "bytes": 1048576,
-      "snapshot_sha256": "10ebcaee5f4eec910015c4208ec78efe9a3cce24e584a7f791bfd90a6e279622",
-      "used_by_claims": [],
-      "claim_link_categories": {},
-      "stage_evidence_for": [],
-      "stored_with_campaign_results": [
-        {
-          "registry_role": "chi_forced_response",
-          "authoritative_result": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json"
-        }
-      ],
-      "read_by_declared_generators": [],
-      "declared_generators": [],
-      "produced_by_executions": [],
-      "used_as_input_by_executions": []
     },
     {
       "path": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/configuration.json",
@@ -39623,6 +39637,7 @@
     "graficos/tecnicos/P-22.svg",
     "graficos/tecnicos/P-23.svg",
     "graficos/tecnicos/P-24.svg",
+    "herramientas/auditar_arbol_git.py",
     "herramientas/auditar_arquitectura.py",
     "herramientas/auditar_positividad_angular_m2.py",
     "herramientas/checkpoint.py",
@@ -39685,6 +39700,7 @@
     "validacion/CP03_validez.png",
     "validacion/CP04_preparacion_radial.png",
     "validacion/P04/C7/auditoria_fase_sin_nodos.json",
+    "validacion/P06/acceso_lineal/.w0.90000_Om4.0000_h0.0063_R60_estado.npz.FPMBsD",
     "validacion/P06/acceso_lineal/auditoria_linealizacion_y_flujos.json",
     "validacion/P06/acceso_lineal/colocacion.log",
     "validacion/P06/acceso_lineal/colocacion_Om1.9500.json",
@@ -39833,7 +39849,6 @@
     "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/fuentes/herramientas/respuesta_forzada_chi_CP11.py",
     "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/momentos_duhamel.csv",
     "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/resultados.json",
-    "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/.momentos_duhamel.csv.91qHtj",
     "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/ejecucion.log",
     "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/fuentes/datos/ensayo_respuesta_forzada_precisa_CP11.json",
     "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/fuentes/datos/theta_comun.json",
