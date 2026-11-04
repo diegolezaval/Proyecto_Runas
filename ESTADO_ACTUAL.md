@@ -26,7 +26,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 
 ## Siguiente trabajo científico
 
-- Publicar la reserva ligada al registro y a la capacidad combinada, verificar el head y activar el único trabajador exacto de τ11,2→16. Cada transporte permanente y frontera deben recuperarse y auditarse; las cinco métricas de16 deciden la siguiente frontera. La repetición τ9,6→11,2 continúa consumida.
+- Mantener el único trabajador 11,2→16. Próxima conservación permanente τ12,8; guardar, recuperar y auditar antes de más física. En16 recuperar frontera y aplicar las cinco métricas y todos los umbrales originales. No repetir9,6→11,2. P3 sigue sin validar y CP12 abierto.
 - Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 
@@ -104,7 +104,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/ENTREGA_CONSERVACION_Y_ENTORNO_P3_20261104.md](informes/ENTREGA_CONSERVACION_Y_ENTORNO_P3_20261104.md).
+Informe de esta entrega: [informes/P3_CONTINUACION_112_A16_20261104.md](informes/P3_CONTINUACION_112_A16_20261104.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

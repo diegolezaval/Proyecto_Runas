@@ -250,15 +250,18 @@
     "recovered_transport": 11.2,
     "next_full_frontier": 16,
     "own_workers": 1,
-    "forward_evolution_started": false,
+    "forward_evolution_started": true,
     "canonical_register": "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
     "evidence": "trazabilidad/continuidad_20261104/auditoria_compatible/RESULTADO.json",
     "preservation_in_current_process": "NATIVA_Y_GITHUB_RECUPERADOS",
-    "own_physical_workers": 0,
+    "own_physical_workers": 1,
     "administrative_report": "informes/ENTREGA_CONSERVACION_Y_ENTORNO_P3_20261104.md",
     "capacity_receipt": "checkpoints/CP12/p3_20261018/continuidad_20261104/capacidad/RESULTADO_TRANSITO.json",
-    "observed_at_utc": "2026-11-04T12:31:51.666168+00:00",
-    "administrative_phase": "CAPACIDAD_COMBINADA_POSITIVA_ESPERA_ACTIVACION_REGISTRADA",
-    "preservation_gate_passed": true
+    "observed_at_utc": "2026-11-04T12:38:11.575256+00:00",
+    "administrative_phase": "EVOLUCION_112_A16",
+    "preservation_gate_passed": true,
+    "scientific_report": "informes/P3_CONTINUACION_112_A16_20261104.md",
+    "last_activity_observer_clock": 11.71,
+    "activity_clock_is_restart_certificate": false
   }
 }

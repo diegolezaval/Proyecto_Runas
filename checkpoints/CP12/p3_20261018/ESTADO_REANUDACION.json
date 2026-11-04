@@ -1,8 +1,8 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-11-04T12:31:51.666168+00:00",
+  "updated_at": "2026-11-04T12:38:11.575256+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "e6c388964562cb7f84c8488a7060a6745d049a4b",
+  "last_public_commit": "07c0c5b34802dbf6a4854fa0be67d4aa77be8b96",
   "own_attempt_home": "/workspace/scratch/105d4db4f9e7/runtime_20261104/extraido_compatible",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
@@ -255,8 +255,17 @@
     },
     "latest_public_recovery_receipt_sha256": "2d0941119877af47e395c82923e62630d7e2aaab2b608711e6dcd1c9ad954d76"
   },
-  "current_own_worker_status": "CAPACIDAD_COMBINADA_POSITIVA_ESPERA_ACTIVACION_REGISTRADA",
-  "own_observed_start": null,
+  "current_own_worker_status": "RUNNING_REGISTERED_FORWARD_112_A16",
+  "own_observed_start": {
+    "at": "2026-11-04T12:35:44.927177+00:00",
+    "clock": 11.21,
+    "accepted_steps_since_restore": [
+      1,
+      1
+    ],
+    "replay96_to112_executed": false,
+    "CP12_closed": false
+  },
   "own_guardian_tool_session_id": 28477,
   "own_exit_observed": null,
   "current_target": 11.2,
@@ -274,7 +283,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
   "current_helper_directory": "/workspace/scratch/105d4db4f9e7/runtime_20261104/helpers_actuales",
-  "next_recovery": "Publicar la reserva ligada al registro y a la capacidad combinada, verificar el head y activar el único trabajador exacto de τ11,2→16. Cada transporte permanente y frontera deben recuperarse y auditarse; las cinco métricas de16 deciden la siguiente frontera. La repetición τ9,6→11,2 continúa consumida.",
+  "next_recovery": "Mantener el único trabajador 11,2→16. Próxima conservación permanente τ12,8; guardar, recuperar y auditar antes de más física. En16 recuperar frontera y aplicar las cinco métricas y todos los umbrales originales. No repetir9,6→11,2. P3 sigue sin validar y CP12 abierto.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -284,7 +293,32 @@
     "observer_closure_phase": 0.001
   },
   "previous_inaccessible_executor_termination_assumed": false,
-  "latest_heartbeat_observation": null,
+  "latest_heartbeat_observation": {
+    "at": "2026-11-04T12:38:11.575256+00:00",
+    "clock": 11.71,
+    "phase": "evolution",
+    "physical_streams": [
+      {
+        "t": 11.722998932910873,
+        "accepted": 2174,
+        "nfev": 18266,
+        "nfev_live": 8333,
+        "maxe": 6.33251229231746e-11,
+        "maxq": 1.1102230246251565e-15,
+        "maxe_original": 3.4873062215723394e-09
+      },
+      {
+        "t": 11.712151120058447,
+        "accepted": 2172,
+        "nfev": 18266,
+        "nfev_live": 8310,
+        "maxe": 6.319178513791712e-11,
+        "maxq": 4.440892098500626e-16,
+        "maxe_original": 8.379739124819707e-10
+      }
+    ],
+    "not_a_restart_certificate": true
+  },
   "P3_one_interval_transport_control": {
     "schema": "CP12_NEW_TRANSPORT_CONTROL_NOT_PREFLIGHT_REPETITION",
     "passed": true,
@@ -969,8 +1003,8 @@
     "capacity_sha256": "a480ddb695f861274d8eb6d3e6199324cd10ca8eb72c418467ac56af38956308",
     "native_cycle_in_actual_worker_passed": true,
     "github_capacity_cycle_passed": true,
-    "new_M2_steps_executed": 0,
-    "new_physical_worker_started": false,
+    "new_M2_steps_executed": 190,
+    "new_physical_worker_started": true,
     "worker_registration": "checkpoints/CP12/p3_20261018/continuidad_20261030/ejecutor/REGISTRO.json",
     "code_registered_commit": "4f58c467ff886834a7141eee64ce52bcba4a4a7b",
     "administrative_block": null,
@@ -979,6 +1013,14 @@
     "capacity_acceptance_sha256": "098ecc500b7bfddeb900691d2650b87472111e865108a053872e2e93d9ee2bc3",
     "capacity_github_asset_id": 709420857,
     "original_login_block_resolved": true,
-    "reservation": "checkpoints/CP12/p3_20261018/continuidad_20261104/ASIGNACION_112_A16.json"
+    "reservation": "checkpoints/CP12/p3_20261018/continuidad_20261104/ASIGNACION_112_A16.json",
+    "activation": "checkpoints/CP12/p3_20261018/continuidad_20261104/ACTIVACION.json",
+    "physical_start": "checkpoints/CP12/p3_20261018/continuidad_20261104/INICIO_FISICO.json",
+    "forward_report": "informes/P3_CONTINUACION_112_A16_20261104.md",
+    "new_M2_steps_executed_scope": "Sum of accepted-step deltas of the two grids since exact τ11,2 transport, at the archived first heartbeat; not a final count.",
+    "accepted_steps_since_restore_per_grid": [
+      96,
+      94
+    ]
   }
 }
