@@ -1,0 +1,21 @@
+{
+  "schema": "CP12_P3_RELEASE_RECOVERY_ZERO_STEP_AUDIT_V1",
+  "started_at_utc": "2026-11-04T12:04:19.491480+00:00",
+  "archive_sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
+  "archive_bytes": 229880902,
+  "passed": false,
+  "M2_steps_executed": 0,
+  "CP12_closed": false,
+  "correction_validated": false,
+  "original_trajectories_repeated": false,
+  "scope": "Restauración y comprobaciones originales sin construir ni avanzar DOP853",
+  "audits": {
+    "boundary8": {
+      "returncode": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ee93a4ec9cc4f90f8ebe38724b9cfdd9edfcc6140a7ac1fa2d9151cc4c933c5a"
+    }
+  },
+  "error": "RuntimeError: Auditor original boundary8 terminó con código 1",
+  "finished_at_utc": "2026-11-04T12:04:22.894825+00:00"
+}

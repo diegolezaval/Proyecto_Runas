@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "method": "Extract exact official Ubuntu binary packages into private prefix; no system package replacement",
+  "official_metadata": "https://api.launchpad.net/devel/ubuntu/+archive/primary/+binarypub/218341575?ws.op=binaryFileUrls&include_meta=true",
+  "official_build": "https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/ppa/+build/28912931",
+  "changes_sha256": "a063aee02608b55e43d5fe16c94e4a8540b7d371b48e3d0e5012c8c74bfff03b",
+  "packages": [
+    {
+      "name": "cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb",
+      "sha256": "595791da223beec7cbbe6b77906a7c3c1a3946ac5b406c50624d0ec272f25ce7",
+      "bytes": 10718702
+    },
+    {
+      "name": "gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb",
+      "sha256": "7cd398670e8306eabc9e77202f356a3206c440bd9f3dc764680a19be01784776",
+      "bytes": 21089252
+    },
+    {
+      "name": "libgcc-13-dev_13.3.0-6ubuntu2~24.04_amd64.deb",
+      "sha256": "ea61cc40833b78517933725a7b9a1d6b9d2047785f68577ddadfd064cc193397",
+      "bytes": 2681168
+    }
+  ],
+  "cc_version": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "compiler_path": "/workspace/scratch/105d4db4f9e7/runtime_20261104/toolchain/bin/cc",
+  "compiler_real_sha256": "6117c52522997d2aaccb2b52b3c6bf42c0a6c5edb1d718431fed6b2fc5fec234",
+  "M2_steps_executed": 0,
+  "CP12_closed": false
+}

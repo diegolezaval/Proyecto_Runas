@@ -1,0 +1,27 @@
+{
+  "schema": "RUNICA_OWN_ADMIN_WORKER_OBSERVATION_V1",
+  "observed_at_utc": "2026-11-04T12:14:19.306047+00:00",
+  "worker": {
+    "at": "2026-11-04T12:10:48.932413+00:00",
+    "registry_sha256": "033d238c6e31942ec23cccb9fab78e37feca296108d8dd11e282b6527cc51c57",
+    "pid": 4,
+    "physical_steps_observed": false
+  },
+  "tool_session_id": 28477,
+  "phase": "WAITING_GITHUB_PUBLIC_CAPACITY",
+  "tool_session_running_last_observed": true,
+  "tool_session_observation": "write_stdin returned running session_id 28477 before this observation",
+  "both_registered_locks_held": {
+    "registration": true,
+    "instance": true
+  },
+  "worker_pid_visible_in_observer_namespace": false,
+  "physical_start_receipt_present": false,
+  "activation_present": false,
+  "new_M2_steps_executed": 0,
+  "automatic_physical_activation": false,
+  "capacity_wait_timeout_seconds": 3600,
+  "previous_inaccessible_executor_termination_assumed": false,
+  "activity_is_restart_certificate": false,
+  "CP12_closed": false
+}

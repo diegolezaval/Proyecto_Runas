@@ -2138,10 +2138,18 @@
       "reopened_stages": [],
       "M2_steps_executed": 0,
       "CP12_closed": false
+    },
+    {
+      "date": "2026-11-04",
+      "event": "Recuperación de preparación 4f58c46, compilador exacto y capacidad nativa sin física nueva",
+      "evidence": "informes/ENTREGA_CONSERVACION_Y_ENTORNO_P3_20261104.md",
+      "scientific_checkpoint": "CP11",
+      "CP12_closed": false,
+      "report": "informes/ENTREGA_CONSERVACION_Y_ENTORNO_P3_20261104.md"
     }
   ],
   "next_actions": [
-    "P3: usar el transporte exacto τ11,2 del adjunto688783601 ya recuperado y auditado. Última frontera completa positivaτ8; siguienteτ16. Preparar y probar la conservación desde el ejecutor antes de física nueva. No repetirτ9,6→τ11,2 ni recrear su permiso consumido. No hay trabajador numérico propio activo. CP12 abierto.",
+    "Publicar y recuperar la cápsula de capacidad desde la Release GitHub; la sesión del navegador requiere login. El trabajador propio sólo conserva, esperando el adjunto, sin ACTIVACION.json ni pasos nuevos. Después registrar reserva y activación ligadas a los hashes antes de continuar exactamente τ11,2→16. Si el proceso expiró o desapareció, reconciliar su actividad y las escrituras ya confirmadas antes de preparar otro proceso; nunca repetir τ9,6→11,2.",
     "Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.",
     "Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico."
   ],
@@ -2159,7 +2167,7 @@
     "La prueba administrativa116/308 sigue INCOMPLETA y no representa308 documentos originales."
   ],
   "complete_primordials": 0,
-  "next_calculation": "P3: usar el transporte exacto τ11,2 del adjunto688783601 ya recuperado y auditado. Última frontera completa positivaτ8; siguienteτ16. Preparar y probar la conservación desde el ejecutor antes de física nueva. No repetirτ9,6→τ11,2 ni recrear su permiso consumido. No hay trabajador numérico propio activo. CP12 abierto.",
+  "next_calculation": "Publicar y recuperar la cápsula de capacidad desde la Release GitHub; la sesión del navegador requiere login. El trabajador propio sólo conserva, esperando el adjunto, sin ACTIVACION.json ni pasos nuevos. Después registrar reserva y activación ligadas a los hashes antes de continuar exactamente τ11,2→16. Si el proceso expiró o desapareció, reconciliar su actividad y las escrituras ya confirmadas antes de preparar otro proceso; nunca repetir τ9,6→11,2.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [],
   "research_in_progress": [],
@@ -2178,18 +2186,18 @@
   "checkpoint_kind": "CIENTIFICO",
   "automatic_continuation_paused": {
     "paused": true,
-    "reason": "Conservación del proceso futuro y registro de continuación exacta pendientes.",
+    "reason": "Capacidad nativa recuperada; publicación y recuperación GitHub requieren login de navegador; activación física ausente.",
     "M2_exhaustion_claimed": false,
     "CP12_closed": false
   },
   "execution_activity": {
     "activity_known": true,
     "scope": "Sólo procesos propios accesibles; no se presume terminación de ejecutores históricos inaccesibles.",
-    "own_worker_status": "NO_NEW_M2_WORKER",
+    "own_worker_status": "CONSERVATION_ONLY_WAITING_GITHUB_LOGIN_ZERO_STEPS",
     "historical_termination_assumed": false,
     "activity_is_restart_certificate": false,
     "previous_activity_source": "trazabilidad/continuidad_20261030/entrada/estado_progreso.json",
-    "evidence": "checkpoints/CP12/p3_20261018/continuidad_20261030/auditoria_recuperacion/RESULTADO.json"
+    "evidence": "checkpoints/CP12/p3_20261018/continuidad_20261104/ACTIVIDAD.json"
   },
   "latest_verified_cp12_restart": {
     "time": 160,
@@ -2454,11 +2462,15 @@
     "last_full_frontier": 8,
     "recovered_transport": 11.2,
     "next_full_frontier": 16,
-    "own_workers": 0,
+    "own_workers": 1,
     "forward_evolution_started": false,
     "canonical_register": "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
-    "evidence": "checkpoints/CP12/p3_20261018/continuidad_20261030/auditoria_recuperacion/RESULTADO.json",
-    "preservation_in_current_process": "PENDIENTE"
+    "evidence": "trazabilidad/continuidad_20261104/auditoria_compatible/RESULTADO.json",
+    "preservation_in_current_process": "NATIVA_RECUPERADA; GITHUB_PENDIENTE_LOGIN",
+    "own_physical_workers": 0,
+    "administrative_report": "informes/ENTREGA_CONSERVACION_Y_ENTORNO_P3_20261104.md",
+    "capacity_receipt": "checkpoints/CP12/p3_20261018/continuidad_20261104/capacidad/RESULTADO_TRANSITO.json",
+    "observed_at_utc": "2026-11-04T12:14:19.306047+00:00"
   },
   "latest_verified_cp12_P3_transport": {
     "observer_clock": 11.2,

@@ -18,7 +18,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | Última frontera completa positiva P3 | τ8 |
 | Transporte interno recuperado | τ11.2 |
 | Próxima frontera completa | τ16, pendiente |
-| Trabajadores propios activos | 0 |
+| Trabajadores propios activos | 1 |
 
 Registro: [checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
 
@@ -26,7 +26,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 
 ## Siguiente trabajo científico
 
-- P3: usar el transporte exacto τ11,2 del adjunto688783601 ya recuperado y auditado. Última frontera completa positivaτ8; siguienteτ16. Preparar y probar la conservación desde el ejecutor antes de física nueva. No repetirτ9,6→τ11,2 ni recrear su permiso consumido. No hay trabajador numérico propio activo. CP12 abierto.
+- Publicar y recuperar la cápsula de capacidad desde la Release GitHub; la sesión del navegador requiere login. El trabajador propio sólo conserva, esperando el adjunto, sin ACTIVACION.json ni pasos nuevos. Después registrar reserva y activación ligadas a los hashes antes de continuar exactamente τ11,2→16. Si el proceso expiró o desapareció, reconciliar su actividad y las escrituras ya confirmadas antes de preparar otro proceso; nunca repetir τ9,6→11,2.
 - Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 
@@ -104,7 +104,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/ENTREGA_CONTINUIDAD_Y_RECUPERACION_20261030.md](informes/ENTREGA_CONTINUIDAD_Y_RECUPERACION_20261030.md).
+Informe de esta entrega: [informes/ENTREGA_CONSERVACION_Y_ENTORNO_P3_20261104.md](informes/ENTREGA_CONSERVACION_Y_ENTORNO_P3_20261104.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

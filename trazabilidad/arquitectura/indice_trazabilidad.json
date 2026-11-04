@@ -9349,8 +9349,8 @@
     {
       "path": "datos/registro_calculos.json",
       "role": "fuente_o_protocolo_JSON",
-      "bytes": 14464,
-      "snapshot_sha256": "30732f4f13ff3c4ea2638b6aa3531c8b3caf3b6f6a44dcd277e8c890fd8dc3b1",
+      "bytes": 14766,
+      "snapshot_sha256": "d0cd0dfb7ac58e297e5d6c0e175918663fd03116a6424cbe7664a70bc50e4da5",
       "used_by_claims": [],
       "claim_link_categories": {},
       "stage_evidence_for": [],
@@ -15587,6 +15587,20 @@
       ]
     },
     {
+      "path": "herramientas/restaurar_compilador_p3.py",
+      "role": "codigo_o_herramienta",
+      "bytes": 2902,
+      "snapshot_sha256": "38d99786b7b7b1ad88d416452237479fdc210a9ece0d08831e12c8dd11d09072",
+      "used_by_claims": [],
+      "claim_link_categories": {},
+      "stage_evidence_for": [],
+      "stored_with_campaign_results": [],
+      "read_by_declared_generators": [],
+      "declared_generators": [],
+      "produced_by_executions": [],
+      "used_as_input_by_executions": []
+    },
+    {
       "path": "herramientas/resultados_micro.py",
       "role": "codigo_o_herramienta",
       "bytes": 4875,
@@ -17351,25 +17365,6 @@
           "current_bytes_match": true
         }
       ]
-    },
-    {
-      "path": "validacion/P06/acceso_lineal/.w0.90000_Om4.0000_h0.0063_R60_estado.npz.FPMBsD",
-      "role": "resultado_o_diagnostico",
-      "bytes": 262144,
-      "snapshot_sha256": "4db92dd4d659f6bd49e16cc943944bf76648f30c97bf768091b35ef5f67b1838",
-      "used_by_claims": [],
-      "claim_link_categories": {},
-      "stage_evidence_for": [],
-      "stored_with_campaign_results": [
-        {
-          "registry_role": "linear_access",
-          "authoritative_result": "validacion/P06/acceso_lineal/puerta_decision.json"
-        }
-      ],
-      "read_by_declared_generators": [],
-      "declared_generators": [],
-      "produced_by_executions": [],
-      "used_as_input_by_executions": []
     },
     {
       "path": "validacion/P06/acceso_lineal/auditoria_linealizacion_y_flujos.json",
@@ -39670,6 +39665,7 @@
     "herramientas/reproducir.py",
     "herramientas/reproducir_par_CP12.py",
     "herramientas/respuesta_forzada_chi_CP11.py",
+    "herramientas/restaurar_compilador_p3.py",
     "herramientas/resultados_micro.py",
     "herramientas/revisar_recuperacion_CP12.py",
     "herramientas/rutas_documentales.py",
@@ -39700,7 +39696,6 @@
     "validacion/CP03_validez.png",
     "validacion/CP04_preparacion_radial.png",
     "validacion/P04/C7/auditoria_fase_sin_nodos.json",
-    "validacion/P06/acceso_lineal/.w0.90000_Om4.0000_h0.0063_R60_estado.npz.FPMBsD",
     "validacion/P06/acceso_lineal/auditoria_linealizacion_y_flujos.json",
     "validacion/P06/acceso_lineal/colocacion.log",
     "validacion/P06/acceso_lineal/colocacion_Om1.9500.json",

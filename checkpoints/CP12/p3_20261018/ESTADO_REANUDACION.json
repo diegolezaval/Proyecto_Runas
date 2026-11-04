@@ -1,9 +1,9 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-10-30T19:12:43.610833+00:00",
+  "updated_at": "2026-11-04T12:14:19.306047+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "4aa55629ba4162e5df754436826197f8174566d9",
-  "own_attempt_home": "/workspace/scratch/105d4db4f9e7/runtime_20261030/extraido",
+  "last_public_commit": "4f58c467ff886834a7141eee64ce52bcba4a4a7b",
+  "own_attempt_home": "/workspace/scratch/105d4db4f9e7/runtime_20261104/extraido_compatible",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
   "accepted_scientific_checkpoint": "CP11",
@@ -255,27 +255,10 @@
     },
     "latest_public_recovery_receipt_sha256": "2d0941119877af47e395c82923e62630d7e2aaab2b608711e6dcd1c9ad954d76"
   },
-  "current_own_worker_status": "RECOVERED_11P2_NO_NEW_M2_WORKER",
-  "own_observed_start": {
-    "at": "2026-10-29T01:54:39.628500+00:00",
-    "scope": "Own registered worker only",
-    "tool_session_id": 34638,
-    "source_observer_clock": 9.6,
-    "first_observed_observer_clock": 9.61,
-    "accepted_steps_since_restore": [
-      1,
-      1
-    ],
-    "scientific_frontier_inferred": false
-  },
-  "own_guardian_tool_session_id": 34638,
-  "own_exit_observed": {
-    "returncode": 0,
-    "tool_session_id": 34638,
-    "observed_in_previous_live_session": true,
-    "scope": "Own attempt02 bounded worker only; not evidence for any other executor.",
-    "provenance": "Retained live-session observation; current fresh recovery directly verifies the completed capsule, not a running process."
-  },
+  "current_own_worker_status": "CONSERVATION_ONLY_WAITING_GITHUB_LOGIN_ZERO_STEPS",
+  "own_observed_start": null,
+  "own_guardian_tool_session_id": 28477,
+  "own_exit_observed": null,
   "current_target": 11.2,
   "conditional_horizon": 160,
   "activity_is_restart_certificate": false,
@@ -290,8 +273,8 @@
   "new_pilot_protocol": "checkpoints/CP12/p3_20261018/PRERREGISTRO_PILOTO.md",
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
-  "current_helper_directory": null,
-  "next_recovery": "P3: usar el transporte exacto τ11,2 del adjunto688783601 ya recuperado y auditado. Última frontera completa positivaτ8; siguienteτ16. Preparar y probar la conservación desde el ejecutor antes de física nueva. No repetirτ9,6→τ11,2 ni recrear su permiso consumido. No hay trabajador numérico propio activo. CP12 abierto.",
+  "current_helper_directory": "/workspace/scratch/105d4db4f9e7/runtime_20261104/helpers_actuales",
+  "next_recovery": "Publicar y recuperar la cápsula de capacidad desde la Release GitHub; la sesión del navegador requiere login. El trabajador propio sólo conserva, esperando el adjunto, sin ACTIVACION.json ni pasos nuevos. Después registrar reserva y activación ligadas a los hashes antes de continuar exactamente τ11,2→16. Si el proceso expiró o desapareció, reconciliar su actividad y las escrituras ya confirmadas antes de preparar otro proceso; nunca repetir τ9,6→11,2.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -301,32 +284,7 @@
     "observer_closure_phase": 0.001
   },
   "previous_inaccessible_executor_termination_assumed": false,
-  "latest_heartbeat_observation": {
-    "at": "2026-10-18T21:46:42.093664+00:00",
-    "observer_clock": 5.2,
-    "physical_streams": [
-      {
-        "t": 5.2012130209199015,
-        "accepted": 963,
-        "nfev": 0,
-        "nfev_live": 12005,
-        "maxe": 5.2471138545229223e-11,
-        "maxq": 8.881784197001252e-16,
-        "maxe_original": 3.4873062215723394e-09
-      },
-      {
-        "t": 5.201218981914814,
-        "accepted": 963,
-        "nfev": 0,
-        "nfev_live": 12005,
-        "maxe": 5.239053635364144e-11,
-        "maxq": 4.440892098500626e-16,
-        "maxe_original": 8.379739124819707e-10
-      }
-    ],
-    "administrative_transport_phase": true,
-    "not_a_restart_certificate": true
-  },
+  "latest_heartbeat_observation": null,
   "P3_one_interval_transport_control": {
     "schema": "CP12_NEW_TRANSPORT_CONTROL_NOT_PREFLIGHT_REPETITION",
     "passed": true,
@@ -667,12 +625,12 @@
   },
   "latest_local_recoverable_observer_clock": 11.2,
   "latest_permanent_recoverable_observer_clock": 11.2,
-  "local_transport112_archive": "/workspace/scratch/105d4db4f9e7/runtime_20261030/tau11p2.zip",
+  "local_transport112_archive": "/workspace/scratch/105d4db4f9e7/runtime_20261104/tau11p2.zip",
   "local_transport112_archive_sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
-  "continuation_blocked_by_permanent_preservation": false,
+  "continuation_blocked_by_permanent_preservation": true,
   "storage_error": null,
   "no_evidence_deleted": false,
-  "local_recovery_home": "/workspace/scratch/105d4db4f9e7/runtime_20261030/extraido",
+  "local_recovery_home": "/workspace/scratch/105d4db4f9e7/runtime_20261104/extraido_compatible",
   "local_disappearance_incident": {
     "schema": "CP12_P3_LOCAL_WORKSPACE_DISAPPEARANCE_AFTER_LIBRARY_QUOTA_FAILURE",
     "observed_after_commit": "5cb247226b37739d38dc64a02836ce6fc8f35c5c",
@@ -930,7 +888,7 @@
     "CP12_closed": false
   },
   "local_transport112_archive_bytes": 229880902,
-  "continuation_blocked_by_final_github_copy": false,
+  "continuation_blocked_by_final_github_copy": true,
   "historical_storage_error_before_attempt02": "library_storage_limit_exceeded",
   "storage_error_scope_note": "Current capsule recovery succeeded; this does not establish resolution of old account quota errors.",
   "last_public_commit_scope": "Parent known before this record update; the branch ref identifies the newest commit.",
@@ -942,11 +900,80 @@
     "old_prepared_delivery_bytes_currently_available": false,
     "old_physical_worker_started": false,
     "new_physical_worker_started": false,
-    "exact_forward_procedure_pending": true,
+    "exact_forward_procedure_pending": false,
     "preservation_in_current_process_verified": false,
     "M2_steps_executed": 0,
     "forward_procedure_prepared": true,
     "registration": "checkpoints/CP12/p3_20261018/continuidad_20261030/ejecutor/REGISTRO.json",
     "exact_restore": "checkpoints/CP12/p3_20261018/continuidad_20261030/ejecutor/RESTAURACION_EXACTA.json"
+  },
+  "recovery_history_20261104": {
+    "current_own_worker_status": "RECOVERED_11P2_NO_NEW_M2_WORKER",
+    "own_observed_start": {
+      "at": "2026-10-29T01:54:39.628500+00:00",
+      "scope": "Own registered worker only",
+      "tool_session_id": 34638,
+      "source_observer_clock": 9.6,
+      "first_observed_observer_clock": 9.61,
+      "accepted_steps_since_restore": [
+        1,
+        1
+      ],
+      "scientific_frontier_inferred": false
+    },
+    "own_guardian_tool_session_id": 34638,
+    "own_exit_observed": {
+      "returncode": 0,
+      "tool_session_id": 34638,
+      "observed_in_previous_live_session": true,
+      "scope": "Own attempt02 bounded worker only; not evidence for any other executor.",
+      "provenance": "Retained live-session observation; current fresh recovery directly verifies the completed capsule, not a running process."
+    },
+    "own_attempt_home": "/workspace/scratch/105d4db4f9e7/runtime_20261030/extraido",
+    "latest_heartbeat_observation": {
+      "at": "2026-10-18T21:46:42.093664+00:00",
+      "observer_clock": 5.2,
+      "physical_streams": [
+        {
+          "t": 5.2012130209199015,
+          "accepted": 963,
+          "nfev": 0,
+          "nfev_live": 12005,
+          "maxe": 5.2471138545229223e-11,
+          "maxq": 8.881784197001252e-16,
+          "maxe_original": 3.4873062215723394e-09
+        },
+        {
+          "t": 5.201218981914814,
+          "accepted": 963,
+          "nfev": 0,
+          "nfev_live": 12005,
+          "maxe": 5.239053635364144e-11,
+          "maxq": 4.440892098500626e-16,
+          "maxe_original": 8.379739124819707e-10
+        }
+      ],
+      "administrative_transport_phase": true,
+      "not_a_restart_certificate": true
+    },
+    "next_recovery": "P3: usar el transporte exacto τ11,2 del adjunto688783601 ya recuperado y auditado. Última frontera completa positivaτ8; siguienteτ16. Preparar y probar la conservación desde el ejecutor antes de física nueva. No repetirτ9,6→τ11,2 ni recrear su permiso consumido. No hay trabajador numérico propio activo. CP12 abierto."
+  },
+  "resumption_20261104": {
+    "report": "informes/ENTREGA_CONSERVACION_Y_ENTORNO_P3_20261104.md",
+    "original_audit": "trazabilidad/continuidad_20261104/auditoria_compatible/RESULTADO.json",
+    "exact_restore": "checkpoints/CP12/p3_20261018/continuidad_20261104/RESTAURACION_EXACTA.json",
+    "worker_activity": "checkpoints/CP12/p3_20261018/continuidad_20261104/ACTIVIDAD.json",
+    "capacity_native_receipt": "checkpoints/CP12/p3_20261018/continuidad_20261104/capacidad/RESULTADO_TRANSITO.json",
+    "capacity_library_file_id": "libfile_14734b00b48c81918ac7f0587217daf2",
+    "capacity_bytes": 230966017,
+    "capacity_sha256": "a480ddb695f861274d8eb6d3e6199324cd10ca8eb72c418467ac56af38956308",
+    "native_cycle_in_actual_worker_passed": true,
+    "github_capacity_cycle_passed": false,
+    "new_M2_steps_executed": 0,
+    "new_physical_worker_started": false,
+    "worker_registration": "checkpoints/CP12/p3_20261018/continuidad_20261030/ejecutor/REGISTRO.json",
+    "code_registered_commit": "4f58c467ff886834a7141eee64ce52bcba4a4a7b",
+    "administrative_block": "GitHub browser session signed out; connected GitHub tools do not upload Release binary assets.",
+    "CP12_closed": false
   }
 }

@@ -249,10 +249,14 @@
     "last_full_frontier": 8,
     "recovered_transport": 11.2,
     "next_full_frontier": 16,
-    "own_workers": 0,
+    "own_workers": 1,
     "forward_evolution_started": false,
     "canonical_register": "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
-    "evidence": "checkpoints/CP12/p3_20261018/continuidad_20261030/auditoria_recuperacion/RESULTADO.json",
-    "preservation_in_current_process": "PENDIENTE"
+    "evidence": "trazabilidad/continuidad_20261104/auditoria_compatible/RESULTADO.json",
+    "preservation_in_current_process": "NATIVA_RECUPERADA; GITHUB_PENDIENTE_LOGIN",
+    "own_physical_workers": 0,
+    "administrative_report": "informes/ENTREGA_CONSERVACION_Y_ENTORNO_P3_20261104.md",
+    "capacity_receipt": "checkpoints/CP12/p3_20261018/continuidad_20261104/capacidad/RESULTADO_TRANSITO.json",
+    "observed_at_utc": "2026-11-04T12:14:19.306047+00:00"
   }
 }
