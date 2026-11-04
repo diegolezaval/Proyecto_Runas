@@ -97,3 +97,30 @@ histórico **116/308 permanece INCOMPLETO** y no cuenta documentos originales.
 No se activa M3. Las dependencias del primer dispositivo siguen siendo
 estabilidad, preparación, acceso finito, retroacción, receptor, retención y
 ciclo; las exclusiones de Canal se conservan.
+
+## Verificaciones de esta preparación
+
+La [regresión actual](../checkpoints/CP12/p3_20261018/continuidad_20261030/REGRESION_FINAL.json)
+pasó sus 16 controles y los 23 comandos de datos guardados. No ejecutó
+campañas, y los CSV/NPZ y el corpus de entrada permanecieron idénticos.
+La verificación editorial también pasó. Estos recibos pertenecen a esta
+preparación; los resultados rescatados del día anterior siguen separados.
+
+El ejecutor administrativo nuevo se [registró](../checkpoints/CP12/p3_20261018/continuidad_20261030/ejecutor/REGISTRO.json)
+para 11,2→16. Pasa doce controles adversos y una restauración real bit a bit
+con cero construcciones o pasos DOP853.
+[Restauración exacta](../checkpoints/CP12/p3_20261018/continuidad_20261030/ejecutor/RESTAURACION_EXACTA.json).
+La arquitectura BLAS no se fuerza; se conserva el límite interno16.
+
+Antes de evolucionar exige un control de capacidad desde ese mismo proceso,
+con escritura nativa, recuperación independiente, adjunto GitHub y nueva
+descarga auditada. La activación sólo acepta un recibo de capacidad y una
+reserva publicados y ligados por hash al registro. La publicación incierta
+se conserva para reconciliarla; nunca activa más física ni una subida ciega.
+En16 usa el lector original de cinco métricas sobre la extracción pública.
+Un positivo finito no cierra CP12 ni habilita automáticamente otra hipótesis.
+
+La preparación anterior al paquete global ya quedó publicada como
+[`4aa5562`](https://github.com/diegolezaval/Proyecto_Runas/commit/4aa55629ba4162e5df754436826197f8174566d9),
+en `ejecucion/continuidad-20261030`. El commit final y los recibos de paquete
+identifican la entrega posterior sin introducir autorreferencias de hashes.

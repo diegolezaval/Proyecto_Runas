@@ -1,0 +1,21 @@
+{
+  "schema": "CP12_P3_FORWARD_ADVERSARIAL_ADMIN_TESTS_V2",
+  "passed": true,
+  "tests": {
+    "consumed_replay_cannot_be_authorized": true,
+    "earlier_clock_refused": true,
+    "boundary_skip_refused": true,
+    "wrong_transport_refused": true,
+    "wrong_configuration_refused": true,
+    "changed_administrative_source_refused": true,
+    "unrelated_capacity_cannot_activate_physics": true,
+    "existing_receipt_not_overwritten": true,
+    "wrong_public_asset_rejected_before_download": true,
+    "source_mutation_detected": true,
+    "original_unpack_rejects_unsafe_paths": true,
+    "unsafe_payload_not_written": true
+  },
+  "M2_steps_executed": 0,
+  "DOP853_constructed": false,
+  "scope": "Rechazo administrativo; no acredita conservación real ni valida P3."
+}
