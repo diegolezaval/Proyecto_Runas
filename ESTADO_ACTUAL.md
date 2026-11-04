@@ -26,7 +26,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 
 ## Siguiente trabajo científico
 
-- Publicar y recuperar la cápsula de capacidad desde la Release GitHub; la sesión del navegador requiere login. El trabajador propio sólo conserva, esperando el adjunto, sin ACTIVACION.json ni pasos nuevos. Después registrar reserva y activación ligadas a los hashes antes de continuar exactamente τ11,2→16. Si el proceso expiró o desapareció, reconciliar su actividad y las escrituras ya confirmadas antes de preparar otro proceso; nunca repetir τ9,6→11,2.
+- Publicar la reserva ligada al registro y a la capacidad combinada, verificar el head y activar el único trabajador exacto de τ11,2→16. Cada transporte permanente y frontera deben recuperarse y auditarse; las cinco métricas de16 deciden la siguiente frontera. La repetición τ9,6→11,2 continúa consumida.
 - Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 

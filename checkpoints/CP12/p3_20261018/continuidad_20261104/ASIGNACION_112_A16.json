@@ -1,0 +1,26 @@
+{
+  "schema": "CP12_P3_FORWARD_RESERVATION_V2",
+  "registered_before_M2": true,
+  "at_utc": "2026-11-04T12:31:51.666168+00:00",
+  "single_worker_reserved": true,
+  "both_locks_held": {
+    "registration": true,
+    "instance": true
+  },
+  "tool_session_id": 28477,
+  "registration": "checkpoints/CP12/p3_20261018/continuidad_20261030/ejecutor/REGISTRO.json",
+  "registry_sha256": "033d238c6e31942ec23cccb9fab78e37feca296108d8dd11e282b6527cc51c57",
+  "capacity_acceptance_sha256": "098ecc500b7bfddeb900691d2650b87472111e865108a053872e2e93d9ee2bc3",
+  "capacity_acceptance": "checkpoints/CP12/p3_20261018/continuidad_20261104/capacidad/ACEPTACION_COMBINADA.json",
+  "source_observer_clock": 11.2,
+  "last_full_frontier": 8,
+  "target": 16,
+  "conditional_horizon": 160,
+  "code_registered_commit": "4f58c467ff886834a7141eee64ce52bcba4a4a7b",
+  "source_archive_sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
+  "new_M2_steps_executed_at_reservation": 0,
+  "replay96_to112_authorized": false,
+  "all_original_scientific_gates_required": true,
+  "automatic_new_candidate_authorized": false,
+  "CP12_closed": false
+}

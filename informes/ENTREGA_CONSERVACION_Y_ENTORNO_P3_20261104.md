@@ -85,7 +85,7 @@ Desde ese mismo proceso se guardó y recuperó la cápsula de capacidad:
 | Recuperación nativa independiente | Positiva; hashes antes/después y 44 controles originales |
 | Identidad durable | `libfile_14734b00b48c81918ac7f0587217daf2` |
 | Nuevos pasos M2 | 0 |
-| Publicación/recuperación de esta capacidad en GitHub | Pendiente |
+| Publicación/recuperación de esta capacidad en GitHub | Positiva; adjunto709420857, 303 cargas y44 controles |
 
 El nombre conserva la asignación registrada el 30 de octubre; la operación
 real ocurrió el 4 de noviembre. Las diez cargas adicionales son administrativas
@@ -95,19 +95,26 @@ guardaron inmediatamente después de confirmar la escritura.
 
 ## Puerta pendiente y siguiente acción
 
-La capacidad combinada aún no está aceptada. La sesión del navegador muestra
-el inicio de sesión de GitHub al abrir la edición de la Release. Las
-herramientas conectadas permiten publicar árboles, commits y referencias,
-pero no adjuntos binarios de Releases. Se requiere autenticación en esa
-sesión para adjuntar los paquetes ya preparados.
+La capacidad combinada pasó la escritura nativa, la recuperación independiente,
+la publicación como adjunto709420857 y otra descarga con cobertura y auditores
+originales. [Aceptación combinada](../checkpoints/CP12/p3_20261018/continuidad_20261104/capacidad/ACEPTACION_COMBINADA.json).
+El bloqueo de login observado en la primera publicación de este informe
+(`e6c3889`) se resolvió mediante autenticación segura; no se repitió la subida
+nativa. La Release mantiene su etiqueta experimental y todos los antecedentes.
 
-El trabajador permanece en espera administrativa del adjunto, sin archivo de
-activación ni recibo de inicio físico. Su espera tiene un límite de una hora.
-Después de autenticar: comprobar adjuntos existentes para evitar duplicados,
-subir los bytes exactos, descargarlos por separado y aplicar otra vez los
-auditores originales. Sólo tras publicar el recibo combinado y la reserva
-del único trabajador se puede escribir la activación ligada por hash y
-continuar desde τ11,2 hacia16.
+El paquete global posterior de2625 archivos, adjunto709420494, también se
+descargó por separado: SHA256
+`a2dea847947ee02db8a1c06d991a957fd3c69261ce832b6eabb8a29d8994ea55`,
+305215686 bytes, todos los blobs exactos del commit `e6c3889`.
+[Aceptación global pública](../trazabilidad/continuidad_20261104/ACEPTACION_GLOBAL_GITHUB.json).
+
+Se publica la [reserva11,2→16](../checkpoints/CP12/p3_20261018/continuidad_20261104/ASIGNACION_112_A16.json),
+ligada por hash al registro y al recibo combinado. El trabajador conserva
+ambos bloqueos y espera la activación; al registrar esta reserva todavía no
+hay pasos nuevos ni archivo de activación. Sólo tras verificar el commit
+público se puede activar ese mismo proceso. No se requiere otra confirmación
+rutinaria del usuario. La próxima entrega numérica registrará su actividad y
+resultado; esta entrega documenta las verificaciones previas a la evolución.
 
 Si la sesión de ejecución expiró, comprobarlo y reconciliar los recibos antes
 de preparar otro proceso. La escritura nativa de esta capacidad está
