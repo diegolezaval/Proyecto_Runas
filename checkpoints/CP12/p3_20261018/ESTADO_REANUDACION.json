@@ -1,9 +1,9 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-11-04T12:38:11.575256+00:00",
+  "updated_at": "2026-11-04T22:14:53.211805+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "07c0c5b34802dbf6a4854fa0be67d4aa77be8b96",
-  "own_attempt_home": "/workspace/scratch/105d4db4f9e7/runtime_20261104/extraido_compatible",
+  "last_public_commit": "93064b113ea8aa7594a46144d69fd6eca14dc05b",
+  "own_attempt_home": "/workspace/scratch/105d4db4f9e7/runtime_20261104_reanudacion_128/extraido_128",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
   "accepted_scientific_checkpoint": "CP11",
@@ -13,7 +13,7 @@
   "formal_radial_order": 2,
   "global_sixth_order_claim": false,
   "latest_full_trial_frontier_recovered_and_audited": 8,
-  "latest_recoverable_observer_clock": 11.2,
+  "latest_recoverable_observer_clock": 12.8,
   "latest_full_frontier_proof": {
     "schema": "CP12_P3_TRIAL_BOUNDARY_PERMANENTLY_RECOVERED_AND_AUDITED",
     "time": 8,
@@ -255,18 +255,9 @@
     },
     "latest_public_recovery_receipt_sha256": "2d0941119877af47e395c82923e62630d7e2aaab2b608711e6dcd1c9ad954d76"
   },
-  "current_own_worker_status": "RUNNING_REGISTERED_FORWARD_112_A16",
-  "own_observed_start": {
-    "at": "2026-11-04T12:35:44.927177+00:00",
-    "clock": 11.21,
-    "accepted_steps_since_restore": [
-      1,
-      1
-    ],
-    "replay96_to112_executed": false,
-    "CP12_closed": false
-  },
-  "own_guardian_tool_session_id": 28477,
+  "current_own_worker_status": "T128_RECOVERED_CURRENT_AUDITS_PENDING_NO_NEW_WORKER",
+  "own_observed_start": null,
+  "own_guardian_tool_session_id": null,
   "own_exit_observed": null,
   "current_target": 11.2,
   "conditional_horizon": 160,
@@ -282,8 +273,8 @@
   "new_pilot_protocol": "checkpoints/CP12/p3_20261018/PRERREGISTRO_PILOTO.md",
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
-  "current_helper_directory": "/workspace/scratch/105d4db4f9e7/runtime_20261104/helpers_actuales",
-  "next_recovery": "Mantener el único trabajador 11,2→16. Próxima conservación permanente τ12,8; guardar, recuperar y auditar antes de más física. En16 recuperar frontera y aplicar las cinco métricas y todos los umbrales originales. No repetir9,6→11,2. P3 sigue sin validar y CP12 abierto.",
+  "current_helper_directory": "/workspace/scratch/105d4db4f9e7/runtime_20261104_reanudacion_128/helpers_actuales",
+  "next_recovery": "Publicar y recuperar la cápsula íntegra τ12,8; aplicar auditores originales en el entorno requerido. Después verificar conservación del nuevo proceso y publicar su reserva antes de activar12,8→16. No reactivar la asignación anterior ni repetir11,2→12,8 o9,6→11,2.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -293,32 +284,7 @@
     "observer_closure_phase": 0.001
   },
   "previous_inaccessible_executor_termination_assumed": false,
-  "latest_heartbeat_observation": {
-    "at": "2026-11-04T12:38:11.575256+00:00",
-    "clock": 11.71,
-    "phase": "evolution",
-    "physical_streams": [
-      {
-        "t": 11.722998932910873,
-        "accepted": 2174,
-        "nfev": 18266,
-        "nfev_live": 8333,
-        "maxe": 6.33251229231746e-11,
-        "maxq": 1.1102230246251565e-15,
-        "maxe_original": 3.4873062215723394e-09
-      },
-      {
-        "t": 11.712151120058447,
-        "accepted": 2172,
-        "nfev": 18266,
-        "nfev_live": 8310,
-        "maxe": 6.319178513791712e-11,
-        "maxq": 4.440892098500626e-16,
-        "maxe_original": 8.379739124819707e-10
-      }
-    ],
-    "not_a_restart_certificate": true
-  },
+  "latest_heartbeat_observation": null,
   "P3_one_interval_transport_control": {
     "schema": "CP12_NEW_TRANSPORT_CONTROL_NOT_PREFLIGHT_REPETITION",
     "passed": true,
@@ -657,11 +623,11 @@
     },
     "recovery_commit": "cd8db32b40fae0ce6f397ad58a60e8e6bdd3b6b3"
   },
-  "latest_local_recoverable_observer_clock": 11.2,
-  "latest_permanent_recoverable_observer_clock": 11.2,
+  "latest_local_recoverable_observer_clock": 12.8,
+  "latest_permanent_recoverable_observer_clock": 12.8,
   "local_transport112_archive": "/workspace/scratch/105d4db4f9e7/runtime_20261104/tau11p2.zip",
   "local_transport112_archive_sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
-  "continuation_blocked_by_permanent_preservation": false,
+  "continuation_blocked_by_permanent_preservation": true,
   "storage_error": null,
   "no_evidence_deleted": false,
   "local_recovery_home": "/workspace/scratch/105d4db4f9e7/runtime_20261104/extraido_compatible",
@@ -922,7 +888,7 @@
     "CP12_closed": false
   },
   "local_transport112_archive_bytes": 229880902,
-  "continuation_blocked_by_final_github_copy": false,
+  "continuation_blocked_by_final_github_copy": true,
   "historical_storage_error_before_attempt02": "library_storage_limit_exceeded",
   "storage_error_scope_note": "Current capsule recovery succeeded; this does not establish resolution of old account quota errors.",
   "last_public_commit_scope": "Parent known before this record update; the branch ref identifies the newest commit.",
@@ -1022,5 +988,169 @@
       96,
       94
     ]
+  },
+  "history_before_recovery_t128_20261104": {
+    "current_own_worker_status": "RUNNING_REGISTERED_FORWARD_112_A16",
+    "own_attempt_home": "/workspace/scratch/105d4db4f9e7/runtime_20261104/extraido_compatible",
+    "own_observed_start": {
+      "at": "2026-11-04T12:35:44.927177+00:00",
+      "clock": 11.21,
+      "accepted_steps_since_restore": [
+        1,
+        1
+      ],
+      "replay96_to112_executed": false,
+      "CP12_closed": false
+    },
+    "own_exit_observed": null,
+    "own_guardian_tool_session_id": 28477,
+    "latest_heartbeat_observation": {
+      "at": "2026-11-04T12:38:11.575256+00:00",
+      "clock": 11.71,
+      "phase": "evolution",
+      "physical_streams": [
+        {
+          "t": 11.722998932910873,
+          "accepted": 2174,
+          "nfev": 18266,
+          "nfev_live": 8333,
+          "maxe": 6.33251229231746e-11,
+          "maxq": 1.1102230246251565e-15,
+          "maxe_original": 3.4873062215723394e-09
+        },
+        {
+          "t": 11.712151120058447,
+          "accepted": 2172,
+          "nfev": 18266,
+          "nfev_live": 8310,
+          "maxe": 6.319178513791712e-11,
+          "maxq": 4.440892098500626e-16,
+          "maxe_original": 8.379739124819707e-10
+        }
+      ],
+      "not_a_restart_certificate": true
+    },
+    "latest_transport_proof": {
+      "schema": "CP12_P3_EXISTING_TEMPORARY_CAPSULE_RECOVERY_V1",
+      "verified_at_utc": "2026-10-29T14:16:32.578817+00:00",
+      "passed": true,
+      "library_file_id": "libfile_d40e171a875c8191a50c880c9b4125ce",
+      "file_id": "file_000000007ac481f59fea1a56d1d8a9b3",
+      "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000112_TRANSITO_INTENTO02_20261028.zip",
+      "bytes": 229880902,
+      "sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
+      "transport_state_sha256": "bc129cff71c7558cd0298873fdc816da14e01fdcb4728235b33666a1ecfcf3ac",
+      "observer_clock": 11.2,
+      "closed_frontier": 8,
+      "payload_files": 293,
+      "independent_recovery_after_session_loss": true,
+      "library_identity_metadata_applied": true,
+      "exact_manifest_coverage": true,
+      "all_payload_hashes_verified_before_and_after": true,
+      "source_archive_unchanged": true,
+      "original_zero_step_audit_tests": {
+        "boundary8": 30,
+        "transport112": 14
+      },
+      "audit_receipt_sha256": "b7aaba1a069387fff9f2fd6981e2b42ad7d4ad46c2c0c4ae97964103a2975c02",
+      "M2_steps_executed": 0,
+      "DOP853_construction_or_step_attempts": 0,
+      "scientific_frontier": false,
+      "correction_validated": false,
+      "CP12_closed": false,
+      "github_final_copy_pending": false,
+      "provenance": "Fresh download of the already saved capsule; no physical replay and no new Library upload.",
+      "scope": "Exact saved capsule recovered independently from temporary durable storage and from the final GitHub attachment; original30+14 audits, no new physics.",
+      "independent_zero_step_audit": {
+        "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
+        "passed": true,
+        "tests": {
+          "all_internal_state_bits_and_nfev_restored": true,
+          "original_sources_and_configuration": true,
+          "scientific_seed_unchanged": true,
+          "restore_used_no_solver_step": true,
+          "exact_stage_alias": true,
+          "accepted_states_match_solver": true,
+          "clocks_bracket_observer": true,
+          "both_energy_and_charge_gates": true,
+          "original_observer_maximum_gates": true,
+          "original_Parseval": true,
+          "original_symmetry": true,
+          "independently_reloaded_observer_closure": true,
+          "independently_reloaded_Parseval": true,
+          "file_unchanged": true
+        },
+        "observer_clock": 11.2,
+        "target": 16,
+        "state_sha256": "bc129cff71c7558cd0298873fdc816da14e01fdcb4728235b33666a1ecfcf3ac",
+        "physical_metadata": [
+          {
+            "t": 11.205183926229115,
+            "accepted": 2078,
+            "nfev": 18266,
+            "nfev_live": 7178,
+            "maxe": 6.24522655812143e-11,
+            "maxq": 1.1102230246251565e-15,
+            "maxe_original": 3.4873062215723394e-09
+          },
+          {
+            "t": 11.205178976893324,
+            "accepted": 2078,
+            "nfev": 18266,
+            "nfev_live": 7178,
+            "maxe": 6.234057714493701e-11,
+            "maxq": 4.440892098500626e-16,
+            "maxe_original": 8.379739124819707e-10
+          }
+        ],
+        "M2_steps_executed": 0,
+        "scientific_frontier": false,
+        "correction_validated": false,
+        "CP12_closed": false,
+        "DOP853_construction_or_step_attempts": 0
+      },
+      "proof_path": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/repeticion96_112/RECIBO_CAPSULA_TEMPORAL.json",
+      "github_asset_id": 688783601,
+      "github_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000112_TRANSITO_INTENTO02_20261028.zip",
+      "github_acceptance_path": "checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/repeticion96_112/github/ACEPTACION.json",
+      "github_acceptance": {
+        "schema": "CP12_GITHUB_RELEASE_TRANSPORT_ACCEPTANCE_V1",
+        "accepted_at_utc": "2026-10-29T14:17:59.689392+00:00",
+        "passed": true,
+        "label": "TRANSPORTE_TAU_000112_TRANSITO_INTENTO02_20261028",
+        "observer_clock": 11.2,
+        "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000112_TRANSITO_INTENTO02_20261028.zip",
+        "bytes": 229880902,
+        "sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
+        "download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000112_TRANSITO_INTENTO02_20261028.zip",
+        "github_asset_id": 688783601,
+        "request_sha256": "3e93b1a415f47994e7d3b6c4840b23e99b527a74b1135ef52897b614288a8aa3",
+        "transport_state_sha256": "bc129cff71c7558cd0298873fdc816da14e01fdcb4728235b33666a1ecfcf3ac",
+        "source_archive_and_payload_unchanged": true,
+        "exact_manifest_coverage": true,
+        "independently_extracted_zero_step_audits_passed": true,
+        "audit_receipt_sha256": "2d0941119877af47e395c82923e62630d7e2aaab2b608711e6dcd1c9ad954d76",
+        "capacity_probe": false,
+        "M2_steps_executed_during_preservation": 0,
+        "scientific_frontier": false,
+        "correction_validated": false,
+        "CP12_closed": false
+      },
+      "latest_public_recovery_receipt_sha256": "2d0941119877af47e395c82923e62630d7e2aaab2b608711e6dcd1c9ad954d76"
+    },
+    "next_recovery": "Mantener el único trabajador 11,2→16. Próxima conservación permanente τ12,8; guardar, recuperar y auditar antes de más física. En16 recuperar frontera y aplicar las cinco métricas y todos los umbrales originales. No repetir9,6→11,2. P3 sigue sin validar y CP12 abierto."
+  },
+  "recovery_t128_20261104": {
+    "source": "checkpoints/CP12/p3_20261018/reanudacion_t128_20261104/ORIGEN.json",
+    "registration": "checkpoints/CP12/p3_20261018/reanudacion_t128_20261104/REGISTRO.json",
+    "report": "informes/RECUPERACION_P3_T128_20261104.md",
+    "previous_session_id": 28477,
+    "previous_session_accessible": false,
+    "previous_exit_observed": false,
+    "previous_termination_assumed": false,
+    "old_publication_file_must_not_be_created": "/workspace/scratch/105d4db4f9e7/runtime_20261104/ejecucion_112_a16/transporte_000128/ASSET_GITHUB.json",
+    "old_allocation_not_to_be_reactivated": true,
+    "new_M2_steps_executed": 0,
+    "CP12_closed": false
   }
 }

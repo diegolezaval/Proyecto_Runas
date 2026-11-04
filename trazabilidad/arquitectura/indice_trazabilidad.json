@@ -9349,8 +9349,8 @@
     {
       "path": "datos/registro_calculos.json",
       "role": "fuente_o_protocolo_JSON",
-      "bytes": 15006,
-      "snapshot_sha256": "e0e6a341d3c5f63883bddb11f275f9bab4279a4908ad02c29aac427908cc8844",
+      "bytes": 15188,
+      "snapshot_sha256": "d02af50f18d9ec8933242237bed2b2015c7ab2b4912825811529296abb934ea3",
       "used_by_claims": [],
       "claim_link_categories": {},
       "stage_evidence_for": [],
@@ -12014,6 +12014,20 @@
           "current_bytes_match": true
         }
       ]
+    },
+    {
+      "path": "herramientas/actualizar_manifiesto.py",
+      "role": "codigo_o_herramienta",
+      "bytes": 1218,
+      "snapshot_sha256": "91c736e686ee9c90186c7c37b03515db5fc8b8dd1100fe28136ddb7027a47a44",
+      "used_by_claims": [],
+      "claim_link_categories": {},
+      "stage_evidence_for": [],
+      "stored_with_campaign_results": [],
+      "read_by_declared_generators": [],
+      "declared_generators": [],
+      "produced_by_executions": [],
+      "used_as_input_by_executions": []
     },
     {
       "path": "herramientas/auditar_acceso_lineal_m2.py",
@@ -14953,6 +14967,20 @@
           "current_bytes_match": true
         }
       ]
+    },
+    {
+      "path": "herramientas/preparar_delta_publicacion.py",
+      "role": "codigo_o_herramienta",
+      "bytes": 3138,
+      "snapshot_sha256": "769e3942a849469db26185c6ef1e0d137365436ce1b76a3e95ef740ef4b13dba",
+      "used_by_claims": [],
+      "claim_link_categories": {},
+      "stage_evidence_for": [],
+      "stored_with_campaign_results": [],
+      "read_by_declared_generators": [],
+      "declared_generators": [],
+      "produced_by_executions": [],
+      "used_as_input_by_executions": []
     },
     {
       "path": "herramientas/probar_procedencia_futura.py",
@@ -39632,6 +39660,7 @@
     "graficos/tecnicos/P-22.svg",
     "graficos/tecnicos/P-23.svg",
     "graficos/tecnicos/P-24.svg",
+    "herramientas/actualizar_manifiesto.py",
     "herramientas/auditar_arbol_git.py",
     "herramientas/auditar_arquitectura.py",
     "herramientas/auditar_positividad_angular_m2.py",
@@ -39657,6 +39686,7 @@
     "herramientas/m2_comun.py",
     "herramientas/observador_causal_CP12.py",
     "herramientas/preparacion_y_motor.py",
+    "herramientas/preparar_delta_publicacion.py",
     "herramientas/probar_procedencia_futura.py",
     "herramientas/probar_recibo_externo_CP11.py",
     "herramientas/referencia_pasiva_CP12.c",
