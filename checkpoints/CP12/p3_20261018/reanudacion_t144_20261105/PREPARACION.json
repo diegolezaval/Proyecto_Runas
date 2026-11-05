@@ -1,14 +1,18 @@
 {
   "at_utc": "2026-11-05T12:17:33.215880+00:00",
   "allocation_id": "p3_144_a16_20261105",
-  "status": "RESERVA_PREPARADA_PARA_PUBLICAR_ANTES_DE_ACTIVAR",
+  "status": "ACTIVA_DESDE_T144_RESERVA_Y_ACTIVACION_PUBLICADAS",
   "registry_sha256": "9cc67da3033ed1846d771373fa921f693a2c32ccba1a18242d1cdbb63396c6ec",
   "current_process_capacity_passed": true,
-  "reservation_published": false,
-  "activation_published": false,
-  "new_physical_worker_started": false,
-  "M2_steps_executed": 0,
+  "reservation_published": true,
+  "activation_published": true,
+  "new_physical_worker_started": true,
+  "M2_steps_executed": 4,
   "CP12_closed": false,
-  "updated_at_utc": "2026-11-05T18:51:31.661141+00:00",
-  "tool_session_id": 81225
+  "updated_at_utc": "2026-11-05T18:59:32.052735+00:00",
+  "tool_session_id": 81225,
+  "reservation_commit": "67c474dc791285ec1517c538c668df282d1bf0b6",
+  "activation_commit": "eb8f8d84aecb780061ad0876e87355eece11b597",
+  "first_observed_clock": 14.41,
+  "M2_steps_executed_scope": "Sólo primer intervalo observado; no contador final del tramo."
 }

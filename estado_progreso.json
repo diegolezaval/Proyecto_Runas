@@ -2180,10 +2180,15 @@
       "date": "2026-11-05T18:51:31.661141+00:00",
       "event": "Transporte14,4 y control del proceso actual recuperados pública y nativamente; reserva previa a activación, cero pasos nuevos.",
       "report": "informes/CONTINUACION_P3_144_A16_20261105.md"
+    },
+    {
+      "date": "2026-11-05T18:57:52.235478+00:00",
+      "event": "Reserva67c474d y activacióneb8f8d8 públicas y recuperadas antes del primer intervalo nuevo14,4→14,41; cero repetición de prefijos.",
+      "report": "informes/CONTINUACION_P3_144_A16_20261105.md"
     }
   ],
   "next_actions": [
-    "Publicar esta reserva y después una activación con el commit y los hashes. Entregarla sólo tras recuperar ambas publicaciones. Continuar14,4→16; recuperar16 y aplicar cinco métricas y todas las puertas originales.",
+    "Mantener el único trabajador p3_144_a16_20261105 hasta16. Conservar y recuperar la frontera independientemente; aplicar las cinco métricas y todas las puertas originales antes de más física. No repetir prefijos ni duplicar trabajador.",
     "Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.",
     "Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico."
   ],
@@ -2203,10 +2208,36 @@
     "No repetir12,8→14,4: existe cápsula nativa íntegra y auditada. No reactivar p3_128_a16_20261104b ni recrear su publicación privada."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Publicar esta reserva y después una activación con el commit y los hashes. Entregarla sólo tras recuperar ambas publicaciones. Continuar14,4→16; recuperar16 y aplicar cinco métricas y todas las puertas originales.",
+  "next_calculation": "Mantener el único trabajador p3_144_a16_20261105 hasta16. Conservar y recuperar la frontera independientemente; aplicar las cinco métricas y todas las puertas originales antes de más física. No repetir prefijos ni duplicar trabajador.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [],
-  "research_in_progress": [],
+  "numerical_runs_in_progress": [
+    {
+      "campaign": "CP12_P3",
+      "allocation_id": "p3_144_a16_20261105",
+      "status": "RUNNING_REGISTERED_FORWARD_144_A16",
+      "source_observer_clock": 14.4,
+      "next_full_frontier": 16,
+      "first_observed_clock": 14.41,
+      "last_heartbeat_clock": 14.63,
+      "evidence": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/INICIO_FISICO.json",
+      "original_trajectories_repeated": false,
+      "CP12_closed": false
+    }
+  ],
+  "research_in_progress": [
+    {
+      "campaign": "CP12_P3",
+      "allocation_id": "p3_144_a16_20261105",
+      "status": "RUNNING_REGISTERED_FORWARD_144_A16",
+      "source_observer_clock": 14.4,
+      "next_full_frontier": 16,
+      "first_observed_clock": 14.41,
+      "last_heartbeat_clock": 14.63,
+      "evidence": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/INICIO_FISICO.json",
+      "original_trajectories_repeated": false,
+      "CP12_closed": false
+    }
+  ],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
   "delivery_boundary": "CP11 aceptado; CP12 abierto; P3 sin validar. τ8 última frontera completa positiva. Transporteτ12,8 recuperado de GitHub:305 cargas y30+14 controles originales sin construcciones/pasos. Compilador13.3.0 restaurado realmente y respaldado públicamente. Control del nuevo proceso recuperado nativa y públicamente; reserva previa a activación. El respaldo global709420494 ya tiene recuperación documentada. P2 suspendido; no se reabren campañas cerradas.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
@@ -2221,18 +2252,18 @@
   },
   "checkpoint_kind": "CIENTIFICO",
   "automatic_continuation_paused": {
-    "paused": true,
-    "reason": "Conservación actual positiva; reserva y activación públicas pendientes antes de física.",
+    "paused": false,
+    "reason": "Reserva y activación públicas recuperadas antes de M2; continuación14,4→16 condicionada a todas las puertas originales.",
     "M2_exhaustion_claimed": false,
     "CP12_closed": false
   },
   "execution_activity": {
     "activity_known": true,
-    "scope": "Único trabajador propio preparado con ambos locks; cero pasos M2, esperando activación pública. No se presupone salida de los históricos.",
-    "own_worker_status": "PREPARED_WAITING_PUBLISHED_ACTIVATION_144_A16",
+    "scope": "Único trabajador propio activo; ambos locks comprobados antes de activar. No se presume salida de históricos.",
+    "own_worker_status": "RUNNING_REGISTERED_FORWARD_144_A16",
     "historical_termination_assumed": false,
     "activity_is_restart_certificate": false,
-    "evidence": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/ASIGNACION_144_A16.json"
+    "evidence": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/INICIO_FISICO.json"
   },
   "latest_verified_cp12_restart": {
     "time": 160,
@@ -2502,26 +2533,28 @@
     "github_recovered_transport": 14.4,
     "next_full_frontier": 16,
     "own_workers": 1,
-    "own_physical_workers": 0,
+    "own_physical_workers": 1,
     "historical_worker_activity": "INACCESIBLE_SIN_SALIDA_OBSERVADA",
-    "forward_evolution_started": false,
-    "current_run_forward_evolution_started": false,
+    "forward_evolution_started": true,
+    "current_run_forward_evolution_started": true,
     "canonical_register": "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
     "evidence": "trazabilidad/activacion_t144_20261105/auditoria_publica/RESULTADO.json",
     "preservation_in_current_process": "NATIVA_Y_GITHUB_RECUPERADOS",
     "preservation_gate_passed": true,
     "current_worker_capacity_passed": true,
-    "observed_at_utc": "2026-11-05T18:51:31.661141+00:00",
-    "administrative_phase": "RESERVA_PREVIA_A_ACTIVACION",
+    "observed_at_utc": "2026-11-05T18:59:16.999801+00:00",
+    "administrative_phase": "EVOLUCION_144_A16",
     "administrative_report": "informes/CONTINUACION_P3_144_A16_20261105.md",
     "scientific_report": "informes/RECUPERACION_P3_T144_20261105.md",
     "source_identity": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/ORIGEN.json",
     "activity_clock_is_restart_certificate": false,
-    "last_activity_observer_clock": 14.4,
+    "last_activity_observer_clock": 14.63,
     "new_allocation_prepared": "p3_144_a16_20261105",
-    "new_reservation_published": false,
-    "new_activation_published": false,
-    "capacity_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/capacidad/ACEPTACION_COMBINADA.json"
+    "new_reservation_published": true,
+    "new_activation_published": true,
+    "capacity_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/capacidad/ACEPTACION_COMBINADA.json",
+    "reservation_commit": "67c474dc791285ec1517c538c668df282d1bf0b6",
+    "activation_commit": "eb8f8d84aecb780061ad0876e87355eece11b597"
   },
   "latest_verified_cp12_P3_transport": {
     "observer_clock": 14.4,

@@ -11,7 +11,7 @@
 | Cargas y controles originales | 314 cargas;30 deτ8 +14 del transporte, sin pasos |
 | Compilador | Ubuntu13.3.0 original, restaurado y verificado |
 | Control del proceso actual | 714433579;231091360 bytes;850f2fd19aee3c9723c2d68413873f4ad5f2f80e43ec7268c15fe8fad5acd646 |
-| Asignación | p3_144_a16_20261105; reserva antes de activación |
+| Asignación | p3_144_a16_20261105 activa; reserva67c474d y activacióneb8f8d8 previas a física |
 | Respaldo del commitd132238 | 714432978;2715 archivos Git recuperados exactamente |
 | Próxima frontera | τ16, pendiente de todas sus puertas |
 

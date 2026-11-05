@@ -1,8 +1,8 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-11-05T18:51:31.661141+00:00",
+  "updated_at": "2026-11-05T18:59:32.052735+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "8f91bac9470edee86810ac22b146240c62cc71dc",
+  "last_public_commit": "eb8f8d84aecb780061ad0876e87355eece11b597",
   "own_attempt_home": "/workspace/scratch/0f402422cb34/extraido_t144",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
@@ -220,8 +220,17 @@
     "CP12_closed": false,
     "correction_validated": false
   },
-  "current_own_worker_status": "PREPARED_WAITING_PUBLISHED_ACTIVATION_144_A16",
-  "own_observed_start": null,
+  "current_own_worker_status": "RUNNING_REGISTERED_FORWARD_144_A16",
+  "own_observed_start": {
+    "at": "2026-11-05T18:57:52.235478+00:00",
+    "clock": 14.41,
+    "accepted_steps_since_restore": [
+      2,
+      2
+    ],
+    "replay96_to112_executed": false,
+    "CP12_closed": false
+  },
   "own_guardian_tool_session_id": 81225,
   "own_exit_observed": null,
   "current_target": 16,
@@ -239,7 +248,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
   "current_helper_directory": "/workspace/scratch/0f402422cb34/privado_helpers",
-  "next_recovery": "Publicar esta reserva y después una activación con el commit y los hashes. Entregarla sólo tras recuperar ambas publicaciones. Continuar14,4→16; recuperar16 y aplicar cinco métricas y todas las puertas originales.",
+  "next_recovery": "Mantener el único trabajador p3_144_a16_20261105 hasta16. Conservar y recuperar la frontera independientemente; aplicar las cinco métricas y todas las puertas originales antes de más física. No repetir prefijos ni duplicar trabajador.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -249,7 +258,32 @@
     "observer_closure_phase": 0.001
   },
   "previous_inaccessible_executor_termination_assumed": false,
-  "latest_heartbeat_observation": null,
+  "latest_heartbeat_observation": {
+    "at": "2026-11-05T18:59:16.999801+00:00",
+    "clock": 14.63,
+    "phase": "evolution",
+    "physical_streams": [
+      {
+        "t": 14.640416003349037,
+        "accepted": 2714,
+        "nfev": 18266,
+        "nfev_live": 14834,
+        "maxe": 6.831468724044498e-11,
+        "maxq": 1.1102230246251565e-15,
+        "maxe_original": 3.4873062215723394e-09
+      },
+      {
+        "t": 14.64040646710232,
+        "accepted": 2714,
+        "nfev": 18266,
+        "nfev_live": 14834,
+        "maxe": 6.818468012426138e-11,
+        "maxq": 4.440892098500626e-16,
+        "maxe_original": 8.379739124819707e-10
+      }
+    ],
+    "not_a_restart_certificate": true
+  },
   "P3_one_interval_transport_control": {
     "schema": "CP12_NEW_TRANSPORT_CONTROL_NOT_PREFLIGHT_REPETITION",
     "passed": true,
@@ -1142,8 +1176,8 @@
     "source_commit": "8f91bac9470edee86810ac22b146240c62cc71dc"
   },
   "latest_native_recoverable_observer_clock": 14.4,
-  "current_process_M2_steps_executed": 0,
-  "current_process_new_physical_worker_started": false,
+  "current_process_M2_steps_executed": 4,
+  "current_process_new_physical_worker_started": true,
   "latest_github_transport_proof": {
     "schema": "CP12_P3_PUBLIC_TRANSPORT_RECOVERY_CURRENT_ORIGINAL_AUDITS_V1",
     "passed": true,
@@ -1368,8 +1402,14 @@
     "reservation": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/ASIGNACION_144_A16.json",
     "capacity_github_asset_id": 714433579,
     "capacity_acceptance_sha256": "534554feae14fdcbd07de9a20a2bf3f4f2d2b3a38ec0b2790e3a140510695df2",
-    "new_M2_steps_executed": 0,
-    "new_physical_worker_started": false,
-    "CP12_closed": false
-  }
+    "new_M2_steps_executed": 4,
+    "new_physical_worker_started": true,
+    "CP12_closed": false,
+    "reservation_commit": "67c474dc791285ec1517c538c668df282d1bf0b6",
+    "activation_commit": "eb8f8d84aecb780061ad0876e87355eece11b597",
+    "activation": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/ACTIVACION.json",
+    "physical_start": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/INICIO_FISICO.json",
+    "new_M2_steps_executed_scope": "Primer intervalo solamente; no contador final."
+  },
+  "current_process_M2_steps_executed_scope": "Sólo primer intervalo observado; no contador final."
 }
