@@ -1,5 +1,7 @@
 # Rúnica: panorama global, límites y prioridades de continuación
 
+> Esta revisión conserva el estado histórico del29 de octubre. La evidencia posterior está en [la entrega de restauración y auditorías del4 de noviembre](CIERRE_AUDITORIAS_Y_REANUDACION_P3_20261104.md) y el [registro canónico](../checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json):τ12,8 recuperado y auditado;τ8 última frontera completa positiva;τ16 pendiente. El paquete global ya tiene recuperación pública documentada. No repetir pendientes históricos sin comprobar esos recibos.
+
 Revisión del 29 de octubre de 2026. Documento de orientación y análisis; no sustituye protocolos, evidencia reproducible, puertas ni registros científicos. No declara una etapa nueva completada.
 
 ## 1. Diagnóstico general

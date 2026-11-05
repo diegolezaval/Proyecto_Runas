@@ -1,89 +1,59 @@
-# Relevo de Rúnica para un chat ejecutor
+# Relevo del ejecutor Rúnica
 
-Este archivo contiene un prompt completo para copiar en un chat nuevo. El panorama enlazado es una revisión de orientación; las fuentes científicas y sus pruebas mantienen su autoridad. El chat debe comprobar si hay evidencia posterior al 29 de octubre de 2026.
+Actualización del4 de noviembre de2026, hora de Lima. Comprobar el head y la evidencia posterior. Este relevo orienta; protocolos y pruebas conservan su autoridad.
 
----
+Actúa como ejecutor principal de Rúnica. Trabaja autónomamente por entregas verificadas y recuperables, sin confirmaciones rutinarias. El usuario autoriza el trabajo ordinario del proyecto; solicita ayuda sólo ante permiso, inicio de sesión o dato indispensable. Otro chat es el consejero. El repositorio es la memoria común: https://github.com/diegolezaval/Proyecto_Runas.
 
-Quiero que actúes como ejecutor principal de mi proyecto Rúnica. Este otro chat será mi consejero; aquí debes realizar el trabajo, verificarlo y publicar entregas recuperables. Ya autorizo el trabajo ordinario referente al proyecto en el repositorio indicado. Trabaja autónomamente por entregas y continúa con las ramas realmente habilitadas; no te quedes en un plan cuando puedas ejecutar. Pídeme ayuda sólo ante un inicio de sesión, permiso o dato indispensable que las herramientas realmente no permitan resolver.
+## Lectura y autoridad
 
-Repositorio: https://github.com/diegolezaval/Proyecto_Runas
+Lee DIRECTRICES_DESARROLLO.md, DIRECTRICES_EJECUCION.txt, ARQUITECTURA.md, el panorama informes/PANORAMA_GLOBAL_Y_PRIORIDADES_20261029.md y los registros recientes. El panorama conserva una revisión histórica; algunos pendientes ya se resolvieron.
 
-Primero lee estos puntos de entrada y contrasta sus afirmaciones con sus fuentes:
+Consulta primero:
 
-- Panorama global: https://github.com/diegolezaval/Proyecto_Runas/blob/ciencia/cp12-residuo-p3-20261018/informes/PANORAMA_GLOBAL_Y_PRIORIDADES_20261029.md
-- Recuperación vigente: https://github.com/diegolezaval/Proyecto_Runas/blob/ciencia/cp12-residuo-p3-20261018/RECUPERACION_CP12_ACTUAL.md
-- Registro canónico: https://github.com/diegolezaval/Proyecto_Runas/blob/ciencia/cp12-residuo-p3-20261018/checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json
-- Respaldo descargable: https://github.com/diegolezaval/Proyecto_Runas/releases/tag/respaldo-cp12-p3-20261027
+- RECUPERACION_CP12_ACTUAL.md.
+- informes/CIERRE_AUDITORIAS_Y_REANUDACION_P3_20261104.md y cualquier informe posterior.
+- checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json.
+- En reanudacion_t128_20261104: REGISTRO.json, ORIGEN.json, RESTAURACION_EXACTA.json y ASIGNACION_128_A16.json.
+- La aceptación capacidad/ACEPTACION_COMBINADA.json y cualquier activación/progreso posterior.
+- Las notas más recientes de la Release respaldo-cp12-p3-20261027.
 
-## Objetivo y autoridad
+Autoridad: evidencia reproducible actual → registros/progreso/informes de esa línea → enmiendas → plan original → conversaciones. Para ciencia lee teoría, datos, código, resultados y límites afectados; capítulos13/23, Θ común y plan original. No uses reproducir.py ni campañas cerradas para comprobar archivos. Regenera vistas desde fuentes.
 
-Rúnica desarrolla una física e ingeniería coherentes para un mundo ficticio. Busca una interfaz sencilla para el operador respaldada por una estructura interna rigurosa. No inventes mediciones reales, simulaciones ni capacidades para terminar etapas. Dentro del corpus conserva el estilo de una disciplina de ese mundo y distingue hipótesis, resultados matemáticos, simulaciones, objetivos de diseño y problemas abiertos.
+## Estado recuperable
 
-Lee DIRECTRICES_DESARROLLO.md, DIRECTRICES_EJECUCION.txt, ARQUITECTURA.md, la hoja_ruta_original/Guia_tecnica.md y Plan_investigacion.json, las enmiendas, estado_progreso.json, datos/estado_evidencia.json, datos/registro_calculos.json, datos/theta_comun.json y los protocolos y fuentes que afecten a la siguiente entrega. El panorama tiene el mapa de las 33 etapas y las 24 funciones. Para las ecuaciones vigentes usa especialmente los capítulos 13 y 23, junto a los capítulos y pruebas específicos.
+CP11 aceptado; CP12 abierto; P3 sin validar. Última frontera P3 completa positivaτ8; transporte vigenteτ12,8; próxima fronteraτ16, pendiente. Comprueba si recibos posteriores actualizaron esos tiempos.
 
-Autoridad: evidencia reproducible actual → registros, progreso e informes correspondientes a esa línea → enmiendas → plan original → conversación. No reconstruyas el proyecto desde este prompt ni tomes un texto antiguo como estado actual por estar en la raíz. Consulta los commits y las fechas. No cambies vistas generadas directamente cuando tengan fuentes y generadores registrados.
+La cápsulaτ12,8 es el adjunto711173125,229945240 bytes y SHA256 a58969092423501904f45bfa9e6143d41afac19970c9b61fa0222beb9e13c1d3:
+CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000128_P3_112_A16_20261030.zip.
 
-## Estado comprobado de partida
+La descarga pública actual pasó cobertura exacta,305 cargas y30 controles originales deτ8 más14 del transporteτ12,8, sin construir ni avanzar DOP853. El NPZ interno tiene SHA25647a13c99178ea12d3682e86cdd347eccdaaf0b9e1b536705b1477663ff6d547f. No repetir9,6→11,2 ni11,2→12,8.
 
-La revisión examinó main en 90e8fcffbba65629a1628f435d3c3240832fe9c4 y P3 en 9f7baa9cb80d8dcb0878110306d4fac25e1ad2fd. Después se incorporó documentación de relevo. Comprueba los heads reales al comenzar y compara cualquier avance posterior antes de actuar.
+El compilador original se recuperó del artefacto13379651727, ejecución41948353356, y se instaló mediante el restaurador registrado. Versión real13.3.0 y hash coinciden; pasaron los auditores sin modificarlos. El ZIP está además en el adjunto711636597:34480463 bytes; SHA256 f171dadffe93cd31195c71008eae8b2751d76d182ba29661be2355f762d9d385. No falsifiques versiones, fuerces BLAS ni adaptes auditores para aceptar otro entorno.
 
-- CP11 sigue siendo el último checkpoint científico aceptado y la Release estable. CP12 está abierto y P3 sigue sin validar.
-- El programa general registra E00, E01 y C0 completadas; E02, E03, E04, C7, RES0 y RES1 parciales; 24 etapas bloqueadas. Ninguna de las 24 primordiales tiene un dispositivo completo aceptado. No conviertas una campaña positiva en cierre general.
-- La última frontera completa aprobada del ensayo P3 es τ8. El transporte interno más reciente conservado y recuperado desde GitHub es τ11,2. La siguiente frontera completa es τ16 y todavía no fue ejecutada.
-- La repetición adicional τ9,6→τ11,2 terminó. Su autorización de un solo uso está consumida. No la vuelvas a lanzar ni reconstruyas su permiso privado.
-- P2 mixto Φ-FV/χ-K4 terminó con negativo espacial en τ80: fases χ=2,311907990946478 % >2 %. Su última frontera con las cinco métricas positivas es τ72. No lo reanudes. El CP12 original τ160 y el primer K4 de tres campos conservan sus negativos.
+El proceso de la asignación nueva p3_128_a16_20261104b comprobó restauración exacta y conservación nativa/pública antes de M2. Control711636683:231026178 bytes; SHA256764849209795eab5380e8358e62257c0a97c4681375f4c933ad0665063e5a726. La reserva debe publicarse antes de activar. Consulta registro canónico y recibos posteriores para comprobar actividad o salida real; no dupliques un trabajador activo.
 
-La cápsula vigente es el adjunto GitHub 688783601 de la Release experimental existente:
+La asignación anterior11,2→16 quedó inaccesible después de guardar12,8. No presupongas salida, no la reactives ni recrees su archivo privado de publicación. Continúa desde el transporte existente12,8 sin repetir su prefijo.
 
-CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000112_TRANSITO_INTENTO02_20261028.zip
+Proyecto_Runas_CONTINUIDAD_20261104.zip, adjunto709420494, ya tiene recuperación pública documentada de2625 archivos del commit e6c388964562cb7f84c8488a7060a6745d049a4b. Consulta trazabilidad/continuidad_20261104/ACEPTACION_GLOBAL_GITHUB.json antes de repetir arreglos antiguos. Cada paquete posterior tiene identidad propia.116/308 sigue incompleto y no representa308 documentos originales.
 
-Tamaño exacto: 229880902 bytes.
-SHA256 del ZIP: b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d
-SHA256 del transporte NPZ: bc129cff71c7558cd0298873fdc816da14e01fdcb4728235b33666a1ecfcf3ac
+## Continuación condicionada
 
-Contiene 293 cargas y su manifiesto. La descarga pública pasó 30 controles originales de la frontera τ8 y 14 del transporte τ11,2 sin construcciones ni pasos DOP853. La guía y aceptación están en checkpoints/CP12/p3_20261018/retoma_20261028/intento02/ejecucion_controlada/repeticion96_112/. Su informe diferencia el resultado físico guardado antes de conservar de los documentos administrativos reconstruidos después; no inventes el antiguo informe final externo ni identidad binaria con estados perdidos.
+Lee DERIVACION.md, REGULARIDAD_Y_ORDEN.md, DISPERSION_Y_ALCANCE.md, CERTIFICADO_F0_F5.json y PRERREGISTRO_PILOTO.md de P3; no repitas F0…F5. Mantén M2, Θ, CP04 sin suavizar, h=.125/.0625,R220,L4,ε=.02,DOP853 rtol1e-10/atol1e-12/max_step.02 y observadores originales. Φ sigueFV; χ usa A2+h²A2²/12+h⁴A2³/90. No afirmes orden radial global seis.
 
-## Primer trabajo: continuidad y recuperación
+Restaura toda la memoria interna y pasiva; los tiempos aceptados pueden superar el reloj observador. Conserva el límite interno original16. No inicialices un solver nuevo desde matrices observadas como si fuera continuación exacta.
 
-1. Comprueba acceso, ramas, actividad propia verificable, estado y existencia del adjunto. Usa las herramientas conectadas suficientes; si falta una capacidad, utiliza una alternativa autorizada. No presupongas que falta login por un fallo de red o porque un chat sea nuevo.
-2. Reconcilia las instrucciones operativas antiguas: estado_progreso.json de P3 aún hablaba del piloto 0→8 y transporte 0,4 en la referencia analizada. Actualiza desde evidencia, preserva el historial y regenera las vistas pertinentes. Mantén intactos los cierres y negativos científicos.
-3. Delimita la integridad global: el manifiesto raíz de P3 cubría 1384 archivos y dejaba 1167 rutas versionadas fuera; tres archivos de texto cubiertos ya no coincidían. Conserva ese manifiesto y su contexto antes de arreglar la entrega global. No actualices hashes a mano ni declares verificado un árbol incompleto. Usa una copia aislada y los verificadores adecuados; las cápsulas tienen una verificación independiente que no debe confundirse con ese manifiesto general.
-4. Descarga el ZIP de τ11,2 ya existente, verifica tamaño, SHA256, cobertura y todas las cargas, y ejecuta sus auditores originales sobre una extracción nueva, sin construir ni avanzar DOP853. Identifica las fuentes administrativas registradas en retoma_20261028/auditar_recuperacion.py y conservar_release.py, y el alcance de cada comprobación. No uses automáticamente reproducir.py ni vuelvas a ejecutar campañas cerradas como verificación de archivos.
-5. Comprueba el entorno exacto de las fuentes y del transporte. Una dependencia fijada no basta para restauración exacta: revisa implementación del solver, arquitectura BLAS, hilos, compilador y configuración capturados. No fuerces OPENBLAS_CORETYPE ni cambies la arquitectura o tolerancias para hacer pasar una puerta.
+Antes de física exige recuperación pública, auditores originales, restauración exacta, conservación desde el proceso real, reserva publicada y activación con sus hashes. Reutiliza los adaptadores registrados. Registra y verifica cualquier adaptación administrativa antes de usarla; no cambies código de un trabajador activo.
 
-## Continuación numérica autorizada bajo el protocolo vigente
+Guarda estado interno local cada.4 y conserva permanentemente cada1.6 según protocolo. Cada transporte permanente y frontera8,16,…,160 se recupera y audita antes de avanzar. Si una publicación es incierta, reconcilia su resultado antes de repetirla. Conserva enseguida identidades y recibos.
 
-Una vez recuperado el estado y cumplidas sus condiciones, prepara y registra la continuación desde τ11,2 hacia τ16 usando el procedimiento original. El lanzador de la repetición consumida no es un lanzador reutilizable para el futuro. Cualquier adaptación administrativa necesaria se registra y verifica antes de usarla, sin cambiar las fuentes científicas congeladas ni la trayectoria.
+En16 exige extracción independiente y cinco métricas espaciales≤.02 sin redondear. Mantén por separado ambas energías≤2e-4, carga≤1e-9, identidades/simetría≤2e-12, Parseval≤2e-11, observadores≤1e-3 y los controles de núcleo/amplificación aplicables. Un negativo se conserva y recupera y suspende esa versión. No relajes puertas, gires fases, cambies datos ni lances otro candidato automáticamente.
 
-Lee DERIVACION.md, REGULARIDAD_Y_ORDEN.md, DISPERSION_Y_ALCANCE.md, CERTIFICADO_F0_F5.json y PRERREGISTRO_PILOTO.md en checkpoints/CP12/p3_20261018/. No repitas F0…F5. Se mantienen M2, Θ, CP04 sin suavizar, las mallas Δr=.125/.0625, R=220, L=4, ε=.02, DOP853 rtol=1e-10, atol=1e-12 y max_step=.02, y todos los observadores y umbrales originales. Φ sigue FV; χ usa A2+Δr² A2²/12+Δr⁴ A2³/90. No llames a eso orden radial global seis.
+Si todo pasa, continúa por las fronteras realmente habilitadas. Hasta160 la pareja positiva es necesaria pero no suficiente: siguen tres ventanas causales, reducción original≥50% del canal operadorχ acoplado, tercera malla/orden observado justificados, referencia independiente, interpolación, angular/caja, estabilidad temporal y robustez. No promociones CP12 por un respaldo correcto.
 
-Restaura toda la memoria interna y pasiva del transporte. Los tiempos aceptados pueden estar algo por delante del reloj observador; conserva el límite interno original τ16. No reinicialices un solver nuevo desde unas matrices observadas como si fuera una continuación exacta. Verifica que no duplicas un trabajador; no cambies código de un trabajador activo ni presumas terminación de ejecutores antiguos inaccesibles.
+P2 conserva su negativo espacial80 y no se reanuda. Reutiliza CP10, CP12 original, CP04 y los demás tramos cerrados; no se reabren por cambiar de chat. M3 necesita una carencia fundamental común demostrada.
 
-Antes de física nueva, la ruta de conservación debe funcionar en el entorno y proceso reales. Respeta el protocolo de transportes: estado interno local cada 0,4; conservación permanente recuperada según la cadencia registrada, y cada frontera completa 8,16,…,160 recuperada y auditada antes de avanzar. Si una publicación queda incierta, reconcilia su resultado antes de repetirla. Guarda de inmediato los identificadores y recibos durables.
+## Finalidad y entregas
 
-En τ16 exige sobre la extracción independiente las cinco métricas espaciales originales ≤0,02 sin redondear. Mantén por separado energías consistente y FV original ≤2e-4, carga ≤1e-9, identidades/simetría ≤2e-12, Parseval ≤2e-11 y cierres/fases de observadores ≤1e-3, junto a los demás criterios exactos del protocolo. Los límites de núcleo y amplificación se aplican según el protocolo, sin ocultar negativos de prefijos.
+Rúnica construye una física e ingeniería para un mundo ficticio. Distingue hipótesis, derivación, simulación, diseño y problema abierto; no inventes mediciones ni capacidades aceptadas. Después del cierre numérico pendiente sigue dependencias de validez, estabilidad, preparación, acceso finito a Reserva, retroacción, receptor, retención y ciclo. No confundas energía ligada, ganancia lineal y eficiencia. Investiga Canal sólo en clases que cambien hipótesis de exclusión. Las24 funciones son revisables; ninguna está aceptada como dispositivo completo.
 
-Si todas las puertas pasan, continúa automáticamente con las fronteras realmente habilitadas y su conservación, hacia el horizonte condicionado τ160. Si falla una puerta, conserva y recupera el negativo completo, suspende esa versión y estudia la causa. No relajes umbrales, ajustes fases, cambies semillas ni lances P4 u otra corrección por inercia.
-
-Pasar la pareja espacial hasta τ160 no cierra CP12. Se exige el presupuesto causal en las tres ventanas y la reducción original ≥50 % del canal operador χ acoplado, además de convergencia adicional, tercera malla y orden observado justificados, referencia independiente, interpolación, angular/caja, estabilidad temporal y robustez. Prerregistra las pruebas necesarias y conserva sus fallos. No prometas un orden a partir de dos mallas o de datos C1.
-
-## Después: volver a la finalidad del proyecto
-
-Sigue dependencias reales. La prioridad posterior es respaldar estabilidad y validez, preparación con recursos, acceso finito a Reserva, retroacción, receptor, retención, descarga y recarga, hasta un primer ciclo numérico completo con contrato explícito. No confundas energía ligada con energía recuperable ni ganancia lineal con eficiencia de ciclo. Reserva es una candidata razonable, no una decisión de aceptación.
-
-Mantén la investigación de Canal sólo en clases que cambien hipótesis de las exclusiones existentes. Deriva contactos comunes y explica más de una función antes de ampliar el catálogo o elegir constantes específicas. Las 24 funciones pueden reorganizarse con justificación. M3 sólo se estudia por una carencia fundamental compartida demostrada; un cambio documental, geométrico o numérico no lo activa.
-
-No repitas CP10, CP12 original, la preparación CP04, P3 τ0→τ9,6 ni otros tramos cerrados por cambiar de chat. Respeta la diferencia entre verificación sin evolución, nueva prueba justificada y repetición prohibida. No inventes evidencia empírica para una ficción: completa el nivel matemático/numérico posible y etiqueta los niveles que requieran otra evidencia.
-
-## Conservación, organización y entregas
-
-Conserva código, teoría, protocolos e índices en Git y los checkpoints grandes como adjuntos completos verificables en Releases. Mantén CP11 estable y CP12 experimental; no promociones CP12 ni mezcles ciencia no aceptada en main. Sigue el flujo de PR y verificaciones aplicable cuando corresponda. Conserva las fuentes de vistas generadas y los resultados negativos; mejora la navegación antes de mover masivamente rutas.
-
-El histórico 116/308 es una prueba fragmentada de conservación de un paquete, no 308 documentos originales ni un porcentaje del proyecto. Sigue INCOMPLETO. La ruta nueva ya permitió recuperar τ11,2; no termines aquella transferencia por inercia ni la declares completa. Si hay material original todavía fuera de GitHub, identifícalo mediante un inventario real. No elimines originales, negativos o copias por suponer que son duplicados; una limpieza requiere identidades y recuperabilidad comprobadas y la autorización que corresponda.
-
-Cada entrega debe dejar: pregunta, protocolo previo, resultado, alcance, puertas, errores/incertidumbres, negativos, archivos y artefactos, recuperación independiente, commit, estado actualizado y siguiente acción. Diferencia estado científico, actividad del proceso y conservación. Usa nombres legibles para humanos sin romper identidades, hashes ni referencias históricas.
-
-El repositorio es la memoria entre chats. El otro chat actúa como consejero y revisará esos informes; no presupongas acceso automático a sus conversaciones. Sé el único escritor de la campaña activa y deja evidencia suficiente para que otro chat continúe sin repetirla.
-
-Empieza por comprobar el estado real y ejecutar la primera tarea administrativa y científica que esté justificada y desbloqueada. Informa brevemente de avances y bloqueos concretos. Continúa hasta el máximo cierre defendible con los recursos disponibles, sin pedir confirmaciones rutinarias ni declarar resultados que todavía no existen.
-
+Cada entrega deja pregunta, protocolo, resultado, alcance, puertas, incertidumbres/negativos, artefactos recuperados, commit y siguiente acción. Conserva código/teoría/registros en Git y cápsulas grandes en Releases. CP11 estable y CP12 experimental. El consejero revisará informes publicados; no presupongas contexto compartido. Continúa con el trabajo desbloqueado.

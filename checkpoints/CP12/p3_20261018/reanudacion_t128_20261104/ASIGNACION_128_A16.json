@@ -1,0 +1,31 @@
+{
+  "schema": "CP12_P3_FORWARD_RESERVATION_V2",
+  "registered_before_M2": true,
+  "at_utc": "2026-11-05T01:42:00.214986+00:00",
+  "single_worker_reserved": true,
+  "both_locks_held": {
+    "registration": true,
+    "instance": true
+  },
+  "tool_session_id": 93920,
+  "allocation_id": "p3_128_a16_20261104b",
+  "registration": "checkpoints/CP12/p3_20261018/reanudacion_t128_20261104/REGISTRO.json",
+  "registry_sha256": "8751517e060fdcbfd4c415ecce4419f7f13a21da11498d9b772debd0cf04d567",
+  "capacity_acceptance_sha256": "1ec155ed02fb8d2e177071256f71e8d732f2f8fea5cb5951d95715d8698ad549",
+  "capacity_acceptance": "checkpoints/CP12/p3_20261018/reanudacion_t128_20261104/capacidad/ACEPTACION_COMBINADA.json",
+  "source_observer_clock": 12.8,
+  "last_full_frontier": 8,
+  "target": 16,
+  "conditional_horizon": 160,
+  "code_registered_commit": "4f58c467ff886834a7141eee64ce52bcba4a4a7b",
+  "source_registration_commit": "14b8a8e0546e72154d216db4ca77a223146dd0c6",
+  "source_archive_sha256": "a58969092423501904f45bfa9e6143d41afac19970c9b61fa0222beb9e13c1d3",
+  "new_M2_steps_executed_at_reservation": 0,
+  "replay96_to112_authorized": false,
+  "replay112_to128_authorized": false,
+  "old_allocation_not_reactivated": true,
+  "old_private_publication_file_not_recreated": true,
+  "all_original_scientific_gates_required": true,
+  "automatic_new_candidate_authorized": false,
+  "CP12_closed": false
+}

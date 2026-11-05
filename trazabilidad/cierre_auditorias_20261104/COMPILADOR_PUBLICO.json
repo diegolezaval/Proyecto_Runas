@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "at_utc": "2026-11-05T01:42:00.214986+00:00",
+  "github_asset_id": 711636597,
+  "source_workflow_run": 41948353356,
+  "source_workflow_artifact": 13379651727,
+  "bytes": 34480463,
+  "sha256": "f171dadffe93cd31195c71008eae8b2751d76d182ba29661be2355f762d9d385",
+  "all_packages_verified": [
+    {
+      "name": "cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb",
+      "sha256": "595791da223beec7cbbe6b77906a7c3c1a3946ac5b406c50624d0ec272f25ce7",
+      "bytes": 10718702
+    },
+    {
+      "name": "gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb",
+      "sha256": "7cd398670e8306eabc9e77202f356a3206c440bd9f3dc764680a19be01784776",
+      "bytes": 21089252
+    },
+    {
+      "name": "libgcc-13-dev_13.3.0-6ubuntu2~24.04_amd64.deb",
+      "sha256": "ea61cc40833b78517933725a7b9a1d6b9d2047785f68577ddadfd064cc193397",
+      "bytes": 2681168
+    }
+  ],
+  "private_prefix_restoration": "trazabilidad/cierre_auditorias_20261104/RESTAURACION_COMPILADOR.json",
+  "M2_steps_executed": 0,
+  "CP12_closed": false
+}

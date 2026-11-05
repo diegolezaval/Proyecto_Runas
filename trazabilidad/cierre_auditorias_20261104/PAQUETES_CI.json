@@ -1,0 +1,33 @@
+{
+  "schema": "P3_COMPILER_VENDOR_PACKAGES_V1",
+  "passed": true,
+  "registration_commit": "14b8a8e0546e72154d216db4ca77a223146dd0c6",
+  "official_build": "https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/ppa/+build/28912931",
+  "run_id": "41948353356",
+  "run_attempt": "1",
+  "packages": [
+    {
+      "name": "cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb",
+      "bytes": 10718702,
+      "sha256": "595791da223beec7cbbe6b77906a7c3c1a3946ac5b406c50624d0ec272f25ce7",
+      "source_url": "https://launchpadlibrarian.net/747517388/cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb"
+    },
+    {
+      "name": "gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb",
+      "bytes": 21089252,
+      "sha256": "7cd398670e8306eabc9e77202f356a3206c440bd9f3dc764680a19be01784776",
+      "source_url": "https://launchpadlibrarian.net/747517396/gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb"
+    },
+    {
+      "name": "libgcc-13-dev_13.3.0-6ubuntu2~24.04_amd64.deb",
+      "bytes": 2681168,
+      "sha256": "ea61cc40833b78517933725a7b9a1d6b9d2047785f68577ddadfd064cc193397",
+      "source_url": "https://launchpadlibrarian.net/747517348/libgcc-13-dev_13.3.0-6ubuntu2~24.04_amd64.deb"
+    }
+  ],
+  "compiler_not_executed": true,
+  "scientific_audits_pending": true,
+  "M2_steps_executed": 0,
+  "DOP853_constructors": 0,
+  "CP12_closed": false
+}

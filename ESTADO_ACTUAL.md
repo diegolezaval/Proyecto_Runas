@@ -18,7 +18,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | Última frontera completa positiva P3 | τ8 |
 | Transporte interno recuperado | τ12.8 |
 | Próxima frontera completa | τ16, pendiente |
-| Trabajadores propios activos | 0 |
+| Trabajadores propios activos | 1 |
 
 Registro: [checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
 
@@ -26,7 +26,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 
 ## Siguiente trabajo científico
 
-- Publicar y recuperar la cápsula íntegra τ12,8; aplicar auditores originales en el entorno requerido. Después verificar conservación del nuevo proceso y publicar su reserva antes de activar12,8→16. No reactivar la asignación anterior ni repetir11,2→12,8 o9,6→11,2.
+- Publicar reserva y activar el único trabajador p3_128_a16_20261104b desde τ12,8 hacia τ16. Capacidad nativa y pública recuperadas en este proceso. Cada transporte permanente y la frontera16 deben recuperarse y pasar sus puertas originales antes de más física. No repetir9,6→11,2 ni11,2→12,8; no reactivar la asignación anterior.
 - Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 
@@ -50,6 +50,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 - Ensayo mixto Φ-FV/χ-K4 0→80: conservar fronteras, transportes y negativo espacial80. No repetir A–D ni reanudar desde72/78,4/79,6 para eludir la puerta negativa.
 - P3τ0→τ11,2 y F0…F5; la repetición adicionalτ9,6→τ11,2 y su permiso están consumidos.
 - La prueba administrativa116/308 sigue INCOMPLETA y no representa308 documentos originales.
+- P3τ11,2→τ12,8 ya conservado. La asignación anterior queda bloqueada; no recrear su archivo privado ASSET_GITHUB.json.
 
 ## Resultados vigentes y límites
 
@@ -104,7 +105,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/RECUPERACION_P3_T128_20261104.md](informes/RECUPERACION_P3_T128_20261104.md).
+Informe de esta entrega: [informes/CIERRE_AUDITORIAS_Y_REANUDACION_P3_20261104.md](informes/CIERRE_AUDITORIAS_Y_REANUDACION_P3_20261104.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 
