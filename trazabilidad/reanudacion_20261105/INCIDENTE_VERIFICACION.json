@@ -1,0 +1,13 @@
+{
+  "classification": "ADMINISTRATIVE_VERIFICATION_CONCURRENT_EDIT",
+  "scientific_gate_failed": false,
+  "numerical_campaigns_executed": false,
+  "prior_suite_commands_passed": true,
+  "prior_suite_structural_controls_passed_except_source_frozen": true,
+  "failed_test": "input_corpus_unmodified",
+  "cause": "Se actualizó el registro canónico de continuidad mientras el verificador lo consideraba fuente congelada.",
+  "scientific_CSV_NPZ_unchanged": true,
+  "correction": "Repetir la regresión sin editar ninguna fuente durante toda su ejecución; conservar ambos recibos.",
+  "M2_steps_executed": 0,
+  "CP12_closed": false
+}

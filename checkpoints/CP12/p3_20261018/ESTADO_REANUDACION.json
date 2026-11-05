@@ -1,9 +1,9 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-11-05T01:50:22.578923+00:00",
+  "updated_at": "2026-11-05T12:19:21.081523+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "be51ef0151fc2a64e881fb670e42ae4014b70df6",
-  "own_attempt_home": "/workspace/scratch/fd1e6ac3ae62/recuperacion/extraido_t128",
+  "last_public_commit": "8f91bac9470edee86810ac22b146240c62cc71dc",
+  "own_attempt_home": "/workspace/scratch/0f402422cb34/extraido_t144",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
   "accepted_scientific_checkpoint": "CP11",
@@ -13,7 +13,7 @@
   "formal_radial_order": 2,
   "global_sixth_order_claim": false,
   "latest_full_trial_frontier_recovered_and_audited": 8,
-  "latest_recoverable_observer_clock": 12.8,
+  "latest_recoverable_observer_clock": 14.4,
   "latest_full_frontier_proof": {
     "schema": "CP12_P3_TRIAL_BOUNDARY_PERMANENTLY_RECOVERED_AND_AUDITED",
     "time": 8,
@@ -148,24 +148,26 @@
     "CP12_closed": false
   },
   "latest_transport_proof": {
-    "schema": "CP12_P3_PUBLIC_TRANSPORT_RECOVERY_CURRENT_ORIGINAL_AUDITS_V1",
+    "schema": "CP12_P3_NATIVE_TRANSPORT_RECOVERY_CURRENT_ORIGINAL_AUDITS_V1",
     "passed": true,
-    "observer_clock": 12.8,
+    "observer_clock": 14.4,
     "target": 16,
     "closed_boundary": 8,
-    "github_asset_id": 711173125,
-    "bytes": 229945240,
-    "sha256": "a58969092423501904f45bfa9e6143d41afac19970c9b61fa0222beb9e13c1d3",
-    "transport_state_sha256": "47a13c99178ea12d3682e86cdd347eccdaaf0b9e1b536705b1477663ff6d547f",
-    "payload_files": 305,
+    "library_file_id": "libfile_a21bf95078208191be81265f55c1c719",
+    "file_id": "file_00000000a6bc81fd91ed8a9f3e1a5f56",
+    "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000144_P3_128_A16_20261104B.zip",
+    "bytes": 230010057,
+    "sha256": "5e2c494249b31d598af20559bfa5dbdb3f1d4038331a921dd3f9dc29d640b38d",
+    "transport_state_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
+    "payload_files": 314,
     "exact_manifest_coverage": true,
     "all_payload_hashes_verified_before_and_after": true,
     "original_zero_step_audit_tests": {
       "boundary8": 30,
-      "transport128": 14
+      "transport144": 14
     },
-    "audit_receipt": "trazabilidad/cierre_auditorias_20261104/auditoria_t128/RESULTADO.json",
-    "audit_receipt_sha256": "a8dcca870e7d512655d60e9e4bc900437826260374306b4473f2c0614940e80b",
+    "audit_receipt": "trazabilidad/reanudacion_20261105/auditoria_t144/RESULTADO.json",
+    "audit_receipt_sha256": "46f9cfcc9734a5b6240bfdf060713bc67a097414ae1aa45a7b37872d4455ff1f",
     "independent_zero_step_audit": {
       "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
       "passed": true,
@@ -185,25 +187,25 @@
         "independently_reloaded_Parseval": true,
         "file_unchanged": true
       },
-      "observer_clock": 12.8,
+      "observer_clock": 14.4,
       "target": 16,
-      "state_sha256": "47a13c99178ea12d3682e86cdd347eccdaaf0b9e1b536705b1477663ff6d547f",
+      "state_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
       "physical_metadata": [
         {
-          "t": 12.802495952265856,
-          "accepted": 2374,
+          "t": 14.402373447614625,
+          "accepted": 2670,
           "nfev": 18266,
-          "nfev_live": 10742,
-          "maxe": 6.515499251236179e-11,
+          "nfev_live": 14306,
+          "maxe": 6.790257245370412e-11,
           "maxq": 1.1102230246251565e-15,
           "maxe_original": 3.4873062215723394e-09
         },
         {
-          "t": 12.802489085638207,
-          "accepted": 2374,
+          "t": 14.40236299909726,
+          "accepted": 2670,
           "nfev": 18266,
-          "nfev_live": 10742,
-          "maxe": 6.503486638109734e-11,
+          "nfev_live": 14306,
+          "maxe": 6.77737865828476e-11,
           "maxq": 4.440892098500626e-16,
           "maxe_original": 8.379739124819707e-10
         }
@@ -214,24 +216,17 @@
       "CP12_closed": false,
       "DOP853_construction_or_step_attempts": 0
     },
+    "github_asset_id": null,
+    "github_public_recovery_pending": true,
     "M2_steps_executed": 0,
     "DOP853_construction_or_step_attempts": 0,
     "scientific_frontier": false,
     "CP12_closed": false,
     "correction_validated": false
   },
-  "current_own_worker_status": "RUNNING_REGISTERED_FORWARD_128_A16",
-  "own_observed_start": {
-    "at": "2026-11-05T01:49:02.295688+00:00",
-    "clock": 12.81,
-    "accepted_steps_since_restore": [
-      2,
-      2
-    ],
-    "replay96_to112_executed": false,
-    "CP12_closed": false
-  },
-  "own_guardian_tool_session_id": 93920,
+  "current_own_worker_status": "NO_CURRENT_WORKER_PREDECESSOR_INACCESSIBLE_PUBLICATION_PENDING",
+  "own_observed_start": null,
+  "own_guardian_tool_session_id": null,
   "own_exit_observed": null,
   "current_target": 16,
   "conditional_horizon": 160,
@@ -247,8 +242,8 @@
   "new_pilot_protocol": "checkpoints/CP12/p3_20261018/PRERREGISTRO_PILOTO.md",
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
-  "current_helper_directory": "/workspace/scratch/fd1e6ac3ae62/privado_helpers",
-  "next_recovery": "Mantener el único trabajador p3_128_a16_20261104b desde12,8 hacia16. Próximo transporte permanente14,4: conservar, recuperar y auditar antes de más física. En16 recuperar frontera y aplicar cinco métricas y todas las puertas originales. No duplicar trabajador ni repetir prefijos.",
+  "current_helper_directory": "/workspace/scratch/0f402422cb34/privado_helpers",
+  "next_recovery": "Publicar los bytes existentes de τ14,4, descargarlos y auditarlos en GitHub. Después comprobar conservación del proceso real, publicar reserva y activación p3_144_a16_20261105 y continuar sólo14,4→16. Prohibidos todos los prefijos anteriores; τ16 exige cinco métricas y puertas originales.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -258,32 +253,7 @@
     "observer_closure_phase": 0.001
   },
   "previous_inaccessible_executor_termination_assumed": false,
-  "latest_heartbeat_observation": {
-    "at": "2026-11-05T01:49:57.893653+00:00",
-    "clock": 13.0,
-    "phase": "evolution",
-    "physical_streams": [
-      {
-        "t": 13.002280763781945,
-        "accepted": 2411,
-        "nfev": 18266,
-        "nfev_live": 11193,
-        "maxe": 6.549494280250201e-11,
-        "maxq": 1.1102230246251565e-15,
-        "maxe_original": 3.4873062215723394e-09
-      },
-      {
-        "t": 13.002272262235419,
-        "accepted": 2411,
-        "nfev": 18266,
-        "nfev_live": 11186,
-        "maxe": 6.537359542591048e-11,
-        "maxq": 4.440892098500626e-16,
-        "maxe_original": 8.379739124819707e-10
-      }
-    ],
-    "not_a_restart_certificate": true
-  },
+  "latest_heartbeat_observation": null,
   "P3_one_interval_transport_control": {
     "schema": "CP12_NEW_TRANSPORT_CONTROL_NOT_PREFLIGHT_REPETITION",
     "passed": true,
@@ -622,7 +592,7 @@
     },
     "recovery_commit": "cd8db32b40fae0ce6f397ad58a60e8e6bdd3b6b3"
   },
-  "latest_local_recoverable_observer_clock": 12.8,
+  "latest_local_recoverable_observer_clock": 14.4,
   "latest_permanent_recoverable_observer_clock": 12.8,
   "local_transport112_archive": "/workspace/scratch/105d4db4f9e7/runtime_20261104/tau11p2.zip",
   "local_transport112_archive_sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
@@ -679,7 +649,7 @@
   },
   "historical_local_transport112_archive": "/workspace/scratch/a70983420f3a/p3_transport96/capsules/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_TAU_000112.zip",
   "historical_local_recovery_home": "/workspace/scratch/a70983420f3a/p3_recovered112",
-  "last_observed_completed_local_observer_clock": 11.2,
+  "last_observed_completed_local_observer_clock": 14.4,
   "no_evidence_deleted_by_agent": true,
   "continuation_blocked_by_missing_latest_local_state": false,
   "recovery_history_20261028": {
@@ -887,10 +857,10 @@
     "CP12_closed": false
   },
   "local_transport112_archive_bytes": 229880902,
-  "continuation_blocked_by_final_github_copy": false,
+  "continuation_blocked_by_final_github_copy": true,
   "historical_storage_error_before_attempt02": "library_storage_limit_exceeded",
   "storage_error_scope_note": "Current capsule recovery succeeded; this does not establish resolution of old account quota errors.",
-  "last_public_commit_scope": "Parent conocido antes de publicar esta entrega; el head de rama identifica el commit actual.",
+  "last_public_commit_scope": "Head observado antes de esta entrega; no identifica autorreferencialmente este archivo.",
   "new_executor_20261030": {
     "audit": "checkpoints/CP12/p3_20261018/continuidad_20261030/auditoria_recuperacion/RESULTADO.json",
     "preregistration": "checkpoints/CP12/p3_20261018/continuidad_20261030/PRERREGISTRO.md",
@@ -1169,5 +1139,148 @@
     "activation_commit": "be51ef0151fc2a64e881fb670e42ae4014b70df6",
     "new_physical_worker_started": true,
     "new_M2_steps_executed_scope": "Sólo primer intervalo observado; no contador final del tramo."
-  }
+  },
+  "history_before_recovery_t144_20261105": {
+    "snapshot": "trazabilidad/reanudacion_20261105/entrada/checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
+    "sha256": "4b1f0f01901ecb1592e6d54684d76242c73bcee4b68d6a1048d5d746e6a8649c",
+    "source_commit": "8f91bac9470edee86810ac22b146240c62cc71dc"
+  },
+  "latest_native_recoverable_observer_clock": 14.4,
+  "current_process_M2_steps_executed": 0,
+  "current_process_new_physical_worker_started": false,
+  "latest_github_transport_proof": {
+    "schema": "CP12_P3_PUBLIC_TRANSPORT_RECOVERY_CURRENT_ORIGINAL_AUDITS_V1",
+    "passed": true,
+    "observer_clock": 12.8,
+    "target": 16,
+    "closed_boundary": 8,
+    "github_asset_id": 711173125,
+    "bytes": 229945240,
+    "sha256": "a58969092423501904f45bfa9e6143d41afac19970c9b61fa0222beb9e13c1d3",
+    "transport_state_sha256": "47a13c99178ea12d3682e86cdd347eccdaaf0b9e1b536705b1477663ff6d547f",
+    "payload_files": 305,
+    "exact_manifest_coverage": true,
+    "all_payload_hashes_verified_before_and_after": true,
+    "original_zero_step_audit_tests": {
+      "boundary8": 30,
+      "transport128": 14
+    },
+    "audit_receipt": "trazabilidad/cierre_auditorias_20261104/auditoria_t128/RESULTADO.json",
+    "audit_receipt_sha256": "a8dcca870e7d512655d60e9e4bc900437826260374306b4473f2c0614940e80b",
+    "independent_zero_step_audit": {
+      "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
+      "passed": true,
+      "tests": {
+        "all_internal_state_bits_and_nfev_restored": true,
+        "original_sources_and_configuration": true,
+        "scientific_seed_unchanged": true,
+        "restore_used_no_solver_step": true,
+        "exact_stage_alias": true,
+        "accepted_states_match_solver": true,
+        "clocks_bracket_observer": true,
+        "both_energy_and_charge_gates": true,
+        "original_observer_maximum_gates": true,
+        "original_Parseval": true,
+        "original_symmetry": true,
+        "independently_reloaded_observer_closure": true,
+        "independently_reloaded_Parseval": true,
+        "file_unchanged": true
+      },
+      "observer_clock": 12.8,
+      "target": 16,
+      "state_sha256": "47a13c99178ea12d3682e86cdd347eccdaaf0b9e1b536705b1477663ff6d547f",
+      "physical_metadata": [
+        {
+          "t": 12.802495952265856,
+          "accepted": 2374,
+          "nfev": 18266,
+          "nfev_live": 10742,
+          "maxe": 6.515499251236179e-11,
+          "maxq": 1.1102230246251565e-15,
+          "maxe_original": 3.4873062215723394e-09
+        },
+        {
+          "t": 12.802489085638207,
+          "accepted": 2374,
+          "nfev": 18266,
+          "nfev_live": 10742,
+          "maxe": 6.503486638109734e-11,
+          "maxq": 4.440892098500626e-16,
+          "maxe_original": 8.379739124819707e-10
+        }
+      ],
+      "M2_steps_executed": 0,
+      "scientific_frontier": false,
+      "correction_validated": false,
+      "CP12_closed": false,
+      "DOP853_construction_or_step_attempts": 0
+    },
+    "M2_steps_executed": 0,
+    "DOP853_construction_or_step_attempts": 0,
+    "scientific_frontier": false,
+    "CP12_closed": false,
+    "correction_validated": false
+  },
+  "recovery_t144_20261105": {
+    "source": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/ORIGEN.json",
+    "report": "informes/RECUPERACION_P3_T144_20261105.md",
+    "audit": "trazabilidad/reanudacion_20261105/auditoria_t144/RESULTADO.json",
+    "registration": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/REGISTRO.json",
+    "preparation": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/PREPARACION.json",
+    "exact_restore": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/RESTAURACION_EXACTA.json",
+    "previous_accessibility": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/ACCESIBILIDAD_ANTERIOR.json",
+    "previous_session_id": 93920,
+    "previous_session_accessible": false,
+    "previous_exit_observed": false,
+    "previous_termination_assumed": false,
+    "old_allocation_not_to_be_reactivated": true,
+    "old_private_publication_file_must_not_be_recreated": true,
+    "new_M2_steps_executed": 0,
+    "new_reservation_published": false,
+    "new_activation_published": false,
+    "github_publication_pending": true,
+    "CP12_closed": false
+  },
+  "local_transport144_archive": "/workspace/scratch/0f402422cb34/recuperados/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000144_P3_128_A16_20261104B.zip",
+  "local_transport144_archive_sha256": "5e2c494249b31d598af20559bfa5dbdb3f1d4038331a921dd3f9dc29d640b38d",
+  "local_transport144_archive_bytes": 230010057,
+  "historical_worker_before_recovery_t144_20261105": {
+    "own_observed_start": {
+      "at": "2026-11-05T01:49:02.295688+00:00",
+      "clock": 12.81,
+      "accepted_steps_since_restore": [
+        2,
+        2
+      ],
+      "replay96_to112_executed": false,
+      "CP12_closed": false
+    },
+    "latest_heartbeat_observation": {
+      "at": "2026-11-05T01:49:57.893653+00:00",
+      "clock": 13.0,
+      "phase": "evolution",
+      "physical_streams": [
+        {
+          "t": 13.002280763781945,
+          "accepted": 2411,
+          "nfev": 18266,
+          "nfev_live": 11193,
+          "maxe": 6.549494280250201e-11,
+          "maxq": 1.1102230246251565e-15,
+          "maxe_original": 3.4873062215723394e-09
+        },
+        {
+          "t": 13.002272262235419,
+          "accepted": 2411,
+          "nfev": 18266,
+          "nfev_live": 11186,
+          "maxe": 6.537359542591048e-11,
+          "maxq": 4.440892098500626e-16,
+          "maxe_original": 8.379739124819707e-10
+        }
+      ],
+      "not_a_restart_certificate": true
+    }
+  },
+  "latest_permanent_recoverable_observer_clock_scope": "Último transporte con ambas rutas nativa y GitHub recuperadas;14,4 sólo nativo por ahora."
 }

@@ -1,0 +1,55 @@
+{
+  "schema": "CP12_P3_FORWARD_SEGMENT_V2",
+  "registered_before_M2": true,
+  "registered_at_utc": "2026-11-05T12:17:33.215880+00:00",
+  "allocation_id": "p3_144_a16_20261105",
+  "kind": "transport",
+  "clock": 14.4,
+  "closed_boundary": 8,
+  "target": 16,
+  "replay96_to112_authorized": false,
+  "consumed_replay_permission_reconstructed": false,
+  "source_archive_sha256": "5e2c494249b31d598af20559bfa5dbdb3f1d4038331a921dd3f9dc29d640b38d",
+  "transport_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
+  "closed_state_sha256": "1984303f49cac1c424952af632b6b5fa552c2a119d233a613c869cf0055b2db0",
+  "receipt_sha256": "b1f5b7216b77a588e2c73c90a0d4374faa95c3c124f2eaa52a48be6108a95a8c",
+  "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+  "administrative_sources": {
+    "preservar.py": "75b94548f2f339b663ee589feb19f9408311752c7afb3683d292706f469e0d35",
+    "continuar.py": "b90756f551c33647b660fa0f3058d362c5233327e8cc0e34a1470e01bcca5542",
+    "probar.py": "d009491047ea9760b0b948cf7a689d34cc725dc6201650505a3793582752812b"
+  },
+  "helper_sha256": {
+    "library_file_transfer.py": "d0385de4b634c4a6d4c26a83b40ee4ff33461e42473ce8c0387460be2465e314",
+    "library_upload.py": "5bc473dadefe1f68ee8797baaed19d6662642d0ea4bcba128fa12938faa0d767",
+    "library_hosted_apps.py": "7958642b88cde925aaca036989de1028c0864eb6d82a9cb175ebf9380cb9677b"
+  },
+  "original_auditor_sha256": "5ec8064cb2ef130b6796a296940a564d5c290e6f1000c4ca3ba2b0705f76aae0",
+  "synthetic_guard_tests_sha256": "fc99bb32ec1b9aad198e0f05e2080931dd5e687aa8108d762581444ba590c080",
+  "single_worker_required": true,
+  "capacity_before_physics_required": true,
+  "activation_after_public_capacity_required": true,
+  "physical_protocol": "checkpoints/CP12/p3_20261018/PRERREGISTRO_PILOTO.md",
+  "scientific_sources_changed": false,
+  "thresholds_changed": false,
+  "CP12_closed": false,
+  "correction_validated": false,
+  "source_library_file_id": "libfile_a21bf95078208191be81265f55c1c719",
+  "predecessor_intervals_must_not_repeat": [
+    [
+      9.6,
+      11.2
+    ],
+    [
+      11.2,
+      12.8
+    ],
+    [
+      12.8,
+      14.4
+    ]
+  ],
+  "source_public_recovery_and_current_original_audits_required_before_activation": true,
+  "previous_allocation_not_to_reactivate": "p3_128_a16_20261104b",
+  "previous_exit_observed": false
+}

@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "scope": "Continuidad de fuentes y diferencias observadas entre cápsulas existentes; no repetición de trayectoria.",
+  "science_prior_candidate_preregistration_files": 240,
+  "all_scientific_and_preregistered_sources_unchanged": true,
+  "added": [
+    "administracion_continuacion_20261030/p3_128_a16_20261104b/REGISTRO.json",
+    "administracion_continuacion_20261030/p3_128_a16_20261104b/continuar.py",
+    "administracion_continuacion_20261030/p3_128_a16_20261104b/preservar.py",
+    "administracion_continuacion_20261030/p3_128_a16_20261104b/probar.py",
+    "ancestor/continuidad_20261030/TRANSPORTE_000144_P3_128_A16_20261104B_MANIFIESTO_ORIGEN.json",
+    "proofs/auditoria_forward_000132.json",
+    "proofs/auditoria_forward_000136.json",
+    "proofs/auditoria_forward_000140.json",
+    "proofs/auditoria_forward_000144.json"
+  ],
+  "removed": [],
+  "changed": [
+    "transport/current.json",
+    "transport/current.npz"
+  ],
+  "M2_steps_executed": 0,
+  "CP12_closed": false
+}

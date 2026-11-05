@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-11-05T12:19:21.081523+00:00",
+  "report": "informes/RECUPERACION_P3_T144_20261105.md",
+  "source_commit": "8f91bac9470edee86810ac22b146240c62cc71dc",
+  "compiler_restored": true,
+  "current_original_audits_passed": {
+    "tau128": 44,
+    "tau144": 44
+  },
+  "exact_restore_144_passed": true,
+  "sources_unchanged": true,
+  "latest_native_recovered_clock": 14.4,
+  "latest_github_recovered_clock": 12.8,
+  "new_worker_started": false,
+  "new_capacity_reservation_activation_pending": true,
+  "CP11_accepted": true,
+  "CP12_closed": false,
+  "correction_validated": false,
+  "last_full_positive_boundary": 8,
+  "next_full_boundary": 16,
+  "current_process_M2_steps_executed": 0,
+  "administrative_block": "GITHUB_RELEASE_UPLOAD_REQUIRES_LOGIN",
+  "next": "Publicar los bytes existentes de τ14,4, descargarlos y auditarlos en GitHub. Después comprobar conservación del proceso real, publicar reserva y activación p3_144_a16_20261105 y continuar sólo14,4→16. Prohibidos todos los prefijos anteriores; τ16 exige cinco métricas y puertas originales."
+}

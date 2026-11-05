@@ -1,6 +1,6 @@
 # Relevo del ejecutor Rúnica
 
-Actualización del4 de noviembre de2026, hora de Lima. Comprobar el head y la evidencia posterior. Este relevo orienta; protocolos y pruebas conservan su autoridad.
+Actualización del 5 de noviembre de 2026, hora de Lima. Comprobar el head y la evidencia posterior. Este relevo orienta; protocolos y pruebas conservan su autoridad.
 
 Actúa como ejecutor principal de Rúnica. Trabaja autónomamente por entregas verificadas y recuperables, sin confirmaciones rutinarias. El usuario autoriza el trabajo ordinario del proyecto; solicita ayuda sólo ante permiso, inicio de sesión o dato indispensable. Otro chat es el consejero. El repositorio es la memoria común: https://github.com/diegolezaval/Proyecto_Runas.
 
@@ -11,9 +11,11 @@ Lee DIRECTRICES_DESARROLLO.md, DIRECTRICES_EJECUCION.txt, ARQUITECTURA.md, el pa
 Consulta primero:
 
 - RECUPERACION_CP12_ACTUAL.md.
-- informes/CIERRE_AUDITORIAS_Y_REANUDACION_P3_20261104.md y cualquier informe posterior.
+- informes/RECUPERACION_P3_T144_20261105.md y cualquier informe posterior.
+- informes/CIERRE_AUDITORIAS_Y_REANUDACION_P3_20261104.md como antecedente de la activación previa.
 - checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json.
-- En reanudacion_t128_20261104: REGISTRO.json, ORIGEN.json, RESTAURACION_EXACTA.json y ASIGNACION_128_A16.json.
+- En reanudacion_t144_20261105: REGISTRO.json, ORIGEN.json, RESTAURACION_EXACTA.json, RECUPERACION_NATIVA.json, PREPARACION.json y ACCESIBILIDAD_ANTERIOR.json.
+- La reserva y activación de reanudacion_t128_20261104 son historia; esa asignación no se reactiva.
 - La aceptación capacidad/ACEPTACION_COMBINADA.json y cualquier activación/progreso posterior.
 - Las notas más recientes de la Release respaldo-cp12-p3-20261027.
 
@@ -21,18 +23,20 @@ Autoridad: evidencia reproducible actual → registros/progreso/informes de esa 
 
 ## Estado recuperable
 
-CP11 aceptado; CP12 abierto; P3 sin validar. Última frontera P3 completa positivaτ8; transporte vigenteτ12,8; próxima fronteraτ16, pendiente. Comprueba si recibos posteriores actualizaron esos tiempos.
+CP11 aceptado; CP12 abierto; P3 sin validar. Última frontera P3 completa positiva τ8; transporte nativo vigente τ14,4; último transporte recuperado en GitHub τ12,8; próxima frontera τ16, pendiente. Comprueba si recibos posteriores actualizaron esos tiempos.
 
-La cápsulaτ12,8 es el adjunto711173125,229945240 bytes y SHA256 a58969092423501904f45bfa9e6143d41afac19970c9b61fa0222beb9e13c1d3:
+La cápsula vigente τ14,4 es CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000144_P3_128_A16_20261104B.zip, identidad nativa libfile_a21bf95078208191be81265f55c1c719: 230010057 bytes; SHA256 5e2c494249b31d598af20559bfa5dbdb3f1d4038331a921dd3f9dc29d640b38d. Se recuperaron sus 314 cargas y pasaron 30+14 auditores originales sin construir ni avanzar DOP853. Estado interno c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d. Publicación GitHub y recuperación pública pendientes; no repetir12,8→14,4.
+
+La última cápsula recuperada en GitHub, τ12,8, es el adjunto711173125,229945240 bytes y SHA256 a58969092423501904f45bfa9e6143d41afac19970c9b61fa0222beb9e13c1d3:
 CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000128_P3_112_A16_20261030.zip.
 
-La descarga pública actual pasó cobertura exacta,305 cargas y30 controles originales deτ8 más14 del transporteτ12,8, sin construir ni avanzar DOP853. El NPZ interno tiene SHA25647a13c99178ea12d3682e86cdd347eccdaaf0b9e1b536705b1477663ff6d547f. No repetir9,6→11,2 ni11,2→12,8.
+La descarga pública actual pasó cobertura exacta,305 cargas y30 controles originales deτ8 más14 del transporteτ12,8, sin construir ni avanzar DOP853. El NPZ interno tiene SHA25647a13c99178ea12d3682e86cdd347eccdaaf0b9e1b536705b1477663ff6d547f. No repetir9,6→11,2,11,2→12,8 ni12,8→14,4.
 
 El compilador original se recuperó del artefacto13379651727, ejecución41948353356, y se instaló mediante el restaurador registrado. Versión real13.3.0 y hash coinciden; pasaron los auditores sin modificarlos. El ZIP está además en el adjunto711636597:34480463 bytes; SHA256 f171dadffe93cd31195c71008eae8b2751d76d182ba29661be2355f762d9d385. No falsifiques versiones, fuerces BLAS ni adaptes auditores para aceptar otro entorno.
 
-El proceso de la asignación nueva p3_128_a16_20261104b comprobó restauración exacta y conservación nativa/pública antes de M2. Control711636683:231026178 bytes; SHA256764849209795eab5380e8358e62257c0a97c4681375f4c933ad0665063e5a726. La reserva debe publicarse antes de activar. Consulta registro canónico y recibos posteriores para comprobar actividad o salida real; no dupliques un trabajador activo.
+La asignación histórica p3_128_a16_20261104b publicó reserva74d78b9 y activaciónbe51ef0 y produjo14,4. Su sesión93920 y su directorio ya no son accesibles; no se observó salida ni se presume terminación. No reactivarla ni recrear su archivo privado de publicación de14,4. Tampoco se reactiva la asignación anterior11,2→16. Sus capacidades y latidos se conservan como antecedentes, no como capacidad del proceso actual.
 
-La asignación anterior11,2→16 quedó inaccesible después de guardar12,8. No presupongas salida, no la reactives ni recrees su archivo privado de publicación. Continúa desde el transporte existente12,8 sin repetir su prefijo.
+El entorno actual restauró otra vez el compilador exacto y pasó44 controles de12,8 y44 de14,4. El adaptador registrado restauró14,4 exactamente, con cero pasos y límite interno16. p3_144_a16_20261105 está preparada, SIN reserva ni activación; no hay trabajador físico nuevo. Primero publicar los bytes existentes14,4 y recuperarlos/auditarlos públicamente. El navegador y la CLI requieren login para adjuntos de Release; el acceso conectado sí permite publicar registros Git. Después comprobar conservación nativa y pública desde el proceso real, publicar reserva y activar antes de continuar14,4→16. No reutilizar la capacidad histórica como si fuera de un proceso nuevo.
 
 Proyecto_Runas_CONTINUIDAD_20261104.zip, adjunto709420494, ya tiene recuperación pública documentada de2625 archivos del commit e6c388964562cb7f84c8488a7060a6745d049a4b. Consulta trazabilidad/continuidad_20261104/ACEPTACION_GLOBAL_GITHUB.json antes de repetir arreglos antiguos. Cada paquete posterior tiene identidad propia.116/308 sigue incompleto y no representa308 documentos originales.
 

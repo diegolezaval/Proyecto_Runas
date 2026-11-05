@@ -6,7 +6,7 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** DESCONOCIDOS; no iniciar otro trabajador. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
@@ -16,9 +16,9 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 |---|---|
 | CP12 / P3 | ABIERTO / SIN_VALIDAR |
 | Última frontera completa positiva P3 | τ8 |
-| Transporte interno recuperado | τ12.8 |
+| Transporte interno recuperado | τ14.4 |
 | Próxima frontera completa | τ16, pendiente |
-| Trabajadores propios activos | 1 |
+| Trabajadores propios activos | 0 |
 
 Registro: [checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
 
@@ -26,7 +26,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 
 ## Siguiente trabajo científico
 
-- Mantener el único trabajador p3_128_a16_20261104b desde12,8 hacia16. Próximo transporte permanente14,4: conservar, recuperar y auditar antes de más física. En16 recuperar frontera y aplicar cinco métricas y todas las puertas originales. No duplicar trabajador ni repetir prefijos.
+- Publicar los bytes existentes de τ14,4, descargarlos y auditarlos en GitHub. Después comprobar conservación del proceso real, publicar reserva y activación p3_144_a16_20261105 y continuar sólo14,4→16. Prohibidos todos los prefijos anteriores; τ16 exige cinco métricas y puertas originales.
 - Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 
@@ -51,6 +51,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 - P3τ0→τ11,2 y F0…F5; la repetición adicionalτ9,6→τ11,2 y su permiso están consumidos.
 - La prueba administrativa116/308 sigue INCOMPLETA y no representa308 documentos originales.
 - P3τ11,2→τ12,8 ya conservado. La asignación anterior queda bloqueada; no recrear su archivo privado ASSET_GITHUB.json.
+- No repetir12,8→14,4: existe cápsula nativa íntegra y auditada. No reactivar p3_128_a16_20261104b ni recrear su publicación privada.
 
 ## Resultados vigentes y límites
 
@@ -105,7 +106,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/CIERRE_AUDITORIAS_Y_REANUDACION_P3_20261104.md](informes/CIERRE_AUDITORIAS_Y_REANUDACION_P3_20261104.md).
+Informe de esta entrega: [informes/RECUPERACION_P3_T144_20261105.md](informes/RECUPERACION_P3_T144_20261105.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

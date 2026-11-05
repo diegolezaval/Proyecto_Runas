@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0.0",
+  "base_checkpoint": "CP02_E01",
+  "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+  "authoritative_results": {
+    "C0": "validacion/P04/exclusiones/resultados.json",
+    "E02": "validacion/validez/resultados.json",
+    "E03_RES0": "validacion/P06/rama/resultados.json",
+    "E04_RES1": "validacion/P06/preparacion/resultados.json",
+    "excitation_diagnostic": "validacion/P06/preparacion/exceso_energia.json",
+    "linear_access": "validacion/P06/acceso_lineal/puerta_decision.json",
+    "nodal_phase": "validacion/P04/C7/puerta_fase_sin_nodos.json",
+    "nonradial_latest_completed_comparison": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+    "nonradial": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+    "mediator_diagnostic_before_CP10": "validacion/P06/no_radial/CP10/diagnostico_guardado__0cc9af79f3804e54e2f65309e9fad57934b04c55536c5dd07519c2bacc87ea47/diagnostico.json",
+    "chi_radial_diagnostic": "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json",
+    "chi_frozen_source_contrast": "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json",
+    "chi_forced_response": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json"
+  },
+  "historical_partial_files": {
+    "validacion/validez/partial_sensitivity.json": "Anterior a recuperación M+; no resultado vigente",
+    "validacion/validez/partial_capillary.json": "Instantánea de campaña concluida",
+    "validacion/P06/rama/partial.json": "Instantánea de continuación concluida",
+    "validacion/P06/preparacion/intento_01_diagnostico_parcial.json": "Anterior al diagnóstico de la malla fina larga; los casos ya finalizados no se repitieron.",
+    "validacion/P06/no_radial/resultados_parciales.json": "Instantánea anterior al cierre CP08; se conserva como historial, no como resultado vigente.",
+    "validacion/P06/no_radial/resultados.json": "Resultado final CP08 conservado byte a byte; su puerta negativa pertenece a las resoluciones de CP08. La comparación vigente está en el resultado CP10 registrado."
+  },
+  "calculations": [
+    {
+      "id": "sensibilidad_M_positivo",
+      "status": "COMPLETADA",
+      "stage_still_partial": "E02",
+      "resume": false
+    },
+    {
+      "id": "campana_rama_23",
+      "status": "COMPLETADA",
+      "stage_still_partial": "E03/RES0",
+      "resume": false
+    },
+    {
+      "id": "captura_radial",
+      "status": "COMPLETADA",
+      "stage_still_partial": "E04/RES1",
+      "resume": false,
+      "command": "python herramientas/captura_radial_m2.py --width 8 --dx .2 --dt .004 --tmax 240 --radius 260",
+      "scope": "Ocho ejecuciones; no cierre de etapa. Reutilizar NPZ final para perturbaciones nuevas."
+    },
+    {
+      "id": "C7_simetria",
+      "status": "COMPLETADA",
+      "resume": false,
+      "evidence": "tratado/27_simetria_estacionaria_y_cadenas_finitas.md",
+      "next": "Subpregunta condicionada resuelta; C7 en conjunto sigue PARCIAL."
+    },
+    {
+      "id": "no_radial_CP04",
+      "status": "COMPLETADA",
+      "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+      "next": "Reutilizar CP10/CP11 y negativos CP12/P2; sólo continuación P3 desde su transporte exactoτ12,8.",
+      "preregistered_campaign": "datos/ensayo_no_radial_CP06.json",
+      "completed_evolutions": 8,
+      "partial_pilots": [
+        "split4_L4_h0.500_dt0.0040_R220_eps0.020_T160",
+        "split4_L4_h0.500_dt0.0020_R220_eps0.020_T160"
+      ],
+      "completed_runs_must_not_repeat": true,
+      "completed_adaptive_evolutions": 6,
+      "temporal_mediator_gate_passed": true,
+      "radial_mediator_gate_passed": false,
+      "resume": false,
+      "finite_campaign_passed": false,
+      "stage_still_partial": "E03/E04/RES0/RES1",
+      "evidence": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+      "completed_centered_control": "split4c h=.5, dt=.002 hasta tau=160; balance superado. Los otros fallos y pilotos siguen conservados."
+    },
+    {
+      "id": "C7_fase_sin_nodos",
+      "status": "COMPLETADA",
+      "question": "¿Una fase espacial no uniforme salva una cadena estacionaria finita sin nodos?",
+      "method": "Conservación de corriente, levantamiento global de fase y prueba por truncamiento y corte espacial; no simulación repetida.",
+      "scope": "Estado monofrecuencial C2, H1 en R3, módulo positivo, sin fuentes ni gauge espacial.",
+      "resume": false,
+      "evidence": "tratado/30_fase_estacionaria_sin_nodos.md",
+      "stage_still_partial": "C7"
+    },
+    {
+      "id": "acceso_lineal_muestreado",
+      "status": "COMPLETADA",
+      "resume": false,
+      "evidence": "validacion/P06/acceso_lineal/puerta_decision.json",
+      "stage_still_partial_or_blocked": "RES0/RES2",
+      "finite_amplitude_complete": false
+    },
+    {
+      "id": "refinamiento_radial_h0125_CP08",
+      "status": "COMPLETADA",
+      "resume": false,
+      "tag": "dop853e9_L4_h0.125_dt0.0200_R220_eps0.020_T160",
+      "time": 160,
+      "comparison_passed": false,
+      "finite_campaign_passed": false,
+      "stage_still_partial": "E03/E04/RES1"
+    },
+    {
+      "id": "CP10_espacial_h00625",
+      "status": "COMPLETADA",
+      "resume": false,
+      "receipt": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/procedencia.json",
+      "restart_file": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "preregistered_campaign": "datos/ensayo_mediador_CP10.json",
+      "stage_still_partial": "E03/E04/RES0/RES1",
+      "time": 160
+    },
+    {
+      "id": "CP10_temporal_h0125",
+      "status": "COMPLETADA",
+      "resume": false,
+      "receipt": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/procedencia.json",
+      "restart_file": "validacion/P06/no_radial/CP10/temporal_h0125__47db345be15dc994ff09e5e67db405e90092844a156198dc4370ecc7f906d177/dop853e10_L4_h0.125_dt0.0200_R220_eps0.020_T160_estado.npz",
+      "preregistered_campaign": "datos/ensayo_mediador_CP10.json",
+      "stage_still_partial": "E03/E04/RES0/RES1",
+      "time": 160
+    },
+    {
+      "id": "CP10_diagnostico_guardado",
+      "status": "COMPLETADA",
+      "resume": false,
+      "evidence": "validacion/P06/no_radial/CP10/diagnostico_guardado__0cc9af79f3804e54e2f65309e9fad57934b04c55536c5dd07519c2bacc87ea47/diagnostico.json",
+      "receipt": "validacion/P06/no_radial/CP10/diagnostico_guardado__0cc9af79f3804e54e2f65309e9fad57934b04c55536c5dd07519c2bacc87ea47/procedencia.json",
+      "scope": "Análisis de estados guardados; ninguna evolución nueva."
+    },
+    {
+      "id": "CP10_comparacion_final",
+      "status": "COMPLETADA",
+      "resume": false,
+      "evidence": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
+      "receipt": "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/procedencia.json",
+      "scope": "Análisis de estados guardados; ninguna evolución nueva."
+    },
+    {
+      "id": "CP11_diagnostico_radial",
+      "status": "COMPLETADA",
+      "resume": false,
+      "evidence": "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json",
+      "receipt": "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/procedencia.json",
+      "preregistered_campaign": "datos/ensayo_diagnostico_chi_CP11.json",
+      "scope": "Diagnóstico sobre extremos guardados; no estado nuevo ni paso de evolución M2.",
+      "usable_as_accepted_evidence": true,
+      "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz"
+    },
+    {
+      "id": "CP11_contraste_fuente",
+      "status": "COMPLETADA",
+      "resume": false,
+      "evidence": "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json",
+      "receipt": "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/procedencia.json",
+      "preregistered_campaign": "datos/ensayo_diagnostico_chi_CP11.json",
+      "scope": "Diagnóstico sobre extremos guardados; no estado nuevo ni paso de evolución M2.",
+      "usable_as_accepted_evidence": true,
+      "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz"
+    },
+    {
+      "id": "CP11_respuesta_forzada",
+      "status": "FALLIDA",
+      "resume": false,
+      "evidence": "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/resultados.json",
+      "receipt": "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/procedencia.json",
+      "preregistered_campaign": "datos/ensayo_respuesta_forzada_CP11.json",
+      "scope": "Diagnóstico sobre extremos guardados; no estado nuevo ni paso de evolución M2.",
+      "usable_as_accepted_evidence": false,
+      "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz"
+    },
+    {
+      "id": "CP11_respuesta_forzada_precisa",
+      "status": "COMPLETADA",
+      "resume": false,
+      "evidence": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+      "receipt": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/procedencia.json",
+      "preregistered_campaign": "datos/ensayo_respuesta_forzada_precisa_CP11.json",
+      "scope": "Diagnóstico sobre extremos guardados; no estado nuevo ni paso de evolución M2.",
+      "usable_as_accepted_evidence": true,
+      "initial_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz"
+    },
+    {
+      "id": "CP12_par_instrumentado",
+      "status": "COMPLETADA_CON_NEGATIVO_ESPACIAL_TAU160",
+      "run_id": "a9f349020526a720f5448e6de0de08fe60cf1c058965fe2287fba9eed434789d",
+      "resume": false,
+      "completed": true,
+      "physical_gate_passed": false,
+      "cause_certified": false,
+      "correction_tested": false,
+      "preregistered_campaign": "datos/ensayo_causal_chi_CP12.json",
+      "evidence": "checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json",
+      "evidence_role": "RESULTADO_NEGATIVO_NO_CIERRE_CP12",
+      "last_time_observed_in_prior_session": 16.0,
+      "prior_session_arrays_not_currently_available": false,
+      "missing_state_is_scientific_negative": false,
+      "current_verified_time": 160,
+      "recovery_preregistration": "informes/PRERREGISTRO_RECONSTRUCCION_CP12.md",
+      "prior_tau16_arrays_available": false,
+      "recovered_from_persistent_capsule": true,
+      "repository_pair_snapshot_time": 0.0,
+      "restore_from_capsule_before_resume": true,
+      "scope": "No reanudar el reinicio históricoτ8. Fuentes anteriores conservadas en trazabilidad/continuidad_20261030/entrada/."
+    },
+    {
+      "id": "CP12_P2_mixto",
+      "status": "SUSPENDIDA_NEGATIVO_ESPACIAL_TAU80",
+      "resume": false,
+      "evidence": "checkpoints/CP12/continuacion_20261018/negativo_espacial_tau0080/SUSPENSION.json",
+      "last_all_five_spatial_gates_positive_boundary": 72,
+      "CP12_closed": false
+    },
+    {
+      "id": "CP12_P3_pareja",
+      "status": "RUNNING_REGISTERED_FORWARD_128_A16",
+      "resume": true,
+      "resume_only_from_exact_transport": true,
+      "recovered_observer_clock": 12.8,
+      "last_positive_full_frontier": 8,
+      "next_full_frontier": 16,
+      "evidence": "trazabilidad/cierre_auditorias_20261104/auditoria_t128/RESULTADO.json",
+      "consumed_replay_permission_available": false,
+      "CP12_closed": false,
+      "activity_evidence": "checkpoints/CP12/p3_20261018/reanudacion_t128_20261104/INICIO_FISICO.json"
+    }
+  ],
+  "failures_preserved": "trazabilidad/reanudacion_CP02/inventario.json",
+  "resume_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+  "numerical_runs_in_progress": [
+    {
+      "campaign": "CP12_P3",
+      "allocation_id": "p3_128_a16_20261104b",
+      "status": "RUNNING_REGISTERED_FORWARD_128_A16",
+      "source_observer_clock": 12.8,
+      "next_full_frontier": 16,
+      "first_observed_clock": 12.81,
+      "last_heartbeat_clock": 13.0,
+      "evidence": "checkpoints/CP12/p3_20261018/reanudacion_t128_20261104/INICIO_FISICO.json",
+      "original_trajectories_repeated": false,
+      "CP12_closed": false
+    }
+  ],
+  "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
+  "latest_completed_nonradial_time": 160,
+  "diagnostic_after_gate": "checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json",
+  "verification_protocol": "datos/verificacion_diagnostico_CP11.json",
+  "failed_CP11_controls_preserved": [
+    {
+      "result": "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/resultados.json",
+      "receipt": "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/procedencia.json",
+      "reason": "Cancelación en el control doble de identidad; sin interpretación física.",
+      "replaced_as_validated_reference_by": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+      "implementation_amendment": "informes/ENMIENDA_CP11_PRECISION_DEFECTO.md"
+    }
+  ],
+  "current_operational_state": {
+    "accepted_checkpoint": "CP11",
+    "CP12_status": "ABIERTO",
+    "P3_status": "SIN_VALIDAR",
+    "last_full_frontier": 8,
+    "recovered_transport": 12.8,
+    "next_full_frontier": 16,
+    "own_workers": 1,
+    "own_physical_workers": 1,
+    "forward_evolution_started": true,
+    "current_run_forward_evolution_started": true,
+    "canonical_register": "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
+    "evidence": "trazabilidad/cierre_auditorias_20261104/auditoria_t128/RESULTADO.json",
+    "preservation_in_current_process": "NATIVA_Y_GITHUB_RECUPERADOS",
+    "capacity_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t128_20261104/capacidad/ACEPTACION_COMBINADA.json",
+    "preservation_gate_passed": true,
+    "observed_at_utc": "2026-11-05T01:49:57.893653+00:00",
+    "administrative_phase": "EVOLUCION_128_A16",
+    "administrative_report": "informes/CIERRE_AUDITORIAS_Y_REANUDACION_P3_20261104.md",
+    "scientific_report": "informes/CIERRE_AUDITORIAS_Y_REANUDACION_P3_20261104.md",
+    "source_identity": "checkpoints/CP12/p3_20261018/reanudacion_t128_20261104/ORIGEN.json",
+    "activity_clock_is_restart_certificate": false,
+    "last_activity_observer_clock": 13.0,
+    "reservation_commit": "74d78b9d7cdce6b45e8df70e0e4fb6f13b629c05",
+    "activation_commit": "be51ef0151fc2a64e881fb670e42ae4014b70df6"
+  }
+}
