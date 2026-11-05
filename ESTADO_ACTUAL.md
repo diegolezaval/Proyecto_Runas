@@ -6,7 +6,7 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
@@ -26,7 +26,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 
 ## Siguiente trabajo científico
 
-- Publicar reserva y activar el único trabajador p3_128_a16_20261104b desde τ12,8 hacia τ16. Capacidad nativa y pública recuperadas en este proceso. Cada transporte permanente y la frontera16 deben recuperarse y pasar sus puertas originales antes de más física. No repetir9,6→11,2 ni11,2→12,8; no reactivar la asignación anterior.
+- Mantener el único trabajador p3_128_a16_20261104b desde12,8 hacia16. Próximo transporte permanente14,4: conservar, recuperar y auditar antes de más física. En16 recuperar frontera y aplicar cinco métricas y todas las puertas originales. No duplicar trabajador ni repetir prefijos.
 - Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 

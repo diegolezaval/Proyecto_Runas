@@ -1,8 +1,8 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-11-05T01:42:00.214986+00:00",
+  "updated_at": "2026-11-05T01:50:22.578923+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "14b8a8e0546e72154d216db4ca77a223146dd0c6",
+  "last_public_commit": "be51ef0151fc2a64e881fb670e42ae4014b70df6",
   "own_attempt_home": "/workspace/scratch/fd1e6ac3ae62/recuperacion/extraido_t128",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
@@ -220,8 +220,17 @@
     "CP12_closed": false,
     "correction_validated": false
   },
-  "current_own_worker_status": "WAITING_REGISTERED_ACTIVATION_ZERO_NEW_M2",
-  "own_observed_start": null,
+  "current_own_worker_status": "RUNNING_REGISTERED_FORWARD_128_A16",
+  "own_observed_start": {
+    "at": "2026-11-05T01:49:02.295688+00:00",
+    "clock": 12.81,
+    "accepted_steps_since_restore": [
+      2,
+      2
+    ],
+    "replay96_to112_executed": false,
+    "CP12_closed": false
+  },
   "own_guardian_tool_session_id": 93920,
   "own_exit_observed": null,
   "current_target": 16,
@@ -239,7 +248,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
   "current_helper_directory": "/workspace/scratch/fd1e6ac3ae62/privado_helpers",
-  "next_recovery": "Publicar reserva y activar el único trabajador p3_128_a16_20261104b desde τ12,8 hacia τ16. Capacidad nativa y pública recuperadas en este proceso. Cada transporte permanente y la frontera16 deben recuperarse y pasar sus puertas originales antes de más física. No repetir9,6→11,2 ni11,2→12,8; no reactivar la asignación anterior.",
+  "next_recovery": "Mantener el único trabajador p3_128_a16_20261104b desde12,8 hacia16. Próximo transporte permanente14,4: conservar, recuperar y auditar antes de más física. En16 recuperar frontera y aplicar cinco métricas y todas las puertas originales. No duplicar trabajador ni repetir prefijos.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -249,7 +258,32 @@
     "observer_closure_phase": 0.001
   },
   "previous_inaccessible_executor_termination_assumed": false,
-  "latest_heartbeat_observation": null,
+  "latest_heartbeat_observation": {
+    "at": "2026-11-05T01:49:57.893653+00:00",
+    "clock": 13.0,
+    "phase": "evolution",
+    "physical_streams": [
+      {
+        "t": 13.002280763781945,
+        "accepted": 2411,
+        "nfev": 18266,
+        "nfev_live": 11193,
+        "maxe": 6.549494280250201e-11,
+        "maxq": 1.1102230246251565e-15,
+        "maxe_original": 3.4873062215723394e-09
+      },
+      {
+        "t": 13.002272262235419,
+        "accepted": 2411,
+        "nfev": 18266,
+        "nfev_live": 11186,
+        "maxe": 6.537359542591048e-11,
+        "maxq": 4.440892098500626e-16,
+        "maxe_original": 8.379739124819707e-10
+      }
+    ],
+    "not_a_restart_certificate": true
+  },
   "P3_one_interval_transport_control": {
     "schema": "CP12_NEW_TRANSPORT_CONTROL_NOT_PREFLIGHT_REPETITION",
     "passed": true,
@@ -1126,8 +1160,14 @@
     "capacity_combined_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t128_20261104/capacidad/ACEPTACION_COMBINADA.json",
     "capacity_github_asset_id": 711636683,
     "capacity_acceptance_sha256": "1ec155ed02fb8d2e177071256f71e8d732f2f8fea5cb5951d95715d8698ad549",
-    "new_M2_steps_executed": 0,
+    "new_M2_steps_executed": 4,
     "old_allocation_not_reactivated": true,
-    "CP12_closed": false
+    "CP12_closed": false,
+    "activation": "checkpoints/CP12/p3_20261018/reanudacion_t128_20261104/ACTIVACION.json",
+    "physical_start": "checkpoints/CP12/p3_20261018/reanudacion_t128_20261104/INICIO_FISICO.json",
+    "reservation_commit": "74d78b9d7cdce6b45e8df70e0e4fb6f13b629c05",
+    "activation_commit": "be51ef0151fc2a64e881fb670e42ae4014b70df6",
+    "new_physical_worker_started": true,
+    "new_M2_steps_executed_scope": "Sólo primer intervalo observado; no contador final del tramo."
   }
 }

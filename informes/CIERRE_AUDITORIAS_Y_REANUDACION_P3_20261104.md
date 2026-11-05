@@ -47,3 +47,7 @@ Publicar la reserva y activar el proceso preparado desde12,8. Recuperar y audita
 Ante un negativo, conservarlo y recuperarlo, suspender esa versión y registrar el diagnóstico pendiente. Si todo pasa, habilitar sólo la siguiente frontera del protocolo. CP12 sigue abierto y CP11 estable.
 
 El commit de la entrega es el commit Git que contiene este informe y su reserva; se evita una autorreferencia circular. La activación posterior registra ese identificador explícitamente.
+
+## Activación y primer intervalo observado
+
+La reserva se publicó en74d78b9d7cdce6b45e8df70e0e4fb6f13b629c05 y se recuperó desde GitHub antes de la activación. La activación quedó publicada enbe51ef0151fc2a64e881fb670e42ae4014b70df6 antes de entregar su archivo al proceso preparado. Se observó el primer intervalo enτ12,81, con dos pasos aceptados por malla desde la restauración. [Inicio físico](../checkpoints/CP12/p3_20261018/reanudacion_t128_20261104/INICIO_FISICO.json). El proceso continúa hacia el transporte permanente14,4 y luego16, condicionado a conservación y puertas. Este latido no cambia la frontera recuperada ni certifica16.
