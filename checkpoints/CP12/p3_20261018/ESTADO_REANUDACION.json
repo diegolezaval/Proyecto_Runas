@@ -1,6 +1,6 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-11-05T12:19:21.081523+00:00",
+  "updated_at": "2026-11-05T18:51:31.661141+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
   "last_public_commit": "8f91bac9470edee86810ac22b146240c62cc71dc",
   "own_attempt_home": "/workspace/scratch/0f402422cb34/extraido_t144",
@@ -148,14 +148,12 @@
     "CP12_closed": false
   },
   "latest_transport_proof": {
-    "schema": "CP12_P3_NATIVE_TRANSPORT_RECOVERY_CURRENT_ORIGINAL_AUDITS_V1",
+    "schema": "CP12_P3_PUBLIC_TRANSPORT_RECOVERY_CURRENT_ORIGINAL_AUDITS_V1",
     "passed": true,
     "observer_clock": 14.4,
     "target": 16,
     "closed_boundary": 8,
-    "library_file_id": "libfile_a21bf95078208191be81265f55c1c719",
-    "file_id": "file_00000000a6bc81fd91ed8a9f3e1a5f56",
-    "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000144_P3_128_A16_20261104B.zip",
+    "github_asset_id": 714420565,
     "bytes": 230010057,
     "sha256": "5e2c494249b31d598af20559bfa5dbdb3f1d4038331a921dd3f9dc29d640b38d",
     "transport_state_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
@@ -166,8 +164,8 @@
       "boundary8": 30,
       "transport144": 14
     },
-    "audit_receipt": "trazabilidad/reanudacion_20261105/auditoria_t144/RESULTADO.json",
-    "audit_receipt_sha256": "46f9cfcc9734a5b6240bfdf060713bc67a097414ae1aa45a7b37872d4455ff1f",
+    "audit_receipt": "trazabilidad/activacion_t144_20261105/auditoria_publica/RESULTADO.json",
+    "audit_receipt_sha256": "2b35d3d6f9aa45536f0db4a7bbfc45909d60c1ff63304090362c07f9bfa1a143",
     "independent_zero_step_audit": {
       "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
       "passed": true,
@@ -216,17 +214,15 @@
       "CP12_closed": false,
       "DOP853_construction_or_step_attempts": 0
     },
-    "github_asset_id": null,
-    "github_public_recovery_pending": true,
     "M2_steps_executed": 0,
     "DOP853_construction_or_step_attempts": 0,
     "scientific_frontier": false,
     "CP12_closed": false,
     "correction_validated": false
   },
-  "current_own_worker_status": "NO_CURRENT_WORKER_PREDECESSOR_INACCESSIBLE_PUBLICATION_PENDING",
+  "current_own_worker_status": "PREPARED_WAITING_PUBLISHED_ACTIVATION_144_A16",
   "own_observed_start": null,
-  "own_guardian_tool_session_id": null,
+  "own_guardian_tool_session_id": 81225,
   "own_exit_observed": null,
   "current_target": 16,
   "conditional_horizon": 160,
@@ -243,7 +239,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_2113/CERTIFICADO_TAU0.json",
   "current_helper_directory": "/workspace/scratch/0f402422cb34/privado_helpers",
-  "next_recovery": "Publicar los bytes existentes de τ14,4, descargarlos y auditarlos en GitHub. Después comprobar conservación del proceso real, publicar reserva y activación p3_144_a16_20261105 y continuar sólo14,4→16. Prohibidos todos los prefijos anteriores; τ16 exige cinco métricas y puertas originales.",
+  "next_recovery": "Publicar esta reserva y después una activación con el commit y los hashes. Entregarla sólo tras recuperar ambas publicaciones. Continuar14,4→16; recuperar16 y aplicar cinco métricas y todas las puertas originales.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -593,10 +589,10 @@
     "recovery_commit": "cd8db32b40fae0ce6f397ad58a60e8e6bdd3b6b3"
   },
   "latest_local_recoverable_observer_clock": 14.4,
-  "latest_permanent_recoverable_observer_clock": 12.8,
+  "latest_permanent_recoverable_observer_clock": 14.4,
   "local_transport112_archive": "/workspace/scratch/105d4db4f9e7/runtime_20261104/tau11p2.zip",
   "local_transport112_archive_sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
-  "continuation_blocked_by_permanent_preservation": true,
+  "continuation_blocked_by_permanent_preservation": false,
   "storage_error": null,
   "no_evidence_deleted": false,
   "local_recovery_home": "/workspace/scratch/105d4db4f9e7/runtime_20261104/extraido_compatible",
@@ -788,7 +784,7 @@
     "scope": "Own bounded replay only; source receipt preserved",
     "tool_session_id": 24226
   },
-  "latest_github_recoverable_observer_clock": 12.8,
+  "latest_github_recoverable_observer_clock": 14.4,
   "latest_transport_proof_before_attempt02_completion": {
     "schema": "CP12_PERMANENTLY_RECOVERED_INTERNAL_TRANSPORT_NOT_SCIENTIFIC_FRONTIER",
     "passed": true,
@@ -857,7 +853,7 @@
     "CP12_closed": false
   },
   "local_transport112_archive_bytes": 229880902,
-  "continuation_blocked_by_final_github_copy": true,
+  "continuation_blocked_by_final_github_copy": false,
   "historical_storage_error_before_attempt02": "library_storage_limit_exceeded",
   "storage_error_scope_note": "Current capsule recovery succeeded; this does not establish resolution of old account quota errors.",
   "last_public_commit_scope": "Head observado antes de esta entrega; no identifica autorreferencialmente este archivo.",
@@ -1151,22 +1147,22 @@
   "latest_github_transport_proof": {
     "schema": "CP12_P3_PUBLIC_TRANSPORT_RECOVERY_CURRENT_ORIGINAL_AUDITS_V1",
     "passed": true,
-    "observer_clock": 12.8,
+    "observer_clock": 14.4,
     "target": 16,
     "closed_boundary": 8,
-    "github_asset_id": 711173125,
-    "bytes": 229945240,
-    "sha256": "a58969092423501904f45bfa9e6143d41afac19970c9b61fa0222beb9e13c1d3",
-    "transport_state_sha256": "47a13c99178ea12d3682e86cdd347eccdaaf0b9e1b536705b1477663ff6d547f",
-    "payload_files": 305,
+    "github_asset_id": 714420565,
+    "bytes": 230010057,
+    "sha256": "5e2c494249b31d598af20559bfa5dbdb3f1d4038331a921dd3f9dc29d640b38d",
+    "transport_state_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
+    "payload_files": 314,
     "exact_manifest_coverage": true,
     "all_payload_hashes_verified_before_and_after": true,
     "original_zero_step_audit_tests": {
       "boundary8": 30,
-      "transport128": 14
+      "transport144": 14
     },
-    "audit_receipt": "trazabilidad/cierre_auditorias_20261104/auditoria_t128/RESULTADO.json",
-    "audit_receipt_sha256": "a8dcca870e7d512655d60e9e4bc900437826260374306b4473f2c0614940e80b",
+    "audit_receipt": "trazabilidad/activacion_t144_20261105/auditoria_publica/RESULTADO.json",
+    "audit_receipt_sha256": "2b35d3d6f9aa45536f0db4a7bbfc45909d60c1ff63304090362c07f9bfa1a143",
     "independent_zero_step_audit": {
       "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
       "passed": true,
@@ -1186,25 +1182,25 @@
         "independently_reloaded_Parseval": true,
         "file_unchanged": true
       },
-      "observer_clock": 12.8,
+      "observer_clock": 14.4,
       "target": 16,
-      "state_sha256": "47a13c99178ea12d3682e86cdd347eccdaaf0b9e1b536705b1477663ff6d547f",
+      "state_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
       "physical_metadata": [
         {
-          "t": 12.802495952265856,
-          "accepted": 2374,
+          "t": 14.402373447614625,
+          "accepted": 2670,
           "nfev": 18266,
-          "nfev_live": 10742,
-          "maxe": 6.515499251236179e-11,
+          "nfev_live": 14306,
+          "maxe": 6.790257245370412e-11,
           "maxq": 1.1102230246251565e-15,
           "maxe_original": 3.4873062215723394e-09
         },
         {
-          "t": 12.802489085638207,
-          "accepted": 2374,
+          "t": 14.40236299909726,
+          "accepted": 2670,
           "nfev": 18266,
-          "nfev_live": 10742,
-          "maxe": 6.503486638109734e-11,
+          "nfev_live": 14306,
+          "maxe": 6.77737865828476e-11,
           "maxq": 4.440892098500626e-16,
           "maxe_original": 8.379739124819707e-10
         }
@@ -1238,7 +1234,7 @@
     "new_M2_steps_executed": 0,
     "new_reservation_published": false,
     "new_activation_published": false,
-    "github_publication_pending": true,
+    "github_publication_pending": false,
     "CP12_closed": false
   },
   "local_transport144_archive": "/workspace/scratch/0f402422cb34/recuperados/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000144_P3_128_A16_20261104B.zip",
@@ -1282,5 +1278,98 @@
       "not_a_restart_certificate": true
     }
   },
-  "latest_permanent_recoverable_observer_clock_scope": "Último transporte con ambas rutas nativa y GitHub recuperadas;14,4 sólo nativo por ahora."
+  "latest_permanent_recoverable_observer_clock_scope": "Transporte14,4 recuperado públicamente con44 controles; no frontera científica.",
+  "before_public_recovery_t144_20261105": {
+    "source_commit": "d132238b6b9f2fed154f559be0a5ace2301d33f1",
+    "global_recovery": "trazabilidad/activacion_t144_20261105/ACEPTACION_GLOBAL_D132.json",
+    "latest_transport_proof": {
+      "schema": "CP12_P3_NATIVE_TRANSPORT_RECOVERY_CURRENT_ORIGINAL_AUDITS_V1",
+      "passed": true,
+      "observer_clock": 14.4,
+      "target": 16,
+      "closed_boundary": 8,
+      "library_file_id": "libfile_a21bf95078208191be81265f55c1c719",
+      "file_id": "file_00000000a6bc81fd91ed8a9f3e1a5f56",
+      "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000144_P3_128_A16_20261104B.zip",
+      "bytes": 230010057,
+      "sha256": "5e2c494249b31d598af20559bfa5dbdb3f1d4038331a921dd3f9dc29d640b38d",
+      "transport_state_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
+      "payload_files": 314,
+      "exact_manifest_coverage": true,
+      "all_payload_hashes_verified_before_and_after": true,
+      "original_zero_step_audit_tests": {
+        "boundary8": 30,
+        "transport144": 14
+      },
+      "audit_receipt": "trazabilidad/reanudacion_20261105/auditoria_t144/RESULTADO.json",
+      "audit_receipt_sha256": "46f9cfcc9734a5b6240bfdf060713bc67a097414ae1aa45a7b37872d4455ff1f",
+      "independent_zero_step_audit": {
+        "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
+        "passed": true,
+        "tests": {
+          "all_internal_state_bits_and_nfev_restored": true,
+          "original_sources_and_configuration": true,
+          "scientific_seed_unchanged": true,
+          "restore_used_no_solver_step": true,
+          "exact_stage_alias": true,
+          "accepted_states_match_solver": true,
+          "clocks_bracket_observer": true,
+          "both_energy_and_charge_gates": true,
+          "original_observer_maximum_gates": true,
+          "original_Parseval": true,
+          "original_symmetry": true,
+          "independently_reloaded_observer_closure": true,
+          "independently_reloaded_Parseval": true,
+          "file_unchanged": true
+        },
+        "observer_clock": 14.4,
+        "target": 16,
+        "state_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
+        "physical_metadata": [
+          {
+            "t": 14.402373447614625,
+            "accepted": 2670,
+            "nfev": 18266,
+            "nfev_live": 14306,
+            "maxe": 6.790257245370412e-11,
+            "maxq": 1.1102230246251565e-15,
+            "maxe_original": 3.4873062215723394e-09
+          },
+          {
+            "t": 14.40236299909726,
+            "accepted": 2670,
+            "nfev": 18266,
+            "nfev_live": 14306,
+            "maxe": 6.77737865828476e-11,
+            "maxq": 4.440892098500626e-16,
+            "maxe_original": 8.379739124819707e-10
+          }
+        ],
+        "M2_steps_executed": 0,
+        "scientific_frontier": false,
+        "correction_validated": false,
+        "CP12_closed": false,
+        "DOP853_construction_or_step_attempts": 0
+      },
+      "github_asset_id": null,
+      "github_public_recovery_pending": true,
+      "M2_steps_executed": 0,
+      "DOP853_construction_or_step_attempts": 0,
+      "scientific_frontier": false,
+      "CP12_closed": false,
+      "correction_validated": false
+    }
+  },
+  "resumption_t144_20261105": {
+    "report": "informes/CONTINUACION_P3_144_A16_20261105.md",
+    "public_recovery": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/RECUPERACION_PUBLICA.json",
+    "exact_restore": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/RESTAURACION_EXACTA_PROCESO_ACTUAL.json",
+    "capacity_combined_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/capacidad/ACEPTACION_COMBINADA.json",
+    "reservation": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/ASIGNACION_144_A16.json",
+    "capacity_github_asset_id": 714433579,
+    "capacity_acceptance_sha256": "534554feae14fdcbd07de9a20a2bf3f4f2d2b3a38ec0b2790e3a140510695df2",
+    "new_M2_steps_executed": 0,
+    "new_physical_worker_started": false,
+    "CP12_closed": false
+  }
 }

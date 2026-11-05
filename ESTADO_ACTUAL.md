@@ -6,7 +6,7 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** DESCONOCIDOS; no iniciar otro trabajador. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
@@ -18,7 +18,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | Última frontera completa positiva P3 | τ8 |
 | Transporte interno recuperado | τ14.4 |
 | Próxima frontera completa | τ16, pendiente |
-| Trabajadores propios activos | 0 |
+| Trabajadores propios activos | 1 |
 
 Registro: [checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
 
@@ -26,7 +26,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 
 ## Siguiente trabajo científico
 
-- Publicar los bytes existentes de τ14,4, descargarlos y auditarlos en GitHub. Después comprobar conservación del proceso real, publicar reserva y activación p3_144_a16_20261105 y continuar sólo14,4→16. Prohibidos todos los prefijos anteriores; τ16 exige cinco métricas y puertas originales.
+- Publicar esta reserva y después una activación con el commit y los hashes. Entregarla sólo tras recuperar ambas publicaciones. Continuar14,4→16; recuperar16 y aplicar cinco métricas y todas las puertas originales.
 - Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 
@@ -106,7 +106,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/RECUPERACION_P3_T144_20261105.md](informes/RECUPERACION_P3_T144_20261105.md).
+Informe de esta entrega: [informes/CONTINUACION_P3_144_A16_20261105.md](informes/CONTINUACION_P3_144_A16_20261105.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

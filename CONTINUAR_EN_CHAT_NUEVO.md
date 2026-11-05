@@ -11,7 +11,8 @@ Lee DIRECTRICES_DESARROLLO.md, DIRECTRICES_EJECUCION.txt, ARQUITECTURA.md, el pa
 Consulta primero:
 
 - RECUPERACION_CP12_ACTUAL.md.
-- informes/RECUPERACION_P3_T144_20261105.md y cualquier informe posterior.
+- informes/CONTINUACION_P3_144_A16_20261105.md y cualquier informe posterior.
+- informes/RECUPERACION_P3_T144_20261105.md conserva el estado anterior a la publicación pública.
 - informes/CIERRE_AUDITORIAS_Y_REANUDACION_P3_20261104.md como antecedente de la activación previa.
 - checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json.
 - En reanudacion_t144_20261105: REGISTRO.json, ORIGEN.json, RESTAURACION_EXACTA.json, RECUPERACION_NATIVA.json, PREPARACION.json y ACCESIBILIDAD_ANTERIOR.json.
@@ -23,11 +24,11 @@ Autoridad: evidencia reproducible actual → registros/progreso/informes de esa 
 
 ## Estado recuperable
 
-CP11 aceptado; CP12 abierto; P3 sin validar. Última frontera P3 completa positiva τ8; transporte nativo vigente τ14,4; último transporte recuperado en GitHub τ12,8; próxima frontera τ16, pendiente. Comprueba si recibos posteriores actualizaron esos tiempos.
+CP11 aceptado; CP12 abierto; P3 sin validar. Última frontera P3 completa positiva τ8; transporte nativo vigente τ14,4; último transporte recuperado en GitHub τ14,4; próxima frontera τ16, pendiente. Comprueba si recibos posteriores actualizaron esos tiempos.
 
-La cápsula vigente τ14,4 es CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000144_P3_128_A16_20261104B.zip, identidad nativa libfile_a21bf95078208191be81265f55c1c719: 230010057 bytes; SHA256 5e2c494249b31d598af20559bfa5dbdb3f1d4038331a921dd3f9dc29d640b38d. Se recuperaron sus 314 cargas y pasaron 30+14 auditores originales sin construir ni avanzar DOP853. Estado interno c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d. Publicación GitHub y recuperación pública pendientes; no repetir12,8→14,4.
+La cápsula vigente τ14,4 es CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000144_P3_128_A16_20261104B.zip, identidad nativa libfile_a21bf95078208191be81265f55c1c719: 230010057 bytes; SHA256 5e2c494249b31d598af20559bfa5dbdb3f1d4038331a921dd3f9dc29d640b38d. Se recuperaron sus 314 cargas y pasaron 30+14 auditores originales sin construir ni avanzar DOP853. Estado interno c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d. Publicada como adjunto714420565 y recuperada públicamente con314 cargas y44 controles originales. No repetir12,8→14,4.
 
-La última cápsula recuperada en GitHub, τ12,8, es el adjunto711173125,229945240 bytes y SHA256 a58969092423501904f45bfa9e6143d41afac19970c9b61fa0222beb9e13c1d3:
+El antecedente público τ12,8, es el adjunto711173125,229945240 bytes y SHA256 a58969092423501904f45bfa9e6143d41afac19970c9b61fa0222beb9e13c1d3:
 CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000128_P3_112_A16_20261030.zip.
 
 La descarga pública actual pasó cobertura exacta,305 cargas y30 controles originales deτ8 más14 del transporteτ12,8, sin construir ni avanzar DOP853. El NPZ interno tiene SHA25647a13c99178ea12d3682e86cdd347eccdaaf0b9e1b536705b1477663ff6d547f. No repetir9,6→11,2,11,2→12,8 ni12,8→14,4.
@@ -36,7 +37,9 @@ El compilador original se recuperó del artefacto13379651727, ejecución41948353
 
 La asignación histórica p3_128_a16_20261104b publicó reserva74d78b9 y activaciónbe51ef0 y produjo14,4. Su sesión93920 y su directorio ya no son accesibles; no se observó salida ni se presume terminación. No reactivarla ni recrear su archivo privado de publicación de14,4. Tampoco se reactiva la asignación anterior11,2→16. Sus capacidades y latidos se conservan como antecedentes, no como capacidad del proceso actual.
 
-El entorno actual restauró otra vez el compilador exacto y pasó44 controles de12,8 y44 de14,4. El adaptador registrado restauró14,4 exactamente, con cero pasos y límite interno16. p3_144_a16_20261105 está preparada, SIN reserva ni activación; no hay trabajador físico nuevo. Primero publicar los bytes existentes14,4 y recuperarlos/auditarlos públicamente. El navegador y la CLI requieren login para adjuntos de Release; el acceso conectado sí permite publicar registros Git. Después comprobar conservación nativa y pública desde el proceso real, publicar reserva y activar antes de continuar14,4→16. No reutilizar la capacidad histórica como si fuera de un proceso nuevo.
+El entorno actual restauró otra vez el compilador exacto y recuperó públicamente14,4 sin pasos. El trabajador nuevo p3_144_a16_20261105, sesión81225, tiene ambos locks y pasó conservación nativa y pública del mismo proceso: control714433579,231091360 bytes,SHA256850f2fd19aee3c9723c2d68413873f4ad5f2f80e43ec7268c15fe8fad5acd646. Consulta ASIGNACION_144_A16.json, capacidad/ACEPTACION_COMBINADA.json y cualquier ACTIVACION.json o INICIO_FISICO.json posterior. La reserva debe publicarse antes de activar; no lanzar un trabajador duplicado ni reutilizar capacidades históricas. Comprobar la sesión real antes de actuar.
+
+El paquete Proyecto_Runas_RECUPERACION_T144_20261105.zip quedó publicado como714432978 y sus2715 archivos Git exactos se recuperaron desde la descarga pública. Es la entrega del commitd132238, anterior a esta reserva; tiene identidad propia y no anticipa16.
 
 Proyecto_Runas_CONTINUIDAD_20261104.zip, adjunto709420494, ya tiene recuperación pública documentada de2625 archivos del commit e6c388964562cb7f84c8488a7060a6745d049a4b. Consulta trazabilidad/continuidad_20261104/ACEPTACION_GLOBAL_GITHUB.json antes de repetir arreglos antiguos. Cada paquete posterior tiene identidad propia.116/308 sigue incompleto y no representa308 documentos originales.
 

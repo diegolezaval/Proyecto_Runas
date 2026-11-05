@@ -1,0 +1,73 @@
+{
+  "schema": "CP12_P3_PUBLIC_TRANSPORT_RECOVERY_CURRENT_ORIGINAL_AUDITS_V1",
+  "passed": true,
+  "observer_clock": 14.4,
+  "target": 16,
+  "closed_boundary": 8,
+  "github_asset_id": 714420565,
+  "bytes": 230010057,
+  "sha256": "5e2c494249b31d598af20559bfa5dbdb3f1d4038331a921dd3f9dc29d640b38d",
+  "transport_state_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
+  "payload_files": 314,
+  "exact_manifest_coverage": true,
+  "all_payload_hashes_verified_before_and_after": true,
+  "original_zero_step_audit_tests": {
+    "boundary8": 30,
+    "transport144": 14
+  },
+  "audit_receipt": "trazabilidad/activacion_t144_20261105/auditoria_publica/RESULTADO.json",
+  "audit_receipt_sha256": "2b35d3d6f9aa45536f0db4a7bbfc45909d60c1ff63304090362c07f9bfa1a143",
+  "independent_zero_step_audit": {
+    "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
+    "passed": true,
+    "tests": {
+      "all_internal_state_bits_and_nfev_restored": true,
+      "original_sources_and_configuration": true,
+      "scientific_seed_unchanged": true,
+      "restore_used_no_solver_step": true,
+      "exact_stage_alias": true,
+      "accepted_states_match_solver": true,
+      "clocks_bracket_observer": true,
+      "both_energy_and_charge_gates": true,
+      "original_observer_maximum_gates": true,
+      "original_Parseval": true,
+      "original_symmetry": true,
+      "independently_reloaded_observer_closure": true,
+      "independently_reloaded_Parseval": true,
+      "file_unchanged": true
+    },
+    "observer_clock": 14.4,
+    "target": 16,
+    "state_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
+    "physical_metadata": [
+      {
+        "t": 14.402373447614625,
+        "accepted": 2670,
+        "nfev": 18266,
+        "nfev_live": 14306,
+        "maxe": 6.790257245370412e-11,
+        "maxq": 1.1102230246251565e-15,
+        "maxe_original": 3.4873062215723394e-09
+      },
+      {
+        "t": 14.40236299909726,
+        "accepted": 2670,
+        "nfev": 18266,
+        "nfev_live": 14306,
+        "maxe": 6.77737865828476e-11,
+        "maxq": 4.440892098500626e-16,
+        "maxe_original": 8.379739124819707e-10
+      }
+    ],
+    "M2_steps_executed": 0,
+    "scientific_frontier": false,
+    "correction_validated": false,
+    "CP12_closed": false,
+    "DOP853_construction_or_step_attempts": 0
+  },
+  "M2_steps_executed": 0,
+  "DOP853_construction_or_step_attempts": 0,
+  "scientific_frontier": false,
+  "CP12_closed": false,
+  "correction_validated": false
+}

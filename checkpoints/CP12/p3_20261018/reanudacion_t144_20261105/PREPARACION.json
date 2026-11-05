@@ -1,12 +1,14 @@
 {
   "at_utc": "2026-11-05T12:17:33.215880+00:00",
   "allocation_id": "p3_144_a16_20261105",
-  "status": "PREPARADA_NO_RESERVADA_NO_ACTIVADA",
+  "status": "RESERVA_PREPARADA_PARA_PUBLICAR_ANTES_DE_ACTIVAR",
   "registry_sha256": "9cc67da3033ed1846d771373fa921f693a2c32ccba1a18242d1cdbb63396c6ec",
-  "current_process_capacity_passed": false,
+  "current_process_capacity_passed": true,
   "reservation_published": false,
   "activation_published": false,
   "new_physical_worker_started": false,
   "M2_steps_executed": 0,
-  "CP12_closed": false
+  "CP12_closed": false,
+  "updated_at_utc": "2026-11-05T18:51:31.661141+00:00",
+  "tool_session_id": 81225
 }

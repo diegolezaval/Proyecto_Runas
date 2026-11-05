@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "clock": 14.4,
+  "target": 16,
+  "physical_metadata": [
+    {
+      "t": 14.402373447614625,
+      "accepted": 2670,
+      "nfev": 18266,
+      "nfev_live": 14306,
+      "maxe": 6.790257245370412e-11,
+      "maxq": 1.1102230246251565e-15,
+      "maxe_original": 3.4873062215723394e-09
+    },
+    {
+      "t": 14.40236299909726,
+      "accepted": 2670,
+      "nfev": 18266,
+      "nfev_live": 14306,
+      "maxe": 6.77737865828476e-11,
+      "maxq": 4.440892098500626e-16,
+      "maxe_original": 8.379739124819707e-10
+    }
+  ],
+  "M2_steps_executed": 0,
+  "DOP853_construction_or_step_attempts": 0,
+  "CP12_closed": false
+}

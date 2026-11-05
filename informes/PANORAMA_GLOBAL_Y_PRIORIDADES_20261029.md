@@ -1,6 +1,6 @@
 # Rúnica: panorama global, límites y prioridades de continuación
 
-> Esta revisión conserva el estado histórico del 29 de octubre. La evidencia posterior está en [la recuperación de τ14,4 del 5 de noviembre](RECUPERACION_P3_T144_20261105.md) y el [registro canónico](../checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json): τ14,4 nativo recuperado y auditado, con publicación GitHub pendiente; τ12,8 recuperado públicamente; τ8 última frontera completa positiva; τ16 pendiente. El paquete global ya tiene recuperación pública documentada. Los siguientes apartados conservan la revisión histórica y no autorizan repetir sus pendientes antiguos.
+> Esta revisión conserva el estado histórico del29 de octubre. La evidencia posterior está en [la continuación desde14,4 del5 de noviembre](CONTINUACION_P3_144_A16_20261105.md) y el [registro canónico](../checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json):14,4 recuperado pública y nativamente; capacidad actual positiva;τ8 última frontera completa positiva;τ16 pendiente. Comprobar reserva, activación e inicio físico posteriores antes de actuar. Los apartados siguientes conservan historia y no autorizan repetir pendientes ya resueltos.
 
 Revisión del 29 de octubre de 2026. Documento de orientación y análisis; no sustituye protocolos, evidencia reproducible, puertas ni registros científicos. No declara una etapa nueva completada.
 
