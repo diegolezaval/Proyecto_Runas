@@ -1,0 +1,53 @@
+name: P3 recuperar paquetes oficiales del compilador sin M2
+
+on:
+  push:
+    branches: [infra/p3-compilador-20261104]
+    paths:
+      - .github/workflows/p3-descargar-compilador-20261104.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: p3-descargar-compilador-20261104
+  cancel-in-progress: false
+
+jobs:
+  conservar-paquetes:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Descargar y comprobar las tres identidades registradas
+        shell: python
+        run: |
+          import hashlib, json, os, pathlib, urllib.request
+          packages = [["cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb",10718702,"595791da223beec7cbbe6b77906a7c3c1a3946ac5b406c50624d0ec272f25ce7",747517388],["gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb",21089252,"7cd398670e8306eabc9e77202f356a3206c440bd9f3dc764680a19be01784776",747517396],["libgcc-13-dev_13.3.0-6ubuntu2~24.04_amd64.deb",2681168,"ea61cc40833b78517933725a7b9a1d6b9d2047785f68577ddadfd064cc193397",747517348]]
+          output = pathlib.Path("compilador-verificado")
+          output.mkdir()
+          receipts = []
+          for name, size, digest, librarian_id in packages:
+              url = f"https://launchpadlibrarian.net/{librarian_id}/{name}"
+              target = output / name
+              with urllib.request.urlopen(url, timeout=45) as response, target.open("xb") as stream:
+                  while chunk := response.read(1024 * 1024):
+                      stream.write(chunk)
+              actual = hashlib.file_digest(target.open("rb"), "sha256").hexdigest()
+              assert target.stat().st_size == size, (name, "size", target.stat().st_size)
+              assert actual == digest, (name, "sha256", actual)
+              receipts.append(dict(name=name, bytes=size, sha256=digest, source_url=url))
+          receipt = dict(schema="P3_COMPILER_VENDOR_PACKAGES_V1", passed=True,
+              registration_commit="14b8a8e0546e72154d216db4ca77a223146dd0c6",
+              official_build="https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/ppa/+build/28912931",
+              run_id=os.environ["GITHUB_RUN_ID"], run_attempt=os.environ["GITHUB_RUN_ATTEMPT"],
+              packages=receipts, compiler_not_executed=True, scientific_audits_pending=True,
+              M2_steps_executed=0, DOP853_constructors=0, CP12_closed=False)
+          (output / "RECIBO.json").write_text(json.dumps(receipt, indent=2) + "\n")
+          print(json.dumps(receipt))
+      - name: Conservar paquetes verificados y recibo
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: P3-compilador-13.3.0-${{ github.run_id }}-${{ github.run_attempt }}
+          path: compilador-verificado/
+          if-no-files-found: error
+          retention-days: 90
