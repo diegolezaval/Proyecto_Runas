@@ -16,7 +16,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 |---|---|
 | CP12 / P3 | ABIERTO / SIN_VALIDAR |
 | Última frontera completa positiva P3 | τ16 |
-| Transporte interno recuperado | τ17.6 |
+| Transporte interno recuperado | τ19.2 |
 | Próxima frontera completa | τ24, pendiente |
 | Trabajadores propios activos | 1 |
 
@@ -54,6 +54,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 - No repetir12,8→14,4: existe cápsula nativa íntegra y auditada. No reactivar p3_128_a16_20261104b ni recrear su publicación privada.
 - P3τ14,4→τ16:frontera16recuperada y positiva;no reactivar p3_144_a16_20261105 ni su publicación privada.
 - No repetir16→17,6: transporte interno exacto conservado nativa y públicamente como717327999; si se pierde el proceso, reconciliar y usar este estado íntegro con asignación nueva.
+- No repetir17.6→19.2:transporte exacto recuperado nativa y públicamente como717353872; usar último estado íntegro si el proceso desaparece.
 
 ## Resultados vigentes y límites
 

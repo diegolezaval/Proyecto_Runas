@@ -1,6 +1,6 @@
 # P3: reconciliación de la activación16→24 y nueva asignación
 
-**Estado posterior comprobado: el trabajador77606 recibió la activación nueva y avanzó a16,01 con2 pasos aceptados por malla.** [Recepción acreditada](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/RECEPCION_ACREDITADA_POR_INICIO.json). **Último transporte permanente posterior:17,6**, recuperado nativa y públicamente;335 cargas y30+14 controles. La frontera24 sigue pendiente.
+**Estado posterior comprobado: el trabajador77606 recibió la activación nueva y avanzó a16,01 con2 pasos aceptados por malla.** [Recepción acreditada](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/RECEPCION_ACREDITADA_POR_INICIO.json). **Último transporte permanente posterior:19,2**,recuperado nativa y públicamente;340 cargas y30+14 controles. La frontera24 sigue pendiente.
 
 Entrega del6 de noviembre de2026, hora de Lima. **CP11 aceptado; CP12 abierto; P3 sin validar. Última frontera completa positiva y recuperada: τ16. Próxima frontera: τ24, pendiente.**
 
@@ -59,3 +59,11 @@ Se conservó el estado interno exacto17,6 con límite24, sin reiniciar los solve
 [Identidad de reinicio](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000176/ORIGEN.json) · [certificado](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000176/CERTIFICADO_TRANSPORTE.json) · [aceptación combinada](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000176/ACEPTACION_COMBINADA.json). El trabajador sólo continuó después de la recuperación pública; no repetir16→17,6. Esta conservación no sustituye las métricas espaciales de la frontera24.
 
 La regresión completa pasó sus16 controles y verificaciones históricas en la extracción independiente de la entrega públicade1f2cb, que precede a la creación del trabajador. También se conservó el rechazo del contexto activo: sus16 controles estructurales pasaron, pero CP10/CP11 exigían una entrega sin cálculos activos. No se ocultó el trabajador ni se modificaron los verificadores para aprobar. [Contexto y recibos](../trazabilidad/reconciliacion_16_a24_20261106/CONTEXTO_REGRESION.json).
+
+## Transportes posteriores al primer guardado
+
+Cada fila pasó recuperación nativa y pública, cobertura completa, hashes antes/después y30+14 controles originales, sin pasos durante las auditorías. El trabajador continuó sólo después de cada recuperación pública. Son transportes internos;la frontera24 sigue pendiente.
+
+| Reloj | Adjunto | Cargas | Bytes | SHA256 |
+| --- | --- | --- | --- | --- |
+|19.2|717353872|340|230290382|e788105614c8d4656621ce674b1ddcddf5e655078e810a609292e35adbfc707a|
