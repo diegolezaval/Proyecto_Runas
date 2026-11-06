@@ -1,6 +1,6 @@
 # P3: reconciliación de la activación16→24 y nueva asignación
 
-**Estado posterior comprobado: el trabajador77606 recibió la activación nueva y avanzó a16,01 con2 pasos aceptados por malla.** [Recepción acreditada](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/RECEPCION_ACREDITADA_POR_INICIO.json). **Último transporte permanente posterior:19,2**,recuperado nativa y públicamente;340 cargas y30+14 controles. La frontera24 sigue pendiente.
+**Estado posterior comprobado: el trabajador77606 recibió la activación nueva y avanzó a16,01 con2 pasos aceptados por malla.** [Recepción acreditada](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/RECEPCION_ACREDITADA_POR_INICIO.json). **Último transporte permanente posterior:20,8**,recuperado nativa y públicamente;345 cargas y30+14 controles. La frontera24 sigue pendiente.
 
 Entrega del6 de noviembre de2026, hora de Lima. **CP11 aceptado; CP12 abierto; P3 sin validar. Última frontera completa positiva y recuperada: τ16. Próxima frontera: τ24, pendiente.**
 
@@ -62,8 +62,9 @@ La regresión completa pasó sus16 controles y verificaciones históricas en la 
 
 ## Transportes posteriores al primer guardado
 
-Cada fila pasó recuperación nativa y pública, cobertura completa, hashes antes/después y30+14 controles originales, sin pasos durante las auditorías. El trabajador continuó sólo después de cada recuperación pública. Son transportes internos;la frontera24 sigue pendiente.
+Cada fila pasó recuperación nativa y pública,cobertura completa,hashes antes/después y30+14 controles originales,sin pasos durante las auditorías. El trabajador continuó sólo después de cada recuperación pública. Son transportes internos;la frontera24 sigue pendiente.
 
 | Reloj | Adjunto | Cargas | Bytes | SHA256 |
 | --- | --- | --- | --- | --- |
 |19.2|717353872|340|230290382|e788105614c8d4656621ce674b1ddcddf5e655078e810a609292e35adbfc707a|
+|20.8|717383219|345|230326205|33b4f7406144a6849459a85fc9d1b402df409f12103ce099a527fc19d2c6a480|

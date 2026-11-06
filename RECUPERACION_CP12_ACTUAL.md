@@ -1,6 +1,6 @@
 # CP12/P3: frontera τ16 conservada y positiva
 
-**Actualización6 de noviembre: [reconciliación16→24](informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md).** La activación de p3_16_a24_20261105 está publicada; su entrega al trabajador23949 no está acreditada y la sesión es inaccesible. No reactivarla. La nueva asignación p3_16_a24_20261106 tiene capacidad propia y reserva/activación públicas recuperadas; la activación se entregó al único trabajador77606 y se observó avance a16,01 con2 pasos aceptados por malla. Transporte19,2 conservado y recuperado nativa y públicamente (717353872,230290382 bytes,SHA256e788105614c8d4656621ce674b1ddcddf5e655078e810a609292e35adbfc707a). No repetir intervalos hasta19,2. Frontera24 y sus métricas pendientes.
+**Actualización6 de noviembre: [reconciliación16→24](informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md).** La activación de p3_16_a24_20261105 está publicada; su entrega al trabajador23949 no está acreditada y la sesión es inaccesible. No reactivarla. La nueva asignación p3_16_a24_20261106 tiene capacidad propia y reserva/activación públicas recuperadas; la activación se entregó al único trabajador77606 y se observó avance a16,01 con2 pasos aceptados por malla. Transporte20,8 conservado y recuperado nativa y públicamente (717383219,230326205 bytes,SHA25633b4f7406144a6849459a85fc9d1b402df409f12103ce099a527fc19d2c6a480). No repetir intervalos hasta20,8. Frontera24 y sus métricas pendientes.
 
 **CP11 aceptado; CP12 abierto; P3 sin validar. Última frontera completa positiva τ16; siguiente frontera condicionada τ24.** [Entrega actual](informes/CONSERVACION_P3_T16_Y_AGILIZACION_20261105.md).
 
@@ -13,7 +13,7 @@
 | Cargas y controles | 324 cargas;30 controles originales de frontera;cinco métricas y diez controles físicos positivos |
 | Pasos nuevos en la revisión | Cero; sin construir ni avanzar DOP853 en las auditorías |
 | Compilador | Ubuntu13.3.0 original, restaurado y verificado |
-| Transporte vigente | τ19,2,adjunto717353872;340 cargas,30+14 controles originales positivos;frontera completa vigente16 |
+| Transporte vigente | τ20,8,adjunto717383219;345 cargas,30+14 controles originales positivos;frontera completa vigente16 |
 | Transporte anterior conservado | τ14,4,adjunto714420565;314 cargas y30+14 controles |
 | Asignación anterior | p3_144_a16_20261105 produjo16;sesión81225 inaccesible sin salida observada |
 | Asignación vigente | p3_16_a24_20261106; trabajador77606 activo, activación recibida e inicio16,01 observado |

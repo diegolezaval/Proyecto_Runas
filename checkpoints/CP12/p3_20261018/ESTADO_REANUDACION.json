@@ -1,8 +1,8 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-11-06T14:02:05.177614+00:00",
+  "updated_at": "2026-11-06T14:12:52.105610+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "e2906a8977becc5fa1cd68b102b956c9f4c39232",
+  "last_public_commit": "4ae4b1bc038d34972e8e1434ed8bfe100d9a8004",
   "own_attempt_home": "/workspace/scratch/5906e16f70b6/worker16",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
@@ -13,7 +13,7 @@
   "formal_radial_order": 2,
   "global_sixth_order_claim": false,
   "latest_full_trial_frontier_recovered_and_audited": 16,
-  "latest_recoverable_observer_clock": 19.2,
+  "latest_recoverable_observer_clock": 20.8,
   "latest_full_frontier_proof": {
     "schema": "CP12_P3_TRIAL_BOUNDARY_PERMANENTLY_RECOVERED_AND_AUDITED",
     "passed": true,
@@ -152,18 +152,18 @@
   "latest_transport_proof": {
     "schema": "CP12_P3_FORWARD_TRANSPORT_PERMANENTLY_RECOVERED",
     "passed": true,
-    "observer_clock": 19.2,
+    "observer_clock": 20.8,
     "closed_boundary": 16,
     "target": 24,
     "scientific_frontier": false,
     "kind": "transport",
-    "library_file_id": "libfile_75e1e03c20bc8191a95dbede629fd342",
-    "file_id": "file_0000000075e88212a7fa28fd7ec39766",
-    "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000192_P3_16_A24_20261106.zip",
-    "zip_bytes": 230290382,
-    "zip_sha256": "e788105614c8d4656621ce674b1ddcddf5e655078e810a609292e35adbfc707a",
-    "github_asset_id": 717353872,
-    "transport_state_sha256": "a8b0fbe061a64368115eff93667d81718981d4b5577a8735e38f0fda549abc19",
+    "library_file_id": "libfile_9b75233f948c8191bf3fd58d7a71b945",
+    "file_id": "file_00000000406082128580e12d39f4d865",
+    "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000208_P3_16_A24_20261106.zip",
+    "zip_bytes": 230326205,
+    "zip_sha256": "33b4f7406144a6849459a85fc9d1b402df409f12103ce099a527fc19d2c6a480",
+    "github_asset_id": 717383219,
+    "transport_state_sha256": "18c81eb793ef5f4b9a8b910a5700ec7f2c4253e41b4287f5c9c8357d0c466a38",
     "independent_zero_step_audit": {
       "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
       "passed": true,
@@ -183,27 +183,27 @@
         "independently_reloaded_Parseval": true,
         "file_unchanged": true
       },
-      "observer_clock": 19.2,
+      "observer_clock": 20.8,
       "target": 24,
-      "state_sha256": "a8b0fbe061a64368115eff93667d81718981d4b5577a8735e38f0fda549abc19",
+      "state_sha256": "18c81eb793ef5f4b9a8b910a5700ec7f2c4253e41b4287f5c9c8357d0c466a38",
       "physical_metadata": [
         {
-          "t": 19.205425604195568,
-          "accepted": 3555,
+          "t": 20.802475737396644,
+          "accepted": 3848,
           "nfev": 36124,
-          "nfev_live": 7118,
-          "maxe": 7.646028254981729e-11,
-          "maxq": 1.2212453270876722e-15,
-          "maxe_original": 3.4873062215723394e-09
+          "nfev_live": 10646,
+          "maxe": 7.94191379327458e-11,
+          "maxq": 1.4432899320127035e-15,
+          "maxe_original": 3.7983602929614335e-09
         },
         {
-          "t": 19.205411841764036,
-          "accepted": 3555,
+          "t": 20.80248194312378,
+          "accepted": 3848,
           "nfev": 36124,
-          "nfev_live": 7118,
-          "maxe": 7.630485132636977e-11,
+          "nfev_live": 10646,
+          "maxe": 7.925482492510127e-11,
           "maxq": 4.440892098500626e-16,
-          "maxe_original": 8.379739124819707e-10
+          "maxe_original": 1.0295234664781105e-09
         }
       ],
       "M2_steps_executed": 0,
@@ -212,7 +212,7 @@
       "CP12_closed": false,
       "DOP853_construction_or_step_attempts": 0
     },
-    "payload_files": 340,
+    "payload_files": 345,
     "exact_manifest_coverage": true,
     "all_payload_hashes_verified_before_and_after": true,
     "native_and_public_recovery_passed": true,
@@ -248,7 +248,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/CERTIFICADO_FRONTERA.json",
   "current_helper_directory": "/workspace/scratch/5906e16f70b6/helpers",
-  "next_recovery": "Mantener trabajador77606; conservar y recuperar20.8 antes de seguir; frontera24 y todas sus métricas pendientes. No repetir intervalos hasta19.2.",
+  "next_recovery": "Mantener trabajador77606;conservar y recuperar22.4 antes de seguir;frontera24 y todas sus métricas pendientes. No repetir intervalos hasta20.8.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -259,27 +259,27 @@
   },
   "previous_inaccessible_executor_termination_assumed": false,
   "latest_heartbeat_observation": {
-    "at": "2026-11-06T14:01:53.459450+00:00",
-    "clock": 19.34,
+    "at": "2026-11-06T14:12:24.404884+00:00",
+    "clock": 20.98,
     "phase": "evolution",
     "physical_streams": [
       {
-        "t": 19.352413755415835,
-        "accepted": 3582,
+        "t": 20.993445358582537,
+        "accepted": 3883,
         "nfev": 36124,
-        "nfev_live": 7442,
-        "maxe": 7.672928958868397e-11,
-        "maxq": 1.2212453270876722e-15,
-        "maxe_original": 3.4873062215723394e-09
+        "nfev_live": 11066,
+        "maxe": 7.977629667976771e-11,
+        "maxq": 1.4432899320127035e-15,
+        "maxe_original": 3.838849571558001e-09
       },
       {
-        "t": 19.352409294946746,
-        "accepted": 3582,
+        "t": 20.993448555947385,
+        "accepted": 3883,
         "nfev": 36124,
-        "nfev_live": 7442,
-        "maxe": 7.657319223142167e-11,
+        "nfev_live": 11066,
+        "maxe": 7.96107624267961e-11,
         "maxq": 4.440892098500626e-16,
-        "maxe_original": 8.379739124819707e-10
+        "maxe_original": 1.0386779214499597e-09
       }
     ],
     "not_a_restart_certificate": true,
@@ -624,14 +624,14 @@
     },
     "recovery_commit": "cd8db32b40fae0ce6f397ad58a60e8e6bdd3b6b3"
   },
-  "latest_local_recoverable_observer_clock": 19.2,
-  "latest_permanent_recoverable_observer_clock": 19.2,
+  "latest_local_recoverable_observer_clock": 20.8,
+  "latest_permanent_recoverable_observer_clock": 20.8,
   "local_transport112_archive": "/workspace/scratch/105d4db4f9e7/runtime_20261104/tau11p2.zip",
   "local_transport112_archive_sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
   "continuation_blocked_by_permanent_preservation": false,
   "storage_error": null,
   "no_evidence_deleted": false,
-  "local_recovery_home": "/workspace/scratch/5906e16f70b6/run16_a24/transporte_000192/github/extraido",
+  "local_recovery_home": "/workspace/scratch/5906e16f70b6/run16_a24/transporte_000208/github/extraido",
   "local_disappearance_incident": {
     "schema": "CP12_P3_LOCAL_WORKSPACE_DISAPPEARANCE_AFTER_LIBRARY_QUOTA_FAILURE",
     "observed_after_commit": "5cb247226b37739d38dc64a02836ce6fc8f35c5c",
@@ -820,7 +820,7 @@
     "scope": "Own bounded replay only; source receipt preserved",
     "tool_session_id": 24226
   },
-  "latest_github_recoverable_observer_clock": 19.2,
+  "latest_github_recoverable_observer_clock": 20.8,
   "latest_transport_proof_before_attempt02_completion": {
     "schema": "CP12_PERMANENTLY_RECOVERED_INTERNAL_TRANSPORT_NOT_SCIENTIFIC_FRONTIER",
     "passed": true,
@@ -1177,21 +1177,21 @@
     "sha256": "4b1f0f01901ecb1592e6d54684d76242c73bcee4b68d6a1048d5d746e6a8649c",
     "source_commit": "8f91bac9470edee86810ac22b146240c62cc71dc"
   },
-  "latest_native_recoverable_observer_clock": 19.2,
-  "current_process_M2_steps_executed": 1180,
+  "latest_native_recoverable_observer_clock": 20.8,
+  "current_process_M2_steps_executed": 1766,
   "current_process_new_physical_worker_started": true,
   "latest_github_transport_proof": {
     "schema": "CP12_P3_FORWARD_PUBLIC_RECOVERY_V2",
     "passed": true,
-    "github_asset_id": 717353872,
-    "bytes": 230290382,
-    "sha256": "e788105614c8d4656621ce674b1ddcddf5e655078e810a609292e35adbfc707a",
-    "observer_clock": 19.2,
+    "github_asset_id": 717383219,
+    "bytes": 230326205,
+    "sha256": "33b4f7406144a6849459a85fc9d1b402df409f12103ce099a527fc19d2c6a480",
+    "observer_clock": 20.8,
     "kind": "transport",
     "recovery": {
       "passed": true,
       "scope": "Integridad y auditores declarados; negativo implica sólo integridad.",
-      "payload_files": 340,
+      "payload_files": 345,
       "exact_manifest_coverage": true,
       "all_payload_hashes_verified_before_and_after": true,
       "kind": "transport",
@@ -1328,27 +1328,27 @@
             "independently_reloaded_Parseval": true,
             "file_unchanged": true
           },
-          "observer_clock": 19.2,
+          "observer_clock": 20.8,
           "target": 24,
-          "state_sha256": "a8b0fbe061a64368115eff93667d81718981d4b5577a8735e38f0fda549abc19",
+          "state_sha256": "18c81eb793ef5f4b9a8b910a5700ec7f2c4253e41b4287f5c9c8357d0c466a38",
           "physical_metadata": [
             {
-              "t": 19.205425604195568,
-              "accepted": 3555,
+              "t": 20.802475737396644,
+              "accepted": 3848,
               "nfev": 36124,
-              "nfev_live": 7118,
-              "maxe": 7.646028254981729e-11,
-              "maxq": 1.2212453270876722e-15,
-              "maxe_original": 3.4873062215723394e-09
+              "nfev_live": 10646,
+              "maxe": 7.94191379327458e-11,
+              "maxq": 1.4432899320127035e-15,
+              "maxe_original": 3.7983602929614335e-09
             },
             {
-              "t": 19.205411841764036,
-              "accepted": 3555,
+              "t": 20.80248194312378,
+              "accepted": 3848,
               "nfev": 36124,
-              "nfev_live": 7118,
-              "maxe": 7.630485132636977e-11,
+              "nfev_live": 10646,
+              "maxe": 7.925482492510127e-11,
               "maxq": 4.440892098500626e-16,
-              "maxe_original": 8.379739124819707e-10
+              "maxe_original": 1.0295234664781105e-09
             }
           ],
           "M2_steps_executed": 0,
@@ -1358,7 +1358,7 @@
           "DOP853_construction_or_step_attempts": 0
         }
       },
-      "recovered_home": "/workspace/scratch/5906e16f70b6/run16_a24/transporte_000192/github/extraido",
+      "recovered_home": "/workspace/scratch/5906e16f70b6/run16_a24/transporte_000208/github/extraido",
       "M2_steps_executed": 0,
       "CP12_closed": false
     },
@@ -1525,7 +1525,7 @@
     "physical_start": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/INICIO_FISICO.json",
     "new_M2_steps_executed_scope": "Primer intervalo solamente; no contador final."
   },
-  "current_process_M2_steps_executed_scope": "Pasos físicos nuevos conservados hasta19.2; no total final en vuelo.",
+  "current_process_M2_steps_executed_scope": "Pasos físicos nuevos conservados hasta20.8;no total final en vuelo.",
   "history_before_recovery_t16_20261105": {
     "latest_full_trial_frontier_recovered_and_audited": 8,
     "latest_recoverable_observer_clock": 14.4,
@@ -1644,11 +1644,11 @@
       "replay96_to112_executed": false,
       "CP12_closed": false
     },
-    "latest_transport_clock": 19.2,
-    "latest_transport_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000192/ACEPTACION_COMBINADA.json",
+    "latest_transport_clock": 20.8,
+    "latest_transport_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000208/ACEPTACION_COMBINADA.json",
     "new_physical_accepted_steps_preserved_by_grid": [
-      590,
-      590
+      883,
+      883
     ]
   },
   "historical_observed_start_before_reconciliation": {
@@ -1673,9 +1673,15 @@
       "certificate": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000192/CERTIFICADO_TRANSPORTE.json",
       "github_asset_id": 717353872,
       "sha256": "e788105614c8d4656621ce674b1ddcddf5e655078e810a609292e35adbfc707a"
+    },
+    {
+      "observer_clock": 20.8,
+      "certificate": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000208/CERTIFICADO_TRANSPORTE.json",
+      "github_asset_id": 717383219,
+      "sha256": "33b4f7406144a6849459a85fc9d1b402df409f12103ce099a527fc19d2c6a480"
     }
   ],
-  "latest_restart_identity": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000192/ORIGEN.json",
+  "latest_restart_identity": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000208/ORIGEN.json",
   "new_intervals_conserved_and_must_not_repeat": [
     [
       16,
@@ -1684,6 +1690,10 @@
     [
       17.6,
       19.2
+    ],
+    [
+      19.2,
+      20.8
     ]
   ]
 }
