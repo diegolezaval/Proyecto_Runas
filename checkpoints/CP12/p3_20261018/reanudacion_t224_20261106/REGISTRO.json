@@ -74,10 +74,11 @@
   "source_github_asset_id": 718197317,
   "source_boundary_all_five_spatial_and_physical_gates_passed": true,
   "serialization_registration": "checkpoints/CP12/p3_20261018/conservacion_rapida_20261105/REGISTRO.json",
-  "predecessor_activation_delivery": "UNKNOWN_NO_RECEIPT",
+  "predecessor_activation_delivery": "CONFIRMED_BY_PUBLISHED_RECEIPT_AND_PHYSICAL_START_16.01",
   "previous_assignment_capacity_reused": false,
   "reconciliation": "checkpoints/CP12/p3_20261018/recuperacion_t224_20261106/RECONCILIACION.json",
   "source_recovery_commit": "99c1cafd5e5e9aa2b4bbca2f0c5e8cbf67fc9ebe",
   "previous_allocation_registry_sha256": "582d6f1d747b5bd508a3a80d3629ec979f17e2740b6b83793418cb2db3ba9e0d",
-  "transport_sha256": "848c2fd55fe7fa271625bf7ca007e6741e92b58582283bdd1c02b09eb1322180"
+  "transport_sha256": "848c2fd55fe7fa271625bf7ca007e6741e92b58582283bdd1c02b09eb1322180",
+  "predecessor_activation_delivery_evidence": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/RECEPCION_ACREDITADA_POR_INICIO.json"
 }
