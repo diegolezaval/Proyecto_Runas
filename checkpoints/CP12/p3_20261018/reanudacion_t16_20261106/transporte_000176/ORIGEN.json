@@ -1,0 +1,27 @@
+{
+  "kind": "transport",
+  "observer_clock": 17.6,
+  "closed_boundary": 16,
+  "target": 24,
+  "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000176_P3_16_A24_20261106.zip",
+  "bytes": 230241036,
+  "sha256": "9999444d5f89a4abb9e69bb92469722f99c995841ebe950a3c0bab31510c48a3",
+  "library_file_id": "libfile_cdf3d964608c8191b81ad9f296f249b4",
+  "file_id": "file_0000000034b081f591741438222bf1cd",
+  "github_asset_id": 717327999,
+  "transport_state_sha256": "ab6bd7d730c5fc3c99e86c09b3f731df0e89d4389cb5448680c48b396b550755",
+  "closed_state_sha256": "ac249962765a990e75fc25817f5c3d7ce9c0061430e3142719ccd97964e5c1ed",
+  "receipt_sha256": "4fe1495f9dc6b6e25ba97574918e9735fb7603e2d64cd392fbc50c680cd389ca",
+  "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+  "source_allocation": "p3_16_a24_20261106",
+  "tool_session_id": 77606,
+  "payload_files": 335,
+  "original_audit_test_counts": {
+    "boundary": 30,
+    "transport": 14
+  },
+  "request_sha256": "8653b3e090c388ef42cc7dc9df9e91b321186e418e44087bbc0130bca0cd2a19",
+  "scope": "Estado interno exacto17,6 con límite24; frontera cerrada16. No es una nueva frontera científica.",
+  "CP12_closed": false,
+  "correction_validated": false
+}

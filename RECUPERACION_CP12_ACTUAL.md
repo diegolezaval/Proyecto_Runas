@@ -1,6 +1,6 @@
 # CP12/P3: frontera τ16 conservada y positiva
 
-**Actualización6 de noviembre: [reconciliación16→24](informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md).** La activación de p3_16_a24_20261105 está publicada; su entrega al trabajador23949 no está acreditada y la sesión es inaccesible. No reactivarla. La nueva asignación p3_16_a24_20261106 tiene capacidad propia y reserva/activación públicas recuperadas; la activación se entregó al único trabajador77606 y se observó avance a16,01 con2 pasos aceptados por malla. Próxima conservación17,6; frontera24 y sus métricas pendientes.
+**Actualización6 de noviembre: [reconciliación16→24](informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md).** La activación de p3_16_a24_20261105 está publicada; su entrega al trabajador23949 no está acreditada y la sesión es inaccesible. No reactivarla. La nueva asignación p3_16_a24_20261106 tiene capacidad propia y reserva/activación públicas recuperadas; la activación se entregó al único trabajador77606 y se observó avance a16,01 con2 pasos aceptados por malla. Transporte17,6 conservado y recuperado nativa y públicamente (717327999,230241036 bytes,SHA2569999444d5f89a4abb9e69bb92469722f99c995841ebe950a3c0bab31510c48a3). No repetir16→17,6. Frontera24 y sus métricas pendientes.
 
 **CP11 aceptado; CP12 abierto; P3 sin validar. Última frontera completa positiva τ16; siguiente frontera condicionada τ24.** [Entrega actual](informes/CONSERVACION_P3_T16_Y_AGILIZACION_20261105.md).
 
@@ -13,6 +13,7 @@
 | Cargas y controles | 324 cargas;30 controles originales de frontera;cinco métricas y diez controles físicos positivos |
 | Pasos nuevos en la revisión | Cero; sin construir ni avanzar DOP853 en las auditorías |
 | Compilador | Ubuntu13.3.0 original, restaurado y verificado |
+| Transporte vigente | τ17,6,adjunto717327999;335 cargas,30+14 controles originales positivos;frontera completa vigente16 |
 | Transporte anterior conservado | τ14,4,adjunto714420565;314 cargas y30+14 controles |
 | Asignación anterior | p3_144_a16_20261105 produjo16;sesión81225 inaccesible sin salida observada |
 | Asignación vigente | p3_16_a24_20261106; trabajador77606 activo, activación recibida e inicio16,01 observado |

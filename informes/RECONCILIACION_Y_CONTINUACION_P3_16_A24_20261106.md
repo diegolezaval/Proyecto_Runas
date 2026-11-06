@@ -1,6 +1,6 @@
 # P3: reconciliación de la activación16→24 y nueva asignación
 
-**Estado posterior comprobado: el trabajador77606 recibió la activación nueva y avanzó a16,01 con2 pasos aceptados por malla.** [Recepción acreditada](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/RECEPCION_ACREDITADA_POR_INICIO.json). La frontera24 sigue pendiente.
+**Estado posterior comprobado: el trabajador77606 recibió la activación nueva y avanzó a16,01 con2 pasos aceptados por malla.** [Recepción acreditada](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/RECEPCION_ACREDITADA_POR_INICIO.json). **Último transporte permanente posterior:17,6**, recuperado nativa y públicamente;335 cargas y30+14 controles. La frontera24 sigue pendiente.
 
 Entrega del6 de noviembre de2026, hora de Lima. **CP11 aceptado; CP12 abierto; P3 sin validar. Última frontera completa positiva y recuperada: τ16. Próxima frontera: τ24, pendiente.**
 
@@ -44,3 +44,18 @@ La reserva se publicó en `d6661787a72a804e1b7b432c60338c01ca860612` y se recupe
 La activación se publicó en `d4295e7131cf7258080e27d39a93f2e761f0ea6e`, se recuperó con sus bytes exactos y se entregó atómicamente al único proceso77606 tras comprobar ambos locks, registro y aceptación de capacidad. Se conserva el [recibo de recuperación y entrega](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/ACTIVACION_RECUPERADA_Y_ENTREGADA.json).
 
 El trabajador escribió después [INICIO_FISICO.json](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/INICIO_FISICO.json): reloj16,01 y dos pasos aceptados nuevos en cada malla. Esto acredita que el proceso recibió y aceptó la activación; no se deduce de la mera publicación. No se repitió ningún intervalo previo a16. Se mantiene el trabajo hacia17,6 conservado y la frontera24 condicionada. Un latido o inicio físico no sustituye una cápsula recuperada.
+
+## Transporte permanente17,6
+
+Se conservó el estado interno exacto17,6 con límite24, sin reiniciar los solvers. La misma cápsula pasó guardado y recuperación nativa desde el trabajador y descarga pública independiente: **335 cargas,30 controles de frontera16 y14 del transporte17,6**, todos positivos. Las auditorías bloquearon construcción/avance DOP853 y ejecutaron cero pasos M2.
+
+| Identidad | Valor |
+| --- | --- |
+| Adjunto público |717327999|
+| Bytes |230241036|
+| SHA256 |9999444d5f89a4abb9e69bb92469722f99c995841ebe950a3c0bab31510c48a3|
+| Reloj y límite |17,6→24;frontera cerrada16|
+
+[Identidad de reinicio](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000176/ORIGEN.json) · [certificado](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000176/CERTIFICADO_TRANSPORTE.json) · [aceptación combinada](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000176/ACEPTACION_COMBINADA.json). El trabajador sólo continuó después de la recuperación pública; no repetir16→17,6. Esta conservación no sustituye las métricas espaciales de la frontera24.
+
+La regresión completa pasó sus16 controles y verificaciones históricas en la extracción independiente de la entrega públicade1f2cb, que precede a la creación del trabajador. También se conservó el rechazo del contexto activo: sus16 controles estructurales pasaron, pero CP10/CP11 exigían una entrega sin cálculos activos. No se ocultó el trabajador ni se modificaron los verificadores para aprobar. [Contexto y recibos](../trazabilidad/reconciliacion_16_a24_20261106/CONTEXTO_REGRESION.json).

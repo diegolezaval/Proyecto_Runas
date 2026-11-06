@@ -16,7 +16,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 |---|---|
 | CP12 / P3 | ABIERTO / SIN_VALIDAR |
 | Última frontera completa positiva P3 | τ16 |
-| Transporte interno recuperado | τ14.4 |
+| Transporte interno recuperado | τ17.6 |
 | Próxima frontera completa | τ24, pendiente |
 | Trabajadores propios activos | 1 |
 
@@ -53,6 +53,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 - P3τ11,2→τ12,8 ya conservado. La asignación anterior queda bloqueada; no recrear su archivo privado ASSET_GITHUB.json.
 - No repetir12,8→14,4: existe cápsula nativa íntegra y auditada. No reactivar p3_128_a16_20261104b ni recrear su publicación privada.
 - P3τ14,4→τ16:frontera16recuperada y positiva;no reactivar p3_144_a16_20261105 ni su publicación privada.
+- No repetir16→17,6: transporte interno exacto conservado nativa y públicamente como717327999; si se pierde el proceso, reconciliar y usar este estado íntegro con asignación nueva.
 
 ## Resultados vigentes y límites
 

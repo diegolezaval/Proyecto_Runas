@@ -1,8 +1,8 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-11-06T13:41:55.963147+00:00",
+  "updated_at": "2026-11-06T13:52:25.422411+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "d4295e7131cf7258080e27d39a93f2e761f0ea6e",
+  "last_public_commit": "6a677826af8a08991e35daa0ffd8ce937e25e370",
   "own_attempt_home": "/workspace/scratch/5906e16f70b6/worker16",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
@@ -13,7 +13,7 @@
   "formal_radial_order": 2,
   "global_sixth_order_claim": false,
   "latest_full_trial_frontier_recovered_and_audited": 16,
-  "latest_recoverable_observer_clock": 16,
+  "latest_recoverable_observer_clock": 17.6,
   "latest_full_frontier_proof": {
     "schema": "CP12_P3_TRIAL_BOUNDARY_PERMANENTLY_RECOVERED_AND_AUDITED",
     "passed": true,
@@ -150,24 +150,20 @@
     "final_protocol_acceptance": false
   },
   "latest_transport_proof": {
-    "schema": "CP12_P3_PUBLIC_TRANSPORT_RECOVERY_CURRENT_ORIGINAL_AUDITS_V1",
+    "schema": "CP12_P3_FORWARD_TRANSPORT_PERMANENTLY_RECOVERED",
     "passed": true,
-    "observer_clock": 14.4,
-    "target": 16,
-    "closed_boundary": 8,
-    "github_asset_id": 714420565,
-    "bytes": 230010057,
-    "sha256": "5e2c494249b31d598af20559bfa5dbdb3f1d4038331a921dd3f9dc29d640b38d",
-    "transport_state_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
-    "payload_files": 314,
-    "exact_manifest_coverage": true,
-    "all_payload_hashes_verified_before_and_after": true,
-    "original_zero_step_audit_tests": {
-      "boundary8": 30,
-      "transport144": 14
-    },
-    "audit_receipt": "trazabilidad/activacion_t144_20261105/auditoria_publica/RESULTADO.json",
-    "audit_receipt_sha256": "2b35d3d6f9aa45536f0db4a7bbfc45909d60c1ff63304090362c07f9bfa1a143",
+    "observer_clock": 17.6,
+    "closed_boundary": 16,
+    "target": 24,
+    "scientific_frontier": false,
+    "kind": "transport",
+    "library_file_id": "libfile_cdf3d964608c8191b81ad9f296f249b4",
+    "file_id": "file_0000000034b081f591741438222bf1cd",
+    "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000176_P3_16_A24_20261106.zip",
+    "zip_bytes": 230241036,
+    "zip_sha256": "9999444d5f89a4abb9e69bb92469722f99c995841ebe950a3c0bab31510c48a3",
+    "github_asset_id": 717327999,
+    "transport_state_sha256": "ab6bd7d730c5fc3c99e86c09b3f731df0e89d4389cb5448680c48b396b550755",
     "independent_zero_step_audit": {
       "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
       "passed": true,
@@ -187,25 +183,25 @@
         "independently_reloaded_Parseval": true,
         "file_unchanged": true
       },
-      "observer_clock": 14.4,
-      "target": 16,
-      "state_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
+      "observer_clock": 17.6,
+      "target": 24,
+      "state_sha256": "ab6bd7d730c5fc3c99e86c09b3f731df0e89d4389cb5448680c48b396b550755",
       "physical_metadata": [
         {
-          "t": 14.402373447614625,
-          "accepted": 2670,
-          "nfev": 18266,
-          "nfev_live": 14306,
-          "maxe": 6.790257245370412e-11,
-          "maxq": 1.1102230246251565e-15,
+          "t": 17.600838513580317,
+          "accepted": 3260,
+          "nfev": 36124,
+          "nfev_live": 3566,
+          "maxe": 7.354372666412701e-11,
+          "maxq": 1.2212453270876722e-15,
           "maxe_original": 3.4873062215723394e-09
         },
         {
-          "t": 14.40236299909726,
-          "accepted": 2670,
-          "nfev": 18266,
-          "nfev_live": 14306,
-          "maxe": 6.77737865828476e-11,
+          "t": 17.60083604567348,
+          "accepted": 3260,
+          "nfev": 36124,
+          "nfev_live": 3566,
+          "maxe": 7.339795438099372e-11,
           "maxq": 4.440892098500626e-16,
           "maxe_original": 8.379739124819707e-10
         }
@@ -216,11 +212,13 @@
       "CP12_closed": false,
       "DOP853_construction_or_step_attempts": 0
     },
-    "M2_steps_executed": 0,
-    "DOP853_construction_or_step_attempts": 0,
-    "scientific_frontier": false,
-    "CP12_closed": false,
-    "correction_validated": false
+    "payload_files": 335,
+    "exact_manifest_coverage": true,
+    "all_payload_hashes_verified_before_and_after": true,
+    "native_and_public_recovery_passed": true,
+    "source_archive_and_payload_unchanged": true,
+    "M2_steps_executed_during_preservation": 0,
+    "CP12_closed": false
   },
   "current_own_worker_status": "EVOLVING_16_A24",
   "own_observed_start": {
@@ -250,7 +248,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/CERTIFICADO_FRONTERA.json",
   "current_helper_directory": "/workspace/scratch/5906e16f70b6/helpers",
-  "next_recovery": "Mantener el único trabajador77606; conservar y recuperar17,6 y cada1,6, con auditorías originales; en24 recuperar frontera y todas las métricas antes de más física.",
+  "next_recovery": "Mantener trabajador77606 hacia19,2 y24; cada transporte exige recuperación nativa y pública antes de seguir. No repetir16→17,6 ni reiniciar desde16 si se pierde el proceso.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -261,25 +259,25 @@
   },
   "previous_inaccessible_executor_termination_assumed": false,
   "latest_heartbeat_observation": {
-    "at": "2026-11-06T13:41:53.231661+00:00",
-    "clock": 16.22,
+    "at": "2026-11-06T13:52:23.393536+00:00",
+    "clock": 17.92,
     "phase": "evolution",
     "physical_streams": [
       {
-        "t": 16.232904186593746,
-        "accepted": 3008,
+        "t": 17.932248878106694,
+        "accepted": 3321,
         "nfev": 36124,
-        "nfev_live": 530,
-        "maxe": 7.110179112146398e-11,
-        "maxq": 1.1102230246251565e-15,
+        "nfev_live": 4298,
+        "maxe": 7.414013847295564e-11,
+        "maxq": 1.2212453270876722e-15,
         "maxe_original": 3.4873062215723394e-09
       },
       {
-        "t": 16.232902589187635,
-        "accepted": 3008,
+        "t": 17.92141453699551,
+        "accepted": 3319,
         "nfev": 36124,
-        "nfev_live": 530,
-        "maxe": 7.096345733259568e-11,
+        "nfev_live": 4279,
+        "maxe": 7.397316093005202e-11,
         "maxq": 4.440892098500626e-16,
         "maxe_original": 8.379739124819707e-10
       }
@@ -626,14 +624,14 @@
     },
     "recovery_commit": "cd8db32b40fae0ce6f397ad58a60e8e6bdd3b6b3"
   },
-  "latest_local_recoverable_observer_clock": 16,
-  "latest_permanent_recoverable_observer_clock": 16,
+  "latest_local_recoverable_observer_clock": 17.6,
+  "latest_permanent_recoverable_observer_clock": 17.6,
   "local_transport112_archive": "/workspace/scratch/105d4db4f9e7/runtime_20261104/tau11p2.zip",
   "local_transport112_archive_sha256": "b0e2b2c1320358a41d2f8910e28fc17e65ec330e27ce8bdcf05e59e93f0fae8d",
   "continuation_blocked_by_permanent_preservation": false,
   "storage_error": null,
   "no_evidence_deleted": false,
-  "local_recovery_home": "/workspace/scratch/0f402422cb34/cierre16/github/extraido",
+  "local_recovery_home": "/workspace/scratch/5906e16f70b6/run16_a24/transporte_000176/github/extraido",
   "local_disappearance_incident": {
     "schema": "CP12_P3_LOCAL_WORKSPACE_DISAPPEARANCE_AFTER_LIBRARY_QUOTA_FAILURE",
     "observed_after_commit": "5cb247226b37739d38dc64a02836ce6fc8f35c5c",
@@ -822,7 +820,7 @@
     "scope": "Own bounded replay only; source receipt preserved",
     "tool_session_id": 24226
   },
-  "latest_github_recoverable_observer_clock": 16,
+  "latest_github_recoverable_observer_clock": 17.6,
   "latest_transport_proof_before_attempt02_completion": {
     "schema": "CP12_PERMANENTLY_RECOVERED_INTERNAL_TRANSPORT_NOT_SCIENTIFIC_FRONTIER",
     "passed": true,
@@ -1179,81 +1177,193 @@
     "sha256": "4b1f0f01901ecb1592e6d54684d76242c73bcee4b68d6a1048d5d746e6a8649c",
     "source_commit": "8f91bac9470edee86810ac22b146240c62cc71dc"
   },
-  "latest_native_recoverable_observer_clock": 16,
-  "current_process_M2_steps_executed": 4,
+  "latest_native_recoverable_observer_clock": 17.6,
+  "current_process_M2_steps_executed": 590,
   "current_process_new_physical_worker_started": true,
   "latest_github_transport_proof": {
-    "schema": "CP12_P3_PUBLIC_TRANSPORT_RECOVERY_CURRENT_ORIGINAL_AUDITS_V1",
+    "schema": "CP12_P3_FORWARD_PUBLIC_RECOVERY_V2",
     "passed": true,
-    "observer_clock": 14.4,
-    "target": 16,
-    "closed_boundary": 8,
-    "github_asset_id": 714420565,
-    "bytes": 230010057,
-    "sha256": "5e2c494249b31d598af20559bfa5dbdb3f1d4038331a921dd3f9dc29d640b38d",
-    "transport_state_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
-    "payload_files": 314,
-    "exact_manifest_coverage": true,
-    "all_payload_hashes_verified_before_and_after": true,
-    "original_zero_step_audit_tests": {
-      "boundary8": 30,
-      "transport144": 14
-    },
-    "audit_receipt": "trazabilidad/activacion_t144_20261105/auditoria_publica/RESULTADO.json",
-    "audit_receipt_sha256": "2b35d3d6f9aa45536f0db4a7bbfc45909d60c1ff63304090362c07f9bfa1a143",
-    "independent_zero_step_audit": {
-      "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
+    "github_asset_id": 717327999,
+    "bytes": 230241036,
+    "sha256": "9999444d5f89a4abb9e69bb92469722f99c995841ebe950a3c0bab31510c48a3",
+    "observer_clock": 17.6,
+    "kind": "transport",
+    "recovery": {
       "passed": true,
-      "tests": {
-        "all_internal_state_bits_and_nfev_restored": true,
-        "original_sources_and_configuration": true,
-        "scientific_seed_unchanged": true,
-        "restore_used_no_solver_step": true,
-        "exact_stage_alias": true,
-        "accepted_states_match_solver": true,
-        "clocks_bracket_observer": true,
-        "both_energy_and_charge_gates": true,
-        "original_observer_maximum_gates": true,
-        "original_Parseval": true,
-        "original_symmetry": true,
-        "independently_reloaded_observer_closure": true,
-        "independently_reloaded_Parseval": true,
-        "file_unchanged": true
-      },
-      "observer_clock": 14.4,
-      "target": 16,
-      "state_sha256": "c1258c5381f307212bfcae26d9f955fb703c9d62fe59aa5d9bf17a00bcbf347d",
-      "physical_metadata": [
-        {
-          "t": 14.402373447614625,
-          "accepted": 2670,
-          "nfev": 18266,
-          "nfev_live": 14306,
-          "maxe": 6.790257245370412e-11,
-          "maxq": 1.1102230246251565e-15,
-          "maxe_original": 3.4873062215723394e-09
+      "scope": "Integridad y auditores declarados; negativo implica sólo integridad.",
+      "payload_files": 335,
+      "exact_manifest_coverage": true,
+      "all_payload_hashes_verified_before_and_after": true,
+      "kind": "transport",
+      "original_audits": {
+        "boundary": {
+          "schema": "CP12_P3_CORRECTION_TRIAL_ZERO_STEP_AUDIT",
+          "time": 16,
+          "passed": true,
+          "tests": {
+            "own_receipt_and_all_output_hashes": true,
+            "original_fourteen_sources_and_all_inputs_unchanged": true,
+            "captured_candidate_and_administrative_sources_unchanged": true,
+            "original_M2_Theta_two_grids_solver_tolerances_and_observer_configuration": true,
+            "original_DOP853_implementation_identity": true,
+            "new_experiment_schema_and_identity": true,
+            "saved_P3_action_identity": true,
+            "time_original_eight_unit_boundary": true,
+            "original_CP10_Cauchy_data_exact": true,
+            "Phi_FV_chi_P3_physical_routing_exact": true,
+            "mixed_passive_routing_exact": true,
+            "mixed_observer_class_selected": true,
+            "initial_or_closed_segment_evaluation_accounting": true,
+            "current_original_and_mixed_energy_rows_reproduced": true,
+            "finite_physical_and_observer_arrays": true,
+            "observation_count_and_original_time_labels": true,
+            "budget_count_and_time_labels": true,
+            "original_FV_energy_gate": true,
+            "consistent_MIXTO_energy_gate": true,
+            "original_charge_gate": true,
+            "original_observer_closure_and_order_gates": true,
+            "original_Parseval_gate": true,
+            "original_symmetry_gate": true,
+            "original_angular_basis_exact_on_restart": true,
+            "independent_reloaded_observer_closure_and_order": true,
+            "independent_reloaded_Parseval": true,
+            "original_extended_force_identity_and_symmetry": true,
+            "MIXTO_full_instantaneous_defect_identity_original_force_scale": true,
+            "original_full_box_chi_closure_gate": true,
+            "zero_M2_restart_no_state_mutation": true
+          },
+          "state_sha256": "ac249962765a990e75fc25817f5c3d7ce9c0061430e3142719ccd97964e5c1ed",
+          "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+          "receipt_sha256": "4fe1495f9dc6b6e25ba97574918e9735fb7603e2d64cd392fbc50c680cd389ca",
+          "observation_count": 41,
+          "metadata": [
+            {
+              "t": 16.0,
+              "accepted": 2965,
+              "nfev": 36124,
+              "nfev_live": 0,
+              "maxe": 7.069400620451916e-11,
+              "maxq": 1.1102230246251565e-15,
+              "maxe_original": 3.4873062215723394e-09
+            },
+            {
+              "t": 16.0,
+              "accepted": 2965,
+              "nfev": 36124,
+              "nfev_live": 0,
+              "maxe": 7.055667161637302e-11,
+              "maxq": 4.440892098500626e-16,
+              "maxe_original": 8.379739124819707e-10
+            }
+          ],
+          "maximum_errors": {
+            "raw_closure": 6.732817679515122e-07,
+            "raw_order_difference": 4.543916583922817e-09,
+            "raw_individual_order_difference": 1.619965534038051e-08,
+            "coupled_closure": 6.727611417012493e-07,
+            "coupled_order_difference": 4.71487509541249e-10,
+            "coupled_individual_order_difference": 8.93937178473382e-09,
+            "coupled_Phi_closure": 2.494876614964784e-11,
+            "coupled_Phi_order_difference": 9.752109590260977e-12,
+            "modal_parseval": 1.8697801768411226e-14,
+            "short_core_raw_closure": 7.612142638622648e-07,
+            "short_core_raw_order_difference": 7.287350444571677e-08,
+            "short_core_coupled_closure": 8.512091276124074e-07,
+            "short_core_coupled_order_difference": 8.456700029635227e-08,
+            "short_smooth_raw_closure": 7.612397561013344e-07,
+            "short_smooth_raw_order_difference": 6.780070769603382e-08,
+            "short_smooth_coupled_closure": 8.473223779865045e-07,
+            "short_smooth_coupled_order_difference": 6.661440174260762e-08
+          },
+          "extended_identity": {
+            "mean_jacobian_identity_extended_relative_residual": 3.837278277782895e-31,
+            "prior_longdouble_subtraction_relative_residual": 3.0679773967423345e-15,
+            "weighted_jacobian_symmetry_residual": 5.993487317090423e-16,
+            "fused_passive_jacobian_relative_error": 0.0,
+            "production_force_absolute_scaled_residual": 6.962931513689338e-16,
+            "production_source_residual_absolute": 3.860071984274072e-12,
+            "production_source_difference_scaled_residual": 3.860071984274072e-12,
+            "production_source_absolute_force_scale": 5543.745442110196,
+            "quad_reference_epsilon": 1.925929944387236e-34,
+            "extended_epsilon": 1.0842021724855044e-19,
+            "reference_is_not_evolution": true
+          },
+          "full_instantaneous_identity": 5.736348662913946e-13,
+          "full_box_chi_closure": {
+            "raw": 1.8132627308633058e-07,
+            "coupled": 1.8149898888500812e-07
+          },
+          "observed_core_phase_relative_error": 0.0002544239796291026,
+          "M2_steps_executed": 0,
+          "experiment_kind": "NEW_P3_DISCRETIZATION_TRIAL",
+          "correction_tested": true,
+          "correction_validated": false,
+          "CP12_closed": false,
+          "run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
+          "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+          "original_trajectories_repeated": false,
+          "DOP853_implementation_identity": {
+            "version": "1.17.0",
+            "rk_sha256": "fa5d6300917f4f949e699b116f59ae147159d5c6147d55d940dc9d3303891056",
+            "base_sha256": "4e70402b4c092e0a502dba07e33f91784e1e6d3645710cc8a916fd6e3ead7548"
+          },
+          "DOP853_construction_or_step_attempts": 0
         },
-        {
-          "t": 14.40236299909726,
-          "accepted": 2670,
-          "nfev": 18266,
-          "nfev_live": 14306,
-          "maxe": 6.77737865828476e-11,
-          "maxq": 4.440892098500626e-16,
-          "maxe_original": 8.379739124819707e-10
+        "transport": {
+          "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
+          "passed": true,
+          "tests": {
+            "all_internal_state_bits_and_nfev_restored": true,
+            "original_sources_and_configuration": true,
+            "scientific_seed_unchanged": true,
+            "restore_used_no_solver_step": true,
+            "exact_stage_alias": true,
+            "accepted_states_match_solver": true,
+            "clocks_bracket_observer": true,
+            "both_energy_and_charge_gates": true,
+            "original_observer_maximum_gates": true,
+            "original_Parseval": true,
+            "original_symmetry": true,
+            "independently_reloaded_observer_closure": true,
+            "independently_reloaded_Parseval": true,
+            "file_unchanged": true
+          },
+          "observer_clock": 17.6,
+          "target": 24,
+          "state_sha256": "ab6bd7d730c5fc3c99e86c09b3f731df0e89d4389cb5448680c48b396b550755",
+          "physical_metadata": [
+            {
+              "t": 17.600838513580317,
+              "accepted": 3260,
+              "nfev": 36124,
+              "nfev_live": 3566,
+              "maxe": 7.354372666412701e-11,
+              "maxq": 1.2212453270876722e-15,
+              "maxe_original": 3.4873062215723394e-09
+            },
+            {
+              "t": 17.60083604567348,
+              "accepted": 3260,
+              "nfev": 36124,
+              "nfev_live": 3566,
+              "maxe": 7.339795438099372e-11,
+              "maxq": 4.440892098500626e-16,
+              "maxe_original": 8.379739124819707e-10
+            }
+          ],
+          "M2_steps_executed": 0,
+          "scientific_frontier": false,
+          "correction_validated": false,
+          "CP12_closed": false,
+          "DOP853_construction_or_step_attempts": 0
         }
-      ],
+      },
+      "recovered_home": "/workspace/scratch/5906e16f70b6/run16_a24/transporte_000176/github/extraido",
       "M2_steps_executed": 0,
-      "scientific_frontier": false,
-      "correction_validated": false,
-      "CP12_closed": false,
-      "DOP853_construction_or_step_attempts": 0
+      "CP12_closed": false
     },
     "M2_steps_executed": 0,
-    "DOP853_construction_or_step_attempts": 0,
-    "scientific_frontier": false,
-    "CP12_closed": false,
-    "correction_validated": false
+    "CP12_closed": false
   },
   "recovery_t144_20261105": {
     "source": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/ORIGEN.json",
@@ -1415,7 +1525,7 @@
     "physical_start": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/INICIO_FISICO.json",
     "new_M2_steps_executed_scope": "Primer intervalo solamente; no contador final."
   },
-  "current_process_M2_steps_executed_scope": "Pasos aceptados observados en el primer intervalo16→16,01:2 por malla; no total final de un trabajador en vuelo.",
+  "current_process_M2_steps_executed_scope": "Pasos físicos nuevos conservados en el transporte17,6: suma de accepted menos la restauración16 por malla. El trabajador en vuelo puede haber avanzado más.",
   "history_before_recovery_t16_20261105": {
     "latest_full_trial_frontier_recovered_and_audited": 8,
     "latest_recoverable_observer_clock": 14.4,
@@ -1533,7 +1643,13 @@
       ],
       "replay96_to112_executed": false,
       "CP12_closed": false
-    }
+    },
+    "latest_transport_clock": 17.6,
+    "latest_transport_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000176/ACEPTACION_COMBINADA.json",
+    "new_physical_accepted_steps_preserved_by_grid": [
+      295,
+      295
+    ]
   },
   "historical_observed_start_before_reconciliation": {
     "at": "2026-11-05T18:57:52.235478+00:00",
@@ -1544,5 +1660,20 @@
     ],
     "replay96_to112_executed": false,
     "CP12_closed": false
-  }
+  },
+  "transport_recovery_history_20261106": [
+    {
+      "observer_clock": 17.6,
+      "certificate": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000176/CERTIFICADO_TRANSPORTE.json",
+      "github_asset_id": 717327999,
+      "sha256": "9999444d5f89a4abb9e69bb92469722f99c995841ebe950a3c0bab31510c48a3"
+    }
+  ],
+  "latest_restart_identity": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000176/ORIGEN.json",
+  "new_intervals_conserved_and_must_not_repeat": [
+    [
+      16,
+      17.6
+    ]
+  ]
 }

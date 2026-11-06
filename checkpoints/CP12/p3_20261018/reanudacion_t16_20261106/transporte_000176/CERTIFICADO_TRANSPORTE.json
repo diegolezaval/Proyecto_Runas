@@ -1,0 +1,71 @@
+{
+  "schema": "CP12_P3_FORWARD_TRANSPORT_PERMANENTLY_RECOVERED",
+  "passed": true,
+  "observer_clock": 17.6,
+  "closed_boundary": 16,
+  "target": 24,
+  "scientific_frontier": false,
+  "kind": "transport",
+  "library_file_id": "libfile_cdf3d964608c8191b81ad9f296f249b4",
+  "file_id": "file_0000000034b081f591741438222bf1cd",
+  "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000176_P3_16_A24_20261106.zip",
+  "zip_bytes": 230241036,
+  "zip_sha256": "9999444d5f89a4abb9e69bb92469722f99c995841ebe950a3c0bab31510c48a3",
+  "github_asset_id": 717327999,
+  "transport_state_sha256": "ab6bd7d730c5fc3c99e86c09b3f731df0e89d4389cb5448680c48b396b550755",
+  "independent_zero_step_audit": {
+    "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
+    "passed": true,
+    "tests": {
+      "all_internal_state_bits_and_nfev_restored": true,
+      "original_sources_and_configuration": true,
+      "scientific_seed_unchanged": true,
+      "restore_used_no_solver_step": true,
+      "exact_stage_alias": true,
+      "accepted_states_match_solver": true,
+      "clocks_bracket_observer": true,
+      "both_energy_and_charge_gates": true,
+      "original_observer_maximum_gates": true,
+      "original_Parseval": true,
+      "original_symmetry": true,
+      "independently_reloaded_observer_closure": true,
+      "independently_reloaded_Parseval": true,
+      "file_unchanged": true
+    },
+    "observer_clock": 17.6,
+    "target": 24,
+    "state_sha256": "ab6bd7d730c5fc3c99e86c09b3f731df0e89d4389cb5448680c48b396b550755",
+    "physical_metadata": [
+      {
+        "t": 17.600838513580317,
+        "accepted": 3260,
+        "nfev": 36124,
+        "nfev_live": 3566,
+        "maxe": 7.354372666412701e-11,
+        "maxq": 1.2212453270876722e-15,
+        "maxe_original": 3.4873062215723394e-09
+      },
+      {
+        "t": 17.60083604567348,
+        "accepted": 3260,
+        "nfev": 36124,
+        "nfev_live": 3566,
+        "maxe": 7.339795438099372e-11,
+        "maxq": 4.440892098500626e-16,
+        "maxe_original": 8.379739124819707e-10
+      }
+    ],
+    "M2_steps_executed": 0,
+    "scientific_frontier": false,
+    "correction_validated": false,
+    "CP12_closed": false,
+    "DOP853_construction_or_step_attempts": 0
+  },
+  "payload_files": 335,
+  "exact_manifest_coverage": true,
+  "all_payload_hashes_verified_before_and_after": true,
+  "native_and_public_recovery_passed": true,
+  "source_archive_and_payload_unchanged": true,
+  "M2_steps_executed_during_preservation": 0,
+  "CP12_closed": false
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "RUNICA_STRUCTURAL_REGRESSION_CONTEXT_ASSESSMENT",
+  "historical_full_regression_passed": false,
+  "all_sixteen_structural_tests_passed": true,
+  "known_failed_guards": [
+    "CP10:no_active_runs_in_delivery",
+    "CP11:no_active_runs_no_primordial_declared"
+  ],
+  "active_current_allocation": "p3_16_a24_20261106",
+  "classification": "HISTORICAL_INACTIVE_DELIVERY_GUARDS_OUTSIDE_CURRENT_ACTIVE_CONTEXT",
+  "original_tests_not_modified": true,
+  "active_worker_not_hidden_or_stopped_to_make_test_pass": true,
+  "scientific_gate_failure": false,
+  "historical_CP10_CP11_scientific_checks_passed": true,
+  "scientific_sources_changed": false,
+  "independent_pre_activation_delivery_check_pending": false,
+  "source_commit_for_that_check": "de1f2cb249748d982fd735bac8f69598f0d94254",
+  "numerical_campaigns_executed": false,
+  "CP12_closed": false,
+  "independent_pre_activation_delivery_check_passed": true,
+  "pre_activation_source_commit": "de1f2cb249748d982fd735bac8f69598f0d94254",
+  "current_active_context_negative_preserved": true,
+  "scope": "La regresión completa pasa en la entrega pública original sin trabajador; el contexto activo mantiene sus dos rechazos históricos de no actividad."
+}
