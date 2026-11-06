@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "tool_session_id": 77606,
+  "allocation_id": "p3_16_a24_20261106",
+  "public_activation_commit": "d4295e7131cf7258080e27d39a93f2e761f0ea6e",
+  "activation_delivery_at_utc": "2026-11-06T13:40:49.157598+00:00",
+  "physical_start_after_delivery": {
+    "at": "2026-11-06T13:40:56.372097+00:00",
+    "clock": 16.01,
+    "accepted_steps_since_restore": [
+      2,
+      2
+    ],
+    "replay96_to112_executed": false,
+    "CP12_closed": false
+  },
+  "publication_alone_not_used_as_evolution_proof": true,
+  "CP12_closed": false
+}

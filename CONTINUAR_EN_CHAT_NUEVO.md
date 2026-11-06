@@ -1,6 +1,6 @@
 # Relevo del ejecutor Rúnica
 
-**Actualización6 de noviembre: leer primero [la reconciliación16→24](informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md) y sus recibos posteriores.** Head de entrada e6dbcd0; sesión23949 inaccesible, entrega de la activación antigua no acreditada. No reactivar p3_16_a24_20261105 ni reutilizar su capacidad. Nueva asignación p3_16_a24_20261106 desde frontera cerrada16, con código administrativo rápido idéntico; necesita capacidad, reserva y activación propias antes de M2. Los párrafos fechados el5 de noviembre conservan antecedentes.
+**Actualización6 de noviembre: leer primero [la reconciliación16→24](informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md) y sus recibos posteriores.** Head de entrada e6dbcd0; sesión23949 inaccesible, entrega de la activación antigua no acreditada. No reactivar p3_16_a24_20261105 ni reutilizar su capacidad. La nueva asignación p3_16_a24_20261106 usa código administrativo rápido idéntico y ya completó capacidad propia, reserva d666178 y activación d4295e7 recuperadas. La activación se entregó al proceso77606 y se observó16,01 con2 pasos por malla. No crear otro trabajador ni repetir16→16,01. Conservar cada1,6 y auditar todo en24. Comprobar la sesión y recibos posteriores antes de actuar. Los párrafos fechados el5 de noviembre conservan antecedentes.
 
 Actualización del 5 de noviembre de 2026, hora de Lima. Comprobar el head y la evidencia posterior. Este relevo orienta; protocolos y pruebas conservan su autoridad.
 

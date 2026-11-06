@@ -1,8 +1,8 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-11-06T13:39:40.992323+00:00",
+  "updated_at": "2026-11-06T13:41:55.963147+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "d6661787a72a804e1b7b432c60338c01ca860612",
+  "last_public_commit": "d4295e7131cf7258080e27d39a93f2e761f0ea6e",
   "own_attempt_home": "/workspace/scratch/5906e16f70b6/worker16",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
@@ -222,8 +222,17 @@
     "CP12_closed": false,
     "correction_validated": false
   },
-  "current_own_worker_status": "ACTIVATION_PUBLISHED_DELIVERY_PENDING",
-  "own_observed_start": null,
+  "current_own_worker_status": "EVOLVING_16_A24",
+  "own_observed_start": {
+    "at": "2026-11-06T13:40:56.372097+00:00",
+    "clock": 16.01,
+    "accepted_steps_since_restore": [
+      2,
+      2
+    ],
+    "replay96_to112_executed": false,
+    "CP12_closed": false
+  },
   "own_guardian_tool_session_id": 77606,
   "own_exit_observed": false,
   "current_target": 24,
@@ -241,7 +250,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/CERTIFICADO_FRONTERA.json",
   "current_helper_directory": "/workspace/scratch/5906e16f70b6/helpers",
-  "next_recovery": "Recuperar ACTIVACION.json de este commit y comprobar bytes/hashes antes de entregar al proceso77606; aún cero pasos nuevos.",
+  "next_recovery": "Mantener el único trabajador77606; conservar y recuperar17,6 y cada1,6, con auditorías originales; en24 recuperar frontera y todas las métricas antes de más física.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -252,30 +261,32 @@
   },
   "previous_inaccessible_executor_termination_assumed": false,
   "latest_heartbeat_observation": {
-    "at": "2026-11-05T18:59:16.999801+00:00",
-    "clock": 14.63,
+    "at": "2026-11-06T13:41:53.231661+00:00",
+    "clock": 16.22,
     "phase": "evolution",
     "physical_streams": [
       {
-        "t": 14.640416003349037,
-        "accepted": 2714,
-        "nfev": 18266,
-        "nfev_live": 14834,
-        "maxe": 6.831468724044498e-11,
+        "t": 16.232904186593746,
+        "accepted": 3008,
+        "nfev": 36124,
+        "nfev_live": 530,
+        "maxe": 7.110179112146398e-11,
         "maxq": 1.1102230246251565e-15,
         "maxe_original": 3.4873062215723394e-09
       },
       {
-        "t": 14.64040646710232,
-        "accepted": 2714,
-        "nfev": 18266,
-        "nfev_live": 14834,
-        "maxe": 6.818468012426138e-11,
+        "t": 16.232902589187635,
+        "accepted": 3008,
+        "nfev": 36124,
+        "nfev_live": 530,
+        "maxe": 7.096345733259568e-11,
         "maxq": 4.440892098500626e-16,
         "maxe_original": 8.379739124819707e-10
       }
     ],
-    "not_a_restart_certificate": true
+    "not_a_restart_certificate": true,
+    "tool_session_id": 77606,
+    "activity_is_restart_certificate": false
   },
   "P3_one_interval_transport_control": {
     "schema": "CP12_NEW_TRANSPORT_CONTROL_NOT_PREFLIGHT_REPETITION",
@@ -1169,8 +1180,8 @@
     "source_commit": "8f91bac9470edee86810ac22b146240c62cc71dc"
   },
   "latest_native_recoverable_observer_clock": 16,
-  "current_process_M2_steps_executed": 0,
-  "current_process_new_physical_worker_started": false,
+  "current_process_M2_steps_executed": 4,
+  "current_process_new_physical_worker_started": true,
   "latest_github_transport_proof": {
     "schema": "CP12_P3_PUBLIC_TRANSPORT_RECOVERY_CURRENT_ORIGINAL_AUDITS_V1",
     "passed": true,
@@ -1404,7 +1415,7 @@
     "physical_start": "checkpoints/CP12/p3_20261018/reanudacion_t144_20261105/INICIO_FISICO.json",
     "new_M2_steps_executed_scope": "Primer intervalo solamente; no contador final."
   },
-  "current_process_M2_steps_executed_scope": "Sólo recuperación, auditores y métricas originales; cero evolución en este proceso.",
+  "current_process_M2_steps_executed_scope": "Pasos aceptados observados en el primer intervalo16→16,01:2 por malla; no total final de un trabajador en vuelo.",
   "history_before_recovery_t16_20261105": {
     "latest_full_trial_frontier_recovered_and_audited": 8,
     "latest_recoverable_observer_clock": 14.4,
@@ -1507,9 +1518,22 @@
     "capacity_acceptance_sha256": "daded25e16f7bcd5c9c1d61dc2a5cf9f3b4138cb3252592e4ed828c1f577199c",
     "capacity": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/capacidad/ACEPTACION_COMBINADA.json",
     "reservation": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/ASIGNACION_16_A24.json",
-    "activation_delivered": false,
+    "activation_delivered": true,
     "reservation_commit": "d6661787a72a804e1b7b432c60338c01ca860612",
-    "reservation_recovered": true
+    "reservation_recovered": true,
+    "activation_commit": "d4295e7131cf7258080e27d39a93f2e761f0ea6e",
+    "activation_delivery_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/ACTIVACION_RECUPERADA_Y_ENTREGADA.json",
+    "physical_start_observed": true,
+    "physical_start": {
+      "at": "2026-11-06T13:40:56.372097+00:00",
+      "clock": 16.01,
+      "accepted_steps_since_restore": [
+        2,
+        2
+      ],
+      "replay96_to112_executed": false,
+      "CP12_closed": false
+    }
   },
   "historical_observed_start_before_reconciliation": {
     "at": "2026-11-05T18:57:52.235478+00:00",

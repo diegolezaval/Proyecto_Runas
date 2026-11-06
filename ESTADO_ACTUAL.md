@@ -26,7 +26,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 
 ## Siguiente trabajo científico
 
-- Ejecutar p3_16_a24_20261106 desde la frontera cerrada16 tras capacidad propia, reserva y activación recuperadas. Conservar cada1,6 y exigir recuperación independiente, cinco métricas y todas las puertas en24. No reactivar asignaciones anteriores ni repetir prefijos.
+- Mantener el único trabajador p3_16_a24_20261106 hacia24. Conservar y recuperar cada1,6; en24 exigir todas las métricas originales sobre extracción independiente. No reactivar procesos anteriores ni repetir prefijos.
 - Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 

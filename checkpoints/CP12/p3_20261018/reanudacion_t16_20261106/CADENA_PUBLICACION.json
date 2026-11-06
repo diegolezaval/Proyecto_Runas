@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "commits": [
+    {
+      "sha": "de1f2cb249748d982fd735bac8f69598f0d94254",
+      "committer_date": "2026-11-06T13:32:09Z",
+      "tree": "e41c54c01d31c1ba04ffca6d5280b8000c9e9044",
+      "parents": [
+        "e6dbcd06d727a162168de22f5d6522d6cb94dfc9"
+      ]
+    },
+    {
+      "sha": "d6661787a72a804e1b7b432c60338c01ca860612",
+      "committer_date": "2026-11-06T13:39:01Z",
+      "tree": "c32219079206eb58532f155c62f239343d237d1a",
+      "parents": [
+        "de1f2cb249748d982fd735bac8f69598f0d94254"
+      ]
+    },
+    {
+      "sha": "d4295e7131cf7258080e27d39a93f2e761f0ea6e",
+      "committer_date": "2026-11-06T13:40:13Z",
+      "tree": "66af91b25a9c0d856c4d96396d7a5fe9863af627",
+      "parents": [
+        "d6661787a72a804e1b7b432c60338c01ca860612"
+      ]
+    }
+  ],
+  "main_checked": "90e8fcffbba65629a1628f435d3c3240832fe9c4",
+  "scope": "Publicaciones recuperadas en orden registro, reserva y activación; recepción acreditada aparte por inicio físico.",
+  "CP12_closed": false
+}

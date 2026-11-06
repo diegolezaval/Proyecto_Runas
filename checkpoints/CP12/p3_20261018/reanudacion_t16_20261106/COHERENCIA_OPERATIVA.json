@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "tests": {
+    "same_current_worker": true,
+    "all_operational_views_active": true,
+    "all_views_same_full_positive_frontier": true,
+    "no_heartbeat_promoted_to_checkpoint": true,
+    "capacity_is_current_process": true,
+    "registration_exact": true,
+    "public_activation_exact": true,
+    "delivery_precedes_physical_start": true,
+    "new_start_after16": true,
+    "scientific_sources_pinned": true,
+    "CP11_stable_and_CP12_open": true,
+    "old_P2_still_suspended": true,
+    "prior_allocation_not_reactivated": true
+  },
+  "scope": "Coherencia de publicaciones, proceso actual y registros; no aceptación de la frontera24.",
+  "CP12_closed": false
+}

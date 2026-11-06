@@ -1,0 +1,18 @@
+{
+  "schema": "CP12_P3_PUBLIC_ACTIVATION_RECOVERY_AND_DELIVERY",
+  "passed": true,
+  "commit": "d4295e7131cf7258080e27d39a93f2e761f0ea6e",
+  "activation_sha256": "30e07f68eafd44f53bc43c1df8393d916c410861bf4906e96be6a850ebb17712",
+  "registry_sha256": "582d6f1d747b5bd508a3a80d3629ec979f17e2740b6b83793418cb2db3ba9e0d",
+  "capacity_acceptance_sha256": "daded25e16f7bcd5c9c1d61dc2a5cf9f3b4138cb3252592e4ed828c1f577199c",
+  "tool_session_id": 77606,
+  "allocation_id": "p3_16_a24_20261106",
+  "exact_public_bytes_recovered": true,
+  "both_locks_held_before_delivery": true,
+  "prior_allocation_not_reactivated": true,
+  "delivery_at_utc": "2026-11-06T13:40:49.157598+00:00",
+  "delivery_method": "atomic hard link after complete write and fsync",
+  "worker_receipt_observed": false,
+  "physical_evolution_inferred_from_publication": false,
+  "CP12_closed": false
+}

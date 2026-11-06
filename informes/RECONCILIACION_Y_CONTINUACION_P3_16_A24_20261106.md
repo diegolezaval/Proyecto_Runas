@@ -1,5 +1,7 @@
 # P3: reconciliación de la activación16→24 y nueva asignación
 
+**Estado posterior comprobado: el trabajador77606 recibió la activación nueva y avanzó a16,01 con2 pasos aceptados por malla.** [Recepción acreditada](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/RECEPCION_ACREDITADA_POR_INICIO.json). La frontera24 sigue pendiente.
+
 Entrega del6 de noviembre de2026, hora de Lima. **CP11 aceptado; CP12 abierto; P3 sin validar. Última frontera completa positiva y recuperada: τ16. Próxima frontera: τ24, pendiente.**
 
 ## Resultado comprobado
@@ -36,3 +38,9 @@ El respaldo global717285265 tiene305726879 bytes,SHA256 `4991b5a8bca67d8515117f2
 ## Activación posterior a la reserva recuperada
 
 La reserva se publicó en `d6661787a72a804e1b7b432c60338c01ca860612` y se recuperó con igualdad exacta de sus bytes. [Recibo](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/RESERVA_RECUPERADA.json). Se publica ahora la [activación nueva](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/ACTIVACION.json), ligada al registro, capacidad y proceso77606. Su publicación todavía no acredita recepción ni evolución: el siguiente paso es recuperarla y entregarla al único trabajador después de comprobar todos sus hashes.
+
+## Recepción e inicio físico observados
+
+La activación se publicó en `d4295e7131cf7258080e27d39a93f2e761f0ea6e`, se recuperó con sus bytes exactos y se entregó atómicamente al único proceso77606 tras comprobar ambos locks, registro y aceptación de capacidad. Se conserva el [recibo de recuperación y entrega](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/ACTIVACION_RECUPERADA_Y_ENTREGADA.json).
+
+El trabajador escribió después [INICIO_FISICO.json](../checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/INICIO_FISICO.json): reloj16,01 y dos pasos aceptados nuevos en cada malla. Esto acredita que el proceso recibió y aceptó la activación; no se deduce de la mera publicación. No se repitió ningún intervalo previo a16. Se mantiene el trabajo hacia17,6 conservado y la frontera24 condicionada. Un latido o inicio físico no sustituye una cápsula recuperada.
