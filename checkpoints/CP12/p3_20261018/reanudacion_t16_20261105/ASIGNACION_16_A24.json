@@ -1,7 +1,7 @@
 {
   "schema": "CP12_P3_FORWARD_RESERVATION_V2",
   "registered_before_M2": true,
-  "at_utc": "2026-11-06T01:17:57.421089+00:00",
+  "at_utc": "2026-11-06T01:23:27.952526+00:00",
   "single_worker_reserved": true,
   "both_locks_held": {
     "registration": true,
@@ -33,5 +33,7 @@
   "all_original_scientific_gates_required": true,
   "automatic_new_candidate_authorized": false,
   "activation_not_yet_delivered": true,
-  "CP12_closed": false
+  "CP12_closed": false,
+  "supersedes_administrative_reservation_commit": "d06c943913a0d35c736660f6a2d0f89acbc84200",
+  "supersession_reason": "Corregir coherencia de manifiesto y vistas antes de activar; mismo trabajador y capacidad."
 }

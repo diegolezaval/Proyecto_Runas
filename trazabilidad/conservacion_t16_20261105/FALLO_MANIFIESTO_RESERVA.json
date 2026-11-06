@@ -1,0 +1,25 @@
+{
+  "schema": "RUNICA_ADMINISTRATIVE_SNAPSHOT_MANIFEST_FAILURE_V1",
+  "passed": false,
+  "source_commit": "d06c943913a0d35c736660f6a2d0f89acbc84200",
+  "failures": {
+    "ESTADO_ACTUAL.md": {
+      "expected": "19198712f9ed56a14b636cf80b9be2ce63f2ada07d2708195836b5cdd4fa7290",
+      "actual": "6b2ec3f3c81d8297caa43188ff0185fb6baa35be1d1d9b590ad6e3f0796142f4"
+    },
+    "trazabilidad/arquitectura/indice_trazabilidad.json": {
+      "expected": "e716a366e7ff8236abfc57d25eb3df7da2315abbdd329d6a7901d0592b79ba4a",
+      "actual": "682e09d14b1eec883f32f469f1a924ef5910e429883a6d7a7badd5205922afa2"
+    }
+  },
+  "classification": "GENERATED_VIEWS_AND_MANIFEST_DESYNCHRONIZED",
+  "cause": "Se inició el manifiesto antes de observar la finalización del generador; las vistas cambiaron después.",
+  "corrective_action": "Serializar generación completa, manifiesto, verificación y publicación. Sustituir reserva administrativa antes de activar.",
+  "snapshot_accepted_as_delivery": false,
+  "scientific_gate_failed": false,
+  "frontier16_capsule_unchanged": true,
+  "current_process_M2_steps_executed": 0,
+  "original_worker_still_waiting_activation": true,
+  "unpublished_activation_draft_not_delivered": true,
+  "CP12_closed": false
+}
