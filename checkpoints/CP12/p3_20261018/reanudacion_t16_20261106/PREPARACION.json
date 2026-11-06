@@ -6,7 +6,7 @@
   "allocation_id": "p3_16_a24_20261106",
   "actual_worker_capacity_pending": false,
   "reservation_published": true,
-  "activation_published": false,
+  "activation_published": true,
   "current_process_M2_steps_executed": 0,
   "source_current_independent_audits_pending": false,
   "scientific_sources_changed": false,
@@ -16,5 +16,8 @@
   "source_public_recovery": "checkpoints/CP12/p3_20261018/reconciliacion_16_a24_20261106/RECUPERACION_PUBLICA.json",
   "source_all_original_prefix_gates_passed": true,
   "capacity_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/capacidad/ACEPTACION_COMBINADA.json",
-  "reservation_scope": "El commit que contiene ASIGNACION_16_A24.json; recuperar antes de publicar activación."
+  "reservation_scope": "El commit que contiene ASIGNACION_16_A24.json; recuperar antes de publicar activación.",
+  "activation_delivered": false,
+  "reservation_commit": "d6661787a72a804e1b7b432c60338c01ca860612",
+  "reservation_recovered": true
 }
