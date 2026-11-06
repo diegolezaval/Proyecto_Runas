@@ -6,7 +6,7 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
@@ -15,10 +15,10 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | Referencia | Estado |
 |---|---|
 | CP12 / P3 | ABIERTO / SIN_VALIDAR |
-| Última frontera completa positiva P3 | τ8 |
+| Última frontera completa positiva P3 | τ16 |
 | Transporte interno recuperado | τ14.4 |
-| Próxima frontera completa | τ16, pendiente |
-| Trabajadores propios activos | 1 |
+| Próxima frontera completa | τ24, pendiente |
+| Trabajadores propios activos | 0 |
 
 Registro: [checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
 
@@ -52,6 +52,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 - La prueba administrativa116/308 sigue INCOMPLETA y no representa308 documentos originales.
 - P3τ11,2→τ12,8 ya conservado. La asignación anterior queda bloqueada; no recrear su archivo privado ASSET_GITHUB.json.
 - No repetir12,8→14,4: existe cápsula nativa íntegra y auditada. No reactivar p3_128_a16_20261104b ni recrear su publicación privada.
+- P3τ14,4→τ16:frontera16recuperada y positiva;no reactivar p3_144_a16_20261105 ni su publicación privada.
 
 ## Resultados vigentes y límites
 

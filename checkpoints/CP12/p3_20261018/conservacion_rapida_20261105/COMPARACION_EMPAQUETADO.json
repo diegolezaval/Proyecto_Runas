@@ -1,0 +1,69 @@
+{
+  "schema": "CP12_P3_LOSSLESS_PACKING_BENCHMARK_V1",
+  "passed": true,
+  "source_archive_sha256": "9627950c47e52280df00b5aab8e75358f653d4807c85db32e1b1cedcafabca12",
+  "source_archive_bytes": 230213899,
+  "original_preserver_sha256": "75b94548f2f339b663ee589feb19f9408311752c7afb3683d292706f469e0d35",
+  "candidate_preserver_sha256": "3aafd0b8157d2f6f9f4140db35f95163e385dda962762cdc8aeaa09fbd98b0fe",
+  "only_registered_serialization_call_changed": true,
+  "source_archive_unchanged": true,
+  "archive_entries": 325,
+  "observations": [
+    {
+      "mode": "deflate_all",
+      "repeat": 1,
+      "packing_seconds": 9.619282947999977,
+      "bytes": 230213899,
+      "sha256": "b83be025230a23c5d8d398e21384d3e9bec5cfb245cd88e455f0270893d57799",
+      "exact_entries_and_all_payload_bytes": true,
+      "original_unpacker_passed": true,
+      "payload_files": 324
+    },
+    {
+      "mode": "store_npz",
+      "repeat": 1,
+      "packing_seconds": 0.2734691160000011,
+      "bytes": 230219421,
+      "sha256": "003549e3553bb357c576dcce3a13b0707d44cadb822451c9b90efd9b5703d7b0",
+      "exact_entries_and_all_payload_bytes": true,
+      "original_unpacker_passed": true,
+      "payload_files": 324
+    },
+    {
+      "mode": "store_npz",
+      "repeat": 2,
+      "packing_seconds": 0.3505172220000077,
+      "bytes": 230219421,
+      "sha256": "003549e3553bb357c576dcce3a13b0707d44cadb822451c9b90efd9b5703d7b0",
+      "exact_entries_and_all_payload_bytes": true,
+      "original_unpacker_passed": true,
+      "payload_files": 324
+    },
+    {
+      "mode": "deflate_all",
+      "repeat": 2,
+      "packing_seconds": 10.201672299000052,
+      "bytes": 230213899,
+      "sha256": "b83be025230a23c5d8d398e21384d3e9bec5cfb245cd88e455f0270893d57799",
+      "exact_entries_and_all_payload_bytes": true,
+      "original_unpacker_passed": true,
+      "payload_files": 324
+    }
+  ],
+  "median_packing_seconds": {
+    "deflate_all": 9.910477623500014,
+    "store_npz": 0.3119931690000044
+  },
+  "packing_speedup": 31.765046828637054,
+  "archive_bytes": {
+    "deflate_all": 230213899,
+    "store_npz": 230219421
+  },
+  "extra_bytes": 5522,
+  "extra_fraction": 2.3986388415275783e-05,
+  "scientific_modules_imported": false,
+  "M2_steps_executed": 0,
+  "CP12_closed": false,
+  "scope": "Packing only in this environment; not evolution or end-to-end conservation speed.",
+  "actual_process_capacity_and_original_audits_still_required": true
+}

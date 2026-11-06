@@ -1,0 +1,28 @@
+{
+  "schema": "CP12_P3_ADMIN_LOSSLESS_SERIALIZATION_V1",
+  "registered_at_utc": "2026-11-06T01:01:33.752291+00:00",
+  "source_directory": "checkpoints/CP12/p3_20261018/continuidad_20261030/ejecutor",
+  "source_sha256": {
+    "preservar.py": "75b94548f2f339b663ee589feb19f9408311752c7afb3683d292706f469e0d35",
+    "continuar.py": "b90756f551c33647b660fa0f3058d362c5233327e8cc0e34a1470e01bcca5542",
+    "probar.py": "d009491047ea9760b0b948cf7a689d34cc725dc6201650505a3793582752812b"
+  },
+  "administrative_sources": {
+    "preservar.py": "3aafd0b8157d2f6f9f4140db35f95163e385dda962762cdc8aeaa09fbd98b0fe",
+    "continuar.py": "b90756f551c33647b660fa0f3058d362c5233327e8cc0e34a1470e01bcca5542",
+    "probar.py": "d009491047ea9760b0b948cf7a689d34cc725dc6201650505a3793582752812b"
+  },
+  "benchmark_source_sha256": "fcd8fdcf1c11f044babb9b5a0e7bada4b7594fcd82c7b4d9935b3a30f1720644",
+  "single_AST_change": "ZIP_STORED for existing .npz payload bytes; ZIP_DEFLATED level6 for all other payloads",
+  "npz_serialization_or_arrays_changed": false,
+  "scientific_sources_changed": false,
+  "thresholds_changed": false,
+  "original_auditors_changed": false,
+  "original_native_and_public_cycles_required": true,
+  "captured_existing_frontier_republished_unchanged": true,
+  "source_archive_sha256": "9627950c47e52280df00b5aab8e75358f653d4807c85db32e1b1cedcafabca12",
+  "measured_packing_speedup": 31.765046828637054,
+  "scope": "Packing only in this environment; not evolution or end-to-end conservation speed.",
+  "future_worker_requires_own_capacity_reservation_and_activation": true,
+  "CP12_closed": false
+}
