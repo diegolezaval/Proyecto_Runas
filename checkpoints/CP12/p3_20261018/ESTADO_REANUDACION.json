@@ -1,9 +1,9 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-11-06T01:17:57.421089+00:00",
+  "updated_at": "2026-11-06T13:29:20.653762+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "9c282e1f6e865e90581167cce97159328760d98c",
-  "own_attempt_home": "/workspace/scratch/0f402422cb34/cierre16/github/extraido",
+  "last_public_commit": "e6dbcd06d727a162168de22f5d6522d6cb94dfc9",
+  "own_attempt_home": "/workspace/scratch/5906e16f70b6/recovery16/github/extraido",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
   "accepted_scientific_checkpoint": "CP11",
@@ -222,18 +222,9 @@
     "CP12_closed": false,
     "correction_validated": false
   },
-  "current_own_worker_status": "WAITING_REGISTERED_ACTIVATION_16_A24",
-  "own_observed_start": {
-    "at": "2026-11-05T18:57:52.235478+00:00",
-    "clock": 14.41,
-    "accepted_steps_since_restore": [
-      2,
-      2
-    ],
-    "replay96_to112_executed": false,
-    "CP12_closed": false
-  },
-  "own_guardian_tool_session_id": 23949,
+  "current_own_worker_status": "PREPARED_NEW_ALLOCATION_NO_WORKER",
+  "own_observed_start": null,
+  "own_guardian_tool_session_id": null,
   "own_exit_observed": false,
   "current_target": 24,
   "conditional_horizon": 160,
@@ -249,8 +240,8 @@
   "new_pilot_protocol": "checkpoints/CP12/p3_20261018/PRERREGISTRO_PILOTO.md",
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/CERTIFICADO_FRONTERA.json",
-  "current_helper_directory": "/workspace/scratch/0f402422cb34/helpers16",
-  "next_recovery": "Recuperar reserva y publicar/recuperar activación16→24 antes de entregar su archivo al proceso23949.",
+  "current_helper_directory": "/workspace/scratch/5906e16f70b6/helpers",
+  "next_recovery": "Crear únicamente p3_16_a24_20261106; probar conservación desde ese proceso, publicar/recuperar reserva y activación antes de M2.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -1478,7 +1469,7 @@
     "own_tool_session": 23949,
     "capacity": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/capacidad/ACEPTACION_COMBINADA.json"
   },
-  "current_process_worker_created": true,
+  "current_process_worker_created": false,
   "global_delivery_t16_20261105": {
     "schema": "RUNICA_GLOBAL_DELIVERY_PUBLIC_RECOVERY_V1",
     "passed": true,
@@ -1502,5 +1493,25 @@
     "M2_steps_executed": 0,
     "CP12_closed": false,
     "scope": "Exact Git corpus of the stated commit; frontier16 capsule is independently published and audited."
+  },
+  "current_allocation": "p3_16_a24_20261106",
+  "reconciliation_16_a24_20261106": "checkpoints/CP12/p3_20261018/reconciliacion_16_a24_20261106/RECONCILIACION.json",
+  "resumption_t16_20261106": {
+    "allocation_id": "p3_16_a24_20261106",
+    "registry": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/REGISTRO.json",
+    "actual_process_capacity_pending": true,
+    "reservation_published": false,
+    "activation_published": false,
+    "prior_allocation_reactivation_permitted": false
+  },
+  "historical_observed_start_before_reconciliation": {
+    "at": "2026-11-05T18:57:52.235478+00:00",
+    "clock": 14.41,
+    "accepted_steps_since_restore": [
+      2,
+      2
+    ],
+    "replay96_to112_executed": false,
+    "CP12_closed": false
   }
 }

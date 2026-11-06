@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/5906e16f70b6/recovery16/native_extracted/coordinator.py", line 334, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/5906e16f70b6/recovery16/native_extracted/coordinator.py", line 298, in main
+    if a.audit_only is not None:print(json.dumps(audit(home,a.audit_only),default=lambda x:x.item()));return
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/5906e16f70b6/recovery16/native_extracted/coordinator.py", line 208, in audit
+    result=_audit(home,t)
+           ^^^^^^^^^^^^^^
+  File "/workspace/scratch/5906e16f70b6/recovery16/native_extracted/coordinator.py", line 132, in _audit
+    info,meta,root,out,_,_,modules=setup(home);np=modules['np'];state=out/'MIXTO_par_estado.npz';before=sha(state)
+                                   ^^^^^^^^^^^
+  File "/workspace/scratch/5906e16f70b6/recovery16/native_extracted/coordinator.py", line 52, in setup
+    assert environment()==ident['environment'],'Original recorded numerical environment changed'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Original recorded numerical environment changed

@@ -1,0 +1,66 @@
+{
+  "schema": "CP12_P3_FORWARD_SEGMENT_V2",
+  "registered_before_M2": true,
+  "registered_at_utc": "2026-11-06T13:28:21.316000+00:00",
+  "allocation_id": "p3_16_a24_20261106",
+  "kind": "boundary",
+  "clock": 16,
+  "closed_boundary": 16,
+  "target": 24,
+  "replay96_to112_authorized": false,
+  "consumed_replay_permission_reconstructed": false,
+  "source_archive_sha256": "9627950c47e52280df00b5aab8e75358f653d4807c85db32e1b1cedcafabca12",
+  "closed_state_sha256": "ac249962765a990e75fc25817f5c3d7ce9c0061430e3142719ccd97964e5c1ed",
+  "receipt_sha256": "4fe1495f9dc6b6e25ba97574918e9735fb7603e2d64cd392fbc50c680cd389ca",
+  "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+  "administrative_sources": {
+    "preservar.py": "3aafd0b8157d2f6f9f4140db35f95163e385dda962762cdc8aeaa09fbd98b0fe",
+    "continuar.py": "b90756f551c33647b660fa0f3058d362c5233327e8cc0e34a1470e01bcca5542",
+    "probar.py": "d009491047ea9760b0b948cf7a689d34cc725dc6201650505a3793582752812b"
+  },
+  "helper_sha256": {
+    "library_file_transfer.py": "d0385de4b634c4a6d4c26a83b40ee4ff33461e42473ce8c0387460be2465e314",
+    "library_upload.py": "5bc473dadefe1f68ee8797baaed19d6662642d0ea4bcba128fa12938faa0d767",
+    "library_hosted_apps.py": "7958642b88cde925aaca036989de1028c0864eb6d82a9cb175ebf9380cb9677b"
+  },
+  "original_auditor_sha256": "5ec8064cb2ef130b6796a296940a564d5c290e6f1000c4ca3ba2b0705f76aae0",
+  "synthetic_guard_tests_sha256": "fc99bb32ec1b9aad198e0f05e2080931dd5e687aa8108d762581444ba590c080",
+  "single_worker_required": true,
+  "capacity_before_physics_required": true,
+  "activation_after_public_capacity_required": true,
+  "physical_protocol": "checkpoints/CP12/p3_20261018/PRERREGISTRO_PILOTO.md",
+  "scientific_sources_changed": false,
+  "thresholds_changed": false,
+  "CP12_closed": false,
+  "correction_validated": false,
+  "source_library_file_id": "libfile_bb187e2e145c81918cf7b7b1e20cac45",
+  "predecessor_intervals_must_not_repeat": [
+    [
+      9.6,
+      11.2
+    ],
+    [
+      11.2,
+      12.8
+    ],
+    [
+      12.8,
+      14.4
+    ],
+    [
+      14.4,
+      16
+    ]
+  ],
+  "source_public_recovery_and_current_original_audits_required_before_activation": true,
+  "previous_allocation_not_to_reactivate": "p3_16_a24_20261105",
+  "previous_exit_observed": false,
+  "source_github_asset_id": 715405768,
+  "source_boundary_all_five_spatial_and_physical_gates_passed": true,
+  "serialization_registration": "checkpoints/CP12/p3_20261018/conservacion_rapida_20261105/REGISTRO.json",
+  "predecessor_activation_delivery": "UNKNOWN_NO_RECEIPT",
+  "previous_assignment_capacity_reused": false,
+  "reconciliation": "checkpoints/CP12/p3_20261018/reconciliacion_16_a24_20261106/RECONCILIACION.json",
+  "source_recovery_commit": "e6dbcd06d727a162168de22f5d6522d6cb94dfc9",
+  "previous_allocation_registry_sha256": "e136912b134f16ebba6912f7d1900095040bc92da34e15708bb9436e09c73da4"
+}

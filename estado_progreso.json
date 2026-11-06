@@ -2185,10 +2185,16 @@
       "date": "2026-11-05T18:57:52.235478+00:00",
       "event": "Reserva67c474d y activacióneb8f8d8 públicas y recuperadas antes del primer intervalo nuevo14,4→14,41; cero repetición de prefijos.",
       "report": "informes/CONTINUACION_P3_144_A16_20261105.md"
+    },
+    {
+      "date": "2026-11-06",
+      "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+      "report": "informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md",
+      "scope": "Reconciliación de activación inaccesible, recuperación actual de16 y nueva asignación; sin pasos nuevos."
     }
   ],
   "next_actions": [
-    "Mantener el único trabajador p3_144_a16_20261105 hasta16. Conservar y recuperar la frontera independientemente; aplicar las cinco métricas y todas las puertas originales antes de más física. No repetir prefijos ni duplicar trabajador.",
+    "Ejecutar p3_16_a24_20261106 desde la frontera cerrada16 tras capacidad propia, reserva y activación recuperadas. Conservar cada1,6 y exigir recuperación independiente, cinco métricas y todas las puertas en24. No reactivar asignaciones anteriores ni repetir prefijos.",
     "Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.",
     "Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico."
   ],
@@ -2209,34 +2215,10 @@
     "P3τ14,4→τ16:frontera16recuperada y positiva;no reactivar p3_144_a16_20261105 ni su publicación privada."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Continuar16→24 sólo con registro, conservación real del nuevo proceso,reserva pública y activación. Usar la serialización sin pérdidas registrada; auditores, memoria exacta y puertas originales intactos.",
+  "next_calculation": "Ejecutar p3_16_a24_20261106 desde la frontera cerrada16 tras capacidad propia, reserva y activación recuperadas. Conservar cada1,6 y exigir recuperación independiente, cinco métricas y todas las puertas en24. No reactivar asignaciones anteriores ni repetir prefijos.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [
-    {
-      "campaign": "CP12_P3",
-      "allocation_id": "p3_16_a24_20261105",
-      "status": "WAITING_REGISTERED_ACTIVATION_16_A24",
-      "source_observer_clock": 16,
-      "next_full_frontier": 24,
-      "evidence": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/ASIGNACION_16_A24.json",
-      "original_trajectories_repeated": false,
-      "current_process_M2_steps_executed": 0,
-      "CP12_closed": false
-    }
-  ],
-  "research_in_progress": [
-    {
-      "campaign": "CP12_P3",
-      "allocation_id": "p3_16_a24_20261105",
-      "status": "WAITING_REGISTERED_ACTIVATION_16_A24",
-      "source_observer_clock": 16,
-      "next_full_frontier": 24,
-      "evidence": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/ASIGNACION_16_A24.json",
-      "original_trajectories_repeated": false,
-      "current_process_M2_steps_executed": 0,
-      "CP12_closed": false
-    }
-  ],
+  "numerical_runs_in_progress": [],
+  "research_in_progress": [],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
   "delivery_boundary": "CP11 aceptado;CP12 abierto;P3 sin validar. Frontera16 nativa y pública recuperada:324 cargas,30 controles originales,cinco métricas y diez controles físicos positivos,sin pasos nuevos en esta revisión. Transporte14,4 se conserva como historia;no repetir14,4→16. Compilador original intacto. P2 suspendido.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
@@ -2258,11 +2240,11 @@
   },
   "execution_activity": {
     "activity_known": true,
-    "scope": "Un único trabajador reservado con ambos locks;espera activación,sin pasos nuevos.",
-    "own_worker_status": "WAITING_REGISTERED_ACTIVATION_16_A24",
+    "scope": "No hay trabajador propio creado; la sesión23949 es inaccesible. Su salida y recepción de activación no se observaron.",
+    "own_worker_status": "PREPARED_NEW_ALLOCATION_NO_WORKER",
     "historical_termination_assumed": false,
     "activity_is_restart_certificate": false,
-    "evidence": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/ASIGNACION_16_A24.json"
+    "evidence": "checkpoints/CP12/p3_20261018/reconciliacion_16_a24_20261106/RECONCILIACION.json"
   },
   "latest_verified_cp12_restart": {
     "time": 160,
@@ -2477,6 +2459,18 @@
       "previous_termination_assumed": false,
       "reactivation_permitted": false,
       "CP12_closed": false
+    },
+    {
+      "campaign": "CP12_P3",
+      "allocation_id": "p3_16_a24_20261105",
+      "status": "INACCESIBLE_ACTIVACION_PUBLICADA_ENTREGA_NO_ACREDITADA",
+      "source_observer_clock": 16,
+      "last_proven_recoverable_clock": 16,
+      "evidence": "checkpoints/CP12/p3_20261018/reconciliacion_16_a24_20261106/RECONCILIACION.json",
+      "prior_exit_observed": false,
+      "previous_termination_assumed": false,
+      "reactivation_permitted": false,
+      "CP12_closed": false
     }
   ],
   "administrative_upload_isolation_20261017": {
@@ -2543,28 +2537,30 @@
     "native_recovered_transport": 14.4,
     "github_recovered_transport": 14.4,
     "next_full_frontier": 24,
-    "own_workers": 1,
+    "own_workers": 0,
     "own_physical_workers": 0,
     "historical_worker_activity": "INACCESIBLE_SIN_SALIDA_OBSERVADA",
     "forward_evolution_started": true,
     "current_run_forward_evolution_started": false,
     "canonical_register": "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
-    "evidence": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/RESULTADO.json",
-    "preservation_in_current_process": "CAPACIDAD_NATIVA_Y_GITHUB_RECUPERADA",
+    "evidence": "checkpoints/CP12/p3_20261018/reconciliacion_16_a24_20261106/RECONCILIACION.json",
+    "preservation_in_current_process": "ORIGEN16_RECUPERADO_CAPACIDAD_TRABAJADOR_NUEVO_PENDIENTE",
     "preservation_gate_passed": true,
-    "current_worker_capacity_passed": true,
-    "observed_at_utc": "2026-11-06T01:17:57.421089+00:00",
-    "administrative_phase": "WAITING_REGISTERED_ACTIVATION_16_A24",
-    "administrative_report": "informes/CONSERVACION_P3_T16_Y_AGILIZACION_20261105.md",
+    "current_worker_capacity_passed": false,
+    "observed_at_utc": "2026-11-06T13:29:20.653762+00:00",
+    "administrative_phase": "PREPARED_NEW_ALLOCATION_NO_WORKER",
+    "administrative_report": "informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md",
     "scientific_report": "informes/CONSERVACION_P3_T16_Y_AGILIZACION_20261105.md",
     "source_identity": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/ORIGEN.json",
     "activity_clock_is_restart_certificate": false,
     "last_activity_observer_clock": 16,
-    "new_allocation_prepared": "p3_16_a24_20261105",
-    "new_reservation_published": true,
+    "new_allocation_prepared": "p3_16_a24_20261106",
+    "new_reservation_published": false,
     "new_activation_published": false,
     "latest_recoverable_observer_clock": 16,
-    "capacity_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/capacidad/ACEPTACION_COMBINADA.json"
+    "capacity_receipt": null,
+    "prior_activation_published": true,
+    "prior_activation_delivery": "UNKNOWN_NO_RECEIPT"
   },
   "latest_verified_cp12_P3_transport": {
     "observer_clock": 14.4,
