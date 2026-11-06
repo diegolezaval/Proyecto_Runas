@@ -1,6 +1,6 @@
 # CP12/P3: frontera τ16 conservada y positiva
 
-**Actualización6 de noviembre: [reconciliación16→24](informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md).** La activación de p3_16_a24_20261105 está publicada; su entrega al trabajador23949 no está acreditada y la sesión es inaccesible. No reactivarla. Nueva asignación p3_16_a24_20261106 preparada; requiere capacidad propia, reserva y activación recuperadas.
+**Actualización6 de noviembre: [reconciliación16→24](informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md).** La activación de p3_16_a24_20261105 está publicada; su entrega al trabajador23949 no está acreditada y la sesión es inaccesible. No reactivarla. Nueva asignación p3_16_a24_20261106: capacidad propia nativa y pública positiva; único trabajador77606 reservado. Debe recuperarse la reserva y publicarse/recuperarse la activación antes de M2.
 
 **CP11 aceptado; CP12 abierto; P3 sin validar. Última frontera completa positiva τ16; siguiente frontera condicionada τ24.** [Entrega actual](informes/CONSERVACION_P3_T16_Y_AGILIZACION_20261105.md).
 
@@ -15,7 +15,7 @@
 | Compilador | Ubuntu13.3.0 original, restaurado y verificado |
 | Transporte anterior conservado | τ14,4,adjunto714420565;314 cargas y30+14 controles |
 | Asignación anterior | p3_144_a16_20261105 produjo16;sesión81225 inaccesible sin salida observada |
-| Preparación siguiente | p3_16_a24_20261106; capacidad propia, reserva y activación pendientes |
+| Preparación siguiente | p3_16_a24_20261106; capacidad propia positiva, reserva publicada en este commit y activación pendiente |
 | Agilización | Empaquetado9,91→0,312 s;bytes idénticos;5522 bytes adicionales;no acelera el integrador |
 
 [Recuperación pública](checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/RECUPERACION_PUBLICA.json) · [métricas originales](checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/METRICAS_ORIGINALES.json) · [reconciliación](checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/RECONCILIACION.json) · [registro canónico](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json) · [serialización](checkpoints/CP12/p3_20261018/conservacion_rapida_20261105/REGISTRO.json).

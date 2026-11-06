@@ -6,7 +6,7 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
@@ -18,7 +18,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | Última frontera completa positiva P3 | τ16 |
 | Transporte interno recuperado | τ14.4 |
 | Próxima frontera completa | τ24, pendiente |
-| Trabajadores propios activos | 0 |
+| Trabajadores propios activos | 1 |
 
 Registro: [checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
 
