@@ -52,3 +52,8 @@ se conservan, con [enmienda de implementación](informes/ENMIENDA_CP11_PRECISION
 anterior a la ejecución correctiva y sin relajar tolerancias.
 
 `main` se actualiza sólo mediante PR verificado; CP10 permanece inmutable.
+
+
+## 6 de noviembre de2026: guardado híbrido de P3
+
+Se registra [la enmienda administrativa](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/ENMIENDA.md):local exacto0,4;transportes persistentes1,6 con recuperación nativa y dos últimos verificados;fronteras8 en Releases con recuperación pública y todas las puertas originales. Sólo en nuevas asignaciones desde24,después de registro,pruebas y capacidad propia. No cambia física ni criterios.22,4→24 mantiene el ejecutor anterior intacto.

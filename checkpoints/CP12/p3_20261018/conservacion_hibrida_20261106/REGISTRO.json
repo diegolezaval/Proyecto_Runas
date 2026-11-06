@@ -1,0 +1,30 @@
+{
+  "schema": "CP12_P3_HYBRID_ADMIN_REGISTRATION_V1",
+  "registered_before_use": true,
+  "at_utc": "2026-11-06T19:04:13.192076+00:00",
+  "effective_in_new_segments_from_boundary": 24,
+  "policy_sha256": "fb6f61c5968b85b98e03ab1da79663b4959dd2728c612f95265f421640cd3661",
+  "administrative_sources": {
+    "POLITICA.json": "fb6f61c5968b85b98e03ab1da79663b4959dd2728c612f95265f421640cd3661",
+    "base_preservar.py": "3aafd0b8157d2f6f9f4140db35f95163e385dda962762cdc8aeaa09fbd98b0fe",
+    "continuar.py": "f4e2ba94cba2bb607e55c525046b27036c51f3d6433e1aa4dcbd00aecd6f78a5",
+    "preservar.py": "c9625db31bbdf677fb6dad8f48c36e9d5d556875c5c72f70ef7fdd81da8957da",
+    "probar.py": "d8620a892128576ea06d4513383794f594211d46669b3a41e41d2b694d82c827"
+  },
+  "bounded_tests": "checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/CONTROLES_ADMINISTRATIVOS.json",
+  "bounded_tests_sha256": "13512c79acbaf7bd6497b5ecc47f6947abb23b132f11681d853b24da266001b9",
+  "original_sources_reused": {
+    "preserver": "3aafd0b8157d2f6f9f4140db35f95163e385dda962762cdc8aeaa09fbd98b0fe",
+    "restore_activate_metrics_and_physical_loop": "Exact original AST; only three administrative calls added to runner"
+  },
+  "reused_proofs": [
+    "checkpoints/CP12/p3_20261018/conservacion_rapida_20261105/CONTROLES_ADMINISTRATIVOS.json",
+    "checkpoints/CP12/p3_20261018/conservacion_rapida_20261105/COMPARACION_EMPAQUETADO.json",
+    "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json#P3_one_interval_transport_control"
+  ],
+  "real_current_capacity_still_required": true,
+  "scientific_sources_changed": false,
+  "original_auditors_changed": false,
+  "thresholds_changed": false,
+  "CP12_closed": false
+}
