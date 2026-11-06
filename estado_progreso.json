@@ -2211,8 +2211,32 @@
   "complete_primordials": 0,
   "next_calculation": "Continuar16→24 sólo con registro, conservación real del nuevo proceso,reserva pública y activación. Usar la serialización sin pérdidas registrada; auditores, memoria exacta y puertas originales intactos.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [],
-  "research_in_progress": [],
+  "numerical_runs_in_progress": [
+    {
+      "campaign": "CP12_P3",
+      "allocation_id": "p3_16_a24_20261105",
+      "status": "WAITING_REGISTERED_ACTIVATION_16_A24",
+      "source_observer_clock": 16,
+      "next_full_frontier": 24,
+      "evidence": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/ASIGNACION_16_A24.json",
+      "original_trajectories_repeated": false,
+      "current_process_M2_steps_executed": 0,
+      "CP12_closed": false
+    }
+  ],
+  "research_in_progress": [
+    {
+      "campaign": "CP12_P3",
+      "allocation_id": "p3_16_a24_20261105",
+      "status": "WAITING_REGISTERED_ACTIVATION_16_A24",
+      "source_observer_clock": 16,
+      "next_full_frontier": 24,
+      "evidence": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/ASIGNACION_16_A24.json",
+      "original_trajectories_repeated": false,
+      "current_process_M2_steps_executed": 0,
+      "CP12_closed": false
+    }
+  ],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
   "delivery_boundary": "CP11 aceptado;CP12 abierto;P3 sin validar. Frontera16 nativa y pública recuperada:324 cargas,30 controles originales,cinco métricas y diez controles físicos positivos,sin pasos nuevos en esta revisión. Transporte14,4 se conserva como historia;no repetir14,4→16. Compilador original intacto. P2 suspendido.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
@@ -2228,17 +2252,17 @@
   "checkpoint_kind": "CIENTIFICO",
   "automatic_continuation_paused": {
     "paused": true,
-    "reason": "La frontera16 pasó; falta capacidad, reserva y activación del nuevo proceso16→24 antes de física.",
+    "reason": "Capacidad real positiva y reserva publicada; falta activación pública recuperada antes de física.",
     "M2_exhaustion_claimed": false,
     "CP12_closed": false
   },
   "execution_activity": {
     "activity_known": true,
-    "scope": "Este proceso sólo recuperó y leyó16; la sesión anterior81225 es inaccesible sin salida observada.",
-    "own_worker_status": "NO_PHYSICAL_WORKER_CURRENT_PROCESS_FRONTIER16_RECOVERED",
+    "scope": "Un único trabajador reservado con ambos locks;espera activación,sin pasos nuevos.",
+    "own_worker_status": "WAITING_REGISTERED_ACTIVATION_16_A24",
     "historical_termination_assumed": false,
     "activity_is_restart_certificate": false,
-    "evidence": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/RECONCILIACION.json"
+    "evidence": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/ASIGNACION_16_A24.json"
   },
   "latest_verified_cp12_restart": {
     "time": 160,
@@ -2519,27 +2543,28 @@
     "native_recovered_transport": 14.4,
     "github_recovered_transport": 14.4,
     "next_full_frontier": 24,
-    "own_workers": 0,
+    "own_workers": 1,
     "own_physical_workers": 0,
     "historical_worker_activity": "INACCESIBLE_SIN_SALIDA_OBSERVADA",
     "forward_evolution_started": true,
     "current_run_forward_evolution_started": false,
     "canonical_register": "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
     "evidence": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/RESULTADO.json",
-    "preservation_in_current_process": "FRONTERA16_NATIVA_Y_GITHUB_RECUPERADOS",
+    "preservation_in_current_process": "CAPACIDAD_NATIVA_Y_GITHUB_RECUPERADA",
     "preservation_gate_passed": true,
-    "current_worker_capacity_passed": false,
-    "observed_at_utc": "2026-11-06T01:01:33.752291+00:00",
-    "administrative_phase": "FRONTERA16_POSITIVA_NUEVA_CAPACIDAD_PENDIENTE",
+    "current_worker_capacity_passed": true,
+    "observed_at_utc": "2026-11-06T01:17:57.421089+00:00",
+    "administrative_phase": "WAITING_REGISTERED_ACTIVATION_16_A24",
     "administrative_report": "informes/CONSERVACION_P3_T16_Y_AGILIZACION_20261105.md",
     "scientific_report": "informes/CONSERVACION_P3_T16_Y_AGILIZACION_20261105.md",
     "source_identity": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/ORIGEN.json",
     "activity_clock_is_restart_certificate": false,
     "last_activity_observer_clock": 16,
     "new_allocation_prepared": "p3_16_a24_20261105",
-    "new_reservation_published": false,
+    "new_reservation_published": true,
     "new_activation_published": false,
-    "latest_recoverable_observer_clock": 16
+    "latest_recoverable_observer_clock": 16,
+    "capacity_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/capacidad/ACEPTACION_COMBINADA.json"
   },
   "latest_verified_cp12_P3_transport": {
     "observer_clock": 14.4,

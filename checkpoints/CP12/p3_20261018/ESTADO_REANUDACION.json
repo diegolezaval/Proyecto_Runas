@@ -1,8 +1,8 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-11-06T01:01:33.752291+00:00",
+  "updated_at": "2026-11-06T01:17:57.421089+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
-  "last_public_commit": "0e647ac1870aa21243ff1960cd4f0c982134bb0b",
+  "last_public_commit": "9c282e1f6e865e90581167cce97159328760d98c",
   "own_attempt_home": "/workspace/scratch/0f402422cb34/cierre16/github/extraido",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
@@ -222,7 +222,7 @@
     "CP12_closed": false,
     "correction_validated": false
   },
-  "current_own_worker_status": "NO_PHYSICAL_WORKER_CURRENT_PROCESS_FRONTIER16_RECOVERED",
+  "current_own_worker_status": "WAITING_REGISTERED_ACTIVATION_16_A24",
   "own_observed_start": {
     "at": "2026-11-05T18:57:52.235478+00:00",
     "clock": 14.41,
@@ -233,7 +233,7 @@
     "replay96_to112_executed": false,
     "CP12_closed": false
   },
-  "own_guardian_tool_session_id": null,
+  "own_guardian_tool_session_id": 23949,
   "own_exit_observed": false,
   "current_target": 24,
   "conditional_horizon": 160,
@@ -250,7 +250,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/CERTIFICADO_FRONTERA.json",
   "current_helper_directory": "/workspace/scratch/0f402422cb34/helpers16",
-  "next_recovery": "Capacidad real del nuevo trabajador16→24, reserva pública y activación; sin repetir14,4→16.",
+  "next_recovery": "Recuperar reserva y publicar/recuperar activación16→24 antes de entregar su archivo al proceso23949.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -1470,8 +1470,37 @@
   "resumption_t16_20261105": {
     "allocation_id": "p3_16_a24_20261105",
     "registry": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/REGISTRO.json",
-    "actual_process_capacity_pending": true,
-    "reservation_published": false,
-    "activation_published": false
+    "actual_process_capacity_pending": false,
+    "reservation_published": true,
+    "activation_published": false,
+    "capacity_acceptance_sha256": "1ff2e99a19e2c5819c22ff8eb8a1e91db263709227f802ea0c5ccf39375cc6f4",
+    "reservation": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/ASIGNACION_16_A24.json",
+    "own_tool_session": 23949,
+    "capacity": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/capacidad/ACEPTACION_COMBINADA.json"
+  },
+  "current_process_worker_created": true,
+  "global_delivery_t16_20261105": {
+    "schema": "RUNICA_GLOBAL_DELIVERY_PUBLIC_RECOVERY_V1",
+    "passed": true,
+    "github_asset_id": 715446690,
+    "file_name": "Proyecto_Runas_CONSERVACION_T16_20261105.zip",
+    "bytes": 305632226,
+    "sha256": "a91290c4e83de98e31139a95269ae56e5959fe1cce1b923219b6a9d985c993e4",
+    "source_commit": "9c282e1f6e865e90581167cce97159328760d98c",
+    "source_git_tree": "d7478a3baa67eb7482f822d668912db8b32eea17",
+    "files": 2761,
+    "exact_git_tree_coverage": true,
+    "all_git_blobs_verified": true,
+    "independent_extracted_checkpoint_verification": {
+      "passed": true,
+      "files": 2760,
+      "failures": [],
+      "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+      "scope": "Identidad de bytes y contexto; no aceptación científica."
+    },
+    "scientific_frontier_capsule_separate_asset": 715405768,
+    "M2_steps_executed": 0,
+    "CP12_closed": false,
+    "scope": "Exact Git corpus of the stated commit; frontier16 capsule is independently published and audited."
   }
 }

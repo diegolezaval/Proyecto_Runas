@@ -1,0 +1,24 @@
+{
+  "schema": "RUNICA_GLOBAL_DELIVERY_PUBLIC_RECOVERY_V1",
+  "passed": true,
+  "github_asset_id": 715446690,
+  "file_name": "Proyecto_Runas_CONSERVACION_T16_20261105.zip",
+  "bytes": 305632226,
+  "sha256": "a91290c4e83de98e31139a95269ae56e5959fe1cce1b923219b6a9d985c993e4",
+  "source_commit": "9c282e1f6e865e90581167cce97159328760d98c",
+  "source_git_tree": "d7478a3baa67eb7482f822d668912db8b32eea17",
+  "files": 2761,
+  "exact_git_tree_coverage": true,
+  "all_git_blobs_verified": true,
+  "independent_extracted_checkpoint_verification": {
+    "passed": true,
+    "files": 2760,
+    "failures": [],
+    "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
+    "scope": "Identidad de bytes y contexto; no aceptación científica."
+  },
+  "scientific_frontier_capsule_separate_asset": 715405768,
+  "M2_steps_executed": 0,
+  "CP12_closed": false,
+  "scope": "Exact Git corpus of the stated commit; frontier16 capsule is independently published and audited."
+}

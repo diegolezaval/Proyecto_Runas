@@ -6,10 +6,13 @@
   "source_metrics": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/METRICAS_ORIGINALES.json",
   "source_all_original_prefix_gates_passed": true,
   "registration_created_before_M2": true,
-  "actual_worker_capacity_pending": true,
-  "reservation_published": false,
+  "actual_worker_capacity_pending": false,
+  "reservation_published": true,
   "activation_published": false,
   "current_process_M2_steps_executed": 0,
   "scientific_sources_changed": false,
-  "CP12_closed": false
+  "CP12_closed": false,
+  "current_original_30_boundary_audits_passed": true,
+  "capacity_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/capacidad/ACEPTACION_COMBINADA.json",
+  "reservation_scope": "Commit que contiene ASIGNACION_16_A24.json; activación requiere recuperarlo públicamente."
 }
