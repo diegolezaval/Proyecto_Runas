@@ -1,9 +1,9 @@
 {
   "schema": "CP12_P3_CANONICAL_RECOVERY_REGISTER",
-  "updated_at": "2026-11-06T14:12:52.105610+00:00",
+  "updated_at": "2026-11-06T18:57:02.119447+00:00",
   "branch": "ciencia/cp12-residuo-p3-20261018",
   "last_public_commit": "4ae4b1bc038d34972e8e1434ed8bfe100d9a8004",
-  "own_attempt_home": "/workspace/scratch/5906e16f70b6/worker16",
+  "own_attempt_home": "/workspace/scratch/65d547c6c4de/public224/extraido",
   "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
   "execution_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
   "accepted_scientific_checkpoint": "CP11",
@@ -13,7 +13,7 @@
   "formal_radial_order": 2,
   "global_sixth_order_claim": false,
   "latest_full_trial_frontier_recovered_and_audited": 16,
-  "latest_recoverable_observer_clock": 20.8,
+  "latest_recoverable_observer_clock": 22.4,
   "latest_full_frontier_proof": {
     "schema": "CP12_P3_TRIAL_BOUNDARY_PERMANENTLY_RECOVERED_AND_AUDITED",
     "passed": true,
@@ -150,20 +150,30 @@
     "final_protocol_acceptance": false
   },
   "latest_transport_proof": {
-    "schema": "CP12_P3_FORWARD_TRANSPORT_PERMANENTLY_RECOVERED",
-    "passed": true,
-    "observer_clock": 20.8,
+    "kind": "transport",
+    "observer_clock": 22.4,
     "closed_boundary": 16,
     "target": 24,
-    "scientific_frontier": false,
-    "kind": "transport",
-    "library_file_id": "libfile_9b75233f948c8191bf3fd58d7a71b945",
-    "file_id": "file_00000000406082128580e12d39f4d865",
-    "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000208_P3_16_A24_20261106.zip",
-    "zip_bytes": 230326205,
-    "zip_sha256": "33b4f7406144a6849459a85fc9d1b402df409f12103ce099a527fc19d2c6a480",
-    "github_asset_id": 717383219,
-    "transport_state_sha256": "18c81eb793ef5f4b9a8b910a5700ec7f2c4253e41b4287f5c9c8357d0c466a38",
+    "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000224_P3_16_A24_20261106.zip",
+    "bytes": 230372773,
+    "sha256": "287581812d0c2c3fc0dd7bef2731b2eaf08aa20fa19a60e0421c9a85f5c1de00",
+    "library_file_id": "libfile_142d2f9ee5388191a13da1520ed45dc8",
+    "file_id": "file_000000005438820c98e91f9f679ab7ad",
+    "github_asset_id": 718197317,
+    "transport_state_sha256": "848c2fd55fe7fa271625bf7ca007e6741e92b58582283bdd1c02b09eb1322180",
+    "closed_state_sha256": "ac249962765a990e75fc25817f5c3d7ce9c0061430e3142719ccd97964e5c1ed",
+    "receipt_sha256": "4fe1495f9dc6b6e25ba97574918e9735fb7603e2d64cd392fbc50c680cd389ca",
+    "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+    "payload_files": 350,
+    "original_audit_test_counts": {
+      "boundary": 30,
+      "transport": 14
+    },
+    "scope": "Transporte exacto22.4 con límite24;frontera científica completa16.",
+    "CP12_closed": false,
+    "correction_validated": false,
+    "passed": true,
+    "native_and_public_recovery_passed": true,
     "independent_zero_step_audit": {
       "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
       "passed": true,
@@ -183,27 +193,27 @@
         "independently_reloaded_Parseval": true,
         "file_unchanged": true
       },
-      "observer_clock": 20.8,
+      "observer_clock": 22.4,
       "target": 24,
-      "state_sha256": "18c81eb793ef5f4b9a8b910a5700ec7f2c4253e41b4287f5c9c8357d0c466a38",
+      "state_sha256": "848c2fd55fe7fa271625bf7ca007e6741e92b58582283bdd1c02b09eb1322180",
       "physical_metadata": [
         {
-          "t": 20.802475737396644,
-          "accepted": 3848,
+          "t": 22.402663638178613,
+          "accepted": 4141,
           "nfev": 36124,
-          "nfev_live": 10646,
-          "maxe": 7.94191379327458e-11,
-          "maxq": 1.4432899320127035e-15,
-          "maxe_original": 3.7983602929614335e-09
+          "nfev_live": 14174,
+          "maxe": 8.24360579798622e-11,
+          "maxq": 1.5543122344752192e-15,
+          "maxe_original": 3.838849571558001e-09
         },
         {
-          "t": 20.80248194312378,
-          "accepted": 3848,
+          "t": 22.402690164651275,
+          "accepted": 4141,
           "nfev": 36124,
-          "nfev_live": 10646,
-          "maxe": 7.925482492510127e-11,
+          "nfev_live": 14174,
+          "maxe": 8.226297421032314e-11,
           "maxq": 4.440892098500626e-16,
-          "maxe_original": 1.0295234664781105e-09
+          "maxe_original": 1.0386779214499597e-09
         }
       ],
       "M2_steps_executed": 0,
@@ -211,16 +221,9 @@
       "correction_validated": false,
       "CP12_closed": false,
       "DOP853_construction_or_step_attempts": 0
-    },
-    "payload_files": 345,
-    "exact_manifest_coverage": true,
-    "all_payload_hashes_verified_before_and_after": true,
-    "native_and_public_recovery_passed": true,
-    "source_archive_and_payload_unchanged": true,
-    "M2_steps_executed_during_preservation": 0,
-    "CP12_closed": false
+    }
   },
-  "current_own_worker_status": "EVOLVING_16_A24",
+  "current_own_worker_status": "PREPARED_224_A24_NOT_STARTED",
   "own_observed_start": {
     "at": "2026-11-06T13:40:56.372097+00:00",
     "clock": 16.01,
@@ -231,7 +234,7 @@
     "replay96_to112_executed": false,
     "CP12_closed": false
   },
-  "own_guardian_tool_session_id": 77606,
+  "own_guardian_tool_session_id": null,
   "own_exit_observed": false,
   "current_target": 24,
   "conditional_horizon": 160,
@@ -248,7 +251,7 @@
   "new_pilot_source_commit": "61578e785c5516f80e04583f5b3fdb66896631d8",
   "recovery_public_certificate": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/CERTIFICADO_FRONTERA.json",
   "current_helper_directory": "/workspace/scratch/5906e16f70b6/helpers",
-  "next_recovery": "Mantener trabajador77606;conservar y recuperar22.4 antes de seguir;frontera24 y todas sus métricas pendientes. No repetir intervalos hasta20.8.",
+  "next_recovery": "Crear trabajador propio22.4→24 con código anterior intacto;capacidad propia,reserva y activación recuperadas antes de física. Aplicar guardado híbrido sólo tras cerrar24.",
   "original_thresholds": {
     "both_energy": 0.0002,
     "charge": 1e-09,
@@ -1695,5 +1698,30 @@
       19.2,
       20.8
     ]
-  ]
+  ],
+  "inaccessible_prior_allocation": {
+    "schema": "CP12_P3_RECOVERY_RECONCILIATION_V2",
+    "at_utc": "2026-11-06T18:57:02.119447+00:00",
+    "head_checked": "99c1cafd5e5e9aa2b4bbca2f0c5e8cbf67fc9ebe",
+    "later_commits_found": false,
+    "later_native_files_found": false,
+    "latest_native_file": "libfile_142d2f9ee5388191a13da1520ed45dc8",
+    "prior_allocation": "p3_16_a24_20261106",
+    "prior_session": 77606,
+    "session_access_result": "write_stdin failed: Unknown process id 77606",
+    "prior_home": "/workspace/scratch/5906e16f70b6/worker16",
+    "prior_home_present": false,
+    "exit_observed": false,
+    "termination_assumed": false,
+    "old_allocation_must_not_reactivate": true,
+    "old_private_publication_files_not_recreated": true,
+    "latest_recoverable_observer_clock": 22.4,
+    "latest_full_positive_frontier": 16,
+    "native_and_public_recovery_passed": true,
+    "scientific_interval_repeated": false,
+    "current_process_M2_steps_executed": 0,
+    "new_allocation": "p3_224_a24_20261106",
+    "policy_until_24": "Previous dual native/public policy unchanged; hybrid starts only in new segment after24.",
+    "CP12_closed": false
+  }
 }

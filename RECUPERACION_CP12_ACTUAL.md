@@ -1,26 +1,18 @@
-# CP12/P3: frontera τ16 conservada y positiva
+# Retomar CP12/P3
 
-**Actualización6 de noviembre: [reconciliación16→24](informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md).** La activación de p3_16_a24_20261105 está publicada; su entrega al trabajador23949 no está acreditada y la sesión es inaccesible. No reactivarla. La nueva asignación p3_16_a24_20261106 tiene capacidad propia y reserva/activación públicas recuperadas; la activación se entregó al único trabajador77606 y se observó avance a16,01 con2 pasos aceptados por malla. Transporte20,8 conservado y recuperado nativa y públicamente (717383219,230326205 bytes,SHA25633b4f7406144a6849459a85fc9d1b402df409f12103ce099a527fc19d2c6a480). No repetir intervalos hasta20,8. Frontera24 y sus métricas pendientes.
+Actualización:6 de noviembre de2026,Lima. CP11 aceptado;CP12 abierto;P3 sin validar.
 
-**CP11 aceptado; CP12 abierto; P3 sin validar. Última frontera completa positiva τ16; siguiente frontera condicionada τ24.** [Entrega actual](informes/CONSERVACION_P3_T16_Y_AGILIZACION_20261105.md).
+| Hecho | Evidencia vigente |
+|---|---|
+| Última frontera científica completa positiva | τ16;cinco métricas y controles originales positivos |
+| Último transporte exacto recuperado | τ22,4 con límite24;350 cargas;30+14 controles originales;cero evolución en auditorías |
+| Biblioteca | libfile_142d2f9ee5388191a13da1520ed45dc8 |
+| GitHub Release | adjunto718197317;230372773 bytes;SHA256287581812d0c2c3fc0dd7bef2731b2eaf08aa20fa19a60e0421c9a85f5c1de00 |
+| Trabajador anterior |77606 inaccesible;salida no observada;no reactivar p3_16_a24_20261106 |
+| Nueva asignación |p3_224_a24_20261106 preparada;capacidad/reserva/activación pendientes |
+| Siguiente acción |Restauración interna exacta22,4→24;no repetir intervalos conservados |
+| Conservación |Hasta24 rige publicación y recuperación en ambos destinos;híbrido en preparación para el segmento siguiente |
 
-| Referencia | Estado comprobado |
-| --- | --- |
-| Frontera vigente | τ16; recuperación nativa y pública independientes |
-| Adjunto GitHub | 715405768 |
-| Tamaño | 230213899 bytes |
-| SHA256 | 9627950c47e52280df00b5aab8e75358f653d4807c85db32e1b1cedcafabca12 |
-| Cargas y controles | 324 cargas;30 controles originales de frontera;cinco métricas y diez controles físicos positivos |
-| Pasos nuevos en la revisión | Cero; sin construir ni avanzar DOP853 en las auditorías |
-| Compilador | Ubuntu13.3.0 original, restaurado y verificado |
-| Transporte vigente | τ20,8,adjunto717383219;345 cargas,30+14 controles originales positivos;frontera completa vigente16 |
-| Transporte anterior conservado | τ14,4,adjunto714420565;314 cargas y30+14 controles |
-| Asignación anterior | p3_144_a16_20261105 produjo16;sesión81225 inaccesible sin salida observada |
-| Asignación vigente | p3_16_a24_20261106; trabajador77606 activo, activación recibida e inicio16,01 observado |
-| Agilización | Empaquetado9,91→0,312 s;bytes idénticos;5522 bytes adicionales;no acelera el integrador |
+[Origen y recibos](checkpoints/CP12/p3_20261018/recuperacion_t224_20261106/ORIGEN.json) · [reconciliación](checkpoints/CP12/p3_20261018/recuperacion_t224_20261106/RECONCILIACION.json) · [registro canónico](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json) · [nueva asignación](checkpoints/CP12/p3_20261018/reanudacion_t224_20261106/REGISTRO.json).
 
-[Recuperación pública](checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/RECUPERACION_PUBLICA.json) · [métricas originales](checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/METRICAS_ORIGINALES.json) · [reconciliación](checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/RECONCILIACION.json) · [registro canónico](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json) · [serialización](checkpoints/CP12/p3_20261018/conservacion_rapida_20261105/REGISTRO.json).
-
-No repetir9,6→11,2,11,2→12,8,12,8→14,4 ni14,4→16. No reactivar asignaciones anteriores ni recrear sus archivos privados de publicación. La fuente para continuar es el estado cerrado16; el transporte interno antiguo incluido es forense. La nueva asignación necesita capacidad del proceso real,reserva pública y activación coincidente antes de física. En24 y cada frontera posterior se mantienen recuperación independiente,todas las métricas y puertas. Un negativo se conserva y suspende esa versión.
-
-La entrega global anterior714432978 recuperó exactamente2715 archivos de d132238;709420494 tiene recuperación documentada de2625 archivos de e6c388. No repetir arreglos administrativos antiguos. No reanudar P2,CP10,CP12 original,CP04 ni F0…F5. Main mantiene CP11 y116/308 conserva su alcance histórico. [Relevo](CONTINUAR_EN_CHAT_NUEVO.md) · [Release experimental](https://github.com/diegolezaval/Proyecto_Runas/releases/tag/respaldo-cp12-p3-20261027).
+No reutilizar capacidades históricas ni reconstruir permisos privados. No repetir hasta22,4. En24:recuperación pública independiente,cinco métricas espaciales originales y controles físicos antes de otro tramo. Negativo:conservar y suspender,sin candidato automático. Mantener fuentes,M2,Θ,CP04,mallas,tolerancias,observadores y umbrales. No reanudar P2,CP10,CP12 original ni F0…F5.
