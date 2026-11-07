@@ -1,0 +1,539 @@
+{
+  "schema": "CP12_REANUDADOR_TEST_RECEIPT_V1",
+  "date_lima": "2026-11-07",
+  "scientific_base": "6153caeaa8bee7c80b87897693fe97ff2dd34126",
+  "real_read_only_checks": {
+    "historical_transport_cold": {
+      "head": "2434e69871f4c20314aafceb04c0eda754c927c5",
+      "status": "VERIFICADO_HISTORICO",
+      "origin_clock": 28.8,
+      "origin_sha256": "71bd793e23c4e48335ee7a4e12576659f648394f0824a26470694cc9c7add2c3",
+      "last_stage": "INICIO_HISTORICO_ACREDITADO",
+      "duration_seconds": 108.854,
+      "timings_seconds": {
+        "descarga": 70.516,
+        "auditoria": 27.387,
+        "espera": 0,
+        "consulta": 10.566
+      },
+      "chat_requests_this_invocation": 0,
+      "zero_step_audits": {
+        "frontier_audit": {
+          "reused": false,
+          "tests": {
+            "boundary": 30
+          },
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0
+        },
+        "origin_audit": {
+          "reused": false,
+          "tests": {
+            "boundary": 30,
+            "transport": 14
+          },
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0
+        },
+        "restore": {
+          "reused": false,
+          "passed": true,
+          "clock": 28.8,
+          "target": 32,
+          "physical_metadata": [
+            {
+              "t": 28.804777771777808,
+              "accepted": 5308,
+              "nfev": 53814,
+              "nfev_live": 10550,
+              "maxe": 9.501432973735291e-11,
+              "maxq": 1.5543122344752192e-15,
+              "maxe_original": 1.0234292413535684e-08
+            },
+            {
+              "t": 28.805025440573957,
+              "accepted": 5308,
+              "nfev": 53814,
+              "nfev_live": 10550,
+              "maxe": 9.480771723247017e-11,
+              "maxq": 4.440892098500626e-16,
+              "maxe_original": 2.7390126833282125e-09
+            }
+          ],
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0,
+          "CP12_closed": false
+        }
+      },
+      "historical_receipt_chain": {
+        "archive_sha256": "71bd793e23c4e48335ee7a4e12576659f648394f0824a26470694cc9c7add2c3",
+        "native_capacity": "libfile_3ce962cbef5481919107e2df696f77a5",
+        "public_capacity": 719770019,
+        "reserved": "f39689d3ca0eec060415598987ea601f8393e627",
+        "activation": "696c293f9b171d03889c68b5b3042c963cf17f65",
+        "first": {
+          "at": "2026-11-07T05:56:23.576059+00:00",
+          "clock": 28.81,
+          "accepted_steps_since_restore": [
+            1,
+            1
+          ],
+          "replay96_to112_executed": false,
+          "CP12_closed": false
+        }
+      }
+    },
+    "historical_transport_repeat": {
+      "head": "2434e69871f4c20314aafceb04c0eda754c927c5",
+      "status": "VERIFICADO_HISTORICO",
+      "origin_clock": 28.8,
+      "origin_sha256": "71bd793e23c4e48335ee7a4e12576659f648394f0824a26470694cc9c7add2c3",
+      "last_stage": "INICIO_HISTORICO_ACREDITADO",
+      "duration_seconds": 7.225,
+      "timings_seconds": {
+        "descarga": 0,
+        "auditoria": 0.482,
+        "espera": 0,
+        "consulta": 6.473
+      },
+      "chat_requests_this_invocation": 0,
+      "zero_step_audits": {
+        "frontier_audit": {
+          "reused": true,
+          "tests": {
+            "boundary": 30
+          },
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0
+        },
+        "origin_audit": {
+          "reused": true,
+          "tests": {
+            "boundary": 30,
+            "transport": 14
+          },
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0
+        },
+        "restore": {
+          "reused": true,
+          "passed": true,
+          "clock": 28.8,
+          "target": 32,
+          "physical_metadata": [
+            {
+              "t": 28.804777771777808,
+              "accepted": 5308,
+              "nfev": 53814,
+              "nfev_live": 10550,
+              "maxe": 9.501432973735291e-11,
+              "maxq": 1.5543122344752192e-15,
+              "maxe_original": 1.0234292413535684e-08
+            },
+            {
+              "t": 28.805025440573957,
+              "accepted": 5308,
+              "nfev": 53814,
+              "nfev_live": 10550,
+              "maxe": 9.480771723247017e-11,
+              "maxq": 4.440892098500626e-16,
+              "maxe_original": 2.7390126833282125e-09
+            }
+          ],
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0,
+          "CP12_closed": false
+        }
+      },
+      "historical_receipt_chain": {
+        "archive_sha256": "71bd793e23c4e48335ee7a4e12576659f648394f0824a26470694cc9c7add2c3",
+        "native_capacity": "libfile_3ce962cbef5481919107e2df696f77a5",
+        "public_capacity": 719770019,
+        "reserved": "f39689d3ca0eec060415598987ea601f8393e627",
+        "activation": "696c293f9b171d03889c68b5b3042c963cf17f65",
+        "first": {
+          "at": "2026-11-07T05:56:23.576059+00:00",
+          "clock": 28.81,
+          "accepted_steps_since_restore": [
+            1,
+            1
+          ],
+          "replay96_to112_executed": false,
+          "CP12_closed": false
+        }
+      }
+    },
+    "historical_boundary_as_origin": {
+      "head": "e13e7dc80dc0bb6ad0dbe609d5da8f96545e3dad",
+      "status": "VERIFICADO_HISTORICO",
+      "origin_clock": 24,
+      "origin_sha256": "13660aae72467ccb2eda738d773103c8b14cb1950f4ed84a959cfb6f3f10fed6",
+      "last_stage": "INICIO_HISTORICO_ACREDITADO",
+      "duration_seconds": 18.821,
+      "timings_seconds": {
+        "descarga": 0,
+        "auditoria": 12.008,
+        "espera": 0,
+        "consulta": 6.54
+      },
+      "chat_requests_this_invocation": 0,
+      "zero_step_audits": {
+        "frontier_audit": {
+          "reused": false,
+          "tests": {
+            "boundary": 30
+          },
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0
+        },
+        "origin_audit": {
+          "reused": false,
+          "tests": {
+            "boundary": 30
+          },
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0
+        },
+        "restore": {
+          "reused": false,
+          "passed": true,
+          "clock": 24.0,
+          "target": 32,
+          "physical_metadata": [
+            {
+              "t": 24.0,
+              "accepted": 4433,
+              "nfev": 53814,
+              "nfev_live": 0,
+              "maxe": 8.549450036809958e-11,
+              "maxq": 1.5543122344752192e-15,
+              "maxe_original": 6.044491684953357e-09
+            },
+            {
+              "t": 24.0,
+              "accepted": 4433,
+              "nfev": 53814,
+              "nfev_live": 0,
+              "maxe": 8.531153561364135e-11,
+              "maxq": 4.440892098500626e-16,
+              "maxe_original": 1.621005885077409e-09
+            }
+          ],
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0,
+          "CP12_closed": false
+        }
+      },
+      "historical_receipt_chain": {
+        "archive_sha256": "13660aae72467ccb2eda738d773103c8b14cb1950f4ed84a959cfb6f3f10fed6",
+        "native_capacity": "libfile_6d8fc45e720481919cd6ed4ce42faf01",
+        "public_capacity": 719094068,
+        "reserved": "46d91a5b4e76838462210af22930b356b3c32abc",
+        "activation": "68f461d4f6b86d209bcd6b46dc55bf3af0df677b",
+        "first": {
+          "at": "2026-11-07T00:42:25.644295+00:00",
+          "clock": 24.01,
+          "accepted_steps_since_restore": [
+            2,
+            2
+          ],
+          "replay96_to112_executed": false,
+          "CP12_closed": false
+        }
+      }
+    },
+    "current_resume_before_publication_gate": {
+      "head": "6153caeaa8bee7c80b87897693fe97ff2dd34126",
+      "status": "BLOQUEADO",
+      "origin_clock": 30,
+      "origin_sha256": "4e2d8349206182f84648959a1823acf800eb518d21ee7d4b8d566d696553b628",
+      "last_stage": "CAPACIDAD_NATIVA_REGISTRADA",
+      "duration_seconds": 37.411,
+      "timings_seconds": {
+        "descarga": 4.466,
+        "auditoria": 19.661,
+        "espera": 0,
+        "consulta": 13.016
+      },
+      "chat_requests_this_invocation": 1,
+      "zero_step_audits": {
+        "frontier_audit": {
+          "reused": true,
+          "tests": {
+            "boundary": 30
+          },
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0
+        },
+        "origin_audit": {
+          "reused": false,
+          "tests": {
+            "boundary": 30,
+            "transport": 14
+          },
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0
+        },
+        "restore": {
+          "reused": false,
+          "passed": true,
+          "clock": 30.0,
+          "target": 32,
+          "physical_metadata": [
+            {
+              "t": 30.000820550265043,
+              "accepted": 5525,
+              "nfev": 53814,
+              "nfev_live": 13163,
+              "maxe": 9.746492501960802e-11,
+              "maxq": 1.5543122344752192e-15,
+              "maxe_original": 1.1547338751860536e-08
+            },
+            {
+              "t": 30.001191904552904,
+              "accepted": 5525,
+              "nfev": 53814,
+              "nfev_live": 13163,
+              "maxe": 9.725298344420708e-11,
+              "maxq": 4.440892098500626e-16,
+              "maxe_original": 3.126199410452557e-09
+            }
+          ],
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0,
+          "CP12_closed": false
+        }
+      },
+      "block": {
+        "code": "PUBLICACION_PREVIA",
+        "reason": "La revisión automática consideró que la autorización de publicación sólo abarcaba cápsulas de frontera completas.",
+        "action": "Comprobar si la sesión sigue accesible. Si sigue, obtener aprobación explícita para el adjunto exacto. Si se perdió, registrar su aislamiento y una asignación nueva",
+        "file": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_PUBLICO_P3_30_A32_RESCATE_20261107.zip",
+        "destination": "https://github.com/diegolezaval/Proyecto_Runas/releases/tag/respaldo-cp12-p3-20261027",
+        "chat": true
+      },
+      "worker": {
+        "session": 55685,
+        "accessible_from_test": false,
+        "exit_observed": false,
+        "observation": "El entorno y la sesión histórica no eran accesibles desde la prueba"
+      }
+    },
+    "current_resume_repeat": {
+      "head": "6153caeaa8bee7c80b87897693fe97ff2dd34126",
+      "status": "BLOQUEADO",
+      "origin_clock": 30,
+      "origin_sha256": "4e2d8349206182f84648959a1823acf800eb518d21ee7d4b8d566d696553b628",
+      "last_stage": "CAPACIDAD_NATIVA_REGISTRADA",
+      "duration_seconds": 30.527,
+      "timings_seconds": {
+        "descarga": 0,
+        "auditoria": 17.995,
+        "espera": 0,
+        "consulta": 12.263
+      },
+      "chat_requests_this_invocation": 0,
+      "zero_step_audits": {
+        "frontier_audit": {
+          "reused": true,
+          "tests": {
+            "boundary": 30
+          },
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0
+        },
+        "origin_audit": {
+          "reused": false,
+          "tests": {
+            "boundary": 30,
+            "transport": 14
+          },
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0
+        },
+        "restore": {
+          "reused": false,
+          "passed": true,
+          "clock": 30.0,
+          "target": 32,
+          "physical_metadata": [
+            {
+              "t": 30.000820550265043,
+              "accepted": 5525,
+              "nfev": 53814,
+              "nfev_live": 13163,
+              "maxe": 9.746492501960802e-11,
+              "maxq": 1.5543122344752192e-15,
+              "maxe_original": 1.1547338751860536e-08
+            },
+            {
+              "t": 30.001191904552904,
+              "accepted": 5525,
+              "nfev": 53814,
+              "nfev_live": 13163,
+              "maxe": 9.725298344420708e-11,
+              "maxq": 4.440892098500626e-16,
+              "maxe_original": 3.126199410452557e-09
+            }
+          ],
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0,
+          "CP12_closed": false
+        }
+      },
+      "block": {
+        "code": "PUBLICACION_PREVIA",
+        "reason": "La revisión automática consideró que la autorización de publicación sólo abarcaba cápsulas de frontera completas.",
+        "action": "Comprobar si la sesión sigue accesible. Si sigue, obtener aprobación explícita para el adjunto exacto. Si se perdió, registrar su aislamiento y una asignación nueva",
+        "file": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_PUBLICO_P3_30_A32_RESCATE_20261107.zip",
+        "destination": "https://github.com/diegolezaval/Proyecto_Runas/releases/tag/respaldo-cp12-p3-20261027",
+        "chat": true
+      }
+    },
+    "public_capacity_existing_and_locally_generated": {
+      "real_existing_asset": 719770019,
+      "independent_recovery": {
+        "name": "SUBIDA_PUBLICA_RECONCILIADA",
+        "at": "2026-11-07T13:20:56.425448+00:00",
+        "asset_id": 719770019,
+        "recovery": {
+          "reused": false,
+          "tests": {
+            "boundary": 30
+          },
+          "M2_steps_executed": 0,
+          "DOP853_construction_or_step_attempts": 0
+        }
+      },
+      "recovered_comparison": {
+        "exact_public_frontier_payload": 358,
+        "exact_public_frontier_inventory": 1,
+        "deterministic_public_algorithm_filler": 1,
+        "deterministic_filler_description": 1,
+        "derived_inventory_only": 1
+      },
+      "generated_comparison": {
+        "exact_public_frontier_payload": 358,
+        "exact_public_frontier_inventory": 1,
+        "deterministic_public_algorithm_filler": 1,
+        "deterministic_filler_description": 1,
+        "derived_inventory_only": 1
+      },
+      "generated_sha256": "2bf07462cfaad80d8f774190d89ae4b519abf70af07a562825ee3e78390062f4",
+      "M2_steps_executed": 0,
+      "production_uploads": 0,
+      "timings_seconds": {
+        "descarga": 22.626,
+        "auditoria": 17.021,
+        "espera": 0,
+        "consulta": 4.976
+      },
+      "timing_events": [
+        {
+          "category": "consulta",
+          "name": "GitHub Releases",
+          "seconds": 4.976
+        },
+        {
+          "category": "auditoria",
+          "name": "SHA256 CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_FRONTERA_0024_P3_224_A24_20261106.zip",
+          "seconds": 0.114
+        },
+        {
+          "category": "descarga",
+          "name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_PUBLICO_P3_288_A32_HIBRIDO_20261107.zip",
+          "seconds": 22.626
+        },
+        {
+          "category": "auditoria",
+          "name": "SHA256 CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_PUBLICO_P3_288_A32_HIBRIDO_20261107.zip",
+          "seconds": 0.113
+        },
+        {
+          "category": "auditoria",
+          "name": "SHA256 CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_PUBLICO_P3_288_A32_HIBRIDO_20261107.zip",
+          "seconds": 0.112
+        },
+        {
+          "category": "auditoria",
+          "name": "Comparar contenido permitido del control público",
+          "seconds": 0.576
+        },
+        {
+          "category": "auditoria",
+          "name": "Capacidad CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_PUBLICO_P3_288_A32_HIBRIDO_20261107.zip",
+          "seconds": 7.512
+        },
+        {
+          "category": "auditoria",
+          "name": "Construcción con la frontera publicada",
+          "seconds": 7.906
+        },
+        {
+          "category": "auditoria",
+          "name": "SHA256 CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_PUBLICO_P3_288_A32_HIBRIDO_20261107.zip",
+          "seconds": 0.114
+        },
+        {
+          "category": "auditoria",
+          "name": "Comparar contenido permitido del control público",
+          "seconds": 0.574
+        }
+      ]
+    }
+  },
+  "deliberate_fault_on_copy_of_real_archive": {
+    "changed_byte_offset": 4096,
+    "size_unchanged": true,
+    "result": {
+      "head": "2434e69871f4c20314aafceb04c0eda754c927c5",
+      "status": "BLOQUEADO",
+      "origin_clock": 28.8,
+      "origin_sha256": "71bd793e23c4e48335ee7a4e12576659f648394f0824a26470694cc9c7add2c3",
+      "last_stage": "FRONTERA_AUDITADA",
+      "duration_seconds": 5.967,
+      "timings_seconds": {
+        "descarga": 0,
+        "auditoria": 0.359,
+        "espera": 0,
+        "consulta": 5.349
+      },
+      "chat_requests_this_invocation": 0,
+      "block": {
+        "code": "COMPROBACION_FALLIDA",
+        "reason": "ValueError: Tamaño o SHA256 incorrecto: CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000288_P3_24_A32_HIBRIDO_20261106.zip",
+        "action": "Consultar el recibo y corregir la comprobación antes de repetir",
+        "file": null,
+        "destination": null,
+        "chat": true
+      }
+    }
+  },
+  "isolated_tests": {
+    "count": 11,
+    "passed": 11,
+    "scope": "Git contra remoto local, locks de un proceso de prueba y casos controlados de publicación y activación",
+    "production_solvers_started": 0,
+    "coverage": [
+      "Sesión inaccesible con salida sin observar y trabajador ajeno activo",
+      "Publicación exacta ya existente, choque de hash y subida incierta",
+      "Respuesta perdida de push y rechazo de una rama concurrente",
+      "Interrupciones después de reserva, activación y entrega sin commits duplicados",
+      "Primer paso aceptado simulado y respaldo sin avance inferido",
+      "Reconciliación de capacidad nativa subida con resultado local perdido"
+    ]
+  },
+  "production_writes": {
+    "scientific_branch": 0,
+    "release_uploads": 0,
+    "library_uploads": 0,
+    "new_M2_steps": 0
+  },
+  "measurement_scope": {
+    "comparison": "Misma verificación histórica de extremo a extremo con caché vacía y con recibos reutilizados",
+    "cold_inputs": "Frontera pública, transporte nativo y compilador desde sus destinos persistentes",
+    "external_inventory": "Una consulta externa inicial para la pareja de verificaciones. La misma captura se reutilizó en la repetición",
+    "interventions": "Peticiones emitidas por el comando durante cada invocación. El bloqueo vigente se contabilizó una vez",
+    "historical_manual_baseline": "El expediente manual incluye capacidad, activación y física real. Su alcance difiere de la medición de verificación"
+  }
+}
