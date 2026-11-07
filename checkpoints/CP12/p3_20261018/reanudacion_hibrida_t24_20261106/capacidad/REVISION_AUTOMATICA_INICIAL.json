@@ -1,0 +1,18 @@
+{
+  "schema": "CP12_P3_ADMIN_REVIEW_INCIDENT_V1",
+  "at_utc": "2026-11-07T00:35:52.479403+00:00",
+  "automatic_review_rejected": true,
+  "action": "Upload unchanged capacity-control archive to existing GitHub Release together with frontier24 description update",
+  "reason": "User authorized public frontier capsules but did not specifically authorize this non-frontier capacity archive or its contents.",
+  "archive_sha256": "4e0f5733635d3ab049e67a958bea4429e5b496bf541bf53d923171fe37b6c3c0",
+  "archive_bytes": 231651970,
+  "all_bytes_subsequently_compared_against_public_material": true,
+  "unclassified_entries": 0,
+  "scientific_gate_failed": false,
+  "new_M2_steps_executed": 0,
+  "capacity_native_recovery_passed": true,
+  "capacity_public_recovery_pending": true,
+  "worker_session_id": 75320,
+  "original_action_will_only_be_reconsidered_after_recorded_public_content_checks": true,
+  "CP12_closed": false
+}
