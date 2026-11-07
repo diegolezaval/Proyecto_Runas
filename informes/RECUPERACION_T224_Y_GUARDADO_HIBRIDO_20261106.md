@@ -19,3 +19,7 @@ El proceso44909 completó control propio:231456070 bytes,SHA25612207728c129b2316
 La evolución22,4→24 terminó y se observó salida0 de44909 antes de la pausa. Su cápsula718257706 conserva230562086 bytes,SHA25613660aae72467ccb2eda738d773103c8b14cb1950f4ed84a959cfb6f3f10fed6. La carpeta temporal desapareció después,antes del commit de los recibos24. No se repitió la evolución. Se recuperaron de nuevo ambos respaldos y se regeneraron sólo recibos y lectura sin evolución:358 cargas,30 controles originales,cinco métricas y diez controles físicos positivos. Las cinco métricas coinciden exactamente con lo observado antes de la pérdida;máximo0.0006442021081591291≤0.02.
 
 [Origen y pruebas24](../checkpoints/CP12/p3_20261018/frontera_t24_20261106/ORIGEN.json). CP12 abierto;P3 sin validar. Se recuperó la enmienda publicada y se completaron33 controles,añadiendo reinicio con dos respaldos y rechazo de retiradas pendientes. No se repitieron benchmarks ni F0…F5. La siguiente asignación híbrida24→32 necesita capacidad propia,reserva y activación antes de física.
+
+## Rotación acotada tras24
+
+Se publicó y recuperó el plan antes de retirar cuatro copias nativas17,6/19,2/20,8/22,4:921230396 bytes redundantes. Cada retirada a papelera devolvió succeeded;se conservan las cápsulas públicas originales,la frontera24 recuperada y sus controles. No se incluyeron controles históricos,originales de migración,negativos,incidentes ni archivos ajenos. [Identidades y reemplazo](../checkpoints/CP12/p3_20261018/frontera_t24_20261106/ROTACION_TRANSPORTES_16_A24.json).

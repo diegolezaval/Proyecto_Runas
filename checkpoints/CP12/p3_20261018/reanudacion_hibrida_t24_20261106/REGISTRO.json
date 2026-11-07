@@ -83,7 +83,6 @@
   "predecessor_activation_delivery": "CONFIRMED_PRIOR_PHYSICAL_START_22.41",
   "previous_assignment_capacity_reused": false,
   "reconciliation": "checkpoints/CP12/p3_20261018/frontera_t24_20261106/RECONCILIACION_TRAS_PERDIDA_LOCAL.json",
-  "source_recovery_commit": "b51d1a4ca594861254ea6ed61f0858946144a6e6",
   "previous_allocation_registry_sha256": "46fe6fe258879e9cf722f7245702a966fdcbfc2b9246172b1165a01cd4965f0e",
   "predecessor_activation_delivery_evidence": "b51d1a4ca594861254ea6ed61f0858946144a6e6 plus observed worker completion24",
   "hybrid_policy_sha256": "fb6f61c5968b85b98e03ab1da79663b4959dd2728c612f95265f421640cd3661",
@@ -93,5 +92,7 @@
   "source_current_original_boundary_audits_passed": true,
   "source_recovery_evidence": "checkpoints/CP12/p3_20261018/frontera_t24_20261106/ORIGEN.json",
   "hybrid_administrative_registration": "checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/REGISTRO.json",
-  "conservation_policy": "CP12_P3_HYBRID_20261106_V1"
+  "conservation_policy": "CP12_P3_HYBRID_20261106_V1",
+  "source_prior_activation_commit": "b51d1a4ca594861254ea6ed61f0858946144a6e6",
+  "source_recovery_commit": "b6475c2fac04f58ca469c62db576e45a5171a201"
 }
