@@ -10,11 +10,11 @@
 | Identidad persistente | `libfile_47896e7c5d9c8191afaec23c8b56af8e` |
 | Tamaño y SHA256 | 230762282 bytes, `4e2d8349206182f84648959a1823acf800eb518d21ee7d4b8d566d696553b628` |
 | Transportes periódicos retenidos | τ27,2 y τ28,8 |
-| Asignación | `p3_30_a32_rescate_20261107` con trabajador 55685 observado en espera, cero evolución en esta asignación |
-| Siguiente acción | Aprobación explícita del control público. Después, recuperación, reserva y activación antes de τ30,4 y τ32 |
+| Asignación | `p3_30_a32_rescate_20261107`. Sesión 55685 inaccesible en la comprobación de las 13:07, hora de Lima. Aislamiento pendiente de evidencia |
+| Siguiente acción | Acreditar la salida de 55685 o comprobar que ambos locks originales están libres y registrar el aislamiento. Tras acreditarlo, el automatizador retoma desde τ30,0 |
 | Conservación | Estado exacto local cada 0,4, Biblioteca cada 1,6 con dos transportes verificados, cápsulas públicas completas cada 8 |
 
-[Origen τ30,0](checkpoints/CP12/p3_20261018/rescate_t30_20261107/ORIGEN.json) · [Recuperación nativa](checkpoints/CP12/p3_20261018/rescate_t30_20261107/RECUPERACION_NATIVA.json) · [Incidente](checkpoints/CP12/p3_20261018/rescate_t30_20261107/INCIDENTE_SESION_23151.json) · [Bloqueo de publicación](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/CAPACIDAD_PUBLICA_PENDIENTE.json) · [Asignación](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/REGISTRO.json) · [Registro](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
+[Origen τ30,0](checkpoints/CP12/p3_20261018/rescate_t30_20261107/ORIGEN.json) · [Recuperación nativa](checkpoints/CP12/p3_20261018/rescate_t30_20261107/RECUPERACION_NATIVA.json) · [Incidente](checkpoints/CP12/p3_20261018/rescate_t30_20261107/INCIDENTE_SESION_23151.json) · [Bloqueo de publicación](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/CAPACIDAD_PUBLICA_PENDIENTE.json) · [Comprobación de aislamiento](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/COMPROBACION_AISLAMIENTO_55685.json) · [Asignación](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/REGISTRO.json) · [Registro](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
 
 El latido τ30,04 sólo acredita actividad histórica. Restaurar desde τ30,0 la memoria del integrador, observadores, memoria pasiva y contadores. El rescate queda fuera de la rotación y la prueba pública de capacidad usa la frontera ya publicada τ24. [Capacidad separada](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/CAPACIDAD_SEPARADA.md).
 

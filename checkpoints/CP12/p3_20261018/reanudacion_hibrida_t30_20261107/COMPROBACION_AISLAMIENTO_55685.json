@@ -1,0 +1,64 @@
+{
+  "schema": "CP12_P3_WORKER_ISOLATION_CHECK_V1",
+  "checked_at_utc": "2026-11-07T18:07:41Z",
+  "checked_at_lima": "2026-11-07T13:07:41-05:00",
+  "scientific_head_checked": "6153caeaa8bee7c80b87897693fe97ff2dd34126",
+  "administrative_head_checked": "d7708fd8f491adb951c205d40a15121b936f5730",
+  "allocation_id": "p3_30_a32_rescate_20261107",
+  "tool_session_id": 55685,
+  "worker_status": "SESION_INACCESIBLE_SIN_SALIDA_OBSERVADA",
+  "session_observation": "Unknown process id 55685",
+  "original_environment_accessible": false,
+  "process_exit_observed": false,
+  "exit_code": null,
+  "original_locks": {
+    "registration": {
+      "path": "/workspace/scratch/65d547c6c4de/Proyecto_Runas_rescate/checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/P3_WORKER.lock",
+      "current_state": "INOBSERVABLE",
+      "probe": "open without create",
+      "result": "ENOENT"
+    },
+    "instance": {
+      "path": "/workspace/scratch/65d547c6c4de/rescate300/transito/extraido/runtime/worker.lock",
+      "current_state": "INOBSERVABLE",
+      "probe": "open without create",
+      "result": "ENOENT"
+    }
+  },
+  "local_worker_locks_observed_free": false,
+  "last_recorded_observation": {
+    "at_utc": "2026-11-07T06:13:47.524928+00:00",
+    "receipt": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/CAPACIDAD_PUBLICA_PENDIENTE.json",
+    "worker_observed_waiting": true,
+    "both_locks_observed_held": true,
+    "activation_delivered": false,
+    "current_worker_M2_steps_executed": 0
+  },
+  "isolation_accredited": false,
+  "isolation_state": "PENDIENTE_DE_EVIDENCIA",
+  "required_evidence_alternatives": [
+    "Recibo de salida que identifique la sesión 55685 y su asignación",
+    "Comprobación de que ambos locks están libres en el entorno original y registro de la prohibición de reactivar el intento"
+  ],
+  "conditional_publication": {
+    "github_release_tag": "respaldo-cp12-p3-20261027",
+    "sha256": "cd2cd13ec122a38c037d06bbbfe6d1bae295faa3fe6c0b71f3a229f86592f6d0",
+    "requires_same_waiting_worker_and_both_original_locks_held": true,
+    "condition_confirmed": false,
+    "exact_asset_observed": false,
+    "attachment_attempted": false
+  },
+  "next_handoff": {
+    "executor": "automatizador",
+    "allowed_after_isolation_accredited": true,
+    "observer_clock": 30,
+    "origin": "checkpoints/CP12/p3_20261018/rescate_t30_20261107/ORIGEN.json",
+    "library_file_id": "libfile_47896e7c5d9c8191afaec23c8b56af8e",
+    "sha256": "4e2d8349206182f84648959a1823acf800eb518d21ee7d4b8d566d696553b628",
+    "protected_incident_recovery": true,
+    "target": 32
+  },
+  "latest_approved_scientific_frontier": 24,
+  "replacement_worker_launched": false,
+  "new_physical_steps_executed": 0
+}
