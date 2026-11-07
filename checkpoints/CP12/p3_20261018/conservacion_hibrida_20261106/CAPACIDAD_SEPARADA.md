@@ -7,3 +7,7 @@ El mismo proceso prueba la publicación con una cápsula de tamaño real derivad
 La aceptación conjunta vincula el registro, el transporte nativo y la prueba pública. Ambos ciclos son nuevos y preceden a la reserva y a la activación. Si cualquiera falla, los transportes verificados previos se conservan y la asignación queda sin activar. La referencia pública acredita capacidad de conservación. La frontera científica y el reloj de reinicio se acreditan en sus propios recibos.
 
 La adaptación se aplica sólo a nuevas asignaciones desde un transporte híbrido. Las fuentes del ejecutor histórico se conservan con sus hashes. El adaptador reutiliza restauración, activación, métricas, preservador y auditores. La evolución y las puertas desde la activación son idénticas. Se mantienen el diario de rotación, las frecuencias y todas las suspensiones. [Enmienda híbrida](ENMIENDA.md) · [Prueba acotada](CONTROLES_CAPACIDAD_SEPARADA.json).
+
+Si una sesión queda inaccesible con un guardado local posterior íntegro, el rescate administrativo conserva el estado exacto y el incidente en una cápsula protegida. Su recibo, hash y reloj se verifican al restaurar. Los dos transportes periódicos previos siguen en la rotación y el rescate queda fuera de ella. La evidencia administrativa pequeña se conserva en Git. La cápsula interna se guarda y recupera en la Biblioteca.
+
+La aceptación conjunta se guarda junto a la solicitud nativa y en la puerta del proceso. Así, el detector original de incidentes distingue la capacidad completada de una conservación pendiente.

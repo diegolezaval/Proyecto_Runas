@@ -6,16 +6,16 @@
 |---|---|
 | Última frontera científica positiva | τ24. Cinco métricas espaciales y diez controles físicos positivos |
 | Cápsula pública τ24 | Adjunto 718257706, 230562086 bytes, SHA256 `13660aae72467ccb2eda738d773103c8b14cb1950f4ed84a959cfb6f3f10fed6` |
-| Último transporte exacto | τ28,8 con límite τ32. 381 cargas y 44 controles originales con cero evolución en recuperación |
-| Identidad persistente | `libfile_b0a32b20e4308191ac0dd2ba6a38bd15` |
-| Tamaño y SHA256 | 230684256 bytes, `71bd793e23c4e48335ee7a4e12576659f648394f0824a26470694cc9c7add2c3` |
-| Retención verificada | τ27,2 y τ28,8 |
-| Asignación | `p3_288_a32_hibrido_20261107` con trabajador 23151. Activación recuperada e inicio observado en τ28,81. Sesión anterior 75320 inaccesible |
-| Siguiente acción | Recuperar τ30,4 y publicar τ32 tras aplicar todas las puertas originales |
+| Último estado interno recuperable | Rescate protegido τ30,0 con límite τ32. 395 cargas y 44 controles originales sin evolución |
+| Identidad persistente | `libfile_47896e7c5d9c8191afaec23c8b56af8e` |
+| Tamaño y SHA256 | 230762282 bytes, `4e2d8349206182f84648959a1823acf800eb518d21ee7d4b8d566d696553b628` |
+| Transportes periódicos retenidos | τ27,2 y τ28,8 |
+| Asignación | `p3_30_a32_rescate_20261107` preparada. Sesión 23151 inaccesible, salida sin observar |
+| Siguiente acción | Completar capacidad propia, reserva y activación. Después, τ30,4 y frontera τ32 condicionada |
 | Conservación | Estado exacto local cada 0,4, Biblioteca cada 1,6 con dos transportes verificados, cápsulas públicas completas cada 8 |
 
-[Origen τ28,8](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000288/ORIGEN.json) · [Recuperación nativa](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000288/RECUPERACION_NATIVA.json) · [Rotación](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000288/ROTACION_RECONCILIADA.json) · [Métricas τ24](checkpoints/CP12/p3_20261018/frontera_t24_20261106/METRICAS_ORIGINALES.json) · [Registro](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
+[Origen τ30,0](checkpoints/CP12/p3_20261018/rescate_t30_20261107/ORIGEN.json) · [Recuperación nativa](checkpoints/CP12/p3_20261018/rescate_t30_20261107/RECUPERACION_NATIVA.json) · [Incidente](checkpoints/CP12/p3_20261018/rescate_t30_20261107/INCIDENTE_SESION_23151.json) · [Asignación](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/REGISTRO.json) · [Registro](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
 
-Restaurar toda la memoria del integrador, observadores, memoria pasiva y contadores con límite τ32. La prueba pública de capacidad usa la frontera pública τ24 y el control exacto del transporte queda en la Biblioteca. Comprobar las publicaciones recientes y el estado real de la asignación antes de operar. [Inicio observado](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/RECEPCION_ACREDITADA_POR_INICIO.json) · [Aislamiento](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/AISLAMIENTO.json) · [Enmienda](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/ENMIENDA.md) · [Capacidad separada](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/CAPACIDAD_SEPARADA.md).
+El latido τ30,04 sólo acredita actividad histórica. Restaurar desde τ30,0 la memoria del integrador, observadores, memoria pasiva y contadores. El rescate queda fuera de la rotación y la prueba pública de capacidad usa la frontera ya publicada τ24. [Capacidad separada](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/CAPACIDAD_SEPARADA.md).
 
-En τ32 se exige descarga pública independiente, cinco métricas espaciales y todos los controles físicos originales. Conservar y suspender ante un negativo científico. Mantener M2, Θ, datos, mallas, tolerancias, observadores y umbrales. Quedan vigentes las obligaciones causales, de convergencia, referencia y robustez de P3.
+En τ32 se exige descarga pública independiente y todas las puertas originales. Conservar y suspender ante un negativo científico. Mantener M2, Θ, datos, mallas, tolerancias, observadores y umbrales. Quedan vigentes las obligaciones causales, de convergencia, referencia y robustez de P3.

@@ -9,7 +9,7 @@ import capacidad_separada as capacity
 import continuar as original
 import continuar_desde_transporte as runner
 import preservar as p
-from probar import receipt, refused
+from probar import item, receipt, refused
 
 
 def main():
@@ -62,6 +62,8 @@ def main():
                 save_native.call_args.args[0] == {'kind': 'transport'} and
                 save_public.call_args.args[0] is public_request and
                 combined['registry_sha256'] == p.sha(root / 'REGISTRO.json') and not rotate.called)
+            checks['complete_native_capacity_is_recognized_by_original_incident_scan'] = (
+                p.read(root / 'accepted/nativo/ACEPTACION_COMBINADA.json') == combined)
             save_public.reset_mock()
             save_native.side_effect = RuntimeError('fallo sintético nativo')
             checks['native_failure_keeps_prior_backups_and_blocks_publication_and_activation'] = (
@@ -79,6 +81,21 @@ def main():
                 save_native.reset_mock()
                 checks['wrong_reference_rejected_before_native_write'] = (
                     refused(lambda: run('wrong_reference')) and not save_native.called)
+        incident_home = root / 'incident_home'
+        (incident_home / 'runtime').mkdir(parents=True)
+        proof = 'administracion_continuacion_20261030/INCIDENTE_SESION_1.json'
+        p.write(incident_home / proof, dict(recovery_kind='protected_administrative_transport',
+            latest_exact_local_observer_clock=30, exact_state_sha256='RECOVERED'))
+        prior = [item(27.2), item(28.8)]
+        rescue = dict(kind='transport', clock=30, inherited_verified_transports=prior,
+            source_library_file_id='INCIDENT', source_archive_sha256='ZIP', transport_sha256='RECOVERED',
+            protected_incident_recovery=dict(protected=True, observer_clock=30, library_file_id='INCIDENT',
+                sha256='ZIP', embedded_record=proof, embedded_record_sha256=p.sha(incident_home / proof)))
+        p.initialize_rotation(incident_home, rescue)
+        checks['protected_exact_rescue_preserves_both_prior_periodic_transports'] = (
+            p.read(incident_home / 'runtime/HIBRIDO_ROTACION.json')['retained'] == prior)
+        checks['protected_rescue_rejects_different_exact_state'] = refused(
+            lambda: p.initialize_rotation(incident_home, dict(rescue, transport_sha256='WRONG')))
     result = dict(schema='CP12_P3_SPLIT_CAPACITY_BOUNDED_TESTS_V1', passed=all(checks.values()),
                   checks=checks, test_count=len(checks), M2_steps_executed=0, remote_mutations_executed=0)
     p.write(args.salida, result)

@@ -62,23 +62,49 @@ def rotation_plan(entries, keep=2):
     return entries[:-keep] if keep else entries[:]
 
 
+def validate_protected_origin(home, reg, incident, inherited):
+    record = Path(incident['embedded_record'])
+    if (len(record.parts) != 2 or record.parts[0] != 'administracion_continuacion_20261030' or
+            not re.fullmatch(r'INCIDENTE_SESION_[0-9]+\.json', record.name)):
+        raise ValueError('Recibo de incidente fuera de la administración canónica')
+    if (reg['kind'] != 'transport' or incident.get('protected') is not True or
+            incident.get('observer_clock') != reg['clock'] or
+            incident.get('library_file_id') != reg['source_library_file_id'] or
+            incident.get('sha256') != reg['source_archive_sha256'] or
+            any(item['observer_clock'] >= reg['clock'] or
+                item['library_file_id'] == incident['library_file_id'] for item in inherited)):
+        raise ValueError('El rescate de incidente debe quedar fuera de la rotación')
+    proof = read(home / record)
+    if (sha(home / record) != incident['embedded_record_sha256'] or
+            proof.get('recovery_kind') != 'protected_administrative_transport' or
+            proof.get('latest_exact_local_observer_clock') != reg['clock'] or
+            proof.get('exact_state_sha256') != reg['transport_sha256']):
+        raise ValueError('El recibo no acredita el estado exacto del incidente')
+
+
 def initialize_rotation(home, reg):
+    inherited = reg.get('inherited_verified_transports', [])
+    incident = reg.get('protected_incident_recovery')
+    if incident is not None:
+        validate_protected_origin(home, reg, incident, inherited)
     path = home / 'runtime/HIBRIDO_ROTACION.json'
     if path.exists():
         ring = read(path)
         if ring.get('schema') != POLICY or ring.get('execution_uuid') != UID:
             raise ValueError('Diario de otra política')
         rotation_plan(ring['retained'])
+        if incident is not None and ring['retained'] != inherited:
+            raise ValueError('La rotación previa al rescate no coincide con el registro')
         if len(ring['retained']) > 2:
             raise ValueError('Rotación incompleta: reconciliar antes de física')
         if any(x['status'] not in ('trashed',) for x in ring['retirements']):
             raise ValueError('Retirada pendiente: reconciliar antes de física')
         return
-    inherited = reg.get('inherited_verified_transports', [])
     rotation_plan(inherited)
     if len(inherited) > 2:
         raise ValueError('Reconciliar transportes anteriores antes de física')
-    if reg['kind'] == 'transport' and (not inherited or inherited[-1]['observer_clock'] != reg['clock']):
+    if (reg['kind'] == 'transport' and incident is None and
+            (not inherited or inherited[-1]['observer_clock'] != reg['clock'])):
         raise ValueError('Falta identidad del transporte restaurado en la rotación')
     atomic_record(path, dict(schema=POLICY, execution_uuid=UID,
                             retained=inherited, retirements=[]))

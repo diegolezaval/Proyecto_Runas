@@ -8,7 +8,7 @@ CP11 aceptado;CP12 abierto;P3 sin validar. Última frontera completa positiva24:
 
 ## Acción y conservación
 
-La asignación `p3_288_a32_hibrido_20261107` recuperó τ28,8 con 381 cargas y 44 controles originales. El trabajador 23151 completó capacidad, reserva y activación propias y se observó su primer avance en τ28,81. Comprobar actividad y recibos posteriores. La sesión 75320 sigue inaccesible y su salida queda sin observar. El próximo transporte es τ30,4 y la siguiente frontera es τ32, condicionada a las puertas originales. [Inicio observado](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/RECEPCION_ACREDITADA_POR_INICIO.json) · [Registro](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/REGISTRO.json).
+El trabajador 23151 quedó inaccesible durante el tramo. El estado local exacto τ30,0 se recuperó de forma independiente en la Biblioteca y pasó 395 cargas y 44 controles originales. El incidente y su cápsula quedan protegidos. La asignación `p3_30_a32_rescate_20261107` requiere capacidad, reserva y activación propias antes de continuar a τ32. [Origen](checkpoints/CP12/p3_20261018/rescate_t30_20261107/ORIGEN.json) · [Asignación](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/REGISTRO.json).
 
 La [enmienda híbrida](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/ENMIENDA.md) pasó33 controles administrativos y debe estar publicada y recuperada antes de usarla. Local exacto0,4;Biblioteca persistente con recuperación original cada1,6;dos últimos transportes verificados;fronteras8 en Releases con descarga independiente y todas las puertas. Capacidad,reserva y activación propias del proceso real. No modificar trabajadores activos.
 

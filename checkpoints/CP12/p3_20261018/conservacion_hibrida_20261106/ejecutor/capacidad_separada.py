@@ -76,5 +76,7 @@ def preserve_capacity(home, output, reg, registration, reference_archive, helper
         public_contains_only_previously_public_frontier_and_capacity_metadata=True,
         source_archive_and_payload_unchanged=True, M2_steps_executed_during_preservation=0,
         CP12_closed=False)
+    # El detector de incidentes consulta la aceptación junto a cada solicitud nativa.
+    p.write(private / 'ACEPTACION_COMBINADA.json', result)
     p.write(output / 'ACEPTACION_COMBINADA.json', result)
     return result

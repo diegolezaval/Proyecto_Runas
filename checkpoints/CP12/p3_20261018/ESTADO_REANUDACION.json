@@ -42,10 +42,10 @@
   "original_CP12_and_CP10_must_not_repeat": true,
   "F0_F5_must_not_repeat": true,
   "F0_F5_public_certificate": "checkpoints/CP12/p3_20261018/CERTIFICADO_F0_F5.json",
-  "updated_at": "2026-11-07T05:56:23.576059+00:00",
-  "last_public_commit": "696c293f9b171d03889c68b5b3042c963cf17f65",
+  "updated_at": "2026-11-07T06:08:15.659646+00:00",
+  "last_public_commit": "2434e69871f4c20314aafceb04c0eda754c927c5",
   "latest_full_trial_frontier_recovered_and_audited": 24,
-  "latest_recoverable_observer_clock": 28.8,
+  "latest_recoverable_observer_clock": 30,
   "latest_recoverable_kind": "transport",
   "latest_full_frontier_proof": {
     "kind": "boundary",
@@ -108,16 +108,16 @@
     "correction_validated": false,
     "recovery_receipt": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000288/RECUPERACION_NATIVA.json"
   },
-  "current_own_worker_status": "EVOLVING_HYBRID_288_A32",
-  "own_guardian_tool_session_id": 23151,
+  "current_own_worker_status": "RESCATE_30_VERIFICADO_ASIGNACION_PREPARADA",
+  "own_guardian_tool_session_id": null,
   "own_exit_observed": false,
-  "own_attempt_home": "/workspace/scratch/65d547c6c4de/recovery288/extraido",
+  "own_attempt_home": null,
   "current_target": 32,
   "conditional_horizon": 160,
-  "current_assignment": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/REGISTRO.json",
+  "current_assignment": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/REGISTRO.json",
   "current_helper_directory": "/workspace/scratch/65d547c6c4de/library_helpers",
   "activity_is_restart_certificate": false,
-  "next_recovery": "Supervisar el único trabajador 23151. Recuperar el transporte τ30,4 en la Biblioteca y publicar τ32 con descarga independiente y todas las puertas originales.",
+  "next_recovery": "Completar capacidad, reserva y activación propias desde el rescate exacto de τ30,0. Guardar τ30,4 en la Biblioteca y comprobar la frontera pública τ32.",
   "conservation_policy": {
     "policy": "CP12_P3_HYBRID_20261106_V1",
     "effective_from_boundary": 24,
@@ -129,7 +129,8 @@
     "bounded_admin_checks": 33,
     "real_new_process_capacity_still_required": true,
     "split_capacity_amendment": "checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/CAPACIDAD_SEPARADA.md",
-    "split_capacity_tests": 7
+    "split_capacity_tests": 10,
+    "protected_incident_origin_excluded_from_rotation": true
   },
   "historical_register_preserved_at": {
     "commit": "b51d1a4ca594861254ea6ed61f0858946144a6e6",
@@ -145,17 +146,8 @@
     "must_not_reactivate": true,
     "reconciliation": "checkpoints/CP12/p3_20261018/recuperacion_t224_20261106/RECONCILIACION.json"
   },
-  "own_observed_start": {
-    "at": "2026-11-07T05:56:23.576059+00:00",
-    "clock": 28.81,
-    "accepted_steps_since_restore": [
-      1,
-      1
-    ],
-    "replay96_to112_executed": false,
-    "CP12_closed": false
-  },
-  "capacity_public_asset_id": 719770019,
+  "own_observed_start": null,
+  "capacity_public_asset_id": null,
   "native_verified_transport_retention": {
     "schema": "CP12_P3_HYBRID_ROTATION_RECONCILIATION_V1",
     "at_utc": "2026-11-07T05:44:30.247082+00:00",
@@ -211,5 +203,35 @@
     "new_deletions_performed": 0,
     "next_automatic_rotation_after_verified_new_transport": true
   },
-  "latest_inaccessible_allocation": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/AISLAMIENTO.json"
+  "latest_inaccessible_allocation": "checkpoints/CP12/p3_20261018/rescate_t30_20261107/INCIDENTE_SESION_23151.json",
+  "latest_protected_administrative_transport": {
+    "kind": "transport",
+    "observer_clock": 30,
+    "closed_boundary": 24,
+    "target": 32,
+    "passed": true,
+    "scientific_frontier": false,
+    "protected_incident_evidence": true,
+    "periodic_transport_rotation_eligible": false,
+    "library_file_id": "libfile_47896e7c5d9c8191afaec23c8b56af8e",
+    "file_id": "file_00000000e980820ea3d30abe562182bd",
+    "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_RESCATE_ADMIN_000300_P3_288_A32_HIBRIDO_20261107.zip",
+    "bytes": 230762282,
+    "sha256": "4e2d8349206182f84648959a1823acf800eb518d21ee7d4b8d566d696553b628",
+    "transport_state_sha256": "456997ca2abf20708b6b30f09c14575c729c3be4a549c2c898dea5d9cde1bbaf",
+    "closed_state_sha256": "41c2f639e410fc289ff626d693f702b5f2e6d48acfeea0839c63dc2cd9c65373",
+    "receipt_sha256": "91bfb2654e4058f48721972c7134b2c07832e3b7b424ce39da06f4e5d29bb4ed",
+    "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+    "payload_files": 395,
+    "source_allocation": "p3_288_a32_hibrido_20261107",
+    "source_session": 23151,
+    "original_audit_test_counts": {
+      "boundary": 30,
+      "transport": 14
+    },
+    "M2_steps_executed_during_recovery": 0,
+    "CP12_closed": false,
+    "correction_validated": false,
+    "recovery_receipt": "checkpoints/CP12/p3_20261018/rescate_t30_20261107/RECUPERACION_NATIVA.json"
+  }
 }

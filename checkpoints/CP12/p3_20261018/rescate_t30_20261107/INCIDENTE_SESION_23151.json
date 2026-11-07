@@ -1,0 +1,50 @@
+{
+  "schema": "CP12_P3_ADMINISTRATIVE_WORKER_UNAVAILABLE_V1",
+  "at_utc": "2026-11-07T06:05:14.002837+00:00",
+  "allocation_id": "p3_288_a32_hibrido_20261107",
+  "tool_session_id": 23151,
+  "tool_observation": "Unknown process id 23151",
+  "local_worker_locks_observed_free": true,
+  "process_exit_observed": false,
+  "process_termination_assumed": false,
+  "incident_cause_known": false,
+  "scientific_gate_evaluated_as_failed": false,
+  "classification": "ADMINISTRATIVE_WORKER_UNAVAILABLE",
+  "activation_commit": "696c293f9b171d03889c68b5b3042c963cf17f65",
+  "source_registration_commit": "c8e4cee92abd8d067ff29412df393b7472416c9e",
+  "head_at_observation": "2434e69871f4c20314aafceb04c0eda754c927c5",
+  "latest_exact_local_observer_clock": 30,
+  "latest_heartbeat": {
+    "at": "2026-11-07T06:00:51.869273+00:00",
+    "clock": 30.04,
+    "phase": "evolution",
+    "physical_streams": [
+      {
+        "t": 30.050462519939938,
+        "accepted": 5534,
+        "nfev": 53814,
+        "nfev_live": 13271,
+        "maxe": 9.756728758247846e-11,
+        "maxq": 1.5543122344752192e-15,
+        "maxe_original": 1.1708662817078164e-08
+      },
+      {
+        "t": 30.05083989914437,
+        "accepted": 5534,
+        "nfev": 53814,
+        "nfev_live": 13271,
+        "maxe": 9.735523498477505e-11,
+        "maxq": 4.440892098500626e-16,
+        "maxe_original": 3.1676115064271926e-09
+      }
+    ],
+    "not_a_restart_certificate": true
+  },
+  "exact_state_sha256": "456997ca2abf20708b6b30f09c14575c729c3be4a549c2c898dea5d9cde1bbaf",
+  "last_full_frontier": 24,
+  "target": 32,
+  "prior_assignment_reactivation_prohibited": true,
+  "previous_intervals_through_30_must_not_repeat": true,
+  "recovery_kind": "protected_administrative_transport",
+  "CP12_closed": false
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "CP12_P3_SPLIT_CAPACITY_INCIDENT_SCAN_RECONCILIATION_V1",
+  "verified_at_utc": "2026-11-07T06:01:48.863233+00:00",
+  "allocation_id": "p3_288_a32_hibrido_20261107",
+  "capacity_acceptance_sha256": "943307fd645b456ad3fdc2abc917dc485d02e195664f217d2102608f91f7282e",
+  "root_receipt": "run_288_a32/control/ACEPTACION_COMBINADA.json",
+  "native_request_receipt_alias": "run_288_a32/control/nativo/ACEPTACION_COMBINADA.json",
+  "verified_exact_bytes": true,
+  "effect": "El detector original reconoce el control nativo ya completado al buscar publicaciones pendientes.",
+  "active_worker_source_changed": false,
+  "scientific_sources_changed": false,
+  "CP12_closed": false
+}

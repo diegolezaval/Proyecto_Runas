@@ -5,12 +5,15 @@
     "shared_original_restore_activate_metrics_validation": true,
     "identical_activation_evolution_saves_scientific_gates_and_suspension": true,
     "separate_destinations_keep_exact_native_origin_and_public_reference": true,
+    "complete_native_capacity_is_recognized_by_original_incident_scan": true,
     "native_failure_keeps_prior_backups_and_blocks_publication_and_activation": true,
     "public_failure_keeps_prior_backups_and_blocks_activation": true,
     "historical_public_asset_cannot_satisfy_new_capacity": true,
-    "wrong_reference_rejected_before_native_write": true
+    "wrong_reference_rejected_before_native_write": true,
+    "protected_exact_rescue_preserves_both_prior_periodic_transports": true,
+    "protected_rescue_rejects_different_exact_state": true
   },
-  "test_count": 7,
+  "test_count": 10,
   "M2_steps_executed": 0,
   "remote_mutations_executed": 0
 }

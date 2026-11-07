@@ -6,7 +6,7 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
@@ -16,9 +16,9 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 |---|---|
 | CP12 / P3 | ABIERTO / SIN_VALIDAR |
 | Última frontera completa positiva P3 | τ24 |
-| Transporte interno recuperado | τ28.8 |
+| Transporte interno recuperado | τ30 |
 | Próxima frontera completa | τ32, pendiente |
-| Trabajadores propios activos | 1 |
+| Trabajadores propios activos | 0 |
 
 Registro: [checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
 
@@ -26,7 +26,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 
 ## Siguiente trabajo científico
 
-- Supervisar el único trabajador 23151. Recuperar el transporte τ30,4 en la Biblioteca y publicar τ32 con descarga independiente y todas las puertas originales.
+- Completar capacidad, reserva y activación propias desde el rescate exacto de τ30,0. Guardar τ30,4 en la Biblioteca y comprobar la frontera pública τ32.
 - Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 
@@ -57,6 +57,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 - No repetir17.6→19.2:transporte exacto recuperado nativa y públicamente como717353872; usar último estado íntegro si el proceso desaparece.
 - No repetir19.2→20.8:transporte exacto recuperado nativa y públicamente como717383219;usar último estado íntegro si el proceso desaparece.
 - P3 hasta τ28,8 está conservado. Retomar el estado interno completo sin reactivar la asignación anterior.
+- P3 hasta τ30,0 está conservado como rescate protegido. No reactivar 23151 ni usar el latido como estado de reinicio.
 
 ## Resultados vigentes y límites
 
