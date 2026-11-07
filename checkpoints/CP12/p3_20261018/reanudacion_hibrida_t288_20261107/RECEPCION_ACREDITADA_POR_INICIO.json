@@ -1,0 +1,21 @@
+{
+  "schema": "CP12_P3_FORWARD_OBSERVED_ACTIVATION_RECEIPT_V2",
+  "activation_commit": "696c293f9b171d03889c68b5b3042c963cf17f65",
+  "tool_session_id": 23151,
+  "starting_observer_clock": 28.8,
+  "physical_start_observed": true,
+  "first_observed": {
+    "at": "2026-11-07T05:56:23.576059+00:00",
+    "clock": 28.81,
+    "accepted_steps_since_restore": [
+      1,
+      1
+    ],
+    "replay96_to112_executed": false,
+    "CP12_closed": false
+  },
+  "activation_delivery": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/ACTIVACION_RECUPERADA_Y_ENTREGADA.json",
+  "no_predecessor_intervals_repeated": true,
+  "activity_is_restart_certificate": false,
+  "CP12_closed": false
+}

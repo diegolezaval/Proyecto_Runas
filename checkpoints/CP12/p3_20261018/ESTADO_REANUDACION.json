@@ -42,8 +42,8 @@
   "original_CP12_and_CP10_must_not_repeat": true,
   "F0_F5_must_not_repeat": true,
   "F0_F5_public_certificate": "checkpoints/CP12/p3_20261018/CERTIFICADO_F0_F5.json",
-  "updated_at": "2026-11-07T05:44:30.247082+00:00",
-  "last_public_commit": "1063bb9e288b82808f441222f12a4f93c8b8da12",
+  "updated_at": "2026-11-07T05:56:23.576059+00:00",
+  "last_public_commit": "696c293f9b171d03889c68b5b3042c963cf17f65",
   "latest_full_trial_frontier_recovered_and_audited": 24,
   "latest_recoverable_observer_clock": 28.8,
   "latest_recoverable_kind": "transport",
@@ -108,16 +108,16 @@
     "correction_validated": false,
     "recovery_receipt": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000288/RECUPERACION_NATIVA.json"
   },
-  "current_own_worker_status": "PREPARADO_SIN_TRABAJADOR_PROPIO",
-  "own_guardian_tool_session_id": null,
+  "current_own_worker_status": "EVOLVING_HYBRID_288_A32",
+  "own_guardian_tool_session_id": 23151,
   "own_exit_observed": false,
-  "own_attempt_home": null,
+  "own_attempt_home": "/workspace/scratch/65d547c6c4de/recovery288/extraido",
   "current_target": 32,
   "conditional_horizon": 160,
   "current_assignment": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/REGISTRO.json",
   "current_helper_directory": "/workspace/scratch/65d547c6c4de/library_helpers",
   "activity_is_restart_certificate": false,
-  "next_recovery": "Crear una asignación aislada desde τ28,8 tras recuperar el registro. Verificar capacidad propia en ambos destinos, reserva y activación antes de física hasta τ32.",
+  "next_recovery": "Supervisar el único trabajador 23151. Recuperar el transporte τ30,4 en la Biblioteca y publicar τ32 con descarga independiente y todas las puertas originales.",
   "conservation_policy": {
     "policy": "CP12_P3_HYBRID_20261106_V1",
     "effective_from_boundary": 24,
@@ -145,8 +145,17 @@
     "must_not_reactivate": true,
     "reconciliation": "checkpoints/CP12/p3_20261018/recuperacion_t224_20261106/RECONCILIACION.json"
   },
-  "own_observed_start": null,
-  "capacity_public_asset_id": null,
+  "own_observed_start": {
+    "at": "2026-11-07T05:56:23.576059+00:00",
+    "clock": 28.81,
+    "accepted_steps_since_restore": [
+      1,
+      1
+    ],
+    "replay96_to112_executed": false,
+    "CP12_closed": false
+  },
+  "capacity_public_asset_id": 719770019,
   "native_verified_transport_retention": {
     "schema": "CP12_P3_HYBRID_ROTATION_RECONCILIATION_V1",
     "at_utc": "2026-11-07T05:44:30.247082+00:00",

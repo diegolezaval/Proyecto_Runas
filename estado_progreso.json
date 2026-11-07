@@ -2208,7 +2208,7 @@
     }
   ],
   "next_actions": [
-    "Crear una asignación aislada desde τ28,8 tras recuperar el registro. Verificar capacidad propia en ambos destinos, reserva y activación antes de física hasta τ32.",
+    "Supervisar el único trabajador 23151. Recuperar el transporte τ30,4 en la Biblioteca y publicar τ32 con descarga independiente y todas las puertas originales.",
     "Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.",
     "Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico."
   ],
@@ -2233,10 +2233,40 @@
     "P3 hasta τ28,8 está conservado. Retomar el estado interno completo sin reactivar la asignación anterior."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Crear una asignación aislada desde τ28,8 tras recuperar el registro. Verificar capacidad propia en ambos destinos, reserva y activación antes de física hasta τ32.",
+  "next_calculation": "Supervisar el único trabajador 23151. Recuperar el transporte τ30,4 en la Biblioteca y publicar τ32 con descarga independiente y todas las puertas originales.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [],
-  "research_in_progress": [],
+  "numerical_runs_in_progress": [
+    {
+      "campaign": "CP12_P3",
+      "allocation_id": "p3_288_a32_hibrido_20261107",
+      "tool_session_id": 23151,
+      "status": "EVOLVING_HYBRID_288_A32",
+      "source_observer_clock": 28.8,
+      "next_full_frontier": 32,
+      "evidence": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/RECEPCION_ACREDITADA_POR_INICIO.json",
+      "original_trajectories_repeated": false,
+      "latest_recovered_clock": 28.8,
+      "physical_start_observed": true,
+      "first_observed_clock": 28.81,
+      "CP12_closed": false
+    }
+  ],
+  "research_in_progress": [
+    {
+      "campaign": "CP12_P3",
+      "allocation_id": "p3_288_a32_hibrido_20261107",
+      "tool_session_id": 23151,
+      "status": "EVOLVING_HYBRID_288_A32",
+      "source_observer_clock": 28.8,
+      "next_full_frontier": 32,
+      "evidence": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/RECEPCION_ACREDITADA_POR_INICIO.json",
+      "original_trajectories_repeated": false,
+      "latest_recovered_clock": 28.8,
+      "physical_start_observed": true,
+      "first_observed_clock": 28.81,
+      "CP12_closed": false
+    }
+  ],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
   "delivery_boundary": "Frontera τ24 positiva y pública. Transporte interno τ28,8 recuperado con 381 cargas y 44 controles originales sin evolución. Nueva asignación aislada preparada.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
@@ -2251,18 +2281,18 @@
   },
   "checkpoint_kind": "CIENTIFICO",
   "automatic_continuation_paused": {
-    "paused": true,
-    "reason": "Capacidad, reserva y activación propias pendientes.",
+    "paused": false,
+    "reason": "Inicio físico observado tras recuperar la activación propia.",
     "M2_exhaustion_claimed": false,
     "CP12_closed": false
   },
   "execution_activity": {
     "activity_known": true,
-    "scope": "Cero trabajadores propios creados en esta asignación. Sesión anterior inaccesible, salida sin observar.",
-    "own_worker_status": "PREPARADO_SIN_TRABAJADOR_PROPIO",
+    "scope": "Un trabajador propio observado después de activar el reinicio exacto.",
+    "own_worker_status": "EVOLVING_HYBRID_288_A32",
     "historical_termination_assumed": false,
     "activity_is_restart_certificate": false,
-    "evidence": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/AISLAMIENTO.json"
+    "evidence": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/RECEPCION_ACREDITADA_POR_INICIO.json"
   },
   "latest_verified_cp12_restart": {
     "time": 160,
@@ -2554,18 +2584,24 @@
     "recovered_transport": 28.8,
     "native_recovered_transport": 28.8,
     "next_full_frontier": 32,
-    "own_workers": 0,
-    "own_physical_workers": 0,
+    "own_workers": 1,
+    "own_physical_workers": 1,
     "historical_worker_activity": "INACCESIBLE_SIN_SALIDA_OBSERVADA",
-    "current_run_forward_evolution_started": false,
+    "current_run_forward_evolution_started": true,
     "canonical_register": "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
-    "evidence": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/AISLAMIENTO.json",
-    "current_worker_capacity_passed": false,
-    "observed_at_utc": "2026-11-07T05:44:30.247082+00:00",
-    "administrative_phase": "PREPARADO_SIN_TRABAJADOR_PROPIO",
+    "evidence": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/RECEPCION_ACREDITADA_POR_INICIO.json",
+    "current_worker_capacity_passed": true,
+    "observed_at_utc": "2026-11-07T05:56:23.576059+00:00",
+    "administrative_phase": "EVOLVING_HYBRID_288_A32",
     "administrative_report": "informes/RECUPERACION_P3_T288_Y_CAPACIDAD_SEPARADA_20261107.md",
     "source_identity": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000288/ORIGEN.json",
-    "latest_recoverable_observer_clock": 28.8
+    "latest_recoverable_observer_clock": 28.8,
+    "forward_evolution_started": true,
+    "last_activity_observer_clock": 28.81,
+    "capacity_receipt": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/capacidad/ACEPTACION_COMBINADA.json",
+    "new_reservation_published": true,
+    "new_activation_published": true,
+    "new_activation_delivered": true
   },
   "latest_verified_cp12_P3_transport": {
     "kind": "transport",
