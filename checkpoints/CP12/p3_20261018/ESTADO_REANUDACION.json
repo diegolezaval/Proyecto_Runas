@@ -86,7 +86,7 @@
     "native_copy_status": "TRASHED_REDUNDANT_SUPERSEDED_BY_24",
     "retirement_receipt": "checkpoints/CP12/p3_20261018/frontera_t24_20261106/ROTACION_TRANSPORTES_16_A24.json"
   },
-  "current_own_worker_status": "WAITING_PUBLIC_CAPACITY_REVIEW_24_A32",
+  "current_own_worker_status": "WAITING_PUBLIC_RESERVATION_AND_ACTIVATION_24_A32",
   "own_guardian_tool_session_id": 75320,
   "own_exit_observed": false,
   "own_attempt_home": "/workspace/scratch/65d547c6c4de/public24_recovery/extraido",
@@ -95,7 +95,7 @@
   "current_assignment": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/REGISTRO.json",
   "current_helper_directory": "/workspace/scratch/65d547c6c4de/library_helpers",
   "activity_is_restart_certificate": false,
-  "next_recovery": "Cerrar revisión del mismo control de capacidad:todos sus bytes son públicos o relleno determinista. Cero física nueva hasta recuperación pública propia,reserva y activación. No duplicar75320.",
+  "next_recovery": "Recuperar reserva24→32 y publicar/recuperar activación antes de entregarla al único trabajador75320. Capacidad propia nativa y pública positiva;física nueva todavía0.",
   "conservation_policy": {
     "policy": "CP12_P3_HYBRID_20261106_V1",
     "effective_from_boundary": 24,

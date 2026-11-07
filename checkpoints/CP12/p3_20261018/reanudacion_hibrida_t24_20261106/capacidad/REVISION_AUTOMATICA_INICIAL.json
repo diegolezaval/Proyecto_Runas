@@ -11,8 +11,14 @@
   "scientific_gate_failed": false,
   "new_M2_steps_executed": 0,
   "capacity_native_recovery_passed": true,
-  "capacity_public_recovery_pending": true,
+  "capacity_public_recovery_pending": false,
   "worker_session_id": 75320,
   "original_action_will_only_be_reconsidered_after_recorded_public_content_checks": true,
-  "CP12_closed": false
+  "CP12_closed": false,
+  "subsequent_same_channel_upload_completed_after_public_content_checks": true,
+  "same_archive_unchanged": true,
+  "publication_observed_at_utc": "2026-11-07T00:38:21.232585+00:00",
+  "public_asset_id": 719094068,
+  "capacity_public_recovery_passed": true,
+  "automatic_review_block_resolved_by_recorded_content_checks": true
 }

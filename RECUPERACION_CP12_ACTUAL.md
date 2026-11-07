@@ -10,7 +10,7 @@
 | Biblioteca de frontera24 |libfile_ddacdad0b1148191828315263c178493 |
 | Último transporte intermedio |22,4:público718197317;su copia nativa fue retirada tras recuperar24;usar frontera24 |
 | Trabajador anterior |44909 terminó con salida0 observada antes de perderse la carpeta temporal;no reactivar |
-| Asignación siguiente |p3_24_a32_hibrido_20261106;trabajador75320 con restauración y capacidad nativa positivas;capacidad pública,reserva y activación pendientes |
+| Asignación siguiente |p3_24_a32_hibrido_20261106;trabajador75320 con capacidad propia nativa/pública positiva;reserva y activación pendientes |
 | Política desde24 |local exacto0,4;Biblioteca cada1,6,dos transportes;fronteras8 en Releases con recuperación y puertas |
 
 [Origen24](checkpoints/CP12/p3_20261018/frontera_t24_20261106/ORIGEN.json) · [métricas](checkpoints/CP12/p3_20261018/frontera_t24_20261106/METRICAS_ORIGINALES.json) · [registro](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json) · [enmienda](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/ENMIENDA.md) · [asignación](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/REGISTRO.json).
