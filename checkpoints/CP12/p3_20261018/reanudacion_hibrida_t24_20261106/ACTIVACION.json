@@ -1,0 +1,19 @@
+{
+  "schema": "CP12_P3_FORWARD_ACTIVATION_V2",
+  "registry_sha256": "8591e67396fb0e0ab0a0d4c02ea7ccb47fd03a4e911abc7ddc739313bb17f9cf",
+  "capacity_acceptance_sha256": "10542a461a36446cf8a27906c61e101156718c6dbcf0bb369367b90d2aae8728",
+  "single_worker_reserved": true,
+  "registered_commit": "46d91a5b4e76838462210af22930b356b3c32abc",
+  "source_registration_commit": "a975d0328daaea41ebeb6f91cef802c01714af5a",
+  "allocation_id": "p3_24_a32_hibrido_20261106",
+  "tool_session_id": 75320,
+  "source_clock": 24,
+  "target": 32,
+  "source_public_recovery_verified": true,
+  "current_process_capacity_native_and_public_passed": true,
+  "public_reservation_recovered_exactly": true,
+  "old_allocations_not_reactivated": true,
+  "predecessor_intervals_must_not_repeat": true,
+  "conservation_policy": "CP12_P3_HYBRID_20261106_V1",
+  "CP12_closed": false
+}
