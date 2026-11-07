@@ -25,3 +25,5 @@ Fuentes científicas:[prerregistro](checkpoints/CP12/p3_20261018/PRERREGISTRO_PI
 Negativo científico:conservar,recuperar y suspender esa versión;no lanzar candidato automático. P2 conserva su negativo80 y no se reanuda;no repetir CP10,CP12 original,CP04 ni F0…F5. τ160 no cierra P3/CP12:quedan tres ventanas causales,reducción original≥50% del canal operadorχ acoplado,tercera malla/orden justificados,referencia independiente,interpolación,angular/caja,estabilidad temporal y robustez.
 
 Trabajar autónomamente por entregas recuperables. Git conserva código,decisiones y registros pequeños;Releases las cápsulas científicas. No empaquetar otra vez todo el repositorio por cada transporte. Informar avance físico,transporte recuperable y frontera científica por separado. El historial de este relevo permanece en Git.
+
+Para comparar controles sin rehacer código,usar [la utilidad reutilizable](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/COMPARADOR_REUTILIZABLE.md). Reutilizar recibos con entradas idénticas;no ejecutar otra campaña ni benchmark.
