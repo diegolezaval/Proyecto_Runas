@@ -42,10 +42,10 @@
   "original_CP12_and_CP10_must_not_repeat": true,
   "F0_F5_must_not_repeat": true,
   "F0_F5_public_certificate": "checkpoints/CP12/p3_20261018/CERTIFICADO_F0_F5.json",
-  "updated_at": "2026-11-07T00:52:24.361687+00:00",
+  "updated_at": "2026-11-07T01:00:33.467583+00:00",
   "last_public_commit": "68f461d4f6b86d209bcd6b46dc55bf3af0df677b",
   "latest_full_trial_frontier_recovered_and_audited": 24,
-  "latest_recoverable_observer_clock": 25.6,
+  "latest_recoverable_observer_clock": 27.2,
   "latest_recoverable_kind": "transport",
   "latest_full_frontier_proof": {
     "kind": "boundary",
@@ -80,38 +80,34 @@
   },
   "latest_intermediate_transport": {
     "kind": "transport",
-    "observer_clock": 25.6,
+    "observer_clock": 27.2,
     "closed_boundary": 24,
     "target": 32,
     "scientific_frontier": false,
     "passed": true,
-    "library_file_id": "libfile_5940394ea2dc81918568fcfe0ea4b29a",
-    "file_id": "file_00000000c1d481f590c9febdb6b2af0b",
-    "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000256_P3_24_A32_HIBRIDO_20261106.zip",
-    "bytes": 230605629,
-    "sha256": "2830d2fab4e612167ad6f75e5d1cf733e5584dd13e4ba2e4fadf4d3afb06a92d",
-    "transport_state_sha256": "4f437f1e837d7b40f6814a5e00a08d86db8c0fe2681b6b164572c6ddedcdf753",
+    "library_file_id": "libfile_341fb80dc3688191bfb135d921e15f22",
+    "file_id": "file_00000000d6e081f5ab6e64f1141a7197",
+    "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000272_P3_24_A32_HIBRIDO_20261106.zip",
+    "bytes": 230637818,
+    "sha256": "d754dbce9f2cc0f3d3ff5b17f2073be9cc7e45843a635bcc36bac9d32095b5a8",
+    "transport_state_sha256": "583091b500883146ae9b9256a4ee3509f1995ab9c34dfef0a72e00780314ca3b",
     "closed_state_sha256": "41c2f639e410fc289ff626d693f702b5f2e6d48acfeea0839c63dc2cd9c65373",
     "receipt_sha256": "91bfb2654e4058f48721972c7134b2c07832e3b7b424ce39da06f4e5d29bb4ed",
     "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
     "source_allocation": "p3_24_a32_hibrido_20261106",
     "tool_session_id": 75320,
-    "payload_files": 369,
+    "payload_files": 375,
     "independent_native_recovery_passed": true,
     "original_audit_test_counts": {
       "boundary": 30,
       "transport": 14
-    },
-    "original_audit_solver_construction_or_step_attempts": {
-      "boundary": 0,
-      "transport": 0
     },
     "M2_steps_executed_during_recovery": 0,
     "github_required": false,
     "source_archive_and_payload_unchanged": true,
     "CP12_closed": false,
     "correction_validated": false,
-    "recovery_receipt": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000256/RECUPERACION_NATIVA.json"
+    "recovery_receipt": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000272/RECUPERACION_NATIVA.json"
   },
   "current_own_worker_status": "EVOLVING_HYBRID_24_A32",
   "own_guardian_tool_session_id": 75320,
@@ -122,7 +118,7 @@
   "current_assignment": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/REGISTRO.json",
   "current_helper_directory": "/workspace/scratch/65d547c6c4de/library_helpers",
   "activity_is_restart_certificate": false,
-  "next_recovery": "Mantener único75320 hacia transporte27.2 y frontera32. Si la sesión deja de ser accesible,reconciliar25.6,aislar asignación y registrar nueva capacidad antes de física. Restaurar memoria interna completa con límite32;no repetir hasta25.6.",
+  "next_recovery": "Mantener único75320 hacia siguiente transporte y frontera32. Si la sesión queda inaccesible,reconciliar estado interno27.2 con límite32,aislar asignación y exigir nueva capacidad. No repetir intervalos conservados.",
   "conservation_policy": {
     "policy": "CP12_P3_HYBRID_20261106_V1",
     "effective_from_boundary": 24,
@@ -158,5 +154,34 @@
     "replay96_to112_executed": false,
     "CP12_closed": false
   },
-  "capacity_public_asset_id": 719094068
+  "capacity_public_asset_id": 719094068,
+  "native_verified_transport_retention": {
+    "retained": [
+      {
+        "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+        "kind": "transport",
+        "protected": false,
+        "verified": true,
+        "observer_clock": 25.6,
+        "library_file_id": "libfile_5940394ea2dc81918568fcfe0ea4b29a",
+        "file_id": "file_00000000c1d481f590c9febdb6b2af0b",
+        "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000256_P3_24_A32_HIBRIDO_20261106.zip",
+        "sha256": "2830d2fab4e612167ad6f75e5d1cf733e5584dd13e4ba2e4fadf4d3afb06a92d",
+        "bytes": 230605629
+      },
+      {
+        "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+        "kind": "transport",
+        "protected": false,
+        "verified": true,
+        "observer_clock": 27.2,
+        "library_file_id": "libfile_341fb80dc3688191bfb135d921e15f22",
+        "file_id": "file_00000000d6e081f5ab6e64f1141a7197",
+        "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000272_P3_24_A32_HIBRIDO_20261106.zip",
+        "sha256": "d754dbce9f2cc0f3d3ff5b17f2073be9cc7e45843a635bcc36bac9d32095b5a8",
+        "bytes": 230637818
+      }
+    ],
+    "retirements": []
+  }
 }
