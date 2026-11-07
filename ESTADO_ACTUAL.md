@@ -6,7 +6,7 @@ Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP1
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 1. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
@@ -110,7 +110,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md](informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md).
+Informe de esta entrega: [informes/RECUPERACION_T224_Y_GUARDADO_HIBRIDO_20261106.md](informes/RECUPERACION_T224_Y_GUARDADO_HIBRIDO_20261106.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

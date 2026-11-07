@@ -8,11 +8,11 @@
     "POLITICA.json": "fb6f61c5968b85b98e03ab1da79663b4959dd2728c612f95265f421640cd3661",
     "base_preservar.py": "3aafd0b8157d2f6f9f4140db35f95163e385dda962762cdc8aeaa09fbd98b0fe",
     "continuar.py": "f4e2ba94cba2bb607e55c525046b27036c51f3d6433e1aa4dcbd00aecd6f78a5",
-    "preservar.py": "c9625db31bbdf677fb6dad8f48c36e9d5d556875c5c72f70ef7fdd81da8957da",
-    "probar.py": "d8620a892128576ea06d4513383794f594211d46669b3a41e41d2b694d82c827"
+    "preservar.py": "c14454fc3a17dbb6c37466468cd06af0f15011e72c6b50de66d37a8bef55b3c9",
+    "probar.py": "bf717cbc52b12804d360de9369d7a0a2621db6fb2d6c954309165688bedb33f6"
   },
   "bounded_tests": "checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/CONTROLES_ADMINISTRATIVOS.json",
-  "bounded_tests_sha256": "13512c79acbaf7bd6497b5ecc47f6947abb23b132f11681d853b24da266001b9",
+  "bounded_tests_sha256": "fbe46cd1d5f89d6406c12ffb33fc2193a0e35c1c2e8a9e170f0935c4806668d4",
   "original_sources_reused": {
     "preserver": "3aafd0b8157d2f6f9f4140db35f95163e385dda962762cdc8aeaa09fbd98b0fe",
     "restore_activate_metrics_and_physical_loop": "Exact original AST; only three administrative calls added to runner"
@@ -26,5 +26,7 @@
   "scientific_sources_changed": false,
   "original_auditors_changed": false,
   "thresholds_changed": false,
-  "CP12_closed": false
+  "CP12_closed": false,
+  "bounded_test_count": 33,
+  "reconciled_at_utc": "2026-11-07T00:26:47.247243+00:00"
 }

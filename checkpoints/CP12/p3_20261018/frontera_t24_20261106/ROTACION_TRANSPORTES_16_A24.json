@@ -1,0 +1,63 @@
+{
+  "schema": "CP12_P3_VERIFIED_SUPERSEDED_NATIVE_TRANSPORT_RETIREMENT_V1",
+  "status": "INTENT_PUBLISHED_BEFORE_MUTATION",
+  "at_utc": "2026-11-07T00:28:45.594855+00:00",
+  "scope": "Only native copies of verified transports17.6,19.2,20.8,22.4 from current16→24 tranche;public originals remain.",
+  "targets": [
+    {
+      "library_file_id": "libfile_cdf3d964608c8191b81ad9f296f249b4",
+      "file_id": "file_0000000034b081f591741438222bf1cd",
+      "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000176_P3_16_A24_20261106.zip",
+      "bytes": 230241036,
+      "observer_clock": 17.6,
+      "sha256": "9999444d5f89a4abb9e69bb92469722f99c995841ebe950a3c0bab31510c48a3",
+      "previous_public_asset_id": 717327999,
+      "previous_public_audit_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000176/ACEPTACION_GITHUB.json"
+    },
+    {
+      "library_file_id": "libfile_75e1e03c20bc8191a95dbede629fd342",
+      "file_id": "file_0000000075e88212a7fa28fd7ec39766",
+      "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000192_P3_16_A24_20261106.zip",
+      "bytes": 230290382,
+      "observer_clock": 19.2,
+      "sha256": "e788105614c8d4656621ce674b1ddcddf5e655078e810a609292e35adbfc707a",
+      "previous_public_asset_id": 717353872,
+      "previous_public_audit_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000192/ACEPTACION_GITHUB.json"
+    },
+    {
+      "library_file_id": "libfile_9b75233f948c8191bf3fd58d7a71b945",
+      "file_id": "file_00000000406082128580e12d39f4d865",
+      "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000208_P3_16_A24_20261106.zip",
+      "bytes": 230326205,
+      "observer_clock": 20.8,
+      "sha256": "33b4f7406144a6849459a85fc9d1b402df409f12103ce099a527fc19d2c6a480",
+      "previous_public_asset_id": 717383219,
+      "previous_public_audit_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000208/ACEPTACION_GITHUB.json"
+    },
+    {
+      "library_file_id": "libfile_142d2f9ee5388191a13da1520ed45dc8",
+      "file_id": "file_000000005438820c98e91f9f679ab7ad",
+      "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000224_P3_16_A24_20261106.zip",
+      "bytes": 230372773,
+      "observer_clock": 22.4,
+      "sha256": "287581812d0c2c3fc0dd7bef2731b2eaf08aa20fa19a60e0421c9a85f5c1de00",
+      "previous_public_asset_id": 718197317,
+      "previous_public_audit_receipt": "checkpoints/CP12/p3_20261018/recuperacion_t224_20261106/RECUPERACION_PUBLICA.json"
+    }
+  ],
+  "replacement": {
+    "github_asset_id": 718257706,
+    "bytes": 230562086,
+    "sha256": "13660aae72467ccb2eda738d773103c8b14cb1950f4ed84a959cfb6f3f10fed6",
+    "state_sha256": "41c2f639e410fc289ff626d693f702b5f2e6d48acfeea0839c63dc2cd9c65373",
+    "independent_native_and_public_recovery": true,
+    "payloads": 358,
+    "original_boundary_audits": 30,
+    "original_spatial_gates": 5,
+    "original_prefix_physical_gates": 10,
+    "closed_state_restore_without_solver_steps": true
+  },
+  "migration_originals_negatives_incidents_and_unique_evidence_excluded": true,
+  "all_original_public_capsules_retained": true,
+  "CP12_closed": false
+}

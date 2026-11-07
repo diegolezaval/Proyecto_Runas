@@ -2,17 +2,17 @@
 
 Leer primero [RECUPERACION_CP12_ACTUAL.md](RECUPERACION_CP12_ACTUAL.md) y [el registro canónico](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json). Consultar head,Release y Biblioteca posteriores antes de ejecutar. No inferir actividad de una sesión histórica.
 
-CP11 aceptado;CP12 abierto;P3 sin validar. Última frontera completa positiva16;último transporte recuperado22,4 con límite24. El adjunto718197317 y libfile_142d2f9ee5388191a13da1520ed45dc8 conservan230372773 bytes,SHA256287581812d0c2c3fc0dd7bef2731b2eaf08aa20fa19a60e0421c9a85f5c1de00;350 cargas y30+14 controles originales,cero evolución en auditorías. [Recuperación22,4](checkpoints/CP12/p3_20261018/recuperacion_t224_20261106/ORIGEN.json).
+CP11 aceptado;CP12 abierto;P3 sin validar. Última frontera completa positiva24:358 cargas,30 controles originales,cinco métricas espaciales y diez controles físicos positivos. [Origen y recibos24](checkpoints/CP12/p3_20261018/frontera_t24_20261106/ORIGEN.json). Adjunto718257706:230562086 bytes,SHA25613660aae72467ccb2eda738d773103c8b14cb1950f4ed84a959cfb6f3f10fed6. Biblioteca:libfile_ddacdad0b1148191828315263c178493.
 
-La sesión77606 y su directorio son inaccesibles;salida no observada,no reactivar p3_16_a24_20261106 ni recrear su archivo privado de publicación. La asignación nueva p3_224_a24_20261106,proceso44909,restauró toda la memoria interna a22,4 y completó capacidad propia nativa/pública. [Reserva y recibos](checkpoints/CP12/p3_20261018/reanudacion_t224_20261106/ASIGNACION_224_A24.json). Comprobar activación y recepción posteriores:su publicación sola no acredita evolución.
+44909 terminó22,4→24 con salida0 observada. La carpeta temporal se perdió después;el estado24 se recuperó desde ambos destinos sin repetir física. Las cinco métricas coinciden exactamente.77606 permanece históricamente inaccesible,sin terminación presumida. No reactivar asignaciones anteriores ni recrear sus archivos privados de publicación.
 
 ## Acción y conservación
 
-Continuar sólo22,4→24 con el ejecutor rápido anterior íntegro. No repetir intervalos hasta22,4. Cada0,4 guarda estado interno;cada1,6 y frontera exige la ruta anterior hasta cerrar24. En24:recuperación pública independiente,cinco métricas espaciales originales y todos los controles físicos antes de otro tramo.
+La siguiente asignación preparada es p3_24_a32_hibrido_20261106. Restaurar frontera cerrada24 con solvers ausentes;transporte23,6 forense. Comprobar capacidad,reserva,activación y actividad posteriores antes de crear otro trabajador. No repetir intervalos hasta24.
 
-La [enmienda híbrida](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/ENMIENDA.md) se registra antes de usarla y sólo en una asignación nueva desde24 o posterior. Ruta:local exacto0,4;Biblioteca persistente y recuperación original cada1,6;dos últimos transportes verificados;fronteras8 completas en Releases con descarga independiente y todas las puertas. Capacidad,reserva y activación son propias del proceso real. Negativos/incidentes se conservan inmediatamente. No modificar trabajadores activos.
+La [enmienda híbrida](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/ENMIENDA.md) pasó33 controles administrativos y debe estar publicada y recuperada antes de usarla. Local exacto0,4;Biblioteca persistente con recuperación original cada1,6;dos últimos transportes verificados;fronteras8 en Releases con descarga independiente y todas las puertas. Capacidad,reserva y activación propias del proceso real. No modificar trabajadores activos.
 
-Rotación:conservar anterior hasta guardar,recuperar y auditar nuevo;retirar sólo identidades inscritas de esta ejecución y registrar reemplazo. Tras frontera pública positiva puede retirarse lo sustituido. Excluir migración,archivos ajenos,evidencia única,negativos e incidentes. Ante pérdida durante retirada,reconciliar diario e identidades persistentes antes de reintentar. No hacer limpieza histórica general.
+Rotación:conservar anterior hasta guardar,recuperar y auditar nuevo;retirar sólo identidades verificadas y registrar reemplazo. Tras frontera pública positiva puede retirarse lo sustituido. Excluir migración,archivos ajenos,evidencia única,negativos e incidentes. Ante pérdida durante retirada,reconciliar diario e identidades persistentes,sin reintento ciego. No hacer limpieza histórica general.
 
 ## Invariantes y fuentes
 

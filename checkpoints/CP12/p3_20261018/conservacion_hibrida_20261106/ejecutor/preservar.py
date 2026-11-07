@@ -68,6 +68,9 @@ def initialize_rotation(home, reg):
         ring = read(path)
         if ring.get('schema') != POLICY or ring.get('execution_uuid') != UID:
             raise ValueError('Diario de otra política')
+        rotation_plan(ring['retained'])
+        if len(ring['retained']) > 2:
+            raise ValueError('Rotación incompleta: reconciliar antes de física')
         if any(x['status'] not in ('trashed',) for x in ring['retirements']):
             raise ValueError('Retirada pendiente: reconciliar antes de física')
         return

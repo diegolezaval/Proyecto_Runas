@@ -1,18 +1,20 @@
 # Retomar CP12/P3
 
-Actualización:6 de noviembre de2026,Lima. CP11 aceptado;CP12 abierto;P3 sin validar.
+6 de noviembre de2026,Lima. CP11 aceptado;CP12 abierto;P3 sin validar.
 
-| Hecho | Evidencia vigente |
+| Hecho | Estado acreditado |
 |---|---|
-| Última frontera científica completa positiva | τ16;cinco métricas y controles originales positivos |
-| Último transporte exacto recuperado | τ22,4 con límite24;350 cargas;30+14 controles originales;cero evolución en auditorías |
-| Biblioteca | libfile_142d2f9ee5388191a13da1520ed45dc8 |
-| GitHub Release | adjunto718197317;230372773 bytes;SHA256287581812d0c2c3fc0dd7bef2731b2eaf08aa20fa19a60e0421c9a85f5c1de00 |
-| Trabajador anterior |77606 inaccesible;salida no observada;no reactivar p3_16_a24_20261106 |
-| Nueva asignación |p3_224_a24_20261106;único proceso44909 con ambos locks;capacidad propia nativa/pública positiva;espera activación |
-| Siguiente acción |Restauración interna exacta22,4→24;no repetir intervalos conservados |
-| Conservación |Hasta24 rige publicación y recuperación en ambos destinos;híbrido registrado y29 controles administrativos positivos para el segmento siguiente,con capacidad propia pendiente |
+| Última frontera científica completa positiva |τ24:cinco métricas≤.02,diez controles físicos y30 controles originales |
+| Último estado exacto recuperado |Frontera24;358 cargas;auditorías y lector con cero evolución |
+| GitHub Release |718257706;230562086 bytes;SHA25613660aae72467ccb2eda738d773103c8b14cb1950f4ed84a959cfb6f3f10fed6 |
+| Biblioteca de frontera24 |libfile_ddacdad0b1148191828315263c178493 |
+| Último transporte intermedio |22,4:718197317 ylibfile_142d2f9ee5388191a13da1520ed45dc8;sustituido para continuar por24 |
+| Trabajador anterior |44909 terminó con salida0 observada antes de perderse la carpeta temporal;no reactivar |
+| Asignación siguiente |p3_24_a32_hibrido_20261106 preparada;capacidad propia,reserva y activación pendientes |
+| Política desde24 |local exacto0,4;Biblioteca cada1,6,dos transportes;fronteras8 en Releases con recuperación y puertas |
 
-[Origen y recibos](checkpoints/CP12/p3_20261018/recuperacion_t224_20261106/ORIGEN.json) · [reconciliación](checkpoints/CP12/p3_20261018/recuperacion_t224_20261106/RECONCILIACION.json) · [registro canónico](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json) · [nueva asignación](checkpoints/CP12/p3_20261018/reanudacion_t224_20261106/REGISTRO.json).
+[Origen24](checkpoints/CP12/p3_20261018/frontera_t24_20261106/ORIGEN.json) · [métricas](checkpoints/CP12/p3_20261018/frontera_t24_20261106/METRICAS_ORIGINALES.json) · [registro](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json) · [enmienda](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/ENMIENDA.md) · [asignación](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/REGISTRO.json).
 
-No reutilizar capacidades históricas ni reconstruir permisos privados. No repetir hasta22,4. En24:recuperación pública independiente,cinco métricas espaciales originales y controles físicos antes de otro tramo. Negativo:conservar y suspender,sin candidato automático. Mantener fuentes,M2,Θ,CP04,mallas,tolerancias,observadores y umbrales. No reanudar P2,CP10,CP12 original ni F0…F5.
+No repetir intervalos hasta24. Restaurar frontera cerrada24 con solvers ausentes;transporte23,6 forense. Comprobar recibos posteriores antes de crear otro trabajador.77606 sigue históricamente inaccesible,sin salida observada;su asignación no se reactiva.
+
+En32 y cada frontera:recuperación pública independiente,cinco métricas espaciales y todos los controles originales. Un negativo se conserva y suspende,sin candidato automático. No reanudar P2,CP10,CP12 original,CP04 ni F0…F5. Mantener fuentes,M2,Θ,datos,mallas,tolerancias,observadores y umbrales. τ160 tampoco cierra P3/CP12 por sí solo.

@@ -30,9 +30,13 @@
     "negative_keeps_public_recovery": true,
     "transport_capacity_keeps_public_recovery": true,
     "rotation_after_verified_new_save_keeps_two_and_records_replacement": true,
-    "negative_boundary_cannot_trigger_cleanup": true
+    "negative_boundary_cannot_trigger_cleanup": true,
+    "recovery_rehydrates_both_previous_verified_identities": true,
+    "recovered_transport_without_native_identity_refused": true,
+    "failed_retirement_keeps_all_verified_backups_and_records_failure": true,
+    "unresolved_retirement_blocks_new_physics_on_restart": true
   },
-  "test_count": 29,
+  "test_count": 33,
   "synthetic": true,
   "remote_mutations_executed": 0,
   "M2_steps_executed": 0,

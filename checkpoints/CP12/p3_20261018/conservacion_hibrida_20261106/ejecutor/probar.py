@@ -119,6 +119,27 @@ def main():
             after['retirements'][-1]['replacement']['identities'] == [x['library_file_id'] for x in after['retained']])
         tests['negative_boundary_cannot_trigger_cleanup'] = refused(lambda: p.retire_at_boundary(
             home, {}, dict(prefix_pair_limits_met=False, prefix_physical_controls_met=True), root))
+        resumed = root / 'resumed'
+        (resumed / 'runtime').mkdir(parents=True)
+        (resumed / 'administracion_continuacion_20261030').mkdir()
+        inherited = copy.deepcopy(after['retained'])
+        p.initialize_rotation(resumed, dict(kind='transport', clock=28.8,
+                                          inherited_verified_transports=inherited))
+        tests['recovery_rehydrates_both_previous_verified_identities'] = (
+            p.read(resumed / 'runtime/HIBRIDO_ROTACION.json')['retained'] == inherited)
+        missing = root / 'missing'
+        (missing / 'runtime').mkdir(parents=True)
+        tests['recovered_transport_without_native_identity_refused'] = refused(lambda:
+            p.initialize_rotation(missing, dict(kind='transport', clock=28.8)))
+        class FailedRemoval:
+            def call_tool(self, app, name, value):
+                return {'structuredContent': {'results': [{'status': 'failed', 'message': 'synthetic'}]}}
+        tests['failed_retirement_keeps_all_verified_backups_and_records_failure'] = (
+            refused(lambda: p.record_transport(resumed, receipt(30.4), root, FailedRemoval)) and
+            len(p.read(resumed / 'runtime/HIBRIDO_ROTACION.json')['retained']) == 3 and
+            p.read(resumed / 'runtime/HIBRIDO_ROTACION.json')['retirements'][-1]['status'] == 'failed_no_automatic_retry')
+        tests['unresolved_retirement_blocks_new_physics_on_restart'] = refused(lambda:
+            p.initialize_rotation(resumed, dict(kind='transport', clock=30.4)))
     result = dict(schema='CP12_P3_HYBRID_BOUNDED_ADMIN_TESTS_V1', passed=all(tests.values()), tests=tests,
         test_count=len(tests), synthetic=True, remote_mutations_executed=0, M2_steps_executed=0,
         DOP853_construction_or_step_attempts=0, CP12_closed=False,

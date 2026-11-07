@@ -2191,6 +2191,13 @@
       "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
       "report": "informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md",
       "scope": "Reconciliación de activación inaccesible, recuperación actual de16 y nueva asignación; sin pasos nuevos."
+    },
+    {
+      "at": "2026-11-07T00:28:13.504631+00:00",
+      "event": "CP12_P3_FRONTERA24_POSITIVA_RECUPERADA_TRAS_PERDIDA_LOCAL",
+      "report": "informes/RECUPERACION_T224_Y_GUARDADO_HIBRIDO_20261106.md",
+      "evidence": "checkpoints/CP12/p3_20261018/frontera_t24_20261106/ORIGEN.json",
+      "CP12_closed": false
     }
   ],
   "next_actions": [
@@ -2218,50 +2225,12 @@
     "No repetir19.2→20.8:transporte exacto recuperado nativa y públicamente como717383219;usar último estado íntegro si el proceso desaparece."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Mantener el único trabajador p3_16_a24_20261106 hacia24. Conservar y recuperar cada1,6; en24 exigir todas las métricas originales sobre extracción independiente. No reactivar procesos anteriores ni repetir prefijos.",
+  "next_calculation": "P3:capacidad propia,reserva y activación del nuevo trabajador híbrido24→32;transportes1.6 en Biblioteca y fronteras8 en Releases,con todas las puertas.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [
-    {
-      "campaign": "CP12_P3",
-      "allocation_id": "p3_16_a24_20261106",
-      "tool_session_id": 77606,
-      "status": "EVOLVING_16_A24",
-      "source_observer_clock": 16,
-      "next_full_frontier": 24,
-      "evidence": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/RECEPCION_ACREDITADA_POR_INICIO.json",
-      "original_trajectories_repeated": false,
-      "current_process_M2_steps_executed": 1766,
-      "CP12_closed": false,
-      "current_process_M2_steps_executed_at_first_observed_interval": 4,
-      "physical_start_observed": true,
-      "first_observed_clock": 16.01,
-      "current_step_count_scope": "Pasos nuevos conservados hasta20.8;no total final en vuelo.",
-      "latest_recovered_clock": 20.8,
-      "latest_transport_public_asset": 717383219
-    }
-  ],
-  "research_in_progress": [
-    {
-      "campaign": "CP12_P3",
-      "allocation_id": "p3_16_a24_20261106",
-      "tool_session_id": 77606,
-      "status": "EVOLVING_16_A24",
-      "source_observer_clock": 16,
-      "next_full_frontier": 24,
-      "evidence": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/RECEPCION_ACREDITADA_POR_INICIO.json",
-      "original_trajectories_repeated": false,
-      "current_process_M2_steps_executed": 1766,
-      "CP12_closed": false,
-      "current_process_M2_steps_executed_at_first_observed_interval": 4,
-      "physical_start_observed": true,
-      "first_observed_clock": 16.01,
-      "current_step_count_scope": "Pasos nuevos conservados hasta20.8;no total final en vuelo.",
-      "latest_recovered_clock": 20.8,
-      "latest_transport_public_asset": 717383219
-    }
-  ],
+  "numerical_runs_in_progress": [],
+  "research_in_progress": [],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
-  "delivery_boundary": "CP11 aceptado;CP12 abierto;P3 sin validar. Frontera16 nativa y pública recuperada:324 cargas,30 controles originales,cinco métricas y diez controles físicos positivos,sin pasos nuevos en esta revisión. Transporte14,4 se conserva como historia;no repetir14,4→16. Compilador original intacto. P2 suspendido.",
+  "delivery_boundary": "CP11 aceptado;CP12 abierto;P3 sin validar. Frontera24 recuperada nativa y públicamente:358 cargas,30 controles originales,cinco métricas y diez controles físicos positivos. No se repitió física tras la pérdida temporal. Guardado híbrido preparado para nueva asignación24→32.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
   "latest_completed_nonradial_time": 160,
   "diagnostic_after_gate": "checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json",
@@ -2549,13 +2518,13 @@
     "P3_hypothesis_only": true
   },
   "latest_verified_cp12_P3_restart": {
-    "time": 16,
-    "state_sha256": "ac249962765a990e75fc25817f5c3d7ce9c0061430e3142719ccd97964e5c1ed",
+    "time": 24,
+    "state_sha256": "41c2f639e410fc289ff626d693f702b5f2e6d48acfeea0839c63dc2cd9c65373",
     "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
-    "receipt_sha256": "4fe1495f9dc6b6e25ba97574918e9735fb7603e2d64cd392fbc50c680cd389ca",
+    "receipt_sha256": "91bfb2654e4058f48721972c7134b2c07832e3b7b424ce39da06f4e5d29bb4ed",
     "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
     "run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
-    "evidence": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/CERTIFICADO_FRONTERA.json",
+    "evidence": "checkpoints/CP12/p3_20261018/frontera_t24_20261106/CERTIFICADO_FRONTERA.json",
     "all_five_spatial_and_prefix_physical_gates_passed": true,
     "CP12_closed": false
   },
@@ -2606,75 +2575,10 @@
     "latest_transport_evidence": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000208/CERTIFICADO_TRANSPORTE.json"
   },
   "latest_verified_cp12_P3_transport": {
-    "schema": "CP12_P3_FORWARD_TRANSPORT_PERMANENTLY_RECOVERED",
-    "passed": true,
-    "observer_clock": 20.8,
-    "closed_boundary": 16,
-    "target": 24,
-    "scientific_frontier": false,
-    "kind": "transport",
-    "library_file_id": "libfile_9b75233f948c8191bf3fd58d7a71b945",
-    "file_id": "file_00000000406082128580e12d39f4d865",
-    "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000208_P3_16_A24_20261106.zip",
-    "zip_bytes": 230326205,
-    "zip_sha256": "33b4f7406144a6849459a85fc9d1b402df409f12103ce099a527fc19d2c6a480",
-    "github_asset_id": 717383219,
-    "transport_state_sha256": "18c81eb793ef5f4b9a8b910a5700ec7f2c4253e41b4287f5c9c8357d0c466a38",
-    "independent_zero_step_audit": {
-      "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
-      "passed": true,
-      "tests": {
-        "all_internal_state_bits_and_nfev_restored": true,
-        "original_sources_and_configuration": true,
-        "scientific_seed_unchanged": true,
-        "restore_used_no_solver_step": true,
-        "exact_stage_alias": true,
-        "accepted_states_match_solver": true,
-        "clocks_bracket_observer": true,
-        "both_energy_and_charge_gates": true,
-        "original_observer_maximum_gates": true,
-        "original_Parseval": true,
-        "original_symmetry": true,
-        "independently_reloaded_observer_closure": true,
-        "independently_reloaded_Parseval": true,
-        "file_unchanged": true
-      },
-      "observer_clock": 20.8,
-      "target": 24,
-      "state_sha256": "18c81eb793ef5f4b9a8b910a5700ec7f2c4253e41b4287f5c9c8357d0c466a38",
-      "physical_metadata": [
-        {
-          "t": 20.802475737396644,
-          "accepted": 3848,
-          "nfev": 36124,
-          "nfev_live": 10646,
-          "maxe": 7.94191379327458e-11,
-          "maxq": 1.4432899320127035e-15,
-          "maxe_original": 3.7983602929614335e-09
-        },
-        {
-          "t": 20.80248194312378,
-          "accepted": 3848,
-          "nfev": 36124,
-          "nfev_live": 10646,
-          "maxe": 7.925482492510127e-11,
-          "maxq": 4.440892098500626e-16,
-          "maxe_original": 1.0295234664781105e-09
-        }
-      ],
-      "M2_steps_executed": 0,
-      "scientific_frontier": false,
-      "correction_validated": false,
-      "CP12_closed": false,
-      "DOP853_construction_or_step_attempts": 0
-    },
-    "payload_files": 345,
-    "exact_manifest_coverage": true,
-    "all_payload_hashes_verified_before_and_after": true,
-    "native_and_public_recovery_passed": true,
-    "source_archive_and_payload_unchanged": true,
-    "M2_steps_executed_during_preservation": 0,
-    "CP12_closed": false
+    "observer_clock": 22.4,
+    "github_asset_id": 718197317,
+    "library_file_id": "libfile_142d2f9ee5388191a13da1520ed45dc8",
+    "superseded_by_full_boundary": 24
   },
   "P3_saved_prefix_spatial_agreement": {
     "16": {
@@ -2684,6 +2588,26 @@
       "threshold": 0.02,
       "final_tau160_acceptance": false,
       "M2_steps_executed": 0
+    },
+    "24": {
+      "time": 24,
+      "result": "checkpoints/CP12/p3_20261018/frontera_t24_20261106/METRICAS_ORIGINALES.json",
+      "all_five_pair_limits_met": true,
+      "all_prefix_physical_controls_met": true,
+      "threshold": 0.02,
+      "final_tau160_acceptance": false,
+      "M2_steps_executed": 0
     }
+  },
+  "conservation_policy": {
+    "policy": "CP12_P3_HYBRID_20261106_V1",
+    "effective_from_boundary": 24,
+    "local_interval": 0.4,
+    "native_transport_interval": 1.6,
+    "keep_last_verified_native_transports": 2,
+    "public_full_boundary_interval": 8,
+    "registration": "checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/REGISTRO.json",
+    "bounded_admin_checks": 33,
+    "real_new_process_capacity_still_required": true
   }
 }
