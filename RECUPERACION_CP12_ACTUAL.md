@@ -1,23 +1,21 @@
 # Retomar CP12/P3
 
-6 de noviembre de2026,Lima. CP11 aceptado;CP12 abierto;P3 sin validar.
+7 de noviembre de 2026, Lima. CP11 aceptado, CP12 abierto y P3 sin validar.
 
 | Hecho | Evidencia vigente |
 |---|---|
-| Última frontera científica positiva |τ24;cinco métricas≤.02 y diez controles físicos positivos |
-| Cápsula pública24 |718257706;230562086 bytes;SHA25613660aae72467ccb2eda738d773103c8b14cb1950f4ed84a959cfb6f3f10fed6 |
-| Último transporte exacto |τ27.2;375 cargas;30+14 controles,cero evolución en recuperación |
-| Biblioteca |libfile_341fb80dc3688191bfb135d921e15f22 |
-| Bytes y SHA256 |230637818;d754dbce9f2cc0f3d3ff5b17f2073be9cc7e45843a635bcc36bac9d32095b5a8 |
-| Retención verificada |25.6:libfile_5940394ea2dc81918568fcfe0ea4b29a; 27.2:libfile_341fb80dc3688191bfb135d921e15f22 |
-| Trabajador observado |75320,p3_24_a32_hibrido_20261106;activación68f461d recibida,inicio24.01 observado;comprobar sesión real |
-| Siguiente acción |transporte28.8 por Biblioteca;después frontera32 condicionada |
-| Política |Local exacto0.4;Biblioteca recuperada cada1.6,dos últimos;fronteras8 en Releases con todas las puertas |
+| Última frontera científica positiva | τ24. Cinco métricas espaciales y diez controles físicos positivos |
+| Cápsula pública τ24 | Adjunto 718257706, 230562086 bytes, SHA256 `13660aae72467ccb2eda738d773103c8b14cb1950f4ed84a959cfb6f3f10fed6` |
+| Último transporte exacto | τ28,8 con límite τ32. 381 cargas y 44 controles originales con cero evolución en recuperación |
+| Identidad persistente | `libfile_b0a32b20e4308191ac0dd2ba6a38bd15` |
+| Tamaño y SHA256 | 230684256 bytes, `71bd793e23c4e48335ee7a4e12576659f648394f0824a26470694cc9c7add2c3` |
+| Retención verificada | τ27,2 y τ28,8 |
+| Asignación | `p3_288_a32_hibrido_20261107` preparada. Sesión anterior 75320 inaccesible, salida sin observar |
+| Siguiente acción | Completar capacidad propia, reserva y activación. Después, τ30,4 recuperable y frontera τ32 condicionada |
+| Conservación | Estado exacto local cada 0,4, Biblioteca cada 1,6 con dos transportes verificados, cápsulas públicas completas cada 8 |
 
-[Origen del transporte](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000272/ORIGEN.json) · [recuperación nativa](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000272/RECUPERACION_NATIVA.json) · [rotación](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000272/ROTACION.json) · [métricas24](checkpoints/CP12/p3_20261018/frontera_t24_20261106/METRICAS_ORIGINALES.json) · [registro](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json) · [enmienda](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/ENMIENDA.md).
+[Origen τ28,8](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000288/ORIGEN.json) · [Recuperación nativa](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000288/RECUPERACION_NATIVA.json) · [Rotación](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000288/ROTACION_RECONCILIADA.json) · [Métricas τ24](checkpoints/CP12/p3_20261018/frontera_t24_20261106/METRICAS_ORIGINALES.json) · [Registro](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
 
-No repetir intervalos hasta27.2. Para recuperar un transporte restaurar toda la memoria interna,observadores,pasiva y contadores con límite32;el estado cerrado anterior es24. Un latido no es checkpoint. No crear otro trabajador si75320 sigue accesible. Si es inaccesible,documentar y aislar su asignación sin presumir salida;capacidad,reserva y activación nuevas antes de física.
+Restaurar toda la memoria del integrador, observadores, memoria pasiva y contadores con límite τ32. La prueba pública de capacidad usa la frontera pública τ24 y el control exacto del transporte queda en la Biblioteca. Comprobar las publicaciones recientes y el estado real de la asignación antes de operar. [Aislamiento](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/AISLAMIENTO.json) · [Enmienda](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/ENMIENDA.md) · [Capacidad separada](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/CAPACIDAD_SEPARADA.md).
 
-En32:recuperación pública independiente,cinco métricas originales y todos los controles físicos. Negativo científico:conservar y suspender esa versión,sin candidato automático. No reanudar P2,CP10,CP12 original,CP04 ni F0…F5. Mantener M2,Θ,datos,mallas,tolerancias,observadores y umbrales. Llegar160 tampoco cierra P3/CP12.
-
-[Retiradas anteriores verificadas17.6–22.4](checkpoints/CP12/p3_20261018/frontera_t24_20261106/ROTACION_TRANSPORTES_16_A24.json). Sus originales públicos y toda evidencia única permanecen conservados.
+En τ32 se exige descarga pública independiente, cinco métricas espaciales y todos los controles físicos originales. Conservar y suspender ante un negativo científico. Mantener M2, Θ, datos, mallas, tolerancias, observadores y umbrales. Quedan vigentes las obligaciones causales, de convergencia, referencia y robustez de P3.

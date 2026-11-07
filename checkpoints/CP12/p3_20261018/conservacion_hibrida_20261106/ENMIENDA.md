@@ -22,3 +22,5 @@ Después de una frontera pública recuperada y positiva se pueden retirar sus tr
 Quedan excluidos originales de migración,archivos ajenos,resultados únicos,negativos,incidentes y evidencia aún necesaria. No se aplica limpieza histórica general. M2,Θ,CP04,mallas,datos,precisión,tolerancias y umbrales no cambian. Transporte no equivale a frontera;τ160 tampoco cierra P3 o CP12.
 
 Las pruebas acotadas comprueban selección de ruta,rotación sólo tras recuperación y conservación del respaldo anterior ante fallo. Se reutilizan el transporte exacto y su control de primer intervalo P3,los doce rechazos administrativos y la serialización sin pérdidas cuyos módulos no cambian. La capacidad real de cada proceso nuevo se prueba aparte;los controles sintéticos no la sustituyen.
+
+Para una asignación de recuperación que parte de un transporte nativo posterior a la frontera cerrada, se aplica la [capacidad separada](CAPACIDAD_SEPARADA.md). Los dos ciclos del proceso siguen siendo obligatorios y el estado interno queda en la Biblioteca.

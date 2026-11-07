@@ -1,0 +1,55 @@
+{
+  "schema": "CP12_P3_HYBRID_ROTATION_RECONCILIATION_V1",
+  "at_utc": "2026-11-07T05:44:30.247082+00:00",
+  "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+  "latest_active_library_scope": "Creación posterior a 2026-11-07T00:40:00Z, sin más páginas",
+  "retained": [
+    {
+      "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+      "kind": "transport",
+      "protected": false,
+      "verified": true,
+      "observer_clock": 27.2,
+      "library_file_id": "libfile_341fb80dc3688191bfb135d921e15f22",
+      "file_id": "file_00000000d6e081f5ab6e64f1141a7197",
+      "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000272_P3_24_A32_HIBRIDO_20261106.zip",
+      "sha256": "d754dbce9f2cc0f3d3ff5b17f2073be9cc7e45843a635bcc36bac9d32095b5a8",
+      "bytes": 230637818
+    },
+    {
+      "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+      "kind": "transport",
+      "protected": false,
+      "verified": true,
+      "observer_clock": 28.8,
+      "library_file_id": "libfile_b0a32b20e4308191ac0dd2ba6a38bd15",
+      "file_id": "file_0000000059cc81f585eb495059c808e8",
+      "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000288_P3_24_A32_HIBRIDO_20261106.zip",
+      "bytes": 230684256,
+      "sha256": "71bd793e23c4e48335ee7a4e12576659f648394f0824a26470694cc9c7add2c3"
+    }
+  ],
+  "retirements": [
+    {
+      "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+      "kind": "transport",
+      "protected": false,
+      "verified": true,
+      "observer_clock": 25.6,
+      "library_file_id": "libfile_5940394ea2dc81918568fcfe0ea4b29a",
+      "file_id": "file_00000000c1d481f590c9febdb6b2af0b",
+      "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000256_P3_24_A32_HIBRIDO_20261106.zip",
+      "sha256": "2830d2fab4e612167ad6f75e5d1cf733e5584dd13e4ba2e4fadf4d3afb06a92d",
+      "bytes": 230605629,
+      "status": "ABSENT_FROM_CURRENT_ACTIVE_LIBRARY_LIST",
+      "deletion_receipt_recovered": false,
+      "previous_worker_outcome_assumed": false,
+      "replacement": [
+        "libfile_341fb80dc3688191bfb135d921e15f22",
+        "libfile_b0a32b20e4308191ac0dd2ba6a38bd15"
+      ]
+    }
+  ],
+  "new_deletions_performed": 0,
+  "next_automatic_rotation_after_verified_new_transport": true
+}

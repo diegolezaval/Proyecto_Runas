@@ -8,7 +8,7 @@ CP11 aceptado;CP12 abierto;P3 sin validar. Última frontera completa positiva24:
 
 ## Acción y conservación
 
-La asignación vigente es p3_24_a32_hibrido_20261106,único trabajador75320. Capacidad propia nativa y pública719094068,reserva46d91a5 y activación68f461d recuperadas;se observó24,01 con2 pasos aceptados por malla. Comprobar sesión y recibos posteriores antes de actuar. Restaurar frontera cerrada24 con solvers ausentes;transporte23,6 forense. Comprobar capacidad,reserva,activación y actividad posteriores antes de crear otro trabajador. No repetir intervalos hasta24.
+La asignación nueva `p3_288_a32_hibrido_20261107` está preparada desde τ28,8, recuperado con 381 cargas y 44 controles originales. La sesión 75320 está inaccesible y su salida queda sin observar. La nueva capacidad nativa conserva el estado exacto y la pública usa la frontera pública τ24. Recuperar la reserva y la activación antes de evolucionar. Consultar el [registro de la asignación](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/REGISTRO.json) y el [aislamiento](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/AISLAMIENTO.json). Evitar repetir intervalos hasta τ28,8.
 
 La [enmienda híbrida](checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/ENMIENDA.md) pasó33 controles administrativos y debe estar publicada y recuperada antes de usarla. Local exacto0,4;Biblioteca persistente con recuperación original cada1,6;dos últimos transportes verificados;fronteras8 en Releases con descarga independiente y todas las puertas. Capacidad,reserva y activación propias del proceso real. No modificar trabajadores activos.
 

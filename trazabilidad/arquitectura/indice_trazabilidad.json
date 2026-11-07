@@ -12354,6 +12354,20 @@
       ]
     },
     {
+      "path": "herramientas/comparar_control_publico_p3.py",
+      "role": "codigo_o_herramienta",
+      "bytes": 7549,
+      "snapshot_sha256": "f03d821b485b1e5f1f1be22f8f6ff7af3593231f624f990d6de9c0016e923d5a",
+      "used_by_claims": [],
+      "claim_link_categories": {},
+      "stage_evidence_for": [],
+      "stored_with_campaign_results": [],
+      "read_by_declared_generators": [],
+      "declared_generators": [],
+      "produced_by_executions": [],
+      "used_as_input_by_executions": []
+    },
+    {
       "path": "herramientas/comparar_mediador_CP10.py",
       "role": "codigo_o_herramienta",
       "bytes": 7988,
@@ -39665,6 +39679,7 @@
     "herramientas/auditar_arquitectura.py",
     "herramientas/auditar_positividad_angular_m2.py",
     "herramientas/checkpoint.py",
+    "herramientas/comparar_control_publico_p3.py",
     "herramientas/complecion_escalar.py",
     "herramientas/contrastes_r1.py",
     "herramientas/correspondencia_micro.py",

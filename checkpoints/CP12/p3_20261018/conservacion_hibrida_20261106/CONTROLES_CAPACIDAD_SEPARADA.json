@@ -1,0 +1,16 @@
+{
+  "schema": "CP12_P3_SPLIT_CAPACITY_BOUNDED_TESTS_V1",
+  "passed": true,
+  "checks": {
+    "shared_original_restore_activate_metrics_validation": true,
+    "identical_activation_evolution_saves_scientific_gates_and_suspension": true,
+    "separate_destinations_keep_exact_native_origin_and_public_reference": true,
+    "native_failure_keeps_prior_backups_and_blocks_publication_and_activation": true,
+    "public_failure_keeps_prior_backups_and_blocks_activation": true,
+    "historical_public_asset_cannot_satisfy_new_capacity": true,
+    "wrong_reference_rejected_before_native_write": true
+  },
+  "test_count": 7,
+  "M2_steps_executed": 0,
+  "remote_mutations_executed": 0
+}

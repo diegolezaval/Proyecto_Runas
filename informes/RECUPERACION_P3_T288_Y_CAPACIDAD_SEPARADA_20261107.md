@@ -1,0 +1,11 @@
+# P3 · Recuperación de τ28,8 y capacidad separada
+
+La rama se comprobó en `1063bb9e288b82808f441222f12a4f93c8b8da12`. La sesión 75320 resulta inaccesible y la carpeta temporal ya no está disponible. La salida del proceso queda sin observar. El adjunto público más reciente es su control de capacidad y la última frontera positiva es τ24.
+
+Se descargó τ28,8 de la Biblioteca y se verificaron las 381 cargas antes y después de las auditorías. Pasaron 30 controles de la frontera cerrada τ24 y 14 del transporte, con cero construcciones o pasos de DOP853 y cero pasos de M2. Coinciden el registro original de la asignación, la prueba local del transporte y el recibo de τ27,2. Las 356 cargas de la frontera pública τ24 ajenas al transporte activo siguen idénticas. [Origen y recibo](../checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000288/ORIGEN.json).
+
+La lista activa confirma τ27,2 y τ28,8. La identidad anterior de τ25,6 está ausente del listado completo reciente y el recibo de retirada de 75320 no se recuperó. La reconciliación registra su identidad y reemplazos. En esta entrega de recuperación se hicieron cero retiradas. [Rotación reconciliada](../checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000288/ROTACION_RECONCILIADA.json).
+
+La asignación anterior queda aislada administrativamente. La nueva prueba de capacidad conserva el origen exacto en la Biblioteca y publica un control derivado exclusivamente de la frontera pública τ24. Pasaron siete controles administrativos acotados, incluidos los fallos nativo y público. El proceso nuevo debe verificar ambos ciclos y recuperar su reserva y activación antes de continuar. [Aislamiento](../checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/AISLAMIENTO.json) · [Adaptación](../checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/CAPACIDAD_SEPARADA.md) · [Registro](../checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/REGISTRO.json).
+
+El siguiente avance físico autorizado es τ28,8→τ32 desde la memoria interna recuperada. Se mantiene el transporte permanente τ30,4 y se exigen todas las puertas originales en τ32. CP11 sigue aceptado, CP12 abierto y P3 sin validar.
