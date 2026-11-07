@@ -5,10 +5,10 @@
 | Hecho | Estado acreditado |
 |---|---|
 | Última frontera científica completa positiva |τ24:cinco métricas≤.02,diez controles físicos y30 controles originales |
-| Último estado exacto recuperado |Frontera24;358 cargas;auditorías y lector con cero evolución |
+| Último estado exacto recuperado |Transporte25,6 en Biblioteca;369 cargas y30+14 auditores originales,cero evolución |
 | GitHub Release |718257706;230562086 bytes;SHA25613660aae72467ccb2eda738d773103c8b14cb1950f4ed84a959cfb6f3f10fed6 |
 | Biblioteca de frontera24 |libfile_ddacdad0b1148191828315263c178493 |
-| Último transporte intermedio |22,4:público718197317;su copia nativa fue retirada tras recuperar24;usar frontera24 |
+| Último transporte intermedio |25,6:libfile_5940394ea2dc81918568fcfe0ea4b29a;230605629 bytes;SHA2562830d2fab4e612167ad6f75e5d1cf733e5584dd13e4ba2e4fadf4d3afb06a92d |
 | Trabajador anterior |44909 terminó con salida0 observada antes de perderse la carpeta temporal;no reactivar |
 | Asignación siguiente |p3_24_a32_hibrido_20261106;trabajador75320 activo:capacidad propia nativa/pública,reserva46d91a5 y activación68f461d recuperadas;inicio24,01 observado |
 | Política desde24 |local exacto0,4;Biblioteca cada1,6,dos transportes;fronteras8 en Releases con recuperación y puertas |
@@ -21,4 +21,6 @@ En32 y cada frontera:recuperación pública independiente,cinco métricas espaci
 
 [Retiradas verificadas17,6–22,4](checkpoints/CP12/p3_20261018/frontera_t24_20261106/ROTACION_TRANSPORTES_16_A24.json):cuatro copias nativas,921230396 bytes redundantes;originales públicos conservados.
 
-[Inicio físico24→32](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/RECEPCION_ACREDITADA_POR_INICIO.json). Siguiente transporte permanente25,6;no es frontera científica.
+[Inicio físico24→32](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/RECEPCION_ACREDITADA_POR_INICIO.json). Siguiente transporte permanente27,2;no es frontera científica.
+
+[Transporte híbrido25,6](checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000256/ORIGEN.json):recuperación independiente de toda la memoria interna;no repetir hasta25,6. No se publica ese transporte en Releases.

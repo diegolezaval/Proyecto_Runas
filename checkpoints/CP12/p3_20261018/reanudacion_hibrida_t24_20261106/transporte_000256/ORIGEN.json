@@ -1,0 +1,34 @@
+{
+  "kind": "transport",
+  "observer_clock": 25.6,
+  "closed_boundary": 24,
+  "target": 32,
+  "scientific_frontier": false,
+  "passed": true,
+  "library_file_id": "libfile_5940394ea2dc81918568fcfe0ea4b29a",
+  "file_id": "file_00000000c1d481f590c9febdb6b2af0b",
+  "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000256_P3_24_A32_HIBRIDO_20261106.zip",
+  "bytes": 230605629,
+  "sha256": "2830d2fab4e612167ad6f75e5d1cf733e5584dd13e4ba2e4fadf4d3afb06a92d",
+  "transport_state_sha256": "4f437f1e837d7b40f6814a5e00a08d86db8c0fe2681b6b164572c6ddedcdf753",
+  "closed_state_sha256": "41c2f639e410fc289ff626d693f702b5f2e6d48acfeea0839c63dc2cd9c65373",
+  "receipt_sha256": "91bfb2654e4058f48721972c7134b2c07832e3b7b424ce39da06f4e5d29bb4ed",
+  "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+  "source_allocation": "p3_24_a32_hibrido_20261106",
+  "tool_session_id": 75320,
+  "payload_files": 369,
+  "independent_native_recovery_passed": true,
+  "original_audit_test_counts": {
+    "boundary": 30,
+    "transport": 14
+  },
+  "original_audit_solver_construction_or_step_attempts": {
+    "boundary": 0,
+    "transport": 0
+  },
+  "M2_steps_executed_during_recovery": 0,
+  "github_required": false,
+  "source_archive_and_payload_unchanged": true,
+  "CP12_closed": false,
+  "correction_validated": false
+}
