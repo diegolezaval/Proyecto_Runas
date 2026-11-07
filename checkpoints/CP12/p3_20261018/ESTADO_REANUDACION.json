@@ -42,8 +42,8 @@
   "original_CP12_and_CP10_must_not_repeat": true,
   "F0_F5_must_not_repeat": true,
   "F0_F5_public_certificate": "checkpoints/CP12/p3_20261018/CERTIFICADO_F0_F5.json",
-  "updated_at": "2026-11-07T00:28:13.504631+00:00",
-  "last_public_commit": "b51d1a4ca594861254ea6ed61f0858946144a6e6",
+  "updated_at": "2026-11-07T00:43:22.107131+00:00",
+  "last_public_commit": "68f461d4f6b86d209bcd6b46dc55bf3af0df677b",
   "latest_full_trial_frontier_recovered_and_audited": 24,
   "latest_recoverable_observer_clock": 24,
   "latest_recoverable_kind": "boundary",
@@ -86,7 +86,7 @@
     "native_copy_status": "TRASHED_REDUNDANT_SUPERSEDED_BY_24",
     "retirement_receipt": "checkpoints/CP12/p3_20261018/frontera_t24_20261106/ROTACION_TRANSPORTES_16_A24.json"
   },
-  "current_own_worker_status": "WAITING_PUBLIC_RESERVATION_AND_ACTIVATION_24_A32",
+  "current_own_worker_status": "EVOLVING_HYBRID_24_A32",
   "own_guardian_tool_session_id": 75320,
   "own_exit_observed": false,
   "own_attempt_home": "/workspace/scratch/65d547c6c4de/public24_recovery/extraido",
@@ -95,7 +95,7 @@
   "current_assignment": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/REGISTRO.json",
   "current_helper_directory": "/workspace/scratch/65d547c6c4de/library_helpers",
   "activity_is_restart_certificate": false,
-  "next_recovery": "Recuperar reserva24→32 y publicar/recuperar activación antes de entregarla al único trabajador75320. Capacidad propia nativa y pública positiva;física nueva todavía0.",
+  "next_recovery": "Mantener único trabajador75320;conservación nativa independiente25.6,27.2,28.8,30.4 y frontera32 pública con todas las puertas. No crear otro trabajador ni repetir hasta24.",
   "conservation_policy": {
     "policy": "CP12_P3_HYBRID_20261106_V1",
     "effective_from_boundary": 24,
@@ -120,5 +120,16 @@
     "termination_assumed": false,
     "must_not_reactivate": true,
     "reconciliation": "checkpoints/CP12/p3_20261018/recuperacion_t224_20261106/RECONCILIACION.json"
-  }
+  },
+  "own_observed_start": {
+    "at": "2026-11-07T00:42:25.644295+00:00",
+    "clock": 24.01,
+    "accepted_steps_since_restore": [
+      2,
+      2
+    ],
+    "replay96_to112_executed": false,
+    "CP12_closed": false
+  },
+  "capacity_public_asset_id": 719094068
 }

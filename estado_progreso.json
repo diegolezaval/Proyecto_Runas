@@ -2225,10 +2225,44 @@
     "No repetir19.2→20.8:transporte exacto recuperado nativa y públicamente como717383219;usar último estado íntegro si el proceso desaparece."
   ],
   "complete_primordials": 0,
-  "next_calculation": "P3:capacidad propia,reserva y activación del nuevo trabajador híbrido24→32;transportes1.6 en Biblioteca y fronteras8 en Releases,con todas las puertas.",
+  "next_calculation": "Mantener75320 hacia transportes nativos1.6 y frontera32 pública;conservación híbrida y todas las puertas originales. No duplicar trabajador.",
   "stage_completion_is_distinct_from_campaign_pass": true,
-  "numerical_runs_in_progress": [],
-  "research_in_progress": [],
+  "numerical_runs_in_progress": [
+    {
+      "campaign": "CP12_P3",
+      "allocation_id": "p3_24_a32_hibrido_20261106",
+      "tool_session_id": 75320,
+      "status": "EVOLVING_HYBRID_24_A32",
+      "source_observer_clock": 24,
+      "next_full_frontier": 32,
+      "evidence": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/RECEPCION_ACREDITADA_POR_INICIO.json",
+      "original_trajectories_repeated": false,
+      "current_process_M2_steps_executed_at_first_observed_interval": 4,
+      "current_step_count_scope": "Primer intervalo observado;no total del estado en vuelo.",
+      "latest_recovered_clock": 24,
+      "physical_start_observed": true,
+      "first_observed_clock": 24.01,
+      "CP12_closed": false
+    }
+  ],
+  "research_in_progress": [
+    {
+      "campaign": "CP12_P3",
+      "allocation_id": "p3_24_a32_hibrido_20261106",
+      "tool_session_id": 75320,
+      "status": "EVOLVING_HYBRID_24_A32",
+      "source_observer_clock": 24,
+      "next_full_frontier": 32,
+      "evidence": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/RECEPCION_ACREDITADA_POR_INICIO.json",
+      "original_trajectories_repeated": false,
+      "current_process_M2_steps_executed_at_first_observed_interval": 4,
+      "current_step_count_scope": "Primer intervalo observado;no total del estado en vuelo.",
+      "latest_recovered_clock": 24,
+      "physical_start_observed": true,
+      "first_observed_clock": 24.01,
+      "CP12_closed": false
+    }
+  ],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
   "delivery_boundary": "CP11 aceptado;CP12 abierto;P3 sin validar. Frontera24 recuperada nativa y públicamente:358 cargas,30 controles originales,cinco métricas y diez controles físicos positivos. No se repitió física tras la pérdida temporal. Guardado híbrido preparado para nueva asignación24→32.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",

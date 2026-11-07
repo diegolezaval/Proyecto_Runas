@@ -23,3 +23,9 @@ La evolución22,4→24 terminó y se observó salida0 de44909 antes de la pausa.
 ## Rotación acotada tras24
 
 Se publicó y recuperó el plan antes de retirar cuatro copias nativas17,6/19,2/20,8/22,4:921230396 bytes redundantes. Cada retirada a papelera devolvió succeeded;se conservan las cápsulas públicas originales,la frontera24 recuperada y sus controles. No se incluyeron controles históricos,originales de migración,negativos,incidentes ni archivos ajenos. [Identidades y reemplazo](../checkpoints/CP12/p3_20261018/frontera_t24_20261106/ROTACION_TRANSPORTES_16_A24.json).
+
+## Inicio propio de la ruta híbrida24→32
+
+El control719094068 conserva231651970 bytes,SHA2564e0f5733635d3ab049e67a958bea4429e5b496bf541bf53d923171fe37b6c3c0. Recuperaciones propias nativa y pública:367 cargas y30 controles originales,cero evolución. Una revisión automática inicial bloqueó el adjunto administrativo;la comparación completa probó358 cargas públicas,6 archivos Git públicos,inventario y relleno determinista,sin entradas desconocidas. La misma subida por el mismo canal pasó después de esas comprobaciones;el incidente y la prueba quedan registrados.
+
+Reserva46d91a5 y activación68f461d recuperadas;ambos locks comprobados antes de entrega. El proceso75320 recibió la activación y avanzó a24,01 con2 pasos nuevos por malla. No se modificó un trabajador activo ni se repitieron intervalos conservados. Próximo transporte25,6 por Biblioteca;próxima frontera32 por Release y todas las métricas.

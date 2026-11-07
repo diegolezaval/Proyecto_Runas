@@ -4,13 +4,20 @@
   "target": 32,
   "allocation_id": "p3_24_a32_hibrido_20261106",
   "actual_worker_capacity_pending": false,
-  "reservation_published": false,
-  "activation_published": false,
+  "reservation_published": true,
+  "activation_published": true,
   "current_process_M2_steps_executed": 0,
   "scientific_sources_changed": false,
   "hybrid_route_registered_before_use": true,
   "source_all_original_gates_passed": true,
   "CP12_closed": false,
   "capacity_native_and_public_passed": true,
-  "tool_session_id": 75320
+  "tool_session_id": 75320,
+  "activation_delivered": true,
+  "worker_receipt_accredited_by_physical_start": true,
+  "physical_start_clock": 24.01,
+  "physical_steps_since_restore_at_first_observed_interval": [
+    2,
+    2
+  ]
 }
