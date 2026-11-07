@@ -1,0 +1,140 @@
+{
+  "schema": "CP12_REANUDADOR_INVENTARIO_REAL_V1",
+  "date_lima": "2026-11-07",
+  "scientific_head": "6153caeaa8bee7c80b87897693fe97ff2dd34126",
+  "allocation": "p3_30_a32_rescate_20261107",
+  "source": {
+    "recovered_observer_clock": 30,
+    "sha256": "4e2d8349206182f84648959a1823acf800eb518d21ee7d4b8d566d696553b628",
+    "target": 32,
+    "last_public_frontier": 24
+  },
+  "runs": [
+    {
+      "case": "sesion_nueva",
+      "mode": "retomar",
+      "started_at": "2026-11-07T17:52:48.204298+00:00",
+      "finished_at": "2026-11-07T17:54:21.341720+00:00",
+      "duration_seconds": 93.835,
+      "cli_seconds": 93.137,
+      "timings_seconds": {
+        "descarga": 41.008,
+        "auditoria": 26.055,
+        "espera": 0,
+        "consulta": 25.52
+      },
+      "exit_code": 2,
+      "status": "BLOQUEADO",
+      "last_stage": "CAPACIDAD_NATIVA_REGISTRADA",
+      "inventory": {
+        "input": "--comando-inventario",
+        "provider": "Biblioteca activa de ChatGPT Work",
+        "manual_snapshots": 0,
+        "queries": [
+          {
+            "pages": 6,
+            "files": 17,
+            "cp12_files": 10,
+            "seconds": 4.422
+          }
+        ]
+      },
+      "chat_interventions_new": 1,
+      "chat_interventions_total": 1,
+      "restoration": {
+        "frontier_original_checks": {
+          "boundary": 30
+        },
+        "transport_original_checks": {
+          "boundary": 30,
+          "transport": 14
+        },
+        "cached": false,
+        "M2_steps_executed": 0,
+        "DOP853_construction_or_step_attempts": 0
+      }
+    },
+    {
+      "case": "repeticion",
+      "mode": "retomar",
+      "started_at": "2026-11-07T17:55:50.699581+00:00",
+      "finished_at": "2026-11-07T17:56:07.996679+00:00",
+      "duration_seconds": 18.001,
+      "cli_seconds": 17.297,
+      "timings_seconds": {
+        "descarga": 0,
+        "auditoria": 0.482,
+        "espera": 0,
+        "consulta": 16.531
+      },
+      "exit_code": 2,
+      "status": "BLOQUEADO",
+      "last_stage": "CAPACIDAD_NATIVA_REGISTRADA",
+      "inventory": {
+        "input": "--comando-inventario",
+        "provider": "Biblioteca activa de ChatGPT Work",
+        "manual_snapshots": 0,
+        "queries": [
+          {
+            "pages": 1,
+            "files": 17,
+            "cp12_files": 10,
+            "seconds": 0.419
+          }
+        ]
+      },
+      "chat_interventions_new": 0,
+      "chat_interventions_total": 1,
+      "restoration": {
+        "frontier_original_checks": {
+          "boundary": 30
+        },
+        "transport_original_checks": {
+          "boundary": 30,
+          "transport": 14
+        },
+        "cached": true,
+        "M2_steps_executed": 0,
+        "DOP853_construction_or_step_attempts": 0
+      }
+    }
+  ],
+  "worker": {
+    "status": "SESION_INACCESIBLE_SIN_SALIDA",
+    "session": 55685,
+    "exit_observed": false,
+    "heartbeat_is_restart": false,
+    "exclusivity_verified": false,
+    "launches_in_test": 0,
+    "original_session_accessible": false,
+    "original_environment_accessible": false,
+    "previous_locks_currently_observed": false,
+    "first_new_physical_step": null
+  },
+  "pending_publication": {
+    "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_PUBLICO_P3_30_A32_RESCATE_20261107.zip",
+    "bytes": 231632379,
+    "sha256": "cd2cd13ec122a38c037d06bbbfe6d1bae295faa3fe6c0b71f3a229f86592f6d0",
+    "asset_id": null,
+    "prior_block": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/CAPACIDAD_PUBLICA_PENDIENTE.json"
+  },
+  "operational_block": {
+    "code": "PUBLICACION_PREVIA",
+    "reason": "La revisión automática consideró que la autorización de publicación sólo abarcaba cápsulas de frontera completas.",
+    "action": "Acreditar la salida de la sesión 55685 o ambos locks libres en su entorno original. Registrar su aislamiento y una asignación nueva desde τ30",
+    "file": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_PUBLICO_P3_30_A32_RESCATE_20261107.zip",
+    "destination": "https://github.com/diegolezaval/Proyecto_Runas/releases/tag/respaldo-cp12-p3-20261027",
+    "chat": true
+  },
+  "scientific_mutations": {
+    "branch_writes": 0,
+    "release_uploads": 0,
+    "new_physical_steps": 0
+  },
+  "regression_tests": {
+    "python_passed": 13,
+    "javascript_passed": 3,
+    "real_library_provider_separate": true
+  },
+  "measurement_scope": "Dos invocaciones reales de retomar hasta la puerta vigente. La primera empezó con un directorio nuevo y páginas de tres archivos. La repetición consultó de nuevo con el tamaño de página normal y reutilizó el entorno y los recibos."
+}

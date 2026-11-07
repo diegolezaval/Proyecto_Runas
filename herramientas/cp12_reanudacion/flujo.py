@@ -208,10 +208,16 @@ class Flow:
         self.stage('CAPACIDAD_NATIVA_REGISTRADA', receipt=native_path)
         if found:
             self.recover_public(plan, spec, found)
-        action = ('Verificar la sesión y entregar al mismo proceso el adjunto exacto ya existente para su '
-                  'recuperación independiente, o aislar la asignación si la sesión se perdió') if found else (
-                  'Comprobar si la sesión sigue accesible. Si sigue, obtener aprobación explícita '
-                  'para el adjunto exacto. Si se perdió, registrar su aislamiento y una asignación nueva')
+        worker = self.report['worker']
+        if worker['status'] == 'SESION_INACCESIBLE_SIN_SALIDA':
+            clock = f'{plan.origin["observer_clock"]:g}'.replace('.', ',')
+            session = worker['session'] or block['tool_session_id']
+            action = (f'Acreditar la salida de la sesión {session} o ambos locks libres '
+                      f'en su entorno original. Registrar su aislamiento y una asignación nueva desde τ{clock}')
+        elif found:
+            action = 'Entregar al mismo proceso el adjunto exacto para su recuperación independiente'
+        else:
+            action = 'Obtener aprobación explícita para el adjunto exacto de la sesión vigente'
         raise Stop('PUBLICACION_PREVIA', block['auto_review_reason'], action, file=spec['file_name'],
                    destination=f'https://github.com/{REPO}/releases/tag/{TAG}')
 

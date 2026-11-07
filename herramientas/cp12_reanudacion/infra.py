@@ -244,10 +244,15 @@ class Destinations:
     def library(self, *, max_age=300):
         with self.timings.measure('consulta', 'Inventario Biblioteca'):
             if self.inventory_command:
-                result = subprocess.run([self.inventory_command], input=encoded(
-                    dict(execution_uuid=UID, created_after=LIBRARY_SINCE)),
-                    capture_output=True, check=True, timeout=120)
-                inventory = json.loads(result.stdout)
+                try:
+                    result = subprocess.run([self.inventory_command], input=encoded(
+                        dict(execution_uuid=UID, created_after=LIBRARY_SINCE)),
+                        capture_output=True, check=True, timeout=120)
+                    inventory = json.loads(result.stdout)
+                except (OSError, subprocess.SubprocessError, ValueError) as error:
+                    raise Stop('INVENTARIO_BIBLIOTECA', 'El proveedor no entregó un inventario completo',
+                               'Restablecer el listado de Biblioteca en la sesión y repetir con el mismo --trabajo',
+                               file=self.inventory_command.name, destination='Biblioteca') from error
             elif self.inventory_file and self.inventory_file.is_file():
                 inventory = read(self.inventory_file)
             else:

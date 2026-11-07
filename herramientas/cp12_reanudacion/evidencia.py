@@ -209,7 +209,9 @@ def historical_chain(git, plan):
         observed = start['first_observed']
         proved_start = start['physical_start_observed']
     acceptance_path = f'{plan.directory}/capacidad/ACEPTACION_COMBINADA.json'
-    a = git.get(delivery['activation_commit'], f'{plan.directory}/ACTIVACION.json')
+    activation_commit = git.pin(delivery['activation_commit'])
+    reservation_commit = git.pin(reservation_commit)
+    a = git.get(activation_commit, f'{plan.directory}/ACTIVACION.json')
     r = git.get(reservation_commit, reservation_path)
     c = git.get(reservation_commit, acceptance_path)
     acceptance = git.json(reservation_commit, acceptance_path)

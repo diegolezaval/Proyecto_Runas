@@ -1,6 +1,7 @@
 """Pruebas administrativas aisladas. Ningún caso arranca M2 ni publica fuera de /tmp."""
 
 from datetime import datetime, timedelta, timezone
+from concurrent.futures import ThreadPoolExecutor
 import json
 import os
 from pathlib import Path
@@ -9,6 +10,8 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import Mock, patch
+
+from inventario_cp12 import CHANNEL_ENV, REQUEST, event, reply_path
 
 from . import trabajador
 from .evidencia import first_step, historical_chain, resolve, unpublished
@@ -26,6 +29,34 @@ REPOSITORY = Path(__file__).resolve().parents[2]
 def asset(request, identity=10):
     return dict(id=identity, name=request['file_name'], size=request['bytes'], state='uploaded',
                 digest='sha256:' + request['sha256'], browser_download_url=asset_url(request['file_name']))
+
+
+class LibraryProviderTests(unittest.TestCase):
+    def test_provider_requests_a_fresh_inventory_each_time(self):
+        provider = REPOSITORY / 'herramientas/inventario_cp12.py'
+        with tempfile.TemporaryDirectory() as temp, ThreadPoolExecutor() as thread:
+            work = Path(temp)
+            with patch.dict(os.environ, {CHANNEL_ENV: temp}):
+                destinations = Destinations(work, work, Timings(), inventory_command=provider)
+                keys = set()
+                for size in (8, 9):
+                    waiting = thread.submit(destinations.library, max_age=60)
+                    request = event(work)
+                    self.assertEqual(request['request'], REQUEST)
+                    self.assertNotIn(request['key'], keys)
+                    keys.add(request['key'])
+                    item = dict(name=PREFIX + 'test.zip', library_file_id='biblioteca', file_id='f', size_bytes=size)
+                    record(reply_path(work, request['key']), dict(inventory=dict(
+                        captured_at=now(), created_after=REQUEST['created_after'], complete=True, items=[item])))
+                    self.assertEqual(waiting.result(timeout=5), [item])
+
+    def test_unavailable_provider_keeps_the_library_gate_closed(self):
+        with tempfile.TemporaryDirectory() as temp:
+            work = Path(temp)
+            destinations = Destinations(work, work, Timings(), inventory_command=work / 'proveedor-ausente')
+            with self.assertRaises(Stop) as caught:
+                destinations.library()
+            self.assertEqual(caught.exception.detail['code'], 'INVENTARIO_BIBLIOTECA')
 
 
 class PublicCapacityTests(unittest.TestCase):

@@ -5,19 +5,15 @@ transporte exacto con su asignación publicada. El tramo de referencia es τ28,8
 
 ## Uso
 
-Ejecutar estos comandos en el repositorio, con Python, Git y las dependencias
-registradas en `requirements.txt`.
+Prepara el checkout con Python, Git y las dependencias registradas en
+`requirements.txt`.
 
 ```bash
 git fetch origin administracion/cp12-reanudacion
 git switch --track origin/administracion/cp12-reanudacion
-
-python3 herramientas/reanudar_cp12.py verificar \
-  --trabajo ../cp12-operacion --helpers ../cp12-ayudantes --inventario ../cp12-inventario.json
-
-python3 herramientas/reanudar_cp12.py retomar \
-  --trabajo ../cp12-operacion --helpers ../cp12-ayudantes --inventario ../cp12-inventario.json
 ```
+
+Usa la sección de inventario automático para ejecutar desde una sesión de Work.
 
 - **`verificar`** consulta el HEAD científico y sus recibos, compara las identidades
   persistentes, recupera los archivos necesarios, comprueba el entorno y ejecuta
@@ -49,7 +45,42 @@ falta, se descarga el adjunto público registrado y se ejecuta el restaurador
 original en un prefijo privado. Los auditores conservan sus comprobaciones de
 Python, SciPy, BLAS, configuración, fuentes y estado.
 
-### Inventario de Biblioteca
+### Inventario automático en ChatGPT Work
+
+`inventario_work.js` ejecuta el reanudador con
+`--comando-inventario herramientas/inventario_cp12.py`. Cada consulta pide a
+Biblioteca su listado activo y sigue los cursores hasta terminar. Entrega sólo
+las identidades de CP12/P3. Una página incompleta, un cursor repetido o una
+identidad ambigua cierran la puerta de inventario. La siguiente consulta
+vuelve a listar desde el origen.
+
+En una sesión de Work con acceso a la Biblioteca del proyecto, ejecuta el
+siguiente bloque en el runtime de herramientas desde un checkout de esta rama.
+Usa la ruta absoluta del repositorio y el directorio de trabajo persistente.
+Para una retoma autorizada, cambia `verificar` por `retomar`.
+
+```javascript
+const repositorio = "/ruta/absoluta/Proyecto_Runas";
+const programa = await tools.exec_command({
+    cmd: "cat herramientas/cp12_reanudacion/inventario_work.js",
+    workdir: repositorio,
+    max_output_tokens: 5000,
+});
+if (programa.exit_code !== 0) throw new Error("Falta el proveedor de inventario");
+const ejecutar = eval(programa.output);
+const recibo = await ejecutar({
+    repositorio,
+    argumentos: ["verificar", "--trabajo", "../cp12-operacion", "--helpers", "../cp12-ayudantes"],
+});
+text(recibo);
+```
+
+El programa de la sesión sirve el listado a través de un canal local privado.
+El código de salida, el resumen de retoma y los conteos de páginas y segundos
+quedan en el resultado de la sesión. El recibo habitual de la retoma se guarda
+en `--trabajo`.
+
+### Otros proveedores e instantáneas de Biblioteca
 
 `--inventario` acepta una instantánea de los archivos activos de Biblioteca,
 recursiva y paginada hasta el final, desde `2026-11-06T00:00:00Z`. Se requiere una
@@ -69,11 +100,9 @@ el formato.
 }
 ```
 
-Para consultas automáticas, `--comando-inventario /ruta/al/proveedor` sustituye
-`--inventario`. Recibe en stdin un JSON con `execution_uuid` y `created_after`
-y devuelve en stdout una captura con el mismo formato. El proveedor se configura
-en el entorno que tenga acceso al inventario activo. La primera versión admite
-ese proveedor externo y la captura entregada por el chat.
+`--comando-inventario /ruta/al/proveedor` también admite otros proveedores.
+Recibe en stdin un JSON con `execution_uuid` y `created_after` y devuelve en
+stdout una captura completa con el mismo formato.
 
 ### Recibos y recuperación de interrupciones
 
@@ -111,6 +140,7 @@ ese proveedor externo y la captura entregada por el chat.
 
 ```bash
 PYTHONPATH=herramientas python3 -m unittest -v cp12_reanudacion.test_reanudacion
+node --test herramientas/cp12_reanudacion/test_inventario_work.js
 
 python3 herramientas/reanudar_cp12.py verificar \
   --historial 2434e69871f4c20314aafceb04c0eda754c927c5 \
@@ -120,3 +150,6 @@ python3 herramientas/reanudar_cp12.py verificar \
 El [recibo de pruebas](../../informes/REANUDADOR_CP12_PRUEBAS_20261107.json)
 distingue las auditorías de cápsulas reales, la lectura del inicio histórico y
 las interrupciones simuladas en un remoto Git local.
+
+El [recibo del inventario automático](../../informes/REANUDADOR_CP12_INVENTARIO_BIBLIOTECA_20261107.json)
+registra la prueba contra Biblioteca y el estado de la retoma desde τ30,0.
