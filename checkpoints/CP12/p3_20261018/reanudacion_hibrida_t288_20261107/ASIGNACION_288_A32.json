@@ -1,0 +1,31 @@
+{
+  "schema": "CP12_P3_FORWARD_RESERVATION_V2",
+  "registered_before_M2": true,
+  "at_utc": "2026-11-07T05:54:31.608117+00:00",
+  "single_worker_reserved": true,
+  "both_locks_held": {
+    "registration": true,
+    "instance": true
+  },
+  "tool_session_id": 23151,
+  "process_id": 2,
+  "allocation_id": "p3_288_a32_hibrido_20261107",
+  "registration": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/REGISTRO.json",
+  "registry_sha256": "fa60f2796d79266b26ef123298a29b75a0e0fcac299a5d99dedb82ecd7d798a2",
+  "source_registration_commit": "c8e4cee92abd8d067ff29412df393b7472416c9e",
+  "capacity_acceptance_sha256": "943307fd645b456ad3fdc2abc917dc485d02e195664f217d2102608f91f7282e",
+  "capacity_acceptance": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/capacidad/ACEPTACION_COMBINADA.json",
+  "source_observer_clock": 28.8,
+  "last_full_frontier": 24,
+  "target": 32,
+  "source_archive_sha256": "71bd793e23c4e48335ee7a4e12576659f648394f0824a26470694cc9c7add2c3",
+  "source_native_independent_recovery_passed": true,
+  "current_worker_capacity_native_and_public_passed": true,
+  "current_worker_capacity_reused_from_history": false,
+  "new_M2_steps_executed_at_reservation": 0,
+  "old_allocations_not_reactivated": true,
+  "activation_not_yet_delivered": true,
+  "all_original_scientific_gates_required": true,
+  "conservation_policy": "CP12_P3_HYBRID_20261106_V1",
+  "CP12_closed": false
+}

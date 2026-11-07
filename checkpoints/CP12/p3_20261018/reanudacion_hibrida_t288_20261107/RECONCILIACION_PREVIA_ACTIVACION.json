@@ -1,0 +1,23 @@
+{
+  "schema": "CP12_P3_PREACTIVATION_RECHECK_V1",
+  "at_utc": "2026-11-07T05:54:31.409Z",
+  "head": "c8e4cee92abd8d067ff29412df393b7472416c9e",
+  "release_id": 426273098,
+  "latest_public_asset_id": 719770019,
+  "latest_public_asset_kind": "capacity_from_prior_boundary",
+  "library_candidates": [
+    {
+      "library_file_id": "libfile_3ce962cbef5481919107e2df696f77a5",
+      "name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_NATIVO_P3_288_A32_HIBRIDO_20261107.zip",
+      "created_at": "2026-11-07T05:50:14.103041+00:00"
+    },
+    {
+      "library_file_id": "libfile_b0a32b20e4308191ac0dd2ba6a38bd15",
+      "name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000288_P3_24_A32_HIBRIDO_20261106.zip",
+      "created_at": "2026-11-07T01:05:16.632426+00:00"
+    }
+  ],
+  "later_recoverable_physical_evidence_observed": false,
+  "old_allocation_termination_assumed": false,
+  "CP12_closed": false
+}
