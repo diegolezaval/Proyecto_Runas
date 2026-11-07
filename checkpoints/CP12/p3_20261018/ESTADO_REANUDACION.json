@@ -42,8 +42,8 @@
   "original_CP12_and_CP10_must_not_repeat": true,
   "F0_F5_must_not_repeat": true,
   "F0_F5_public_certificate": "checkpoints/CP12/p3_20261018/CERTIFICADO_F0_F5.json",
-  "updated_at": "2026-11-07T06:08:15.659646+00:00",
-  "last_public_commit": "2434e69871f4c20314aafceb04c0eda754c927c5",
+  "updated_at": "2026-11-07T06:13:47.524928+00:00",
+  "last_public_commit": "8a3f6bb03e3c9ab84797720892e604542c0cb0aa",
   "latest_full_trial_frontier_recovered_and_audited": 24,
   "latest_recoverable_observer_clock": 30,
   "latest_recoverable_kind": "transport",
@@ -108,16 +108,16 @@
     "correction_validated": false,
     "recovery_receipt": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000288/RECUPERACION_NATIVA.json"
   },
-  "current_own_worker_status": "RESCATE_30_VERIFICADO_ASIGNACION_PREPARADA",
-  "own_guardian_tool_session_id": null,
+  "current_own_worker_status": "CAPACIDAD_NATIVA_VERIFICADA_PUBLICA_BLOQUEADA",
+  "own_guardian_tool_session_id": 55685,
   "own_exit_observed": false,
-  "own_attempt_home": null,
+  "own_attempt_home": "/workspace/scratch/65d547c6c4de/rescate300/transito/extraido",
   "current_target": 32,
   "conditional_horizon": 160,
   "current_assignment": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/REGISTRO.json",
   "current_helper_directory": "/workspace/scratch/65d547c6c4de/library_helpers",
   "activity_is_restart_certificate": false,
-  "next_recovery": "Completar capacidad, reserva y activación propias desde el rescate exacto de τ30,0. Guardar τ30,4 en la Biblioteca y comprobar la frontera pública τ32.",
+  "next_recovery": "Resolver la aprobación explícita del control público de capacidad. Si la sesión sigue accesible, completar su recuperación pública, reserva y activación. Si se pierde, aislarla y continuar desde el rescate protegido τ30,0 con capacidad propia.",
   "conservation_policy": {
     "policy": "CP12_P3_HYBRID_20261106_V1",
     "effective_from_boundary": 24,
@@ -233,5 +233,6 @@
     "CP12_closed": false,
     "correction_validated": false,
     "recovery_receipt": "checkpoints/CP12/p3_20261018/rescate_t30_20261107/RECUPERACION_NATIVA.json"
-  }
+  },
+  "active_publication_block": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/CAPACIDAD_PUBLICA_PENDIENTE.json"
 }

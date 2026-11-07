@@ -18,7 +18,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | Última frontera completa positiva P3 | τ24 |
 | Transporte interno recuperado | τ30 |
 | Próxima frontera completa | τ32, pendiente |
-| Trabajadores propios activos | 0 |
+| Trabajadores propios activos | 1 |
 
 Registro: [checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
 
@@ -26,7 +26,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 
 ## Siguiente trabajo científico
 
-- Completar capacidad, reserva y activación propias desde el rescate exacto de τ30,0. Guardar τ30,4 en la Biblioteca y comprobar la frontera pública τ32.
+- Resolver la aprobación explícita del control público de capacidad. Si la sesión sigue accesible, completar su recuperación pública, reserva y activación. Si se pierde, aislarla y continuar desde el rescate protegido τ30,0 con capacidad propia.
 - Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 

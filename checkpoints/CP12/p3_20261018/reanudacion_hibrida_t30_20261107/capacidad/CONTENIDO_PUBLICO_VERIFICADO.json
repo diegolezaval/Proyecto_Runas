@@ -1,0 +1,23 @@
+{
+  "schema": "CP12_P3_REUSABLE_PUBLIC_CONTROL_COMPARISON_V1",
+  "passed": true,
+  "control_bytes": 231632379,
+  "control_sha256": "cd2cd13ec122a38c037d06bbbfe6d1bae295faa3fe6c0b71f3a229f86592f6d0",
+  "public_frontier_asset_id": 718257706,
+  "public_frontier_sha256": "13660aae72467ccb2eda738d773103c8b14cb1950f4ed84a959cfb6f3f10fed6",
+  "compared_public_git_commit": "8a3f6bb03e3c9ab84797720892e604542c0cb0aa",
+  "registry_public_path": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/REGISTRO.json",
+  "allocation_id": "p3_30_a32_rescate_20261107",
+  "separate_public_capacity": true,
+  "classification_counts": {
+    "exact_public_frontier_payload": 358,
+    "exact_public_frontier_inventory": 1,
+    "deterministic_public_algorithm_filler": 1,
+    "deterministic_filler_description": 1,
+    "derived_inventory_only": 1
+  },
+  "unclassified_entries": 0,
+  "M2_steps_executed": 0,
+  "approval_inferred_from_this_comparison": false,
+  "scope": "Igualdad de bytes;el operador debe haber recuperado las referencias públicas previamente. No concede permisos."
+}
