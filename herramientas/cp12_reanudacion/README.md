@@ -136,10 +136,37 @@ stdout una captura completa con el mismo formato.
   espera o bloqueo. Una espera del trabajador puede continuarse con el mismo comando y
   el mismo directorio. `--espera` acota la espera por invocación.
 
+### Recibos de salida del supervisor
+
+Cada lanzamiento nuevo registra un `session_id` en `REANUDADOR_ACTUAL.json`.
+El supervisor es padre del ejecutor y espera su estado terminal. El recibo
+vincula la sesión, el trabajador, la asignación y los SHA256 del registro y del
+respaldo. Distingue un código de salida de una terminación por señal.
+
+El destino persistente es la [rama de recibos](https://github.com/diegolezaval/Proyecto_Runas/tree/administracion/cp12-recibos-salida),
+bajo `checkpoints/CP12/p3_20261018/recibos_salida/<asignacion>/<session_id>.json`.
+Antes de lanzar, `retomar` comprueba acceso Git al destino. Después de observar
+la salida, el supervisor publica el recibo y comprueba los bytes desde el remoto.
+La publicación usa la autenticación Git del supervisor. Los identificadores
+de asignación que comienzan por `prueba_` corresponden a procesos de prueba.
+La entrega de activación exige que el supervisor de esa sesión siga accesible.
+
+En otro entorno, `verificar` busca el recibo de la sesión registrada.
+`SALIDA_CONFIRMADA` incluye su commit y ruta. `CONTACTO_PERDIDO_SIN_SALIDA`
+indica que falta evidencia terminal. Si Git falla después de la observación,
+`SALIDA_LOCAL_PENDIENTE` conserva la evidencia local y `retomar` reintenta
+publicarla desde el mismo `--trabajo`. La pérdida del supervisor antes de
+observar la salida deja la sesión en comprobación.
+
+El aislamiento posterior identifica la misma asignación y `session_id`.
+Cuando el aislamiento se acredita por salida, el reanudador comprueba el
+recibo remoto. La comprobación de ambos locks originales sigue disponible
+como otra evidencia de aislamiento.
+
 ## Comprobaciones
 
 ```bash
-PYTHONPATH=herramientas python3 -m unittest -v cp12_reanudacion.test_reanudacion
+PYTHONPATH=herramientas python3 -m unittest -v cp12_reanudacion.test_reanudacion cp12_reanudacion.test_supervisor
 node --test herramientas/cp12_reanudacion/test_inventario_work.js
 
 python3 herramientas/reanudar_cp12.py verificar \
@@ -153,3 +180,6 @@ las interrupciones simuladas en un remoto Git local.
 
 El [recibo del inventario automático](../../informes/REANUDADOR_CP12_INVENTARIO_BIBLIOTECA_20261107.json)
 registra la prueba contra Biblioteca y el estado de la retoma desde τ30,0.
+
+El [recibo de pruebas del supervisor](../../informes/REANUDADOR_CP12_SUPERVISION_20261107.json)
+registra las terminaciones de prueba y su recuperación desde GitHub.

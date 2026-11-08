@@ -10,10 +10,10 @@ import traceback
 from .infra import Timings, optional, read, record, require
 
 
-def identity(pid):
+def identity(pid, *, include_exited=False):
     try:
         fields = (Path('/proc') / str(pid) / 'stat').read_text().rsplit(')', 1)[1].split()
-        if fields[0] in ('Z', 'X'):
+        if not include_exited and fields[0] in ('Z', 'X'):
             return None
         return dict(pid=pid, boot=Path('/proc/sys/kernel/random/boot_id').read_text().strip(),
                     namespace=os.readlink(Path('/proc') / str(pid) / 'ns/pid'),
@@ -115,8 +115,6 @@ def main(job):
         code = error.code or 0
     except BaseException:
         traceback.print_exc()
-    finally:
-        record(job / 'SALIDA_OBSERVADA.json', dict(exit_code=code, exit_observed=True), once=True)
     return code
 
 

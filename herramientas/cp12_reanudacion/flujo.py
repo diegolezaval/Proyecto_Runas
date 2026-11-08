@@ -10,7 +10,7 @@ import time
 import uuid
 import zipfile
 
-from . import trabajador
+from . import supervisor, trabajador
 from .evidencia import checked_audits, first_step, historical_chain, resolve, unpublished, zero
 from .infra import (BRANCH, CLAIM, COMPARE, HYBRID, PREFIX, REPO, STATE, TAG, Stop,
                     digest, encoded, find_asset, install, library_item, now, optional, record, require, sha)
@@ -105,7 +105,13 @@ class Flow:
         self.job = self.work / 'asignaciones' / (plan.allocation + '-' + plan.registry_sha)
         self.output = self.job / 'resultado'
         self.worker_id = optional(self.job / 'INTENCION.json')
-        self.observe(plan)
+        self.observe(plan, retry_exit=(mode == 'retomar' and not historical))
+        if not historical and supervisor.supervised(plan.claim):
+            same_local_attempt = self.owns(plan.claim) and (self.job / 'LANZAMIENTO.json').is_file()
+            unsupervised_before_start = (self.report['worker']['status'] == 'TRABAJADOR_SIN_SUPERVISION' and
+                                         not (self.output / 'INICIO_FISICO.json').is_file())
+            if mode == 'verificar' or not same_local_attempt or unsupervised_before_start:
+                self.stop_for_exit_evidence()
         assets, library = self.destinations.assets(), self.destinations.library()
         asset = self.destinations_present(plan, assets, library)
         if not historical:
@@ -161,7 +167,39 @@ class Flow:
         return audit_archive(spec, archive, self.code, self.work, self.env, self.fingerprint,
                              self.timings, capacity=capacity)
 
-    def observe(self, plan):
+    def owns(self, claim):
+        return bool(self.worker_id and claim['worker_id'] == self.worker_id['worker_id'])
+
+    def worker_exit(self, claim, *, local, retry=False):
+        exited = optional(self.job / 'SALIDA_OBSERVADA.json') if local else None
+        if supervisor.supervised(claim):
+            with self.timings.measure('consulta', 'Recibo de salida del supervisor'):
+                return supervisor.evidence(self.git, claim, exited, retry=retry)
+        observed = isinstance(exited, dict) and exited.get('exit_observed') is True
+        return dict(status='SALIDA_OBSERVADA' if observed else 'SESION_INACCESIBLE_SIN_SALIDA',
+                    exit_observed=observed, exit=exited if observed else None)
+
+    def stop_for_exit_evidence(self):
+        worker = self.report['worker']
+        if worker['status'] == 'TRABAJADOR_SIN_SUPERVISION':
+            raise Stop('SUPERVISION_PERDIDA', 'El trabajador sigue visible y falta su supervisor',
+                       'Acreditar la salida del trabajador o su aislamiento en el entorno original',
+                       destination=supervisor.EXIT_BRANCH)
+        if worker['status'] == 'SALIDA_CONFIRMADA':
+            self.stage('SALIDA_CONFIRMADA', commit=worker['exit_commit'], receipt=worker['exit_path'])
+            raise Stop('TRABAJADOR_TERMINADO', 'Recibo terminal del supervisor recuperado de Git',
+                       'Registrar el aislamiento de esta sesión y una asignación nueva si corresponde',
+                       file=worker['exit_path'], destination=supervisor.EXIT_BRANCH)
+        if worker['status'] == 'SALIDA_LOCAL_PENDIENTE':
+            raise Stop('SALIDA_PENDIENTE', 'El supervisor observó la salida y falta el recibo remoto',
+                       'Restablecer el acceso Git y ejecutar retomar con el mismo --trabajo para publicar la salida',
+                       file=str(self.job / 'SALIDA_OBSERVADA.json'), destination=supervisor.EXIT_BRANCH)
+        if worker['status'] == 'CONTACTO_PERDIDO_SIN_SALIDA':
+            raise Stop('CONTACTO_PERDIDO', 'Contacto perdido con la sesión, salida sin acreditar',
+                       'Recuperar el recibo del supervisor o acreditar ambos locks libres en el entorno original',
+                       destination=supervisor.EXIT_BRANCH)
+
+    def observe(self, plan, *, retry_exit=False):
         guardian = plan.state.get('own_guardian_tool_session_id')
         worker = dict(status='SIN_TRABAJADOR_REGISTRADO', session=guardian,
                       exit_observed=plan.state.get('own_exit_observed') is True,
@@ -170,11 +208,17 @@ class Flow:
         if claim and claim['allocation_id'] != plan.allocation:
             isolation_path = plan.registry.get('isolation')
             isolated = self.git.json(plan.head, isolation_path) if isolation_path else {}
+            locks_free = (isolated.get('local_worker_locks_observed_free') is True and
+                          isolated.get('prior_assignment_reactivation_prohibited') is True)
             require(isolated.get('allocation_id', isolated.get('previous_allocation')) == claim['allocation_id'] and
-                    (isolated.get('process_exit_observed') is True or
-                     isolated.get('local_worker_locks_observed_free') is True and
-                     isolated.get('prior_assignment_reactivation_prohibited') is True),
+                    (isolated.get('process_exit_observed') is True or locks_free),
                     'La intención anterior sigue vigente y requiere aislamiento o salida acreditada')
+            if supervisor.supervised(claim):
+                require(isolated.get('session_id') == claim['session_id'],
+                        'El aislamiento pertenece a otra sesión')
+                if not locks_free:
+                    require(supervisor.recover(self.git, claim) is not None,
+                            'El aislamiento requiere el recibo remoto de salida de esa sesión')
             previous = self.work / 'asignaciones' / (claim['allocation_id'] + '-' + claim['registry_sha256'])
             require(not trabajador.live(previous, claim['worker_id'], claim['registry_sha256']),
                     'El trabajador anterior sigue activo pese al recibo de aislamiento')
@@ -182,15 +226,20 @@ class Flow:
             require(claim['registry_sha256'] == plan.registry_sha and
                     claim['source_archive_sha256'] == plan.origin['sha256'],
                     'La intención registrada corresponde a otro origen o versión de la asignación')
-            if not self.worker_id or claim['worker_id'] != self.worker_id['worker_id']:
-                worker['status'] = 'SESION_INACCESIBLE_SIN_SALIDA'
+            own = self.owns(claim)
+            if own and self.alive(plan):
+                worker.update(status='TRABAJADOR_PROPIO_ACTIVO', exit_observed=False,
+                              heartbeat=optional(self.output / 'HEARTBEAT.json'))
+                if supervisor.supervised(claim) and not supervisor.active(self.job, claim):
+                    worker['status'] = 'TRABAJADOR_SIN_SUPERVISION'
             else:
-                live = self.alive(plan)
-                exited = optional(self.job / 'SALIDA_OBSERVADA.json')
-                worker.update(status='TRABAJADOR_PROPIO_ACTIVO' if live else (
-                    'SALIDA_OBSERVADA' if exited else 'INTENCION_PROPIA_SIN_SALIDA'),
-                    exit_observed=bool(exited), exit=exited,
-                    heartbeat=optional(self.output / 'HEARTBEAT.json'))
+                worker.update(self.worker_exit(claim, local=own, retry=retry_exit))
+                unlaunched = not supervisor.supervised(claim) or (
+                    worker.get('exit_lookup') == 'SIN_RECIBO' and not (self.job / 'LANZAMIENTO.json').exists())
+                if own and not worker['exit_observed'] and unlaunched:
+                    worker['status'] = 'INTENCION_PROPIA_SIN_SALIDA'
+            if supervisor.supervised(claim):
+                worker['session'] = claim['session_id']
         elif guardian is not None and not worker['exit_observed']:
             home = plan.state.get('own_attempt_home')
             active = home and trabajador.lock_owner(Path(home) / 'runtime/worker.lock')
@@ -222,7 +271,10 @@ class Flow:
                    destination=f'https://github.com/{REPO}/releases/tag/{TAG}')
 
     def alive(self, plan, *, locks=False):
-        return trabajador.live(self.job, self.worker_id['worker_id'], plan.registry_sha, locks=locks)
+        live = trabajador.live(self.job, self.worker_id['worker_id'], plan.registry_sha, locks=locks)
+        if live and locks and supervisor.supervised(plan.claim):
+            return supervisor.active(self.job, plan.claim)
+        return live
 
     def publish(self, plan, files, message):
         # publish comprueba el padre y relee cada byte desde el ref remoto.
@@ -244,10 +296,13 @@ class Flow:
         claim = plan.claim
         if not worker_id:
             worker_id = self.worker_id = record(self.job / 'INTENCION.json',
-                                                dict(worker_id=uuid.uuid4().hex, at=now(), head=plan.head), once=True)
-        worker = dict(schema='CP12_REANUDADOR_WORKER_V1', allocation_id=plan.allocation,
-                      worker_id=worker_id['worker_id'], registry_sha256=plan.registry_sha,
+                                                dict(worker_id=uuid.uuid4().hex, session_id=uuid.uuid4().hex,
+                                                     at=now(), head=plan.head), once=True)
+        worker = dict(schema=supervisor.WORKER_SCHEMA, allocation_id=plan.allocation,
+                      worker_id=worker_id['worker_id'], session_id=worker_id.get('session_id', worker_id['worker_id']),
+                      registry_sha256=plan.registry_sha,
                       source_archive_sha256=plan.origin['sha256'], at=worker_id['at'])
+        supervisor.check_destination(self.git)
         _, library = self.fresh(plan, inventory=True)
         label = ('CONTROL_NATIVO_' if plan.registry['kind'] == 'transport' else 'CONTROL_') + plan.allocation.upper()
         name = PREFIX + label + '.zip'
@@ -281,8 +336,8 @@ class Flow:
         with (self.job / 'trabajador.log').open('ab', buffering=0) as log:
             record(self.job / 'LANZAMIENTO.json', dict(worker_id=worker_id['worker_id'],
                    registry_sha256=plan.registry_sha, command=command, environment=self.fingerprint,
-                   helpers=str(self.helpers)), once=True)
-            subprocess.Popen([sys.executable, '-m', 'cp12_reanudacion.trabajador', str(self.job)],
+                   helpers=str(self.helpers), supervision=worker), once=True)
+            subprocess.Popen([sys.executable, '-m', 'cp12_reanudacion.supervisor', str(self.job)],
                              cwd=Path(__file__).resolve().parents[1], env=self.env,
                              stdin=subprocess.DEVNULL, stdout=log, stderr=log, start_new_session=True)
         return plan
@@ -301,6 +356,9 @@ class Flow:
                   'Identidad y exclusividad del trabajador')
         if not self.alive(plan, locks=True):
             if self.alive(plan):
+                if supervisor.supervised(plan.claim) and not supervisor.active(self.job, plan.claim):
+                    self.report['worker']['status'] = 'TRABAJADOR_SIN_SUPERVISION'
+                    self.stop_for_exit_evidence()
                 raise Stop('ESPERANDO_LOCKS', 'El proceso todavía no acredita ambos locks',
                            'Volver a ejecutar retomar con el mismo --trabajo', chat=False)
             self.unavailable(plan, library)
@@ -456,10 +514,10 @@ class Flow:
             found = find_asset(self.destinations.assets(), request)
             if found:
                 self.recover_public(plan, request, found)
-        exited = optional(self.job / 'SALIDA_OBSERVADA.json')
-        reason = 'Salida del trabajador observada' if exited else 'Sesión inaccesible o lanzamiento incierto, salida sin observar'
-        self.report['worker'].update(status='SALIDA_OBSERVADA' if exited else 'SESION_INACCESIBLE_SIN_SALIDA',
-                                     exit_observed=bool(exited), exit=exited)
+        exit_state = self.worker_exit(plan.claim, local=True)
+        self.report['worker'].update(exit_state)
+        reason = ('Salida del trabajador observada' if exit_state['exit_observed'] else
+                  'Sesión inaccesible o lanzamiento incierto, salida sin observar')
         if pending_native:
             native, outcome = pending_native
             raise Stop('SUBIDA_NATIVA_INCIERTA', f'{reason}. Capacidad nativa pendiente ({outcome})',
@@ -469,6 +527,7 @@ class Flow:
             raise Stop('PUBLICACION_PROCESO_INACCESIBLE', f'{reason}. Falta el adjunto exacto',
                        'Conciliar la subida y acreditar el estado del proceso antes de registrar otra asignación',
                        file=request['archive_path'], destination=f'https://github.com/{REPO}/releases/tag/{TAG}')
+        self.stop_for_exit_evidence()
         raise Stop('TRABAJADOR_NO_DISPONIBLE', reason,
                    'Reconciliar el intento y registrar su aislamiento y una asignación nueva si procede',
                    file=str(self.job / 'LANZAMIENTO.json'), destination=BRANCH)
@@ -584,6 +643,7 @@ class Flow:
         state = dict(plan.state, updated_at=first['at'], last_public_commit=activation_commit,
                      current_own_worker_status='INICIO_FISICO_ACREDITADO', own_observed_start=first,
                      own_guardian_tool_session_id=None, own_worker_id=worker_id,
+                     own_supervision_session_id=plan.claim.get('session_id'),
                      own_exit_observed=(self.job / 'SALIDA_OBSERVADA.json').is_file(), own_attempt_home=None,
                      capacity_public_asset_id=combined['github']['github_asset_id'], next_recovery=next_action,
                      latest_recoverable_observer_clock=plan.origin['observer_clock'],

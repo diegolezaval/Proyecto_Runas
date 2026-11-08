@@ -1,0 +1,166 @@
+{
+  "schema": "CP12_REANUDADOR_PRUEBA_SUPERVISION_V1",
+  "date_lima": "2026-11-07",
+  "durable_destination": {
+    "branch": "administracion/cp12-recibos-salida",
+    "commit": "bc4babf8f25fa8fc36eb0d52398f998e6aeca9d8",
+    "test_index": "checkpoints/CP12/p3_20261018/recibos_salida/PRUEBA_SUPERVISOR_20261107.json"
+  },
+  "laboratory": {
+    "genuine_child_processes": true,
+    "production_supervisor_entrypoint": true,
+    "receipt_remote": "Repositorio Git bare de prueba fuera del directorio del intento",
+    "original_session_removed": true,
+    "transfer_to_github": "Los dos recibos se publicaron con sus bytes y SHA256 exactos",
+    "writer_source_sha256": "c965bc18aed8713c0b9195d8fff1403ab1e9bd5bf59ecaa03326d7a39b70965b"
+  },
+  "independent_readback": {
+    "schema": "CP12_SUPERVISOR_READBACK_V1",
+    "checked_at_utc": "2026-11-08T00:54:32.246857+00:00",
+    "checked_at_lima": "2026-11-07T19:54:32.247072-05:00",
+    "receipt_branch_commit": "bc4babf8f25fa8fc36eb0d52398f998e6aeca9d8",
+    "receipt_index_path": "checkpoints/CP12/p3_20261018/recibos_salida/PRUEBA_SUPERVISOR_20261107.json",
+    "fresh_github_checkout": true,
+    "worker_directory_needed": false,
+    "observations": [
+      {
+        "case": "codigo",
+        "claim": {
+          "schema": "CP12_REANUDADOR_WORKER_V2",
+          "allocation_id": "prueba_supervisor_20261107_codigo",
+          "worker_id": "0c8a8c7c61c64ff28b4e0b37ab6c2edd",
+          "session_id": "b94cf104787b492b8413e17b52f49536",
+          "registry_sha256": "c30a2685e13208aa0026f53fc88fb8779c53231536feaa3890237df4b16d5c43",
+          "source_archive_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "at": "2026-11-08T00:50:53.903495+00:00"
+        },
+        "receipt_path": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_supervisor_20261107_codigo/b94cf104787b492b8413e17b52f49536.json",
+        "persisted_receipt_sha256": "56ec040de8303bca21b0fdc1f5372ac2dbb9d3d7d846704566c7fa6e7bfe18ab",
+        "status": "SALIDA_CONFIRMADA",
+        "session": "b94cf104787b492b8413e17b52f49536",
+        "exit_observed": true,
+        "heartbeat_is_restart": false,
+        "exit": {
+          "schema": "CP12_REANUDADOR_SALIDA_V1",
+          "allocation_id": "prueba_supervisor_20261107_codigo",
+          "worker_id": "0c8a8c7c61c64ff28b4e0b37ab6c2edd",
+          "session_id": "b94cf104787b492b8413e17b52f49536",
+          "registry_sha256": "c30a2685e13208aa0026f53fc88fb8779c53231536feaa3890237df4b16d5c43",
+          "source_archive_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "method": "waitpid_hijo_directo",
+          "exit_observed": true,
+          "observed_at_utc": "2026-11-08T00:50:54.080216+00:00",
+          "pid": 77,
+          "process_identity_sha256": "8e92503d12db774100d36800e4837ff41b5258165fbee70ec82e2db720f8ab77",
+          "returncode": 17,
+          "exit_code": 17,
+          "signal": null
+        },
+        "exit_commit": "bc4babf8f25fa8fc36eb0d52398f998e6aeca9d8",
+        "exit_path": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_supervisor_20261107_codigo/b94cf104787b492b8413e17b52f49536.json",
+        "exit_lookup": "RECUPERADO",
+        "gate": "TRABAJADOR_TERMINADO",
+        "worker_directory_removed_before_exit": true
+      },
+      {
+        "case": "senal",
+        "claim": {
+          "schema": "CP12_REANUDADOR_WORKER_V2",
+          "allocation_id": "prueba_supervisor_20261107_senal",
+          "worker_id": "317f8de437d5475895c6a89e82569d5c",
+          "session_id": "b137eb727ba64cb1a5556c5c39c72464",
+          "registry_sha256": "423fc87fe44a6feab68eef56ad236c4fec8cbec3b5e45689432d75e938fe93a7",
+          "source_archive_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "at": "2026-11-08T00:50:54.170412+00:00"
+        },
+        "receipt_path": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_supervisor_20261107_senal/b137eb727ba64cb1a5556c5c39c72464.json",
+        "persisted_receipt_sha256": "50749958ceeeda6dd96513f84575e341f50b3023e0f6226e22e5551e951ea062",
+        "status": "SALIDA_CONFIRMADA",
+        "session": "b137eb727ba64cb1a5556c5c39c72464",
+        "exit_observed": true,
+        "heartbeat_is_restart": false,
+        "exit": {
+          "schema": "CP12_REANUDADOR_SALIDA_V1",
+          "allocation_id": "prueba_supervisor_20261107_senal",
+          "worker_id": "317f8de437d5475895c6a89e82569d5c",
+          "session_id": "b137eb727ba64cb1a5556c5c39c72464",
+          "registry_sha256": "423fc87fe44a6feab68eef56ad236c4fec8cbec3b5e45689432d75e938fe93a7",
+          "source_archive_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "method": "waitpid_hijo_directo",
+          "exit_observed": true,
+          "observed_at_utc": "2026-11-08T00:50:54.324324+00:00",
+          "pid": 165,
+          "process_identity_sha256": "cf8b2e4ccadf033fdd8f0bbc960b0037f4801935232128084c787649f91b0d7f",
+          "returncode": -9,
+          "exit_code": null,
+          "signal": 9
+        },
+        "exit_commit": "bc4babf8f25fa8fc36eb0d52398f998e6aeca9d8",
+        "exit_path": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_supervisor_20261107_senal/b137eb727ba64cb1a5556c5c39c72464.json",
+        "exit_lookup": "RECUPERADO",
+        "gate": "TRABAJADOR_TERMINADO",
+        "worker_directory_removed_before_exit": false
+      },
+      {
+        "case": "contacto",
+        "claim": {
+          "schema": "CP12_REANUDADOR_WORKER_V2",
+          "allocation_id": "prueba_supervisor_20261107_contacto",
+          "worker_id": "573f05c454cd457eb41b6d19f18a3084",
+          "session_id": "fa98d2f77e8641a38cc2fa2d7472fa8b",
+          "registry_sha256": "b5f8daed0d13b88619805a6df5af504f6fbe649edc8ba9b995f5db42ed8dcd2e",
+          "source_archive_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "at": "2026-11-08T00:50:54.402592+00:00"
+        },
+        "receipt_path": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_supervisor_20261107_contacto/fa98d2f77e8641a38cc2fa2d7472fa8b.json",
+        "persisted_receipt_sha256": null,
+        "status": "CONTACTO_PERDIDO_SIN_SALIDA",
+        "session": "fa98d2f77e8641a38cc2fa2d7472fa8b",
+        "exit_observed": false,
+        "heartbeat_is_restart": false,
+        "exit": null,
+        "exit_lookup": "SIN_RECIBO",
+        "gate": "CONTACTO_PERDIDO",
+        "worker_directory_removed_before_exit": false
+      }
+    ],
+    "wall_seconds": 33.584,
+    "lab_writer_sha256": "c965bc18aed8713c0b9195d8fff1403ab1e9bd5bf59ecaa03326d7a39b70965b",
+    "verified_reader_sha256": "0f544ccd3edc3c5348083def393314f94e7cc4c6124fe207628ad3f2db0c6cd3"
+  },
+  "final_regression": {
+    "python_passed": 20,
+    "javascript_passed": 3,
+    "final_supervisor_source_sha256": "1ffb56adb077bc9fb3181234f4b56514e9314814d920b3f53594ae629f3f51b2",
+    "checks": [
+      "Escritura y recuperación en un remoto Git independiente después de borrar el entorno original",
+      "Código de salida y SIGKILL con estado terminal obtenido por waitpid directo",
+      "Fallo temporal de publicación con reintento del mismo recibo",
+      "Pérdida del supervisor, ausencia de estado terminal y trabajador visible sin supervisor",
+      "El verificador rechaza recibos que no coinciden con la sesión o el registro"
+    ]
+  },
+  "legacy_55685": {
+    "scientific_head": "11d63fa9b413c6ed6d37d0f5d53611dd044b675c",
+    "assignment": "p3_30_a32_rescate_20261107",
+    "session": 55685,
+    "terminal_observation": "Unknown process id 55685",
+    "original_locks": {
+      "registration": "ENOENT",
+      "instance": "ENOENT"
+    },
+    "both_original_locks_observed_free": false,
+    "exit_observed": false,
+    "isolation_accredited": false,
+    "replacement_worker_launched": false,
+    "new_physical_steps": 0,
+    "rescue": {
+      "observer_clock": 30,
+      "target": 32,
+      "protected": true,
+      "library_file_id": "libfile_47896e7c5d9c8191afaec23c8b56af8e",
+      "size_bytes": 230762282,
+      "active_identity_verified": true
+    }
+  }
+}

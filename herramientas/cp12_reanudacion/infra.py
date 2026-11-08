@@ -148,9 +148,9 @@ class Git:
         self.run('cat-file', '-e', commit + '^{commit}')
         return commit
 
-    def head(self):
-        line = self.run('ls-remote', '--exit-code', 'origin', REF).stdout.decode().split()
-        require(len(line) == 2 and line[1] == REF, 'No se pudo fijar la rama científica')
+    def head(self, ref=REF):
+        line = self.run('ls-remote', '--exit-code', 'origin', ref).stdout.decode().split()
+        require(len(line) == 2 and line[1] == ref, 'No se pudo fijar la rama remota')
         return self.pin(line[0])
 
     def get(self, commit, path, *, missing=False):
@@ -164,12 +164,12 @@ class Git:
         data = self.get(commit, path, missing=missing)
         return json.loads(data) if data is not None else None
 
-    def publish(self, parent, files, message):
+    def publish(self, parent, files, message, *, ref=REF):
         """Sólo se publica un descendiente directo del HEAD que se comprobó."""
         def matches(head):
             return all(self.get(head, path, missing=True) == data for path, data in files.items())
 
-        head = self.head()
+        head = self.head(ref)
         if matches(head):
             return head
         if head != parent:
@@ -184,15 +184,15 @@ class Git:
             tree = self.run('write-tree', env=env).stdout.decode().strip()
         commit = self.run('commit-tree', tree, '-p', parent, '-m', message).stdout.decode().strip()
         try:
-            self.run('push', f'--force-with-lease={REF}:{parent}', 'origin', f'{commit}:{REF}',
+            self.run('push', f'--force-with-lease={ref}:{parent}', 'origin', f'{commit}:{ref}',
                      env=dict(os.environ, GIT_TERMINAL_PROMPT='0'), check=False)
         except subprocess.TimeoutExpired:
             pass  # La respuesta puede haberse perdido después de la escritura.
-        head = self.head()
+        head = self.head(ref)
         if not matches(head):
             raise Stop('GIT_PUBLICACION_PENDIENTE', 'Git no confirmó los bytes tras el push',
                        f'Comprobar credenciales y rama, y recuperar o publicar el commit {commit}',
-                       file=', '.join(files), destination=BRANCH)
+                       file=', '.join(files), destination=ref.removeprefix('refs/heads/'))
         require(not self.run('merge-base', '--is-ancestor', commit, head, check=False).returncode,
                 'Git contiene los bytes pero otro commit los publicó; reconciliar antes de seguir')
         return commit
