@@ -1,0 +1,76 @@
+{
+  "at_utc": "2026-11-08T00:50:54.577683+00:00",
+  "original_session_removed": true,
+  "receipt_remote_outside_original_session": true,
+  "supervisor_module_sha256": "c965bc18aed8713c0b9195d8fff1403ab1e9bd5bf59ecaa03326d7a39b70965b",
+  "schema": "CP12_PRUEBA_SUPERVISOR_V1",
+  "scope": "Procesos de prueba sin M2",
+  "cases": [
+    {
+      "case": {
+        "case": "codigo",
+        "claim": {
+          "schema": "CP12_REANUDADOR_WORKER_V2",
+          "allocation_id": "prueba_supervisor_20261107_codigo",
+          "worker_id": "0c8a8c7c61c64ff28b4e0b37ab6c2edd",
+          "session_id": "b94cf104787b492b8413e17b52f49536",
+          "registry_sha256": "c30a2685e13208aa0026f53fc88fb8779c53231536feaa3890237df4b16d5c43",
+          "source_archive_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "at": "2026-11-08T00:50:53.903495+00:00"
+        },
+        "local_scientific_claim_commit": "403e1b3953ec60aca2123a1c8bb91a44085dd6b9",
+        "expected_worker_returncode": 17,
+        "supervisor_returncode": 0,
+        "local_worker_dir_removed_before_exit_observed": true,
+        "seconds": 0.266,
+        "local_remote_commit": "e02ac28510c7d10508286dc7097413883dc685b9",
+        "path": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_supervisor_20261107_codigo/b94cf104787b492b8413e17b52f49536.json",
+        "sha256": "56ec040de8303bca21b0fdc1f5372ac2dbb9d3d7d846704566c7fa6e7bfe18ab"
+      },
+      "lookup_path": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_supervisor_20261107_codigo/b94cf104787b492b8413e17b52f49536.json"
+    },
+    {
+      "case": {
+        "case": "senal",
+        "claim": {
+          "schema": "CP12_REANUDADOR_WORKER_V2",
+          "allocation_id": "prueba_supervisor_20261107_senal",
+          "worker_id": "317f8de437d5475895c6a89e82569d5c",
+          "session_id": "b137eb727ba64cb1a5556c5c39c72464",
+          "registry_sha256": "423fc87fe44a6feab68eef56ad236c4fec8cbec3b5e45689432d75e938fe93a7",
+          "source_archive_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "at": "2026-11-08T00:50:54.170412+00:00"
+        },
+        "local_scientific_claim_commit": "93856ff9c9281728fc6c3d6dc2fbddbf90603e7b",
+        "expected_worker_returncode": -9,
+        "supervisor_returncode": 0,
+        "local_worker_dir_removed_before_exit_observed": false,
+        "seconds": 0.23,
+        "local_remote_commit": "d4f392756e9228d74640d2d74c48ecc98b7ae142",
+        "path": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_supervisor_20261107_senal/b137eb727ba64cb1a5556c5c39c72464.json",
+        "sha256": "50749958ceeeda6dd96513f84575e341f50b3023e0f6226e22e5551e951ea062"
+      },
+      "lookup_path": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_supervisor_20261107_senal/b137eb727ba64cb1a5556c5c39c72464.json"
+    },
+    {
+      "case": {
+        "case": "contacto",
+        "claim": {
+          "schema": "CP12_REANUDADOR_WORKER_V2",
+          "allocation_id": "prueba_supervisor_20261107_contacto",
+          "worker_id": "573f05c454cd457eb41b6d19f18a3084",
+          "session_id": "fa98d2f77e8641a38cc2fa2d7472fa8b",
+          "registry_sha256": "b5f8daed0d13b88619805a6df5af504f6fbe649edc8ba9b995f5db42ed8dcd2e",
+          "source_archive_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "at": "2026-11-08T00:50:54.402592+00:00"
+        },
+        "local_scientific_claim_commit": "0e113ce94152231da1b9efb5edd3a6cc9829fee9",
+        "expected_worker_returncode": null,
+        "supervisor_returncode": -9,
+        "local_worker_dir_removed_before_exit_observed": false,
+        "seconds": 0.175
+      },
+      "lookup_path": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_supervisor_20261107_contacto/fa98d2f77e8641a38cc2fa2d7472fa8b.json"
+    }
+  ]
+}

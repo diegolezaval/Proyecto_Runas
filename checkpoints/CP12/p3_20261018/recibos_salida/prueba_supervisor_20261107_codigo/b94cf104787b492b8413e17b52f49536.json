@@ -1,0 +1,16 @@
+{
+  "schema": "CP12_REANUDADOR_SALIDA_V1",
+  "allocation_id": "prueba_supervisor_20261107_codigo",
+  "worker_id": "0c8a8c7c61c64ff28b4e0b37ab6c2edd",
+  "session_id": "b94cf104787b492b8413e17b52f49536",
+  "registry_sha256": "c30a2685e13208aa0026f53fc88fb8779c53231536feaa3890237df4b16d5c43",
+  "source_archive_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+  "method": "waitpid_hijo_directo",
+  "exit_observed": true,
+  "observed_at_utc": "2026-11-08T00:50:54.080216+00:00",
+  "pid": 77,
+  "process_identity_sha256": "8e92503d12db774100d36800e4837ff41b5258165fbee70ec82e2db720f8ab77",
+  "returncode": 17,
+  "exit_code": 17,
+  "signal": null
+}
