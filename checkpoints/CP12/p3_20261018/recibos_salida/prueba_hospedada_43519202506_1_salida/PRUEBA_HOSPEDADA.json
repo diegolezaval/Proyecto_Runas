@@ -1,0 +1,15 @@
+{
+  "observed_at_utc": "2026-11-13T22:26:11.687089+00:00",
+  "github_runner": "fb0a5a60135bcc7fb597c2624649244efd40d829e4b209ca1a688ebc55c18606",
+  "confirmed": {
+    "commit": "a1cae470167051ae41a8d334216a49c44b6d7310",
+    "path": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_hospedada_43519202506_1_salida/aa40ac9cd999142b58d0af2990f8cd7d.json"
+  },
+  "lost_container_exit": 137,
+  "lost": {
+    "status": "CONTACTO_PERDIDO_SIN_SALIDA",
+    "exit_observed": false,
+    "exit": null,
+    "exit_lookup": "SIN_RECIBO"
+  }
+}
