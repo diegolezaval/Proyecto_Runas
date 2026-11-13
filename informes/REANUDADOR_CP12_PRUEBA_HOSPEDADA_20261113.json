@@ -1,0 +1,99 @@
+{
+  "schema": "CP12_REANUDADOR_PRUEBA_HOSPEDADA_V1",
+  "date_lima": "2026-11-13",
+  "supervisor_base": "fb4d502fe51047ac2fb5bd82581b7c1e36171dc7",
+  "workflow_commit": "c46ee2651dfab915761f6c52e9243d0dada3b92c",
+  "scope": "Procesos ficticios ejecutados en GitHub Actions de forma independiente del chat",
+  "run": {
+    "id": 43519202506,
+    "conclusion": "success",
+    "created_at_utc": "2026-11-13T22:25:50Z",
+    "completed_at_utc": "2026-11-13T22:26:25Z",
+    "elapsed_seconds": 35,
+    "url": "https://github.com/diegolezaval/Proyecto_Runas/actions/runs/43519202506"
+  },
+  "supervisor_publication": {
+    "job_id": 132208884284,
+    "conclusion": "success",
+    "receipt_commit": "a1cae470167051ae41a8d334216a49c44b6d7310",
+    "receipt_path": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_hospedada_43519202506_1_salida/aa40ac9cd999142b58d0af2990f8cd7d.json",
+    "receipt_sha256": "92b6131b4dd689738fdd6466c9869e5051df46ab19bbfd50c0731ab26c532224",
+    "author": "github-actions[bot]",
+    "exit_code": 17,
+    "observation_report_commit": "600c2d02fdca67e62f559bb1a13f444dbb661655",
+    "observer_runner_sha256": "fb0a5a60135bcc7fb597c2624649244efd40d829e4b209ca1a688ebc55c18606"
+  },
+  "independent_readback": {
+    "job_id": 132209076476,
+    "conclusion": "success",
+    "different_runner": true,
+    "receipt_bytes_equal": true,
+    "result": {
+      "verified_at_utc": "2026-11-13T22:26:22.358088+00:00",
+      "github_runner": "525badf80ad758dfcceaf95a10b7ccfa336f4ae4049d2370d3df96b10a56d135",
+      "source_report": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_hospedada_43519202506_1_salida/PRUEBA_HOSPEDADA.json",
+      "confirmed": {
+        "status": "SALIDA_CONFIRMADA",
+        "exit_observed": true,
+        "exit": {
+          "schema": "CP12_REANUDADOR_SALIDA_V1",
+          "allocation_id": "prueba_hospedada_43519202506_1_salida",
+          "worker_id": "8ef24f92806bb981cc269a8536306272",
+          "session_id": "aa40ac9cd999142b58d0af2990f8cd7d",
+          "registry_sha256": "790de809f8d02801ab22af1e95257a551987072ce62ff05496f33c0b954ec7e4",
+          "source_archive_sha256": "fb4f6b33beccf064c095c8a948f22e64dc57d62ced1ff562446a6f900e73d5a4",
+          "method": "waitpid_hijo_directo",
+          "exit_observed": true,
+          "observed_at_utc": "2026-11-13T22:25:58.197037+00:00",
+          "pid": 2344,
+          "process_identity_sha256": "3a47e7b6f80d0eb26f774a06103560682220f220b449ab226f5e2aeb6b761ea7",
+          "returncode": 17,
+          "exit_code": 17,
+          "signal": null
+        },
+        "exit_commit": "600c2d02fdca67e62f559bb1a13f444dbb661655",
+        "exit_path": "checkpoints/CP12/p3_20261018/recibos_salida/prueba_hospedada_43519202506_1_salida/aa40ac9cd999142b58d0af2990f8cd7d.json",
+        "exit_lookup": "RECUPERADO"
+      },
+      "lost": {
+        "status": "CONTACTO_PERDIDO_SIN_SALIDA",
+        "exit_observed": false,
+        "exit": null,
+        "exit_lookup": "SIN_RECIBO"
+      }
+    }
+  },
+  "lost_environment": {
+    "method": "Destrucción forzada del contenedor completo con supervisor y proceso ficticio antes de observar su salida",
+    "container_cli_returncode": 137,
+    "result": {
+      "status": "CONTACTO_PERDIDO_SIN_SALIDA",
+      "exit_observed": false,
+      "exit": null,
+      "exit_lookup": "SIN_RECIBO"
+    }
+  },
+  "legacy_session": {
+    "session": 55685,
+    "scientific_head": "11d63fa9b413c6ed6d37d0f5d53611dd044b675c",
+    "isolation_check": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/COMPROBACION_AISLAMIENTO_55685.json",
+    "session_probe": "Unknown process id 55685",
+    "lock_probe_at_utc": "2026-11-13T22:25:37.953367+00:00",
+    "original_locks": {
+      "registration": "ENOENT",
+      "instance": "ENOENT"
+    },
+    "original_locks_observed_free": false,
+    "exit_observed": false,
+    "isolation_accredited": false,
+    "rescue": {
+      "source_tau": 30,
+      "target_tau": 32,
+      "library_file_id": "libfile_47896e7c5d9c8191afaec23c8b56af8e",
+      "size_bytes": 230762282,
+      "active_identity_verified": true,
+      "protected": true
+    },
+    "new_physical_steps": 0
+  }
+}
