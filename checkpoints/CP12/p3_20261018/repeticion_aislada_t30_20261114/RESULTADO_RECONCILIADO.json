@@ -1,0 +1,97 @@
+{
+  "schema": "CP12_P3_REPETICION_AISLADA_RECONCILIADA_V1",
+  "allocation": "p3_repeticion_aislada_30_a32_20261114",
+  "start": 30,
+  "end": 32,
+  "source_archive_sha256": "4e2d8349206182f84648959a1823acf800eb518d21ee7d4b8d566d696553b628",
+  "registration_sha256": "7fb9be619d17b449feb8caa42042c4c0812c0260ba057505c67913c9bac5f2b0",
+  "preregistration_commit": "1528e5394d39e64152b6c1c7449ea6f04f760376",
+  "finished_archive_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_P3_REPETICION_AISLADA_30_A32_20261114_FRONTERA_0032.zip",
+  "archive_bytes": 230991705,
+  "archive_sha256": "63cf7314d3c01477e190a3265a3994efb8339e6f8265ac53837962a4cb2cff4f",
+  "library_file_id": "libfile_c495a20095e8819195515096283e5406",
+  "file_id": "file_00000000b650820eb44784879310c603",
+  "payload_files": 411,
+  "new_accepted_steps": [
+    362,
+    362
+  ],
+  "local_audit_count": 30,
+  "latest_periodic_transport": 30.4,
+  "latest_periodic_transport_library_file_id": "libfile_78a27b7b0f90819194228aa0d8cb4844",
+  "original_metrics": {
+    "norm_relative_sup_error": 8.467338235706548e-05,
+    "final_complex_nonradial_field_error_over_initial_norm": 0.00047298382480682246,
+    "final_phi_phase_space_error_over_initial_norm": 0.0007414062140971946,
+    "final_mediator_nonradial_error_over_initial_norm": 0.00027036496477573737,
+    "final_mediator_phase_space_error_over_initial_norm": 0.00036420433156517156,
+    "global_phi_phase_removed": -6.1031236515516033e-05,
+    "chi_radial_bands": [
+      {
+        "r_min": 0,
+        "r_max": 2,
+        "fraction_of_chi_squared_difference": 0.00021049907028318883
+      },
+      {
+        "r_min": 2,
+        "r_max": 5,
+        "fraction_of_chi_squared_difference": 0.0007216858105023287
+      },
+      {
+        "r_min": 5,
+        "r_max": 10,
+        "fraction_of_chi_squared_difference": 0.5527908787553827
+      },
+      {
+        "r_min": 10,
+        "r_max": 20,
+        "fraction_of_chi_squared_difference": 0.4187278725280728
+      },
+      {
+        "r_min": 20,
+        "r_max": 40,
+        "fraction_of_chi_squared_difference": 0.02754906383575899
+      }
+    ],
+    "chi_multipole_fractions": {
+      "1": 1.2093488377524966e-18,
+      "2": 0.8955674396511115,
+      "3": 1.8995004635262514e-18,
+      "4": 0.10443256034888845
+    },
+    "descriptive_chi_rotation": {
+      "angle": 0.0010878392311042026,
+      "rotated_error": 0.0003531234442202676,
+      "used_for_acceptance": false,
+      "warning": "χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta."
+    }
+  },
+  "original_spatial_gates": {
+    "norm_relative_sup_error": true,
+    "final_complex_nonradial_field_error_over_initial_norm": true,
+    "final_phi_phase_space_error_over_initial_norm": true,
+    "final_mediator_nonradial_error_over_initial_norm": true,
+    "final_mediator_phase_space_error_over_initial_norm": true
+  },
+  "original_physical_gates": {
+    "0_core_charge": true,
+    "0_bounded_window": true,
+    "0_original_energy": true,
+    "0_P3_energy": true,
+    "0_charge": true,
+    "1_core_charge": true,
+    "1_bounded_window": true,
+    "1_original_energy": true,
+    "1_P3_energy": true,
+    "1_charge": true
+  },
+  "passed": true,
+  "checked_at_utc": "2026-11-14T13:10:44.552154+00:00",
+  "rerun_M2_steps_during_reconciliation": 0,
+  "terminal_status_of_original_attempt": "not_observed",
+  "legacy_55685_exit_observed": false,
+  "scientific_branch_advanced": false,
+  "public_asset_verified": false,
+  "CP12_closed": false,
+  "correction_validated": false
+}
