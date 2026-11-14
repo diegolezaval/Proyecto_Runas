@@ -1,0 +1,19 @@
+{
+  "schema": "CP12_P3_WORKER_ISOLATION_CHECK_V1",
+  "at_utc": "2026-11-14T19:43:12.467681+00:00",
+  "last_valid_frontier": 32,
+  "scope": "Inicialización del supervisor en ejecución directa sin el prefijo registrado del compilador",
+  "allocation_id": "p3_repeticion_32_a40_20261114",
+  "session_id": "a1870d3870ea46c984c15224571e2baf",
+  "process_exit_observed": true,
+  "exit_code": 1,
+  "exit_record": "checkpoints/CP12/p3_20261018/recibos_salida/p3_repeticion_32_a40_20261114/a1870d3870ea46c984c15224571e2baf.json",
+  "exit_commit": "dd7b67914a7b9956c5680d633c20216fb8c4fedd",
+  "activation_observed": false,
+  "new_M2_steps_executed": 0,
+  "scientific_gate_failed": false,
+  "replacement_allocation": "p3_repeticion_32_a40_20261114_02",
+  "old_55685_exit_observed": false,
+  "correction_validated": false,
+  "CP12_closed": false
+}
