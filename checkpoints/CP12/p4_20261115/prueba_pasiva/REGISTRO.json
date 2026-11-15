@@ -1,0 +1,65 @@
+{
+  "schema": "CP12_P4_FACTORIAL_PASIVO_PRERREGISTRO_V1",
+  "plan_commit": "5cd9fbacc78ff9ea1815a36e48cb0a42eb7d3737",
+  "independent_P3_origin_commit": "e9e5677a68adb45ad77f37eae3ab5e4e3cc57abe",
+  "matched_P3_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
+  "matched_P3_execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+  "cuts": [
+    112,
+    160
+  ],
+  "retained_for_transition": [
+    120,
+    128
+  ],
+  "P3_last_valid_checkpoint": 152,
+  "passive_only": true,
+  "M2_steps_authorized": 0,
+  "passive_interval": 0.4,
+  "passive_step": 0.01,
+  "GL": [
+    7,
+    6
+  ],
+  "GL_relative_limit": 0.001,
+  "decision_window": {
+    "tau": 160,
+    "r_max_exclusive": 40,
+    "k_min_exclusive": 8,
+    "ells": [
+      2,
+      4
+    ]
+  },
+  "P4_coefficient": 0.0017857142857142857,
+  "files_sha256": {
+    "checkpoints/CP12/p4_20261115/prueba_pasiva/prueba_pasiva.py": "809b4773f674c1ed4f11a4ec53e7bc3b6903f5bad0dac789afa57ba5996c3135",
+    "checkpoints/CP12/p4_20261115/prueba_pasiva/operador_pasivo.py": "6de21b4188b82c8c8d4bf17f155652ce3f035d3665e48c9d972f5902a0f640f1",
+    "checkpoints/CP12/p4_20261115/prueba_pasiva/PRERREGISTRO.md": "70c52f9a0ed1d0798005e502666da0914f30c06d2d2112ad95fe018caa7f1ecf",
+    "checkpoints/CP12/p3_20261018/diagnostico_tau160_20261115/PLAN_VALIDACION.md": "b788b7d96449a22c49539d79de73d61f4e9c6377a11cd9cc866c6ac4ce1f73bc",
+    "checkpoints/CP12/p3_20261018/diagnostico_tau160_20261115/REGISTRO.json": "2d3e206297336216eb695384570903a7101ec37841f98b75666d0d9773bc3e58",
+    "checkpoints/CP12/p3_20261018/diagnostico_tau160_20261115/RECUPERACION.json": "0aed6643d92052cd9a6778ea14d7b24a72d446eec76c08c5ced9ebf85fb97003",
+    "checkpoints/CP12/p3_20261018/diagnostico_tau160_20261115/diagnosticar.py": "d3f71f753f772da05969ac030cc69385cd0a1bcafdf9a1e28f0b0d70464ceb4c",
+    "checkpoints/CP12/p3_20261018/diagnostico_tau160_20261115/diagnostico_d1.py": "aef4865af8e18090cd0effa2e672855a499a30ab99eb22f07ef19780308ee4c1",
+    "checkpoints/CP12/p3_20261018/diagnostico_tau160_20261115/diagnostico_d2.py": "ebf437328a9fe364b46ccfe7d1cf5b508b3efad93cde9b46dc75b81ed87fb469",
+    "checkpoints/CP12/p3_20261018/retoma_20261028/auditar_recuperacion.py": "5ec8064cb2ef130b6796a296940a564d5c290e6f1000c4ca3ba2b0705f76aae0",
+    "checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0104_0112/RECUPERACION_PUBLICA.json": "9635d3fbbbe2bb87c0f04f7f98e9669e64e46f2121fbd0e8398c66c8e205053c",
+    "checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0152_0160/SUSPENSION.json": "8d617cc381c7200b336cb9fad4ec8e433a32cbcb89e743fd7e95885e0fa4ce33",
+    "requirements.txt": "fad71a2b9faf97517c831491763eae84515621926627f2bff976d01c3cf4521d"
+  },
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "threadpoolctl": "3.6.0"
+  },
+  "blas": {
+    "version": "0.3.30",
+    "architecture": "SkylakeX",
+    "num_threads": 1,
+    "threading_layer": "pthreads"
+  },
+  "rk_sha256": "fa5d6300917f4f949e699b116f59ae147159d5c6147d55d940dc9d3303891056",
+  "ivp_base_sha256": "4e70402b4c092e0a502dba07e33f91784e1e6d3645710cc8a916fd6e3ead7548"
+}
