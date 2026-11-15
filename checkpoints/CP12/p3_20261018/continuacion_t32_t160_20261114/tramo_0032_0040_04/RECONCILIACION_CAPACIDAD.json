@@ -1,0 +1,13 @@
+{
+  "schema": "CP12_P3_REINTENTO_ADMINISTRATIVO_V1",
+  "prior_registration": "checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0032_0040_03/REGISTRO.json",
+  "prior_exit": "checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0032_0040_03/SALIDA_TRABAJADOR.json",
+  "prior_exit_commit": "e770ea4775b7e4ad73141ec1f3c23fa8a546da50",
+  "prior_suspension": "checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0032_0040_03/SUSPENSION.json",
+  "capacity_asset_observed_after_failure": 749319013,
+  "activation_delivered": false,
+  "scientific_gate_failed": false,
+  "M2_steps_executed": 0,
+  "previous_verified_boundary": 32,
+  "reason": "La conexión pública de listado devolvió una instantánea anterior a la publicación. El nuevo automatizador consulta el listado autenticado después de la escritura y reintenta sólo la lectura."
+}
