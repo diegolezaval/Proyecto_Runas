@@ -237,8 +237,9 @@ def run_cut(tick, saved, sims, reduced, S, branches, geometry, spectra, observer
         delta = I(ops.delta_lap(source, source_chi)) - ops.delta_lap(target, chi)
         corrections = []
         for cutoff in (4, 8):
-            gs = geometry[src, cutoff].evaluate(source_chi[0])
-            gt = geometry[dst, cutoff].evaluate(chi[0])
+            # Las proyecciones se controlaron en la base angular física.
+            gs = geometry[src, cutoff].evaluate(source_chi[0] @ S.T) @ S
+            gt = geometry[dst, cutoff].evaluate(chi[0] @ S.T) @ S
             corrections.append((source.dx**2 * I(gs) - target.dx**2 * gt)[None])
 
         def in_chi(x):
