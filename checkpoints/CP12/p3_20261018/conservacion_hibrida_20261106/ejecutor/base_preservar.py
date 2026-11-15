@@ -88,10 +88,13 @@ def prepare(home,output,label,kind,clock,boundary,capacity=False):
     for n,b in extra.items():
         if n in inventory:raise ValueError('Colisión de historia')
         inventory[n]=dict(bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
-    manifest=dict(schema='CP12_P3_FORWARD_CAPSULE_V2',kind=kind,observer_clock=clock,closed_boundary=boundary,
+    config=read(home/'configuration.json')
+    candidate='P4' if config['schema']=='CP12_P4_PREREGISTERED_PHYSICAL_PILOT' else 'P3'
+    uid=read(home/'preregistration/nueva_identidad.json')['execution_uuid'] if candidate=='P4' else UID
+    manifest=dict(schema=f'CP12_{candidate}_FORWARD_CAPSULE_V2',kind=kind,observer_clock=clock,closed_boundary=boundary,
                   capacity_probe=capacity,CP12_closed=False,correction_validated=False,files=inventory,
                   stale_internal_transport_forensic_only=kind=='boundary')
-    archive=output/('CP12_CANDIDATO_P3_'+UID+'_'+label+'.zip')
+    archive=output/f'CP12_CANDIDATO_{candidate}_{uid}_{label}.zip'
     with zipfile.ZipFile(archive,'x',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
         for n,p in selected.items():
             b=p.read_bytes()
@@ -99,12 +102,12 @@ def prepare(home,output,label,kind,clock,boundary,capacity=False):
             z.writestr(n,b,compress_type=zipfile.ZIP_STORED if n.endswith('.npz') else zipfile.ZIP_DEFLATED,compresslevel=6)
         for n,b in extra.items():z.writestr(n,b)
         z.writestr('MANIFIESTO_NEGATIVO.json',json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-    request=dict(schema='CP12_P3_FORWARD_REQUEST_V2',repository=REPO,release_tag=TAG,kind=kind,
+    request=dict(schema=f'CP12_{candidate}_FORWARD_REQUEST_V2',repository=REPO,release_tag=TAG,kind=kind,
         observer_clock=clock,closed_boundary=boundary,capacity_probe=capacity,source_home=str(home),
         archive_path=str(archive),file_name=archive.name,bytes=archive.stat().st_size,sha256=sha(archive),
         source_inventory={n:inventory[n] for n in selected},archive_inventory=inventory,local_audits=checked,
         conservation_code_sha256=sha(__file__),M2_steps_executed_during_preservation=0,CP12_closed=False)
-    if capacity and request['bytes']<=229880902:raise ValueError('Capacidad de prueba insuficiente')
+    if capacity and candidate=='P3' and request['bytes']<=229880902:raise ValueError('Capacidad de prueba insuficiente')
     write(output/'SOLICITUD.json',request);return request
 
 

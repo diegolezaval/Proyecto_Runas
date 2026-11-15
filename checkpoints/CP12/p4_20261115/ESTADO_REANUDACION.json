@@ -1,0 +1,17 @@
+{
+  "schema": "CP12_P4_CANONICAL_RECOVERY_REGISTER",
+  "branch": "ciencia/cp12-p4-20261115",
+  "execution_uuid": "8a6775db0628457ca53ffece57c210d3",
+  "execution_run_id": "1494ea1de6f7c1c084b99b4fa7e9892fc74d0c7089cdbc96dea82d334829cc18",
+  "current_own_worker_status": "PREPARADO_LOCAL_PENDIENTE_DE_ORIGEN_PUBLICO",
+  "current_target": 8,
+  "latest_full_frontier_proof": null,
+  "latest_full_trial_frontier_recovered_and_audited": null,
+  "original_cauchy_time": 0,
+  "local_initial_state_sha256": "65eed503ef341e7ea16d63957a3d288fe02f0c35eb19a2201ac6f7b7d1017c45",
+  "M2_steps_executed": 0,
+  "CP12_closed": false,
+  "correction_validated": false,
+  "certificado_controles": "checkpoints/CP12/p4_20261115/CERTIFICADO_CONTROLES_P4.json",
+  "prueba_origen": "checkpoints/CP12/p4_20261115/PRUEBA_LOCAL_TRANSPORTE.json"
+}

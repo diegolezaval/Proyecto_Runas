@@ -1,0 +1,67 @@
+{
+  "schema": "CP12_P4_TRANSICION_PASIVA_V1",
+  "cuts": {
+    "120": {
+      "maximum_order_relative": 1.5395662128871495e-11,
+      "band": {
+        "2": {
+          "conmutador": -0.006065800699529766,
+          "propagador": -0.0998502722624591,
+          "combinado": -0.11739777669040474,
+          "geometria_k4": -4.939319654571881e-13,
+          "geometria_k8": 1.3158135194843432e-08
+        },
+        "4": {
+          "conmutador": -0.027872582258992987,
+          "propagador": -0.08693442658342208,
+          "combinado": -0.12446262063687893,
+          "geometria_k4": -6.850109038196847e-13,
+          "geometria_k8": 1.4943430184978213e-08
+        }
+      },
+      "full_sha256": "3c56c3369708bb84a44eec81a16e10b6a40a72520bbdce63737def0ecf65ea9f"
+    },
+    "128": {
+      "maximum_order_relative": 1.3498149739070986e-11,
+      "band": {
+        "2": {
+          "conmutador": -0.006063631727218023,
+          "propagador": -0.09984742360361297,
+          "combinado": -0.11739233426358257,
+          "geometria_k4": -4.7932609236247e-13,
+          "geometria_k8": 5.993331003067433e-09
+        },
+        "4": {
+          "conmutador": -0.02785802173142947,
+          "propagador": -0.0869311498938652,
+          "combinado": -0.12444428513054066,
+          "geometria_k4": -6.910459382714171e-13,
+          "geometria_k8": 1.6283503608588242e-09
+        }
+      },
+      "full_sha256": "d7dd46b0b6c899ee29811929ce58f6ad20db55ce9ac652576be51cca2332e4bf"
+    }
+  },
+  "M2_steps_executed": 0,
+  "recoveries": {
+    "120": {
+      "scope": "Original recovery audits verified against exact bytes",
+      "clock": 120,
+      "tests": 30,
+      "M2_steps_executed_in_recorded_recovery": 0
+    },
+    "128": {
+      "scope": "Original recovery audits verified against exact bytes",
+      "clock": 128,
+      "tests": 30,
+      "M2_steps_executed_in_recorded_recovery": 0
+    },
+    "160": {
+      "scope": "Original recovery audits verified against exact bytes",
+      "clock": 160,
+      "tests": 30,
+      "M2_steps_executed_in_recorded_recovery": 0
+    }
+  },
+  "responses_sha256": "f64b822a3430c44834aaa787f1f47dd0ad4540775a971baae8a4e2fb20c30d50"
+}

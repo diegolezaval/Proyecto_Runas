@@ -1,0 +1,127 @@
+{
+  "schema": "CP12_P4_CONTROLES_PROPIOS_V1",
+  "all_registered_preflight_controls_passed": true,
+  "controls": {
+    "F0": {
+      "passed": true,
+      "sha256": "4c94755454031d62360d8c3e578bdc437ebdf0c62384fe24e05c3d32d2840f2a"
+    },
+    "F1": {
+      "passed": true,
+      "sha256": "71ce52e09c3964ed36ae6877513603b098afca47cb3c4b0d77131a80c8383522"
+    },
+    "F2": {
+      "passed": true,
+      "sha256": "5d310eec397adc34e2f1d00fdf8ca13cc51ec3175595aad047366bc6e7925401"
+    },
+    "F3": {
+      "passed": true,
+      "sha256": "c761fbc426947b74089a0c091d566026fe64ec6b02c03d74f2bd0c781113cfe7"
+    },
+    "F4": {
+      "passed": true,
+      "sha256": "1b83a40e04efe913a11af5c4f0851cf260de438cc6d4ae79bce7828163cbac6b"
+    },
+    "F5": {
+      "passed": true,
+      "sha256": "667e2e0665288198bf271b1726877e423e8c6ed7e47f4376e50d16f9bad50fad"
+    }
+  },
+  "spectrum_and_group_velocity": [
+    {
+      "ell": 2,
+      "degree": 3,
+      "occupation_grid_dx": 0.125,
+      "radial_omega_disagreement_rms": 0.00898019114583908,
+      "flat_group_speed_disagreement_rms": 0.004822975314665076,
+      "maximum_group_derivative_check": 9.925174571101536e-11
+    },
+    {
+      "ell": 2,
+      "degree": 3,
+      "occupation_grid_dx": 0.0625,
+      "radial_omega_disagreement_rms": 0.008104372034857055,
+      "flat_group_speed_disagreement_rms": 0.004486953287537917,
+      "maximum_group_derivative_check": 9.925174571101536e-11
+    },
+    {
+      "ell": 2,
+      "degree": 4,
+      "occupation_grid_dx": 0.125,
+      "radial_omega_disagreement_rms": 0.003849044686938007,
+      "flat_group_speed_disagreement_rms": 0.0024093877398212718,
+      "maximum_group_derivative_check": 9.508005494041072e-11
+    },
+    {
+      "ell": 2,
+      "degree": 4,
+      "occupation_grid_dx": 0.0625,
+      "radial_omega_disagreement_rms": 0.003316219882171023,
+      "flat_group_speed_disagreement_rms": 0.002160215971802726,
+      "maximum_group_derivative_check": 9.508005494041072e-11
+    },
+    {
+      "ell": 4,
+      "degree": 3,
+      "occupation_grid_dx": 0.125,
+      "radial_omega_disagreement_rms": 0.010499071348799504,
+      "flat_group_speed_disagreement_rms": 0.005226828160907427,
+      "maximum_group_derivative_check": 1.0227019231479062e-10
+    },
+    {
+      "ell": 4,
+      "degree": 3,
+      "occupation_grid_dx": 0.0625,
+      "radial_omega_disagreement_rms": 0.009029495464224338,
+      "flat_group_speed_disagreement_rms": 0.004705154791564319,
+      "maximum_group_derivative_check": 1.0227019231479062e-10
+    },
+    {
+      "ell": 4,
+      "degree": 4,
+      "occupation_grid_dx": 0.125,
+      "radial_omega_disagreement_rms": 0.004954129265643881,
+      "flat_group_speed_disagreement_rms": 0.0028627841513180676,
+      "maximum_group_derivative_check": 9.884340568255823e-11
+    },
+    {
+      "ell": 4,
+      "degree": 4,
+      "occupation_grid_dx": 0.0625,
+      "radial_omega_disagreement_rms": 0.004014154671752537,
+      "flat_group_speed_disagreement_rms": 0.0024450701606899923,
+      "maximum_group_derivative_check": 9.884340568255823e-11
+    }
+  ],
+  "CP10_Cauchy_exact": [
+    true,
+    true
+  ],
+  "all_input_payload_hashes_unchanged": true,
+  "M2_steps_executed": 0,
+  "DOP853_attempts": [],
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "threadpoolctl": "3.6.0"
+    },
+    "blas": [
+      {
+        "version": "0.3.30",
+        "architecture": "SkylakeX",
+        "num_threads": 1,
+        "threading_layer": "pthreads"
+      },
+      {
+        "version": "0.3.30",
+        "architecture": "SkylakeX",
+        "num_threads": 1,
+        "threading_layer": "pthreads"
+      }
+    ]
+  },
+  "registration_sha256": "e42edbb6fca16cb3e0a2ba02c2c6163ce98df9f6b073bfcfec2e016bdfb1a43f"
+}

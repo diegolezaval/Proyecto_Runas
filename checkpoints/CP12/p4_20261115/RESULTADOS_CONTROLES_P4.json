@@ -1,0 +1,58 @@
+{
+  "F3": {
+    "passed": true,
+    "cases": 6,
+    "limits": {
+      "canonical_matrix_action_error": 7.88590198707316e-16,
+      "canonical_matrix_symmetry_error": 1.6212852022334914e-17,
+      "resolvent_residual": 1.0141295191523494e-12
+    }
+  },
+  "F2": {
+    "passed": true,
+    "cases": 15,
+    "limits": {
+      "mixed_defect_error": 1.5846362679177804e-12,
+      "bare_partition_error": 1.5723045571902863e-12,
+      "polynomial_error": 9.816562504795227e-16,
+      "extended_reference_error": 1.6533511050439635e-28,
+      "weighted_symmetry_error": 1.0296691987926577e-14
+    }
+  },
+  "F5": {
+    "passed": true,
+    "cases": 25,
+    "limits": {
+      "isolated_energy_relative_error": 6.89948700445125e-13,
+      "isolated_gradient_scaled_error": 5.892508703198018e-13
+    }
+  },
+  "F1": {
+    "passed": true,
+    "cases": 6,
+    "limits": {
+      "gradient_relative_error": 3.3015202389693554e-13,
+      "charge_relative_error": 3.5137234665077844e-17,
+      "energy_gap_relative_error": 3.535093256887679e-16,
+      "work_relative_error": 1.1447460723207326e-13
+    }
+  },
+  "F4": {
+    "passed": true,
+    "cases": 6,
+    "limits": {
+      "phase_error": 1.4932935324831204e-11,
+      "quadratic_balance": 3.0933566786295416e-13,
+      "maximum_iteration_residual": 4.608723585249247e-13
+    }
+  },
+  "F0": {
+    "passed": true,
+    "cases": 15,
+    "limits": {
+      "matrix_error": 1.84669092147283e-16,
+      "spectral_error": 1.388014561364969e-15,
+      "interior_harmonic_error": 0.0
+    }
+  }
+}
