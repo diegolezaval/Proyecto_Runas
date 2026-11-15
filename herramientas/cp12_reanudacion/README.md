@@ -5,6 +5,27 @@ transporte exacto con su asignación publicada. El tramo de referencia es τ28,8
 
 ## Uso
 
+### Campaña hospedada de la repetición τ32
+
+La ejecución hospedada usa `reanudar_cp12.py hospedado`. Consulta el registro
+científico antes de asignar un proceso. La selección del ejecutor exige el
+entorno numérico original. La intención exclusiva vive en la rama científica.
+El supervisor registra ambos locks y la activación en Git antes de entregarla
+al trabajador. Publica su recibo terminal en `administracion/cp12-recibos-salida`.
+
+La frontera positiva se descarga de Releases y se recupera con los auditores
+originales. La lectura de ambas mallas se ejecuta antes y después de publicar.
+El cierre en Git prepara la asignación del siguiente tramo. En τ160 se guardan
+también la lectura causal de las tres ventanas y el resultado del protocolo.
+
+Los transportes exactos conservan la frecuencia local de 0,4 y la persistente
+de 1,6. En Actions la conservación persistente usa adjuntos CMS cifrados para
+el proyecto. El trabajador descarga, descifra y audita su propia copia antes de
+registrarla. El certificado público de recuperación está fijado en la
+asignación. La clave privada de recuperación pertenece a la Biblioteca del
+usuario y se conserva fuera de GitHub. Si se corta una asignación, el registro
+apunta al último transporte confirmado y la evidencia de salida del supervisor.
+
 Prepara el checkout con Python, Git y las dependencias registradas en
 `requirements.txt`.
 

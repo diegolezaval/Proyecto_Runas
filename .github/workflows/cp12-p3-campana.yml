@@ -1,0 +1,94 @@
+name: CP12 P3 desde τ32 hasta τ160
+
+on:
+  push:
+    branches: [administracion/cp12-reanudacion]
+    paths: [herramientas/cp12_reanudacion/INICIAR_P3_HOSPEDADO.json]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cp12-p3-repeticion-t32-t160
+  cancel-in-progress: false
+
+jobs:
+  frontera_40:
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 40
+  frontera_48:
+    needs: frontera_40
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 48
+  frontera_56:
+    needs: frontera_48
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 56
+  frontera_64:
+    needs: frontera_56
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 64
+  frontera_72:
+    needs: frontera_64
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 72
+  frontera_80:
+    needs: frontera_72
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 80
+  frontera_88:
+    needs: frontera_80
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 88
+  frontera_96:
+    needs: frontera_88
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 96
+  frontera_104:
+    needs: frontera_96
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 104
+  frontera_112:
+    needs: frontera_104
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 112
+  frontera_120:
+    needs: frontera_112
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 120
+  frontera_128:
+    needs: frontera_120
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 128
+  frontera_136:
+    needs: frontera_128
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 136
+  frontera_144:
+    needs: frontera_136
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 144
+  frontera_152:
+    needs: frontera_144
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 152
+  frontera_160:
+    needs: frontera_152
+    uses: ./.github/workflows/cp12-p3-tramo-hospedado.yml
+    with:
+      objetivo: 160

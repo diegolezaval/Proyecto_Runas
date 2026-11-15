@@ -179,6 +179,9 @@ class Git:
             env = dict(os.environ, GIT_INDEX_FILE=str(Path(temp) / 'index'))
             self.run('read-tree', parent, env=env)
             for path, data in files.items():
+                if data is None:
+                    self.run('update-index', '--force-remove', '--', path, env=env)
+                    continue
                 blob = self.run('hash-object', '-w', '--stdin', data=data).stdout.decode().strip()
                 self.run('update-index', '--add', '--cacheinfo', f'100644,{blob},{path}', env=env)
             tree = self.run('write-tree', env=env).stdout.decode().strip()

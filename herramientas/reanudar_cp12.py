@@ -142,4 +142,7 @@ def main():
 
 
 if __name__ == '__main__':
+    if sys.argv[1:2] == ['hospedado']:
+        from cp12_reanudacion.campana_hospedada import main as hospedado
+        sys.exit(hospedado(sys.argv[2:]))
     sys.exit(main())
