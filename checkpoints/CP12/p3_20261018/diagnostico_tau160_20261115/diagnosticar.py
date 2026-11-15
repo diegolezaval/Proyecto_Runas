@@ -50,6 +50,8 @@ def write(path, data, compact=False):
     def native(value):
         if isinstance(value, np.generic):
             return value.item()
+        if isinstance(value, np.ndarray):
+            return value.tolist()
         raise TypeError(type(value).__name__)
 
     path.write_text(
