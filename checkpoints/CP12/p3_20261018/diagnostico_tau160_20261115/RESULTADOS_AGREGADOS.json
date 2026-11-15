@@ -1,0 +1,854 @@
+{
+  "schema": "CP12_P3_D1_D2_AGREGADOS_PUBLICOS_V1",
+  "preregistration": "a77fa401a6f649f117dd7ce270954ace08b29066",
+  "registered_reader": "22d1d87502f5f012d4b6a30214ae8d8a94590174",
+  "scope": "Métricas agregadas de distribuciones y contrastes, redondeadas a ocho cifras significativas salvo las métricas oficiales.",
+  "complete_local_result_sha256": {
+    "D1.json": "754fdb6a7898219b808de5be5b23c858d3bde34f42235c3b0979a988cbb3f11d",
+    "D2.json": "16e3d7877961d516efa9fab4ea4d9ab39e68d64222e4e507ca7dba39cebeed31",
+    "HISTORIA.json": "2ffcc76288902d40d63b22468edb7829c8211796dffd3232167aa3332be20a34",
+    "ESPECTROS_COMPLETOS.npz": "72eb0d315d9376f1198746b788ca4b35437c00fed9d812b07fcd11e7dc683a38"
+  },
+  "official_spatial_limit": 0.02,
+  "official_spatial_gates_tau160": {
+    "norm_relative_sup_error": true,
+    "final_complex_nonradial_field_error_over_initial_norm": true,
+    "final_phi_phase_space_error_over_initial_norm": true,
+    "final_mediator_nonradial_error_over_initial_norm": true,
+    "final_mediator_phase_space_error_over_initial_norm": false
+  },
+  "official_values_tau160": {
+    "norm_relative_sup_error": 0.00034909158618337397,
+    "final_complex_nonradial_field_error_over_initial_norm": 0.0006798316967706833,
+    "final_phi_phase_space_error_over_initial_norm": 0.0007167773940791065,
+    "final_mediator_nonradial_error_over_initial_norm": 0.014564043822427477,
+    "final_mediator_phase_space_error_over_initial_norm": 0.020666023566786106
+  },
+  "original_physical_gates_tau160": {
+    "0_original_energy": true,
+    "0_MIXTO_energy": true,
+    "0_charge": true,
+    "0_core_charge": true,
+    "0_bounded_window": true,
+    "1_original_energy": true,
+    "1_MIXTO_energy": true,
+    "1_charge": true,
+    "1_core_charge": true,
+    "1_bounded_window": true
+  },
+  "original_causal_gate_tau160": true,
+  "observation_summary": {
+    "first_saved_observation_over_limit": [
+      153.6,
+      0.02002839282241418
+    ],
+    "previous_saved_observation": [
+      153.2,
+      0.01998720051115048
+    ],
+    "observations_over_limit": 17,
+    "observations": 401,
+    "max_observed_with_clock": [
+      160,
+      0.020666023566786106
+    ],
+    "scope": "Tiempos guardados cada 0,4. Las puertas oficiales se evalúan en múltiplos de ocho."
+  },
+  "official_checkpoint_chi_phase_norms": [
+    [
+      32,
+      0.00036420433156517156
+    ],
+    [
+      40,
+      0.001048377488487617
+    ],
+    [
+      48,
+      0.002248816014781304
+    ],
+    [
+      56,
+      0.0038129781583467266
+    ],
+    [
+      64,
+      0.005542353907852859
+    ],
+    [
+      72,
+      0.007305911342953915
+    ],
+    [
+      80,
+      0.009021145218673757
+    ],
+    [
+      88,
+      0.010646555502080322
+    ],
+    [
+      96,
+      0.012159616692339956
+    ],
+    [
+      104,
+      0.013554447692957591
+    ],
+    [
+      112,
+      0.014832611499970016
+    ],
+    [
+      120,
+      0.016003025065082995
+    ],
+    [
+      128,
+      0.017080344343384467
+    ],
+    [
+      136,
+      0.01807528590856858
+    ],
+    [
+      144,
+      0.019000763632564435
+    ],
+    [
+      152,
+      0.019862632722809765
+    ],
+    [
+      160,
+      0.020666023566786106
+    ]
+  ],
+  "spatial_band_fields": [
+    "r_min",
+    "r_max",
+    "fraction_of_core_power",
+    "fraction_of_full_box_power",
+    "velocity_fraction_in_band"
+  ],
+  "spectral_smooth_core_columns": [
+    "time",
+    "ell",
+    "coarse_state_fraction_above_k8",
+    "fine_state_fraction_above_k8",
+    "observed_fraction_above_k8",
+    "coupled_chi_fraction_above_k8",
+    "observed_peak_k",
+    "matched_observed_power_fraction",
+    "P3_flat_rms_delta_omega",
+    "P3_radial_rest_rms_delta_omega",
+    "P3_signed_double_cross",
+    "P3_total_rms_delta_omega",
+    "P4_total_rms_delta_omega",
+    "P4_vs_P3_pair_rms_ratio_coarse_weights",
+    "P4_vs_P3_pair_rms_ratio_fine_weights"
+  ],
+  "comparisons_by_snapshot": [
+    {
+      "time": 112,
+      "core_initial_squared_scale": 0.023527191,
+      "observed_core_squared_field_and_scaled_velocity": [
+        0.0000025710567,
+        0.0000026050751
+      ],
+      "core_field_and_scaled_velocity_squared_by_ell": {
+        "2": {
+          "field_squared_norm": 0.000002315169,
+          "velocity_scaled_squared_norm": 0.0000023447507
+        },
+        "4": {
+          "field_squared_norm": 2.5588774e-7,
+          "velocity_scaled_squared_norm": 2.6032437e-7
+        }
+      },
+      "observed_radial_centroid": 18.888141,
+      "spatial_bands": [
+        [
+          0,
+          2,
+          4.5004083e-7,
+          4.5003978e-7,
+          0.0064950987
+        ],
+        [
+          2,
+          5,
+          0.0000038664952,
+          0.0000038664862,
+          0.0022869373
+        ],
+        [
+          5,
+          10,
+          0.0015452422,
+          0.0015452386,
+          0.000043822463
+        ],
+        [
+          10,
+          20,
+          0.96681008,
+          0.96680783,
+          0.50321746
+        ],
+        [
+          20,
+          40,
+          0.031640359,
+          0.031640285,
+          0.53002855
+        ],
+        [
+          40,
+          220,
+          null,
+          0.0000023274673,
+          0.48846203
+        ]
+      ],
+      "operator_coupled_fraction_in_20_40_over_core": 0.031194525,
+      "modes_core_power_fractions": [
+        0.90027068,
+        0.099729321
+      ],
+      "interpolation_core_norms": {
+        "original_cubic": 0.014832611,
+        "origin_parity": 0.014832611,
+        "pchip": 0.014531514,
+        "reverse_cubic": 0.014970384
+      },
+      "phase_norm_full_box": 0.014832629,
+      "operator_chi_core_projection": 0.9862182,
+      "operator_chi_core_cosine": 0.9991029,
+      "core_power_reduction_on_removing_operator": 0.99806262,
+      "signed_coupling": {
+        "same_chi_forcing_norm_raw": 0.015398083,
+        "same_chi_forcing_norm_coupled": 0.014641326,
+        "coupled_minus_raw_norm": 0.0031360741,
+        "coupled_minus_raw_signed_projection": -0.031862601,
+        "twice_raw_dot_change_over_observed_squared": -0.1480297,
+        "change_squared_over_observed_squared": 0.044703073
+      },
+      "total_raw_and_coupled_crosses_over_error_square": [
+        -0.10706809,
+        0.023815552
+      ],
+      "core_P4_instantaneous_increment_norm_ratios": [
+        1.0265042,
+        1.0181515
+      ]
+    },
+    {
+      "time": 120,
+      "core_initial_squared_scale": 0.023527191,
+      "observed_core_squared_field_and_scaled_velocity": [
+        0.0000029920553,
+        0.0000030331833
+      ],
+      "core_field_and_scaled_velocity_squared_by_ell": {
+        "2": {
+          "field_squared_norm": 0.0000027036868,
+          "velocity_scaled_squared_norm": 0.0000027399273
+        },
+        "4": {
+          "field_squared_norm": 2.8836859e-7,
+          "velocity_scaled_squared_norm": 2.9325604e-7
+        }
+      },
+      "observed_radial_centroid": 19.850669,
+      "spatial_bands": [
+        [
+          0,
+          2,
+          4.4188223e-7,
+          4.4188079e-7,
+          0.013206783
+        ],
+        [
+          2,
+          5,
+          0.0000021048288,
+          0.000002104822,
+          0.0035595166
+        ],
+        [
+          5,
+          10,
+          0.0012294072,
+          0.0012294032,
+          0.000019091959
+        ],
+        [
+          10,
+          20,
+          0.59561125,
+          0.59560931,
+          0.50436513
+        ],
+        [
+          20,
+          40,
+          0.4031568,
+          0.40315549,
+          0.50354451
+        ],
+        [
+          40,
+          220,
+          null,
+          0.0000032506387,
+          0.49867181
+        ]
+      ],
+      "operator_coupled_fraction_in_20_40_over_core": 0.40002904,
+      "modes_core_power_fractions": [
+        0.90346861,
+        0.096531385
+      ],
+      "interpolation_core_norms": {
+        "original_cubic": 0.016003025,
+        "origin_parity": 0.016003025,
+        "pchip": 0.015915426,
+        "reverse_cubic": 0.016145644
+      },
+      "phase_norm_full_box": 0.016003051,
+      "operator_chi_core_projection": 0.98708541,
+      "operator_chi_core_cosine": 0.99929427,
+      "core_power_reduction_on_removing_operator": 0.99845652,
+      "signed_coupling": {
+        "same_chi_forcing_norm_raw": 0.016713626,
+        "same_chi_forcing_norm_coupled": 0.015807508,
+        "coupled_minus_raw_norm": 0.003138568,
+        "coupled_minus_raw_signed_projection": -0.040494079,
+        "twice_raw_dot_change_over_observed_squared": -0.15353021,
+        "change_squared_over_observed_squared": 0.038464395
+      },
+      "total_raw_and_coupled_crosses_over_error_square": [
+        -0.11592914,
+        0.022851001
+      ],
+      "core_P4_instantaneous_increment_norm_ratios": [
+        1.0265038,
+        1.0181526
+      ]
+    },
+    {
+      "time": 128,
+      "core_initial_squared_scale": 0.023527191,
+      "observed_core_squared_field_and_scaled_velocity": [
+        0.0000034073607,
+        0.0000034564189
+      ],
+      "core_field_and_scaled_velocity_squared_by_ell": {
+        "2": {
+          "field_squared_norm": 0.0000030883396,
+          "velocity_scaled_squared_norm": 0.0000031321122
+        },
+        "4": {
+          "field_squared_norm": 3.1902109e-7,
+          "velocity_scaled_squared_norm": 3.2430672e-7
+        }
+      },
+      "observed_radial_centroid": 20.805063,
+      "spatial_bands": [
+        [
+          0,
+          2,
+          4.0022342e-8,
+          4.0022181e-8,
+          0.094617005
+        ],
+        [
+          2,
+          5,
+          0.0000016699994,
+          0.0000016699927,
+          0.0036735652
+        ],
+        [
+          5,
+          10,
+          0.00083395166,
+          0.00083394831,
+          0.000016270486
+        ],
+        [
+          10,
+          20,
+          0.090778242,
+          0.090777876,
+          0.54209089
+        ],
+        [
+          20,
+          40,
+          0.9083861,
+          0.90838244,
+          0.50018778
+        ],
+        [
+          40,
+          220,
+          null,
+          0.0000040257311,
+          0.46708599
+        ]
+      ],
+      "operator_coupled_fraction_in_20_40_over_core": 0.9086023,
+      "modes_core_power_fractions": [
+        0.90627208,
+        0.093727925
+      ],
+      "interpolation_core_norms": {
+        "original_cubic": 0.017080344,
+        "origin_parity": 0.017080344,
+        "pchip": 0.016681163,
+        "reverse_cubic": 0.017226773
+      },
+      "phase_norm_full_box": 0.017080379,
+      "operator_chi_core_projection": 0.98796929,
+      "operator_chi_core_cosine": 0.99951355,
+      "core_power_reduction_on_removing_operator": 0.99890493,
+      "signed_coupling": {
+        "same_chi_forcing_norm_raw": 0.017906878,
+        "same_chi_forcing_norm_coupled": 0.016883069,
+        "coupled_minus_raw_norm": 0.0031398223,
+        "coupled_minus_raw_signed_projection": -0.04607463,
+        "twice_raw_dot_change_over_observed_squared": -0.15588206,
+        "change_squared_over_observed_squared": 0.033792233
+      },
+      "total_raw_and_coupled_crosses_over_error_square": [
+        -0.12095715,
+        0.021965705
+      ],
+      "core_P4_instantaneous_increment_norm_ratios": [
+        1.0265044,
+        1.0181546
+      ]
+    },
+    {
+      "time": 160,
+      "core_initial_squared_scale": 0.023527191,
+      "observed_core_squared_field_and_scaled_velocity": [
+        0.0000049903848,
+        0.0000050577146
+      ],
+      "core_field_and_scaled_velocity_squared_by_ell": {
+        "2": {
+          "field_squared_norm": 0.0000045528968,
+          "velocity_scaled_squared_norm": 0.000004613371
+        },
+        "4": {
+          "field_squared_norm": 4.3748806e-7,
+          "velocity_scaled_squared_norm": 4.4434363e-7
+        }
+      },
+      "observed_radial_centroid": 24.515072,
+      "spatial_bands": [
+        [
+          0,
+          2,
+          5.3376045e-7,
+          5.3375648e-7,
+          0.0011480189
+        ],
+        [
+          2,
+          5,
+          0.0000013066665,
+          0.0000013066568,
+          0.0010745727
+        ],
+        [
+          5,
+          10,
+          0.00086409318,
+          0.00086408674,
+          0.0000077784364
+        ],
+        [
+          10,
+          20,
+          0.00068772651,
+          0.00068772139,
+          0.4349609
+        ],
+        [
+          20,
+          40,
+          0.99844634,
+          0.99843891,
+          0.50383402
+        ],
+        [
+          40,
+          220,
+          null,
+          0.0000074453453,
+          0.26010006
+        ]
+      ],
+      "operator_coupled_fraction_in_20_40_over_core": 0.99946716,
+      "modes_core_power_fractions": [
+        0.91223896,
+        0.087761043
+      ],
+      "interpolation_core_norms": {
+        "original_cubic": 0.020666024,
+        "origin_parity": 0.020666024,
+        "pchip": 0.020074059,
+        "reverse_cubic": 0.020821902
+      },
+      "phase_norm_full_box": 0.020666101,
+      "operator_chi_core_projection": 0.98929947,
+      "operator_chi_core_cosine": 0.99947884,
+      "core_power_reduction_on_removing_operator": 0.99886456,
+      "signed_coupling": {
+        "same_chi_forcing_norm_raw": 0.021773293,
+        "same_chi_forcing_norm_coupled": 0.020455547,
+        "coupled_minus_raw_norm": 0.0031406358,
+        "coupled_minus_raw_signed_projection": -0.054917163,
+        "twice_raw_dot_change_over_observed_squared": -0.15338998,
+        "change_squared_over_observed_squared": 0.023095178
+      },
+      "total_raw_and_coupled_crosses_over_error_square": [
+        -0.1253395,
+        0.019194964
+      ],
+      "core_P4_instantaneous_increment_norm_ratios": [
+        1.0265085,
+        1.0181622
+      ]
+    }
+  ],
+  "spectral_smooth_core": [
+    [
+      112,
+      2,
+      0.0037417686,
+      0.0037490884,
+      0.9977457,
+      0.99961954,
+      13.094725,
+      0.99984348,
+      0.02313194,
+      0.000035808036,
+      -0.0000016407953,
+      0.023096475,
+      0.010442424,
+      0.42848273,
+      0.40935734
+    ],
+    [
+      112,
+      4,
+      0.1819322,
+      0.18147804,
+      0.99877298,
+      0.9990965,
+      13.108994,
+      0.99980701,
+      0.030144735,
+      0.000088803978,
+      -0.0000052971986,
+      0.030056875,
+      0.014454387,
+      0.47169051,
+      0.4444101
+    ],
+    [
+      120,
+      2,
+      0.0014262793,
+      0.0014274615,
+      0.99811281,
+      0.99959038,
+      13.123285,
+      0.99986596,
+      0.02198947,
+      0.000034603309,
+      -0.0000015080879,
+      0.02195518,
+      0.0097740182,
+      0.42849198,
+      0.40923805
+    ],
+    [
+      120,
+      4,
+      0.14021997,
+      0.13997797,
+      0.99864941,
+      0.99898231,
+      13.137554,
+      0.99982861,
+      0.027655475,
+      0.000083548941,
+      -0.0000045717986,
+      0.027572821,
+      0.013003873,
+      0.4717238,
+      0.44441484
+    ],
+    [
+      128,
+      2,
+      0.00079884488,
+      0.00079903154,
+      0.9985461,
+      0.99955923,
+      13.009045,
+      0.9998827,
+      0.020956646,
+      0.000033478036,
+      -0.0000013910533,
+      0.020923457,
+      0.0091859796,
+      0.42847846,
+      0.40915551
+    ],
+    [
+      128,
+      4,
+      0.079974168,
+      0.079860305,
+      0.99851199,
+      0.99885996,
+      13.023314,
+      0.99984503,
+      0.025418643,
+      0.000078697284,
+      -0.0000039571762,
+      0.025340806,
+      0.011730328,
+      0.47173783,
+      0.44441675
+    ],
+    [
+      160,
+      2,
+      0.003417467,
+      0.0034062056,
+      0.99828379,
+      0.99941574,
+      12.752005,
+      0.99992038,
+      0.018065252,
+      0.00002994832,
+      -0.0000010710994,
+      0.018035608,
+      0.0077181024,
+      0.42831201,
+      0.40907895
+    ],
+    [
+      160,
+      4,
+      0.21399162,
+      0.21325163,
+      0.99804383,
+      0.99834749,
+      12.751994,
+      0.9998869,
+      0.020964998,
+      0.000067418925,
+      -0.0000027798141,
+      0.020898705,
+      0.009551614,
+      0.47175133,
+      0.44441391
+    ]
+  ],
+  "positive_composition_coefficients": [
+    1,
+    0.08333333333333333,
+    0.011111111111111112,
+    0.0017857142857142857
+  ],
+  "manufactured_examples": [
+    {
+      "ell": 2,
+      "shape": "center",
+      "carrier_k": 0,
+      "h": 0.125,
+      "P3_error_relative_to_field": 7.9312229e-7,
+      "P4_error_relative_to_field": 7.931137e-7,
+      "P3_minus_radial_h2_error_relative_to_field": 5.6597152e-9,
+      "radial_h2_relative_to_field": 7.949282e-7,
+      "first_cell_P3_error": -3.3042901e-7,
+      "first_cell_P4_error": -4.0291553e-7,
+      "outer_32_40_P3_error_on_interior_scale": 1.6905671e-14,
+      "outer_32_40_P4_error_on_interior_scale": 1.6222222e-14
+    },
+    {
+      "ell": 2,
+      "shape": "center",
+      "carrier_k": 0,
+      "h": 0.0625,
+      "P3_error_relative_to_field": 1.9861798e-7,
+      "P4_error_relative_to_field": 1.9861785e-7,
+      "P3_minus_radial_h2_error_relative_to_field": 3.545513e-10,
+      "radial_h2_relative_to_field": 1.9873207e-7,
+      "first_cell_P3_error": -2.0647903e-8,
+      "first_cell_P4_error": -2.5175136e-8,
+      "outer_32_40_P3_error_on_interior_scale": 4.1757921e-15,
+      "outer_32_40_P4_error_on_interior_scale": 4.1651366e-15
+    },
+    {
+      "ell": 2,
+      "shape": "center",
+      "carrier_k": 0,
+      "h": 0.03125,
+      "P3_error_relative_to_field": 4.9675869e-8,
+      "P4_error_relative_to_field": 4.9675867e-8,
+      "P3_minus_radial_h2_error_relative_to_field": 2.217589e-11,
+      "radial_h2_relative_to_field": 4.9683019e-8,
+      "first_cell_P3_error": -1.2904328e-9,
+      "first_cell_P4_error": -1.5733359e-9,
+      "outer_32_40_P3_error_on_interior_scale": 1.0477306e-15,
+      "outer_32_40_P4_error_on_interior_scale": 1.0475281e-15
+    },
+    {
+      "ell": 2,
+      "shape": "shell28_k12",
+      "carrier_k": 12,
+      "h": 0.125,
+      "P3_error_relative_to_field": 2.2268714,
+      "P4_error_relative_to_field": 0.78799575,
+      "P3_minus_radial_h2_error_relative_to_field": 2.2269708,
+      "radial_h2_relative_to_field": 0.00010201483,
+      "first_cell_P3_error": -3.28596e-19,
+      "first_cell_P4_error": -5.6414192e-19,
+      "outer_32_40_P3_error_on_interior_scale": 0.0025860265,
+      "outer_32_40_P4_error_on_interior_scale": 0.00096700482
+    },
+    {
+      "ell": 2,
+      "shape": "shell28_k12",
+      "carrier_k": 12,
+      "h": 0.0625,
+      "P3_error_relative_to_field": 0.045702541,
+      "P4_error_relative_to_field": 0.0045728792,
+      "P3_minus_radial_h2_error_relative_to_field": 0.045727295,
+      "radial_h2_relative_to_field": 0.000025503709,
+      "first_cell_P3_error": -2.7722981e-20,
+      "first_cell_P4_error": -3.5623831e-20,
+      "outer_32_40_P3_error_on_interior_scale": 0.000051374309,
+      "outer_32_40_P4_error_on_interior_scale": 0.0000054263817
+    },
+    {
+      "ell": 2,
+      "shape": "shell28_k12",
+      "carrier_k": 12,
+      "h": 0.03125,
+      "P3_error_relative_to_field": 0.00075849998,
+      "P4_error_relative_to_field": 0.000013116009,
+      "P3_minus_radial_h2_error_relative_to_field": 0.00076467899,
+      "radial_h2_relative_to_field": 0.0000063759273,
+      "first_cell_P3_error": -1.7339523e-21,
+      "first_cell_P4_error": -2.1309235e-21,
+      "outer_32_40_P3_error_on_interior_scale": 8.5285146e-7,
+      "outer_32_40_P4_error_on_interior_scale": 2.3398047e-8
+    },
+    {
+      "ell": 4,
+      "shape": "center",
+      "carrier_k": 0,
+      "h": 0.125,
+      "P3_error_relative_to_field": 4.3900192e-7,
+      "P4_error_relative_to_field": 4.3896855e-7,
+      "P3_minus_radial_h2_error_relative_to_field": 1.8823295e-8,
+      "radial_h2_relative_to_field": 4.4774657e-7,
+      "first_cell_P3_error": -4.79086e-9,
+      "first_cell_P4_error": -6.7881911e-9,
+      "outer_32_40_P3_error_on_interior_scale": 8.610407e-14,
+      "outer_32_40_P4_error_on_interior_scale": 8.2384461e-14
+    },
+    {
+      "ell": 4,
+      "shape": "center",
+      "carrier_k": 0,
+      "h": 0.0625,
+      "P3_error_relative_to_field": 1.1137403e-7,
+      "P4_error_relative_to_field": 1.1137347e-7,
+      "P3_minus_radial_h2_error_relative_to_field": 1.1798383e-9,
+      "radial_h2_relative_to_field": 1.1193665e-7,
+      "first_cell_P3_error": -7.4826388e-11,
+      "first_cell_P4_error": -1.0600612e-10,
+      "outer_32_40_P3_error_on_interior_scale": 2.336728e-14,
+      "outer_32_40_P4_error_on_interior_scale": 2.3309105e-14
+    },
+    {
+      "ell": 4,
+      "shape": "center",
+      "carrier_k": 0,
+      "h": 0.03125,
+      "P3_error_relative_to_field": 2.794875e-8,
+      "P4_error_relative_to_field": 2.7948741e-8,
+      "P3_minus_radial_h2_error_relative_to_field": 7.3794579e-11,
+      "radial_h2_relative_to_field": 2.7984163e-8,
+      "first_cell_P3_error": -1.1690416e-12,
+      "first_cell_P4_error": -1.6561139e-12,
+      "outer_32_40_P3_error_on_interior_scale": 5.993046e-15,
+      "outer_32_40_P4_error_on_interior_scale": 5.9918164e-15
+    },
+    {
+      "ell": 4,
+      "shape": "shell28_k12",
+      "carrier_k": 12,
+      "h": 0.125,
+      "P3_error_relative_to_field": 2.2312368,
+      "P4_error_relative_to_field": 0.78991999,
+      "P3_minus_radial_h2_error_relative_to_field": 2.2312914,
+      "radial_h2_relative_to_field": 0.000055995469,
+      "first_cell_P3_error": -5.7306675e-21,
+      "first_cell_P4_error": -1.155174e-20,
+      "outer_32_40_P3_error_on_interior_scale": 0.0035375317,
+      "outer_32_40_P4_error_on_interior_scale": 0.001329114
+    },
+    {
+      "ell": 4,
+      "shape": "shell28_k12",
+      "carrier_k": 12,
+      "h": 0.0625,
+      "P3_error_relative_to_field": 0.045796762,
+      "P4_error_relative_to_field": 0.0045672393,
+      "P3_minus_radial_h2_error_relative_to_field": 0.045810335,
+      "radial_h2_relative_to_field": 0.000013998868,
+      "first_cell_P3_error": -1.0545901e-22,
+      "first_cell_P4_error": -1.5971586e-22,
+      "outer_32_40_P3_error_on_interior_scale": 0.000070382455,
+      "outer_32_40_P4_error_on_interior_scale": 0.0000074570767
+    },
+    {
+      "ell": 4,
+      "shape": "shell28_k12",
+      "carrier_k": 12,
+      "h": 0.03125,
+      "P3_error_relative_to_field": 0.00076126956,
+      "P4_error_relative_to_field": 0.000013834686,
+      "P3_minus_radial_h2_error_relative_to_field": 0.00076465748,
+      "radial_h2_relative_to_field": 0.000003499717,
+      "first_cell_P3_error": -1.5917474e-24,
+      "first_cell_P4_error": -2.2811688e-24,
+      "outer_32_40_P3_error_on_interior_scale": 0.0000011684677,
+      "outer_32_40_P4_error_on_interior_scale": 3.1165132e-8
+    }
+  ],
+  "key_final_cancellation_signs": {
+    "raw_density": -0.033770784,
+    "raw_reaction": -0.008808972,
+    "raw_transfer_chi": -0.0016446703,
+    "coupled_transfer_chi": 0.004021132
+  },
+  "recovery_original_controls_tau160": 30,
+  "M2_steps_executed": 0,
+  "propagation_attempts": [],
+  "CP12_closed": false,
+  "correction_validated": false
+}
