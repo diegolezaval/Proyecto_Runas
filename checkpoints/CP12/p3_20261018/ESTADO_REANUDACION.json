@@ -42,7 +42,7 @@
   "original_CP12_and_CP10_must_not_repeat": true,
   "F0_F5_must_not_repeat": true,
   "F0_F5_public_certificate": "checkpoints/CP12/p3_20261018/CERTIFICADO_F0_F5.json",
-  "updated_at": "2026-11-15T08:30:40.321341+00:00",
+  "updated_at": "2026-11-15T08:40:04.797307+00:00",
   "last_public_commit": "e9e5677a68adb45ad77f37eae3ab5e4e3cc57abe",
   "latest_full_trial_frontier_recovered_and_audited": 112,
   "latest_recoverable_observer_clock": 112,
@@ -253,15 +253,15 @@
     "recovery_receipt": "checkpoints/CP12/p3_20261018/repeticion_aislada_t30_20261114/RECUPERACION_PUBLICA.json"
   },
   "hosted_latest_verified_transport": {
-    "receipt": "checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0112_0120/TRANSPORTE_001136.json",
+    "receipt": "checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0112_0120/TRANSPORTE_001152.json",
     "archive": {
-      "id": 750347815,
-      "name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_001136_P3_REPETICION_112_A120_HOSPEDADA_20261114.cms",
-      "sha256": "9c711cdad6cca2d852e0d04704c2e4920843aacb4b7aae438572c7866e3bd6c0",
-      "bytes": 234178203,
-      "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_001136_P3_REPETICION_112_A120_HOSPEDADA_20261114.cms"
+      "id": 750369613,
+      "name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_001152_P3_REPETICION_112_A120_HOSPEDADA_20261114.cms",
+      "sha256": "f690c6d6c3f3793e12b625662ecfe933215b3e1ac9faaff36ddff35643b22097",
+      "bytes": 234224748,
+      "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_001152_P3_REPETICION_112_A120_HOSPEDADA_20261114.cms"
     },
-    "observer_clock": 113.6,
+    "observer_clock": 115.2,
     "target": 120,
     "allocation": "p3_repeticion_112_a120_hospedada_20261114"
   }
