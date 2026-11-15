@@ -1,0 +1,180 @@
+{
+  "kind": "boundary",
+  "observer_clock": 96,
+  "closed_boundary": 96,
+  "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_P3_REPETICION_96_A104_HOSPEDADA_20261114.zip",
+  "bytes": 234528004,
+  "sha256": "67939e956116790db2f04b9cf2b105d250151c0ac8213f3dbe1b932eceb22618",
+  "passed": true,
+  "encrypted_asset": {
+    "id": 750104830,
+    "name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_P3_REPETICION_96_A104_HOSPEDADA_20261114.cms",
+    "sha256": "e98aadf1e5745c5753242d0da043949f0100c8672b8c207b15f43705a0d3a2dd",
+    "bytes": 234528931,
+    "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_CONTROL_P3_REPETICION_96_A104_HOSPEDADA_20261114.cms"
+  },
+  "public_recipient_sha256": "d5c051aec08e785fd3a38039f54d3f1d6cd26709f2cd17a39a210f77743d16cc",
+  "recovery": {
+    "passed": true,
+    "scope": "Integridad y auditores declarados; negativo implica sólo integridad.",
+    "payload_files": 583,
+    "exact_manifest_coverage": true,
+    "all_payload_hashes_verified_before_and_after": true,
+    "kind": "boundary",
+    "original_audits": {
+      "boundary": {
+        "schema": "CP12_P3_CORRECTION_TRIAL_ZERO_STEP_AUDIT",
+        "time": 96,
+        "passed": true,
+        "tests": {
+          "own_receipt_and_all_output_hashes": true,
+          "original_fourteen_sources_and_all_inputs_unchanged": true,
+          "captured_candidate_and_administrative_sources_unchanged": true,
+          "original_M2_Theta_two_grids_solver_tolerances_and_observer_configuration": true,
+          "original_DOP853_implementation_identity": true,
+          "new_experiment_schema_and_identity": true,
+          "saved_P3_action_identity": true,
+          "time_original_eight_unit_boundary": true,
+          "original_CP10_Cauchy_data_exact": true,
+          "Phi_FV_chi_P3_physical_routing_exact": true,
+          "mixed_passive_routing_exact": true,
+          "mixed_observer_class_selected": true,
+          "initial_or_closed_segment_evaluation_accounting": true,
+          "current_original_and_mixed_energy_rows_reproduced": true,
+          "finite_physical_and_observer_arrays": true,
+          "observation_count_and_original_time_labels": true,
+          "budget_count_and_time_labels": true,
+          "original_FV_energy_gate": true,
+          "consistent_MIXTO_energy_gate": true,
+          "original_charge_gate": true,
+          "original_observer_closure_and_order_gates": true,
+          "original_Parseval_gate": true,
+          "original_symmetry_gate": true,
+          "original_angular_basis_exact_on_restart": true,
+          "independent_reloaded_observer_closure_and_order": true,
+          "independent_reloaded_Parseval": true,
+          "original_extended_force_identity_and_symmetry": true,
+          "MIXTO_full_instantaneous_defect_identity_original_force_scale": true,
+          "original_full_box_chi_closure_gate": true,
+          "zero_M2_restart_no_state_mutation": true
+        },
+        "state_sha256": "af75651b3a09fbdffd30d2d5eebae6a4b94302a3300d04d2676efbf484c0e0f4",
+        "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+        "receipt_sha256": "531e4c001c221d8b24e6cce71b5b6b1eac7f374e75b3bc00d638a0eea3113848",
+        "observation_count": 241,
+        "metadata": [
+          {
+            "t": 96.0,
+            "accepted": 17295,
+            "nfev": 208824,
+            "nfev_live": 0,
+            "maxe": 2.5613422494075166e-10,
+            "maxq": 1.7763568394002505e-15,
+            "maxe_original": 3.3791674014516104e-08
+          },
+          {
+            "t": 96.0,
+            "accepted": 17307,
+            "nfev": 208968,
+            "nfev_live": 0,
+            "maxe": 2.542595023413696e-10,
+            "maxq": 1.7763568394002505e-15,
+            "maxe_original": 9.341800000228773e-09
+          }
+        ],
+        "maximum_errors": {
+          "raw_closure": 1.975786392943861e-06,
+          "raw_order_difference": 4.543916583922817e-09,
+          "raw_individual_order_difference": 1.9568525652906263e-08,
+          "coupled_closure": 1.980019765808197e-06,
+          "coupled_order_difference": 1.3276662494789555e-09,
+          "coupled_individual_order_difference": 8.93937178473382e-09,
+          "coupled_Phi_closure": 1.8304712824545476e-10,
+          "coupled_Phi_order_difference": 5.944518384799695e-11,
+          "modal_parseval": 1.8697801768411226e-14,
+          "short_core_raw_closure": 1.9761597485363615e-06,
+          "short_core_raw_order_difference": 8.118733871136216e-08,
+          "short_core_coupled_closure": 1.9804066418426216e-06,
+          "short_core_coupled_order_difference": 9.013227007067147e-08,
+          "short_smooth_raw_closure": 1.9767996356076707e-06,
+          "short_smooth_raw_order_difference": 8.575946408104432e-08,
+          "short_smooth_coupled_closure": 1.9814802207075383e-06,
+          "short_smooth_coupled_order_difference": 8.253946461694465e-08
+        },
+        "extended_identity": {
+          "mean_jacobian_identity_extended_relative_residual": 4.459736012902071e-31,
+          "prior_longdouble_subtraction_relative_residual": 3.1112787252043834e-15,
+          "weighted_jacobian_symmetry_residual": 1.748823295717475e-16,
+          "fused_passive_jacobian_relative_error": 0.0,
+          "production_force_absolute_scaled_residual": 8.965377508848016e-16,
+          "production_source_residual_absolute": 4.9896475839972254e-12,
+          "production_source_difference_scaled_residual": 4.9896475839972254e-12,
+          "production_source_absolute_force_scale": 5565.462892190424,
+          "quad_reference_epsilon": 1.925929944387236e-34,
+          "extended_epsilon": 1.0842021724855044e-19,
+          "reference_is_not_evolution": true
+        },
+        "full_instantaneous_identity": 1.3810839112504216e-12,
+        "full_box_chi_closure": {
+          "raw": 1.9600520201016936e-06,
+          "coupled": 1.9635625465702446e-06
+        },
+        "observed_core_phase_relative_error": 0.012159616692339956,
+        "M2_steps_executed": 0,
+        "experiment_kind": "NEW_P3_DISCRETIZATION_TRIAL",
+        "correction_tested": true,
+        "correction_validated": false,
+        "CP12_closed": false,
+        "run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
+        "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+        "original_trajectories_repeated": false,
+        "DOP853_implementation_identity": {
+          "version": "1.17.0",
+          "rk_sha256": "fa5d6300917f4f949e699b116f59ae147159d5c6147d55d940dc9d3303891056",
+          "base_sha256": "4e70402b4c092e0a502dba07e33f91784e1e6d3645710cc8a916fd6e3ead7548"
+        },
+        "DOP853_construction_or_step_attempts": 0
+      }
+    },
+    "M2_steps_executed": 0,
+    "CP12_closed": false
+  },
+  "M2_steps_executed": 0,
+  "environment": {
+    "python": "3.12.14",
+    "executable_sha256": "bef88f140b625959f8af25c7b75cce2cd5d4b29cc2f2b079befd7f68eda4dba0",
+    "platform": "Linux-7.0.0-1014-aws-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "threadpoolctl": "3.6.0"
+    },
+    "distribution": {
+      "numpy": "d80b526a8549e14dbbe778a710021e7f9d49c16a379dac732548ade204146602",
+      "scipy": "d98e3cc57253f7f8c6ca4f5b775a4747815edc9b1bcd5295c9dacc3c8d49c7b0",
+      "matplotlib": "ca4ff88e1e50df4f69ca0afa86df0ec78e7843e5145144eba4c46abe59841b75",
+      "threadpoolctl": "d3b8f6112d2e654ca703dd4d34e1ecf796a70c852197e6ae7a0e6a838b20210d"
+    },
+    "blas": [
+      {
+        "architecture": "SkylakeX",
+        "threads": 1,
+        "sha256": "ee2039cf13a45e1e89f04d0cea9585657d93ffaa425594e1935161013fdf4e12"
+      },
+      {
+        "architecture": "SkylakeX",
+        "threads": 1,
+        "sha256": "8fb864c29cac4b25f6e2c139491ea96f2724dde42d51394f84e9c4a622e34790"
+      }
+    ],
+    "solver": {
+      "rk_sha256": "fa5d6300917f4f949e699b116f59ae147159d5c6147d55d940dc9d3303891056",
+      "base_sha256": "4e70402b4c092e0a502dba07e33f91784e1e6d3645710cc8a916fd6e3ead7548",
+      "version": "1.17.0"
+    },
+    "compiler_sha256": "6117c52522997d2aaccb2b52b3c6bf42c0a6c5edb1d718431fed6b2fc5fec234"
+  },
+  "public_origin": 750101575
+}
