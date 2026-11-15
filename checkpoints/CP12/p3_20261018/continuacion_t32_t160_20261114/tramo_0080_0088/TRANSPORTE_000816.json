@@ -1,0 +1,193 @@
+{
+  "kind": "transport",
+  "observer_clock": 81.6,
+  "closed_boundary": 80,
+  "file_name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000816_P3_REPETICION_80_A88_HOSPEDADA_20261114.zip",
+  "bytes": 232796726,
+  "sha256": "b942333118dc10f50e43496c4a464fc6252239cb42d97756f61fea67211b6d4e",
+  "passed": true,
+  "encrypted_asset": {
+    "id": 749928121,
+    "name": "CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000816_P3_REPETICION_80_A88_HOSPEDADA_20261114.cms",
+    "sha256": "4e5cd37ee3961801d8ece2b1b19d7f8b0c20abbf6f544036cfbe793add921b9e",
+    "bytes": 232797653,
+    "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P3_128492e27d6d44798f2ef9336fc1b2e7_TRANSPORTE_000816_P3_REPETICION_80_A88_HOSPEDADA_20261114.cms"
+  },
+  "public_recipient_sha256": "d5c051aec08e785fd3a38039f54d3f1d6cd26709f2cd17a39a210f77743d16cc",
+  "recovery": {
+    "passed": true,
+    "scope": "Integridad y auditores declarados; negativo implica sólo integridad.",
+    "payload_files": 543,
+    "exact_manifest_coverage": true,
+    "all_payload_hashes_verified_before_and_after": true,
+    "kind": "transport",
+    "original_audits": {
+      "boundary": {
+        "schema": "CP12_P3_CORRECTION_TRIAL_ZERO_STEP_AUDIT",
+        "time": 80,
+        "passed": true,
+        "tests": {
+          "own_receipt_and_all_output_hashes": true,
+          "original_fourteen_sources_and_all_inputs_unchanged": true,
+          "captured_candidate_and_administrative_sources_unchanged": true,
+          "original_M2_Theta_two_grids_solver_tolerances_and_observer_configuration": true,
+          "original_DOP853_implementation_identity": true,
+          "new_experiment_schema_and_identity": true,
+          "saved_P3_action_identity": true,
+          "time_original_eight_unit_boundary": true,
+          "original_CP10_Cauchy_data_exact": true,
+          "Phi_FV_chi_P3_physical_routing_exact": true,
+          "mixed_passive_routing_exact": true,
+          "mixed_observer_class_selected": true,
+          "initial_or_closed_segment_evaluation_accounting": true,
+          "current_original_and_mixed_energy_rows_reproduced": true,
+          "finite_physical_and_observer_arrays": true,
+          "observation_count_and_original_time_labels": true,
+          "budget_count_and_time_labels": true,
+          "original_FV_energy_gate": true,
+          "consistent_MIXTO_energy_gate": true,
+          "original_charge_gate": true,
+          "original_observer_closure_and_order_gates": true,
+          "original_Parseval_gate": true,
+          "original_symmetry_gate": true,
+          "original_angular_basis_exact_on_restart": true,
+          "independent_reloaded_observer_closure_and_order": true,
+          "independent_reloaded_Parseval": true,
+          "original_extended_force_identity_and_symmetry": true,
+          "MIXTO_full_instantaneous_defect_identity_original_force_scale": true,
+          "original_full_box_chi_closure_gate": true,
+          "zero_M2_restart_no_state_mutation": true
+        },
+        "state_sha256": "7a5b506bd37aa3126a43c26bdf05355ef24f828467dfafe8510208ac7281f283",
+        "configuration_sha256": "76408ed2afc60006641dc3954b0c8709b4be32fa8ab6e1fcfbaa49a37edf8fed",
+        "receipt_sha256": "fccaaa51e1f3cd2bcd3f09f13d8557227ecb67b13e0cf317e260a8f11b356b98",
+        "observation_count": 201,
+        "metadata": [
+          {
+            "t": 80.0,
+            "accepted": 14427,
+            "nfev": 174260,
+            "nfev_live": 0,
+            "maxe": 2.1948987072306636e-10,
+            "maxq": 1.5543122344752192e-15,
+            "maxe_original": 3.3154787915101736e-08
+          },
+          {
+            "t": 80.0,
+            "accepted": 14434,
+            "nfev": 174344,
+            "nfev_live": 0,
+            "maxe": 2.1821311424474743e-10,
+            "maxq": 1.4432899320127035e-15,
+            "maxe_original": 9.165871173166806e-09
+          }
+        ],
+        "maximum_errors": {
+          "raw_closure": 1.4543498982635748e-06,
+          "raw_order_difference": 4.543916583922817e-09,
+          "raw_individual_order_difference": 1.9568525652906263e-08,
+          "coupled_closure": 1.481793402835309e-06,
+          "coupled_order_difference": 1.3276662494789555e-09,
+          "coupled_individual_order_difference": 8.93937178473382e-09,
+          "coupled_Phi_closure": 1.8304712824545476e-10,
+          "coupled_Phi_order_difference": 4.98800345610834e-11,
+          "modal_parseval": 1.8697801768411226e-14,
+          "short_core_raw_closure": 1.4528887755610388e-06,
+          "short_core_raw_order_difference": 7.414503064204046e-08,
+          "short_core_coupled_closure": 1.5829786849685609e-06,
+          "short_core_coupled_order_difference": 9.013227007067147e-08,
+          "short_smooth_raw_closure": 1.4530719129585701e-06,
+          "short_smooth_raw_order_difference": 8.575946408104432e-08,
+          "short_smooth_coupled_closure": 1.5841749348013263e-06,
+          "short_smooth_coupled_order_difference": 8.253946461694465e-08
+        },
+        "extended_identity": {
+          "mean_jacobian_identity_extended_relative_residual": 4.470243661472911e-31,
+          "prior_longdouble_subtraction_relative_residual": 3.001419994140571e-15,
+          "weighted_jacobian_symmetry_residual": 5.086141483928728e-16,
+          "fused_passive_jacobian_relative_error": 0.0,
+          "production_force_absolute_scaled_residual": 7.101448010960208e-16,
+          "production_source_residual_absolute": 3.956675265204268e-12,
+          "production_source_difference_scaled_residual": 3.956675265204268e-12,
+          "production_source_absolute_force_scale": 5571.645753228959,
+          "quad_reference_epsilon": 1.925929944387236e-34,
+          "extended_epsilon": 1.0842021724855044e-19,
+          "reference_is_not_evolution": true
+        },
+        "full_instantaneous_identity": 9.63746914924034e-13,
+        "full_box_chi_closure": {
+          "raw": 1.4333954384670443e-06,
+          "coupled": 1.4600645947895896e-06
+        },
+        "observed_core_phase_relative_error": 0.009021145218673757,
+        "M2_steps_executed": 0,
+        "experiment_kind": "NEW_P3_DISCRETIZATION_TRIAL",
+        "correction_tested": true,
+        "correction_validated": false,
+        "CP12_closed": false,
+        "run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
+        "execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+        "original_trajectories_repeated": false,
+        "DOP853_implementation_identity": {
+          "version": "1.17.0",
+          "rk_sha256": "fa5d6300917f4f949e699b116f59ae147159d5c6147d55d940dc9d3303891056",
+          "base_sha256": "4e70402b4c092e0a502dba07e33f91784e1e6d3645710cc8a916fd6e3ead7548"
+        },
+        "DOP853_construction_or_step_attempts": 0
+      },
+      "transport": {
+        "schema": "CP12_INTERMEDIATE_INTERNAL_TRANSPORT_ZERO_STEP_AUDIT",
+        "passed": true,
+        "tests": {
+          "all_internal_state_bits_and_nfev_restored": true,
+          "original_sources_and_configuration": true,
+          "scientific_seed_unchanged": true,
+          "restore_used_no_solver_step": true,
+          "exact_stage_alias": true,
+          "accepted_states_match_solver": true,
+          "clocks_bracket_observer": true,
+          "both_energy_and_charge_gates": true,
+          "original_observer_maximum_gates": true,
+          "original_Parseval": true,
+          "original_symmetry": true,
+          "independently_reloaded_observer_closure": true,
+          "independently_reloaded_Parseval": true,
+          "file_unchanged": true
+        },
+        "observer_clock": 81.6,
+        "target": 88,
+        "state_sha256": "90d58102aa82d0c99fd546510bdc1011580ba1e2dbbdff49ef51583489fab0b9",
+        "physical_metadata": [
+          {
+            "t": 81.60336490173987,
+            "accepted": 14714,
+            "nfev": 174260,
+            "nfev_live": 3470,
+            "maxe": 2.232047879857646e-10,
+            "maxq": 1.5543122344752192e-15,
+            "maxe_original": 3.3154787915101736e-08
+          },
+          {
+            "t": 81.60091439027914,
+            "accepted": 14721,
+            "nfev": 174344,
+            "nfev_live": 3470,
+            "maxe": 2.2185975279143122e-10,
+            "maxq": 1.4432899320127035e-15,
+            "maxe_original": 9.165871173166806e-09
+          }
+        ],
+        "M2_steps_executed": 0,
+        "scientific_frontier": false,
+        "correction_validated": false,
+        "CP12_closed": false,
+        "DOP853_construction_or_step_attempts": 0
+      }
+    },
+    "M2_steps_executed": 0,
+    "CP12_closed": false
+  },
+  "M2_steps_executed": 0,
+  "target": 88,
+  "transport_state_sha256": "90d58102aa82d0c99fd546510bdc1011580ba1e2dbbdff49ef51583489fab0b9"
+}
