@@ -17,7 +17,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        candidato: [1, 2, 3, 4]
+        candidato: [1, 2, 3, 4, 5, 6]
     env:
       GH_TOKEN: ${{ github.token }}
       OPENBLAS_NUM_THREADS: '1'
@@ -56,3 +56,27 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           python herramientas/reanudar_cp12.py hospedado retomar \
             --objetivo "$P3_OBJETIVO" --trabajo "$RUNNER_TEMP/cp12-p3"
+
+  constatar:
+    needs: tramo
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      P3_OBJETIVO: ${{ inputs.objetivo }}
+    steps:
+      - name: Comprobar que GitHub conserva el checkpoint exigido
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/contents/checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json?ref=ciencia%2Fcp12-residuo-p3-20261018" --jq '.content' |
+            base64 -d > estado.json
+          python3 - <<'PY'
+          import os, json
+          from pathlib import Path
+          state = json.loads(Path('estado.json').read_bytes())
+          proof = state['latest_full_frontier_proof']
+          if (proof['observer_clock'] < int(os.environ['P3_OBJETIVO']) or not proof['passed'] or
+                  not proof['all_five_spatial_and_physical_gates_passed'] or
+                  proof['M2_steps_executed_during_recovery_and_metrics'] != 0):
+              raise SystemExit('GitHub todavía no contiene la frontera verificada de este tramo.')
+          print(proof['recovery_receipt'])
+          PY

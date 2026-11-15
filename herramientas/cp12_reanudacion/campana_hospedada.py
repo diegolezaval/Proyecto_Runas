@@ -14,11 +14,13 @@ import threading
 import time
 import traceback
 import uuid
+from urllib.error import HTTPError, URLError
+from urllib.request import Request, urlopen
 
 from . import supervisor, trabajador
 from .evidencia import checked_audits, first_step, recovery, resolve
 from .infra import (
-    AUDITOR, CLAIM, HYBRID, PREFIX, ROOT, STATE, TAG, Destinations, Git, Stop,
+    AUDITOR, CLAIM, HYBRID, PREFIX, RELEASE, REPO, ROOT, STATE, TAG, Destinations, Git, Stop,
     Timings, digest, encoded, find_asset, install, module, now, optional, read, record, request, require, sha,
 )
 from .preparacion import environment, payloads
@@ -50,8 +52,19 @@ def use_preserver(code):
 
 
 def download(asset, destination):
-    with request(asset["browser_download_url"]) as response, destination.open("xb") as stream:
-        shutil.copyfileobj(response, stream, 1024 * 1024)
+    for delay in (1, 2, 4, 8, 16, 30):
+        require(not destination.exists(), "La descarga independiente requiere una ruta nueva")
+        try:
+            with request(asset["browser_download_url"]) as response, destination.open("xb") as stream:
+                shutil.copyfileobj(response, stream, 1024 * 1024)
+            break
+        except (HTTPError, URLError, TimeoutError) as error:
+            if isinstance(error, HTTPError) and error.code not in (404, 429, 502, 503, 504):
+                raise
+            destination.unlink(missing_ok=True)
+            time.sleep(delay)
+    else:
+        raise RuntimeError("GitHub no sirvió los bytes del adjunto")
     require(destination.stat().st_size == asset["size"] and "sha256:" + sha(destination) == asset["digest"],
             "Bytes descargados distintos del adjunto")
     return destination
@@ -59,19 +72,41 @@ def download(asset, destination):
 
 def upload(path, destinations):
     identity = dict(file_name=path.name, sha256=sha(path), bytes=path.stat().st_size)
-    asset = find_asset(destinations.assets(), identity)
+    asset = published_asset(identity)
     if asset:
         return asset
     journal = path.with_name(path.name + ".subida.json")
     require(not journal.exists(), "La subida anterior requiere conciliación")
     record(journal, dict(at=now(), **identity), once=True)
+    exit_code = None
     try:
-        destinations.upload(path)
+        exit_code = destinations.upload(path)
     except subprocess.TimeoutExpired:
         pass
-    asset = find_asset(destinations.assets(), identity)
-    require(asset is not None, "GitHub aún no acredita la subida exacta")
-    return asset
+    for delay in (1, 2, 4, 8, 16, 30, 30, 30):
+        asset = published_asset(identity)
+        if asset:
+            print(f"Adjunto {asset['id']} leído después de subir {identity['file_name']}", flush=True)
+            return asset
+        time.sleep(delay)
+    raise RuntimeError(f"GitHub aún no acredita el adjunto {identity['file_name']}; gh terminó con {exit_code}")
+
+
+def published_asset(identity):
+    headers = {"User-Agent": "CP12-P3-Hosted", "Cache-Control": "no-cache",
+               "Accept": "application/vnd.github+json", "Authorization": "Bearer " + os.environ["GH_TOKEN"]}
+    for page in range(1, 51):
+        url = f"https://api.github.com/repos/{REPO}/releases/{RELEASE}/assets?per_page=100&page={page}"
+        with urlopen(Request(url, headers=headers), timeout=45) as response:
+            assets = json.load(response)
+        candidates = [asset for asset in assets if asset["name"] == identity["file_name"]]
+        if candidates:
+            if candidates[0]["state"] != "uploaded" or not candidates[0].get("digest"):
+                return None
+            return find_asset(candidates, identity)
+        if len(assets) < 100:
+            return None
+    raise RuntimeError("El listado autenticado de adjuntos no está completo")
 
 
 def decrypt(sealed, output, certificate, key):
@@ -230,7 +265,14 @@ def finish_boundary(base, original, home, job, spec, auditor, destinations, git,
         record(job / "RECHAZO.json", dict(phase="puerta", time=target, metrics=measured, backup=negative))
         return 2
     asset = upload(archive, destinations)
-    saved = base.public(prepared, asset, folder / "publica", auditor)
+    public_dir = folder / "publica"
+    public_dir.mkdir()
+    public_archive = download(asset, public_dir / archive.name)
+    independent_public = base.recover(public_archive, prepared, public_dir / "recuperacion", auditor)
+    saved = dict(schema="CP12_P3_FORWARD_PUBLIC_RECOVERY_V2", passed=True,
+                 github_asset_id=asset["id"], bytes=prepared["bytes"], sha256=prepared["sha256"],
+                 observer_clock=target, kind="boundary", recovery=independent_public,
+                 M2_steps_executed=0, CP12_closed=False)
     output = folder / "controles_publicos"
     output.mkdir()
     measure_public = prefix(base, original, prepared, saved["recovery"], target, output)

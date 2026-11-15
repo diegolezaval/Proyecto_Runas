@@ -1,11 +1,13 @@
 {
   "schema": "CP12_P3_HORIZONTE_HOSPEDADO_V1",
-  "scientific_registration_commit": "22fcff3c90763acfd1447dc05c85c0687caa9751",
+  "scientific_registration_commit": "8857792bb08f732a4e658208bb37b4d85b70c300",
   "independent_source_commit": "e9e5677a68adb45ad77f37eae3ab5e4e3cc57abe",
   "initial_asset": 747608844,
   "from": 32,
   "target": 160,
   "checkpoint_interval": 8,
   "release": "respaldo-cp12-p3-20261027",
-  "require_verified_exit_and_published_checkpoint_before_next": true
+  "require_verified_exit_and_published_checkpoint_before_next": true,
+  "previous_run": 43660291248,
+  "revision": 2
 }
