@@ -65,7 +65,8 @@ EXACT_REPLACEMENTS = {
          "    registration = {'coefficient': '1/560', 'energy_coefficient': '1/1120'}"),
         ("beta = h**4/90", "beta = h**6/560"),
         ("H3x = H@(H@(H@x))", "H3x = H@(H@(H@(H@x)))"),
-        ("Mixed.components", "MixedP3.components"),
+        ("Mixed.components(sim, q, v)", "MixedP3.components(sim, q, v)"),
+        ("Mixed.components(sim, qc, v)", "MixedP3.components(sim, qc, v)"),
     ),
 }
 
@@ -183,10 +184,10 @@ def execute(home, out):
         assert all(seeds)
         controls = {}
         for phase, path in registered["control_templates"].items():
-            code = load_control(REPO / path, phase, snapshots)
             stage = out / phase
             stage.mkdir()
             try:
+                code = load_control(REPO / path, phase, snapshots)
                 result = code(home, stage)
             except Exception as error:
                 result = dict(passed=False, exception_type=type(error).__name__,

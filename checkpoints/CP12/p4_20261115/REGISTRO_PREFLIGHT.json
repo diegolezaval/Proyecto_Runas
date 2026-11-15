@@ -23,7 +23,7 @@
     "F5": "checkpoints/CP12/p3_20261018/control_F5_increment.py"
   },
   "sources_sha256": {
-    "checkpoints/CP12/p4_20261115/controles_p4.py": "92d311697c5ac9ea3fb40739fc7a569a17b117b46130e61fadecde80a7f7baa6",
+    "checkpoints/CP12/p4_20261115/controles_p4.py": "095fa7e63670e5c8302cac6d157aa4f98fe0a2c1f4410e5d52816608e2409fb2",
     "checkpoints/CP12/p4_20261115/control_transicion.py": "e5bcf83caaa4bea44e020bb00d22ef943997eac9727f155918cfd62fbd60f8c3",
     "checkpoints/CP12/p4_20261115/p4_backend.py": "4912e2d51e611b11431892ce8554a53d696363a6c67ef9c2224166b8cd4708e6",
     "checkpoints/CP12/p4_20261115/PRERREGISTRO_PILOTO.md": "479499d3a6f14cc7211aa3580b1ce1c8be5e41e27a25e7f2e67ceca3003fa97d",
@@ -36,6 +36,10 @@
     "checkpoints/CP12/p3_20261018/control_F2_defect.py": "91bcd1534864b5475572cee43d1c7651d4bd79fb9155babdad2f5aa3bea42fd4",
     "checkpoints/CP12/p3_20261018/control_F3_matrix.py": "f32098b95ed9145da298ad6ca28e2fe9f4dd584101be597a88b37180aee5be73",
     "checkpoints/CP12/p3_20261018/control_F4_frozen.py": "bbc24521452b47d486db2afc23f9456cd31f590be4085f49508c6bfc560d65a4",
-    "checkpoints/CP12/p3_20261018/control_F5_increment.py": "1ecc35d770410e585c2b10d01a2502c3d6d1b6988e09682bc0a1c2acf7c9b3bf"
-  }
+    "checkpoints/CP12/p3_20261018/control_F5_increment.py": "1ecc35d770410e585c2b10d01a2502c3d6d1b6988e09682bc0a1c2acf7c9b3bf",
+    "checkpoints/CP12/p4_20261115/ENMIENDA_CONTROLES.md": "d01b80998cabc3b7f538f46eb35a68ecdfa950fcea5ff9c1ea89ce1bfb94f195",
+    "checkpoints/CP12/p4_20261115/preparar_origen.py": "8a4fc21e180628ce8c4a1d92a1365647d934f4664300d3d846f226b1561c67db"
+  },
+  "prior_preregistration_commit": "fc7850916c0c9023c177bc82e71b39c24b327493",
+  "preparation_amendment": "dos_llamadas_invariantes_a_la_energia_P3"
 }
