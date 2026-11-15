@@ -1,0 +1,16 @@
+{
+  "schema": "CP12_REANUDADOR_SALIDA_V1",
+  "allocation_id": "p3_repeticion_56_a64_hospedada_20261114",
+  "worker_id": "dc2a90cfe00a4f10bc5a3a569c630523",
+  "session_id": "f562e02e0bed4b38a06ffb4cc5d8363c",
+  "registry_sha256": "265509c25c583d26facb6ee986668ea3fcd58bf27c0b623f2aee1fe610597d1c",
+  "source_archive_sha256": "131503b6965f630971101e235a1cd22d534b985a48ce45c08f21a784d626aa80",
+  "method": "waitpid_hijo_directo",
+  "exit_observed": true,
+  "observed_at_utc": "2026-11-15T03:46:21.360058+00:00",
+  "pid": 2508,
+  "process_identity_sha256": "48ec9f5251cf916c8b7d13c933b32537e8599dbb81b3eb91a6a4295b5744cb51",
+  "returncode": 0,
+  "exit_code": 0,
+  "signal": null
+}
