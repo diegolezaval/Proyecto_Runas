@@ -1,0 +1,15 @@
+{
+  "schema": "CP12_P4_ACTIVAR_CAMPANA_HOSPEDADA_V1",
+  "activate": true,
+  "execution_uuid": "8a6775db0628457ca53ffece57c210d3",
+  "execution_run_id": "1494ea1de6f7c1c084b99b4fa7e9892fc74d0c7089cdbc96dea82d334829cc18",
+  "scientific_commit": "e2d05472a1197b4f32c4d2d3a904a4164f4a6b4d",
+  "tau0_state_sha256": "65eed503ef341e7ea16d63957a3d288fe02f0c35eb19a2201ac6f7b7d1017c45",
+  "preflight_certificate_sha256": "85fceecad8e6ed1eba2553ba0c96b167801137ab92e4a5b397a356f8b437b5dc",
+  "initial_time": 0,
+  "checkpoint_stride": 8,
+  "terminal_time": 160,
+  "spatial_threshold": 0.02,
+  "requires_hosted_zero_step_origin_audit": true,
+  "requires_hosted_fresh_session_recovery_and_exclusivity": true
+}
