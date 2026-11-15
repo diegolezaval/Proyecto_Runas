@@ -1,0 +1,202 @@
+{
+  "schema": "CP12_P4_PRUEBA_PASIVA_FACTORIAL_V1",
+  "registration_sha256": "2bb785a24ed560daf01001b011ac6e0731666e961017f5355e87c818afc8ed63",
+  "started_at_utc": "2026-11-15T19:34:29.855423+00:00",
+  "completed_at_utc": "2026-11-15T19:40:36.449208+00:00",
+  "P3_execution_uuid": "128492e27d6d44798f2ef9336fc1b2e7",
+  "P3_run_id": "048667edb49f422578c115569acbfd169f5d63af215e1989000251a1b4c45bf8",
+  "recoveries": {
+    "112": {
+      "scope": "Original recovery audits verified against exact bytes",
+      "clock": 112,
+      "tests": 30,
+      "M2_steps_executed_in_recorded_recovery": 0,
+      "all_payload_hashes_before_and_after": true,
+      "payload_files": 621,
+      "sha256": "0ce1e86c87cb7aecaa5906baa0ab6bb941915fe6c2cdc36ab578c4c797da3427",
+      "state_sha256": "998e7be756e1e2f62c110db19fa61b5133ae47abc724acf7ab3998a7f6b36527",
+      "github_asset_id": 750322957
+    },
+    "160": {
+      "scope": "Original recovery audits verified against exact bytes",
+      "clock": 160,
+      "tests": 30,
+      "M2_steps_executed_in_recorded_recovery": 0,
+      "all_payload_hashes_before_and_after": true,
+      "payload_files": 747,
+      "sha256": "83ee87fbaef59dceabfb1b69e48e500b443ca07aa1af53bbe91db186666925ab",
+      "state_sha256": "46e89c27974cdd4563e56202b9f1fb2f12cb32c40ccaa1b9c86dbfe2d68bcec2",
+      "github_asset_id": 750993142
+    }
+  },
+  "ciphertext_sha256": "171aa617f4394c4fa6ac136b7a7da18e11bd6d511354289c91e488076159a53b",
+  "controls": {
+    "0.125": {
+      "ell2_P3_GL7": 7.775818715147112e-13,
+      "ell2_P3_GL6": 1.2677966002929304e-11,
+      "ell2_P4_GL7": 5.545348323981119e-13,
+      "ell2_P4_GL6": 1.2782535106275071e-11,
+      "ell4_P3_GL7": 7.515278660934716e-13,
+      "ell4_P3_GL6": 1.2684390216302561e-11,
+      "ell4_P4_GL7": 7.346001124689243e-13,
+      "ell4_P4_GL6": 1.2759915521081707e-11
+    },
+    "0.0625": {
+      "ell2_P3_GL7": 8.351557924100169e-13,
+      "ell2_P3_GL6": 1.1687582669451111e-11,
+      "ell2_P4_GL7": 9.1277633658361e-13,
+      "ell2_P4_GL6": 1.1697505980855385e-11,
+      "ell4_P3_GL7": 8.816232387692934e-13,
+      "ell4_P3_GL6": 1.1682916636637242e-11,
+      "ell4_P4_GL7": 8.915623359303839e-13,
+      "ell4_P4_GL6": 1.1683140017228113e-11
+    }
+  },
+  "geometry_controls": {
+    "0_k4": {
+      "0": 6.7083610767599185e-15,
+      "2": 3.146391051066843e-14,
+      "4": 5.202723132147152e-15
+    },
+    "0_k8": {
+      "0": 7.471359705804593e-15,
+      "2": 1.0176322269276675e-13,
+      "4": 5.847095910371626e-15
+    },
+    "1_k4": {
+      "0": 5.5581401118260316e-15,
+      "2": 2.2260757664053173e-13,
+      "4": 6.332505485865421e-15
+    },
+    "1_k8": {
+      "0": 8.747790531268314e-15,
+      "2": 7.555208470162983e-14,
+      "4": 6.6708004024450114e-15
+    }
+  },
+  "observed_environment": {
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "threadpoolctl": "3.6.0"
+    },
+    "blas": [
+      {
+        "version": "0.3.30",
+        "architecture": "SkylakeX",
+        "num_threads": 1,
+        "threading_layer": "pthreads"
+      },
+      {
+        "version": "0.3.30",
+        "architecture": "SkylakeX",
+        "num_threads": 1,
+        "threading_layer": "pthreads"
+      }
+    ]
+  },
+  "M2_steps_executed": 0,
+  "M2_attempts": [],
+  "passive_interval": 0.4,
+  "passive_step": 0.01,
+  "passive_steps_per_cut_interpolation_order_and_propagator": 40,
+  "arm_order": [
+    "base",
+    "conmutador",
+    "propagador",
+    "combinado",
+    "geometria_k4",
+    "geometria_k8"
+  ],
+  "max_eigenpair_residual": 6.223981613731757e-16,
+  "CP12_closed": false,
+  "P4_pilot_started": false,
+  "decision": {
+    "outcome": "PASA",
+    "opens_physical_pilot": true,
+    "by_interp": {
+      "cubica_original": {
+        "2": {
+          "relative_power_changes": [
+            -0.11736511114999319,
+            -0.11736511114655232
+          ],
+          "GL_sign_agrees": true
+        },
+        "4": {
+          "relative_power_changes": [
+            -0.12439795154318363,
+            -0.12439795154003862
+          ],
+          "GL_sign_agrees": true
+        }
+      },
+      "paridad_origen": {
+        "2": {
+          "relative_power_changes": [
+            -0.11736511101352089,
+            -0.11736511101007992
+          ],
+          "GL_sign_agrees": true
+        },
+        "4": {
+          "relative_power_changes": [
+            -0.12439795154724251,
+            -0.12439795154409747
+          ],
+          "GL_sign_agrees": true
+        }
+      },
+      "cubica_inversa": {
+        "2": {
+          "relative_power_changes": [
+            -0.8280721585460302,
+            -0.8280721585459447
+          ],
+          "GL_sign_agrees": true
+        },
+        "4": {
+          "relative_power_changes": [
+            -0.7956198151388214,
+            -0.795619815138808
+          ],
+          "GL_sign_agrees": true
+        }
+      }
+    },
+    "geometry": [
+      {
+        "ell": 2,
+        "cut": "geometria_k4",
+        "ratio_to_combined_abs_change": 1.8307700015949297e-12,
+        "comparable": false
+      },
+      {
+        "ell": 2,
+        "cut": "geometria_k8",
+        "ratio_to_combined_abs_change": 1.4531539825949878e-07,
+        "comparable": false
+      },
+      {
+        "ell": 4,
+        "cut": "geometria_k4",
+        "ratio_to_combined_abs_change": 1.7136106010948274e-12,
+        "comparable": false
+      },
+      {
+        "ell": 4,
+        "cut": "geometria_k8",
+        "ratio_to_combined_abs_change": 3.123364144848092e-08,
+        "comparable": false
+      }
+    ],
+    "maximum_order_relative": 1.6621383470260298e-11
+  },
+  "response_vectors_sha256": "1c20880c8d07814dba04ac46a7506173a9aa2cd31a5c65ac7ecd6dd9eb6556b9",
+  "complete_results_sha256": {
+    "112": "5852fb8e6a234ecdc611ae2e9e0a03e61bb70176af088011a852c86002e601dc",
+    "160": "cef9beed5dad6d7711a3d47b3cb76df9cf9ab6ace6eba28b0b61f353fcdf2bde"
+  }
+}
