@@ -1,0 +1,21 @@
+{
+  "commit": "7ae43e694730158f4fe92321ce2bab26fa156252",
+  "path": "checkpoints/CP12/p3_20261018/recibos_salida/p3_repeticion_152_a160_hospedada_20261114/c9b54e78ab2f4e9998e71b1889927098.json",
+  "receipt": {
+    "schema": "CP12_REANUDADOR_SALIDA_V1",
+    "allocation_id": "p3_repeticion_152_a160_hospedada_20261114",
+    "worker_id": "499baeedafb14a03b89b02ccc7aa4d4b",
+    "session_id": "c9b54e78ab2f4e9998e71b1889927098",
+    "registry_sha256": "ae0b8ec3267c9302c310218058cba2ffca6a11da4ab0f19a7b3b4a9e2a83e153",
+    "source_archive_sha256": "d3cca2ae22ea37a60d514919a746c702970580e9c45e0b809c05ad1b733017f2",
+    "method": "waitpid_hijo_directo",
+    "exit_observed": true,
+    "observed_at_utc": "2026-11-15T12:51:39.586035+00:00",
+    "pid": 2499,
+    "process_identity_sha256": "f98922570b35efd8183efbd77e973c5c06be2060fd4bc38967b9f42259da8ed5",
+    "returncode": 2,
+    "exit_code": 2,
+    "signal": null
+  },
+  "last_valid_frontier": 152
+}

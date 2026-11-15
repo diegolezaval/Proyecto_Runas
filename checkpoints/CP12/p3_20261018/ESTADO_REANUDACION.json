@@ -42,7 +42,7 @@
   "original_CP12_and_CP10_must_not_repeat": true,
   "F0_F5_must_not_repeat": true,
   "F0_F5_public_certificate": "checkpoints/CP12/p3_20261018/CERTIFICADO_F0_F5.json",
-  "updated_at": "2026-11-15T12:43:10.816166+00:00",
+  "updated_at": "2026-11-15T12:51:41.824356+00:00",
   "last_public_commit": "e9e5677a68adb45ad77f37eae3ab5e4e3cc57abe",
   "latest_full_trial_frontier_recovered_and_audited": 152,
   "latest_recoverable_observer_clock": 152,
@@ -104,7 +104,7 @@
     "correction_validated": false,
     "recovery_receipt": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t24_20261106/transporte_000288/RECUPERACION_NATIVA.json"
   },
-  "current_own_worker_status": "FRONTERA_PUBLICA_VERIFICADA",
+  "current_own_worker_status": "SUSPENDIDO",
   "own_guardian_tool_session_id": null,
   "own_exit_observed": true,
   "own_attempt_home": null,
@@ -113,7 +113,7 @@
   "current_assignment": "checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0152_0160/REGISTRO.json",
   "current_helper_directory": "/workspace/scratch/65d547c6c4de/library_helpers",
   "activity_is_restart_certificate": false,
-  "next_recovery": "Verificar capacidad y locks propios de τ152→τ160.",
+  "next_recovery": "Conciliar la suspensión antes de activar.",
   "conservation_policy": {
     "policy": "CP12_P3_HYBRID_20261106_V1",
     "effective_from_boundary": 24,
@@ -264,5 +264,6 @@
     "observer_clock": 158.4,
     "target": 160,
     "allocation": "p3_repeticion_152_a160_hospedada_20261114"
-  }
+  },
+  "interruption": "checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0152_0160/SUSPENSION.json"
 }
