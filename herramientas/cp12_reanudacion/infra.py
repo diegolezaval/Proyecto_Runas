@@ -236,7 +236,16 @@ class Destinations:
             items = []
             for page in range(1, 51):
                 url = f'https://api.github.com/repos/{REPO}/releases/{RELEASE}/assets?per_page=100&page={page}'
-                with request(url) as stream:
+                # La autenticación se limita al listado de metadatos de GitHub.
+                # Las descargas de cápsulas siguen siendo públicas e independientes.
+                token = os.environ.get('GH_TOKEN') if os.environ.get('GITHUB_ACTIONS') == 'true' else None
+                if token:
+                    headers = {'User-Agent': 'Runica-CP12-reanudar/1', 'Authorization': 'Bearer ' + token,
+                               'Accept': 'application/vnd.github+json', 'Cache-Control': 'no-cache'}
+                    source = urlopen(Request(url, headers=headers), timeout=90)
+                else:
+                    source = request(url)
+                with source as stream:
                     batch = json.load(stream)
                 require(isinstance(batch, list), 'Listado GitHub inválido')
                 items.extend(batch)
