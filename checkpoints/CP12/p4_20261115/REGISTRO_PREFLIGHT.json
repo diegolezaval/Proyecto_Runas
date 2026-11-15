@@ -1,0 +1,41 @@
+{
+  "schema": "CP12_P4_PRERREGISTRO_F0_F5_Y_PILOTO_V1",
+  "passive_commit": "a6a6609f9614d4e5f49694097cc5ce8a5208acb3",
+  "scientific_branch": "ciencia/cp12-p4-20261115",
+  "execution_uuid": "8a6775db0628457ca53ffece57c210d3",
+  "physical_origin": 0,
+  "trajectory_checkpoint_stride": 8,
+  "spatial_threshold": 0.02,
+  "action_coefficients": [
+    "1",
+    "1/12",
+    "1/90",
+    "1/560"
+  ],
+  "P3_reference_state_sha256": "46e89c27974cdd4563e56202b9f1fb2f12cb32c40ccaa1b9c86dbfe2d68bcec2",
+  "compiler_sha256": "6117c52522997d2aaccb2b52b3c6bf42c0a6c5edb1d718431fed6b2fc5fec234",
+  "control_templates": {
+    "F0": "checkpoints/CP12/p3_20261018/control_F0_structure.py",
+    "F1": "checkpoints/CP12/p3_20261018/control_F1_action.py",
+    "F2": "checkpoints/CP12/p3_20261018/control_F2_defect.py",
+    "F3": "checkpoints/CP12/p3_20261018/control_F3_matrix.py",
+    "F4": "checkpoints/CP12/p3_20261018/control_F4_frozen.py",
+    "F5": "checkpoints/CP12/p3_20261018/control_F5_increment.py"
+  },
+  "sources_sha256": {
+    "checkpoints/CP12/p4_20261115/controles_p4.py": "92d311697c5ac9ea3fb40739fc7a569a17b117b46130e61fadecde80a7f7baa6",
+    "checkpoints/CP12/p4_20261115/control_transicion.py": "e5bcf83caaa4bea44e020bb00d22ef943997eac9727f155918cfd62fbd60f8c3",
+    "checkpoints/CP12/p4_20261115/p4_backend.py": "4912e2d51e611b11431892ce8554a53d696363a6c67ef9c2224166b8cd4708e6",
+    "checkpoints/CP12/p4_20261115/PRERREGISTRO_PILOTO.md": "479499d3a6f14cc7211aa3580b1ce1c8be5e41e27a25e7f2e67ceca3003fa97d",
+    "checkpoints/CP12/p4_20261115/prueba_pasiva/REGISTRO.json": "2bb785a24ed560daf01001b011ac6e0731666e961017f5355e87c818afc8ed63",
+    "checkpoints/CP12/p4_20261115/prueba_pasiva/prueba_pasiva.py": "f247de52917e51e5b869abf64220309bf7e4b9617f6ec7e1552c1aad291a026d",
+    "checkpoints/CP12/p4_20261115/prueba_pasiva/operador_pasivo.py": "6de21b4188b82c8c8d4bf17f155652ce3f035d3665e48c9d972f5902a0f640f1",
+    "checkpoints/CP12/p4_20261115/prueba_pasiva/RECIBO.json": "77cead963a0c0ea1e026a9f530f49ded182aec72517e20896916a6bb0327c9b3",
+    "checkpoints/CP12/p3_20261018/control_F0_structure.py": "6b65ce71b46828cfbaf53c741ef0f552b440ea2e4a0ee181aa30a8d69ffe3019",
+    "checkpoints/CP12/p3_20261018/control_F1_action.py": "a1f92a4c368992f5c1d4a291529291af12e6efa5c91fe0f71fe3150e35e1b0b7",
+    "checkpoints/CP12/p3_20261018/control_F2_defect.py": "91bcd1534864b5475572cee43d1c7651d4bd79fb9155babdad2f5aa3bea42fd4",
+    "checkpoints/CP12/p3_20261018/control_F3_matrix.py": "f32098b95ed9145da298ad6ca28e2fe9f4dd584101be597a88b37180aee5be73",
+    "checkpoints/CP12/p3_20261018/control_F4_frozen.py": "bbc24521452b47d486db2afc23f9456cd31f590be4085f49508c6bfc560d65a4",
+    "checkpoints/CP12/p3_20261018/control_F5_increment.py": "1ecc35d770410e585c2b10d01a2502c3d6d1b6988e09682bc0a1c2acf7c9b3bf"
+  }
+}
