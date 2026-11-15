@@ -1,0 +1,147 @@
+name: CP12 P4 desde τ0 hasta τ160
+
+on:
+  push:
+    branches: [administracion/cp12-p4]
+    paths: [herramientas/cp12_reanudacion/INICIAR_P4_HOSPEDADO.json]
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: cp12-p4-8a6775db0628457ca53ffece57c210d3
+  cancel-in-progress: false
+
+jobs:
+  origen:
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: origen
+      objetivo: 0
+  sesion_nueva:
+    needs: origen
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: verificar
+      objetivo: 0
+  frontera_8:
+    needs: sesion_nueva
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 8
+  frontera_16:
+    needs: frontera_8
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 16
+  frontera_24:
+    needs: frontera_16
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 24
+  frontera_32:
+    needs: frontera_24
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 32
+  frontera_40:
+    needs: frontera_32
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 40
+  frontera_48:
+    needs: frontera_40
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 48
+  frontera_56:
+    needs: frontera_48
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 56
+  frontera_64:
+    needs: frontera_56
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 64
+  frontera_72:
+    needs: frontera_64
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 72
+  frontera_80:
+    needs: frontera_72
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 80
+  frontera_88:
+    needs: frontera_80
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 88
+  frontera_96:
+    needs: frontera_88
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 96
+  frontera_104:
+    needs: frontera_96
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 104
+  frontera_112:
+    needs: frontera_104
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 112
+  frontera_120:
+    needs: frontera_112
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 120
+  frontera_128:
+    needs: frontera_120
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 128
+  frontera_136:
+    needs: frontera_128
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 136
+  frontera_144:
+    needs: frontera_136
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 144
+  frontera_152:
+    needs: frontera_144
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 152
+  frontera_160:
+    needs: frontera_152
+    uses: ./.github/workflows/cp12-p4-tramo-hospedado.yml
+    with:
+      operacion: retomar
+      objetivo: 160

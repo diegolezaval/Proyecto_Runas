@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from pathlib import PurePosixPath
 import re
 
-from .infra import BRANCH, CLAIM, PREFIX, RELEASE, ROOT, STATE, UID, Stop, digest, require
+from .infra import BRANCH, CANDIDATE, CLAIM, PREFIX, RELEASE, ROOT, STATE, UID, Stop, digest, require
 
 
 def zero(audit, count=None):
@@ -96,7 +96,7 @@ class Plan:
 
 def resolve(git, head):
     state = git.json(head, STATE)
-    require(state['schema'] == 'CP12_P3_CANONICAL_RECOVERY_REGISTER' and state['branch'] == BRANCH and
+    require(state['schema'] == f'CP12_{CANDIDATE}_CANONICAL_RECOVERY_REGISTER' and state['branch'] == BRANCH and
             state['execution_uuid'] == UID and state['CP12_closed'] is False and
             state['correction_validated'] is False, 'Registro vigente fuera de la línea CP12/P3 abierta')
     frontier = state['latest_full_frontier_proof']
@@ -112,6 +112,9 @@ def resolve(git, head):
             metrics['M2_steps_executed'] == 0, 'Certificado o métricas originales de frontera distintos')
     frontier_path = str(PurePosixPath(frontier['certificate']).with_name('RECUPERACION_PUBLICA.json'))
     frontier_receipt = recovery(git.json(head, frontier_path), frontier)
+    if CANDIDATE == 'P4':
+        require(state['execution_run_id'] == frontier_receipt['original_audits']['boundary']['run_id'],
+                'El respaldo pertenece a otra identidad P4')
     options = [frontier]
     for field in ('latest_intermediate_transport', 'latest_protected_administrative_transport'):
         candidate = state.get(field)
@@ -136,6 +139,9 @@ def resolve(git, head):
             'Asignación fuera de CP12/P3')
     registry_bytes = git.get(head, registry_path)
     registry = git.json(head, registry_path)
+    if CANDIDATE == 'P4':
+        require(registry['execution_uuid'] == UID and registry['execution_run_id'] == state['execution_run_id'],
+                'Asignación de otro piloto P4')
     require(re.fullmatch('[a-z0-9_]+', registry['allocation_id']), 'Identidad de asignación inválida')
     claim = git.json(head, CLAIM, missing=True)
     block_path = state.get('active_publication_block')

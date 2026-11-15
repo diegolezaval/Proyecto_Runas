@@ -18,17 +18,22 @@ from urllib.request import Request, urlopen
 
 
 REPO = 'diegolezaval/Proyecto_Runas'
-BRANCH = 'ciencia/cp12-residuo-p3-20261018'
+CANDIDATE = os.environ.get('CP12_CANDIDATE', 'P3')
+if CANDIDATE not in ('P3', 'P4'):
+    raise ValueError('Campaña CP12 desconocida')
+BRANCH = 'ciencia/cp12-p4-20261115' if CANDIDATE == 'P4' else 'ciencia/cp12-residuo-p3-20261018'
 REF = 'refs/heads/' + BRANCH
 TAG = 'respaldo-cp12-p3-20261027'
 RELEASE = 426273098
-UID = '128492e27d6d44798f2ef9336fc1b2e7'
-PREFIX = f'CP12_CANDIDATO_P3_{UID}_'
-ROOT = 'checkpoints/CP12/p3_20261018'
+UID = '8a6775db0628457ca53ffece57c210d3' if CANDIDATE == 'P4' else '128492e27d6d44798f2ef9336fc1b2e7'
+PREFIX = f'CP12_CANDIDATO_{CANDIDATE}_{UID}_'
+P3_ROOT = 'checkpoints/CP12/p3_20261018'
+ROOT = 'checkpoints/CP12/p4_20261115' if CANDIDATE == 'P4' else P3_ROOT
 STATE = ROOT + '/ESTADO_REANUDACION.json'
 CLAIM = ROOT + '/REANUDADOR_ACTUAL.json'
-HYBRID = ROOT + '/conservacion_hibrida_20261106/ejecutor'
-AUDITOR = ROOT + '/retoma_20261028/auditar_recuperacion.py'
+HYBRID = P3_ROOT + '/conservacion_hibrida_20261106/ejecutor'
+AUDITOR = P3_ROOT + '/retoma_20261028/auditar_recuperacion.py'
+WORKER_LOCK = f'{CANDIDATE}_WORKER.lock'
 COMPARE = 'herramientas/comparar_control_publico_p3.py'
 LIBRARY_SINCE = '2026-11-06T00:00:00Z'
 

@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from .infra import module, record, require, sha
+from .infra import CANDIDATE, module, record, require, sha
 
 
 WINDOWS = {"core_phase": None, "short_core_k4": "core", "short_smooth_k4": "smooth"}
@@ -27,14 +27,14 @@ def review(home, spec, audit, output):
     spatial = {key: gate for key, gate in gates.items() if not key[0].isdigit()}
     physical = {key: gate for key, gate in gates.items() if key[0].isdigit()}
     result = dict(
-        schema="CP12_P3_LECTURA_FINAL_PROTOCOLO_V1", time=160, source_state_sha256=sha(state),
+        schema=f"CP12_{CANDIDATE}_LECTURA_FINAL_PROTOCOLO_V1", time=160, source_state_sha256=sha(state),
         source_receipt_sha256=sha(receipt), comparison=original["comparison"],
         prefix_pair_gates=spatial, prefix_physical_controls=physical,
         prefix_pair_limits_met=all(spatial.values()), prefix_physical_controls_met=all(physical.values()),
         M2_steps_executed=0, physical_state_and_receipt_unchanged=True, CP12_closed=False,
         correction_validated=False,
         final_protocol=dict(
-            schema="CP12_P3_VALIDACION_FINAL_V1", time=160,
+            schema=f"CP12_{CANDIDATE}_VALIDACION_FINAL_V1", time=160,
             passed=original["two_original_grid_gates_passed"] and causal["passed"],
             spatial=spatial, physical=physical, causal=causal, M2_steps_executed=0,
             source_capsule_sha256=spec["sha256"], source_state_sha256=sha(state),
@@ -43,7 +43,7 @@ def review(home, spec, audit, output):
         ),
     )
     certificate = dict(
-        schema="CP12_P3_TRIAL_BOUNDARY_PERMANENTLY_RECOVERED_AND_AUDITED", passed=True, time=160,
+        schema=f"CP12_{CANDIDATE}_TRIAL_BOUNDARY_PERMANENTLY_RECOVERED_AND_AUDITED", passed=True, time=160,
         all_payload_hashes_verified=True, independent_extracted_audit=audit, state_sha256=audit["state_sha256"],
         configuration_sha256=audit["configuration_sha256"], receipt_sha256=audit["receipt_sha256"],
     )
@@ -98,7 +98,7 @@ def analyze(home, coordinator, modules, streams, budget, audit):
         require(old_norm > 0 and np.isfinite(old_norm) and np.isfinite(new_norm), "Norma causal indefinida")
         reduction = 1 - new_norm / old_norm
         windows[label] = dict(
-            original_chi_operator_norm=old_norm, P3_chi_operator_norm=new_norm,
+            original_chi_operator_norm=old_norm, **{f"{CANDIDATE}_chi_operator_norm": new_norm},
             reduction=reduction, passed=bool(reduction >= 0.5), signed_channel_metrics=groups,
             cross_terms=terms, sustained_crossings=crossings, onset_threshold=threshold,
         )

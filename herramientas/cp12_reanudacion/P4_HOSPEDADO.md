@@ -1,0 +1,9 @@
+# CP12 P4 · Ejecución hospedada
+
+La variante usa el perfil `CP12_CANDIDATE=P4` en la rama administrativa `administracion/cp12-p4`. Reutiliza `reanudar_cp12.py`, el trabajador y supervisor de salida, la conservación y los auditores, la lectura del comparador original y la escritura Git con comprobación del padre. El estado y los recibos se guardan en `ciencia/cp12-p4-20261115` dentro de `checkpoints/CP12/p4_20261115`. Los adjuntos de P4 tienen su propio UUID y prefijo en la Release del proyecto.
+
+La campaña requiere un certificado F0–F5, una cápsula de origen τ0 con Cauchy CP10 exacto y la prueba del reanudador en sesiones nuevas. El primer trabajo recompone el origen desde los insumos originales del adjunto público autenticado, verifica su huella contra la preparación local, sube la cápsula τ0, descarga y audita de nuevo con cero pasos físicos. Una sesión hospedada nueva verifica dos veces el origen e intenta dos reservas simultáneas en una réplica aislada del flujo Git real. Se exige una sola intención adjudicada, recuperada desde otra copia.
+
+Cada tramo restaura su origen desde la frontera pública y pasa los dos bloqueos de exclusividad. Un único supervisor lee la salida del proceso y la publica de forma duradera. El trabajo de constatación consulta GitHub después de cada tramo y solo habilita el siguiente al hallar la frontera exigida y todas sus puertas. Los transportes exactos dentro de un tramo se verifican localmente. La reanudación hospedada vuelve a la frontera pública más reciente de P4 en el registro.
+
+La campaña reintenta interrupciones administrativas con turno libre dentro del trabajo. Un intento nuevo puede reconciliar una intención persistente al comprobar en GitHub que el intento anterior de la propia campaña ya terminó. El recibo distingue una salida observada del fin del entorno hospedado. Una puerta científica publicada suspende la trayectoria y deja la última frontera válida y la evidencia negativa en su expediente.

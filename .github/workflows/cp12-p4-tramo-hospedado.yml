@@ -1,0 +1,122 @@
+name: CP12 P4 tramo hospedado
+
+on:
+  workflow_call:
+    inputs:
+      operacion:
+        required: true
+        type: string
+      objetivo:
+        required: true
+        type: number
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  tramo:
+    name: ${{ inputs.operacion }} τ${{ inputs.objetivo }} candidato ${{ matrix.candidato }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        candidato: [1, 2, 3, 4, 5, 6]
+    env:
+      CP12_CANDIDATE: P4
+      GH_TOKEN: ${{ github.token }}
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      GIT_TERMINAL_PROMPT: '0'
+      P4_OBJETIVO: ${{ inputs.objetivo }}
+      P4_OPERACION: ${{ inputs.operacion }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: true
+          sparse-checkout: herramientas
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12.14'
+          architecture: x64
+      - name: Comprobar la arquitectura BLAS del protocolo
+        id: entorno
+        run: |
+          python -m pip install numpy==2.3.5 scipy==1.17.0 threadpoolctl==3.6.0
+          python - <<'PY'
+          import os
+          import numpy, scipy.linalg
+          from threadpoolctl import threadpool_info
+          dispatch = threadpool_info()
+          compatible = bool(dispatch) and all(d['architecture'] == 'SkylakeX' and d['num_threads'] == 1 for d in dispatch)
+          print({'compatible': compatible, 'architectures': [d['architecture'] for d in dispatch]})
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write('compatible=' + str(compatible).lower() + '\n')
+          PY
+      - name: Ejecutar la operación P4 con verificación recuperable
+        if: steps.entorno.outputs.compatible == 'true'
+        run: |
+          umask 077
+          python -m pip install matplotlib==3.10.8
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          case "$P4_OPERACION" in
+            origen|verificar)
+              PYTHONPATH=herramientas python -m cp12_reanudacion.p4_hospedado "$P4_OPERACION" \
+                --trabajo "$RUNNER_TEMP/cp12-p4-$P4_OPERACION"
+              ;;
+            retomar)
+              for intento in 1 2 3; do
+                if python herramientas/reanudar_cp12.py hospedado retomar \
+                  --objetivo "$P4_OBJETIVO" --trabajo "$RUNNER_TEMP/cp12-p4-tramo-$intento"; then
+                  exit 0
+                fi
+                if PYTHONPATH=herramientas python -m cp12_reanudacion.p4_hospedado puede_reintentar \
+                  --trabajo "$RUNNER_TEMP/cp12-p4-tramo-$intento"; then
+                  continue
+                fi
+                exit 2
+              done
+              exit 2
+              ;;
+            *) exit 2 ;;
+          esac
+
+  constatar:
+    needs: tramo
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      P4_OBJETIVO: ${{ inputs.objetivo }}
+      P4_OPERACION: ${{ inputs.operacion }}
+    steps:
+      - name: Leer la prueba de cierre desde GitHub
+        run: |
+          def_ref='ciencia%2Fcp12-p4-20261115'
+          root='checkpoints/CP12/p4_20261115'
+          ref=$(gh api "repos/$GITHUB_REPOSITORY/commits?sha=$def_ref&per_page=1" --jq '.[0].sha')
+          gh api "repos/$GITHUB_REPOSITORY/contents/$root/ESTADO_REANUDACION.json?ref=$ref" --jq '.content' |
+            base64 -d > estado.json
+          if [ "$P4_OPERACION" = verificar ]; then
+            p="$root/piloto_t0_t160/origen_0000/PRUEBA_REANUDADOR_SESION_NUEVA.json"
+            gh api "repos/$GITHUB_REPOSITORY/contents/$p?ref=$ref" --jq '.content' |
+              base64 -d > prueba.json
+            jq -e '.passed and .exclusivity.selected_workers == 1 and .M2_steps_executed == 0' prueba.json
+          fi
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          state = json.loads(Path("estado.json").read_bytes())
+          proof = state["latest_full_frontier_proof"]
+          if (state["execution_uuid"] != "8a6775db0628457ca53ffece57c210d3" or
+              proof["observer_clock"] < int(os.environ["P4_OBJETIVO"]) or not proof["passed"] or
+              not proof["all_five_spatial_and_physical_gates_passed"] or
+              proof["M2_steps_executed_during_recovery_and_metrics"] != 0):
+              raise SystemExit("GitHub todavía no acredita el checkpoint exigido.")
+          print(proof["recovery_receipt"])
+          PY
