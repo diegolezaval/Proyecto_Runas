@@ -1,0 +1,56 @@
+name: CP12 P3 comprobar entorno hospedado
+on:
+  push:
+    branches: [administracion/cp12-reanudacion]
+    paths: [.github/workflows/cp12-p3-entorno-hospedado.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        replica: [1, 2, 3, 4]
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12.14'
+          architecture: x64
+      - name: Comprobar el entorno original sin pasos M2
+        run: |
+          python -m pip install numpy==2.3.5 scipy==1.17.0 threadpoolctl==3.6.0
+          python - <<'PY'
+          import hashlib, json, os, platform
+          from pathlib import Path
+          import numpy, scipy.linalg
+          from threadpoolctl import threadpool_info
+          expected = {
+              'rk': 'fa5d6300917f4f949e699b116f59ae147159d5c6147d55d940dc9d3303891056',
+              'base': '4e70402b4c092e0a502dba07e33f91784e1e6d3645710cc8a916fd6e3ead7548',
+          }
+          ivp = Path(scipy.__file__).parent / 'integrate/_ivp'
+          solver = {name: hashlib.sha256((ivp / (name + '.py')).read_bytes()).hexdigest() for name in expected}
+          blas = [{key: lib[key] for key in ('architecture', 'num_threads')} for lib in threadpool_info()]
+          compatible = (not os.environ.get('OPENBLAS_CORETYPE') and solver == expected and
+                        bool(blas) and all(x == {'architecture': 'SkylakeX', 'num_threads': 1} for x in blas))
+          evidence = dict(passed=compatible, python=platform.python_version(), solver=solver, blas=blas,
+                          M2_steps_executed=0)
+          Path('entorno.json').write_text(json.dumps(evidence, indent=2) + '\n')
+          print(json.dumps(evidence))
+          raise SystemExit(0 if compatible else 1)
+          PY
+      - name: Conservar el resultado de la comprobación
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cp12-p3-entorno-${{ matrix.replica }}
+          path: entorno.json
+          if-no-files-found: warn
