@@ -1,0 +1,111 @@
+{
+  "schema": "CP12_P4_REFERENCIA_GALERKIN_PRERREGISTRO_V1",
+  "registered_before_M2": true,
+  "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
+  "project": "diegolezaval/Proyecto_Runas",
+  "scientific_branch": "ciencia/cp12-p4-referencia-galerkin",
+  "admin_branch": "administracion/cp12-p4-referencia-galerkin",
+  "source_commit": "1dc926f3f9ee32ab9f7fc9ccf279113a88899738",
+  "source_third_mesh_dir": "checkpoints/CP12/p4_20261115/tercera_malla_20261116",
+  "source_third_mesh_uuid": "7c096442a7c34397b5c13e097461dd70",
+  "source_third_mesh_run": "3d18aa7331f9ee11be04742e7b12a41e2499cc17646c0bd48730665fda7557ba",
+  "source_terminal": {
+    "asset": 756620502,
+    "sha256": "235bd5a512c8f9b360754b629622ec226d709de2f841b727dcc20bd9fd113c84",
+    "bytes": 9374969,
+    "state_sha256": "80da5460df0867cf9537789fb6d56bb8a3b208d1d41e1bee54becbb266b5a3d6"
+  },
+  "source_original_pilot_uuid": "8a6775db0628457ca53ffece57c210d3",
+  "source_original_pilot_run": "1494ea1de6f7c1c084b99b4fa7e9892fc74d0c7089cdbc96dea82d334829cc18",
+  "source_snapshot": {
+    "receipt": "checkpoints/CP12/p4_20261115/piloto_t0_t160/origen_0000/RECUPERACION_PUBLICA.json",
+    "receipt_sha256": "6a07f2d89dd66cce97a09faee0101f6bea7f7c79372f98a390df464139bfd5f8",
+    "metric_file": "checkpoints/CP12/p4_20261115/piloto_t0_t160/origen_0000/METRICAS_ORIGINALES.json",
+    "metric_file_sha256": "2ea883ab35e7f673150023656a690d655c8472e6bc808b243c4801c408421e4e",
+    "asset_id": 752185496,
+    "asset_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P4_8a6775db0628457ca53ffece57c210d3_FRONTERA_0000_P4_ORIGEN_43755652297_1.zip",
+    "archive_sha256": "677545bf06d8f96067e5844cdfcfce1484013ba8beb83bbe1efc1436b4b6791c",
+    "bytes": 11066266,
+    "state_sha256": "65eed503ef341e7ea16d63957a3d288fe02f0c35eb19a2201ac6f7b7d1017c45",
+    "run_receipt_sha256": "5a7dccd28f80aed715802ba69fc118adbaa18d5ed2fc73848d9c9d52aa6a819f"
+  },
+  "source_Cauchy": {
+    "path": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+    "sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89"
+  },
+  "source_preparation_sha256": "d4a7f8ad89a4bc321931926d8de161348e9223a0bd21336e0b13edfdbbe3493c",
+  "source_comparator_sha256": "41f0b56b797f9caca7601577d8db7f846d1d452e77a80940de6092be6a8fea64",
+  "configuration": {
+    "radius": 220,
+    "angular_cutoff": 4,
+    "epsilon": 0.02,
+    "element_degree": 5,
+    "regular_first_element": true,
+    "radial_gauss_points": 12,
+    "first_element_gauss_points": 24,
+    "sample_step": 0.4,
+    "checkpoint_stride": 8,
+    "terminal": 160,
+    "comparison_reticle_h": 0.015625
+  },
+  "cases": {
+    "R0": {
+      "radial_step": 0.5,
+      "dt": 0.008,
+      "stage_rtol": 2e-11,
+      "stage_atol": 2e-13
+    },
+    "R1": {
+      "radial_step": 0.25,
+      "dt": 0.008,
+      "stage_rtol": 2e-11,
+      "stage_atol": 2e-13
+    },
+    "R2": {
+      "radial_step": 0.125,
+      "dt": 0.008,
+      "stage_rtol": 2e-11,
+      "stage_atol": 2e-13
+    },
+    "T": {
+      "radial_step": 0.125,
+      "dt": 0.004,
+      "stage_rtol": 2e-11,
+      "stage_atol": 2e-13
+    },
+    "EPS": {
+      "radial_step": 0.125,
+      "dt": 0.008,
+      "stage_rtol": 2e-13,
+      "stage_atol": 2e-15
+    }
+  },
+  "physical_limits": {
+    "field_and_phase_space_relative_error_max": 0.02,
+    "energy_drift_max": 0.0002,
+    "charge_drift_max": 1e-9,
+    "core_charge_change_max": 0.005,
+    "amplification_max": 3
+  },
+  "preflight": {
+    "operator_smooth_max": 0.001,
+    "operator_band_k8_max": 0.01,
+    "symmetry_identity_max": 2e-12,
+    "cauchy_max_abs": 2e-13,
+    "manufactured_waves": [
+      0,
+      8
+    ],
+    "tau_short": 0.08,
+    "require_fine_manufactured_refinement": true
+  },
+  "reference_limits": {
+    "absolute_variation_max": 0.0025,
+    "relative_discrepancy_fraction_strict": 0.25,
+    "comparison_roundoff_floor": 1e-10,
+    "late_begin": 120,
+    "model_error_bound": "empirical_sum_of_fine_radial_temporal_and_stage_tolerance_variations"
+  },
+  "M2_steps_executed_at_registration": 0,
+  "CP12_closed": false
+}
