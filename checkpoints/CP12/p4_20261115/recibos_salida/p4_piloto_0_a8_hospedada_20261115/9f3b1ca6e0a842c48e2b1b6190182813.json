@@ -1,0 +1,16 @@
+{
+  "schema": "CP12_REANUDADOR_SALIDA_V1",
+  "allocation_id": "p4_piloto_0_a8_hospedada_20261115",
+  "worker_id": "09ef12957fd940879b6b367084c87237",
+  "session_id": "9f3b1ca6e0a842c48e2b1b6190182813",
+  "registry_sha256": "fd8534ff265413f63e90243f8bb86f16c3058ae0f2b7b47696955ebea83b3aba",
+  "source_archive_sha256": "677545bf06d8f96067e5844cdfcfce1484013ba8beb83bbe1efc1436b4b6791c",
+  "method": "waitpid_hijo_directo",
+  "exit_observed": true,
+  "observed_at_utc": "2026-11-16T00:42:19.893148+00:00",
+  "pid": 3035,
+  "process_identity_sha256": "0e535ee398dc898a3858e8b9fe18826d14f88db8f230cdedddf57e05f9a41fe0",
+  "returncode": 1,
+  "exit_code": 1,
+  "signal": null
+}
