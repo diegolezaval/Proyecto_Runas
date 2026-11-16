@@ -1,0 +1,34 @@
+{
+  "schema": "CP12_P4_FORWARD_SEGMENT_V2",
+  "allocation_id": "p4_piloto_112_a120_hospedada_20261115",
+  "execution_uuid": "8a6775db0628457ca53ffece57c210d3",
+  "execution_run_id": "1494ea1de6f7c1c084b99b4fa7e9892fc74d0c7089cdbc96dea82d334829cc18",
+  "kind": "boundary",
+  "clock": 112,
+  "closed_boundary": 112,
+  "target": 120,
+  "source_archive_sha256": "3d4bd6e6f27b80f19a708375e43f88f82ba6b4eb3783cb69d6571c25dcf48b2e",
+  "closed_state_sha256": "5a36645ceab19bb9609066245e593129797c3c342b33038d4a4b9638319a7c82",
+  "receipt_sha256": "0203960ece0b34545ad4aee3c256d407f6de48d4dab26de0ecdfe845e4d6adf2",
+  "configuration_sha256": "32e9ca07eaa6d55ad5479c332e8becf288c44ac8e7613133e6b52ea99b97715d",
+  "source_github_asset_id": 754326376,
+  "source_recovery_evidence": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0104_0112/RECUPERACION_PUBLICA.json",
+  "original_auditor_sha256": "5ec8064cb2ef130b6796a296940a564d5c290e6f1000c4ca3ba2b0705f76aae0",
+  "administrative_sources": {
+    "base_preservar.py": "da01d24030fa5bba59ed0e3c857252f445b5c7b95cd7d82da9d6c4a753cc6914",
+    "continuar.py": "f4e2ba94cba2bb607e55c525046b27036c51f3d6433e1aa4dcbd00aecd6f78a5",
+    "preservar.py": "71ce24613f71ffbc8ecf6ecc3ad1547eca7f88732589d7282d64e01d1935d9ea",
+    "POLITICA.json": "fb6f61c5968b85b98e03ab1da79663b4959dd2728c612f95265f421640cd3661"
+  },
+  "hosted_executor_sha256": "9335488ae1a6f81301bf3ac7084eb51bfd0d1cdbcfaf34324e2838e188484910",
+  "hosted_recovery_certificate_sha256": "d5c051aec08e785fd3a38039f54d3f1d6cd26709f2cd17a39a210f77743d16cc",
+  "hosted_final_reader_sha256": "d025666cae13ef6e4971a663817247edbb384c3b5c98fd88b0f10a9bfb6ce95f",
+  "source_frontier_commit": "78926c093004d7a4ef49b2f28077389c2bdd4dca",
+  "registered_at_utc": "2026-11-16T09:59:02.084725+00:00",
+  "registered_before_M2": true,
+  "transport_registration": {
+    "path": "checkpoints/CP12/p4_20261115/piloto_t0_t160/origen_0000/REGISTRO_TRANSPORTE.json",
+    "sha256": "18cf7de21b1eac1f51c923dcf8b4e5e1a6383a77eeecb10f66cdb6a14fa35b96"
+  },
+  "previous_intervals_through_clock_must_not_repeat": 112
+}
