@@ -1,0 +1,423 @@
+{
+  "schema": "CP12_P4_TERCERA_MALLA_RESULTADO_V1",
+  "execution_uuid": "7c096442a7c34397b5c13e097461dd70",
+  "execution_run_id": "3d18aa7331f9ee11be04742e7b12a41e2499cc17646c0bd48730665fda7557ba",
+  "time": 160,
+  "time_series": [
+    {
+      "time": 8,
+      "pilot": {
+        "norm_relative_sup_error": 5.1230187466322816e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0002748015532854994,
+        "final_phi_phase_space_error_over_initial_norm": 0.00034553058387395725,
+        "final_mediator_nonradial_error_over_initial_norm": 0.00033261032049599503,
+        "final_mediator_phase_space_error_over_initial_norm": 0.0003351734475468215
+      },
+      "refined": {
+        "norm_relative_sup_error": 1.2782920758865141e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 6.870210342885167e-05,
+        "final_phi_phase_space_error_over_initial_norm": 9.885309896106754e-05,
+        "final_mediator_nonradial_error_over_initial_norm": 8.25707277574468e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 8.265761327673534e-05
+      },
+      "ratio_chi": 0.24661146007154583,
+      "order_chi": 2.019688251333849,
+      "order_common_grid": 2.0197093664120227
+    },
+    {
+      "time": 16,
+      "pilot": {
+        "norm_relative_sup_error": 5.1230187466322816e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0002996233652105773,
+        "final_phi_phase_space_error_over_initial_norm": 0.0004529615643483798,
+        "final_mediator_nonradial_error_over_initial_norm": 0.00025164159035154335,
+        "final_mediator_phase_space_error_over_initial_norm": 0.00025850887751150726
+      },
+      "refined": {
+        "norm_relative_sup_error": 1.2782920758865141e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 7.501006497101776e-05,
+        "final_phi_phase_space_error_over_initial_norm": 0.00012330255083487342,
+        "final_mediator_nonradial_error_over_initial_norm": 6.133006779671312e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 6.163830328381032e-05
+      },
+      "ratio_chi": 0.2384378589902258,
+      "order_chi": 2.0683147708278855,
+      "order_common_grid": 2.0686510863723124
+    },
+    {
+      "time": 24,
+      "pilot": {
+        "norm_relative_sup_error": 8.467355388280536e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00039705607487797244,
+        "final_phi_phase_space_error_over_initial_norm": 0.0006440881460908753,
+        "final_mediator_nonradial_error_over_initial_norm": 0.00017150466936133616,
+        "final_mediator_phase_space_error_over_initial_norm": 0.00018029703217587774
+      },
+      "refined": {
+        "norm_relative_sup_error": 2.112637285852017e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 9.945127128924563e-05,
+        "final_phi_phase_space_error_over_initial_norm": 0.00016823410806818105,
+        "final_mediator_nonradial_error_over_initial_norm": 4.111924231231163e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 4.183178499890482e-05
+      },
+      "ratio_chi": 0.23201593777815702,
+      "order_chi": 2.1077041836562596,
+      "order_common_grid": 2.112776514572329
+    },
+    {
+      "time": 32,
+      "pilot": {
+        "norm_relative_sup_error": 8.467355388280536e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00047298516176358775,
+        "final_phi_phase_space_error_over_initial_norm": 0.0007393575205394891,
+        "final_mediator_nonradial_error_over_initial_norm": 0.0001595039135620884,
+        "final_mediator_phase_space_error_over_initial_norm": 0.00019131793395955722
+      },
+      "refined": {
+        "norm_relative_sup_error": 2.112852991109296e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00011856813162104685,
+        "final_phi_phase_space_error_over_initial_norm": 0.0001914379736323951,
+        "final_mediator_nonradial_error_over_initial_norm": 3.2034189889415714e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 3.39955049608154e-05
+      },
+      "ratio_chi": 0.17769115658546533,
+      "order_chi": 2.4925562124390046,
+      "order_common_grid": 2.509395563550762
+    },
+    {
+      "time": 40,
+      "pilot": {
+        "norm_relative_sup_error": 0.00014036049948231593,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0005121254006146387,
+        "final_phi_phase_space_error_over_initial_norm": 0.0007320632678769685,
+        "final_mediator_nonradial_error_over_initial_norm": 0.00033207154892222123,
+        "final_mediator_phase_space_error_over_initial_norm": 0.0004263165669162846
+      },
+      "refined": {
+        "norm_relative_sup_error": 3.50819827252788e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0001282022688602412,
+        "final_phi_phase_space_error_over_initial_norm": 0.00018933022590428958,
+        "final_mediator_nonradial_error_over_initial_norm": 5.2227500825169144e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 5.450146791710578e-05
+      },
+      "ratio_chi": 0.12784271629727254,
+      "order_chi": 2.9675581279812007,
+      "order_common_grid": 2.976091233541951
+    },
+    {
+      "time": 48,
+      "pilot": {
+        "norm_relative_sup_error": 0.00018559477683137486,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0005759657062612001,
+        "final_phi_phase_space_error_over_initial_norm": 0.0008204792015170442,
+        "final_mediator_nonradial_error_over_initial_norm": 0.0006393977916031473,
+        "final_mediator_phase_space_error_over_initial_norm": 0.0008558787529596202
+      },
+      "refined": {
+        "norm_relative_sup_error": 4.636174622132244e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00014441413831829003,
+        "final_phi_phase_space_error_over_initial_norm": 0.00021096393966080315,
+        "final_mediator_nonradial_error_over_initial_norm": 7.777376057304614e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 8.027263600386046e-05
+      },
+      "ratio_chi": 0.093789728657568,
+      "order_chi": 3.414426254519963,
+      "order_common_grid": 3.4183429734726283
+    },
+    {
+      "time": 56,
+      "pilot": {
+        "norm_relative_sup_error": 0.00020958723506480086,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.000575878489906933,
+        "final_phi_phase_space_error_over_initial_norm": 0.0007517951240798361,
+        "final_mediator_nonradial_error_over_initial_norm": 0.0010508807672290285,
+        "final_mediator_phase_space_error_over_initial_norm": 0.0014462478220287852
+      },
+      "refined": {
+        "norm_relative_sup_error": 5.239683779713451e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00014320522083340382,
+        "final_phi_phase_space_error_over_initial_norm": 0.00018926138665573833,
+        "final_mediator_nonradial_error_over_initial_norm": 9.434785836655883e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 9.721575930325287e-05
+      },
+      "ratio_chi": 0.0672192952151723,
+      "order_chi": 3.894980773503494,
+      "order_common_grid": 3.8969100801458607
+    },
+    {
+      "time": 64,
+      "pilot": {
+        "norm_relative_sup_error": 0.00020958723506480086,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0005140889345119469,
+        "final_phi_phase_space_error_over_initial_norm": 0.0006012715133757708,
+        "final_mediator_nonradial_error_over_initial_norm": 0.0015193781629258714,
+        "final_mediator_phase_space_error_over_initial_norm": 0.002128527925624964
+      },
+      "refined": {
+        "norm_relative_sup_error": 5.239683779713451e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00012829595206903874,
+        "final_phi_phase_space_error_over_initial_norm": 0.0001527217403816873,
+        "final_mediator_nonradial_error_over_initial_norm": 9.24569822580351e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 9.622849913898981e-05
+      },
+      "ratio_chi": 0.045208943693203295,
+      "order_chi": 4.467247980288157,
+      "order_common_grid": 4.468284016322332
+    },
+    {
+      "time": 72,
+      "pilot": {
+        "norm_relative_sup_error": 0.00020958723506480086,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00040813380237637495,
+        "final_phi_phase_space_error_over_initial_norm": 0.0004638001115128887,
+        "final_mediator_nonradial_error_over_initial_norm": 0.002026188168867825,
+        "final_mediator_phase_space_error_over_initial_norm": 0.0028607341628019943
+      },
+      "refined": {
+        "norm_relative_sup_error": 5.239683779713451e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00010180122537715395,
+        "final_phi_phase_space_error_over_initial_norm": 0.00011949708836926065,
+        "final_mediator_nonradial_error_over_initial_norm": 8.425325020877282e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 8.939021294901233e-05
+      },
+      "ratio_chi": 0.031247298022776634,
+      "order_chi": 5.000124745525534,
+      "order_common_grid": 5.000718949400604
+    },
+    {
+      "time": 80,
+      "pilot": {
+        "norm_relative_sup_error": 0.00020958723506480086,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00034633652757637054,
+        "final_phi_phase_space_error_over_initial_norm": 0.0003965427907977997,
+        "final_mediator_nonradial_error_over_initial_norm": 0.0025444702120458484,
+        "final_mediator_phase_space_error_over_initial_norm": 0.0036069296250920593
+      },
+      "refined": {
+        "norm_relative_sup_error": 5.239683779713451e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 8.631365524532574e-05,
+        "final_phi_phase_space_error_over_initial_norm": 0.00010378044128878642,
+        "final_mediator_nonradial_error_over_initial_norm": 6.750666817144837e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 7.50768432352399e-05
+      },
+      "ratio_chi": 0.020814612714636405,
+      "order_chi": 5.586259474432383,
+      "order_common_grid": 5.586617100521382
+    },
+    {
+      "time": 88,
+      "pilot": {
+        "norm_relative_sup_error": 0.00020958723506480086,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00037922769750219694,
+        "final_phi_phase_space_error_over_initial_norm": 0.00041492382618851104,
+        "final_mediator_nonradial_error_over_initial_norm": 0.003073979862100548,
+        "final_mediator_phase_space_error_over_initial_norm": 0.0043582679635122325
+      },
+      "refined": {
+        "norm_relative_sup_error": 5.239683779713451e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 9.467118635376466e-05,
+        "final_phi_phase_space_error_over_initial_norm": 0.00010648858448608184,
+        "final_mediator_nonradial_error_over_initial_norm": 7.761549387990431e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 8.559193518260197e-05
+      },
+      "ratio_chi": 0.01963897949809064,
+      "order_chi": 5.670136225055678,
+      "order_common_grid": 5.670355593158814
+    },
+    {
+      "time": 96,
+      "pilot": {
+        "norm_relative_sup_error": 0.00020958723506480086,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0004343134060174798,
+        "final_phi_phase_space_error_over_initial_norm": 0.000481703172144648,
+        "final_mediator_nonradial_error_over_initial_norm": 0.0036003334128570184,
+        "final_mediator_phase_space_error_over_initial_norm": 0.005100285488522591
+      },
+      "refined": {
+        "norm_relative_sup_error": 5.239683779713451e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00010823935120550449,
+        "final_phi_phase_space_error_over_initial_norm": 0.00012078364249741413,
+        "final_mediator_nonradial_error_over_initial_norm": 0.00010323253779715898,
+        "final_mediator_phase_space_error_over_initial_norm": 0.00011043430828168832
+      },
+      "ratio_chi": 0.0216525738667382,
+      "order_chi": 5.529317659784945,
+      "order_common_grid": 5.529451299632568
+    },
+    {
+      "time": 104,
+      "pilot": {
+        "norm_relative_sup_error": 0.00020958723506480086,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0005010087314827793,
+        "final_phi_phase_space_error_over_initial_norm": 0.0005425314223466242,
+        "final_mediator_nonradial_error_over_initial_norm": 0.0041173451666030635,
+        "final_mediator_phase_space_error_over_initial_norm": 0.005826010546305131
+      },
+      "refined": {
+        "norm_relative_sup_error": 5.239683779713451e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00012511367762129994,
+        "final_phi_phase_space_error_over_initial_norm": 0.0001359011852293934,
+        "final_mediator_nonradial_error_over_initial_norm": 0.0001362120817313899,
+        "final_mediator_phase_space_error_over_initial_norm": 0.0001426886143505685
+      },
+      "ratio_chi": 0.024491650541391817,
+      "order_chi": 5.351566186487734,
+      "order_common_grid": 5.351643743923502
+    },
+    {
+      "time": 112,
+      "pilot": {
+        "norm_relative_sup_error": 0.00031097827310294673,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0005430290963882084,
+        "final_phi_phase_space_error_over_initial_norm": 0.000573262288014508,
+        "final_mediator_nonradial_error_over_initial_norm": 0.004611321113744948,
+        "final_mediator_phase_space_error_over_initial_norm": 0.006523871766991324
+      },
+      "refined": {
+        "norm_relative_sup_error": 7.772160598934868e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00013550597493212427,
+        "final_phi_phase_space_error_over_initial_norm": 0.00014355810446452135,
+        "final_mediator_nonradial_error_over_initial_norm": 0.00015457218818114106,
+        "final_mediator_phase_space_error_over_initial_norm": 0.00016119583060925799
+      },
+      "ratio_chi": 0.024708614204352792,
+      "order_chi": 5.33884209115061,
+      "order_common_grid": 5.338881506604512
+    },
+    {
+      "time": 120,
+      "pilot": {
+        "norm_relative_sup_error": 0.000349092717502952,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0005196826541456339,
+        "final_phi_phase_space_error_over_initial_norm": 0.0005621615427296767,
+        "final_mediator_nonradial_error_over_initial_norm": 0.005075742292873055,
+        "final_mediator_phase_space_error_over_initial_norm": 0.007188231862889298
+      },
+      "refined": {
+        "norm_relative_sup_error": 8.729210439896703e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00012974429328601182,
+        "final_phi_phase_space_error_over_initial_norm": 0.00014079867209409666,
+        "final_mediator_nonradial_error_over_initial_norm": 0.00014931124747416495,
+        "final_mediator_phase_space_error_over_initial_norm": 0.0001571560716979285
+      },
+      "ratio_chi": 0.021862966400580167,
+      "order_chi": 5.515367028423595,
+      "order_common_grid": 5.5153794608758995
+    },
+    {
+      "time": 128,
+      "pilot": {
+        "norm_relative_sup_error": 0.000349092717502952,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0005002815247180934,
+        "final_phi_phase_space_error_over_initial_norm": 0.0005212180429070064,
+        "final_mediator_nonradial_error_over_initial_norm": 0.0055191646121973284,
+        "final_mediator_phase_space_error_over_initial_norm": 0.007824754430058867
+      },
+      "refined": {
+        "norm_relative_sup_error": 8.729210439896703e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00012499056765072784,
+        "final_phi_phase_space_error_over_initial_norm": 0.0001306321072881477,
+        "final_mediator_nonradial_error_over_initial_norm": 0.00013407300858508085,
+        "final_mediator_phase_space_error_over_initial_norm": 0.00014392998672061233
+      },
+      "ratio_chi": 0.018394185786547366,
+      "order_chi": 5.764606372540108,
+      "order_common_grid": 5.764599026708148
+    },
+    {
+      "time": 136,
+      "pilot": {
+        "norm_relative_sup_error": 0.000349092717502952,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0004344622855772641,
+        "final_phi_phase_space_error_over_initial_norm": 0.00048092465098267313,
+        "final_mediator_nonradial_error_over_initial_norm": 0.00594082794588903,
+        "final_mediator_phase_space_error_over_initial_norm": 0.008432828702122915
+      },
+      "refined": {
+        "norm_relative_sup_error": 8.729210439896703e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00010839158187386879,
+        "final_phi_phase_space_error_over_initial_norm": 0.00012043877629225963,
+        "final_mediator_nonradial_error_over_initial_norm": 9.963281755127159e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 0.00011413867136920923
+      },
+      "ratio_chi": 0.01353503971217576,
+      "order_chi": 6.207157069309031,
+      "order_common_grid": 6.2071348480052135
+    },
+    {
+      "time": 144,
+      "pilot": {
+        "norm_relative_sup_error": 0.000349092717502952,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0004758589669605111,
+        "final_phi_phase_space_error_over_initial_norm": 0.0005071957861411943,
+        "final_mediator_nonradial_error_over_initial_norm": 0.006354169036782987,
+        "final_mediator_phase_space_error_over_initial_norm": 0.009022116418905017
+      },
+      "refined": {
+        "norm_relative_sup_error": 8.729210439896703e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0001189105780874775,
+        "final_phi_phase_space_error_over_initial_norm": 0.00012665294314644497,
+        "final_mediator_nonradial_error_over_initial_norm": 9.071884979125056e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 0.00010824654976645452
+      },
+      "ratio_chi": 0.011997910993437617,
+      "order_chi": 6.381072955754709,
+      "order_common_grid": 6.3810394412028035
+    },
+    {
+      "time": 152,
+      "pilot": {
+        "norm_relative_sup_error": 0.000349092717502952,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0005456001230174771,
+        "final_phi_phase_space_error_over_initial_norm": 0.0005981872951294395,
+        "final_mediator_nonradial_error_over_initial_norm": 0.006759224989436271,
+        "final_mediator_phase_space_error_over_initial_norm": 0.009593123291373025
+      },
+      "refined": {
+        "norm_relative_sup_error": 8.729210439896703e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00013597135416910133,
+        "final_phi_phase_space_error_over_initial_norm": 0.00014909364477590345,
+        "final_mediator_nonradial_error_over_initial_norm": 0.00011746238948909199,
+        "final_mediator_phase_space_error_over_initial_norm": 0.0001330487480007515
+      },
+      "ratio_chi": 0.013869179406919598,
+      "order_chi": 6.171973759041088,
+      "order_common_grid": 6.171931577359161
+    },
+    {
+      "time": 160,
+      "pilot": {
+        "norm_relative_sup_error": 0.000349092717502952,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0006793936814166731,
+        "final_phi_phase_space_error_over_initial_norm": 0.0007163213576117403,
+        "final_mediator_nonradial_error_over_initial_norm": 0.007158833305752682,
+        "final_mediator_phase_space_error_over_initial_norm": 0.010148560932669913
+      },
+      "refined": {
+        "norm_relative_sup_error": 8.729210439896703e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00016972315292300286,
+        "final_phi_phase_space_error_over_initial_norm": 0.00017859788577177094,
+        "final_mediator_nonradial_error_over_initial_norm": 0.00017245030173519091,
+        "final_mediator_phase_space_error_over_initial_norm": 0.00018463794051201815
+      },
+      "ratio_chi": 0.01819350957608559,
+      "order_chi": 5.780432320252839,
+      "order_common_grid": 5.780383488467972
+    }
+  ],
+  "original_gate_passed": true,
+  "physical_gates_passed": true,
+  "chi_phase_agreement_improved": true,
+  "final_frontier": {
+    "time": 160,
+    "sha256": "235bd5a512c8f9b360754b629622ec226d709de2f841b727dcc20bd9fd113c84",
+    "state_sha256": "80da5460df0867cf9537789fb6d56bb8a3b208d1d41e1bee54becbb266b5a3d6",
+    "github_asset_id": 756620502,
+    "recovery_receipt": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/tau0160/RECUPERACION_PUBLICA.json",
+    "metrics": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/tau0160/METRICAS_ORIGINALES.json"
+  },
+  "scope": "Tres resoluciones de la misma acción, caja, proyección y preparación.",
+  "independent_reference_stability_robustness_pending": true,
+  "correction_validated": false,
+  "CP12_closed": false
+}

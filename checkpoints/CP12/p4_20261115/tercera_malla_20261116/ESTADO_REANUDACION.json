@@ -2,7 +2,7 @@
   "schema": "CP12_P4_TERCERA_MALLA_REANUDACION_V1",
   "execution_uuid": "7c096442a7c34397b5c13e097461dd70",
   "execution_run_id": "3d18aa7331f9ee11be04742e7b12a41e2499cc17646c0bd48730665fda7557ba",
-  "status": "FRONTERA_VERIFICADA",
+  "status": "COMPLETADA_TAU160",
   "last_closed_boundary": 160,
   "latest_full_frontier_proof": {
     "time": 160,
@@ -15,5 +15,7 @@
   "next_target": null,
   "correction_validated": false,
   "CP12_closed": false,
-  "updated_at": "2026-11-16T22:04:29.079917+00:00"
+  "updated_at": "2026-11-16T22:04:31.038137+00:00",
+  "result": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/RESULTADO.json",
+  "report": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/INFORME.md"
 }
