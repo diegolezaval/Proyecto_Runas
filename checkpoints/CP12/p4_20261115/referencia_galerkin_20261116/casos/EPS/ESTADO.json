@@ -10,8 +10,18 @@
     "receipt": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/casos/EPS/tau0000/RECUPERACION_PUBLICA.json",
     "sha256": "36e548d9dcde895d49755925b8e00252c951a9df9953cef4ff159b0a75477404"
   },
-  "pending": null,
-  "updated_at": "2026-11-16T23:07:06.749024+00:00",
+  "pending": {
+    "file_name": "CP12_P4_GALERKIN_0504f26a56f91b820ffa7a77d917582b_EPS_TAU0008_43976276645_1.zip",
+    "bytes": 3296155,
+    "sha256": "1943d7bb387c8658f47990eee13bcf973800277a55978e232ed83b69a4279a88",
+    "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
+    "case": "EPS",
+    "registration_sha256": "7dc96b561dc7df3792780bb352b926f9e3b43fff16badcd47170d545f45ab63d",
+    "trajectory_id": "95a7c3d7cc6ac9d231fc61867cd73ac5d62b4219f47d0d116ada80e1a1f40f99",
+    "state_sha256": "a9b51654348b47b4ddffaa702dc97fcade346e3a6429fc0667ac064718771434",
+    "target": 8
+  },
+  "updated_at": "2026-11-16T23:08:43.929158+00:00",
   "stage_repair": "1abbebd6b56301f369c742b0b0cab47f92927677",
   "prior_failure": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/incidencias/eps_43973602565/RECUPERACION_PUBLICA.json"
 }
