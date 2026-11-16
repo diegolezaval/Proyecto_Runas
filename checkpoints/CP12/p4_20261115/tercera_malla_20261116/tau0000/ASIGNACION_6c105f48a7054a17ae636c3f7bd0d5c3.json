@@ -1,0 +1,30 @@
+{
+  "execution_uuid": "7c096442a7c34397b5c13e097461dd70",
+  "execution_run_id": "3d18aa7331f9ee11be04742e7b12a41e2499cc17646c0bd48730665fda7557ba",
+  "from_time": null,
+  "target": 0,
+  "claim": {
+    "execution_uuid": "7c096442a7c34397b5c13e097461dd70",
+    "execution_run_id": "3d18aa7331f9ee11be04742e7b12a41e2499cc17646c0bd48730665fda7557ba",
+    "actions_run_id": 43915830785,
+    "actions_attempt": 1,
+    "actions_slot": 1,
+    "source_head": "13163dd134d2e99d48ba36e01778481b207a6b72",
+    "worker_id": "6c105f48a7054a17ae636c3f7bd0d5c3",
+    "admin_commit": "b022caeedac96642dd22e0bd2ab231912eb1fd9b",
+    "registration_commit": "b922bfa8e4ab72ef683b5ff9c942854798626e82",
+    "registered_at": "2026-11-16T17:12:22.847939+00:00",
+    "last_verified_boundary": null,
+    "previous_attempt": {
+      "id": 43915406653,
+      "run_attempt": 1,
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/diegolezaval/Proyecto_Runas/actions/runs/43915406653",
+      "updated_at": "2026-11-16T17:10:31Z",
+      "accredited_by": "GitHub Actions"
+    }
+  },
+  "source_frontier": null,
+  "registered_before_M2": true
+}
