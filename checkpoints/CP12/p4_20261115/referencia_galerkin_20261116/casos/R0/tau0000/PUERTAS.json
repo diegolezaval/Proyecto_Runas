@@ -1,0 +1,46 @@
+{
+  "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
+  "case": "R0",
+  "registration_sha256": "7dc96b561dc7df3792780bb352b926f9e3b43fff16badcd47170d545f45ab63d",
+  "trajectory_id": "ee52311b264566d662fa60796098859bf7c4c8e909a161b45771855796b5f22d",
+  "run_id": 43973602565,
+  "attempt": 1,
+  "admin_commit": "7d0009524f843b981ec258121cabe2f48b343180",
+  "time": 0,
+  "target": 0,
+  "passed": true,
+  "physical": {
+    "energy": true,
+    "charge": true,
+    "core_charge": true,
+    "amplification": true,
+    "finite": true
+  },
+  "balance": {
+    "energy": 0.0,
+    "charge": 0.0
+  },
+  "failure": null,
+  "solver": "Gauss–Legendre 4",
+  "steps_this_segment": 0,
+  "total_steps": 0,
+  "environment": {
+    "python": "3.12.14",
+    "machine": "x86_64",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0"
+    },
+    "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "numeric_flags": [
+      "-O3",
+      "-fPIC",
+      "-shared",
+      "-std=c11",
+      "-fno-fast-math"
+    ]
+  },
+  "max_iterations": 0,
+  "max_normalized_stage_change": 0.0,
+  "wall_seconds": 0.026935331000004226
+}
