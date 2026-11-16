@@ -1,0 +1,27 @@
+{
+  "schema": "CP12_P4_TERCERA_MALLA_RECUPERACION_V1",
+  "execution_uuid": "7c096442a7c34397b5c13e097461dd70",
+  "execution_run_id": "3d18aa7331f9ee11be04742e7b12a41e2499cc17646c0bd48730665fda7557ba",
+  "time": 160,
+  "target": 160,
+  "github_asset_id": 756620502,
+  "bytes": 9374969,
+  "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_P4_MALLA3_7c096442a7c34397b5c13e097461dd70_TAU0160_80da5460df0867cf.zip",
+  "sha256": "235bd5a512c8f9b360754b629622ec226d709de2f841b727dcc20bd9fd113c84",
+  "state_sha256": "80da5460df0867cf9537789fb6d56bb8a3b208d1d41e1bee54becbb266b5a3d6",
+  "passed": true,
+  "payload_files": 6,
+  "all_payload_hashes_verified_before_and_after": true,
+  "M2_steps_executed": 0,
+  "audit_process": {
+    "operation": "auditar",
+    "PID": 5924,
+    "observed_exit": true,
+    "exit_code": 0,
+    "observed_at": "2026-11-16T22:04:29.061296+00:00",
+    "actions_run_id": 43915830785,
+    "actions_attempt": 1,
+    "worker_id": "6c105f48a7054a17ae636c3f7bd0d5c3"
+  },
+  "independently_downloaded_without_authentication": true
+}
