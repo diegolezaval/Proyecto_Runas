@@ -1,0 +1,82 @@
+name: CP12 P4 tercera malla hasta τ160
+
+on:
+  push:
+    branches: [administracion/cp12-p4-tercera-malla]
+    paths: [herramientas/cp12_reanudacion/INICIAR_P4_TERCERA_MALLA.json]
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: cp12-p4-tercera-malla-7c096442a7c34397b5c13e097461dd70
+  cancel-in-progress: false
+
+jobs:
+  evolucion:
+    name: CP12 tercera malla · ejecutor ${{ matrix.candidato }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        candidato: [1, 2, 3, 4, 5, 6]
+    env:
+      CP12_CANDIDATE: P4
+      CP12_MALLA_SLOT: ${{ matrix.candidato }}
+      GH_TOKEN: ${{ github.token }}
+      GIT_TERMINAL_PROMPT: '0'
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: true
+          sparse-checkout: herramientas
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12.14'
+          architecture: x64
+      - name: Verificar el entorno original
+        id: entorno
+        run: |
+          python -m pip install numpy==2.3.5 scipy==1.17.0 matplotlib==3.10.8 threadpoolctl==3.6.0
+          python - <<'PY'
+          import os
+          import numpy, scipy.linalg
+          from threadpoolctl import threadpool_info
+          pools = threadpool_info()
+          print([(p["architecture"],p["num_threads"]) for p in pools])
+          compatible = bool(pools) and all(p["architecture"] == "SkylakeX" and p["num_threads"] == 1 for p in pools)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              output.write("compatible=" + str(compatible).lower() + "\n")
+          PY
+      - name: Recuperar y avanzar solo la malla h=.03125
+        if: steps.entorno.outputs.compatible == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          PYTHONPATH=herramientas python -m cp12_reanudacion.p4_tercera_hospedada --trabajo "$RUNNER_TEMP/cp12-p4-tercera"
+
+  constatar:
+    name: Acreditar el cierre publicado
+    needs: evolucion
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Contrastar la frontera con GitHub
+        run: |
+          path='checkpoints/CP12/p4_20261115/tercera_malla_20261116/ESTADO_REANUDACION.json'
+          commit=$(gh api "repos/$GITHUB_REPOSITORY/commits?sha=ciencia%2Fcp12-p4-20261115&per_page=1" --jq '.[0].sha')
+          gh api "repos/$GITHUB_REPOSITORY/contents/$path?ref=$commit" --jq '.content' | base64 -d > estado.json
+          jq -e '.execution_uuid == "7c096442a7c34397b5c13e097461dd70"' estado.json
+          jq -e '(.status == "COMPLETADA_TAU160" and .last_closed_boundary == 160 and .latest_full_frontier_proof.recovery_receipt != null) or (.status == "SUSPENDIDA_POR_PUERTA" and .failure_receipt != null)' estado.json
+          echo "[Estado publicado](https://github.com/$GITHUB_REPOSITORY/blob/$commit/$path)" >> "$GITHUB_STEP_SUMMARY"
