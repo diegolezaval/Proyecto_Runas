@@ -4,5 +4,11 @@
   "preregistration_commit": "b922bfa8e4ab72ef683b5ff9c942854798626e82",
   "registration_sha256": "d483b830b3c8bed753ce16f68a29a217b31ada2fa87227d0ca05eef6029312fd",
   "execution_uuid": "7c096442a7c34397b5c13e097461dd70",
-  "execution_run_id": "3d18aa7331f9ee11be04742e7b12a41e2499cc17646c0bd48730665fda7557ba"
+  "execution_run_id": "3d18aa7331f9ee11be04742e7b12a41e2499cc17646c0bd48730665fda7557ba",
+  "administrative_retry": {
+    "previous_actions_run": 43915406653,
+    "previous_actions_attempt": 1,
+    "M2_steps_executed_in_previous_attempt": 0,
+    "reason": "El origen hospedado rechazó la identidad del entorno; recuperar el compilador original mediante preparacion.environment."
+  }
 }

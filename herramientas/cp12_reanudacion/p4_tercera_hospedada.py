@@ -7,6 +7,7 @@ import shutil
 import stat
 import subprocess
 import sys
+from types import SimpleNamespace
 import uuid
 import zipfile
 
@@ -14,6 +15,7 @@ from .campana_hospedada import download, upload
 from .infra import Destinations, Git, REPO, Stop, Timings, asset_identity, asset_url
 from .infra import digest, encoded, install, now, read, record, require, sha
 from .p4_tercera_fisica import METRICS, PHASE
+from .preparacion import environment
 
 
 ROOT = "checkpoints/CP12/p4_20261115/tercera_malla_20261116"
@@ -116,7 +118,7 @@ class Campaign:
             return False
         if current:
             evidence = previous_attempt(current)
-            self.claim["previous_attempt"] = dict(evidence, prior_worker_exit_observed=False)
+            self.claim["previous_attempt"] = dict(evidence, accredited_by="GitHub Actions")
         self.head = head
         try:
             self.publish({CLAIM: encoded(self.claim)}, "CP12/P4 tercera malla: reservar un único trabajador")
@@ -161,13 +163,17 @@ class Campaign:
         args = [sys.executable, "-m", "cp12_reanudacion.p4_tercera_fisica", action,
                 "--registro", str(self.reg_path), "--home", str(self.work / "origen_piloto"),
                 "--carpeta", str(folder), *(str(v) for v in extra)]
-        with subprocess.Popen(args) as process:
+        with subprocess.Popen(args, env=self.env) as process:
             pid = process.pid
             exit_code = process.wait()
+        observed = dict(operation=action, PID=pid, observed_exit=True, exit_code=exit_code, observed_at=now(),
+                        actions_run_id=self.claim["actions_run_id"], actions_attempt=self.claim["actions_attempt"],
+                        worker_id=self.claim["worker_id"])
+        if exit_code not in codes:
+            path = f"{ROOT}/incidencias/SALIDA_{self.claim['worker_id']}_{action}_{pid}.json"
+            self.publish({path: encoded(observed)}, "CP12/P4 tercera malla: registrar salida administrativa")
         require(exit_code in codes, f"{action} terminó con código {exit_code}")
-        return dict(operation=action, PID=pid, observed_exit=True, exit_code=exit_code, observed_at=now(),
-                    actions_run_id=self.claim["actions_run_id"], actions_attempt=self.claim["actions_attempt"],
-                    worker_id=self.claim["worker_id"])
+        return observed
 
     def restore(self):
         proof = self.state["latest_full_frontier_proof"]
@@ -239,6 +245,7 @@ class Campaign:
         else:
             exit_info = self.worker("tramo", local, "--anterior", previous, "--objetivo", t, codes=(0, 2))
         record(local / "SALIDA.json", exit_info)
+        record(local / "ENTORNO.json", self.fingerprint)
         shutil.copyfile(self.reg_path, local / "REGISTRO.json")
         if exit_info["exit_code"] == 0:
             pilot, metric = self.pilot(t, room)
@@ -307,6 +314,10 @@ class Campaign:
             return
         origin, _ = self.pilot(0, self.work / "origen_publico")
         unzip(origin, self.work / "origen_piloto")
+        origin_recovery = self.git.json(self.reg["pilot_commit"], self.reg["pilot_frontiers"]["0"]["receipt"])
+        dependencies = SimpleNamespace(head=self.reg["pilot_commit"], frontier_receipt=origin_recovery["recovery"])
+        self.env, self.fingerprint = environment(
+            self.git, dependencies, self.destinations, self.destinations.assets(), self.work)
         previous = self.restore()
         start = 0 if previous is None else self.state["last_closed_boundary"] + 8
         for t in range(start, 161, 8):
