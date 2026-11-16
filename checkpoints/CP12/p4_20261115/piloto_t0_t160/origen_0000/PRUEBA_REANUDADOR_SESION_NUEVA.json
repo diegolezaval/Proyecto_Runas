@@ -1,0 +1,32 @@
+{
+  "schema": "CP12_P4_DOS_SESIONES_REANUDADOR_V1",
+  "passed": true,
+  "audits": [
+    {
+      "passed": true,
+      "clock": 0.0,
+      "M2_steps_executed": 0,
+      "DOP853_construction_or_step_attempts": 0
+    },
+    {
+      "passed": true,
+      "clock": 0.0,
+      "M2_steps_executed": 0,
+      "DOP853_construction_or_step_attempts": 0
+    }
+  ],
+  "exclusivity": {
+    "candidate_claims": 2,
+    "selected_workers": 1,
+    "allocation_id": "p4_piloto_0_a8_hospedada_20261115",
+    "frontier_sha256": "677545bf06d8f96067e5844cdfcfce1484013ba8beb83bbe1efc1436b4b6791c",
+    "observer_clock": 0,
+    "M2_steps_executed": 0,
+    "separate_new_session_readback": true,
+    "production_worker_started_during_fixture": false
+  },
+  "execution_uuid": "8a6775db0628457ca53ffece57c210d3",
+  "execution_run_id": "1494ea1de6f7c1c084b99b4fa7e9892fc74d0c7089cdbc96dea82d334829cc18",
+  "at": "2026-11-16T00:40:15.246187+00:00",
+  "M2_steps_executed": 0
+}
