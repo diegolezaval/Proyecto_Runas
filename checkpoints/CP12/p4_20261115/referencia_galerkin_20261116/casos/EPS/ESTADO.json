@@ -4,24 +4,14 @@
   "registration_sha256": "7dc96b561dc7df3792780bb352b926f9e3b43fff16badcd47170d545f45ab63d",
   "trajectory_id": "95a7c3d7cc6ac9d231fc61867cd73ac5d62b4219f47d0d116ada80e1a1f40f99",
   "status": "VERIFICADA",
-  "last_closed_time": 24,
+  "last_closed_time": 32,
   "latest": {
-    "time": 24,
-    "receipt": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/casos/EPS/tau0024/RECUPERACION_PUBLICA.json",
-    "sha256": "5a03ad2a71fe87b14746edd6f177e8433e088e9d1df0b422a50fea7d6a8f418b"
+    "time": 32,
+    "receipt": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/casos/EPS/tau0032/RECUPERACION_PUBLICA.json",
+    "sha256": "47c7c1060155594d7a434ee6307fab8e1957552fca56dd69fe23e8b49caa03ad"
   },
-  "pending": {
-    "file_name": "CP12_P4_GALERKIN_0504f26a56f91b820ffa7a77d917582b_EPS_TAU0032_43976276645_1.zip",
-    "bytes": 3308660,
-    "sha256": "47c7c1060155594d7a434ee6307fab8e1957552fca56dd69fe23e8b49caa03ad",
-    "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
-    "case": "EPS",
-    "registration_sha256": "7dc96b561dc7df3792780bb352b926f9e3b43fff16badcd47170d545f45ab63d",
-    "trajectory_id": "95a7c3d7cc6ac9d231fc61867cd73ac5d62b4219f47d0d116ada80e1a1f40f99",
-    "state_sha256": "81ba808de095432fdba18c4d919dc7bd7d0c3e4ca16cedcaea6ed08bde4ed53e",
-    "target": 32
-  },
-  "updated_at": "2026-11-16T23:54:07.803335+00:00",
+  "pending": null,
+  "updated_at": "2026-11-16T23:54:16.550800+00:00",
   "stage_repair": "1abbebd6b56301f369c742b0b0cab47f92927677",
   "prior_failure": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/incidencias/eps_43973602565/RECUPERACION_PUBLICA.json"
 }
