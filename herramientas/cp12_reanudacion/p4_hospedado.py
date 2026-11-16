@@ -12,9 +12,9 @@ from types import SimpleNamespace
 
 from . import campana_hospedada as campaign, supervisor
 from .evidencia import checked_audits, resolve
-from .infra import (AUDITOR, BRANCH, CANDIDATE, CLAIM, HYBRID, ROOT, STATE, TAG, UID,
-                    Destinations, Git, Timings, digest, encoded, find_asset, install,
-                    module, now, read, record, require, sha)
+from .infra import (AUDITOR, BRANCH, CANDIDATE, CLAIM, HYBRID, PREFIX, ROOT, STATE, TAG, UID,
+                    Destinations, Git, Timings, digest, encoded, find_asset, module,
+                    now, read, require, sha)
 from .preparacion import environment
 
 
@@ -44,6 +44,24 @@ def source_control(git, head, work):
     reg = read(local / ROOT / "REGISTRO_PREFLIGHT.json")
     require(reg["execution_uuid"] == UID, "La preparación pertenece a otro P4")
     return local
+
+
+def audit_reused_origin(base, auditor, archive, work, asset):
+    extractor = module(auditor, "_cp12_p4_unpack_previous_origin")
+    home = work / "origen_reutilizado"
+    manifest = extractor.unpack(archive, home, asset["digest"].removeprefix("sha256:"), asset["size"])
+    require(manifest["schema"] == "CP12_P4_FORWARD_CAPSULE_V2" and manifest["kind"] == "boundary" and
+            manifest["observer_clock"] == manifest["closed_boundary"] == 0 and not manifest["capacity_probe"],
+            "El intento anterior no dejó una frontera P4 de origen")
+    audited = base.audit(home, "boundary", 0, work / "auditoria_origen_anterior")
+    for name, item in manifest["files"].items():
+        path = home / name
+        require(path.stat().st_size == item["bytes"] and sha(path) == item["sha256"],
+                "Una carga del origen cambió durante la nueva auditoría")
+    return dict(passed=True, scope="Adjunto anterior recuperado y auditado en sesión GitHub nueva",
+                exact_manifest_coverage=True, all_payload_hashes_verified_before_and_after=True,
+                payload_files=len(manifest["files"]), kind="boundary", original_audits=audited,
+                M2_steps_executed=0, CP12_closed=False)
 
 
 def origin(work):
@@ -83,33 +101,46 @@ def origin(work):
     require(asset and asset["id"] == historical["github_asset_id"], "Cápsula científica de origen distinta")
     env, fingerprint = environment(git, plan, dest, listed, work)
     os.environ.update(env)
-    prior_zip = dest.archive(source, public=asset)
-    home = work / "instancia_p4"
-    identity_path = work / "identidad.json"
-    campaign.command(sys.executable, "-B", local / ROOT / "preparar_origen.py",
-                     "--archivo", prior_zip, "--instancia", home,
-                     "--certificado", local / ROOT / "CERTIFICADO_CONTROLES_P4.json",
-                     "--recibo", identity_path, env=env)
-    identity = read(identity_path)
-    require(identity["execution_uuid"] == UID and identity["M2_steps_executed"] == 0,
-            "El preparador devolvió otra instancia o avanzó M2")
     ticket = read(CONTROL)
-    require(identity["execution_run_id"] == ticket["execution_run_id"] and
-            identity["audit"]["state_sha256"] == ticket["tau0_state_sha256"],
-            "La reconstrucción hospedada no coincide con el origen P4 auditado localmente")
     py = local / HYBRID / "base_preservar.py"
     auditor = local / AUDITOR
     base = module(py, "_cp12_p4_preserver")
-    label = f"FRONTERA_0000_P4_ORIGEN_{run}_{attempt}"
-    prepared = base.prepare(home, work / "origen", label, "boundary", 0, 0)
-    path = Path(prepared["archive_path"])
-    asset = campaign.upload(path, dest)
-    restored_zip = campaign.download(asset, work / path.name)
-    exact = base.recover(restored_zip, prepared, work / "recuperacion", auditor)
-    exact.pop("recovered_home")
+    handoff = ticket.get("recover_origin")
+    if handoff:
+        old_report = campaign.accredit_previous_runner(handoff["actions_run_id"], handoff["actions_attempt"])
+        expected_name = f"{PREFIX}FRONTERA_0000_P4_ORIGEN_{old_report['id']}_{old_report['run_attempt']}.zip"
+        previous = find_asset(listed, dict(handoff, file_name=expected_name))
+        require(previous and previous["id"] == handoff["github_asset_id"], "Adjunto anterior de τ0 distinto")
+        asset = previous
+        restored_zip = campaign.download(asset, work / asset["name"])
+        exact = audit_reused_origin(base, auditor, restored_zip, work, asset)
+        identity = read(local / ROOT / "ORIGEN_LOCAL.json")
+    else:
+        prior_zip = dest.archive(source, public=asset)
+        home = work / "instancia_p4"
+        identity_path = work / "identidad.json"
+        campaign.command(sys.executable, "-B", local / ROOT / "preparar_origen.py",
+                         "--archivo", prior_zip, "--instancia", home,
+                         "--certificado", local / ROOT / "CERTIFICADO_CONTROLES_P4.json",
+                         "--recibo", identity_path, env=env)
+        identity = read(identity_path)
+        label = f"FRONTERA_0000_P4_ORIGEN_{run}_{attempt}"
+        prepared = base.prepare(home, work / "origen", label, "boundary", 0, 0)
+        path = Path(prepared["archive_path"])
+        asset = campaign.upload(path, dest)
+        restored_zip = campaign.download(asset, work / path.name)
+        exact = base.recover(restored_zip, prepared, work / "recuperacion", auditor)
+        exact.pop("recovered_home")
     audited = exact["original_audits"]["boundary"]
+    require(identity["execution_uuid"] == audited["execution_uuid"] == UID and
+            identity["execution_run_id"] == audited["run_id"] == ticket["execution_run_id"] and
+            identity["audit"]["state_sha256"] == audited["state_sha256"] == ticket["tau0_state_sha256"] and
+            identity["audit"]["configuration_sha256"] == audited["configuration_sha256"] and
+            identity["M2_steps_executed"] == audited["M2_steps_executed"] == 0,
+            "El adjunto hospedado no coincide con la identidad, estado y configuración P4 locales")
     spec = dict(schema="CP12_P4_FORWARD_PUBLIC_RECOVERY_V2", kind="boundary", observer_clock=0,
-                github_asset_id=asset["id"], sha256=prepared["sha256"], bytes=prepared["bytes"], passed=True,
+                github_asset_id=asset["id"], sha256=asset["digest"].removeprefix("sha256:"),
+                bytes=asset["size"], passed=True, reused_from_previous_hosted_attempt=bool(handoff),
                 M2_steps_executed=0, recovery=exact, file_name=asset["name"], github_release_tag=TAG,
                 github_reported_digest=asset["digest"], browser_download_url=asset["browser_download_url"],
                 independently_downloaded_without_authentication=True)
@@ -133,7 +164,7 @@ def origin(work):
     allocation = dict(schema="CP12_P4_FORWARD_SEGMENT_V2", allocation_id=campaign.allocation_name(0, 8),
                       execution_uuid=UID, execution_run_id=identity["execution_run_id"],
                       kind="boundary", clock=0, closed_boundary=0, target=8,
-                      source_archive_sha256=prepared["sha256"], closed_state_sha256=audited["state_sha256"],
+                      source_archive_sha256=spec["sha256"], closed_state_sha256=audited["state_sha256"],
                       receipt_sha256=audited["receipt_sha256"], configuration_sha256=audited["configuration_sha256"],
                       source_github_asset_id=asset["id"], source_recovery_evidence=proof["recovery_receipt"],
                       original_auditor_sha256=sha(auditor),
@@ -148,9 +179,9 @@ def origin(work):
                  latest_recoverable_observer_clock=0, latest_recoverable_kind="boundary", current_target=8,
                  current_assignment=FIRST_ASSIGNMENT, current_own_worker_status="FRONTERA_PUBLICA_VERIFICADA",
                  own_exit_observed=False, CP12_closed=False, correction_validated=False, updated_at=now())
-    certificate = dict(schema="CP12_P4_TAU0_PERMANENTLY_RECOVERED", passed=True, time=0,
+    certificate = dict(identity, schema="CP12_P4_TAU0_PERMANENTLY_RECOVERED", passed=True, time=0,
                        state_sha256=audited["state_sha256"], configuration_sha256=audited["configuration_sha256"],
-                       receipt_sha256=audited["receipt_sha256"], **identity, environment=fingerprint)
+                       receipt_sha256=audited["receipt_sha256"], audit=audited, environment=fingerprint)
     git.publish(head, {ORIGIN_LOCK: None, STATE: encoded(state), FIRST_ASSIGNMENT: encoded(allocation),
                        proof["certificate"]: encoded(certificate), proof["recovery_receipt"]: encoded(spec),
                        proof["original_spatial_and_physical_metrics"]: encoded(metrics)},

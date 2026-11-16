@@ -112,9 +112,9 @@ jobs:
           import json, os
           from pathlib import Path
           state = json.loads(Path("estado.json").read_bytes())
-          proof = state["latest_full_frontier_proof"]
+          proof = state.get("latest_full_frontier_proof") or {}
           if (state["execution_uuid"] != "8a6775db0628457ca53ffece57c210d3" or
-              proof["observer_clock"] < int(os.environ["P4_OBJETIVO"]) or not proof["passed"] or
+              proof.get("observer_clock", -1) < int(os.environ["P4_OBJETIVO"]) or not proof.get("passed") or
               not proof["all_five_spatial_and_physical_gates_passed"] or
               proof["M2_steps_executed_during_recovery_and_metrics"] != 0):
               raise SystemExit("GitHub todavía no acredita el checkpoint exigido.")
