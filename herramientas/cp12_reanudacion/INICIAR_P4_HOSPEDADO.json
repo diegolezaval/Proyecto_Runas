@@ -12,6 +12,8 @@
   "spatial_threshold": 0.02,
   "requires_hosted_zero_step_origin_audit": true,
   "requires_hosted_fresh_session_recovery_and_exclusivity": true,
+  "recovery_dependency_commit": "4a77c99fc579b5ee762800de345f718ed8b4bd4a",
+  "transport_recovery_commit": "8a2cfcfc8c0c6cd994bf85396e2953b56a7a171c",
   "recover_origin": {
     "actions_run_id": 43755652297,
     "actions_attempt": 1,

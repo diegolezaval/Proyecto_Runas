@@ -657,6 +657,18 @@ def verificar_origen(code, archive, job):
     audits = base.audit(home, spec["kind"], spec["closed_boundary"], job / "auditoria")
     checked_audits(audits, spec)
     payloads(home, manifest)
+    if CANDIDATE == "P4":
+        control = plan.registry["transport_registration"]
+        require(control["path"] == CAMPAIGN + "/origen_0000/REGISTRO_TRANSPORTE.json",
+                "Ruta ajena a la preparación de transporte de P4")
+        data = git.get(plan.head, control["path"])
+        require(digest(data) == control["sha256"], "Registro P4 de transporte alterado")
+        transport = json.loads(data)
+        require(transport["execution_uuid"] == UID and
+                transport["execution_run_id"] == plan.state["execution_run_id"] and
+                all(sha(home / name) == checksum for name, checksum in transport["files"].items()),
+                "El registro de transporte no corresponde al estado P4 recuperado")
+        install(home / "preregistration/registro_transporte.json", data, once=True)
     _, _, _, _, _, _, clock, _ = original.restore(home, plan.registry)
     require(clock == spec["observer_clock"], "La restauración exacta devolvió otro reloj")
     record(job / "RESTAURACION_EXACTA.json", dict(passed=True, clock=clock, M2_steps_executed=0,

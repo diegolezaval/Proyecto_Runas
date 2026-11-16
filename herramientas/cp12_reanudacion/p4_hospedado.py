@@ -161,6 +161,7 @@ def origin(work):
                  original_spatial_and_physical_metrics=ORIGIN + "/METRICAS_ORIGINALES.json",
                  all_five_spatial_and_physical_gates_passed=True, initial_Cauchy_audit=True,
                  M2_steps_executed_during_recovery_and_metrics=0, CP12_closed=False)
+    transport_path = ORIGIN + "/REGISTRO_TRANSPORTE.json"
     allocation = dict(schema="CP12_P4_FORWARD_SEGMENT_V2", allocation_id=campaign.allocation_name(0, 8),
                       execution_uuid=UID, execution_run_id=identity["execution_run_id"],
                       kind="boundary", clock=0, closed_boundary=0, target=8,
@@ -168,10 +169,12 @@ def origin(work):
                       receipt_sha256=audited["receipt_sha256"], configuration_sha256=audited["configuration_sha256"],
                       source_github_asset_id=asset["id"], source_recovery_evidence=proof["recovery_receipt"],
                       original_auditor_sha256=sha(auditor),
-                      administrative_sources={n: sha(local / HYBRID / n) for n in ("base_preservar.py", "continuar.py")},
+                      administrative_sources={n: sha(local / HYBRID / n) for n in
+                                              ("base_preservar.py", "continuar.py", "preservar.py", "POLITICA.json")},
                       hosted_executor_sha256=sha(campaign.__file__),
                       hosted_recovery_certificate_sha256=sha(campaign.RECIPIENT),
                       hosted_final_reader_sha256=sha(campaign.ADMIN / "p3_final.py"),
+                      transport_registration=dict(path=transport_path, sha256=digest(git.get(head, transport_path))),
                       source_frontier_commit=head, registered_at_utc=now(), registered_before_M2=True)
     state = dict(schema="CP12_P4_CANONICAL_RECOVERY_REGISTER", branch=BRANCH,
                  execution_uuid=UID, execution_run_id=identity["execution_run_id"],
