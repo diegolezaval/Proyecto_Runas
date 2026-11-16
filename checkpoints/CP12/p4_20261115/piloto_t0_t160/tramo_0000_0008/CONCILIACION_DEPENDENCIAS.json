@@ -1,0 +1,14 @@
+{
+  "schema": "CP12_P4_RECONCILIACION_DEPENDENCIAS_V1",
+  "type": "ADMINISTRATIVO_RECUPERABLE",
+  "failed_actions_run": 43780774589,
+  "failed_job": 133017485780,
+  "exception": "ModuleNotFoundError: No module named 'preservar'",
+  "verified_tau0_asset": 752185496,
+  "physical_M2_steps_executed": 0,
+  "prior_registry_blob": "d21a9c696499a2e6b70d135019ec46eda45de24b",
+  "registered_support": {
+    "preserver_sha256": "71ce24613f71ffbc8ecf6ecc3ad1547eca7f88732589d7282d64e01d1935d9ea",
+    "policy_sha256": "fb6f61c5968b85b98e03ab1da79663b4959dd2728c612f95265f421640cd3661"
+  }
+}
