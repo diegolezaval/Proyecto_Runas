@@ -134,6 +134,15 @@ def main():
     for name in ("radial.py", "force.c", "fisica.py", "controles.py"):
         require((Path(__file__).with_name(name)).read_bytes() == ctx.git.get(
             approved_code, "herramientas/cp12_galerkin/" + name), "Cambió un núcleo registrado: " + name)
+    if ctx.activation.get("stage_recovery"):
+        repair = ctx.activation["stage_recovery"]
+        evidence_commit = ctx.git.pin(repair["amendment_commit"])
+        evidence = ctx.json(ctx.root + "/incidencias/EPS_ETAPAS_CONGELADAS.json", base=evidence_commit)
+        require(evidence["passed"] and evidence["identical_step_and_tolerances"]
+                and evidence["M2_steps_executed"] == 0 and evidence["campaign_uuid"] == ctx.reg["campaign_uuid"]
+                and evidence["source_state_sha256"] == repair["state_sha256"]
+                and evidence["correction_code_sha256"] == sha(Path(__file__).with_name("etapas_estables.py")),
+                "La recuperación de etapas carece de comprobación independiente")
     if args.phase == "comparar":
         from lectura import analyze
 

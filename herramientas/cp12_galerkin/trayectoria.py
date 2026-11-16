@@ -9,7 +9,8 @@ import numpy as np
 from cp12_reanudacion.campana_hospedada import download, published_asset, upload
 from cp12_reanudacion.infra import asset_identity, asset_url, digest, encoded, now, read, record, require, sha
 from cp12_reanudacion.p4_tercera_hospedada import make_capsule, unzip, verify_payload
-from fisica import Gauss8, M2, use_compensated_controls
+from etapas_estables import GaussConCorreccion
+from fisica import M2, use_compensated_controls
 from radial import Angular, RADIUS
 
 BOUNDARY = "VERIFICADA"
@@ -94,6 +95,7 @@ class Series:
             **self.identity, status="ORIGEN", last_closed_time=None, latest=None, pending=None)
         require(all(self.state[k] == v for k, v in self.identity.items()), "Registro de otra trayectoria")
         self.cfg = ctx.reg["cases"][case]
+        self.transport = None
 
     def publish(self, files, verb):
         self.state.update(updated_at=now())
@@ -136,6 +138,49 @@ class Series:
               flush=True)
         return state if proof["passed"] else None
 
+    def restore_stage_transport(self, repair):
+        ctx = self.ctx
+        reg = self.state.get("stage_repair")
+        require(reg and self.state["last_closed_time"] == 0,
+                "El transporte de etapas exige conservar el origen válido")
+        receipt = ctx.json(repair["negative_receipt"], base=repair["amendment_commit"])
+        require(not receipt["passed"] and receipt["state_sha256"] == repair["state_sha256"]
+                and receipt["sha256"] == repair["archive_sha256"]
+                and receipt["github_asset_id"] == repair["asset_id"], "El negativo de etapas cambió")
+        extracted, _ = self.restore_file(receipt, "transporte-etapas")
+        path = extracted / "ESTADO.npz"
+        before = sha(path)
+        data = read_state(path, self.identity)
+        control = read(extracted / "PUERTAS.json")
+        require(control["failure"] == "Las cuatro etapas Galerkin no convergieron"
+                and all(control["physical"].values()) and before == receipt["state_sha256"]
+                and data["steps"] == repair["accepted_steps"]
+                and data["time"] == data["steps"] * self.cfg["dt"], "El transporte no es el último paso aceptado")
+        rows = data["rows"]
+        sample_steps = round(.4 / self.cfg["dt"])
+        expected = np.arange(data["steps"] // sample_steps + 1) * .4
+        require(np.array_equal(expected, rows[:, 0]), "Prefijo de observaciones alterado")
+        model = model_at(ctx, self.case, data["basis"])
+        u, v = data["u"], data["v"]
+        initial_u, initial_v = model.initialize()
+        require(np.allclose(data["initial_u"], initial_u, rtol=2e-12, atol=2e-12)
+                and np.allclose(data["initial_v"], initial_v, rtol=2e-12, atol=2e-12), "Cauchy transportada distinta")
+        physical = use_compensated_controls(model, (u, v, rows, data["balance"]), ctx.reg["physical_limits"])
+        e, q = model.energies(u, v)
+        energy, charge = float(abs(e/rows[0, 1]-1)), float(abs(q/rows[0, 2]-1))
+        limits = ctx.reg["physical_limits"]
+        require(all(physical.values()) and energy <= limits["energy_drift_max"] and charge <= limits["charge_drift_max"]
+                and sha(path) == before, "Balance del último paso aceptado fuera de puerta")
+        proof = dict(**self.identity, hosted=ctx.hosted, time=data["time"], state_sha256=before,
+                     source_asset_id=receipt["github_asset_id"], source_archive_sha256=receipt["sha256"],
+                     steps_already_accepted=data["steps"], passed=True, physical=physical,
+                     recovered_endpoint_balance=dict(energy=energy, charge=charge),
+                     is_checkpoint=False, last_certified_boundary=0, M2_steps_executed=0)
+        location = f"{self.path}/TRANSPORTE_ETAPAS_{ctx.hosted['run_id']}_{ctx.hosted['attempt']}.json"
+        self.publish({location:proof}, "acreditar transporte del último paso aceptado")
+        self.transport = self.ctx.root + "/" + location
+        return path
+
     def initialize(self):
         if self.state["pending"]:
             pending = self.state["pending"]
@@ -145,6 +190,9 @@ class Series:
             self.state["pending"] = None
         if self.state["latest"] is None:
             return None
+        repair = self.ctx.activation.get("stage_recovery")
+        if repair and self.case == "EPS" and self.state["last_closed_time"] == 0:
+            return self.restore_stage_transport(repair)
         receipt = self.ctx.json(self.state["latest"]["receipt"])
         require(receipt["sha256"] == self.state["latest"]["sha256"] and receipt["passed"]
                 and receipt["time"] == self.state["last_closed_time"]
@@ -158,20 +206,28 @@ class Series:
     def run(self, until):
         ctx = self.ctx
         if self.state["status"] == "SUSPENDIDA":
-            return 2
+            repair = ctx.activation.get("stage_recovery")
+            if not repair or self.case != "EPS" or self.state["failure"] != repair["original_failure_receipt"]:
+                return 2
+            negative = ctx.json(self.state["failure"])
+            if negative["sha256"] != repair["archive_sha256"]:
+                return 2
+            self.state.update(status=BOUNDARY, stage_repair=repair["amendment_commit"],
+                              prior_failure=repair["negative_receipt"])
+            self.state.pop("failure")
+            self.publish({}, "reconciliar el fallo de resolución y recuperar el paso aceptado")
         previous = self.initialize()
         if self.state["status"] == "SUSPENDIDA":
             return 2
         prior = read_state(previous, self.identity) if previous is not None else None
         self.model = model_at(ctx, self.case, prior["basis"] if prior else None)
-        self.stepper = Gauss8(self.model, self.cfg)
+        self.stepper = GaussConCorreccion(self.model, self.cfg)
         if prior:
-            time_from = int(prior["time"])
             u, v = prior["u"], prior["v"]
             q0, v0 = prior["initial_u"], prior["initial_v"]
             steps = prior["steps"]
             rows, balance = prior["rows"].tolist(), prior["balance"]
-            first_target = time_from + 8
+            first_target = self.state["last_closed_time"] + 8
         else:
             u, v = self.model.initialize()
             q0, v0 = u.copy(), v.copy()
@@ -181,7 +237,8 @@ class Series:
         for target in range(first_target, until+1, 8):
             t0 = steps
             allocation = dict(**self.identity, hosted=ctx.hosted, target=target, start_accepted_steps=steps,
-                              source_frontier=self.state["latest"], registered_before_advancing=True)
+                              source_frontier=self.state["latest"], exact_transport=self.transport,
+                              registered_before_advancing=True)
             folder = f"{self.path}/tau{target:04d}"
             instance = f"{ctx.hosted['run_id']}_{ctx.hosted['attempt']}"
             self.publish({f"{folder}/ASIGNACION_{instance}.json": allocation}, f"registrar el tramo a τ{target}")
@@ -221,6 +278,7 @@ class Series:
                            physical=physical, balance=balance.copy(), failure=failure, solver="Gauss–Legendre 4",
                            steps_this_segment=steps-t0, total_steps=steps, environment=ctx.environment(),
                            max_iterations=self.stepper.max_iterations,
+                           residual_fallback_steps=self.stepper.residual_fallback_steps,
                            max_normalized_stage_change=self.stepper.max_normalized_change,
                            wall_seconds=time.perf_counter()-start)
             record(working / "PUERTAS.json", summary)
@@ -233,4 +291,5 @@ class Series:
             asset = upload(archive, ctx.destinations)
             if self.close_publication(pending, asset) is None:
                 return 2
+            self.transport = None
         return 0

@@ -5,5 +5,21 @@
   "phase": "production",
   "preflight_commit": "ebb03f746902f33605556b6382631c49b2484897",
   "preflight_run_id": 43972518428,
-  "source_code_read_only": "65f2015d63e86340056d07fdaca269261b7b259b"
+  "source_code_read_only": "65f2015d63e86340056d07fdaca269261b7b259b",
+  "stage_recovery": {
+    "amendment_commit": "1abbebd6b56301f369c742b0b0cab47f92927677",
+    "original_failure_receipt": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/casos/EPS/tau0008/RECUPERACION_PUBLICA.json",
+    "negative_receipt": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/incidencias/eps_43973602565/RECUPERACION_PUBLICA.json",
+    "state_sha256": "59cd63475972d945e87485725b794a94c1df5ed8114e2410498170b3012f052a",
+    "archive_sha256": "46450929c3560c1e112eead590afa2dce09944c48da0327c9951fd726c588ac3",
+    "asset_id": 756769135,
+    "accepted_steps": 830,
+    "prior_attempt": {
+      "id": 43973602565,
+      "status": "completed",
+      "conclusion": "failure",
+      "finished_at": "2026-11-16T23:04:20Z"
+    },
+    "diag_run_id": 43975484306
+  }
 }
