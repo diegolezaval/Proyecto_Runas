@@ -1,0 +1,180 @@
+{
+  "kind": "boundary",
+  "observer_clock": 152,
+  "closed_boundary": 152,
+  "file_name": "CP12_CANDIDATO_P4_8a6775db0628457ca53ffece57c210d3_CONTROL_P4_PILOTO_152_A160_HOSPEDADA_20261115_4D5F20B42AFB4AA0B3B5551A2C0B811E.zip",
+  "bytes": 236240281,
+  "sha256": "d4e6b20004a0e30159175b3a6154b673b3d1ec4bb5353dfe8ab605796d06fc84",
+  "passed": true,
+  "encrypted_asset": {
+    "id": 755072973,
+    "name": "CP12_CANDIDATO_P4_8a6775db0628457ca53ffece57c210d3_CONTROL_P4_PILOTO_152_A160_HOSPEDADA_20261115_4D5F20B42AFB4AA0B3B5551A2C0B811E.cms",
+    "sha256": "80f7f653c531428cd4d610102efbab8d4074ef31a3f1dc8347b5b9800c99b9b4",
+    "bytes": 236241208,
+    "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_CANDIDATO_P4_8a6775db0628457ca53ffece57c210d3_CONTROL_P4_PILOTO_152_A160_HOSPEDADA_20261115_4D5F20B42AFB4AA0B3B5551A2C0B811E.cms"
+  },
+  "public_recipient_sha256": "d5c051aec08e785fd3a38039f54d3f1d6cd26709f2cd17a39a210f77743d16cc",
+  "recovery": {
+    "passed": true,
+    "scope": "Integridad y auditores declarados; negativo implica sólo integridad.",
+    "payload_files": 505,
+    "exact_manifest_coverage": true,
+    "all_payload_hashes_verified_before_and_after": true,
+    "kind": "boundary",
+    "original_audits": {
+      "boundary": {
+        "schema": "CP12_P4_CORRECTION_TRIAL_ZERO_STEP_AUDIT",
+        "time": 152,
+        "passed": true,
+        "tests": {
+          "own_receipt_and_all_output_hashes": true,
+          "original_fourteen_sources_and_all_inputs_unchanged": true,
+          "captured_candidate_and_administrative_sources_unchanged": true,
+          "original_M2_Theta_two_grids_solver_tolerances_and_observer_configuration": true,
+          "original_DOP853_implementation_identity": true,
+          "new_experiment_schema_and_identity": true,
+          "saved_P4_action_identity": true,
+          "time_original_eight_unit_boundary": true,
+          "original_CP10_Cauchy_data_exact": true,
+          "Phi_FV_chi_P4_physical_routing_exact": true,
+          "mixed_passive_routing_exact": true,
+          "mixed_observer_class_selected": true,
+          "initial_or_closed_segment_evaluation_accounting": true,
+          "current_original_and_mixed_energy_rows_reproduced": true,
+          "finite_physical_and_observer_arrays": true,
+          "observation_count_and_original_time_labels": true,
+          "budget_count_and_time_labels": true,
+          "original_FV_energy_gate": true,
+          "consistent_MIXTO_energy_gate": true,
+          "original_charge_gate": true,
+          "original_observer_closure_and_order_gates": true,
+          "original_Parseval_gate": true,
+          "original_symmetry_gate": true,
+          "original_angular_basis_exact_on_restart": true,
+          "independent_reloaded_observer_closure_and_order": true,
+          "independent_reloaded_Parseval": true,
+          "original_extended_force_identity_and_symmetry": true,
+          "MIXTO_full_instantaneous_defect_identity_original_force_scale": true,
+          "original_full_box_chi_closure_gate": true,
+          "zero_M2_restart_no_state_mutation": true
+        },
+        "state_sha256": "cc33e30027dd1dc2ddb13fa62d7f5d2fe8f1a33782347c8f808b54dd241076e0",
+        "configuration_sha256": "32e9ca07eaa6d55ad5479c332e8becf288c44ac8e7613133e6b52ea99b97715d",
+        "receipt_sha256": "a6440dc85f26f43ea536ee317323611d8ad5788aa57202be1f75c35085cb3517",
+        "observation_count": 381,
+        "metadata": [
+          {
+            "t": 152.0,
+            "accepted": 27344,
+            "nfev": 329930,
+            "nfev_live": 0,
+            "maxe": 3.835828321641088e-10,
+            "maxq": 2.3314683517128287e-15,
+            "maxe_original": 3.4954187544400384e-08
+          },
+          {
+            "t": 152.0,
+            "accepted": 27353,
+            "nfev": 330038,
+            "nfev_live": 0,
+            "maxe": 3.8148673109361653e-10,
+            "maxq": 2.1094237467877974e-15,
+            "maxe_original": 9.50623357809377e-09
+          }
+        ],
+        "maximum_errors": {
+          "raw_closure": 3.7843904983551158e-06,
+          "raw_order_difference": 8.067454790226518e-09,
+          "raw_individual_order_difference": 1.8303590000285134e-08,
+          "coupled_closure": 3.7852184715236675e-06,
+          "coupled_order_difference": 1.7496737473012963e-09,
+          "coupled_individual_order_difference": 8.63597230619351e-09,
+          "coupled_Phi_closure": 1.9110725022255646e-10,
+          "coupled_Phi_order_difference": 9.402476451620624e-11,
+          "modal_parseval": 1.788781084190389e-14,
+          "short_core_raw_closure": 3.7878913505054084e-06,
+          "short_core_raw_order_difference": 8.278900139068759e-08,
+          "short_core_coupled_closure": 3.788725303942492e-06,
+          "short_core_coupled_order_difference": 8.542357926331105e-08,
+          "short_smooth_raw_closure": 3.7864289571157866e-06,
+          "short_smooth_raw_order_difference": 7.396126642182071e-08,
+          "short_smooth_coupled_closure": 3.7879656752512826e-06,
+          "short_smooth_coupled_order_difference": 8.528198811779966e-08
+        },
+        "extended_identity": {
+          "mean_jacobian_identity_extended_relative_residual": 4.206722509101732e-31,
+          "prior_longdouble_subtraction_relative_residual": 3.3992385841781113e-15,
+          "weighted_jacobian_symmetry_residual": 6.455909775897172e-17,
+          "fused_passive_jacobian_relative_error": 0.0,
+          "production_force_absolute_scaled_residual": 5.572024711138294e-16,
+          "production_source_residual_absolute": 3.102512170782834e-12,
+          "production_source_difference_scaled_residual": 3.102512170782834e-12,
+          "production_source_absolute_force_scale": 5568.015814037964,
+          "quad_reference_epsilon": 1.925929944387236e-34,
+          "extended_epsilon": 1.0842021724855044e-19,
+          "reference_is_not_evolution": true
+        },
+        "full_instantaneous_identity": 1.1911842997273176e-12,
+        "full_box_chi_closure": {
+          "raw": 3.740584323435254e-06,
+          "coupled": 3.740225514165088e-06
+        },
+        "observed_core_phase_relative_error": 0.009593123291373025,
+        "M2_steps_executed": 0,
+        "experiment_kind": "NEW_P4_DISCRETIZATION_TRIAL",
+        "correction_tested": true,
+        "correction_validated": false,
+        "CP12_closed": false,
+        "run_id": "1494ea1de6f7c1c084b99b4fa7e9892fc74d0c7089cdbc96dea82d334829cc18",
+        "execution_uuid": "8a6775db0628457ca53ffece57c210d3",
+        "original_trajectories_repeated": false,
+        "DOP853_implementation_identity": {
+          "version": "1.17.0",
+          "rk_sha256": "fa5d6300917f4f949e699b116f59ae147159d5c6147d55d940dc9d3303891056",
+          "base_sha256": "4e70402b4c092e0a502dba07e33f91784e1e6d3645710cc8a916fd6e3ead7548"
+        },
+        "DOP853_construction_or_step_attempts": 0
+      }
+    },
+    "M2_steps_executed": 0,
+    "CP12_closed": false
+  },
+  "M2_steps_executed": 0,
+  "environment": {
+    "python": "3.12.14",
+    "executable_sha256": "bef88f140b625959f8af25c7b75cce2cd5d4b29cc2f2b079befd7f68eda4dba0",
+    "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "threadpoolctl": "3.6.0"
+    },
+    "distribution": {
+      "numpy": "d80b526a8549e14dbbe778a710021e7f9d49c16a379dac732548ade204146602",
+      "scipy": "d98e3cc57253f7f8c6ca4f5b775a4747815edc9b1bcd5295c9dacc3c8d49c7b0",
+      "matplotlib": "ca4ff88e1e50df4f69ca0afa86df0ec78e7843e5145144eba4c46abe59841b75",
+      "threadpoolctl": "d3b8f6112d2e654ca703dd4d34e1ecf796a70c852197e6ae7a0e6a838b20210d"
+    },
+    "blas": [
+      {
+        "architecture": "SkylakeX",
+        "threads": 1,
+        "sha256": "ee2039cf13a45e1e89f04d0cea9585657d93ffaa425594e1935161013fdf4e12"
+      },
+      {
+        "architecture": "SkylakeX",
+        "threads": 1,
+        "sha256": "8fb864c29cac4b25f6e2c139491ea96f2724dde42d51394f84e9c4a622e34790"
+      }
+    ],
+    "solver": {
+      "rk_sha256": "fa5d6300917f4f949e699b116f59ae147159d5c6147d55d940dc9d3303891056",
+      "base_sha256": "4e70402b4c092e0a502dba07e33f91784e1e6d3645710cc8a916fd6e3ead7548",
+      "version": "1.17.0"
+    },
+    "compiler_sha256": "6117c52522997d2aaccb2b52b3c6bf42c0a6c5edb1d718431fed6b2fc5fec234"
+  },
+  "public_origin": 755065066
+}
