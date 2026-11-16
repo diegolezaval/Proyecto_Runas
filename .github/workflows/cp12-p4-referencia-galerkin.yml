@@ -10,32 +10,89 @@ concurrency:
   group: cp12-p4-referencia-0504f26a56f91b820ffa7a77d917582b
   cancel-in-progress: false
 jobs:
-  controles:
-    name: Controles previos Galerkin
+  preparar:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
-    env:
-      CP12_CANDIDATE: P4
-      GH_TOKEN: ${{ github.token }}
-      OPENBLAS_NUM_THREADS: '1'
-      OMP_NUM_THREADS: '1'
-      MKL_NUM_THREADS: '1'
-      GIT_TERMINAL_PROMPT: '0'
+    timeout-minutes: 5
+    outputs:
+      phase: ${{ steps.fase.outputs.phase }}
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
-          persist-credentials: true
-          sparse-checkout: herramientas
-      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
-        with:
-          python-version: '3.12.14'
-          architecture: x64
-      - name: Instalar las dependencias fijadas
-        run: python -m pip install numpy==2.3.5 scipy==1.17.0 threadpoolctl==3.6.0 matplotlib==3.10.8
-      - name: Verificar la preparación y el operador con perfiles y prefijos
+          sparse-checkout: herramientas/cp12_galerkin
+      - id: fase
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          export PYTHONPATH="$PWD/herramientas:$PWD/herramientas/cp12_galerkin"
-          python -m compileall -q herramientas/cp12_galerkin
-          python herramientas/cp12_galerkin/hospedado.py --work "$RUNNER_TEMP/cp12-galerkin-controles" --phase preflight
+          jq -r '"phase=" + (.phase | select(. == "preflight" or . == "production"))' herramientas/cp12_galerkin/ACTIVAR.json >> "$GITHUB_OUTPUT"
+  controles:
+    needs: preparar
+    if: needs.preparar.outputs.phase == 'preflight'
+    uses: ./.github/workflows/cp12-p4-galerkin-tramo.yml
+    with:
+      fase: preflight
+      objetivo: 0
+      casos: '["controles"]'
+  evolucion_008:
+    needs: preparar
+    if: needs.preparar.outputs.phase == 'production'
+    uses: ./.github/workflows/cp12-p4-galerkin-tramo.yml
+    with:
+      fase: tramo
+      objetivo: 8
+  comparacion_008:
+    needs: evolucion_008
+    uses: ./.github/workflows/cp12-p4-galerkin-tramo.yml
+    with:
+      fase: comparar
+      objetivo: 8
+      casos: '["lectura"]'
+  evolucion_040:
+    needs: comparacion_008
+    uses: ./.github/workflows/cp12-p4-galerkin-tramo.yml
+    with:
+      fase: tramo
+      objetivo: 40
+  comparacion_040:
+    needs: evolucion_040
+    uses: ./.github/workflows/cp12-p4-galerkin-tramo.yml
+    with:
+      fase: comparar
+      objetivo: 40
+      casos: '["lectura"]'
+  evolucion_080:
+    needs: comparacion_040
+    uses: ./.github/workflows/cp12-p4-galerkin-tramo.yml
+    with:
+      fase: tramo
+      objetivo: 80
+  comparacion_080:
+    needs: evolucion_080
+    uses: ./.github/workflows/cp12-p4-galerkin-tramo.yml
+    with:
+      fase: comparar
+      objetivo: 80
+      casos: '["lectura"]'
+  evolucion_120:
+    needs: comparacion_080
+    uses: ./.github/workflows/cp12-p4-galerkin-tramo.yml
+    with:
+      fase: tramo
+      objetivo: 120
+  comparacion_120:
+    needs: evolucion_120
+    uses: ./.github/workflows/cp12-p4-galerkin-tramo.yml
+    with:
+      fase: comparar
+      objetivo: 120
+      casos: '["lectura"]'
+  evolucion_160:
+    needs: comparacion_120
+    uses: ./.github/workflows/cp12-p4-galerkin-tramo.yml
+    with:
+      fase: tramo
+      objetivo: 160
+  comparacion_160:
+    needs: evolucion_160
+    uses: ./.github/workflows/cp12-p4-galerkin-tramo.yml
+    with:
+      fase: comparar
+      objetivo: 160
+      casos: '["lectura"]'

@@ -27,6 +27,7 @@ REGISTRATION = ROOT + "/REGISTRO.json"
 class Context:
     def __init__(self, scratch):
         self.scratch = scratch
+        self.root = ROOT
         self.scratch.mkdir(parents=True, exist_ok=False)
         self.git = Git(Path.cwd())
         self.activation = read(ACTIVATION)
@@ -113,11 +114,35 @@ def preflight(ctx):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--work", required=True, type=Path)
-    parser.add_argument("--phase", required=True, choices=("preflight",))
+    parser.add_argument("--phase", required=True, choices=("preflight", "tramo", "comparar"))
+    parser.add_argument("--case")
+    parser.add_argument("--until", type=int)
     args = parser.parse_args()
     ctx = Context(args.work)
-    require(ctx.activation["phase"] == args.phase, "Fase ajena a la activación")
-    return preflight(ctx)
+    if args.phase == "preflight":
+        require(ctx.activation["phase"] == args.phase, "Fase ajena a la activación")
+        return preflight(ctx)
+    require(ctx.activation["phase"] == "production" and args.until in (8, 40, 80, 120, 160),
+            "La activación de producción no coincide con este objetivo")
+    control_sha = ctx.git.pin(ctx.activation["preflight_commit"])
+    certificate = ctx.json(ROOT + "/CONTROL_PREVIO.json", base=control_sha)
+    require(certificate["passed"] and certificate["campaign_uuid"] == ctx.reg["campaign_uuid"]
+            and certificate["registration_sha256"] == ctx.reg_hash
+            and certificate["M2_production_started"] is False
+            and certificate["preregistration_commit"] == ctx.prereg, "Faltan controles previos aprobados")
+    approved_code = ctx.git.pin(certificate["hosted"]["admin_commit"])
+    for name in ("radial.py", "force.c", "fisica.py", "controles.py"):
+        require((Path(__file__).with_name(name)).read_bytes() == ctx.git.get(
+            approved_code, "herramientas/cp12_galerkin/" + name), "Cambió un núcleo registrado: " + name)
+    if args.phase == "comparar":
+        from lectura import analyze
+
+        return analyze(ctx, args.until)
+    from trayectoria import Series
+
+    require(args.case in ctx.reg["cases"], "Brazo físico desconocido")
+    ctx.sources()
+    return Series(ctx, args.case).run(args.until)
 
 
 if __name__ == "__main__":

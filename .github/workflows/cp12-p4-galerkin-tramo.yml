@@ -1,0 +1,55 @@
+name: CP12 P4 Galerkin tramo o lectura
+on:
+  workflow_call:
+    inputs:
+      fase:
+        required: true
+        type: string
+      objetivo:
+        required: true
+        type: number
+      casos:
+        required: false
+        type: string
+        default: '["R0","R1","R2","T","EPS"]'
+permissions:
+  contents: write
+  actions: read
+jobs:
+  tarea:
+    name: ${{ inputs.fase }} τ${{ inputs.objetivo }} ${{ matrix.caso }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 330
+    strategy:
+      fail-fast: false
+      matrix:
+        caso: ${{ fromJSON(inputs.casos) }}
+    env:
+      CP12_CANDIDATE: P4
+      GH_TOKEN: ${{ github.token }}
+      GAL_FASE: ${{ inputs.fase }}
+      GAL_HASTA: ${{ inputs.objetivo }}
+      GAL_CASO: ${{ matrix.caso }}
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      GIT_TERMINAL_PROMPT: '0'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: true
+          sparse-checkout: herramientas
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12.14'
+          architecture: x64
+      - name: Instalar las dependencias fijadas
+        run: python -m pip install numpy==2.3.5 scipy==1.17.0 threadpoolctl==3.6.0 matplotlib==3.10.8
+      - name: Ejecutar o recuperar la operación
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          export PYTHONPATH="$PWD/herramientas:$PWD/herramientas/cp12_galerkin"
+          python -m compileall -q herramientas/cp12_galerkin
+          python herramientas/cp12_galerkin/hospedado.py --work "$RUNNER_TEMP/cp12-galerkin" \
+            --phase "$GAL_FASE" --case "$GAL_CASO" --until "$GAL_HASTA"
