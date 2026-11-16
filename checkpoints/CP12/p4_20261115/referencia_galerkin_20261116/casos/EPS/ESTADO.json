@@ -3,7 +3,7 @@
   "case": "EPS",
   "registration_sha256": "7dc96b561dc7df3792780bb352b926f9e3b43fff16badcd47170d545f45ab63d",
   "trajectory_id": "95a7c3d7cc6ac9d231fc61867cd73ac5d62b4219f47d0d116ada80e1a1f40f99",
-  "status": "SUSPENDIDA",
+  "status": "VERIFICADA",
   "last_closed_time": 0,
   "latest": {
     "time": 0,
@@ -11,6 +11,7 @@
     "sha256": "36e548d9dcde895d49755925b8e00252c951a9df9953cef4ff159b0a75477404"
   },
   "pending": null,
-  "updated_at": "2026-11-16T22:57:58.718783+00:00",
-  "failure": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/casos/EPS/tau0008/RECUPERACION_PUBLICA.json"
+  "updated_at": "2026-11-16T23:06:56.319683+00:00",
+  "stage_repair": "1abbebd6b56301f369c742b0b0cab47f92927677",
+  "prior_failure": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/incidencias/eps_43973602565/RECUPERACION_PUBLICA.json"
 }
