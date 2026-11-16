@@ -2,10 +2,18 @@
   "schema": "CP12_P4_TERCERA_MALLA_REANUDACION_V1",
   "execution_uuid": "7c096442a7c34397b5c13e097461dd70",
   "execution_run_id": "3d18aa7331f9ee11be04742e7b12a41e2499cc17646c0bd48730665fda7557ba",
-  "status": "PRERREGISTRADA",
-  "last_closed_boundary": null,
-  "latest_full_frontier_proof": null,
-  "next_target": 0,
+  "status": "FRONTERA_VERIFICADA",
+  "last_closed_boundary": 0,
+  "latest_full_frontier_proof": {
+    "time": 0,
+    "sha256": "48f71d025d94c7128935237a93b6452803c9351072565402b5f1cd4f86f542f6",
+    "state_sha256": "01e86160ccfaf48888eafd2d04044815ea17654d45f5b1f4badb1656ae3d2306",
+    "github_asset_id": 755708938,
+    "recovery_receipt": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/tau0000/RECUPERACION_PUBLICA.json",
+    "metrics": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/tau0000/METRICAS_ORIGINALES.json"
+  },
+  "next_target": 8,
   "correction_validated": false,
-  "CP12_closed": false
+  "CP12_closed": false,
+  "updated_at": "2026-11-16T17:12:53.553259+00:00"
 }

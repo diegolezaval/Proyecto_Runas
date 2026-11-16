@@ -1,0 +1,71 @@
+{
+  "schema": "CP12_P4_TERCERA_MALLA_CONTROL_V1",
+  "execution_uuid": "7c096442a7c34397b5c13e097461dd70",
+  "execution_run_id": "3d18aa7331f9ee11be04742e7b12a41e2499cc17646c0bd48730665fda7557ba",
+  "time": 0,
+  "state_sha256": "01e86160ccfaf48888eafd2d04044815ea17654d45f5b1f4badb1656ae3d2306",
+  "audit_zero_step": true,
+  "M2_steps_executed": 0,
+  "DOP853_construction_or_step_attempts": 0,
+  "accepted_steps": 0,
+  "nfev": 0,
+  "preflight": {
+    "original_Cauchy_both_meshes_exact": true,
+    "force": {
+      "method": "numpy_projection_fused_C_potential",
+      "source_sha256": "74dd2159ac951e701b3acce7f8365847874521769479c08dd8e4634c7e2e9de9",
+      "fast_math": false,
+      "action_changed": false
+    },
+    "force_relative_errors": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "transfer": {
+      "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+      "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+      "source_time": 1200.0,
+      "source_full_energy": 2566.9470436465344,
+      "source_full_charge": 2745.7739206676465,
+      "source_energy_inside_new_radius": 2386.5221771840497,
+      "source_charge_inside_new_radius": 2578.2976616782553,
+      "omitted_exterior_energy": 180.42486646248472,
+      "omitted_exterior_charge": 167.47625898939123,
+      "regridding_and_new_boundary_energy_change": 31.72716232165476,
+      "regridding_charge_change": -0.07621776456517182,
+      "seed_energy_change": 4.264265456960857,
+      "seed_charge_change": 4.341809572186321,
+      "core_energy_regridding_relative": -2.6143032736070104e-05,
+      "core_charge_regridding_relative": -3.079813968565048e-05,
+      "causal_margin": 180.0,
+      "full_original_domain_evolved": false,
+      "discarded_exterior_state_preserved": true,
+      "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+      "primary_source_derived": false
+    },
+    "passed": true
+  },
+  "P4_routes_exact": true,
+  "symmetry_relative_residual": 2.3189895163858833e-17,
+  "extended_identity": {
+    "mean_jacobian_identity_extended_relative_residual": 3.475447104420685e-28,
+    "prior_longdouble_subtraction_relative_residual": 2.6058335673528987e-12,
+    "weighted_jacobian_symmetry_residual": 0.0,
+    "fused_passive_jacobian_relative_error": 0.0,
+    "production_force_absolute_scaled_residual": 1.0303812396462925e-15,
+    "production_source_residual_absolute": 5.73355432328639e-12,
+    "production_source_difference_scaled_residual": 5.73355432328639e-12,
+    "production_source_absolute_force_scale": 5564.4979767436325,
+    "quad_reference_epsilon": 1.925929944387236e-34,
+    "extended_epsilon": 1.0842021724855044e-19,
+    "reference_is_not_evolution": true
+  },
+  "compared_to_pilot_asset": 752185496,
+  "comparison": {},
+  "CP12_closed": false,
+  "correction_validated": false,
+  "passed": true
+}
