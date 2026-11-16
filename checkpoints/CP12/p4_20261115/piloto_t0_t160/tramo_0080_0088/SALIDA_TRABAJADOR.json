@@ -1,0 +1,21 @@
+{
+  "commit": "0ef1e8402e02cd0437333bba21cca0eb0b0cb36d",
+  "path": "checkpoints/CP12/p4_20261115/recibos_salida/p4_piloto_80_a88_hospedada_20261115/f73b6083e0c6419a8339bebb71c21489.json",
+  "receipt": {
+    "schema": "CP12_REANUDADOR_SALIDA_V1",
+    "allocation_id": "p4_piloto_80_a88_hospedada_20261115",
+    "worker_id": "c55ea4f6c6204041b73f349ab79e46cd",
+    "session_id": "f73b6083e0c6419a8339bebb71c21489",
+    "registry_sha256": "ca3ecb64e4c605738ed290823016042fa82e3343e849c1979dd3fee282e59c79",
+    "source_archive_sha256": "302763eb00bf90c1e7b7cb6551545c737e730e5d97c162ac9b38262b1c46b777",
+    "method": "waitpid_hijo_directo",
+    "exit_observed": true,
+    "observed_at_utc": "2026-11-16T08:02:05.462063+00:00",
+    "pid": 2489,
+    "process_identity_sha256": "cba3a4ace3b167ee37ac2d05a2ed8faed6cf171d705eda204989f13ae31af2e5",
+    "returncode": 0,
+    "exit_code": 0,
+    "signal": null
+  },
+  "last_valid_frontier": 80
+}
