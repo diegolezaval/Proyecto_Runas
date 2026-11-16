@@ -1,0 +1,87 @@
+{
+  "schema": "CP12_SUPPLEMENTARY_SAVED_PREFIX_SPATIAL_AGREEMENT",
+  "time": 152,
+  "scope": "Agreement of the two original meshes on this prefix; no final-protocol acceptance",
+  "source_state_sha256": "cc33e30027dd1dc2ddb13fa62d7f5d2fe8f1a33782347c8f808b54dd241076e0",
+  "source_receipt_sha256": "a6440dc85f26f43ea536ee317323611d8ad5788aa57202be1f75c35085cb3517",
+  "original_metric_source_sha256": "41f0b56b797f9caca7601577d8db7f846d1d452e77a80940de6092be6a8fea64",
+  "reader_sha256": "4a688f79997a934d5dd396a2fe11a17499e62cad3a2083bf894c1c9ad4731427",
+  "only_time_guard_parameterized": true,
+  "real_time_labels_preserved": true,
+  "comparison": {
+    "norm_relative_sup_error": 0.000349092717502952,
+    "final_complex_nonradial_field_error_over_initial_norm": 0.0005456001230174771,
+    "final_phi_phase_space_error_over_initial_norm": 0.0005981872951294395,
+    "final_mediator_nonradial_error_over_initial_norm": 0.006759224989436271,
+    "final_mediator_phase_space_error_over_initial_norm": 0.009593123291373025,
+    "global_phi_phase_removed": -0.00045829212533476086,
+    "chi_radial_bands": [
+      {
+        "r_min": 0,
+        "r_max": 2,
+        "fraction_of_chi_squared_difference": 1.575789418441476e-07
+      },
+      {
+        "r_min": 2,
+        "r_max": 5,
+        "fraction_of_chi_squared_difference": 5.749598588703204e-06
+      },
+      {
+        "r_min": 5,
+        "r_max": 10,
+        "fraction_of_chi_squared_difference": 0.0014559370640503978
+      },
+      {
+        "r_min": 10,
+        "r_max": 20,
+        "fraction_of_chi_squared_difference": 0.0008130188961742804
+      },
+      {
+        "r_min": 20,
+        "r_max": 40,
+        "fraction_of_chi_squared_difference": 0.9977251368622448
+      }
+    ],
+    "chi_multipole_fractions": {
+      "1": 9.293215713677017e-21,
+      "2": 0.8825097764913051,
+      "3": 1.6242548443800988e-20,
+      "4": 0.11749022350869488
+    },
+    "descriptive_chi_rotation": {
+      "angle": 0.00021177806808140163,
+      "rotated_error": 0.009591609895019879,
+      "used_for_acceptance": false,
+      "warning": "χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta."
+    }
+  },
+  "original_spatial_threshold": 0.02,
+  "prefix_pair_gates": {
+    "norm_relative_sup_error": true,
+    "final_complex_nonradial_field_error_over_initial_norm": true,
+    "final_phi_phase_space_error_over_initial_norm": true,
+    "final_mediator_nonradial_error_over_initial_norm": true,
+    "final_mediator_phase_space_error_over_initial_norm": true
+  },
+  "prefix_pair_limits_met": true,
+  "prefix_physical_controls": {
+    "0_core_charge": true,
+    "0_bounded_window": true,
+    "0_original_energy": true,
+    "0_P3_energy": true,
+    "0_charge": true,
+    "1_core_charge": true,
+    "1_bounded_window": true,
+    "1_original_energy": true,
+    "1_P3_energy": true,
+    "1_charge": true
+  },
+  "prefix_physical_controls_met": true,
+  "final_tau160_gate_pending": true,
+  "additional_reference_stability_robustness_pending": true,
+  "chi_rotation_used_for_acceptance": false,
+  "M2_steps_executed": 0,
+  "physical_state_and_receipt_unchanged": true,
+  "correction_validated": false,
+  "CP12_closed": false
+}
