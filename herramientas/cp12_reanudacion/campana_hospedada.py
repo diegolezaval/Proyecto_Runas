@@ -390,7 +390,7 @@ def worker(job):
         controller, legacy, modules, streams, budget, dense, clock, next_record = original.restore(home, spec)
         before = [stream.accepted for stream in streams]
         provenance = home / "administracion_continuacion_20261030" / spec["allocation_id"]
-        provenance.mkdir()
+        provenance.mkdir(parents=True)
         shutil.copyfile(job / "REGISTRO.json", provenance / "REGISTRO.json")
         capacity_dir = job / "capacidad"
         label = "CONTROL_" + spec["allocation_id"].upper()
