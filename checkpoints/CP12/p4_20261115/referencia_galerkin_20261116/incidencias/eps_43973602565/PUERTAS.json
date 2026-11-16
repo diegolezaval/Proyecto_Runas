@@ -1,0 +1,46 @@
+{
+  "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
+  "case": "EPS",
+  "registration_sha256": "7dc96b561dc7df3792780bb352b926f9e3b43fff16badcd47170d545f45ab63d",
+  "trajectory_id": "95a7c3d7cc6ac9d231fc61867cd73ac5d62b4219f47d0d116ada80e1a1f40f99",
+  "run_id": 43973602565,
+  "attempt": 1,
+  "admin_commit": "7d0009524f843b981ec258121cabe2f48b343180",
+  "time": 6.640000000000001,
+  "target": 8,
+  "passed": false,
+  "physical": {
+    "energy": true,
+    "charge": true,
+    "core_charge": true,
+    "amplification": true,
+    "finite": true
+  },
+  "balance": {
+    "energy": 4.1744385725905886e-14,
+    "charge": 6.661338147750939e-16
+  },
+  "failure": "Las cuatro etapas Galerkin no convergieron",
+  "solver": "Gauss–Legendre 4",
+  "steps_this_segment": 830,
+  "total_steps": 830,
+  "environment": {
+    "python": "3.12.14",
+    "machine": "x86_64",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0"
+    },
+    "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "numeric_flags": [
+      "-O3",
+      "-fPIC",
+      "-shared",
+      "-std=c11",
+      "-fno-fast-math"
+    ]
+  },
+  "max_iterations": 7,
+  "max_normalized_stage_change": 0.9966465425111058,
+  "wall_seconds": 446.534916344
+}
