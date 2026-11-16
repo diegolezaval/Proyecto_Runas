@@ -15,7 +15,8 @@
     "mediator_diagnostic_before_CP10": "validacion/P06/no_radial/CP10/diagnostico_guardado__0cc9af79f3804e54e2f65309e9fad57934b04c55536c5dd07519c2bacc87ea47/diagnostico.json",
     "chi_radial_diagnostic": "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json",
     "chi_frozen_source_contrast": "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json",
-    "chi_forced_response": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json"
+    "chi_forced_response": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+    "piloto_CP12_P4": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json"
   },
   "historical_partial_files": {
     "validacion/validez/partial_sensitivity.json": "Anterior a recuperación M+; no resultado vigente",
@@ -230,11 +231,67 @@
       "current_process_M2_steps_executed": 0,
       "current_process_M2_steps_executed_scope": "Recuperación y lectura; cero evolución nueva.",
       "resume_only_from_certified_closed_boundary": true
+    },
+    {
+      "id": "CP12_P4_piloto",
+      "status": "PILOTO_APROBADO_TAU160",
+      "resume": false,
+      "evidence": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json",
+      "recovery_receipt": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/RECUPERACION_PUBLICA.json",
+      "CP12_closed": false
+    },
+    {
+      "id": "CP12_P4_tercera_malla",
+      "status": "PRERREGISTRADA",
+      "resume": false,
+      "evidence": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/REGISTRO.json",
+      "canonical_register": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/ESTADO_REANUDACION.json",
+      "CP12_closed": false
     }
   ],
   "failures_preserved": "trazabilidad/reanudacion_CP02/inventario.json",
   "resume_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
-  "numerical_runs_in_progress": [
+  "numerical_runs_in_progress": [],
+  "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
+  "latest_completed_nonradial_time": 160,
+  "diagnostic_after_gate": "checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json",
+  "verification_protocol": "datos/verificacion_diagnostico_CP11.json",
+  "failed_CP11_controls_preserved": [
+    {
+      "result": "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/resultados.json",
+      "receipt": "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/procedencia.json",
+      "reason": "Cancelación en el control doble de identidad; sin interpretación física.",
+      "replaced_as_validated_reference_by": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
+      "implementation_amendment": "informes/ENMIENDA_CP11_PRECISION_DEFECTO.md"
+    }
+  ],
+  "current_operational_state": {
+    "accepted_checkpoint": "CP11",
+    "CP12_status": "ABIERTO",
+    "candidate": "P4",
+    "P4_status": "PILOTO_VERIFICADO_TAU160",
+    "last_full_frontier": 160,
+    "own_workers": 0,
+    "canonical_register": "checkpoints/CP12/p4_20261115/ESTADO_REANUDACION.json",
+    "evidence": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json",
+    "third_mesh_register": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/ESTADO_REANUDACION.json",
+    "observed_at_utc": "2026-11-16T14:44:05.514138+00:00"
+  },
+  "last_verified_P4_pilot": {
+    "time": 160,
+    "commit": "5e00e74ec733ad1171f3bb024404ddfc30e1d2c2",
+    "branch": "ciencia/cp12-p4-20261115",
+    "canonical_register": "checkpoints/CP12/p4_20261115/ESTADO_REANUDACION.json",
+    "validation": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json",
+    "recovery_receipt": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/RECUPERACION_PUBLICA.json",
+    "asset_id": 755212108,
+    "archive_sha256": "cbf617c7686d3c2a7c5dfff2ed9b1543092dba55d7e3d417b59ade6bef14f77c",
+    "phase_space_chi_error": 0.010148560932669913,
+    "pilot_passed": true,
+    "correction_validated": false,
+    "CP12_closed": false
+  },
+  "superseded_activity_records": [
     {
       "campaign": "CP12_P3",
       "allocation_id": "p3_16_a24_20261106",
@@ -253,54 +310,5 @@
       "latest_recovered_clock": 20.8,
       "latest_transport_public_asset": 717383219
     }
-  ],
-  "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
-  "latest_completed_nonradial_time": 160,
-  "diagnostic_after_gate": "checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json",
-  "verification_protocol": "datos/verificacion_diagnostico_CP11.json",
-  "failed_CP11_controls_preserved": [
-    {
-      "result": "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/resultados.json",
-      "receipt": "validacion/P06/no_radial/CP11/respuesta_forzada__9360199db9cdc238ab2e4c8d75512db5f81d85a225088ad27f8ab8e67d9b0817/procedencia.json",
-      "reason": "Cancelación en el control doble de identidad; sin interpretación física.",
-      "replaced_as_validated_reference_by": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
-      "implementation_amendment": "informes/ENMIENDA_CP11_PRECISION_DEFECTO.md"
-    }
-  ],
-  "current_operational_state": {
-    "accepted_checkpoint": "CP11",
-    "CP12_status": "ABIERTO",
-    "P3_status": "SIN_VALIDAR",
-    "last_full_frontier": 16,
-    "recovered_transport": 20.8,
-    "native_recovered_transport": 20.8,
-    "github_recovered_transport": 20.8,
-    "next_full_frontier": 24,
-    "own_workers": 1,
-    "own_physical_workers": 1,
-    "historical_worker_activity": "INACCESIBLE_SIN_SALIDA_OBSERVADA",
-    "forward_evolution_started": true,
-    "current_run_forward_evolution_started": true,
-    "canonical_register": "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
-    "evidence": "checkpoints/CP12/p3_20261018/reconciliacion_16_a24_20261106/RECONCILIACION.json",
-    "preservation_in_current_process": "CAPACIDAD_NATIVA_Y_GITHUB_RECUPERADA",
-    "preservation_gate_passed": true,
-    "current_worker_capacity_passed": true,
-    "observed_at_utc": "2026-11-06T14:12:52.105610+00:00",
-    "administrative_phase": "EVOLVING_16_A24",
-    "administrative_report": "informes/RECONCILIACION_Y_CONTINUACION_P3_16_A24_20261106.md",
-    "scientific_report": "informes/CONSERVACION_P3_T16_Y_AGILIZACION_20261105.md",
-    "source_identity": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/ORIGEN.json",
-    "activity_clock_is_restart_certificate": false,
-    "last_activity_observer_clock": 20.98,
-    "new_allocation_prepared": "p3_16_a24_20261106",
-    "new_reservation_published": true,
-    "new_activation_published": true,
-    "latest_recoverable_observer_clock": 20.8,
-    "capacity_receipt": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/capacidad/ACEPTACION_COMBINADA.json",
-    "prior_activation_published": true,
-    "prior_activation_delivery": "UNKNOWN_NO_RECEIPT",
-    "new_activation_delivered": true,
-    "latest_transport_evidence": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261106/transporte_000208/CERTIFICADO_TRANSPORTE.json"
-  }
+  ]
 }

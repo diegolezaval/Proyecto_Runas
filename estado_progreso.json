@@ -2212,10 +2212,17 @@
       "report": "informes/RECUPERACION_P3_T288_Y_CAPACIDAD_SEPARADA_20261107.md",
       "evidence": "checkpoints/CP12/p3_20261018/rescate_t30_20261107/ORIGEN.json",
       "CP12_closed": false
+    },
+    {
+      "at": "2026-11-16T16:57:34.162590+00:00",
+      "event": "CP12_P4_PILOTO_VERIFICADO_Y_TERCERA_MALLA_PRERREGISTRADA",
+      "report": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/PRERREGISTRO.md",
+      "evidence": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json",
+      "CP12_closed": false
     }
   ],
   "next_actions": [
-    "Resolver la aprobación explícita del control público de capacidad. Si la sesión sigue accesible, completar su recuperación pública, reserva y activación. Si se pierde, aislarla y continuar desde el rescate protegido τ30,0 con capacidad propia.",
+    "Ejecutar y verificar la tercera malla P4 h=0,03125 con la preparación original y las dos trayectorias guardadas; aplicar el contraste de referencia, estabilidad y robustez después del dictamen de refinamiento.",
     "Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.",
     "Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico."
   ],
@@ -2241,12 +2248,12 @@
     "P3 hasta τ30,0 está conservado como rescate protegido. No reactivar 23151 ni usar el latido como estado de reinicio."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Resolver la aprobación explícita del control público de capacidad. Si la sesión sigue accesible, completar su recuperación pública, reserva y activación. Si se pierde, aislarla y continuar desde el rescate protegido τ30,0 con capacidad propia.",
+  "next_calculation": "Ejecutar y verificar la tercera malla P4 h=0,03125 con la preparación original y las dos trayectorias guardadas; aplicar el contraste de referencia, estabilidad y robustez después del dictamen de refinamiento.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [],
   "research_in_progress": [],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
-  "delivery_boundary": "Frontera τ24 positiva. Estado interno exacto τ30,0 rescatado y auditado en la Biblioteca tras perder acceso al trabajador.",
+  "delivery_boundary": "Piloto P4 aprobado en τ160 con recuperación independiente. Tercera malla registrada.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
   "latest_completed_nonradial_time": 160,
   "diagnostic_after_gate": "checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json",
@@ -2260,17 +2267,15 @@
   "checkpoint_kind": "CIENTIFICO",
   "automatic_continuation_paused": {
     "paused": true,
-    "reason": "La revisión automática bloqueó el control público de capacidad, con conservación nativa del rescate y del control propio verificadas.",
-    "M2_exhaustion_claimed": false,
+    "scope": "Piloto P4 hasta τ160",
+    "reason": "La campaña del piloto alcanzó su objetivo con sus puertas aprobadas.",
     "CP12_closed": false
   },
   "execution_activity": {
     "activity_known": true,
-    "scope": "Un trabajador propio observado a la espera de capacidad pública, con cero evolución.",
-    "own_worker_status": "CAPACIDAD_NATIVA_VERIFICADA_PUBLICA_BLOQUEADA",
-    "historical_termination_assumed": false,
-    "activity_is_restart_certificate": false,
-    "evidence": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/CAPACIDAD_PUBLICA_PENDIENTE.json"
+    "own_worker_status": "PILOTO_P4_TERMINADO",
+    "evidence": "checkpoints/CP12/p4_20261115/ESTADO_REANUDACION.json",
+    "activity_is_restart_certificate": false
   },
   "latest_verified_cp12_restart": {
     "time": 160,
@@ -2557,31 +2562,14 @@
   "current_operational_state": {
     "accepted_checkpoint": "CP11",
     "CP12_status": "ABIERTO",
-    "P3_status": "SIN_VALIDAR",
-    "last_full_frontier": 24,
-    "recovered_transport": 30,
-    "native_recovered_transport": 30,
-    "next_full_frontier": 32,
-    "own_workers": 1,
-    "own_physical_workers": 0,
-    "historical_worker_activity": "INACCESIBLE_SIN_SALIDA_OBSERVADA",
-    "current_run_forward_evolution_started": false,
-    "canonical_register": "checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json",
-    "evidence": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t30_20261107/CAPACIDAD_PUBLICA_PENDIENTE.json",
-    "current_worker_capacity_passed": false,
-    "observed_at_utc": "2026-11-07T06:13:47.524928+00:00",
-    "administrative_phase": "CAPACIDAD_NATIVA_VERIFICADA_PUBLICA_BLOQUEADA",
-    "administrative_report": "informes/RECUPERACION_P3_T288_Y_CAPACIDAD_SEPARADA_20261107.md",
-    "source_identity": "checkpoints/CP12/p3_20261018/rescate_t30_20261107/ORIGEN.json",
-    "latest_recoverable_observer_clock": 30,
-    "forward_evolution_started": true,
-    "last_activity_observer_clock": 30.04,
-    "capacity_receipt": "checkpoints/CP12/p3_20261018/reanudacion_hibrida_t288_20261107/capacidad/ACEPTACION_COMBINADA.json",
-    "new_reservation_published": false,
-    "new_activation_published": false,
-    "new_activation_delivered": false,
-    "latest_transport_evidence": "checkpoints/CP12/p3_20261018/rescate_t30_20261107/ORIGEN.json",
-    "current_worker_native_capacity_passed": true
+    "candidate": "P4",
+    "P4_status": "PILOTO_VERIFICADO_TAU160",
+    "last_full_frontier": 160,
+    "own_workers": 0,
+    "canonical_register": "checkpoints/CP12/p4_20261115/ESTADO_REANUDACION.json",
+    "evidence": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json",
+    "third_mesh_register": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/ESTADO_REANUDACION.json",
+    "observed_at_utc": "2026-11-16T14:44:05.514138+00:00"
   },
   "latest_verified_cp12_P3_transport": {
     "kind": "transport",
@@ -2645,5 +2633,19 @@
     "split_capacity_amendment": "checkpoints/CP12/p3_20261018/conservacion_hibrida_20261106/CAPACIDAD_SEPARADA.md",
     "split_capacity_tests": 10,
     "protected_incident_origin_excluded_from_rotation": true
+  },
+  "last_verified_P4_pilot": {
+    "time": 160,
+    "commit": "5e00e74ec733ad1171f3bb024404ddfc30e1d2c2",
+    "branch": "ciencia/cp12-p4-20261115",
+    "canonical_register": "checkpoints/CP12/p4_20261115/ESTADO_REANUDACION.json",
+    "validation": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json",
+    "recovery_receipt": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/RECUPERACION_PUBLICA.json",
+    "asset_id": 755212108,
+    "archive_sha256": "cbf617c7686d3c2a7c5dfff2ed9b1543092dba55d7e3d417b59ade6bef14f77c",
+    "phase_space_chi_error": 0.010148560932669913,
+    "pilot_passed": true,
+    "correction_validated": false,
+    "CP12_closed": false
   }
 }

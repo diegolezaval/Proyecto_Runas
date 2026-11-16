@@ -14,19 +14,14 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 | Referencia | Estado |
 |---|---|
-| CP12 / P3 | ABIERTO / SIN_VALIDAR |
-| Última frontera completa positiva P3 | τ24 |
-| Transporte interno recuperado | τ30 |
-| Próxima frontera completa | τ32, pendiente |
-| Trabajadores propios activos | 1 |
+| CP12 / P4 | ABIERTO / PILOTO_VERIFICADO_TAU160 |
+| Última frontera verificada del piloto | τ160 |
 
-Registro: [checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json).
-
-El transporte interno no es una frontera completa ni una validación de P3.
+[Registro del piloto](checkpoints/CP12/p4_20261115/ESTADO_REANUDACION.json) · [Validación del piloto](checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json) · [Estado de la tercera malla](checkpoints/CP12/p4_20261115/tercera_malla_20261116/ESTADO_REANUDACION.json).
 
 ## Siguiente trabajo científico
 
-- Resolver la aprobación explícita del control público de capacidad. Si la sesión sigue accesible, completar su recuperación pública, reserva y activación. Si se pierde, aislarla y continuar desde el rescate protegido τ30,0 con capacidad propia.
+- Ejecutar y verificar la tercera malla P4 h=0,03125 con la preparación original y las dos trayectorias guardadas; aplicar el contraste de referencia, estabilidad y robustez después del dictamen de refinamiento.
 - Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 
@@ -73,6 +68,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 - chi_radial_diagnostic: [validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json](validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json) — DIAGNOSTICO_RADIAL_COMPLETADO.
 - chi_frozen_source_contrast: [validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json](validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json) — DIAGNOSTICO_CAUSAL_LIMITADO_POR_HISTORIA_DE_FUENTE.
 - chi_forced_response: [validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json](validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json) — RESPUESTA_FORZADA_DELIMITADA_CAUSA_ABIERTA.
+- piloto_CP12_P4: [checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json](checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json) — Alcance en el archivo fuente.
 
 ## Etapas y puertas
 
@@ -112,7 +108,7 @@ El transporte interno no es una frontera completa ni una validación de P3.
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [informes/RECUPERACION_P3_T288_Y_CAPACIDAD_SEPARADA_20261107.md](informes/RECUPERACION_P3_T288_Y_CAPACIDAD_SEPARADA_20261107.md).
+Informe de esta entrega: [checkpoints/CP12/p4_20261115/tercera_malla_20261116/PRERREGISTRO.md](checkpoints/CP12/p4_20261115/tercera_malla_20261116/PRERREGISTRO.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

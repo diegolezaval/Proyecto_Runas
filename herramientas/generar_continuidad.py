@@ -80,7 +80,14 @@ def render_state(root=ROOT):
              ('La auditoría administrativa no cambia las etapas ni sus puertas.' if state.get('checkpoint_kind', 'ADMINISTRATIVO' if current != state['checkpoint'] else 'CIENTIFICO') == 'ADMINISTRATIVO' else 'Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa.') + ' La evidencia reproducible prevalece ante una discrepancia documental.', '',
              '## Continuidad operativa', '']
     operation = state.get('current_operational_state')
-    if operation:
+    if operation and operation.get('candidate') == 'P4':
+        lines += ['| Referencia | Estado |', '|---|---|',
+                  f"| CP12 / P4 | {operation['CP12_status']} / {operation['P4_status']} |",
+                  f"| Última frontera verificada del piloto | τ{operation['last_full_frontier']:g} |", '',
+                  f"[Registro del piloto]({operation['canonical_register']}) · "
+                  f"[Validación del piloto]({operation['evidence']}) · "
+                  f"[Estado de la tercera malla]({operation['third_mesh_register']}).", '']
+    elif operation:
         lines += ['| Referencia | Estado |', '|---|---|',
                   f"| CP12 / P3 | {operation['CP12_status']} / {operation['P3_status']} |",
                   f"| Última frontera completa positiva P3 | τ{operation['last_full_frontier']:g} |",
