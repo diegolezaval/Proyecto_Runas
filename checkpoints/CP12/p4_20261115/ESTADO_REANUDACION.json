@@ -36,9 +36,11 @@
   "latest_recoverable_kind": "boundary",
   "current_target": 8,
   "current_assignment": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0000_0008/REGISTRO.json",
-  "current_own_worker_status": "FRONTERA_PUBLICA_VERIFICADA",
-  "own_exit_observed": false,
+  "current_own_worker_status": "PENDIENTE_REINTENTO",
+  "own_exit_observed": true,
   "CP12_closed": false,
   "correction_validated": false,
-  "updated_at": "2026-11-16T00:31:11.201961+00:00"
+  "updated_at": "2026-11-16T00:41:33.344308+00:00",
+  "interruption": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0000_0008/INTERRUPCION_ADMINISTRATIVA_bd153db46fdf4d3e992866c031d26b07.json",
+  "next_recovery": "Consultar el fallo y el último cierre verificado."
 }
