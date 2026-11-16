@@ -20,10 +20,14 @@
     "preservar.py": "71ce24613f71ffbc8ecf6ecc3ad1547eca7f88732589d7282d64e01d1935d9ea",
     "POLITICA.json": "fb6f61c5968b85b98e03ab1da79663b4959dd2728c612f95265f421640cd3661"
   },
-  "hosted_executor_sha256": "432e58f117018b844b02b50ed1ac38893022356bbdb7f9bc03e7c28447bf9945",
+  "hosted_executor_sha256": "5e2c69ea4aabe1368b8e828cd498451af7f3555afa31521ae784b22fc7439c6a",
   "hosted_recovery_certificate_sha256": "d5c051aec08e785fd3a38039f54d3f1d6cd26709f2cd17a39a210f77743d16cc",
   "hosted_final_reader_sha256": "d025666cae13ef6e4971a663817247edbb384c3b5c98fd88b0f10a9bfb6ce95f",
   "source_frontier_commit": "ca47088d55152db1118eed531b58e808bbac56f1",
   "registered_at_utc": "2026-11-16T00:31:11.201942+00:00",
-  "registered_before_M2": true
+  "registered_before_M2": true,
+  "transport_registration": {
+    "path": "checkpoints/CP12/p4_20261115/piloto_t0_t160/origen_0000/REGISTRO_TRANSPORTE.json",
+    "sha256": "18cf7de21b1eac1f51c923dcf8b4e5e1a6383a77eeecb10f66cdb6a14fa35b96"
+  }
 }

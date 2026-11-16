@@ -1,0 +1,16 @@
+{
+  "schema": "CP12_P4_EXACT_TRANSPORT_BINDING_V1",
+  "execution_uuid": "8a6775db0628457ca53ffece57c210d3",
+  "execution_run_id": "1494ea1de6f7c1c084b99b4fa7e9892fc74d0c7089cdbc96dea82d334829cc18",
+  "files": {
+    "transporte.py": "7c887990b991f33ccb86737b821daff0ab5e68e54cbd96c4b8475a62bee731dd",
+    "controlador_transporte.py": "d45176f3f0730c9d8dbda73952436fac3ba3c37c20b631e4793e7c38433333ae",
+    "seleccion_canonica.py": "2efd95a92eb57fb0d1715a4e40e951f7ea75e25a72bf34d499cbb9749dca33ae",
+    "CONTROLES_SINTETICOS.json": "5632bced882f12548c46b688990d36e58c108f6e2d0ec09b0bc8e50c7f41ec2c"
+  },
+  "registered_before_new_M2": true,
+  "generic_transport_source_bytes_identical_to_historical_certificate": true,
+  "synthetic_controls_passed": true,
+  "bootstrap_asset": 752185496,
+  "local_assembly_M2_steps": 0
+}
