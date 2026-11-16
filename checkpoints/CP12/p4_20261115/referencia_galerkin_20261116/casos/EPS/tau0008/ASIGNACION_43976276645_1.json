@@ -1,0 +1,20 @@
+{
+  "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
+  "case": "EPS",
+  "registration_sha256": "7dc96b561dc7df3792780bb352b926f9e3b43fff16badcd47170d545f45ab63d",
+  "trajectory_id": "95a7c3d7cc6ac9d231fc61867cd73ac5d62b4219f47d0d116ada80e1a1f40f99",
+  "hosted": {
+    "run_id": 43976276645,
+    "attempt": 1,
+    "admin_commit": "f235fed2602c8d88d14d3e88d93a08b0842ccd8d"
+  },
+  "target": 8,
+  "start_accepted_steps": 830,
+  "source_frontier": {
+    "time": 0,
+    "receipt": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/casos/EPS/tau0000/RECUPERACION_PUBLICA.json",
+    "sha256": "36e548d9dcde895d49755925b8e00252c951a9df9953cef4ff159b0a75477404"
+  },
+  "exact_transport": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/casos/EPS/TRANSPORTE_ETAPAS_43976276645_1.json",
+  "registered_before_advancing": true
+}
