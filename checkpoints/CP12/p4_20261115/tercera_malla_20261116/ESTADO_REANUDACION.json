@@ -3,17 +3,17 @@
   "execution_uuid": "7c096442a7c34397b5c13e097461dd70",
   "execution_run_id": "3d18aa7331f9ee11be04742e7b12a41e2499cc17646c0bd48730665fda7557ba",
   "status": "FRONTERA_VERIFICADA",
-  "last_closed_boundary": 16,
+  "last_closed_boundary": 24,
   "latest_full_frontier_proof": {
-    "time": 16,
-    "sha256": "812341d06d0edfdfb4ac4305ce91158950c7bbb7e03778a9c1d1c9d8e5cb8ca2",
-    "state_sha256": "cf010e5512c38fcdd315a6aaa296282d713e2c84bc9edbfa8e68a95049d94cca",
-    "github_asset_id": 755813424,
-    "recovery_receipt": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/tau0016/RECUPERACION_PUBLICA.json",
-    "metrics": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/tau0016/METRICAS_ORIGINALES.json"
+    "time": 24,
+    "sha256": "12f35776c9448be28669af275980f327b32ebaefe60c31071fd432b7e48b367d",
+    "state_sha256": "23ce456c2bf9c9ddfd36872a6efca4f5eb7601528f10dc36937b1e4ca61e9af9",
+    "github_asset_id": 755859634,
+    "recovery_receipt": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/tau0024/RECUPERACION_PUBLICA.json",
+    "metrics": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/tau0024/METRICAS_ORIGINALES.json"
   },
-  "next_target": 24,
+  "next_target": 32,
   "correction_validated": false,
   "CP12_closed": false,
-  "updated_at": "2026-11-16T17:43:06.309206+00:00"
+  "updated_at": "2026-11-16T17:58:07.621903+00:00"
 }
