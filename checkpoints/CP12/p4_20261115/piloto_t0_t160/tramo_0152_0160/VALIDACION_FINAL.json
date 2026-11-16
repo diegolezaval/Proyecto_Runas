@@ -1,0 +1,634 @@
+{
+  "schema": "CP12_P4_VALIDACION_FINAL_V1",
+  "time": 160,
+  "passed": true,
+  "spatial": {
+    "norm_relative_sup_error": true,
+    "final_complex_nonradial_field_error_over_initial_norm": true,
+    "final_phi_phase_space_error_over_initial_norm": true,
+    "final_mediator_nonradial_error_over_initial_norm": true,
+    "final_mediator_phase_space_error_over_initial_norm": true
+  },
+  "physical": {
+    "0_original_energy": true,
+    "0_MIXTO_energy": true,
+    "0_charge": true,
+    "0_core_charge": true,
+    "0_bounded_window": true,
+    "1_original_energy": true,
+    "1_MIXTO_energy": true,
+    "1_charge": true,
+    "1_core_charge": true,
+    "1_bounded_window": true
+  },
+  "causal": {
+    "passed": true,
+    "windows": {
+      "core_phase": {
+        "original_chi_operator_norm": 0.05112761915034752,
+        "P4_chi_operator_norm": 0.009972224137090866,
+        "reduction": 0.8049542634135529,
+        "passed": true,
+        "signed_channel_metrics": {
+          "raw": {
+            "inicial_libre": {
+              "relative_error": 8.952992093741794e-06,
+              "signed_projection": 1.0110554295436661e-05,
+              "cosine": 0.011460702216193165,
+              "removal_squared_reduction": 1.9442843635887746e-05
+            },
+            "operador_chi": {
+              "relative_error": 0.010269513885828231,
+              "signed_projection": 1.005815399477954,
+              "cosine": 0.9939690409987221,
+              "removal_squared_reduction": 0.9876522808312349
+            },
+            "transferencia_chi": {
+              "relative_error": 6.51853614976293e-05,
+              "signed_projection": -0.0043244120908217795,
+              "cosine": -0.6732579001387515,
+              "removal_squared_reduction": -0.008690080572177964
+            },
+            "densidad_rho": {
+              "relative_error": 0.0009966601320656999,
+              "signed_projection": -0.0005297270035268422,
+              "cosine": -0.00539398196036041,
+              "removal_squared_reduction": -0.01070407676310083
+            },
+            "reaccion_chi": {
+              "relative_error": 0.00020389205973114186,
+              "signed_projection": -0.000971426455271278,
+              "cosine": -0.0483519592961488,
+              "removal_squared_reduction": -0.002346490588525118
+            },
+            "inicial": {
+              "relative_error": 8.952992093741794e-06,
+              "signed_projection": 1.0110554295436661e-05,
+              "cosine": 0.011460702216193165,
+              "removal_squared_reduction": 1.9442843635887746e-05
+            },
+            "operador": {
+              "relative_error": 0.010269513885828231,
+              "signed_projection": 1.005815399477954,
+              "cosine": 0.9939690409987221,
+              "removal_squared_reduction": 0.9876522808312349
+            },
+            "fuente_total": {
+              "relative_error": 0.0011276694003411216,
+              "signed_projection": -0.0058255655496198995,
+              "cosine": -0.05242769461483661,
+              "removal_squared_reduction": -0.023997938243294686
+            }
+          },
+          "coupled": {
+            "inicial": {
+              "relative_error": 9.185870221442679e-06,
+              "signed_projection": -1.0565069843874748e-08,
+              "cosine": -1.1672302403988995e-05,
+              "removal_squared_reduction": -8.404088765947419e-07
+            },
+            "operador_Phi": {
+              "relative_error": 0.0006500210141363639,
+              "signed_projection": 0.009538561333408515,
+              "cosine": 0.14892237142628414,
+              "removal_squared_reduction": 0.01497464839005139
+            },
+            "operador_chi": {
+              "relative_error": 0.009972224137090866,
+              "signed_projection": 0.9804283975136181,
+              "cosine": 0.9977651119251222,
+              "removal_squared_reduction": 0.9953059790279009
+            },
+            "transferencia_Phi": {
+              "relative_error": 0.00010222823754656658,
+              "signed_projection": 0.004821275381264487,
+              "cosine": 0.47862516418378115,
+              "removal_squared_reduction": 0.00954108189350917
+            },
+            "transferencia_chi": {
+              "relative_error": 0.000151551514959132,
+              "signed_projection": 0.00521166744646638,
+              "cosine": 0.3489963439530054,
+              "removal_squared_reduction": 0.010200331414662535
+            },
+            "operador_total": {
+              "relative_error": 0.010049406886999396,
+              "signed_projection": 0.9899669588470267,
+              "cosine": 0.999734622765263,
+              "removal_squared_reduction": 0.9993789732215366
+            },
+            "transferencia_total": {
+              "relative_error": 0.00025246811084812776,
+              "signed_projection": 0.010032942827730866,
+              "cosine": 0.40329818795400296,
+              "removal_squared_reduction": 0.019447008953770262
+            }
+          }
+        },
+        "cross_terms": {
+          "raw": [
+            [
+              1.885847129260592e-12,
+              2.1602630561682714e-11,
+              -3.496598191850594e-13,
+              1.0619354867930942e-12,
+              2.986525614062656e-13
+            ],
+            [
+              2.1602630561682714e-11,
+              2.481246182883466e-06,
+              -9.684482805381178e-09,
+              -2.7581317580745935e-08,
+              -6.768615959357654e-09
+            ],
+            [
+              -3.496598191850594e-13,
+              -9.684482805381178e-09,
+              9.997012605354232e-11,
+              -7.016601168487009e-10,
+              -1.9218238102100442e-10
+            ],
+            [
+              1.0619354867930942e-12,
+              -2.7581317580745935e-08,
+              -7.016601168487009e-10,
+              2.337029827795601e-08,
+              3.628710900750768e-09
+            ],
+            [
+              2.986525614062656e-13,
+              -6.768615959357654e-09,
+              -1.9218238102100442e-10,
+              3.628710900750768e-09,
+              9.78071736891885e-10
+            ]
+          ],
+          "coupled": [
+            [
+              1.9852293799981436e-12,
+              1.0491546666610906e-12,
+              -4.475743200048009e-12,
+              5.787108018548861e-13,
+              8.369549983433533e-13
+            ],
+            [
+              1.0491546666610906e-12,
+              9.94088104332965e-09,
+              1.3208132486759089e-08,
+              -1.5607844068152614e-11,
+              -2.1122352951669263e-11
+            ],
+            [
+              -4.475743200048009e-12,
+              1.3208132486759089e-08,
+              2.3396675166252595e-06,
+              1.1095027560535157e-08,
+              1.17517170304238e-08
+            ],
+            [
+              5.787108018548861e-13,
+              -1.5607844068152614e-11,
+              1.1095027560535157e-08,
+              2.4587356031451117e-10,
+              3.5669189717020413e-10
+            ],
+            [
+              8.369549983433533e-13,
+              -2.1122352951669263e-11,
+              1.17517170304238e-08,
+              3.5669189717020413e-10,
+              5.403692747784421e-10
+            ]
+          ]
+        },
+        "sustained_crossings": {
+          "raw:inicial_libre": null,
+          "raw:operador_chi": 33.2,
+          "raw:transferencia_chi": null,
+          "raw:densidad_rho": 0.8,
+          "raw:reaccion_chi": 50.8,
+          "coupled:inicial": null,
+          "coupled:operador_Phi": 0.8,
+          "coupled:operador_chi": 32.4,
+          "coupled:transferencia_Phi": 71.6,
+          "coupled:transferencia_chi": 41.2
+        },
+        "onset_threshold": 0.00010148560932669913
+      },
+      "short_core_k4": {
+        "original_chi_operator_norm": 0.05112500364026878,
+        "P4_chi_operator_norm": 0.009972223931955187,
+        "reduction": 0.8049442890581913,
+        "passed": true,
+        "signed_channel_metrics": {
+          "raw": {
+            "inicial_libre": {
+              "relative_error": 8.948259412330002e-06,
+              "signed_projection": 1.0083185693389195e-05,
+              "cosine": 0.011413029660195188,
+              "removal_squared_reduction": 1.938583412815825e-05
+            },
+            "operador_chi": {
+              "relative_error": 0.01026951387999706,
+              "signed_projection": 1.0098194181460838,
+              "cosine": 0.995945509802122,
+              "removal_squared_reduction": 0.9915840026163439
+            },
+            "transferencia_chi": {
+              "relative_error": 6.518435312574779e-05,
+              "signed_projection": -0.004341737857829659,
+              "cosine": -0.6746243069144221,
+              "removal_squared_reduction": -0.008724895060686565
+            },
+            "densidad_rho": {
+              "relative_error": 0.0007633136278345253,
+              "signed_projection": -0.004523879578000235,
+              "cosine": -0.060027432248389107,
+              "removal_squared_reduction": -0.014727421781620335
+            },
+            "reaccion_chi": {
+              "relative_error": 0.00020385514734573036,
+              "signed_projection": -0.0009639396035336836,
+              "cosine": -0.047892762504831266,
+              "removal_squared_reduction": -0.002332976994043959
+            },
+            "inicial": {
+              "relative_error": 8.948259412330002e-06,
+              "signed_projection": 1.0083185693389195e-05,
+              "cosine": 0.011413029660195188,
+              "removal_squared_reduction": 1.938583412815825e-05
+            },
+            "operador": {
+              "relative_error": 0.01026951387999706,
+              "signed_projection": 1.0098194181460838,
+              "cosine": 0.995945509802122,
+              "removal_squared_reduction": 0.9915840026163439
+            },
+            "fuente_total": {
+              "relative_error": 0.0009291255091036148,
+              "signed_projection": -0.009829557039363578,
+              "cosine": -0.10715225371596758,
+              "removal_squared_reduction": -0.02807433020756975
+            }
+          },
+          "coupled": {
+            "inicial": {
+              "relative_error": 9.169262769691563e-06,
+              "signed_projection": -4.6528587131734747e-07,
+              "cosine": -0.0005139574821728158,
+              "removal_squared_reduction": -1.750140405826221e-06
+            },
+            "operador_Phi": {
+              "relative_error": 0.00010823372332794732,
+              "signed_projection": 0.0055838178623067525,
+              "cosine": 0.5225289914740053,
+              "removal_squared_reduction": 0.011053442140384968
+            },
+            "operador_chi": {
+              "relative_error": 0.009972223931955187,
+              "signed_projection": 0.9843433505736425,
+              "cosine": 0.9997613336768264,
+              "removal_squared_reduction": 0.9992922009048603
+            },
+            "transferencia_Phi": {
+              "relative_error": 0.00010210398460842518,
+              "signed_projection": 0.004852042978814011,
+              "cosine": 0.48130868113917885,
+              "removal_squared_reduction": 0.009602460646442467
+            },
+            "transferencia_chi": {
+              "relative_error": 0.0001514653512264895,
+              "signed_projection": 0.005221144559119626,
+              "cosine": 0.3491356270781748,
+              "removal_squared_reduction": 0.010218652405731488
+            },
+            "operador_total": {
+              "relative_error": 0.010029069381803212,
+              "signed_projection": 0.9899271684359492,
+              "cosine": 0.9997337514108192,
+              "removal_squared_reduction": 0.9993765058902562
+            },
+            "transferencia_total": {
+              "relative_error": 0.00025246767124257805,
+              "signed_projection": 0.010073187537933636,
+              "cosine": 0.4041130654466393,
+              "removal_squared_reduction": 0.019525036875498676
+            }
+          }
+        },
+        "cross_terms": {
+          "raw": [
+            [
+              1.883853883965952e-12,
+              2.1602545763710563e-11,
+              -3.490856353914216e-13,
+              8.968972890482685e-13,
+              3.0199777007281695e-13
+            ],
+            [
+              2.1602545763710563e-11,
+              2.4812461800656945e-06,
+              -9.68448329501212e-09,
+              -2.758130178938975e-08,
+              -6.768611922122003e-09
+            ],
+            [
+              -3.490856353914216e-13,
+              -9.68448329501212e-09,
+              9.99670331418186e-11,
+              -7.019439020819909e-10,
+              -1.921632037428316e-10
+            ],
+            [
+              8.968972890482685e-13,
+              -2.758130178938975e-08,
+              -7.019439020819909e-10,
+              1.3708063745484043e-08,
+              3.656441645807775e-09
+            ],
+            [
+              3.0199777007281695e-13,
+              -6.768611922122003e-09,
+              -1.921632037428316e-10,
+              3.656441645807775e-09,
+              9.77717630969953e-10
+            ]
+          ],
+          "coupled": [
+            [
+              1.9780575395716306e-12,
+              -4.476126633980884e-14,
+              -4.4723350447962074e-12,
+              5.736298224941415e-13,
+              8.423325178590784e-13
+            ],
+            [
+              -4.476126633980884e-14,
+              2.7561019643473054e-10,
+              1.3237197459165666e-08,
+              1.2404594481318105e-11,
+              -4.8392209497462604e-11
+            ],
+            [
+              -4.4723350447962074e-12,
+              1.3237197459165666e-08,
+              2.3396674203680403e-06,
+              1.1094950447966472e-08,
+              1.1751792504460654e-08
+            ],
+            [
+              5.736298224941415e-13,
+              1.2404594481318105e-11,
+              1.1094950447966472e-08,
+              2.452762313032946e-10,
+              3.572950869543077e-10
+            ],
+            [
+              8.423325178590784e-13,
+              -4.8392209497462604e-11,
+              1.1751792504460654e-08,
+              3.572950869543077e-10,
+              5.397550018302936e-10
+            ]
+          ]
+        },
+        "sustained_crossings": {
+          "raw:inicial_libre": null,
+          "raw:operador_chi": 32.8,
+          "raw:transferencia_chi": null,
+          "raw:densidad_rho": 34.8,
+          "raw:reaccion_chi": 50.8,
+          "coupled:inicial": null,
+          "coupled:operador_Phi": 60.0,
+          "coupled:operador_chi": 32.4,
+          "coupled:transferencia_Phi": 74.8,
+          "coupled:transferencia_chi": 41.2
+        },
+        "onset_threshold": 0.00010128421035328151
+      },
+      "short_smooth_k4": {
+        "original_chi_operator_norm": 0.05112499930804798,
+        "P4_chi_operator_norm": 0.009972192764605134,
+        "reduction": 0.8049448821599234,
+        "passed": true,
+        "signed_channel_metrics": {
+          "raw": {
+            "inicial_libre": {
+              "relative_error": 8.857288248296314e-06,
+              "signed_projection": 1.001747747823267e-05,
+              "cosine": 0.01145507608816646,
+              "removal_squared_reduction": 1.9270202654531692e-05
+            },
+            "operador_chi": {
+              "relative_error": 0.010269471966817338,
+              "signed_projection": 1.0098186554860666,
+              "cosine": 0.9959456931236976,
+              "removal_squared_reduction": 0.9915844086231976
+            },
+            "transferencia_chi": {
+              "relative_error": 6.518387290722147e-05,
+              "signed_projection": -0.004341778807197234,
+              "cosine": -0.6746335200583923,
+              "removal_squared_reduction": -0.008724976609422022
+            },
+            "densidad_rho": {
+              "relative_error": 0.0007632899642467799,
+              "signed_projection": -0.0045231894190720075,
+              "cosine": -0.06001994662650607,
+              "removal_squared_reduction": -0.01472572500635442
+            },
+            "reaccion_chi": {
+              "relative_error": 0.00020384922264688853,
+              "signed_projection": -0.0009637604380516565,
+              "cosine": -0.047885102021418484,
+              "removal_squared_reduction": -0.0023325976619910354
+            },
+            "inicial": {
+              "relative_error": 8.857288248296314e-06,
+              "signed_projection": 1.001747747823267e-05,
+              "cosine": 0.01145507608816646,
+              "removal_squared_reduction": 1.9270202654531692e-05
+            },
+            "operador": {
+              "relative_error": 0.010269471966817338,
+              "signed_projection": 1.0098186554860666,
+              "cosine": 0.9959456931236976,
+              "removal_squared_reduction": 0.9915844086231976
+            },
+            "fuente_total": {
+              "relative_error": 0.0009290963384293238,
+              "signed_projection": -0.009828728664320897,
+              "cosine": -0.1071462508794323,
+              "removal_squared_reduction": -0.02807219793859761
+            }
+          },
+          "coupled": {
+            "inicial": {
+              "relative_error": 9.061484028775631e-06,
+              "signed_projection": -5.380617763041509e-07,
+              "cosine": -0.0006014135292900371,
+              "removal_squared_reduction": -1.8765434842948631e-06
+            },
+            "operador_Phi": {
+              "relative_error": 0.00010823365278400008,
+              "signed_projection": 0.005583852610979122,
+              "cosine": 0.5225309419952183,
+              "removal_squared_reduction": 0.011053511068988848
+            },
+            "operador_chi": {
+              "relative_error": 0.009972192764605134,
+              "signed_projection": 0.9843433778031571,
+              "cosine": 0.9997613447409337,
+              "removal_squared_reduction": 0.9992922231879993
+            },
+            "transferencia_Phi": {
+              "relative_error": 0.00010210385483399223,
+              "signed_projection": 0.004852052266562892,
+              "cosine": 0.4813087019211822,
+              "removal_squared_reduction": 0.009602478841654861
+            },
+            "transferencia_chi": {
+              "relative_error": 0.00015146515721665068,
+              "signed_projection": 0.005221146075691443,
+              "cosine": 0.3491350787042263,
+              "removal_squared_reduction": 0.010218654606439507
+            },
+            "operador_total": {
+              "relative_error": 0.01002903838773417,
+              "signed_projection": 0.9899272304141361,
+              "cosine": 0.9997337624277925,
+              "removal_squared_reduction": 0.9993765286830284
+            },
+            "transferencia_total": {
+              "relative_error": 0.0002524673469027841,
+              "signed_projection": 0.010073198342254336,
+              "cosine": 0.40411274831658583,
+              "removal_squared_reduction": 0.019525056176066192
+            }
+          }
+        },
+        "cross_terms": {
+          "raw": [
+            [
+              1.8457447419652737e-12,
+              2.1378992673623134e-11,
+              -3.5265823661233264e-13,
+              9.818553864742633e-13,
+              3.235348833217619e-13
+            ],
+            [
+              2.1378992673623134e-11,
+              2.4812259265841625e-06,
+              -9.684547334088494e-09,
+              -2.7578611532116662e-08,
+              -6.767917388227801e-09
+            ],
+            [
+              -3.5265823661233264e-13,
+              -9.684547334088494e-09,
+              9.996556021642462e-11,
+              -7.019152401791515e-10,
+              -1.9215576279189297e-10
+            ],
+            [
+              9.818553864742633e-13,
+              -2.7578611532116662e-08,
+              -7.019152401791515e-10,
+              1.3707213827627662e-08,
+              3.6562220010370283e-09
+            ],
+            [
+              3.235348833217619e-13,
+              -6.767917388227801e-09,
+              -1.9215576279189297e-10,
+              3.6562220010370283e-09,
+              9.776608004369585e-10
+            ]
+          ],
+          "coupled": [
+            [
+              1.931829268822332e-12,
+              -4.465782638209947e-14,
+              -4.594656642887497e-12,
+              5.707436898334357e-13,
+              8.380261704781964e-13
+            ],
+            [
+              -4.465782638209947e-14,
+              2.756098371636231e-10,
+              1.3237196841696328e-08,
+              1.2404590111498016e-11,
+              -4.8392153477205067e-11
+            ],
+            [
+              -4.594656642887497e-12,
+              1.3237196841696328e-08,
+              2.33965279552206e-06,
+              1.109490371223131e-08,
+              1.1751723533956953e-08
+            ],
+            [
+              5.707436898334357e-13,
+              1.2404590111498016e-11,
+              1.109490371223131e-08,
+              2.452756078102208e-10,
+              3.572941635348244e-10
+            ],
+            [
+              8.380261704781964e-13,
+              -4.8392153477205067e-11,
+              1.1751723533956953e-08,
+              3.572941635348244e-10,
+              5.397536191019932e-10
+            ]
+          ]
+        },
+        "sustained_crossings": {
+          "raw:inicial_libre": null,
+          "raw:operador_chi": 32.8,
+          "raw:transferencia_chi": null,
+          "raw:densidad_rho": 34.8,
+          "raw:reaccion_chi": 50.8,
+          "coupled:inicial": null,
+          "coupled:operador_Phi": 60.0,
+          "coupled:operador_chi": 32.4,
+          "coupled:transferencia_Phi": 74.8,
+          "coupled:transferencia_chi": 41.2
+        },
+        "onset_threshold": 0.00010128389211707725
+      }
+    },
+    "minimum_required_reduction": 0.5,
+    "shared_initial_chi_scale": 0.023527191262137537,
+    "full_box_chi_closure": {
+      "raw": 4.0524318065143785e-06,
+      "coupled": 4.050311275780193e-06
+    },
+    "observer_maximum_errors": {
+      "raw_closure": 4.088614109635073e-06,
+      "raw_order_difference": 8.067454790226518e-09,
+      "raw_individual_order_difference": 1.8303590000285134e-08,
+      "coupled_closure": 4.0876932419024765e-06,
+      "coupled_order_difference": 1.7496737473012963e-09,
+      "coupled_individual_order_difference": 8.63597230619351e-09,
+      "coupled_Phi_closure": 2.0094170676873854e-10,
+      "coupled_Phi_order_difference": 9.87323737682691e-11,
+      "modal_parseval": 1.788781084190389e-14,
+      "short_core_raw_closure": 4.0965036890808305e-06,
+      "short_core_raw_order_difference": 8.278900139068759e-08,
+      "short_core_coupled_closure": 4.095868062107026e-06,
+      "short_core_coupled_order_difference": 8.542357926331105e-08,
+      "short_smooth_raw_closure": 4.096526869172707e-06,
+      "short_smooth_raw_order_difference": 7.396126642182071e-08,
+      "short_smooth_coupled_closure": 4.0960518555540265e-06,
+      "short_smooth_coupled_order_difference": 8.528198811779966e-08
+    },
+    "scope": "Atribución causal condicionada a las historias de las dos mallas originales."
+  },
+  "M2_steps_executed": 0,
+  "source_capsule_sha256": "cbf617c7686d3c2a7c5dfff2ed9b1543092dba55d7e3d417b59ade6bef14f77c",
+  "source_state_sha256": "1fcd13ae69821a344f0fe04523eae03372650f04153a93c57b4b245db99e604a",
+  "additional_reference_stability_robustness_pending": true,
+  "CP12_closed": false,
+  "correction_validated": false
+}
