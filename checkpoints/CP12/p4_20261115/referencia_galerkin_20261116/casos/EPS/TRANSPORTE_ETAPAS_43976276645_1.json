@@ -1,0 +1,31 @@
+{
+  "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
+  "case": "EPS",
+  "registration_sha256": "7dc96b561dc7df3792780bb352b926f9e3b43fff16badcd47170d545f45ab63d",
+  "trajectory_id": "95a7c3d7cc6ac9d231fc61867cd73ac5d62b4219f47d0d116ada80e1a1f40f99",
+  "hosted": {
+    "run_id": 43976276645,
+    "attempt": 1,
+    "admin_commit": "f235fed2602c8d88d14d3e88d93a08b0842ccd8d"
+  },
+  "time": 6.640000000000001,
+  "state_sha256": "59cd63475972d945e87485725b794a94c1df5ed8114e2410498170b3012f052a",
+  "source_asset_id": 756769135,
+  "source_archive_sha256": "46450929c3560c1e112eead590afa2dce09944c48da0327c9951fd726c588ac3",
+  "steps_already_accepted": 830,
+  "passed": true,
+  "physical": {
+    "energy": true,
+    "charge": true,
+    "core_charge": true,
+    "amplification": true,
+    "finite": true
+  },
+  "recovered_endpoint_balance": {
+    "energy": 5.995204332975845e-15,
+    "charge": 4.440892098500626e-16
+  },
+  "is_checkpoint": false,
+  "last_certified_boundary": 0,
+  "M2_steps_executed": 0
+}
