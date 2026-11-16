@@ -1,0 +1,21 @@
+{
+  "execution_uuid": "7c096442a7c34397b5c13e097461dd70",
+  "execution_run_id": "3d18aa7331f9ee11be04742e7b12a41e2499cc17646c0bd48730665fda7557ba",
+  "status": "FRONTERA_ESCRITA",
+  "from_time": 56.0,
+  "time": 64.0,
+  "target": 64,
+  "negative": null,
+  "metadata": {
+    "t": 64.0,
+    "accepted": 11573,
+    "nfev": 139852,
+    "maxe": 2.5041768658695673e-10,
+    "maxe_original": 2.406696064660707e-09,
+    "maxq": 3.930189507173054e-14
+  },
+  "new_M2_steps": 1420,
+  "state_sha256": "80c9340dcd8a25f85584539262cc1db7a580d629ebb2f60ae8f56585a9cd76a3",
+  "previous_state_sha256": "50c21e9591dd3f830b15bb6cae0d02299d60ee67271fde632d4765640d32c347",
+  "original_trajectories_repeated": false
+}
