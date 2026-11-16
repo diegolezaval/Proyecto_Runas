@@ -1,0 +1,334 @@
+{
+  "schema": "CP12_P4_REFERENCIA_GALERKIN_CONTROL_V1",
+  "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
+  "registration_sha256": "7dc96b561dc7df3792780bb352b926f9e3b43fff16badcd47170d545f45ab63d",
+  "preregistration_commit": "5c582e9760e8d3d45816a1a027eea462c55d4281",
+  "hosted": {
+    "run_id": 43972518428,
+    "attempt": 1,
+    "admin_commit": "65f2015d63e86340056d07fdaca269261b7b259b"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "machine": "x86_64",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0"
+    },
+    "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "numeric_flags": [
+      "-O3",
+      "-fPIC",
+      "-shared",
+      "-std=c11",
+      "-fno-fast-math"
+    ]
+  },
+  "controls": {
+    "gauss_moments": true,
+    "gauss_symplectic": true,
+    "gauss_row_times": true,
+    "identities": true,
+    "initial_values_CP04": true,
+    "profiles_finite_and_Dirichlet": true,
+    "manufactured_fine_and_refining": true
+  },
+  "manufactured": {
+    "R0": {
+      "0": {
+        "0": {
+          "field": 3.32152001720614e-09,
+          "operator": 1.3843741216606204e-05,
+          "boundary_value": 0.0,
+          "finite": true
+        },
+        "2": {
+          "field": 9.05055900192087e-09,
+          "operator": 1.9934150256595153e-05,
+          "boundary_value": 0.0,
+          "finite": true
+        },
+        "4": {
+          "field": 9.888082769571076e-09,
+          "operator": 1.5084543186167388e-05,
+          "boundary_value": 0.0,
+          "finite": true
+        }
+      },
+      "8": {
+        "0": {
+          "field": 0.0021874388369643987,
+          "operator": 0.028710393384862084,
+          "boundary_value": 0.0,
+          "finite": true
+        },
+        "2": {
+          "field": 0.0021714624189462066,
+          "operator": 0.02731809084487253,
+          "boundary_value": 0.0,
+          "finite": true
+        },
+        "4": {
+          "field": 0.002163639099773571,
+          "operator": 0.026868463643174245,
+          "boundary_value": 0.0,
+          "finite": true
+        }
+      }
+    },
+    "R1": {
+      "0": {
+        "0": {
+          "field": 5.1581403718035856e-11,
+          "operator": 8.513740118503729e-07,
+          "boundary_value": 0.0,
+          "finite": true
+        },
+        "2": {
+          "field": 1.4050345412425922e-10,
+          "operator": 1.148428467296163e-06,
+          "boundary_value": 0.0,
+          "finite": true
+        },
+        "4": {
+          "field": 1.5208843313099417e-10,
+          "operator": 8.3699545712922e-07,
+          "boundary_value": 0.0,
+          "finite": true
+        }
+      },
+      "8": {
+        "0": {
+          "field": 3.6353800411040414e-05,
+          "operator": 0.0029434009216128256,
+          "boundary_value": 0.0,
+          "finite": true
+        },
+        "2": {
+          "field": 3.597228740015655e-05,
+          "operator": 0.0029049237820539704,
+          "boundary_value": 0.0,
+          "finite": true
+        },
+        "4": {
+          "field": 3.578205759775436e-05,
+          "operator": 0.002875863882775031,
+          "boundary_value": 0.0,
+          "finite": true
+        }
+      }
+    },
+    "R2": {
+      "0": {
+        "0": {
+          "field": 8.035491008568279e-13,
+          "operator": 5.2965457022044113e-08,
+          "boundary_value": 0.0,
+          "finite": true
+        },
+        "2": {
+          "field": 2.1869094374917457e-12,
+          "operator": 7.049335902622552e-08,
+          "boundary_value": 0.0,
+          "finite": true
+        },
+        "4": {
+          "field": 2.3613325809201767e-12,
+          "operator": 5.062260015855617e-08,
+          "boundary_value": 0.0,
+          "finite": true
+        }
+      },
+      "8": {
+        "0": {
+          "field": 5.155838676736998e-07,
+          "operator": 0.00021827412219620925,
+          "boundary_value": 0.0,
+          "finite": true
+        },
+        "2": {
+          "field": 4.991855082772826e-07,
+          "operator": 0.00021013635953981362,
+          "boundary_value": 0.0,
+          "finite": true
+        },
+        "4": {
+          "field": 4.965993732146745e-07,
+          "operator": 0.00020774021410673116,
+          "boundary_value": 0.0,
+          "finite": true
+        }
+      }
+    }
+  },
+  "manufactured_gates": {
+    "0_0": true,
+    "0_2": true,
+    "0_4": true,
+    "8_0": true,
+    "8_2": true,
+    "8_4": true
+  },
+  "Cauchy": {
+    "0.125": {
+      "field_max": 0.0,
+      "velocity_max": 0.0,
+      "origin_hash": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+      "omitted_charge": 167.47625898939123
+    },
+    "0.0625": {
+      "field_max": 0.0,
+      "velocity_max": 0.0,
+      "origin_hash": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+      "omitted_charge": 167.47625898939123
+    },
+    "0.03125": {
+      "field_max": 0.0,
+      "velocity_max": 0.0,
+      "origin_hash": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+      "omitted_charge": 167.47625898939123
+    }
+  },
+  "Cauchy_projection_chi_in_core": {
+    "R0": 1.1356788378442874e-05,
+    "R1": 3.3257435519730205e-06,
+    "R2": 4.0047278025289446e-07
+  },
+  "identities": {
+    "R0": {
+      "energy": 2403.415658534148,
+      "charge": 2582.539782498772,
+      "angular_products": 15,
+      "angular_force_residual": 3.183359537306246e-16,
+      "potential_residual": 4.939850199580938e-16,
+      "angular_closure_residual": 3.841204696743564e-16,
+      "energy_identity": 3.1523587716222033e-16,
+      "charge_identity": 1.2801653179138415e-15
+    },
+    "R1": {
+      "energy": 2416.122833538051,
+      "charge": 2582.547391823035,
+      "angular_products": 15,
+      "angular_force_residual": 3.235858559556971e-16,
+      "potential_residual": 3.714894220545381e-16,
+      "angular_closure_residual": 3.6087406982559187e-16,
+      "energy_identity": 1.2222413249603095e-15,
+      "charge_identity": 2.844803435515319e-15
+    },
+    "R2": {
+      "energy": 2441.525284618874,
+      "charge": 2582.5511964953985,
+      "angular_products": 15,
+      "angular_force_residual": 4.854459856761518e-16,
+      "potential_residual": 3.720346974251087e-16,
+      "angular_closure_residual": 3.84943496454136e-16,
+      "energy_identity": 9.80784666620163e-15,
+      "charge_identity": 1.3086076524640536e-14
+    }
+  },
+  "time_controls": {
+    "R0": {
+      "passed": true,
+      "physical": {
+        "energy": true,
+        "charge": true,
+        "core_charge": true,
+        "amplification": true,
+        "finite": true
+      },
+      "balance": {
+        "energy": 1.2212453270876722e-14,
+        "charge": 2.220446049250313e-16
+      },
+      "steps": 10,
+      "time": 0.08,
+      "seconds": 1.2476175719999958,
+      "max_iterations": 5,
+      "max_normalized_stage_change": 0.07036991891341471,
+      "degrees_of_freedom_radial": 2199
+    },
+    "R1": {
+      "passed": true,
+      "physical": {
+        "energy": true,
+        "charge": true,
+        "core_charge": true,
+        "amplification": true,
+        "finite": true
+      },
+      "balance": {
+        "energy": 1.199040866595169e-14,
+        "charge": 3.3306690738754696e-16
+      },
+      "steps": 10,
+      "time": 0.08,
+      "seconds": 2.528108760000009,
+      "max_iterations": 5,
+      "max_normalized_stage_change": 0.04934515603803402,
+      "degrees_of_freedom_radial": 4399
+    },
+    "R2": {
+      "passed": true,
+      "physical": {
+        "energy": true,
+        "charge": true,
+        "core_charge": true,
+        "amplification": true,
+        "finite": true
+      },
+      "balance": {
+        "energy": 1.199040866595169e-14,
+        "charge": 4.440892098500626e-16
+      },
+      "steps": 10,
+      "time": 0.08,
+      "seconds": 5.271129160000001,
+      "max_iterations": 5,
+      "max_normalized_stage_change": 0.024928453178027953,
+      "degrees_of_freedom_radial": 8799
+    },
+    "T": {
+      "passed": true,
+      "physical": {
+        "energy": true,
+        "charge": true,
+        "core_charge": true,
+        "amplification": true,
+        "finite": true
+      },
+      "balance": {
+        "energy": 2.6867397195928788e-14,
+        "charge": 2.220446049250313e-16
+      },
+      "steps": 20,
+      "time": 0.08,
+      "seconds": 8.732401221999993,
+      "max_iterations": 4,
+      "max_normalized_stage_change": 0.03898885671523595,
+      "degrees_of_freedom_radial": 8799
+    },
+    "EPS": {
+      "passed": true,
+      "physical": {
+        "energy": true,
+        "charge": true,
+        "core_charge": true,
+        "amplification": true,
+        "finite": true
+      },
+      "balance": {
+        "energy": 2.3869795029440866e-14,
+        "charge": 4.440892098500626e-16
+      },
+      "steps": 10,
+      "time": 0.08,
+      "seconds": 5.865164357999987,
+      "max_iterations": 6,
+      "max_normalized_stage_change": 0.9589629667120364,
+      "degrees_of_freedom_radial": 8799
+    }
+  },
+  "M2_steps_preflight": 60,
+  "M2_production_started": false,
+  "passed": true
+}

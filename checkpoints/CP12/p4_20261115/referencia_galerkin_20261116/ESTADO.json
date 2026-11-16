@@ -1,8 +1,10 @@
 {
   "schema": "CP12_P4_REFERENCIA_GALERKIN_ESTADO_V1",
   "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
-  "status": "CONTROLES_PENDIENTES",
+  "status": "CONTROLES_APROBADOS",
   "source_commit": "1dc926f3f9ee32ab9f7fc9ccf279113a88899738",
   "comparaciones_publicadas": 0,
-  "CP12_closed": false
+  "CP12_closed": false,
+  "preflight": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/CONTROL_PREVIO.json",
+  "updated_at": "2026-11-16T22:42:50.420732+00:00"
 }
