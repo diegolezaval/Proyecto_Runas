@@ -9,6 +9,23 @@
     "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/CAJA/tau0096/RECUPERACION_PUBLICA.json",
     "sha256": "22e7e0674e4ed43bae99e705dec76d5b44b0c77384854f21d37dde0b7b50ec64"
   },
-  "pending": null,
-  "updated_at": "2026-11-17T19:51:23.066015+00:00"
+  "pending": {
+    "campaign_uuid": "8488bc917fee4daaac8190c779eef86e",
+    "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
+    "case": "CAJA",
+    "run_id": 44021289493,
+    "attempt": 1,
+    "admin_commit": "ab37ae15a2abcc05413a9923d80efdb9b02f3cf2",
+    "target": 104,
+    "file_name": "CP12_P4_VALIDACION_8488bc917fee4daaac8190c779eef86e_CAJA_TAU0104_44021289493_1_297ac5db6cb8.zip",
+    "bytes": 11019922,
+    "sha256": "50d608bdfb3bdd77fb989849dba215f683b99050518bb65ef9c35ba04e843576",
+    "state_sha256": "297ac5db6cb8c87cf83334eeb40ffc48d8730652021da08176002547489f96a5",
+    "previous": {
+      "time": 96,
+      "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/CAJA/tau0096/RECUPERACION_PUBLICA.json",
+      "sha256": "22e7e0674e4ed43bae99e705dec76d5b44b0c77384854f21d37dde0b7b50ec64"
+    }
+  },
+  "updated_at": "2026-11-17T20:38:22.085073+00:00"
 }
