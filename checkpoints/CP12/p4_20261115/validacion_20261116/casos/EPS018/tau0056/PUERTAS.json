@@ -1,0 +1,212 @@
+{
+  "campaign_uuid": "8488bc917fee4daaac8190c779eef86e",
+  "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
+  "case": "EPS018",
+  "passed": true,
+  "physical": {
+    "original_energy": true,
+    "P4_energy": true,
+    "charge": true,
+    "core_charge": true,
+    "bounded_window": true
+  },
+  "balances": {
+    "variant": {
+      "initial_FV_energy": 2421.669135753017,
+      "final_FV_energy": 2421.6691321797152,
+      "initial_P4_energy": 2421.669145593639,
+      "final_P4_energy": 2421.669145172651,
+      "initial_charge": 2581.7383096671606,
+      "final_charge": 2581.7383096670674,
+      "max_FV_energy_drift": 1.5328195379638032e-09,
+      "max_P4_energy_drift": 1.7384205186488089e-10,
+      "max_charge_drift": 3.608224830031759e-14,
+      "max_core_charge_change": 3.0344313217578467e-05,
+      "amplification": 1.0,
+      "accepted_steps": 10010,
+      "force_evaluations": 121070
+    },
+    "base": {
+      "initial_FV_energy": 2422.513595086653,
+      "final_FV_energy": 2422.513589640269,
+      "initial_P4_energy": 2422.5136049626653,
+      "final_P4_energy": 2422.5136044231863,
+      "initial_charge": 2582.5632534858764,
+      "final_charge": 2582.5632534857864,
+      "max_FV_energy_drift": 2.299398782490414e-09,
+      "max_P4_energy_drift": 2.2269397437213456e-10,
+      "max_charge_drift": 3.5083047578154947e-14,
+      "max_core_charge_change": 3.132467273714301e-05,
+      "amplification": 1.0,
+      "accepted_steps": 10153,
+      "force_evaluations": 122738
+    }
+  },
+  "metrics": {
+    "norm_relative_sup_error": 0.11111111111111145,
+    "final_complex_nonradial_field_error_over_initial_norm": 0.09806398970683794,
+    "final_phi_phase_space_error_over_initial_norm": 0.09856939802098169,
+    "final_mediator_nonradial_error_over_initial_norm": 0.09909465389446452,
+    "final_mediator_phase_space_error_over_initial_norm": 0.09932669386409221
+  },
+  "chi": {
+    "initial_chi_phase_norm_base": 0.15338549111543548,
+    "initial_chi_phase_norm_variant": 0.13804694200389192,
+    "windows": [
+      {
+        "r_min": 0,
+        "r_max": 40,
+        "modes": {
+          "2": {
+            "baseline_normalized": {
+              "field": 0.893178770545533,
+              "velocity_over_mu": 0.024646320230285658,
+              "phase": 0.8935187503651637
+            },
+            "variant_normalized": {
+              "field": 0.8936551408197352,
+              "velocity_over_mu": 0.021517679667635906,
+              "phase": 0.8939141576526349
+            },
+            "difference_over_variant_seed": {
+              "field": 0.09887918061467289,
+              "velocity_over_mu": 0.006127968152626293,
+              "phase": 0.09906888690557045
+            },
+            "difference_per_seed_amplitude": {
+              "field": 0.004517762438927223,
+              "velocity_over_mu": 0.0035502665371315036,
+              "phase": 0.0057458306570292664
+            }
+          },
+          "4": {
+            "baseline_normalized": {
+              "field": 0.03151460643465582,
+              "velocity_over_mu": 0.012617715479946145,
+              "phase": 0.033946681173041386
+            },
+            "variant_normalized": {
+              "field": 0.028761582389211292,
+              "velocity_over_mu": 0.011771800082206378,
+              "phase": 0.031077385647876227
+            },
+            "difference_over_variant_seed": {
+              "field": 0.006531313864112047,
+              "velocity_over_mu": 0.0029137090573397337,
+              "phase": 0.0071517663036739275
+            },
+            "difference_per_seed_amplitude": {
+              "field": 0.003280677996635834,
+              "velocity_over_mu": 0.0019515685810447456,
+              "phase": 0.003817259231979341
+            }
+          }
+        }
+      },
+      {
+        "r_min": 20,
+        "r_max": 40,
+        "modes": {
+          "2": {
+            "baseline_normalized": {
+              "field": 0.0002363391379272918,
+              "velocity_over_mu": 3.063314039796792e-05,
+              "phase": 0.00023831612913702898
+            },
+            "variant_normalized": {
+              "field": 0.00023238042525499186,
+              "velocity_over_mu": 3.063535173485036e-05,
+              "phase": 0.00023439109799138887
+            },
+            "difference_over_variant_seed": {
+              "field": 3.1266007279327343e-05,
+              "velocity_over_mu": 3.402470007441274e-06,
+              "phase": 3.1450596390887215e-05
+            },
+            "difference_per_seed_amplitude": {
+              "field": 8.580790768745382e-06,
+              "velocity_over_mu": 7.824826021408523e-08,
+              "phase": 8.58114753440427e-06
+            }
+          },
+          "4": {
+            "baseline_normalized": {
+              "field": 4.8742965737759085e-05,
+              "velocity_over_mu": 9.050958474427304e-07,
+              "phase": 4.8751368261879725e-05
+            },
+            "variant_normalized": {
+              "field": 4.3597547797815785e-05,
+              "velocity_over_mu": 8.146362042748562e-07,
+              "phase": 4.360515802205225e-05
+            },
+            "difference_over_variant_seed": {
+              "field": 1.0687040684985265e-05,
+              "velocity_over_mu": 1.9131041818235456e-07,
+              "phase": 1.0688752886966536e-05
+            },
+            "difference_per_seed_amplitude": {
+              "field": 5.373999548781088e-06,
+              "velocity_over_mu": 9.099927605151914e-08,
+              "phase": 5.374769950290081e-06
+            }
+          }
+        }
+      },
+      {
+        "r_min": 40,
+        "r_max": 220,
+        "modes": {
+          "2": {
+            "baseline_normalized": {
+              "field": 7.980337994750654e-05,
+              "velocity_over_mu": 7.301007426211387e-07,
+              "phase": 7.980671963024458e-05
+            },
+            "variant_normalized": {
+              "field": 7.863812371903784e-05,
+              "velocity_over_mu": 7.257002052353459e-07,
+              "phase": 7.864147215584523e-05
+            },
+            "difference_over_variant_seed": {
+              "field": 1.018331543946348e-05,
+              "velocity_over_mu": 8.656311427956624e-08,
+              "phase": 1.0183683347019834e-05
+            },
+            "difference_per_seed_amplitude": {
+              "field": 2.026186863447192e-06,
+              "velocity_over_mu": 1.3434259771262165e-08,
+              "phase": 2.026231399653448e-06
+            }
+          },
+          "4": {
+            "baseline_normalized": {
+              "field": 1.982358716608733e-05,
+              "velocity_over_mu": 1.683015806419588e-07,
+              "phase": 1.9824301590560738e-05
+            },
+            "variant_normalized": {
+              "field": 1.7908424940202355e-05,
+              "velocity_over_mu": 1.5172208550624674e-07,
+              "phase": 1.7909067631512594e-05
+            },
+            "difference_over_variant_seed": {
+              "field": 4.132472034286188e-06,
+              "velocity_over_mu": 3.5409884578219326e-08,
+              "phase": 4.1326237397183e-06
+            },
+            "difference_per_seed_amplitude": {
+              "field": 1.9434288355089546e-06,
+              "velocity_over_mu": 1.6827475746771588e-08,
+              "phase": 1.943501685779485e-06
+            }
+          }
+        }
+      }
+    ]
+  },
+  "time": 56.0,
+  "state_sha256": "ccc9e8b4c6ed06055bf195cd3fa4d8cb9e094bda129d647b9fa5f1641a5755c9",
+  "M2_steps_executed": 0,
+  "DOP853_construction_or_step_attempts": 0
+}
