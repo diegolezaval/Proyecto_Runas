@@ -3,29 +3,12 @@
   "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
   "case": "EPS018",
   "status": "VERIFICADA",
-  "last_closed_time": 8,
+  "last_closed_time": 16,
   "latest": {
-    "time": 8,
-    "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/EPS018/tau0008/RECUPERACION_PUBLICA.json",
-    "sha256": "3b4c1c1e1d0cda7c75bff79fc797600e872b150d5ec57ad6203b64ed9911d094"
+    "time": 16,
+    "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/EPS018/tau0016/RECUPERACION_PUBLICA.json",
+    "sha256": "4226fbc876d218d4a108dcf043516deb42a5ae4718193a2eb002762a97fda0ad"
   },
-  "pending": {
-    "campaign_uuid": "8488bc917fee4daaac8190c779eef86e",
-    "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
-    "case": "EPS018",
-    "run_id": 44021289493,
-    "attempt": 1,
-    "admin_commit": "ab37ae15a2abcc05413a9923d80efdb9b02f3cf2",
-    "target": 16,
-    "file_name": "CP12_P4_VALIDACION_8488bc917fee4daaac8190c779eef86e_EPS018_TAU0016_44021289493_1_c140eaef7f2e.zip",
-    "bytes": 9282698,
-    "sha256": "4226fbc876d218d4a108dcf043516deb42a5ae4718193a2eb002762a97fda0ad",
-    "state_sha256": "c140eaef7f2e1980e4bbbe96686d91c37bb66b2b5d29216fb9ce04539915e603",
-    "previous": {
-      "time": 8,
-      "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/EPS018/tau0008/RECUPERACION_PUBLICA.json",
-      "sha256": "3b4c1c1e1d0cda7c75bff79fc797600e872b150d5ec57ad6203b64ed9911d094"
-    }
-  },
-  "updated_at": "2026-11-17T13:42:14.154415+00:00"
+  "pending": null,
+  "updated_at": "2026-11-17T13:42:26.809919+00:00"
 }
