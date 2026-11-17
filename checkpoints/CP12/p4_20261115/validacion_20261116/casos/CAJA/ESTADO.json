@@ -3,29 +3,12 @@
   "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
   "case": "CAJA",
   "status": "VERIFICADA",
-  "last_closed_time": 112,
+  "last_closed_time": 120,
   "latest": {
-    "time": 112,
-    "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/CAJA/tau0112/RECUPERACION_PUBLICA.json",
-    "sha256": "293f12ebecd5d0c84c6ab43bd7df4dc6d499278ec98e1acc2fb8fe188debdfc8"
+    "time": 120,
+    "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/CAJA/tau0120/RECUPERACION_PUBLICA.json",
+    "sha256": "6f972631430c79b6343d25ef01283327e52bcd364f3c5e7ffd8e0501b58af6f2"
   },
-  "pending": {
-    "campaign_uuid": "8488bc917fee4daaac8190c779eef86e",
-    "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
-    "case": "CAJA",
-    "run_id": 44021289493,
-    "attempt": 1,
-    "admin_commit": "ab37ae15a2abcc05413a9923d80efdb9b02f3cf2",
-    "target": 120,
-    "file_name": "CP12_P4_VALIDACION_8488bc917fee4daaac8190c779eef86e_CAJA_TAU0120_44021289493_1_e0ba12e59a4b.zip",
-    "bytes": 11027310,
-    "sha256": "6f972631430c79b6343d25ef01283327e52bcd364f3c5e7ffd8e0501b58af6f2",
-    "state_sha256": "e0ba12e59a4b5a0f5406ed3cfde7272ddfb4077f074343c68d1b6b27febfacd6",
-    "previous": {
-      "time": 112,
-      "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/CAJA/tau0112/RECUPERACION_PUBLICA.json",
-      "sha256": "293f12ebecd5d0c84c6ab43bd7df4dc6d499278ec98e1acc2fb8fe188debdfc8"
-    }
-  },
-  "updated_at": "2026-11-17T21:22:26.154439+00:00"
+  "pending": null,
+  "updated_at": "2026-11-17T21:22:37.341681+00:00"
 }
