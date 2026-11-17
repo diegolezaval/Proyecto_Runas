@@ -9,6 +9,23 @@
     "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/ANGULAR/tau0032/RECUPERACION_PUBLICA.json",
     "sha256": "d61d9d379727b6c03fdc2fe09c4092f7221c31c8e529f9f3ca81ebbdda315559"
   },
-  "pending": null,
-  "updated_at": "2026-11-17T15:44:32.281257+00:00"
+  "pending": {
+    "campaign_uuid": "8488bc917fee4daaac8190c779eef86e",
+    "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
+    "case": "ANGULAR",
+    "run_id": 44021289493,
+    "attempt": 1,
+    "admin_commit": "ab37ae15a2abcc05413a9923d80efdb9b02f3cf2",
+    "target": 40,
+    "file_name": "CP12_P4_VALIDACION_8488bc917fee4daaac8190c779eef86e_ANGULAR_TAU0040_44021289493_1_ece5cc1e2721.zip",
+    "bytes": 17217983,
+    "sha256": "3bfb10ddedcc971db9f1feb6112c93db31ea4c29cfd9c9347150643299ff3dbf",
+    "state_sha256": "ece5cc1e272160726478589a0387a95065d018892e0fda31bca09731b57ce428",
+    "previous": {
+      "time": 32,
+      "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/ANGULAR/tau0032/RECUPERACION_PUBLICA.json",
+      "sha256": "d61d9d379727b6c03fdc2fe09c4092f7221c31c8e529f9f3ca81ebbdda315559"
+    }
+  },
+  "updated_at": "2026-11-17T16:13:01.388725+00:00"
 }
