@@ -2222,7 +2222,7 @@
     }
   ],
   "next_actions": [
-    "Ejecutar y verificar la tercera malla P4 h=0,03125 con la preparación original y las dos trayectorias guardadas; aplicar el contraste de referencia, estabilidad y robustez después del dictamen de refinamiento.",
+    "Acreditar el origen de los seis contrastes P4, ejecutar estabilidad temporal y después sensibilidad a caja, L y amplitud según el prerregistro de validación.",
     "Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.",
     "Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico."
   ],
@@ -2248,12 +2248,12 @@
     "P3 hasta τ30,0 está conservado como rescate protegido. No reactivar 23151 ni usar el latido como estado de reinicio."
   ],
   "complete_primordials": 0,
-  "next_calculation": "Ejecutar y verificar la tercera malla P4 h=0,03125 con la preparación original y las dos trayectorias guardadas; aplicar el contraste de referencia, estabilidad y robustez después del dictamen de refinamiento.",
+  "next_calculation": "Acreditar el origen de los seis contrastes P4, ejecutar estabilidad temporal y después sensibilidad a caja, L y amplitud según el prerregistro de validación.",
   "stage_completion_is_distinct_from_campaign_pass": true,
   "numerical_runs_in_progress": [],
   "research_in_progress": [],
   "restart_state": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
-  "delivery_boundary": "Piloto P4 aprobado en τ160 con recuperación independiente. Tercera malla registrada.",
+  "delivery_boundary": "Piloto P4, tercera malla y referencia Galerkin verificados a τ160. Prerregistro de estabilidad y robustez en la rama de validación.",
   "latest_completed_nonradial_state": "validacion/P06/no_radial/CP10/espacial_h00625__51eec4febb8920be17635aa90d6025d512bebc507c4babba03852872ca163b30/dop853e10_L4_h0.062_dt0.0200_R220_eps0.020_T160_estado.npz",
   "latest_completed_nonradial_time": 160,
   "diagnostic_after_gate": "checkpoints/CP12/continuacion_20261014/tau0160/diagnostico/ALCANCE_Y_PUERTAS.json",
@@ -2563,13 +2563,15 @@
     "accepted_checkpoint": "CP11",
     "CP12_status": "ABIERTO",
     "candidate": "P4",
-    "P4_status": "PILOTO_VERIFICADO_TAU160",
+    "P4_status": "REFERENCIA_GALERKIN_VERIFICADA_TAU160",
     "last_full_frontier": 160,
     "own_workers": 0,
     "canonical_register": "checkpoints/CP12/p4_20261115/ESTADO_REANUDACION.json",
     "evidence": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json",
     "third_mesh_register": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/ESTADO_REANUDACION.json",
-    "observed_at_utc": "2026-11-16T14:44:05.514138+00:00"
+    "observed_at_utc": "2026-11-17T04:52:52.053088+00:00",
+    "reference_register": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/ESTADO.json",
+    "validation_register": "checkpoints/CP12/p4_20261115/validacion_20261116/ESTADO.json"
   },
   "latest_verified_cp12_P3_transport": {
     "kind": "transport",
@@ -2646,6 +2648,17 @@
     "phase_space_chi_error": 0.010148560932669913,
     "pilot_passed": true,
     "correction_validated": false,
+    "CP12_closed": false
+  },
+  "last_verified_P4_third_mesh": {
+    "commit": "1dc926f3f9ee32ab9f7fc9ccf279113a88899738",
+    "status": "COMPLETADA_TAU160",
+    "result": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/RESULTADO.json"
+  },
+  "last_verified_P4_reference": {
+    "commit": "baf8f666c57a47406dc803d63077deaf084d01bf",
+    "status": "COMPLETADA_TAU160",
+    "result": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/RESULTADO.json",
     "CP12_closed": false
   }
 }
