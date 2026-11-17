@@ -1,0 +1,122 @@
+{
+  "campaign_uuid": "8488bc917fee4daaac8190c779eef86e",
+  "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
+  "case": "CAJA",
+  "passed": true,
+  "physical": {
+    "original_energy": true,
+    "P4_energy": true,
+    "charge": true,
+    "core_charge": true,
+    "bounded_window": true
+  },
+  "balances": {
+    "variant": {
+      "initial_FV_energy": 2474.7571171964796,
+      "final_FV_energy": 2474.7571171964796,
+      "initial_P4_energy": 2474.7571270611115,
+      "final_P4_energy": 2474.7571270611115,
+      "initial_charge": 2630.5436276302953,
+      "final_charge": 2630.5436276302953,
+      "max_FV_energy_drift": 0.0,
+      "max_P4_energy_drift": 0.0,
+      "max_charge_drift": 0.0,
+      "max_core_charge_change": 0.0,
+      "amplification": 1.0,
+      "accepted_steps": 0,
+      "force_evaluations": 0
+    },
+    "base": {
+      "initial_FV_energy": 2422.513595086653,
+      "final_FV_energy": 2422.513595086653,
+      "initial_P4_energy": 2422.5136049626653,
+      "final_P4_energy": 2422.5136049626653,
+      "initial_charge": 2582.5632534858764,
+      "final_charge": 2582.5632534858764,
+      "max_FV_energy_drift": 0.0,
+      "max_P4_energy_drift": 0.0,
+      "max_charge_drift": 0.0,
+      "max_core_charge_change": 0.0,
+      "amplification": 1.0,
+      "accepted_steps": 0,
+      "force_evaluations": 0
+    }
+  },
+  "preflight": {
+    "passed": true,
+    "checks": {
+      "common_Cauchy": true,
+      "routing": true,
+      "algebra": true,
+      "source_CP04": true
+    },
+    "algebra_residuals": {
+      "force_C_NumPy": 0.0,
+      "angular_gram": 1.3322676295501878e-15,
+      "charge_gradient": 1.3324900124663858e-14,
+      "P4_energy_gradient": 2.8260593360456136e-14,
+      "FV_energy_gradient": 3.025355267938472e-14
+    },
+    "common_Cauchy_max_abs": 0.0,
+    "source_transfer": {
+      "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+      "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+      "source_time": 1200.0,
+      "source_full_energy": 2566.9470436465344,
+      "source_full_charge": 2745.7739206676465,
+      "source_energy_inside_new_radius": 2435.647864269066,
+      "source_charge_inside_new_radius": 2626.2780409408356,
+      "omitted_exterior_energy": 131.2991793774686,
+      "omitted_exterior_charge": 119.49587972681093,
+      "regridding_and_new_boundary_energy_change": 34.84499733508437,
+      "regridding_charge_change": -0.07622288272659716,
+      "seed_energy_change": 4.264265456961311,
+      "seed_charge_change": 4.341809572186321,
+      "core_energy_regridding_relative": -2.6143032736070104e-05,
+      "core_charge_regridding_relative": -3.079813968565048e-05,
+      "causal_margin": 224.0,
+      "full_original_domain_evolved": false,
+      "discarded_exterior_state_preserved": true,
+      "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+      "primary_source_derived": false
+    },
+    "mode_count": 25,
+    "cells": 8448,
+    "force": {
+      "method": "numpy_projection_fused_C_potential",
+      "source_sha256": "74dd2159ac951e701b3acce7f8365847874521769479c08dd8e4634c7e2e9de9",
+      "fast_math": false,
+      "action_changed": false
+    }
+  },
+  "exterior_220_264": {
+    "P4": [
+      {
+        "time": 0.0,
+        "energy": 84.03031817375518,
+        "charge": 47.980374144418754
+      },
+      {
+        "time": 0.0,
+        "energy": 84.03031817375518,
+        "charge": 47.980374144418754
+      }
+    ],
+    "FV": [
+      {
+        "time": 0.0,
+        "energy": 84.03031811535304,
+        "charge": 47.980374144418754
+      },
+      {
+        "time": 0.0,
+        "energy": 84.03031811535304,
+        "charge": 47.980374144418754
+      }
+    ]
+  },
+  "time": 0.0,
+  "state_sha256": "9edd01ca71b827a9870525506c61c73e8ce0334acf9972cbe21aff41df2417af",
+  "M2_steps_executed": 0,
+  "DOP853_construction_or_step_attempts": 0
+}
