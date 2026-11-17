@@ -1,0 +1,33 @@
+{
+  "campaign_uuid": "8488bc917fee4daaac8190c779eef86e",
+  "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
+  "case": "EPS022",
+  "run_id": 44021289493,
+  "attempt": 1,
+  "admin_commit": "ab37ae15a2abcc05413a9923d80efdb9b02f3cf2",
+  "target": 112,
+  "file_name": "CP12_P4_VALIDACION_8488bc917fee4daaac8190c779eef86e_EPS022_TAU0112_44021289493_1_cfdf43180a75.zip",
+  "bytes": 9319336,
+  "sha256": "1bf0479c3b99375482a05402cb8f65e1c6c68fd3484f7f870c9274ba7fffba02",
+  "state_sha256": "cfdf43180a75ab19c93740da5150f99fa1a8f91205e5967d86e8d9f41488159c",
+  "previous": {
+    "time": 104,
+    "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/EPS022/tau0104/RECUPERACION_PUBLICA.json",
+    "sha256": "a52694111f033ff2c88f9eb2bf82508dc053edc11ad78067e7ef6208f7f0ab36"
+  },
+  "github_asset_id": 760591585,
+  "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_P4_VALIDACION_8488bc917fee4daaac8190c779eef86e_EPS022_TAU0112_44021289493_1_cfdf43180a75.zip",
+  "time": 112.0,
+  "passed": true,
+  "audited_by": {
+    "run_id": 44021289493,
+    "attempt": 1,
+    "admin_commit": "ab37ae15a2abcc05413a9923d80efdb9b02f3cf2"
+  },
+  "M2_steps_executed": 0,
+  "independent_download": true,
+  "payload_files": 4,
+  "audit": true,
+  "baseline_asset": 756362764,
+  "baseline_sha256": "b95352b385eda2cf9501a92eff1b8232b4536982488284a2768dd90e49e6b05d"
+}
