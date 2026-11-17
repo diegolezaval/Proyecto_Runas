@@ -1,0 +1,33 @@
+{
+  "file_name": "CP12_P4_GALERKIN_0504f26a56f91b820ffa7a77d917582b_R1_TAU0104_43976276645_2.zip",
+  "bytes": 1699544,
+  "sha256": "41f87eab057f98c9b77ba63347e860328499dde0bf1dd6ce2816a6f8f2fd40be",
+  "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
+  "case": "R1",
+  "registration_sha256": "7dc96b561dc7df3792780bb352b926f9e3b43fff16badcd47170d545f45ab63d",
+  "trajectory_id": "13067becc74284d646b9ef4351bc277c8960ced0f4191c056d0be334a2416c7d",
+  "state_sha256": "b44669a9719a59ab1a0a16cbfd6fd5fc707899359bee0cbe99c721cc7c7bccf3",
+  "target": 104,
+  "github_asset_id": 757169915,
+  "browser_download_url": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/respaldo-cp12-p3-20261027/CP12_P4_GALERKIN_0504f26a56f91b820ffa7a77d917582b_R1_TAU0104_43976276645_2.zip",
+  "recovery": {
+    "passed": true,
+    "time": 104,
+    "state_sha256": "b44669a9719a59ab1a0a16cbfd6fd5fc707899359bee0cbe99c721cc7c7bccf3",
+    "physical": {
+      "energy": true,
+      "charge": true,
+      "core_charge": true,
+      "amplification": true,
+      "finite": true
+    },
+    "samples": 261,
+    "total_physical_steps": 13000,
+    "M2_steps_executed": 0
+  },
+  "time": 104,
+  "passed": true,
+  "M2_steps_executed": 0,
+  "payload_files": 2,
+  "independently_downloaded_without_authentication": true
+}
