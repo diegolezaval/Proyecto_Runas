@@ -1,0 +1,20 @@
+{
+  "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
+  "case": "R1",
+  "registration_sha256": "7dc96b561dc7df3792780bb352b926f9e3b43fff16badcd47170d545f45ab63d",
+  "trajectory_id": "13067becc74284d646b9ef4351bc277c8960ced0f4191c056d0be334a2416c7d",
+  "hosted": {
+    "run_id": 43976276645,
+    "attempt": 2,
+    "admin_commit": "f235fed2602c8d88d14d3e88d93a08b0842ccd8d"
+  },
+  "target": 112,
+  "start_accepted_steps": 13000,
+  "source_frontier": {
+    "time": 104,
+    "receipt": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/casos/R1/tau0104/RECUPERACION_PUBLICA.json",
+    "sha256": "41f87eab057f98c9b77ba63347e860328499dde0bf1dd6ce2816a6f8f2fd40be"
+  },
+  "exact_transport": null,
+  "registered_before_advancing": true
+}
