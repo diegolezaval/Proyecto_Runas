@@ -9,6 +9,23 @@
     "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/EPS022/tau0024/RECUPERACION_PUBLICA.json",
     "sha256": "341873445ac0e149becedd50bf80d5becadb712c489ed6da1677fc73578b21b6"
   },
-  "pending": null,
-  "updated_at": "2026-11-17T14:12:52.536255+00:00"
+  "pending": {
+    "campaign_uuid": "8488bc917fee4daaac8190c779eef86e",
+    "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
+    "case": "EPS022",
+    "run_id": 44021289493,
+    "attempt": 1,
+    "admin_commit": "ab37ae15a2abcc05413a9923d80efdb9b02f3cf2",
+    "target": 32,
+    "file_name": "CP12_P4_VALIDACION_8488bc917fee4daaac8190c779eef86e_EPS022_TAU0032_44021289493_1_a9198518e3bb.zip",
+    "bytes": 9289618,
+    "sha256": "f5ba68eac07591b768b7ac059a741da40633e846904d3a782769645cc1fb9d2c",
+    "state_sha256": "a9198518e3bb077b3572ba983ac4a83fa06ea6d28e0693cc0581d25e7c2d6029",
+    "previous": {
+      "time": 24,
+      "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/EPS022/tau0024/RECUPERACION_PUBLICA.json",
+      "sha256": "341873445ac0e149becedd50bf80d5becadb712c489ed6da1677fc73578b21b6"
+    }
+  },
+  "updated_at": "2026-11-17T15:33:37.466718+00:00"
 }
