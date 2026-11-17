@@ -1,0 +1,38 @@
+{
+  "campaign_uuid": "8488bc917fee4daaac8190c779eef86e",
+  "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
+  "passed": true,
+  "M2_steps_executed": 0,
+  "cases": {
+    "PASO": {
+      "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/PASO/tau0000/RECUPERACION_PUBLICA.json",
+      "asset": 757713688,
+      "sha256": "08e7c01747e3dcf660ef1efeb030c035e08fe20755742bcd0c4aa4a335513e25"
+    },
+    "TOL": {
+      "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/TOL/tau0000/RECUPERACION_PUBLICA.json",
+      "asset": 757712793,
+      "sha256": "e2cc0af905538bb68dae67055c8f8ca697ee6bab7d4b111d934fd40eeda7cfb6"
+    },
+    "CAJA": {
+      "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/CAJA/tau0000/RECUPERACION_PUBLICA.json",
+      "asset": 757712919,
+      "sha256": "61bca5df35f45241266a32f74bf07a1789553e6833f28466b7c0219a32e1a9ad"
+    },
+    "ANGULAR": {
+      "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/ANGULAR/tau0000/RECUPERACION_PUBLICA.json",
+      "asset": 757712673,
+      "sha256": "6dd4575794268206bf16a5ccc073c98ef7b08f8e5facbf2c4016fb627cc55602"
+    },
+    "EPS018": {
+      "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/EPS018/tau0000/RECUPERACION_PUBLICA.json",
+      "asset": 757713189,
+      "sha256": "cb49fa46fec49660005cd5b08d570ce412544dc09fe0686ab55552e613e39cfa"
+    },
+    "EPS022": {
+      "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/EPS022/tau0000/RECUPERACION_PUBLICA.json",
+      "asset": 757713414,
+      "sha256": "b01793af547339dc87c85a80e03f0a127227f3ed8f932de04ef9d7b12bcdc422"
+    }
+  }
+}
