@@ -1,0 +1,115 @@
+{
+  "campaign_uuid": "8488bc917fee4daaac8190c779eef86e",
+  "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
+  "time": 144,
+  "axes": {
+    "PASO": {
+      "norm_relative_sup_error": 7.851137980213339e-11,
+      "final_complex_nonradial_field_error_over_initial_norm": 1.2385252861252283e-10,
+      "final_phi_phase_space_error_over_initial_norm": 1.7354035822093846e-10,
+      "final_mediator_nonradial_error_over_initial_norm": 1.2423951071785543e-08,
+      "final_mediator_phase_space_error_over_initial_norm": 1.7607543521602553e-08
+    },
+    "TOL": {
+      "norm_relative_sup_error": 1.8427450255551175e-10,
+      "final_complex_nonradial_field_error_over_initial_norm": 2.672091319528214e-10,
+      "final_phi_phase_space_error_over_initial_norm": 1.9415629100534603e-09,
+      "final_mediator_nonradial_error_over_initial_norm": 2.3099914184332683e-07,
+      "final_mediator_phase_space_error_over_initial_norm": 3.273728342320217e-07
+    }
+  },
+  "sum": {
+    "norm_relative_sup_error": 2.6278588235764515e-10,
+    "final_complex_nonradial_field_error_over_initial_norm": 3.910616605653442e-10,
+    "final_phi_phase_space_error_over_initial_norm": 2.115103268274399e-09,
+    "final_mediator_nonradial_error_over_initial_norm": 2.4342309291511236e-07,
+    "final_mediator_phase_space_error_over_initial_norm": 3.4498037775362427e-07
+  },
+  "budget": {
+    "norm_relative_sup_error": 2.1823026099741757e-05,
+    "final_complex_nonradial_field_error_over_initial_norm": 2.9727644521869376e-05,
+    "final_phi_phase_space_error_over_initial_norm": 3.166323578661124e-05,
+    "final_mediator_nonradial_error_over_initial_norm": 2.267971244781264e-05,
+    "final_mediator_phase_space_error_over_initial_norm": 2.706163744161363e-05
+  },
+  "passed": true,
+  "M2_steps_executed": 0,
+  "receipts": {
+    "PASO": {
+      "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/PASO/tau0144/RECUPERACION_PUBLICA.json",
+      "asset": 758913404,
+      "sha256": "a134913db037a4dd5e41e0f344d77fc54cfccfb138559e3aac21a900f8f73ae0"
+    },
+    "TOL": {
+      "receipt": "checkpoints/CP12/p4_20261115/validacion_20261116/casos/TOL/tau0144/RECUPERACION_PUBLICA.json",
+      "asset": 758931169,
+      "sha256": "763b70a8e91de9d0251d4b71b323819e6ae6352243875b798522198c8666a622"
+    }
+  },
+  "balances": {
+    "PASO": {
+      "variant": {
+        "initial_FV_energy": 2422.513595086653,
+        "final_FV_energy": 2422.513588480801,
+        "initial_P4_energy": 2422.5136049626653,
+        "final_P4_energy": 2422.513603873135,
+        "initial_charge": 2582.5632534858764,
+        "final_charge": 2582.5632534856954,
+        "max_FV_energy_drift": 2.771460505535117e-09,
+        "max_P4_energy_drift": 4.4975212443176815e-10,
+        "max_charge_drift": 7.027711745877241e-14,
+        "max_core_charge_change": 9.612982556628236e-05,
+        "amplification": 1.0,
+        "accepted_steps": 25916,
+        "force_evaluations": 312696
+      },
+      "base": {
+        "initial_FV_energy": 2422.513595086653,
+        "final_FV_energy": 2422.513588351621,
+        "initial_P4_energy": 2422.5136049626653,
+        "final_P4_energy": 2422.5136037439515,
+        "initial_charge": 2582.5632534858764,
+        "final_charge": 2582.563253485672,
+        "max_FV_energy_drift": 2.8248458017188227e-09,
+        "max_P4_energy_drift": 5.030782457282612e-10,
+        "max_charge_drift": 7.938094626069869e-14,
+        "max_core_charge_change": 9.612982556894689e-05,
+        "amplification": 1.0,
+        "accepted_steps": 25916,
+        "force_evaluations": 312708
+      }
+    },
+    "TOL": {
+      "variant": {
+        "initial_FV_energy": 2422.513595086653,
+        "final_FV_energy": 2422.513589481744,
+        "initial_P4_energy": 2422.5136049626653,
+        "final_P4_energy": 2422.5136048740997,
+        "initial_charge": 2582.5632534858764,
+        "final_charge": 2582.563253485861,
+        "max_FV_energy_drift": 2.372279817031142e-09,
+        "max_P4_energy_drift": 3.655975522320887e-11,
+        "max_charge_drift": 6.217248937900877e-15,
+        "max_core_charge_change": 9.612982556739258e-05,
+        "amplification": 1.0,
+        "accepted_steps": 34524,
+        "force_evaluations": 415908
+      },
+      "base": {
+        "initial_FV_energy": 2422.513595086653,
+        "final_FV_energy": 2422.513588351621,
+        "initial_P4_energy": 2422.5136049626653,
+        "final_P4_energy": 2422.5136037439515,
+        "initial_charge": 2582.5632534858764,
+        "final_charge": 2582.563253485672,
+        "max_FV_energy_drift": 2.8248458017188227e-09,
+        "max_P4_energy_drift": 5.030782457282612e-10,
+        "max_charge_drift": 7.938094626069869e-14,
+        "max_core_charge_change": 9.612982556894689e-05,
+        "amplification": 1.0,
+        "accepted_steps": 25916,
+        "force_evaluations": 312708
+      }
+    }
+  }
+}
