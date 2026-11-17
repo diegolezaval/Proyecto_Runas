@@ -1,11 +1,13 @@
 {
   "schema": "CP12_P4_REFERENCIA_GALERKIN_ESTADO_V1",
   "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
-  "status": "COMPARACIONES_PARCIALES",
+  "status": "COMPLETADA_TAU160",
   "source_commit": "1dc926f3f9ee32ab9f7fc9ccf279113a88899738",
-  "comparaciones_publicadas": 15,
+  "comparaciones_publicadas": 20,
   "CP12_closed": false,
   "preflight": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/CONTROL_PREVIO.json",
-  "updated_at": "2026-11-17T02:38:41.044635+00:00",
-  "ultimo_tau_comparado": 120
+  "updated_at": "2026-11-17T04:00:50.116185+00:00",
+  "ultimo_tau_comparado": 160,
+  "result": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/RESULTADO.json",
+  "report": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/INFORME.md"
 }
