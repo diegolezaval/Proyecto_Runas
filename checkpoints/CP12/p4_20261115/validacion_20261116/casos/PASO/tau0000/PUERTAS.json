@@ -1,0 +1,96 @@
+{
+  "campaign_uuid": "8488bc917fee4daaac8190c779eef86e",
+  "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
+  "case": "PASO",
+  "passed": true,
+  "physical": {
+    "original_energy": true,
+    "P4_energy": true,
+    "charge": true,
+    "core_charge": true,
+    "bounded_window": true
+  },
+  "balances": {
+    "variant": {
+      "initial_FV_energy": 2422.513595086653,
+      "final_FV_energy": 2422.513595086653,
+      "initial_P4_energy": 2422.5136049626653,
+      "final_P4_energy": 2422.5136049626653,
+      "initial_charge": 2582.5632534858764,
+      "final_charge": 2582.5632534858764,
+      "max_FV_energy_drift": 0.0,
+      "max_P4_energy_drift": 0.0,
+      "max_charge_drift": 0.0,
+      "max_core_charge_change": 0.0,
+      "amplification": 1.0,
+      "accepted_steps": 0,
+      "force_evaluations": 0
+    },
+    "base": {
+      "initial_FV_energy": 2422.513595086653,
+      "final_FV_energy": 2422.513595086653,
+      "initial_P4_energy": 2422.5136049626653,
+      "final_P4_energy": 2422.5136049626653,
+      "initial_charge": 2582.5632534858764,
+      "final_charge": 2582.5632534858764,
+      "max_FV_energy_drift": 0.0,
+      "max_P4_energy_drift": 0.0,
+      "max_charge_drift": 0.0,
+      "max_core_charge_change": 0.0,
+      "amplification": 1.0,
+      "accepted_steps": 0,
+      "force_evaluations": 0
+    }
+  },
+  "preflight": {
+    "passed": true,
+    "checks": {
+      "common_Cauchy": true,
+      "routing": true,
+      "algebra": true,
+      "source_CP04": true
+    },
+    "algebra_residuals": {
+      "force_C_NumPy": 0.0,
+      "angular_gram": 1.3322676295501878e-15,
+      "charge_gradient": 1.8204453060534192e-14,
+      "P4_energy_gradient": 1.792015543469375e-14,
+      "FV_energy_gradient": 1.9209467665093743e-14
+    },
+    "common_Cauchy_max_abs": 0.0,
+    "source_transfer": {
+      "source": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+      "source_sha256": "c62750170ddde870880efe253914283035e0c590ea5f0962fcf49c19966fda89",
+      "source_time": 1200.0,
+      "source_full_energy": 2566.9470436465344,
+      "source_full_charge": 2745.7739206676465,
+      "source_energy_inside_new_radius": 2386.5221771840497,
+      "source_charge_inside_new_radius": 2578.2976616782553,
+      "omitted_exterior_energy": 180.42486646248472,
+      "omitted_exterior_charge": 167.47625898939123,
+      "regridding_and_new_boundary_energy_change": 31.72716232165476,
+      "regridding_charge_change": -0.07621776456517182,
+      "seed_energy_change": 4.264265456960857,
+      "seed_charge_change": 4.341809572186321,
+      "core_energy_regridding_relative": -2.6143032736070104e-05,
+      "core_charge_regridding_relative": -3.079813968565048e-05,
+      "causal_margin": 180.0,
+      "full_original_domain_evolved": false,
+      "discarded_exterior_state_preserved": true,
+      "initial_perturbation": "delta q=-epsilon*r*exp(-(r/20)^4)*q_radial_prime*H2; same for all velocities",
+      "primary_source_derived": false
+    },
+    "mode_count": 25,
+    "cells": 7040,
+    "force": {
+      "method": "numpy_projection_fused_C_potential",
+      "source_sha256": "74dd2159ac951e701b3acce7f8365847874521769479c08dd8e4634c7e2e9de9",
+      "fast_math": false,
+      "action_changed": false
+    }
+  },
+  "time": 0.0,
+  "state_sha256": "36ccdd4e780856807891fcfea6eac95d39b7e968d2865bba312f857d834a6349",
+  "M2_steps_executed": 0,
+  "DOP853_construction_or_step_attempts": 0
+}
