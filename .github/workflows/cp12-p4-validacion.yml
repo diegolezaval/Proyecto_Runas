@@ -1,0 +1,179 @@
+name: CP12 P4 estabilidad temporal y robustez hasta τ160
+on:
+  push:
+    branches: [administracion/cp12-p4-validacion]
+    paths: [herramientas/cp12_reanudacion/ACTIVAR_P4_VALIDACION.json]
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: cp12-p4-validacion-8488bc917fee4daaac8190c779eef86e
+  cancel-in-progress: false
+jobs:
+  previo_000:
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: previo
+      target: 0
+  temporal_008:
+    needs: previo_000
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 8
+  temporal_016:
+    needs: temporal_008
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 16
+  temporal_024:
+    needs: temporal_016
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 24
+  temporal_032:
+    needs: temporal_024
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 32
+  temporal_040:
+    needs: temporal_032
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 40
+  temporal_048:
+    needs: temporal_040
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 48
+  temporal_056:
+    needs: temporal_048
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 56
+  temporal_064:
+    needs: temporal_056
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 64
+  temporal_072:
+    needs: temporal_064
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 72
+  temporal_080:
+    needs: temporal_072
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 80
+  temporal_088:
+    needs: temporal_080
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 88
+  temporal_096:
+    needs: temporal_088
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 96
+  temporal_104:
+    needs: temporal_096
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 104
+  temporal_112:
+    needs: temporal_104
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 112
+  temporal_120:
+    needs: temporal_112
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 120
+  temporal_128:
+    needs: temporal_120
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 128
+  temporal_136:
+    needs: temporal_128
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 136
+  temporal_144:
+    needs: temporal_136
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 144
+  temporal_152:
+    needs: temporal_144
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 152
+  temporal_160:
+    needs: temporal_152
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: temporal
+      target: 160
+  robustez_024:
+    needs: temporal_160
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: robustez
+      target: 24
+  robustez_048:
+    needs: robustez_024
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: robustez
+      target: 48
+  robustez_072:
+    needs: robustez_048
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: robustez
+      target: 72
+  robustez_096:
+    needs: robustez_072
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: robustez
+      target: 96
+  robustez_120:
+    needs: robustez_096
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: robustez
+      target: 120
+  robustez_144:
+    needs: robustez_120
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: robustez
+      target: 144
+  robustez_160:
+    needs: robustez_144
+    uses: ./.github/workflows/cp12-p4-validacion-tramo.yml
+    with:
+      phase: robustez
+      target: 160

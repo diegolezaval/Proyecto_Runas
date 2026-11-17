@@ -1,0 +1,85 @@
+name: CP12 P4 validación · tramo y constatación
+on:
+  workflow_call:
+    inputs:
+      phase:
+        required: true
+        type: string
+      target:
+        required: true
+        type: number
+permissions:
+  contents: write
+  actions: read
+env:
+  CP12_CANDIDATE: P4
+  GH_TOKEN: ${{ github.token }}
+  GIT_TERMINAL_PROMPT: '0'
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+  MKL_NUM_THREADS: '1'
+  PYTHONPATH: herramientas
+  VALIDATION_PHASE: ${{ inputs.phase }}
+  VALIDATION_TARGET: ${{ inputs.target }}
+jobs:
+  candidatos:
+    name: P4 ${{ inputs.phase }} τ${{ inputs.target }} · ejecutor ${{ matrix.slot }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      matrix:
+        slot: [1, 2, 3, 4, 5, 6, 7, 8]
+    env:
+      VALIDATION_SLOT: ${{ matrix.slot }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          sparse-checkout: herramientas
+          persist-credentials: true
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12.14'
+          architecture: x64
+      - name: Verificar la disponibilidad del entorno original
+        id: entorno
+        run: |
+          python -m pip install numpy==2.3.5 scipy==1.17.0 matplotlib==3.10.8 threadpoolctl==3.6.0
+          python - <<'PY'
+          import os
+          import scipy.linalg
+          from threadpoolctl import threadpool_info
+          pools = threadpool_info()
+          print([(p["architecture"], p["num_threads"]) for p in pools])
+          okay = bool(pools) and all(p["architecture"] == "SkylakeX" and p["num_threads"] == 1 for p in pools)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write("compatible=" + str(okay).lower() + "\n")
+          PY
+      - name: Recuperar, ejecutar y acreditar
+        if: steps.entorno.outputs.compatible == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python -m cp12_reanudacion.p4_validacion_hospedada --work "$RUNNER_TEMP/cp12-validacion" \
+            --phase "$VALIDATION_PHASE" --until "$VALIDATION_TARGET" --slot "$VALIDATION_SLOT"
+  constatar:
+    name: Acreditar ${{ inputs.phase }} τ${{ inputs.target }}
+    needs: candidatos
+    if: ${{ always() && !cancelled() }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          sparse-checkout: herramientas
+          persist-credentials: true
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12.14'
+          architecture: x64
+      - name: Comprobar los recibos y aplicar la puerta del tramo
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python -m cp12_reanudacion.p4_validacion_hospedada --work "$RUNNER_TEMP/cp12-constatar" \
+            --phase "$VALIDATION_PHASE" --until "$VALIDATION_TARGET"

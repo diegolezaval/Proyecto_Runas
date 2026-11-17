@@ -169,7 +169,7 @@ class Git:
         data = self.get(commit, path, missing=missing)
         return json.loads(data) if data is not None else None
 
-    def publish(self, parent, files, message, *, ref=REF):
+    def publish(self, parent, files, message, *, ref=REF, partial_clone=False):
         """Sólo se publica un descendiente directo del HEAD que se comprobó."""
         def matches(head):
             return all(self.get(head, path, missing=True) == data for path, data in files.items())
@@ -189,7 +189,9 @@ class Git:
                     continue
                 blob = self.run('hash-object', '-w', '--stdin', data=data).stdout.decode().strip()
                 self.run('update-index', '--add', '--cacheinfo', f'100644,{blob},{path}', env=env)
-            tree = self.run('write-tree', env=env).stdout.decode().strip()
+            # El árbol padre del remoto aporta los blobs heredados en un checkout disperso.
+            args = ('write-tree', '--missing-ok') if partial_clone else ('write-tree',)
+            tree = self.run(*args, env=env).stdout.decode().strip()
         commit = self.run('commit-tree', tree, '-p', parent, '-m', message).stdout.decode().strip()
         try:
             self.run('push', f'--force-with-lease={ref}:{parent}', 'origin', f'{commit}:{ref}',
