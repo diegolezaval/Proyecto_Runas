@@ -10,6 +10,16 @@
     "receipt": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/casos/R2/tau0048/RECUPERACION_PUBLICA.json",
     "sha256": "08c31d5ddde00bd29312df675da6605967c9f6fe40d37c3a8ff40ce4d862d616"
   },
-  "pending": null,
-  "updated_at": "2026-11-17T00:40:53.017711+00:00"
+  "pending": {
+    "file_name": "CP12_P4_GALERKIN_0504f26a56f91b820ffa7a77d917582b_R2_TAU0056_43976276645_2.zip",
+    "bytes": 3314913,
+    "sha256": "674fe407147269f13c876912ad95552fae030b026b1ff794da688c19ea761ff4",
+    "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
+    "case": "R2",
+    "registration_sha256": "7dc96b561dc7df3792780bb352b926f9e3b43fff16badcd47170d545f45ab63d",
+    "trajectory_id": "2c705d73ed2ecc2b8f20a6297403ba2b92a71599152d614459e194f08da40def",
+    "state_sha256": "5dad303033dba432665312d28ab31c71840466154e738dbb166f80d33996d44c",
+    "target": 56
+  },
+  "updated_at": "2026-11-17T00:48:03.592428+00:00"
 }
