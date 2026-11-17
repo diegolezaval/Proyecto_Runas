@@ -1,0 +1,571 @@
+{
+  "schema": "CP12_P4_REFERENCIA_GALERKIN_COMPARACION_V1",
+  "time": 56,
+  "campaign_uuid": "0504f26a56f91b820ffa7a77d917582b",
+  "registered_hash": "7dc96b561dc7df3792780bb352b926f9e3b43fff16badcd47170d545f45ab63d",
+  "hosted": {
+    "run_id": 43976276645,
+    "attempt": 2,
+    "admin_commit": "f235fed2602c8d88d14d3e88d93a08b0842ccd8d"
+  },
+  "original_comparator_sha256": "41f0b56b797f9caca7601577d8db7f846d1d452e77a80940de6092be6a8fea64",
+  "chi_rotation_used": false,
+  "thresholds": {
+    "absolute_variation_max": 0.0025,
+    "relative_discrepancy_fraction_strict": 0.25,
+    "comparison_roundoff_floor": 1e-10,
+    "late_begin": 120,
+    "model_error_bound": "empirical_sum_of_fine_radial_temporal_and_stage_tolerance_variations"
+  },
+  "M2_steps_executed": 0,
+  "P4_archived_pairs_verified": true,
+  "P4_assets": [
+    {
+      "github_asset_id": 753540580,
+      "sha256": "10b67b28d8e35e5d6c55c8976e907cc97da5338de149f6baf76a96e4df44654b",
+      "bytes": 231235963
+    },
+    {
+      "github_asset_id": 756044192,
+      "sha256": "e5e1c9ae5e6a5598203c903f09be547e5ecfa99ebac1102a8d0242e5d088bad4",
+      "bytes": 9327743
+    }
+  ],
+  "Galerkin_assets": {
+    "R0": {
+      "github_asset_id": 757029735,
+      "sha256": "5f2a2e3ae34c66100ebc4b37d89f53187e2e45b5c95cf3a6246813e0916437f1",
+      "state_sha256": "83c5bd1513946844f556cbe1f0a994fec63888afd6c7ca749c37c11a2a775d1e"
+    },
+    "R1": {
+      "github_asset_id": 757035891,
+      "sha256": "44c37ec84f13a5c1cf5059adfa637d33875cab84a9b18e0345ed939465c2a865",
+      "state_sha256": "7c490ce95e04c3381497870927483eaf0ed88ecabe7c04a1584886a0dffb0919"
+    },
+    "R2": {
+      "github_asset_id": 757053849,
+      "sha256": "674fe407147269f13c876912ad95552fae030b026b1ff794da688c19ea761ff4",
+      "state_sha256": "5dad303033dba432665312d28ab31c71840466154e738dbb166f80d33996d44c"
+    },
+    "T": {
+      "github_asset_id": 757065401,
+      "sha256": "dc89c26d6f4a473d069772fbd226a1f2d6f2e573585376a96c80383a0e501ae4",
+      "state_sha256": "3dfefd32b7c746dc68d28406e258fabbb37b362cee10e2a7c9c7272fe38cbf70"
+    },
+    "EPS": {
+      "github_asset_id": 757066506,
+      "sha256": "b1013ea6bbb952d0f0facae8b938f72887b6dcbad4558f85a7819df54826ad20",
+      "state_sha256": "854cc194492cef1a1a3b9eee30316d98bdf222dbda4f0b3ea24c34dc45fbdcce"
+    }
+  },
+  "radial_change_01": {
+    "norm_relative_sup_error": 2.5587005968907255e-08,
+    "final_complex_nonradial_field_error_over_initial_norm": 1.2986182322402675e-06,
+    "final_phi_phase_space_error_over_initial_norm": 0.00010779596668119441,
+    "final_mediator_nonradial_error_over_initial_norm": 0.0006131350588722832,
+    "final_mediator_phase_space_error_over_initial_norm": 0.0009692519934289391
+  },
+  "radial_change_12": {
+    "norm_relative_sup_error": 1.1754516404217857e-08,
+    "final_complex_nonradial_field_error_over_initial_norm": 6.867876287404372e-08,
+    "final_phi_phase_space_error_over_initial_norm": 3.7703700863718695e-06,
+    "final_mediator_nonradial_error_over_initial_norm": 9.016056338236075e-06,
+    "final_mediator_phase_space_error_over_initial_norm": 1.3967267458497326e-05
+  },
+  "radial_decreasing": {
+    "norm_relative_sup_error": true,
+    "final_complex_nonradial_field_error_over_initial_norm": true,
+    "final_phi_phase_space_error_over_initial_norm": true,
+    "final_mediator_nonradial_error_over_initial_norm": true,
+    "final_mediator_phase_space_error_over_initial_norm": true
+  },
+  "time_step_change": {
+    "norm_relative_sup_error": 8.887350870922677e-11,
+    "final_complex_nonradial_field_error_over_initial_norm": 1.4329929026154383e-09,
+    "final_phi_phase_space_error_over_initial_norm": 1.0879099702061954e-07,
+    "final_mediator_nonradial_error_over_initial_norm": 1.0314524918596132e-06,
+    "final_mediator_phase_space_error_over_initial_norm": 1.463723204046698e-06
+  },
+  "stage_tolerance_change": {
+    "norm_relative_sup_error": 9.272386729880985e-15,
+    "final_complex_nonradial_field_error_over_initial_norm": 1.634186085560299e-14,
+    "final_phi_phase_space_error_over_initial_norm": 9.538657806726621e-13,
+    "final_mediator_nonradial_error_over_initial_norm": 2.39417199571851e-13,
+    "final_mediator_phase_space_error_over_initial_norm": 3.5586315332434665e-13
+  },
+  "empirical_reference_variation": {
+    "norm_relative_sup_error": 1.1843399185313814e-08,
+    "final_complex_nonradial_field_error_over_initial_norm": 7.011177211852002e-08,
+    "final_phi_phase_space_error_over_initial_norm": 3.87916203725827e-06,
+    "final_mediator_nonradial_error_over_initial_norm": 1.0047509069512888e-05,
+    "final_mediator_phase_space_error_over_initial_norm": 1.5430991018407175e-05
+  },
+  "comparison": {
+    "0.125": {
+      "official": {
+        "norm_relative_sup_error": 0.00027945864660434744,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0007666672968602414,
+        "final_phi_phase_space_error_over_initial_norm": 0.000995901973871676,
+        "final_mediator_nonradial_error_over_initial_norm": 0.0011205509295842003,
+        "final_mediator_phase_space_error_over_initial_norm": 0.0015135971990071497,
+        "global_phi_phase_removed": -0.00023997332892941134,
+        "chi_radial_bands": [
+          {
+            "r_min": 0,
+            "r_max": 2,
+            "fraction_of_chi_squared_difference": 0.00016944952864282974
+          },
+          {
+            "r_min": 2,
+            "r_max": 5,
+            "fraction_of_chi_squared_difference": 0.0004619622448392224
+          },
+          {
+            "r_min": 5,
+            "r_max": 10,
+            "fraction_of_chi_squared_difference": 0.10346599863329592
+          },
+          {
+            "r_min": 10,
+            "r_max": 20,
+            "fraction_of_chi_squared_difference": 0.89484255948771
+          },
+          {
+            "r_min": 20,
+            "r_max": 40,
+            "fraction_of_chi_squared_difference": 0.0010600301055120867
+          }
+        ],
+        "chi_multipole_fractions": {
+          "1": 6.585647079262762e-20,
+          "2": 0.898531856030376,
+          "3": 9.255275171242543e-20,
+          "4": 0.10146814396962403
+        },
+        "descriptive_chi_rotation": {
+          "angle": 3.121258355907975e-05,
+          "rotated_error": 0.0015133397755118742,
+          "used_for_acceptance": false,
+          "warning": "χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta."
+        }
+      },
+      "alternative": {
+        "norm_relative_sup_error": 0.00027945864660434744,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0007666870416730916,
+        "final_phi_phase_space_error_over_initial_norm": 0.0009958114593884286,
+        "final_mediator_nonradial_error_over_initial_norm": 0.0011109560500460252,
+        "final_mediator_phase_space_error_over_initial_norm": 0.0014992278135655382,
+        "global_phi_phase_removed": -0.00023997332890376234,
+        "chi_radial_bands": [
+          {
+            "r_min": 0,
+            "r_max": 2,
+            "fraction_of_chi_squared_difference": 0.00017273289093309115
+          },
+          {
+            "r_min": 2,
+            "r_max": 5,
+            "fraction_of_chi_squared_difference": 0.00047101625981281654
+          },
+          {
+            "r_min": 5,
+            "r_max": 10,
+            "fraction_of_chi_squared_difference": 0.1054686937773448
+          },
+          {
+            "r_min": 10,
+            "r_max": 20,
+            "fraction_of_chi_squared_difference": 0.8928029018166234
+          },
+          {
+            "r_min": 20,
+            "r_max": 40,
+            "fraction_of_chi_squared_difference": 0.0010846552552859713
+          }
+        ],
+        "chi_multipole_fractions": {
+          "1": 6.727765765236866e-20,
+          "2": 0.9002157216080199,
+          "3": 9.570909111111469e-20,
+          "4": 0.09978427839198033
+        },
+        "descriptive_chi_rotation": {
+          "angle": 3.0661301906232026e-05,
+          "rotated_error": 0.0014989770225017959,
+          "used_for_acceptance": false,
+          "warning": "χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta."
+        }
+      },
+      "decisions": {
+        "norm_relative_sup_error": {
+          "official_error": 0.00027945864660434744,
+          "alternate_error": 0.00027945864660434744,
+          "interpolation_sensitivity": 0.0,
+          "reference_variation": 1.1843399185313814e-08,
+          "quantitative": true,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 0.00027947049000353274,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.01972052950999647
+        },
+        "final_complex_nonradial_field_error_over_initial_norm": {
+          "official_error": 0.0007666672968602414,
+          "alternate_error": 0.0007666870416730916,
+          "interpolation_sensitivity": 1.9744812850149528e-08,
+          "reference_variation": 7.011177211852002e-08,
+          "quantitative": true,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 0.0007667571534452101,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.019233242846554793
+        },
+        "final_phi_phase_space_error_over_initial_norm": {
+          "official_error": 0.000995901973871676,
+          "alternate_error": 0.0009958114593884286,
+          "interpolation_sensitivity": 9.051448324735346e-08,
+          "reference_variation": 3.87916203725827e-06,
+          "quantitative": true,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 0.0009998716503921816,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.01900012834960782
+        },
+        "final_mediator_nonradial_error_over_initial_norm": {
+          "official_error": 0.0011205509295842003,
+          "alternate_error": 0.0011109560500460252,
+          "interpolation_sensitivity": 9.59487953817507e-06,
+          "reference_variation": 1.0047509069512888e-05,
+          "quantitative": true,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 0.0011401933181918883,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.018859806681808113
+        },
+        "final_mediator_phase_space_error_over_initial_norm": {
+          "official_error": 0.0015135971990071497,
+          "alternate_error": 0.0014992278135655382,
+          "interpolation_sensitivity": 1.4369385441611541e-05,
+          "reference_variation": 1.5430991018407175e-05,
+          "quantitative": true,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 0.0015433975754671684,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.01845660242453283
+        }
+      },
+      "all_five_nominal": true,
+      "all_five_robust_margins": true
+    },
+    "0.0625": {
+      "official": {
+        "norm_relative_sup_error": 6.987241976007624e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.0001908690173185938,
+        "final_phi_phase_space_error_over_initial_norm": 0.0002469138761945517,
+        "final_mediator_nonradial_error_over_initial_norm": 0.00012516817642630208,
+        "final_mediator_phase_space_error_over_initial_norm": 0.0001284358715594165,
+        "global_phi_phase_removed": -5.99727098219695e-05,
+        "chi_radial_bands": [
+          {
+            "r_min": 0,
+            "r_max": 2,
+            "fraction_of_chi_squared_difference": 0.0018043324140633611
+          },
+          {
+            "r_min": 2,
+            "r_max": 5,
+            "fraction_of_chi_squared_difference": 0.004518574450121384
+          },
+          {
+            "r_min": 5,
+            "r_max": 10,
+            "fraction_of_chi_squared_difference": 0.8924708679502179
+          },
+          {
+            "r_min": 10,
+            "r_max": 20,
+            "fraction_of_chi_squared_difference": 0.0990223985754908
+          },
+          {
+            "r_min": 20,
+            "r_max": 40,
+            "fraction_of_chi_squared_difference": 0.0021838266101065484
+          }
+        ],
+        "chi_multipole_fractions": {
+          "1": 1.0565790536898744e-17,
+          "2": 0.9826265360428182,
+          "3": 1.1857012996573586e-17,
+          "4": 0.017373463957181548
+        },
+        "descriptive_chi_rotation": {
+          "angle": 1.5682222019195947e-06,
+          "rotated_error": 0.00012842821614850872,
+          "used_for_acceptance": false,
+          "warning": "χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta."
+        }
+      },
+      "alternative": {
+        "norm_relative_sup_error": 6.987241976007624e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 0.00019087025002166209,
+        "final_phi_phase_space_error_over_initial_norm": 0.00024691436989201214,
+        "final_mediator_nonradial_error_over_initial_norm": 0.000125083437461265,
+        "final_mediator_phase_space_error_over_initial_norm": 0.00012826267324482862,
+        "global_phi_phase_removed": -5.997270982253279e-05,
+        "chi_radial_bands": [
+          {
+            "r_min": 0,
+            "r_max": 2,
+            "fraction_of_chi_squared_difference": 0.0018160441132515591
+          },
+          {
+            "r_min": 2,
+            "r_max": 5,
+            "fraction_of_chi_squared_difference": 0.0045314296236193315
+          },
+          {
+            "r_min": 5,
+            "r_max": 10,
+            "fraction_of_chi_squared_difference": 0.8949789952011993
+          },
+          {
+            "r_min": 10,
+            "r_max": 20,
+            "fraction_of_chi_squared_difference": 0.09648577482275965
+          },
+          {
+            "r_min": 20,
+            "r_max": 40,
+            "fraction_of_chi_squared_difference": 0.0021877562391700613
+          }
+        ],
+        "chi_multipole_fractions": {
+          "1": 1.060758699303573e-17,
+          "2": 0.9831371111091467,
+          "3": 1.1962063715292688e-17,
+          "4": 0.016862888890853047
+        },
+        "descriptive_chi_rotation": {
+          "angle": 1.5449267935923565e-06,
+          "rotated_error": 0.00012825523355510372,
+          "used_for_acceptance": false,
+          "warning": "χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta."
+        }
+      },
+      "decisions": {
+        "norm_relative_sup_error": {
+          "official_error": 6.987241976007624e-05,
+          "alternate_error": 6.987241976007624e-05,
+          "interpolation_sensitivity": 0.0,
+          "reference_variation": 1.1843399185313814e-08,
+          "quantitative": true,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 6.988426315926155e-05,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.01993011573684074
+        },
+        "final_complex_nonradial_field_error_over_initial_norm": {
+          "official_error": 0.0001908690173185938,
+          "alternate_error": 0.00019087025002166209,
+          "interpolation_sensitivity": 1.2327030682833789e-09,
+          "reference_variation": 7.011177211852002e-08,
+          "quantitative": true,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 0.0001909403617937806,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.01980905963820622
+        },
+        "final_phi_phase_space_error_over_initial_norm": {
+          "official_error": 0.0002469138761945517,
+          "alternate_error": 0.00024691436989201214,
+          "interpolation_sensitivity": 4.936974604087194e-10,
+          "reference_variation": 3.87916203725827e-06,
+          "quantitative": true,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 0.0002507935319292704,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.01974920646807073
+        },
+        "final_mediator_nonradial_error_over_initial_norm": {
+          "official_error": 0.00012516817642630208,
+          "alternate_error": 0.000125083437461265,
+          "interpolation_sensitivity": 8.473896503707803e-08,
+          "reference_variation": 1.0047509069512888e-05,
+          "quantitative": true,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 0.00013530042446085205,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.01986469957553915
+        },
+        "final_mediator_phase_space_error_over_initial_norm": {
+          "official_error": 0.0001284358715594165,
+          "alternate_error": 0.00012826267324482862,
+          "interpolation_sensitivity": 1.7319831458788228e-07,
+          "reference_variation": 1.5430991018407175e-05,
+          "quantitative": true,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 0.00014404006089241157,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.019855959939107586
+        }
+      },
+      "all_five_nominal": true,
+      "all_five_robust_margins": true
+    },
+    "0.03125": {
+      "official": {
+        "norm_relative_sup_error": 1.7475644977002055e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 4.767600377241516e-05,
+        "final_phi_phase_space_error_over_initial_norm": 7.057647571042221e-05,
+        "final_mediator_nonradial_error_over_initial_norm": 3.118353825530333e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 3.246351647005049e-05,
+        "global_phi_phase_removed": -1.4991807278484082e-05,
+        "chi_radial_bands": [
+          {
+            "r_min": 0,
+            "r_max": 2,
+            "fraction_of_chi_squared_difference": 0.008901972708739596
+          },
+          {
+            "r_min": 2,
+            "r_max": 5,
+            "fraction_of_chi_squared_difference": 0.014780373051700074
+          },
+          {
+            "r_min": 5,
+            "r_max": 10,
+            "fraction_of_chi_squared_difference": 0.8840443507166494
+          },
+          {
+            "r_min": 10,
+            "r_max": 20,
+            "fraction_of_chi_squared_difference": 0.08114892197975665
+          },
+          {
+            "r_min": 20,
+            "r_max": 40,
+            "fraction_of_chi_squared_difference": 0.0111243815431544
+          }
+        ],
+        "chi_multipole_fractions": {
+          "1": 1.7925967697813068e-16,
+          "2": 0.9866522235509054,
+          "3": 1.9036175102469574e-16,
+          "4": 0.01334777644909445
+        },
+        "descriptive_chi_rotation": {
+          "angle": 3.059579851457042e-07,
+          "rotated_error": 3.246236373916625e-05,
+          "used_for_acceptance": false,
+          "warning": "χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta."
+        }
+      },
+      "alternative": {
+        "norm_relative_sup_error": 1.7475644977002055e-05,
+        "final_complex_nonradial_field_error_over_initial_norm": 4.767608449704796e-05,
+        "final_phi_phase_space_error_over_initial_norm": 7.057654874831905e-05,
+        "final_mediator_nonradial_error_over_initial_norm": 3.117992234935599e-05,
+        "final_mediator_phase_space_error_over_initial_norm": 3.2456138896278596e-05,
+        "global_phi_phase_removed": -1.4991807278418847e-05,
+        "chi_radial_bands": [
+          {
+            "r_min": 0,
+            "r_max": 2,
+            "fraction_of_chi_squared_difference": 0.008910233687747467
+          },
+          {
+            "r_min": 2,
+            "r_max": 5,
+            "fraction_of_chi_squared_difference": 0.014785026653899032
+          },
+          {
+            "r_min": 5,
+            "r_max": 10,
+            "fraction_of_chi_squared_difference": 0.8844694922101316
+          },
+          {
+            "r_min": 10,
+            "r_max": 20,
+            "fraction_of_chi_squared_difference": 0.08070576886991307
+          },
+          {
+            "r_min": 20,
+            "r_max": 40,
+            "fraction_of_chi_squared_difference": 0.011129478578308911
+          }
+        ],
+        "chi_multipole_fractions": {
+          "1": 1.7942728387268055e-16,
+          "2": 0.9867444363111445,
+          "3": 1.907911037503163e-16,
+          "4": 0.01325556368885518
+        },
+        "descriptive_chi_rotation": {
+          "angle": 3.045847681945659e-07,
+          "rotated_error": 3.245499623018082e-05,
+          "used_for_acceptance": false,
+          "warning": "χ es real: esta rotación del espacio de fases es sólo un diagnóstico; no es una simetría que permita alinear la puerta."
+        }
+      },
+      "decisions": {
+        "norm_relative_sup_error": {
+          "official_error": 1.7475644977002055e-05,
+          "alternate_error": 1.7475644977002055e-05,
+          "interpolation_sensitivity": 0.0,
+          "reference_variation": 1.1843399185313814e-08,
+          "quantitative": true,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 1.7487488376187368e-05,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.019982512511623814
+        },
+        "final_complex_nonradial_field_error_over_initial_norm": {
+          "official_error": 4.767600377241516e-05,
+          "alternate_error": 4.767608449704796e-05,
+          "interpolation_sensitivity": 8.072463279562092e-11,
+          "reference_variation": 7.011177211852002e-08,
+          "quantitative": true,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 4.774619626916648e-05,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.019952253803730835
+        },
+        "final_phi_phase_space_error_over_initial_norm": {
+          "official_error": 7.057647571042221e-05,
+          "alternate_error": 7.057654874831905e-05,
+          "interpolation_sensitivity": 7.303789684328082e-11,
+          "reference_variation": 3.87916203725827e-06,
+          "quantitative": true,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 7.445571078557732e-05,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.019925544289214427
+        },
+        "final_mediator_nonradial_error_over_initial_norm": {
+          "official_error": 3.118353825530333e-05,
+          "alternate_error": 3.117992234935599e-05,
+          "interpolation_sensitivity": 3.615905947336733e-09,
+          "reference_variation": 1.0047509069512888e-05,
+          "quantitative": false,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 4.1234663230763554e-05,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.01995876533676924
+        },
+        "final_mediator_phase_space_error_over_initial_norm": {
+          "official_error": 3.246351647005049e-05,
+          "alternate_error": 3.2456138896278596e-05,
+          "interpolation_sensitivity": 7.377573771891795e-09,
+          "reference_variation": 1.5430991018407175e-05,
+          "quantitative": false,
+          "reference_at_discrepancy_scale": false,
+          "joint_upper_empirical": 4.7901885062229554e-05,
+          "nominal_pass": true,
+          "margin_robust_to_variations": 0.019952098114937773
+        }
+      },
+      "all_five_nominal": true,
+      "all_five_robust_margins": true
+    }
+  },
+  "CP12_closed": false
+}
