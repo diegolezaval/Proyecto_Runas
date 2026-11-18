@@ -1,0 +1,29 @@
+{
+  "estado": "RECUPERACION_GITHUB_VERIFICADA",
+  "repositorio": "diegolezaval/Proyecto_Runas",
+  "repositorio_id": 1403197421,
+  "rama": "ciencia/cp12-p4-validacion",
+  "commit_recuperado": "f6682407c42559c2f167834df38043fe88b57089",
+  "arbol_recuperado": "ff916a213b4e36b1ef16c6d7a7522c17b3a8ddf6",
+  "momento_utc": "2026-11-18T12:09:46.573516+00:00",
+  "origen": "Clon independiente de la rama a través de GitHub. Archivos recuperados del commit publicado y comprobados con los manifiestos y los observadores del ensayo.",
+  "archivos_con_sha256_verificado": 23,
+  "estados_numericos_completos": 17,
+  "series_temporales": 36,
+  "bytes_de_datos": 9252784,
+  "comprobaciones": {
+    "primer_checkpoint": {
+      "series": 24,
+      "estados_finales": 8,
+      "preparaciones": 1,
+      "peor_diferencia_rel_escalada": 1.8005282584439878e-16,
+      "decision": "CONTACTO_FINITO_NO_SUPERA_LA_PUERTA"
+    },
+    "contraste_confirmatorio": "ACCESO_FINITO_RESUELTO_EN_TRES_AMPLITUDES 12 series y 4 estados finales comprobados",
+    "reproduccion_completa": "36 series, 17 estados completos y 23/23 archivos idénticos"
+  },
+  "pasos_M2_en_recuperacion": 0,
+  "dominio": "Q-ball radial de omega=0,9; pulsos 0,0025, 0,0050 y 0,010 hasta tau=240.",
+  "paso3_diseno_habilitado": true,
+  "ciclo_completo": false
+}
