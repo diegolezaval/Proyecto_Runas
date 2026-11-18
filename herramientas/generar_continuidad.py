@@ -94,7 +94,8 @@ def render_state(root=ROOT):
         if validation_report:
             lines += [f"[Referencia independiente]({operation['reference_register']}) · "
                       f"[Estado de CP12]({operation['validation_register']}) · "
-                      f"[Informe de validación y alcance]({validation_report}).", '']
+                      f"[Informe de validación y alcance]({validation_report}) · "
+                      f"[Operador discreto de χ]({Path(validation_report).parent.parent.as_posix()}/OPERADOR_CHI.md).", '']
     elif operation:
         lines += ['| Referencia | Estado |', '|---|---|',
                   f"| CP12 / P3 | {operation['CP12_status']} / {operation['P3_status']} |",

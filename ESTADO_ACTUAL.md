@@ -19,7 +19,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 [Registro del piloto](checkpoints/CP12/p4_20261115/ESTADO_REANUDACION.json) · [Validación del piloto](checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json) · [Estado de la tercera malla](checkpoints/CP12/p4_20261115/tercera_malla_20261116/ESTADO_REANUDACION.json).
 
-[Referencia independiente](checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/ESTADO.json) · [Estado de CP12](checkpoints/CP12/p4_20261115/validacion_20261116/ESTADO.json) · [Informe de validación y alcance](checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md).
+[Referencia independiente](checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/ESTADO.json) · [Estado de CP12](checkpoints/CP12/p4_20261115/validacion_20261116/ESTADO.json) · [Informe de validación y alcance](checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md) · [Operador discreto de χ](checkpoints/CP12/p4_20261115/OPERADOR_CHI.md).
 
 ## Siguiente trabajo científico
 
