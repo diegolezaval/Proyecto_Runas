@@ -23,11 +23,11 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 ## Reserva · paso 2
 
-ESTABILIDAD_APROBADA_RANGO_0010_0020_FALLA_ESCALADO · τ240. [Informe y balances](checkpoints/Reserva/paso2_20261117/INFORME.md) · [Estado de Reserva](checkpoints/Reserva/paso2_20261117/ESTADO.json).
+ACCESO_FINITO_RESUELTO_EN_TRES_AMPLITUDES · τ240. [Informe y balances](checkpoints/Reserva/paso2_20261117/amplitud_menor/INFORME.md) · [Estado de Reserva](checkpoints/Reserva/paso2_20261117/ESTADO.json).
 
 ## Siguiente trabajo científico
 
-- Contrastar las dos amplitudes menores prerregistradas y conservar el primer resultado de escalado.
+- Diseñar el ciclo del paso 3 para la gota de ω=0,9 con espera, descarga hacia una segunda gota, control de transmisión directa y recarga.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 
 ## Estados de origen y continuación
@@ -114,7 +114,7 @@ ESTABILIDAD_APROBADA_RANGO_0010_0020_FALLA_ESCALADO · τ240. [Informe y balance
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [checkpoints/Reserva/paso2_20261117/INFORME.md](checkpoints/Reserva/paso2_20261117/INFORME.md).
+Informe de esta entrega: [checkpoints/Reserva/paso2_20261117/amplitud_menor/INFORME.md](checkpoints/Reserva/paso2_20261117/amplitud_menor/INFORME.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

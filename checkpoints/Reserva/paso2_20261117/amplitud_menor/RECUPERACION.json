@@ -1,0 +1,62 @@
+{
+  "archivos": {
+    "INSUMOS.json": {
+      "sha256": "bd5af1d2ba82faba8c6d617adc611cd8601b8fc22e31121cdc4a7bb08d8d384a",
+      "bytes": 993
+    },
+    "RESULTADO.json": {
+      "sha256": "80653e0550eaf3fa541c0b53d60ffe5a6aee386b3ca80617d1df96e42320523c",
+      "bytes": 22475
+    },
+    "contraste.py": {
+      "sha256": "ff57abd44385ff5b40d6cc83dadc9cd1f970b6a5894f6b6965c2ae2ea3514a1d",
+      "bytes": 8659
+    },
+    "datos/espacial_series.zip": {
+      "sha256": "d7eff837da691b9299d29ed9ad19a2d6b0dba900fe6a2bccd18f2b9f446ef5ed",
+      "bytes": 180964
+    },
+    "datos/fina_series.zip": {
+      "sha256": "3523749effc28eb90e5ce4a3e7310df146c84bb0761fcc734e989e53f2ab4cf1",
+      "bytes": 175799
+    },
+    "datos/gota_a0025.npz": {
+      "sha256": "38378766d55e6b6aae7c1d829f258731eaefc39fd53b047cdd7dc36e84fe2d55",
+      "bytes": 474299
+    },
+    "datos/gota_a0050.npz": {
+      "sha256": "fd265554e9b2bcfef421a3ffd203edd675461da41f7e959f73a0738a9d9888c2",
+      "bytes": 474291
+    },
+    "datos/temporal_series.zip": {
+      "sha256": "9aaa7071570291b0f0bf8fd1e3a8de947ca93a9ba2bc5ab526ab2c41c4852282",
+      "bytes": 178768
+    },
+    "datos/vacio_a0025.npz": {
+      "sha256": "09d5a812f135c1b2fc432c50b35da963dfa7fabd079cbe8dc85f4eda56e53ca8",
+      "bytes": 475060
+    },
+    "datos/vacio_a0050.npz": {
+      "sha256": "b6623e8ede2e5ce6b8a0c8a5acb073e7577a44dfccfe9f19cb3b16733a9fd35f",
+      "bytes": 475371
+    },
+    "insumos/espacial_gemelo.npz": {
+      "sha256": "e012458666d846bd084399ea3f08525d9391c1fb6820fa9a17cc92d08e028658",
+      "bytes": 238689
+    },
+    "insumos/espacial_preparacion.npz": {
+      "sha256": "29f32d6941db8916fb8085838c6fd01fe1390acf5767b96f94387e283e8b9eec",
+      "bytes": 240957
+    },
+    "insumos/temporal_gemelo.npz": {
+      "sha256": "e9a112b43c5882f737327b59a710850b55dfcbbc8657eb64d47fa7ff84e18e08",
+      "bytes": 473572
+    },
+    "insumos/temporal_preparacion.npz": {
+      "sha256": "911662b810f3436df50efd91c1e93466b593cc08cc5f686ddded55797bb7242f",
+      "bytes": 475999
+    }
+  },
+  "prerregistro_sha256": "0cfd3a821afc11a194171d1349936e0a69ba684dd4054d9bd2cbe95a4fd5018e",
+  "primer_manifiesto_sha256": "ad524e037f4e19141bf92c0238b028f3ff4e6a4a3522c58c156c4eab7dd2706e"
+}

@@ -1,10 +1,21 @@
 {
-  "status": "ESTABILIDAD_APROBADA_RANGO_0010_0020_FALLA_ESCALADO",
+  "status": "ACCESO_FINITO_RESUELTO_EN_TRES_AMPLITUDES",
   "estado_base": "Q-ball estacionaria M2, omega=0.9",
   "ultimo_tau": 240,
   "protocolo": "checkpoints/Reserva/paso2_20261117/PRERREGISTRO.md",
-  "informe": "checkpoints/Reserva/paso2_20261117/INFORME.md",
-  "paso3_diseno_habilitado": false,
+  "informe": "checkpoints/Reserva/paso2_20261117/amplitud_menor/INFORME.md",
+  "paso3_diseno_habilitado": true,
   "ciclo_completo": false,
-  "siguiente": "Contrastar las dos amplitudes menores prerregistradas y conservar el primer resultado de escalado."
+  "siguiente": "Diseñar el ciclo del paso 3 para la gota de ω=0,9 con espera, descarga hacia una segunda gota, control de transmisión directa y recarga.",
+  "primer_informe": "checkpoints/Reserva/paso2_20261117/INFORME.md",
+  "amplitudes_aprobadas": [
+    0.0025,
+    0.005,
+    0.01
+  ],
+  "par_que_fallo_escalado": [
+    0.01,
+    0.02
+  ],
+  "recibo_reproduccion": "checkpoints/Reserva/paso2_20261117/REPRODUCCION_INDEPENDIENTE.json"
 }

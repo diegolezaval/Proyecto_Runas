@@ -16,7 +16,7 @@ Los dos impulsos iniciales conservan la carga por construcción. La salida poste
 
 ## Presupuesto de la preparación
 
-La rampa de ocho unidades parte de campos nulos. El impulsor de $\Phi$ hizo trabajo neto +2613,006175 y el de $\chi$ recibió 87,373173. La energía final fue **2525,633310** y la carga final **2745,746206**. El error entre trabajo integrado y energía final fue $1,22\times10^{-7}$ relativo. El error de balance de carga fue $1,11\times10^{-15}$ y el del perfil de amplitud $9,80\times10^{-8}$. Son saldos entregados al campo por actuadores ideales con control espacial y de fase. El trabajo necesario para fabricar el actuador y las pérdidas de una fuente material siguen abiertos. El estado fino preparado conserva los seis campos de Cauchy. [Presupuestos de las tres mallas](CONTACTO.json) · [Huella del estado preparado](MANIFIESTO.json)
+La rampa de ocho unidades parte de campos nulos. El impulsor de $\Phi$ hizo trabajo neto +2613,006175 y el de $\chi$ recibió 87,373173. La energía final fue **2525,633310** y la carga final **2745,746206**. El error entre trabajo integrado y energía final fue $1,22\times10^{-7}$ relativo. El error de balance de carga fue $1,11\times10^{-15}$ y el del perfil de amplitud $9,80\times10^{-8}$. Son saldos entregados al campo por actuadores ideales con control espacial y de fase. El trabajo necesario para fabricar el actuador y las pérdidas de una fuente material siguen abiertos. El estado fino preparado conserva los seis campos de Cauchy. [Presupuestos de las tres mallas](CONTACTO.json) · [Estado preparado](datos/preparacion.npz) · [Huellas](MANIFIESTO.json)
 
 ## Pulso finito y retroacción
 
@@ -49,6 +49,8 @@ En orden creciente de amplitud, las escalas empíricas $U_E$ fueron 0,00003220 y
 El 95 % central de la energía entrante positiva del paquete está en $\Omega=2,1234$ a $2,4906$. Como diagnóstico adicional se ponderó por ese espectro la dispersión lineal del capítulo 29. La absorción predicha para el paquete infinitesimal fue **0,046314 %**. La predicción monocromática en el centro era 0,06869 %. Cambiar el muestreo de frecuencia modificó la primera predicción en 0,0000680 puntos porcentuales y refinar la malla radial, en 0,00000609 puntos. Las discrepancias de las fracciones finitas respecto de la predicción integrada son 0,00843 y 0,02923 puntos. La lectura a τ240 incluye energía que aún sale del puerto. Atribuir toda la diferencia a no linealidad requiere una medida de retención más larga. [Espectro, conversiones y refinamientos](BANDA.json)
 
 **Criterio para el paso 3.** Hacen falta dos amplitudes con saldos de energía y carga mayores que $3U$, concordancia puerto–núcleo, balances y discrepancia relativa de fracción absorbida inferior al 25 %. El primer par satisface todos salvo el último, incluso tomando la fracción mayor como denominador. El siguiente contraste reduce la amplitud y conserva los umbrales. El ciclo requerirá una espera, descarga hacia una segunda gota con balance propio, control de transmisión directa y recarga. La energía útil entregada a un receptor sigue sin medirse. [Contraste de amplitudes menores](PRERREGISTRO_AMPLITUD_MENOR.md)
+
+El contraste de amplitudes menores y la decisión vigente se encuentran en el [informe confirmatorio](amplitud_menor/INFORME.md).
 
 ## Recuperación y reproducción
 

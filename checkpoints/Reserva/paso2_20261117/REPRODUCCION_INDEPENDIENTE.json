@@ -1,0 +1,154 @@
+{
+  "estado": "ESTADOS_COMPLETOS_REPRODUCIDOS",
+  "origen": "Perfil, parámetros, ecuaciones y protocolos públicos de la rama.",
+  "archivos": {
+    "datos/espacial_series.zip": {
+      "bytes": 377222,
+      "sha256": "b48debe26e9ffe599d7b5d26edb13f999426118b5937ee76f54cb66a9bf588ef"
+    },
+    "datos/fina_series.zip": {
+      "bytes": 367955,
+      "sha256": "1d2fa764bcae86484e24bdb2e0e2b7de82a30b12a0e7428a956b6550df66beec"
+    },
+    "datos/gemelo.npz": {
+      "bytes": 473247,
+      "sha256": "56f9e56a668b6c7fe4b0124570bd711c8b8f7faa87804343552760b852515b59"
+    },
+    "datos/gota_a010.npz": {
+      "bytes": 474684,
+      "sha256": "92649e8afa9b96e56f80f65284524245cc9006d4299a3a04e1bb339720422e6e"
+    },
+    "datos/gota_a020.npz": {
+      "bytes": 474784,
+      "sha256": "96363a1f5c0018cbf95a563bc20d8adab8844103291bb669661807cdb121c693"
+    },
+    "datos/libre.npz": {
+      "bytes": 473408,
+      "sha256": "c6dbfd4e0ced7712c48d9aa83ff1cbec155f2ad3eca30e352bf9193f109e1df4"
+    },
+    "datos/mas.npz": {
+      "bytes": 472300,
+      "sha256": "002807dcab2e4e373039874003ef8ef8d921b0a1eb72778966c5e8b9cf6d2f8d"
+    },
+    "datos/menos.npz": {
+      "bytes": 472260,
+      "sha256": "722bdad817098205aef67ee7ac5e9bb0fc2151a8d16fd5eff628f96ad4e9c1da"
+    },
+    "datos/preparacion.npz": {
+      "bytes": 476107,
+      "sha256": "511d4603761427aac4ad03f0320fefa10706fa2b37963926594c637b0a2bb9d2"
+    },
+    "datos/temporal_series.zip": {
+      "bytes": 374666,
+      "sha256": "411b5c54ed5234c1c9becdacc0ab5d6829b3229c60339322fd414149f01d8680"
+    },
+    "datos/vacio_a010.npz": {
+      "bytes": 475968,
+      "sha256": "1b8ab0daa718c1cfed341603cd80168fff99f115eecc569f1182054d86f0c6ac"
+    },
+    "datos/vacio_a020.npz": {
+      "bytes": 476414,
+      "sha256": "cbf424c285159630d06aff0c5e91500ade5736fc31ce2d3b59ad8ab7c2206ba5"
+    },
+    "amplitud_menor/datos/espacial_series.zip": {
+      "sha256": "d7eff837da691b9299d29ed9ad19a2d6b0dba900fe6a2bccd18f2b9f446ef5ed",
+      "bytes": 180964
+    },
+    "amplitud_menor/datos/fina_series.zip": {
+      "sha256": "3523749effc28eb90e5ce4a3e7310df146c84bb0761fcc734e989e53f2ab4cf1",
+      "bytes": 175799
+    },
+    "amplitud_menor/datos/gota_a0025.npz": {
+      "sha256": "38378766d55e6b6aae7c1d829f258731eaefc39fd53b047cdd7dc36e84fe2d55",
+      "bytes": 474299
+    },
+    "amplitud_menor/datos/gota_a0050.npz": {
+      "sha256": "fd265554e9b2bcfef421a3ffd203edd675461da41f7e959f73a0738a9d9888c2",
+      "bytes": 474291
+    },
+    "amplitud_menor/datos/temporal_series.zip": {
+      "sha256": "9aaa7071570291b0f0bf8fd1e3a8de947ca93a9ba2bc5ab526ab2c41c4852282",
+      "bytes": 178768
+    },
+    "amplitud_menor/datos/vacio_a0025.npz": {
+      "sha256": "09d5a812f135c1b2fc432c50b35da963dfa7fabd079cbe8dc85f4eda56e53ca8",
+      "bytes": 475060
+    },
+    "amplitud_menor/datos/vacio_a0050.npz": {
+      "sha256": "b6623e8ede2e5ce6b8a0c8a5acb073e7577a44dfccfe9f19cb3b16733a9fd35f",
+      "bytes": 475371
+    },
+    "amplitud_menor/insumos/espacial_gemelo.npz": {
+      "sha256": "e012458666d846bd084399ea3f08525d9391c1fb6820fa9a17cc92d08e028658",
+      "bytes": 238689
+    },
+    "amplitud_menor/insumos/espacial_preparacion.npz": {
+      "sha256": "29f32d6941db8916fb8085838c6fd01fe1390acf5767b96f94387e283e8b9eec",
+      "bytes": 240957
+    },
+    "amplitud_menor/insumos/temporal_gemelo.npz": {
+      "sha256": "e9a112b43c5882f737327b59a710850b55dfcbbc8657eb64d47fa7ff84e18e08",
+      "bytes": 473572
+    },
+    "amplitud_menor/insumos/temporal_preparacion.npz": {
+      "sha256": "911662b810f3436df50efd91c1e93466b593cc08cc5f686ddded55797bb7242f",
+      "bytes": 475999
+    }
+  },
+  "coincidencias_byte_a_byte_con_la_primera_ejecucion": [
+    "amplitud_menor/datos/espacial_series.zip",
+    "amplitud_menor/datos/fina_series.zip",
+    "amplitud_menor/datos/gota_a0025.npz",
+    "amplitud_menor/datos/gota_a0050.npz",
+    "amplitud_menor/datos/temporal_series.zip",
+    "amplitud_menor/datos/vacio_a0025.npz",
+    "amplitud_menor/datos/vacio_a0050.npz",
+    "amplitud_menor/insumos/espacial_gemelo.npz",
+    "amplitud_menor/insumos/espacial_preparacion.npz",
+    "amplitud_menor/insumos/temporal_gemelo.npz",
+    "amplitud_menor/insumos/temporal_preparacion.npz",
+    "datos/espacial_series.zip",
+    "datos/fina_series.zip",
+    "datos/gemelo.npz",
+    "datos/gota_a010.npz",
+    "datos/gota_a020.npz",
+    "datos/libre.npz",
+    "datos/mas.npz",
+    "datos/menos.npz",
+    "datos/preparacion.npz",
+    "datos/temporal_series.zip",
+    "datos/vacio_a010.npz",
+    "datos/vacio_a020.npz"
+  ],
+  "diferencias_maximas_observables": {
+    "E_entrada": 0.0,
+    "E_reflejada": 0.0,
+    "E_absorbida": 0.0,
+    "E_nucleo": 0.0,
+    "E_puerto": 0.0,
+    "Q_entrada": 0.0,
+    "Q_reflejada": 0.0,
+    "Q_absorbida": 0.0,
+    "Q_nucleo": 0.0,
+    "Q_puerto": 0.0,
+    "fraccion_absorbida": 0.0,
+    "Q40_final": 0.0,
+    "incremento_ext_max": 0.0,
+    "flujo_E40_neto": 0.0,
+    "error_perfil_max": 0.0,
+    "preparacion_E": 0.0,
+    "preparacion_Q": 0.0,
+    "preparacion_trabajo_Phi": 0.0,
+    "preparacion_trabajo_chi": 0.0,
+    "preparacion_carga_fuente": 0.0,
+    "prediccion_lineal": 0.0
+  },
+  "criterio_absoluto": 1e-08,
+  "criterio_relativo": 1e-07,
+  "resumen": "36 series, 13 estados finos (uno preparado y doce finales) y cuatro estados auxiliares para reanudar los contrastes.",
+  "decisiones": [
+    "CONTACTO_FINITO_NO_SUPERA_LA_PUERTA",
+    "ACCESO_FINITO_RESUELTO_EN_TRES_AMPLITUDES"
+  ],
+  "ejecucion": "Reconstrucción en un directorio limpio separado de la primera ejecución; paquetes y controles generados desde las entradas y protocolos identificados en los dos manifiestos."
+}

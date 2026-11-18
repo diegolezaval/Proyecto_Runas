@@ -1,0 +1,26 @@
+{
+  "espacial/gemelo": {
+    "archivo": "amplitud_menor/insumos/espacial_gemelo.npz",
+    "sha256": "e012458666d846bd084399ea3f08525d9391c1fb6820fa9a17cc92d08e028658"
+  },
+  "espacial/preparacion": {
+    "archivo": "amplitud_menor/insumos/espacial_preparacion.npz",
+    "sha256": "29f32d6941db8916fb8085838c6fd01fe1390acf5767b96f94387e283e8b9eec"
+  },
+  "temporal/gemelo": {
+    "archivo": "amplitud_menor/insumos/temporal_gemelo.npz",
+    "sha256": "e9a112b43c5882f737327b59a710850b55dfcbbc8657eb64d47fa7ff84e18e08"
+  },
+  "temporal/preparacion": {
+    "archivo": "amplitud_menor/insumos/temporal_preparacion.npz",
+    "sha256": "911662b810f3436df50efd91c1e93466b593cc08cc5f686ddded55797bb7242f"
+  },
+  "fina/gemelo": {
+    "archivo": "datos/gemelo.npz",
+    "sha256": "56f9e56a668b6c7fe4b0124570bd711c8b8f7faa87804343552760b852515b59"
+  },
+  "fina/preparacion": {
+    "archivo": "datos/preparacion.npz",
+    "sha256": "511d4603761427aac4ad03f0320fefa10706fa2b37963926594c637b0a2bb9d2"
+  }
+}
