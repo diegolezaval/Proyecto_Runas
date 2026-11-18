@@ -65,28 +65,36 @@ def render_state(root=ROOT):
     state = read('estado_progreso.json', root)
     registry = read('datos/registro_calculos.json', root)
     current = state.get('scientific_checkpoint', state['checkpoint'])
+    operation = state.get('current_operational_state') or {}
+    validation_report = operation.get('validation_report')
+    checkpoint_label = 'Checkpoint integrado en main' if validation_report else 'Último checkpoint científico'
     completed = ', '.join(s['id'] for s in state['stages'] if s['status'] == 'COMPLETADA') or 'Ninguna'
     partial = ', '.join(s['id'] for s in state['stages'] if s['status'] == 'PARCIAL') or 'Ninguna'
     activity = state.get('execution_activity', {})
     active_count = ('DESCONOCIDOS; no iniciar otro trabajador' if
                     activity.get('activity_known') is False else
                     str(len(state.get('numerical_runs_in_progress', []))))
-    latest_nonradial = read(registry['authoritative_results']['nonradial'], root)
+    nonradial_status = read(registry['authoritative_results']['nonradial'], root)['status']
+    if validation_report:
+        nonradial_status = operation['CP12_status']
     lines = [f"# Estado actual · {state['checkpoint']}", '',
              '> Vista generada por herramientas/generar_continuidad.py. Editar las fuentes JSON; no este archivo.', '',
-             f"Proyecto: **{state['project_version']}**. Modelo: **{state['model_version']}**. Último checkpoint científico: **{current}**.", '',
+             f"Proyecto: **{state['project_version']}**. Modelo: **{state['model_version']}**. {checkpoint_label}: **{current}**.", '',
              f"**Completadas:** {completed}. **Parciales:** {partial}.", '',
-             f"**Puerta no radial vigente:** {latest_nonradial['status']}. **Cálculos numéricos activos:** {active_count}. **Primordiales/dispositivos completos:** {state['complete_primordials']}.", '',
+             f"**Puerta no radial vigente:** {nonradial_status}. **Cálculos numéricos activos:** {active_count}. **Primordiales/dispositivos completos:** {state['complete_primordials']}.", '',
              ('La auditoría administrativa no cambia las etapas ni sus puertas.' if state.get('checkpoint_kind', 'ADMINISTRATIVO' if current != state['checkpoint'] else 'CIENTIFICO') == 'ADMINISTRATIVO' else 'Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa.') + ' La evidencia reproducible prevalece ante una discrepancia documental.', '',
              '## Continuidad operativa', '']
-    operation = state.get('current_operational_state')
-    if operation and operation.get('candidate') == 'P4':
+    if operation.get('candidate') == 'P4':
         lines += ['| Referencia | Estado |', '|---|---|',
                   f"| CP12 / P4 | {operation['CP12_status']} / {operation['P4_status']} |",
                   f"| Última frontera verificada del piloto | τ{operation['last_full_frontier']:g} |", '',
                   f"[Registro del piloto]({operation['canonical_register']}) · "
                   f"[Validación del piloto]({operation['evidence']}) · "
                   f"[Estado de la tercera malla]({operation['third_mesh_register']}).", '']
+        if validation_report:
+            lines += [f"[Referencia independiente]({operation['reference_register']}) · "
+                      f"[Estado de CP12]({operation['validation_register']}) · "
+                      f"[Informe de validación y alcance]({validation_report}).", '']
     elif operation:
         lines += ['| Referencia | Estado |', '|---|---|',
                   f"| CP12 / P3 | {operation['CP12_status']} / {operation['P3_status']} |",
@@ -135,6 +143,11 @@ def render_state(root=ROOT):
 def render_readme(root=ROOT):
     """Puente generado a la entrada canónica, visible también en GitHub."""
     intro = (root / 'LEEME.md').read_text(encoding='utf-8').split('\n\n')[1]
+    operation = read('estado_progreso.json', root).get('current_operational_state') or {}
+    validation_report = operation.get('validation_report')
+    checkpoint_link = (f'- [Validación y cierre de CP12/P4]({validation_report}).'
+                       if validation_report else
+                       '- [Recuperación vigente de CP12/P3](RECUPERACION_CP12_ACTUAL.md).')
     return '\n'.join([
         '# Rúnica', '',
         '> Vista generada desde LEEME.md por herramientas/generar_continuidad.py. No editar manualmente.', '',
@@ -142,7 +155,7 @@ def render_readme(root=ROOT):
         'Abrir [LEEME.md](LEEME.md) para la entrada completa, las fuentes de verdad y los comandos.', '',
         '- [Estado actual y siguiente trabajo](ESTADO_ACTUAL.md).',
         '- [Arquitectura y trazabilidad](ARQUITECTURA.md).',
-        '- [Recuperación vigente de CP12/P3](RECUPERACION_CP12_ACTUAL.md).',
+        checkpoint_link,
         '- [Panorama global](informes/PANORAMA_GLOBAL_Y_PRIORIDADES_20261029.md).',
         '- [Preparación histórica de la migración](MIGRACION_GITHUB.md).', ''
     ])

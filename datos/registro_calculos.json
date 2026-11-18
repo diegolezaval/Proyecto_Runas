@@ -16,7 +16,11 @@
     "chi_radial_diagnostic": "validacion/P06/no_radial/CP11/diagnostico_radial__95e3e493841d55db9dad877564e70192975ff410333cac478376d81e16b33faa/resultados.json",
     "chi_frozen_source_contrast": "validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json",
     "chi_forced_response": "validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json",
-    "piloto_CP12_P4": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json"
+    "piloto_CP12_P4": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json",
+    "negativo_espacial_CP12_P3": "checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0152_0160/SUSPENSION.json",
+    "tercera_malla_CP12_P4": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/RESULTADO.json",
+    "referencia_Galerkin_CP12_P4": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/RESULTADO.json",
+    "validacion_final_CP12_P4": "checkpoints/CP12/p4_20261115/validacion_20261116/RESULTADO.json"
   },
   "historical_partial_files": {
     "validacion/validez/partial_sensitivity.json": "Anterior a recuperación M+; no resultado vigente",
@@ -216,21 +220,12 @@
     },
     {
       "id": "CP12_P3_pareja",
-      "status": "WAITING_REGISTERED_ACTIVATION_16_A24",
+      "status": "SUSPENDIDA_NEGATIVO_ESPACIAL_TAU160",
       "resume": false,
-      "resume_only_from_exact_transport": false,
-      "recovered_observer_clock": 16,
-      "last_positive_full_frontier": 16,
-      "next_full_frontier": 24,
-      "evidence": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/RESULTADO.json",
-      "consumed_replay_permission_available": false,
-      "CP12_closed": false,
-      "activity_evidence": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/ASIGNACION_16_A24.json",
-      "github_recovered_observer_clock": 16,
-      "new_allocation_prepared": "p3_16_a24_20261105",
-      "current_process_M2_steps_executed": 0,
-      "current_process_M2_steps_executed_scope": "Recuperación y lectura; cero evolución nueva.",
-      "resume_only_from_certified_closed_boundary": true
+      "time": 160,
+      "last_positive_full_frontier": 152,
+      "evidence": "checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0152_0160/SUSPENSION.json",
+      "CP12_closed": false
     },
     {
       "id": "CP12_P4_piloto",
@@ -242,11 +237,54 @@
     },
     {
       "id": "CP12_P4_tercera_malla",
-      "status": "PRERREGISTRADA",
+      "status": "COMPLETADA_TAU160",
       "resume": false,
-      "evidence": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/REGISTRO.json",
+      "evidence": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/RESULTADO.json",
       "canonical_register": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/ESTADO_REANUDACION.json",
+      "CP12_closed": false,
+      "completed": true,
+      "time": 160,
+      "recovery_receipt": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/tau0160/RECUPERACION_PUBLICA.json"
+    },
+    {
+      "id": "CP12_P4_referencia_Galerkin",
+      "status": "COMPLETADA_TAU160",
+      "resume": false,
+      "completed": true,
+      "time": 160,
+      "canonical_register": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/ESTADO.json",
+      "evidence": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/RESULTADO.json",
       "CP12_closed": false
+    },
+    {
+      "id": "CP12_P4_validacion",
+      "status": "COMPLETADA_TAU160",
+      "resume": false,
+      "completed": true,
+      "time": 160,
+      "campaign_uuid": "8488bc917fee4daaac8190c779eef86e",
+      "canonical_register": "checkpoints/CP12/p4_20261115/validacion_20261116/ESTADO.json",
+      "evidence": "checkpoints/CP12/p4_20261115/validacion_20261116/RESULTADO.json",
+      "report": "checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md",
+      "correction_validated": true,
+      "CP12_closed": true,
+      "domain": {
+        "config": {
+          "dx": 0.03125,
+          "rtol": 1e-10,
+          "atol": 1e-12,
+          "max_step": 0.02,
+          "L": 4,
+          "radius": 220.0,
+          "eps": 0.02,
+          "tmax": 160.0
+        },
+        "terminal_time": 160,
+        "source_CP04": "validacion/P06/preparacion/w7.20_h0.100_dt0.0020_R1300_T1200_estado.npz",
+        "Galerkin_empirical": true,
+        "robustness_at_fixed_h": true,
+        "sensitivity_scope": "Variantes de un eje a la vez."
+      }
     }
   ],
   "failures_preserved": "trazabilidad/reanudacion_CP02/inventario.json",
@@ -267,15 +305,19 @@
   ],
   "current_operational_state": {
     "accepted_checkpoint": "CP11",
-    "CP12_status": "ABIERTO",
+    "CP12_status": "CERRADO_EN_ALCANCE_P4",
     "candidate": "P4",
-    "P4_status": "PILOTO_VERIFICADO_TAU160",
+    "P4_status": "VALIDADO_TAU160",
     "last_full_frontier": 160,
     "own_workers": 0,
     "canonical_register": "checkpoints/CP12/p4_20261115/ESTADO_REANUDACION.json",
     "evidence": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json",
     "third_mesh_register": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/ESTADO_REANUDACION.json",
-    "observed_at_utc": "2026-11-16T14:44:05.514138+00:00"
+    "observed_at_utc": "2026-11-18T01:13:33.481327+00:00",
+    "reference_register": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/ESTADO.json",
+    "validation_register": "checkpoints/CP12/p4_20261115/validacion_20261116/ESTADO.json",
+    "validation_result": "checkpoints/CP12/p4_20261115/validacion_20261116/RESULTADO.json",
+    "validation_report": "checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md"
   },
   "last_verified_P4_pilot": {
     "time": 160,
@@ -309,6 +351,24 @@
       "current_step_count_scope": "Pasos nuevos conservados hasta20.8;no total final en vuelo.",
       "latest_recovered_clock": 20.8,
       "latest_transport_public_asset": 717383219
+    },
+    {
+      "id": "CP12_P3_pareja",
+      "status": "WAITING_REGISTERED_ACTIVATION_16_A24",
+      "resume": false,
+      "resume_only_from_exact_transport": false,
+      "recovered_observer_clock": 16,
+      "last_positive_full_frontier": 16,
+      "next_full_frontier": 24,
+      "evidence": "checkpoints/CP12/p3_20261018/recuperacion_t16_20261105/RESULTADO.json",
+      "consumed_replay_permission_available": false,
+      "CP12_closed": false,
+      "activity_evidence": "checkpoints/CP12/p3_20261018/reanudacion_t16_20261105/ASIGNACION_16_A24.json",
+      "github_recovered_observer_clock": 16,
+      "new_allocation_prepared": "p3_16_a24_20261105",
+      "current_process_M2_steps_executed": 0,
+      "current_process_M2_steps_executed_scope": "Recuperación y lectura; cero evolución nueva.",
+      "resume_only_from_certified_closed_boundary": true
     }
   ]
 }

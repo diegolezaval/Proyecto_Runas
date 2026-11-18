@@ -2,11 +2,11 @@
 
 > Vista generada por herramientas/generar_continuidad.py. Editar las fuentes JSON; no este archivo.
 
-Proyecto: **4.2.0-dev11**. Modelo: **M2**. Último checkpoint científico: **CP11_DIAGNOSTICO_RADIAL_CHI**.
+Proyecto: **4.2.0-dev11**. Modelo: **M2**. Checkpoint integrado en main: **CP11_DIAGNOSTICO_RADIAL_CHI**.
 
 **Completadas:** E00, E01, C0. **Parciales:** E02, E03, E04, C7, RES0, RES1.
 
-**Puerta no radial vigente:** REFINAMIENTO_PENDIENTE. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
+**Puerta no radial vigente:** CERRADO_EN_ALCANCE_P4. **Cálculos numéricos activos:** 0. **Primordiales/dispositivos completos:** 0.
 
 Las etapas conservan sus puertas; completar una campaña no equivale a completar una etapa. La evidencia reproducible prevalece ante una discrepancia documental.
 
@@ -14,14 +14,16 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 | Referencia | Estado |
 |---|---|
-| CP12 / P4 | ABIERTO / PILOTO_VERIFICADO_TAU160 |
+| CP12 / P4 | CERRADO_EN_ALCANCE_P4 / VALIDADO_TAU160 |
 | Última frontera verificada del piloto | τ160 |
 
 [Registro del piloto](checkpoints/CP12/p4_20261115/ESTADO_REANUDACION.json) · [Validación del piloto](checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json) · [Estado de la tercera malla](checkpoints/CP12/p4_20261115/tercera_malla_20261116/ESTADO_REANUDACION.json).
 
+[Referencia independiente](checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/ESTADO.json) · [Estado de CP12](checkpoints/CP12/p4_20261115/validacion_20261116/ESTADO.json) · [Informe de validación y alcance](checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md).
+
 ## Siguiente trabajo científico
 
-- Ejecutar y verificar la tercera malla P4 h=0,03125 con la preparación original y las dos trayectorias guardadas; aplicar el contraste de referencia, estabilidad y robustez después del dictamen de refinamiento.
+- Paso 1 completado. Examinar el expediente de validación y su alcance.
 - Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 
@@ -48,11 +50,8 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 - P3τ11,2→τ12,8 ya conservado. La asignación anterior queda bloqueada; no recrear su archivo privado ASSET_GITHUB.json.
 - No repetir12,8→14,4: existe cápsula nativa íntegra y auditada. No reactivar p3_128_a16_20261104b ni recrear su publicación privada.
 - P3τ14,4→τ16:frontera16recuperada y positiva;no reactivar p3_144_a16_20261105 ni su publicación privada.
-- No repetir16→17,6: transporte interno exacto conservado nativa y públicamente como717327999; si se pierde el proceso, reconciliar y usar este estado íntegro con asignación nueva.
-- No repetir17.6→19.2:transporte exacto recuperado nativa y públicamente como717353872; usar último estado íntegro si el proceso desaparece.
-- No repetir19.2→20.8:transporte exacto recuperado nativa y públicamente como717383219;usar último estado íntegro si el proceso desaparece.
-- P3 hasta τ28,8 está conservado. Retomar el estado interno completo sin reactivar la asignación anterior.
-- P3 hasta τ30,0 está conservado como rescate protegido. No reactivar 23151 ni usar el latido como estado de reinicio.
+- Los transportes P3 de τ17,6 a τ30,0 quedan como antecedentes de recuperación. P3 falló el acuerdo espacial en τ160 y su última frontera válida es τ152.
+- Reutilizar las trayectorias y recibos del piloto, la tercera malla, Galerkin y la validación de P4 hasta τ160 para la configuración registrada.
 
 ## Resultados vigentes y límites
 
@@ -69,6 +68,10 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 - chi_frozen_source_contrast: [validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json](validacion/P06/no_radial/CP11/contraste_fuente__f02556d29606ee7c48dbe63bfeadd289bd5f821d175dcae1324daecb54161df9/resultados.json) — DIAGNOSTICO_CAUSAL_LIMITADO_POR_HISTORIA_DE_FUENTE.
 - chi_forced_response: [validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json](validacion/P06/no_radial/CP11/respuesta_forzada_precisa__74359dfc9526f7d4de8e7f2da369de2c2349308518a8933b0bb54d41a98606ed/resultados.json) — RESPUESTA_FORZADA_DELIMITADA_CAUSA_ABIERTA.
 - piloto_CP12_P4: [checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json](checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json) — Alcance en el archivo fuente.
+- negativo_espacial_CP12_P3: [checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0152_0160/SUSPENSION.json](checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0152_0160/SUSPENSION.json) — Alcance en el archivo fuente.
+- tercera_malla_CP12_P4: [checkpoints/CP12/p4_20261115/tercera_malla_20261116/RESULTADO.json](checkpoints/CP12/p4_20261115/tercera_malla_20261116/RESULTADO.json) — Alcance en el archivo fuente.
+- referencia_Galerkin_CP12_P4: [checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/RESULTADO.json](checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/RESULTADO.json) — Alcance en el archivo fuente.
+- validacion_final_CP12_P4: [checkpoints/CP12/p4_20261115/validacion_20261116/RESULTADO.json](checkpoints/CP12/p4_20261115/validacion_20261116/RESULTADO.json) — COMPLETADA_TAU160.
 
 ## Etapas y puertas
 
@@ -108,7 +111,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [checkpoints/CP12/p4_20261115/tercera_malla_20261116/PRERREGISTRO.md](checkpoints/CP12/p4_20261115/tercera_malla_20261116/PRERREGISTRO.md).
+Informe de esta entrega: [checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md](checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

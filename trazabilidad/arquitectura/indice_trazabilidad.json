@@ -212,7 +212,8 @@
         "README.md"
       ],
       "inputs": [
-        "LEEME.md"
+        "LEEME.md",
+        "estado_progreso.json"
       ],
       "scientific_solver": false,
       "scope": "Puente generado a la entrada canónica; no nueva autoridad científica o de progreso."
@@ -8089,8 +8090,8 @@
     {
       "path": "datos/arquitectura.json",
       "role": "fuente_o_protocolo_JSON",
-      "bytes": 26815,
-      "snapshot_sha256": "057152eed70e58eff46c37f8fc8bb29b940b4c04d8fcabe81da79e62ea6b6608",
+      "bytes": 26847,
+      "snapshot_sha256": "1085c70436beb115aa7ca7dc9221181eeff205353425b1d5038dafc9a5a470cf",
       "used_by_claims": [],
       "claim_link_categories": {},
       "stage_evidence_for": [],
@@ -9349,8 +9350,8 @@
     {
       "path": "datos/registro_calculos.json",
       "role": "fuente_o_protocolo_JSON",
-      "bytes": 17122,
-      "snapshot_sha256": "9b14e9d76c00f6071ef430a66b7095c12d3a5f04ce38bd5640caaadf3b8566b2",
+      "bytes": 20051,
+      "snapshot_sha256": "3e597906ed771f23f767ea2ad9d047b74dd45138beaf50b461658a82031cf241",
       "used_by_claims": [],
       "claim_link_categories": {},
       "stage_evidence_for": [],
@@ -14374,8 +14375,8 @@
     {
       "path": "herramientas/generar_continuidad.py",
       "role": "codigo_o_herramienta",
-      "bytes": 16266,
-      "snapshot_sha256": "f02943a02213e042840ddc0643726be10ea6f3110a7006dcd72bf2d304204636",
+      "bytes": 17675,
+      "snapshot_sha256": "8b5e44afa7df6ea2e27c9307fd5d8fb2dec6dbebb1e9f107e4474854f7a9d275",
       "used_by_claims": [],
       "claim_link_categories": {},
       "stage_evidence_for": [],

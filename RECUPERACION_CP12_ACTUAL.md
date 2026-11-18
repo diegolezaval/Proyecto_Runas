@@ -1,4 +1,10 @@
-# Retomar CP12/P3
+# Recuperación de CP12
+
+**Paso 1 completado.** P4 quedó validado y CP12 cerrado para la preparación CP04 registrada, con h=0,03125, R=220, L=4, ε=0,020 y hasta τ160. Pasaron el refinamiento espacial, la referencia independiente y los contrastes de estabilidad temporal. Las variantes de caja, proyección y amplitud superaron las puertas físicas y cuantifican la sensibilidad a esos cambios. [Informe de validación](checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md) · [Estado de CP12](checkpoints/CP12/p4_20261115/validacion_20261116/ESTADO.json).
+
+Las recuperaciones finales están en los seis casos del [registro de validación](checkpoints/CP12/p4_20261115/validacion_20261116/RESULTADO.json). El cálculo P3 se suspendió tras el fallo espacial de τ160. [Última frontera válida y suspensión](checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0152_0160/SUSPENSION.json).
+
+## Archivo de la recuperación CP12/P3
 
 7 de noviembre de 2026, Lima. CP11 aceptado, CP12 abierto y P3 sin validar.
 

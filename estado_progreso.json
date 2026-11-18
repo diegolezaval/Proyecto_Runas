@@ -93,17 +93,19 @@
         "datos/dominios_validez.json",
         "validacion/validez/resultados.json",
         "validacion/verificacion_CP03.json",
-        "tratado/25_carta_validez_y_rama_reserva.md"
+        "tratado/25_carta_validez_y_rama_reserva.md",
+        "checkpoints/CP12/p4_20261115/validacion_20261116/RESULTADO.json"
       ],
       "positive_results": [
         "Diez variaciones fundamentales convergentes; 18 muestras capilares y carta provisional.",
-        "Punto M+ recuperado sin relajar tolerancias finales."
+        "Punto M+ recuperado sin relajar tolerancias finales.",
+        "CP12/P4 valida el acuerdo espacial, la referencia Galerkin y el presupuesto temporal en 20 cortes para la semilla CP04 registrada."
       ],
       "negative_results": [
         "Alta sensibilidad y errores capilares de hasta 26.99 %.",
         "Sin control conjunto entre muestras, error temporal global, entorno ni dominio cuántico completo."
       ],
-      "validity_scope": "Muestras declaradas; campos clásicos completos. No certificación de región.",
+      "validity_scope": "Muestras declaradas; campos clásicos completos. No certificación de región. CP12/P4 acredita la configuración CP04 con h=0,03125, R=220, L=4 y ε=0,020 hasta τ160. La incertidumbre Galerkin es empírica y las variantes cambian un eje a la vez.",
       "checkpoint": "CP03_C0_E02_E03_RES0",
       "reopen_conditions": [],
       "next_action": "Completar reducciones y límites temporales/de amplitud; conservar mapa muestreado y fallos.",
@@ -138,7 +140,8 @@
         "datos/ensayo_diagnostico_chi_CP11.json",
         "datos/ensayo_respuesta_forzada_precisa_CP11.json",
         "tratado/31_diagnostico_radial_del_mediador.md",
-        "informes/ENTREGA_11_DIAGNOSTICO_RADIAL_CHI.md"
+        "informes/ENTREGA_11_DIAGNOSTICO_RADIAL_CHI.md",
+        "checkpoints/CP12/p4_20261115/validacion_20261116/RESULTADO.json"
       ],
       "positive_results": [
         "23 perfiles; primera ley; refinamiento y Hessiano restringido.",
@@ -149,7 +152,8 @@
         "El cálculo pendiente h=.125 terminó hasta tau=160 y se completaron sus comparaciones; la puerta sigue sin superarse.",
         "CP10 completa dos evoluciones nuevas y sus controles temporal/espacial con procedencia, reinicios reales y balances verificados; cifras y puerta en el resultado registrado.",
         "CP11 audita el operador radial real y descarta el cruce artificial de la puerta por las métricas spline declaradas; la diferencia se localiza en componentes cortas y respuesta forzada, con procedencia.",
-        "Se valida la identidad exacta de defecto y los momentos recuperables desde los extremos; cifras y alcances en los resultados CP11."
+        "Se valida la identidad exacta de defecto y los momentos recuperables desde los extremos; cifras y alcances en los resultados CP11.",
+        "CP12/P4 verifica el refinamiento espacial, el presupuesto temporal y los controles físicos. El contraste L=6 mide la sensibilidad angular de los modos comunes."
       ],
       "negative_results": [
         "Control negativo a omega=.985 y posteriores.",
@@ -160,7 +164,7 @@
         "La propagación libre inicial no basta; la corrección modal prerregistrada del residuo congelado no supera el criterio explicativo. La historia de fuente necesaria para atribuir causa no está guardada. No equivale a inestabilidad física o agotamiento de M2.",
         "Control aritmético doble de identidad inicial FALLIDA y preservado; referencia extendida de la misma ecuación pasa sin relajar tolerancias."
       ],
-      "validity_scope": "Rama muestreada; estabilidad angular condicionada, sin certificado orbital continuo.",
+      "validity_scope": "Rama muestreada; estabilidad angular condicionada, sin certificado orbital continuo. La evolución CP04 registrada queda respaldada hasta τ160 con los controles físicos de CP12/P4.",
       "checkpoint": "CP11_DIAGNOSTICO_RADIAL_CHI",
       "reopen_conditions": [],
       "next_action": "Detener nuevas campañas: la diferencia corta de respuesta forzada requiere distinguir la historia del defecto radial y la fuente acoplada, no guardada en CP10. Formular evidencia discriminante y prerregistrar antes de continuar; no otra malla, más tiempo ni fases ajustadas.",
@@ -636,14 +640,16 @@
         "validacion/P06/no_radial/resultados.json",
         "validacion/P06/no_radial/CP10/comparacion_final__db37e89de7f122c528ea607fd13272a54e1151406fbc140e4c509c49d4aca654/resultados.json",
         "datos/ensayo_mediador_CP10.json",
-        "informes/ENTREGA_10_MEDIADOR_ESPACIOTEMPORAL.md"
+        "informes/ENTREGA_10_MEDIADOR_ESPACIOTEMPORAL.md",
+        "checkpoints/CP12/p4_20261115/validacion_20261116/RESULTADO.json"
       ],
       "positive_results": [
         "Rama y separación entre energía ligada y carga libre; límite mQ−E.",
         "Exceso radial sobre equilibrio de igual carga y malla: ~0.158; no energía extraíble demostrada.",
         "Ruta candidata de conversión lineal de bandas, con DeltaE=omega DeltaQ, verificada sobre fondo guardado omega=.9 en nueve frecuencias.",
         "Control finito no radial de la preparación CP04 cerrado con sus comparaciones; alcance y puerta en CP08.",
-        "CP10 completa dos evoluciones nuevas y sus controles temporal/espacial con procedencia, reinicios reales y balances verificados; cifras y puerta en el resultado registrado."
+        "CP10 completa dos evoluciones nuevas y sus controles temporal/espacial con procedencia, reinicios reales y balances verificados; cifras y puerta en el resultado registrado.",
+        "CP12/P4 aporta balances de dos energías y carga del núcleo en la evolución CP04 y en sus variantes de caja, proyección y amplitud."
       ],
       "negative_results": [
         "Energía total no equivale a energía recuperable.",
@@ -651,7 +657,7 @@
         "No se han evolucionado la descarga del fondo, la recepción ni un ciclo; perfil fijo e infinitesimal no bastan.",
         "CP10 no supera la puerta finita: conservar el resultado negativo de convergencia registrado; no atribuirlo a inestabilidad física ni ajustar chi para aceptar."
       ],
-      "validity_scope": "Candidatos sin ciclo de Reserva.",
+      "validity_scope": "Candidatos sin ciclo de Reserva. La evidencia de CP12/P4 se aplica al estado CP04 ensayado y sus contrastes finitos. Un dominio útil para Reserva requiere su propio contrato y ensayos.",
       "checkpoint": "CP10_MEDIADOR_ESPACIOTEMPORAL",
       "reopen_conditions": [],
       "next_action": "Diagnosticar el operador radial y las componentes cortas de chi sobre los estados CP10 guardados; prerregistrar el próximo control espacial o una discretización contrastada, sin relajar la puerta ni repetir las catorce evoluciones cerradas.",
@@ -2222,6 +2228,13 @@
       "report": "checkpoints/CP12/p4_20261115/tercera_malla_20261116/PRERREGISTRO.md",
       "evidence": "checkpoints/CP12/p4_20261115/piloto_t0_t160/tramo_0152_0160/VALIDACION_FINAL.json",
       "CP12_closed": false
+    },
+    {
+      "at": "2026-11-18T01:13:33.299243+00:00",
+      "event": "CP12_P4_VALIDADO_TAU160_Y_CERRADO_EN_ALCANCE_REGISTRADO",
+      "report": "checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md",
+      "evidence": "checkpoints/CP12/p4_20261115/validacion_20261116/RESULTADO.json",
+      "CP12_closed": true
     }
   ],
   "next_actions": [
@@ -2244,11 +2257,8 @@
     "P3τ11,2→τ12,8 ya conservado. La asignación anterior queda bloqueada; no recrear su archivo privado ASSET_GITHUB.json.",
     "No repetir12,8→14,4: existe cápsula nativa íntegra y auditada. No reactivar p3_128_a16_20261104b ni recrear su publicación privada.",
     "P3τ14,4→τ16:frontera16recuperada y positiva;no reactivar p3_144_a16_20261105 ni su publicación privada.",
-    "No repetir16→17,6: transporte interno exacto conservado nativa y públicamente como717327999; si se pierde el proceso, reconciliar y usar este estado íntegro con asignación nueva.",
-    "No repetir17.6→19.2:transporte exacto recuperado nativa y públicamente como717353872; usar último estado íntegro si el proceso desaparece.",
-    "No repetir19.2→20.8:transporte exacto recuperado nativa y públicamente como717383219;usar último estado íntegro si el proceso desaparece.",
-    "P3 hasta τ28,8 está conservado. Retomar el estado interno completo sin reactivar la asignación anterior.",
-    "P3 hasta τ30,0 está conservado como rescate protegido. No reactivar 23151 ni usar el latido como estado de reinicio."
+    "Los transportes P3 de τ17,6 a τ30,0 quedan como antecedentes de recuperación. P3 falló el acuerdo espacial en τ160 y su última frontera válida es τ152.",
+    "Reutilizar las trayectorias y recibos del piloto, la tercera malla, Galerkin y la validación de P4 hasta τ160 para la configuración registrada."
   ],
   "complete_primordials": 0,
   "next_calculation": "Paso 1 completado. Examinar el expediente de validación y su alcance.",
@@ -2276,8 +2286,8 @@
   },
   "execution_activity": {
     "activity_known": true,
-    "own_worker_status": "PILOTO_P4_TERMINADO",
-    "evidence": "checkpoints/CP12/p4_20261115/ESTADO_REANUDACION.json",
+    "own_worker_status": "VALIDACION_P4_TERMINADA",
+    "evidence": "checkpoints/CP12/p4_20261115/validacion_20261116/ESTADO.json",
     "activity_is_restart_certificate": false
   },
   "latest_verified_cp12_restart": {
@@ -2575,7 +2585,8 @@
     "observed_at_utc": "2026-11-18T01:13:33.481327+00:00",
     "reference_register": "checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/ESTADO.json",
     "validation_register": "checkpoints/CP12/p4_20261115/validacion_20261116/ESTADO.json",
-    "validation_result": "checkpoints/CP12/p4_20261115/validacion_20261116/RESULTADO.json"
+    "validation_result": "checkpoints/CP12/p4_20261115/validacion_20261116/RESULTADO.json",
+    "validation_report": "checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md"
   },
   "latest_verified_cp12_P3_transport": {
     "kind": "transport",

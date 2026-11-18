@@ -8,6 +8,6 @@ Abrir [LEEME.md](LEEME.md) para la entrada completa, las fuentes de verdad y los
 
 - [Estado actual y siguiente trabajo](ESTADO_ACTUAL.md).
 - [Arquitectura y trazabilidad](ARQUITECTURA.md).
-- [Recuperación vigente de CP12/P3](RECUPERACION_CP12_ACTUAL.md).
+- [Validación y cierre de CP12/P4](checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md).
 - [Panorama global](informes/PANORAMA_GLOBAL_Y_PRIORIDADES_20261029.md).
 - [Preparación histórica de la migración](MIGRACION_GITHUB.md).

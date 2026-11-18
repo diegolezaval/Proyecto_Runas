@@ -1,5 +1,11 @@
 # Relevo breve del ejecutor Rúnica
 
+**Paso 1 completado.** P4 quedó validado y CP12 cerrado para la preparación CP04 registrada, con h=0,03125, R=220, L=4, ε=0,020 y hasta τ160. Pasaron el refinamiento espacial, la referencia independiente y los contrastes de estabilidad temporal. Las variantes de caja, proyección y amplitud superaron las puertas físicas y cuantifican la sensibilidad a esos cambios. [Informe de validación](checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md) · [Estado de CP12](checkpoints/CP12/p4_20261115/validacion_20261116/ESTADO.json).
+
+Para retomar el proyecto, abrir [Estado actual](ESTADO_ACTUAL.md) y consultar el [registro de cálculos](datos/registro_calculos.json). El antecedente P3 terminó en τ160 con un fallo de acuerdo espacial y última frontera válida τ152. [Recibo P3](checkpoints/CP12/p3_20261018/continuacion_t32_t160_20261114/tramo_0152_0160/SUSPENSION.json).
+
+## Archivo del relevo CP12/P3
+
 Leer primero [RECUPERACION_CP12_ACTUAL.md](RECUPERACION_CP12_ACTUAL.md) y [el registro canónico](checkpoints/CP12/p3_20261018/ESTADO_REANUDACION.json). Consultar head,Release y Biblioteca posteriores antes de ejecutar. No inferir actividad de una sesión histórica.
 
 CP11 aceptado;CP12 abierto;P3 sin validar. Última frontera completa positiva24:358 cargas,30 controles originales,cinco métricas espaciales y diez controles físicos positivos. [Origen y recibos24](checkpoints/CP12/p3_20261018/frontera_t24_20261106/ORIGEN.json). Adjunto718257706:230562086 bytes,SHA25613660aae72467ccb2eda738d773103c8b14cb1950f4ed84a959cfb6f3f10fed6. Biblioteca:libfile_ddacdad0b1148191828315263c178493.
