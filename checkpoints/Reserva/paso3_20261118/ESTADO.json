@@ -1,11 +1,15 @@
 {
-  "estado": "RETENCION_ASIGNADA",
-  "fase": "Espera sin actuadores desde τ240",
+  "estado": "RETENCION_APROBADA_CALIBRACION_FIJADA",
+  "fase": "Contraste axisimétrico de la primera descarga",
   "ultimo_tau_publicado": 240,
   "origen": "ORIGEN.json",
   "pasos": [
     0.001,
     0.0005
   ],
-  "prerregistro": "PRERREGISTRO.md"
+  "prerregistro": "PRERREGISTRO.md",
+  "ultimo_tau_medido": 300,
+  "retencion": "RETENCION.json",
+  "calibracion": "calibracion/CALIBRACION.json",
+  "diseno": "DISENO_DESCARGA.md"
 }

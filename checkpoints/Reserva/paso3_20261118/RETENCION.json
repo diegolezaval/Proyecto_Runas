@@ -1,0 +1,121 @@
+{
+  "aprobada": true,
+  "paso_temporal": {
+    "dt001": {
+      "E": {
+        "nucleo_300_sobre_240": 0.9690451812733304,
+        "cambio_280_300_sobre_240": 0.004756006015429168,
+        "pasa_90": true,
+        "pasa_5": true,
+        "por_radio": {
+          "40": {
+            "inventario_240": 0.00017173058768094052,
+            "inventario_280": 0.0001672314501774963,
+            "inventario_300": 0.00016641469846945256,
+            "flujo_neto_saliente": 5.31589095978198e-06,
+            "continuidad_final": 1.7482940237588287e-12,
+            "continuidad_max_abs": 1.4915912259354472e-10
+          },
+          "60": {
+            "inventario_240": 0.00018505048683437053,
+            "inventario_280": 0.00017443728938815184,
+            "inventario_300": 0.00017184932175950962,
+            "flujo_neto_saliente": 1.3201164648444941e-05,
+            "continuidad_final": -4.264159690495553e-13,
+            "continuidad_max_abs": 1.5131646855958867e-10
+          }
+        },
+        "deriva_diferencial_global_max_abs": 2.1009327610954642e-10
+      },
+      "Q": {
+        "nucleo_300_sobre_240": 0.9740647339470783,
+        "cambio_280_300_sobre_240": 0.004180224960966418,
+        "pasa_90": true,
+        "pasa_5": true,
+        "por_radio": {
+          "40": {
+            "inventario_240": 0.00018968231825056137,
+            "inventario_280": 0.00018555577162260306,
+            "inventario_300": 0.0001847628568611981,
+            "flujo_neto_saliente": 4.919465125122164e-06,
+            "continuidad_final": 3.735758886142123e-12,
+            "continuidad_max_abs": 7.794906889486346e-12
+          },
+          "60": {
+            "inventario_240": 0.0001946991164913925,
+            "inventario_280": 0.0001923444920066686,
+            "inventario_300": 0.00018996382232217002,
+            "flujo_neto_saliente": 4.735296930970843e-06,
+            "continuidad_final": 2.761748372412376e-12,
+            "continuidad_max_abs": 7.768121053939941e-12
+          }
+        },
+        "deriva_diferencial_global_max_abs": 7.73070496506989e-12
+      }
+    },
+    "dt0005": {
+      "E": {
+        "nucleo_300_sobre_240": 0.9690432746933957,
+        "cambio_280_300_sobre_240": 0.0047583150955722445,
+        "pasa_90": true,
+        "pasa_5": true,
+        "por_radio": {
+          "40": {
+            "inventario_240": 0.00017173058768094052,
+            "inventario_280": 0.00016723151929909363,
+            "inventario_300": 0.00016641437105135992,
+            "flujo_neto_saliente": 5.316230821906096e-06,
+            "continuidad_final": 1.4192325501021484e-11,
+            "continuidad_max_abs": 3.158418433915459e-11
+          },
+          "60": {
+            "inventario_240": 0.00018505048683437053,
+            "inventario_280": 0.00017443738852307433,
+            "inventario_300": 0.0001718493422231404,
+            "flujo_neto_saliente": 1.320115814047614e-05,
+            "continuidad_final": 1.3529246020138586e-11,
+            "continuidad_max_abs": 3.13124614602432e-11
+          }
+        },
+        "deriva_diferencial_global_max_abs": 4.229150363244116e-11
+      },
+      "Q": {
+        "nucleo_300_sobre_240": 0.97406326912614,
+        "cambio_280_300_sobre_240": 0.004181613064605132,
+        "pasa_90": true,
+        "pasa_5": true,
+        "por_radio": {
+          "40": {
+            "inventario_240": 0.00018968231825056137,
+            "inventario_280": 0.00018555575707068783,
+            "inventario_300": 0.0001847625790105667,
+            "flujo_neto_saliente": 4.9197534193839156e-06,
+            "continuidad_final": 1.4179389246238717e-11,
+            "continuidad_max_abs": 1.5993107185130083e-11
+          },
+          "60": {
+            "inventario_240": 0.0001946991164913925,
+            "inventario_280": 0.00019234450519434176,
+            "inventario_300": 0.0001899638382383273,
+            "flujo_neto_saliente": 4.735292850396913e-06,
+            "continuidad_final": 1.4597331723841737e-11,
+            "continuidad_max_abs": 1.620530132373304e-11
+          }
+        },
+        "deriva_diferencial_global_max_abs": 1.5916157281026244e-11
+      }
+    }
+  },
+  "diferencia_temporal": {
+    "E": {
+      "inventario_40_300_abs": 3.2741809263825417e-10,
+      "razon_final_abs": 1.9065799347073309e-06,
+      "cambio_tardio_abs": 2.3090801430768887e-06
+    },
+    "Q": {
+      "inventario_40_300_abs": 2.778506313916296e-10,
+      "razon_final_abs": 1.464820938212874e-06,
+      "cambio_tardio_abs": 1.388103638713667e-06
+    }
+  }
+}
