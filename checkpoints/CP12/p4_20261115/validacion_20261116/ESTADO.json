@@ -2,11 +2,13 @@
   "schema": "CP12_P4_VALIDACION_ESTADO_V1",
   "campaign_uuid": "8488bc917fee4daaac8190c779eef86e",
   "registration_sha256": "4806cba8deec42be3903d62362417bb1bc94b6ec7d9c086d9aa0441bc4b5bbf9",
-  "status": "ROBUSTEZ_EN_CURSO",
-  "CP12_closed": false,
-  "correction_validated": false,
-  "updated_at": "2026-11-17T23:55:31.341030+00:00",
+  "status": "COMPLETADA_TAU160",
+  "CP12_closed": true,
+  "correction_validated": true,
+  "updated_at": "2026-11-18T01:13:33.299243+00:00",
   "preflight": "checkpoints/CP12/p4_20261115/validacion_20261116/CONTROL_PREVIO.json",
   "last_temporal": 160,
-  "last_robustness": 144
+  "last_robustness": 160,
+  "result": "checkpoints/CP12/p4_20261115/validacion_20261116/RESULTADO.json",
+  "report": "checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md"
 }
