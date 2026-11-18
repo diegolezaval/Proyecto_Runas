@@ -105,8 +105,16 @@ def render_state(root=ROOT):
                   f"| Trabajadores propios activos | {operation['own_workers']} |", '',
                   f"Registro: [{operation['canonical_register']}]({operation['canonical_register']}).", '',
                   'El transporte interno no es una frontera completa ni una validación de P3.', '']
+    reserva_path = 'checkpoints/Reserva/paso2_20261117/ESTADO.json'
+    reserva = read(reserva_path, root) if (root / reserva_path).is_file() else None
+    actions = state['next_actions']
+    if reserva:
+        lines += ['## Reserva · paso 2', '',
+                  f"{reserva['status']} · τ{reserva['ultimo_tau']}. "
+                  f"[Informe y balances]({reserva['informe']}) · [Estado de Reserva]({reserva_path}).", '']
+        actions = [reserva['siguiente']] + [item for item in actions if item.startswith('Canal:')]
     lines += ['## Siguiente trabajo científico', '']
-    lines += ['- ' + action for action in state['next_actions']]
+    lines += ['- ' + action for action in actions]
     lines += ['', '## Estados de origen y continuación', '']
     labels = {'restart_state': 'Estado CP04 terminado de origen para nuevas perturbaciones',
               'latest_completed_nonradial_state': 'Último estado no radial terminado; no repetir ni prolongar sin protocolo nuevo',
@@ -134,7 +142,7 @@ def render_state(root=ROOT):
     for stage in state['stages']:
         gate = stage.get('gate_decision', 'Cierre histórico conservado' if stage['status'] == 'COMPLETADA' else 'Consultar expediente')
         lines.append(f"| {stage['id']} | {stage['status']} | {gate.replace('|', '/')} |")
-    latest = state['history'][-1]['report']
+    latest = reserva['informe'] if reserva else state['history'][-1]['report']
     lines += ['', f'Informe de esta entrega: [{latest}]({latest}).', '',
               f'Índice derivado de trazabilidad: [{INDEX}]({INDEX}).', '',
               'Entrada y comandos: [LEEME.md](LEEME.md). Autoridad y límites: [ARQUITECTURA.md](ARQUITECTURA.md).', '']

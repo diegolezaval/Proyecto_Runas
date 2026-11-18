@@ -21,10 +21,13 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 
 [Referencia independiente](checkpoints/CP12/p4_20261115/referencia_galerkin_20261116/ESTADO.json) · [Estado de CP12](checkpoints/CP12/p4_20261115/validacion_20261116/ESTADO.json) · [Informe de validación y alcance](checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md) · [Operador discreto de χ](checkpoints/CP12/p4_20261115/OPERADOR_CHI.md).
 
+## Reserva · paso 2
+
+ESTABILIDAD_APROBADA_RANGO_0010_0020_FALLA_ESCALADO · τ240. [Informe y balances](checkpoints/Reserva/paso2_20261117/INFORME.md) · [Estado de Reserva](checkpoints/Reserva/paso2_20261117/ESTADO.json).
+
 ## Siguiente trabajo científico
 
-- Paso 1 completado. Examinar el expediente de validación y su alcance.
-- Después de estabilidad y validez suficientes: preparación, acceso finito, retroacción, receptor, retención y ciclo de Reserva según RES0–RES5/E08.
+- Contrastar las dos amplitudes menores prerregistradas y conservar el primer resultado de escalado.
 - Canal: sólo clases que cambien hipótesis de exclusión; M3 no se activa por un problema numérico.
 
 ## Estados de origen y continuación
@@ -111,7 +114,7 @@ Las etapas conservan sus puertas; completar una campaña no equivale a completar
 | RES5 | BLOQUEADA | Consultar expediente |
 | M3 | BLOQUEADA | Consultar expediente |
 
-Informe de esta entrega: [checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md](checkpoints/CP12/p4_20261115/validacion_20261116/INFORME.md).
+Informe de esta entrega: [checkpoints/Reserva/paso2_20261117/INFORME.md](checkpoints/Reserva/paso2_20261117/INFORME.md).
 
 Índice derivado de trazabilidad: [trazabilidad/arquitectura/indice_trazabilidad.json](trazabilidad/arquitectura/indice_trazabilidad.json).
 

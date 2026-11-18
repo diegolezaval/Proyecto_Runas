@@ -1,0 +1,95 @@
+{
+  "prerregistro_git": "4394eb547106b348b3f20ca186b4cbd5c41bcd9d",
+  "unidades": "M2 normalizadas",
+  "entradas": {
+    "validacion/P06/rama/perfil_w0.90000.csv": "9037fb7f1fa691fe5d8712efee3092d26cc2303b95853694cb7a2539ec1f5574",
+    "datos/theta_comun.json": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+    "validacion/P06/acceso_lineal/resultados.json": "c0814594f6e1b0160b01aab820c3e5d58d491104ee5c7916a3c98562d75db68b",
+    "herramientas/modelo_m2.py": "87562e977135cc5092ef3567b5980f58e726187e4df5c418de4660291702374f",
+    "herramientas/dispersion_reserva_m2.py": "43ec3bfd0144829215043dad0a5527916e3b8ffa7bb9cb50e4cc55d92c270413"
+  },
+  "archivos": {
+    "BANDA.json": {
+      "bytes": 23699,
+      "sha256": "856a7add4ce85e84ff133cdc706150c63c4ea5e463313dcd6e85e2f1825bb18c"
+    },
+    "CONTACTO.json": {
+      "bytes": 16858,
+      "sha256": "b969f4411ae75532f0bb24121435ca28c957fb2326f7b3cfc2489662c287f9ca"
+    },
+    "ESTABILIDAD.json": {
+      "bytes": 7050,
+      "sha256": "615f481e5d9cb1aef234d51d950361aa28fa9d101838a3db73e6045d76cfac10"
+    },
+    "PRERREGISTRO.md": {
+      "bytes": 8074,
+      "sha256": "25494712642fcd60bc5d57126aefdc1e5ab8f65e8fee53617f5c43622eebd40d"
+    },
+    "banda.py": {
+      "bytes": 3682,
+      "sha256": "2506361c4c70ddb3e9483e1851d0d0e87af449e5e0155ca374d11db5963d3b0b"
+    },
+    "datos/espacial_series.zip": {
+      "bytes": 377222,
+      "sha256": "b48debe26e9ffe599d7b5d26edb13f999426118b5937ee76f54cb66a9bf588ef"
+    },
+    "datos/fina_series.zip": {
+      "bytes": 367955,
+      "sha256": "1d2fa764bcae86484e24bdb2e0e2b7de82a30b12a0e7428a956b6550df66beec"
+    },
+    "datos/gemelo.npz": {
+      "bytes": 473247,
+      "sha256": "56f9e56a668b6c7fe4b0124570bd711c8b8f7faa87804343552760b852515b59"
+    },
+    "datos/gota_a010.npz": {
+      "bytes": 474684,
+      "sha256": "92649e8afa9b96e56f80f65284524245cc9006d4299a3a04e1bb339720422e6e"
+    },
+    "datos/gota_a020.npz": {
+      "bytes": 474784,
+      "sha256": "96363a1f5c0018cbf95a563bc20d8adab8844103291bb669661807cdb121c693"
+    },
+    "datos/libre.npz": {
+      "bytes": 473408,
+      "sha256": "c6dbfd4e0ced7712c48d9aa83ff1cbec155f2ad3eca30e352bf9193f109e1df4"
+    },
+    "datos/mas.npz": {
+      "bytes": 472300,
+      "sha256": "002807dcab2e4e373039874003ef8ef8d921b0a1eb72778966c5e8b9cf6d2f8d"
+    },
+    "datos/menos.npz": {
+      "bytes": 472260,
+      "sha256": "722bdad817098205aef67ee7ac5e9bb0fc2151a8d16fd5eff628f96ad4e9c1da"
+    },
+    "datos/preparacion.npz": {
+      "bytes": 476107,
+      "sha256": "511d4603761427aac4ad03f0320fefa10706fa2b37963926594c637b0a2bb9d2"
+    },
+    "datos/temporal_series.zip": {
+      "bytes": 374666,
+      "sha256": "411b5c54ed5234c1c9becdacc0ab5d6829b3229c60339322fd414149f01d8680"
+    },
+    "datos/vacio_a010.npz": {
+      "bytes": 475968,
+      "sha256": "1b8ab0daa718c1cfed341603cd80168fff99f115eecc569f1182054d86f0c6ac"
+    },
+    "datos/vacio_a020.npz": {
+      "bytes": 476414,
+      "sha256": "cbf424c285159630d06aff0c5e91500ade5736fc31ce2d3b59ad8ab7c2206ba5"
+    },
+    "ensayo.py": {
+      "bytes": 15832,
+      "sha256": "e3d8d663d72e22945206b9fcc8328adbb3d04d5161d64c2940dc53e783e54677"
+    },
+    "evidencia.py": {
+      "bytes": 5645,
+      "sha256": "e06f057c54a46dbbdefe8a849c8715c2fde1a40e2215736b1cf1c6143e980823"
+    },
+    "radial.c": {
+      "bytes": 2403,
+      "sha256": "0a630a386891a6a43adc545596128e82b5c98042054aca38108e9720cbfdda72"
+    }
+  },
+  "estado": "q=(Re Phi, Im Phi, chi), v=derivadas, dimensiones (3,N); centros (i+1/2) dx. Los tiempos de pulso son relativos al fin de la preparación.",
+  "series": "Flujos acumulados con signo saliente. SalidaE40 y salidaE60 integran solo la parte positiva. Muestreo de inventarios cada 0,5."
+}
