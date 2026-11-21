@@ -1,7 +1,7 @@
 {
-  "estado": "RETENCION_APROBADA_CALIBRACION_FIJADA",
+  "estado": "PRIMERA_DESCARGA_EN_EJECUCION",
   "fase": "Contraste axisimétrico de la primera descarga",
-  "ultimo_tau_publicado": 240,
+  "ultimo_tau_publicado": 300,
   "origen": "ORIGEN.json",
   "pasos": [
     0.001,
@@ -11,5 +11,23 @@
   "ultimo_tau_medido": 300,
   "retencion": "RETENCION.json",
   "calibracion": "calibracion/CALIBRACION.json",
-  "diseno": "DISENO_DESCARGA.md"
+  "diseno": "DISENO_DESCARGA.md",
+  "ejecucion_primera_descarga": {
+    "inicio_utc": "2026-11-21T14:29:46Z",
+    "base_git": "91f613c83d41458b8ba93b2c69fd9e3cb390ed41",
+    "mallas": [
+      "espacial",
+      "intermedia",
+      "fina"
+    ],
+    "ramas": [
+      "cargada",
+      "gemelo",
+      "directa"
+    ],
+    "desde_s": 0,
+    "hasta_s": 240,
+    "entorno": "Ejecutor de la sesión. La última fase recuperable al inicio es el estado radial en τ300.",
+    "comprobacion_previa": "Ningún resultado en la rama científica, cero ejecuciones de Actions en esa rama, 29 ejecuciones del repositorio terminadas y ninguna incidencia o solicitud de cambios abierta de Reserva."
+  }
 }
