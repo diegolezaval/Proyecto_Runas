@@ -1,6 +1,6 @@
 {
-  "estado": "PRIMERA_DESCARGA_EN_EJECUCION",
-  "fase": "Contraste axisimétrico de la primera descarga",
+  "estado": "PRIMERA_DESCARGA_CERRADA_SIN_ENTREGA_POSITIVA",
+  "fase": "Misión cerrada en la primera descarga",
   "ultimo_tau_publicado": 300,
   "origen": "ORIGEN.json",
   "pasos": [
@@ -28,6 +28,25 @@
     "desde_s": 0,
     "hasta_s": 240,
     "entorno": "Ejecutor de la sesión. La última fase recuperable al inicio es el estado radial en τ300.",
-    "comprobacion_previa": "Ningún resultado en la rama científica, cero ejecuciones de Actions en esa rama, 29 ejecuciones del repositorio terminadas y ninguna incidencia o solicitud de cambios abierta de Reserva."
+    "comprobacion_previa": "Ningún resultado en la rama científica, cero ejecuciones de Actions en esa rama, 29 ejecuciones del repositorio terminadas y ninguna incidencia o solicitud de cambios abierta de Reserva.",
+    "estado": "TERMINADA",
+    "fin_utc": "2026-11-21T14:34:06Z",
+    "muestras_por_trayectoria": 241,
+    "estados_finales": 9
+  },
+  "ultimo_s_descarga_publicado": 240,
+  "resultado_descarga": "RESULTADO_DESCARGA.json",
+  "informe_descarga": "INFORME_DESCARGA.md",
+  "manifiesto_descarga": "MANIFIESTO_DESCARGA.json",
+  "contrastes_aprobados": 0,
+  "contrastes_totales": 4,
+  "control_sin_senal_habilitado": false,
+  "recarga_habilitada": false,
+  "segunda_descarga_habilitada": false,
+  "interrupcion_habilitada": false,
+  "recuperacion_campos_descarga": {
+    "estado": "PENDIENTE_DE_VERIFICACION_REMOTA",
+    "archivos": 9,
+    "bytes": 481248184
   }
 }
