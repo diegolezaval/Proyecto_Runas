@@ -23,5 +23,13 @@
     "sha256": "f1b4986d2b7d64aff142fa4c17f6be2e67e62bd21b654753f23991347dd8ae08",
     "contenido": "Nueve s240.npz originales en las rutas del manifiesto, más MANIFIESTO_DESCARGA.json."
   },
-  "pasos_integracion": 0
+  "pasos_integracion": 0,
+  "destino_github": {
+    "release_id": 456214120,
+    "etiqueta": "reserva-primera-descarga-s240-20261121",
+    "rama": "ciencia/cp12-p4-validacion",
+    "borrador": "https://github.com/diegolezaval/Proyecto_Runas/releases/tag/untagged-41ddbae6c3ae15eb1540",
+    "api": "https://api.github.com/repos/diegolezaval/Proyecto_Runas/releases/456214120",
+    "estado_al_registrar": "BORRADOR_SIN_ADJUNTOS"
+  }
 }
