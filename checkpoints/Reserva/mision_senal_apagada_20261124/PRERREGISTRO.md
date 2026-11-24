@@ -1,0 +1,24 @@
+# Misión independiente · efecto causal de la señal de descarga
+
+**Pregunta.** Durante s = 200…240, ¿cuánto del déficit adicional de la receptora frente a la gemela depende de haber disparado? El diagnóstico de los CSV publicados en `8a032793e8551e4cbc8b94ff99756741b99ca09a` sitúa el primer descenso en s = 1 y el primer contacto geométrico posible en s = 74. Las series encendidas carecen del contrafactual tardío. La misión previa terminó en 0/4 y conserva su dictamen. [Diagnóstico](../diagnostico_primera_descarga_20261124/README.md)
+
+## Intervención congelada antes de integrar
+
+- Reutilizar los seis CSV encendidos de cargada y gemela. Generar exactamente dos trayectorias nuevas por discretización, las mismas ramas con amplitud A = 0 desde s = 0. En las encendidas A = 0,0035912196276076985.
+- Reutilizar los seis campos radiales de cada preparación (campos y velocidades), la receptora del paso 2, la cargada y su gemela de τ300 a dt = 0,0005. Verificar sus SHA-256, fases, inventarios iniciales y mallas contra los orígenes publicados. Conservar interpolación, fase relativa, colas, paquete exterior, acción M2, radios 6 y 40, centros ±60, fronteras, integrador y muestreo enteros hasta 240. Las tres parejas (h, dt) son (0,40; 0,01), (0,30; 0,01), (0,30; 0,005).
+- Seis evoluciones apagadas son el mínimo para obtener, por separado, la respuesta del montaje cargado y el efecto adicional respecto a la gemela, con sensibilidad al paso espacial y al temporal. El control directo encendido ya fija el dictamen funcional. Apagarlo respondería a una pregunta distinta. Los estados finales del ensayo original no entran en estas condiciones iniciales.
+- Registrar series completas, orígenes, huellas de los campos finales de la nueva misión, residuos y medidas por malla. Comparar la última fila con la relectura del estado final. Control de identidad inicial para cada inventario: tolerancia absoluta 2 × 10⁻⁹ unidades M2. El trabajo debe ser exactamente cero en todas las muestras apagadas. La preparación es determinista, sin semillas ni calibraciones nuevas.
+
+## Predicciones, lectura y regla de decisión
+
+Para E y Q, G es el cambio desde el inicio propio del núcleo receptor. D_on y D_off son G_cargada − G_gemela con señal encendida o apagada. P_c = G_cargada,on − G_cargada,off y P_g se define igual para la gemela. La interacción primaria es I = P_c − P_g = D_on − D_off. Una respuesta común puede mover ambos inventarios sin explicar la diferencia adicional. Publicar D_off, I, P_c y P_g, además de las curvas. Usar medias trapezoidales en la ventana original. La malla principal es la fina.
+
+Para cada magnitud T estimar U(T) como el máximo de las diferencias absolutas entre espacial e intermedia, intermedia y fina, y cada media fina de 200…220 / 220…240 frente a la fina de 200…240. En I, P_c y P_g se añade el máximo de |T(s)| en s = 0…60 en las tres mallas como control de reproducibilidad antes de la llegada. En todas las lecturas se impone un piso de 2 × 10⁻⁹ unidades M2. Se informa por separado el máximo de |ΔE−W| y |ΔQ|, y la partición por regiones, para cada trayectoria. Para una comprobación conservadora adicional sobre I, sumar los cuatro máximos globales de las dos ramas finas encendidas y apagadas, y sustituir U(I) por el mayor entre U(I) y esa suma. Los residuos globales sirven de prueba de sensibilidad y no son una cota formal del error regional. U es una sensibilidad numérica, sin interpretación probabilística.
+
+Se fija como diferencia material el 10 % de |D_on| publicado en cada canal, es decir 17,30120 millonésimas de E y 5,24783 de Q. El porcentaje describe cuánto del déficit se desea explicar. Para cada canal:
+
+1. **El déficit está dominado por la preparación** si D_off + 3U(D_off) < 0 y |I| + 3U(I) ≤ 0,10|D_on|. La equivalencia exige acotar la magnitud, además de comprobar el signo del saldo apagado.
+2. **El disparo agrava materialmente el déficit** si I + 3U(I) < −0,10|D_on|. **Lo atenúa materialmente** si I − 3U(I) > +0,10|D_on|. La predicción de un déficit producido principalmente por el disparo sería una fuerte reducción o desaparición de D al apagarlo.
+3. Las demás lecturas son indeterminadas a ese umbral. Informar cada canal y cualquier cambio de clasificación en la prueba conservadora. Una conclusión conjunta de predominio de la preparación exige que ambos canales la sostengan, también con la comprobación conservadora. Un efecto pequeño puede quedar resuelto frente a cero sin alcanzar importancia material.
+
+Una diferencia temprana al encender/apagar se contrasta con el control anterior al arribo. El ensayo no separa por sí mismo la cola de la donante de otras partes del campo inicial (incluidos solapamiento, radiación y su interacción con la receptora). La habilitación de recarga y segunda descarga continúa dependiendo de una primera entrega positiva y atribuible a la señal frente a los controles originales. Este ensayo mide causalidad en la preparación existente.
