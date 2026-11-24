@@ -1,0 +1,27 @@
+{
+  "commit_origen": "07568df0da05bda50b2c08623fb9668cbbbf1e79",
+  "fecha_utc": "2026-11-24T01:52:32+00:00",
+  "manifiesto": "MANIFIESTO_DESCARGA.json",
+  "sha256_manifiesto": "f6f3e1ddecd6d52e0143df4ff284b6c0125dbd870ccb1a2aba6f1bcddff7384a",
+  "series": {
+    "verificacion": "DESCARGADAS_DESDE_GITHUB",
+    "archivos": 9,
+    "bytes": 403208,
+    "muestras_por_serie": 241,
+    "sha256_coincidentes": 9
+  },
+  "estados": {
+    "verificacion": "COMPROBADOS_EN_DISCO_Y_EN_EL_ZIP",
+    "archivos": 9,
+    "bytes": 481248184,
+    "sha256_coincidentes": 9,
+    "verificacion_descarga_desde_github": "PENDIENTE"
+  },
+  "paquete": {
+    "archivo": "Reserva_primera_descarga_9_estados_s240.zip",
+    "bytes": 481254649,
+    "sha256": "f1b4986d2b7d64aff142fa4c17f6be2e67e62bd21b654753f23991347dd8ae08",
+    "contenido": "Nueve s240.npz originales en las rutas del manifiesto, más MANIFIESTO_DESCARGA.json."
+  },
+  "pasos_integracion": 0
+}
