@@ -45,9 +45,12 @@
   "segunda_descarga_habilitada": false,
   "interrupcion_habilitada": false,
   "recuperacion_campos_descarga": {
-    "estado": "PENDIENTE_DE_VERIFICACION_REMOTA",
+    "estado": "DESCARGA_VERIFICADA_POR_SHA256",
     "archivos": 9,
     "bytes": 481248184,
-    "recibo": "RECIBO_GUARDADO_DESCARGA.json"
+    "recibo": "RECIBO_GUARDADO_DESCARGA.json",
+    "sha256_coincidentes": 9,
+    "url_descarga": "https://github.com/diegolezaval/Proyecto_Runas/releases/download/reserva-primera-descarga-s240-20261121/Reserva_primera_descarga_9_estados_s240.zip",
+    "sha256_zip": "f1b4986d2b7d64aff142fa4c17f6be2e67e62bd21b654753f23991347dd8ae08"
   }
 }

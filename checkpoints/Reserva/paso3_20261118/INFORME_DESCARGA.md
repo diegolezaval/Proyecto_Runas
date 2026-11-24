@@ -35,6 +35,8 @@ Al proyectar la receptora aislada de la malla radial a la cilíndrica fina, el i
 
 El protocolo detiene aquí esta misión. El control con señal apagada, la recarga, la segunda descarga y el ensayo de interrupción quedan sin habilitar. La retención demostrada hasta τ300 se conserva como resultado de la fase anterior.
 
+Para recuperar los campos finales, descarga el [ZIP con los nueve estados en s = 240](https://github.com/diegolezaval/Proyecto_Runas/releases/download/reserva-primera-descarga-s240-20261121/Reserva_primera_descarga_9_estados_s240.zip) y extráelo en este directorio. Cada archivo quedará junto a su `serie.csv` en `primera_descarga/<malla>/<rama>/`. El [recibo de verificación](RECIBO_GUARDADO_DESCARGA.json) recoge los tamaños y los SHA-256 comprobados al descargar el ZIP desde GitHub.
+
 Desde este directorio se pueden reconstruir las tablas, comprobar los campos finales y medir de nuevo la proyección sin pasos de integración M2. Se requiere Python con NumPy 2, SciPy y un compilador C.
 
 ```sh
