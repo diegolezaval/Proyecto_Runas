@@ -1,0 +1,422 @@
+{
+  "base": "bce7113d1cb9befef6699578d61f95613ed0dcdf",
+  "prerregistro": "71057af265e24566f15c2c4858c6fb7dd9bc5f05",
+  "inicio_utc": "2026-11-24T21:43:02.312333+00:00",
+  "fin_utc": "2026-11-24T21:45:06.764984+00:00",
+  "duracion_segundos": 124.45264742999996,
+  "trabajadores": 8,
+  "python": "3.12.14",
+  "compilador": "cc (Debian 14.2.0-19) 14.2.0",
+  "insumos": {
+    "checkpoints/Reserva/paso2_20261117/datos/preparacion.npz": "511d4603761427aac4ad03f0320fefa10706fa2b37963926594c637b0a2bb9d2",
+    "checkpoints/Reserva/paso2_20261117/ensayo.py": "e3d8d663d72e22945206b9fcc8328adbb3d04d5161d64c2940dc53e783e54677",
+    "checkpoints/Reserva/paso2_20261117/radial.c": "0a630a386891a6a43adc545596128e82b5c98042054aca38108e9720cbfdda72",
+    "validacion/P06/rama/perfil_w0.90000.csv": "9037fb7f1fa691fe5d8712efee3092d26cc2303b95853694cb7a2539ec1f5574",
+    "datos/theta_comun.json": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+    "herramientas/modelo_m2.py": "87562e977135cc5092ef3567b5980f58e726187e4df5c418de4660291702374f",
+    "checkpoints/Reserva/paso3_20261118/datos/dt0005/gota_a010/tau300.npz": "f939a8531299376118e682228273f6f8ba41e9120ab8f1dd275698b3b5f7f62a",
+    "checkpoints/Reserva/paso3_20261118/datos/dt0005/gemelo/tau300.npz": "0cd7c997e03ed7d1be478f834e8f49dcd55a2855ff9898d701a84e547076863d",
+    "checkpoints/Reserva/paso3_20261118/calibracion/CALIBRACION.json": "fca5c3f4687a8e16701080de33ad83e9f78ca5036be8bd2413e64a5daa0afb83",
+    "checkpoints/Reserva/paso3_20261118/calibracion/ensayo2.npz": "23741963f264cc01578092924983fad80757d62410ad33d29436879348f204bb"
+  },
+  "senales": {
+    "A": 0.0035912196276076985,
+    "radio": 6,
+    "duracion": 8
+  },
+  "regresion": {
+    "pasos_regresion_sin_fuente": 100,
+    "coincidencia_exacta": true,
+    "trabajo_s8": 1.6639178332270085e-05,
+    "delta_trabajo_calibracion": 4.3600173926967856e-16,
+    "delta_max_campos_o_velocidades_s8": 3.0517866012047534e-11
+  },
+  "mallas": {
+    "historica": [
+      256,
+      0.025,
+      0.0005
+    ],
+    "principal": [
+      384,
+      0.025,
+      0.0005
+    ],
+    "temporal": [
+      384,
+      0.025,
+      0.001
+    ],
+    "espacial": [
+      384,
+      0.05,
+      0.001
+    ],
+    "caja416": [
+      416,
+      0.025,
+      0.0005
+    ]
+  },
+  "preparacion_espacial": {
+    "E": 2525.5554460661106,
+    "Q": 2745.6618819407286,
+    "trabajo_Phi": 2612.926333192955,
+    "trabajo_chi": -87.3711950971072,
+    "carga_fuente": 2745.661881940729,
+    "entrada_positiva_Phi": 2612.926333192955,
+    "entrada_positiva_chi": 1.823232543449677e-07,
+    "trabajo_devuelto": 87.37119527943042,
+    "error_balance_E": 1.2194159637601842e-07,
+    "error_balance_Q": 2.220446049250313e-16,
+    "error_perfil": 9.802425677420731e-08,
+    "error_chi_rel": 1.7898154735445894e-07,
+    "error_E_objetivo": 4.0965073580645495e-05,
+    "error_Q_objetivo": 4.0804045663089816e-05,
+    "aprobada": true
+  },
+  "preparaciones": [
+    {
+      "R": 384,
+      "h": 0.025,
+      "caso": "cargada",
+      "tau": 300,
+      "origen_tau": 0,
+      "cola_ultima_unidad_tau0": 2.9453567059007345e-49,
+      "diferencia_con_tau300_verificado": {
+        "40": {
+          "E": 0.0,
+          "Q": 9.094947017729282e-13,
+          "max_abs_componentes_q": [
+            4.4841907964610073e-13,
+            1.6990853168863396e-12,
+            1.0159928454100964e-13
+          ],
+          "max_abs_componentes_v": [
+            1.3789218378246204e-10,
+            8.366896064870843e-11,
+            1.3505825790657074e-11
+          ]
+        },
+        "60": {
+          "E": 0.0,
+          "Q": 9.094947017729282e-13,
+          "max_abs_componentes_q": [
+            4.4841907964610073e-13,
+            1.6990853168863396e-12,
+            1.0159928454100964e-13
+          ],
+          "max_abs_componentes_v": [
+            1.3789218378246204e-10,
+            8.366896064870843e-11,
+            1.3505825790657074e-11
+          ]
+        }
+      },
+      "archivo": "estados_iniciales/R384_h0.025_cargada.npz",
+      "sha256": "bdd72ac73dafe02f54922d9969289f85c82af74d8541396122514fceac319f0b"
+    },
+    {
+      "R": 384,
+      "h": 0.025,
+      "caso": "gemela",
+      "tau": 300,
+      "origen_tau": 0,
+      "cola_ultima_unidad_tau0": 2.9453567059007345e-49,
+      "diferencia_con_tau300_verificado": {
+        "40": {
+          "E": 5.9117155615240335e-12,
+          "Q": 7.73070496506989e-12,
+          "max_abs_componentes_q": [
+            6.182832024137497e-13,
+            1.0403899963762342e-12,
+            8.361644709964366e-13
+          ],
+          "max_abs_componentes_v": [
+            6.25820645305808e-11,
+            2.0140822343250875e-10,
+            3.2906598335172557e-11
+          ]
+        },
+        "60": {
+          "E": 5.4569682106375694e-12,
+          "Q": 7.73070496506989e-12,
+          "max_abs_componentes_q": [
+            6.182832024137497e-13,
+            1.0403899963762342e-12,
+            8.361644709964366e-13
+          ],
+          "max_abs_componentes_v": [
+            6.25820645305808e-11,
+            2.0140822343250875e-10,
+            3.2906598335172557e-11
+          ]
+        }
+      },
+      "archivo": "estados_iniciales/R384_h0.025_gemela.npz",
+      "sha256": "f20e2658bccb1de1366074675811202f19098dded64022dd8e694e20f979d78f"
+    },
+    {
+      "R": 384,
+      "h": 0.05,
+      "caso": "cargada",
+      "tau": 300,
+      "origen_tau": 0,
+      "cola_ultima_unidad_tau0": 2.9099748272638776e-49,
+      "archivo": "estados_iniciales/R384_h0.05_cargada.npz",
+      "sha256": "b372ab8f02d00a6511201b08b9568949b6f70680479ad2b167089113e8e3e9d3"
+    },
+    {
+      "R": 384,
+      "h": 0.05,
+      "caso": "gemela",
+      "tau": 300,
+      "origen_tau": 0,
+      "cola_ultima_unidad_tau0": 2.9099748272638776e-49,
+      "archivo": "estados_iniciales/R384_h0.05_gemela.npz",
+      "sha256": "1844adb893ce904f5b36538e0b34f8a342c53e1c5a03b98e2661c7e979081f27"
+    },
+    {
+      "R": 416,
+      "h": 0.025,
+      "caso": "cargada",
+      "tau": 300,
+      "origen_tau": 0,
+      "cola_ultima_unidad_tau0": 2.9453567059007345e-49,
+      "diferencia_con_tau300_verificado": {
+        "40": {
+          "E": -1.0459189070388675e-11,
+          "Q": -1.000444171950221e-11,
+          "max_abs_componentes_q": [
+            9.426903702092204e-13,
+            2.4334145809490337e-12,
+            1.76816894459364e-13
+          ],
+          "max_abs_componentes_v": [
+            1.1090015017423127e-10,
+            1.2415302119705984e-10,
+            1.8201914217805346e-11
+          ]
+        },
+        "60": {
+          "E": -1.0913936421275139e-11,
+          "Q": -1.0913936421275139e-11,
+          "max_abs_componentes_q": [
+            9.426903702092204e-13,
+            2.4334145809490337e-12,
+            1.76816894459364e-13
+          ],
+          "max_abs_componentes_v": [
+            1.1090015017423127e-10,
+            1.2415302119705984e-10,
+            1.8201914217805346e-11
+          ]
+        }
+      },
+      "archivo": "estados_iniciales/R416_h0.025_cargada.npz",
+      "sha256": "212450e35e89f667d7fb4847efde9d4af8f0090b8da9731018121b8527513d56"
+    },
+    {
+      "R": 416,
+      "h": 0.025,
+      "caso": "gemela",
+      "tau": 300,
+      "origen_tau": 0,
+      "cola_ultima_unidad_tau0": 2.9453567059007345e-49,
+      "diferencia_con_tau300_verificado": {
+        "40": {
+          "E": 5.9117155615240335e-12,
+          "Q": 7.73070496506989e-12,
+          "max_abs_componentes_q": [
+            6.182832024137497e-13,
+            1.0403899963762342e-12,
+            8.361644709964366e-13
+          ],
+          "max_abs_componentes_v": [
+            6.25820645305808e-11,
+            2.0140822343250875e-10,
+            3.2906598335172557e-11
+          ]
+        },
+        "60": {
+          "E": 5.4569682106375694e-12,
+          "Q": 7.73070496506989e-12,
+          "max_abs_componentes_q": [
+            6.182832024137497e-13,
+            1.0403899963762342e-12,
+            8.361644709964366e-13
+          ],
+          "max_abs_componentes_v": [
+            6.25820645305808e-11,
+            2.0140822343250875e-10,
+            3.2906598335172557e-11
+          ]
+        }
+      },
+      "archivo": "estados_iniciales/R416_h0.025_gemela.npz",
+      "sha256": "3c2ef55838baf72d93c67e6aae243dcf7b03d648e26a922a435adefca64c6cde"
+    }
+  ],
+  "series": [
+    {
+      "ruta": "caja416/cargada/apagada",
+      "pasos": 480000,
+      "sha256_serie": "35e897d3c21027e6937d6b522037690f3415fdb5157a34ceac8818699d3ca461",
+      "sha256_estado": "3d15dba872931a32b3c37f20f61999ffe531ee580eed8b45d26c8e415bc0b56e",
+      "bytes_estado": 764793,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "caja416/cargada/encendida",
+      "pasos": 480000,
+      "sha256_serie": "8b7461b777f5a50923f9160e5c550c3db54d460da561a4a72e221b29e7a1f465",
+      "sha256_estado": "b78c2fa4691c4914f56fad0c289a7ecee125214f0bd146a8c9dd7865037899b2",
+      "bytes_estado": 765728,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "caja416/gemela/apagada",
+      "pasos": 480000,
+      "sha256_serie": "c0ae62b31462eacb3fc1bae9154c74482617c4f22e6673113673c3db7c806578",
+      "sha256_estado": "d39df4c6cad252011a39c0bf27aa7762d178a5ee88ad0b1823f4a21e950107c9",
+      "bytes_estado": 766789,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "caja416/gemela/encendida",
+      "pasos": 480000,
+      "sha256_serie": "493331a79d121e1d56f8e8a80aee8329464bdb768a325073d7e2a32888da708c",
+      "sha256_estado": "aca6595350f08c04501a9dd2141adfa2f0e719b0a67a3cadab58083dc243bff8",
+      "bytes_estado": 766179,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "espacial/cargada/apagada",
+      "pasos": 240000,
+      "sha256_serie": "159be96c9564bdb4f4aa7f499394d18da5f2c7cf43b69c0c5304c27cad127bf6",
+      "sha256_estado": "94ba07dc213ee6418f311ed0737c83702419017dc803ce2b80b5138be31b6d49",
+      "bytes_estado": 355871,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "espacial/cargada/encendida",
+      "pasos": 240000,
+      "sha256_serie": "1a4a33717bde22abfce8c21bf231bb2b633f96bebe6e60c6c065f91b1e20cb4e",
+      "sha256_estado": "ea6b5419bccc20ee7210c846e73ebe1b671135610210e51bae1d04e7f1c7eb19",
+      "bytes_estado": 355993,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "espacial/gemela/apagada",
+      "pasos": 240000,
+      "sha256_serie": "c02f53ebff3c106bdadce71d5312f57d76ea85a545a329ffcac5ad91e0c9dadf",
+      "sha256_estado": "8e1ccf3b78da75b4163f6ea2dbc2918b3f39715d4973efdd127e4d5fe17dafb0",
+      "bytes_estado": 356841,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "espacial/gemela/encendida",
+      "pasos": 240000,
+      "sha256_serie": "f776b85370f8c65974b897dabc6ffa87e97ed5580e2d5cae94d91959f07bb6c1",
+      "sha256_estado": "310de097acc9de94018336294029d674d4e0941c753884b61b1e79e8ce6ef035",
+      "bytes_estado": 356389,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "historica/cargada/apagada",
+      "pasos": 480000,
+      "sha256_serie": "8c73f838696a5d7ac907a90a6d7b75656645ba048a5e13ac5b1173ed666794dd",
+      "sha256_estado": "06c4525191b4ccbc28b6052131ff4f9c7eaf29c4caee14e3ab28a1ed28e1ce9f",
+      "bytes_estado": 472855,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "historica/cargada/encendida",
+      "pasos": 480000,
+      "sha256_serie": "6444315e0d1204bb32d0f49dd28fa960f4152560bbcecdf5e361d0c49ec4e409",
+      "sha256_estado": "fb623650656e806891b6ea9549236ae72602cb09d87e5c4e420a50427cbaa8ce",
+      "bytes_estado": 472849,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "historica/gemela/apagada",
+      "pasos": 480000,
+      "sha256_serie": "eb7add4710c3f725e9d6940c4478887c192fa2bc7b990aa36894b3fcbd4a1790",
+      "sha256_estado": "e08ad0c3aaea770cbfede05a74dd6ae9a2175bc5660dc41e0c65f921b3afc6b3",
+      "bytes_estado": 474513,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "historica/gemela/encendida",
+      "pasos": 480000,
+      "sha256_serie": "a2da5b8aad89b3623166d8cf90660c2fd0a02164f4d361c14518c6f44306f075",
+      "sha256_estado": "82087958f632147ae7819dd7719fb5f345770b79f92ed26b6650261593869a03",
+      "bytes_estado": 473062,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "principal/cargada/apagada",
+      "pasos": 480000,
+      "sha256_serie": "6401a505c4a7cd9d70be8d5d8ed9a7be3c222e95fdfc8c34eaabed22cf002cf8",
+      "sha256_estado": "c7d8efa79d9a093e78dd3ccaafcfe9fb9b7e1bd491e5331605731eb5c6da8913",
+      "bytes_estado": 706521,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "principal/cargada/encendida",
+      "pasos": 480000,
+      "sha256_serie": "a217beba302681cc8bcd50cb15160ff5b830f1db6f5be7edeebae29c4e3e5779",
+      "sha256_estado": "1b58dce49a0db3687811cfdc339dae65ed1b37106b96d016fd3334f13adfa93a",
+      "bytes_estado": 707441,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "principal/gemela/apagada",
+      "pasos": 480000,
+      "sha256_serie": "822ab2764c40205c6142bb387c1365229a1010f92fef0e58d3cc51418527f4f9",
+      "sha256_estado": "b4605b7bd9bc44a148d1ac0cc407f9bb469cee24a9b3b02daa0a07b8601b8a6d",
+      "bytes_estado": 708877,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "principal/gemela/encendida",
+      "pasos": 480000,
+      "sha256_serie": "3a3ebaa98695f4189b5422a55b2be567034ae01dec8498d555b4f530710adf69",
+      "sha256_estado": "efd130a641334d87dbe5f6bd1ebe8e0a9e3e7dfdd82adbd2350c6df4d6375dc3",
+      "bytes_estado": 707634,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "temporal/cargada/apagada",
+      "pasos": 240000,
+      "sha256_serie": "71507248a254474c2fd48343de0633f475d583bdebcb5ef1743572e89512df93",
+      "sha256_estado": "09b49eaee3eb2a39fffd0cf4a84ad30e2d45c9a7fbb8a7cde5c194a03d68f61d",
+      "bytes_estado": 706386,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "temporal/cargada/encendida",
+      "pasos": 240000,
+      "sha256_serie": "858f870ff89fb91e4f3d8a2d5ccad28b10e11c2e50888f7bf16529a580f9b568",
+      "sha256_estado": "92cb0d0287152f435e596c62f91d554ca17c3572a110c05ad6b3ce95c8e94898",
+      "bytes_estado": 707340,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "temporal/gemela/apagada",
+      "pasos": 240000,
+      "sha256_serie": "93122728f6db90c41dc83114f830f702b884338c270353013ee2ca3adea8e491",
+      "sha256_estado": "9f23962698e94ad5d5fdad74c7357bbf84336205d0801fadabac21905dfebe04",
+      "bytes_estado": 709253,
+      "diferencia_relectura_final": 0.0
+    },
+    {
+      "ruta": "temporal/gemela/encendida",
+      "pasos": 240000,
+      "sha256_serie": "25ab2be4f37acf3401fd0bad431ac0d3600a22739c76fd9605007d9cb27a7550",
+      "sha256_estado": "7320e53edc48af9147453cb1a62356a1486cf6069249ba20ff20fc6bf303ad78",
+      "bytes_estado": 707606,
+      "diferencia_relectura_final": 0.0
+    }
+  ]
+}
