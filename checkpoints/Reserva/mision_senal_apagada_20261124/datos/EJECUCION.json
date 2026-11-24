@@ -1,0 +1,71 @@
+{
+  "segundos": 282.7042512400003,
+  "trabajadores": 6,
+  "pasos_por_montaje": {
+    "espacial": 24000,
+    "intermedia": 24000,
+    "fina": 48000
+  },
+  "trayectorias": [
+    {
+      "malla": "fina",
+      "caso": "cargada",
+      "segundos": 281.48699732099976,
+      "max_diferencia_relectura": 0.0,
+      "sha256_estado": "1fd47f170b2a1550f48b0723c84a61837a888a17065eadfc814bf945eb854f5f",
+      "bytes_estado": 62314869,
+      "sha256_serie": "fc0dbfebba7ccea1988987f019e146370c855547bf347d236c5685f6d3ded78c",
+      "sha256_origen": "7e2b1b91c1fa56cc6032def6f88ed3b3b61308a24a35c0e92cc07a9aa2c99b96"
+    },
+    {
+      "malla": "fina",
+      "caso": "gemelo",
+      "segundos": 268.66649519399925,
+      "max_diferencia_relectura": 0.0,
+      "sha256_estado": "3b4945587246fb8efeda3e92c2eee38de9c343da770d3b4ae81eea71f2c5095f",
+      "bytes_estado": 62284513,
+      "sha256_serie": "6f7ee621ae5ade2d200b45f97e1fa8f40557145e9cff7ca303f8ceb57feb0bf9",
+      "sha256_origen": "37e436426ca600b8bd7889fbb60811a10a4cdf15bf154a9d87654e028204e91a"
+    },
+    {
+      "malla": "intermedia",
+      "caso": "cargada",
+      "segundos": 199.25894566599982,
+      "max_diferencia_relectura": 0.0,
+      "sha256_estado": "92c073873eb52a6be28e3957b041c58e2cc60657534375ed2a02eefd7840a28b",
+      "bytes_estado": 62292919,
+      "sha256_serie": "39f098cb23fa9f8a87ba43853a28a896e10f7cc0d25adbd9726a46440ffbc31f",
+      "sha256_origen": "b17a22906dd098286782ca76135f9c462ac5f6551175bbf90e42498357a4482d"
+    },
+    {
+      "malla": "intermedia",
+      "caso": "gemelo",
+      "segundos": 205.1754157209998,
+      "max_diferencia_relectura": 0.0,
+      "sha256_estado": "e8a926812110e0c695b4c51567119566e17875c9eb3d3c7918020d3849d1b4c6",
+      "bytes_estado": 62289838,
+      "sha256_serie": "ae158a604d72e40918940626d28d19aa77087bb729b12e27ec4d4a0ffe62d4bb",
+      "sha256_origen": "29ad653edf96720a3e9d8f4dec785061a4ac57f529f910ac49262d0a9226b5f2"
+    },
+    {
+      "malla": "espacial",
+      "caso": "cargada",
+      "segundos": 131.99679675800053,
+      "max_diferencia_relectura": 0.0,
+      "sha256_estado": "12b0909f76da7ed5dd72a5e0f268ede85d321bb02c86a63dd6cc0edc14f64089",
+      "bytes_estado": 35155023,
+      "sha256_serie": "14f5c2f2560cc5d35a52f6292b4338381d1fb1c55507b2579c78a7d8ad34aa04",
+      "sha256_origen": "fcbea70e7b4c13b81144771b5c8cbcddddf2c1c2d311ee69db58983da9ac232f"
+    },
+    {
+      "malla": "espacial",
+      "caso": "gemelo",
+      "segundos": 123.51293039400025,
+      "max_diferencia_relectura": 0.0,
+      "sha256_estado": "204fce5dc131a503c1895bc1498670a561d490fd3a7c5aa31d838d7d968cd89d",
+      "bytes_estado": 35093594,
+      "sha256_serie": "7b8a7ccf06046e35640e4ed005caa5da77ccc0bcf28b8a585631df5bd4103e2c",
+      "sha256_origen": "b794346627c26b48390bc00f0817207357a1dbc32a45a9d4b96972f835a28bcf"
+    }
+  ]
+}

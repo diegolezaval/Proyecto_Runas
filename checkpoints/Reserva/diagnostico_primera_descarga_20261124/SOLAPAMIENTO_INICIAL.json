@@ -1,0 +1,92 @@
+{
+  "unidades": "M2 normalizadas",
+  "s": 0,
+  "radio_nucleo": 40,
+  "metodo": "El montaje directo en s=0 es la receptora aislada. Se mide además, sin evolución, la donante aislada a distancia 120 en el mismo volumen receptor.",
+  "mapeos": {
+    "0.4": {
+      "aisladas_y_superposiciones": {
+        "cargada": {
+          "E_r": {
+            "exceso_sobre_receptora_aislada": 0.00019502708573782002,
+            "donante_aislada_en_receptora": 0.0001692250780791975,
+            "termino_de_superposicion": 2.5802007658622524e-05
+          },
+          "Q_r": {
+            "exceso_sobre_receptora_aislada": 7.824718659321661e-05,
+            "donante_aislada_en_receptora": 5.291372414292109e-05,
+            "termino_de_superposicion": 2.5333462450295522e-05
+          }
+        },
+        "gemelo": {
+          "E_r": {
+            "exceso_sobre_receptora_aislada": 2.598999344627373e-07,
+            "donante_aislada_en_receptora": 1.0435592056152203e-12,
+            "termino_de_superposicion": 2.598988909035317e-07
+          },
+          "Q_r": {
+            "exceso_sobre_receptora_aislada": 2.888855306082405e-07,
+            "donante_aislada_en_receptora": 9.625032224592766e-13,
+            "termino_de_superposicion": 2.8888456810501803e-07
+          }
+        }
+      },
+      "cargada_menos_gemela": {
+        "E_r": {
+          "exceso_sobre_receptora_aislada": 0.00019476718580335728,
+          "donante_aislada_en_receptora": 0.0001692250770356383,
+          "termino_de_superposicion": 2.554210876771899e-05,
+          "fraccion_donante_aislada": 0.868858254215846
+        },
+        "Q_r": {
+          "exceso_sobre_receptora_aislada": 7.795830106260837e-05,
+          "donante_aislada_en_receptora": 5.2913723180417866e-05,
+          "termino_de_superposicion": 2.5044577882190504e-05,
+          "fraccion_donante_aislada": 0.6787439241130052
+        }
+      }
+    },
+    "0.3": {
+      "aisladas_y_superposiciones": {
+        "cargada": {
+          "E_r": {
+            "exceso_sobre_receptora_aislada": 0.00019834752038150327,
+            "donante_aislada_en_receptora": 0.0001729190015876808,
+            "termino_de_superposicion": 2.5428518793822464e-05
+          },
+          "Q_r": {
+            "exceso_sobre_receptora_aislada": 7.82219140091911e-05,
+            "donante_aislada_en_receptora": 5.289872187090945e-05,
+            "termino_de_superposicion": 2.5323192138281645e-05
+          }
+        },
+        "gemelo": {
+          "E_r": {
+            "exceso_sobre_receptora_aislada": 2.600918378448114e-07,
+            "donante_aislada_en_receptora": 1.0436246182409343e-12,
+            "termino_de_superposicion": 2.600907942201931e-07
+          },
+          "Q_r": {
+            "exceso_sobre_receptora_aislada": 2.890515133913141e-07,
+            "donante_aislada_en_receptora": 9.62503083302345e-13,
+            "termino_de_superposicion": 2.8905055088823077e-07
+          }
+        }
+      },
+      "cargada_menos_gemela": {
+        "E_r": {
+          "exceso_sobre_receptora_aislada": 0.00019808742854365846,
+          "donante_aislada_en_receptora": 0.0001729190005440562,
+          "termino_de_superposicion": 2.516842799960227e-05,
+          "fraccion_donante_aislada": 0.8729428304227033
+        },
+        "Q_r": {
+          "exceso_sobre_receptora_aislada": 7.793286249579978e-05,
+          "donante_aislada_en_receptora": 5.289872090840637e-05,
+          "termino_de_superposicion": 2.5034141587393415e-05,
+          "fraccion_donante_aislada": 0.678772974767318
+        }
+      }
+    }
+  }
+}

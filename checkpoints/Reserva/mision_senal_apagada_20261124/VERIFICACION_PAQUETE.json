@@ -1,0 +1,38 @@
+{
+  "base_original": "8a032793e8551e4cbc8b94ff99756741b99ca09a",
+  "prerregistro": "561874fa850fbc7d93a85a9f7d43d99df8dabdd0",
+  "paquete": {
+    "archivo": "Reserva_contraste_senal_reproducible.zip",
+    "bytes": 1829099,
+    "sha256": "8ad562b6e12222a7aca82abcbb48bb996941c13acad1d4886d0ff9a0ed5aaab8",
+    "entradas": 69,
+    "series_encendidas": 9,
+    "series_apagadas": 6,
+    "estados_radiales_iniciales": 3
+  },
+  "reproduccion_desde_extraccion_nueva": {
+    "archivos_reconstruidos_identicos_por_sha256": {
+      "checkpoints/Reserva/diagnostico_primera_descarga_20261124/01_inventario_receptora.svg": "8503871faf13cae01a0200b66a784121a0fbaf5fea4d5c550a023aec5d4809a3",
+      "checkpoints/Reserva/diagnostico_primera_descarga_20261124/02_ventaja_y_cambio.svg": "dcd51bcd4a535c6a0848d6b5fc89478457850e0edd9a49c2f6eaeb3f23db84f0",
+      "checkpoints/Reserva/diagnostico_primera_descarga_20261124/03_balances_regionales.svg": "49639d36b8ee809273baed914df56b78a0ea716aaa65b1dd578f4f37ca42cc25",
+      "checkpoints/Reserva/diagnostico_primera_descarga_20261124/DIAGNOSTICO.json": "f7fef55ec80f19cf3ab1c7123e4f0f6053a4d283606395cabfa4804499c7f939",
+      "checkpoints/Reserva/diagnostico_primera_descarga_20261124/SOLAPAMIENTO_INICIAL.json": "5dfdac88b484b84f37796ef0c4b0d5e170e669df132b02a79ddc48f7f96c4d59",
+      "checkpoints/Reserva/mision_senal_apagada_20261124/04_contraste_senal.svg": "4bfb29f2ae9152fd1e9fd1529500d1ce0fac6fbc8a7d3090b9aeefd62f53e0d4",
+      "checkpoints/Reserva/mision_senal_apagada_20261124/CONTRASTES_POR_TIEMPO.csv": "d308e7831816fe54757106c78dcf4adb4e6c12c1f9e43e813537e914005e08e2",
+      "checkpoints/Reserva/mision_senal_apagada_20261124/RESULTADO.json": "f0cf24df2ec99ffc34bf775b2795000bb8150d835f29edd6e5a3db6d936b38c0"
+    },
+    "pasos_de_evolucion": 0
+  },
+  "comprobacion_independiente_de_las_tablas": {
+    "metodo": "Lectura con csv.DictReader y trapecios con math.fsum, sin llamar a las funciones de analisis de la mision.",
+    "medias_cotejadas": 90,
+    "sensibilidades_cotejadas": 10
+  },
+  "entorno": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "compilador": "GCC 14.2.0, x86_64"
+  }
+}

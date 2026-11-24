@@ -4,7 +4,7 @@ La receptora ya contenía más energía y carga en el montaje con la donante car
 
 ## Qué se midió
 
-Se reutilizó el [recibo de los 18 archivos](../paso3_20261118/RECIBO_GUARDADO_DESCARGA.json) del commit `8a032793e8551e4cbc8b94ff99756741b99ca09a`. Se cotejaron las nueve series con el manifiesto y se reprodujeron las 54 medias de inventario de la receptora, los cuatro contrastes y sus variaciones a partir de los CSV. Para este diagnóstico bastaron los inventarios guardados. Las magnitudes son de M2 y las tablas de inventarios están expresadas en millonésimas, salvo indicación contraria. Las medias son integrales trapezoidales divididas por la duración.
+Se reutilizó el [recibo de los 18 archivos](../paso3_20261118/RECIBO_GUARDADO_DESCARGA.json) del commit `8a032793e8551e4cbc8b94ff99756741b99ca09a`. Se cotejaron las nueve series con el manifiesto y se reprodujeron las 54 medias de inventario de la receptora, los cuatro contrastes y sus variaciones a partir de los CSV. Para reconstruir las trayectorias y las figuras bastaron los inventarios guardados. Las magnitudes son de M2 y las tablas de inventarios están expresadas en millonésimas, salvo indicación contraria. Las medias son integrales trapezoidales divididas por la duración.
 
 Para cada montaje y magnitud X se calculó el cambio G(s) = X(s) − X(0). Para cada control se calcularon también la ventaja bruta B(s) = X_cargada(s) − X_control(s) y el contraste D(s) = G_cargada(s) − G_control(s) = B(s) − B(0). Cada núcleo tiene radio 40.
 
@@ -26,6 +26,19 @@ Los centros están separados 120. Desde el extremo de la fuente de radio 6 hasta
 | Espacial | Directa | 195,027 → 45,193 → 41,277 | 76,83 % | 78,247 → 40,636 → 38,500 | 48,07 % |
 | Intermedia | Directa | 198,348 → 31,357 → 30,082 | 84,19 % | 78,222 → 30,181 → 29,543 | 61,42 % |
 | Fina | Directa | 198,348 → 31,548 → 30,296 | 84,09 % | 78,222 → 30,170 → 29,553 | 61,43 % |
+
+## Cuánto campo de la donante ya estaba dentro
+
+Con los campos radiales iniciales recuperados para la misión causal se hizo una medición adicional en s = 0, sin pasos de evolución. Se quitó la receptora sólo para medir por separado cada donante en el mismo volumen receptor, a distancia 120. El resto se obtuvo restando a la superposición los inventarios de ambas gotas aisladas. Incluye los términos cruzados de los campos y de la energía de interacción. [Medición reproducible](medir_solapamiento.py) · [Cifras por resolución](SOLAPAMIENTO_INICIAL.json)
+
+| En el núcleo receptor, cargada menos gemela | E inicial, h = 0,30 | Q inicial, h = 0,30 |
+|---|---:|---:|
+| Campo de la donante medido por sí solo | +172,919 | +52,899 |
+| Términos de superposición con la receptora | +25,168 | +25,034 |
+| Ventaja inicial completa | +198,087 | +77,933 |
+| Ventaja media que queda en s = 200…240 | +25,075 | +25,455 |
+
+El campo de la donante por sí solo explica el 87,29 % del exceso inicial en energía y el 67,88 % en carga. En h = 0,40 se obtienen 86,89 % y 67,87 %. La pérdida media fina posterior (173,012 y 52,478) casi coincide con la contribución aislada inicial (172,919 y 52,899). La comparación acerca dos inventarios integrados. Para seguir el destino del campo dentro de la esfera harían falta medidas espaciales o de flujo durante el tránsito.
 
 ## Qué ocurre alrededor de la receptora
 
@@ -71,6 +84,6 @@ La receptora aislada es idéntica en las tres configuraciones, incluida la direc
 | Gemela | −173,012 ± 3,593 | −52,478 ± 0,189 |
 | Directa | −166,799 ± 17,157 | −48,052 ± 10,430 |
 
-**0 de 4** superaron D > 3U. Los cuatro mantienen el signo negativo aun sumando 3U. Esta conclusión se limita a la geometría, preparación, señal y ventana originales. El diagnóstico por sí solo deja abierta la contribución del disparo después de su posible llegada y cuánto de esa contribución comparte la gemela. Se abre una misión independiente de señal apagada para medir ambas cantidades. La recarga y la segunda descarga requieren demostrar antes una primera entrega útil. [Prerregistro del contraste causal](../mision_senal_apagada_20261124/PRERREGISTRO.md)
+**0 de 4** superaron D > 3U. Los cuatro mantienen el signo negativo aun sumando 3U. Esta conclusión se limita a la geometría, preparación, señal y ventana originales. El diagnóstico por sí solo deja abierta la contribución del disparo después de su posible llegada y cuánto de esa contribución comparte la gemela. Se abre una misión independiente de señal apagada para medir ambas cantidades. La recarga y la segunda descarga requieren demostrar antes una primera entrega útil. [Prerregistro del contraste causal](../mision_senal_apagada_20261124/PRERREGISTRO.md) · [Resultado del ensayo con la señal apagada](../mision_senal_apagada_20261124/README.md)
 
 Para reproducir las cuentas y las tres figuras desde este directorio, ejecutar `python diagnosticar.py` con NumPy 2 y Matplotlib. Los CSV, el resultado de referencia y el manifiesto se leen del directorio hermano. [Código](diagnosticar.py) · [Cuentas sin redondear](DIAGNOSTICO.json)
