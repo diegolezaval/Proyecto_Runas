@@ -1,0 +1,118 @@
+{
+  "A": 0.00456,
+  "Omega": 2.3,
+  "nu_incidente": -1.4,
+  "k_portadora": -0.9797958971132711,
+  "rapidez_grupo": 0.6998542122237651,
+  "stock": {
+    "E": 0.00016641437105135992,
+    "Q": 0.0001847625790105667
+  },
+  "umbral": {
+    "E": 1.6641437105135993e-06,
+    "Q": 1.847625790105667e-06
+  },
+  "E_paquete_vacio": 0.0134937420568699,
+  "Q_paquete_vacio": -0.009602778122168422,
+  "objetivo_diseno": "Saldo lineal de fondo cercano a 10 veces el umbral del 1 % en ambos canales.",
+  "recurso_referencia": {
+    "a": 0.001,
+    "E": 0.0006489372557291008
+  },
+  "prediccion": {
+    "delta_E": 1.6643803164536133e-05,
+    "delta_Q": 1.8493114627262367e-05,
+    "Q_positiva": 9.246557313631184e-06,
+    "E_positiva": 2.963354801246621e-05
+  },
+  "fracciones_E_inicial": {
+    "negativa_entrante": 0.9999988370574665,
+    "negativa_saliente": 2.644626078653053e-10,
+    "positiva_entrante": 1.55271634259644e-11,
+    "positiva_saliente": 1.1626543947594e-06
+  },
+  "cuantiles_acumulados_E": [
+    0.0005,
+    0.025,
+    0.5,
+    0.975,
+    0.9995
+  ],
+  "bandas": {
+    "nu_neg_abs": [
+      1.2125056577115212,
+      1.2782146050381369,
+      1.4067505832197038,
+      1.5476276184704045,
+      1.6298449109913602
+    ],
+    "Omega": [
+      2.1125056577115213,
+      2.178214605038137,
+      2.3067505832197037,
+      2.4476276184704044,
+      2.5298449109913603
+    ],
+    "modulo_v_grupo": [
+      0.5655144022000272,
+      0.6228500486339649,
+      0.7033354881728262,
+      0.7632102145084144,
+      0.7896517468359756
+    ]
+  },
+  "fraccion_E_incidente_en_banda_fijada": 0.9999997315186483,
+  "fraccion_E_negativa_mas_alla_tabla": 6.197882865059975e-08,
+  "max_ganancia_no_contada_por_unidad_E": 5.871678503741029e-08,
+  "ponderaciones": {
+    "L2048_h0.0125_paso1": {
+      "ganancia_energetica": 0.0012331633105045138,
+      "carga_neta_por_E": 0.0013701814561161265,
+      "Q_positiva_por_E": 0.0006850907280580632,
+      "E_positiva_por_E": 0.0021956273574060244
+    },
+    "L2048_h0.0125_paso2": {
+      "ganancia_energetica": 0.0012304676909456018,
+      "carga_neta_por_E": 0.001367186323272891,
+      "Q_positiva_por_E": 0.0006835931616364455,
+      "E_positiva_por_E": 0.002190861888315696
+    },
+    "L2048_h0.00625_paso1": {
+      "ganancia_energetica": 0.001233447043817855,
+      "carga_neta_por_E": 0.0013704967153531722,
+      "Q_positiva_por_E": 0.0006852483576765861,
+      "E_positiva_por_E": 0.0021960972521617344
+    },
+    "L2048_h0.00625_paso2": {
+      "ganancia_energetica": 0.0012307493845855754,
+      "carga_neta_por_E": 0.0013674993162061948,
+      "Q_positiva_por_E": 0.0006837496581030974,
+      "E_positiva_por_E": 0.0021913283867115536
+    },
+    "L4096_h0.0125_paso1": {
+      "ganancia_energetica": 0.0012331623445817185,
+      "carga_neta_por_E": 0.0013701803828685762,
+      "Q_positiva_por_E": 0.0006850901914342881,
+      "E_positiva_por_E": 0.0021956257454587877
+    },
+    "L4096_h0.0125_paso2": {
+      "ganancia_energetica": 0.0012304686574982375,
+      "carga_neta_por_E": 0.0013671873972202638,
+      "Q_positiva_por_E": 0.0006835936986101319,
+      "E_positiva_por_E": 0.002190863740768431
+    },
+    "L4096_h0.00625_paso1": {
+      "ganancia_energetica": 0.0012334460740682737,
+      "carga_neta_por_E": 0.0013704956378536373,
+      "Q_positiva_por_E": 0.0006852478189268187,
+      "E_positiva_por_E": 0.0021960956336333146
+    },
+    "L4096_h0.00625_paso2": {
+      "ganancia_energetica": 0.0012307503424151477,
+      "carga_neta_por_E": 0.0013675003804612751,
+      "Q_positiva_por_E": 0.0006837501902306376,
+      "E_positiva_por_E": 0.0021913302236221213
+    }
+  },
+  "sha256_dispersion": "856a7add4ce85e84ff133cdc706150c63c4ea5e463313dcd6e85e2f1825bb18c"
+}
