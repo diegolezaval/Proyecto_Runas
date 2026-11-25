@@ -1,0 +1,23 @@
+{
+  "prerregistro": "0793ff4b1ed4ecc94cb8c8e5b0f5e666084e5969",
+  "amplitud": 0.00456,
+  "recibos_sha256": {
+    "produccion": "db567d2ff0be5b61e62b3e0accb035ddb45ae5b09f8c9c1efece4957b5a8a828",
+    "repeticion": "fec19d809a92114d88fbb6938bd191d6bbb7b9d32d08b1a0d6d6e40eec7ef3db"
+  },
+  "ejecucion_independiente": {
+    "inicio_utc": "2026-11-25T12:28:58.645549+00:00",
+    "fin_utc": "2026-11-25T12:34:20.881916+00:00",
+    "segundos": 322.2363730510001,
+    "trabajadores": 8,
+    "pasos_posteriores_a_tau300": 17400000,
+    "preparaciones_nuevas_desde_tau0": 6,
+    "referencias_historicas": 4
+  },
+  "productos_releidos_produccion": 81,
+  "productos_releidos_repeticion": 81,
+  "series_y_sondas_identicas": 50,
+  "estados_finales_identicos": 25,
+  "preparaciones_amplias_identicas": 6,
+  "sha256_lista_ordenada_de_productos": "e6f91600ba51498d2308b905a1c2d5fc02d103a14b480c8ac24ddfddb606afe3"
+}

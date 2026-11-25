@@ -1,0 +1,881 @@
+{
+  "base": "c7e36153a6f1742cb83e1524e68b6955cc1e1d95",
+  "prerregistro": "0793ff4b1ed4ecc94cb8c8e5b0f5e666084e5969",
+  "inicio_utc": "2026-11-25T12:28:58.645549+00:00",
+  "fin_utc": "2026-11-25T12:34:20.881916+00:00",
+  "segundos": 322.2363730510001,
+  "jobs": 8,
+  "A": 0.00456,
+  "mallas": {
+    "principal": [
+      512,
+      0.025,
+      0.0005,
+      480
+    ],
+    "temporal": [
+      512,
+      0.025,
+      0.001,
+      480
+    ],
+    "espacial": [
+      512,
+      0.05,
+      0.001,
+      480
+    ],
+    "caja576": [
+      576,
+      0.025,
+      0.0005,
+      480
+    ],
+    "archivo416": [
+      416,
+      0.025,
+      0.0005,
+      300
+    ]
+  },
+  "insumos": {
+    "checkpoints/Reserva/paso2_20261117/datos/preparacion.npz": "511d4603761427aac4ad03f0320fefa10706fa2b37963926594c637b0a2bb9d2",
+    "checkpoints/Reserva/paso2_20261117/ensayo.py": "e3d8d663d72e22945206b9fcc8328adbb3d04d5161d64c2940dc53e783e54677",
+    "checkpoints/Reserva/paso2_20261117/radial.c": "0a630a386891a6a43adc545596128e82b5c98042054aca38108e9720cbfdda72",
+    "validacion/P06/rama/perfil_w0.90000.csv": "9037fb7f1fa691fe5d8712efee3092d26cc2303b95853694cb7a2539ec1f5574",
+    "datos/theta_comun.json": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3",
+    "herramientas/modelo_m2.py": "87562e977135cc5092ef3567b5980f58e726187e4df5c418de4660291702374f",
+    "checkpoints/Reserva/paso3_20261118/datos/dt0005/gota_a010/tau300.npz": "f939a8531299376118e682228273f6f8ba41e9120ab8f1dd275698b3b5f7f62a",
+    "checkpoints/Reserva/paso3_20261118/datos/dt0005/gemelo/tau300.npz": "0cd7c997e03ed7d1be478f834e8f49dcd55a2855ff9898d701a84e547076863d",
+    "checkpoints/Reserva/paso3_20261118/calibracion/CALIBRACION.json": "fca5c3f4687a8e16701080de33ad83e9f78ca5036be8bd2413e64a5daa0afb83",
+    "checkpoints/Reserva/paso3_20261118/calibracion/ensayo2.npz": "23741963f264cc01578092924983fad80757d62410ad33d29436879348f204bb"
+  },
+  "sha256_recibo_preparaciones": "9ef2a921a106977ff466a32acd99bfa19774823eb956d26b84aab1e0004356ef",
+  "sha256_diseno": "f54df6ef31564254c988e432314c8f563af5f5406c189a795993ad7305fb6cdc",
+  "origenes": [
+    {
+      "R": 416,
+      "h": 0.025,
+      "caso": "cargada",
+      "modo": "archivo recuperado",
+      "sha256": "212450e35e89f667d7fb4847efde9d4af8f0090b8da9731018121b8527513d56"
+    },
+    {
+      "R": 416,
+      "h": 0.025,
+      "caso": "gemela",
+      "modo": "archivo recuperado",
+      "sha256": "3c2ef55838baf72d93c67e6aae243dcf7b03d648e26a922a435adefca64c6cde"
+    },
+    {
+      "R": 384,
+      "h": 0.05,
+      "caso": "cargada",
+      "modo": "archivo recuperado",
+      "sha256": "b372ab8f02d00a6511201b08b9568949b6f70680479ad2b167089113e8e3e9d3"
+    },
+    {
+      "R": 384,
+      "h": 0.05,
+      "caso": "gemela",
+      "modo": "archivo recuperado",
+      "sha256": "1844adb893ce904f5b36538e0b34f8a342c53e1c5a03b98e2661c7e979081f27"
+    },
+    {
+      "R": 512,
+      "h": 0.05,
+      "caso": "gemela",
+      "tau": 300,
+      "origen_tau": 0,
+      "cola_ultima_unidad_tau0": 2.9099748272638776e-49,
+      "archivo": "estados_iniciales/R512_h0.05_gemela.npz",
+      "sha256": "0479d7f19996d274bc0293814dcd73fd2408b51d75034505b62d17e7a654404a",
+      "comparacion_amplia": {
+        "max_abs_q_r144": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_abs_v_r144": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_inventarios_40_60": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "archivo_de_referencia": "R384_h0.05_gemela.npz"
+    },
+    {
+      "R": 512,
+      "h": 0.05,
+      "caso": "cargada",
+      "tau": 300,
+      "origen_tau": 0,
+      "cola_ultima_unidad_tau0": 2.9099748272638776e-49,
+      "archivo": "estados_iniciales/R512_h0.05_cargada.npz",
+      "sha256": "aea4cd769f5b21c5eb588dbc3ca17d9c815d8af77dc610e75f87b9423c4b4d16",
+      "comparacion_amplia": {
+        "max_abs_q_r144": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_abs_v_r144": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_inventarios_40_60": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "archivo_de_referencia": "R384_h0.05_cargada.npz"
+    },
+    {
+      "R": 512,
+      "h": 0.025,
+      "caso": "cargada",
+      "tau": 300,
+      "origen_tau": 0,
+      "cola_ultima_unidad_tau0": 2.9453567059007345e-49,
+      "diferencia_con_tau300_verificado": {
+        "40": {
+          "E": -1.0459189070388675e-11,
+          "Q": -1.000444171950221e-11,
+          "max_abs_componentes_q": [
+            9.426903702092204e-13,
+            2.4334145809490337e-12,
+            1.76816894459364e-13
+          ],
+          "max_abs_componentes_v": [
+            1.1090015017423127e-10,
+            1.2415302119705984e-10,
+            1.8201914217805346e-11
+          ]
+        },
+        "60": {
+          "E": -1.0913936421275139e-11,
+          "Q": -1.0913936421275139e-11,
+          "max_abs_componentes_q": [
+            9.426903702092204e-13,
+            2.4334145809490337e-12,
+            1.76816894459364e-13
+          ],
+          "max_abs_componentes_v": [
+            1.1090015017423127e-10,
+            1.2415302119705984e-10,
+            1.8201914217805346e-11
+          ]
+        }
+      },
+      "archivo": "estados_iniciales/R512_h0.025_cargada.npz",
+      "sha256": "32089f455e06c03784b2cf47ad35302abf1f4a0ae79d19f41c087d5d5908558e",
+      "comparacion_amplia": {
+        "max_abs_q_r144": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_abs_v_r144": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_inventarios_40_60": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "archivo_de_referencia": "R416_h0.025_cargada.npz"
+    },
+    {
+      "R": 512,
+      "h": 0.025,
+      "caso": "gemela",
+      "tau": 300,
+      "origen_tau": 0,
+      "cola_ultima_unidad_tau0": 2.9453567059007345e-49,
+      "diferencia_con_tau300_verificado": {
+        "40": {
+          "E": 5.9117155615240335e-12,
+          "Q": 7.73070496506989e-12,
+          "max_abs_componentes_q": [
+            6.182832024137497e-13,
+            1.0403899963762342e-12,
+            8.361644709964366e-13
+          ],
+          "max_abs_componentes_v": [
+            6.25820645305808e-11,
+            2.0140822343250875e-10,
+            3.2906598335172557e-11
+          ]
+        },
+        "60": {
+          "E": 5.4569682106375694e-12,
+          "Q": 7.73070496506989e-12,
+          "max_abs_componentes_q": [
+            6.182832024137497e-13,
+            1.0403899963762342e-12,
+            8.361644709964366e-13
+          ],
+          "max_abs_componentes_v": [
+            6.25820645305808e-11,
+            2.0140822343250875e-10,
+            3.2906598335172557e-11
+          ]
+        }
+      },
+      "archivo": "estados_iniciales/R512_h0.025_gemela.npz",
+      "sha256": "b18d685e89b47bcd49da3f6066c67b0116e17cc16d75632e91b47c37caa1fbb9",
+      "comparacion_amplia": {
+        "max_abs_q_r144": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_abs_v_r144": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_inventarios_40_60": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "archivo_de_referencia": "R416_h0.025_gemela.npz"
+    },
+    {
+      "R": 576,
+      "h": 0.025,
+      "caso": "cargada",
+      "tau": 300,
+      "origen_tau": 0,
+      "cola_ultima_unidad_tau0": 2.9453567059007345e-49,
+      "diferencia_con_tau300_verificado": {
+        "40": {
+          "E": -1.0459189070388675e-11,
+          "Q": -1.000444171950221e-11,
+          "max_abs_componentes_q": [
+            9.426903702092204e-13,
+            2.4334145809490337e-12,
+            1.76816894459364e-13
+          ],
+          "max_abs_componentes_v": [
+            1.1090015017423127e-10,
+            1.2415302119705984e-10,
+            1.8201914217805346e-11
+          ]
+        },
+        "60": {
+          "E": -1.0913936421275139e-11,
+          "Q": -1.0913936421275139e-11,
+          "max_abs_componentes_q": [
+            9.426903702092204e-13,
+            2.4334145809490337e-12,
+            1.76816894459364e-13
+          ],
+          "max_abs_componentes_v": [
+            1.1090015017423127e-10,
+            1.2415302119705984e-10,
+            1.8201914217805346e-11
+          ]
+        }
+      },
+      "archivo": "estados_iniciales/R576_h0.025_cargada.npz",
+      "sha256": "7371aa7cd7d17855c68ebe50b234e27c6d78514c86571c8bf524dd133d7770dc",
+      "comparacion_amplia": {
+        "max_abs_q_r144": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_abs_v_r144": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_inventarios_40_60": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "archivo_de_referencia": "R416_h0.025_cargada.npz"
+    },
+    {
+      "R": 576,
+      "h": 0.025,
+      "caso": "gemela",
+      "tau": 300,
+      "origen_tau": 0,
+      "cola_ultima_unidad_tau0": 2.9453567059007345e-49,
+      "diferencia_con_tau300_verificado": {
+        "40": {
+          "E": 5.9117155615240335e-12,
+          "Q": 7.73070496506989e-12,
+          "max_abs_componentes_q": [
+            6.182832024137497e-13,
+            1.0403899963762342e-12,
+            8.361644709964366e-13
+          ],
+          "max_abs_componentes_v": [
+            6.25820645305808e-11,
+            2.0140822343250875e-10,
+            3.2906598335172557e-11
+          ]
+        },
+        "60": {
+          "E": 5.4569682106375694e-12,
+          "Q": 7.73070496506989e-12,
+          "max_abs_componentes_q": [
+            6.182832024137497e-13,
+            1.0403899963762342e-12,
+            8.361644709964366e-13
+          ],
+          "max_abs_componentes_v": [
+            6.25820645305808e-11,
+            2.0140822343250875e-10,
+            3.2906598335172557e-11
+          ]
+        }
+      },
+      "archivo": "estados_iniciales/R576_h0.025_gemela.npz",
+      "sha256": "e40652faf32867ad000393cc79d10eb8678fb34a4e545ece1d1abf7e18f4e6e0",
+      "comparacion_amplia": {
+        "max_abs_q_r144": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_abs_v_r144": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_inventarios_40_60": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "archivo_de_referencia": "R416_h0.025_gemela.npz"
+    }
+  ],
+  "series": [
+    {
+      "replica": "archivo416",
+      "caso": "cargada_con",
+      "fin_s": 300,
+      "pasos": 600000,
+      "incremento_inicial_global_E_Q": [
+        0.01349381735371935,
+        -0.009602713042113464
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "15021e0eb2a603d60eb7a9b93a165b52d84480c21e9a4553df819f4d518c822c",
+      "sha256_sondas": "f8e04af55889b5c7dd051a861a3c1588c11ba97ba89417e4dfd48be69585ec80",
+      "sha256_estado_final": "1bf9d5b121fa89b74c0774b63f03e9758bc1b09f5d40299b22b063fc66060a00"
+    },
+    {
+      "replica": "archivo416",
+      "caso": "cargada_sin",
+      "fin_s": 300,
+      "pasos": 600000,
+      "incremento_inicial_global_E_Q": [
+        0.0,
+        0.0
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "b45914866e75e44b05ad5f10bffed45de061c1ca90b2b01121727744fce4b815",
+      "sha256_sondas": "568898822ac4fec20a986840cff1a9c86f601a27e726e86d1d5cfc1959c28661",
+      "sha256_estado_final": "fb80f4bd9f6130e0ad2561f695b639d9611e2f43579a224f31ed0705fc2af202"
+    },
+    {
+      "replica": "archivo416",
+      "caso": "gemela_con",
+      "fin_s": 300,
+      "pasos": 600000,
+      "incremento_inicial_global_E_Q": [
+        0.013493742068021675,
+        -0.009602778111457155
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "71a7862ce869420912cc4957aa9caa776de51ea6329424357981ef423b527f66",
+      "sha256_sondas": "aeee0239a56b90c6d0da27ef942995bd3ed41a1227752710218c003ace0e01eb",
+      "sha256_estado_final": "738ca5ccd8448187dd31fa086ced51be321b9790fddbf295c4ba1d25d8db3d35"
+    },
+    {
+      "replica": "archivo416",
+      "caso": "gemela_sin",
+      "fin_s": 300,
+      "pasos": 600000,
+      "incremento_inicial_global_E_Q": [
+        0.0,
+        0.0
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "adc72bf51688dd905652b6b75dcddee738cb50938c2c8b07bbc3fee8b0595af4",
+      "sha256_sondas": "e7eeb1a7d8c8142d0028516578477329560ecb6da418c02e2160024dbcea2270",
+      "sha256_estado_final": "3e4e5d3aac60731bb4829b75db31ef55b95c5319ac9be1251f64699426cd0313"
+    },
+    {
+      "replica": "archivo416",
+      "caso": "vacio",
+      "fin_s": 300,
+      "pasos": 600000,
+      "incremento_inicial_global_E_Q": [
+        0.013493742056869902,
+        -0.00960277812216842
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "55bfbed5ad7b2ee4625cb6e6825f6aa77ad84469546dc860ec717f6ed292eb78",
+      "sha256_sondas": "aa9bf888a1e972ffb68128829b224c9b340c8b53893b5b6c8d0b01b2e76673f9",
+      "sha256_estado_final": "62947a1ead9c034fe21c1fbbfe9f1ecb1396ad95baf783edfa5df8c3e7dc972a"
+    },
+    {
+      "replica": "caja576",
+      "caso": "cargada_con",
+      "fin_s": 480,
+      "pasos": 960000,
+      "incremento_inicial_global_E_Q": [
+        0.013493817353264603,
+        -0.009602713041658717
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "53477cf8a15919f2169933d3777713e2ce65800998feadc6673b4125d43096d7",
+      "sha256_sondas": "386b2a2b0ca14daa2d2c56eb8aac92ea9e228a903036ca232f6537ba65c37cdb",
+      "sha256_estado_final": "c4357f2a3417be525e31e49764a9b424470d61316c3bae34b198215e83bb967a"
+    },
+    {
+      "replica": "caja576",
+      "caso": "cargada_sin",
+      "fin_s": 480,
+      "pasos": 960000,
+      "incremento_inicial_global_E_Q": [
+        0.0,
+        0.0
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "b0dbfd2885f32a87e2af75d7e8d8ee62c28df4d442ccec1acc23c1c41a8314f9",
+      "sha256_sondas": "17f7616c16a11522b8ff63a7936ae0c49dfa08e1d904a8b006b296f1d0a7bf7c",
+      "sha256_estado_final": "dfc7bc4b2a2287ce7abbc0bdcec2e77bc759375fecfac085c9488be49aa79bba"
+    },
+    {
+      "replica": "caja576",
+      "caso": "gemela_con",
+      "fin_s": 480,
+      "pasos": 960000,
+      "incremento_inicial_global_E_Q": [
+        0.013493742067566927,
+        -0.009602778111911903
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "35075b648283fe14dc5adec0fe3c63940117a2e5d3657245acd66a627865bc9f",
+      "sha256_sondas": "3bfdb4bf919241eb58dda407e192f73190dae91525be89a349496cb75e7111b2",
+      "sha256_estado_final": "fa346388f2b7a801df0823adf55d06a47bf88c63ddd587f9a1a9aeb07898a27c"
+    },
+    {
+      "replica": "caja576",
+      "caso": "gemela_sin",
+      "fin_s": 480,
+      "pasos": 960000,
+      "incremento_inicial_global_E_Q": [
+        0.0,
+        0.0
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "f48db3740b0ea233d379d1bbd64925a02aa719d0dc2927d2129c00fca96f9538",
+      "sha256_sondas": "6e6564d1326900ce6babcbff53d46dfd66cc6c5d2eb53ebe57c6221b1b265211",
+      "sha256_estado_final": "07123cfa8f57a59a9888d486006e20df65a5d01c8e81e5bdcaf93ee0817dec75"
+    },
+    {
+      "replica": "caja576",
+      "caso": "vacio",
+      "fin_s": 480,
+      "pasos": 960000,
+      "incremento_inicial_global_E_Q": [
+        0.0134937420568699,
+        -0.00960277812216842
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "6d1b9c8dc2d7baab145df3d31ca222292c6ee4c95080ca84f0fd0ebf82edb36e",
+      "sha256_sondas": "d24c89d635157f9a7b0a439df735d23d5dc63dad41ae658f3a2a26e9259d9d12",
+      "sha256_estado_final": "8fffbd4675b1bcd50bef1f8ea804595395fc3251620bedc31b13a3430fa9ad86"
+    },
+    {
+      "replica": "espacial",
+      "caso": "cargada_con",
+      "fin_s": 480,
+      "pasos": 480000,
+      "incremento_inicial_global_E_Q": [
+        0.013493280446709832,
+        -0.00960272320162403
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "a66a8106b136b7e110087debbc6634b35d16b241ce19cc3da3ae28709e9dc3c5",
+      "sha256_sondas": "4d7aea82945f923593a930169a79e8f57c06565b5e10b0717c21f0f6ed5e67f7",
+      "sha256_estado_final": "1e2caa1cfb7e5a4c7ecf620909cb2d185827cf7c0fb6008b9d41a75a82785f92"
+    },
+    {
+      "replica": "espacial",
+      "caso": "cargada_sin",
+      "fin_s": 480,
+      "pasos": 480000,
+      "incremento_inicial_global_E_Q": [
+        0.0,
+        0.0
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "a355fd7486f080cd0c66669f1ef149dfb61e9fba119381e8616976f5e7180bf3",
+      "sha256_sondas": "45cefa35249fe6bf97835075f6819a40b89b978f88e5b8b1f2036691d5c2c6db",
+      "sha256_estado_final": "0ca7933c8bc43b5a1759e8c0adac7fe08545652a9fe123555a57a0366de63a38"
+    },
+    {
+      "replica": "espacial",
+      "caso": "gemela_con",
+      "fin_s": 480,
+      "pasos": 480000,
+      "incremento_inicial_global_E_Q": [
+        0.013493218121766404,
+        -0.009602778216503793
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "02b178cc47a13898210ca959d0ecf2ab40a6df133b13db1c6cdcc4e47eb878d7",
+      "sha256_sondas": "9b6c8a117e484564adedad7bf9f439a7f34682fa4eb1f35247f1ace646f7babc",
+      "sha256_estado_final": "2c71aed0be6264630567b1c2c044794f011874f44b87a4e769331c7b7a94b481"
+    },
+    {
+      "replica": "espacial",
+      "caso": "gemela_sin",
+      "fin_s": 480,
+      "pasos": 480000,
+      "incremento_inicial_global_E_Q": [
+        0.0,
+        0.0
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "309d9d8fb8b6563eb9ff9fe26c3a92561362c85502fe69d348211a422b140b2f",
+      "sha256_sondas": "13c3a397475a5703c25cff8b67eacb9b4951e6a214fe1794b43bf279a5dbebc2",
+      "sha256_estado_final": "edf6b51c40bf457aa1bc003cd5ba675e1203ccdc906c48b97ae6648b091411f0"
+    },
+    {
+      "replica": "espacial",
+      "caso": "vacio",
+      "fin_s": 480,
+      "pasos": 480000,
+      "incremento_inicial_global_E_Q": [
+        0.0134932181109568,
+        -0.009602778226930725
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "a6f07401e337d46d8ff4b74320c4ac962566a1d4bb77ffa075d7dd614cc09c19",
+      "sha256_sondas": "f44f12f81a16cbf74a133e763e2e536179f01dba99bc11fc08a259a72c303eea",
+      "sha256_estado_final": "c40498e4a55b7eca32da6b660d32bbead72e61e3d6f05dbce7090f366c95b62e"
+    },
+    {
+      "replica": "principal",
+      "caso": "cargada_con",
+      "fin_s": 480,
+      "pasos": 960000,
+      "incremento_inicial_global_E_Q": [
+        0.01349381735371935,
+        -0.009602713041658717
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "d6c43da16dbeab05031a28dea55396bce8cc9883eb6a7a5f117d42f8371bbbe1",
+      "sha256_sondas": "5c4719dd9769c5d61b134f12ceb7c587d7fc43f72682237504c1d475774d169d",
+      "sha256_estado_final": "5153a97810284a01724232175fb45fe8eb2779e79aac67f68dc36e2e123d93c4"
+    },
+    {
+      "replica": "principal",
+      "caso": "cargada_sin",
+      "fin_s": 480,
+      "pasos": 960000,
+      "incremento_inicial_global_E_Q": [
+        0.0,
+        0.0
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "e42c595e499b5da26299617b8ce8265eda13b9a7085f3e29b97183b4b33a45e5",
+      "sha256_sondas": "af4c05f9bcdde060cda93e05e390f25c300a6c59a4434a97673bd02313d5033f",
+      "sha256_estado_final": "a5479df14b452e3c2fc6121f09f524fa2175afb1ca270e52de59fc84f7b07947"
+    },
+    {
+      "replica": "principal",
+      "caso": "gemela_con",
+      "fin_s": 480,
+      "pasos": 960000,
+      "incremento_inicial_global_E_Q": [
+        0.013493742067566927,
+        -0.009602778111911903
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "b4c62ebb7bb3a61874781bf4ae9ba6df4e2e0c147de2fa1f27f8303e01744e35",
+      "sha256_sondas": "707a33a9ee41827972577ab13b03d27c1f0b93b6abcb7f27479f27e20b74f483",
+      "sha256_estado_final": "05fafbbe0f34690aa1525702e6ad608e4b3488f19bb93557077da930aa22d0a5"
+    },
+    {
+      "replica": "principal",
+      "caso": "gemela_sin",
+      "fin_s": 480,
+      "pasos": 960000,
+      "incremento_inicial_global_E_Q": [
+        0.0,
+        0.0
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "51796995c30da0b473f31d05495583ef4700ba2b1728e9863c36b9bba654c708",
+      "sha256_sondas": "f1aaa45d0748c8796655c8386cddc7a5485b5bb36537e0b6914899c0a2c23549",
+      "sha256_estado_final": "9d8ad9762429dc4751c7c390e70033d6f0ceb0ed618399815f43f73d4210e446"
+    },
+    {
+      "replica": "principal",
+      "caso": "vacio",
+      "fin_s": 480,
+      "pasos": 960000,
+      "incremento_inicial_global_E_Q": [
+        0.0134937420568699,
+        -0.009602778122168422
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "7843eec634e72fda56be6b9d3ac04fcf6613009072ad836bf7427a961772162b",
+      "sha256_sondas": "d24c89d635157f9a7b0a439df735d23d5dc63dad41ae658f3a2a26e9259d9d12",
+      "sha256_estado_final": "92e70ce14f6ac1ae60c378bd03a9fad51699038597eaaa515a9cb0a51600ce66"
+    },
+    {
+      "replica": "temporal",
+      "caso": "cargada_con",
+      "fin_s": 480,
+      "pasos": 480000,
+      "incremento_inicial_global_E_Q": [
+        0.01349381735371935,
+        -0.009602713041658717
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "0d1dce073f6f00886e2fb1bfadecf775d161e1881c35344cd95153eda24ad310",
+      "sha256_sondas": "df12022c4604f781d8e61d118b26c66dfe862e326fde92ddb0c4ff3ae5137c76",
+      "sha256_estado_final": "2b0467102a14b510f3168e6b87d8d86a129c5a8be2971bdfa0ac6bc77f2b81bd"
+    },
+    {
+      "replica": "temporal",
+      "caso": "cargada_sin",
+      "fin_s": 480,
+      "pasos": 480000,
+      "incremento_inicial_global_E_Q": [
+        0.0,
+        0.0
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "a60ab2fc22380c4972a61321aa55ae9f4c74e8db54b04e8734e472ae93f77821",
+      "sha256_sondas": "45ac130bf27303966029bfe1de1a5f3d76ed049beb8a846c4055c66c525fc690",
+      "sha256_estado_final": "de0d3521fb3e97d81d6a4b3aa4c5e343be12dea50e000aa654b7eba7351ee99b"
+    },
+    {
+      "replica": "temporal",
+      "caso": "gemela_con",
+      "fin_s": 480,
+      "pasos": 480000,
+      "incremento_inicial_global_E_Q": [
+        0.013493742067566927,
+        -0.009602778111911903
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "8778d5bb223cecc9769595f5ec3888c9b5382a43cd58e7d23f30bb27f6799b96",
+      "sha256_sondas": "954b5ce2f3517bcce6f463046f3f00c356a8957e8e7eb5bd5b15793b3e2368a1",
+      "sha256_estado_final": "fdc8006bf08ba5dde76d52fd9867a30438d3d90a2b30b0f510f19b49159241cf"
+    },
+    {
+      "replica": "temporal",
+      "caso": "gemela_sin",
+      "fin_s": 480,
+      "pasos": 480000,
+      "incremento_inicial_global_E_Q": [
+        0.0,
+        0.0
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "58d889970859dc348955ee0cccbd9cd793be6b49d972685da3f418620db9b692",
+      "sha256_sondas": "1268c4cc81acba9a61daba18fabb812a73900ad9e72621c639d9ad193d4d0daa",
+      "sha256_estado_final": "172565a9778d1537cb79e42c5a53ec1800684e304f5df05ce9f43dd50bdf5ea0"
+    },
+    {
+      "replica": "temporal",
+      "caso": "vacio",
+      "fin_s": 480,
+      "pasos": 480000,
+      "incremento_inicial_global_E_Q": [
+        0.0134937420568699,
+        -0.009602778122168422
+      ],
+      "incremento_inicial_interiores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "W_posterior": 0.0,
+      "sha256_serie": "0b1b7dfe89eab9c48567061a7a6dde42a6020702f36c059215f6ecd031fa3bb0",
+      "sha256_sondas": "b1505ba45ed83888f0181821a52ae6e2ccdfbbe743bb144af0ae4dba8f5fe7cb",
+      "sha256_estado_final": "d502ac273938b017fa52fe333bf03d45415485ecad60cee8b0c867857e74b62e"
+    }
+  ]
+}

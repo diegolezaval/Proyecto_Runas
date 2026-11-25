@@ -1,0 +1,171 @@
+{
+  "inicio_utc_repeticion": "2026-11-25T12:26:00.501742+00:00",
+  "fin_utc_repeticion": "2026-11-25T12:28:01.651038+00:00",
+  "segundos_repeticion": 121.14929747100041,
+  "cierre_observado_primera_invocacion": false,
+  "casos_terminados_primera_invocacion": [
+    [
+      "archivo416",
+      "cargada_con"
+    ],
+    [
+      "archivo416",
+      "cargada_sin"
+    ],
+    [
+      "archivo416",
+      "gemela_con"
+    ],
+    [
+      "archivo416",
+      "gemela_sin"
+    ],
+    [
+      "archivo416",
+      "vacio"
+    ],
+    [
+      "caja576",
+      "vacio"
+    ],
+    [
+      "espacial",
+      "cargada_con"
+    ],
+    [
+      "espacial",
+      "cargada_sin"
+    ],
+    [
+      "espacial",
+      "gemela_con"
+    ],
+    [
+      "espacial",
+      "gemela_sin"
+    ],
+    [
+      "espacial",
+      "vacio"
+    ],
+    [
+      "principal",
+      "cargada_con"
+    ],
+    [
+      "principal",
+      "cargada_sin"
+    ],
+    [
+      "principal",
+      "gemela_con"
+    ],
+    [
+      "principal",
+      "gemela_sin"
+    ],
+    [
+      "principal",
+      "vacio"
+    ],
+    [
+      "temporal",
+      "cargada_con"
+    ],
+    [
+      "temporal",
+      "cargada_sin"
+    ],
+    [
+      "temporal",
+      "gemela_con"
+    ],
+    [
+      "temporal",
+      "gemela_sin"
+    ],
+    [
+      "temporal",
+      "vacio"
+    ]
+  ],
+  "casos_repetidos_desde_tau300": {
+    "cargada_con": {
+      "serie.csv": {
+        "filas_completas_sin_cabecera": 468,
+        "ultimo_s": 467.0,
+        "bytes_del_prefijo": 99882,
+        "bytes_incompletos_al_final": 0,
+        "sha256_prefijo": "542949c1c5bbdb0723e290a4f3813c4c40d94805c95f6b27695fead556bfd84e",
+        "coincidencia_byte_a_byte": true
+      },
+      "sondas.csv": {
+        "filas_completas_sin_cabecera": 1892,
+        "ultimo_s": 472.75,
+        "bytes_del_prefijo": 364933,
+        "bytes_incompletos_al_final": 0,
+        "sha256_prefijo": "b124755f7facb699d6fc20014d0fccd7ac37ac4aaf872eb21bc6c467c9de9c3c",
+        "coincidencia_byte_a_byte": true
+      }
+    },
+    "cargada_sin": {
+      "serie.csv": {
+        "filas_completas_sin_cabecera": 390,
+        "ultimo_s": 389.0,
+        "bytes_del_prefijo": 83631,
+        "bytes_incompletos_al_final": 0,
+        "sha256_prefijo": "453e41d91b3d0168ced4685189e1fa84042782000ad1b11ce9272f5638db33df",
+        "coincidencia_byte_a_byte": true
+      },
+      "sondas.csv": {
+        "filas_completas_sin_cabecera": 1677,
+        "ultimo_s": 419.0,
+        "bytes_del_prefijo": 323401,
+        "bytes_incompletos_al_final": 0,
+        "sha256_prefijo": "1e6f2e366dbd3f0ed043ba4f6197edae443f1fdb7c6d349dcd5a758854e83166",
+        "coincidencia_byte_a_byte": true
+      }
+    },
+    "gemela_con": {
+      "serie.csv": {
+        "filas_completas_sin_cabecera": 350,
+        "ultimo_s": 349.0,
+        "bytes_del_prefijo": 74622,
+        "bytes_incompletos_al_final": 0,
+        "sha256_prefijo": "02f5d36495c5c24a35b638eabd50e5aa44da255531a2caccf36744112019d57a",
+        "coincidencia_byte_a_byte": true
+      },
+      "sondas.csv": {
+        "filas_completas_sin_cabecera": 1419,
+        "ultimo_s": 354.5,
+        "bytes_del_prefijo": 273705,
+        "bytes_incompletos_al_final": 0,
+        "sha256_prefijo": "d628142d1d84c846726bfbcec2051fa55d19dc480d694645ffe653e92f6261d7",
+        "coincidencia_byte_a_byte": true
+      }
+    },
+    "gemela_sin": {
+      "serie.csv": {
+        "filas_completas_sin_cabecera": 312,
+        "ultimo_s": 311.0,
+        "bytes_del_prefijo": 66955,
+        "bytes_incompletos_al_final": 0,
+        "sha256_prefijo": "f95c58db4b98ff82d65593395b2caaec7754b22173273d44f13a24900f488e97",
+        "coincidencia_byte_a_byte": true
+      },
+      "sondas.csv": {
+        "filas_completas_sin_cabecera": 1247,
+        "ultimo_s": 311.5,
+        "bytes_del_prefijo": 240427,
+        "bytes_incompletos_al_final": 0,
+        "sha256_prefijo": "353dc79aa2af212d529584684fbee72db79fe3d45cf9d5a9d9e54dc74f58d25e",
+        "coincidencia_byte_a_byte": true
+      }
+    }
+  },
+  "estados_576_sha256": {
+    "cargada": "7371aa7cd7d17855c68ebe50b234e27c6d78514c86571c8bf524dd133d7770dc",
+    "gemela": "e40652faf32867ad000393cc79d10eb8678fb34a4e545ece1d1abf7e18f4e6e0"
+  },
+  "metodologia": "Las cuatro trayectorias de R576 se recalcularon desde sus dos estados amplios de τ300, con igual código y parámetros. Se cotejaron los prefijos completos de ambos CSV y los recibos de las repeticiones. El recibo integral se recompuso leyendo los 25 campos finales y las 50 series."
+}

@@ -1,0 +1,917 @@
+{
+  "A": 0.00456,
+  "ventana": [
+    400,
+    480
+  ],
+  "stock": {
+    "E": 0.00016641437105135992,
+    "Q": 0.0001847625790105667
+  },
+  "umbrales": {
+    "E": 1.6641437105135993e-06,
+    "Q": 1.847625790105667e-06
+  },
+  "mediciones": {
+    "40": {
+      "E": {
+        "cargada": {
+          "Y_o_D": 1.6717372074242906e-05,
+          "U": 1.714957138781309e-07,
+          "tres_U": 5.144871416343927e-07,
+          "inferior": 1.6202884932608513e-05,
+          "superior": 1.72318592158773e-05,
+          "maximo_adicional_positivo": 1.72318592158773e-05,
+          "limite_de_magnitud": 1.72318592158773e-05,
+          "maximo_positivo_fraccion_stock": 0.10354790338725665,
+          "limite_magnitud_fraccion_stock": 0.10354790338725665,
+          "fraccion_stock": 0.10045630055041027,
+          "domina": "contraste_flujo_inventario",
+          "componentes": {
+            "espacio": 5.8855111066877366e-08,
+            "tiempo": 5.4142678279520086e-11,
+            "caja": 4.0657581468206416e-20,
+            "mitad_400_440": 6.78767747286775e-10,
+            "mitad_440_480": 6.787677472901632e-10,
+            "suma_cierres": 4.285664649200598e-08,
+            "contraste_flujo_inventario": 1.714957138781309e-07,
+            "antes_llegada": 0.0,
+            "piso": 1e-10,
+            "vacio_residual": 4.744024432934336e-09
+          },
+          "controles_por_replica": {
+            "espacial": {
+              "mitad_400_440": 6.293879202433014e-10,
+              "mitad_440_480": 6.293879202399133e-10,
+              "contraste_flujo_inventario": 1.714957138781309e-07
+            },
+            "temporal": {
+              "mitad_400_440": 6.768748964069407e-10,
+              "mitad_440_480": 6.768748964001644e-10,
+              "contraste_flujo_inventario": 1.7135376116812762e-07
+            },
+            "principal": {
+              "mitad_400_440": 6.78767747286775e-10,
+              "mitad_440_480": 6.787677472901632e-10,
+              "contraste_flujo_inventario": 4.284271700946696e-08
+            },
+            "caja576": {
+              "mitad_400_440": 6.787677472461175e-10,
+              "mitad_440_480": 6.787677472461175e-10,
+              "contraste_flujo_inventario": 4.284271700946696e-08
+            }
+          },
+          "U_con_mitades_y_desacuerdo_solo_en_principal": 5.8855111066877366e-08,
+          "por_inventario": 1.6717383240916205e-05,
+          "valor_s480": 1.671776231995775e-05,
+          "ventanas": {
+            "espacial": [
+              1.6658571105854308e-05,
+              1.6657941717934065e-05,
+              1.6659200493774548e-05
+            ],
+            "temporal": [
+              1.6717426216921185e-05,
+              1.6716749342024778e-05,
+              1.6718103091817585e-05
+            ],
+            "principal": [
+              1.6717372074242906e-05,
+              1.671669330649562e-05,
+              1.6718050841990196e-05
+            ],
+            "caja576": [
+              1.6717372074242865e-05,
+              1.671669330649562e-05,
+              1.671805084199011e-05
+            ]
+          }
+        },
+        "gemela": {
+          "Y_o_D": 1.6695723568945484e-05,
+          "U": 1.7150183297814925e-07,
+          "tres_U": 5.145054989344477e-07,
+          "inferior": 1.6181218070011037e-05,
+          "superior": 1.7210229067879932e-05,
+          "maximo_adicional_positivo": 1.7210229067879932e-05,
+          "limite_de_magnitud": 1.7210229067879932e-05,
+          "maximo_positivo_fraccion_stock": 0.10341792574253335,
+          "limite_magnitud_fraccion_stock": 0.10341792574253335,
+          "fraccion_stock": 0.10032621259490106,
+          "domina": "contraste_flujo_inventario",
+          "componentes": {
+            "espacio": 5.896543269948802e-08,
+            "tiempo": 5.4378847128347396e-11,
+            "caja": 2.710505431213761e-20,
+            "mitad_400_440": 1.191993067032655e-09,
+            "mitad_440_480": 1.1919930670394312e-09,
+            "suma_cierres": 4.287123631358576e-08,
+            "contraste_flujo_inventario": 1.7150183297814925e-07,
+            "antes_llegada": 0.0,
+            "piso": 1e-10,
+            "vacio_residual": 4.744024432934336e-09
+          },
+          "controles_por_replica": {
+            "espacial": {
+              "mitad_400_440": 1.191993067032655e-09,
+              "mitad_440_480": 1.1919930670394312e-09,
+              "contraste_flujo_inventario": 1.7150183297814925e-07
+            },
+            "temporal": {
+              "mitad_400_440": 1.1855725327861101e-09,
+              "mitad_440_480": 1.1855725327894983e-09,
+              "contraste_flujo_inventario": 1.7136683532273378e-07
+            },
+            "principal": {
+              "mitad_400_440": 1.1874611927298806e-09,
+              "mitad_440_480": 1.1874611927264924e-09,
+              "contraste_flujo_inventario": 4.2834191693597035e-08
+            },
+            "caja576": {
+              "mitad_400_440": 1.1874611927027755e-09,
+              "mitad_440_480": 1.1874611927061636e-09,
+              "contraste_flujo_inventario": 4.2834191693597035e-08
+            }
+          },
+          "U_con_mitades_y_desacuerdo_solo_en_principal": 5.896543269948802e-08,
+          "por_inventario": 1.6695762559493234e-05,
+          "valor_s480": 1.6697243743008578e-05,
+          "ventanas": {
+            "espacial": [
+              1.6636812515093125e-05,
+              1.6635620522026092e-05,
+              1.6638004508160164e-05
+            ],
+            "temporal": [
+              1.6695777947792613e-05,
+              1.6694592375259827e-05,
+              1.6696963520325402e-05
+            ],
+            "principal": [
+              1.6695723568945484e-05,
+              1.6694536107752755e-05,
+              1.669691103013821e-05
+            ],
+            "caja576": [
+              1.6695723568945457e-05,
+              1.6694536107752755e-05,
+              1.6696911030138164e-05
+            ]
+          }
+        },
+        "D": {
+          "Y_o_D": 2.164850529742344e-08,
+          "U": 8.572788280559174e-08,
+          "tres_U": 2.571836484167752e-07,
+          "inferior": -2.3553514311935175e-07,
+          "superior": 2.7883215371419864e-07,
+          "maximo_adicional_positivo": 2.7883215371419864e-07,
+          "limite_de_magnitud": 2.7883215371419864e-07,
+          "maximo_positivo_fraccion_stock": 0.0016755292944510398,
+          "limite_magnitud_fraccion_stock": 0.0016755292944510398,
+          "fraccion_stock": 0.0001300879555092158,
+          "domina": "suma_cierres",
+          "componentes": {
+            "espacio": 1.103216326095498e-10,
+            "tiempo": 2.3616885338011276e-13,
+            "caja": 1.575613630791007e-20,
+            "mitad_400_440": 5.62605146792381e-10,
+            "mitad_440_480": 5.62605146792381e-10,
+            "suma_cierres": 8.572788280559174e-08,
+            "contraste_flujo_inventario": 4.751233700770645e-11,
+            "antes_llegada": 0.0,
+            "piso": 1e-10
+          },
+          "controles_por_replica": {
+            "espacial": {
+              "mitad_400_440": 5.62605146792381e-10,
+              "mitad_440_480": 5.62605146792381e-10,
+              "contraste_flujo_inventario": 1.5376231104341498e-11
+            },
+            "temporal": {
+              "mitad_400_440": 5.086976363864321e-10,
+              "mitad_440_480": 5.086976363864354e-10,
+              "contraste_flujo_inventario": 4.751233700770645e-11
+            },
+            "principal": {
+              "mitad_400_440": 5.086934454400979e-10,
+              "mitad_440_480": 5.086934454401012e-10,
+              "contraste_flujo_inventario": 4.5016096454847734e-11
+            },
+            "caja576": {
+              "mitad_400_440": 5.086934454572073e-10,
+              "mitad_440_480": 5.086934454572073e-10,
+              "contraste_flujo_inventario": 4.5016096454847734e-11
+            }
+          },
+          "U_con_mitades_y_desacuerdo_solo_en_principal": 8.572788280559174e-08,
+          "por_inventario": 2.1620681422973575e-08,
+          "valor_s480": 2.051857694917379e-08,
+          "ventanas": {
+            "espacial": [
+              2.1758590761179608e-08,
+              2.232119590797199e-08,
+              2.1195985614387227e-08
+            ],
+            "temporal": [
+              2.164826912857006e-08,
+              2.215696676495649e-08,
+              2.1139571492183623e-08
+            ],
+            "principal": [
+              2.164850529742344e-08,
+              2.2157198742863536e-08,
+              2.1139811851983337e-08
+            ],
+            "caja576": [
+              2.1648505297407682e-08,
+              2.215719874286489e-08,
+              2.1139811851950475e-08
+            ]
+          }
+        }
+      },
+      "Q": {
+        "cargada": {
+          "Y_o_D": 1.8575620890962732e-05,
+          "U": 6.542359880344091e-08,
+          "tres_U": 1.9627079641032274e-07,
+          "inferior": 1.837935009455241e-05,
+          "superior": 1.8771891687373055e-05,
+          "maximo_adicional_positivo": 1.8771891687373055e-05,
+          "limite_de_magnitud": 1.8771891687373055e-05,
+          "maximo_positivo_fraccion_stock": 0.10160007393217584,
+          "limite_magnitud_fraccion_stock": 0.10160007393217584,
+          "fraccion_stock": 0.10053778741581855,
+          "domina": "espacio",
+          "componentes": {
+            "espacio": 6.542359880344091e-08,
+            "tiempo": 9.673299825269186e-11,
+            "caja": 4.0657581468206416e-20,
+            "mitad_400_440": 2.0199362320315935e-10,
+            "mitad_440_480": 2.0199362319977122e-10,
+            "suma_cierres": 3.1554094808510275e-11,
+            "contraste_flujo_inventario": 2.6069444888400517e-11,
+            "antes_llegada": 0.0,
+            "piso": 1e-10,
+            "vacio_residual": 4.320752327358404e-09
+          },
+          "controles_por_replica": {
+            "espacial": {
+              "mitad_400_440": 1.5180478391934845e-10,
+              "mitad_440_480": 1.5180478391934845e-10,
+              "contraste_flujo_inventario": 2.6069444888400517e-11
+            },
+            "temporal": {
+              "mitad_400_440": 2.0026583616807904e-10,
+              "mitad_440_480": 2.002658361646909e-10,
+              "contraste_flujo_inventario": 2.0175857647986364e-11
+            },
+            "principal": {
+              "mitad_400_440": 2.0199362320315935e-10,
+              "mitad_440_480": 2.0199362319977122e-10,
+              "contraste_flujo_inventario": 1.7351571460037796e-11
+            },
+            "caja576": {
+              "mitad_400_440": 2.0199362316250177e-10,
+              "mitad_440_480": 2.019936231658899e-10,
+              "contraste_flujo_inventario": 1.7351571460037796e-11
+            }
+          },
+          "U_con_mitades_y_desacuerdo_solo_en_principal": 6.542359880344091e-08,
+          "por_inventario": 1.857562070881613e-05,
+          "valor_s480": 1.8575360885708183e-05,
+          "ventanas": {
+            "espacial": [
+              1.8510294025157544e-05,
+              1.8510142220373625e-05,
+              1.8510445829941464e-05
+            ],
+            "temporal": [
+              1.8575717623960985e-05,
+              1.8575517358124817e-05,
+              1.857591788979715e-05
+            ],
+            "principal": [
+              1.8575620890962732e-05,
+              1.857541889733953e-05,
+              1.8575822884585932e-05
+            ],
+            "caja576": [
+              1.8575620890962692e-05,
+              1.857541889733953e-05,
+              1.8575822884585858e-05
+            ]
+          }
+        },
+        "gemela": {
+          "Y_o_D": 1.8552486124692415e-05,
+          "U": 6.551555868909386e-08,
+          "tres_U": 1.9654667606728158e-07,
+          "inferior": 1.8355939448625134e-05,
+          "superior": 1.8749032800759697e-05,
+          "maximo_adicional_positivo": 1.8749032800759697e-05,
+          "limite_de_magnitud": 1.8749032800759697e-05,
+          "maximo_positivo_fraccion_stock": 0.10147635360560445,
+          "limite_magnitud_fraccion_stock": 0.10147635360560445,
+          "fraccion_stock": 0.10041257393160434,
+          "domina": "espacio",
+          "componentes": {
+            "espacio": 6.551555868909386e-08,
+            "tiempo": 9.699439115992974e-11,
+            "caja": 2.0328790734103208e-20,
+            "mitad_400_440": 7.148330118649925e-10,
+            "mitad_440_480": 7.148330118616044e-10,
+            "suma_cierres": 3.923335756187396e-11,
+            "contraste_flujo_inventario": 3.651249427452782e-11,
+            "antes_llegada": 0.0,
+            "piso": 1e-10,
+            "vacio_residual": 4.320752327358404e-09
+          },
+          "controles_por_replica": {
+            "espacial": {
+              "mitad_400_440": 7.148330118649925e-10,
+              "mitad_440_480": 7.148330118616044e-10,
+              "contraste_flujo_inventario": 2.047193368466668e-11
+            },
+            "temporal": {
+              "mitad_400_440": 7.090950255426065e-10,
+              "mitad_440_480": 7.090950255392184e-10,
+              "contraste_flujo_inventario": 3.3732308568986845e-11
+            },
+            "principal": {
+              "mitad_400_440": 7.108186810423495e-10,
+              "mitad_440_480": 7.108186810423495e-10,
+              "contraste_flujo_inventario": 3.651249427452782e-11
+            },
+            "caja576": {
+              "mitad_400_440": 7.108186810592901e-10,
+              "mitad_440_480": 7.108186810592901e-10,
+              "contraste_flujo_inventario": 3.651249427452782e-11
+            }
+          },
+          "U_con_mitades_y_desacuerdo_solo_en_principal": 6.551555868909386e-08,
+          "por_inventario": 1.8552516749537062e-05,
+          "valor_s480": 1.8553352825581793e-05,
+          "ventanas": {
+            "espacial": [
+              1.848706756039448e-05,
+              1.8486352727382617e-05,
+              1.8487782393406343e-05
+            ],
+            "temporal": [
+              1.8552583119083575e-05,
+              1.8551874024058033e-05,
+              1.8553292214109115e-05
+            ],
+            "principal": [
+              1.8552486124692415e-05,
+              1.8551775306011373e-05,
+              1.8553196943373458e-05
+            ],
+            "caja576": [
+              1.8552486124692436e-05,
+              1.8551775306011376e-05,
+              1.8553196943373495e-05
+            ]
+          }
+        },
+        "D": {
+          "Y_o_D": 2.313476627031715e-08,
+          "U": 5.630282279402012e-10,
+          "tres_U": 1.6890846838206036e-09,
+          "inferior": 2.1445681586496548e-08,
+          "superior": 2.4823850954137755e-08,
+          "maximo_adicional_positivo": 2.4823850954137755e-08,
+          "limite_de_magnitud": 2.4823850954137755e-08,
+          "maximo_positivo_fraccion_stock": 0.00013435540403837978,
+          "limite_magnitud_fraccion_stock": 0.00013435540403837978,
+          "fraccion_stock": 0.00012521348421421448,
+          "domina": "mitad_400_440",
+          "componentes": {
+            "espacio": 9.195988565246018e-11,
+            "tiempo": 2.6139290810807e-13,
+            "caja": 5.810778367062509e-20,
+            "mitad_400_440": 5.630282279402012e-10,
+            "mitad_440_480": 5.630282279402012e-10,
+            "suma_cierres": 7.078745237038423e-11,
+            "contraste_flujo_inventario": 5.155142977130095e-11,
+            "antes_llegada": 0.0,
+            "piso": 1e-10
+          },
+          "controles_por_replica": {
+            "espacial": {
+              "mitad_400_440": 5.630282279402012e-10,
+              "mitad_440_480": 5.630282279402012e-10,
+              "contraste_flujo_inventario": 1.4795984959968794e-11
+            },
+            "temporal": {
+              "mitad_400_440": 5.088291893756723e-10,
+              "mitad_440_480": 5.08829189375669e-10,
+              "contraste_flujo_inventario": 5.155142977130095e-11
+            },
+            "principal": {
+              "mitad_400_440": 5.08825057839971e-10,
+              "mitad_440_480": 5.088250578399743e-10,
+              "contraste_flujo_inventario": 4.571743732282446e-11
+            },
+            "caja576": {
+              "mitad_400_440": 5.088250578943531e-10,
+              "mitad_440_480": 5.088250578943531e-10,
+              "contraste_flujo_inventario": 4.571743732282446e-11
+            }
+          },
+          "U_con_mitades_y_desacuerdo_solo_en_principal": 5.088250578399743e-10,
+          "por_inventario": 2.3103959279069387e-08,
+          "valor_s480": 2.2008060126389148e-08,
+          "ventanas": {
+            "espacial": [
+              2.3226464763061504e-08,
+              2.3789492991001705e-08,
+              2.2663436535121302e-08
+            ],
+            "temporal": [
+              2.3134504877409043e-08,
+              2.3643334066784716e-08,
+              2.2625675688033374e-08
+            ],
+            "principal": [
+              2.313476627031715e-08,
+              2.3643591328157122e-08,
+              2.2625941212477177e-08
+            ],
+            "caja576": [
+              2.3134766270259044e-08,
+              2.3643591328153397e-08,
+              2.262594121236469e-08
+            ]
+          }
+        }
+      }
+    },
+    "60": {
+      "E": {
+        "cargada": {
+          "Y_o_D": 1.66724301138299e-05,
+          "U": 1.7150945009689056e-07,
+          "tres_U": 5.145283502906717e-07,
+          "inferior": 1.615790176353923e-05,
+          "superior": 1.7186958464120572e-05,
+          "maximo_adicional_positivo": 1.7186958464120572e-05,
+          "limite_de_magnitud": 1.7186958464120572e-05,
+          "maximo_positivo_fraccion_stock": 0.10327809044097651,
+          "limite_magnitud_fraccion_stock": 0.10327809044097651,
+          "fraccion_stock": 0.10018623997734151,
+          "domina": "contraste_flujo_inventario",
+          "componentes": {
+            "espacio": 5.83008427184756e-08,
+            "tiempo": 4.6744398723129205e-11,
+            "caja": 2.371692252312041e-20,
+            "mitad_400_440": 1.6684160454436052e-08,
+            "mitad_440_480": 1.6684160454436052e-08,
+            "suma_cierres": 4.286026677972825e-08,
+            "contraste_flujo_inventario": 1.7150945009689056e-07,
+            "antes_llegada": 0.0,
+            "piso": 1e-10,
+            "vacio_residual": 2.509504894603524e-08
+          },
+          "controles_por_replica": {
+            "espacial": {
+              "mitad_400_440": 1.6684160454436052e-08,
+              "mitad_440_480": 1.6684160454436052e-08,
+              "contraste_flujo_inventario": 1.7150945009689056e-07
+            },
+            "temporal": {
+              "mitad_400_440": 1.6610490759874652e-08,
+              "mitad_440_480": 1.6610490759874652e-08,
+              "contraste_flujo_inventario": 1.7136788925918578e-07
+            },
+            "principal": {
+              "mitad_400_440": 1.6600603022835737e-08,
+              "mitad_440_480": 1.6600603022825573e-08,
+              "contraste_flujo_inventario": 4.284590866300564e-08
+            },
+            "caja576": {
+              "mitad_400_440": 1.6600603022818796e-08,
+              "mitad_440_480": 1.660060302281202e-08,
+              "contraste_flujo_inventario": 4.284590866300564e-08
+            }
+          },
+          "U_con_mitades_y_desacuerdo_solo_en_principal": 5.83008427184756e-08,
+          "por_inventario": 1.667244119687439e-05,
+          "valor_s480": 1.669957093677729e-05,
+          "ventanas": {
+            "espacial": [
+              1.6614176015510148e-05,
+              1.659749185505571e-05,
+              1.6630860175964584e-05
+            ],
+            "temporal": [
+              1.6672476858228623e-05,
+              1.665586636746875e-05,
+              1.6689087348988498e-05
+            ],
+            "principal": [
+              1.66724301138299e-05,
+              1.6655829510807064e-05,
+              1.6689030716852726e-05
+            ],
+            "caja576": [
+              1.6672430113829924e-05,
+              1.6655829510807105e-05,
+              1.6689030716852736e-05
+            ]
+          }
+        },
+        "gemela": {
+          "Y_o_D": 1.668041742670884e-05,
+          "U": 1.7151582118284103e-07,
+          "tres_U": 5.145474635485231e-07,
+          "inferior": 1.6165869963160316e-05,
+          "superior": 1.7194964890257363e-05,
+          "maximo_adicional_positivo": 1.7194964890257363e-05,
+          "limite_de_magnitud": 1.7194964890257363e-05,
+          "maximo_positivo_fraccion_stock": 0.10332620182754852,
+          "limite_magnitud_fraccion_stock": 0.10332620182754852,
+          "fraccion_stock": 0.10023423651050435,
+          "domina": "contraste_flujo_inventario",
+          "componentes": {
+            "espacio": 5.899068356838872e-08,
+            "tiempo": 4.690425243095522e-11,
+            "caja": 5.421010862427522e-20,
+            "mitad_400_440": 6.2911267432227535e-09,
+            "mitad_440_480": 6.29112674322953e-09,
+            "suma_cierres": 4.287579020690769e-08,
+            "contraste_flujo_inventario": 1.7151582118284103e-07,
+            "antes_llegada": 0.0,
+            "piso": 1e-10,
+            "vacio_residual": 2.509504894603524e-08
+          },
+          "controles_por_replica": {
+            "espacial": {
+              "mitad_400_440": 6.2911267432227535e-09,
+              "mitad_440_480": 6.29112674322953e-09,
+              "contraste_flujo_inventario": 1.7151582118284103e-07
+            },
+            "temporal": {
+              "mitad_400_440": 6.279686739015547e-09,
+              "mitad_440_480": 6.279686739018935e-09,
+              "contraste_flujo_inventario": 1.7138170114484874e-07
+            },
+            "principal": {
+              "mitad_400_440": 6.2697972468498265e-09,
+              "mitad_440_480": 6.2697972468498265e-09,
+              "contraste_flujo_inventario": 4.283842741474586e-08
+            },
+            "caja576": {
+              "mitad_400_440": 6.2697972467990045e-09,
+              "mitad_440_480": 6.269797246795616e-09,
+              "contraste_flujo_inventario": 4.283842741474586e-08
+            }
+          },
+          "U_con_mitades_y_desacuerdo_solo_en_principal": 5.899068356838872e-08,
+          "por_inventario": 1.668045650831118e-05,
+          "valor_s480": 1.6689849414899287e-05,
+          "ventanas": {
+            "espacial": [
+              1.662147364739288e-05,
+              1.661518252064966e-05,
+              1.662776477413611e-05
+            ],
+            "temporal": [
+              1.668046433096127e-05,
+              1.6674184644222255e-05,
+              1.668674401770029e-05
+            ],
+            "principal": [
+              1.668041742670884e-05,
+              1.667414762946199e-05,
+              1.668668722395569e-05
+            ],
+            "caja576": [
+              1.6680417426708785e-05,
+              1.6674147629461986e-05,
+              1.668668722395558e-05
+            ]
+          }
+        },
+        "D": {
+          "Y_o_D": -7.987312878940358e-09,
+          "U": 8.573605698663594e-08,
+          "tres_U": 2.572081709599078e-07,
+          "inferior": -2.6519548383884817e-07,
+          "superior": 2.4922085808096745e-07,
+          "maximo_adicional_positivo": 2.4922085808096745e-07,
+          "limite_de_magnitud": 2.6519548383884817e-07,
+          "maximo_positivo_fraccion_stock": 0.0014975921641049333,
+          "limite_magnitud_fraccion_stock": 0.0015935852304306203,
+          "fraccion_stock": -4.799653316284361e-05,
+          "domina": "suma_cierres",
+          "componentes": {
+            "espacio": 6.898408499106153e-10,
+            "tiempo": 1.598537065339567e-13,
+            "caja": 7.89014499089831e-20,
+            "mitad_400_440": 1.0393033711208153e-08,
+            "mitad_440_480": 1.0393033711208153e-08,
+            "suma_cierres": 8.573605698663594e-08,
+            "contraste_flujo_inventario": 4.689994760284123e-11,
+            "antes_llegada": 0.0,
+            "piso": 1e-10
+          },
+          "controles_por_replica": {
+            "espacial": {
+              "mitad_400_440": 1.0393033711208153e-08,
+              "mitad_440_480": 1.0393033711208153e-08,
+              "contraste_flujo_inventario": 1.60988596450062e-11
+            },
+            "temporal": {
+              "mitad_400_440": 1.0330804020858829e-08,
+              "mitad_440_480": 1.033080402085883e-08,
+              "contraste_flujo_inventario": 4.689994760284123e-11
+            },
+            "principal": {
+              "mitad_400_440": 1.033080577598066e-08,
+              "mitad_440_480": 1.033080577598066e-08,
+              "contraste_flujo_inventario": 4.3897078246674104e-11
+            },
+            "caja576": {
+              "mitad_400_440": 1.0330805776021445e-08,
+              "mitad_440_480": 1.0330805776021443e-08,
+              "contraste_flujo_inventario": 4.3897078246674104e-11
+            }
+          },
+          "U_con_mitades_y_desacuerdo_solo_en_principal": 8.573605698663594e-08,
+          "por_inventario": -8.015311436793127e-09,
+          "valor_s480": 9.721521878003564e-09,
+          "ventanas": {
+            "espacial": [
+              -7.297631882736277e-09,
+              -1.769066559394443e-08,
+              3.0954018284718756e-09
+            ],
+            "temporal": [
+              -7.987472732646892e-09,
+              -1.831827675350572e-08,
+              2.343331288211937e-09
+            ],
+            "principal": [
+              -7.987312878940358e-09,
+              -1.8318118654921018e-08,
+              2.3434928970403004e-09
+            ],
+            "caja576": [
+              -7.987312878861457e-09,
+              -1.83181186548829e-08,
+              2.3434928971599865e-09
+            ]
+          }
+        }
+      },
+      "Q": {
+        "cargada": {
+          "Y_o_D": 1.8536673756886654e-05,
+          "U": 6.4863731506678e-08,
+          "tres_U": 1.94591194520034e-07,
+          "inferior": 1.834208256236662e-05,
+          "superior": 1.8731264951406688e-05,
+          "maximo_adicional_positivo": 1.8731264951406688e-05,
+          "limite_de_magnitud": 1.8731264951406688e-05,
+          "maximo_positivo_fraccion_stock": 0.10138018776158907,
+          "limite_magnitud_fraccion_stock": 0.10138018776158907,
+          "fraccion_stock": 0.10032699184084527,
+          "domina": "espacio",
+          "componentes": {
+            "espacio": 6.4863731506678e-08,
+            "tiempo": 8.979889525861386e-11,
+            "caja": 1.4907779871675686e-19,
+            "mitad_400_440": 1.2149484255793568e-08,
+            "mitad_440_480": 1.214948425579018e-08,
+            "suma_cierres": 3.0599186939890186e-11,
+            "contraste_flujo_inventario": 2.5982647748558265e-11,
+            "antes_llegada": 0.0,
+            "piso": 1e-10,
+            "vacio_residual": 2.2041992734380742e-08
+          },
+          "controles_por_replica": {
+            "espacial": {
+              "mitad_400_440": 1.2149484255793568e-08,
+              "mitad_440_480": 1.214948425579018e-08,
+              "contraste_flujo_inventario": 2.5982647748558265e-11
+            },
+            "temporal": {
+              "mitad_400_440": 1.2085931839270057e-08,
+              "mitad_440_480": 1.2085931839273445e-08,
+              "contraste_flujo_inventario": 2.0694387216769854e-11
+            },
+            "principal": {
+              "mitad_400_440": 1.207552486221178e-08,
+              "mitad_440_480": 1.207552486221178e-08,
+              "contraste_flujo_inventario": 1.6569265924581966e-11
+            },
+            "caja576": {
+              "mitad_400_440": 1.2075524862360858e-08,
+              "mitad_440_480": 1.207552486235747e-08,
+              "contraste_flujo_inventario": 1.6569265924581966e-11
+            }
+          },
+          "U_con_mitades_y_desacuerdo_solo_en_principal": 6.4863731506678e-08,
+          "por_inventario": 1.8536673485414214e-05,
+          "valor_s480": 1.855799870063485e-05,
+          "ventanas": {
+            "espacial": [
+              1.8471899824275234e-05,
+              1.845975034001944e-05,
+              1.8484049308531025e-05
+            ],
+            "temporal": [
+              1.8536763555781912e-05,
+              1.8524677623942642e-05,
+              1.8548849487621186e-05
+            ],
+            "principal": [
+              1.8536673756886654e-05,
+              1.8524598232024442e-05,
+              1.8548749281748866e-05
+            ],
+            "caja576": [
+              1.8536673756886803e-05,
+              1.8524598232024442e-05,
+              1.854874928174916e-05
+            ]
+          }
+        },
+        "gemela": {
+          "Y_o_D": 1.8542947853517208e-05,
+          "U": 6.553175985570588e-08,
+          "tres_U": 1.9659527956711765e-07,
+          "inferior": 1.834635257395009e-05,
+          "superior": 1.8739543133084326e-05,
+          "maximo_adicional_positivo": 1.8739543133084326e-05,
+          "limite_de_magnitud": 1.8739543133084326e-05,
+          "maximo_positivo_fraccion_stock": 0.10142499218963921,
+          "limite_magnitud_fraccion_stock": 0.10142499218963921,
+          "fraccion_stock": 0.10036094945641955,
+          "domina": "espacio",
+          "componentes": {
+            "espacio": 6.553175985570588e-08,
+            "tiempo": 8.998590569314993e-11,
+            "caja": 4.404571325722362e-20,
+            "mitad_400_440": 1.8462657524127336e-09,
+            "mitad_440_480": 1.8462657524127336e-09,
+            "suma_cierres": 3.8620695545686086e-11,
+            "contraste_flujo_inventario": 3.694578824597677e-11,
+            "antes_llegada": 0.0,
+            "piso": 1e-10,
+            "vacio_residual": 2.2041992734380742e-08
+          },
+          "controles_por_replica": {
+            "espacial": {
+              "mitad_400_440": 1.8462657524127336e-09,
+              "mitad_440_480": 1.8462657524127336e-09,
+              "contraste_flujo_inventario": 2.0570714368819878e-11
+            },
+            "temporal": {
+              "mitad_400_440": 1.8423946460929862e-09,
+              "mitad_440_480": 1.8423946460963743e-09,
+              "contraste_flujo_inventario": 3.357004788490407e-11
+            },
+            "principal": {
+              "mitad_400_440": 1.8319864381535354e-09,
+              "mitad_440_480": 1.8319864381569236e-09,
+              "contraste_flujo_inventario": 3.694578824597677e-11
+            },
+            "caja576": {
+              "mitad_400_440": 1.8319864381298185e-09,
+              "mitad_440_480": 1.8319864381264304e-09,
+              "contraste_flujo_inventario": 3.694578824597677e-11
+            }
+          },
+          "U_con_mitades_y_desacuerdo_solo_en_principal": 6.553175985570588e-08,
+          "por_inventario": 1.8542978497748664e-05,
+          "valor_s480": 1.854673062595467e-05,
+          "ventanas": {
+            "espacial": [
+              1.8477506079567196e-05,
+              1.8475659813814783e-05,
+              1.8479352345319608e-05
+            ],
+            "temporal": [
+              1.85430378394229e-05,
+              1.854119544477681e-05,
+              1.8544880234068998e-05
+            ],
+            "principal": [
+              1.8542947853517208e-05,
+              1.8541115867079055e-05,
+              1.8544779839955365e-05
+            ],
+            "caja576": [
+              1.8542947853517164e-05,
+              1.8541115867079034e-05,
+              1.854477983995529e-05
+            ]
+          }
+        },
+        "D": {
+          "Y_o_D": -6.274096630555676e-09,
+          "U": 1.0303218503378378e-08,
+          "tres_U": 3.090965551013513e-08,
+          "inferior": -3.718375214069081e-08,
+          "superior": 2.4635558879579455e-08,
+          "maximo_adicional_positivo": 2.4635558879579455e-08,
+          "limite_de_magnitud": 3.718375214069081e-08,
+          "maximo_positivo_fraccion_stock": 0.00013333630116827138,
+          "limite_magnitud_fraccion_stock": 0.00020125153231685645,
+          "fraccion_stock": -3.395761557429254e-05,
+          "domina": "mitad_400_440",
+          "componentes": {
+            "espacio": 6.680283490261219e-10,
+            "tiempo": 1.8701043423993406e-13,
+            "caja": 1.9322939109238726e-19,
+            "mitad_400_440": 1.0303218503378378e-08,
+            "mitad_440_480": 1.0303218503378378e-08,
+            "suma_cierres": 6.921988248557627e-11,
+            "contraste_flujo_inventario": 5.1648215310004476e-11,
+            "antes_llegada": 0.0,
+            "piso": 1e-10
+          },
+          "controles_por_replica": {
+            "espacial": {
+              "mitad_400_440": 1.0303218503378378e-08,
+              "mitad_440_480": 1.0303218503378378e-08,
+              "contraste_flujo_inventario": 1.4437197243228434e-11
+            },
+            "temporal": {
+              "mitad_400_440": 1.02435371931751e-08,
+              "mitad_440_480": 1.0243537193175102e-08,
+              "contraste_flujo_inventario": 5.1648215310004476e-11
+            },
+            "principal": {
+              "mitad_400_440": 1.0243538424055766e-08,
+              "mitad_440_480": 1.0243538424055766e-08,
+              "contraste_flujo_inventario": 4.5898519360210166e-11
+            },
+            "caja576": {
+              "mitad_400_440": 1.0243538424230149e-08,
+              "mitad_440_480": 1.0243538424230149e-08,
+              "contraste_flujo_inventario": 4.5898519360210166e-11
+            }
+          },
+          "U_con_mitades_y_desacuerdo_solo_en_principal": 1.0243538424055766e-08,
+          "por_inventario": -6.305012334451021e-09,
+          "valor_s480": 1.1268074680181243e-08,
+          "ventanas": {
+            "espacial": [
+              -5.606255291963794e-09,
+              -1.590947379534217e-08,
+              4.696963211414583e-09
+            ],
+            "temporal": [
+              -6.274283640989916e-09,
+              -1.6517820834165016e-08,
+              3.969253552185186e-09
+            ],
+            "principal": [
+              -6.274096630555676e-09,
+              -1.6517635054611442e-08,
+              3.969441793500091e-09
+            ],
+            "caja576": [
+              -6.274096630362447e-09,
+              -1.6517635054592596e-08,
+              3.969441793867703e-09
+            ]
+          }
+        }
+      }
+    }
+  },
+  "extension_560_640_requerida": false,
+  "extension_560_640_ejecutada": false,
+  "decisiones": {
+    "40": {
+      "cobertura_completa": true,
+      "extraccion_fondo": true,
+      "salida_atribuible_conjunta": false,
+      "atribuible_supera_uno_por_ciento": false,
+      "equivalencia_al_uno_por_ciento": true,
+      "conversion_positiva_por_preparacion": {
+        "cargada": true,
+        "gemela": true
+      }
+    },
+    "60": {
+      "cobertura_completa": true,
+      "extraccion_fondo": true,
+      "salida_atribuible_conjunta": false,
+      "atribuible_supera_uno_por_ciento": false,
+      "equivalencia_al_uno_por_ciento": true,
+      "conversion_positiva_por_preparacion": {
+        "cargada": true,
+        "gemela": true
+      }
+    }
+  },
+  "indicios_de_captura": false,
+  "recarga_habilitada": false
+}
