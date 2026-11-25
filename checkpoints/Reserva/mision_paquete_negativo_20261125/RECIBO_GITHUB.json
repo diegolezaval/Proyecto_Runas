@@ -1,0 +1,58 @@
+{
+  "repositorio": "diegolezaval/Proyecto_Runas",
+  "rama": "ciencia/cp12-p4-validacion",
+  "commit_cientifico_verificado": "b204070b063ff6292d1424d8a18493afa0048190",
+  "arbol_git": "b024a6348c1fd19edc963080f5a31075f6024529",
+  "fecha_verificacion_utc": "2026-11-25T12:44:11.074511+00:00",
+  "segundos_verificacion_tras_descarga": 7.339,
+  "metodo": "Clonación HTTPS nueva de GitHub sin almacén de objetos compartido y checkout por SHA. El ZIP se extrajo y probó en otro directorio.",
+  "archivos_con_sha256_cotejado_en_rama": 107,
+  "sha256_manifiesto_rama": "11d7e1a87136d240b6a908d322dd0e62b1c11becbd5a039c7a142413a2d9033c",
+  "capsula": {
+    "archivo": "Reserva_paquete_negativo_reproducible.zip",
+    "bytes": 9751735,
+    "sha256": "5ea032fd82efc4a0f823bdb79bbbee7666b2ad688b982e2b4e4f7425a5918f07",
+    "entradas_con_sha256_cotejado": 97,
+    "crc_correctos": true,
+    "reempaquetado_identico": true
+  },
+  "sha256_productos_recalculados_desde_git_y_zip": {
+    "BALANCES.json": "97490152e3f95e172f0015265b0a835a657810cf94c289d2e6a420c3a465e1b1",
+    "BANDAS.json": "ec246e162a5c4d9b14fd6f3e689295568bc5d5455f311ab3f161921547cd71bc",
+    "ESPECTRO.csv": "18b364d1e16fcc4ee8f54877f598969d9d0cc77da77b2ce416b91c0bb9b8b1e6",
+    "RESULTADO.json": "3594dfbc660363921f41676ce9f535a80680652e71b931d19cdd9bbcee9603dc",
+    "flujos_y_saldos.svg": "c40033b761973f4886d7dc051f548e0146228d85805f67f7c3f6314cf8530d55",
+    "bandas_direccionales.svg": "bf0cb35f56e8603e516f8b3956465f181b552f196594dbdfdff4620ce46ff1d2"
+  },
+  "lectura_independiente_desde_git": {
+    "series_y_sondas_cotejadas": 50,
+    "medias_independientes": 144,
+    "sensibilidades_reconstruidas": 12,
+    "flujos_de_banda_reconstruidos_por_DFT": 576,
+    "controles_de_cobertura_verificados": 80,
+    "criterios_de_conversion_verificados": 8,
+    "estados_finales_remedidos": 25,
+    "max_abs_inventarios_independientes": 1.3642420526593924e-12,
+    "sha256": {
+      "RESULTADO.json": "3594dfbc660363921f41676ce9f535a80680652e71b931d19cdd9bbcee9603dc",
+      "BALANCES.json": "97490152e3f95e172f0015265b0a835a657810cf94c289d2e6a420c3a465e1b1",
+      "BANDAS.json": "ec246e162a5c4d9b14fd6f3e689295568bc5d5455f311ab3f161921547cd71bc",
+      "ESPECTRO.csv": "18b364d1e16fcc4ee8f54877f598969d9d0cc77da77b2ce416b91c0bb9b8b1e6"
+    }
+  },
+  "prueba_de_arranque_desde_zip": {
+    "replica": "archivo416",
+    "caso": "gemela_con",
+    "pasos": 2000,
+    "sondas_de_s0_a_s1": 5,
+    "inventarios_y_flujos_en_s1": "idénticos a las series",
+    "diseno_espectral_regenerado": "SHA-256 idéntico"
+  },
+  "sha256_recibo_repeticion_completa": "c6714523fc9a4456d498323f9750e34063ab17ea7f05ab9f586c0c4ff25ed41a",
+  "versiones": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "compilador": "cc (Debian 14.2.0-19) 14.2.0"
+  }
+}
