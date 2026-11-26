@@ -1,0 +1,13 @@
+{
+  "protocolo": "031b2b853648ca8b49f23fd736078b0d6e2dee3d",
+  "resultado": "e3177792c78283b49e44665e814622534af95740",
+  "recuperacion": "Clonación limpia desde GitHub en directorio independiente. La ejecución de auditar.py verificó las diez huellas de entrada y los controles. resultado.json idéntico byte a byte al publicado. CSV regenerado con la misma huella que en la ejecución original.",
+  "sha256": {
+    "resultado.json": "156e2e452cf267abba69242a6be766db11ee0a1638e53c2310e5f59e0382bda9",
+    "series_auditadas.csv": "d4774fbd884445e2b4dace7e63eb10914b011b81af1f03ab814d23d01cddc372"
+  },
+  "filas_datos": 34632,
+  "control_independiente": "Las 48 medias diferenciales de flujo en las caras se reconstruyeron con csv y math.fsum a tolerancia relativa 1e-12.",
+  "versiones": "Python 3.12.14, NumPy 2.3.5",
+  "decision": "Vía pasiva cerrada para esta preparación y ventana. Paso 3 pendiente de una nueva hipótesis de descarga controlada."
+}
