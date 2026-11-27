@@ -48,7 +48,7 @@ class Core:
                     no_lineal=nl,prescrita=F,dq=qdot,cinematica=row["pos"],velocidad=row["vel"])
 
 
-def solve(step,march,table,adj=None,observe=None):
+def solve(step,march,table,adj=None,observe=None,core_model=None):
     V,S,s,rate=d.floor_operator()
     shapes,rates=d.geometry()
     ext=d.loc.i40
@@ -61,7 +61,7 @@ def solve(step,march,table,adj=None,observe=None):
     prior=json.loads((d.HERE/"resultado.json").read_text())
     assert abs(control-prior["control_lineal_40"])<1e-16
     state=d.Comparison("firmado",shapes,rates,s,rate)
-    kernel=Core()
+    kernel=Core() if core_model is None else core_model
     ladder=np.array(d.columnas.dense)
     entry=np.zeros(5)
     log=[]
@@ -94,6 +94,8 @@ def solve(step,march,table,adj=None,observe=None):
             candidate.rows=state.rows.copy()
             candidate.advance(best,physical,row,adj,linear,rem,jump,op)
             current=candidate.rows[-1]
+            if core_model is not None:
+                kernel.prepare(signed,rad,row["t"],radius)
             cr=kernel.trial(np.array(current["volumen"]),np.array(current["energia"]),
                             physical,parallel,row,F)
             pt=np.array(current["punto"]);pt[0]=min(pt[0],cr["punto"])
