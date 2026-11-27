@@ -24,7 +24,7 @@ def spectral(a):
     return np.linalg.svd(a,compute_uv=False)[:,0]
 
 
-def compute():
+def compute(return_static=False):
     K=ex.stiffness()
     eye_n=eye(n)
     O=bmat([[None,2*ex.o.om*eye_n,None],[-2*ex.o.om*eye_n,None,None],
@@ -52,6 +52,10 @@ def compute():
     x=L.copy();v=np.zeros_like(L);zero=size(L-x)
     assert max(zero.ravel())==0
     previous=zero
+    if return_static:
+        shifted=np.zeros_like(envelope)
+        static=size(L)
+        previous_static=static
     drift=0.
     for j in range(1280):
         a,b=x,v
@@ -66,6 +70,11 @@ def compute():
         midpoint=size(L-mid);endpoint=size(L-X)
         bound=np.maximum(np.maximum(previous,midpoint),endpoint)+(ev*limit+interp)[:,None]
         envelope[j//4]=np.maximum(envelope[j//4],bound)
+        if return_static:
+            u,vv=size(mid),size(X)
+            bound_static=np.maximum(np.maximum(previous_static,u),vv)+(ev*limit+interp)[:,None]
+            shifted[j//4]=np.maximum(shifted[j//4],bound_static)
+            previous_static=vv
         x,v,previous=X,V,endpoint
         if j==3: sample=x.copy()
         if j%64==63:
@@ -86,23 +95,33 @@ def compute():
     forcing=csc_matrix(np.column_stack([bfield[:,0],np.zeros(6*n)]))
     aug=bmat([[G,forcing],[None,aux]],format="csr")
     direct=expm_multiply(t*aug,np.r_[np.zeros(6*n+1),1.],traceA=0.)[:3*n]
-    def gauss(nodes):
+    def gauss(nodes,subtract=False):
         acc=np.zeros(3*n)
         for node,weight in zip(*np.polynomial.legendre.leggauss(nodes)):
             s=t*(node+1)/2
             u=expm_multiply((t-s)*G,stack@p,traceA=0.)[:3*n]
-            acc+=t/2*weight*np.cos(s)*(L@p-u)
+            acc+=t/2*weight*np.cos(s)*(-u if subtract else L@p-u)
         return acc
     a=gauss(8);b=gauss(16)
     err=np.linalg.norm(b-direct)/np.linalg.norm(direct)
     assert err<1e-9 and rel<1e-10
-    return np.maximum(envelope,np.concatenate([envelope[:1],envelope[:-1]])),ev,dict(
+    info=dict(
         H0=0.,resto_rel_paso=trunc,resto_energia=limit,residuo_L=residue,
         interpolacion_max=max(interp),deriva_gram=drift,exponencial_rel=rel,
         forzado_rel=err,cuadraturas_rel=np.linalg.norm(a-b)/np.linalg.norm(b))
 
 
-def assess(record,kernel,ev,table):
+    full=np.maximum(envelope,np.concatenate([envelope[:1],envelope[:-1]]))
+    if return_static:
+        direct_static=L@p*np.sin(t)+gauss(16,True)
+        info["forzado_con_constante_rel"]=np.linalg.norm(direct_static-direct)/np.linalg.norm(direct)
+        assert info["forzado_con_constante_rel"]<1e-9
+        shifted=np.maximum(shifted,np.concatenate([shifted[:1],shifted[:-1]]))
+        return full,ev,info,(shifted,static+(ev*residue)[:,None])
+    return full,ev,info
+
+
+def assess(record,kernel,ev,table,with_static=None):
     forces=np.array(record["fuentes"])
     dz=np.array([row["dz"] for row in record["filas"]])
     gamma=ex.moving_budget()["gamma"]
@@ -113,6 +132,11 @@ def assess(record,kernel,ev,table):
     for j,r in enumerate(table):
         nobs=j+1
         boundary=.125*np.einsum("lij,l->ij",kernel[:nobs],dz[j::-1])
+        if with_static is not None:
+            shifted,static=with_static
+            dynamic=.125*np.einsum("lij,l->ij",shifted[:nobs],dz[j::-1])
+            terminal=static*record["filas"][j]["z"]
+            boundary=np.minimum(boundary,dynamic+terminal)
         # Cell conversion on interior faces of the corona. The inner Dirichlet
         # neighbor has prescribed zero for the independent volume problem.
         s=np.arange(nobs)/8
@@ -134,6 +158,8 @@ def assess(record,kernel,ev,table):
             limiting=dict(t=nobs/8,r=ex.r[i],total=total[i,0],borde=boundary[i,0],
                           prescrita=ev[i]*epres,no_lineal_exterior=ev[i]*enon,
                           numerica=ev[i]*enum)
+            if with_static is not None:
+                limiting.update(dinamica=dynamic[i,0],constante=terminal[i,0])
         rows.append([nobs/8,max(boundary[:,0]),max(boundary[:,1]),max(volume),
                      max(total[:,0]),max(total[:,1])])
     return dict(prefijo=record["prefijo"],maximos_por_celda=np.column_stack([ex.r[:nc],all_cells]).tolist(),
