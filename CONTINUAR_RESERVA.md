@@ -22,6 +22,10 @@ Se evaluó la corrección tangente de poblaciones y fases en los dos núcleos y 
 
 La corrección estática inducida reduce la fuerza adicional en Φ al 0,483–0,530 % de la inicial en los 36 casos de la malla fina. El defecto dinámico instantáneo del seguimiento es pequeño bajo las trayectorias aisladas, pero el montaje archivado parte de desplazamiento y velocidad añadidos nulos. Los valores de energía de preparación no miden entrega. El siguiente cálculo del mismo contacto es acotar el transitorio de arranque con la energía del operador H congelado y su hueco de masa, evaluar su efecto en Φ y precisar el error por fuente variable. El piloto sigue sin habilitarse. [Método, presupuestos y controles](checkpoints/Reserva/respuesta_chi_contacto_20261126/README.md)
 
+## Contacto interno · cota del transitorio congelado
+
+En los 108 estados archivados se acotó el máximo del integral firmado del desajuste homogéneo de χ en L² por 2,136 × 10⁻⁷, frente a 5,012 × 10⁻³ para la cota sin cancelación (T=240). No mide energía ni carga entregada. El piloto sigue sin habilitarse. La siguiente puerta del mismo frente es decidir si puede acotarse el término por fuente y operador variables con una trayectoria de referencia con cobertura temporal, y comprobar que la retroacción en Φ y los balances por núcleo sean identificables antes de cualquier piloto. Si faltan datos suficientes, dejar constancia y no inferir entrega del cálculo congelado. [Método y cotas](checkpoints/Reserva/transitorio_chi_contacto_20261126/README.md)
+
 ## Orden ejecutada · auditoría pasiva del paso 3
 
 Base revisada `4cfcca381666ad885a6f75d6c678482b0e5ae203`. Usar las trayectorias existentes. Las medias principales ya son públicas. En s = 400…480, la disminución neta del inventario diferencial de la corona equivale al 83,12 % del flujo diferencial de energía por r60 y al 82,74 % del de carga. Esta identidad contable deja abierta la procedencia de lo que cruzó la esfera exterior. [Balances de partida](checkpoints/Reserva/mision_paquete_negativo_20261125/BALANCES.json)

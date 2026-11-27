@@ -1,0 +1,25 @@
+{
+  "M": 100.0,
+  "controles_modo_escalar": 72,
+  "maximos": {
+    "amplitud_L2": 2.088162295976295e-05,
+    "energia_inicial": 2.1802108871684953e-06,
+    "integral_cuadratica_L1": 1.046501225840878e-07,
+    "integral_firmada_extremos_L2": 2.1359374779356977e-07,
+    "integral_firmada_mejor_L2": 2.1359374779356977e-07,
+    "integral_firmada_propagadores_L2": 2.1789990370873404e-07,
+    "integral_norma_L2": 0.0050115895103431075
+  },
+  "maximos_malla_fina": {
+    "amplitud_L2": 2.086973734308885e-05,
+    "energia_inicial": 2.177729683847586e-06,
+    "integral_cuadratica_L1": 1.0453102482468415e-07,
+    "integral_firmada_extremos_L2": 2.134721944444481e-07,
+    "integral_firmada_mejor_L2": 2.134721944444481e-07,
+    "integral_firmada_propagadores_L2": 2.1777539171401377e-07,
+    "integral_norma_L2": 0.005008736962341324
+  },
+  "sha256_fuente": "f97298cadedbe199e994ded5af3dea535adabf878d3a54d772533b4795ab3701",
+  "sha256_resultado_completo": "b53be6f2a6b25b0eede8b67073063fbd083660b8004bb0618a1f813925de7a54",
+  "ventana_referencia": 240.0
+}
