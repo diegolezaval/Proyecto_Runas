@@ -1,0 +1,20 @@
+{
+  "protocolo": "dcb45c270c57ed1c40b9e71a819916dbd34af737",
+  "codigo": "e31af2ccb80b7d1e806facb4b9b4c267ee1e42e2",
+  "resultado": "27e58b115fc404d36da373c41faa27d39f04dbf9",
+  "metodo": "Clon independiente, checkout limpio del código publicado, ejecución secuencial de contraer.py y escalon.py con OPENBLAS_NUM_THREADS=1. Recuperación posterior del commit de resultado y comparación de ambos blobs completos con cmp; salidas cero.",
+  "sha256": {
+    "contraccion": "77263cbc495693007f2d73110e77e7ca1d37f4c72756d3a6be396a99b970fdc3",
+    "escalon": "395e1ea93a4808463df34b580993631f44d110059de0844b872b15b098966ab0"
+  },
+  "historias": [
+    13.875,
+    14.625
+  ],
+  "observacion": 40,
+  "corona_canonica": [
+    0.00004523960516997023,
+    0.00021468944899572263
+  ],
+  "decision": "Solo la primera historia parcial cabe en el tubo de la corona con este mapa. El volumen completo sigue certificado hasta 14,625."
+}
