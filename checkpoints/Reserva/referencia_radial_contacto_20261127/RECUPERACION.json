@@ -1,0 +1,23 @@
+{
+  "base": "4cf83ee4c6bc550ee1b1fc40834f7eedb7b980b5",
+  "resultado": "64441f057d47c1bf8b99c575dae0c51510b6b2a4",
+  "procedencia": "Clon nuevo de la rama científica en GitHub, checkout del commit de resultado. Insumos primarios, código y tablas recuperados del remoto.",
+  "comandos": [
+    "OPENBLAS_NUM_THREADS=1 python3 medir.py",
+    "OPENBLAS_NUM_THREADS=1 python3 verificar.py",
+    "git diff --exit-code -- ."
+  ],
+  "diferencias_en_resultados_versionados": 0,
+  "huellas_sha256": {
+    "resultado.json": "2ab9233ebfc857c7a89e7024a92eb26fb46f07ff6324a25197f0d62b4a751d9a",
+    "series.csv": "eabaeb5b46cdc3a2e90b674666fbfcf77fe232090ac241d20fa75158cdc5f6e1",
+    "series.csv.gz": "f9b9d036acce876b57552ab49ec5a65ffe2a693052fb62ec5926592b4887fb19"
+  },
+  "filas": 1288,
+  "comparaciones_independientes": 164,
+  "razones_error_expm": [
+    4.005417674814646,
+    4.001350889560416
+  ],
+  "control_reversibilidad": "aprobado"
+}
