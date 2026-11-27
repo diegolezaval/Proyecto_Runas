@@ -1,0 +1,19 @@
+{
+  "resultado": "078291c763b2cb335500d4e3a55aee11bdceefc1",
+  "protocolo": "762fd3873f0b7eb8ad15b255d463375c8223ddd3",
+  "protocolo_trazas": "bebc42c8499fd07ccad4ef5d2b1979592b3ab3f2",
+  "anterior": "760c148264abfc34e0bed43ec729fc52754bbfdf",
+  "metodo": "Clon nuevo del remoto, checkout del SHA de resultado, estado limpio antes de ejecutar y comparación con el blob publicado después. OPENBLAS_NUM_THREADS=1 python3 checkpoints/Reserva/interfaz_cargada_20261127/interfaz.py y git diff --exit-code HEAD -- checkpoints/Reserva/interfaz_cargada_20261127/resultado.json.",
+  "salida": 0,
+  "sha256": {
+    "metodo": "b1ce443358e5a7445424125ea9201ab75c3a3d6fcf30ee09640b851f29e09de8",
+    "resultado": "8ee6a0595f8fad4727d932b219e26573366cdb0424ec7adeeab960428eb76196",
+    "bandas": "ac7457f6a29b81573820a12c4049d20d112e877273fc95a615fb4ee96857fa29"
+  },
+  "comprobaciones": [
+    "identidad del levantamiento y trabajo",
+    "energía independiente por caras y potencial",
+    "márgenes de la desigualdad móvil y contraejemplo local",
+    "320 intervalos de la cargada, fuentes por banda y dos presupuestos de traza"
+  ]
+}
