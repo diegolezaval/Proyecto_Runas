@@ -1,0 +1,24 @@
+{
+  "base": "785bfc170227b1c3d508ee16277835a93ad6e8d0",
+  "protocolos": [
+    "fb48a3169fded0f20e9ec8f087f8cebca07367b3",
+    "5eee2fdbf18cfb9e3d7e0cf55e0be0dd60fb1b21"
+  ],
+  "resultado": "10b84ecdb7a297ed44d3d4499855780f7d959833",
+  "recuperacion": "Clon nuevo desde GitHub, checkout del commit de resultado. Reejecución sobre los datos primarios de la rama. JSON idéntico y comparación byte a byte del CSV regenerado contra el CSV comprimido publicado.",
+  "comandos": [
+    "OPENBLAS_NUM_THREADS=1 python3 energia.py",
+    "OPENBLAS_NUM_THREADS=1 python3 verificar.py",
+    "git diff --exit-code -- resultado.json",
+    "gzip -dc envolventes.csv.gz | cmp - envolventes.csv"
+  ],
+  "filas": 960,
+  "normas_independientes": [
+    0.4921762814451482,
+    0.49217628144514686
+  ],
+  "sha256": {
+    "resultado.json": "39307544cb9c7ffbea05c0b43aeae31eedbc3bb2b4540cb15142eec53921ab30",
+    "envolventes.csv": "53d97cae7866082349638d5a25ea07f8b90d52c1e24bf5077dfe2b8a15ff7d13"
+  }
+}
