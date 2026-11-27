@@ -1,0 +1,23 @@
+{
+  "base": "7703c7bb0b3f6f5f008f20e8d633bce869e35a25",
+  "protocolos": [
+    "199944340e488c600542ebbcf6e63c5ee8a4a0d8",
+    "93949b2b32584721c099d519a0bc202b4c444665"
+  ],
+  "resultado": "781b28b53db1955d57e950270997ccd2e37ee3e5",
+  "procedencia": "Clon independiente de GitHub y checkout del commit de resultado. Insumos, scripts y resultados recuperados del remoto.",
+  "comandos": [
+    "OPENBLAS_NUM_THREADS=1 python3 auditar.py",
+    "OPENBLAS_NUM_THREADS=1 python3 traza.py",
+    "git diff --exit-code -- resultado.json traza.json",
+    "gzip -cd bandas.csv.gz | cmp - bandas.csv"
+  ],
+  "salida": 0,
+  "intervalos": 960,
+  "controles": "Reconstrucción de las 960 envolventes ponderadas previas, carga FV, traza saturada y combinación cuadrática de las bandas en cada intervalo.",
+  "sha256": {
+    "resultado.json": "eec7197988f5c2cd8db376c891c4ee0d619ae47e53a3b277eacad829761f6d82",
+    "traza.json": "a5ca2ad7dc3809ab321471cbefa1deec79e6af156b38a9293adcbc0b7902b2ba",
+    "bandas.csv": "ab3517b3a8cd53bbb02a23dd36dbb43b531cd3bfa592419013eec0bd5277b3bf"
+  }
+}
