@@ -1,0 +1,17 @@
+{
+  "protocolo": "8a4edf8947ad325a7d058e7bea2e4135e9421ea4",
+  "resultado": "8b98cfa69015716f300398475281337f1b612999",
+  "procedencia": "Clon nuevo de la rama en GitHub; checkout del resultado y regeneración local a partir de los insumos publicados.",
+  "comandos": [
+    "OPENBLAS_NUM_THREADS=1 python3 medir.py",
+    "git diff --exit-code -- resultado.json",
+    "gzip -cd envolventes.csv.gz | cmp - envolventes.csv"
+  ],
+  "salida": 0,
+  "intervalos": 960,
+  "contraste": "Verificación adicional de las mallas temporales e integrales acumuladas desde las filas del CSV.",
+  "sha256": {
+    "resultado.json": "f526799c9f0d26afc78e2318ff165f099e56e5465422e2e359d0f72dc714d014",
+    "envolventes.csv": "025c388a5e6b920bbf6d887bdaeeb7a7a25a2bc37e942626eca294f3a66b9f37"
+  }
+}
