@@ -1,0 +1,18 @@
+{
+  "base": "113b0715c24f23a1191ab9fd019993f7ff4ad911",
+  "protocolos": [
+    "110ac3ede6408304ccdadf23c618d060cb1eb641",
+    "b0ea8403274900a72c91f427b257efbfba57c53c"
+  ],
+  "codigo_propagacion": "cc80793fb62525727c5eec5310af7fe67bd3a7eb",
+  "resultado": "7c992b14df9fd7a25f093fe76fc7f3ba42bb931e",
+  "recuperacion": "Clon independiente del código y los insumos publicados; regeneración de medir_correccion.py y verificar.py con OPENBLAS_NUM_THREADS=1. Se recuperó presupuesto.py del commit de resultado para regenerar presupuesto.json. Se compararon byte a byte los tres JSON y la serie regenerada con los blobs del commit de resultado (CSV descomprimido). El código de propagación y los datos primarios coinciden entre el commit de código y el de resultado.",
+  "filas": 960,
+  "comparacion": "cmp: 0 en las cuatro comparaciones",
+  "sha256": {
+    "series.csv": "43fa00ee07f717ecf33bee13d085b1921992f48bc5c22c61afc082c7cfa367de",
+    "resultado.json": "89b43e16f6cb3a9c2d2f2bb9f4a2b5b112a82446338f4b2202fe0b8bfbde042e",
+    "control_interior.json": "651daf4533053368aedd15a4dd568c15ba669ceb6f3f373c86b26558a8513ee1",
+    "presupuesto.json": "4c1879085a54fb68d1c15efa3ca01fe6caecb4bfa5063b4dd1e92660a3643fe7"
+  }
+}
