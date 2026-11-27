@@ -1,0 +1,5 @@
+# Contraste adicional registrado antes de medir las trazas
+
+Usar los extremos D, q y fase del sistema físico lineal en los 320 intervalos publicados de la cargada. Su comparación positiva y no decreciente desde cero cubre el interior del intervalo. El límite solo cubre la parte lineal prescrita de la primera referencia corregida. Conservar las dos rutas completas, incluso si ambas pierden resolución.
+
+En el centro anterior a r40 usar el telescopaje hasta la pared y la menor curvatura local de toda la malla para pasar de D a desplazamiento transversal. Restituir κq y uβ en ese centro. Para z′ usar la velocidad transversal acotada por D, su componente de fase paralela u[(1−2ωvᵀκ)q−2ωvᵀX] y el defecto de posición del intervalo. Aplicar la conversión de volumen a la velocidad en ese centro. Propagar ambas trazas con la desigualdad móvil ya registrada y restituir Lz al extremo de la ruta levantada. Registrar integrales con y sin propagación, sin omitir la condición inicial. Separar estas cotas de la fuente exterior y de la realimentación no lineal. Contrastar con la norma del Hessiano y la resistencia FV publicadas.
