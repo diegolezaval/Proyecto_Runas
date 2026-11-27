@@ -48,11 +48,12 @@ class Core:
                     no_lineal=nl,prescrita=F,dq=qdot,cinematica=row["pos"],velocidad=row["vel"])
 
 
-def solve(step,march,table):
+def solve(step,march,table,adj=None,observe=None):
     V,S,s,rate=d.floor_operator()
     shapes,rates=d.geometry()
     ext=d.loc.i40
-    adj=d.trace_kernels()
+    if adj is None:
+        adj=d.trace_kernels()
     base=np.array([[r[k] for k in ("ajustada0","ajustada1","ajustada2","pos","vel")] for r in table])
     linear=np.array([d.h*np.einsum("lij,li->j",adj[:j+1],base[j::-1]) for j in range(320)])
     linear[:,1]+=base[:,3]/d.o.sw[ext-1]
@@ -99,6 +100,8 @@ def solve(step,march,table):
             need=np.maximum(entry,pt)
             ok=np.all(need<=radius)
             if ok or np.all(radius==d.tube):
+                if observe is not None:
+                    observe(physical*np.array(current["volumen"]))
                 log.append(dict(t=row["t"],aceptado=bool(ok),punto=pt.tolist(),radios=radius.tolist(),
                       previo_nucleo=current["punto"][0],nucleo=cr,fila=current["fila"],
                       dz=current["dz_total"],z=current["z_total"],q_completa=current["q"],
@@ -118,7 +121,7 @@ def solve(step,march,table):
                 integral_dz_con_peso_a_40=d.h*sum(np.exp(.051*(40-r["t"]+d.h))*r["dz"] for r in good),filas=log)
 
 
-def main():
+def main(solver=solve,output=HERE/"continuacion.json"):
     with gzip.open(d.p.HERE/"bandas.csv.gz","rt") as stream:
         table=[{k:float(v) for k,v in r.items() if k!="caso"}
                for r in csv.DictReader(stream) if r["caso"]=="gota_a010"]
@@ -136,8 +139,8 @@ def main():
         step.argtypes=[ci,ci,cd,cd]+[ptr]*3
         march.argtypes=[ci,ci,ci,cd,cd]+[ptr]*8
         step.restype=march.restype=None
-        data=solve(step,march,table)
-    (HERE/"continuacion.json").write_text(json.dumps(data,separators=(",",":"),allow_nan=False)+"\n")
+        data=solver(step,march,table)
+    output.write_text(json.dumps(data,separators=(",",":"),allow_nan=False)+"\n")
 
 
 if __name__=="__main__":
