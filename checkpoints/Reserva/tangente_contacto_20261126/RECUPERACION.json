@@ -1,0 +1,12 @@
+{
+  "protocolo": "738ce937f0e0b9443c094afb3f2bb495cda26cd8",
+  "resultado": "2b46c5b629eeeff7ff5b780bb193d23d8ca11be9",
+  "fecha_local": "2026-11-26",
+  "metodo": "Clonación limpia con git, recuperación de los archivos en el commit de resultados, recálculo con OPENBLAS_NUM_THREADS=1 y verificación de resultado.json byte a byte frente a Git. Se ejecutó verificar.py en la copia limpia.",
+  "sha256_resultado": "f1e3ecae7dbd781ac76edb1166c03e212545803a765f591f362986ccd022bcc2",
+  "casos": 36,
+  "cuadraturas_por_caso": 2,
+  "pares_de_corrientes_contraste_previo": 12,
+  "rango_resuelto_por_caso": 2,
+  "decision": "El modelo de dos poblaciones y dos fases falla los balances. Piloto sin habilitar. Siguiente contraste estático del mediador en el mismo contacto."
+}
