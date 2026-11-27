@@ -1,0 +1,52 @@
+{
+  "controles": {
+    "E40": {
+      "max_error": 1.2898908607894555e-08,
+      "s_max": 40,
+      "error_en_umbrales": 0.007751078545911491,
+      "cambio_dt_ref": 2.8035174182150513e-09,
+      "cambio_dt_preparacion": 1.3633325579576194e-09,
+      "ref_s40": 7.294879651453812e-07,
+      "archivo_s40": 7.165890565374866e-07,
+      "integral_firma_residuo_T40": -1.3260365496691628e-08
+    },
+    "Q40": {
+      "max_error": 1.4360011846292764e-08,
+      "s_max": 40,
+      "error_en_umbrales": 0.007772142997794355,
+      "cambio_dt_ref": 3.1141098588705063e-09,
+      "cambio_dt_preparacion": 1.3392309483606368e-09,
+      "ref_s40": 7.159915185184218e-07,
+      "archivo_s40": 7.01631506672129e-07,
+      "integral_firma_residuo_T40": -1.4733844209780934e-08
+    },
+    "E60": {
+      "max_error": 1.1949396139243618e-08,
+      "s_max": 40,
+      "error_en_umbrales": 0.007180507348877711,
+      "cambio_dt_ref": 2.801243681460619e-09,
+      "cambio_dt_preparacion": 6.252776074688882e-10,
+      "ref_s40": 3.5451330404612236e-06,
+      "archivo_s40": 3.53318364432198e-06,
+      "integral_firma_residuo_T40": -1.3261205015736729e-08
+    },
+    "Q60": {
+      "max_error": 1.3666976883541793e-08,
+      "s_max": 40,
+      "error_en_umbrales": 0.007397048123874582,
+      "cambio_dt_ref": 3.112745616817847e-09,
+      "cambio_dt_preparacion": 6.803020369261503e-10,
+      "ref_s40": 3.369561909494223e-06,
+      "archivo_s40": 3.3558949326106813e-06,
+      "integral_firma_residuo_T40": -1.4733844199908919e-08
+    }
+  },
+  "coeficiente_norma_vacio": 1500.0334805032514,
+  "log10_factor_energia_s40": 13029.125265053823,
+  "max_defecto_estacionario": [
+    4.09965997541506e-06,
+    8.198730938602239e-07
+  ],
+  "sha256_perfil": "9037fb7f1fa691fe5d8712efee3092d26cc2303b95853694cb7a2539ec1f5574",
+  "sha256_series": "eabaeb5b46cdc3a2e90b674666fbfcf77fe232090ac241d20fa75158cdc5f6e1"
+}
