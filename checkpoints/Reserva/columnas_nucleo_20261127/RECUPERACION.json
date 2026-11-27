@@ -1,0 +1,10 @@
+{
+  "protocolo": "0f1994507ddf837cbbc218340aec11a09e03e34d",
+  "codigo": "6b6b5f9fe3d6772b2d8db641e0317455640d302a",
+  "resultado": "d0ae850f50dec720ab0ac0c8d0d36e3d54cf8dbe",
+  "metodo": "Clon independiente, checkout limpio del código de la rama científica y ejecución de medir_columnas.py con OPENBLAS_NUM_THREADS=1. Se recuperó el blob del commit de resultado y se comparó por cmp con el fichero regenerado. Ambas salidas fueron cero.",
+  "sha256": "2a226ebe16d059e17783dd8a0e022accf7085712756c891d485bbe0ee5dbb042",
+  "cota_previa": 0.00012006200867352429,
+  "cota_con_columnas": 0.00012006200867352429,
+  "decision": "No repetir la nueva continuación desde cero con estas columnas; no mejora a igual estado entrante. La reejecución del control reproduce todas las filas publicadas."
+}
