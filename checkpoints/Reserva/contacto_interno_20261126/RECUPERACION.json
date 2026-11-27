@@ -1,0 +1,14 @@
+{
+  "protocolo": "b2fe0c56c92dd8de0ea97dfe867600e8291ee9b5",
+  "calculo_recuperado": "d9d5dfb9a4ee1805d555fdbedf6cbf98eb1160b1",
+  "informe_corregido": "9016b4d71e8fa635cda1028791842437d315069a",
+  "recuperacion": "Clonación nueva desde GitHub; ejecución de medir.py, comparación byte a byte del CSV y JSON contra Git. Revisión de las 144 filas resonantes: inventario impar constante y flujo acumulado igual a corriente impar inicial por T.",
+  "filas_csv": 288,
+  "contrastes": 36,
+  "sha256": {
+    "medidas.csv": "dde09ecdb3e31e84e82cfad2a736c54119e7fa016a47050203a4891cb0bf0657",
+    "resultado.json": "77400de353394007367589bcdeed84c2809bf19b8b5f1da04082a72db9783b82"
+  },
+  "entorno": "Python 3.12, NumPy 2.3.5, SciPy 1.17.0, OPENBLAS_NUM_THREADS=1",
+  "dictamen": "El modelo rígido viola continuidad; mecanismo M2 indeterminado, piloto sin habilitar."
+}
