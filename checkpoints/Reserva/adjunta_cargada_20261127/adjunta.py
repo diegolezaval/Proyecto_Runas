@@ -120,6 +120,13 @@ def run():
     # Continuous polynomial on each step: add its own exponential-series tail
     # to the propagated nodal error, including the truncation-face estimate.
     remainder += local_factor*boundE*(1+40*np.exp(40*mu)*coupling/np.sqrt(m))
+    coarse_remainder = remainder
+    # A local defect generated at j has only 40-j*h of subsequent growth.
+    # The crop discrepancy at time s enters the full-space Duhamel integral
+    # with growth exp(mu*(40-s)); both time factors share the same horizon.
+    amplitude = E0*(np.exp(mu*h)+local_factor)**1282
+    defect = 1281*local_factor*amplitude
+    remainder = defect*(1+40*coupling/np.sqrt(m)) + 40*np.exp(40*mu)*coupling*max(wall)
     bins[:,[0,1,2,4]] += remainder/np.sqrt(m)
     bins[:,3] += remainder*(1+2*o.om/np.sqrt(m))
     source = HERE.parent/"energia_fisica_corregida_20261127/bandas.csv.gz"
@@ -136,7 +143,7 @@ def run():
     old = json.loads((HERE.parent/"interfaz_cargada_20261127/resultado.json").read_text())
     lift = old["interfaz"]["levantamiento_energia"]
     result = dict(paso=h,orden=degree,limite_generador=gen,mu=mu,error_local_rel=local_factor,
-        error_nodos=defect,envolvente_pared=wall.tolist(),resto_total_energia=remainder,
+        resto_doble_crecimiento=coarse_remainder,error_nodos=defect,envolvente_pared=wall.tolist(),resto_total_energia=remainder,
         exp_rel=exp_err,pulsos_abs=pulse_err.tolist(),pulsos_respuesta=(p0.T@pulse_end).tolist(),
         bandas_truncacion_pos_vel=all_terms[-1].tolist(), z_terminal=z[-1],
         integral_z=.125*sum(z), integral_dz=.125*sum(dz), cinematica_directa=.125*sum(F[:,3])/sw,
@@ -145,6 +152,7 @@ def run():
         restitucion=lift*z[-1],levantada=lift*(z[-1]+.125*sum(weighted*dz)))
     result["pulsos_s32"] = long_pulses.tolist()
     result["errores_s32"] = pulsos.verify(loc, long_pulses, i)
+    result["exponencial_directa_s32"] = pulsos.exponential(loc, long_pulses, i, Kfull, Ofull)
     (HERE/"resultado.json").write_text(json.dumps(result,indent=2,allow_nan=False)+"\n")
 
 
