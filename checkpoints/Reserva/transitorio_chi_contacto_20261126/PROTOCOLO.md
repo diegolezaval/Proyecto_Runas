@@ -1,0 +1,7 @@
+# Protocolo: transitorio de arranque de χ con operador congelado
+
+Base `bc48ab0be8b1afc8362ca6c703a81f9fc6df6899`. Reutilizar las 108 filas archivadas de `../respuesta_chi_contacto_20261126/medidas.csv`, verificar su SHA-256 y comprobar la cobertura completa de combinaciones. No evolucionar M2. La perturbación homogénea (y) respecto del seguimiento tiene (y(0)=-w,y'(0)=-w_t), (y''+Hy=0), (H\ge M^2I), (M=100). Usar (T=240), la ventana de referencia del primer intento de descarga, exclusivamente para comparar cotas del modelo congelado.
+
+Por fila informar (E_0=C+||w_t||^2/2), (R=\sqrt{2E_0}), amplitud instantánea (R/M), integral de norma (TR/M) y cota del integral firmado (||w||/M+2||w_t||/M^2) a partir de los propagadores seno y (1-\cos). Como control independiente, obtener ((R+||w_t||)/M^2) de la identidad (H\int y=y'(0)-y'(T)); la menor de ambas es válida. Informar ambas, no solo la más favorable. Comprobar las fórmulas en un modo escalar exacto con varias frecuencias y tiempos. Informar el término cuadrático espacial integrado como cota (T(R/M)^2) de la integral de la norma L1 de (y^2), no como energía entregada.
+
+Un acoplamiento multiplicativo fijo de norma finita hereda la cancelación firmada. Una trayectoria o peso variables requieren otra prueba; la razón entre cotas no mide la razón entre los valores físicos. Si una fuente variable, el término cuadrático, la respuesta de Φ o los balances de los núcleos no quedan acotados, la descarga sigue indeterminada y el piloto no se habilita. La prueba no cambia Θ ni resuelve preparación física o recarga.
