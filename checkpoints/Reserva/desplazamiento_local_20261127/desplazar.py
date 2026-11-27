@@ -1,4 +1,5 @@
 """Comparación causal de cinco bandas en coordenadas canónicas, sin evolución M2."""
+import copy
 import csv
 import ctypes
 import gzip
@@ -65,7 +66,7 @@ def sources(step,march,table):
         width=(hi-lo)/2
         signed,time=columnas.jac_box(centre,width)
         _,combined=columnas.jac_box(centre,width+tube)
-        yield best,np.array([max(J[s]) for s in bands]),row,signed,time,combined
+        yield best,np.array([max(J[s]) for s in bands]),row,signed,time,combined,centre,width
 
 
 def blocks(six):
@@ -117,7 +118,7 @@ class Comparison:
         j=len(self.rows)
         Fj=np.linalg.norm(self.shapes*best,axis=1)
         if self.mode=="firmado":
-            for val in self.history: val*=jump
+            self.history=[val*jump for val in self.history]
             self.numeric=[v*jump for v in self.numeric]
             op=np.sqrt(self.op**2+op_extra)
         else:
@@ -166,9 +167,11 @@ def study(step,march,table):
     shapes,rates=geometry()
     states=[Comparison(mode,shapes,rates,s,rate) for mode in ("publicado","exponente","local","firmado")]
     ext=loc.i40
+    adaptive=Comparison("firmado",shapes,rates,s,rate)
+    ladder=np.array(columnas.dense)
     signed_info=[]
     signed_old=None
-    for j,(best,J,row,signed,time,total) in enumerate(sources(step,march,table)):
+    for j,(best,J,row,signed,time,total,centre,width) in enumerate(sources(step,march,table)):
         signed_mat=blocks(signed)[ext:]
         H=V[ext:]+signed_mat
         low=np.linalg.eigvalsh(H)[:,0]
@@ -199,9 +202,38 @@ def study(step,march,table):
                 r=prior["filas"][j]
                 assert np.allclose(r["punto"],st.rows[-1]["punto"],rtol=1e-11,atol=1e-18)
                 assert r["aceptado"]==st.rows[-1]["aceptado"]
-        if all(st.failed for st in states): break
+        if not adaptive.failed:
+            entry=np.array(adaptive.rows[-1]["punto"] if adaptive.rows else [0.]*5)
+            idx=np.minimum(np.searchsorted(ladder,entry),len(ladder)-1)
+            idx[:2]=len(ladder)-1
+            if min(low)<adaptive.floor:
+                adaptive.failed=True
+            while not adaptive.failed:
+                radius=ladder[idx]
+                cells=np.repeat(radius,np.diff(indices))[:,None]
+                _,box=columnas.jac_box(centre,width+cells)
+                bounded=blocks(box-time).sum(axis=2).max(axis=1)
+                rem_local=J.copy()
+                rem_local[2:]=temporal[2:]+np.array([max(bounded[b]) for b in bands[2:]])
+                candidate=copy.copy(adaptive)
+                candidate.extra=adaptive.extra.copy()
+                candidate.rows=adaptive.rows.copy()
+                candidate.advance(best,J,row,adj,linear,rem_local,jump,op_extra)
+                last=candidate.rows[-1]
+                last["radios"]=radius.tolist()
+                last["resto_coef"]=rem_local.tolist()
+                need=np.maximum(entry,last["punto"])
+                if np.all(need<=radius) or np.all(radius==tube):
+                    adaptive=candidate
+                    break
+                if max(need)>tube:
+                    idx[:]=len(ladder)-1
+                else:
+                    idx=np.maximum(idx,np.searchsorted(ladder,need))
+        if all(st.failed for st in states) and adaptive.failed: break
     results={}
-    for st in states:
+    adaptive.mode="firmado_radios"
+    for st in [*states,adaptive]:
         accepted=[r for r in st.rows if r["aceptado"]]
         results[st.mode]=dict(prefijo=len(accepted)*h,filas=st.rows,
             integral_dz_prefijo=h*sum(r["dz_total"] for r in accepted))
@@ -229,7 +261,7 @@ def main():
         march.argtypes=[ci,ci,ci,cd,cd]+[ptr]*8
         step.restype=march.restype=None
         data=study(step,march,table)
-    (HERE/"resultado.json").write_text(json.dumps(data,indent=2,allow_nan=False)+"\n")
+    (HERE/"resultado.json").write_text(json.dumps(data,separators=(",",":"),allow_nan=False)+"\n")
 
 
 if __name__=="__main__":
