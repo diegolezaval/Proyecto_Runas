@@ -38,6 +38,10 @@ La linealización afín del equilibrio con los estados de τ300 reproduce las p�
 
 La malla FV fina tiene un modo libre de amplitud negativo (−0,02280880). A carga fija el mínimo sube a +0,19016252 y la primera fase tras simetría vale +0,18501748. El interpolante tiene defecto relativo de fase 3,5950e−6; al corregir el equilibrio FV baja a 4,67e−13. El control homogéneo supera la puerta espectral. Sigue pendiente el error forzado del volumen en s=0…40. El siguiente diagnóstico separará fuerza transversal, carga, fase común y defecto del interpolante, con un resto entre muestras, antes de usar los huecos para una cota de trayectoria. El piloto sigue sin habilitarse. [Resultados y método](checkpoints/Reserva/hessiano_contacto_20261127/README.md)
 
+## Contacto interno · error forzado del volumen
+
+En s=0…40 se verificó la respuesta estática de carga del operador FV y se acotó el defecto entre muestras. La corrección de carga tiene norma de energía 1,00693674 y coeficiente de fase −0,01392160. El presupuesto no lineal global no acredita el tubo puntual 1e−4 ni siquiera en el primer intervalo fino. La energía conservada da una cota global finita, demasiado amplia para inferir transporte. El piloto sigue sin habilitarse. Siguiente diagnóstico: localizar el defecto por componente y radio y comprobar si una energía ponderada puede controlar el solapamiento incluyendo el flujo entre zonas. [Resultados, cotas y método](checkpoints/Reserva/error_forzado_contacto_20261127/README.md)
+
 ## Orden ejecutada · auditoría pasiva del paso 3
 
 Base revisada `4cfcca381666ad885a6f75d6c678482b0e5ae203`. Usar las trayectorias existentes. Las medias principales ya son públicas. En s = 400…480, la disminución neta del inventario diferencial de la corona equivale al 83,12 % del flujo diferencial de energía por r60 y al 82,74 % del de carga. Esta identidad contable deja abierta la procedencia de lo que cruzó la esfera exterior. [Balances de partida](checkpoints/Reserva/mision_paquete_negativo_20261125/BALANCES.json)

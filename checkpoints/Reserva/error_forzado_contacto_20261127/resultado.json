@@ -1,0 +1,82 @@
+{
+  "kappa_L2": 0.7953400004050564,
+  "kappa_C": 1.0069367406895455,
+  "gamma": -0.013921599750490676,
+  "residuo_identidad": 3.3638075985392607e-13,
+  "defecto_fase": 3.5950358843206338e-06,
+  "casos": [
+    {
+      "caso": "gota_a010",
+      "h": 0.25,
+      "E0": 2525.971327242312,
+      "mu2": 0.7487421323990904,
+      "primer_extremo_sin_tubo": 0.25,
+      "cota_lineal_D_q_fase": [
+        4.39631069812312,
+        0.019420621773265038,
+        384.22404228814725
+      ],
+      "cota_lineal_extremo": 399.31870957697606,
+      "suma_defecto_temporal": 4.0097653837219935,
+      "suma_Taylor": 0.3483618928089823,
+      "suma_proyeccion_carga": 2.515485331577577e-05,
+      "razon_max_centro": 0.281562337819813,
+      "cota_L2_error_global": 147.49581077638396
+    },
+    {
+      "caso": "gota_a010",
+      "h": 0.125,
+      "E0": 2525.971327242312,
+      "mu2": 0.7487421323990904,
+      "primer_extremo_sin_tubo": 0.125,
+      "cota_lineal_D_q_fase": [
+        2.3826354073229106,
+        0.010549074733699152,
+        208.73973359411696
+      ],
+      "cota_lineal_extremo": 216.92049572054643,
+      "suma_defecto_temporal": 2.0236470061574674,
+      "suma_Taylor": 0.338252929470791,
+      "suma_proyeccion_carga": 1.895317901245749e-05,
+      "razon_max_centro": 0.45209835863443426,
+      "cota_L2_error_global": 147.49580249541992
+    },
+    {
+      "caso": "gemelo",
+      "h": 0.25,
+      "E0": 2525.633309772113,
+      "mu2": 0.7487421323990904,
+      "primer_extremo_sin_tubo": 0.25,
+      "cota_lineal_D_q_fase": [
+        0.0008563334076265368,
+        2.112239606093938e-05,
+        0.07158546044814025
+      ],
+      "cota_lineal_extremo": 0.0745394592909962,
+      "suma_defecto_temporal": 0.0007029107738785404,
+      "suma_Taylor": 0.00012885788868581321,
+      "suma_proyeccion_carga": 1.768360492016547e-05,
+      "razon_max_centro": 0.19492888677816805,
+      "cota_L2_error_global": 147.48932582013796
+    },
+    {
+      "caso": "gemelo",
+      "h": 0.125,
+      "E0": 2525.633309772113,
+      "mu2": 0.7487421323990904,
+      "primer_extremo_sin_tubo": 0.125,
+      "cota_lineal_D_q_fase": [
+        0.0005046306780377352,
+        1.804125739887264e-05,
+        0.04287573610872509
+      ],
+      "cota_lineal_extremo": 0.04462095398845155,
+      "suma_defecto_temporal": 0.00035565351957818407,
+      "suma_Taylor": 0.0001288068106222679,
+      "suma_proyeccion_carga": 1.595169070594336e-05,
+      "razon_max_centro": 0.33976602323505106,
+      "cota_L2_error_global": 147.48932580568402
+    }
+  ],
+  "sha256_csv": "025c388a5e6b920bbf6d887bdaeeb7a7a25a2bc37e942626eca294f3a66b9f37"
+}
