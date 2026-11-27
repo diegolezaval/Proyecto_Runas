@@ -10,6 +10,10 @@ Trabaja en `ciencia/cp12-p4-validacion`. Revisa primero el último commit de esa
 
 La pérdida espontánea del núcleo resolvió ambos signos positivos. Sus cotas superiores fueron 0,6744 % del exceso de energía y 0,5967 % del exceso de carga, por debajo del 1 % en s = 400…480. La disminución neta del inventario previo de la corona explica la mayor parte del saldo exterior. Esta vía se cierra para la misión ensayada. Los criterios vigentes dejan pendientes captura y recarga. El siguiente ensayo requiere seleccionar un mecanismo físicamente distinto con una predicción de salida conjunta controlada en r60 y un control capaz de separarla de la fuga pasiva. [Auditoría reproducible](checkpoints/Reserva/auditoria_pasiva_20261126/README.md)
 
+## Contacto interno · primer cribado completado
+
+La superposición de perfiles preparados genera corriente impar de fase, pero su proyección rígida viola la continuidad de carga. En la configuración que aparenta superar ambos umbrales, el defecto de inventario supera 37 veces el flujo de carga. La predicción de entrega queda indeterminada y el piloto sigue sin habilitarse. Se mantiene el mismo frente. La siguiente tarea barata es evaluar el rango, condicionamiento y residuo de una reducción con poblaciones y fases variables, con controles independientes por núcleo y conservación global, antes de cualquier evolución. [Estudio, protocolo y datos](checkpoints/Reserva/contacto_interno_20261126/README.md)
+
 ## Orden ejecutada · auditoría pasiva del paso 3
 
 Base revisada `4cfcca381666ad885a6f75d6c678482b0e5ae203`. Usar las trayectorias existentes. Las medias principales ya son públicas. En s = 400…480, la disminución neta del inventario diferencial de la corona equivale al 83,12 % del flujo diferencial de energía por r60 y al 82,74 % del de carga. Esta identidad contable deja abierta la procedencia de lo que cruzó la esfera exterior. [Balances de partida](checkpoints/Reserva/mision_paquete_negativo_20261125/BALANCES.json)
