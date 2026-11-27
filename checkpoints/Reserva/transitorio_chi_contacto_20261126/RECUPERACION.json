@@ -1,0 +1,9 @@
+{
+  "protocolo": "74ae301c70f7f7c4d6a50f0f85390c6a97cd6c58",
+  "calculo": "b5364dbd2380ae320c8388e588010238a749fa80",
+  "metodo": "Descarga nueva desde GitHub, fijada al commit de cálculo, de acotar.py, resumen.json y medidas.csv a un directorio temporal independiente. Se volvió a ejecutar el script y se compararon el resumen completo y la huella SHA-256 del JSON generado. Los máximos también se cotejaron con un cálculo independiente en JavaScript.",
+  "sha256_resultado": "b53be6f2a6b25b0eede8b67073063fbd083660b8004bb0618a1f813925de7a54",
+  "filas": 108,
+  "controles_modo_escalar": 72,
+  "decision": "Cota válida solo para transitorio homogéneo con H congelado. Entrega indeterminada; piloto no habilitado."
+}
