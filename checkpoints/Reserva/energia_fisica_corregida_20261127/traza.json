@@ -1,0 +1,24 @@
+{
+  "min_potencial": -0.409171771436732,
+  "resistencia": 5.235676906484267,
+  "coeficientes": [
+    4.2234334155148625,
+    0.013450626619998652,
+    0.01910088247523484
+  ],
+  "limite_transversal": 2.3677418384920693e-05,
+  "casos": {
+    "gota_a010": {
+      "lineal_punto40": 0.0006151971637463269,
+      "primer_exceso": 1.25
+    },
+    "gemelo": {
+      "lineal_punto40": 4.806479776004223e-08,
+      "primer_exceso": 3.625
+    },
+    "receptora": {
+      "lineal_punto40": 4.81620756483379e-08,
+      "primer_exceso": 3.625
+    }
+  }
+}
