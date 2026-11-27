@@ -1,0 +1,18 @@
+{
+  "base": "fe96b20ac5cf8c21f3389a582fce838e4d3ba555",
+  "protocolos": [
+    "978b9b33f3510de963eaf18a0d5c27ac08f9dc87",
+    "c8fb73bbe8451aadbbb38c414fc45af65d3bb2ed"
+  ],
+  "resultado": "4e4720c6fee46c00255d9904e9aed5df25eb4145",
+  "procedencia": "Clon nuevo desde GitHub y checkout del commit de resultado; recuperación de todos los insumos y scripts del remoto.",
+  "comandos": [
+    "OPENBLAS_NUM_THREADS=1 python3 medir.py",
+    "OPENBLAS_NUM_THREADS=1 python3 verificar.py",
+    "git diff --exit-code -- resultado.json"
+  ],
+  "salida": 0,
+  "intervalos_aceptados_por_control": 274,
+  "controles": "Problemas densos independientes de amplitud y fase restringida, prueba de inercia con margen y reconstrucción de cada extremo aceptado en dos medios pasos.",
+  "sha256_resultado": "f06bf400bbf71f6483f3f74993ae843bed82682af3a82d5d74421eca88ecdf94"
+}
