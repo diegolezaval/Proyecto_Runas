@@ -1,0 +1,22 @@
+{
+  "base": "3ebd4e2fdc66eb9b07403e0a7a63362a00165612",
+  "protocolos": [
+    "4eba67157d1211a91c655668eb2d8e41f978a736",
+    "0bea60604d1cde33d261d81e6491df5d8d44fb40"
+  ],
+  "resultado": "65e235d19779aa09a1771839142c888125b6be60",
+  "recuperacion": "Clon independiente de GitHub y checkout del resultado. Se recuperaron los insumos de la rama científica. Los dos archivos regenerados coinciden byte a byte.",
+  "comandos": [
+    "OPENBLAS_NUM_THREADS=1 python3 localizar.py",
+    "OPENBLAS_NUM_THREADS=1 python3 verificar.py",
+    "git diff --exit-code -- resultado.json bandas.csv"
+  ],
+  "filas": 85,
+  "controles": [
+    "Telescopaje, pared Dirichlet, identidad de energía por cara, agregación por regiones, cotejo con las dos integrales globales de cada donante"
+  ],
+  "sha256": {
+    "resultado.json": "4fc3c444c7811aebc14b82e275656c0f89ce388d7dd30251d9e6fa028254453f",
+    "bandas.csv": "58878d8ec30322301bd06bf430eb06475eacbc1d331eb246c732d150a85455f0"
+  }
+}
