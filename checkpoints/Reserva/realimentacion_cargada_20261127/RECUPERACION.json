@@ -1,0 +1,29 @@
+{
+  "base": "f222e357f469edfa41d80f685e7259cf66e616e4",
+  "protocolos": [
+    "79307f40d50ca80e289046447a9008e26ce5dfd6",
+    "454377974e3979b6088676b2769cd87405083e58"
+  ],
+  "codigo": "014297b2761f33d0dae12f06102278a1ca6935c3",
+  "resultado": "eb8943c46bc54688371769dbd823eb12c48fda0b",
+  "metodo": "Clon limpio independiente de la rama, checkout del código publicado, ejecución de causal.py con OPENBLAS_NUM_THREADS=1. Se recuperó después el commit de resultado y se comparó su blob resultado.json con todo el fichero regenerado mediante cmp. Salida 0 en ejecución y comparación.",
+  "sha256_resultado": "5efae8f619d5fe957627be7e067c413fa3aefed64e0acaa72949a3ea3292d8b3",
+  "intervalos_probados": [
+    41,
+    59
+  ],
+  "prefijos_aceptados": [
+    5,
+    7.25
+  ],
+  "primeros_fallos": [
+    5.125,
+    7.375
+  ],
+  "control_lineal_40": [
+    7.3429350985383545e-9,
+    0.000001890728261884745,
+    0.0000027825883639084688
+  ],
+  "aviso": "Resumen en el relevo para el Dot principal."
+}
