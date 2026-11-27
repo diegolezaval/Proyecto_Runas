@@ -1,0 +1,16 @@
+{
+  "base": "91f3cff25030d67676d181331a27ae1b49bc51fd",
+  "protocolo": "f2e05751fa0dd085d3684cc9f3d66c2f062dff83",
+  "codigo": "66b29c9191e799ab8a7308be1c570dd3bd7aae77",
+  "resultado": "a51ed85ebbbcdc678332e4a44a0691d7825f5bc8",
+  "ejecucion": "Clon nuevo del remoto, checkout del código sin cambios locales, OPENBLAS_NUM_THREADS=1 python3 checkpoints/Reserva/adjunta_cargada_20261127/adjunta.py. Salida 0. Lectura independiente del blob del commit de resultado y comparación de los 24 campos.",
+  "sha256_publicado": "bae01b4f5b4ba84aa53de4c26a43ba4c97ab894f68b9f9a3579f004452b6c0d0",
+  "sha256_reproducido": "6e6a579f3e9d3be1b0aa4bfb670513656101c0d58c34d3dcf1b232522b2a33e8",
+  "comparacion": "Coincidencia exacta de 23 campos, incluidos todos los presupuestos, los pulsos de s=32 y los errores del avance directo a dos pasos. Solo cambió exponencial_directa_s32: los residuos máximos de reciprocidad fueron 7,725e-16 y 6,085e-15; ambas ejecuciones pasan el criterio absoluto 1e-10 registrado en el código. El JSON completo difiere en dos residuos de redondeo de ese control.",
+  "residuos_reproducidos": [
+    6.084542591988651e-15,
+    1.7976072019809664e-16,
+    0
+  ],
+  "siguiente": "Realimentación no lineal de la cargada en volumen y por bandas, con el mismo tubo y referente. Piloto pendiente."
+}
