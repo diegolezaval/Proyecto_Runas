@@ -1,0 +1,18 @@
+{
+  "protocolo": "8b82c54fd56f006aa4e8721a7a22b2fe31d6595b",
+  "calculo": "74e4ea4b025356cf5e396778c624712f52aad62f",
+  "fecha_local": "2026-11-26",
+  "recuperacion": "Clonación independiente desde GitHub, checkout del commit de cálculo, ejecución de respuesta.py y verificar.py con OPENBLAS_NUM_THREADS=1. CSV y JSON idénticos byte a byte a Git.",
+  "sha256": {
+    "medidas.csv": "f97298cadedbe199e994ded5af3dea535adabf878d3a54d772533b4795ab3701",
+    "resultado.json": "a594a73a4d81b502d058252da4dcb2d2ee35ce7611c6c7cd7380359407160b67"
+  },
+  "filas": 108,
+  "contrastes_montaje": 72,
+  "error_rel_manufacturada": [
+    6.973494601126086e-7,
+    4.852206436961428e-7,
+    3.3925647860179644e-7
+  ],
+  "decision": "Respuesta estática favorable en la ecuación de Φ. Pendiente transitorio de arranque. Entrega indeterminada y piloto sin habilitar."
+}
