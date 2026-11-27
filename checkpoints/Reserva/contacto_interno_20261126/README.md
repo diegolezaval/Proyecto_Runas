@@ -43,4 +43,4 @@ Ejecutar desde esta carpeta con Python 3.12, NumPy y SciPy:
 OPENBLAS_NUM_THREADS=1 python3 medir.py
 ```
 
-Las instantáneas de τ300 y la receptora se cotejan con sus manifiestos originales. Se guardan huellas de los ocho perfiles. Los 576 registros incluyen dos resoluciones de preparación, dos donantes, cuatro receptoras, tres separaciones, dos cuadraturas y tres ventanas. El resumen contiene los 36 contrastes con sensibilidad por refinamiento y defecto de carga. [Método](medir.py) · [Mediciones](medidas.csv) · [Contrastes y huellas](resultado.json)
+Las instantáneas de τ300 y la receptora se cotejan con sus manifiestos originales. Se guardan huellas de los ocho perfiles. Los 288 registros incluyen dos resoluciones de preparación, dos donantes, cuatro receptoras, tres separaciones, dos cuadraturas y tres ventanas. El resumen contiene los 36 contrastes con sensibilidad por refinamiento y defecto de carga. [Método](medir.py) · [Mediciones](medidas.csv) · [Contrastes y huellas](resultado.json)
