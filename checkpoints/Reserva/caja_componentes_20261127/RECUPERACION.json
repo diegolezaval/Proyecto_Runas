@@ -1,0 +1,13 @@
+{
+  "protocolo": "c91f4ad724c15d8b7b7280504d551c61ad4d0097",
+  "codigo": "635930b39287b6fb4f444aea23a9c84d9923431b",
+  "resultado": "b4305cd6d085b1fdc6920abfbe43ad6b86ac0c83",
+  "metodo": "Clon independiente y checkout limpio del código publicado. OPENBLAS_NUM_THREADS=1 python3 evaluar.py; recuperación del commit de resultado y comparación de todo el blob JSON mediante cmp. Ambas salidas fueron cero.",
+  "sha256": "588a302a49cc095ac97eb9adac909a31d43b015f0b41c051bc8fd72e33d9d4d1",
+  "prefijo": 14.625,
+  "primer_rechazo": 14.75,
+  "fuentes_antiguas_hasta": 13.875,
+  "observacion_hasta": 40,
+  "integral_simple_fuentes_conocidas": 0.00008831643578683128,
+  "integral_ponderada_fuentes_conocidas": 0.00017143373095508072
+}
