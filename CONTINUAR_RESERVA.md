@@ -90,6 +90,10 @@ En s=0…40 se verificó la respuesta estática de carga del operador FV y se ac
 
 **Resumen para el Dot principal.** Diego, en el prefijo s=0…13,875 la aportación propagada de |z′| baja de 3,930e−5 a 7,613e−6 al separar las fuentes. Domina 10–40. El cribado provisional de 3,96e−6 sigue pendiente. Sigue la comparación de columnas de κ y fase en el núcleo, primero en el rechazo a s=14 con el mismo estado entrante; conservar la fuente física del adjunto. [Informe y datos](checkpoints/Reserva/traza_cinco_bandas_20261127/README.md) · [Recibo](checkpoints/Reserva/traza_cinco_bandas_20261127/RECUPERACION.json)
 
+## Contacto interno · columnas sobre el núcleo a carga fija
+
+**Resumen para el Dot principal.** Diego, en el primer rechazo a s=14 la cota permanece en 1,20063e−4 al separar las columnas κq y uβ y el trabajo perpendicular. Se reprodujo el control anterior y se conservó el negativo. El volumen queda cubierto hasta 13,875. En ese prefijo la traza física de cinco bandas da ≤7,613e−6 con el peso referido a s=40. La próxima prueba del mismo diagnóstico es comprobar a igual fecha si la cota disponible por celda permite cerrar las cajas de derivadas del núcleo con mayor precisión, manteniendo las restituciones y la fuente del adjunto. [Informe y comparación](checkpoints/Reserva/columnas_nucleo_20261127/README.md) · [Recibo](checkpoints/Reserva/columnas_nucleo_20261127/RECUPERACION.json)
+
 ## Orden ejecutada · auditoría pasiva del paso 3
 
 Base revisada `4cfcca381666ad885a6f75d6c678482b0e5ae203`. Usar las trayectorias existentes. Las medias principales ya son públicas. En s = 400…480, la disminución neta del inventario diferencial de la corona equivale al 83,12 % del flujo diferencial de energía por r60 y al 82,74 % del de carga. Esta identidad contable deja abierta la procedencia de lo que cruzó la esfera exterior. [Balances de partida](checkpoints/Reserva/mision_paquete_negativo_20261125/BALANCES.json)
