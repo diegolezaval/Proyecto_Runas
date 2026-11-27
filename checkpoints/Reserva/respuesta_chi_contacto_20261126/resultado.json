@@ -1,0 +1,656 @@
+{
+  "filas": 108,
+  "sha256_csv": "f97298cadedbe199e994ded5af3dea535adabf878d3a54d772533b4795ab3701",
+  "contrastes_energia": [
+    {
+      "dt": "dt0005",
+      "d": 80,
+      "malla": "gruesa",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": -3.4084454919769316e-16,
+      "impar_gemela": -2.74205526299927e-23,
+      "diferencia": -3.4084452177714053e-16
+    },
+    {
+      "dt": "dt0005",
+      "d": 80,
+      "malla": "gruesa",
+      "magnitud": "energia_estatica",
+      "impar_cargada": 1.1006819864875768e-08,
+      "impar_gemela": -2.985502865816689e-11,
+      "diferencia": 1.1036674893533935e-08
+    },
+    {
+      "dt": "dt0005",
+      "d": 80,
+      "malla": "gruesa",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": 1.0135916924171647e-13,
+      "impar_gemela": -2.069578190584873e-16,
+      "diferencia": 1.0156612706077497e-13
+    },
+    {
+      "dt": "dt0005",
+      "d": 80,
+      "malla": "gruesa",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": 1.1006921224045024e-08,
+      "impar_gemela": -2.985523561598595e-11,
+      "diferencia": 1.103677645966101e-08
+    },
+    {
+      "dt": "dt0005",
+      "d": 80,
+      "malla": "fina",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": -3.478006484583415e-16,
+      "impar_gemela": -4.812450369921852e-23,
+      "diferencia": -3.478006003338378e-16
+    },
+    {
+      "dt": "dt0005",
+      "d": 80,
+      "malla": "fina",
+      "magnitud": "energia_estatica",
+      "impar_cargada": 2.7964314844926243e-09,
+      "impar_gemela": -7.540978598242283e-12,
+      "diferencia": 2.8039724630908666e-09
+    },
+    {
+      "dt": "dt0005",
+      "d": 80,
+      "malla": "fina",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": 1.0118225909137476e-13,
+      "impar_gemela": -2.0660314022664868e-16,
+      "diferencia": 1.0138886223160141e-13
+    },
+    {
+      "dt": "dt0005",
+      "d": 80,
+      "malla": "fina",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": 2.796532666751717e-09,
+      "impar_gemela": -7.54118520138251e-12,
+      "diferencia": 2.8040738519530994e-09
+    },
+    {
+      "dt": "dt0005",
+      "d": 80,
+      "malla": "amplia",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": -3.478006749281211e-16,
+      "impar_gemela": -4.8124604673414386e-23,
+      "diferencia": -3.478006268035164e-16
+    },
+    {
+      "dt": "dt0005",
+      "d": 80,
+      "malla": "amplia",
+      "magnitud": "energia_estatica",
+      "impar_cargada": 2.796431484492598e-09,
+      "impar_gemela": -7.540978598242904e-12,
+      "diferencia": 2.8039724630908406e-09
+    },
+    {
+      "dt": "dt0005",
+      "d": 80,
+      "malla": "amplia",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": 1.0118225909137476e-13,
+      "impar_gemela": -2.0660314022664868e-16,
+      "diferencia": 1.0138886223160141e-13
+    },
+    {
+      "dt": "dt0005",
+      "d": 80,
+      "malla": "amplia",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": 2.7965326667516904e-09,
+      "impar_gemela": -7.54118520138313e-12,
+      "diferencia": 2.8040738519530737e-09
+    },
+    {
+      "dt": "dt0005",
+      "d": 100,
+      "malla": "gruesa",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": 9.462624493905358e-15,
+      "impar_gemela": -1.7936854205651212e-23,
+      "diferencia": 9.462624511842212e-15
+    },
+    {
+      "dt": "dt0005",
+      "d": 100,
+      "malla": "gruesa",
+      "magnitud": "energia_estatica",
+      "impar_cargada": -7.297917771765686e-11,
+      "impar_gemela": -1.3213664336551348e-11,
+      "diferencia": -5.976551338110551e-11
+    },
+    {
+      "dt": "dt0005",
+      "d": 100,
+      "malla": "gruesa",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": -1.6017136902782918e-13,
+      "impar_gemela": -2.816619135956151e-16,
+      "diferencia": -1.5988970711423357e-13
+    },
+    {
+      "dt": "dt0005",
+      "d": 100,
+      "malla": "gruesa",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": -7.313934908666089e-11,
+      "impar_gemela": -1.3213945998464944e-11,
+      "diferencia": -5.992540308819594e-11
+    },
+    {
+      "dt": "dt0005",
+      "d": 100,
+      "malla": "fina",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": 9.418292959967995e-15,
+      "impar_gemela": -2.254097461465761e-23,
+      "diferencia": 9.41829298250897e-15
+    },
+    {
+      "dt": "dt0005",
+      "d": 100,
+      "malla": "fina",
+      "magnitud": "energia_estatica",
+      "impar_cargada": -7.602920030209582e-11,
+      "impar_gemela": -3.339980837570854e-12,
+      "diferencia": -7.268921946452497e-11
+    },
+    {
+      "dt": "dt0005",
+      "d": 100,
+      "malla": "fina",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": -1.598447349830903e-13,
+      "impar_gemela": -2.812593022034863e-16,
+      "diferencia": -1.5956347568088681e-13
+    },
+    {
+      "dt": "dt0005",
+      "d": 100,
+      "malla": "fina",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": -7.618904503709006e-11,
+      "impar_gemela": -3.340262096873058e-12,
+      "diferencia": -7.284878294021701e-11
+    },
+    {
+      "dt": "dt0005",
+      "d": 100,
+      "malla": "amplia",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": 9.418293012907554e-15,
+      "impar_gemela": -2.2541075588853477e-23,
+      "diferencia": 9.41829303544863e-15
+    },
+    {
+      "dt": "dt0005",
+      "d": 100,
+      "malla": "amplia",
+      "magnitud": "energia_estatica",
+      "impar_cargada": -7.602920030204288e-11,
+      "impar_gemela": -3.3399808375712677e-12,
+      "diferencia": -7.268921946447161e-11
+    },
+    {
+      "dt": "dt0005",
+      "d": 100,
+      "malla": "amplia",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": -1.598447349830903e-13,
+      "impar_gemela": -2.812593022034863e-16,
+      "diferencia": -1.5956347568088681e-13
+    },
+    {
+      "dt": "dt0005",
+      "d": 100,
+      "malla": "amplia",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": -7.618904503703712e-11,
+      "impar_gemela": -3.3402620968734715e-12,
+      "diferencia": -7.284878294016366e-11
+    },
+    {
+      "dt": "dt0005",
+      "d": 120,
+      "malla": "gruesa",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": 6.57900095486037e-14,
+      "impar_gemela": -4.5405066656093744e-24,
+      "diferencia": 6.57900095531442e-14
+    },
+    {
+      "dt": "dt0005",
+      "d": 120,
+      "malla": "gruesa",
+      "magnitud": "energia_estatica",
+      "impar_cargada": -1.593452611627456e-08,
+      "impar_gemela": -1.2201738831166373e-12,
+      "diferencia": -1.5933305942391442e-08
+    },
+    {
+      "dt": "dt0005",
+      "d": 120,
+      "malla": "gruesa",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": -3.0244459321575936e-13,
+      "impar_gemela": 6.84762037563891e-17,
+      "diferencia": -3.0251306941951576e-13
+    },
+    {
+      "dt": "dt0005",
+      "d": 120,
+      "malla": "gruesa",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": -1.593482856086779e-08,
+      "impar_gemela": -1.2201054069128808e-12,
+      "diferencia": -1.593360845546088e-08
+    },
+    {
+      "dt": "dt0005",
+      "d": 120,
+      "malla": "fina",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": 6.56477058958826e-14,
+      "impar_gemela": -5.6227480969257014e-24,
+      "diferencia": 6.564770590150535e-14
+    },
+    {
+      "dt": "dt0005",
+      "d": 120,
+      "malla": "fina",
+      "magnitud": "energia_estatica",
+      "impar_cargada": -4.117317777462447e-09,
+      "impar_gemela": -3.100758311777644e-13,
+      "diferencia": -4.117007701631269e-09
+    },
+    {
+      "dt": "dt0005",
+      "d": 120,
+      "malla": "fina",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": -3.043416337618295e-13,
+      "impar_gemela": 6.846438745714119e-17,
+      "diferencia": -3.044100981492866e-13
+    },
+    {
+      "dt": "dt0005",
+      "d": 120,
+      "malla": "fina",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": -4.1176221190962895e-09,
+      "impar_gemela": -3.1000736679030725e-13,
+      "diferencia": -4.117312111729499e-09
+    },
+    {
+      "dt": "dt0005",
+      "d": 120,
+      "malla": "amplia",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": 6.56477058958826e-14,
+      "impar_gemela": -5.62284907112157e-24,
+      "diferencia": 6.564770590150545e-14
+    },
+    {
+      "dt": "dt0005",
+      "d": 120,
+      "malla": "amplia",
+      "magnitud": "energia_estatica",
+      "impar_cargada": -4.117317777462447e-09,
+      "impar_gemela": -3.1007583117779037e-13,
+      "diferencia": -4.117007701631269e-09
+    },
+    {
+      "dt": "dt0005",
+      "d": 120,
+      "malla": "amplia",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": -3.043416337617261e-13,
+      "impar_gemela": 6.846438745714119e-17,
+      "diferencia": -3.044100981491832e-13
+    },
+    {
+      "dt": "dt0005",
+      "d": 120,
+      "malla": "amplia",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": -4.1176221190962895e-09,
+      "impar_gemela": -3.100073667903332e-13,
+      "diferencia": -4.117312111729499e-09
+    },
+    {
+      "dt": "dt001",
+      "d": 80,
+      "malla": "gruesa",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": -3.4081482363520045e-16,
+      "impar_gemela": -7.682278380372855e-23,
+      "diferencia": -3.4081474681241665e-16
+    },
+    {
+      "dt": "dt001",
+      "d": 80,
+      "malla": "gruesa",
+      "magnitud": "energia_estatica",
+      "impar_cargada": 1.1006787310149884e-08,
+      "impar_gemela": -2.98550289588799e-11,
+      "diferencia": 1.1036642339108763e-08
+    },
+    {
+      "dt": "dt001",
+      "d": 80,
+      "malla": "gruesa",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": 1.0136655069179807e-13,
+      "impar_gemela": -2.069604917431243e-16,
+      "diferencia": 1.015735111835412e-13
+    },
+    {
+      "dt": "dt001",
+      "d": 80,
+      "malla": "gruesa",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": 1.1006888676700582e-08,
+      "impar_gemela": -2.9855235919371646e-11,
+      "diferencia": 1.1036743912619953e-08
+    },
+    {
+      "dt": "dt001",
+      "d": 80,
+      "malla": "fina",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": -3.4780641887029466e-16,
+      "impar_gemela": -5.869943025830861e-23,
+      "diferencia": -3.478063601708644e-16
+    },
+    {
+      "dt": "dt001",
+      "d": 80,
+      "malla": "fina",
+      "magnitud": "energia_estatica",
+      "impar_cargada": 2.796422309881726e-09,
+      "impar_gemela": -7.540978410100494e-12,
+      "diferencia": 2.8039632882918264e-09
+    },
+    {
+      "dt": "dt001",
+      "d": 80,
+      "malla": "fina",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": 1.0118969539778207e-13,
+      "impar_gemela": -2.0660413002535987e-16,
+      "diferencia": 1.0139629952780743e-13
+    },
+    {
+      "dt": "dt001",
+      "d": 80,
+      "malla": "fina",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": 2.7965234995771325e-09,
+      "impar_gemela": -7.54118501423052e-12,
+      "diferencia": 2.804064684591363e-09
+    },
+    {
+      "dt": "dt001",
+      "d": 80,
+      "malla": "amplia",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": -3.4780633946095586e-16,
+      "impar_gemela": -5.869943025830861e-23,
+      "diferencia": -3.478062807615256e-16
+    },
+    {
+      "dt": "dt001",
+      "d": 80,
+      "malla": "amplia",
+      "magnitud": "energia_estatica",
+      "impar_cargada": 2.7964223098818582e-09,
+      "impar_gemela": -7.540978410100494e-12,
+      "diferencia": 2.8039632882919588e-09
+    },
+    {
+      "dt": "dt001",
+      "d": 80,
+      "malla": "amplia",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": 1.0118969539778369e-13,
+      "impar_gemela": -2.066041300253599e-16,
+      "diferencia": 1.0139629952780904e-13
+    },
+    {
+      "dt": "dt001",
+      "d": 80,
+      "malla": "amplia",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": 2.796523499577265e-09,
+      "impar_gemela": -7.54118501423052e-12,
+      "diferencia": 2.8040646845914952e-09
+    },
+    {
+      "dt": "dt001",
+      "d": 100,
+      "malla": "gruesa",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": -1.3091469652823753e-15,
+      "impar_gemela": -3.483387614225078e-23,
+      "diferencia": -1.3091469304484991e-15
+    },
+    {
+      "dt": "dt001",
+      "d": 100,
+      "malla": "gruesa",
+      "magnitud": "energia_estatica",
+      "impar_cargada": -7.760169418491651e-11,
+      "impar_gemela": -1.3213662141954683e-11,
+      "diferencia": -6.438803204296183e-11
+    },
+    {
+      "dt": "dt001",
+      "d": 100,
+      "malla": "gruesa",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": -1.093191737198335e-13,
+      "impar_gemela": -2.816624238568437e-16,
+      "diferencia": -1.0903751129597666e-13
+    },
+    {
+      "dt": "dt001",
+      "d": 100,
+      "malla": "gruesa",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": -7.77110133586555e-11,
+      "impar_gemela": -1.3213943804378539e-11,
+      "diferencia": -6.449706955427697e-11
+    },
+    {
+      "dt": "dt001",
+      "d": 100,
+      "malla": "fina",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": -1.3597537428094715e-15,
+      "impar_gemela": -2.764915820943851e-23,
+      "diferencia": -1.3597537151603133e-15
+    },
+    {
+      "dt": "dt001",
+      "d": 100,
+      "malla": "fina",
+      "magnitud": "energia_estatica",
+      "impar_cargada": -8.062138159206255e-11,
+      "impar_gemela": -3.339980311052755e-12,
+      "diferencia": -7.72814012810098e-11
+    },
+    {
+      "dt": "dt001",
+      "d": 100,
+      "malla": "fina",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": -1.0938313089504993e-13,
+      "impar_gemela": -2.812595771383539e-16,
+      "diferencia": -1.0910187131791157e-13
+    },
+    {
+      "dt": "dt001",
+      "d": 100,
+      "malla": "fina",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": -8.073076472293005e-11,
+      "impar_gemela": -3.340261570629893e-12,
+      "diferencia": -7.739050315230015e-11
+    },
+    {
+      "dt": "dt001",
+      "d": 100,
+      "malla": "amplia",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": -1.3597537957490307e-15,
+      "impar_gemela": -2.764905723524264e-23,
+      "diferencia": -1.3597537680999735e-15
+    },
+    {
+      "dt": "dt001",
+      "d": 100,
+      "malla": "amplia",
+      "magnitud": "energia_estatica",
+      "impar_cargada": -8.062138159222137e-11,
+      "impar_gemela": -3.339980311052755e-12,
+      "diferencia": -7.728140128116862e-11
+    },
+    {
+      "dt": "dt001",
+      "d": 100,
+      "malla": "amplia",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": -1.0938313089504993e-13,
+      "impar_gemela": -2.8125957713835395e-16,
+      "diferencia": -1.0910187131791157e-13
+    },
+    {
+      "dt": "dt001",
+      "d": 100,
+      "malla": "amplia",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": -8.073076472308887e-11,
+      "impar_gemela": -3.340261570629893e-12,
+      "diferencia": -7.739050315245897e-11
+    },
+    {
+      "dt": "dt001",
+      "d": 120,
+      "malla": "gruesa",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": 1.2191146982945664e-13,
+      "impar_gemela": -6.445940228741932e-24,
+      "diferencia": 1.2191146983590258e-13
+    },
+    {
+      "dt": "dt001",
+      "d": 120,
+      "malla": "gruesa",
+      "magnitud": "energia_estatica",
+      "impar_cargada": -1.5939040171250667e-08,
+      "impar_gemela": -1.2201720420094294e-12,
+      "diferencia": -1.593781999920866e-08
+    },
+    {
+      "dt": "dt001",
+      "d": 120,
+      "malla": "gruesa",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": 2.847615016731248e-13,
+      "impar_gemela": 6.847527846560237e-17,
+      "diferencia": 2.846930263946592e-13
+    },
+    {
+      "dt": "dt001",
+      "d": 120,
+      "malla": "gruesa",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": -1.5938755409749018e-08,
+      "impar_gemela": -1.2201035667309639e-12,
+      "diferencia": -1.5937535306182288e-08
+    },
+    {
+      "dt": "dt001",
+      "d": 120,
+      "malla": "fina",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": 1.2183864024258582e-13,
+      "impar_gemela": -5.25121354322833e-24,
+      "diferencia": 1.2183864024783703e-13
+    },
+    {
+      "dt": "dt001",
+      "d": 120,
+      "malla": "fina",
+      "magnitud": "energia_estatica",
+      "impar_cargada": -4.121596384155573e-09,
+      "impar_gemela": -3.1007511781171444e-13,
+      "diferencia": -4.121286309037761e-09
+    },
+    {
+      "dt": "dt001",
+      "d": 120,
+      "malla": "fina",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": 2.8678160820551195e-13,
+      "impar_gemela": 6.846384458079249e-17,
+      "diferencia": 2.8671314436093114e-13
+    },
+    {
+      "dt": "dt001",
+      "d": 120,
+      "malla": "fina",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": -4.12130960254726e-09,
+      "impar_gemela": -3.1000665396713367e-13,
+      "diferencia": -4.120999595893293e-09
+    },
+    {
+      "dt": "dt001",
+      "d": 120,
+      "malla": "amplia",
+      "magnitud": "energia_cuadratica",
+      "impar_cargada": 1.2183864003082758e-13,
+      "impar_gemela": -5.251163056130396e-24,
+      "diferencia": 1.2183864003607874e-13
+    },
+    {
+      "dt": "dt001",
+      "d": 120,
+      "malla": "amplia",
+      "magnitud": "energia_estatica",
+      "impar_cargada": -4.121596384155361e-09,
+      "impar_gemela": -3.100751178117144e-13,
+      "diferencia": -4.121286309037549e-09
+    },
+    {
+      "dt": "dt001",
+      "d": 120,
+      "malla": "amplia",
+      "magnitud": "energia_cinetica_seguimiento",
+      "impar_cargada": 2.8678160820551195e-13,
+      "impar_gemela": 6.846384458079249e-17,
+      "diferencia": 2.8671314436093114e-13
+    },
+    {
+      "dt": "dt001",
+      "d": 120,
+      "malla": "amplia",
+      "magnitud": "energia_montaje_incremental",
+      "impar_cargada": -4.121309602547048e-09,
+      "impar_gemela": -3.1000665396713357e-13,
+      "diferencia": -4.120999595893081e-09
+    }
+  ],
+  "diferencia_rel_max_fuerza_base": 0.00023818785246820795,
+  "theta_sha256": "ccba93368f572cae3ba1727ecb454a08491c508ee93d207528b8c5527c0e0cc3"
+}
