@@ -1,0 +1,18 @@
+{
+  "codigo": "52ea4186664159828ca32ec6e603e182cdf73c8d",
+  "resultado": "4431d6dbcff4a6da43fff56e39f26e3ce854f654",
+  "procedencia": "Clon nuevo de la rama científica, checkout del código publicado, ejecución de columnas.py y verificar.py con OPENBLAS_NUM_THREADS=1. Recuperación posterior del commit de resultado en el mismo clon. Los dos ficheros regenerados se compararon byte a byte con los dos blobs gzip de GitHub descomprimidos.",
+  "controles": [
+    "jacobiano por paso complejo",
+    "proyección paralela y perpendicular",
+    "reproducción de la escalera original",
+    "20 continuaciones desde cero con verificación de pasos por dos medios pasos"
+  ],
+  "filas_de_pasos_aceptados": 6160,
+  "comparaciones_cmp": 2,
+  "salida": 0,
+  "sha256": {
+    "resultado.json": "a1f5ed63740041519be5ce87a7548690af76ddb4c0e18b0b0d33d6c7c4480fd2",
+    "pasos.csv": "bd75652e645b35d871feb34ea24f41b9b8c591f368452c43d9e58b0e0f2e95cb"
+  }
+}
