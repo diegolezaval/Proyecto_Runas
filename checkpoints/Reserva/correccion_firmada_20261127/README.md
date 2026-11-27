@@ -1,0 +1,50 @@
+# Primera corrección radial con las dos fuerzas firmadas
+
+[Protocolo anterior al cálculo](PROTOCOLO.md) · [Propagación y medición](medir_correccion.py) · [Integrador polinómico](polinomio.c) · [Verificación independiente](verificar.py) · [Control dentro del puente](control_interior.json) · [Resultados](resultado.json) · [Series por trayectoria](series.csv.gz)
+
+## Construcción
+
+Se recuperaron con sus manifiestos la cargada y la gemela en τ300 de la preparación dt0005 y la receptora preparada del paso 2. Se usaron R256, dr=0,025, regularidad en el centro y pared Dirichlet del operador radial FV publicado. El equilibrio CP03 interpolado, su defecto afín, el giro ω=0,900, el paso tangente 0,0025 y el puente de Hermite de longitud h=0,125 son los de la [entrega conjunta](../energia_conjunta_contacto_20261127/README.md). En s=0…40 se siguieron tres trayectorias aisladas. Cada par de correcciones parte de posición y velocidad cero. Solo sus fuentes se evalúan sobre el puente prescrito.
+
+Sea U_H=(x_H,v_H), con v_H la derivada del cúbico, y sea G el generador lineal de primer orden en el marco rotante. La evolución afín cumple U_A′=GU_A+a. Definimos R_T=U_H′−GU_H−a y R_N(x)=aceleración afín menos aceleración M2 a igual campo y velocidad. Entonces
+
+- La corrección temporal cumple c_T′=Gc_T−R_T. Por sustracción y unicidad en la malla finita, c_T=U_A−U_H para la solución semidiscreta exacta con igual inicio y borde.
+- La corrección de Taylor cumple c_N′=Gc_N−(0,R_N(x_H)). Se reconstruye U_*=U_H+c_T+c_N. La fuente de c_N se conserva incluso después de calcular c_T.
+- Para correcciones exactas, el defecto de U_* frente a M2 tiene componente de posición cero y componente de velocidad R_N(x_*)−R_N(x_H). Para aproximaciones polinómicas se suman, en ambas componentes, los defectos numéricos de c_T y c_N. Estas tres contribuciones se registran por separado.
+
+## Discretización y controles
+
+El defecto temporal es cúbico en el tiempo normalizado de cada puente. El resto de aceleración sobre el puente tiene grado máximo nueve. Se interpolan las fuerzas con signo en cuatro y diez nodos Chebyshev–Lobatto, respectivamente. Se convierten los coeficientes a potencias locales para cada subintervalo. Se propaga el sistema lineal con la recurrencia (k+1)Yₖ₊₁=δ(GYₖ+Fₖ), donde δ es la longitud del subintervalo y Fₖ contiene la fuerza en la componente de velocidad. La serie se corta en orden 22. El resultado principal usa ocho subdivisiones por puente; el contraste de propagación usa cuatro. El contraste de muestreo vuelve a propagar c_N con ocho subdivisiones y cuatro nodos de fuerza en vez de diez.
+
+Se calcula U_A por otra vía mediante la acción de la exponencial de una matriz dispersa aumentada con la constante afín, utilizando pasos h y h/2. Se escala la velocidad por 100 dentro de este solucionador y se restituye antes de comparar. El CSV recoge las discrepancias de posición y velocidad frente a ambas referencias en cada extremo. Un tercer control dentro del primer puente de cada preparación (s=0,0625) usa una exponencial aumentada con las potencias del tiempo; contrasta ambas correcciones y deriva sus polinomios directamente. La mayor discrepancia interior frente a esa exponencial es 2,1e−15 en la norma ponderada de velocidad. El mayor desacuerdo en la identidad de aceleración interior es 7,5e−13 por componente, redondeado hacia arriba. Son comprobaciones numéricas en doble precisión.
+
+Dentro de cada subintervalo, el defecto del polinomio truncado contra la fuerza representada es −G Y₂₂ τ²², donde τ∈[0,1]. Las columnas defecto_T y defecto_N acotan separadamente sus componentes de posición y velocidad. Esta identidad algebraica excluye errores de redondeo e interpolación numérica de coeficientes. Para acotar el cambio del resto entre muestras se suma el valor absoluto de cada coeficiente de posición de ambas correcciones en cada celda. Esa envolvente amplía el recinto de Bernstein del puente original. Se aplica el mayorante del jacobiano del resto M2 sobre ese recinto al desplazamiento corrector, sin usar un radio puntual supuesto. La cota resultante es del **defecto de la trayectoria corregida**, no del error frente a una evolución verdadera. La sustitución puntual en la aceleración M2 en los 960 extremos comprueba el signo del cambio de resto.
+
+## Observables
+
+Las normas de campo y velocidad usan el peso sᵢ=exp[−0,1 max(rᵢ−60,0)] con los volúmenes y las masas cinéticas canónicas. Se informan aparte las proyecciones físicas sin ese peso, q=uᵀ(pᵦ+2ωa) y fase=uᵀb, calculadas en coordenadas canónicas en cada corrección. En las dos donantes se comparan contra el archivo primario cuatro sondas complejas cada 0,25 unidades y los inventarios directos a tiempos enteros. Para cada canal se toma la pérdida desde el mismo dato inicial, luego la diferencia cargada menos gemela y por último su discrepancia con el contraste archivado. Los archivos de observación se recuperan con verificación SHA; sus radios interiores comparten la malla aunque la caja del archivo sea mayor. La receptora aislada actúa como control de preparación.
+
+## Resultado y decisión
+
+En las tres preparaciones y los 320 extremos por preparación, la discrepancia máxima de c_T frente a U_A−U_H, tomando las dos resoluciones independientes, fue 4,34e−14 en posición y 4,36e−12 en velocidad. La identidad proviene de la sustracción de ecuaciones; estas cifras miden la precisión obtenida al comprobarla. En la cargada, las máximas normas de posición de c_T y c_N fueron 7,345e−9 y 5,618e−8. En velocidad fueron 7,446e−7 y 5,642e−8. Estos máximos pueden ocurrir en instantes diferentes.
+
+**Defecto M2.** En la cargada, el mayor resto original en los extremos fue 5,9043e−6 y el mayor cambio de resto tras corregir fue 1,4775e−10, medidos en la misma norma ponderada de aceleración. La envolvente de ese cambio cubre los interiores de los 320 puentes: máximo 4,416e−10 e integral ≤1,042e−8. En la gemela y la receptora las integrales fueron ≤9,644e−9 y ≤9,651e−9. Son cotas numéricas del término de fuerza, en la aritmética y con el alcance indicados arriba. En la cargada, las máximas contribuciones de truncar las dos correcciones a la ecuación de velocidad fueron 6,131e−22 y 9,772e−23. La discrepancia frente a la aceleración M2 evaluada directamente fue ≤1,02e−12 por componente en los extremos. Ese último control incluye redondeo por sustracción.
+
+**Resolución.** En la cargada, pasar de cuatro a ocho subdivisiones cambió c_T en menos de 4,10e−17 en posición y 4,43e−15 en velocidad; para c_N se obtuvieron 6,42e−18 y 5,93e−16. Cambiar el muestreo de la fuente de Taylor de cuatro a diez nodos, manteniendo el propagador fino, cambió c_N hasta 5,31e−13 y 1,12e−12 respectivamente. La evaluación con diez nodos retiene el grado completo del resto sobre el puente cúbico. Estos cambios y los controles independientes son mayores que el término de truncación formal; ese término por sí solo no representa toda la incertidumbre numérica.
+
+| Máxima discrepancia del contraste de pérdidas | Puente | Primera corrección |
+|---|---:|---:|
+| Energía dentro de r40 | 1,2898e−8 | 3,0696e−10 |
+| Carga dentro de r40 | 1,4359e−8 | 3,0832e−10 |
+| Energía dentro de r60 | 1,1949e−8 | 1,2533e−9 |
+| Carga dentro de r60 | 1,3666e−8 | 1,0023e−9 |
+
+Los cuatro inventarios diferenciales aislados mejoran. En las sondas el máximo de la cargada pasa de 1,00122e−8 a 1,00120e−8; en la gemela aumenta de 5,998e−11 a 6,032e−11. Se conserva ese resultado. En particular, las pérdidas dentro de r60 se midieron sin contacto ni entrega a una receptora.
+
+**Límite del presupuesto.** El control escalar registrado después de la propagación aplica el factor de crecimiento 0,50 de la energía ponderada anterior al mayorante del cambio de Taylor. Aísla el aporte positivo de ese término al presupuesto por suma de normas, omitiendo carga, fase, truncación y realimentación. En la cargada ese solo aporte, tras la conversión conservadora al interior, excede el criterio puntual 1e−4 en s=14. En gemela y receptora ocurre en s=15,375. Globalmente se pierde el criterio ya en el primer extremo de la cargada. Estos tiempos indican insuficiencia del presupuesto; no prueban una salida real del tubo ni certifican el periodo anterior. [Protocolo del contraste](PROTOCOLO_PRESUPUESTO.md) · [Cálculo](presupuesto.py) · [Valores por caso](presupuesto.json)
+
+**Siguiente iteración del mismo diagnóstico.** Probar sobre la referencia corregida la energía física sin peso adicional, en la que desaparece el conmutador de coste 0,50. Recuperar para ello el resto corregido sin atenuar la cola, su proyección de carga y la componente de fase; controlar los términos no lineales y la conversión radial a observables locales, con los mismos datos y tolerancias. La contrapartida es el mayor peso de la radiación exterior. Comparar ambos costes antes de introducir una segunda corrección. El piloto sigue sin habilitarse: falta una cota de trayectoria que pueda llevarse a los términos propios y cruzados de H, a S y a los dos balances atribuibles del contacto. Se mantienen los umbrales 1,66414371e−6 en energía y 1,84762579e−6 en carga, el cruce en r60 o un contrato separado validable, y la entrega útil para recarga.
+
+**Resumen para el Dot principal.** Diego, se propagaron por separado las dos fuerzas firmadas y se verificó la corrección temporal con dos resoluciones independientes. La primera corrección mejoró los cuatro inventarios aislados. En r60 las mayores discrepancias de energía y carga bajaron a 1,25e−9 y 1,00e−9. La cota ponderada todavía pierde precisión antes de s=40. La siguiente iteración evaluará el coste de la cola en una energía sin ese crecimiento artificial. [Resultado en la rama científica](https://github.com/diegolezaval/Proyecto_Runas/tree/ciencia/cp12-p4-validacion/checkpoints/Reserva/correccion_firmada_20261127)
+
+Desde este directorio ejecutar, con OPENBLAS_NUM_THREADS=1, `python3 medir_correccion.py`, `python3 verificar.py` y `python3 presupuesto.py`. Comparar los JSON y el CSV regenerado con la entrega; la serie publicada se conserva comprimida sin pérdida.
