@@ -4,8 +4,9 @@ import numpy as np
 import desplazar as d
 
 V,S,s,rate=d.floor_operator()
-lam=np.linalg.eigvalsh(V)
-for other in [np.maximum(0,.17-lam),s+.02,np.maximum(s-.01,.17-lam),s+.8]:
+lam,U=np.linalg.eigh(V)
+assert np.max(abs(V@U-U*lam[:,None,:])) < 1e-10
+for other in [np.maximum(0,.17-lam),s+.02,np.maximum(0,np.maximum(s-.01,.17-lam)),s+.8]:
     assert np.all(s/np.sqrt(lam+s)<=other/np.sqrt(lam+other)+1e-13)
 assert np.all(S[d.loc.i40:]==0)
 rng=np.random.default_rng(3459)
