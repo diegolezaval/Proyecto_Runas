@@ -1,0 +1,22 @@
+{
+  "base": "09a5967f0b2b67ed60fa2cd8a7753530d67c19d5",
+  "protocolos": [
+    "24e9957fdf2a36a4304626f7be090efc6455b1a6",
+    "02054df82cf1936de974e62208739ef8c6f6ad7d"
+  ],
+  "calculo": "727bd5ce70c103d5e73a92d8fdeda6d136cd4b89",
+  "resultado_y_verificador": "95d07b27c45d045ae482878b3db5f12301afbaf9",
+  "metodo": "Clon nuevo, checkout limpio del cálculo publicado, OPENBLAS_NUM_THREADS=1 python3 desplazar.py. Recuperación del commit de resultado y comparación del JSON completo con git show y cmp. Ejecución del verificar.py del commit de resultado. Comparación y verificador final con salida cero.",
+  "incidencia": "El primer verificador escalar incluyó un candidato inadmisible y comparó redondeos de dos rutinas de diagonalización con tolerancia excesivamente estricta. Se corrigió el dominio de los candidatos y se comprobó explícitamente el residuo de los autovectores. El cálculo científico no cambió.",
+  "sha256_resultado": "13c7243d51b4dd1ec1d92c1fba3c178e3a31bcf5e5934fc7b515729bbba77cfe",
+  "prefijos": [
+    7.25,
+    7.25,
+    10.75,
+    10.75,
+    11.125
+  ],
+  "primer_fallo_final": 11.25,
+  "banda": "r<10",
+  "control_lineal_40": 0.0000027825883639084688
+}
