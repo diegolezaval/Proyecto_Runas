@@ -1,0 +1,18 @@
+{
+  "base": "d0c7709db1fd071736226dfb5c9cc2042ef53ee2",
+  "protocolos": [
+    "f0eb1146de9d08696a3f4606661a9d1850117f25",
+    "037d3026b78e9c71fcffc979a2e2fddcaa0fbbe8"
+  ],
+  "codigo": "a85643a00db55ff55773cb53c54a55b57d2b197c",
+  "resultado": "0d04fad5c0b550ce890cc67d0601742155da5513",
+  "metodo": "Clon independiente, checkout limpio del código, ejecución de nucleo.py y continuar.py con OPENBLAS_NUM_THREADS=1, recuperación del commit de resultado y comparación completa mediante cmp de ambos blobs. Salida cero.",
+  "sha256": {
+    "resultado.json": "1dc83676f89e2adcafbceed39adf1c6b33cc5c7f7dd9586fd607960d84ba19f5",
+    "continuacion.json": "1b0eed1090e624a5d8254226087edf34b7f4ab2f6d25c293f72cc6896cd2d4d1"
+  },
+  "prefijo": 13.875,
+  "primer_fallo": 14,
+  "banda": "r<10",
+  "siguiente": "Desagregar en cinco bandas la fuerza no lineal en la traza adjunta manteniendo el presupuesto de volumen."
+}
