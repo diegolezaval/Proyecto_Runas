@@ -1,0 +1,811 @@
+{
+  "base": "e8d99b4b0c5274bc773fc7e05d9d1e8b340a5f4b",
+  "recibo_congelado": "b53be6f2a6b25b0eede8b67073063fbd083660b8004bb0618a1f813925de7a54",
+  "ventanas": [
+    40,
+    80,
+    240
+  ],
+  "series": [
+    {
+      "replica": "archivo416",
+      "caso": "cargada_sin",
+      "tipo": "serie",
+      "sha256": "b45914866e75e44b05ad5f10bffed45de061c1ca90b2b01121727744fce4b815",
+      "fin": 300.0,
+      "cadencia": 1.0,
+      "columnas": [
+        "s",
+        "tau",
+        "E",
+        "Q",
+        "E40",
+        "Q40",
+        "E60",
+        "Q60",
+        "FE40",
+        "FQ40",
+        "FE60",
+        "FQ60",
+        "W"
+      ],
+      "muestras_hasta": {
+        "40": 41,
+        "80": 81,
+        "240": 241
+      }
+    },
+    {
+      "replica": "archivo416",
+      "caso": "cargada_sin",
+      "tipo": "sondas",
+      "sha256": "568898822ac4fec20a986840cff1a9c86f601a27e726e86d1d5cfc1959c28661",
+      "fin": 300.0,
+      "cadencia": 0.25,
+      "columnas": [
+        "s",
+        "Re40i",
+        "Im40i",
+        "Re40e",
+        "Im40e",
+        "Re60i",
+        "Im60i",
+        "Re60e",
+        "Im60e"
+      ],
+      "muestras_hasta": {
+        "40": 161,
+        "80": 321,
+        "240": 961
+      }
+    },
+    {
+      "replica": "archivo416",
+      "caso": "gemela_sin",
+      "tipo": "serie",
+      "sha256": "adc72bf51688dd905652b6b75dcddee738cb50938c2c8b07bbc3fee8b0595af4",
+      "fin": 300.0,
+      "cadencia": 1.0,
+      "columnas": [
+        "s",
+        "tau",
+        "E",
+        "Q",
+        "E40",
+        "Q40",
+        "E60",
+        "Q60",
+        "FE40",
+        "FQ40",
+        "FE60",
+        "FQ60",
+        "W"
+      ],
+      "muestras_hasta": {
+        "40": 41,
+        "80": 81,
+        "240": 241
+      }
+    },
+    {
+      "replica": "archivo416",
+      "caso": "gemela_sin",
+      "tipo": "sondas",
+      "sha256": "e7eeb1a7d8c8142d0028516578477329560ecb6da418c02e2160024dbcea2270",
+      "fin": 300.0,
+      "cadencia": 0.25,
+      "columnas": [
+        "s",
+        "Re40i",
+        "Im40i",
+        "Re40e",
+        "Im40e",
+        "Re60i",
+        "Im60i",
+        "Re60e",
+        "Im60e"
+      ],
+      "muestras_hasta": {
+        "40": 161,
+        "80": 321,
+        "240": 961
+      }
+    },
+    {
+      "replica": "caja576",
+      "caso": "cargada_sin",
+      "tipo": "serie",
+      "sha256": "b0dbfd2885f32a87e2af75d7e8d8ee62c28df4d442ccec1acc23c1c41a8314f9",
+      "fin": 480.0,
+      "cadencia": 1.0,
+      "columnas": [
+        "s",
+        "tau",
+        "E",
+        "Q",
+        "E40",
+        "Q40",
+        "E60",
+        "Q60",
+        "FE40",
+        "FQ40",
+        "FE60",
+        "FQ60",
+        "W"
+      ],
+      "muestras_hasta": {
+        "40": 41,
+        "80": 81,
+        "240": 241
+      }
+    },
+    {
+      "replica": "caja576",
+      "caso": "cargada_sin",
+      "tipo": "sondas",
+      "sha256": "17f7616c16a11522b8ff63a7936ae0c49dfa08e1d904a8b006b296f1d0a7bf7c",
+      "fin": 480.0,
+      "cadencia": 0.25,
+      "columnas": [
+        "s",
+        "Re40i",
+        "Im40i",
+        "Re40e",
+        "Im40e",
+        "Re60i",
+        "Im60i",
+        "Re60e",
+        "Im60e"
+      ],
+      "muestras_hasta": {
+        "40": 161,
+        "80": 321,
+        "240": 961
+      }
+    },
+    {
+      "replica": "caja576",
+      "caso": "gemela_sin",
+      "tipo": "serie",
+      "sha256": "f48db3740b0ea233d379d1bbd64925a02aa719d0dc2927d2129c00fca96f9538",
+      "fin": 480.0,
+      "cadencia": 1.0,
+      "columnas": [
+        "s",
+        "tau",
+        "E",
+        "Q",
+        "E40",
+        "Q40",
+        "E60",
+        "Q60",
+        "FE40",
+        "FQ40",
+        "FE60",
+        "FQ60",
+        "W"
+      ],
+      "muestras_hasta": {
+        "40": 41,
+        "80": 81,
+        "240": 241
+      }
+    },
+    {
+      "replica": "caja576",
+      "caso": "gemela_sin",
+      "tipo": "sondas",
+      "sha256": "6e6564d1326900ce6babcbff53d46dfd66cc6c5d2eb53ebe57c6221b1b265211",
+      "fin": 480.0,
+      "cadencia": 0.25,
+      "columnas": [
+        "s",
+        "Re40i",
+        "Im40i",
+        "Re40e",
+        "Im40e",
+        "Re60i",
+        "Im60i",
+        "Re60e",
+        "Im60e"
+      ],
+      "muestras_hasta": {
+        "40": 161,
+        "80": 321,
+        "240": 961
+      }
+    },
+    {
+      "replica": "espacial",
+      "caso": "cargada_sin",
+      "tipo": "serie",
+      "sha256": "a355fd7486f080cd0c66669f1ef149dfb61e9fba119381e8616976f5e7180bf3",
+      "fin": 480.0,
+      "cadencia": 1.0,
+      "columnas": [
+        "s",
+        "tau",
+        "E",
+        "Q",
+        "E40",
+        "Q40",
+        "E60",
+        "Q60",
+        "FE40",
+        "FQ40",
+        "FE60",
+        "FQ60",
+        "W"
+      ],
+      "muestras_hasta": {
+        "40": 41,
+        "80": 81,
+        "240": 241
+      }
+    },
+    {
+      "replica": "espacial",
+      "caso": "cargada_sin",
+      "tipo": "sondas",
+      "sha256": "45cefa35249fe6bf97835075f6819a40b89b978f88e5b8b1f2036691d5c2c6db",
+      "fin": 480.0,
+      "cadencia": 0.25,
+      "columnas": [
+        "s",
+        "Re40i",
+        "Im40i",
+        "Re40e",
+        "Im40e",
+        "Re60i",
+        "Im60i",
+        "Re60e",
+        "Im60e"
+      ],
+      "muestras_hasta": {
+        "40": 161,
+        "80": 321,
+        "240": 961
+      }
+    },
+    {
+      "replica": "espacial",
+      "caso": "gemela_sin",
+      "tipo": "serie",
+      "sha256": "309d9d8fb8b6563eb9ff9fe26c3a92561362c85502fe69d348211a422b140b2f",
+      "fin": 480.0,
+      "cadencia": 1.0,
+      "columnas": [
+        "s",
+        "tau",
+        "E",
+        "Q",
+        "E40",
+        "Q40",
+        "E60",
+        "Q60",
+        "FE40",
+        "FQ40",
+        "FE60",
+        "FQ60",
+        "W"
+      ],
+      "muestras_hasta": {
+        "40": 41,
+        "80": 81,
+        "240": 241
+      }
+    },
+    {
+      "replica": "espacial",
+      "caso": "gemela_sin",
+      "tipo": "sondas",
+      "sha256": "13c3a397475a5703c25cff8b67eacb9b4951e6a214fe1794b43bf279a5dbebc2",
+      "fin": 480.0,
+      "cadencia": 0.25,
+      "columnas": [
+        "s",
+        "Re40i",
+        "Im40i",
+        "Re40e",
+        "Im40e",
+        "Re60i",
+        "Im60i",
+        "Re60e",
+        "Im60e"
+      ],
+      "muestras_hasta": {
+        "40": 161,
+        "80": 321,
+        "240": 961
+      }
+    },
+    {
+      "replica": "principal",
+      "caso": "cargada_sin",
+      "tipo": "serie",
+      "sha256": "e42c595e499b5da26299617b8ce8265eda13b9a7085f3e29b97183b4b33a45e5",
+      "fin": 480.0,
+      "cadencia": 1.0,
+      "columnas": [
+        "s",
+        "tau",
+        "E",
+        "Q",
+        "E40",
+        "Q40",
+        "E60",
+        "Q60",
+        "FE40",
+        "FQ40",
+        "FE60",
+        "FQ60",
+        "W"
+      ],
+      "muestras_hasta": {
+        "40": 41,
+        "80": 81,
+        "240": 241
+      }
+    },
+    {
+      "replica": "principal",
+      "caso": "cargada_sin",
+      "tipo": "sondas",
+      "sha256": "af4c05f9bcdde060cda93e05e390f25c300a6c59a4434a97673bd02313d5033f",
+      "fin": 480.0,
+      "cadencia": 0.25,
+      "columnas": [
+        "s",
+        "Re40i",
+        "Im40i",
+        "Re40e",
+        "Im40e",
+        "Re60i",
+        "Im60i",
+        "Re60e",
+        "Im60e"
+      ],
+      "muestras_hasta": {
+        "40": 161,
+        "80": 321,
+        "240": 961
+      }
+    },
+    {
+      "replica": "principal",
+      "caso": "gemela_sin",
+      "tipo": "serie",
+      "sha256": "51796995c30da0b473f31d05495583ef4700ba2b1728e9863c36b9bba654c708",
+      "fin": 480.0,
+      "cadencia": 1.0,
+      "columnas": [
+        "s",
+        "tau",
+        "E",
+        "Q",
+        "E40",
+        "Q40",
+        "E60",
+        "Q60",
+        "FE40",
+        "FQ40",
+        "FE60",
+        "FQ60",
+        "W"
+      ],
+      "muestras_hasta": {
+        "40": 41,
+        "80": 81,
+        "240": 241
+      }
+    },
+    {
+      "replica": "principal",
+      "caso": "gemela_sin",
+      "tipo": "sondas",
+      "sha256": "f1aaa45d0748c8796655c8386cddc7a5485b5bb36537e0b6914899c0a2c23549",
+      "fin": 480.0,
+      "cadencia": 0.25,
+      "columnas": [
+        "s",
+        "Re40i",
+        "Im40i",
+        "Re40e",
+        "Im40e",
+        "Re60i",
+        "Im60i",
+        "Re60e",
+        "Im60e"
+      ],
+      "muestras_hasta": {
+        "40": 161,
+        "80": 321,
+        "240": 961
+      }
+    },
+    {
+      "replica": "temporal",
+      "caso": "cargada_sin",
+      "tipo": "serie",
+      "sha256": "a60ab2fc22380c4972a61321aa55ae9f4c74e8db54b04e8734e472ae93f77821",
+      "fin": 480.0,
+      "cadencia": 1.0,
+      "columnas": [
+        "s",
+        "tau",
+        "E",
+        "Q",
+        "E40",
+        "Q40",
+        "E60",
+        "Q60",
+        "FE40",
+        "FQ40",
+        "FE60",
+        "FQ60",
+        "W"
+      ],
+      "muestras_hasta": {
+        "40": 41,
+        "80": 81,
+        "240": 241
+      }
+    },
+    {
+      "replica": "temporal",
+      "caso": "cargada_sin",
+      "tipo": "sondas",
+      "sha256": "45ac130bf27303966029bfe1de1a5f3d76ed049beb8a846c4055c66c525fc690",
+      "fin": 480.0,
+      "cadencia": 0.25,
+      "columnas": [
+        "s",
+        "Re40i",
+        "Im40i",
+        "Re40e",
+        "Im40e",
+        "Re60i",
+        "Im60i",
+        "Re60e",
+        "Im60e"
+      ],
+      "muestras_hasta": {
+        "40": 161,
+        "80": 321,
+        "240": 961
+      }
+    },
+    {
+      "replica": "temporal",
+      "caso": "gemela_sin",
+      "tipo": "serie",
+      "sha256": "58d889970859dc348955ee0cccbd9cd793be6b49d972685da3f418620db9b692",
+      "fin": 480.0,
+      "cadencia": 1.0,
+      "columnas": [
+        "s",
+        "tau",
+        "E",
+        "Q",
+        "E40",
+        "Q40",
+        "E60",
+        "Q60",
+        "FE40",
+        "FQ40",
+        "FE60",
+        "FQ60",
+        "W"
+      ],
+      "muestras_hasta": {
+        "40": 41,
+        "80": 81,
+        "240": 241
+      }
+    },
+    {
+      "replica": "temporal",
+      "caso": "gemela_sin",
+      "tipo": "sondas",
+      "sha256": "1268c4cc81acba9a61daba18fabb812a73900ad9e72621c639d9ad193d4d0daa",
+      "fin": 480.0,
+      "cadencia": 0.25,
+      "columnas": [
+        "s",
+        "Re40i",
+        "Im40i",
+        "Re40e",
+        "Im40e",
+        "Re60i",
+        "Im60i",
+        "Re60e",
+        "Im60e"
+      ],
+      "muestras_hasta": {
+        "40": 161,
+        "80": 321,
+        "240": 961
+      }
+    }
+  ],
+  "instantaneas_git": [
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/archivo416/cargada_con/s300.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/archivo416/cargada_sin/s300.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/archivo416/gemela_con/s300.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/archivo416/gemela_sin/s300.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/archivo416/vacio/s300.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/caja576/cargada_con/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/caja576/cargada_sin/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/caja576/gemela_con/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/caja576/gemela_sin/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/caja576/vacio/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/espacial/cargada_con/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/espacial/cargada_sin/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/espacial/gemela_con/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/espacial/gemela_sin/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/espacial/vacio/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/estados_iniciales/R512_h0.025_cargada.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/estados_iniciales/R512_h0.025_gemela.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/estados_iniciales/R512_h0.05_cargada.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/estados_iniciales/R512_h0.05_gemela.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/estados_iniciales/R576_h0.025_cargada.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/estados_iniciales/R576_h0.025_gemela.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/principal/cargada_con/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/principal/cargada_sin/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/principal/gemela_con/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/principal/gemela_sin/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/principal/vacio/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/referencias_tau300/R384_h0.05_cargada.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/referencias_tau300/R384_h0.05_gemela.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/referencias_tau300/R416_h0.025_cargada.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/referencias_tau300/R416_h0.025_gemela.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/temporal/cargada_con/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/temporal/cargada_sin/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/temporal/gemela_con/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/temporal/gemela_sin/s480.npz",
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/temporal/vacio/s480.npz",
+    "checkpoints/Reserva/paso2_20261117/amplitud_menor/datos/gota_a0025.npz",
+    "checkpoints/Reserva/paso2_20261117/amplitud_menor/datos/gota_a0050.npz",
+    "checkpoints/Reserva/paso2_20261117/amplitud_menor/datos/vacio_a0025.npz",
+    "checkpoints/Reserva/paso2_20261117/amplitud_menor/datos/vacio_a0050.npz",
+    "checkpoints/Reserva/paso2_20261117/amplitud_menor/insumos/espacial_gemelo.npz",
+    "checkpoints/Reserva/paso2_20261117/amplitud_menor/insumos/espacial_preparacion.npz",
+    "checkpoints/Reserva/paso2_20261117/amplitud_menor/insumos/temporal_gemelo.npz",
+    "checkpoints/Reserva/paso2_20261117/amplitud_menor/insumos/temporal_preparacion.npz",
+    "checkpoints/Reserva/paso2_20261117/datos/gemelo.npz",
+    "checkpoints/Reserva/paso2_20261117/datos/gota_a010.npz",
+    "checkpoints/Reserva/paso2_20261117/datos/gota_a020.npz",
+    "checkpoints/Reserva/paso2_20261117/datos/libre.npz",
+    "checkpoints/Reserva/paso2_20261117/datos/mas.npz",
+    "checkpoints/Reserva/paso2_20261117/datos/menos.npz",
+    "checkpoints/Reserva/paso2_20261117/datos/preparacion.npz",
+    "checkpoints/Reserva/paso2_20261117/datos/vacio_a010.npz",
+    "checkpoints/Reserva/paso2_20261117/datos/vacio_a020.npz",
+    "checkpoints/Reserva/paso3_20261118/calibracion/ensayo1.npz",
+    "checkpoints/Reserva/paso3_20261118/calibracion/ensayo2.npz",
+    "checkpoints/Reserva/paso3_20261118/datos/dt0005/gemelo/tau260.npz",
+    "checkpoints/Reserva/paso3_20261118/datos/dt0005/gemelo/tau280.npz",
+    "checkpoints/Reserva/paso3_20261118/datos/dt0005/gemelo/tau300.npz",
+    "checkpoints/Reserva/paso3_20261118/datos/dt0005/gota_a010/tau260.npz",
+    "checkpoints/Reserva/paso3_20261118/datos/dt0005/gota_a010/tau280.npz",
+    "checkpoints/Reserva/paso3_20261118/datos/dt0005/gota_a010/tau300.npz",
+    "checkpoints/Reserva/paso3_20261118/datos/dt001/gemelo/tau260.npz",
+    "checkpoints/Reserva/paso3_20261118/datos/dt001/gemelo/tau280.npz",
+    "checkpoints/Reserva/paso3_20261118/datos/dt001/gemelo/tau300.npz",
+    "checkpoints/Reserva/paso3_20261118/datos/dt001/gota_a010/tau260.npz",
+    "checkpoints/Reserva/paso3_20261118/datos/dt001/gota_a010/tau280.npz",
+    "checkpoints/Reserva/paso3_20261118/datos/dt001/gota_a010/tau300.npz"
+  ],
+  "capsulas": {
+    "checkpoints/Reserva/mision_paquete_negativo_20261125/Reserva_paquete_negativo_reproducible.zip": {
+      "archivos": 98,
+      "estados": [
+        "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/referencias_tau300/R384_h0.05_cargada.npz",
+        "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/referencias_tau300/R384_h0.05_gemela.npz",
+        "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/referencias_tau300/R416_h0.025_cargada.npz",
+        "checkpoints/Reserva/mision_paquete_negativo_20261125/datos/referencias_tau300/R416_h0.025_gemela.npz",
+        "checkpoints/Reserva/paso2_20261117/datos/preparacion.npz",
+        "checkpoints/Reserva/paso3_20261118/calibracion/ensayo2.npz",
+        "checkpoints/Reserva/paso3_20261118/datos/dt0005/gemelo/tau300.npz",
+        "checkpoints/Reserva/paso3_20261118/datos/dt0005/gota_a010/tau300.npz"
+      ],
+      "extensiones": [
+        ".c",
+        ".csv",
+        ".json",
+        ".md",
+        ".npz",
+        ".py",
+        ".sha256",
+        ".svg",
+        ".txt"
+      ]
+    },
+    "checkpoints/Reserva/mision_senal_apagada_20261124/Reserva_contraste_senal_reproducible.zip": {
+      "archivos": 69,
+      "estados": [
+        "checkpoints/Reserva/paso2_20261117/datos/preparacion.npz",
+        "checkpoints/Reserva/paso3_20261118/datos/dt0005/gemelo/tau300.npz",
+        "checkpoints/Reserva/paso3_20261118/datos/dt0005/gota_a010/tau300.npz"
+      ],
+      "extensiones": [
+        ".c",
+        ".csv",
+        ".json",
+        ".md",
+        ".npz",
+        ".py",
+        ".svg"
+      ]
+    },
+    "checkpoints/Reserva/paso2_20261117/amplitud_menor/datos/espacial_series.zip": {
+      "archivos": 4,
+      "estados": [],
+      "extensiones": [
+        ".csv"
+      ]
+    },
+    "checkpoints/Reserva/paso2_20261117/amplitud_menor/datos/fina_series.zip": {
+      "archivos": 4,
+      "estados": [],
+      "extensiones": [
+        ".csv"
+      ]
+    },
+    "checkpoints/Reserva/paso2_20261117/amplitud_menor/datos/temporal_series.zip": {
+      "archivos": 4,
+      "estados": [],
+      "extensiones": [
+        ".csv"
+      ]
+    },
+    "checkpoints/Reserva/paso2_20261117/datos/espacial_series.zip": {
+      "archivos": 8,
+      "estados": [],
+      "extensiones": [
+        ".csv"
+      ]
+    },
+    "checkpoints/Reserva/paso2_20261117/datos/fina_series.zip": {
+      "archivos": 8,
+      "estados": [],
+      "extensiones": [
+        ".csv"
+      ]
+    },
+    "checkpoints/Reserva/paso2_20261117/datos/temporal_series.zip": {
+      "archivos": 8,
+      "estados": [],
+      "extensiones": [
+        ".csv"
+      ]
+    }
+  },
+  "radiales_apagadas": [
+    {
+      "ruta": "caja416/cargada/apagada",
+      "s_final": 240.0,
+      "sha256_final": "3d15dba872931a32b3c37f20f61999ffe531ee580eed8b45d26c8e415bc0b56e"
+    },
+    {
+      "ruta": "caja416/gemela/apagada",
+      "s_final": 240.0,
+      "sha256_final": "d39df4c6cad252011a39c0bf27aa7762d178a5ee88ad0b1823f4a21e950107c9"
+    },
+    {
+      "ruta": "espacial/cargada/apagada",
+      "s_final": 240.0,
+      "sha256_final": "94ba07dc213ee6418f311ed0737c83702419017dc803ce2b80b5138be31b6d49"
+    },
+    {
+      "ruta": "espacial/gemela/apagada",
+      "s_final": 240.0,
+      "sha256_final": "8e1ccf3b78da75b4163f6ea2dbc2918b3f39715d4973efdd127e4d5fe17dafb0"
+    },
+    {
+      "ruta": "historica/cargada/apagada",
+      "s_final": 240.0,
+      "sha256_final": "06c4525191b4ccbc28b6052131ff4f9c7eaf29c4caee14e3ab28a1ed28e1ce9f"
+    },
+    {
+      "ruta": "historica/gemela/apagada",
+      "s_final": 240.0,
+      "sha256_final": "e08ad0c3aaea770cbfede05a74dd6ae9a2175bc5660dc41e0c65f921b3afc6b3"
+    },
+    {
+      "ruta": "principal/cargada/apagada",
+      "s_final": 240.0,
+      "sha256_final": "c7d8efa79d9a093e78dd3ccaafcfe9fb9b7e1bd491e5331605731eb5c6da8913"
+    },
+    {
+      "ruta": "principal/gemela/apagada",
+      "s_final": 240.0,
+      "sha256_final": "b4605b7bd9bc44a148d1ac0cc407f9bb469cee24a9b3b02daa0a07b8601b8a6d"
+    },
+    {
+      "ruta": "temporal/cargada/apagada",
+      "s_final": 240.0,
+      "sha256_final": "09b49eaee3eb2a39fffd0cf4a84ad30e2d45c9a7fbb8a7cde5c194a03d68f61d"
+    },
+    {
+      "ruta": "temporal/gemela/apagada",
+      "s_final": 240.0,
+      "sha256_final": "9f23962698e94ad5d5fdad74c7357bbf84336205d0801fadabac21905dfebe04"
+    }
+  ],
+  "estados_dos_centros_s240": [
+    "primera_descarga/espacial/cargada/s240.npz",
+    "primera_descarga/espacial/directa/s240.npz",
+    "primera_descarga/espacial/gemelo/s240.npz",
+    "primera_descarga/fina/cargada/s240.npz",
+    "primera_descarga/fina/directa/s240.npz",
+    "primera_descarga/fina/gemelo/s240.npz",
+    "primera_descarga/intermedia/cargada/s240.npz",
+    "primera_descarga/intermedia/directa/s240.npz",
+    "primera_descarga/intermedia/gemelo/s240.npz"
+  ],
+  "dos_centros_sin_senal": [
+    [
+      "fina",
+      "cargada",
+      "1fd47f170b2a1550f48b0723c84a61837a888a17065eadfc814bf945eb854f5f"
+    ],
+    [
+      "fina",
+      "gemelo",
+      "3b4945587246fb8efeda3e92c2eee38de9c343da770d3b4ae81eea71f2c5095f"
+    ],
+    [
+      "intermedia",
+      "cargada",
+      "92c073873eb52a6be28e3957b041c58e2cc60657534375ed2a02eefd7840a28b"
+    ],
+    [
+      "intermedia",
+      "gemelo",
+      "e8a926812110e0c695b4c51567119566e17875c9eb3d3c7918020d3849d1b4c6"
+    ],
+    [
+      "espacial",
+      "cargada",
+      "12b0909f76da7ed5dd72a5e0f268ede85d321bb02c86a63dd6cc0edc14f64089"
+    ],
+    [
+      "espacial",
+      "gemelo",
+      "204fce5dc131a503c1895bc1498670a561d490fd3a7c5aa31d838d7d968cd89d"
+    ]
+  ],
+  "control_fase": {
+    "fuente": "9037fb7f1fa691fe5d8712efee3092d26cc2303b95853694cb7a2539ec1f5574",
+    "soporte_fase": [
+      34,
+      38
+    ],
+    "d": 80,
+    "max_diferencia_densidad_gradiente": 0.0,
+    "max_diferencia_densidad_Q": 0.0,
+    "max_diferencia_s_en_eje": 9.148452961506157e-14
+  },
+  "cobertura_radial": {
+    "40": {
+      "tiempos_posibles_de_campo": [
+        0
+      ],
+      "numero_de_tiempos_interiores": 0
+    },
+    "80": {
+      "tiempos_posibles_de_campo": [
+        0
+      ],
+      "numero_de_tiempos_interiores": 0
+    },
+    "240": {
+      "tiempos_posibles_de_campo": [
+        0,
+        240
+      ],
+      "numero_de_tiempos_interiores": 0
+    }
+  }
+}
