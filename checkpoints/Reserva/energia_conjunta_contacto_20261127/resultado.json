@@ -1,0 +1,118 @@
+{
+  "operador": {
+    "amplitud": {
+      "pruebas": [
+        [
+          0.2,
+          1
+        ],
+        [
+          0.25,
+          1
+        ],
+        [
+          0.35,
+          1
+        ],
+        [
+          0.5,
+          0
+        ]
+      ],
+      "min_pivote": 96.84029222660607,
+      "schur": 88.68003127230135,
+      "residuo_resolucion": 1.1268921387443973e-11
+    },
+    "fase": {
+      "pruebas": [
+        [
+          0.2,
+          1
+        ],
+        [
+          0.25,
+          1
+        ],
+        [
+          0.35,
+          1
+        ],
+        [
+          0.5,
+          0
+        ]
+      ],
+      "min_pivote": 128.09473360345385,
+      "schur": 10150006.861836703,
+      "residuo_resolucion": 6.883481412634869e-07
+    },
+    "coef_D": 0.5,
+    "Jk": 1.7903711301001966e-11,
+    "Ju": 4.346315022276339e-11,
+    "Jtu": 4.373311268804746e-11,
+    "delta_u": 2.0500768135588914e-11,
+    "proyector": 1.446417237242941e-11,
+    "rango_uno": 4.6863918486671294e-11,
+    "cara40": 0.0
+  },
+  "casos": [
+    {
+      "caso": "gota_a010",
+      "integral_temporal": 0.004928401757877215,
+      "impulsos_temporales": 0.0009037838804134246,
+      "impulsos_Taylor": 0.0001992008414779085,
+      "integral_Taylor": 0.00020331629434460714,
+      "primer_fallo": {
+        "t": 0.125,
+        "puntual_global": 208.2863702946992,
+        "puntual_r60": 0.011372900837636982,
+        "L": 0.4642985963809376
+      },
+      "D": 149265.9742529452,
+      "q": 11.970773909616053,
+      "fase": 1303096.6365168167,
+      "cota_desplazamiento": 1815084.2252381078,
+      "correccion_carga_fisica": 2.977873245076036e-05,
+      "correccion_fase_fisica": 3.413623494060256e-05
+    },
+    {
+      "caso": "gemelo",
+      "integral_temporal": 0.0003556517688724706,
+      "impulsos_temporales": 9.226210702819745e-05,
+      "impulsos_Taylor": 0.0001230157366174755,
+      "integral_Taylor": 0.0001288068106215834,
+      "primer_fallo": {
+        "t": 0.125,
+        "puntual_global": 10.26029642525647,
+        "puntual_r60": 0.0005602350919270532,
+        "L": 0.43993857296610694
+      },
+      "D": 8980.887013483592,
+      "q": 0.7202603292590772,
+      "fase": 78403.42362885221,
+      "cota_desplazamiento": 109208.18480344613,
+      "correccion_carga_fisica": 1.7916972233523794e-06,
+      "correccion_fase_fisica": 2.053875074531142e-06
+    },
+    {
+      "caso": "receptora",
+      "integral_temporal": 0.00034157338664837387,
+      "impulsos_temporales": 8.835933828493098e-05,
+      "impulsos_Taylor": 0.00012294455260169495,
+      "integral_Taylor": 0.0001287295448525035,
+      "primer_fallo": {
+        "t": 0.125,
+        "puntual_global": 9.373584912208957,
+        "puntual_r60": 0.0005118186636451058,
+        "L": 0.4397608507646003
+      },
+      "D": 8899.649343869207,
+      "q": 0.7137452733074781,
+      "fase": 77694.21632439767,
+      "cota_desplazamiento": 108220.32940932416,
+      "correccion_carga_fisica": 1.7754902154228754e-06,
+      "correccion_fase_fisica": 2.03529650773631e-06
+    }
+  ],
+  "sha_csv": "53d97cae7866082349638d5a25ea07f8b90d52c1e24bf5077dfe2b8a15ff7d13"
+}

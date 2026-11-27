@@ -46,6 +46,10 @@ En s=0…40 se verificó la respuesta estática de carga del operador FV y se ac
 
 **Resumen para el Dot principal.** Diego, en s=0…40 la fuente de error de la cargada se concentra fuera de r60. Para la parte lineal, el factor máximo de las fuentes en r≥160 hacia la corona 40–60 es 0,002479. La entrada desde el núcleo y la realimentación no lineal quedan pendientes. La escalera del prefijo llega al paso interno y pierde monotonía; no extrapolarla. El piloto sigue sin habilitarse. Siguiente iteración del diagnóstico ya anunciado: probar una energía ponderada sobre toda la malla que conserve carga y fase y cancele el término de interfaz en r40; cuantificar los conmutadores y el error no lineal. [Informe y datos para el aviso](checkpoints/Reserva/defecto_localizado_20261127/README.md)
 
+## Contacto interno · energía conjunta y fuerza firmada
+
+**Resumen para el Dot principal.** Diego, la cara r40 se cancela en la energía conjunta de la malla y se reconstruyen carga y fase. La integral superior ponderada del defecto temporal en la cargada es 0,00492840 y la del resto de Taylor 0,000203316. El mayorante no certifica la trayectoria no lineal ni habilita piloto. Al integrar primero la fuerza temporal firmada dentro de cada intervalo, la suma de normas se reduce al 18,34 % de su envolvente; Taylor conserva el 97,98 %. La siguiente iteración del diagnóstico localizado medirá la primera corrección con el propagador radial y ambos defectos firmados por separado, controles de resolución y reevaluación del resto y de los observables aislados. [Resultado y datos](checkpoints/Reserva/energia_conjunta_contacto_20261127/README.md)
+
 ## Orden ejecutada · auditoría pasiva del paso 3
 
 Base revisada `4cfcca381666ad885a6f75d6c678482b0e5ae203`. Usar las trayectorias existentes. Las medias principales ya son públicas. En s = 400…480, la disminución neta del inventario diferencial de la corona equivale al 83,12 % del flujo diferencial de energía por r60 y al 82,74 % del de carga. Esta identidad contable deja abierta la procedencia de lo que cruzó la esfera exterior. [Balances de partida](checkpoints/Reserva/mision_paquete_negativo_20261125/BALANCES.json)
