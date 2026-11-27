@@ -10,7 +10,7 @@ sys.path.insert(0,str(HERE.parent/"adjunta_cargada_20261127"))
 import adjunta as old
 
 
-def kernels(cuts=None):
+def kernels(cuts=None,subcuts=None):
     ref=json.loads((old.HERE/"resultado.json").read_text())
     K,O=old.matrices(old.n)
     R=np.tile(old.sign,old.n)[:,None]
@@ -21,14 +21,23 @@ def kernels(cuts=None):
     w=R*w
     bins=np.zeros((320,5,2))
     fine=np.zeros((320,len(cuts)-1,2)) if cuts is not None else None
+    if subcuts is not None:
+        sub=np.zeros((320,len(subcuts)-1,3,2))
+        starts=np.asarray(subcuts[:-1])
+        present=starts<old.n
     edge=0.
     for step in range(1280):
         a,b=w,v
         W,V=w.copy(),v.copy()
         envelope=np.zeros((5,2))
         wall=np.zeros(2)
+        if subcuts is not None: by_component=np.zeros_like(sub[0])
         if cuts is not None: detail=np.zeros_like(fine[0])
         for order in range(old.degree+1):
+            if subcuts is not None:
+                viewed=a.reshape(old.n,3,2,3)
+                squares=np.einsum("nijk,nijk->nij",viewed,viewed)
+                by_component[present]+=np.sqrt(np.add.reduceat(squares,starts[present],axis=0))
             if cuts is not None:
                 for j,(left,right) in enumerate(zip(cuts,cuts[1:])):
                     block=a[3*left:3*right]
@@ -45,6 +54,7 @@ def kernels(cuts=None):
                 V+=b
         bins[step//4]=np.maximum(bins[step//4],envelope)
         if cuts is not None: fine[step//4]=np.maximum(fine[step//4],detail)
+        if subcuts is not None: sub[step//4]=np.maximum(sub[step//4],by_component)
         edge=max(edge,max(wall))
         w,v=W,V
     assert edge<=max(ref["envolvente_pared"])
@@ -54,4 +64,7 @@ def kernels(cuts=None):
     combined=np.maximum(bins,np.concatenate([bins[:1],bins[:-1]]))
     if cuts is None: return combined
     fine+=remainder/np.sqrt(.590)
-    return combined,np.maximum(fine,np.concatenate([fine[:1],fine[:-1]]))
+    grouped=np.maximum(fine,np.concatenate([fine[:1],fine[:-1]]))
+    if subcuts is not None:
+        return combined,grouped,np.maximum(sub,np.concatenate([sub[:1],sub[:-1]])),remainder/np.sqrt(.590)
+    return combined,grouped
