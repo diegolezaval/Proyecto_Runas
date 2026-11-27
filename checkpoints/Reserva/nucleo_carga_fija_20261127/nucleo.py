@@ -33,7 +33,7 @@ def cutoff():
     return slope,curve
 
 
-def evaluation():
+def evaluation(components=False):
     # Inverse of C by Sherman-Morrison, inverse of P on u-perpendicular by bordering.
     la=splu(o.A)
     av=la.solve(v)
@@ -62,7 +62,11 @@ def evaluation():
             gram=a[np.ix_([i,n+i],k)]
             amp=np.linalg.eigvalsh((gram+gram.T)/2)[-1]+np.linalg.norm(ra[k])/o.gap
             phase=b[i,j]+rb[j]/o.gap
-            coeff.append(np.sqrt(max(amp,phase)+1e-10)/o.sw[i])
+            if components:
+                diagonal=np.array([gram[0,0]+ra[k[0]]/o.gap,phase,gram[1,1]+ra[k[1]]/o.gap])
+                coeff.append(np.sqrt(diagonal+1e-10)/o.sw[i])
+            else:
+                coeff.append(np.sqrt(max(amp,phase)+1e-10)/o.sw[i])
     assert worst<1e-8
     return np.array(coeff),worst
 

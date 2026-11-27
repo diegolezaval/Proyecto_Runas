@@ -48,7 +48,7 @@ class Core:
                     no_lineal=nl,prescrita=F,dq=qdot,cinematica=row["pos"],velocidad=row["vel"])
 
 
-def solve(step,march,table,adj=None,observe=None,core_model=None):
+def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=None):
     V,S,s,rate=d.floor_operator()
     shapes,rates=d.geometry()
     ext=d.loc.i40
@@ -67,6 +67,8 @@ def solve(step,march,table,adj=None,observe=None,core_model=None):
     log=[]
     prev=None
     for j,(best,J,row,signed,time,total,centre,width) in enumerate(d.sources(step,march,table)):
+        if box_observer is not None:
+            box_observer(centre,width)
         mat=d.blocks(signed)
         H=V[ext:]+mat[ext:]
         assert min(np.linalg.eigvalsh(H)[:,0])>state.floor
