@@ -1,0 +1,11 @@
+{
+  "protocolo": "21ffa6c17e3dd38843685c2f3a1992224d2b711c",
+  "codigo": "de6fc93e2082733d6b14b9a4930d377599c3c347",
+  "resultado": "c4f3b0ac04fc50293a2580f1954d4f06c2c67f53",
+  "sha256": "aa27d0a086dcc8991c62d68e99b6e3c260b4bfb9b2dd55c54e5a6ba7ffcd2cf2",
+  "metodo": "Clon independiente limpio en el commit de código, OPENBLAS_NUM_THREADS=1 python3 marchar.py. Tras recuperar el commit de resultados, cmp del archivo recalculado frente al blob completo, salida 0.",
+  "ultimo_aceptado": 15.25,
+  "primer_rechazo": 15.375,
+  "cota_interior_aceptada": 0.00009146624972316506,
+  "cota_interior_rechazada": 0.00010311170866220781
+}
