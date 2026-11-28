@@ -33,7 +33,7 @@ def cutoff():
     return slope,curve
 
 
-def evaluation(components=False):
+def evaluation(components=False, interval=None):
     # Inverse of C by Sherman-Morrison, inverse of P on u-perpendicular by bordering.
     la=splu(o.A)
     av=la.solve(v)
@@ -41,8 +41,9 @@ def evaluation(components=False):
     col=csc_matrix(u[:,None])
     lp=splu(bmat([[o.P,col],[col.T,None]],format="csc"))
     coeff=[];worst=0.
-    for start in range(0,old.indices[1],10):
-        ix=np.arange(start,min(old.indices[1],start+10))
+    first,last=(0,old.indices[1]) if interval is None else interval
+    for start in range(first,last,10):
+        ix=np.arange(start,min(last,start+10))
         short=np.eye(len(ix))
         rhs=np.zeros((2*n,2*len(ix)))
         rows=np.r_[ix,n+ix]

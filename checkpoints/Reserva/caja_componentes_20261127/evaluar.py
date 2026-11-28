@@ -32,6 +32,9 @@ class Components(cont.Core):
         self.active=not self.compare or (t==14 and np.all(radius==o.tube))
         self.signed,self.rad,self.radius=signed,rad,radius
 
+    def transition_box(self,cell,D,Q,b):
+        return cell
+
     def trial(self,x,e,J,qcoeff,row,F):
         original=super().trial(x,e,J,qcoeff,row,F)
         if not self.active:return original
@@ -42,6 +45,7 @@ class Components(cont.Core):
             physical=(self.diag*D+self.kr*Q+self.ur*b)/np.array([np.sqrt(2),np.sqrt(2),1.])
             cell=np.repeat(self.radius,np.diff(d.indices))[:,None]*np.ones((1,3))
             cell[sl]=np.minimum(cell[sl],physical)
+            cell=self.transition_box(cell,D,Q,b)
             _,rad=d.columnas.jac_box(self.centre,self.width+cell)
             upper=abs(d.blocks(self.signed))+d.blocks(np.minimum(rad,self.rad))
             snorm=np.sqrt(upper.sum(axis=2).max(axis=1)*upper.sum(axis=1).max(axis=1))

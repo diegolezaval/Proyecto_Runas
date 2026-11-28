@@ -48,7 +48,7 @@ class Core:
                     no_lineal=nl,prescrita=F,dq=qdot,cinematica=row["pos"],velocidad=row["vel"])
 
 
-def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=None):
+def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=None,radii_policy=None,limit=None):
     V,S,s,rate=d.floor_operator()
     shapes,rates=d.geometry()
     ext=d.loc.i40
@@ -66,7 +66,7 @@ def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=No
     entry=np.zeros(5)
     log=[]
     prev=None
-    for j,(best,J,row,signed,time,total,centre,width) in enumerate(d.sources(step,march,table)):
+    for j,(best,J,row,signed,time,total,centre,width) in enumerate(d.sources(step,march,table[:limit])):
         if box_observer is not None:
             box_observer(centre,width)
         mat=d.blocks(signed)
@@ -79,6 +79,8 @@ def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=No
         prev=H
         op=max(abs(mat[ext:]).sum(axis=2).max(axis=1))
         idx=np.minimum(np.searchsorted(ladder,entry),len(ladder)-1)
+        if radii_policy is not None:
+            idx=radii_policy.start(j,ladder,idx,log)
         F=np.linalg.norm(core.w*best)
         while True:
             radius=ladder[idx]
@@ -103,7 +105,10 @@ def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=No
             pt=np.array(current["punto"]);pt[0]=min(pt[0],cr["punto"])
             need=np.maximum(entry,pt)
             ok=np.all(need<=radius)
-            if ok or np.all(radius==d.tube):
+            done=ok or np.all(radius==d.tube)
+            if radii_policy is not None:
+                done,new_idx=radii_policy.test(j,ladder,idx,entry,pt,cr,e=current['energia'],x=current['volumen'])
+            if done:
                 if observe is not None:
                     observe(physical*np.array(current["volumen"]))
                 log.append(dict(t=row["t"],aceptado=bool(ok),punto=pt.tolist(),radios=radius.tolist(),
@@ -115,7 +120,9 @@ def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=No
                     kernel.D,kernel.Q,kernel.beta=cr["D"],cr["Q"],cr["beta"]
                     entry=pt
                 break
-            if max(need)>d.tube:
+            if radii_policy is not None:
+                idx=new_idx
+            elif max(need)>d.tube:
                 idx[:]=len(ladder)-1
             else:
                 idx=np.maximum(idx,np.searchsorted(ladder,need))
