@@ -51,7 +51,7 @@ class Core:
                     no_lineal=nl,prescrita=F,dq=qdot,cinematica=row["pos"],velocidad=row["vel"])
 
 
-def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=None,radii_policy=None,limit=None,budget_observer=None,shift_refiner=None):
+def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=None,radii_policy=None,limit=None,budget_observer=None,shift_refiner=None,feedback_refiner=None):
     V,S,s,rate=d.floor_operator()
     shapes,rates=d.geometry()
     ext=d.loc.i40
@@ -97,16 +97,21 @@ def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=No
             rem=physical.copy()
             rem[2:]=[max(d.blocks(rad)[b].sum(axis=2).max(axis=1)) for b in d.bands[2:]]
             cap=None
+            fb_cap=None
             while True:
                 candidate=copy.copy(state)
                 candidate.extra=state.extra.copy()
                 candidate.rows=state.rows.copy()
-                candidate.advance(best,physical,row,adj,linear,rem,jump,op,shift_cap=cap)
+                candidate.advance(best,physical,row,adj,linear,rem,jump,op,shift_cap=cap,feedback_cap=fb_cap)
                 current=candidate.rows[-1]
                 if core_model is not None:
                     kernel.prepare(signed,rad,row["t"],radius)
                 cr=kernel.trial(np.array(current["volumen"]),np.array(current["energia"]),
                                 physical,parallel,row,F)
+                if cap is not None and feedback_refiner is not None and fb_cap is None:
+                    fb_cap=feedback_refiner(j,radius,current,cr)
+                    if fb_cap is not None:
+                        continue
                 if shift_refiner is None or cap is not None:
                     break
                 cap=shift_refiner(j,radius,current,cr)
