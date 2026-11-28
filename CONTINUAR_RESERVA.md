@@ -142,6 +142,10 @@ En s=0…40 se verificó la respuesta estática de carga del operador FV y se ac
 
 **Resumen para el Dot principal.** Diego, la garantía integral del tubo de la cargada pasa de s=15,5 a s=17,875 al activar desde el primer intervalo las cotas ya verificadas. El control tardío se reprodujo completo. En s=18 solo falla el mayorante de r≥160, con 1,02938e−4; el núcleo queda en 7,76819e−6. El siguiente contraste del mismo contacto es la conversión puntual de la energía exterior en esa primera fila rechazada, a igual entrada, con la pared FV y las cinco bandas. Siguen pendientes las puertas del piloto y de entrega. [Informe y series](checkpoints/Reserva/activacion_cero_20261128/README.md) · [Recibo](checkpoints/Reserva/activacion_cero_20261128/RECUPERACION.json)
 
+## Contacto interno · evaluación puntual de la banda exterior
+
+**Resumen para el Dot principal.** Diego, la garantía integral de la cargada alcanza s=19,5. En s=18, con idéntica entrada y radios, la cota exterior baja de 1,02938e−4 a 2,02085e−5 con la energía FV y su pared real. El primer rechazo pasa a s=19,625, solo en 60–160. La siguiente prueba de este mismo diagnóstico es la evaluación FV en 60–160 con ambos cortes libres, manteniendo el exterior. El piloto sigue pendiente. [Informe y series](checkpoints/Reserva/evaluacion_exterior_20261128/README.md) · [Recibo](checkpoints/Reserva/evaluacion_exterior_20261128/RECUPERACION.json)
+
 ## Orden ejecutada · auditoría pasiva del paso 3
 
 Base revisada `4cfcca381666ad885a6f75d6c678482b0e5ae203`. Usar las trayectorias existentes. Las medias principales ya son públicas. En s = 400…480, la disminución neta del inventario diferencial de la corona equivale al 83,12 % del flujo diferencial de energía por r60 y al 82,74 % del de carga. Esta identidad contable deja abierta la procedencia de lo que cruzó la esfera exterior. [Balances de partida](checkpoints/Reserva/mision_paquete_negativo_20261125/BALANCES.json)
