@@ -1,0 +1,14 @@
+{
+  "protocolo": "0ae768f079ddc6b5335511418123cedaa51d49ff",
+  "codigo": "63f3f1a0ced6488044f9320e6024c86297ffb835",
+  "resultado": "0ee2c625c08f90de6f9f4244a618f039beec236e",
+  "sha256": "85a0ecac800a77698dfd2f39c0c41a68fed5dff3f2d6bed9588cb145e8b03116",
+  "metodo": "Clon remoto independiente con árbol de trabajo limpio en el commit de código. OPENBLAS_NUM_THREADS=1 python3 contrastar.py terminó con salida 0. Tras recuperar el commit de resultados, cmp del archivo recalculado contra su blob remoto terminó con salida 0.",
+  "control": 19.5,
+  "extremo_fijo": 19.625,
+  "cota_banda_60_160_fija": 0.00002747640250428556,
+  "ultimo_aceptado": 22.25,
+  "primer_rechazo": 22.375,
+  "banda": "r>=160",
+  "cota_en_primer_rechazo": 0.00010539394869532995
+}
