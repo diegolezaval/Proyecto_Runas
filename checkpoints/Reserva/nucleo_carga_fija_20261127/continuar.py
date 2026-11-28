@@ -32,13 +32,16 @@ class Core:
         self.cw=core.norms(core.comm.T@core.u)
         self.D=self.Q=self.beta=0.
 
+    def face_bound(self,x,e):
+        return self.s*e[1]+self.c*x[1]
+
     def trial(self,x,e,J,qcoeff,row,F):
         h=d.h
         qdot=self.pw@x+self.cw@x+row["Fq"]+qcoeff@x+row["vel"]+2*d.o.om*row["pos"]
         Q=min(self.Q+h*qdot,self.uw@(e+2*d.o.om*x))
         beta_cap=self.uw@x
         nl=np.linalg.norm(self.bandmax*J*x)
-        face=self.s*e[1]+self.c*x[1]
+        face=self.face_bound(x,e)
         charge=d.o.kc*qdot
         deriv=F+nl+face+row["vel"]+d.p.op*row["pos"]+charge+d.o.eps*beta_cap
         D=self.D+h*deriv
