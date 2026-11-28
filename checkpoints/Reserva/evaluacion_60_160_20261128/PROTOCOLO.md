@@ -1,0 +1,3 @@
+# Contraste de la banda 60–160
+
+Base cec6724a861b91cadd121431352ab1c94d0a1f53. Conservar la evaluación FV de r≥160 y el control causal completo. En 60≤r<160 usar solo las caras internas de peso unitario y el mismo piso acreditado; omitir las dos caras de corte. Verificar el gradiente del campo físico constante y las cinco columnas independientes por matriz. Reutilizar reserva, márgenes, escalera de λ y puertas del protocolo exterior. Comparar a idéntica entrada y radios en s=19,625; recuperar las otras cuatro envolventes del control. Si cabe la misma fila completa, activar ambas conversiones desde cero hasta el primer rechazo o 40. Conservar los negativos y la corona anterior.
