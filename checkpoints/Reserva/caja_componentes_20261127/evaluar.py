@@ -38,6 +38,9 @@ class Components(cont.Core):
     def transition_force(self,previous,upper,cell,snorm,X):
         return previous
 
+    def charge_source(self,q0,qcoeff,x,upper,cell,transition,row):
+        return q0+qcoeff[1:]@x[1:]
+
     def trial(self,x,e,J,qcoeff,row,F):
         original=super().trial(x,e,J,qcoeff,row,F)
         if not self.active:return original
@@ -64,7 +67,7 @@ class Components(cont.Core):
             tail=(self.bandmax*bandJ*x)[1:]
             tail[0]=self.transition_force(tail[0],upper,cell,snorm,x[1])
             nl=np.linalg.norm(np.r_[f0,tail])
-            charge_source=q0+qcoeff[1:]@x[1:]
+            charge_source=self.charge_source(q0,qcoeff,x,upper,cell,tail[0],row)
             dq=self.pw@x+self.cw@x+row["Fq"]+charge_source+row["vel"]+2*o.om*row["pos"]
             Q=min(self.Q+d.h*dq,self.uw@(e+2*o.om*x))
             DD=F+nl+original["cara"]+row["vel"]+d.p.op*row["pos"]+o.kc*dq+o.eps*(self.uw@x)
