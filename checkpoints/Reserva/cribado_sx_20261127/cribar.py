@@ -18,7 +18,7 @@ def main():
     _,S,ev,_=d.floor_operator()
     shape=d.geometry()[0][1]
     gain=shape*ev.max(axis=1)
-    assert not np.any(S[d.bands[2].start:]) and np.all(h.core.w[d.bands[0]]==1)
+    assert not np.any(S[d.bands[2].start:]) and np.all(q.core.w[d.bands[0]]==1)
     gram_check=np.abs(np.linalg.eigvalsh(S)).max(axis=1)
     assert np.max(abs(ev.max(axis=1)-gram_check))<1e-13
     units=np.array([np.sqrt(2),np.sqrt(2),1.])
@@ -33,7 +33,7 @@ def main():
             old=np.sqrt(record["S_por_banda_cuadrado"][k])
             X=pad*old/max(gain[sl])
             cut=diag*cr["D"]+kap*cr["Q"]+phase*cr["beta"]
-            w=h.core.w[sl,None]
+            w=q.core.w[sl,None]
             cap=np.broadcast_to(orig["radios"][k]*units,cut.shape).copy()
             np.minimum(cap,np.divide(pad*cut,w,out=cap.copy(),where=w>0),out=cap)
             p=cap*o.sw[sl,None]
