@@ -122,6 +122,10 @@ En s=0…40 se verificó la respuesta estática de carga del operador FV y se ac
 
 **Resumen para el Dot principal.** Diego, en s=15 la cota de |q̇| baja de 1,28532e−5 a 8,80848e−7 con la misma entrada. Al aplicar la proyección con las historias completas desde 13,5, la cota interior baja a 1,06485e−4. El tubo integral sigue llegando a s=14,875. Domina el trabajo de caras. La siguiente comprobación del mismo contacto separa por fuente y retardo la energía causal de 10–40 que alimenta ese coste y exige recuperar exactamente su presupuesto dentro del margen numérico. La corona a s=40 conserva únicamente los cortes de fuente publicados. [Método y resultados](checkpoints/Reserva/proyeccion_qdot_20261127/README.md) · [Recibo](checkpoints/Reserva/proyeccion_qdot_20261127/RECUPERACION.json)
 
+## Contacto interno · origen del presupuesto de caras
+
+**Resumen para el Dot principal.** Diego, en la primera fila rechazada s=15, el 76,83 % de la amplitud que alimenta las caras de 10–40 procede del mayorante de la fuerza auxiliar Sx y el 23,17 % de la realimentación. El intervalo propio aporta el 12,50 % del total. Al reconstruir las 120 filas, el coste de caras coincide con el publicado dentro de 4,07e−20. El tubo sigue en s=14,875. La siguiente prueba del mismo contacto es aplicar las cajas por componente y la norma de banda a Sx, conservando el historial para el contraste. [Informe y series](checkpoints/Reserva/historial_caras_20261127/README.md) · [Recibo](checkpoints/Reserva/historial_caras_20261127/RECUPERACION.json)
+
 ## Orden ejecutada · auditoría pasiva del paso 3
 
 Base revisada `4cfcca381666ad885a6f75d6c678482b0e5ae203`. Usar las trayectorias existentes. Las medias principales ya son públicas. En s = 400…480, la disminución neta del inventario diferencial de la corona equivale al 83,12 % del flujo diferencial de energía por r60 y al 82,74 % del de carga. Esta identidad contable deja abierta la procedencia de lo que cruzó la esfera exterior. [Balances de partida](checkpoints/Reserva/mision_paquete_negativo_20261125/BALANCES.json)
