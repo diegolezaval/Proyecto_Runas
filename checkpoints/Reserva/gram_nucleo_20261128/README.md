@@ -1,0 +1,23 @@
+# Evaluación conjunta en el núcleo de la donante
+
+La garantía en todo el volumen llega hasta **s=22,375**. La primera fila rechazada, s=22,5, conserva la entrada, los cinco radios y los presupuestos archivados. La evaluación conjunta de las tres componentes da en r=0,0125 una cota de 1,04837986e−4. Al afinar también la acumulación de la fase común, la cota baja a **1,00786405e−4**. El techo del núcleo es 1e−4. Las otras cuatro bandas caben en el mismo candidato. Se conservó el rechazo sin repetir la marcha.
+
+## Geometría del extremo
+
+Se evalúa el campo canónico por celda en el orden amplitud real de Φ, χ, fase imaginaria de Φ. El corte W vale uno en el núcleo. Las columnas de κq y uβ tienen soportes de componentes disjuntos. La norma de su suma es la hipotenusa de sus normas. Con los D, Q y β de la fila publicada, este cambio reduce el mayorante previo de 1,04838274e−4 en solo 2,89e−10, redondeando el ahorro hacia arriba. En la celda limitante el término transversal es 9,95714e−5, la restauración de fase 5,26657e−6 y la de carga 2,88273e−10, aproximadamente.
+
+La matriz local G de evaluación tiene un bloque de amplitud de orden dos y otro escalar de fase perpendicular. Se resolvió la amplitud por un sistema bordeado independiente de la actualización de Sherman–Morrison utilizada en el control. Se usó el operador de fase restringido y se midieron residuos de ambas resoluciones. La holgura por celda es el mayor residuo de bloque dividido por el hueco de 0,17, más 1e−10, antes de dividir por la masa FV. El contraste con κq=uβ=0 recupera la cota de control con discrepancia máxima inferior a 1e−14.
+
+Con restitución t y un solo presupuesto D, la forma local de la desviación reducida es una elipsoide. Para μ superior al mayor autovalor del mayorante de G, completar el cuadrado acota el cuadrado de la norma trasladada por μD² + tᵀ(I−G/μ)⁻¹t. Se probaron 121 márgenes positivos y se conservó el mínimo con las cotas anteriores. Se verificó la invariancia al signo relativo de las restituciones. En la fila inicial una dirección de prueba de la elipsoide local da 1,04837956e−4. Ese valor muestra la precisión de la optimización del modelo de cotas. El error realizado por M2 sigue indeterminado. Como comprobación separada, dividir las dos componentes de Φ por √2 da una cota física inferior a 7,41317e−5. La aceptación exige la misma norma canónica usada por el control.
+
+## Fase acumulada con el historial publicado
+
+El coeficiente de X en la derivada de la fase común es el funcional 2ωv. La identidad Cκ=2ωv permite usar su norma dual de energía. A la norma energética de κ se sumó el residuo de la identidad dividido por la raíz del hueco y un margen relativo de 1e−9. La cota del coeficiente es inferior a 1,006936742 frente al anterior 4,365641251. Una resolución bordeada independiente da 1,006936741 aproximadamente. El residuo es inferior a 3,37e−13.
+
+Se acumularon desde cero los términos de D, |γ|Q y defecto cinemático, con los valores que dominan cada intervalo del historial ya aceptado y del candidato final. En cada fila se conservó el mínimo con el β publicado. En s=22,5 se obtiene |β| ≤ 6,36090e−5. Con D y Q de esa misma fila queda una cota canónica de 1,00786405e−4 y una dirección de prueba del modelo da más de 1,00786374e−4. Refinar solo la búsqueda direccional deja el techo fuera de alcance con esos presupuestos.
+
+## Relevo
+
+Con la nueva cota de fase y Q fijo, bajar D en 3,442e−7 basta en el contraste ortogonal de la última fila. El coste directo de caras en ese intervalo aporta 3,24209e−6 a D. La siguiente comprobación del mismo contacto es combinar en la norma del trabajo directo la fuerza no lineal por bandas con el conmutador de caras, cuyas filas se concentran en 10–40. Reconstruir por separado el núcleo, la banda de caras y el resto en el candidato vigente. Antes de la proyección, usar Pitágoras entre bandas y la desigualdad triangular dentro de la banda compartida. Verificar que la proyección del trabajo directo es contractiva y mantener la proyección paralela, el término de κq̇ y los defectos por separado. Usar márgenes de redondeo y conservar el mínimo previo. Rehacer la marcha solo si el contraste acoplado lo justifica. La corona a s=40 conserva únicamente los dos cortes de fuente en 13,875 y 14,625. El piloto sigue pendiente del cruce conjunto atribuible en r60 y la entrega útil a la receptora, con los mínimos históricos de energía y carga.
+
+Ejecutar `OPENBLAS_NUM_THREADS=1 python3 evaluar.py` en este directorio. [Protocolo de evaluación](PROTOCOLO.md) · [Protocolo de fase](PROTOCOLO_FASE.md) · [Resultados por celda e historial de fase](resultado.json) · [Recibo](RECUPERACION.json)

@@ -154,6 +154,10 @@ En s=0…40 se verificó la respuesta estática de carga del operador FV y se ac
 
 **Resumen para el Dot principal.** Diego, el tubo de error de la cargada queda cubierto en todo el volumen hasta s=22,375. En la prueba a igual entrada la extensión ponderada redujo la cota exterior de 1,05394e−4 a 9,07406e−5. En s=22,5 solo falla r<10, con 1,04839e−4. La siguiente comprobación del mismo contacto es evaluar conjuntamente las componentes del núcleo a la misma entrada, conservando carga, fase y contribución de caras. La corona a s=40 mantiene los dos cortes de fuente previos. El piloto sigue pendiente de atribución y entrega. [Informe](checkpoints/Reserva/extension_r160_20261128/README.md) · [Recibo](checkpoints/Reserva/extension_r160_20261128/RECUPERACION.json)
 
+## Contacto interno · evaluación conjunta y fase del núcleo
+
+**Resumen para el Dot principal.** Diego, la evaluación del Hessiano y el historial de fase afinan la cota del núcleo a 1,00786405e−4 en s=22,5. El techo sigue en 1e−4 y la cobertura integral en s=22,375. El siguiente contraste del mismo contacto es combinar por bandas el trabajo directo de caras y fuerza no lineal a la misma entrada, conservando aparte las proyecciones de carga y los defectos. La corona a s=40 conserva sus cortes de fuente. Sigue pendiente el piloto. [Informe y protocolo](checkpoints/Reserva/gram_nucleo_20261128/README.md) · [Recibo](checkpoints/Reserva/gram_nucleo_20261128/RECUPERACION.json)
+
 ## Orden ejecutada · auditoría pasiva del paso 3
 
 Base revisada `4cfcca381666ad885a6f75d6c678482b0e5ae203`. Usar las trayectorias existentes. Las medias principales ya son públicas. En s = 400…480, la disminución neta del inventario diferencial de la corona equivale al 83,12 % del flujo diferencial de energía por r60 y al 82,74 % del de carga. Esta identidad contable deja abierta la procedencia de lo que cruzó la esfera exterior. [Balances de partida](checkpoints/Reserva/mision_paquete_negativo_20261125/BALANCES.json)
