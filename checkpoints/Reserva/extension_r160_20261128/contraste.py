@@ -64,7 +64,7 @@ def coefficients(lam):
     check = np.sqrt(sol[idx,np.arange(len(idx))]/b[idx])
     assert np.all(check<=coef[idx]) and np.allclose(check,coef[idx],rtol=1e-7,atol=0)
     return coef[target:], dict(lam=float(lam),margin=float(margin),residual=float(residual),
-        allowance=float(allowance),form_defect=float(mismatch),cells=idx,
+        allowance=float(allowance),form_defect=float(mismatch),cells=list(map(int,idx)),
         reference=check.tolist(),upper=coef[idx].tolist())
 
 
