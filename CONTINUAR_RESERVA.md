@@ -134,6 +134,10 @@ En s=0…40 se verificó la respuesta estática de carga del operador FV y se ac
 
 **Resumen para el Dot principal.** Diego, el tubo de la cargada en todo el volumen pasa de s=14,875 a s=15,25. El mayorante del núcleo alcanza 9,14663e−5 en la última fila aceptada y 1,03112e−4 en la primera rechazada, s=15,375. Las otras cuatro bandas caben. El siguiente contraste del mismo contacto es la realimentación por celda en las cinco energías, a igual entrada y con el resto exterior firmado por separado. Siguen pendientes el cruce conjunto y la entrega. La corona a s=40 conserva sus dos cortes anteriores. [Método y series](checkpoints/Reserva/sx_causal_20261128/README.md) · [Recibo](checkpoints/Reserva/sx_causal_20261128/RECUPERACION.json)
 
+## Contacto interno · realimentación por celda en cinco energías
+
+**Resumen para el Dot principal.** Diego, el tubo integral de la cargada pasa de s=15,25 a s=15,5. En ese extremo la cota del núcleo es 9,43380e−5. El primer rechazo aparece en s=15,625 con 1,03805e−4, únicamente en r<10. El siguiente contraste mide el coste heredado anterior a 13,5 antes de decidir si aplicar desde cero las cotas verificadas. El piloto sigue en espera de las puertas de misión. [Informe y series](checkpoints/Reserva/realimentacion_celda_20261128/README.md) · [Recibo](checkpoints/Reserva/realimentacion_celda_20261128/RECUPERACION.json)
+
 ## Orden ejecutada · auditoría pasiva del paso 3
 
 Base revisada `4cfcca381666ad885a6f75d6c678482b0e5ae203`. Usar las trayectorias existentes. Las medias principales ya son públicas. En s = 400…480, la disminución neta del inventario diferencial de la corona equivale al 83,12 % del flujo diferencial de energía por r60 y al 82,74 % del de carga. Esta identidad contable deja abierta la procedencia de lo que cruzó la esfera exterior. [Balances de partida](checkpoints/Reserva/mision_paquete_negativo_20261125/BALANCES.json)
