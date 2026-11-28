@@ -1,0 +1,7 @@
+# Presupuestos exteriores en s=23,125
+
+Base: ee5dfc650095c3aeb85590052e8ef3f0b867f563. Antes de introducir otro refinamiento, reproducir la conversión conjunta y todas las filas publicadas. En la primera fila no acreditada recuperar los cinco radios, el extremo entrante, los presupuestos X y E y las cotas de salida sin modificarlos.
+
+Descomponer cada convolución por emisión prescrita, realimentación, desplazamiento positivo y defectos acumulados de posición y velocidad. Usar los mismos núcleos causales, con todos los factores de salto posteriores a cada emisión. Para X reconstruir el último paso de la iteración positiva: los dos términos inmediatos son los que construyen X, no los de la siguiente iteración que alimentan E. Verificar que las sumas reconstruyen los presupuestos de la fila. Registrar retardos 0–0,875, 1–3,875 y desde 4. Para la norma de la fuerza prescrita, asignar sus cuadrados por anillos y dividir por la norma conjunta; la asignación reproduce el total y no representa fuerzas independientes. Registrar por separado el contraste aritmético sin multiplicadores de salto, sin usarlo para certificar.
+
+Estimar a caja fija cuánto tendría que disminuir cada contribución por sí sola para cerrar las cotas de ambas bandas. Esa sensibilidad escala los aportes de la fila publicados; no es lícito cambiar esos presupuestos en el cálculo ni reutilizar la estimación como una nueva garantía. Reproducir la entrega en un segundo clon limpio. No se cambia el comparador, la cola hasta s=40, los cortes de la corona, los umbrales ni la decisión del piloto.

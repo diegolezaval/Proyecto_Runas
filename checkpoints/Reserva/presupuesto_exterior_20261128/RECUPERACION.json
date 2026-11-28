@@ -1,0 +1,9 @@
+{
+  "base": "ee5dfc650095c3aeb85590052e8ef3f0b867f563",
+  "sha256_codigo": "42f5e0a07188d706aa722bf6c9de6fa129758d25d44c419f1427e098d8f771a9",
+  "sha256_resultado": "59a9918ebee19346365d331a6add8bcd8189cba684c9bdeed0ae805810efea92",
+  "numero_reproducciones": 2,
+  "metodo": "Dos clones remotos independientes de la misma base; sin cambios a archivos previos para ejecutar. Con OPENBLAS_NUM_THREADS=1, desglosar.py reproduce todas las filas de marcha.json y coteja X y E con la convolución desglosada. cmp del resultado devolvió 0.",
+  "prefijo_sin_cambios": 23.0,
+  "fila_diagnosticada": 23.125
+}
