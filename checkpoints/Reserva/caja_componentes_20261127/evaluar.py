@@ -41,6 +41,9 @@ class Components(cont.Core):
     def charge_source(self,q0,qcoeff,x,upper,cell,transition,row):
         return q0+qcoeff[1:]@x[1:]
 
+    def direct_work(self,F,nl,faces,f0,tail):
+        return F+nl+faces
+
     def trial(self,x,e,J,qcoeff,row,F):
         original=super().trial(x,e,J,qcoeff,row,F)
         if not self.active:return original
@@ -70,7 +73,7 @@ class Components(cont.Core):
             charge_source=self.charge_source(q0,qcoeff,x,upper,cell,tail[0],row)
             dq=self.pw@x+self.cw@x+row["Fq"]+charge_source+row["vel"]+2*o.om*row["pos"]
             Q=min(self.Q+d.h*dq,self.uw@(e+2*o.om*x))
-            DD=F+nl+original["cara"]+row["vel"]+d.p.op*row["pos"]+o.kc*dq+o.eps*(self.uw@x)
+            DD=self.direct_work(F,nl,original["cara"],f0,tail)+row["vel"]+d.p.op*row["pos"]+o.kc*dq+o.eps*(self.uw@x)
             D=self.D+d.h*DD
             b=min(self.uw@x,self.beta+d.h*(2*o.om/np.sqrt(o.gap)*D+abs(o.gamma)*Q+row["pos"]))
             point=max(self.coef*D+self.kap*Q+self.phase*b)

@@ -158,6 +158,10 @@ En s=0…40 se verificó la respuesta estática de carga del operador FV y se ac
 
 **Resumen para el Dot principal.** Diego, la evaluación del Hessiano y el historial de fase afinan la cota del núcleo a 1,00786405e−4 en s=22,5. El techo sigue en 1e−4 y la cobertura integral en s=22,375. El siguiente contraste del mismo contacto es combinar por bandas el trabajo directo de caras y fuerza no lineal a la misma entrada, conservando aparte las proyecciones de carga y los defectos. La corona a s=40 conserva sus cortes de fuente. Sigue pendiente el piloto. [Informe y protocolo](checkpoints/Reserva/gram_nucleo_20261128/README.md) · [Recibo](checkpoints/Reserva/gram_nucleo_20261128/RECUPERACION.json)
 
+## Contacto interno · trabajo directo por bandas
+
+**Resumen para el Dot principal.** Diego, el control del error de toda la donante cargada pasó de s=22,375 a s=22,75 sin cambiar el umbral. En s=22,5, con idéntica entrada y radios, la cota del núcleo queda en 9,96329e−5. El primer intervalo no acreditado termina en s=22,875 y lo limitan las bandas 60–160 y r≥160, no el núcleo. El siguiente contraste del mismo contacto separa sus presupuestos de energía y desplazamiento de la evaluación puntual a igual entrada. El piloto y los cortes previos de corona no cambian. [Informe](checkpoints/Reserva/trabajo_conjunto_20261128/README.md) · [Recibo](checkpoints/Reserva/trabajo_conjunto_20261128/RECUPERACION.json)
+
 ## Orden ejecutada · auditoría pasiva del paso 3
 
 Base revisada `4cfcca381666ad885a6f75d6c678482b0e5ae203`. Usar las trayectorias existentes. Las medias principales ya son públicas. En s = 400…480, la disminución neta del inventario diferencial de la corona equivale al 83,12 % del flujo diferencial de energía por r60 y al 82,74 % del de carga. Esta identidad contable deja abierta la procedencia de lo que cruzó la esfera exterior. [Balances de partida](checkpoints/Reserva/mision_paquete_negativo_20261125/BALANCES.json)

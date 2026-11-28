@@ -51,7 +51,7 @@ class Core:
                     no_lineal=nl,prescrita=F,dq=qdot,cinematica=row["pos"],velocidad=row["vel"])
 
 
-def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=None,radii_policy=None,limit=None,budget_observer=None,shift_refiner=None,feedback_refiner=None,point_refiner=None):
+def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=None,radii_policy=None,limit=None,budget_observer=None,shift_refiner=None,feedback_refiner=None,point_refiner=None,core_final_refiner=None):
     V,S,s,rate=d.floor_operator()
     shapes,rates=d.geometry()
     ext=d.loc.i40
@@ -117,6 +117,8 @@ def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=No
                 cap=shift_refiner(j,radius,current,cr)
                 if cap is None:
                     break
+            if core_final_refiner is not None:
+                cr=core_final_refiner(j,kernel,cr,np.array(current["volumen"]),np.array(current["energia"]),physical,parallel,row,F)
             pt=np.array(current["punto"]);pt[0]=min(pt[0],cr["punto"])
             if point_refiner is not None:
                 pt=point_refiner(j,radius,entry,current,candidate,pt)

@@ -1,0 +1,14 @@
+{
+  "base": "f0c189aaf2ca84879eb45faee279a49f2371357f",
+  "sha256_resultado": "44f8ce06f2fd8e593e233a99f2e2b89e31996fe5c1f66ac35b9aa11e83b4af5e",
+  "sha256_parche_reproducido": "151350098fba06e5ec14aede034cc0bd7a6cef851864125f102138c0b9918211",
+  "blob_resultado": "5559bf5e3748c446647a63b809fe6c1264f587bd",
+  "metodo": "Segundo clon remoto independiente de la rama, HEAD en la base registrada y estado limpio. Se aplicó el mismo parche de los tres archivos de código y se ejecutó OPENBLAS_NUM_THREADS=1 python3 medir.py. cmp del resultado contra el primer cálculo devolvió 0. El control sin el ajuste recuperó todas las filas archivadas en ambas ejecuciones.",
+  "numero_reproducciones": 2,
+  "prefijo": 22.75,
+  "primer_no_acreditado": 22.875,
+  "bandas_limitantes": [
+    "60<=r<160",
+    "r>=160"
+  ]
+}
