@@ -1,0 +1,12 @@
+{
+  "protocolo": "b4514adcadc11c428395b58bc1966feb46dc5b0e",
+  "codigo": "2a0dc75c40196795e15177a2781923592bbdf895",
+  "resultado": "7043171cb38a571bdf80199c5258e15ba5953393",
+  "sha256": "e9cfa4c317f8c2cd1fbc16c92d70c08a6012894aebdfaef93289ad5672f938db",
+  "metodo": "Clon limpio independiente en el commit de código, OPENBLAS_NUM_THREADS=1 python3 auditar.py. Comparación con cmp del archivo recalculado y el blob recobrado del commit de resultado, salida 0.",
+  "ultimo_aceptado": 14.875,
+  "primer_rechazo": 15,
+  "filas": 120,
+  "energia_banda_15": 0.0004212243960441914,
+  "caras_15": 0.000048289878846118036
+}
