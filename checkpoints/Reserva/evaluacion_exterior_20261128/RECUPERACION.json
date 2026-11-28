@@ -1,0 +1,11 @@
+{
+  "protocolo": "dd3123c78357d62b4196db98987cc9faf9d17fa4",
+  "codigo": "593f7a2727290f72dbf34cb586dc17d36ae407b4",
+  "resultado": "07a7d82188d1b8f584bcc15753dd56b1c2a1370b",
+  "sha256": "5b305f71e81e289e6638251ed792ae6c2221b94478d4dbec61fe3c539082b34f",
+  "metodo": "Clon independiente limpio en el commit de código, OPENBLAS_NUM_THREADS=1 python3 medir_exterior.py. Comparación con cmp del archivo recalculado y el blob recuperado del commit de resultado, salida 0.",
+  "ultimo_aceptado": 19.5,
+  "primer_rechazo": 19.625,
+  "banda": "60<=r<160",
+  "coef_exterior": 0.0027180646634736654
+}
