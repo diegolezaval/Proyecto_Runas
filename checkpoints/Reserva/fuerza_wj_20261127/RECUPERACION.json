@@ -1,0 +1,11 @@
+{
+  "protocolo": "eddef89c07e8350f9dd961a260af980c6d32f1fe",
+  "codigo": "7b0af5b461fcb3316e41aca634f4d1786f6ab36a",
+  "resultado": "51e7d64405d2a10783be3a75a21b98c76697e254",
+  "sha256": "60cda9ceac6c20c8fdaeae0010c60bdcd40969908fe5ff863f40d859650c046b",
+  "metodo": "Clon independiente y limpio, checkout del código publicado, OPENBLAS_NUM_THREADS=1 python3 medir_wj.py. Tras recuperar el commit de resultados, comparar su blob con el archivo recalculado mediante cmp, salida 0.",
+  "ultimo_aceptado": 14.875,
+  "primer_rechazo": 15,
+  "envolvente_interior_aceptada": 0.00009883856360611488,
+  "envolvente_interior_rechazada": 0.00011868722861194351
+}
