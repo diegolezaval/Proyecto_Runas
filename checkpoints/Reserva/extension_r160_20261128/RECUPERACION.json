@@ -1,0 +1,12 @@
+{
+  "base": "8adbe18d09cabc21b908720c8d5364c414a3666c",
+  "protocolo": "03c5fff40f433c6cc88383eac5453570fdf22f40",
+  "codigo": "9d410fff98b513a5fd632e55f8358d82cf9569e5",
+  "resultado": "a6dfa600e7f7fd358bb9e2430b1ecc161f6acb20",
+  "sha256": "cb8df4b59e1aa853d644443c887f8dc2052427081a63775090877e81934af8e2",
+  "metodo": "Clon remoto independiente, git status --porcelain vacío en el commit de código. OPENBLAS_NUM_THREADS=1 python3 contraste.py terminó con salida 0. Tras recuperar el commit de resultados se comprobó cmp contra su blob de resultado, salida 0.",
+  "ultimo_aceptado": 22.375,
+  "primer_rechazo": 22.5,
+  "banda": "r<10",
+  "cota_rechazada": 0.00010483827361642025
+}
