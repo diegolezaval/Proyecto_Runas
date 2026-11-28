@@ -1,0 +1,5 @@
+# Radios acoplados de la donante cargada
+
+Base c4c81788. Usar las mismas fuentes, cinco bandas, escalera, márgenes, paso y puerta puntual 1e−4 de caja_componentes. Reconstruir las filas aceptadas con sus radios archivados y comparar el rechazo a 14,75 con cinco techos al mismo estado entrante. Fijar luego el interior al techo y las otras bandas a sus últimos radios aceptados. Subir únicamente los radios insuficientes al siguiente valor admisible y recalcular todo el candidato desde la misma entrada. Si una banda excede el techo, detener tras atender cualquier incremento permitido en las demás. Exigir inclusión simultánea de entrada y cinco envolventes.
+
+Comparar control y escalera con y sin acotar cada componente de We en 10–40 por la inversa a carga fija, fase transversal, κq y uβ. Dividir solo en celdas W>0 e intersectar con la caja física anterior. Mantener el conmutador de caras; separar sus dos términos, fuerza física, q̇, κq̇ y fase. Repetir desde cero únicamente si se reduce la cota interior a estado fijo. Registrar primer rechazo, candidato completo y horizonte sin interpretar transferencia. Sin cálculo del escalón ni piloto.
