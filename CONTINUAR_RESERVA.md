@@ -106,6 +106,10 @@ En s=0…40 se verificó la respuesta estática de carga del operador FV y se ac
 
 **Resumen para el Dot principal.** Diego, para las fuerzas no lineales incluidas hasta 13,875 y 14,625, el mayorante del desplazamiento canónico en 40 ≤ r < 60 hasta s=40 baja a 1,4744e−5 y 5,9107e−5, respectivamente. La integración conserva la respuesta tardía y separa con signo la parte constante del escalón. Falta la realimentación posterior a cada corte. La certificación de la cargada en todo el volumen alcanza s=14,625. La siguiente comprobación del mismo contacto vuelve a la primera fila rechazada en s=14,75 a igual estado entrante y desglosa la fuerza del núcleo y las caras usando el recorte en 10–40. Siguen pendientes el flujo conjunto en r60 y la entrega. [Informe y series](checkpoints/Reserva/escalon_parte_constante_20261127/README.md) · [Recibo](checkpoints/Reserva/escalon_parte_constante_20261127/RECUPERACION.json)
 
+## Contacto interno · radios acoplados en la primera fila rechazada
+
+**Resumen para el Dot principal.** Diego, la certificación en todo el volumen de la cargada llega a s=14,625. A igual entrada en s=14,75 la cota interior baja de 1,43605e−4 a 1,22183e−4 con los radios por banda y a 1,21263e−4 al trasladar We. Desde cero queda en 1,16101e−4 frente al tubo de 1e−4. Las otras cuatro bandas caben simultáneamente. Sigue pendiente acotar el gradiente del conmutador de caras con la métrica FV realmente disponible, primero a estado fijo. El piloto sigue pendiente. [Informe y método](checkpoints/Reserva/radios_acoplados_20261127/README.md) · [Recibo](checkpoints/Reserva/radios_acoplados_20261127/RECUPERACION.json)
+
 ## Orden ejecutada · auditoría pasiva del paso 3
 
 Base revisada `4cfcca381666ad885a6f75d6c678482b0e5ae203`. Usar las trayectorias existentes. Las medias principales ya son públicas. En s = 400…480, la disminución neta del inventario diferencial de la corona equivale al 83,12 % del flujo diferencial de energía por r60 y al 82,74 % del de carga. Esta identidad contable deja abierta la procedencia de lo que cruzó la esfera exterior. [Balances de partida](checkpoints/Reserva/mision_paquete_negativo_20261125/BALANCES.json)
