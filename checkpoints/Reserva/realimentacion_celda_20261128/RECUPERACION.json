@@ -1,0 +1,11 @@
+{
+  "protocolo": "a41d5ea151f5b90783dd3bf2a03c7fcafe0f810b",
+  "codigo": "9f6e96781271a683e55165fa70b5ce919fd5d13b",
+  "resultado": "c696fd44512b1bd71d268d3f9476a306f4bbadc9",
+  "sha256": "6a94c15d31982466953dad67b1fa87db2ed66cb3323f2ebff4d3e4001c7206df",
+  "metodo": "Clon independiente limpio en el commit de código, OPENBLAS_NUM_THREADS=1 python3 marcha_fb.py. Comparación con cmp del archivo recalculado y el blob del commit de resultado, salida 0.",
+  "ultimo_aceptado": 15.5,
+  "primer_rechazo": 15.625,
+  "cota_interior_aceptada": 0.00009433794505592058,
+  "cota_interior_rechazada": 0.00010380488091520451
+}
