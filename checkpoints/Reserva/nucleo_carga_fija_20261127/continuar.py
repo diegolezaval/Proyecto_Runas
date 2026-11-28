@@ -51,7 +51,7 @@ class Core:
                     no_lineal=nl,prescrita=F,dq=qdot,cinematica=row["pos"],velocidad=row["vel"])
 
 
-def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=None,radii_policy=None,limit=None):
+def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=None,radii_policy=None,limit=None,budget_observer=None):
     V,S,s,rate=d.floor_operator()
     shapes,rates=d.geometry()
     ext=d.loc.i40
@@ -112,6 +112,8 @@ def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=No
             if radii_policy is not None:
                 done,new_idx=radii_policy.test(j,ladder,idx,entry,pt,cr,e=current['energia'],x=current['volumen'])
             if done:
+                if budget_observer is not None:
+                    budget_observer(candidate,best,rem,jump,op,row,cr,ok)
                 if observe is not None:
                     observe(physical*np.array(current["volumen"]))
                 log.append(dict(t=row["t"],aceptado=bool(ok),punto=pt.tolist(),radios=radius.tolist(),
