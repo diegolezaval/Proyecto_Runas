@@ -1,0 +1,12 @@
+{
+  "protocolo": "fb6e6f747bdf44f5a68d88a720cf38bdc71f12d0",
+  "codigo": "df89d1c911bf9cb0db9bd9b9f72ea3774100ec80",
+  "resultado": "f819793096075aadb75ce2b4e5051e2e4f80d7d1",
+  "sha256": "d0058f2c18044a2c8a35f20527de2b125bec1185e7e59c63bedb466ebf04e06b",
+  "metodo": "Clon independiente limpio en el commit de código. OPENBLAS_NUM_THREADS=1 python3 evaluar_caras.py. Tras recuperar el commit de resultados, comparar el blob remoto completo con el resultado recalculado mediante cmp, salida 0.",
+  "control": 0.00011610043870162677,
+  "entrada_fija": 0.000115342998506585,
+  "diez_filas": 0.00011187115516597118,
+  "ultimo_aceptado": 14.625,
+  "primer_rechazo": 14.75
+}
