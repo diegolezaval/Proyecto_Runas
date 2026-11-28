@@ -1,0 +1,10 @@
+{
+  "protocolo": "37a8a1401302a2dcb8d021cf53b48c3ffd79e741",
+  "codigo": "57a1e70f8b7fd38bed15a788e39482d585f670b8",
+  "resultado": "038db77ca829df8d0f477894191944f5c9d9e494",
+  "sha256": "a5b7fcffac933c9e1b0c280ce409ddfce979101646736855915ef0cd8e40bc3d",
+  "metodo": "Clon independiente limpio en el commit de código, OPENBLAS_NUM_THREADS=1 python3 cribar.py y cmp del archivo completo frente al blob recuperado del commit de resultado, salida 0.",
+  "coste_previo_15": 0.000048289878846118036,
+  "coste_cribado_15": 0.00001852253214636254,
+  "ultimo_aceptado_causal": 14.875
+}
