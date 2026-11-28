@@ -114,6 +114,10 @@ En s=0…40 se verificó la respuesta estática de carga del operador FV y se ac
 
 **Resumen para el Dot principal.** Diego, en s=14,75 la cota del núcleo de la cargada baja de 1,16101e−4 a 1,15343e−4 con la misma entrada y a 1,11872e−4 al usar la norma FV del conmutador durante diez intervalos desde 13,5. Las historias se reconstruyeron desde cero. El último extremo aceptado sigue en s=14,625 y el piloto continúa pendiente. El siguiente contraste del mismo contacto evalúa WJ por celda en 10–40 a la misma entrada antes de decidir si conviene repetir la marcha. [Método y resultados](checkpoints/Reserva/conmutador_fv_20261127/README.md) · [Recibo](checkpoints/Reserva/conmutador_fv_20261127/RECUPERACION.json)
 
+## Contacto interno · intersección de fuerza por celda y desplazamiento de banda
+
+**Resumen para el Dot principal.** Diego, el tubo de la donante cargada queda acreditado en todo el volumen hasta s=14,875. Al reconstruir desde 13,5 el presupuesto conjunto de WJ, las cajas de componentes y la norma canónica, la cota interior en s=14,75 baja a 8,34452e−5. El primer rechazo pasa a s=15 con 1,18688e−4 en r<10. Sigue pendiente la atribución del cruce de energía y carga y la entrega útil. El siguiente contraste desglosa q̇ y mide por separado la proyección física de la fuerza imaginaria en 10–40 a igual entrada. [Informe y series](checkpoints/Reserva/fuerza_wj_20261127/README.md) · [Recibo](checkpoints/Reserva/fuerza_wj_20261127/RECUPERACION.json)
+
 ## Orden ejecutada · auditoría pasiva del paso 3
 
 Base revisada `4cfcca381666ad885a6f75d6c678482b0e5ae203`. Usar las trayectorias existentes. Las medias principales ya son públicas. En s = 400…480, la disminución neta del inventario diferencial de la corona equivale al 83,12 % del flujo diferencial de energía por r60 y al 82,74 % del de carga. Esta identidad contable deja abierta la procedencia de lo que cruzó la esfera exterior. [Balances de partida](checkpoints/Reserva/mision_paquete_negativo_20261125/BALANCES.json)
