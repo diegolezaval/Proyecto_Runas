@@ -1,0 +1,3 @@
+# Extensión ponderada en r160
+
+Base 8adbe18d09cabc21b908720c8d5364c414a3666c. Recuperar el candidato rechazado de s=22,375, localizar el máximo exterior para la escalera publicada y cotejar las cinco cotas. Si su máximo queda en las dos primeras unidades, ampliar la forma escalar del exterior hasta r=158, usando el peso original, la media aritmética en caras y la pared real. Omitir la cara en r158. Aplicar λM solo en r≥160, cubierto por X. Mantener piso, reservas, pruebas independientes y mínimo con la cota anterior. Comprobar la forma por suma directa de caras. Aceptar únicamente con los mismos radios, entrada y cinco envolventes. Si acepta, repetir desde cero hasta el primer rechazo o s=40. Preservar cortes de corona y mínimos de misión.
