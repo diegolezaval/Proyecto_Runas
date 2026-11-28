@@ -1,0 +1,12 @@
+{
+  "protocolo": "7c0c43f2b9a71bca6a37b7b76ac693f643f0679c",
+  "codigo": "eeb86666faafc8de9dfb7318820d605509b2fc76",
+  "resultado": "f9c21a52a3ad2215b5dad5448030ce13b0cd4ac2",
+  "sha256": "6c0fedd784890c1d62f43f2fe0578671438db1c1e917802575e090c5fdffb8ce",
+  "metodo": "Clon independiente limpio en el commit de código, OPENBLAS_NUM_THREADS=1 python3 comparar_inicio.py. Tras recuperar el commit de resultados se comparó con cmp el archivo recalculado contra el blob completo, salida 0.",
+  "control_tardio": 15.5,
+  "ultimo_aceptado": 17.875,
+  "primer_rechazo": 18,
+  "banda_limitante": "r>=160",
+  "cota_exterior_en_rechazo": 0.00010293761812863978
+}
