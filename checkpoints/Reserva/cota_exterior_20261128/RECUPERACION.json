@@ -1,0 +1,19 @@
+{
+  "base": "ca4751d7b88e50a089f36b3671973b5080e99008",
+  "sha256": {
+    "diagnostico.py": "b7e5f1b1182c18cceb1b334bfa71b4762f4dbfb82de30fe47ab66f11b3d646d1",
+    "formas.py": "435727b63f9616274b8c84cfd5cb72d02e8f973e69d64ef729b9ada25696711f",
+    "reproducir.py": "d5b202cb8d079943dc82622a5eeb71f625481dca0643f942f36b54ebc2274019",
+    "entrada.json": "951dce49218195f7f1615123d0337f0d3fe9df38cf26b025a115293d814157ce",
+    "evaluacion.json": "95dde9ca560ee635fe0a0402a9d321c5705ad85d6453f1ca3854c265c51ad3dc",
+    "marcha.json": "69e8a39ed4c8b734ed1e843b45a670753bec78c3975f8d4bcae6fe86a1fbaf48"
+  },
+  "numero_reproducciones": 2,
+  "metodo": "Dos clones remotos independientes de la misma base, sin modificaciones de archivos existentes para ejecutar. Se ejecutaron diagnostico.py, formas.py y reproducir.py con OPENBLAS_NUM_THREADS=1. cmp devolvió 0 para entrada.json, evaluacion.json y marcha.json. Cada ejecución recupera exactamente el resultado anterior, y las 182 filas aceptadas anteriores coinciden exactamente.",
+  "prefijo": 23.0,
+  "primer_no_acreditado": 23.125,
+  "bandas_limitantes": [
+    "60<=r<160",
+    "r>=160"
+  ]
+}
