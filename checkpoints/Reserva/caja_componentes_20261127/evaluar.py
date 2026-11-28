@@ -35,6 +35,9 @@ class Components(cont.Core):
     def transition_box(self,cell,D,Q,b):
         return cell
 
+    def transition_force(self,previous,upper,cell,snorm,X):
+        return previous
+
     def trial(self,x,e,J,qcoeff,row,F):
         original=super().trial(x,e,J,qcoeff,row,F)
         if not self.active:return original
@@ -58,7 +61,9 @@ class Components(cont.Core):
             f0=min(np.linalg.norm(per_cell),bandJ[0]*x[0])
             q0=min(abs(o.u[sl])@per_cell[:,1],
                    np.linalg.norm(o.u[sl,None]*U[:,1,:])*x[0],qcoeff[0]*x[0])
-            nl=np.linalg.norm(np.r_[f0,(self.bandmax*bandJ*x)[1:]])
+            tail=(self.bandmax*bandJ*x)[1:]
+            tail[0]=self.transition_force(tail[0],upper,cell,snorm,x[1])
+            nl=np.linalg.norm(np.r_[f0,tail])
             charge_source=q0+qcoeff[1:]@x[1:]
             dq=self.pw@x+self.cw@x+row["Fq"]+charge_source+row["vel"]+2*o.om*row["pos"]
             Q=min(self.Q+d.h*dq,self.uw@(e+2*o.om*x))
