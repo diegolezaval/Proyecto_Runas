@@ -51,7 +51,7 @@ class Core:
                     no_lineal=nl,prescrita=F,dq=qdot,cinematica=row["pos"],velocidad=row["vel"])
 
 
-def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=None,radii_policy=None,limit=None,budget_observer=None):
+def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=None,radii_policy=None,limit=None,budget_observer=None,shift_refiner=None):
     V,S,s,rate=d.floor_operator()
     shapes,rates=d.geometry()
     ext=d.loc.i40
@@ -96,15 +96,22 @@ def solve(step,march,table,adj=None,observe=None,core_model=None,box_observer=No
             parallel=np.minimum(parallel,kernel.uw*physical)
             rem=physical.copy()
             rem[2:]=[max(d.blocks(rad)[b].sum(axis=2).max(axis=1)) for b in d.bands[2:]]
-            candidate=copy.copy(state)
-            candidate.extra=state.extra.copy()
-            candidate.rows=state.rows.copy()
-            candidate.advance(best,physical,row,adj,linear,rem,jump,op)
-            current=candidate.rows[-1]
-            if core_model is not None:
-                kernel.prepare(signed,rad,row["t"],radius)
-            cr=kernel.trial(np.array(current["volumen"]),np.array(current["energia"]),
-                            physical,parallel,row,F)
+            cap=None
+            while True:
+                candidate=copy.copy(state)
+                candidate.extra=state.extra.copy()
+                candidate.rows=state.rows.copy()
+                candidate.advance(best,physical,row,adj,linear,rem,jump,op,shift_cap=cap)
+                current=candidate.rows[-1]
+                if core_model is not None:
+                    kernel.prepare(signed,rad,row["t"],radius)
+                cr=kernel.trial(np.array(current["volumen"]),np.array(current["energia"]),
+                                physical,parallel,row,F)
+                if shift_refiner is None or cap is not None:
+                    break
+                cap=shift_refiner(j,radius,current,cr)
+                if cap is None:
+                    break
             pt=np.array(current["punto"]);pt[0]=min(pt[0],cr["punto"])
             need=np.maximum(entry,pt)
             ok=np.all(need<=radius)

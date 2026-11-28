@@ -114,7 +114,7 @@ class Comparison:
         self.history=[];self.numeric=[];self.rows=[];self.extra=[]
         self.Q=0.;self.failed=False
 
-    def advance(self,best,J,row,adj,linear,remainder,jump,op_extra):
+    def advance(self,best,J,row,adj,linear,remainder,jump,op_extra,shift_cap=None):
         j=len(self.rows)
         Fj=np.linalg.norm(self.shapes*best,axis=1)
         if self.mode=="firmado":
@@ -137,6 +137,8 @@ class Comparison:
         x=np.maximum(inverse,0)@rhs
         for _ in range(4):
             shifted=np.linalg.norm(self.shift*x,axis=1)
+            if shift_cap is not None:
+                shifted=np.minimum(shifted,shift_cap)
             fb=np.minimum(max(remainder)*x,np.linalg.norm(self.mask*(remainder*x),axis=1))
             if _<3: x=rhs+self.K[0]*(shifted+fb)
         self.history.append(Fj+fb+shifted)
