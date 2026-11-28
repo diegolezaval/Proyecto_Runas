@@ -18,10 +18,13 @@ floor=.17-1e-10
 lambdas=np.r_[0,.17*np.array([.25,1,4,16,64,256])]
 
 
-def coefficients(lam):
+def coefficients(lam,band=-1):
+    sl=d.bands[band]
     mass=o.W[sl].astype(np.longdouble)
     edges=4*np.longdouble(np.pi)*d.loc.face[sl].astype(np.longdouble)
-    assert np.isclose(d.loc.length[-1],d.g.dx/2) and np.all(d.geometry()[0][-1,sl]==1)
+    assert np.isclose(d.loc.length[-1],d.g.dx/2) and np.all(d.geometry()[0][band,sl]==1)
+    if sl.stop<d.g.n:
+        edges[-1]=0.
     left=np.r_[np.longdouble(0),edges[:-1]]
     off=-edges[:-1]
     diagonal=(floor+lam)*mass+edges+left
@@ -51,7 +54,7 @@ def coefficients(lam):
     n=len(b)
     grad=diags([-np.sqrt(face)/np.sqrt(b),np.sqrt(face[:-1])/np.sqrt(b[1:])],[0,1],shape=(n,n))
     normK=(grad.T@grad+diags(np.full(n,floor+lam),0)).tocsc()
-    assert np.isclose(np.linalg.norm(grad@np.sqrt(b))**2,face[-1],rtol=1e-11)
+    assert np.isclose(np.linalg.norm(grad@np.sqrt(b))**2,face[-1],rtol=1e-11,atol=1e-18)
     indices=np.array([0,n//4,n//2,3*n//4,n-1])
     rhs=np.zeros((n,len(indices)))
     rhs[indices,np.arange(len(indices))]=1
@@ -65,27 +68,28 @@ def coefficients(lam):
 
 
 class Evaluator:
-    def __init__(self,coeff):
+    def __init__(self,coeff,band=-1):
         self.coeff=coeff
+        self.band=band
 
     def refine(self,j,radius,entry,current,state,pt):
         if j<self.first:
             return pt
         assert state.floor==floor
-        x=current["volumen"][-1]
-        e=current["energia"][-1]
-        old1=state.inv[-1]*x
-        old2=state.vol[-1]*x+state.res[-1]*e
-        assert pt[-1]==min(old1,old2)
+        x=current["volumen"][self.band]
+        e=current["energia"][self.band]
+        old1=state.inv[self.band]*x
+        old2=state.vol[self.band]*x+state.res[self.band]*e
+        assert pt[self.band]==min(old1,old2)
         energy=self.coeff[0]*e*(1+1e-12)
-        use=bool(min(energy.max(),pt[-1])>radius[-1])
+        use=bool(min(energy.max(),pt[self.band])>radius[self.band])
         env=energy
         if use:
             env=np.min(self.coeff*np.hypot(e,np.sqrt(lambdas)*x)[:,None]*(1+1e-12),axis=0)
-        bound=min(pt[-1],env.max())
+        bound=min(pt[self.band],env.max())
         self.details=dict(X=x,E=e,masa=old1,gradiente=old2,energia_sola=energy.max(),
             combinado=env.max(),uso_lambda=use,final=bound,entrada=entry.tolist(),radios=radius.tolist())
-        pt[-1]=bound
+        pt[self.band]=bound
         return pt
 
 
